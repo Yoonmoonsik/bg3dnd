@@ -221,6 +221,7 @@ local SPELL_CLASS_MAP = {
     Target_GreaterRestoration_spellscroll = '5 Bard Cleric Druid',
     Target_InsectPlague_spellscroll = '5 Cleric Druid Sorcerer',
     Target_MassCureWounds_spellscroll = '5 Bard Cleric Druid',
+    Target_SummonCelestial_spellscroll = '5 Cleric',
 
     Projectile_ChainLightning_spellscroll = '6 Sorcerer Wizard',
     Target_CircleOfDeath_spellscroll = '6 Sorcerer Warlock Wizard',
@@ -615,4 +616,5 @@ function IsScrollSpell()
 	| SpellId('Target_PlanarAlly_spellscroll')
 	| SpellId('Wall_WallOfThorns_spellscroll')
 	| SpellId('Shout_WindWalk_spellscroll')
+	| SpellId('Target_SummonCelestial_spellscroll')
 end

@@ -10958,6 +10958,11 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_PlanarAlly_Deva"
 
+new entry "Target_SummonCelestial_spellscroll"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_SummonCelestial"
+
 new entry "Target_BurstingSinew_spellscroll"
 type "SpellData"
 data "SpellType" "Target"
