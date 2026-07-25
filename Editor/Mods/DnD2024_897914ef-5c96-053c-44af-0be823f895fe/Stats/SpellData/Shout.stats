@@ -5781,6 +5781,51 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="cae956d5-7450-4c43-9c0b-60eeb83e1c17" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d8037681-f828-47f3-ade5-f221b44bfb2b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enlarge_Duergar" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f6b57c12-fac3-4bc7-917c-b6a2da294900" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Enlarge_Duergar_Enlarge;Shout_Enlarge_Duergar_Reduce;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6186683-2e03-41ab-9a1b-d3252a371fc2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enlarge_Duergar_Enlarge" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d8037681-f828-47f3-ade5-f221b44bfb2b" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Enlarge_Duergar" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Enlarge" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4152c958-cc73-4171-b8b4-9dcbaa9f6663" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enlarge_Duergar_Reduce" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e6186683-2e03-41ab-9a1b-d3252a371fc2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(REDUCE, 100, 10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Reduce" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34aa1f06g5476g9077g6ecegcbeaecd1d022" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1860f08dg254cg24c9g1f48g986104453f40" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d4" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(REDUCE,100,10)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Reduce" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_GrowSmaller" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="7a944af4-9a0b-4c92-98f7-fd6341036726" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="045666e7-222b-4e0e-a709-eec01af013a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Invisibility_Duergar" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1412f418-ec62-4357-ad3a-10b1713f7ccf" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b532ce38-ddaf-43a1-a2a0-2c34db4d8e49" />

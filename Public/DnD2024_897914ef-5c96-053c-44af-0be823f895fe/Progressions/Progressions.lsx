@@ -1964,6 +1964,47 @@
                     <attribute id="UUID" type="guid" value="de384029-c1cb-4479-b4d7-3cb6bef7f72b"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ForgeDomain_3_ArtisansBlessing;ForgeDomain_3_BlessingOfTheForge;ForgeDomain_3_ForgeDomainSpells"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(9b80c746-9937-4bb8-8f93-a799cc84cdcc,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
+                    <attribute id="UUID" type="guid" value="665f732f-db67-4c9a-81a0-84a0f866d6c9"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(cd533120-a78d-41f6-8f4a-c47a0ec391d3,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
+                    <attribute id="UUID" type="guid" value="dee5c699-2f01-47d2-89ca-3244987e69d1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ForgeDomain_6_SoulOfTheForge"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
+                    <attribute id="UUID" type="guid" value="e43168a0-387a-4dd6-801e-ba5be0466d26"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(3cbe5876-e594-4ae0-bbd3-5064aaf8e2da,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
+                    <attribute id="UUID" type="guid" value="41f4f22a-e79d-4b2e-ac0b-57f216a1aced"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(808576a6-c4c8-4376-b8f7-cbf3b13c99e0,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
+                    <attribute id="UUID" type="guid" value="a6a01179-c227-4028-911d-60fc8489b819"/>
+                </node>
+                <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice08,1,0);Proficiency(LightArmor);Proficiency(Shields);Tag(PETPAL);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(SimpleWeapons);ActionResource(MoonSickle,1,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Druid"/>
@@ -8724,45 +8765,20 @@
                     <attribute id="UUID" type="guid" value="13b286a5-fb07-4944-97e9-58be14a32678"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ForgeDomain_3_ArtisansBlessing;ForgeDomain_3_BlessingOfTheForge;ForgeDomain_3_ForgeDomainSpells"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(9b80c746-9937-4bb8-8f93-a799cc84cdcc,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
-                    <attribute id="UUID" type="guid" value="665f732f-db67-4c9a-81a0-84a0f866d6c9"/>
-                </node>
-                <node id="Progression">
                     <attribute id="Level" type="uint8" value="5"/>
-                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(cd533120-a78d-41f6-8f4a-c47a0ec391d3,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
-                    <attribute id="UUID" type="guid" value="dee5c699-2f01-47d2-89ca-3244987e69d1"/>
+                    <attribute id="Name" type="LSString" value="Duergar"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(3928cc43-fd2d-46e3-90f5-9171e3aad0f2)"/>
+                    <attribute id="TableUUID" type="guid" value="0f8458cb-9edd-401d-8066-86ba8e1529cf"/>
+                    <attribute id="UUID" type="guid" value="77f416e5-406b-40ee-a2ff-dea281c32c8f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Level" type="uint8" value="6"/>
-                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ForgeDomain_6_SoulOfTheForge"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
-                    <attribute id="UUID" type="guid" value="e43168a0-387a-4dd6-801e-ba5be0466d26"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="7"/>
-                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(3cbe5876-e594-4ae0-bbd3-5064aaf8e2da,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
-                    <attribute id="UUID" type="guid" value="41f4f22a-e79d-4b2e-ac0b-57f216a1aced"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="9"/>
-                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(808576a6-c4c8-4376-b8f7-cbf3b13c99e0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
-                    <attribute id="UUID" type="guid" value="a6a01179-c227-4028-911d-60fc8489b819"/>
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Duergar"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0c23701c-a79b-483d-b283-9f234211d979)"/>
+                    <attribute id="TableUUID" type="guid" value="0f8458cb-9edd-401d-8066-86ba8e1529cf"/>
+                    <attribute id="UUID" type="guid" value="02828bce-0bee-4010-a614-f4e46d0aba12"/>
                 </node>
             </children>
         </node>

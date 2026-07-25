@@ -4824,6 +4824,55 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(PHANTASMAL_FORCE,100,10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e7f4b819-118a-4c99-b0fb-d4462d680687" />
+        <field name="Name" type="NameTableFieldDefinition" value="Invisibility" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="eeec6dd8-fae5-4aaa-bb20-f59654031897" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(INVISIBILITY,100,-1);AI_ONLY:ApplyStatus(INVISIBILITY,100,2);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(INVISIBILITY,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7c5a8708-23ca-4e60-9997-796b3a9fefe2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Invisibility_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="574616d3-b127-42ea-883a-edcc180bc893" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(INVISIBILITY,100,-1);AI_ONLY:ApplyStatus(INVISIBILITY,100,2);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(INVISIBILITY,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e7beabd4-8671-4db1-8894-8518c0c0de5a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Invisibility_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="283a0edb-8bb4-40ce-ad48-d0931371b457" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(INVISIBILITY,100,-1);AI_ONLY:ApplyStatus(INVISIBILITY,100,2);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="2.5" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(INVISIBILITY,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d28169be-1bde-4552-99e0-11622fd5b8d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Invisibility_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="941c8e03-dbc4-4cc7-8280-4759f3b2b438" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(INVISIBILITY,100,-1);AI_ONLY:ApplyStatus(INVISIBILITY,100,2);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(INVISIBILITY,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7b0e5f8c-9206-48c6-9203-ac8ddaff0b86" />
+        <field name="Name" type="NameTableFieldDefinition" value="Invisibility_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="54e4145d-22db-4d6b-a368-a02deebbc991" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(INVISIBILITY,100,-1);AI_ONLY:ApplyStatus(INVISIBILITY,100,2);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3.5" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(INVISIBILITY,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7863b676-defa-402c-9131-b2287b242752" />
@@ -12217,7 +12266,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b0de3771-42a1-4399-aa57-c7b34df1ba8f" />
         <field name="Name" type="NameTableFieldDefinition" value="Invisibility_spellscroll" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="eeec6dd8-fae5-4aaa-bb20-f59654031897" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e7f4b819-118a-4c99-b0fb-d4462d680687" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

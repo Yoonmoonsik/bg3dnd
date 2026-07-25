@@ -527,6 +527,26 @@
                     <attribute id="UUID" type="guid" value="2652f702-8bbc-4d6d-bbe7-72620dd9ad44"/>
                 </node>
                 <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Forge Domain SLevel 2"/>
+                    <attribute id="Spells" type="LSString" value="Target_Grease;Target_Smite_Searing;Target_HeatMetal;Target_MagicWeapon"/>
+                    <attribute id="UUID" type="guid" value="9b80c746-9937-4bb8-8f93-a799cc84cdcc"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Forge Domain SLevel 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_ElementalWeapon;Target_ProtectionFromEnergy"/>
+                    <attribute id="UUID" type="guid" value="cd533120-a78d-41f6-8f4a-c47a0ec391d3"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Forge Domain SLevel 4"/>
+                    <attribute id="Spells" type="LSString" value="Shout_FireShield;Wall_WallOfFire"/>
+                    <attribute id="UUID" type="guid" value="3cbe5876-e594-4ae0-bbd3-5064aaf8e2da"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Forge Domain SLevel 5"/>
+                    <attribute id="Spells" type="LSString" value="Target_FlameStrike;Wall_WallOfStone"/>
+                    <attribute id="UUID" type="guid" value="808576a6-c4c8-4376-b8f7-cbf3b13c99e0"/>
+                </node>
+                <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="__DRUID__"/>
                     <attribute id="UUID" type="guid" value="a650b325-6d8d-46ae-a2a8-28009a511806"/>
                 </node>
@@ -1836,24 +1856,14 @@
                     <attribute id="UUID" type="guid" value="582ed05c-c6fa-4d6f-99f9-efcc9de769f9"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Forge Domain SLevel 2"/>
-                    <attribute id="Spells" type="LSString" value="Target_Grease;Target_Smite_Searing;Target_HeatMetal;Target_MagicWeapon"/>
-                    <attribute id="UUID" type="guid" value="9b80c746-9937-4bb8-8f93-a799cc84cdcc"/>
+                    <attribute id="Name" type="FixedString" value="Duergar level 3"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Enlarge_Duergar;Target_EnlargeReduce"/>
+                    <attribute id="UUID" type="guid" value="0c23701c-a79b-483d-b283-9f234211d979"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Forge Domain SLevel 3"/>
-                    <attribute id="Spells" type="LSString" value="Target_ElementalWeapon;Target_ProtectionFromEnergy"/>
-                    <attribute id="UUID" type="guid" value="cd533120-a78d-41f6-8f4a-c47a0ec391d3"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Forge Domain SLevel 4"/>
-                    <attribute id="Spells" type="LSString" value="Shout_FireShield;Wall_WallOfFire"/>
-                    <attribute id="UUID" type="guid" value="3cbe5876-e594-4ae0-bbd3-5064aaf8e2da"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Forge Domain SLevel 5"/>
-                    <attribute id="Spells" type="LSString" value="Target_FlameStrike;Wall_WallOfStone"/>
-                    <attribute id="UUID" type="guid" value="808576a6-c4c8-4376-b8f7-cbf3b13c99e0"/>
+                    <attribute id="Name" type="FixedString" value="Duergar level 5"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Invisibility_Duergar;Target_Invisibility"/>
+                    <attribute id="UUID" type="guid" value="3928cc43-fd2d-46e3-90f5-9171e3aad0f2"/>
                 </node>
             </children>
         </node>
