@@ -316,7 +316,7 @@ data "SpellFail" "IF(not IsCritical() and HasPassive('PotentCantrip',context.Sou
 new entry "Projectile_GreenFlameBlade"
 type "SpellData"
 data "SpellType" "Projectile"
-data "SpellProperties" "DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Fire);"
+data "SpellProperties" "IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Fire);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Psychic);"
 data "TargetFloor" "-1"
 data "TargetRadius" "3"
 data "TargetConditions" "not Self() and not Dead() and Enemy();"

@@ -355,7 +355,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c53d5de8-93f5-4033-8536-e3270eec61bd" />
         <field name="Name" type="NameTableFieldDefinition" value="GreenFlameBlade" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Fire);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Fire);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Psychic);" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Enemy();" />
