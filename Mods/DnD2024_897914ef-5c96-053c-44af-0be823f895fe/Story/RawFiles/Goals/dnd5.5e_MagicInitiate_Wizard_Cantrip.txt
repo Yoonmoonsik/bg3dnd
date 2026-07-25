@@ -21,8 +21,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Projectile_AcidSplash",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_ACIDSPLASH", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -35,8 +33,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_BladeWard",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_BLADEWARD", 1)
 AND
@@ -51,8 +47,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_BoomingBlade_ClassSpell",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_BOOMINGBLADE", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -65,8 +59,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_BurstingSinew",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_BURSTINGSINEW", 1)
 AND
@@ -81,8 +73,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_ChillTouch",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_CHILLTOUCH", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -95,8 +85,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_DancingLights",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_DANCINGLIGHTS", 1)
 AND
@@ -111,8 +99,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Projectile_FireBolt",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_FIREBOLT", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -125,8 +111,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Friends",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_FRIENDS", 1)
 AND
@@ -141,8 +125,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_FrightfulStart",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_FRIGHTFULSTART", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -155,8 +137,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_GreenFlameBlade",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_GREENFLAMEBLADE", 1)
 AND
@@ -171,8 +151,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_Light",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_LIGHT", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -185,8 +163,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_MageHand",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_MAGEHAND", 1)
 AND
@@ -201,8 +177,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_MindSliver",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_MINDSLIVER", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -215,8 +189,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_MinorIllusion",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_MINORILLUSION", 1)
 AND
@@ -231,8 +203,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Projectile_PoisonSpray",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_POISONSPRAY", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -245,8 +215,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_Prestidigitation_Light",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", 1)
 AND
@@ -261,8 +229,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Shout_Prestidigitation_Dark",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -275,8 +241,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_Prestidigitation_Clean",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", 1)
 AND
@@ -291,8 +255,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Projectile_RayOfFrost",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_RAYOFFROST", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -305,8 +267,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_ShockingGrasp",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_SHOCKINGGRASP", 1)
 AND
@@ -321,8 +281,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Shout_SwordBurst",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_SWORDBURST", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -335,8 +293,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_Thunderclap",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_THUNDERCLAP", 1)
 AND
@@ -351,8 +307,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_TollTheDead",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_TOLLTHEDEAD", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -365,8 +319,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_TrueStrike_Melee",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_TRUESTRIKE", 1)
 AND
@@ -381,8 +333,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Projectile_TrueStrike_Ranged",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_TRUESTRIKE", 1)
 AND
 ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
@@ -395,8 +345,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_VengefulBlade",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Wizard",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_VENGEFULBLADE", 1)
 AND

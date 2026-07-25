@@ -21,8 +21,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_BurstingSinew",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_BURSTINGSINEW", 1)
 AND
 ResolveTranslatedString("h64af36efg690cg437bg9309gc6f9d243ddc7", _Msg)
@@ -35,8 +33,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Guidance",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_GUIDANCE", 1)
 AND
@@ -51,8 +47,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_Light",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_LIGHT", 1)
 AND
 ResolveTranslatedString("h64af36efg690cg437bg9309gc6f9d243ddc7", _Msg)
@@ -65,8 +59,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Resistance",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_RESISTANCE", 1)
 AND
@@ -81,8 +73,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_SacredFlame",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_SACREDFLAME", 1)
 AND
 ResolveTranslatedString("h64af36efg690cg437bg9309gc6f9d243ddc7", _Msg)
@@ -95,8 +85,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_SpareTheDying",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_SPARETHEDYING", 1)
 AND
@@ -111,8 +99,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Shout_Thaumaturgy",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_THAUMATURGY", 1)
 AND
 ResolveTranslatedString("h64af36efg690cg437bg9309gc6f9d243ddc7", _Msg)
@@ -125,8 +111,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_TollTheDead",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_TOLLTHEDEAD", 1)
 AND
@@ -141,8 +125,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Shout_WordOfRadiance",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_WORDOFRADIANCE", 1)
 AND
 ResolveTranslatedString("h64af36efg690cg437bg9309gc6f9d243ddc7", _Msg)
@@ -155,8 +137,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_HolyWord",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_HOLYWORD", 1)
 AND

@@ -8,8 +8,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Shout_AbsorbElements_Dummy",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_ABSORBELEMENTS", 1)
 AND
 ResolveTranslatedString("h758b92a3gedfcg4ab3g8e8fg85ad854a1ce6", _Msg)
@@ -22,8 +20,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_AnimalFriendship",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_ANIMALFRIENDSHIP", 1)
 AND
@@ -38,8 +34,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_CharmPerson",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_CHARMPERSON", 1)
 AND
 ResolveTranslatedString("h758b92a3gedfcg4ab3g8e8fg85ad854a1ce6", _Msg)
@@ -52,8 +46,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_CreateWater",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_CREATEDESTROYWATER", 1)
 AND
@@ -68,8 +60,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_DestroyWater",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_CREATEDESTROYWATER", 1)
 AND
 ResolveTranslatedString("h758b92a3gedfcg4ab3g8e8fg85ad854a1ce6", _Msg)
@@ -82,8 +72,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_CureWounds",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_CUREWOUNDS", 1)
 AND
@@ -98,8 +86,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_Entangle",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_ENTANGLE", 1)
 AND
 ResolveTranslatedString("h758b92a3gedfcg4ab3g8e8fg85ad854a1ce6", _Msg)
@@ -112,8 +98,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_FaerieFire",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_FAERIEFIRE", 1)
 AND
@@ -128,8 +112,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_FogCloud",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_FOGCLOUD", 1)
 AND
 ResolveTranslatedString("h758b92a3gedfcg4ab3g8e8fg85ad854a1ce6", _Msg)
@@ -142,8 +124,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Goodberry",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_GOODBERRY", 1)
 AND
@@ -158,8 +138,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_HealingWord",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_HEALINGWORD", 1)
 AND
 ResolveTranslatedString("h758b92a3gedfcg4ab3g8e8fg85ad854a1ce6", _Msg)
@@ -172,8 +150,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Projectile_IceKnife",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_ICEKNIFE", 1)
 AND
@@ -188,8 +164,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_Jump",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_JUMP", 1)
 AND
 ResolveTranslatedString("h758b92a3gedfcg4ab3g8e8fg85ad854a1ce6", _Msg)
@@ -202,8 +176,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Longstrider",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_LONGSTRIDER", 1)
 AND
@@ -218,8 +190,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_ProtectionFromEvilAndGood",_, 
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_PROTECTIONFROMEVILANDGOOD", 1)
 AND
 ResolveTranslatedString("h758b92a3gedfcg4ab3g8e8fg85ad854a1ce6", _Msg)
@@ -232,8 +202,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_SpeakWithAnimals",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_SPEAKWITHANIMALS", 1)
 AND
@@ -248,8 +216,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_ThornArmor",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_THORNARMOR", 1)
 AND
 ResolveTranslatedString("h758b92a3gedfcg4ab3g8e8fg85ad854a1ce6", _Msg)
@@ -262,8 +228,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Zone_Thunderwave",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Druid",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_THUNDERWAVE", 1)
 AND

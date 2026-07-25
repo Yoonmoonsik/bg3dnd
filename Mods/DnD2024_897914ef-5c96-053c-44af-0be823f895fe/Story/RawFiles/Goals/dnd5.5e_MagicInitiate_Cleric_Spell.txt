@@ -8,8 +8,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_Bane",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_BANE", 1)
 AND
 ResolveTranslatedString("hd4f0c01cgfa4cg494eg93dagc7401dc42e35", _Msg)
@@ -22,8 +20,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Bless",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_BLESS", 1)
 AND
@@ -38,8 +34,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_Command_Halt",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_COMMAND", 1)
 AND
 ResolveTranslatedString("hd4f0c01cgfa4cg494eg93dagc7401dc42e35", _Msg)
@@ -52,8 +46,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Command_Approach",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_COMMAND", 1)
 AND
@@ -68,8 +60,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_Command_Drop",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_COMMAND", 1)
 AND
 ResolveTranslatedString("hd4f0c01cgfa4cg494eg93dagc7401dc42e35", _Msg)
@@ -82,8 +72,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Command_Flee",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_COMMAND", 1)
 AND
@@ -98,8 +86,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_Command_Grovel",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_COMMAND", 1)
 AND
 ResolveTranslatedString("hd4f0c01cgfa4cg494eg93dagc7401dc42e35", _Msg)
@@ -112,8 +98,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_CreateWater",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_CREATEDESTROYWATER", 1)
 AND
@@ -128,8 +112,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_DestroyWater",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_CREATEDESTROYWATER", 1)
 AND
 ResolveTranslatedString("hd4f0c01cgfa4cg494eg93dagc7401dc42e35", _Msg)
@@ -142,8 +124,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_CureWounds",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_CUREWOUNDS", 1)
 AND
@@ -158,8 +138,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Projectile_GuidingBolt",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_GUIDINGBOLT", 1)
 AND
 ResolveTranslatedString("hd4f0c01cgfa4cg494eg93dagc7401dc42e35", _Msg)
@@ -172,8 +150,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_HealingWord",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_HEALINGWORD", 1)
 AND
@@ -188,8 +164,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_InflictWounds",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_INFLICTWOUNDS", 1)
 AND
 ResolveTranslatedString("hd4f0c01cgfa4cg494eg93dagc7401dc42e35", _Msg)
@@ -202,8 +176,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_ProtectionFromEvilAndGood",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_PROTECTIONFROMEVILANDGOOD", 1)
 AND
@@ -218,8 +190,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_Sanctuary",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_SANCTUARY", 1)
 AND
 ResolveTranslatedString("hd4f0c01cgfa4cg494eg93dagc7401dc42e35", _Msg)
@@ -233,8 +203,6 @@ StartedPreviewingSpell((CHARACTER)_Player,"Target_ShieldOfFaith",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
 AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
-AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_SHIELDOFFAITH", 1)
 AND
 ResolveTranslatedString("hd4f0c01cgfa4cg494eg93dagc7401dc42e35", _Msg)
@@ -247,8 +215,6 @@ IF
 StartedPreviewingSpell((CHARACTER)_Player,"Projectile_Wardaway",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
-AND
-HasPassive(_Player,"OriginFeat_MagicInitiate_Cleric",1)
 AND
 NOT HasActiveStatus(_Player, "MAGICINITIATE_WARDAWAY", 1)
 AND
