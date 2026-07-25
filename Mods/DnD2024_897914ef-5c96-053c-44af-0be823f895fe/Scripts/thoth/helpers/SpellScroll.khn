@@ -219,6 +219,7 @@ local SPELL_CLASS_MAP = {
     Shout_DispelEvilAndGood_spellscroll = '5 Cleric',
     Target_FlameStrike_spellscroll = '5 Cleric',
     Target_GreaterRestoration_spellscroll = '5 Bard Cleric Druid',
+    Target_HolyWeapon_spellscroll = '5 Cleric',
     Target_InsectPlague_spellscroll = '5 Cleric Druid Sorcerer',
     Target_MassCureWounds_spellscroll = '5 Bard Cleric Druid',
     Target_SummonCelestial_spellscroll = '5 Cleric',
@@ -605,6 +606,7 @@ function IsScrollSpell()
 	| SpellId('Shout_DispelEvilAndGood_spellscroll')
 	| SpellId('Target_FlameStrike_spellscroll')
 	| SpellId('Target_GreaterRestoration_spellscroll')
+	| SpellId('Target_HolyWeapon_spellscroll')
 	| SpellId('Target_InsectPlague_spellscroll')
 	| SpellId('Target_MassCureWounds_spellscroll')
 	| SpellId('Teleportation_ArcaneGate_spellscroll')

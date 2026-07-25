@@ -4699,6 +4699,52 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="615fe87c-7fba-41bf-b225-a76f15297ed1" />
+        <field name="Name" type="NameTableFieldDefinition" value="__EVOCATION__SLVEL__5__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60d25c40-6e92-454f-8dc5-432338068157" />
+        <field name="Name" type="NameTableFieldDefinition" value="HolyWeapon" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MainHand,HOLY_WEAPON,100,-1);ApplyStatus(HOLY_WEAPON_BURST,100,-1);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally() and HasWeaponInMainHand();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_HolyWeapon" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfd297654g852eg6991g0f63g6d204e54a34b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he39926bdgdb3ag2cd8gd6c1g17c647980ce1" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HOLY_WEAPON,100,-1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Buff_Gen_L1to3_01" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Buff_Gen_L1to3_01_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Buff_MagicWeapon_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_MagicWeapon_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_EnchantWeapon" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;a4da186a-0872-461e-ae5e-93d5b32b9bef,,;527ca082-4ffa-4edb-a23f-5e7fa798a6ce,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;499b7945-9eff-40a2-9911-73b8963108e4,,;1d3a29f0-9409-462e-81cd-3f24944f63ca,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="33302a46-4a12-41dd-8845-6b7314d50022" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bcd66fb0-b0bc-41d0-abba-ad443d63dd72" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="695b33bb-b53a-4fcb-86f0-2a5fe91fdfcf" />
+        <field name="Name" type="NameTableFieldDefinition" value="HolyWeapon_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60d25c40-6e92-454f-8dc5-432338068157" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_HolyWeapon" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0e67b620-3776-4a8d-8c96-086539214548" />
         <field name="Name" type="NameTableFieldDefinition" value="__ILLUSION__" />
       </fields>
@@ -13236,6 +13282,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="db0f3144-7a49-4cbc-aae2-26f626b04ae4" />
         <field name="Name" type="NameTableFieldDefinition" value="FlameStrike_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ff736f9d-3563-4d2f-a343-16a3cf33230c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="92f7b691-03b0-4317-859c-9ecd793fe770" />
+        <field name="Name" type="NameTableFieldDefinition" value="HolyWeapon_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60d25c40-6e92-454f-8dc5-432338068157" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

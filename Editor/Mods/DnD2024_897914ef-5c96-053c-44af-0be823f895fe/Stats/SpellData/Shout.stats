@@ -1263,6 +1263,45 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="190cfe8d-7f51-4fdf-82ff-e54eb68d0f82" />
+        <field name="Name" type="NameTableFieldDefinition" value="__EVOCATION SLEVEL 5__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1ac9d70-0ec9-431a-93d1-8534ecaf5049" />
+        <field name="Name" type="NameTableFieldDefinition" value="HolyWeapon" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,HOLY_WEAPON_BURST);ApplyStatus(SELF,HOLY_WEAPON_OFF);" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:AOE:IF(not Self()):DealDamage(4d8,Radiant,Magical);TARGET:AOE:IF(not Self()):ApplyStatus(BLIND,100,10);RemoveStatus(SELF,HOLY_WEAPON_BURST);ApplyStatus(SELF,HOLY_WEAPON_OFF);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="TARGET:AOE:IF(not Self()):DealDamage(4d8/2,Radiant,Magical);RemoveStatus(SELF,HOLY_WEAPON_BURST);ApplyStatus(SELF,HOLY_WEAPON_OFF);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_HolyWeapon" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h44a07085gd021gf937gb88ag37126b6f03c7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0c4b99c4g1ad3gb7f0g11fbgb55e06b4ac67" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Radiant,Magical);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLIND,100,10);" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_RadianceOfTheDawn" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_RadianceOfTheDawn" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="2f0d97b9-4a1f-4bf3-a3c2-32efb563d601,,;,,;70ddfd63-fc3f-45f4-b067-75389b85d540,,;90face3a-6607-4b3d-87e6-c6090b069160,,;57e449b3-b712-4508-afcf-f2e91dc473f6,,;,,;84f3727f-aabc-4e34-bf31-c6cd0160bec9,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="33d4ba61-8c76-4138-ac49-c33d279fb9c9" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="11b177e1-ccd8-495d-ad9a-5547a138f540" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="78ab57f2-edce-4697-8be4-7bf7c2e76f92" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="WeaponSet" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="AoEConditions" type="StringTableFieldDefinition" value="Enemy() and Character();" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="85f2a845-8650-4c71-bdbc-cbe155057a86" />
         <field name="Name" type="NameTableFieldDefinition" value="__ILLUSION__" />
       </fields>
