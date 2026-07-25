@@ -5968,6 +5968,7 @@ type "PassiveData"
 using "Alert"
 data "DisplayName" "h641b1b35g1b60g780egb004g145a37f818b3;1"
 data "PriorityOrder" "600"
+data "Boosts" "Initiative(2);StatusImmunity(SURPRISED);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);"
 
 new entry "Healer"
 type "PassiveData"

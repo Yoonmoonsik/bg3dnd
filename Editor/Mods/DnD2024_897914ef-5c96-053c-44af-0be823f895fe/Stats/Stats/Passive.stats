@@ -8250,6 +8250,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="73c13486-a576-4b09-a12f-fc71be054fe1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h641b1b35g1b60g780egb004g145a37f818b3" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="600" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);StatusImmunity(SURPRISED);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
