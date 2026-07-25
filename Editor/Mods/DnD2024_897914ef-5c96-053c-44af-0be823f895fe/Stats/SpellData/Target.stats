@@ -1539,6 +1539,38 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b4a39ed3-75b8-49e9-b066-2419574bfcb3" />
+        <field name="Name" type="NameTableFieldDefinition" value="HungerOfHadar" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cfdb10f2-ed14-40b9-af77-f7dbaa6997a1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a0ed415-d888-46df-9cff-0c61e6c2e10c" />
+        <field name="Name" type="NameTableFieldDefinition" value="HungerOfHadar_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4ef105da-e968-4ba6-bf09-5d3ad0a90e27" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eb96f8b0-4cd7-4859-bf8d-55bd73412a41" />
+        <field name="Name" type="NameTableFieldDefinition" value="HungerOfHadar_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aaef6d16-a27c-4c11-b754-77cbf485dbde" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a9ac6757-455c-42b3-9d6c-499dd704de45" />
+        <field name="Name" type="NameTableFieldDefinition" value="HungerOfHadar_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0732ae4e-2d2f-4082-95f3-8d57f31aa361" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e945e15d-b412-414a-a7ed-2feeaecc0edd" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonFey" />
         <field name="Level" type="IntegerTableFieldDefinition" value="3" />

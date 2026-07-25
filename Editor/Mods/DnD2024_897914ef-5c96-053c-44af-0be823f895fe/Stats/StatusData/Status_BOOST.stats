@@ -1603,6 +1603,69 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8f48a04a-55fd-464d-89c4-8123c8e18f63" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="37a29975-269c-4860-835f-6dc3c86b2f02" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character()):ApplyStatus(VOID_START,100,-1);TARGET:IF(Character()):ApplyStatus(VOID_END,100,-1);TARGET:IF(Character()):ApplyStatus(DIFFICULT_TERRAIN,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ea7dc715-6dbd-42ca-af50-8242aad50029" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_AURA_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8f48a04a-55fd-464d-89c4-8123c8e18f63" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character()):ApplyStatus(VOID_START_PSYCHIC,100,-1);TARGET:IF(Character()):ApplyStatus(VOID_END_PSYCHIC,100,-1);TARGET:IF(Character()):ApplyStatus(DIFFICULT_TERRAIN,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="645baa93-b1e4-4da6-9f1c-366496a9e6df" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c3908dda-1cd0-4a4b-9bb2-baa0b17018a6" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Cold,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2592ab5e-ccf7-48e9-ac72-6f065ba0df1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_START_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="645baa93-b1e4-4da6-9f1c-366496a9e6df" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Psychic,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9858569c-dc53-45cb-bce2-65782fcb319f" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="333adb98-b272-423c-8a99-c0491db0edfe" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13ba417a-11c3-4138-865f-6dbc06ca178a" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_END_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9858569c-dc53-45cb-bce2-65782fcb319f" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(VOID_END_DAMAGE_PSYCHIC,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5edd590d-f0e6-4496-bf83-19076e70e0e9" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_END_DAMAGE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c431c715-bac7-43b0-aef1-609024892d39" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Acid,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d05e0a68-f80c-4750-a0bf-e22d76e25402" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_END_DAMAGE_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5edd590d-f0e6-4496-bf83-19076e70e0e9" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Psychic,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69695478-c64f-45b0-8ff6-6bc468ac1f4b" />
         <field name="Name" type="NameTableFieldDefinition" value="CACOPHONIC_SHIELD_DAMAGE_RECEIVED" />
         <field name="StackId" type="StringTableFieldDefinition" value="CACOPHONIC_SHIELD_DAMAGE_RECEIVED" />
