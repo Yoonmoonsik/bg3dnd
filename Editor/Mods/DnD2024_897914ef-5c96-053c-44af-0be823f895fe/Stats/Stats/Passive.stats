@@ -5775,6 +5775,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="LFO_MI_Cleric" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fa591415-e2a3-490d-9385-91672548c3be" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf4a140acg44b0g71b4gdc1bg5649f5dce909" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_CLERIC_CANTRIP_END',context.Source)):ApplyStatus(LFO_MAGICINITIATE_CLERIC_CANTRIP_START,100,-1);IF(not HasStatus('LFO_MAGICINITIATE_CLERIC_SPELL_END',context.Source)):ApplyStatus(LFO_MAGICINITIATE_CLERIC_SPELL_START,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5783,6 +5784,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="LFO_MI_Druid" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="05ad5b2e-b647-4752-a384-1907ddb342e3" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e432242gf706g3505g9353g62a0e8892839" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_DRUID_CANTRIP_END',context.Source)):ApplyStatus(LFO_MAGICINITIATE_DRUID_CANTRIP_START,100,-1);IF(not HasStatus('LFO_MAGICINITIATE_DRUID_SPELL_END',context.Source)):ApplyStatus(LFO_MAGICINITIATE_DRUID_SPELL_START,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5791,6 +5793,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="LFO_MI_Wizard" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6efaa754-5e4b-4534-b1a2-222ffab3103b" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he0f08303ge368gad59g9d19gf23e26ea8152" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_WIZARD_CANTRIP_END',context.Source)):ApplyStatus(LFO_MAGICINITIATE_WIZARD_CANTRIP_START,100,-1);IF(not HasStatus('LFO_MAGICINITIATE_WIZARD_SPELL_END',context.Source)):ApplyStatus(LFO_MAGICINITIATE_WIZARD_SPELL_START,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5799,6 +5802,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="LFO_Skilled" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e6363e17-8174-447d-aeae-2fe929ff2a93" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha0e6c70agecdbg6aa8gd2c2g776b84213b9c" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LFO_SKILLED_START,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
