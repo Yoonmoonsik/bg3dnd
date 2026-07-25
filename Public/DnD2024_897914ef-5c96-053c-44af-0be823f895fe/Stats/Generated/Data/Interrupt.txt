@@ -86,6 +86,30 @@ data "Roll" "not SavingThrow(Ability.Constitution,15)"
 data "Success" "Counterspell();"
 data "InterruptDefaultValue" "Enabled"
 
+new entry "Interrupt_HellishRebuke"
+type "InterruptData"
+using "Interrupt_HellishRebuke"
+
+new entry "Interrupt_HellishRebuke_2"
+type "InterruptData"
+using "Interrupt_HellishRebuke_2"
+
+new entry "Interrupt_HellishRebuke_3"
+type "InterruptData"
+using "Interrupt_HellishRebuke_3"
+
+new entry "Interrupt_HellishRebuke_4"
+type "InterruptData"
+using "Interrupt_HellishRebuke_4"
+
+new entry "Interrupt_HellishRebuke_5"
+type "InterruptData"
+using "Interrupt_HellishRebuke_5"
+
+new entry "Interrupt_HellishRebuke_6"
+type "InterruptData"
+using "Interrupt_HellishRebuke_6"
+
 new entry "__BARBARIAN__"
 type "InterruptData"
 

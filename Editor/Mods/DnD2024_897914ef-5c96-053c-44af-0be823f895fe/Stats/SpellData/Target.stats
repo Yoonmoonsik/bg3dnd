@@ -3552,6 +3552,60 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dcdccaa0-6814-46f4-aa64-1f5dbdf61ad2" />
+        <field name="Name" type="NameTableFieldDefinition" value="HellishRebuke" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d2875576-5071-429a-87d6-9166f84bd55e" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d10,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d10,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d10/2,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d10/2,Psychic,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc2a8e2f-0da8-4788-b9de-4bb393184106" />
+        <field name="Name" type="NameTableFieldDefinition" value="HellishRebuke_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e3cc2f9a-8437-429d-befb-5541a8843af9" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(3d10,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(3d10,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(3d10/2,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(3d10/2,Psychic,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ead9ee7-ee45-40ac-9fef-a73ed36cae96" />
+        <field name="Name" type="NameTableFieldDefinition" value="HellishRebuke_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0f1a6adf-fe9b-40e8-a808-ce5513a8d70c" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d10,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d10,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d10/2,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d10/2,Psychic,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab619708-b3cb-4d70-b48c-ca4cee96ab88" />
+        <field name="Name" type="NameTableFieldDefinition" value="HellishRebuke_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="40314860-e66c-4023-b795-584b6de3b19a" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(5d10,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(5d10,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(5d10/2,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(5d10/2,Psychic,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="64f44add-7cb2-46c2-9e4b-898d9561c80b" />
+        <field name="Name" type="NameTableFieldDefinition" value="HellishRebuke_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6bd53ddf-8076-4c3c-980f-5875effa4b78" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(6d10,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(6d10,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(6d10/2,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(6d10/2,Psychic,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2cf15004-4081-4e20-b94c-963e2eeeb0f9" />
+        <field name="Name" type="NameTableFieldDefinition" value="HellishRebuke_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0c1aeda5-64b9-4c02-a507-0c2de514ae51" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(7d10,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(7d10,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(7d10/2,Fire,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(7d10/2,Psychic,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="934f952f-2a88-44a4-bd55-b0e0454c7f8a" />
         <field name="Name" type="NameTableFieldDefinition" value="UmbralTendril" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
