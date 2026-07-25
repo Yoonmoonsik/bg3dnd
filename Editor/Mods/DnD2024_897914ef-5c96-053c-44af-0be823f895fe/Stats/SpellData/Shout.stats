@@ -1717,7 +1717,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="442372a8-9877-4cea-a4d1-1f4225db58ac" />
         <field name="Name" type="NameTableFieldDefinition" value="Enervation" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d8,Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d8,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="HasStatus('ENERVATION',context.Target,context.Source) and not Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enervation" />
@@ -1750,7 +1750,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ccc8a285-71c4-404b-a370-438f2b5908e4" />
         <field name="Name" type="NameTableFieldDefinition" value="Enervation_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="442372a8-9877-4cea-a4d1-1f4225db58ac" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(5d8,Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(5d8,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d8" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic)" />
         <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Target_Enervation_6" />
