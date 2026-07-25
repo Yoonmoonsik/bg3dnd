@@ -483,6 +483,36 @@ data "Boosts" "ProficiencyBonus(Skill,Medicine)"
 new entry "__ABJURATION__"
 type "PassiveData"
 
+new entry "ArmorOfAgathys_Psychic"
+type "PassiveData"
+using "ArmorOfAgathys"
+data "StatsFunctors" "ApplyStatus(PASSIVE_ARMOR_OF_AGATHYS,100,0);ApplyStatus(SELF,PASSIVE_ARMOR_OF_AGATHYS_ATTACKER,100,0);DealDamage(SWAP,5,Psychic,Magical)"
+
+new entry "ArmorOfAgathys_Psychic_2"
+type "PassiveData"
+using "ArmorOfAgathys_2"
+data "StatsFunctors" "ApplyStatus(PASSIVE_ARMOR_OF_AGATHYS,100,0);ApplyStatus(SELF,PASSIVE_ARMOR_OF_AGATHYS_ATTACKER,100,0);DealDamage(SWAP,10, Psychic,Magical)"
+
+new entry "ArmorOfAgathys_Psychic_3"
+type "PassiveData"
+using "ArmorOfAgathys_3"
+data "StatsFunctors" "ApplyStatus(PASSIVE_ARMOR_OF_AGATHYS,100,0);ApplyStatus(SELF,PASSIVE_ARMOR_OF_AGATHYS_ATTACKER,100,0);DealDamage(SWAP,15, Psychic,Magical)"
+
+new entry "ArmorOfAgathys_Psychic_4"
+type "PassiveData"
+using "ArmorOfAgathys_4"
+data "StatsFunctors" "ApplyStatus(PASSIVE_ARMOR_OF_AGATHYS,100,0);ApplyStatus(SELF,PASSIVE_ARMOR_OF_AGATHYS_ATTACKER,100,0);DealDamage(SWAP,20, Psychic,Magical)"
+
+new entry "ArmorOfAgathys_Psychic_5"
+type "PassiveData"
+using "ArmorOfAgathys_5"
+data "StatsFunctors" "ApplyStatus(PASSIVE_ARMOR_OF_AGATHYS,100,0);ApplyStatus(SELF,PASSIVE_ARMOR_OF_AGATHYS_ATTACKER,100,0);DealDamage(SWAP,25, Psychic,Magical)"
+
+new entry "ArmorOfAgathys_Psychic_6"
+type "PassiveData"
+using "ArmorOfAgathys_6"
+data "StatsFunctors" "ApplyStatus(PASSIVE_ARMOR_OF_AGATHYS,100,0);ApplyStatus(SELF,PASSIVE_ARMOR_OF_AGATHYS_ATTACKER,100,0);DealDamage(SWAP,30, Psychic,Magical)"
+
 new entry "Absorb_Elements_Spell_Technical_Passive"
 type "PassiveData"
 using "Absorb_Elements_Technical_Passive"
