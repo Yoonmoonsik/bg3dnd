@@ -222,7 +222,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArmorOfAgathys" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fcc25764-a200-4008-bf2b-4d616e932807" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARMOR_OF_AGATHYS, 100, -1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS, 100, -1);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_PSYCHIC, 100, -1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -231,7 +231,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArmorOfAgathys_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4ff2e30e-5b32-42fd-8df3-0ba0b87603b7" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARMOR_OF_AGATHYS_2, 100, -1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_2, 100, -1);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_PSYCHIC_2, 100, -1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -240,7 +240,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArmorOfAgathys_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e4877824-965f-4f2a-99c9-60adcded6751" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARMOR_OF_AGATHYS_3, 100, -1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_3, 100, -1);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_PSYCHIC_3, 100, -1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -249,7 +249,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArmorOfAgathys_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="34357e56-546d-40a6-ae30-6d4588faba41" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARMOR_OF_AGATHYS_4, 100, -1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_4, 100, -1);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_PSYCHIC_4, 100, -1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -258,7 +258,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArmorOfAgathys_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4a859ea8-e1a4-4a47-bdde-6be9c942810c" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARMOR_OF_AGATHYS_5,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_5,100,-1);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_PSYCHIC_5,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -267,7 +267,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArmorOfAgathys_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="478e4451-a96f-49c1-97e9-a9550b08adbd" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARMOR_OF_AGATHYS_6,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_6,100,-1);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(ARMOR_OF_AGATHYS_PSYCHIC_6,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
