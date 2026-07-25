@@ -1357,6 +1357,101 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6aa728fe-a1d0-41f8-8a80-824da8843fca" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ca782226-b4d6-4b35-85ba-dca18de28ce4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d4,Psychic)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(4d4,Psychic)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d4,Psychic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b2c2fc4c-ada8-4da1-8072-3ca3b5845bb0" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="646c3b4e-4ff8-4b2f-8102-0f0c0518e158" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d4,Psychic)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS_PSYCHIC,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d84de014-2442-4404-afc2-7018138613f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_3_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4d963c9d-af21-4fd2-b3c7-44cb35e3dc01" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d4,Psychic)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(6d4,Psychic)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d4,Psychic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="92b91701-b50f-4eb1-a784-13314db4fb5d" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA_3_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fd136f9-fae1-4d0e-bce2-14d0abc78c72" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d4,Psychic)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS_3_PSYCHIC,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e6fe611-dab4-49a8-8e58-7dbd19605e6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_4_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ba1434cf-eaee-405d-93db-3448527e2867" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(8d4,Psychic)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(8d4,Psychic)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d4,Psychic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="99331e2f-cfc0-446e-b17f-67bca0839856" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA_4_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a605d01c-32b8-4f46-94fe-d095e5003d68" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(8d4,Psychic)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS_4_PSYCHIC,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40b68137-41b6-4da5-a95f-d68b93747b02" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_5_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8bc9c348-76f2-4e87-ac4e-568e5f0555b7" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(10d4,Psychic)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(10d4,Psychic)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(10d4,Psychic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9702eaaf-cd5e-48c8-8d54-c527102f91b6" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA_5_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="349e3713-6e60-4032-9396-0e5e814e9796" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(10d4,Psychic)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS_5_PSYCHIC,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ace50c6-7bcb-49ea-9244-ba8dd042f8ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_6_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b30a3a23-814a-4bab-8644-2abe91a5809e" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(12d4,Psychic)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(12d4,Psychic)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(12d4,Psychic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7dfea6b3-f3f2-4365-bccb-a80eef2aeac7" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA_6_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c31a5dbb-c7ed-4c9c-a252-179ed32af921" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(12d4,Psychic)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS_6_PSYCHIC,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="646c3b4e-4ff8-4b2f-8102-0f0c0518e158" />
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e3a5cc31-1ea3-4b15-a397-19c8772b8e8b" />
