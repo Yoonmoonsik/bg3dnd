@@ -2437,6 +2437,32 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5a3fbb3-d0a3-4485-8497-af6dca97ee08" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUMMON_ATTACK_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1dd25b2fg2ccbg77b0gd934gec74fca412d4" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SUMMON_ATTACK_BONUS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack,Owner.SpellCastingAbilityModifier);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a1297303-4495-48a5-bce9-be3aa3c66876" />
+        <field name="Name" type="NameTableFieldDefinition" value="BOLSTERING_TOUCH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb2160876g4fc0g0ea9g2508g80fd952f29f7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h55ff7bfdg1e2bg7f91gd91bge020cba01b4d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_Buff_MO" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BOLSTERING_TOUCH" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d10);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8f56644d-8630-4d41-b217-07a8d84f33fe" />
         <field name="Name" type="NameTableFieldDefinition" value="CRUSADERS_MANTLE_AURA" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="be521c42-11c8-4e5c-a83b-ab3940c64371" />

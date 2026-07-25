@@ -232,13 +232,13 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="5.5 Cleric SLevel 5 List"/>
-                    <attribute id="Spells" type="LSString" value="Shout_CircleOfPower;Target_Contagion;Target_CureWounds_Mass;Shout_DispelEvilAndGood;Target_FlameStrike;Target_GreaterRestoration;Target_InsectPlague;Target_PlanarBinding"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CircleOfPower;Target_Contagion;Target_CureWounds_Mass;Shout_DispelEvilAndGood;Target_FlameStrike;Target_GreaterRestoration;Target_InsectPlague;Target_PlanarBinding;Target_SummonCelestial"/>
                     <attribute id="UUID" type="guid" value="b73aeea5-1ff9-4cac-b61d-b5aa6dfe31c2"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="MergedInto" type="guid" value="858d4322-9e9f-4aa4-aada-9c68835dc6fe"/>
                     <attribute id="Name" type="FixedString" value="5.5 Cleric SLevel 5 List to Bard"/>
-                    <attribute id="Spells" type="LSString" value="Shout_CircleOfPower;Target_Contagion;Target_CureWounds_Mass;Shout_DispelEvilAndGood;Target_FlameStrike;Target_GreaterRestoration;Target_InsectPlague;Target_PlanarBinding"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CircleOfPower;Target_Contagion;Target_CureWounds_Mass;Shout_DispelEvilAndGood;Target_FlameStrike;Target_GreaterRestoration;Target_InsectPlague;Target_PlanarBinding;Target_SummonCelestial"/>
                     <attribute id="UUID" type="guid" value="72106c32-784a-43c5-ba2d-10c2369eb5c8"/>
                 </node>
                 <node id="SpellList">
@@ -1491,7 +1491,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Warlock Celestial SLevel 5"/>
-                    <attribute id="Spells" type="LSString" value="Target_GreaterRestoration"/>
+                    <attribute id="Spells" type="LSString" value="Target_GreaterRestoration;Target_SummonCelestial"/>
                     <attribute id="UUID" type="guid" value="62bfc46e-2f6f-44ba-88a2-ad71b881dd40"/>
                 </node>
                 <node id="SpellList">

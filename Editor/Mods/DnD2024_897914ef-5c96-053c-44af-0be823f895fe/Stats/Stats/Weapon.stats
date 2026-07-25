@@ -2678,6 +2678,16 @@
         <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Melee;Dippable;Magical" enumeration_type_name="WeaponFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c34766b8-c009-4c84-a0a2-4f7a1307a996" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Mace_CelestialSpirit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="290e7dde-377d-4800-a940-13793c89f656" />
+        <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="1d10" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="0.1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="954ab5e2-640a-4c1a-b21d-668dce9de6fc" />
@@ -5169,7 +5179,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4fbb636c-eb3c-4fca-bc6d-e12571e6edc3" />
         <field name="Name" type="NameTableFieldDefinition" value="WPN_FeyBlade_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ee3820b6-0293-4528-9bcc-bec0ba70c25a" />
-        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5177,7 +5186,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="98069c0a-bf86-4b97-a8c7-1962b9aef6c9" />
         <field name="Name" type="NameTableFieldDefinition" value="WPN_FeyBlade_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4fbb636c-eb3c-4fca-bc6d-e12571e6edc3" />
-        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5185,7 +5193,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="16ab18d6-740f-420d-b90c-0ef041214df6" />
         <field name="Name" type="NameTableFieldDefinition" value="WPN_FeyBlade_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4fbb636c-eb3c-4fca-bc6d-e12571e6edc3" />
-        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(3);WeaponProperty(Magical);" />
       </fields>
     </stat_object>
   </stat_objects>

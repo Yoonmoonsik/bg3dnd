@@ -2021,6 +2021,13 @@ using "WPN_Mace"
 data "RootTemplate" "ce1c45a5-5606-4604-9afa-beca19fd03e1"
 data "ValueScale" "0.1"
 
+new entry "WPN_Mace_CelestialSpirit"
+type "Weapon"
+using "WPN_Mace"
+data "Damage Type" "Radiant"
+data "Damage" "1d10"
+data "ValueScale" "0.1"
+
 new entry "__MAULS__"
 type "Weapon"
 
@@ -3859,15 +3866,12 @@ data "Weapon Properties" "Light;Melee;Dippable;Finesse"
 new entry "WPN_FeyBlade_1"
 type "Weapon"
 using "WPN_FeyBlade"
-data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
 
 new entry "WPN_FeyBlade_2"
 type "Weapon"
 using "WPN_FeyBlade_1"
-data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical);"
 
 new entry "WPN_FeyBlade_3"
 type "Weapon"
 using "WPN_FeyBlade_1"
-data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical);"
 

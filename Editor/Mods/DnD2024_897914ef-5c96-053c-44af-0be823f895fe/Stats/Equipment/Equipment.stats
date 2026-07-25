@@ -175,5 +175,14 @@
         <field name="2" type="StatReferenceTableFieldDefinition" value="MAG_Voltedge" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="87702289-074d-453a-932f-05d38523d8e5" />
+        <field name="Name" type="NameTableFieldDefinition" value="EQP_CelestialSpirit" />
+        <field name="InitialWeaponSet" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="WeaponSet" version="1" />
+        <field name="1" type="StatReferenceTableFieldDefinition" value="WPN_Mace_CelestialSpirit" />
+        <field name="2" type="StatReferenceTableFieldDefinition" value="ARM_Shield" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
