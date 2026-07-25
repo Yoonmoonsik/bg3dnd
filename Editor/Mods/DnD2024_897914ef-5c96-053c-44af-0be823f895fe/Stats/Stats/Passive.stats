@@ -5581,6 +5581,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="07fc4aac-6144-4b97-8df1-639299baae24" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f5148812-0395-4727-80a2-a72f46ec9956" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasHexStatus() and IsAttack() and not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DamageBonus(1d6, Necrotic);IF(HasHexStatus() and IsAttack() and HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DamageBonus(1d6, Psychic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d1949884-78ad-4017-b8c3-a49cefb933ad" />
         <field name="Name" type="NameTableFieldDefinition" value="PactOfTheBlade_Hex" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ecde94b6-438c-4bae-b871-e1d47af3c98d" />

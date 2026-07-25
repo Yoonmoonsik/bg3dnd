@@ -4013,6 +4013,11 @@ data "Boosts" "UnlockInterrupt(Interrupt_SeekingSpell);"
 new entry "__WARLOCK__"
 type "PassiveData"
 
+new entry "Hex"
+type "PassiveData"
+using "Hex"
+data "Boosts" "IF(HasHexStatus() and IsAttack() and not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DamageBonus(1d6, Necrotic);IF(HasHexStatus() and IsAttack() and HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DamageBonus(1d6, Psychic);"
+
 new entry "PactOfTheBlade_Hex"
 type "PassiveData"
 using "PactOfTheBlade_Hex"
