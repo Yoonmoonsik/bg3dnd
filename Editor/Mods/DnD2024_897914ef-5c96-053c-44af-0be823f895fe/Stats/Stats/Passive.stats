@@ -6029,6 +6029,28 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbfafa7a4g3ea7g96f1gcfebg2da208843ab2" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11403" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55436ba6-2e69-414e-a230-30d12f3aeb09" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreatOldOne_3_PsychicSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6dd62a94g2a65ge5adg05e3g4b793d8bd47a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h79149a3eg42f1g8dd3g1119g9fb383489e99" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11403" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;ToggledDefaultOn;ToggledDefaultAddToHotbar;IsToggled" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5919e07-5478-4e36-a505-efcbcfa2edea" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreatOldOne_3_PsychicSpells_Subtle" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpellSchool(SpellSchool.Enchantment) or IsSpellSchool(SpellSchool.Illusion),ModifySpellFlags(Verbal,0),ModifySpellFlags(Stealth,1));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -5584,7 +5584,8 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="GreatOldOne"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ClarifiedMortality"/>
+                    <attribute id="PassivesAdded" type="LSString" value="GreatOldOne_3_PsychicSpells;GreatOldOne_3_PsychicSpells_Subtle"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="ClarifiedMortality"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(fe101a94-8619-49b2-859d-a68c2c291054)"/>
                     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
@@ -5593,6 +5594,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="ClarifiedMortality"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
                     <attribute id="UUID" type="guid" value="35f4f40a-528d-4478-9ca0-3c26737913ea"/>
@@ -8227,6 +8229,22 @@
                     <attribute id="UUID" type="guid" value="bd012f5b-0a0b-424e-ab7c-186dbd82ab30"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Duergar"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0c23701c-a79b-483d-b283-9f234211d979)"/>
+                    <attribute id="TableUUID" type="guid" value="0f8458cb-9edd-401d-8066-86ba8e1529cf"/>
+                    <attribute id="UUID" type="guid" value="02828bce-0bee-4010-a614-f4e46d0aba12"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Duergar"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(3928cc43-fd2d-46e3-90f5-9171e3aad0f2)"/>
+                    <attribute id="TableUUID" type="guid" value="0f8458cb-9edd-401d-8066-86ba8e1529cf"/>
+                    <attribute id="UUID" type="guid" value="77f416e5-406b-40ee-a2ff-dea281c32c8f"/>
+                </node>
+                <node id="Progression">
                     <attribute id="AllowImprovement" type="bool" value="false"/>
                     <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
@@ -8763,22 +8781,6 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="7e76da16-650c-4a6e-85b0-f9e23a7f5a60"/>
                     <attribute id="UUID" type="guid" value="13b286a5-fb07-4944-97e9-58be14a32678"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="5"/>
-                    <attribute id="Name" type="LSString" value="Duergar"/>
-                    <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(3928cc43-fd2d-46e3-90f5-9171e3aad0f2)"/>
-                    <attribute id="TableUUID" type="guid" value="0f8458cb-9edd-401d-8066-86ba8e1529cf"/>
-                    <attribute id="UUID" type="guid" value="77f416e5-406b-40ee-a2ff-dea281c32c8f"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="Duergar"/>
-                    <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(0c23701c-a79b-483d-b283-9f234211d979)"/>
-                    <attribute id="TableUUID" type="guid" value="0f8458cb-9edd-401d-8066-86ba8e1529cf"/>
-                    <attribute id="UUID" type="guid" value="02828bce-0bee-4010-a614-f4e46d0aba12"/>
                 </node>
             </children>
         </node>
