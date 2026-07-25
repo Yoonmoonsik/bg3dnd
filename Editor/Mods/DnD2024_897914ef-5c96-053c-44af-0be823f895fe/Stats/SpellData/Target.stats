@@ -5471,6 +5471,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c7ed4d9d-b295-410c-9c1e-ed32966532b5" />
         <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Free" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="082d9227-a6e4-40fa-8eb5-f45586063c3e" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(3d6,Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(3d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

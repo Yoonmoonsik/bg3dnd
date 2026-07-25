@@ -1137,6 +1137,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5576e387-3937-43e0-8f00-973525cfc91b" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('WITCH_BOLT_FIRST_TURN')" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Lightning,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Psychic,Magical);SetStatusDuration(SELF,WITCH_BOLT_OWNER,2);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
