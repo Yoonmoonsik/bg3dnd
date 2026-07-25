@@ -2114,6 +2114,60 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c4e5a895-1dac-439c-a9e7-00732c922f61" />
+        <field name="Name" type="NameTableFieldDefinition" value="VENGEFUL_BLADE_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec4a88bd-fb78-4a31-b4da-03de8dabe378" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BoomingBlade_Walk),Psychic)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="VengefulBlade_Passive_Psychic;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e756a9cb-6c9f-4d7f-9aaa-d9203b02b69d" />
+        <field name="Name" type="NameTableFieldDefinition" value="VENGEFUL_BLADE_5_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="683a1292-b527-4ec1-a5e9-1c0bb33855e2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8, Psychic)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="VengefulBlade_5_Passive_Psychic;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b6d70d2-54fb-4427-a578-1b40cf759c67" />
+        <field name="Name" type="NameTableFieldDefinition" value="VENGEFUL_BLADE_10_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b0fa79ad-52e8-4edd-b2c8-04b717e72b1d" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8, Psychic)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="VengefulBlade_10_Passive_Psychic;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7c3695b2-7a6b-48fb-8b6d-8d9c1ae6eaa2" />
+        <field name="Name" type="NameTableFieldDefinition" value="VENGEFUL_BLADE_DAMAGE_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="09a91cc9-e36e-4340-a422-371f09b84e09" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8, Psychic)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8, Psychic,Magical);RemoveStatus(SELF, VENGEFUL_BLADE_PSYCHIC)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9828881b-181c-40ab-bfba-f262eb22f93c" />
+        <field name="Name" type="NameTableFieldDefinition" value="VENGEFUL_BLADE_5_DAMAGE_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e441db13-0c7f-409e-a3f2-1864413b0b77" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8, Psychic)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8, Psychic,Magical);RemoveStatus(SELF, VENGEFUL_BLADE_5_PSYCHIC)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b96d620-f858-4f8b-9d84-2c21bed5c047" />
+        <field name="Name" type="NameTableFieldDefinition" value="VENGEFUL_BLADE_10_DAMAGE_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e2144321-d414-4c79-8578-2e8b74517639" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8, Psychic)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d8, Psychic,Magical);RemoveStatus(SELF, VENGEFUL_BLADE_10_PSYCHIC)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0157a87f-3995-48a4-a6f4-f7371e43c73e" />
         <field name="Name" type="NameTableFieldDefinition" value="FAERIE_FIRE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cbdd8645-71f7-4b2b-9a2e-82f9e19642bd" />

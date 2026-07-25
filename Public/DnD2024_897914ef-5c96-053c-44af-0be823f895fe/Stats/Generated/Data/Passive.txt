@@ -597,6 +597,21 @@ type "PassiveData"
 using "VengefulBlade_5_Passive"
 data "StatsFunctors" "ApplyStatus(SELF, VENGEFUL_BLADE_10_DAMAGE,100,0);ApplyStatus(SELF, VENGEFUL_BLADE_DAMAGE_IMMUNITY, 100, 0)"
 
+new entry "VengefulBlade_Passive_Psychic"
+type "PassiveData"
+using "VengefulBlade_Passive"
+data "StatsFunctors" "ApplyStatus(SELF, VENGEFUL_BLADE_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, VENGEFUL_BLADE_DAMAGE_IMMUNITY, 100, 0)"
+
+new entry "VengefulBlade_5_Passive_Psychic"
+type "PassiveData"
+using "VengefulBlade_5_Passive"
+data "StatsFunctors" "ApplyStatus(SELF, VENGEFUL_BLADE_5_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, VENGEFUL_BLADE_DAMAGE_IMMUNITY, 100, 0)"
+
+new entry "VengefulBlade_10_Passive_Psychic"
+type "PassiveData"
+using "VengefulBlade_10_Passive"
+data "StatsFunctors" "ApplyStatus(SELF, VENGEFUL_BLADE_10_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, VENGEFUL_BLADE_DAMAGE_IMMUNITY, 100, 0)"
+
 new entry "FountOfMoonlight_Passive"
 type "PassiveData"
 data "DisplayName" "hc9501eaeg3c65g8261gbbbegc5a79478ce47;1"
