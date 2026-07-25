@@ -549,6 +549,36 @@ data "Boosts" "IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and Is
 new entry "__EVOCATION__"
 type "PassiveData"
 
+new entry "BoomingBlade_Movement_Passive_Psychic"
+type "PassiveData"
+using "BoomingBlade_Movement_Passive"
+data "StatsFunctors" "ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)"
+
+new entry "BoomingBlade_MovementSpell_Passive_Psychic"
+type "PassiveData"
+using "BoomingBlade_MovementSpell_Passive"
+data "StatsFunctors" "ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)"
+
+new entry "BoomingBlade_5_Movement_Passive_Psychic"
+type "PassiveData"
+using "BoomingBlade_5_Movement_Passive"
+data "StatsFunctors" "ApplyStatus(SELF, BOOMING_BLADE_5_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)"
+
+new entry "BoomingBlade_5_MovementSpell_Passive_Psychic"
+type "PassiveData"
+using "BoomingBlade_5_MovementSpell_Passive"
+data "StatsFunctors" "ApplyStatus(SELF, BOOMING_BLADE_5_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)"
+
+new entry "BoomingBlade_11_Movement_Passive_Psychic"
+type "PassiveData"
+using "BoomingBlade_11_Movement_Passive"
+data "StatsFunctors" "ApplyStatus(SELF, BOOMING_BLADE_11_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)"
+
+new entry "BoomingBlade_11_MovementSpell_Passive_Psychic"
+type "PassiveData"
+using "BoomingBlade_11_MovementSpell_Passive"
+data "StatsFunctors" "ApplyStatus(SELF, BOOMING_BLADE_11_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)"
+
 new entry "VengefulBlade_Passive"
 type "PassiveData"
 using "BoomingBlade_Movement_Passive"

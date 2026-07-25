@@ -782,6 +782,54 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7f021e1c-39fb-4c1c-87fb-7b0845b7c754" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_Movement_Passive_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="21caf953-c003-47d5-8fb6-b4e27c2ad4e8" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="72ee0733-341b-41ae-ad52-c470ca28311a" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_MovementSpell_Passive_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a3f07fcf-38cb-4d99-b43b-0abafedaa4ce" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57a39fd1-2f7f-46b5-9e62-5c8e88f24cba" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_5_Movement_Passive_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="431c1f81-83ff-4ad7-a0d8-b04288225d94" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, BOOMING_BLADE_5_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7fb2a22c-fc2a-4f7a-ab32-880110717f4d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_5_MovementSpell_Passive_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b0253abe-b666-4897-b763-fbd9a8b0b8a5" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, BOOMING_BLADE_5_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b26f83f-145e-4ae3-8baf-0ee04d5f8a13" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_11_Movement_Passive_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1eb3ff26-8151-49e4-bb8c-7795c8c4579e" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, BOOMING_BLADE_11_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="61288fde-b7ae-4d2a-ad45-031efad065a4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_11_MovementSpell_Passive_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c07c9586-09e5-40b1-9356-d3ca4a2caddd" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, BOOMING_BLADE_11_DAMAGE_PSYCHIC,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="64a7ebf6-1ae9-4490-82a5-7b7571b382f5" />
         <field name="Name" type="NameTableFieldDefinition" value="VengefulBlade_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="21caf953-c003-47d5-8fb6-b4e27c2ad4e8" />
