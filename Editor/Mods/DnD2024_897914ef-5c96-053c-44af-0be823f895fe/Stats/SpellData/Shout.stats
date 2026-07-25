@@ -835,7 +835,7 @@
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC());" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Force)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Force);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_SwordBurst" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h959cb550g10b0g1785ga0e3gd4203b55f7b8" version="1" />
@@ -854,7 +854,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="1a3a7ca5-2072-43fe-b07e-cd52e1bbf3e6" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b51922cf-e412-4462-8274-144781bac7f3" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCritical() and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Force,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCritical() and HasPassive('PotentCantrip',context.Source) and not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Force,Magical);IF(not IsCritical() and HasPassive('PotentCantrip',context.Source) and HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -862,6 +862,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5fa6278d-52f2-4691-b902-29db7fae4f18" />
         <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e5c04225-1f14-4bdd-bbd1-b11db127687b" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d6, Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((2d6)/2, Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((2d6)/2,Psychic,Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -869,6 +871,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2a6a9c88-af3e-44cc-ab41-aead0cdfe324" />
         <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cbe47c21-8a7d-4e4f-8ab0-baec281c8513" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(3d6, Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(3d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((3d6)/2, Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((3d6)/2,Psychic,Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -876,6 +880,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="57e94657-9d8e-43b4-949f-8a98bef3584b" />
         <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="271afbe4-ce23-4be6-8200-edcbe0d4cfb1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d6, Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((4d6)/2, Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((4d6)/2,Psychic,Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -883,6 +889,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b8bfbf78-be53-45e2-86da-8e5ffefa1d6b" />
         <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dbe176c0-61a2-4ce0-bdba-6a5eeb7568be" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(5d6, Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(5d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((5d6)/2, Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((5d6)/2,Psychic,Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -890,6 +898,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="81ba940f-b5a9-44c0-96bd-5840fa9d5591" />
         <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="88c8df59-35ed-43a7-96f3-21735dbb7489" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(6d6,Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(6d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((6d6)/2,Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((6d6)/2,Psychic,Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -897,6 +907,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e4889ae7-b1fb-4ea7-adb5-64cbf8d2fd0a" />
         <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d838fb31-44d1-464b-abba-6bbe4fa56751" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(7d6,Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(7d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((7d6)/2,Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((7d6)/2,Psychic,Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1061,7 +1073,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Thunder,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Thunder,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderclap" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8d4a4bb1g65b7g5025g4514gdfa80f1282ba" version="1" />
@@ -1083,7 +1095,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ee3c85ae-0078-4223-9345-c2594535d1f2" />
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="21fb07ad-aa5e-4952-abe1-9a379bd4eead" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCritical() and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Thunder,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCritical() and HasPassive('PotentCantrip',context.Source) and not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Thunder,Magical);IF(not IsCritical() and HasPassive('PotentCantrip',context.Source) and HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

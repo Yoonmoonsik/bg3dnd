@@ -278,7 +278,7 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10,Force,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d10,Force,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d10,Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="3eaf2c46-46a9-4b52-8e05-fae7dc4e548b" />
@@ -305,7 +305,7 @@
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Force_Gen_L1to3" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Force_Gen_L1to3_Loop" />
         <field name="CastTargetHitDelay" type="IntegerTableFieldDefinition" value="100" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCritical() and HasPassive('PotentCantrip',context.Source)):DealDamage(1d10/2,Force,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCritical() and HasPassive('PotentCantrip',context.Source) and not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d10/2,Force,Magical);IF(not IsCritical() and HasPassive('PotentCantrip',context.Source) and HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d10/2,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -781,8 +781,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="50633762-134d-43c0-8ffc-8a5dc56b022f" />
         <field name="Name" type="NameTableFieldDefinition" value="WitchBolt" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ea4ff8c0-3eff-46d5-b188-5e7cb9534411" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(1d12,Lightning);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d12,Lightning,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Lightning);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Psychic);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d12,Lightning,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d12,Psychic,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d12,Lightning)" />
       </fields>
     </stat_object>
@@ -791,8 +791,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b72ab07f-ba49-4f9a-98b4-7f0d982cd093" />
         <field name="Name" type="NameTableFieldDefinition" value="WitchBolt_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2d697c17-2983-44ee-83f2-db3f0a5ec4d8" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(1d12,Lightning);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d12,Lightning,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Lightning);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Psychic);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(3d12,Lightning,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(3d12,Psychic,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d12,Lightning)" />
       </fields>
     </stat_object>
@@ -801,8 +801,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e88831be-390f-435f-b097-650a387dc90f" />
         <field name="Name" type="NameTableFieldDefinition" value="WitchBolt_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ac78698c-14e4-47e1-807a-0e8f7175180c" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(1d12,Lightning);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d12,Lightning,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Lightning);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Psychic);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d12,Lightning,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d12,Psychic,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d12,Lightning)" />
       </fields>
     </stat_object>
@@ -811,8 +811,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4e7f202a-519c-406c-9c64-47e8e57c8e84" />
         <field name="Name" type="NameTableFieldDefinition" value="WitchBolt_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e405d05c-29f2-47b8-a963-aa315c2f42de" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(1d12,Lightning);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d12,Lightning,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Lightning);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Psychic);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(5d12,Lightning,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(5d12,Psychic,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d12,Lightning)" />
       </fields>
     </stat_object>
@@ -821,8 +821,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c287467c-0e1d-4ac4-adb4-7f46b44dec4b" />
         <field name="Name" type="NameTableFieldDefinition" value="WitchBolt_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6363ef2e-3f6a-4e33-95ba-4d073d7d094c" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(1d12,Lightning);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d12,Lightning,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Lightning);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Psychic);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(6d12,Lightning,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(6d12,Psychic,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d12,Lightning)" />
       </fields>
     </stat_object>
@@ -831,8 +831,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5e830e65-02d0-4607-9414-73d653ff8de2" />
         <field name="Name" type="NameTableFieldDefinition" value="WitchBolt_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="36c9faed-04e1-472f-822b-90aa96b40301" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(1d12,Lightning);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d12,Lightning,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Lightning);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d12,Psychic);ApplyStatus(SELF,WITCH_BOLT_FIRST_TURN,100,1);ApplyStatus(WITCH_BOLT,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(7d12,Lightning,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(7d12,Psychic,Magical);ApplyStatus(AI_HELPER_WITCHBOLT,100,2);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d12,Lightning)" />
       </fields>
     </stat_object>
@@ -2072,8 +2072,8 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution , SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Force,Magical);ApplyStatus(STUN_DAZING_BLAST,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d6,Force,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d6,Force,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d6,Psychic,Magical);ApplyStatus(STUN_DAZING_BLAST,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d6,Force,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(2d6,Psychic,Magical);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="b6a44217-dbd6-443a-8c04-b2796820fe79" />
@@ -2158,7 +2158,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10,Cold,Magical);IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(DARKBOLT,100,2);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d10,Cold,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d10,Psychic,Magical);IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(DARKBOLT,100,2);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="47ac1e9a-3b62-4010-bde9-0dc602edd114" />
@@ -2733,7 +2733,8 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedSpellAttack" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D12Cantrip),Poison,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D12Cantrip),Poison,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D12Cantrip),Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source) and not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((LevelMapValue(D12Cantrip))/2,Poison,Magical);IF(HasPassive('PotentCantrip',context.Source) and HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((LevelMapValue(D12Cantrip))/2,Psychic,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
