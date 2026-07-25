@@ -3654,7 +3654,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC(),false,HasStatus('INTERDICTED'))" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d4, Fire);ApplyStatus(HELLS_LASH, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d4, Fire);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(4d4, Psychic);IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH, 100, 10);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_PSYCHIC, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and (Item() or Character() or Dead())" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_HellsLash" />
@@ -3688,7 +3688,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="562d3358-d693-44fe-8011-d6c53c0b1458" />
         <field name="Name" type="NameTableFieldDefinition" value="HellsLash_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="efd58be3-e5f8-4476-9705-501626b7c0d5" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d4, Fire);ApplyStatus(HELLS_LASH_2, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(6d4, Fire);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(6d4, Psychic);IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_2, 100, 10);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_2_PSYCHIC, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d4, Fire);DealDamage(3d4,Fire,,,,1575c661-c7a1-44c7-b07d-d47b57164841)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HELLS_LASH_2, 100, 10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
@@ -3701,7 +3701,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="147b52f5-dd7f-4bd1-b7e2-e6a0cba1e983" />
         <field name="Name" type="NameTableFieldDefinition" value="HellsLash_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="562d3358-d693-44fe-8011-d6c53c0b1458" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d4, Fire);ApplyStatus(HELLS_LASH_3, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(8d4, Fire);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(8d4, Psychic);IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_3, 100, 10);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_3_PSYCHIC, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d4, Fire);DealDamage(4d4,Fire,,,,1575c661-c7a1-44c7-b07d-d47b57164841)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HELLS_LASH_3, 100, 10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
@@ -3713,7 +3713,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bd33bb18-f86b-4189-94e7-b9384ed7c4aa" />
         <field name="Name" type="NameTableFieldDefinition" value="HellsLash_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="562d3358-d693-44fe-8011-d6c53c0b1458" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(10d4, Fire);ApplyStatus(HELLS_LASH_4, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(10d4, Fire);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(10d4, Psychic);IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_4, 100, 10);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_4_PSYCHIC, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(10d4, Fire);DealDamage(5d4,Fire,,,,1575c661-c7a1-44c7-b07d-d47b57164841)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HELLS_LASH_4, 100, 10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
@@ -3725,7 +3725,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="afdbffef-5880-4f24-978e-e9a2e35d7376" />
         <field name="Name" type="NameTableFieldDefinition" value="HellsLash_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="562d3358-d693-44fe-8011-d6c53c0b1458" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(12d4, Fire);ApplyStatus(HELLS_LASH_5, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(12d4, Fire);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(12d4, Psychic);IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_5, 100, 10);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_5_PSYCHIC, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(12d4, Fire);DealDamage(6d4,Fire,,,,1575c661-c7a1-44c7-b07d-d47b57164841)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HELLS_LASH_5, 100, 10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
@@ -3737,7 +3737,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="46a6dec1-d456-41c9-b025-c6d2bb018d9c" />
         <field name="Name" type="NameTableFieldDefinition" value="HellsLash_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="562d3358-d693-44fe-8011-d6c53c0b1458" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(14d4, Fire);ApplyStatus(HELLS_LASH_6, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(14d4, Fire);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(14d4, Psychic);IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_6, 100, 10);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(HELLS_LASH_6_PSYCHIC, 100, 10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(14d4, Fire);DealDamage(7d4,Fire,,,,1575c661-c7a1-44c7-b07d-d47b57164841)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HELLS_LASH_6, 100, 10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
