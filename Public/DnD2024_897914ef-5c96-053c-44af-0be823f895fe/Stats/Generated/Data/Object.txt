@@ -463,6 +463,17 @@ data "Priority" "1"
 data "Rarity" "VeryRare"
 data "ValueLevel" "10"
 
+new entry "OBJ_Scroll_Dawn_YMS"
+type "Object"
+using "_MagicScroll"
+data "RootTemplate" "b8914e32-ce22-4938-8a40-c8ac0d75bde6"
+data "ObjectCategory" "MagicScroll_5"
+data "MinAmount" "1"
+data "MaxAmount" "1"
+data "Priority" "1"
+data "Rarity" "VeryRare"
+data "ValueLevel" "10"
+
 
 new entry "OBJ_Scroll_EldritchBlast_YMS"
 type "Object"

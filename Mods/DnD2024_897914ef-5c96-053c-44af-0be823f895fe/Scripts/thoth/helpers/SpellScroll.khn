@@ -216,6 +216,7 @@ local SPELL_CLASS_MAP = {
     Shout_CircleOfPower_spellscroll = '5 Cleric Wizard',
     Target_Contagion_spellscroll = '5 Cleric Druid',
     Target_DanseMacabre_spellscroll = '5 Warlock Wizard',
+    Target_Dawn_spellscroll = '5 Cleric Wizard',
     Shout_DispelEvilAndGood_spellscroll = '5 Cleric',
     Target_FlameStrike_spellscroll = '5 Cleric',
     Target_GreaterRestoration_spellscroll = '5 Bard Cleric Druid',
@@ -609,6 +610,7 @@ function IsScrollSpell()
 	| SpellId('Target_HolyWeapon_spellscroll')
 	| SpellId('Target_InsectPlague_spellscroll')
 	| SpellId('Target_MassCureWounds_spellscroll')
+	| SpellId('Target_Dawn_spellscroll')
 	| SpellId('Teleportation_ArcaneGate_spellscroll')
 	| SpellId('Wall_BladeBarrier_spellscroll')
 	| SpellId('Target_CreateUndead_spellscroll')
