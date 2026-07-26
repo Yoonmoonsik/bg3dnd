@@ -10736,6 +10736,7 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character();" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Character();" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Invisible;Stealth;CannotTargetItems;CannotTargetTerrain;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
