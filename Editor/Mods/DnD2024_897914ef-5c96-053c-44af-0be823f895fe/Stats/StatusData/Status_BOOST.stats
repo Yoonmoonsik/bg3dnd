@@ -2052,6 +2052,24 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="394baf16-5822-41ee-96c3-73d98ec9373a" />
+        <field name="Name" type="NameTableFieldDefinition" value="RIMES_BINDING_ICE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfba479e0g369bg9b8cg94ffg1e1cd003b6e2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2188e0a8g5441gce9bgc81dg7bb0b5772ead" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Frost" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Misc_Status_Frost_MO" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Misc_Status_Frost_MO_Stop" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RIMES_BINDING_ICE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement);Attribute(Grounded);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ad70c67d-f4f6-4dea-b6b6-d871fae6ddc1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="d787f666-8ee6-4185-9365-6aac9ebe76ae" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="00c4714a-b79a-4e00-95ce-73fcbec85c89" />
         <field name="Name" type="NameTableFieldDefinition" value="BLINDING_SMITE_BLINDED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="505108af-0373-4906-b8c6-f1b00f817f0b" />
@@ -2072,7 +2090,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9625c0b9-ef69-480d-befa-d31eba293dcf" />
         <field name="Name" type="NameTableFieldDefinition" value="FRIGHTENED_EARTH" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c4adbdd5-a5ed-40f7-8a7c-4aaa560feff7" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement);Attribute(Grounded);Attribute(Grounded);StatusImmunity(BURNING);StatusImmunity(WILD_MAGIC_BURNING);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement);Attribute(Grounded);StatusImmunity(BURNING);StatusImmunity(WILD_MAGIC_BURNING);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
