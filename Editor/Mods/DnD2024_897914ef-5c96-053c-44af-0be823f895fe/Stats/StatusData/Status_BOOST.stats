@@ -1893,6 +1893,51 @@
         <field name="OnApplyFail" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecd115d0-9ec3-496c-b6f0-3c5fd07d16cc" />
+        <field name="Name" type="NameTableFieldDefinition" value="DAWN_OWNER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfd89c715gffc6g9c26gdfb7g25013334c563" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Dawn" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DAWN_OWNER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Dawn_Move);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bc7a855d-19d6-4f14-b7cf-7fa8f4544410" />
+        <field name="Name" type="NameTableFieldDefinition" value="DAWN_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1a658888gabe3g07c2g7612g1283d33fe344" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Dawn" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DAWN_AURA" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and not Dead()):ApplyStatus(DAWN,100,-1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(9,false,0.1);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="77542c87-0938-40e3-9d89-fa6e34d9d5c8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cfccc780-82b3-4b55-a419-7afdfc2441e4" />
+        <field name="Name" type="NameTableFieldDefinition" value="DAWN" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cf89aa0g10bdg1a6ag9d54g214b3f7aa202" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Dawn" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="Spell_Status_MoonBeam_Enter" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_MoonBeam_MO" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_MoonBeam_MO_Stop" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DAWN" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution,CalculateSpellDC(context.PreferredCastingAbility, GetSummoner(context.Source)))" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(4d10,Radiant,Magical)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(4d10/2,Radiant,Magical)" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="62710804-ff29-4936-9d45-0e6a44372526" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="73f8b212-1a39-4214-8a32-b5e1427ec860" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0946a64-518c-4ad5-94a3-58bbb8f08e56" />
