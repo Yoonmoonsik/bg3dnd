@@ -102,6 +102,7 @@ local SPELL_CLASS_MAP = {
     Target_MistyStep_spellscroll = '2 Sorcerer Warlock Wizard',
     Target_PhantasmalForce_spellscroll = '2 Bard Sorcerer Wizard',
     Projectile_RayOfEnfeeblement_spellscroll = '2 Warlock Wizard',
+    Zone_RimesBindingIce_spellscroll = '2 Sorcerer Wizard',
     Projectile_ScorchingRay_spellscroll = '2 Sorcerer Wizard',
     Projectile_SearingOrb_spellscroll = '2 Cleric Paladin',
     Shout_SeeInvisibility_spellscroll = '2 Bard Sorcerer Wizard Artificer',
@@ -621,4 +622,5 @@ function IsScrollSpell()
 	| SpellId('Wall_WallOfThorns_spellscroll')
 	| SpellId('Shout_WindWalk_spellscroll')
 	| SpellId('Target_SummonCelestial_spellscroll')
+	| SpellId('Zone_RimesBindingIce_spellscroll')
 end
