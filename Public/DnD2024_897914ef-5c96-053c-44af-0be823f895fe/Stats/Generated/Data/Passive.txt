@@ -5490,6 +5490,12 @@ data "PriorityOrder" "14103"
 data "Properties" "Highlighted;ForceShowInCC"
 data "Boosts" "UnlockSpell(Target_Devastator);"
 
+new entry "Devastator_Cantrip"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "BoostContext" "OnActionResourcesChanged;OnAttack;OnCastResolved;OnCast;OnTurn"
+data "Boosts" "IF(HasActionResource('ReactionActionPoint', 1, 0, false, true, context.Source)):UnlockSpellVariant(IsCantrip(),ModifyUseCosts(Replace,ReactionActionPoint,1,0,ActionPoint),ModifyIconGlow());"
+
 new entry "PainKiller_3_GrandStrategist"
 type "PassiveData"
 data "DisplayName" "hed5241fcg4e7bg125eg7f8fg43f7f8fbd64a;2"

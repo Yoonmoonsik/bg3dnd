@@ -7480,6 +7480,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9683c682-e8de-4936-b64f-2c34d59090d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devastator_Cantrip" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged;OnAttack;OnCastResolved;OnCast;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('ReactionActionPoint', 1, 0, false, true, context.Source)):UnlockSpellVariant(IsCantrip(),ModifyUseCosts(Replace,ReactionActionPoint,1,0,ActionPoint),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dc441c50-5c55-4ac4-8be3-1e97d8a70919" />
         <field name="Name" type="NameTableFieldDefinition" value="PainKiller_3_GrandStrategist" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hed5241fcg4e7bg125eg7f8fg43f7f8fbd64a" version="2" />
