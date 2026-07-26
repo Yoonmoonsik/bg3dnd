@@ -1898,6 +1898,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ecd115d0-9ec3-496c-b6f0-3c5fd07d16cc" />
         <field name="Name" type="NameTableFieldDefinition" value="DAWN_OWNER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfd89c715gffc6g9c26gdfb7g25013334c563" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9802bf74g5f37g4abdg9789g61f909430c12" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Dawn" />
         <field name="StackId" type="StringTableFieldDefinition" value="DAWN_OWNER" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Dawn_Move);" />
@@ -1910,11 +1911,14 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bc7a855d-19d6-4f14-b7cf-7fa8f4544410" />
         <field name="Name" type="NameTableFieldDefinition" value="DAWN_AURA" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1a658888gabe3g07c2g7612g1283d33fe344" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h995a037cg1d3bg4dbcg8935g9bbef7559f53" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Dawn" />
         <field name="StackId" type="StringTableFieldDefinition" value="DAWN_AURA" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="9" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and not Dead()):ApplyStatus(DAWN,100,-1)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(9,false,0.1);" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and not Dead()):ApplyStatus(DAWN,100,-1);TARGET:IF(Character() and not Dead() and HasPassive('SunlightHypersensitivity')):ApplyStatus(SUNLIGHT_FROM_SPELL_TECHNICAL)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(9,false,0.1,true);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="77542c87-0938-40e3-9d89-fa6e34d9d5c8" />
       </fields>
@@ -1924,6 +1928,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="cfccc780-82b3-4b55-a419-7afdfc2441e4" />
         <field name="Name" type="NameTableFieldDefinition" value="DAWN" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cf89aa0g10bdg1a6ag9d54g214b3f7aa202" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h64efa14bg9e10g4990g8b4ag0101bcc881a9" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Dawn" />
         <field name="SoundStart" type="StringTableFieldDefinition" value="Spell_Status_MoonBeam_Enter" />
         <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_MoonBeam_MO" />

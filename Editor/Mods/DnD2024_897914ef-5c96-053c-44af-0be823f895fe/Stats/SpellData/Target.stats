@@ -1693,81 +1693,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e7d14274-4e34-4b30-9c31-f46ac7e82a50" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9183e261-2169-47f1-b0fc-20c7500e6ced" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8aea3083-7754-4490-a85f-3da89bfdb552" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="0013eb8f-6854-4cea-9176-23ab0e803904" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7621055d-6742-43a6-b14f-55cb7e445f99" />
-        <field name="Name" type="NameTableFieldDefinition" value="Dawn" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Conjuration" enumeration_type_name="SpellSchool" version="1" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Dawn_Move" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,DAWN_OWNER,100,10);GROUND:Summon(09e375ca-21cb-4c29-9c0a-2346f00fb2f2, 10,,,'DawnStack',DAWN_AURA);AI_ONLY:GROUND:CreateExplosion(Projectile_AiHelper_MoonBeam);" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d10/2,Radiant);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Dawn" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdbf6da5fgd885gc08cg83acg46495bbfa106" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hee4eeb62g90f6g0d54g43a5g6045f299125f" version="1" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant)" />
-        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DAWN_AURA,100,10)" />
-        <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
-        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_ClericSummon_Gen" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_ClericSummon_Gen" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_PlanarAlly_L6to8" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Summon_PlanarAlly_Celestial_L6to8" />
-        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="be75ea00-f753-4d9e-ab04-4993691d099c" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ebd046f7-066f-4acf-b671-dd451201c58b" />
-        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="37218caf-c844-479e-830e-d4c3fc2b9591" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="70bb9842-ae27-4b0e-9b75-afdec5886252" />
-        <field name="Name" type="NameTableFieldDefinition" value="Dawn_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7621055d-6742-43a6-b14f-55cb7e445f99" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Dawn" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ea9a93fa-020c-4e11-8268-3233cfcd489f" />
-        <field name="Name" type="NameTableFieldDefinition" value="Dawn_Move" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7621055d-6742-43a6-b14f-55cb7e445f99" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(09e375ca-21cb-4c29-9c0a-2346f00fb2f2, 10,,,'DawnStack',DAWN_AURA);" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;IsConcentration;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b366064b-6f3f-4300-97c9-426f9afee785" />
         <field name="Name" type="NameTableFieldDefinition" value="Cloudkill" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3fd2f608-3ef7-444b-bd94-1c46d93799e3" />
@@ -4902,6 +4827,71 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_HolyWeapon" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7621055d-6742-43a6-b14f-55cb7e445f99" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dawn" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Dawn_Move" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,DAWN_OWNER,100,10);GROUND:Summon(09e375ca-21cb-4c29-9c0a-2346f00fb2f2, 10,,,'DawnStack',DAWN_AURA);AI_ONLY:GROUND:CreateExplosion(Projectile_AiHelper_MoonBeam);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d10/2,Radiant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Dawn" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdbf6da5fgd885gc08cg83acg46495bbfa106" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hee4eeb62g90f6g0d54g43a5g6045f299125f" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DAWN_AURA,100,10)" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_ClericSummon_Gen" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_ClericSummon_Gen" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_PlanarAlly_L6to8" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Summon_PlanarAlly_Celestial_L6to8" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="be75ea00-f753-4d9e-ab04-4993691d099c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ebd046f7-066f-4acf-b671-dd451201c58b" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="37218caf-c844-479e-830e-d4c3fc2b9591" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="70bb9842-ae27-4b0e-9b75-afdec5886252" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dawn_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7621055d-6742-43a6-b14f-55cb7e445f99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Dawn" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ea9a93fa-020c-4e11-8268-3233cfcd489f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dawn_Move" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7621055d-6742-43a6-b14f-55cb7e445f99" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(09e375ca-21cb-4c29-9c0a-2346f00fb2f2, 10,,true,'DawnStack',DAWN_AURA)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha7a7ed57ge0dfg482ega39bg63f8ac7d0d32" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h265bf700gf237g4650gaff9g2cfecd6bb6bd" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;IsSpell;CannotTargetItems;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
