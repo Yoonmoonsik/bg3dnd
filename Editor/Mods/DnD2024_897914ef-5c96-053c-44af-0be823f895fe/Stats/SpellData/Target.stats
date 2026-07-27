@@ -2246,6 +2246,901 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a631e302-0dae-4049-9f0d-68780c23718d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Container" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Command_Halt;Target_Command_Approach;Target_Command_Drop;Target_Command_Flee;Target_Command_Grovel" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e981e1agea92gf303gbd58g40778c39d1a0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heb586d99g7909g8d2agba09g8eafafdd641a" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bbbcf1ba-1778-44f9-b208-e1648d81a089" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(COMMAND_APPROACH, 100, 1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1aad8c1fg361agaeccg2052g886596475c71" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h772a3501g29e1g74bcg3360ga8ee385e1660" version="1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="89b0b0c7-44a4-4923-9564-0211a1f5272c" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(COMMAND_APPROACH, 100, 1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CommandApproach" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="570adbf4-b226-450f-89f6-04399cccc344" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(DISARM, 100, 1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h62c20d37gbc3eg8a0agce13g93a1af442c37" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haa798117g4af5gc976g2156gcd7d9cfa57c8" version="1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="73b4765a-810b-449b-9231-7a8a31623294" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DISARMED, 100, 1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CommandDrop" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ef22ab30-609f-453a-a152-93c36d1417a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(COMMAND_FLEE, 100, 1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h06e44f53g108ag0c88g6e39g3ed51371b74c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h807fdee2g6faagd89bgd238g06ee74951945" version="1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="a9a7f3b1-a085-4331-a0b2-b03405815a2c" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(COMMAND_FLEE, 100, 1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CommandFlee" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ebe799b9-7e76-4acf-abd7-3d2828a65a42" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(COMMAND_GROVEL, 100, 1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd931bfa1g19c2g9666g6536gc1cace368615" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h409cb932g8ed1gc110g3616g0fa1bc73cc21" version="1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="357f2d02-f25f-48dc-ac63-42ef8bcb8794" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(COMMAND_GROVEL, 100, 1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CommandGrovel" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(COMMAND_HALT, 100, 1)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CommandHalt" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he43c6e06g10c8g5acfgdff0g03b51d7b5fc1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hea75c4c8gb2f4gbcaeg222bgdd00ad78c2d4" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;3e441d3f-11f9-432d-877c-c0ba4d92c74a,,;8b7ae969-2a04-4720-9685-3bde54c18ffe,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsLinkedSpellContainer;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(COMMAND_HALT, 100, 1)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Control_CommandHalt_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Control_CommandHalt_L1to3" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="17f11731-a1c7-4653-a15b-6c7f871574b3" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="28a8039d-9df1-4210-8137-f396dd23614e" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="6b316222-955e-4539-87eb-a098db22c98b" />
+        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="2d8309ab-c73d-40eb-a42f-fa4935858786" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="04cc3403-f67a-4747-b49e-a1802cc7a6ad" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL_DOMINATED, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7c2b707-73ea-4740-ae32-332e33bf25b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_NPC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4afa5ea7-ffa2-4d62-988e-64ec04fbe1be" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Container_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a631e302-0dae-4049-9f0d-68780c23718d" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Command_Halt_2;Target_Command_Approach_2;Target_Command_Drop_2;Target_Command_Flee_2;Target_Command_Grovel_2" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Container" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7bc01752-c131-4ae0-b96a-531d0fa9e909" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bbbcf1ba-1778-44f9-b208-e1648d81a089" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Approach" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6670ab9g66a2g89b8gc628g4941759ee8a3" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_2" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Approach_2_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="459d53df-6c48-410d-9ba3-c460b348e9bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_2_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7bc01752-c131-4ae0-b96a-531d0fa9e909" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="2" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9fc56c78-0c25-47ee-94b5-a8013dda3d72" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="570adbf4-b226-450f-89f6-04399cccc344" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Drop" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hee947f6cg01fagd435g52efgfb659ac55b62" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_2" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Drop_2_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bab5ee04-1768-423c-9124-4008512fc596" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_2_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9fc56c78-0c25-47ee-94b5-a8013dda3d72" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="2" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="90867483-f2b6-4014-ac45-793ca6c901c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ef22ab30-609f-453a-a152-93c36d1417a7" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Flee" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0017ec1bgcad9g1c8fg0907g944a2b5a65d0" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_2" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Flee_2_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a11ecf8-cac8-4bba-a735-340295a31dd5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_2_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="90867483-f2b6-4014-ac45-793ca6c901c8" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="2" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="33996273-e076-4999-88f1-bdb1c667ba1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ebe799b9-7e76-4acf-abd7-3d2828a65a42" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Grovel" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h54191720g4dd8g0abcg14e6ga9a2a26a4c77" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_2" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Grovel_2_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="851636fb-c464-416e-af11-dfdb4c3f62e7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_2_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="33996273-e076-4999-88f1-bdb1c667ba1a" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="2" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9513c630-4a10-43ca-8a60-35d1a7d326ef" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Halt" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(COMMAND_HALT, 100, 1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_2" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Halt_2_AI" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h62cff8cage7beg5924gfdcag36adfb6e59db" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="73a73969-4490-47ea-b9b0-ab78c6dbaab3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_2_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9513c630-4a10-43ca-8a60-35d1a7d326ef" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="2" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7bf8d7d-97de-4aec-bac3-93a91a006fda" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Container_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a631e302-0dae-4049-9f0d-68780c23718d" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Command_Halt_3;Target_Command_Approach_3;Target_Command_Drop_3;Target_Command_Flee_3;Target_Command_Grovel_3" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Container" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="467726df-ae07-4ec6-8fba-584f6eed4f34" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7bc01752-c131-4ae0-b96a-531d0fa9e909" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Approach" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_3" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Approach_3_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="46f59758-59d4-4d57-b83b-b1988e20cd74" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_3_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="467726df-ae07-4ec6-8fba-584f6eed4f34" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="3" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="53d56ace-787a-4980-9868-96efe6553793" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9fc56c78-0c25-47ee-94b5-a8013dda3d72" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Drop" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_3" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Drop_3_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="71c58f38-1b59-4001-80d1-0fc44c9c0818" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_3_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53d56ace-787a-4980-9868-96efe6553793" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="3" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b4568aaf-1336-4e9d-bbe1-8e3e0ac05fca" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="90867483-f2b6-4014-ac45-793ca6c901c8" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Flee" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_3" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Flee_3_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cde0afed-5a4b-4f8f-ad25-133f308aced3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_3_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4568aaf-1336-4e9d-bbe1-8e3e0ac05fca" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="3" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a3dfc5a-17da-4002-8878-c66da7d6aca6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9513c630-4a10-43ca-8a60-35d1a7d326ef" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Halt" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_3" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Halt_3_AI" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3383897fg0d52g3610ga0acg1e6c8127185a" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9423ad5a-3d43-4a9e-b498-29846ee78635" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_3_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0a3dfc5a-17da-4002-8878-c66da7d6aca6" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="3" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cc80eda6-d4dd-41e5-9a5c-f9cbb36e1d3e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="33996273-e076-4999-88f1-bdb1c667ba1a" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Grovel" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_3" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Grovel_3_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a289122-5d1b-44b7-bd94-ddbab38986c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_3_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cc80eda6-d4dd-41e5-9a5c-f9cbb36e1d3e" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="3" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0cfc08f8-476f-4d41-b106-a98bd8a83792" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7bc01752-c131-4ae0-b96a-531d0fa9e909" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Approach" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="4" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Approach_4_AI" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c43d7b70-0e93-405b-9a87-b3104fcbba7f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_4_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0cfc08f8-476f-4d41-b106-a98bd8a83792" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="4" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="285404a8-c650-4472-b8ac-beeb47dd63c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="90867483-f2b6-4014-ac45-793ca6c901c8" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Flee" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="4" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Flee_4_AI" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9cc44eb1-13fd-4b24-bb1e-1de2fa6eb140" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_4_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="285404a8-c650-4472-b8ac-beeb47dd63c0" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="4" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b11c26c1-2c9c-4631-8a6a-0681a745c3c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9fc56c78-0c25-47ee-94b5-a8013dda3d72" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Drop" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="4" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Drop_4_AI" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9ca57373-1165-4c06-aa02-c3be62106af0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_4_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b11c26c1-2c9c-4631-8a6a-0681a745c3c1" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="4" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a73560a6-d81f-4c1b-be2b-cab2ad2d6308" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="33996273-e076-4999-88f1-bdb1c667ba1a" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Grovel" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="4" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Grovel_4_AI" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1f98ecb1-bc5e-4a59-a365-4883dc4b0942" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_4_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a73560a6-d81f-4c1b-be2b-cab2ad2d6308" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="4" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94e724ca-6635-48dc-bf9a-3e22d6cb1885" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9513c630-4a10-43ca-8a60-35d1a7d326ef" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Halt" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="4" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Halt_4_AI" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc9ad5f7-dce4-4a72-99d9-66977a0b86bb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_4_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94e724ca-6635-48dc-bf9a-3e22d6cb1885" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="4" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="653690cd-6029-48e7-b828-6b395e10a152" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a631e302-0dae-4049-9f0d-68780c23718d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Container_4" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Command_Halt_4;Target_Command_Approach_4;Target_Command_Drop_4;Target_Command_Flee_4;Target_Command_Grovel_4" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Container" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d94e5e2-6ece-430c-8210-7234d4bbb690" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a631e302-0dae-4049-9f0d-68780c23718d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Container_5" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Command_Halt_5;Target_Command_Approach_5;Target_Command_Drop_5;Target_Command_Flee_5;Target_Command_Grovel_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Container" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="31baf035-d4a8-481b-ab3d-cc421fecdc8b" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a631e302-0dae-4049-9f0d-68780c23718d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Container_6" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Command_Halt_6;Target_Command_Approach_6;Target_Command_Drop_6;Target_Command_Flee_6;Target_Command_Grovel_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Container" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35dddc89-0d8a-4e49-8ef9-5723abd7aa38" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bbbcf1ba-1778-44f9-b208-e1648d81a089" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Approach" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_5" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="5" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Approach_5_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="420ed526-da03-42d0-8df0-80da8d4dc2c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_5_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35dddc89-0d8a-4e49-8ef9-5723abd7aa38" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01033d1c-5b18-4bc2-b14b-617d0e152c74" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bbbcf1ba-1778-44f9-b208-e1648d81a089" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Approach" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_6" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Approach_6_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ae38022-1440-4ca1-acaa-901db7c81608" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_6_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01033d1c-5b18-4bc2-b14b-617d0e152c74" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9cc93109-4fe3-4ecf-a7d8-507aff75b9c1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="570adbf4-b226-450f-89f6-04399cccc344" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Drop" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_5" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="5" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Drop_5_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9ddf2c92-17a2-4556-9f0c-b802b8bdb89c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_5_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9cc93109-4fe3-4ecf-a7d8-507aff75b9c1" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e75683b9-6191-4a79-9b4b-e9da80d93b7e" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="570adbf4-b226-450f-89f6-04399cccc344" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Drop" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_6" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Drop_6_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="65d86db0-9ef7-4e2e-82b2-4078b412d57d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_6_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e75683b9-6191-4a79-9b4b-e9da80d93b7e" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0e009ff0-68e0-4a36-9719-743d405916f6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ef22ab30-609f-453a-a152-93c36d1417a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Flee" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_5" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="5" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Flee_5_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="92724428-c467-40d1-9884-14a5cac9aa7e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_5_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0e009ff0-68e0-4a36-9719-743d405916f6" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b335167-e948-4d77-af4c-29957c449e00" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ef22ab30-609f-453a-a152-93c36d1417a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Flee" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_6" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Flee_6_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ff21806-8d1d-401f-b6a4-f8a448609d13" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_6_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8b335167-e948-4d77-af4c-29957c449e00" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="14fc8332-eb2a-4adf-918a-f83098e07f15" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ebe799b9-7e76-4acf-abd7-3d2828a65a42" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Grovel" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_5" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="5" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Grovel_5_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecc3766d-d843-4439-8e5e-e72f1a36e781" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_5_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="14fc8332-eb2a-4adf-918a-f83098e07f15" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0e2c1cac-7f6b-4f29-8a14-43a180c5b032" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ebe799b9-7e76-4acf-abd7-3d2828a65a42" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Grovel" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_6" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Grovel_6_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4bdef4c-d7ed-4e30-a88e-135ce71be06d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_6_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0e2c1cac-7f6b-4f29-8a14-43a180c5b032" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a83cb903-cb2b-409b-8707-a59082dc9af5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Halt" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_5" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="5" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Halt_5_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="202caf2a-b571-4d21-967d-6aacc927fba0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_5_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a83cb903-cb2b-409b-8707-a59082dc9af5" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a7edbce-2a15-413f-a6cb-6555c09b469a" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Command_Halt" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_Container_6" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Target_Command_Halt_6_AI" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8d828b71-042b-4dda-88a6-43d426746397" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_6_AI" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a7edbce-2a15-413f-a6cb-6555c09b469a" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1a8fad4-e9e7-4918-9105-33f73c9535fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Command_Container" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a631e302-0dae-4049-9f0d-68780c23718d" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_MAG_Command_Approach;Target_MAG_Command_Drop;Target_MAG_Command_Halt;Target_MAG_Command_Grovel;Target_MAG_Command_Flee" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsConcentration;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cee89f7f-2e0e-4a66-b483-7b2b2ca48b21" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Command_Approach" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bbbcf1ba-1778-44f9-b208-e1648d81a089" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_MAG_Command_Container" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8fb5c626-ba26-490c-b27a-21fe1fb0ef5b" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Command_Drop" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="570adbf4-b226-450f-89f6-04399cccc344" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_MAG_Command_Container" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6edf88d3-9063-4c89-b1ea-cafeb4592e23" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Command_Halt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_MAG_Command_Container" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fe7957a4-d17e-4a02-870f-7a43b9c1ce81" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Command_Grovel" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ebe799b9-7e76-4acf-abd7-3d2828a65a42" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_MAG_Command_Container" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5dfac873-23b8-400f-a5bf-920c296b779d" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Command_Flee" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ef22ab30-609f-453a-a152-93c36d1417a7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_MAG_Command_Container" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4fed088b-4166-4434-9904-77a8356b2ab5" />
         <field name="Name" type="NameTableFieldDefinition" value="Hex" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
