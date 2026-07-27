@@ -1,0 +1,959 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+PROC_TriggerRegisterForPlayers(S_UND_MushroomHunter_PreSpottingArea_01c4d5bf-3ca1-4731-a38b-e6c562a20fd7);
+PROC_TriggerRegisterForPlayers(S_UND_MushroomHunter_SituationArea_e6fa8e1b-cea9-4762-9f4d-556483bbed9f);
+PROC_TriggerRegisterForPlayers(S_UND_MushroomHunter_VillageArea_201f96c0-1145-419b-a601-66cfd803a502);
+
+TriggerRegisterForItems(S_UND_MushroomHunter_MushroomField_69e4ad1a-c618-4464-88a1-e8f6b0a99370);
+TriggerRegisterForCharacter(S_UND_MushroomHunter_PreSpottingArea_01c4d5bf-3ca1-4731-a38b-e6c562a20fd7, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+
+DB_UND_MushroomHunter_TeleportationScrolls((ITEMROOT)CONS_Scroll_MistyStep_9a2a3fcc-d948-4463-b88b-a9d61b77b015);
+
+DB_Dialogs(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, (DIALOGRESOURCE)UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e);
+
+DB_GlobalFlagReactionAfterDialog((FLAG)Debug_SaveMushroomHunter_8e397ce1-9603-4bcf-80fc-5a6f4a627db1, UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e);
+DB_GlobalFlagReactionAfterDialog((FLAG)UND_MushroomHunter_Event_AteMushroom_617a7a68-9ce9-26e8-883d-7cb98665540c, UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e);
+DB_GlobalFlagReactionAfterDialog((FLAG)UND_MushroomHunter_Event_MoveBackpackFromPlayer_a74e323a-2fcd-4155-bc4b-1b6de8eda43d, UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e);
+DB_FlagReactionAfterDialog((FLAG)UND_MushroomHunter_State_GotScroll_380fdf51-b342-4587-8c84-a38b74b3511c, UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e);
+DB_FlagReactionAfterDialog((FLAG)UND_MushroomHunter_State_GotBackpack_f2e7b4a6-070d-4ba9-b9fe-5c99eeab916a, UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e);
+
+DB_HasItemEvent(S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, (FLAG)UND_MushroomHunter_State_HasBackpack_0d7dbe4b-1a5c-448b-bfa2-bac522f21f34);
+DB_GiveItemToEvent(S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, (FLAG)UND_MushroomHunter_Event_GiveBackpack_6239f112-fd25-4457-b705-6bf4462549ad);
+
+DB_HasItemEvent(S_UND_MushroomHunter_Noblestalk_09561b3f-f556-4a01-b289-9b362bc0d43a, (FLAG)UND_MushroomHunter_State_HasMushroom_7b86b816-a97c-4500-9398-ef4c7f344e0b);
+DB_GiveItemToEvent(S_UND_MushroomHunter_Noblestalk_09561b3f-f556-4a01-b289-9b362bc0d43a, (FLAG)UND_MushroomHunter_Event_GiveMushroom_d5da8505-841d-4d3f-8f56-00b2e31896ef);
+
+DB_HasItemEvent((ITEM)S_UND_MushroomHunter_Reward_923ba17f-e771-46a2-8790-6d3cd7f8d1b1, (FLAG)UND_MushroomHunter_Event_HasReward_a0a50e3e-c007-5538-6b16-63be2e8a1d94);
+DB_GiveItemToEvent((ITEM)S_UND_MushroomHunter_Reward_923ba17f-e771-46a2-8790-6d3cd7f8d1b1, (FLAG)UND_MushroomHunter_Event_GiveReward_930efc62-62e5-515b-8e3d-6788a7e75b52);
+
+DB_HasItemEvent((ITEM)S_UND_MushroomHunter_WeddingRing_5e309a15-0f33-4343-b0f5-e98ff71219fc, (FLAG)UND_MushroomHunter_Event_HasWeddingRing_d91c8ed5-49c2-446d-878c-16ac4da70a27);
+DB_GiveItemToEvent((ITEM)S_UND_MushroomHunter_WeddingRing_5e309a15-0f33-4343-b0f5-e98ff71219fc, (FLAG)UND_MushroomHunter_Event_GiveWeddingRing_2e621b58-d7b4-4648-a97b-84742c102c2f);
+
+DB_HasItemTemplateScriptFlag(1, (DIALOGRESOURCE)UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e, LOOT_SCROLL_MistyStep_9a2a3fcc-d948-4463-b88b-a9d61b77b015, 2, 1);
+DB_GiveTemplateFromPlayerDialogEvent((ITEMROOT)LOOT_SCROLL_MistyStep_9a2a3fcc-d948-4463-b88b-a9d61b77b015, (FLAG)UND_MushroomHunter_Event_GiveScroll_4fa01cc0-0ac0-4031-a161-f37ad053ecf2, NULL_00000000-0000-0000-0000-000000000000, 1);
+
+DB_UND_MushroomHunter_Clearings((TRIGGER)S_UND_MushroomHunter_BackpackClearing_e4ad0704-8e77-40c0-8012-9f82582c96b1, (DIALOGRESOURCE)UND_MushroomHunter_AD_BackpackClearing_419b7e5a-c187-f93a-d659-03bc8832d604, "UND_MushroomHunter_BackpackClearing");
+DB_UND_MushroomHunter_Clearings(S_UND_MushroomHunter_HunterClearing_0c5c5eef-d6a4-48f2-be76-69d8e9e852f8, UND_MushroomHunter_AD_HunterClearing_14b864c1-5e20-a0bb-4824-6a4b0abcf71c, "UND_MushroomHunter_HunterClearing");
+DB_UND_MushroomHunter_Clearings(S_UND_MushroomHunter_NoblestalkClearing_2bb69b54-bb16-4810-b7f9-e20ed23abf25, UND_MushroomHunter_AD_MushroomClearing_cd896a4d-5ea9-8ea2-ed5d-2355e75bd6da, "UND_MushroomHunter_NoblestalkClearing");
+
+// speak with dead
+DB_GLO_CharacterCorpseDialog(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, (DIALOGRESOURCE)UND_MushroomHunter_Dead_33e491dd-3842-b789-1dce-8a0d8788a83e);
+DB_GLO_CharacterCorpseDialog(S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7, (DIALOGRESOURCE)UND_Derryth_Dead_ed5e7ae1-1c5d-c277-099c-fd8280f4d3f4);
+
+PROC_TriggerRegisterForPlayers(S_UND_MushroomHunter_HeardVoiceArea_4397f646-3064-4d96-8132-8928b698833a);
+
+DB_Dialogs(S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7, UND_MyconidCircle_DwarvenAlchemist_540c04dd-49e7-abd3-342c-674d083a5316);
+DB_Dialogs(S_UND_MyconidCircle_DeepRothe_2840bf4a-212c-4f4c-ba7e-f34c7683308c, UND_MyconidCircle_DeepRothe_fe24bbf6-4c94-03d2-ea53-6d71554131cf);
+
+DB_SeenDeadNPCGlobalFlag(S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7, UND_MushroomHunter_State_DerrythDead_27b68f02-b401-4228-b10b-d28df94601ce);
+DB_SeenDeadNPCGlobalFlag(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, UND_MushroomHunter_State_SawDeadBaelen_Global_ae1d68bb-08b2-4b2c-a9d1-18b0d234b57a);
+DB_SeenDeadNPCPartyFlag(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, UND_MushroomHunter_State_SawDeadBaelen_Character_09cab6fb-6e63-37be-9472-6305fe1909c5);
+DB_QuestDef_SawDeadState("UND_MushroomHunter", "DerrythDied", (CHARACTER)S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7);
+
+DB_ItemOwnerShipTriggers("WLD_Main_A", S_UND_MushroomHunter_OwnershipTrigger_488cb329-7feb-4393-a2df-1bd3ac66b30d, S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7);
+DB_ItemShopTrigger(S_UND_MushroomHunter_OwnershipTrigger_488cb329-7feb-4393-a2df-1bd3ac66b30d, S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7);
+
+DB_UND_MushroomHunter_BibberbangTemplates((GUIDSTRING)PUZ_Underdark_Mushroom_Bibberbang_A_ba629b1b-a058-4386-808f-bf1b08b2c0ad);
+DB_UND_MushroomHunter_BibberbangTemplates(PUZ_Underdark_Mushroom_Bibberbang_B_b80b4cf8-181a-4e75-bea2-2c441c6f2b04);
+DB_UND_MushroomHunter_BibberbangTemplates(PUZ_Underdark_Mushroom_Bibberbang_C_86695866-3009-4ab3-a3f5-41a72d71d29f);
+
+PROC_CharacterDisableCrime(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "Vandalise");
+PROC_CharacterDisableCrime(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "VandaliseNoOwner");
+PROC_CharacterDisableCrime(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "Assault_Zero_Damage");
+
+PROC_SetHitpoints_BlockSelfHealing(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, 8);
+KBSECTION
+//REGION Init
+IF
+DB_UND_MushroomHunter_Clearings(_Clearing, _, _)
+THEN
+PROC_TriggerRegisterForPlayers(_Clearing);
+TriggerRegisterForItems(_Clearing);
+
+PROC
+PROC_UND_MushroomHunter_FixTorchVFX()
+THEN
+SetEntityEvent(S_UND_MushroomHunter_Torch_d8234f9a-1702-4bae-bc66-5de40f2beeeb, "turnOff", 1);
+DB_UND_MushroomHunter_TorchInitialization(1);
+
+IF
+StatusRemoved(S_UND_MushroomHunter_Torch_d8234f9a-1702-4bae-bc66-5de40f2beeeb, "BURNING", _, _)
+AND
+DB_UND_MushroomHunter_TorchInitialization(1)
+THEN
+NOT DB_UND_MushroomHunter_TorchInitialization(1);
+SetEntityEvent(S_UND_MushroomHunter_Torch_d8234f9a-1702-4bae-bc66-5de40f2beeeb, "turnOn",1);
+//END_REGION Init
+
+//REGION Starting the conversation with the player
+// Note: he is too far for DB_SpotPlayers().
+IF
+DB_InRegion(_Player, S_UND_MushroomHunter_PreSpottingArea_01c4d5bf-3ca1-4731-a38b-e6c562a20fd7)
+AND
+DB_Players(_Player)
+AND
+NOT DB_CantTalk(_Player)
+AND
+NOT DB_CantTalk(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+AND
+NOT DB_HiddenCharacters(_Player, _)
+AND
+NOT DB_UND_MushroomHunter_RanFromExplosion(1)
+AND
+NOT DB_GlobalFlag((FLAG)UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1)
+AND
+NOT DB_PermaDefeated(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+AND
+QRY_StartDialog((DIALOGRESOURCE)UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player)
+THEN
+PROC_TriggerUnregisterForPlayers(S_UND_MushroomHunter_PreSpottingArea_01c4d5bf-3ca1-4731-a38b-e6c562a20fd7);
+//END_REGION Starting the conversation with the player
+
+//REGION The mushroom hunter reacts on the player entering one of the clearings
+IF
+DB_UND_MushroomHunter_Clearings(_SpotTrigger, _, _SpotIdentifier)
+THEN
+DB_SpotPlayers((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _SpotIdentifier, NULL_00000000-0000-0000-0000-000000000000, NULL_00000000-0000-0000-0000-000000000000);
+DB_SpotPlayers_SpotTrigger((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _SpotIdentifier, _SpotTrigger);
+
+PROC
+PROC_SpotPlayers_Spotted((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _SpotIdentifier, _Player)
+AND
+DB_UND_MushroomHunter_Clearings(_, _AD, _SpotIdentifier)
+THEN
+LookAtEntity(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player);
+PROC_TryStartAD(_AD, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+//END_REGION The mushroom hunter reacts on the player entering one of the clearings
+
+//REGION The mushroom hunter notices the player picking up the noblestalk
+IF
+AddedTo(S_UND_MushroomHunter_Noblestalk_09561b3f-f556-4a01-b289-9b362bc0d43a, (CHARACTER)_Player, _)
+AND
+DB_Players(_Player)
+AND
+NOT DB_CantAct(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+AND
+NOT DB_PermaDefeated(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+AND
+CanSee(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player, 1)
+THEN
+SetFlag(UND_MushroomHunter_Knows_TookMushroom_619a1b76-45f3-4208-bbdf-2c513cb95438, NULL_00000000-0000-0000-0000-000000000000);
+//END_REGION The mushroom hunter notices the player picking up the noblestalk
+
+//REGION The Mushroom Hunter notices the player rummaging through his backpack
+IF
+UseFinished(_Player, S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, 1)
+AND
+CanSee(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player, 1)
+AND
+NOT DB_PermaDefeated(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+AND
+QRY_OnlyOnce("UND_MushroomHunter_CommentOnRummaging")
+THEN
+SetFlag(UND_MushroomHunter_State_SawPlayerOpeningBackpack_11c40f84-88c7-4d29-8d7b-2861073f7724, NULL_00000000-0000-0000-0000-000000000000);
+LookAtEntity(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player);
+PROC_TryStartAD((DIALOGRESOURCE)UND_MushroomHunter_AD_NoticedRummaging_348cf8bb-d391-436e-62b5-b8cd67b3735f, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+//END_REGION
+
+//REGION A backpack enters the clearing
+IF
+ItemEnteredTrigger(S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, S_UND_MushroomHunter_HunterClearing_0c5c5eef-d6a4-48f2-be76-69d8e9e852f8, (CHARACTER)_Mover)
+AND
+_Mover != S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b
+AND
+NOT DB_GlobalFlag(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1)
+AND
+NOT DB_PermaDefeated(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+THEN
+DB_IgnoreAssault((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+ObjectTimerLaunch(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_PickUpBackpack", 1000);
+
+IF
+ObjectTimerFinished(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_PickUpBackpack")
+THEN
+NOT DB_IgnoreAssault((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+
+// throwing might destroy the backpack
+IF
+ObjectTimerFinished(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_PickUpBackpack")
+AND
+IsInTrigger(S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, S_UND_MushroomHunter_HunterClearing_0c5c5eef-d6a4-48f2-be76-69d8e9e852f8, 1)
+THEN
+PROC_ForceStopDialog(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+LookAtEntity(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa);
+Pickup(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, "UND_MushroomHunter_PickedUpBackpackOrScroll");
+//END_REGION
+
+//REGION A scroll enters the clearing
+IF
+TemplateEnteredTrigger(_ScrollTemplate, _Scroll, S_UND_MushroomHunter_HunterClearing_0c5c5eef-d6a4-48f2-be76-69d8e9e852f8, _Owner, _Mover)
+AND
+DB_UND_MushroomHunter_TeleportationScrolls((ITEMROOT)_ScrollTemplate)
+THEN
+DB_IgnoreAssault((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+ObjectTimerLaunch(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_EnableAssaultCrimes", 1000);
+
+IF
+ObjectTimerFinished(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_EnableAssaultCrimes")
+THEN
+NOT DB_IgnoreAssault((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+
+IF
+TemplateEnteredTrigger(_ScrollTemplate, _Scroll, S_UND_MushroomHunter_HunterClearing_0c5c5eef-d6a4-48f2-be76-69d8e9e852f8, _Owner, _Mover)
+AND
+DB_UND_MushroomHunter_TeleportationScrolls((ITEMROOT)_ScrollTemplate)
+AND
+NOT DB_GlobalFlag(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1)
+AND
+NOT DB_PermaDefeated(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+AND
+QRY_OnlyOnce("UND_MushroomHunter_ScrollThrown")
+THEN
+PROC_ForceStopDialog(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+LookAtEntity(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Scroll);
+Pickup(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Scroll, "UND_MushroomHunter_PickedUpBackpackOrScroll");
+
+IF
+EntityEvent(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_PickedUpBackpackOrScroll")
+THEN
+PROC_UND_MushroomHunter_CommentOnGettingScroll();
+
+// if already commented on getting the scroll - immediately check the inventory
+// otherwise start an AD and check the inventory after the AD ends
+PROC
+PROC_UND_MushroomHunter_CommentOnGettingScroll()
+AND
+DB_OnlyOnce("UND_MushroomHunter_CommentOnGettingScroll")
+THEN
+DB_UND_MushroomHunter_ShouldCheckInventory(1);
+
+PROC
+PROC_UND_MushroomHunter_CommentOnGettingScroll()
+AND
+QRY_OnlyOnce("UND_MushroomHunter_CommentOnGettingScroll")
+THEN
+PROC_NotifyWhenReadyToTalk((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_ReadyToAD");
+
+PROC
+PROC_ReadyToTalk(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_ReadyToAD")
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)UND_MushroomHunter_AD_BackpackThrown_87b819e8-c236-7682-26bd-25d6e9f2f4bd, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+//END_REGION A scroll enters the clearing
+
+//REGION A scroll / backpack is given via a dialog
+PROC
+PROC_FlagReactionAfterDialog((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, UND_MushroomHunter_State_GotScroll_380fdf51-b342-4587-8c84-a38b74b3511c)
+THEN
+DB_UND_MushroomHunter_ShouldCheckInventory(1);
+
+PROC
+PROC_FlagReactionAfterDialog((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, UND_MushroomHunter_State_GotBackpack_f2e7b4a6-070d-4ba9-b9fe-5c99eeab916a)
+THEN
+DB_UND_MushroomHunter_ShouldCheckInventory(1);
+//END_REGION A scroll /backpack is given via a dialog
+
+//REGION Escape
+IF
+StatusApplied(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_SUSSURTREEANTIMAGIC", _, _)
+AND
+NOT DB_UND_MushroomHunter_InAntiMagic(1)
+THEN
+DB_UND_MushroomHunter_InAntiMagic(1);
+SetFlag(UND_MushroomHunter_State_CantUseMagic_92a77aed-5820-4a64-b4ba-e149d3e1ca44, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+StatusRemoved(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_SUSSURTREEANTIMAGIC", _, _)
+AND
+HasActiveStatus(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_SUSSURTREEANTIMAGIC", 0)
+THEN
+NOT DB_UND_MushroomHunter_InAntiMagic(1);
+ClearFlag(UND_MushroomHunter_State_CantUseMagic_92a77aed-5820-4a64-b4ba-e149d3e1ca44);
+
+IF
+AutomatedDialogEnded(UND_MushroomHunter_AD_BackpackThrown_87b819e8-c236-7682-26bd-25d6e9f2f4bd, _ID)
+THEN
+DB_UND_MushroomHunter_ShouldCheckInventory(1);
+
+IF
+DB_UND_MushroomHunter_ShouldCheckInventory(1)
+AND
+NOT DB_UND_MushroomHunter_InAntiMagic(1)
+THEN
+RealtimeObjectTimerLaunch(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_CheckInventory", 500);
+
+IF
+ObjectTimerFinished(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_CheckInventory")
+AND
+NOT DB_UND_MushroomHunter_InAntiMagic(1)
+THEN
+PROC_UND_MushroomHunter_CheckInventory();
+
+PROC
+PROC_UND_MushroomHunter_CheckInventory()
+AND
+NOT QRY_UND_MushroomHunter_HunterHasTeleportationScroll()
+THEN
+SetFlag(UND_MushroomHunter_State_ScrollIsMissing_945b9007-2163-4f18-b24d-cafe92418b66);
+ClearFlag(UND_MushroomHunter_State_GotScroll_380fdf51-b342-4587-8c84-a38b74b3511c, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+NOT DB_UND_MushroomHunter_ShouldCheckInventory(1);
+
+PROC
+PROC_UND_MushroomHunter_CheckInventory()
+AND
+NOT QRY_UND_MushroomHunter_HunterHasTeleportationScroll()
+AND
+QRY_OnlyOnce("UND_MushroomHunter_ScrollIsMissing")
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)UND_MushroomHunter_AD_ScrollIsMissing_0dcf338d-a05b-1062-38e9-f8e726c8e2d1, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+
+PROC
+PROC_UND_MushroomHunter_CheckInventory()
+AND
+QRY_UND_MushroomHunter_HunterHasTeleportationScroll()
+THEN
+PROC_UND_MushroomHunter_EscapeViaSpell();
+
+QRY
+QRY_UND_MushroomHunter_HunterHasTeleportationScroll()
+AND
+DB_UND_MushroomHunter_TeleportationScrolls(_Template)
+AND
+GetItemByTemplateInInventory(_Template, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Scroll)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_UND_MushroomHunter_HunterHasTeleportationScroll()
+AND
+IsInInventoryOf(S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, 1)
+AND
+DB_UND_MushroomHunter_TeleportationScrolls(_Template)
+AND
+GetItemByTemplateInInventory(_Template, S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, _Scroll)
+THEN
+DB_NOOP(1);
+//END_REGION Escape
+
+//REGION Mushroom Hunter escapes via spell
+PROC
+PROC_UND_MushroomHunter_EscapeViaSpell()
+AND
+NOT DB_OnlyOnce("UND_MushroomHunter_EscapeViaSpell")
+AND
+GetPosition(S_UND_MushroomHunter_SafePosition_29c8207c-aa61-4e13-8123-98b587df1477, _X, _Y, _Z)
+AND
+FindValidPosition(_X, _Y, _Z, 5.0, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, 0, _NewX, _NewY, _NewZ)
+THEN
+PROC_UND_MushroomHunter_StopClearingsSpotting();
+DB_OnlyOnce("UND_MushroomHunter_EscapeViaSpell");
+UseSpellAtPosition(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "Target_UND_MushroomHunter_MistyStep", _NewX, _NewY, _NewZ);
+
+//only remove the template if the spell worked
+IF
+CastedSpell(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "Target_UND_MushroomHunter_MistyStep", _, _, _)
+THEN
+TemplateRemoveFrom(CONS_Scroll_MistyStep_9a2a3fcc-d948-4463-b88b-a9d61b77b015, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, 1);
+//END_REGION
+
+//REGION Running for his life
+IF
+DestroyedBy(_Bibberbang, _, _, _)
+AND
+GetTemplate(_Bibberbang, _BibberbangTemplate)
+AND
+DB_UND_MushroomHunter_BibberbangTemplates(_BibberbangTemplate)
+AND
+IsInTrigger(_Bibberbang, S_UND_MushroomHunter_MushroomField_69e4ad1a-c618-4464-88a1-e8f6b0a99370, 1)
+AND
+IsInTrigger(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_MushroomField_69e4ad1a-c618-4464-88a1-e8f6b0a99370, 1)
+AND
+QRY_OnlyOnce("UND_MushroomHunter_BibberbangExploded")
+THEN
+PROC_GlobalSetFlagAndCache(UND_MushroomHunter_State_MushroomFieldExploded_887fb24b-0790-b4e4-37ab-9c31a2eedba1);
+PROC_CharacterDisableAllCrimes(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+
+IF
+StatusApplied(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "BURNING", _, _)
+AND
+IsInTrigger(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_MushroomField_69e4ad1a-c618-4464-88a1-e8f6b0a99370, 1)
+THEN
+PROC_UND_MushroomHunter_EscapeViaRunning();
+
+IF
+StatusApplied(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "BIBBERBANG_FUMES", _, _)
+AND
+IsInTrigger(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_MushroomField_69e4ad1a-c618-4464-88a1-e8f6b0a99370, 1)
+THEN
+PROC_UND_MushroomHunter_EscapeViaRunning();
+
+PROC
+PROC_UND_MushroomHunter_EscapeViaRunning()
+AND
+NOT DB_PermaDefeated(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+AND
+QRY_OnlyOnce("UND_MushroomHunter_EscapeViaRunning")
+THEN
+PROC_UND_MushroomHunter_StopClearingsSpotting();
+PROC_ForceStopDialog(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+DB_UND_MushroomHunter_RanFromExplosion(1);
+PROC_TryStartAD((DIALOGRESOURCE)UND_MushroomHunter_AD_ExplosionReaction_9c73203a-9912-8a64-72af-d35872061de3, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+PROC_CharacterMoveTo(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_WaitingPosition_518a7b72-ea89-4654-a44e-55513c962de5, "Run", "UND_MushroomHunter_EscapedField");
+//END_REGION Running for his life
+
+//REGION Spotting
+PROC
+PROC_UND_MushroomHunter_StopClearingsSpotting()
+AND
+QRY_OnlyOnce("UND_MushroomHunter_StopClearingsSpotting")
+AND
+DB_UND_MushroomHunter_Clearings(_, _, _SpotIdentifier)
+THEN
+PROC_SpotPlayers_StopSpotting((CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _SpotIdentifier);
+//END_REGION
+
+//REGION Being saved
+IF
+EnteredTrigger(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_PreSpottingArea_01c4d5bf-3ca1-4731-a38b-e6c562a20fd7)
+AND
+NOT DB_PermaDefeated(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+THEN
+PROC_UND_MushroomHunter_Saved();
+
+PROC
+PROC_UND_MushroomHunter_Saved()
+AND
+NOT DB_GlobalFlag((FLAG)UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1)
+THEN
+NOT DB_UND_MushroomHunter_RanFromExplosion(1);
+PROC_GlobalSetFlagAndCache(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1);
+PROC_CharacterEnableAllCrimes(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+PROC_TriggerUnregisterForPlayers(S_UND_MushroomHunter_PreSpottingArea_01c4d5bf-3ca1-4731-a38b-e6c562a20fd7);
+//END_REGION Being saved
+
+//REGION Torch
+IF
+StatusRemoved(S_UND_MushroomHunter_Torch_d8234f9a-1702-4bae-bc66-5de40f2beeeb, "BURNING", _Player, _)
+AND
+NOT DB_PermaDefeated(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+AND
+NOT DB_GlobalFlag(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1)
+AND
+NOT DB_OnlyOnce("UND_MushroomHunter_Torch")
+THEN
+DB_SpotPlayers(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_Torch", NULL_00000000-0000-0000-0000-000000000000, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+StatusApplied(S_UND_MushroomHunter_Torch_d8234f9a-1702-4bae-bc66-5de40f2beeeb, "BURNING", _, _)
+THEN
+PROC_SpotPlayers_StopSpotting(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_Torch");
+
+PROC
+PROC_SpotPlayers_Spotted(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_Torch", _Player)
+AND
+QRY_OnlyOnce("UND_MushroomHunter_Torch")
+THEN
+PROC_TryStartAD(UND_MushroomHunter_AD_TorchWasPutOut_1142fbeb-9340-83b7-44ae-3928233e6948, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+//END_REGION
+
+//REGION Approaching the situation area
+IF
+EnteredTrigger(_Player, S_UND_MushroomHunter_HeardVoiceArea_4397f646-3064-4d96-8132-8928b698833a)
+AND
+DB_Players(_Player)
+AND
+QRY_OnlyOnce("UND_MushroomHunter_Talk")
+THEN
+PROC_TryStartAD(UND_MushroomHunter_AD_Distant_7b518ac0-b570-7646-ddb8-080378f15608, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+PROC_TriggerUnregisterForPlayers(S_UND_MushroomHunter_HeardVoiceArea_4397f646-3064-4d96-8132-8928b698833a);
+
+IF
+AutomatedDialogEnded(UND_MushroomHunter_AD_Distant_7b518ac0-b570-7646-ddb8-080378f15608, _ID)
+AND
+GetClosestAlivePlayer(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player, _Distance)
+AND
+_Distance < 50
+AND
+QRY_OnlyOnce("UND_MushroomHunter_ReactOnVoice")
+THEN
+StartVoiceBark((VOICEBARKRESOURCE)UND_MushroomHunter_VB_HeardVoice_393f6fbc-796c-5baa-9a30-193580631220, _Player);
+//END_REGION Approching the situation area
+
+//REGION Situation area flag
+IF
+EnteredTrigger(_Player, S_UND_MushroomHunter_SituationArea_e6fa8e1b-cea9-4762-9f4d-556483bbed9f)
+AND
+NOT DB_OnlyOnce("UND_MushroomHunter_ReactOnVoice")
+THEN
+DB_OnlyOnce("UND_MushroomHunter_ReactOnVoice");
+
+IF
+EnteredTrigger(_Player, S_UND_MushroomHunter_SituationArea_e6fa8e1b-cea9-4762-9f4d-556483bbed9f)
+AND
+DB_Players(_Player)
+THEN
+SetFlag(UND_MushroomHunter_State_PlayerInSituationArea_4aea2b66-12e7-4440-8317-74b07a923bd3, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+LeftTrigger(_Player, S_UND_MushroomHunter_SituationArea_e6fa8e1b-cea9-4762-9f4d-556483bbed9f)
+AND
+DB_Players(_Player)
+AND
+NOT QRY_CheckOtherPlayersInTrigger(_Player, S_UND_MushroomHunter_SituationArea_e6fa8e1b-cea9-4762-9f4d-556483bbed9f)
+THEN
+ClearFlag(UND_MushroomHunter_State_PlayerInSituationArea_4aea2b66-12e7-4440-8317-74b07a923bd3, NULL_00000000-0000-0000-0000-000000000000);
+//END_REGION
+
+//REGION Noblestalk is destroyed
+IF
+DestroyedBy(S_UND_MushroomHunter_Noblestalk_09561b3f-f556-4a01-b289-9b362bc0d43a, _Player, _, _)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+NOT DB_PermaDefeated(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+AND
+CanSee(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player, 1)
+THEN
+SetFlag(UND_MushroomHunter_Knows_DestroyedMushroom_1ecf442c-7c4d-4896-915e-6dda9412d639, NULL_00000000-0000-0000-0000-000000000000);
+PROC_TryStartAD((DIALOGRESOURCE)UND_MushroomHunter_AD_NoblestalkDestroyed_ddf1118c-5ffa-91c4-bf54-0d6af661efe3, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+//END_REGION Noblestalk is destroyed
+
+//REGION Misc
+IF
+FlagSet((FLAG)UND_MyconidCircle_DwarfAlchemist_TradeUI_4d7458cf-a39c-43b8-a695-8cbacb3c6b09,(CHARACTER)_Player,_)
+THEN
+ClearFlag((FLAG)UND_MyconidCircle_DwarfAlchemist_TradeUI_4d7458cf-a39c-43b8-a695-8cbacb3c6b09,_Player);
+PROC_StartTrade(_Player,S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7);
+//END_REGION
+
+//REGION Baelen moves to the Myconid Village
+// We move him to the village after the dialog
+// if we already know about Derryth then he just goes to the village
+// otherwise he plays an AD that mentions her name and then moves to the village
+IF
+DialogEnded(UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e, _)
+AND
+DB_GlobalFlag(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1)
+AND
+NOT DB_GlobalFlag(UND_MushroomHunter_State_InVillage_b9b27a52-e27b-481f-b483-8fcb95ff2f65)
+AND
+QRY_UND_MushroomHunter_PlayerKnowsAboutDerryth()
+AND
+QRY_OnlyOnce("UND_MushroomHunter_MoveHunterToMyconidVillage")
+THEN
+PROC_UND_MushroomHunter_SendHunterToVillage();
+
+IF
+DialogEnded(UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e, _)
+AND
+DB_GlobalFlag(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1)
+AND
+NOT DB_GlobalFlag(UND_MushroomHunter_State_InVillage_b9b27a52-e27b-481f-b483-8fcb95ff2f65)
+AND
+NOT QRY_UND_MushroomHunter_PlayerKnowsAboutDerryth()
+AND
+QRY_OnlyOnce("UND_MushroomHunter_MoveHunterToMyconidVillageWithAD")
+THEN
+RealtimeObjectTimerLaunch(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_DialogEndedButSpeakerIsStillNotAvailableThatsWhy", 1000);
+
+IF
+ObjectTimerFinished(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_DialogEndedButSpeakerIsStillNotAvailableThatsWhy")
+THEN
+PROC_GlobalSetFlagAndCache(UND_MushroomHunter_State_ForcedAD_90057b07-dd2b-4b85-804d-7d65639eb085);
+PROC_TryStartAD((DIALOGRESOURCE)UND_MushroomHunter_AD_HunterThanksPlayer_42d32b1a-3da2-ed0b-9c65-3f6c3b3aa1af, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+
+IF
+AutomatedDialogEnded((DIALOGRESOURCE)UND_MushroomHunter_AD_HunterThanksPlayer_42d32b1a-3da2-ed0b-9c65-3f6c3b3aa1af, _)
+AND
+DB_GlobalFlag(UND_MushroomHunter_State_ForcedAD_90057b07-dd2b-4b85-804d-7d65639eb085)
+AND
+QRY_OnlyOnce("UND_MushroomHunter_MoveHunterToMyconidVillage")
+THEN
+PROC_UND_MushroomHunter_SendHunterToVillage();
+
+QRY
+QRY_UND_MushroomHunter_PlayerKnowsAboutDerryth()
+AND
+DB_GlobalFlag(UND_MushroomHunter_State_MentionedDerryth_2c8e6a76-386c-4072-0809-fd0d8bf3db5a)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_UND_MushroomHunter_PlayerKnowsAboutDerryth()
+AND
+DB_GlobalFlag(UND_MyconidCircle_DwarvenAlchemist_LookingForBaelen_8aea81b7-bccc-5090-2d30-d46dc7902f52)
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_UND_MushroomHunter_SendHunterToVillage()
+THEN
+PROC_CharacterMoveTo(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_MyconidVillagePosition_38297231-4aae-47a0-acda-d27ed1f9f3ae, "Run", "UND_MushroomHunter_Arrived");
+
+// if the player leaves the situation area without talking to Baelen
+// he goes to the village
+IF
+LeftTrigger(_Player, S_UND_MushroomHunter_SituationArea_e6fa8e1b-cea9-4762-9f4d-556483bbed9f)
+AND
+DB_Players(_Player)
+AND
+NOT QRY_CheckOtherPlayersInTrigger(_Player, S_UND_MushroomHunter_SituationArea_e6fa8e1b-cea9-4762-9f4d-556483bbed9f)
+AND
+DB_GlobalFlag(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1)
+AND
+NOT DB_GlobalFlag(UND_MushroomHunter_State_InVillage_b9b27a52-e27b-481f-b483-8fcb95ff2f65)
+AND
+NOT DB_StoryMoving(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _)
+AND
+NOT DB_PermaDefeated(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b)
+AND
+QRY_OnlyOnce("UND_MushroomHunter_MoveHunterToMyconidVillage")
+THEN
+PROC_CharacterMoveTo(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_MyconidVillagePosition_38297231-4aae-47a0-acda-d27ed1f9f3ae, "Run", "UND_MushroomHunter_Arrived");
+
+IF
+EntityEvent(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_MushroomHunter_Arrived")
+THEN
+PROC_GlobalSetFlagAndCache(UND_MushroomHunter_State_InVillage_b9b27a52-e27b-481f-b483-8fcb95ff2f65);
+PROC_GlobalSetFlagAndCache(UND_MushroomHunter_State_ReportingToWife_3160b3f2-409f-4a79-a3ae-0cc698e91ef6);
+//END_REGION Baelen moves to the Myconid Village
+
+//REGION Baelen reports to his wife
+IF
+EnteredTrigger(_Player, S_UND_MushroomHunter_VillageArea_201f96c0-1145-419b-a601-66cfd803a502)
+AND
+DB_Players(_Player)
+THEN
+SetFlag(UND_MushroomHunter_State_PlayerCanSeeReunion_b1fa1184-5570-4feb-b32a-2fdb7c4977b8, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+AutomatedDialogEnded(UND_MushroomHunter_AD_HunterReturned_cf3e60aa-fd3d-d1b1-04be-9e8aa1911c21, _)
+THEN
+PROC_UND_MushroomHunter_StopReporting();
+
+IF
+DialogStarted(UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e, _)
+AND
+DB_GlobalFlag(UND_MushroomHunter_State_ReportingToWife_3160b3f2-409f-4a79-a3ae-0cc698e91ef6)
+THEN
+PROC_UND_MushroomHunter_StopReporting();
+
+IF
+DialogStarted(UND_MyconidCircle_DwarvenAlchemist_540c04dd-49e7-abd3-342c-674d083a5316, _)
+AND
+DB_GlobalFlag(UND_MushroomHunter_State_ReportingToWife_3160b3f2-409f-4a79-a3ae-0cc698e91ef6)
+THEN
+PROC_UND_MushroomHunter_StopReporting();
+
+PROC
+PROC_UND_MushroomHunter_StopReporting()
+THEN
+ClearFlag(UND_MushroomHunter_State_ReportingToWife_3160b3f2-409f-4a79-a3ae-0cc698e91ef6, NULL_00000000-0000-0000-0000-000000000000);
+PROC_TriggerUnregisterForPlayers(S_UND_MushroomHunter_VillageArea_201f96c0-1145-419b-a601-66cfd803a502);
+//END_REGION Baelen reports to his wife
+
+//REGION Baelen eats the mushroom
+IF
+FlagSet(UND_MushroomHunter_Event_AteMushroom_617a7a68-9ce9-26e8-883d-7cb98665540c, _, _)
+THEN
+RequestDelete(S_UND_MushroomHunter_Noblestalk_09561b3f-f556-4a01-b289-9b362bc0d43a);
+SetTag(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, (TAG)BADASSCIVILIAN_91f4b379-63a2-40e9-a509-7b9b2f90e4c8); // his personality changes to the worse after he restores mind
+
+PROC
+PROC_GlobalFlagReactionAfterDialog(UND_MushroomHunter_Event_AteMushroom_617a7a68-9ce9-26e8-883d-7cb98665540c)
+THEN
+ApplyStatus(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "UND_NOBLESTALK", 6.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+PROC_RemoveAllDialogEntriesForSpeaker(S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7);
+PROC_RemoveAllDialogEntriesForSpeaker(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+DB_Dialogs(S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, UND_MushroomHunter_ThreewayDialogAfterBaelenAteMushroom_26c1ca49-32c8-a814-2066-1bf53e927f42);
+SetFlag(UND_DwarvenAlchemist_State_Fuming_2689c0e0-4335-4578-9ff0-3080f913dc12);
+
+IF
+DialogStarted(UND_MushroomHunter_ThreewayDialogAfterBaelenAteMushroom_26c1ca49-32c8-a814-2066-1bf53e927f42, _)
+THEN
+ClearFlag(UND_DwarvenAlchemist_State_Fuming_2689c0e0-4335-4578-9ff0-3080f913dc12, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+DialogEnded(UND_MushroomHunter_ThreewayDialogAfterBaelenAteMushroom_26c1ca49-32c8-a814-2066-1bf53e927f42, _)
+THEN
+PROC_RemoveAllDialogEntriesForSpeaker(S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7);
+PROC_RemoveAllDialogEntriesForSpeaker(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b);
+DB_Dialogs(S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7, UND_MyconidCircle_DwarvenAlchemist_540c04dd-49e7-abd3-342c-674d083a5316);
+DB_Dialogs(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e);
+//END_REGION Baelen eats the mushroom
+
+//REGION Derryth gets the mushroom, used in her AD
+IF
+FlagSet(UND_MushroomHunter_State_HasMushroom_7b86b816-a97c-4500-9398-ef4c7f344e0b, S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7, _)
+THEN
+SetFlag(UND_MushroomHunter_State_MushroomDelivered_323718a9-231f-4787-b4f5-8ce2fa30af52, NULL_00000000-0000-0000-0000-000000000000);
+//END_REGION Derryth gets the mushroom
+
+//REGION Quest journal Mushroom Hunter
+// if the quest has already been accepted - update it
+IF
+DialogActorJoined(UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e, _, (CHARACTER)_Player, _)
+AND
+DB_Players(_Player)
+AND
+QRY_UND_MushroomHunter_KnowsBaelensDescription()
+AND
+QRY_OnlyOnce("UND_MushroomHunter_InitiateQuestInDialog")
+THEN
+QuestUpdate(_Player, "UND_MushroomHunter", "FoundBaelen");
+
+// otherwise - start it
+IF
+DialogActorJoined(UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e, _, (CHARACTER)_Player, _)
+AND
+DB_Players(_Player)
+AND
+NOT QRY_UND_MushroomHunter_KnowsBaelensDescription()
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "FoundDwarfNotMet")
+AND
+QRY_OnlyOnce("UND_MushroomHunter_InitiateQuestInDialog")
+THEN
+QuestUpdate("UND_MushroomHunter", "FoundDwarf");
+
+// seeing dead Baelen leads to one of several possible updates, depending on whether we know he is Baelen or not
+IF
+FlagSet(UND_MushroomHunter_State_SawDeadBaelen_Character_09cab6fb-6e63-37be-9472-6305fe1909c5, _, _)
+AND
+QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+THEN
+QuestUpdate("UND_MushroomHunter", "BaelenDied");
+
+IF
+FlagSet(UND_MushroomHunter_State_SawDeadBaelen_Character_09cab6fb-6e63-37be-9472-6305fe1909c5, _, _)
+AND
+NOT QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "FoundDwarf")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "SavedDwarf")
+THEN
+QuestUpdate("UND_MushroomHunter", "FoundDwarfNotMet");
+
+IF
+FlagSet(UND_MushroomHunter_State_SawDeadBaelen_Character_09cab6fb-6e63-37be-9472-6305fe1909c5, _, _)
+AND
+NOT QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "SavedDwarf")
+THEN
+QuestUpdate("UND_MushroomHunter", "DwarfDied_New");
+
+IF
+FlagSet(UND_MushroomHunter_State_SawDeadBaelen_Character_09cab6fb-6e63-37be-9472-6305fe1909c5, _, _)
+AND
+NOT QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+AND
+QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "SavedDwarf")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "TalkedToDwarf")
+THEN
+QuestUpdate("UND_MushroomHunter", "DwarfSavedDied_New");
+
+IF
+FlagSet(UND_MushroomHunter_State_SawDeadBaelen_Character_09cab6fb-6e63-37be-9472-6305fe1909c5, _, _)
+AND
+NOT QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+AND
+QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "SavedDwarf")
+AND
+QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "TalkedToDwarf")
+THEN
+QuestUpdate("UND_MushroomHunter", "BaelenDied");
+
+IF
+FlagSet(UND_MushroomHunter_Event_CorpseMentionedWife_074e6081-b828-47d8-9802-15d310f16a71, _, _)
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "BaelenDied")
+THEN
+QuestUpdate("UND_MushroomHunter", "SpokeWithDeadDwarf");
+
+// saving Baelen leads to one of several possible updates, depending on whether we know he is Baelen or not
+IF
+FlagSet(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1, _, _)
+AND
+QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+THEN
+QuestUpdate("UND_MushroomHunter", "SavedBaelen");
+
+IF
+FlagSet(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1, _, _)
+AND
+NOT QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "FoundDwarf")
+THEN
+QuestUpdate("UND_MushroomHunter", "FoundDwarfNotMet");
+
+IF
+FlagSet(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1, _, _)
+AND
+NOT QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+THEN
+QuestUpdate("UND_MushroomHunter", "SavedDwarf");
+
+// talking to Baelen leads to one of several possible updates, depending on whether we know he is Baelen or not
+PROC
+PROC_UND_MushroomHunter_SendHunterToVillage()
+AND
+DB_Players(_Player)
+AND
+QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+THEN
+QuestUpdate(_Player, "UND_MushroomHunter", "TalkedToBaelen");
+
+PROC
+PROC_UND_MushroomHunter_SendHunterToVillage()
+AND
+DB_Players(_Player)
+AND
+NOT QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+THEN
+QuestUpdate(_Player, "UND_MushroomHunter", "TalkedToDwarf");
+
+QRY
+QRY_UND_MushroomHunter_KnowsDwarfIsBaelen()
+AND
+DB_QuestIsAccepted("UND_MushroomHunter")
+AND
+QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "TalkedToDerryth")
+AND
+DB_GlobalFlag(UND_MushroomHunter_Met_InMushrooms_707dcd3c-1b50-6b02-ac8b-9cd73f116ea3)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_UND_MushroomHunter_KnowsBaelensDescription()
+AND
+DB_QuestIsAccepted("UND_MushroomHunter")
+AND
+QRY_QuestUpdateIsUnlockedForAny("UND_MushroomHunter", "TalkedToDerryth")
+THEN
+DB_NOOP(1);
+
+IF
+FlagSet((FLAG)Act2_PointOfNoReturnReached_a3155f30-b8f3-4db5-ac21-d3036f4426e3, NULL_00000000-0000-0000-0000-000000000000, _)
+AND
+DB_Players(_Player)
+AND
+QuestIsAccepted(_Player, "UND_MushroomHunter", 1)
+THEN
+QuestUpdate(_Player, "UND_MushroomHunter", "LeftAct1");
+//END_REGION Quest journal Mushroom Hunter
+
+//REGION Move Scroll from Player Inventory to the Field
+IF
+FlagSet(UND_MushroomHunter_Event_MissedThrow_79d06a86-6831-4814-b88f-e175856ab1e3, (CHARACTER)_Player, _)
+THEN
+ClearFlag(UND_MushroomHunter_Event_MissedThrow_79d06a86-6831-4814-b88f-e175856ab1e3, _Player);
+SetEntityEvent(_Player, "UND_MushroomHunter_PlayerMissedThrow");
+
+IF
+EntityEvent((CHARACTER)_Player, "UND_MushroomHunter_PlayerMissedThrow")
+AND
+QRY_RemoveLocalItemsByTemplateFromMagicPockets(_Player, LOOT_SCROLL_MistyStep_9a2a3fcc-d948-4463-b88b-a9d61b77b015, 1)
+AND
+GetPosition(S_UND_MushroomHunter_ScrollSpawnPosition_d821b23d-8fad-478c-976e-bc903a182b2e, _X, _Y, _Z)
+THEN
+PROC_CreateAt(LOOT_SCROLL_MistyStep_9a2a3fcc-d948-4463-b88b-a9d61b77b015, _X, _Y, _Z);
+//END_REGION Move Scroll from Player Inventory to the Field
+
+//REGION Move Backpack from Player Inventory to the Field
+PROC
+PROC_GlobalFlagReactionAfterDialog(UND_MushroomHunter_Event_MoveBackpackFromPlayer_a74e323a-2fcd-4155-bc4b-1b6de8eda43d)
+THEN
+TeleportTo(S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, S_UND_MushroomHunter_BackpackLandingSpot_8073ab00-71a7-40e0-9756-c8f344574811, "", 0, 0, 0, 0, 1);
+
+IF
+FlagSet(UND_MushroomHunter_Event_MissedBackpackThrow_602a46f7-7aba-473e-964f-8bf16c78ae8a, (CHARACTER)_Player, _)
+THEN
+ClearFlag(UND_MushroomHunter_Event_MissedBackpackThrow_602a46f7-7aba-473e-964f-8bf16c78ae8a, _Player);
+SetEntityEvent(_Player, "UND_MushroomHunter_PlayerMissedBackpackThrow");
+
+IF
+EntityEvent((CHARACTER)_Player, "UND_MushroomHunter_PlayerMissedBackpackThrow")
+AND
+GetPosition(S_UND_MushroomHunter_ScrollSpawnPosition_d821b23d-8fad-478c-976e-bc903a182b2e, _X, _Y, _Z)
+THEN
+TeleportTo(S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, S_UND_MushroomHunter_ScrollSpawnPosition_d821b23d-8fad-478c-976e-bc903a182b2e, "", 0, 0, 0, 0, 1);
+//END_REGION Move Scroll from Player Inventory to the Field
+
+//REGION Giving / throwing the scroll
+PROC
+PROC_DialogFlagSetup((DIALOGRESOURCE)UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e, (CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player)
+AND
+GetDistanceTo(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player, _Dist)
+AND
+_Dist < 6.0
+THEN
+SetFlag(UND_MushroomHunter_State_NoThrowing_4fab0460-6c44-4727-8ae4-3350ad01c44b, _Player);
+
+PROC
+PROC_DialogFlagSetup((DIALOGRESOURCE)UND_MushroomHunter_73879b46-280d-5317-4cdb-5232fe9a8e1e, (CHARACTER)S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player)
+AND
+GetDistanceTo(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _Player, _Dist)
+AND
+_Dist >= 6.0
+THEN
+ClearFlag(UND_MushroomHunter_State_NoThrowing_4fab0460-6c44-4727-8ae4-3350ad01c44b, _Player);
+//END_REGION Giving / throwing the scroll
+
+//REGION Being hit while in the field of mushrooms
+// as a civilian he flees the scene, but we don't want that, he needs to just escape the field instead
+QRY
+QRY_CRIME_BlockRegisterCrime(_, _CrimeType, _, _, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, _)
+AND
+QRY_CRIME_IsCrimeFamilyMember(_CrimeType, "Assault")
+AND
+IsInTrigger(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_MushroomField_69e4ad1a-c618-4464-88a1-e8f6b0a99370, 1)
+THEN
+PROC_UND_MushroomHunter_EscapeViaRunning();
+//END_REGION
+
+//REGION Debug
+IF
+FlagSet(Debug_UND_MushroomHunter_SaveMushroomHunter_8e397ce1-9603-4bcf-80fc-5a6f4a627db1, NULL_00000000-0000-0000-0000-000000000000, _)
+THEN
+TeleportTo(S_UND_MushroomHunter_Backpack_152dcb1d-1906-4f6c-aa9c-014dc0c289fa, S_UND_MushroomHunter_HunterClearing_0c5c5eef-d6a4-48f2-be76-69d8e9e852f8, "", 0, 0, 0);
+
+IF
+TextEvent("debug_savemh")
+AND
+DB_Players(_Player)
+THEN
+SetFlag(UND_DwarvenAlchemist_Knows_LossOfMemory_e9107b31-22c9-efe4-8482-f2109041e1c5, NULL_00000000-0000-0000-0000-000000000000);
+SetFlag(UND_MushroomHunter_State_Saved_cd1f8012-322b-4135-bb40-54580bf5cea1, NULL_00000000-0000-0000-0000-000000000000);
+SetFlag(UND_MushroomHunter_State_InVillage_b9b27a52-e27b-481f-b483-8fcb95ff2f65, NULL_00000000-0000-0000-0000-000000000000);
+SetFlag(UND_MushroomHunter_State_ReportingToWife_3160b3f2-409f-4a79-a3ae-0cc698e91ef6, NULL_00000000-0000-0000-0000-000000000000);
+SetFlag(UND_MyconidCircle_State_GainedAccess_fb9b0ee2-a499-cef2-fd3e-d9556050ea6a, NULL_00000000-0000-0000-0000-000000000000);
+ToInventory(S_UND_MushroomHunter_Noblestalk_09561b3f-f556-4a01-b289-9b362bc0d43a, _Player, 1, 1, 1);
+PROC_TeleportPartiesTo(S_UND_MushroomHunter_AppearingPosition_30aa288d-2027-40b8-8bfa-5ada9097b249, "");
+TeleportTo(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, S_UND_MushroomHunter_MyconidVillagePosition_38297231-4aae-47a0-acda-d27ed1f9f3ae);
+
+PROC
+PROC_GlobalFlagReactionAfterDialog((FLAG)Debug_SaveMushroomHunter_8e397ce1-9603-4bcf-80fc-5a6f4a627db1)
+THEN
+PROC_UND_MushroomHunter_EscapeViaSpell();
+
+IF
+TextEvent("mh_fixtorch")
+THEN
+PROC_UND_MushroomHunter_FixTorchVFX();
+//END_REGION Debug
+
+//REGION Goal Completion
+PROC
+PROC_LevelLoadedOnce("BGO_Main_A")
+THEN
+GoalCompleted;
+//END_REGION
+EXITSECTION
+NOT DB_GLO_CharacterCorpseDialog(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, (DIALOGRESOURCE)UND_MushroomHunter_Dead_33e491dd-3842-b789-1dce-8a0d8788a83e);
+NOT DB_GLO_CharacterCorpseDialog(S_GLO_Derryth_2b537d2a-14c8-43b3-ab71-d537c925a2a7, (DIALOGRESOURCE)UND_DerrythBonecloak_Dead_ed5e7ae1-1c5d-c277-099c-fd8280f4d3f4);
+ENDEXITSECTION
+ParentTargetEdge "Act1"
