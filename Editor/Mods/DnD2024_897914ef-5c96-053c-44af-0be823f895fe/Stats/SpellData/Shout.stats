@@ -2787,6 +2787,75 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="383e59eb-4db8-4ebe-9b19-5ae78387e1c2" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ab5e8a3-ea53-4ba5-9701-bbabdfae4292" />
+        <field name="Name" type="NameTableFieldDefinition" value="EyesOfNight" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DARKVISION,100,-1);" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_SuperiorDarkvision" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hec4a6bcdg8605g41e4g8852g877f5c055465" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha33ddae2g1c5bg9b0bg8307g1ed8e753bc15" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DARKVISION,100,-1);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Wizard_TheThirdEye_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Wizard_TheThirdEye_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03114753-8d91-4c52-8207-728a67cdd59b,,;,,;51c06d74-c048-452a-a248-41a751728e3e,,;e9731a5c-e4ba-4872-8950-36d625061ec3,,;8fcb1f19-a84b-486d-81fa-098aaf7cc9be,,;,,;c5bd6ce6-281c-4314-9f74-9f7bb2f4cf03,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="a334f3bc-65c4-4266-8a21-e10d026958f8" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b7978c69-a968-44d5-9482-08860fd234c2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="079ec7a8-3a4f-4a59-98eb-c2bc82a7242a" />
+        <field name="Name" type="NameTableFieldDefinition" value="TwilightSanctuary" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(TWILIGHT_SANCTUARY_AURA,100,10);" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfWarding" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h93835ab2gd32dgb000g6d71gaf792488673b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7e9705fdg8018gea33g08e7g9a5b338d7d6a" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TWILIGHT_SANCTUARY_AURA,100,10);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_ActivateAuraOfVitality_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Paladin_AuraOfVitality_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;5e7e63e1-0e69-46e7-ade7-fe3dadcc9184,,;e9ad50df-e7f1-43a0-b782-4c08f92b0f5a,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="747ac7e5-c52e-4e5a-be78-1f9de85b55ea" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="8265c6d6-662a-40fe-888b-024af0e2b1b9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d35715de-761a-4f4b-b3a3-60c7932489fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="StepsOfNight" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FLY,100,10)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Fly" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha234394cge19egcbbege237gb40a9219bacb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd00a3cd4g9f52gd499g2530gb2fb01ccdeba" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FLY,100,10)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Fly_L4to5_01" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Fly_L4to5" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Fly_L4to5" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Fly_L4to5" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_GrantFly" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;StepsOfNight:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;236087a5-5597-4ee7-ab06-75b01147f596,,;ee0b6a78-c6b6-4852-aecb-d7c474a37d68,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f1ba15e1-93c4-4c94-a6d4-2b1b3934ce44" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bcd66fb0-b0bc-41d0-abba-ad443d63dd72" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="8cd6c669-ded1-476a-aa5e-d7dd055381d7" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasObscuredState(ObscuredState.Clear)" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnObscurityChanged" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF9ACD32" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bae7b948-aeb3-41dd-8360-b568a2fe4127" />

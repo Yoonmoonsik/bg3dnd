@@ -895,6 +895,21 @@
                     <attribute id="UUID" type="guid" value="337c2aa3-1131-4775-b692-03d2c1bbb3cc"/>
                 </node>
                 <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Watchers Spell Level 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_ProtectionFromEvilAndGood;Shout_Shield_Sorcerer"/>
+                    <attribute id="UUID" type="guid" value="ab4fc24e-d9a6-4eaa-a37a-bd74bd5adcc2"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Watchers Spell Level 5"/>
+                    <attribute id="Spells" type="LSString" value="Target_Moonbeam;Shout_SeeInvisibility"/>
+                    <attribute id="UUID" type="guid" value="4250024c-6469-48e4-b419-8fb1aa84327b"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Watchers Spell Level 9"/>
+                    <attribute id="Spells" type="LSString" value="Target_Counterspell;Shout_SpiritGuardians"/>
+                    <attribute id="UUID" type="guid" value="0c8164a2-14c5-40ad-8ab4-4951125825de"/>
+                </node>
+                <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="__RANGER__"/>
                     <attribute id="UUID" type="guid" value="40b9f92a-90a7-45dd-a189-1b249b2c49a2"/>
                 </node>
@@ -1866,19 +1881,24 @@
                     <attribute id="UUID" type="guid" value="3928cc43-fd2d-46e3-90f5-9171e3aad0f2"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Watchers Spell Level 3"/>
-                    <attribute id="Spells" type="LSString" value="Target_ProtectionFromEvilAndGood;Shout_Shield_Sorcerer"/>
-                    <attribute id="UUID" type="guid" value="ab4fc24e-d9a6-4eaa-a37a-bd74bd5adcc2"/>
+                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 2"/>
+                    <attribute id="Spells" type="LSString" value="Target_FaerieFire;Target_Sleep;Target_Moonbeam;Shout_SeeInvisibility"/>
+                    <attribute id="UUID" type="guid" value="0346c8ea-e965-4928-b446-d9befab7a939"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Watchers Spell Level 5"/>
-                    <attribute id="Spells" type="LSString" value="Target_Moonbeam;Shout_SeeInvisibility"/>
-                    <attribute id="UUID" type="guid" value="4250024c-6469-48e4-b419-8fb1aa84327b"/>
+                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 3"/>
+                    <attribute id="Spells" type="LSString" value="Shout_AuraOfVitality;Projectile_VoidStrike"/>
+                    <attribute id="UUID" type="guid" value="7f939ab3-5835-4319-bed9-aeac6efadc7d"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Watchers Spell Level 9"/>
-                    <attribute id="Spells" type="LSString" value="Target_Counterspell;Shout_SpiritGuardians"/>
-                    <attribute id="UUID" type="guid" value="0c8164a2-14c5-40ad-8ab4-4951125825de"/>
+                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 4"/>
+                    <attribute id="Spells" type="LSString" value="Target_FreedomOfMovement;Target_Invisibility_Greater"/>
+                    <attribute id="UUID" type="guid" value="5268f533-1ed7-4815-a6df-7b89b3987893"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 5"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CircleOfPower;Target_Dawn"/>
+                    <attribute id="UUID" type="guid" value="83099155-2bcc-42f0-9b2c-19d973641ff5"/>
                 </node>
             </children>
         </node>

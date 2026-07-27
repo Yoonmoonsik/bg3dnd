@@ -1135,6 +1135,9 @@
                                     <attribute id="Object" type="guid" value="f013d01b-3310-43f7-81bf-a51130442b5e"/>
                                 </node>
                                 <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="6a75d401-8aba-40d3-83aa-ae3bb1855448"/>
+                                </node>
+                                <node id="SubClass">
                                     <attribute id="Object" type="guid" value="b9ccf90e-b35b-4b73-b896-8ed2d32ae8c6"/>
                                 </node>
                             </children>
@@ -2003,6 +2006,47 @@
                     <attribute id="Selectors" type="LSString" value="AddSpells(808576a6-c4c8-4376-b8f7-cbf3b13c99e0,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="defe59d4-62be-4428-80cd-c34a10a4cb0d"/>
                     <attribute id="UUID" type="guid" value="a6a01179-c227-4028-911d-60fc8489b819"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="TwilightDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="TwilightDomain_3_TwilightDomainSpells;TwilightDomain_3_EyesOfNight;TwilightDomain_3_VigilantBlessing;TwilightDomain_3_TwilightSanctuary"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0346c8ea-e965-4928-b446-d9befab7a939,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="c7da9e63-0991-4492-b966-26e8533866d1"/>
+                    <attribute id="UUID" type="guid" value="93578638-97cb-4504-8f8b-19059fb6050b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="TwilightDomain"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(7f939ab3-5835-4319-bed9-aeac6efadc7d,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="c7da9e63-0991-4492-b966-26e8533866d1"/>
+                    <attribute id="UUID" type="guid" value="4bac0c22-bca2-456d-9581-bb29a848da7e"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="TwilightDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="TwilightDomain_6_StepsOfNight;TwilightDomain_6_StepsOfNight_Resource"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="c7da9e63-0991-4492-b966-26e8533866d1"/>
+                    <attribute id="UUID" type="guid" value="968e8c58-a5d8-41f8-a1b8-f06882e86c43"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="TwilightDomain"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(5268f533-1ed7-4815-a6df-7b89b3987893,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="c7da9e63-0991-4492-b966-26e8533866d1"/>
+                    <attribute id="UUID" type="guid" value="e735ecc5-1cb0-4ab8-9973-af9e27f34c52"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="TwilightDomain"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(83099155-2bcc-42f0-9b2c-19d973641ff5,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="c7da9e63-0991-4492-b966-26e8533866d1"/>
+                    <attribute id="UUID" type="guid" value="06d7504e-9212-4187-adac-e2cd46a6ff0a"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice08,1,0);Proficiency(LightArmor);Proficiency(Shields);Tag(PETPAL);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(SimpleWeapons);ActionResource(MoonSickle,1,0)"/>

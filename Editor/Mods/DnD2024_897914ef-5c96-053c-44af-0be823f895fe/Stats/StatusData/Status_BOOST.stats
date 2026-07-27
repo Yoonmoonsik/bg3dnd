@@ -5101,6 +5101,67 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="31b83471-b558-4cc2-b5d1-4d01dabcf482" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7bbdc6b0-3276-4386-8a6f-c995af65772e" />
+        <field name="Name" type="NameTableFieldDefinition" value="VIGILANT_BLESSING" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hebfbed86g90fbg2febg9b40gf962dcb2a657" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf3e7519ag2e32g1737g0368g20c23dbd7c78" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_BlessingOfTheTrickster" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VIGILANT_BLESSING" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="170dc40c-39da-4270-98aa-238e6a0a1f33" />
+        <field name="Name" type="NameTableFieldDefinition" value="TWILIGHT_SANCTUARY_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1680e4e3g7e97g83f6g8211gb82d21865136" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h252a159fg1973g1128g723dgcc172f2c22d4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfWarding" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TWILIGHT_SANCTUARY_AURA" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally()):ApplyStatus(TWILIGHT_SANCTUARY_BUFF)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(TWILIGHT_SANCTUARY_TEMPHP,100,-1)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57036219-909e-498f-a032-ec0c8e96ec48" />
+        <field name="Name" type="NameTableFieldDefinition" value="TWILIGHT_SANCTUARY_BUFF" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc41ae0efg82fbgffb3g1dc0g6d7e4cafbb17" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5f942db5g59f8g5849ga9beg2552e5c19da4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfWarding" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TWILIGHT_SANCTUARY_AURA" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(TWILIGHT_SANCTUARY_TEMPHP,100,-1)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3e953d2b-299f-4622-8d75-5b97631ac96a" />
+        <field name="Name" type="NameTableFieldDefinition" value="TWILIGHT_SANCTUARY_TEMPHP" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbed305dbgd604g3016gc95fg85178f47c414" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hab6207d6g3b79g94b6g5e02gc2006b0e62b7" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TWILIGHT_SANCTUARY_TEMPHP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d6+Cause.ClassLevel(Cleric));" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_Frightened);RemoveStatus(SG_Charmed)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF9ACD32" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9bf598df-0e5c-45e6-b178-41684541d2f2" />
