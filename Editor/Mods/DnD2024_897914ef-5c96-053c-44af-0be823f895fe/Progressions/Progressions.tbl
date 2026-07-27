@@ -4466,7 +4466,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HitPointDice10,1,0);ActionResource(SpellSlot,1,1);ActionResource(ChannelOath,2,0)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Paladin_3_ChannelOath" />
-        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="b36d247e-d39f-4ae9-9476-3ec315c55789;16085a26-2e7b-4ee0-a3dd-2fdb678e238d;eaad98ec-026b-429e-aa24-8274dfd1ecb7;1c761ad0-6f5f-409e-ac1d-ddf6f85c1fc4;b81df0a8-5ecb-43b5-abd9-39b9a244561c;0845c298-29fa-424b-b2be-b941345a5e90;3cc3d397-c47d-4966-87ae-88827f73f645" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="b36d247e-d39f-4ae9-9476-3ec315c55789;16085a26-2e7b-4ee0-a3dd-2fdb678e238d;eaad98ec-026b-429e-aa24-8274dfd1ecb7;1c761ad0-6f5f-409e-ac1d-ddf6f85c1fc4;b81df0a8-5ecb-43b5-abd9-39b9a244561c;0845c298-29fa-424b-b2be-b941345a5e90;3cc3d397-c47d-4966-87ae-88827f73f645;6253e633-263b-48de-8b8c-b4334bcd6f4f" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(9698ca24-afb7-44aa-938a-3a377bc68e82,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
@@ -4932,6 +4932,51 @@
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(337c2aa3-1131-4775-b692-03d2c1bbb3cc,OathSpells,,,AlwaysPrepared)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1001" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e4221b9f-092f-45bc-9c61-ec3bb079e96c" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="403102da-744a-4f16-b392-c1da7e9bbf2c" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Watchers" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Watchers_3_Tenets;Watchers_3_OathSpells;Watchers_3_WatchersWill;Watchers_3_AbjureTheExtraplanar" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ab4fc24e-d9a6-4eaa-a37a-bd74bd5adcc2,OathSpells,,,AlwaysPrepared)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1002" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9e325711-82e4-40e9-b281-a20020747dd1" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="403102da-744a-4f16-b392-c1da7e9bbf2c" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Watchers" />
+        <field name="Level" type="ByteTableFieldDefinition" value="5" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(4250024c-6469-48e4-b419-8fb1aa84327b,OathSpells,,,AlwaysPrepared)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1003" />
+        <field name="UUID" type="IdTableFieldDefinition" value="39ad4ac3-ba23-455a-8801-a56bcff317bf" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="403102da-744a-4f16-b392-c1da7e9bbf2c" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Watchers" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Watchers_7_AuraOfTheSentinel" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1004" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3bbac35f-bc72-4fd4-aafb-bab35caf6ef5" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="403102da-744a-4f16-b392-c1da7e9bbf2c" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Watchers" />
+        <field name="Level" type="ByteTableFieldDefinition" value="9" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(0c8164a2-14c5-40ad-8ab4-4951125825de,OathSpells,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FF006400" is_substat="false">

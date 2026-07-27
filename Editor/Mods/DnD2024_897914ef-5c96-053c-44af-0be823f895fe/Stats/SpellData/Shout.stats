@@ -3629,6 +3629,33 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="8265c6d6-662a-40fe-888b-024af0e2b1b9" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9eac213-7af5-4bca-9ab6-7599d8a12aff" />
+        <field name="Name" type="NameTableFieldDefinition" value="AbjureTheExtraplanar" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC(),AdvantageOnTurned())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(TURNED,100,10,AdvantageOnFrightened(), DisadvantageOnFrightened());" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('ABERRATION') or Tagged('CELESTIAL') or Tagged('ELEMENTAL') or Tagged('FIEND') or Tagged('FEY');" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_TurnTheFaithless" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h54a6679dg10f0g981egf460g55ffbc1cfcaf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8f70346agdae6g92b8gc487gb1bbc53e7cbd" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TURNED,100, 10)" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="a71e9779-ab72-47d8-b8d7-e0f16e1d0d9b" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Paladin_TurnTheFaithless_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Paladin_TurnTheFaithless_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ChannelOath:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;62e74220-ba87-4fe7-aa99-9d12cab9d654,,;b1f3f86a-a1fc-43f6-8a2b-0110a9f99ead,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c218f05b-1e12-4298-beff-e4d33a5fa5a5" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="c12123a3-78d0-4d7d-a14f-54d84f61c5ea" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF006400" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="eb2020fb-f98a-4905-ad5f-98692c6e91b0" />

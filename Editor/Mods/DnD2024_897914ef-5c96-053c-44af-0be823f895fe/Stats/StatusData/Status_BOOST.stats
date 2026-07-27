@@ -5811,6 +5811,42 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.ClassLevel(Paladin)/2,Psychic)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a253d73a-7b03-4729-a16f-ffaa890f32f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="WATCHERS_WILL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfe23251ag4606g4bd5gb621g1bf49c9afed5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h162f8511gf43fg4a20g92acg66806eb1c643" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_MagicCircle" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WATCHERS_WILL" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(SavingThrow,Intelligence);Advantage(SavingThrow,Wisdom);Advantage(SavingThrow,Charisma);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b74ca47-9874-44be-bac8-1e595ed5b22e" />
+        <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_THE_SENTINEL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf005b6eegd9edg12b5g2847g6cb308887662" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8e6db56ge4ddgc57dgdfdbg53d7f82bba08" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Threat" />
+        <field name="StackId" type="StringTableFieldDefinition" value="AURA_OF_THE_SENTINEL" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally()):ApplyStatus(AURA_OF_THE_SENTINEL_BUFF)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(8)):Initiative(1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="07f1e280-88d8-4d80-a658-1a25266cd04e" />
+        <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_THE_SENTINEL_BUFF" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8b74ca47-9874-44be-bac8-1e595ed5b22e" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF006400" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f7ca82b5-bfe1-41a2-a6d5-03ed78930ecb" />

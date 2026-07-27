@@ -3505,6 +3505,9 @@
                                 <node id="SubClass">
                                     <attribute id="Object" type="guid" value="3cc3d397-c47d-4966-87ae-88827f73f645"/>
                                 </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="6253e633-263b-48de-8b8c-b4334bcd6f4f"/>
+                                </node>
                             </children>
                         </node>
                     </children>
@@ -3849,6 +3852,39 @@
                     <attribute id="Selectors" type="LSString" value="AddSpells(337c2aa3-1131-4775-b692-03d2c1bbb3cc,OathSpells,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="06cd782b-69b2-4200-93ea-77a611f87363"/>
                     <attribute id="UUID" type="guid" value="59639525-be3c-4913-b839-652c1be7b36c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Watchers"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Watchers_3_Tenets;Watchers_3_OathSpells;Watchers_3_WatchersWill;Watchers_3_AbjureTheExtraplanar"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ab4fc24e-d9a6-4eaa-a37a-bd74bd5adcc2,OathSpells,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="403102da-744a-4f16-b392-c1da7e9bbf2c"/>
+                    <attribute id="UUID" type="guid" value="e4221b9f-092f-45bc-9c61-ec3bb079e96c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Watchers"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(4250024c-6469-48e4-b419-8fb1aa84327b,OathSpells,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="403102da-744a-4f16-b392-c1da7e9bbf2c"/>
+                    <attribute id="UUID" type="guid" value="9e325711-82e4-40e9-b281-a20020747dd1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Watchers"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Watchers_7_AuraOfTheSentinel"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="403102da-744a-4f16-b392-c1da7e9bbf2c"/>
+                    <attribute id="UUID" type="guid" value="39ad4ac3-ba23-455a-8801-a56bcff317bf"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Watchers"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0c8164a2-14c5-40ad-8ab4-4951125825de,OathSpells,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="403102da-744a-4f16-b392-c1da7e9bbf2c"/>
+                    <attribute id="UUID" type="guid" value="3bbac35f-bc72-4fd4-aafb-bab35caf6ef5"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice10,1,0);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(FavoredEnemy,2,0);ActionResource(MoonSickle,1,0)"/>

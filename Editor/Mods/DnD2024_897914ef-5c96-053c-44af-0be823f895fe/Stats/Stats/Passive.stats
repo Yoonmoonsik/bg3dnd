@@ -4238,6 +4238,71 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_AuraOfConquest);" />
       </fields>
     </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c2166aa3-83d8-4c0c-9e17-31be41b8cd47" />
+        <field name="Name" type="NameTableFieldDefinition" value="__WATCHERS__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2dee3717-ce9b-4db4-8d91-288136e2b748" />
+        <field name="Name" type="NameTableFieldDefinition" value="Watchers_3_Tenets" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19f6ac0dg82e0g24f3g61f4ge443d1f54e72" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h33e17780g9ca6g87f9g62b0gdbc3715ada11" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_MagicCircle" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="549894c0-8690-492e-95f6-dce8821faa8c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Watchers_3_OathSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he8ec9e49g1ed3g994egd537g4bff52ad40e5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7731d2eag11ffg44e4g8569ga5e35e0e6de9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEvilAndGood" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="54fdf541-4ed0-4719-9032-06c376b693f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Watchers_3_WatchersWill" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h53bf4744g8817g4dc1g9f65g4ca743366100" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h55809fbag7bd0g427fgaea4gcc7103f95f2c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_MagicCircle" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_WatchersWill);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d2d31fd-15de-4867-8540-ec0f0d761ae2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Watchers_3_AbjureTheExtraplanar" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1c396853g089ag4cf6gaac4g3a465614eb89" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9aa052ddgf617g4344ga11dg4ad49e29159e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_TurnTheFaithless" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_AbjureTheExtraplanar);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59f35954-b7c3-49b6-85ad-ff950c537d42" />
+        <field name="Name" type="NameTableFieldDefinition" value="Watchers_7_AuraOfTheSentinel" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d68e487g894dg47f1g8cdcg0ca8573c0e57" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h41b477e4g3e5cg4162gb3dbga2e44d7f9e08" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Threat" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7507" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;ToggledDefaultOn;IsToggled" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(AURA_OF_THE_SENTINEL, 100, -1);" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(AURA_OF_THE_SENTINEL)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF006400" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f620b722-de59-43de-ab62-d304856a04ec" />
