@@ -364,6 +364,21 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_GREASE", -1.0, 1, _Player);
 
 IF
+StartedPreviewingSpell((CHARACTER)_Player,"Target_HellsLash",_, _)
+AND
+HasActiveStatus(_Player, "LFO_MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_HELLSLASH", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "LFO_MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_HELLSLASH", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Projectile_IceKnife",_, _)
 AND
 HasActiveStatus(_Player, "LFO_MAGICINITIATE_WIZARD_SPELL_START", 1)
@@ -497,6 +512,21 @@ THEN
 ApplyStatus(_Player, "LFO_MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
 OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_SLEEP", -1.0, 1, _Player);
+
+IF
+StartedPreviewingSpell((CHARACTER)_Player,"Projectile_SpellfireFlare",_, _)
+AND
+HasActiveStatus(_Player, "LFO_MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_SPELLFIREFLARE", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "LFO_MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_SPELLFIREFLARE", -1.0, 1, _Player);
 
 IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_HideousLaughter",_, _)
