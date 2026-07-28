@@ -13092,11 +13092,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="EncouragingSong" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5d786ea9-65c3-44a8-b4bc-35579a6d29d2" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BARDIC_INSPIRATION,100, -1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(HEROIC_INSPIRATION_TEMP,100, -1);" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(StandardProficiencyBonusScale)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65160f8dg63e2g4feeg3550g6feca8c4a710" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h37588848gdc10g2334gdf51ga179befdb18d" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEROIC_INSPIRATION_TEMP,100, -1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
