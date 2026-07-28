@@ -9355,6 +9355,56 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="913ccd23-4bfa-4099-8537-90e667319aab" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_ELDRITCHBLAST" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_ELDRITCHBLAST" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_EldritchBlast);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hda79756dg4b88g4c2eg8d83g99f61071b3a7" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e7c9b4d8-15b6-4aa4-8eb2-b32e19ed640d" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_FINGERGUNS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_FINGERGUNS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_FingerGuns);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1fff8b11ge8b9g4012gbe61gd0f4391ba557" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e65e452-5a86-4991-aa07-27091da287fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_HELLFIRE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_HELLFIRE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Hellfire);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a7ec7c7g207cg45f8g927cg6c9f50c0fb9b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="239de00c-2f06-4d7e-aa0d-cd391a6c69a4" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_SORCEROUSBURST" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SORCEROUSBURST" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_SorcerousBurst);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9bfda308gf51bg41ccg97c0ga96e9d21a338" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="915fc903-f5f5-4d56-871d-e871ad5ee006" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_VICIOUSMOCKERY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_VICIOUSMOCKERY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ViciousMockery);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f64848bg052dg43f2g810eg7be150061cc4" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="95dbe0fc-222e-48f5-b2a5-67d531da91a9" />
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_WORDOFRADIANCE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
@@ -10869,6 +10919,35 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="11aecdb2-54db-40a6-b8cd-f79cc913f340" />
         <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_SPELL_END" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_WIZARD_SPELL_START)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="400ee080-07cc-43a3-9904-08f2ef64f3c4" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHETOME_CANTRIP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f7b8236-98d4-4734-b5af-a7bfe40a51c0" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PACTOFTHETOME_CANTRIP" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a86a420e-35b7-4870-b814-065ad6ef48d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e1a3cbc8-f4e9-4d79-b40c-2b522a9c72c3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('PACTOFTHETOME_CANTRIP_END',context.Source)):UnlockSpell(Shout_PactOfTheTome_Cantrip);UnlockSpellVariant(SpellId('Shout_PactOfTheTome_Cantrip'),ModifyIconGlow());" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdf8112dfgd5ddg43f2g923fg9c22837a9136" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h01763f65g1b60g44b2ga863gd3ee2a4410ba" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_PactOfTheTome" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c5207a57-534c-4887-b060-3b0272be4d78" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c72b2d16-b379-46a4-9014-2d7217d9ba52" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(PACTOFTHETOME_CANTRIP)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

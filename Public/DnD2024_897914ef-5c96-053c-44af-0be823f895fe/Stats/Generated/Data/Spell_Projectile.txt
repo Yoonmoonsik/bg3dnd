@@ -502,6 +502,13 @@ data "PrepareEffect" "db5705a1-824d-42a3-8d09-2352b9cd4af9"
 data "CastEffect" "2b284468-04a1-4730-a5c0-8ce54afbd937"
 data "DamageType" "Thunder"
 
+new entry "Projectile_SorcerousBurst_Dummy"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_SorcerousBurst_1"
+data "SpellContainerID" ""
+data "Icon" "Spell_Evocation_SorcerousBurst"
+
 new entry "Projectile___EVOCATION__SLEVEL_1_"
 type "SpellData"
 data "SpellType" "Projectile"
