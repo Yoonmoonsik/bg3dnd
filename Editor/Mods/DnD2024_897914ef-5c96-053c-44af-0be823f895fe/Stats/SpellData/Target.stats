@@ -4312,6 +4312,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="f3d3763c-1cbb-4d7a-94da-d9f703b7d67a" />
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="f6672806-9b2f-401b-aed9-fe1aa0e2b27a" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4346,6 +4347,7 @@
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Fire_Gen_L1to3_Loop" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_SearingSmite_L1to3" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="bb9dff34-b2ab-49ad-88ae-c84c74c8c2ae" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
