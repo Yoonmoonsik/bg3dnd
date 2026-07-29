@@ -2052,6 +2052,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="097a9751-7969-4507-8b12-b1195a4c57e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="CANTRIP_FROSTBITE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d91582cgf795g8507gdfb6g12c4347c9ea6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h48ecfce6g6053gb38agfd4dg1a591402a8b0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Frostbite" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Misc_Status_Frost_MO" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Misc_Status_Frost_MO_Stop" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CANTRIP_FROSTBITE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack()):Disadvantage(AttackRoll);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsWeaponAttack()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="394baf16-5822-41ee-96c3-73d98ec9373a" />
         <field name="Name" type="NameTableFieldDefinition" value="RIMES_BINDING_ICE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfba479e0g369bg9b8cg94ffg1e1cd003b6e2" version="1" />
