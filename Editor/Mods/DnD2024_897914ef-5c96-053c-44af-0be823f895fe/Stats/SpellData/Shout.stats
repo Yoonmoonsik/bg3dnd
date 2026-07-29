@@ -2070,6 +2070,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="87c0b5f9-8dc4-45fd-a036-63bf1ed5d13d" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:IF(not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE,100,100);AI_IGNORE:IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_2,100,100);ApplyStatus(RAGE_MUTE,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE,100,100)" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2080,6 +2081,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:IF(not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_FRENZY,100,100);AI_IGNORE:IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_FRENZY_2,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_FRENZY,100,100)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdc0c151fgfe8egbcabge68cg685831c227f1" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2089,6 +2091,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="fa7bdcfa-9d94-472e-96d0-c5c8ea61dffe" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:IF(not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_GIANT,100,100);AI_IGNORE:IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_GIANT_2,100,100);ApplyStatus(RAGE_MUTE,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANT,100,100)" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2098,6 +2101,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="a2f1afc0-ad7e-40d0-a159-9688cb197118" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:IF(not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_BEAR,100,100);AI_IGNORE:IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_BEAR_2,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_TOTEM_BEAR,100,100)" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2107,6 +2111,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="33ce7f95-6d0b-45d6-9f3e-ee1b23f7d21c" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:IF(not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_EAGLE,100,100);AI_IGNORE:IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_EAGLE_2,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_TOTEM_EAGLE,100,100)" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2116,6 +2121,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d1c660ff-c7ed-4577-b492-260d4e9272ce" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:IF(not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_ELK,100,100);AI_IGNORE:IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_ELK_2,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_TOTEM_ELK,100,100)" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2125,6 +2131,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="39b1fc87-4fac-4247-afe5-824d4da6089d" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:IF(not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_TIGER,100,100);AI_IGNORE:IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_TIGER_2,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_TOTEM_TIGER,100,100)" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2134,6 +2141,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="da549ad9-7b12-49f9-b250-47ec4d9f3141" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:IF(not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_WOLF,100,100);AI_IGNORE:IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_WOLF_2,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_TOTEM_WOLF,100,100)" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2143,6 +2151,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="618981b6-7e2b-41b8-8b7c-1a7d21bbbf09" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:TriggerRandomCast(1,0,WildMagicBarbarian);IF(ClassLevelHigherOrEqualThan(1,'Barbarian') and not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE,100,100);IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_2,100,100);AI_ONLY:ApplyStatus(AI_HELPER_RAGE,100,100);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE,100,100)" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2159,6 +2168,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_STOP_REMOVE')" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
