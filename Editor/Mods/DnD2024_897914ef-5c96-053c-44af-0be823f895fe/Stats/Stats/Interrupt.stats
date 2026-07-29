@@ -1097,6 +1097,32 @@
         <field name="Properties" type="StringTableFieldDefinition" value="SetAdvantage();" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f240344a-6d9d-454c-ba6e-faaa7a76f315" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FavoredByTheGods_SavingThrow " />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he47fddeeg8b67g8bc6gaba6gd148183539d8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h28240d6ega416g96b6g8ea0g5f94c978a867" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BolsteringMagic_Boost" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,2d4);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="FavoredByTheGods:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="FavoredByTheGods" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fcd085d8-b90c-4592-828b-786868594d74" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FavoredByTheGods_Attack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f240344a-6d9d-454c-ba6e-faaa7a76f315" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0d518732g7a22g7a2cg9bdag30679557a5be" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8, context.Source);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF8A2BE2" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c815b78e-0ed5-4da1-afd0-c06c6359d0a9" />

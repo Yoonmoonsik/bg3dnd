@@ -4797,6 +4797,9 @@
                                     <attribute id="Object" type="guid" value="886e988c-1d77-43ad-a0a9-f1e48c56d29b"/>
                                 </node>
                                 <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="a613dda3-a107-4222-8f00-5f2b54f60b0f"/>
+                                </node>
+                                <node id="SubClass">
                                     <attribute id="Object" type="guid" value="36286b0a-26f9-4b4e-9311-fd1404301d20"/>
                                 </node>
                                 <node id="SubClass">
@@ -8861,6 +8864,47 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="7e76da16-650c-4a6e-85b0-f9e23a7f5a60"/>
                     <attribute id="UUID" type="guid" value="13b286a5-fb07-4944-97e9-58be14a32678"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DivineSoul"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DivineSoul_3_DivineMagic;DivineSoul_3_FavoredByTheGods"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,2,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(269d1a3b-eed8-4131-8901-a562238f5289,2,0,SorcererSpell);SelectSpells(2968a3e6-6c8a-4c2e-882a-ad295a2ad8ac,2,0,SorcererSpell);"/>
+                    <attribute id="TableUUID" type="guid" value="f98f8748-4842-4441-a3c0-1c2785333e02"/>
+                    <attribute id="UUID" type="guid" value="dab3f052-f8a7-4dba-9bfc-6376d8f9a190"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DivineSoul"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(21be0992-499f-4c7a-a77a-4430085e947a,2,0,SorcererSpell);"/>
+                    <attribute id="TableUUID" type="guid" value="f98f8748-4842-4441-a3c0-1c2785333e02"/>
+                    <attribute id="UUID" type="guid" value="e2ae07a3-af14-44b3-b826-a1e78a25e2da"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="DivineSoul"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DivineSoul_6_EmpoweredHealing"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="f98f8748-4842-4441-a3c0-1c2785333e02"/>
+                    <attribute id="UUID" type="guid" value="f8539dfb-be16-48f4-87d8-54b55a3548d2"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="DivineSoul"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(37e9b20b-5fd1-45c5-b1c5-159c42397c83,2,0,SorcererSpell);"/>
+                    <attribute id="TableUUID" type="guid" value="f98f8748-4842-4441-a3c0-1c2785333e02"/>
+                    <attribute id="UUID" type="guid" value="8255cc46-c30a-4642-ac20-ed18a96ed2e6"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="DivineSoul"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(b73aeea5-1ff9-4cac-b61d-b5aa6dfe31c2,2,0,SorcererSpell);"/>
+                    <attribute id="TableUUID" type="guid" value="f98f8748-4842-4441-a3c0-1c2785333e02"/>
+                    <attribute id="UUID" type="guid" value="db3fca5c-726d-4a96-b72f-1b4e2377a62b"/>
                 </node>
             </children>
         </node>

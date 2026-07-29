@@ -5610,6 +5610,49 @@
     </stat_object>
     <stat_object color="#FFDC143C" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7f2e26ea-0de0-43b6-99cc-2eb34e3917e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="__DIVINE SOUL__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="473fbee8-4578-49b2-84c7-b198bce0344e" />
+        <field name="Name" type="NameTableFieldDefinition" value="DivineSoul_3_DivineMagic" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h15f0ee5fga398ga6a4g198cgef588b8b978b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7388ec5cg457dg1ca4ge8c5g3185c4df0a9b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Bless" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="10503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9208658-b803-4812-8a15-4a025ddf2e5f" />
+        <field name="Name" type="NameTableFieldDefinition" value="DivineSoul_3_FavoredByTheGods" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc42ce789g281bg29d8gca00g60263a259a8c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8aa1cd7dg73adga855g2255gf663d05ed335" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BolsteringMagic_Boost" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="10503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_FavoredByTheGods_SavingThrow);UnlockInterrupt(Interrupt_FavoredByTheGods_Attack);ActionResource(FavoredByTheGods,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="07d401fa-1103-4f07-a2d6-739a0278dae2" />
+        <field name="Name" type="NameTableFieldDefinition" value="DivineSoul_6_EmpoweredHealing" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5daa3aadg2b0fga149g8553gadf0c6898df2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h12940965g725dg2c79gd30cg6b45c140c9be" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DiscipleOfLife" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="10506" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnHeal" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HealDoneGreaterThan(0) and (IsSpell() or IsCantrip()) or SpellId('Target_AuraOfVitality_Activate');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(2+SpellPowerLevel); ApplyStatus(PASSIVE_DISCIPLE_OF_LIFE,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDC143C" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f2082bb4-d1fe-4f0c-918b-4d5a8d43b9f1" />
         <field name="Name" type="NameTableFieldDefinition" value="__METAMAGIC__" />
       </fields>

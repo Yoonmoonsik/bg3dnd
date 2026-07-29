@@ -854,6 +854,22 @@
         <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_80" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a613dda3-a107-4222-8f00-5f2b54f60b0f" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="784001e2-c96d-4153-beb6-2adbef5abc92" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="DivineSoul" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdb7f26d7gc116gec10g33c4g5d76f22454ca" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h490ad4f0gd12fg2b06g615bg7c7d9ecf0520" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="f98f8748-4842-4441-a3c0-1c2785333e02" />
+        <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Sorcerer" />
+        <field name="PrimaryAbility" type="EnumerationTableFieldDefinition" value="Charisma" enumeration_type_name="Ability" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Charisma" enumeration_type_name="Ability" version="1" />
+        <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
+        <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF8A2BE2" is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_58" />

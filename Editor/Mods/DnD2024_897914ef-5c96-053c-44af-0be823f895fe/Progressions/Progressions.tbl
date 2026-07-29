@@ -6118,7 +6118,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HitPointDice06,1,0);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);ActionResource(SorceryPoint,1,0)" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(f80396e2-cb76-4694-b0db-5c34da61a478,2,1,SorcererSpell)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="UnlockedSpellSlotLevel2" />
-        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="ee5a89b5-21c6-419e-8b30-aecf929bd7d7;886e988c-1d77-43ad-a0a9-f1e48c56d29b;36286b0a-26f9-4b4e-9311-fd1404301d20;d45d0e7a-e5f9-4b43-865d-fb51aec2d32b;722826c2-5d11-4e17-9b21-b74e9dfca4d6;b443a7fa-b36a-4cbc-9e4b-f3167de34d1b;42622d71-74af-409a-b821-85f270245fe2;d379fdae-b401-4731-8d50-277c73919ae3;14374d37-a70e-41a8-9dc5-85a23f8b5dd2" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="ee5a89b5-21c6-419e-8b30-aecf929bd7d7;886e988c-1d77-43ad-a0a9-f1e48c56d29b;a613dda3-a107-4222-8f00-5f2b54f60b0f;36286b0a-26f9-4b4e-9311-fd1404301d20;d45d0e7a-e5f9-4b43-865d-fb51aec2d32b;722826c2-5d11-4e17-9b21-b74e9dfca4d6;b443a7fa-b36a-4cbc-9e4b-f3167de34d1b;42622d71-74af-409a-b821-85f270245fe2;d379fdae-b401-4731-8d50-277c73919ae3;14374d37-a70e-41a8-9dc5-85a23f8b5dd2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6794,6 +6794,62 @@
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(e65fb617-8905-40a8-98a3-ea453c22e04b)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDC143C" is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1010" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dab3f052-f8a7-4dba-9bfc-6376d8f9a190" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="f98f8748-4842-4441-a3c0-1c2785333e02" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DivineSoul" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DivineSoul_3_DivineMagic;DivineSoul_3_FavoredByTheGods" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,2,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(269d1a3b-eed8-4131-8901-a562238f5289,2,0,SorcererSpell);SelectSpells(2968a3e6-6c8a-4c2e-882a-ad295a2ad8ac,2,0,SorcererSpell);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1011" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e2ae07a3-af14-44b3-b826-a1e78a25e2da" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="f98f8748-4842-4441-a3c0-1c2785333e02" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DivineSoul" />
+        <field name="Level" type="ByteTableFieldDefinition" value="5" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(21be0992-499f-4c7a-a77a-4430085e947a,2,0,SorcererSpell);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1012" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f8539dfb-be16-48f4-87d8-54b55a3548d2" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="f98f8748-4842-4441-a3c0-1c2785333e02" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DivineSoul" />
+        <field name="Level" type="ByteTableFieldDefinition" value="6" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DivineSoul_6_EmpoweredHealing" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1013" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8255cc46-c30a-4642-ac20-ed18a96ed2e6" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="f98f8748-4842-4441-a3c0-1c2785333e02" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DivineSoul" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(37e9b20b-5fd1-45c5-b1c5-159c42397c83,2,0,SorcererSpell);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1014" />
+        <field name="UUID" type="IdTableFieldDefinition" value="db3fca5c-726d-4a96-b72f-1b4e2377a62b" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="f98f8748-4842-4441-a3c0-1c2785333e02" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DivineSoul" />
+        <field name="Level" type="ByteTableFieldDefinition" value="9" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(b73aeea5-1ff9-4cac-b61d-b5aa6dfe31c2,2,0,SorcererSpell);" />
       </fields>
     </stat_object>
     <stat_object color="#FF8A2BE2" is_substat="false">
