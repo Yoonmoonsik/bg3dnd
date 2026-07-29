@@ -1,0 +1,35 @@
+-- Shillelagh lets you *choose* whether to use your spellcasting ability instead of
+-- Strength, so the override must never make the attack worse. The status lives on the
+-- weapon, but boost conditions still resolve context.Source to the wielder, so the
+-- wielder's ability scores can be compared here (see BATTLE_READY for the same trick).
+-- Intelligence wins ties, then Wisdom, then Charisma, so exactly one override applies.
+
+function IntelligenceIsBestAttackAbility(entity)
+	entity = entity or context.Source
+	local intMod = GetModifier(entity.Intelligence)
+	local wisMod = GetModifier(entity.Wisdom)
+	local chaMod = GetModifier(entity.Charisma)
+	local strMod = GetModifier(entity.Strength)
+	local dexMod = GetModifier(entity.Dexterity)
+	return ConditionResult(intMod >= wisMod and intMod >= chaMod and intMod >= strMod and intMod >= dexMod)
+end
+
+function WisdomIsBestAttackAbility(entity)
+	entity = entity or context.Source
+	local intMod = GetModifier(entity.Intelligence)
+	local wisMod = GetModifier(entity.Wisdom)
+	local chaMod = GetModifier(entity.Charisma)
+	local strMod = GetModifier(entity.Strength)
+	local dexMod = GetModifier(entity.Dexterity)
+	return ConditionResult(wisMod > intMod and wisMod >= chaMod and wisMod >= strMod and wisMod >= dexMod)
+end
+
+function CharismaIsBestAttackAbility(entity)
+	entity = entity or context.Source
+	local intMod = GetModifier(entity.Intelligence)
+	local wisMod = GetModifier(entity.Wisdom)
+	local chaMod = GetModifier(entity.Charisma)
+	local strMod = GetModifier(entity.Strength)
+	local dexMod = GetModifier(entity.Dexterity)
+	return ConditionResult(chaMod > intMod and chaMod > wisMod and chaMod >= strMod and chaMod >= dexMod)
+end
