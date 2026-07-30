@@ -669,6 +669,17 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Medicine" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8067e2b2-758c-4558-90b5-44523baf3f2f" />
+        <field name="Name" type="NameTableFieldDefinition" value="NoSkillProficiency" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d7a0c3eg115bg4ae2gad78gc3e65c3e40bc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbfc3c711gf795g4750g93f7ga4084ef4f25d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Info" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="66875f09-5c06-4a73-bf32-9c091abcdb60" />
