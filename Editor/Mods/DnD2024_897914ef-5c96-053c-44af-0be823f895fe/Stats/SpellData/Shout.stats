@@ -2743,6 +2743,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94d1d740-f008-4778-bf43-a000c5f350a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="TurnUndead" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cff5416a-8b5a-402f-b9d2-bb4187b0fcea" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(TURNED, 100, 10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TURNED, 100, 10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fbd22ff1-f84f-45a5-ba4b-1f741f7fbfc2" />
         <field name="Name" type="NameTableFieldDefinition" value="RadianceOfTheDawn" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6412ed8c-e460-4723-854a-b560141f837a" />
