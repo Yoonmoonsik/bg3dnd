@@ -728,6 +728,14 @@ data "DisplayName" "h3afdceeegb918g70fcg89fagf3a2ca1e6ad3;1"
 data "DescriptionParams" "10"
 data "Conditions" "not Self(context.Source, context.Observer) and IsAbleToReact(context.Observer) and Enemy(context.Target,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and HasFunctor(StatsFunctorType.DealDamage) and not Dead(context.Target) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(10, context.Target);"
 
+new entry "Interrupt_SneakAttack_Poison"
+type "InterruptData"
+using "Interrupt_SneakAttack"
+
+new entry "Interrupt_SneakAttack_Poison_Critical"
+type "InterruptData"
+using "Interrupt_SneakAttack_Critical"
+
 new entry "__SOULKNIFE 9400__"
 type "InterruptData"
 

@@ -387,6 +387,13 @@
                     <attribute id="UUID" type="guid" value="733e3365-082c-4a0a-8df9-98273c23186e"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h2ceb783bg27f3gbe5bg3040gf2bed484fd0e" version="1"/>
+                    <attribute id="MaxValue" type="uint32" value="1"/>
+                    <attribute id="Name" type="FixedString" value="FavoredByTheGods"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="UUID" type="guid" value="25f3581d-9883-4f4f-890d-8ad89f6fa557"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__WARLOCK__"/>
                     <attribute id="UUID" type="guid" value="3a1cce07-14f0-40f9-b81a-e7994d257223"/>
                 </node>
@@ -706,11 +713,12 @@
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h2ceb783bg27f3gbe5bg3040gf2bed484fd0e" version="1"/>
-                    <attribute id="MaxValue" type="uint32" value="1"/>
-                    <attribute id="Name" type="FixedString" value="FavoredByTheGods"/>
-                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
-                    <attribute id="UUID" type="guid" value="25f3581d-9883-4f4f-890d-8ad89f6fa557"/>
+                    <attribute id="Description" type="TranslatedString" handle="h7cc9c7a3g7fbcga1fbg2066g70dad117ebee" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h926cffe9g58dage0bfge255g5763afb48ab1" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Web_ArachnoidStalker"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="7f987cdb-844d-46af-b521-142b6e03f477"/>
                 </node>
             </children>
         </node>

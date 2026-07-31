@@ -996,6 +996,8 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1006,6 +1008,8 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1016,6 +1020,8 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1026,6 +1032,8 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1036,6 +1044,8 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11879,6 +11889,80 @@
         <field name="Name" type="NameTableFieldDefinition" value="DivineRetaliation" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6707901c-81b4-4e77-8b0c-4eb486b44976" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);DealDamage(max(1,WisdomModifier), Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="80b5a5af-bf1b-4d31-ae29-6220fb768484" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArachnoidStalker_Pull" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Dexterity, context.Source))" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:IF(not Grounded() and TargetSizeEqualOrSmaller(Size.Large)):Force(-9, OriginToEntity, Neutral, false, true);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and (Item() or Character() or Dead())" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PullingWeb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc6f3a890g2305ge226g01d4gc9843a65ed52" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfcb8cbcbgfee5g3bb5g28a1g1961e2da2896" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Weapon_DrowSpiderGloves_WebPull" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Action_PrepareLoop_Weapon_DrowSpiderGloves_WebPull_MO" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Weapon_DrowSpiderGloves_WebPull" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Weapon_DrowSpiderGloves_WebPull" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;ad12e2fa-1b15-4fcd-884f-38ba82d7e50e,,;5ee4c893-0149-4d08-a1f7-c4fe633530ba,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="483161e1-abc9-4da9-b97e-e779d2f742c8" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="889dfdce-5921-445e-8b57-6d130955c696" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b55dc0fe-7ad7-4078-85bf-4e10aa085c83" />
+        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="696d0885-1c22-4c43-b87e-f50ac93a714b" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1035304-0932-49f2-b072-a8d34abbe32a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArachnoidStalker_WebSwing" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character() and not Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PullingWeb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8003d95eg1760g2a2cg0ed8g04e5bd178f4b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9b6e054dg85d4gfb2cge79dg58537fc3ddfb" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Weapon_DrowSpiderGloves_WebPull" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Action_PrepareLoop_Weapon_DrowSpiderGloves_WebPull_MO" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Weapon_DrowSpiderGloves_WebPull" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Weapon_DrowSpiderGloves_WebPull" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;ad12e2fa-1b15-4fcd-884f-38ba82d7e50e,,;5ee4c893-0149-4d08-a1f7-c4fe633530ba,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="LineOfSightFlags" type="EnumerationListTableFieldDefinition" value="AddSourceHeight" enumeration_type_name="LineOfSightFlags" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="483161e1-abc9-4da9-b97e-e779d2f742c8" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="889dfdce-5921-445e-8b57-6d130955c696" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b55dc0fe-7ad7-4078-85bf-4e10aa085c83" />
+        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="696d0885-1c22-4c43-b87e-f50ac93a714b" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="64bc82a2-d799-4ae9-a18c-271f52db898a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArachnoidStalker_WebSpell" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="16dbe9e9-1069-4347-ba73-098cad143970" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(2,10,Web,true);" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Dexterity, context.Source))" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArachnoidStalker_WebSpell:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FFDC143C" is_substat="false">

@@ -985,6 +985,20 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="not Self(context.Source, context.Observer) and IsAbleToReact(context.Observer) and Enemy(context.Target,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and HasFunctor(StatsFunctorType.DealDamage) and not Dead(context.Target) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(10, context.Target);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9c1b0557-69bf-4357-9f38-512a4a610e86" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack_Poison" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2e82c420-2bda-4e98-97c4-fae00669674a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fe172565-db24-4646-b21e-6423d180e2b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack_Poison_Critical" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a436c88-6091-4fbd-8da8-2f72c4505e64" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69b698fd-1c0b-46d5-b89d-65be982264ff" />

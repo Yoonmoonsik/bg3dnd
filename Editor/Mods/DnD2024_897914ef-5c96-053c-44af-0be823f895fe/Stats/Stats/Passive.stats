@@ -5249,6 +5249,49 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_EruptingBlades);" />
       </fields>
     </stat_object>
+    <stat_object color="#FF483D8B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6e32c2b-bb35-45bc-9a47-a238b8b30db7" />
+        <field name="Name" type="NameTableFieldDefinition" value="__ARACHNOID STALKER__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cda94d32-dd68-4cab-9650-c3c146c132b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArachnoidStalker_3_Webbing" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4e44007fg48fbg0a5ag6a60g8458e847f21e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb012aa29g2700gd0c7g3c87g74a98a1affc6" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_Web" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9603" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ArachnoidStalker_Pull);UnlockSpell(Target_ArachnoidStalker_WebSwing);UnlockSpell(Target_ArachnoidStalker_WebSpell);ActionResource(ArachnoidStalker_WebSpell,2,0);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(ArachnoidStalker_WebSpell,1,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a99cdf9d-98d2-4eec-adb1-fe2b74305457" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArachnoidStalker_3_VenomousStrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h185a8382gd8d2g39a5g72fcgb2c10de7a4b9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc6f8b2cdg61f9g10e0g8f71g1e3b9ec13c29" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Poison_Melee" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9603" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SneakAttack_Poison);UnlockInterrupt(Interrupt_SneakAttack_Poison_Critical);UnlockSpell(Target_SneakAttack_Poison);UnlockSpell(Projectile_SneakAttack_Poison);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6fa96423-b12a-4d3f-bc84-a2c839d12c17" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArachnoidStalker_9_ParalyticVenom" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hefd38185g6b16gc2b1g8d72g4dded2c9cc3e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb3ddc06g4d4eg4b4ag5673g48373fbbaa38" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_HoldMonster" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9609" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFDC143C" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2f954a32-f7b2-49a8-a64b-261d90576136" />
