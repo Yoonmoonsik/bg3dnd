@@ -55,7 +55,7 @@ See the [Wiki](https://github.com/Yoonmoonsik/dnd55e/wiki) and each class page f
 | [Monster Hunter](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Monster-Hunter) | Carver Guild, Devourer Guild, Occultist Guild |
 | [Paladin](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Paladin) | Ancients, Conquest, Crown, Devotion, Glory, Noble Genies, Vengeance, Watchers, Oathbreaker |
 | [Ranger](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Ranger) | Beast Master, Fey Wanderer, Gloom Stalker, Hollow Warden, Hunter, Swarm Keeper, Winter Walker |
-| [Rogue](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Rogue) | Arcane Trickster, Assassin, Blade of Radiance, Scion of the Three, Highway Rider, Soulknife, Swashbuckler, Thief |
+| [Rogue](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Rogue) | Arachnoid Stalker, Arcane Trickster, Assassin, Blade of Radiance, Scion of the Three, Highway Rider, Soulknife, Swashbuckler, Thief |
 | [Sorcerer](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Sorcerer) | Aberrant Sorcery, Clockwork Sorcery, Divine Soul, Draconic Sorcery, Frost Sorcery, Heroic Sorcery, Shadow Magic, Spellfire Sorcery, Storm Sorcery, Wild Magic Sorcery |
 | [Warlock](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Warlock) | Archfey, Celestial, Fiend, Great Old One, Hexblade, Undead, expanded Invocations |
 | [Wizard](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Wizard) | Abjurer, Bladesinger, Conjurer, Diviner, Enchanter, Evoker, Illusionist, Necromancer, Transmuter |
