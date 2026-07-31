@@ -4474,8 +4474,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="HolyWord" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
-        <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Radiant,Magical);IF(Tagged('UNDEAD') or Tagged('FIEND') or Tagged('FEY')):ApplyStatus(HOLYWORD,100,1);" />
