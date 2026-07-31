@@ -77,7 +77,7 @@ Archery, Blind Fighting, Defense, Dueling, Great Weapon Fighting, Interception, 
 
 See [Race](https://github.com/Yoonmoonsik/dnd55e/wiki/Races).
 
-- Aasimar, Changeling, Dhampir, Goliath, and Kalashtar are available as Human subclass options.
+- Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Dhampir can be taken as a Human, Elf, Tiefling, Dwarf, Halfling, or Gnome subrace.
 - Dragonborn, Dwarf, Elf, Githyanki, Gnome, Half Elf, Halfling, Human, Orc, and Tiefling are supported.
 - Several species include ancestry or lineage options, including Dragonborn Draconic Ancestry, Elf and Half Elf sub-lineages, Goliath Giant Ancestry, and Tiefling legacy options.
 
@@ -85,17 +85,19 @@ See [Race](https://github.com/Yoonmoonsik/dnd55e/wiki/Races).
 
 See [Spell](https://github.com/Yoonmoonsik/dnd55e/wiki/Spells).
 
+The lists below cover new and revised spells only. The wiki has the complete per-level tables, including spells that are unchanged.
+
 ### Cantrips
 
-Acid Splash, Blade Ward, Chill Touch, Eldritch Blast, Finger Guns, Frightful Start, Green-Flame Blade, Hellfire, Mind Sliver, Poison Spray, Prestidigitation, Resistance, Shillelagh, Sorcerous Burst, Spare the Dying, Starry Wisp, Sword Burst, Thunderclap, True Strike, Vicious Mockery, Word of Radiance.
+Acid Splash, Blade Ward, Booming Blade, Bursting Sinew, Finger Guns, Frightful Start, Green-Flame Blade, Hellfire, Holy Word, Mind Sliver, Sorcerous Burst, Spare the Dying, Starry Wisp, Sword Burst, Thunderclap, Toll the Dead, True Strike, Vengeful Blade, Word of Radiance.
 
 ### Leveled Spells
 
-- Level 1: Absorb Elements, Armor of Agathys, Ballistic Smite, Body Warping of Gorgoroth, Catapult, Chromatic Orb, Cloak of Shadow, Color Spray, Command, Cure Wounds, Divine Favor, Divine Smite, Entangle, Feather Fall, Guiding Bolt, Healing Word, Hell's Lash, Hex, Hungering Blade, Hunter's Mark, Inflict Wounds, Jump, Longstrider, Magic Missile, Ray of Sickness, Searing Smite, Sleep, Spectral Slash, Tasha's Hideous Laughter, Thorn Armor, Tide of Darkness, Umbral Tendril, Wardaway, Wrathful Smite.
-- Level 2: Aganazzar's Scorcher, Aid, Arcane Vigor, Blindness, Cloud of Daggers, Crown of Madness, Darkbolt, Darkness, Dazing Blast, Death Armor, Dragon's Breath, Find Steed, Fire Rune, Flame Blade, Gust of Wind, Lesser Restoration, Magic Weapon, Melf's Acid Arrow, Mind Spike, Misty Step, Prayer of Healing, Ray of Enfeeblement, Searing Orb, Shadow Blade, Snilloc's Snowball Swarm, Spiritual Weapon, Summon Beast, Tasha's Mind Whip, Warding Bond.
-- Level 3: Ashardalon's Stride, Astral Flood, Aura of Vitality, Bestow Curse, Blink, Cacophonic Shield, Conjure Barrage, Crusader's Mantle, Elemental Exhalation, Fear, Laeral's Silver Lance, Lightning Arrow, Mass Healing Word, Murmurs of Doom, Phantom Steed, Summon Fey, Tidal Wave, Trollblood Infusion, Void Strike.
-- Level 4: Banishment, Confusion, Conjure Woodland Beings, Dominate Beast, Fount of Moonlight, Ice Storm, Murder of Crows, Otiluke's Resilient Sphere, Phantasmal Killer, Polymorph, Stoneskin, Vitriolic Sphere.
-- Level 5: Awaken, Circle of Power, Cone of Cold, Contagion, Danse Macabre, Dominate Person, Enervation, Hold Monster, Insect Plague, Mass Cure Wounds, Steel Wind Strike, Synaptic Static.
+- Level 1: Absorb Elements, Armor of Agathys, Ballistic Smite, Body Warping of Gorgoroth, Catapult, Chromatic Orb, Cloak of Shadow, Color Spray, Command, Cure Wounds, False Life, Healing Word, Hell's Lash, Hungering Blade, Spectral Slash, Spellfire Flare, Thorn Armor, Thunderous Smite, Tide of Darkness, Umbral Tendril, Wardaway, Witch Bolt, Wrathful Smite.
+- Level 2: Aganazzar's Scorcher, Arcane Vigor, Darkbolt, Dazing Blast, Death Armor, Dragon's Breath, Elminster's Elusion, Find Steed, Fire Rune, Gust of Wind, Lesser Restoration, Mind Spike, Moonbeam, Prayer of Healing, Rime's Binding Ice, Searing Orb, Shadow Blade, Snilloc's Snowball Swarm, Summon Beast, Tasha's Mind Whip, Warding Bond.
+- Level 3: Ashardalon's Stride, Astral Flood, Aura of Vitality, Bestow Curse, Cacophonic Shield, Conjure Barrage, Crusader's Mantle, Elemental Exhalation, Laeral's Silver Lance, Lightning Arrow, Murmurs of Doom, Phantom Steed, Summon Fey, Tidal Wave, Trollblood Infusion, Void Strike.
+- Level 4: Conjure Woodland Beings, Fire Dance, Fount of Moonlight, Murder of Crows, Spellfire Storm, Vitriolic Sphere.
+- Level 5: Awaken, Circle of Power, Cone of Cold, Dawn, Dream, Enervation, Holy Weapon, Steel Wind Strike, Summon Celestial, Synaptic Static.
 - Level 6: Circle of Death, Disintegrate.
 
 ## Items
