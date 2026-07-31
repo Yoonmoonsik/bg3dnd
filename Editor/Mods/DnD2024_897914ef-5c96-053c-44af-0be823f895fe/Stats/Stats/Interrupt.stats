@@ -990,6 +990,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9c1b0557-69bf-4357-9f38-512a4a610e86" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack_Poison" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2e82c420-2bda-4e98-97c4-fae00669674a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h64796cdbg3fc8gc8fag00d2gfea7f5c0ddd2" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Poison_Melee" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(VenomousStrike), Poison);IF(IsRangedAttack()):DealDamage(LevelMapValue(VenomousStrike), Poison);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);IF(HasPassive('CunningStrike_Poison',context.Source)):ApplyStatus(CUNNINGSTRIKE_POISON,100,10,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()));IF(HasPassive('CunningStrike_Trip',context.Source) and TargetSizeEqualOrSmaller(Size.Large)):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Dexterity,ManeuverSaveDC()));IF(HasPassive('CunningStrike_Withdraw',context.Source)):ApplyStatus(SELF,CUNNINGSTRIKE_WITHDRAW,100,1);IF(HasPassive('CunningStrike_Terrify',context.Source)):ApplyStatus(FRIGHTENED,100,10,,,,not SavingThrow(Ability.Wisdom,ManeuverSaveDC()));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -997,6 +1000,22 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fe172565-db24-4646-b21e-6423d180e2b4" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack_Poison_Critical" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1a436c88-6091-4fbd-8da8-2f72c4505e64" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h39707f6cg89a4gf582g79d5g3d9319c7eb7e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Poison_Critical" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(VenomousStrike), Poison);IF(IsRangedAttack()):DealDamage(LevelMapValue(VenomousStrike), Poison);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);IF(HasPassive('CunningStrike_Poison',context.Source)):ApplyStatus(CUNNINGSTRIKE_POISON,100,10,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()));IF(HasPassive('CunningStrike_Trip',context.Source) and TargetSizeEqualOrSmaller(Size.Large)):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Dexterity,ManeuverSaveDC()));IF(HasPassive('CunningStrike_Withdraw',context.Source)):ApplyStatus(SELF,CUNNINGSTRIKE_WITHDRAW,100,1);IF(HasPassive('CunningStrike_Terrify',context.Source)):ApplyStatus(FRIGHTENED,100,10,,,,not SavingThrow(Ability.Wisdom,ManeuverSaveDC()));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c4bc7a22-fc8d-407e-b1e9-341c203f0b57" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack_Paralytic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9c1b0557-69bf-4357-9f38-512a4a610e86" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h282c2990geeceg30f6g40b3g584f26da1ecd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc79c3b73g4d95gf714gfb45g8a3475bc2391" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SneakAttack_Paralytic_Melee" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and HasDamageEffectFlag(DamageFlags.Hit) and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandWeaponAttack()) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack()) or IsThrowAttackRoll() or (WieldingWeapon('Ammunition', false, true, context.Observer) and IsRangedWeaponAttack())) and not IsKillingBlow() and (HasDamageEffectFlag(DamageFlags.AttackAdvantage) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and not (SpellId('Projectile_SneakAttack') or SpellId('Target_SneakAttack')) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(HOLD_MONSTER,100,2,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()));IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">

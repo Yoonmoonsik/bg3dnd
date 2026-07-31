@@ -4749,6 +4749,22 @@
                     <attribute id="UUID" type="guid" value="f319615c-9762-4429-908b-c22de1db80c8"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="ArachnoidStalker"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ArachnoidStalker_3_Webbing;ArachnoidStalker_3_VenomousStrike"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="d69b2fcd-c3e9-40c7-b857-23c9c5dcd668"/>
+                    <attribute id="UUID" type="guid" value="25a646c3-b34a-4c73-81f0-32d5882a8503"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="ArachnoidStalker"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ArachnoidStalker_9_ParalyticVenom"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="d69b2fcd-c3e9-40c7-b857-23c9c5dcd668"/>
+                    <attribute id="UUID" type="guid" value="81395f27-73c6-4cbf-be1d-0aeb21e5a42b"/>
+                </node>
+                <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice06,1,0);ActionResource(InnateSorcery,2,0);Proficiency(SimpleWeapons);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Charisma)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Sorcerer"/>
@@ -8905,20 +8921,6 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="7e76da16-650c-4a6e-85b0-f9e23a7f5a60"/>
                     <attribute id="UUID" type="guid" value="13b286a5-fb07-4944-97e9-58be14a32678"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="ArachnoidStalker"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="d69b2fcd-c3e9-40c7-b857-23c9c5dcd668"/>
-                    <attribute id="UUID" type="guid" value="25a646c3-b34a-4c73-81f0-32d5882a8503"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="9"/>
-                    <attribute id="Name" type="LSString" value="ArachnoidStalker"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="d69b2fcd-c3e9-40c7-b857-23c9c5dcd668"/>
-                    <attribute id="UUID" type="guid" value="81395f27-73c6-4cbf-be1d-0aeb21e5a42b"/>
                 </node>
             </children>
         </node>

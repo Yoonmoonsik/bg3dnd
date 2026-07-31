@@ -11896,7 +11896,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="80b5a5af-bf1b-4d31-ae29-6220fb768484" />
         <field name="Name" type="NameTableFieldDefinition" value="ArachnoidStalker_Pull" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Dexterity, context.Source))" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Dexterity, context.Source)) or Ally()" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:IF(not Grounded() and TargetSizeEqualOrSmaller(Size.Large)):Force(-9, OriginToEntity, Neutral, false, true);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and (Item() or Character() or Dead())" />
@@ -11921,6 +11921,7 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b55dc0fe-7ad7-4078-85bf-4e10aa085c83" />
         <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="696d0885-1c22-4c43-b87e-f50ac93a714b" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Character()):DealDamage(0, Bludgeoning);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11930,7 +11931,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character() and not Self()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PullingWeb" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ArachnoidStalker_WebSwing" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8003d95eg1760g2a2cg0ed8g04e5bd178f4b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9b6e054dg85d4gfb2cge79dg58537fc3ddfb" version="1" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Weapon_DrowSpiderGloves_WebPull" />
@@ -11960,9 +11961,34 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(2,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Dexterity, context.Source))" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArachnoidStalker_WebSpell:1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Web_ArachnoidStalker:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="acfa2d8f-273a-4044-97ec-68e452c2e097" />
+        <field name="Name" type="NameTableFieldDefinition" value="SneakAttack_Poison" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2dd359f1-c98e-4a66-87bf-efe6b92a4726" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(VenomousStrike), Poison);ExecuteWeaponFunctors(MainHand);IF(HasPassive('CunningStrike_Poison',context.Source)):ApplyStatus(CUNNINGSTRIKE_POISON,100,10,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()));IF(HasPassive('CunningStrike_Trip',context.Source) and TargetSizeEqualOrSmaller(Size.Large)):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Dexterity,ManeuverSaveDC()));IF(HasPassive('CunningStrike_Withdraw',context.Source)):ApplyStatus(SELF,CUNNINGSTRIKE_WITHDRAW,100,1);IF(HasPassive('CunningStrike_Terrify',context.Source)):ApplyStatus(FRIGHTENED,100,10,,,,not SavingThrow(Ability.Wisdom,ManeuverSaveDC()));" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Poison_Melee" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h656a706fg1a46gaa36g3947ga8c2d498eb29" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(VenomousStrike), Poison);" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="dd66ead6-b49e-4f64-8b30-4f2f36b2b805" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3906c5bf-8859-4834-81ff-fbcaf9f18fcb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SneakAttack_Paralytic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acfa2d8f-273a-4044-97ec-68e452c2e097" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(HOLD_MONSTER,100,2,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()));" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SneakAttack_Paralytic_Melee" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h455d37dfgfcc6g8e24g56bdg393ac04545f1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf1e8a3afg2d52gf821gfb11ge37ef7d60eda" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HOLD_MONSTER,100,2)" />
       </fields>
     </stat_object>
     <stat_object color="#FFDC143C" is_substat="false">
