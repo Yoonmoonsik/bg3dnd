@@ -156,7 +156,7 @@ Spell scrolls are restricted to specific classes, with cantrip scrolls and Scrol
 [size=5][b]Credits[/b][/size]
 
 [list]
-[*][b]Korean / Japanese Translation:[/b] [url=https://www.nexusmods.com/profile/Eolaloe]Eolaloe[/url]
+[*][b]Japanese Translation:[/b] [url=https://www.nexusmods.com/profile/Eolaloe]Eolaloe[/url]
 [*][b]Spanish / Latin Spanish Translation:[/b] [url=https://github.com/incolhermex-droid]incolhermex-droid[/url]
 [*][b]French Translation:[/b] CyberBoloss
 [*][b]Brazilian Portuguese Translation:[/b] [url=https://mod.io/u/shadowahjin]ShadowAhJin[/url]
