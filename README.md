@@ -1,8 +1,8 @@
 # DnD 5.5e All-in-One BEYOND
 
-[DnD 5.5e All-in-One BEYOND](https://github.com/Yoonmoonsik/dnd55e) is a Baldur's Gate 3 mod that packs a broad set of D&D 5.5e-inspired rules, player options, spells, feats, equipment, and class updates into a single all-in-one mod.
+[DnD 5.5e All-in-One BEYOND](https://github.com/Yoonmoonsik/bg3dnd) is a Baldur's Gate 3 mod that packs a broad set of D&D 5.5e-inspired rules, player options, spells, feats, equipment, and class updates into a single all-in-one mod.
 
-For deeper gameplay notes, class details, spell behavior, item locations, and community-maintained documentation, see the [Wiki](https://github.com/Yoonmoonsik/dnd55e/wiki).
+For deeper gameplay notes, class details, spell behavior, item locations, and community-maintained documentation, see the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki).
 
 > Note: The Wiki is maintained by community contributors and is not officially written or managed by the mod developer. Some information may be incomplete, outdated, or inaccurate.
 
@@ -33,49 +33,49 @@ For gameplay examples, build ideas, and practical references, check the playthro
 
 ## Backgrounds
 
-See [Backgrounds](https://github.com/Yoonmoonsik/dnd55e/wiki/Backgrounds).
+See [Backgrounds](https://github.com/Yoonmoonsik/bg3dnd/wiki/Backgrounds).
 
 40 backgrounds are available. Each grants 2 skill proficiencies and an Origin Feat at character creation: Acolyte, Charlatan, Chondathan Freebooter, Criminal, Dead Magic Dweller, Dragon Cultist, Emerald Enclave Caretaker, Entertainer, Experiment, Farmer, Flaming Fist Mercenary, Folk Hero, Genie Touched, Guide, Guild Artisan, Harper, Haunted One, Hermit, Ice Fisher, Knight of the Gauntlet, Lords' Alliance Vassal, Merchant, Moonwell Pilgrim, Mulhorandi Tomb Raider, Mythalkeeper, Noble, Outlander, Purple Dragon Squire, Rashemi Wanderer, Rest Warden, Sage, Sailor, Scribe, Shadowmasters Exile, Soldier, Spellfire Initiate, Urchin, Wayfarer, Wicker Weaver, Zhentarim Mercenary.
 
 ## Classes
 
-See the [Wiki](https://github.com/Yoonmoonsik/dnd55e/wiki) and each class page for detailed level progression and subclass features.
+See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) and each class page for detailed level progression and subclass features.
 
 | Class | Subclasses and Notes |
 | --- | --- |
-| [Artificer](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Artificer) | Alchemist, Armorer, Artillerist, Battle Smith |
-| [Barbarian](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Barbarian) | Berserker, Fractured, Giant, Shadow Gnawer, Wild Magic, Wildheart, World Tree, Zealot |
-| [Bard](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Bard) | Choreography, Dance, Glamour, Lore, Moon, Spirits, Swords, Valor |
-| [Cleric](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Cleric) | Apocalypse, Astral, Death, Forge, Grave, Nature, Shadow, Tempest, Knowledge, Life, Light, Mind, Trickery, Twilight, War |
-| [Druid](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Druid) | Circle of Dragons, Dreams, Stars, Land, Moon, Sea, Spores, Unbroken |
-| [Fighter](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Fighter) | Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Viking |
-| [Gunslinger](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Gunslinger) | High Roller, Spellslinger, White Hat |
-| [Illrigger](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Illrigger) | Architect of Ruin, Hellspeaker, Painkiller, Sanguine Knight, Shadowmaster |
-| [Monk](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Monk) | Drunken Master, Elements, Kensei, Mercy, Open Hand, Shadow |
-| [Monster Hunter](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Monster-Hunter) | Carver Guild, Devourer Guild, Occultist Guild |
-| [Paladin](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Paladin) | Ancients, Conquest, Crown, Devotion, Glory, Noble Genies, Vengeance, Watchers, Oathbreaker |
-| [Ranger](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Ranger) | Beast Master, Fey Wanderer, Gloom Stalker, Hollow Warden, Hunter, Swarm Keeper, Winter Walker |
-| [Rogue](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Rogue) | Arachnoid Stalker, Arcane Trickster, Assassin, Blade of Radiance, Scion of the Three, Highway Rider, Soulknife, Swashbuckler, Thief |
-| [Sorcerer](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Sorcerer) | Aberrant Sorcery, Clockwork Sorcery, Divine Soul, Draconic Sorcery, Frost Sorcery, Heroic Sorcery, Shadow Magic, Spellfire Sorcery, Storm Sorcery, Wild Magic Sorcery |
-| [Warlock](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Warlock) | Archfey, Celestial, Fiend, Great Old One, Hexblade, Undead, expanded Invocations |
-| [Wizard](https://github.com/Yoonmoonsik/dnd55e/wiki/Class-Wizard) | Abjurer, Bladesinger, Conjurer, Diviner, Enchanter, Evoker, Illusionist, Necromancer, Transmuter |
+| [Artificer](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Artificer) | Alchemist, Armorer, Artillerist, Battle Smith |
+| [Barbarian](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Barbarian) | Berserker, Fractured, Giant, Shadow Gnawer, Wild Magic, Wildheart, World Tree, Zealot |
+| [Bard](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Bard) | Choreography, Dance, Glamour, Lore, Moon, Spirits, Swords, Valor |
+| [Cleric](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Cleric) | Apocalypse, Astral, Death, Forge, Grave, Nature, Shadow, Tempest, Knowledge, Life, Light, Mind, Trickery, Twilight, War |
+| [Druid](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Druid) | Circle of Dragons, Dreams, Stars, Land, Moon, Sea, Spores, Unbroken |
+| [Fighter](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Fighter) | Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Viking |
+| [Gunslinger](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Gunslinger) | High Roller, Spellslinger, White Hat |
+| [Illrigger](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Illrigger) | Architect of Ruin, Hellspeaker, Painkiller, Sanguine Knight, Shadowmaster |
+| [Monk](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monk) | Drunken Master, Elements, Kensei, Mercy, Open Hand, Shadow |
+| [Monster Hunter](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monster-Hunter) | Carver Guild, Devourer Guild, Occultist Guild |
+| [Paladin](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Paladin) | Ancients, Conquest, Crown, Devotion, Glory, Noble Genies, Vengeance, Watchers, Oathbreaker |
+| [Ranger](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Ranger) | Beast Master, Fey Wanderer, Gloom Stalker, Hollow Warden, Hunter, Swarm Keeper, Winter Walker |
+| [Rogue](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Rogue) | Arachnoid Stalker, Arcane Trickster, Assassin, Blade of Radiance, Scion of the Three, Highway Rider, Soulknife, Swashbuckler, Thief |
+| [Sorcerer](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Sorcerer) | Aberrant Sorcery, Clockwork Sorcery, Divine Soul, Draconic Sorcery, Frost Sorcery, Heroic Sorcery, Shadow Magic, Spellfire Sorcery, Storm Sorcery, Wild Magic Sorcery |
+| [Warlock](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Warlock) | Archfey, Celestial, Fiend, Great Old One, Hexblade, Undead, expanded Invocations |
+| [Wizard](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Wizard) | Abjurer, Bladesinger, Conjurer, Diviner, Enchanter, Evoker, Illusionist, Necromancer, Transmuter |
 | Psion | Coming soon |
 
 ## Feats
 
-See [Feat](https://github.com/Yoonmoonsik/dnd55e/wiki/Feats).
+See [Feat](https://github.com/Yoonmoonsik/bg3dnd/wiki/Feats).
 
 Actor, Alert, Altered, Athlete, Charger, Charm Twister, Cold Caster, Crossbow Expert, Crusher, Cult of the Dragon Initiate, Deadly Archery, Death Defier, Defensive Duelist, Dragon Fear, Dragon Hide, Dragonscarred, Dragon-Slayer, Dual Wielder, Dungeon Delver, Durable, Dwarven Fortitude, Eldritch Adept, Elemental Adept, Elven Accuracy, Emerald Enclave Fledgling, Enclave Magic, Fade Away, Fairy Trickster, Fey Touched, Fierce Shot, Fighting Initiate, Flames of Phlegethos, Genie Magic, Gleam of Wrath, Grave Keeper, Great Weapon Master, Harper Agent, Harper Teamwork, Healer, Heavily Armored, Heavy Armor Master, Infernal Constitution, Inspiring Leader, Lightly Armored, Lordly Resolve, Lords' Alliance Agent, Lucky, Mage Slayer, Magic Initiate: Cleric, Magic Initiate: Druid, Magic Initiate: Wizard, Martial Adept, Medium Armor Master, Moderately Armored, Mounted Combatant, Musician, Mythal Touched, Nimbleness, Orcish Fury, Order's Resilience, Piercer, Poisoner, Polearm Master, Purple Dragon Commandant, Purple Dragon Rook, Resilient, Ritual Caster, Rune Shaper, Savage Attacker, Sentinel, Shadow Touched, Sharpshooter, Shield Master, Skill Expert, Skilled, Skulker, Slasher, Speedy, Spellfire Adept, Spellfire Spark, Spell Sniper, Squat Nimbleness, Swift Witchcraft, Tavern Brawler, Tough, Tyro of the Gauntlet, War Caster, Weapon Master, Zhentarim Ruffian, Zhentarim Tactics.
 
 ### Fighting Styles
 
-See [Fighting Styles](https://github.com/Yoonmoonsik/dnd55e/wiki/Fighting-Styles).
+See [Fighting Styles](https://github.com/Yoonmoonsik/bg3dnd/wiki/Fighting-Styles).
 
 Archery, Blind Fighting, Defense, Dueling, Great Weapon Fighting, Interception, Protection, Thrown Weapon Fighting, Two-Weapon Fighting, Unarmed Fighting.
 
 ## Races
 
-See [Race](https://github.com/Yoonmoonsik/dnd55e/wiki/Races).
+See [Race](https://github.com/Yoonmoonsik/bg3dnd/wiki/Races).
 
 - Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Dhampir can be taken as a Human, Elf, Tiefling, Dwarf, Halfling, or Gnome subrace.
 - Dragonborn, Dwarf, Elf, Githyanki, Gnome, Half Elf, Halfling, Human, Orc, and Tiefling are supported.
@@ -83,7 +83,7 @@ See [Race](https://github.com/Yoonmoonsik/dnd55e/wiki/Races).
 
 ## Spells
 
-See [Spell](https://github.com/Yoonmoonsik/dnd55e/wiki/Spells).
+See [Spell](https://github.com/Yoonmoonsik/bg3dnd/wiki/Spells).
 
 The lists below cover new and revised spells only. The wiki has the complete per-level tables, including spells that are unchanged.
 
@@ -112,13 +112,13 @@ Spell scrolls are restricted to specific classes, with cantrip scrolls and Scrol
 
 ## Creatures
 
-See [Creatures](https://github.com/Yoonmoonsik/dnd55e/wiki/Creatures).
+See [Creatures](https://github.com/Yoonmoonsik/bg3dnd/wiki/Creatures).
 
 Bugbear, Displacer Beast, Drider, Ettercap, Giant Eagle, Gnoll, Goblin, Harpy, Hobgoblin, Hook Horror, Hyena, Kobold, Kuo-Toa, Raven, Spectator, Spider, Wolf, Worg.
 
 ## Credits
 
-See the [Wiki](https://github.com/Yoonmoonsik/dnd55e/wiki) for full attribution.
+See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) for full attribution.
 
 - **Japanese Translation**: [Eolaloe](https://www.nexusmods.com/profile/Eolaloe)
 - **Spanish / Latin Spanish Translation**: [incolhermex-droid](https://github.com/incolhermex-droid)
