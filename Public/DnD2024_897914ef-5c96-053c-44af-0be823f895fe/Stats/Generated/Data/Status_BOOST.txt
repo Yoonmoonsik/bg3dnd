@@ -178,6 +178,7 @@ type "StatusData"
 data "StatusType" "BOOST"
 using "SURPRISED"
 data "StackPriority" "1"
+data "Boosts" "Initiative(-5);"
 
 new entry "SURPRISED_PENALTY"
 type "StatusData"
