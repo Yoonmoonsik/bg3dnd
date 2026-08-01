@@ -12,88 +12,59 @@ For gameplay examples, build ideas, and practical references, check the playthro
 
 [size=5][b]Rules and Actions[/b][/size]
 
-[size=4][b]Basic Rules[/b][/size]
-
 [list]
-[*]Bloodied
-[*]Equipping Weapons
-[*]Extra Attack, including War Magic integration
-[*]Heavy Armor Strength Requirement
-[*]Heavy Weapon Ability Requirement
-[*]Hiding
-[*]Hit Point Dice
-[*]Inspiration from Background
-[*]One Spell Slot Spell per Turn
-[*]Prone
-[*]Spell Scroll Usage Limitation
-[*]Weapon Mastery
+[*][b]Common Actions:[/b] Distract, Dodge, Equipping Weapons, Extra Attack (including War Magic integration), Hide, Jump, Shove, Topple
+[*][b]Conditions:[/b] Bloodied, Down, Prone
+[*][b]Rest and Recovery:[/b] Hit Point Dice, Inspiration from Background
+[*][b]Spellcasting:[/b] One Spell Slot Spell per Turn, Spell Scroll Usage Limitation
+[*][b]Equipment and Items:[/b] Heavy Armor Strength Requirement, Heavy Weapon Ability Requirement, Weapon Mastery
 [/list]
 
-[size=4][b]Common Actions[/b][/size]
+[size=5][b]Backgrounds[/b][/size]
 
-[list]
-[*]Distract
-[*]Dodge
-[*]Hide
-[*]Jump
-[*]Shove
-[*]Topple
-[/list]
+See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Backgrounds]Backgrounds[/url].
 
-[size=5][b]Character Backgrounds[/b][/size]
-
-[size=4][b]Player's Handbook[/b][/size]
-
-Acolyte, Charlatan, Criminal, Entertainer, Farmer, Folk Hero, Guide, Guild Artisan, Haunted One, Hermit, Merchant, Noble, Outlander, Sage, Sailor, Scribe, Soldier, Urchin, Wayfarer.
-
-[size=4][b]Forgotten Realms: Heroes of Faerun[/b][/size]
-
-Chondathan Freebooter, Dead Magic Dweller, Dragon Cultist, Emerald Enclave Caretaker, Flaming Fist Mercenary, Genie Touched, Harper, Ice Fisher, Knight of the Gauntlet, Lords' Alliance Vassal, Moonwell Pilgrim, Mulhorandi Tomb Raider, Mythalkeeper, Purple Dragon Squire, Rashemi Wanderer, Shadowmasters Exile, Spellfire Initiate, Zhentarim Mercenary.
+40 backgrounds are available. Each grants 2 skill proficiencies and an Origin Feat at character creation: Acolyte, Charlatan, Chondathan Freebooter, Criminal, Dead Magic Dweller, Dragon Cultist, Emerald Enclave Caretaker, Entertainer, Experiment, Farmer, Flaming Fist Mercenary, Folk Hero, Genie Touched, Guide, Guild Artisan, Harper, Haunted One, Hermit, Ice Fisher, Knight of the Gauntlet, Lords' Alliance Vassal, Merchant, Moonwell Pilgrim, Mulhorandi Tomb Raider, Mythalkeeper, Noble, Outlander, Purple Dragon Squire, Rashemi Wanderer, Rest Warden, Sage, Sailor, Scribe, Shadowmasters Exile, Soldier, Spellfire Initiate, Urchin, Wayfarer, Wicker Weaver, Zhentarim Mercenary.
 
 [size=5][b]Classes[/b][/size]
 
+See the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url] and each class page for detailed level progression and subclass features.
+
 [list]
-[*][b]Artificer[/b] — Alchemist, Armorer, Artillerist, Battle Smith
-[*][b]Barbarian[/b] — Berserker, Fractured, Giant, Shadow Gnawer, Wild Magic, Wildheart, World Tree, Zealot
-[*][b]Bard[/b] — Choreography, Dance, Glamour, Lore, Moon, Spirits, Swords, Valor
-[*][b]Cleric[/b] — Apocalypse, Astral, Death, Forge, Grave, Nature, Shadow, Tempest, Knowledge, Life, Light, Mind, Trickery, Twilight, War
-[*][b]Druid[/b] — Circle of Dragons, Dreams, Stars, Land, Moon, Sea, Spores, Unbroken
-[*][b]Fighter[/b] — Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Viking
-[*][b]Gunslinger[/b] — High Roller, Spellslinger, White Hat
-[*][b]Illrigger[/b] — Architect of Ruin, Hellspeaker, Painkiller, Sanguine Knight, Shadowmaster
-[*][b]Monk[/b] — Drunken Master, Elements, Kensei, Mercy, Open Hand, Shadow
-[*][b]Monster Hunter[/b] — Carver Guild, Devourer Guild, Occultist Guild
-[*][b]Paladin[/b] — Ancients, Conquest, Crown, Devotion, Glory, Noble Genies, Vengeance, Watchers, Oathbreaker
-[*][b]Ranger[/b] — Beast Master, Fey Wanderer, Gloom Stalker, Hollow Warden, Hunter, Swarm Keeper, Winter Walker
-[*][b]Rogue[/b] — Arcane Trickster, Assassin, Blade of Radiance, Scion of the Three, Highway Rider, Soulknife, Swashbuckler, Thief
-[*][b]Sorcerer[/b] — Aberrant Sorcery, Clockwork Sorcery, Divine Soul, Draconic Sorcery, Frost Sorcery, Heroic Sorcery, Shadow Magic, Spellfire Sorcery, Storm Sorcery, Wild Magic Sorcery
-[*][b]Warlock[/b] — Archfey, Celestial, Fiend, Great Old One, Hexblade, Undead, expanded Invocations
-[*][b]Wizard[/b] — Abjurer, Bladesinger, Conjurer, Diviner, Enchanter, Evoker, Illusionist, Necromancer, Transmuter
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Artificer]Artificer[/url][/b] — Alchemist, Armorer, Artillerist, Battle Smith
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Barbarian]Barbarian[/url][/b] — Berserker, Fractured, Giant, Shadow Gnawer, Wild Magic, Wildheart, World Tree, Zealot
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Bard]Bard[/url][/b] — Choreography, Dance, Glamour, Lore, Moon, Spirits, Swords, Valor
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Cleric]Cleric[/url][/b] — Apocalypse, Astral, Death, Forge, Grave, Nature, Shadow, Tempest, Knowledge, Life, Light, Mind, Trickery, Twilight, War
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Druid]Druid[/url][/b] — Circle of Dragons, Dreams, Stars, Land, Moon, Sea, Spores, Unbroken
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Fighter]Fighter[/url][/b] — Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Viking
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Gunslinger]Gunslinger[/url][/b] — High Roller, Spellslinger, White Hat
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Illrigger]Illrigger[/url][/b] — Architect of Ruin, Hellspeaker, Painkiller, Sanguine Knight, Shadowmaster
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monk]Monk[/url][/b] — Drunken Master, Elements, Kensei, Mercy, Open Hand, Shadow
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monster-Hunter]Monster Hunter[/url][/b] — Carver Guild, Devourer Guild, Occultist Guild
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Paladin]Paladin[/url][/b] — Ancients, Conquest, Crown, Devotion, Glory, Noble Genies, Vengeance, Watchers, Oathbreaker
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Ranger]Ranger[/url][/b] — Beast Master, Fey Wanderer, Gloom Stalker, Hollow Warden, Hunter, Swarm Keeper, Winter Walker
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Rogue]Rogue[/url][/b] — Arachnoid Stalker, Arcane Trickster, Assassin, Blade of Radiance, Scion of the Three, Highway Rider, Soulknife, Swashbuckler, Thief
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Sorcerer]Sorcerer[/url][/b] — Aberrant Sorcery, Clockwork Sorcery, Divine Soul, Draconic Sorcery, Frost Sorcery, Heroic Sorcery, Shadow Magic, Spellfire Sorcery, Storm Sorcery, Wild Magic Sorcery
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Warlock]Warlock[/url][/b] — Archfey, Celestial, Fiend, Great Old One, Hexblade, Undead, expanded Invocations
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Wizard]Wizard[/url][/b] — Abjurer, Bladesinger, Conjurer, Diviner, Enchanter, Evoker, Illusionist, Necromancer, Transmuter
 [*][b]Psion[/b] — Coming soon
 [/list]
 
 [size=5][b]Feats[/b][/size]
 
+See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Feats]Feat[/url].
+
+Actor, Alert, Altered, Athlete, Charger, Charm Twister, Cold Caster, Crossbow Expert, Crusher, Cult of the Dragon Initiate, Deadly Archery, Death Defier, Defensive Duelist, Dragon Fear, Dragon Hide, Dragonscarred, Dragon-Slayer, Dual Wielder, Dungeon Delver, Durable, Dwarven Fortitude, Eldritch Adept, Elemental Adept, Elven Accuracy, Emerald Enclave Fledgling, Enclave Magic, Fade Away, Fairy Trickster, Fey Touched, Fierce Shot, Fighting Initiate, Flames of Phlegethos, Genie Magic, Gleam of Wrath, Grave Keeper, Great Weapon Master, Harper Agent, Harper Teamwork, Healer, Heavily Armored, Heavy Armor Master, Infernal Constitution, Inspiring Leader, Lightly Armored, Lordly Resolve, Lords' Alliance Agent, Lucky, Mage Slayer, Magic Initiate: Cleric, Magic Initiate: Druid, Magic Initiate: Wizard, Martial Adept, Medium Armor Master, Metamagic Adept, Moderately Armored, Mounted Combatant, Musician, Mythal Touched, Nimbleness, Orcish Fury, Order's Resilience, Piercer, Poisoner, Polearm Master, Purple Dragon Commandant, Purple Dragon Rook, Resilient, Ritual Caster, Rune Shaper, Savage Attacker, Sentinel, Shadow Touched, Sharpshooter, Shield Master, Skill Expert, Skilled, Skulker, Slasher, Speedy, Spellfire Adept, Spellfire Spark, Spell Sniper, Squat Nimbleness, Swift Witchcraft, Tavern Brawler, Tough, Tyro of the Gauntlet, War Caster, Weapon Master, Zhentarim Ruffian, Zhentarim Tactics.
+
 [size=4][b]Fighting Styles[/b][/size]
+
+See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Fighting-Styles]Fighting Styles[/url].
 
 Archery, Blind Fighting, Defense, Dueling, Great Weapon Fighting, Interception, Protection, Thrown Weapon Fighting, Two-Weapon Fighting, Unarmed Fighting.
 
-[size=4][b]Player's Handbook[/b][/size]
+[size=5][b]Races[/b][/size]
 
-[b]Origin Feats:[/b] Alert, Lucky, Magic Initiate: Cleric, Magic Initiate: Druid, Magic Initiate: Wizard, Musician, Savage Attacker, Skilled, Tavern Brawler, Tough, Healer.
-
-[b]General Feats:[/b] Actor, Athlete, Charger, Crossbow Expert, Defensive Duelist, Dual Wielder, Dungeon Delver, Durable, Elemental Adept, Great Weapon Master, Heavily Armored, Heavy Armor Master, Lightly Armored, Mage Slayer, Martial Adept, Medium Armor Master, Polearm Master, Resilient, Ritual Caster, Sentinel, Sharpshooter, Shield Master, Speedy, Spell Sniper, War Caster, Weapon Master, Crusher, Fey Touched, Inspiring Leader, Mounted Combatant, Piercer, Poisoner, Shadow Touched, Skill Expert, Skulker, Slasher.
-
-[size=4][b]Additional Sources[/b][/size]
-
-[list]
-[*][b]Xanathar's Guide to Everything:[/b] Dragon Fear, Dragon Hide, Dwarven Fortitude, Elven Accuracy, Fade Away, Flames of Phlegethos, Infernal Constitution, Orcish Fury, Squat Nimbleness.
-[*][b]Tasha's Cauldron of Everything:[/b] Eldritch Adept, Fighting Initiate, Metamagic Adept.
-[*][b]Forgotten Realms: Heroes of Faerun:[/b] Cult of the Dragon Initiate, Emerald Enclave Fledgling, Harper Agent, Lords' Alliance Agent, Purple Dragon Rook, Spellfire Spark, Tyro of the Gauntlet, Zhentarim Ruffian, Cold Caster, Dragonscarred, Enclave Magic, Fairy Trickster, Genie Magic, Harper Teamwork, Lordly Resolve, Mythal Touched, Order's Resilience, Purple Dragon Commandant, Spellfire Adept, Zhentarim Tactics.
-[*][b]The Lord of The Ring Roleplaying:[/b] Deadly Archery, Dragon-Slayer, Fierce Shot, Gleam of Wrath, Nimbleness.
-[/list]
-
-[size=5][b]Races and Species[/b][/size]
+See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Races]Race[/url].
 
 [list]
 [*]Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Dhampir can be taken as a Human, Elf, Tiefling, Dwarf, Halfling, or Gnome subrace.
@@ -102,6 +73,8 @@ Archery, Blind Fighting, Defense, Dueling, Great Weapon Fighting, Interception, 
 [/list]
 
 [size=5][b]Spells[/b][/size]
+
+See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Spells]Spell[/url].
 
 The lists below cover new and revised spells only. The wiki has the complete per-level tables, including spells that are unchanged.
 
@@ -132,28 +105,13 @@ Spell scrolls are restricted to specific classes, with cantrip scrolls and Scrol
 
 [size=5][b]Creatures[/b][/size]
 
-[list]
-[*]Bugbear
-[*]Displacer Beast
-[*]Drider
-[*]Ettercap
-[*]Giant Eagle
-[*]Gnoll
-[*]Goblin
-[*]Harpy
-[*]Hobgoblin
-[*]Hook Horror
-[*]Hyena
-[*]Kobold
-[*]Kuo-Toa
-[*]Raven
-[*]Spectator
-[*]Spider
-[*]Wolf
-[*]Worg
-[/list]
+See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Creatures]Creatures[/url].
+
+Bugbear, Displacer Beast, Drider, Ettercap, Giant Eagle, Gnoll, Goblin, Harpy, Hobgoblin, Hook Horror, Hyena, Kobold, Kuo-Toa, Raven, Spectator, Spider, Wolf, Worg.
 
 [size=5][b]Credits[/b][/size]
+
+See the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url] for full attribution.
 
 [list]
 [*][b]Japanese Translation:[/b] [url=https://www.nexusmods.com/profile/Eolaloe]Eolaloe[/url]
