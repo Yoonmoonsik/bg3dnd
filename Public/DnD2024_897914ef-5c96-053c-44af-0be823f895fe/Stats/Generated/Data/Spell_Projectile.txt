@@ -238,6 +238,7 @@ type "SpellData"
 data "SpellType" "Projectile"
 using "Projectile_AcidSplash"
 data "SpellSchool" "Evocation"
+data "TargetConditions" "not Self() and not Dead() and not (HasPassive('SculptSpells', context.Source) and Ally())"
 
 new entry "Projectile_EldritchBlast"
 type "SpellData"

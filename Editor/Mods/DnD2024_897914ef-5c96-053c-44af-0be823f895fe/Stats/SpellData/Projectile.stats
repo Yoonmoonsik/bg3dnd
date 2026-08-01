@@ -269,6 +269,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="AcidSplash" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="169e0c64-52bc-435d-be9b-be25ecab9a1c" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and not (HasPassive('SculptSpells', context.Source) and Ally())" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
