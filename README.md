@@ -6,13 +6,13 @@ For deeper gameplay notes, class details, spell behavior, item locations, and co
 
 > Note: The Wiki is maintained by community contributors and is not officially written or managed by the mod developer. Some information may be incomplete, outdated, or inaccurate.
 
-## Playthrough Videos
+## YouTube
 
 For gameplay examples, build ideas, and practical references, check the playthrough videos on the [YouTube channel](https://www.youtube.com/@bg3dnd) and the dedicated [playthrough playlist](https://www.youtube.com/playlist?list=PLOxzTx3j5VdueKEU6lfAmzKL5KQt0rNhi).
 
 ## Contents
 
-- [Playthrough Videos](#playthrough-videos)
+- [YouTube](#youtube)
 - [Rules and Actions](#rules-and-actions)
 - [Backgrounds](#backgrounds)
 - [Classes](#classes)
@@ -21,6 +21,7 @@ For gameplay examples, build ideas, and practical references, check the playthro
 - [Spells](#spells)
 - [Items](#items)
 - [Creatures](#creatures)
+- [Support the Mod](#support-the-mod)
 - [Credits](#credits)
 
 ## Rules and Actions
@@ -115,6 +116,17 @@ Spell scrolls are restricted to specific classes, with cantrip scrolls and Scrol
 See [Creatures](https://github.com/Yoonmoonsik/bg3dnd/wiki/Creatures).
 
 Bugbear, Displacer Beast, Drider, Ettercap, Giant Eagle, Gnoll, Goblin, Harpy, Hobgoblin, Hook Horror, Hyena, Kobold, Kuo-Toa, Raven, Spectator, Spider, Wolf, Worg.
+
+## Support the Mod
+
+This mod is developed and maintained for free, and it always will be. If you would like to support continued development, you can do so here:
+
+- [Ko-fi](https://ko-fi.com/yoonmoonsik)
+- [Toonation](https://toon.at/donate/yoonmoonsick) (for supporters in Korea)
+
+Contributions go toward purchasing the official D&D rulebooks that this mod is based on, so that new content can be implemented accurately from the source material.
+
+Support is entirely voluntary and grants no special access, priority requests, or exclusive content. Sharing feedback, reporting bugs, and helping others in Discussions are just as valuable.
 
 ## Credits
 
