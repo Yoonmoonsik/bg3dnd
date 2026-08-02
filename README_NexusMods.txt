@@ -127,12 +127,12 @@ Support is entirely voluntary and grants no special access, priority requests, o
 See the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url] for full attribution.
 
 [list]
-[*][b]Japanese Translation:[/b] [url=https://www.nexusmods.com/profile/Eolaloe]Eolaloe[/url]
-[*][b]Spanish / Latin Spanish Translation:[/b] [url=https://github.com/incolhermex-droid]incolhermex-droid[/url]
-[*][b]French Translation:[/b] [url=https://github.com/mcz-xiocku]CyberBoloss[/url]
 [*][b]Brazilian Portuguese Translation:[/b] [url=https://mod.io/u/shadowahjin]ShadowAhJin[/url] ([url=https://github.com/CaioShin93]CaioShin93[/url])
+[*][b]French Translation:[/b] [url=https://github.com/mcz-xiocku]CyberBoloss[/url]
 [*][b]Italian Translation:[/b] Alessandro
+[*][b]Japanese Translation:[/b] [url=https://www.nexusmods.com/profile/Eolaloe]Eolaloe[/url]
 [*][b]Russian Translation:[/b] [url=https://github.com/ANizamutdinov]ANizamutdinov[/url]
+[*][b]Spanish / Latin Spanish Translation:[/b] [url=https://github.com/incolhermex-droid]incolhermex-droid[/url]
 [*][b]Turkish Translation:[/b] [url=https://github.com/batuhansekban]batuhansekban[/url]
 [*][b]Item Models:[/b] [url=https://mod.io/g/baldursgate3/u/skirbie]skirbie[/url] ([url=https://mod.io/g/baldursgate3/m/viper-carbine-steampunk-rifle-gun]Viper Carbine Steampunk Rifle Gun[/url], [url=https://mod.io/g/baldursgate3/m/hand-cannon-gunslinger-weapon]Hand Cannon Gunslinger Weapon[/url])
 [/list]
