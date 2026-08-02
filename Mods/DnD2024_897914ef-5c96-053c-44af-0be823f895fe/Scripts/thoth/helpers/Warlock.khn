@@ -1,6 +1,5 @@
 function IsWarlockCantrip()
-	return SpellId('Target_BoomingBlade_ClassSpell')
-	| SpellId('Target_ChillTouch')
+	return SpellId('Target_ChillTouch')
 	| SpellId('Projectile_EldritchBlast')
 	| SpellId('Target_MindSliver')
 	| SpellId('Projectile_PoisonSpray')
