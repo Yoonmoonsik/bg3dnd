@@ -138,6 +138,7 @@ See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) for full attribution.
 - **Brazilian Portuguese Translation**: [ShadowAhJin](https://mod.io/u/shadowahjin) ([CaioShin93](https://github.com/CaioShin93))
 - **Italian Translation**: Alessandro
 - **Russian Translation**: [ANizamutdinov](https://github.com/ANizamutdinov)
+- **Turkish Translation**: [batuhansekban](https://github.com/batuhansekban)
 - **Item Models**: [skirbie](https://mod.io/g/baldursgate3/u/skirbie) ([Viper Carbine Steampunk Rifle Gun](https://mod.io/g/baldursgate3/m/viper-carbine-steampunk-rifle-gun), [Hand Cannon Gunslinger Weapon](https://mod.io/g/baldursgate3/m/hand-cannon-gunslinger-weapon))
 
 ## Legal
