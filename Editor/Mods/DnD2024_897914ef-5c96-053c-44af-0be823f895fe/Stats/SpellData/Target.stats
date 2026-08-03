@@ -5841,6 +5841,7 @@
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;IsSpell;CannotTargetItems;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="StatusDurationLessThan(context.Target,'DAWN_OWNER',10);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
