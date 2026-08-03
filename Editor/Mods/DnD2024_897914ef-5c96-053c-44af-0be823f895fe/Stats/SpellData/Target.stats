@@ -13636,6 +13636,14 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Tagged('UNDEAD') and not Dead() and (HasStatus('HIDEOUS_LAUGHTER') or HasStatus('COMMAND_GROVEL') or HasStatus('PRONE') or HasStatus('PRONE_FALLEN') or HasStatus('PRONE_GREASE') or HasStatus('PRONE_ICE') or HasStatus('PRONE_SEWER') or HasStatus('PRONE_THUNDEROUS_SMITE') or HasStatus('KNOCKED_OUT') or HasStatus('SG_Prone') or HasStatus('SG_Sleeping'));" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="084a01bd-dabc-440c-8ad0-0fca62b2823b" />
+        <field name="Name" type="NameTableFieldDefinition" value="END_AllyAbility_HagInvisibility" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0b5910cc-56e3-4385-a8a5-2f1661d9ace5" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0eadcc66-207f-4947-be28-f96dee1c457a" />
