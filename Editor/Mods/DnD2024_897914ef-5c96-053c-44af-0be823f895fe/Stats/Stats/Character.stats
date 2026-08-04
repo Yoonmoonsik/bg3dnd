@@ -30,6 +30,32 @@
         <field name="Passives" type="StringTableFieldDefinition" value="Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;Metamagic_Distant_GLO_Baelen" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="460ab464-9e35-415d-9f90-72c3ee62631a" />
+        <field name="Name" type="NameTableFieldDefinition" value="GLO_Mizora" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c20c6766-74c7-4e8e-a36a-da6170265499" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="15" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="16" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Wisdom" type="IntegerTableFieldDefinition" value="12" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="20" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="89" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Charisma" enumeration_type_name="Ability" version="1" />
+        <field name="Progressions" type="StringTableFieldDefinition" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1;SorceryPoint:12;" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;Metamagic_Quickened;Metamagic_Twinned;Metamagic_Extended;Metamagic_Distant;Metamagic_Heightened;MagicResistance" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" value="ResistantToNonMagical" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" value="ResistantToNonMagical" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PiercingResistance" type="EnumerationListTableFieldDefinition" value="ResistantToNonMagical" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ColdResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="LightningResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="DarkvisionRange" type="StringTableFieldDefinition" value="18" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c2725bbf-d6d3-4a86-ad0b-d8e953446ef2" />
