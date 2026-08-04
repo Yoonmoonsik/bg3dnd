@@ -90,7 +90,7 @@ The lists below cover new and revised spells only. The wiki has the complete per
 
 ### Cantrips
 
-Acid Splash, Blade Ward, Booming Blade, Bursting Sinew, Finger Guns, Frightful Start, Green-Flame Blade, Hellfire, Holy Word, Mind Sliver, Sorcerous Burst, Spare the Dying, Starry Wisp, Sword Burst, Thunderclap, Toll the Dead, True Strike, Vengeful Blade, Word of Radiance.
+Acid Splash, Blade Ward, Blood Bolt, Booming Blade, Bursting Sinew, Finger Guns, Frightful Start, Green-Flame Blade, Hellfire, Holy Word, Mind Sliver, Sorcerous Burst, Spare the Dying, Starry Wisp, Sword Burst, Thunderclap, Toll the Dead, True Strike, Vengeful Blade, Word of Radiance.
 
 ### Leveled Spells
 
