@@ -67,6 +67,31 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_BLADEWARD", -1.0, 1, _Player);
 
 IF
+StartedPreviewingSpell((CHARACTER)_Player,"Projectile_BloodBolt",_, _)
+AND
+HasActiveStatus(_Player, "PACTOFTHETOME_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_DRUID_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "LFO_MAGICINITIATE_CLERIC_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "LFO_MAGICINITIATE_DRUID_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "LFO_MAGICINITIATE_WIZARD_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_BLOODBOLT", 1)
+AND
+ResolveTranslatedString("hf2c58c13g34f2g4e5eg89a5gf8e830952d02", _Msg)
+THEN
+ApplyStatus(_Player, "PACTOFTHETOME_CANTRIP", 6.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_BLOODBOLT", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_BoomingBlade_ClassSpell",_, _)
 AND
 HasActiveStatus(_Player, "PACTOFTHETOME_CANTRIP_START", 1)
