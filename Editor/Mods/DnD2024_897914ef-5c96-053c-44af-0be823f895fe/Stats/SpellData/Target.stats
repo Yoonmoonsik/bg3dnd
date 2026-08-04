@@ -902,7 +902,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a7b72754-cd66-4bba-985a-6b1a5c4196a2" />
         <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash_Attack" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);RemoveStatus(SELF,SPECTRAL_SLASH);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc78c376dg616ag7239gb066ga93738880899" version="2" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
@@ -916,6 +916,7 @@
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="8682067a-e523-40fb-b705-3112083b6b05" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="RemoveStatus(SELF,SPECTRAL_SLASH);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
