@@ -995,9 +995,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="61290327-ad72-462a-80af-e1e76dabddb1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1007,9 +1006,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="cc38d0da-62a2-4373-94cd-5fed2160aefe" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1019,9 +1017,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="229710a0-dca2-4ff8-ae35-ef91d045aaed" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1031,9 +1028,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="6156cada-4752-45f7-b385-031d9b7db155" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1043,9 +1039,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="816a1de8-aaa9-428a-8c42-6bdb9b9006fc" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11973,10 +11968,11 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(2,10,Web,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Dexterity, context.Source))" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Web_ArachnoidStalker:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsConcentration;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WEB_ARACHNOID_STALKER,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(WEB_ARACHNOID_STALKER,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13956,7 +13952,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f44f2aa9-cedc-485f-9306-64da2453203f" />
         <field name="Name" type="NameTableFieldDefinition" value="Web_spellscroll" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="61290327-ad72-462a-80af-e1e76dabddb1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="16dbe9e9-1069-4347-ba73-098cad143970" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
