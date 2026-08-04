@@ -3158,6 +3158,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h019511d5gb330g2cd9gd860g84e25789d117" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_STARRY_DRAGON_PLAYER,100,100);IF(ClassLevelHigherOrEqualThan(10,'Druid')):ApplyStatus(TWINKLINGCONSTELLATIONS_DRAGON,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Druid')):ApplyStatus(TWINKLINGCONSTELLATIONS,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_STARRY_DRAGON_PLAYER,100,100)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object color="#FF9ACD32" is_substat="false">
