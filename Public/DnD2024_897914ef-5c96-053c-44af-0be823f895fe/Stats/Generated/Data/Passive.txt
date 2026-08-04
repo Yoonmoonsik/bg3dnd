@@ -72,11 +72,13 @@ new entry "ExtraAttack_Warmagic"
 type "PassiveData"
 using "ExtraAttack"
 data "Conditions" "(context.HasContextFlag(StatsFunctorContext.OnCast) and (IsCantrip() or ExtraAttackSpellCheck()) and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source) and not HasStatus('SLAYER_PLAYER',context.Source) and not HasStatus('SLAYER_PLAYER_10',context.Source) and TurnBased(context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_TECHNICAL') and TurnBased()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('EXTRA_ATTACK_Q'));"
+data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnCast) and not IsCantrip() and HasStatus('ACTION_SURGE',context.Source)):RemoveStatus(SELF,WAR_MAGIC_BLOCK);IF(context.HasContextFlag(StatsFunctorContext.OnCast)):ApplyStatus(SELF,EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and not HasHigherPriorityExtraAttackQueued('EXTRA_ATTACK_Q') and not HasAnyExtraAttack()):ApplyStatus(EXTRA_ATTACK, 100, 1)"
 
 new entry "ExtraAttack_Warmagic_2"
 type "PassiveData"
 using "ExtraAttack_2"
 data "Conditions" "(context.HasContextFlag(StatsFunctorContext.OnCast) and (IsCantrip() or ExtraAttackSpellCheck()) and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source) and not HasStatus('SLAYER_PLAYER',context.Source) and not HasStatus('SLAYER_PLAYER_10',context.Source) and TurnBased(context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_TECHNICAL') and TurnBased()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('EXTRA_ATTACK_2_Q'));"
+data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnCast) and not IsCantrip() and HasStatus('ACTION_SURGE',context.Source)):RemoveStatus(SELF,WAR_MAGIC_BLOCK);IF(context.HasContextFlag(StatsFunctorContext.OnCast)):ApplyStatus(SELF,EXTRA_ATTACK_2_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(EXTRA_ATTACK_2_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and not HasHigherPriorityExtraAttackQueued('EXTRA_ATTACK_2_Q') and not HasAnyExtraAttack()):ApplyStatus(EXTRA_ATTACK_2, 100, 1)"
 
 new entry "WarMagic"
 type "PassiveData"
