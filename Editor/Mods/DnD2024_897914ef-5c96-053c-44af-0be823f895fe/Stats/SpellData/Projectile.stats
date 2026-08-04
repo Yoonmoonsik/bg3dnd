@@ -2745,6 +2745,45 @@
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedSpellAttack" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D12Cantrip),Poison,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D12Cantrip),Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source) and not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((LevelMapValue(D12Cantrip))/2,Poison,Magical);IF(HasPassive('PotentCantrip',context.Source) and HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((LevelMapValue(D12Cantrip))/2,Psychic,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;HasVerbalComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6ee3d49-3f23-45e3-87ed-02aa8ebd7166" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBolt" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);ApplyStatus(SELF,BLOOD_BOLT_TEMPHP,100,-1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source) and not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Necrotic,Magical);IF(HasPassive('PotentCantrip',context.Source) and HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Psychic,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="f2e9076d-b139-4e46-992a-ff2ce9aa9761" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBolt" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hac2038b1g27f4g7096gf7e6ga4a86b7083cd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1158b478ge2c6g812bgbf23gffe3f6e81257" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedSpellAttack" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Necrotic_InflictWounds_L1to3" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;38cdb41c-2eec-4e03-bb31-83cff0346c35,,;85414f5f-b448-4dda-9370-1b6c4b38b561,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;HasVerbalComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ec80b3cd-29fd-40d2-a41a-b703db1b6f8e" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="7bce304f-a409-495e-a092-012b727b0914" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="1d00a392-5444-4533-b125-d4cafc7e496a" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

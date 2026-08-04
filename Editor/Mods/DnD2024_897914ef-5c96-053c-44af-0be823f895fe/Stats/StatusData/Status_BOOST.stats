@@ -3408,6 +3408,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="699c665b-68bb-4a80-a0b3-a217e549b3fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOLT_TEMPHP" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6bb237c1g9e6egfe4fgce5cga69299c7e6cc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcae96586g10c8gb130gd9d3g93307ba9ec71" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOLT_TEMPHP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(ProficiencyBonus);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ac877eff-d933-4066-b64b-e2a9d6c0d2ce" />
         <field name="Name" type="NameTableFieldDefinition" value="HUNGERING_BLADE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h700ed84bg957fg2a5dg1d50g4d69487d7001" version="1" />
