@@ -68,6 +68,8 @@ data "OnRemoveFunctors" "ApplyStatus(EXTRA_ATTACK_2, 100, 1)"
 new entry "WAR_MAGIC_BLOCK"
 type "StatusData"
 data "StatusType" "BOOST"
+data "RemoveConditions" "ExtraAttackSpellCheck() and HasUseCosts('ActionPoint',false,context.Target) and not IsOffHandAttack()"
+data "RemoveEvents" "OnSpellCast"
 data "StatusPropertyFlags" "DisableCombatlog;DisablePortraitIndicator;DisableOverhead"
 
 new entry "EXTRA_ATTACK_WAR_MAGIC"
