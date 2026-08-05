@@ -9,6 +9,9 @@ function IsWarlockCantrip()
 	| SpellId('Target_TrueStrike_Radiant')
 	| SpellId('Target_TrueStrike_CompassSpear')
 	| SpellId('Projectile_TrueStrike_Radiant')
+	| SpellId('Projectile_BloodBolt')
+	| SpellId('Target_Frostbite')
+	| SpellId('Shout_SwordBurst')
 end
 
 function IsEldritchSpearCantrip()
