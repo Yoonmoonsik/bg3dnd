@@ -20,6 +20,20 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_14" />
+        <field name="UUID" type="IdTableFieldDefinition" value="64555b00-d3b3-4365-b8d1-20fc53aead0f" />
+        <field name="ParentUUID" type="GuidTableFieldDefinition" value="6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a" />
+        <field name="DisplayTypeUUID" type="GuidTableFieldDefinition" value="899d275e-9893-490a-9cd5-be856794929f" />
+        <field name="RaceName" type="FixedStringTableFieldDefinition" value="Eladrin" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha24097bdgd8ffgd254g21f7gd89a7e5394d9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h623638f6g1485g2672g2bfcg30f7140b3b47" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="9642f738-a0b4-4bde-b3b8-87524c122695;5a5031bc-bd8c-4a93-a7f4-927f3e3fb965" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="ec2603e5-cf91-47da-b02b-0df881a55c23" />
+        <field name="RaceSoundSwitch" type="FixedStringTableFieldDefinition" value="Elf" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
         <field name="UUID" type="IdTableFieldDefinition" value="0eb594cb-8820-4be6-a58d-8be7a1a98fba" />
         <field name="RaceName" type="FixedStringTableFieldDefinition" value="Human" />

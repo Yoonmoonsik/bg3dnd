@@ -11,7 +11,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="not Self() Ally() and not Grounded() and (Tagged('WEIGHT_MEDIUM') or Tagged('WEIGHT_SMALL') or Tagged('WEIGHT_TINY'));" />
+        <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="not Self() and Ally() and not Grounded() and (Tagged('WEIGHT_MEDIUM') or Tagged('WEIGHT_SMALL') or Tagged('WEIGHT_TINY'));" />
         <field name="Icon" type="StringTableFieldDefinition" value="PsiWarrior_3_TelekineticMovement" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h112e5aabgae68g5b63g8e95g3c2e5fd8ebb8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h789e4f7cgbbfdgd136g7526g0cb392afcf9d" version="1" />
@@ -84,6 +84,52 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb6ad15b6g6a5cgc8edg95d4gd631318ac05a" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;HiddenPaths:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae73d9be-6d3f-4fab-a1db-33bfcef64f13" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeyStep_Eladrin_Winter" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="2" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="LineOfSightFlags" type="EnumerationListTableFieldDefinition" value="AddSourceHeight" enumeration_type_name="LineOfSightFlags" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource()" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character()" />
+        <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateExplosion(Projectile_FeyStep_Eladrin_Winter);" />
+        <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="TeleportSelf" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+        <field name="TeleportSurface" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Fear" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5e6a75a1ga1edg6dcfge091g620017e990cc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa86f65dg33d6g9ea6g0948gfbf198214a31" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,2);" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Eladrin:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7121a488-7c9a-4ba1-a585-f79aaa77e97c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="4d65f0dd-ff5e-4253-8aa1-f0e12e539a40" />
+        <field name="DisappearEffect" type="GuidObjectTableFieldDefinition" value="71859b27-bdda-44c3-8c65-7f142a1a2f60" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_FeyStep_Eladrin" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d4db852-cb1c-459b-8b41-616e8a328ae8" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeyStep_Eladrin_Spring" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ae73d9be-6d3f-4fab-a1db-33bfcef64f13" />
+        <field name="OriginSpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heaea9b90g45ccg4408gc5e5g09ea686c3a9c" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="not Self() and Ally();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_DimensionDoor" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9cda9df5g341bg90cag16e9gfc25dc9df498" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

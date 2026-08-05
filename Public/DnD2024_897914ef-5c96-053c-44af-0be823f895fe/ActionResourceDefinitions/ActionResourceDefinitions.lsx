@@ -347,6 +347,14 @@
                     <attribute id="UUID" type="guid" value="2979fb59-cef8-4609-9811-0689056d4513"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h7cc9c7a3g7fbcga1fbg2066g70dad117ebee" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h926cffe9g58dage0bfge255g5763afb48ab1" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Web_ArachnoidStalker"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="7f987cdb-844d-46af-b521-142b6e03f477"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__SORCERER__"/>
                     <attribute id="UUID" type="guid" value="157308a0-6698-4cdc-a65b-7326f8e0cce6"/>
                 </node>
@@ -697,6 +705,14 @@
                     <attribute id="UUID" type="guid" value="1e4fc9f1-8706-413b-b889-b36184e4ee69"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h690f28c7gad03g1cdbgd8fegfb090b06f3dd" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hee892110g8f20gdbb7g60f8g274ed51075aa" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Eladrin"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="02879844-80a6-4231-9ef0-709126967485"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__ATTUNEMENT__"/>
                     <attribute id="UUID" type="guid" value="9c5ec36a-8a7d-4f22-8fa9-4fd78ed71ea3"/>
                 </node>
@@ -711,14 +727,6 @@
                     <attribute id="Name" type="FixedString" value="MoonSickle"/>
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h7cc9c7a3g7fbcga1fbg2066g70dad117ebee" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h926cffe9g58dage0bfge255g5763afb48ab1" version="1"/>
-                    <attribute id="Name" type="FixedString" value="Web_ArachnoidStalker"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="7f987cdb-844d-46af-b521-142b6e03f477"/>
                 </node>
             </children>
         </node>

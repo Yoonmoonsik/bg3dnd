@@ -547,6 +547,26 @@
                     <attribute id="UUID" type="guid" value="808576a6-c4c8-4376-b8f7-cbf3b13c99e0"/>
                 </node>
                 <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 2"/>
+                    <attribute id="Spells" type="LSString" value="Target_FaerieFire;Target_Sleep;Target_Moonbeam;Shout_SeeInvisibility"/>
+                    <attribute id="UUID" type="guid" value="0346c8ea-e965-4928-b446-d9befab7a939"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 3"/>
+                    <attribute id="Spells" type="LSString" value="Shout_AuraOfVitality;Projectile_VoidStrike"/>
+                    <attribute id="UUID" type="guid" value="7f939ab3-5835-4319-bed9-aeac6efadc7d"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 4"/>
+                    <attribute id="Spells" type="LSString" value="Target_FreedomOfMovement;Target_Invisibility_Greater"/>
+                    <attribute id="UUID" type="guid" value="5268f533-1ed7-4815-a6df-7b89b3987893"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 5"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CircleOfPower;Target_Dawn"/>
+                    <attribute id="UUID" type="guid" value="83099155-2bcc-42f0-9b2c-19d973641ff5"/>
+                </node>
+                <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="__DRUID__"/>
                     <attribute id="UUID" type="guid" value="a650b325-6d8d-46ae-a2a8-28009a511806"/>
                 </node>
@@ -1881,24 +1901,14 @@
                     <attribute id="UUID" type="guid" value="3928cc43-fd2d-46e3-90f5-9171e3aad0f2"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 2"/>
-                    <attribute id="Spells" type="LSString" value="Target_FaerieFire;Target_Sleep;Target_Moonbeam;Shout_SeeInvisibility"/>
-                    <attribute id="UUID" type="guid" value="0346c8ea-e965-4928-b446-d9befab7a939"/>
+                    <attribute id="Name" type="FixedString" value="Eladrin Level 1"/>
+                    <attribute id="Spells" type="LSString" value="Target_FeyStep_Eladrin;Target_FeyStep_Eladrin_General"/>
+                    <attribute id="UUID" type="guid" value="d05b839a-a7c2-4bfd-8dc3-fe85fbc25704"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 3"/>
-                    <attribute id="Spells" type="LSString" value="Shout_AuraOfVitality;Projectile_VoidStrike"/>
-                    <attribute id="UUID" type="guid" value="7f939ab3-5835-4319-bed9-aeac6efadc7d"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 4"/>
-                    <attribute id="Spells" type="LSString" value="Target_FreedomOfMovement;Target_Invisibility_Greater"/>
-                    <attribute id="UUID" type="guid" value="5268f533-1ed7-4815-a6df-7b89b3987893"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="5.5 Twilight Domain SLevel 5"/>
-                    <attribute id="Spells" type="LSString" value="Shout_CircleOfPower;Target_Dawn"/>
-                    <attribute id="UUID" type="guid" value="83099155-2bcc-42f0-9b2c-19d973641ff5"/>
+                    <attribute id="Name" type="FixedString" value="Eladrin Level 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_FeyStep_Eladrin_Autumn;Teleportation_FeyStep_Eladrin_Winter;Teleportation_FeyStep_Eladrin_Spring;Target_FeyStep_Eladrin_Summer"/>
+                    <attribute id="UUID" type="guid" value="57621c37-3a71-4d24-86d6-b88e70f287ea"/>
                 </node>
             </children>
         </node>

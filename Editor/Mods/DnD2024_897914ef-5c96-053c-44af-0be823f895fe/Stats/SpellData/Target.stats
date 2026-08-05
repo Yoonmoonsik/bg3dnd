@@ -13620,6 +13620,72 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="1c1b7ee9-54c0-4cc9-8290-0e09240c83c8" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35c6720d-bc12-462a-8192-9c4eff629b1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeyStep_Eladrin" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_FeyStep_Eladrin_General;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character() and not Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MistyStep" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h89d1cdf7g6826g2911g126fga606244e1e51" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2617fe64ge08cg8debgc3f1g7f4a57cefae0" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_MistyStep_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_MistyStep_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Teleport" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Eladrin:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="LineOfSightFlags" type="EnumerationListTableFieldDefinition" value="AddSourceHeight" enumeration_type_name="LineOfSightFlags" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7121a488-7c9a-4ba1-a585-f79aaa77e97c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="71859b27-bdda-44c3-8c65-7f142a1a2f60" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a5545740-8d40-44c1-8d49-fe1315bc9b38" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeyStep_Eladrin_General" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35c6720d-bc12-462a-8192-9c4eff629b1a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_FeyStep_Eladrin" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb74d094-97fd-468b-b42c-fd4008801ec2" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeyStep_Eladrin_Autumn" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a5545740-8d40-44c1-8d49-fe1315bc9b38" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5282a6cg61c4g9090gb19ag4594d3d35701" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb284f5d4gf341g5049g2ce3g9ea223e41a38" version="1" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AoEConditions" type="StringTableFieldDefinition" value="Enemy();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CharmPerson" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(CHARMED,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHARMED,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4acf5631-0f87-4281-99a8-2ef011da1490" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeyStep_Eladrin_Summer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb74d094-97fd-468b-b42c-fd4008801ec2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9aebcc08g580fg3628g9378gf3b3f0400749" version="1" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();DealDamage(ProficiencyBonus,Fire);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a8a3d05ged7ag55e3g1276g814259823391" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(ProficiencyBonus,Fire)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ff7c774f-6f52-4ab5-90a1-e5feb4c15375" />
