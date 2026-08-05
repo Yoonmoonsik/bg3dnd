@@ -373,7 +373,7 @@
         <field name="ValueLevel" type="IntegerTableFieldDefinition" value="10" />
       </fields>
     </stat_object>
-      <stat_object is_substat="false">
+    <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ba65bdff-f68d-45d7-bf18-f3ac4a5c5256" />
         <field name="Name" type="NameTableFieldDefinition" value="OBJ_Scroll_BallisticSmite_YMS" />
@@ -851,6 +851,7 @@
         <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
         <field name="MaxAmount" type="IntegerTableFieldDefinition" value="1" />
         <field name="Priority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -881,7 +882,6 @@
         <field name="ValueLevel" type="IntegerTableFieldDefinition" value="10" />
       </fields>
     </stat_object>
-
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="14b5c938-d44c-461c-9db2-ecfc65370620" />
@@ -1324,6 +1324,7 @@
         <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
         <field name="MaxAmount" type="IntegerTableFieldDefinition" value="1" />
         <field name="Priority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2090,5 +2091,5 @@
         <field name="Priority" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
-</stat_objects>
+  </stat_objects>
 </stats>
