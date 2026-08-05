@@ -9318,7 +9318,7 @@ new entry "Target_StunningStrike_Unarmed"
 type "SpellData"
 data "SpellType" "Target"
 using "Target_StunningStrike_Unarmed"
-data "SpellSuccess" "IF(not HasStatus('MONK_ELEMENTAL_ATTUNEMENT',context.Source) and not HasPassive('KiEmpoweredStrikes',context.Source)):DealDamage(UnarmedDamage , Bludgeoning);IF(HasPassive('ElementalAttunement_Acid',context.Source)):DealDamage(UnarmedDamage, Acid);IF(HasPassive('ElementalAttunement_Cold',context.Source)):DealDamage(UnarmedDamage, Cold);IF(HasPassive('ElementalAttunement_Fire',context.Source)):DealDamage(UnarmedDamage, Fire);IF(HasPassive('ElementalAttunement_Lightning',context.Source)):DealDamage(UnarmedDamage, Lightning);IF(HasPassive('ElementalAttunement_Thunder',context.Source)):DealDamage(UnarmedDamage, Thunder);IF(HasPassive('KiEmpoweredStrikes',context.Source)):DealDamage(UnarmedDamage, Force);"
+data "SpellSuccess" "IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);IF(not HasStatus('MONK_ELEMENTAL_ATTUNEMENT',context.Source) and not HasPassive('KiEmpoweredStrikes',context.Source)):DealDamage(UnarmedDamage , Bludgeoning);IF(HasPassive('ElementalAttunement_Acid',context.Source)):DealDamage(UnarmedDamage, Acid);IF(HasPassive('ElementalAttunement_Cold',context.Source)):DealDamage(UnarmedDamage, Cold);IF(HasPassive('ElementalAttunement_Fire',context.Source)):DealDamage(UnarmedDamage, Fire);IF(HasPassive('ElementalAttunement_Lightning',context.Source)):DealDamage(UnarmedDamage, Lightning);IF(HasPassive('ElementalAttunement_Thunder',context.Source)):DealDamage(UnarmedDamage, Thunder);IF(HasPassive('KiEmpoweredStrikes',context.Source)):DealDamage(UnarmedDamage, Force);"
 
 new entry "Target_OpenHandTechnique_Knock"
 type "SpellData"
