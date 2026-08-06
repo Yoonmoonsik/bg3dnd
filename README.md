@@ -6,12 +6,18 @@ For deeper gameplay notes, class details, spell behavior, item locations, and co
 
 > Note: The Wiki is maintained by community contributors and is not officially written or managed by the mod developer. Some information may be incomplete, outdated, or inaccurate.
 
+## Bug Reports and Questions
+
+- **Bug reports**: open a report in [Issues](https://github.com/Yoonmoonsik/bg3dnd/issues).
+- **Questions, suggestions, requests, and general feedback**: post in [Discussions](https://github.com/Yoonmoonsik/bg3dnd/discussions).
+
 ## YouTube
 
 For gameplay examples, build ideas, and practical references, check the playthrough videos on the [YouTube channel](https://www.youtube.com/@bg3dnd) and the dedicated [playthrough playlist](https://www.youtube.com/playlist?list=PLOxzTx3j5VdueKEU6lfAmzKL5KQt0rNhi).
 
 ## Contents
 
+- [Bug Reports and Questions](#bug-reports-and-questions)
 - [YouTube](#youtube)
 - [Rules and Actions](#rules-and-actions)
 - [Backgrounds](#backgrounds)
