@@ -1069,6 +1069,75 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="92868224-4c95-4d14-bc27-30a2310327d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="__DIVINATION__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d014801e-429e-4126-b205-9169d71bba92" />
+        <field name="Name" type="NameTableFieldDefinition" value="DetectThoughts" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="03c7b83b-3f67-43c9-b6e8-cb9d37c9a14a" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d3de067e-31b4-41b1-98e9-88e01de2d9ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="DetectThoughts_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acbbf63f-3e7a-4d7d-8cde-8401de233a45" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="58fb36dd-53e8-4fbd-a2a8-0748a7300029" />
+        <field name="Name" type="NameTableFieldDefinition" value="DetectThoughts_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a12ed990-a515-4c7e-b212-538d49f4eed0" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="47c08b3d-a368-4bae-891e-43160a974431" />
+        <field name="Name" type="NameTableFieldDefinition" value="DetectThoughts_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="312c1afb-0c5a-4165-ad60-4a5d8984a4dd" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="61e37747-166d-49a6-8ce3-963b332e68f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="DetectThoughts_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="765aeeb7-7403-409f-b13b-553bc2010a43" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="db8d2879-a488-452f-946f-37621c911793" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_DetectThoughts" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3f2f3585-6acd-480c-b4c9-8bab5a93a8a8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b31f8ab7-d248-4d71-b43e-5a2465e25ec3" />
+        <field name="Name" type="NameTableFieldDefinition" value="UND_DetectThoughts_Tower_Amulet" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="abfd0b1e-4b69-43dd-bdb5-564bd79506d2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DETECT_THOUGHTS,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="78762a53-23ce-44e7-831e-27019b8d953b" />
         <field name="Name" type="NameTableFieldDefinition" value="__EVOCATION__" />
       </fields>
@@ -6034,7 +6103,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8964c0d2-525f-4e52-99c5-41714feeffcb" />
         <field name="Name" type="NameTableFieldDefinition" value="DetectThoughts_spellscroll" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="03c7b83b-3f67-43c9-b6e8-cb9d37c9a14a" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d014801e-429e-4126-b205-9169d71bba92" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
