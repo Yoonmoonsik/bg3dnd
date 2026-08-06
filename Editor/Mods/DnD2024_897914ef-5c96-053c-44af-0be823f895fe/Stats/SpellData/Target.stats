@@ -10059,6 +10059,27 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb3477f0-63a0-4ddd-b225-51f62c1753a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DuplicitousCantrip" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41000613-90c7-4036-bfde-5775e5abc4a0" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(INVOKE_DUPLICITY_CASTING_CANTRIP,100,1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('ACT1_HAG_ILLUSION');" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;Temporary;Invisible" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4e92a1c7g63bdg48f0g9c25ga07f1b53de86" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb1c6082fg95a4g4e37g8d16gf3ae92c04751" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Buff_BlessingOfTheTrickster_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_BlessingOfTheTrickster_L1to3" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="2f0d97b9-4a1f-4bf3-a3c2-32efb563d601,,;,,;c68de38d-3ebd-4a2a-80ef-e37ad021832b,,;5350912d-0215-43f4-b6be-89fc53d4f06d,,;57e449b3-b712-4508-afcf-f2e91dc473f6,,;,,;84f3727f-aabc-4e34-bf31-c6cd0160bec9,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="81e31dc6-3014-49c5-95a5-fe6473c1163b" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="c1ae2a9b-9fb0-4f1b-aa4e-dc6f2456b2b2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="27753629-60e2-4faf-8dff-c8c1f51f9f5a" />
         <field name="Name" type="NameTableFieldDefinition" value="DuplicitousCasting" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="41000613-90c7-4036-bfde-5775e5abc4a0" />

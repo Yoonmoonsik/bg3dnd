@@ -68,7 +68,78 @@ THEN
 ApplyStatus(_Duplicity, "INVOKE_DUPLICITY_CASTING_WIS_6", 6.0);
 
 IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+GetAbility((CHARACTER)_Cleric, "Wisdom", _Wisdom)
+AND
+_Wisdom >= 12
+AND
+_Wisdom < 14
+THEN
+ApplyStatus(_Duplicity, "INVOKE_DUPLICITY_CASTING_WIS_1", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+GetAbility((CHARACTER)_Cleric, "Wisdom", _Wisdom)
+AND
+_Wisdom >= 14
+AND
+_Wisdom < 16
+THEN
+ApplyStatus(_Duplicity, "INVOKE_DUPLICITY_CASTING_WIS_2", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+GetAbility((CHARACTER)_Cleric, "Wisdom", _Wisdom)
+AND
+_Wisdom >= 16
+AND
+_Wisdom < 18
+THEN
+ApplyStatus(_Duplicity, "INVOKE_DUPLICITY_CASTING_WIS_3", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+GetAbility((CHARACTER)_Cleric, "Wisdom", _Wisdom)
+AND
+_Wisdom >= 18
+AND
+_Wisdom < 20
+THEN
+ApplyStatus(_Duplicity, "INVOKE_DUPLICITY_CASTING_WIS_4", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+GetAbility((CHARACTER)_Cleric, "Wisdom", _Wisdom)
+AND
+_Wisdom >= 20
+AND
+_Wisdom < 22
+THEN
+ApplyStatus(_Duplicity, "INVOKE_DUPLICITY_CASTING_WIS_5", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+GetAbility((CHARACTER)_Cleric, "Wisdom", _Wisdom)
+AND
+_Wisdom >= 22
+THEN
+ApplyStatus(_Duplicity, "INVOKE_DUPLICITY_CASTING_WIS_6", 6.0);
+
+IF
 StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_BurstingSinew", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_BURSTINGSINEW", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
 AND
 IsSpellActive(_Cleric, "Target_BurstingSinew", 1)
 THEN
@@ -82,7 +153,21 @@ THEN
 ApplyStatus(_Duplicity, "DUPLICITY_SPELL_GUIDANCE", 6.0);
 
 IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Guidance", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_GUIDANCE", 6.0);
+
+IF
 StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_HolyWord", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_HOLYWORD", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
 AND
 IsSpellActive(_Cleric, "Target_HolyWord", 1)
 THEN
@@ -96,7 +181,21 @@ THEN
 ApplyStatus(_Duplicity, "DUPLICITY_SPELL_LIGHT", 6.0);
 
 IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Light", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_LIGHT", 6.0);
+
+IF
 StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Resistance", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_RESISTANCE", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
 AND
 IsSpellActive(_Cleric, "Target_Resistance", 1)
 THEN
@@ -110,7 +209,21 @@ THEN
 ApplyStatus(_Duplicity, "DUPLICITY_SPELL_SACREDFLAME", 6.0);
 
 IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_SacredFlame", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_SACREDFLAME", 6.0);
+
+IF
 StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_SpareTheDying", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_SPARETHEDYING", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
 AND
 IsSpellActive(_Cleric, "Target_SpareTheDying", 1)
 THEN
@@ -124,6 +237,13 @@ THEN
 ApplyStatus(_Duplicity, "DUPLICITY_SPELL_THAUMATURGY", 6.0);
 
 IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_Thaumaturgy", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_THAUMATURGY", 6.0);
+
+IF
 StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
 AND
 IsSpellActive(_Cleric, "Target_TollTheDead", 1)
@@ -131,7 +251,21 @@ THEN
 ApplyStatus(_Duplicity, "DUPLICITY_SPELL_TOLLTHEDEAD", 6.0);
 
 IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_TollTheDead", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_TOLLTHEDEAD", 6.0);
+
+IF
 StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_WordOfRadiance", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_WORDOFRADIANCE", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
 AND
 IsSpellActive(_Cleric, "Shout_WordOfRadiance", 1)
 THEN
