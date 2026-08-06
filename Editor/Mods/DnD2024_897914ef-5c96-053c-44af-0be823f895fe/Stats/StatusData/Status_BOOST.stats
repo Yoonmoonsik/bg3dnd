@@ -4977,6 +4977,7 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Teleportation_InvokeDuplicity_Move);UnlockSpell(Target_DuplicitousCasting,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_DuplicitousCantrip);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4990,6 +4991,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5003,6 +5005,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f8a1c72g5e94g4b21ga7c3gd8e51f0b9a46" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7b2e4d19gc63fg41a8gb95egf2c8a3d716b0" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5015,6 +5018,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2d47b9e1g8c35g4a70gb61fg5e8d0c34a927" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6f81c3a5g47deg4b92g8a03gd15f92c7be48" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5024,6 +5028,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5033,6 +5038,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5042,6 +5048,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,3);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5051,6 +5058,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,4);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5060,6 +5068,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,5);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5069,6 +5078,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,6);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5078,6 +5088,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5087,6 +5098,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,4);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5096,6 +5108,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,6);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5105,6 +5118,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,8);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5114,6 +5128,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,10);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5123,6 +5138,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,12);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5132,6 +5148,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BURSTINGSINEW" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BurstingSinew);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5141,6 +5158,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_GUIDANCE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Guidance);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5150,6 +5168,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HOLYWORD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HolyWord);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5159,6 +5178,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_LIGHT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Light);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5168,6 +5188,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_RESISTANCE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Resistance);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5177,6 +5198,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SACREDFLAME" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SacredFlame);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5186,6 +5208,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SPARETHEDYING" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SpareTheDying);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5195,6 +5218,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_THAUMATURGY" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Thaumaturgy);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5204,6 +5228,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_TOLLTHEDEAD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TollTheDead);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5213,6 +5238,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_WORDOFRADIANCE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WordOfRadiance);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5222,6 +5248,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BANE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bane,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5231,6 +5258,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BLESS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bless,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5240,6 +5268,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_COMMAND_CONTAINER" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Command_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5249,6 +5278,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CREATEDESTROYWATER" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CreateDestroyWater,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5258,6 +5288,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CUREWOUNDS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CureWounds,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5267,6 +5298,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_GUIDINGBOLT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_GuidingBolt,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5276,6 +5308,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HEALINGWORD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HealingWord,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5285,6 +5318,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_INFLICTWOUNDS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InflictWounds,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5294,6 +5328,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PROTECTIONFROMEVILANDGOOD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5303,6 +5338,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SANCTUARY" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Sanctuary,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5312,6 +5348,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SHIELDOFFAITH" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShieldOfFaith,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5321,6 +5358,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_WARDAWAY" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_Wardaway,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5330,6 +5368,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_AID" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Aid,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5339,6 +5378,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BLINDNESS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Blindness,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5348,6 +5388,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CALMEMOTIONS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CalmEmotions,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5357,6 +5398,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_ENHANCEABILITY" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_EnhanceAbility,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5366,6 +5408,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HOLDPERSON" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HoldPerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5375,6 +5418,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_LESSERRESTORATION" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_LesserRestoration,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5384,6 +5428,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PRAYEROFHEALING" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_PrayerOfHealing,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5393,6 +5438,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PROTECTIONFROMPOISON" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectionFromPoison,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5402,6 +5448,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SEARINGORB" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_SearingOrb,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5411,6 +5458,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SILENCE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Silence,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5420,6 +5468,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SPIRITUALWEAPON" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SpiritualWeapon,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5429,6 +5478,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_WARDINGBOND" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_WardingBond,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5438,6 +5488,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_ANIMATEDEAD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_AnimateDead,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5447,6 +5498,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_ASTRALFLOOD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_AstralFlood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5456,6 +5508,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_AURAOFVITALITY" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_AuraOfVitality,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5465,6 +5518,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BEACONOFHOPE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BeaconOfHope,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5474,6 +5528,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BESTOWCURSE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BestowCurse,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5483,6 +5538,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_DAYLIGHT_CONTAINER" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Daylight_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5492,6 +5548,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_FEIGNDEATH" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FeignDeath,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5501,6 +5558,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_GLYPHOFWARDING" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_GlyphOfWarding,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5510,6 +5568,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HEALINGWORD_MASS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_HealingWord_Mass,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5519,6 +5578,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_LAERALSSILVERLANCE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_LaeralsSilverLance,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5528,6 +5588,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PROTECTIONFROMENERGY" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectionFromEnergy,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5537,6 +5598,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_REMOVECURSE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RemoveCurse,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5546,6 +5608,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_REVIVIFY" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Teleportation_Revivify,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5555,6 +5618,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SPEAKWITHDEAD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SpeakWithDead,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5564,6 +5628,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SPIRITGUARDIANS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SpiritGuardians,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5573,6 +5638,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_TROLLBLOODINFUSION" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrollbloodInfusion,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5582,6 +5648,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BANISHMENT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Banishment,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5591,6 +5658,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_DEATHWARD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DeathWard,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5600,6 +5668,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_FREEDOMOFMOVEMENT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FreedomOfMovement,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5609,6 +5678,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_GUARDIANOFFAITH" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_GuardianOfFaith,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5618,6 +5688,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CIRCLEOFPOWER" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_CircleOfPower,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5627,6 +5698,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CONTAGION" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Contagion,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5636,6 +5708,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CUREWOUNDS_MASS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CureWounds_Mass,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5645,6 +5718,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_DAWN" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Dawn,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5654,6 +5728,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_DISPELEVILANDGOOD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_DispelEvilAndGood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5663,6 +5738,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_FLAMESTRIKE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FlameStrike,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5672,6 +5748,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_GREATERRESTORATION" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_GreaterRestoration,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5681,6 +5758,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HOLYWEAPON" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HolyWeapon,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5690,6 +5768,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_INSECTPLAGUE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InsectPlague,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5699,6 +5778,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PLANARBINDING" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PlanarBinding,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5708,6 +5788,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SUMMONCELESTIAL" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SummonCelestial,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5717,6 +5798,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BLADEBARRIER" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Wall_BladeBarrier,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5726,6 +5808,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CREATEUNDEAD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CreateUndead,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5735,6 +5818,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HARM" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Harm,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5744,6 +5828,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HEAL" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Heal,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5753,6 +5838,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HEROESFEAST" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_HeroesFeast,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5762,6 +5848,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PLANARALLY_CONTAINER" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PlanarAlly_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5771,6 +5858,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SUNBEAM" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_Sunbeam,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
