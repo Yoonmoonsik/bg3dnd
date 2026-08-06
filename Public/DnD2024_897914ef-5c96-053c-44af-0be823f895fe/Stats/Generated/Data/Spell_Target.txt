@@ -12457,3 +12457,8 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_Frostbite"
 
+new entry "Target_Aid_spellscroll"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Aid"
+

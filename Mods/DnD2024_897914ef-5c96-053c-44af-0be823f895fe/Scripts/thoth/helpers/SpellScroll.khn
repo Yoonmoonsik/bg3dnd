@@ -73,7 +73,7 @@ local SPELL_CLASS_MAP = {
 
     Projectile_AcidArrow_spellscroll = '2 Wizard',
     Zone_AganazzarsScorcher_spellscroll = '2 Sorcerer Wizard',
-    Shout_Aid_spellscroll = '2 Cleric Paladin',
+    Target_Aid_spellscroll = '2 Cleric Paladin',
     Target_ArcaneLock_spellscroll = '2 Wizard Artificer',
     Target_Blindness_spellscroll = '2 Bard Cleric Sorcerer Wizard',
     Shout_Blur_spellscroll = '2 Sorcerer Wizard Artificer',
@@ -393,7 +393,7 @@ function IsScrollSpell()
 	| SpellId('Target_PhantasmalKiller_spellscroll')
 	| SpellId('Target_IrresistibleDance_spellscroll')
 	| SpellId('Target_AnimalFriendship_spellscroll')
-	| SpellId('Shout_Aid_spellscroll')
+	| SpellId('Target_Aid_spellscroll')
 	| SpellId('Projectile_Disintegrate_spellscroll')
 	| SpellId('Target_BestowCurse_spellscroll')
 	| SpellId('Target_GaseousForm_spellscroll')
