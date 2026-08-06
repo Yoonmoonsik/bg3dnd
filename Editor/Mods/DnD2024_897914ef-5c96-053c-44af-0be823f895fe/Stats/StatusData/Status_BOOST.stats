@@ -4986,10 +4986,139 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_AURA_2" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="30" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not Dead()):ApplyStatus(SANCTUARY_AURA)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Invulnerable();" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Invulnerable();Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);UnlockSpellVariant(SubtleSpellCheck(),ModifySpellFlags(Verbal,0));" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20a9727f-3b35-4c93-a18a-d52d0134ba21" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(StandardProficiencyBonusScale));RollBonus(Attack,Owner.SpellCastingAbilityModifier);ActionResource(ActionPoint,1,0);UnlockSpell(Target_CharmPerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Shout_DisguiseSelf,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Invisibility,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Shout_PassWithoutTrace,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Zone_Fear,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_HypnoticPattern,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Confusion,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Teleportation_DimensionDoor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_DominatePerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Seeming,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f8a1c72g5e94g4b21ga7c3gd8e51f0b9a46" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7b2e4d19gc63fg41a8gb95egf2c8a3d716b0" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cda88414-6422-495e-9210-0be69f01908f" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d23b821c-b225-45f0-9029-81ebbdf1a532" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b6447e61-a8e9-48fc-84e2-b1e0887e878c" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,3);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84a05749-3537-4117-b8c9-0bddfcde20a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,4);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1facd3cd-9643-409b-bb0e-39e8206ab6d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_5" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,5);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6b536369-e127-4dd1-bf5b-77b69a509b41" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_6" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,6);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="193c42fd-676f-4d75-9a5f-fc5d80b74713" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(1);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="afd4f7a7-c6e7-450a-89b0-4c794b6e288b" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2aa054e9-71a2-4382-882d-be4871f58046" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(3);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="90affacb-c11c-42f3-ad8a-e62e691efa99" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(4);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a4faca51-b9be-4568-b12e-937f72cdba6c" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_5" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(5);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b49bad15-ba12-4bd3-9ccc-2557c27ef49a" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_6" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(6);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="45a98a76-09c9-4234-96fe-be39c54b48aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_7" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(7);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

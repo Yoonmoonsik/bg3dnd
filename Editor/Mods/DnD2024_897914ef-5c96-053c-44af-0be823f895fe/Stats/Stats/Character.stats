@@ -19,6 +19,8 @@
         <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="RadiantResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="ThunderResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="Flags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="InvulnerableAndInteractive" enumeration_type_name="AttributeFlags" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Wisdom" enumeration_type_name="Ability" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

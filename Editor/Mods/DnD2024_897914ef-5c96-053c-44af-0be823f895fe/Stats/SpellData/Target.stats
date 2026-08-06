@@ -10080,6 +10080,76 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27753629-60e2-4faf-8dff-c8c1f51f9f5a" />
+        <field name="Name" type="NameTableFieldDefinition" value="DuplicitousCasting" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41000613-90c7-4036-bfde-5775e5abc4a0" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(INVOKE_DUPLICITY_CASTING,100,1);ApplyStatus(INVOKE_DUPLICITY_CASTING_SLOT_1,100,1);IF(WisdomModifierEqualsTo(1)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_1,100,1);IF(WisdomModifierEqualsTo(2)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_2,100,1);IF(WisdomModifierEqualsTo(3)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_3,100,1);IF(WisdomModifierEqualsTo(4)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_4,100,1);IF(WisdomModifierEqualsTo(5)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_5,100,1);IF(WisdomModifierEqualsTo(6)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_6,100,1);IF(WisdomModifierEqualsTo(7)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_7,100,1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('ACT1_HAG_ILLUSION');" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5c1e93a7g2f48g4d6bg8e13ga7f4c2b60d95" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9a4f2b81gd37eg46c2gb058ge1d93f7a2c46" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0f3b3148-14f3-4816-8caf-6b4f8d45256e" />
+        <field name="Name" type="NameTableFieldDefinition" value="DuplicitousCasting_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="27753629-60e2-4faf-8dff-c8c1f51f9f5a" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_DuplicitousCasting" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(INVOKE_DUPLICITY_CASTING,100,1);ApplyStatus(INVOKE_DUPLICITY_CASTING_SLOT_2,100,1);IF(WisdomModifierEqualsTo(1)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_1,100,1);IF(WisdomModifierEqualsTo(2)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_2,100,1);IF(WisdomModifierEqualsTo(3)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_3,100,1);IF(WisdomModifierEqualsTo(4)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_4,100,1);IF(WisdomModifierEqualsTo(5)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_5,100,1);IF(WisdomModifierEqualsTo(6)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_6,100,1);IF(WisdomModifierEqualsTo(7)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_7,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2e5734c6-2b9d-4e4c-ad35-4c4178f16d47" />
+        <field name="Name" type="NameTableFieldDefinition" value="DuplicitousCasting_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="27753629-60e2-4faf-8dff-c8c1f51f9f5a" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_DuplicitousCasting" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(INVOKE_DUPLICITY_CASTING,100,1);ApplyStatus(INVOKE_DUPLICITY_CASTING_SLOT_3,100,1);IF(WisdomModifierEqualsTo(1)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_1,100,1);IF(WisdomModifierEqualsTo(2)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_2,100,1);IF(WisdomModifierEqualsTo(3)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_3,100,1);IF(WisdomModifierEqualsTo(4)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_4,100,1);IF(WisdomModifierEqualsTo(5)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_5,100,1);IF(WisdomModifierEqualsTo(6)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_6,100,1);IF(WisdomModifierEqualsTo(7)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_7,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="99db267b-4457-419e-8175-4d6513db9862" />
+        <field name="Name" type="NameTableFieldDefinition" value="DuplicitousCasting_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="27753629-60e2-4faf-8dff-c8c1f51f9f5a" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_DuplicitousCasting" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(INVOKE_DUPLICITY_CASTING,100,1);ApplyStatus(INVOKE_DUPLICITY_CASTING_SLOT_4,100,1);IF(WisdomModifierEqualsTo(1)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_1,100,1);IF(WisdomModifierEqualsTo(2)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_2,100,1);IF(WisdomModifierEqualsTo(3)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_3,100,1);IF(WisdomModifierEqualsTo(4)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_4,100,1);IF(WisdomModifierEqualsTo(5)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_5,100,1);IF(WisdomModifierEqualsTo(6)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_6,100,1);IF(WisdomModifierEqualsTo(7)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_7,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4f72bfeb-f10b-4e93-9627-dbaf27e91dd8" />
+        <field name="Name" type="NameTableFieldDefinition" value="DuplicitousCasting_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="27753629-60e2-4faf-8dff-c8c1f51f9f5a" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_DuplicitousCasting" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(INVOKE_DUPLICITY_CASTING,100,1);ApplyStatus(INVOKE_DUPLICITY_CASTING_SLOT_5,100,1);IF(WisdomModifierEqualsTo(1)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_1,100,1);IF(WisdomModifierEqualsTo(2)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_2,100,1);IF(WisdomModifierEqualsTo(3)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_3,100,1);IF(WisdomModifierEqualsTo(4)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_4,100,1);IF(WisdomModifierEqualsTo(5)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_5,100,1);IF(WisdomModifierEqualsTo(6)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_6,100,1);IF(WisdomModifierEqualsTo(7)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_7,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="67e81913-3dd6-42a6-a16c-b3ce9c6e4303" />
+        <field name="Name" type="NameTableFieldDefinition" value="DuplicitousCasting_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="27753629-60e2-4faf-8dff-c8c1f51f9f5a" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_DuplicitousCasting" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(INVOKE_DUPLICITY_CASTING,100,1);ApplyStatus(INVOKE_DUPLICITY_CASTING_SLOT_6,100,1);IF(WisdomModifierEqualsTo(1)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_1,100,1);IF(WisdomModifierEqualsTo(2)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_2,100,1);IF(WisdomModifierEqualsTo(3)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_3,100,1);IF(WisdomModifierEqualsTo(4)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_4,100,1);IF(WisdomModifierEqualsTo(5)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_5,100,1);IF(WisdomModifierEqualsTo(6)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_6,100,1);IF(WisdomModifierEqualsTo(7)):ApplyStatus(INVOKE_DUPLICITY_CASTING_DC_7,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8db47a81-251e-4eee-9fb7-d9a37aef1224" />
         <field name="Name" type="NameTableFieldDefinition" value="ShieldOfFaith_War" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7717d881-5c50-47b7-ae34-44f499f9303b" />

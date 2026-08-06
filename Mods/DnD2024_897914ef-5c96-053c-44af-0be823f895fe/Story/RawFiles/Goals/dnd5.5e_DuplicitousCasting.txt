@@ -1,0 +1,512 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_BurstingSinew", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_BurstingSinew", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Guidance", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Guidance", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_HolyWord", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_HolyWord", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Light", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Light", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Resistance", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Resistance", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_SacredFlame", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_SacredFlame", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_SpareTheDying", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_SpareTheDying", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_Thaumaturgy", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Shout_Thaumaturgy", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_TollTheDead", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_TollTheDead", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_WordOfRadiance", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Shout_WordOfRadiance", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Bane", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Bane", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Bless", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Bless", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Command_Container", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Command_Container", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_CreateDestroyWater", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_CreateDestroyWater", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_CureWounds", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_CureWounds", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Projectile_GuidingBolt", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Projectile_GuidingBolt", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_HealingWord", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_HealingWord", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_InflictWounds", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_InflictWounds", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_ProtectionFromEvilAndGood", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_ProtectionFromEvilAndGood", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Sanctuary", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Sanctuary", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_ShieldOfFaith", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_ShieldOfFaith", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Projectile_Wardaway", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Projectile_Wardaway", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Aid", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Aid", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Blindness", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Blindness", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_CalmEmotions", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_CalmEmotions", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_EnhanceAbility", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_EnhanceAbility", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_HoldPerson", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_HoldPerson", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_LesserRestoration", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_LesserRestoration", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_PrayerOfHealing", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Shout_PrayerOfHealing", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_ProtectionFromPoison", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_ProtectionFromPoison", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Projectile_SearingOrb", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Projectile_SearingOrb", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Silence", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Silence", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_SpiritualWeapon", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_SpiritualWeapon", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_WardingBond", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_WardingBond", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_AnimateDead", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_AnimateDead", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Zone_AstralFlood", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Zone_AstralFlood", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_AuraOfVitality", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Shout_AuraOfVitality", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_BeaconOfHope", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Shout_BeaconOfHope", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_BestowCurse", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_BestowCurse", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Daylight_Container", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Daylight_Container", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_FeignDeath", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_FeignDeath", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_GlyphOfWarding", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_GlyphOfWarding", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_HealingWord_Mass", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Shout_HealingWord_Mass", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Zone_LaeralsSilverLance", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Zone_LaeralsSilverLance", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_ProtectionFromEnergy", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_ProtectionFromEnergy", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_RemoveCurse", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_RemoveCurse", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Teleportation_Revivify", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Teleportation_Revivify", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_SpeakWithDead", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_SpeakWithDead", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_SpiritGuardians", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Shout_SpiritGuardians", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_TrollbloodInfusion", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_TrollbloodInfusion", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Banishment", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Banishment", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_DeathWard", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_DeathWard", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_FreedomOfMovement", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_FreedomOfMovement", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_GuardianOfFaith", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_GuardianOfFaith", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_CircleOfPower", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Shout_CircleOfPower", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Contagion", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Contagion", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_CureWounds_Mass", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_CureWounds_Mass", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Dawn", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Dawn", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_DispelEvilAndGood", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Shout_DispelEvilAndGood", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_FlameStrike", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_FlameStrike", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_GreaterRestoration", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_GreaterRestoration", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_HolyWeapon", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_HolyWeapon", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_InsectPlague", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_InsectPlague", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_PlanarBinding", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_PlanarBinding", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_SummonCelestial", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_SummonCelestial", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Wall_BladeBarrier", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Wall_BladeBarrier", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_CreateUndead", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_CreateUndead", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Harm", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Harm", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_Heal", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_Heal", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Shout_HeroesFeast", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Shout_HeroesFeast", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Target_PlanarAlly_Container", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Target_PlanarAlly_Container", 0, 1);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
+IsSpellActive(_Cleric, "Zone_Sunbeam", 1)
+THEN
+AddSpell((CHARACTER)_Duplicity, "Zone_Sunbeam", 0, 1);
+
+EXITSECTION
+
+ENDEXITSECTION

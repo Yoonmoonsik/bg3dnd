@@ -129,5 +129,31 @@
         <field name="RetainDisplayName" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_30" />
+        <field name="UUID" type="IdTableFieldDefinition" value="296bcfb3-9dab-4a93-8ab1-f1c53c6674c9" />
+        <field name="RuleName" type="StringTableFieldDefinition" value="InvokeDuplicity" />
+        <field name="WildShapeHotBar" type="BoolTableFieldDefinition" value="False" />
+        <field name="Weight" type="ModifierTableFieldDefinition">
+          <modifier value="" type="Template" />
+        </field>
+        <field name="ChangeRace" type="BoolTableFieldDefinition" value="False" />
+        <field name="ChangeBodyType" type="BoolTableFieldDefinition" value="False" />
+        <field name="UseShapeshiftIdentity" type="BoolTableFieldDefinition" value="False" />
+        <field name="ApplyVisual" type="BoolTableFieldDefinition" value="True" />
+        <field name="IgnoreCustomLooks" type="BoolTableFieldDefinition" value="False" />
+        <field name="RetainDisplayName" type="BoolTableFieldDefinition" value="True" />
+        <field name="ChangeIcon" type="BoolTableFieldDefinition" value="True" />
+        <field name="MuteEquipmentSound" type="BoolTableFieldDefinition" value="True" />
+        <field name="RemovePrevSpells" type="BoolTableFieldDefinition" value="True" />
+        <field name="ApplySpellsFromTemplate" type="BoolTableFieldDefinition" value="False" />
+        <field name="DisableEquipmentSlots" type="BoolTableFieldDefinition" value="True" />
+        <field name="ActionCapabilities" type="EnumerationListTableFieldDefinition" value="Attack;WorldActions;RitualSpells;Pickpocketing;Disarming;Lockpicking" enumeration_type_name="ActionsCapabilities" version="1" />
+        <field name="InteractionsCapabilities" type="EnumerationListTableFieldDefinition" value="MoveObjects;ConsumeItems;Pickup;Containers;UseLadders;UseDoors;BasicItemInteractions" enumeration_type_name="InteractionsCapabilities" version="1" />
+        <field name="AwarenessCapabilities" type="EnumerationListTableFieldDefinition" value="SpotSneakers;DetectCrimes;AvoidTraps;ActivateTriggers;DetectVictimOnlyCrimes" enumeration_type_name="AwarenessCapabilities" version="1" />
+        <field name="SpeakingCapabilities" type="EnumerationListTableFieldDefinition" value="Spells;Dialogue;VoiceBark;PlayVocals;PlayPNC" enumeration_type_name="SpeakingCapabilities" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
