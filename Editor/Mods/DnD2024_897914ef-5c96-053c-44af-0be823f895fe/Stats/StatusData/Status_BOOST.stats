@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
   <stat_objects>
     <stat_object is_substat="false">
@@ -4997,7 +4997,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="20a9727f-3b35-4c93-a18a-d52d0134ba21" />
         <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING" />
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(StandardProficiencyBonusScale));RollBonus(Attack,Owner.SpellCastingAbilityModifier);ActionResource(ActionPoint,1,0);UnlockSpell(Target_CharmPerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Shout_DisguiseSelf,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Invisibility,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Shout_PassWithoutTrace,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Zone_Fear,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_HypnoticPattern,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Confusion,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Teleportation_DimensionDoor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_DominatePerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Seeming,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(StandardProficiencyBonusScale));ActionResource(ActionPoint,1,0);ActionResource(BonusActionPoint,1,0);UnlockSpell(Target_CharmPerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Shout_DisguiseSelf,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Invisibility,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Shout_PassWithoutTrace,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Zone_Fear,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_HypnoticPattern,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Confusion,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Teleportation_DimensionDoor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_DominatePerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Seeming,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f8a1c72g5e94g4b21ga7c3gd8e51f0b9a46" version="1" />
@@ -5010,7 +5010,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_1" />
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5019,7 +5018,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_2" />
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,2);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5028,7 +5026,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_3" />
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,3);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5037,7 +5034,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_4" />
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,4);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5046,7 +5042,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_5" />
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,5);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5055,69 +5050,701 @@
         <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT_6" />
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_SLOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,6);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="193c42fd-676f-4d75-9a5f-fc5d80b74713" />
-        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(1);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS_1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="afd4f7a7-c6e7-450a-89b0-4c794b6e288b" />
-        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_2" />
-        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(2);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS_2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,4);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2aa054e9-71a2-4382-882d-be4871f58046" />
-        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_3" />
-        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(3);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS_3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,6);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="90affacb-c11c-42f3-ad8a-e62e691efa99" />
-        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_4" />
-        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(4);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS_4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,8);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a4faca51-b9be-4568-b12e-937f72cdba6c" />
-        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_5" />
-        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(5);" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS_5" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b49ed48e-90eb-4dac-ad8f-d02f15b2d9b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS_6" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_WIS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Wisdom,12);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="51c00b96-5451-4859-b6fc-6e015633ef94" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BURSTINGSINEW" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BURSTINGSINEW" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BurstingSinew);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b49bad15-ba12-4bd3-9ccc-2557c27ef49a" />
-        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_6" />
-        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(6);" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f12bc7cb-e825-46f7-b3a9-ad70048ce4ba" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_GUIDANCE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_GUIDANCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Guidance);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="45a98a76-09c9-4234-96fe-be39c54b48aa" />
-        <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC_7" />
-        <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_CASTING_DC" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="SpellSaveDC(7);" />
+        <field name="UUID" type="IdTableFieldDefinition" value="23c36ef7-e2fd-4999-a716-cc02031f11b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_HOLYWORD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HOLYWORD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HolyWord);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="02d95043-6eb1-451a-9f9f-2af3bbe62972" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_LIGHT" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_LIGHT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Light);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a10352b5-f846-4b4d-bb1a-d8e58a0ec73a" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_RESISTANCE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_RESISTANCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Resistance);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="427f6950-e482-405b-bb18-c07715f277bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SACREDFLAME" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SACREDFLAME" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SacredFlame);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="54f36784-0658-4172-8a50-9ef690c280ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SPARETHEDYING" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SPARETHEDYING" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SpareTheDying);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="131f821e-4055-4570-b87d-a5c8c8240ae9" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_THAUMATURGY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_THAUMATURGY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Thaumaturgy);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb965f7e-b5e7-44da-89da-6887f067c62a" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_TOLLTHEDEAD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_TOLLTHEDEAD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TollTheDead);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8db4e098-bf79-4438-87db-296403a89531" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_WORDOFRADIANCE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_WORDOFRADIANCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WordOfRadiance);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7050d954-f3b5-406e-b20c-b93b19e520fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BANE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BANE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bane,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="21670a34-8563-4ac7-bf17-f42d35edb3d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BLESS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BLESS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bless,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c7a0c3a7-d4c1-426b-a0b0-966042de1f62" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_COMMAND_CONTAINER" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_COMMAND_CONTAINER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Command_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5a838a22-c7cd-4ee8-b4d9-be575b28bf25" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_CREATEDESTROYWATER" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CREATEDESTROYWATER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CreateDestroyWater,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="849edb06-cf97-4f93-a93d-53ca5d8b931e" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_CUREWOUNDS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CUREWOUNDS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CureWounds,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="77e73b46-37f3-4c02-92e8-2281efe19ade" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_GUIDINGBOLT" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_GUIDINGBOLT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_GuidingBolt,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4d1f9007-aa5c-41ba-9b8a-2c09e58773e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_HEALINGWORD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HEALINGWORD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HealingWord,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eb56c63e-1136-44a4-aaae-a82f72964eaa" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_INFLICTWOUNDS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_INFLICTWOUNDS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InflictWounds,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d430dad9-4865-4113-ae29-e0fb5a5f3a84" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_PROTECTIONFROMEVILANDGOOD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PROTECTIONFROMEVILANDGOOD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e419ee8d-dd64-4ec7-af8a-ce0a9fd05a37" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SANCTUARY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SANCTUARY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Sanctuary,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b89f3a3-4782-4eda-98f5-48e6d2d319d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SHIELDOFFAITH" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SHIELDOFFAITH" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShieldOfFaith,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7fb97124-5b90-434d-8ba6-72ae236d4b52" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_WARDAWAY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_WARDAWAY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_Wardaway,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5396fa97-626a-4ce3-a636-162ec811b70e" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_AID" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_AID" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Aid,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="126182f2-3548-47ea-bfe6-c780443c650b" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BLINDNESS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BLINDNESS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Blindness,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6721054a-9761-4d3e-a249-901bfaeae967" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_CALMEMOTIONS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CALMEMOTIONS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CalmEmotions,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="250e4684-de9e-40f3-86e3-fa0aa514e233" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_ENHANCEABILITY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_ENHANCEABILITY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_EnhanceAbility,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f2cd8c75-bfb2-48e6-aea0-28fc8d14aa79" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_HOLDPERSON" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HOLDPERSON" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HoldPerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c9843108-da4d-4b40-a82a-07c448c425ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_LESSERRESTORATION" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_LESSERRESTORATION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_LesserRestoration,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b66d6bb3-663e-4efa-b64f-3b31c39f110c" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_PRAYEROFHEALING" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PRAYEROFHEALING" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_PrayerOfHealing,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e76d580c-23f2-4110-b438-83c52f145d61" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_PROTECTIONFROMPOISON" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PROTECTIONFROMPOISON" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectionFromPoison,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6af570e2-a54c-4b7b-866a-64f356c93679" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SEARINGORB" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SEARINGORB" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_SearingOrb,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6206ab3a-584f-45b1-b178-1e21d0cf0bb7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SILENCE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SILENCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Silence,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3adc8c6e-3bce-4f4b-8a84-b407d4575852" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SPIRITUALWEAPON" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SPIRITUALWEAPON" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SpiritualWeapon,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="de622c4a-6c7d-4718-9733-78d7dd441a4b" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_WARDINGBOND" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_WARDINGBOND" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_WardingBond,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc81fbc3-1015-4618-9ca0-83ce85a4badc" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_ANIMATEDEAD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_ANIMATEDEAD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_AnimateDead,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="960875cc-1c64-4faf-bf5d-51c0fd8fb4e9" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_ASTRALFLOOD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_ASTRALFLOOD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_AstralFlood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a0f136e-d160-42b0-98d2-ee3cf0f5dab5" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_AURAOFVITALITY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_AURAOFVITALITY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_AuraOfVitality,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f886e5c-405a-49ee-9acf-f51bb53dffeb" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BEACONOFHOPE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BEACONOFHOPE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BeaconOfHope,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ae5e23e-c5e5-45fa-9b30-0ce8ec996cd4" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BESTOWCURSE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BESTOWCURSE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BestowCurse,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f787af8e-0e19-45e2-858a-401215548ae2" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_DAYLIGHT_CONTAINER" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_DAYLIGHT_CONTAINER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Daylight_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e2a0f90e-c066-47cf-9e11-83dd7e17f162" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_FEIGNDEATH" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_FEIGNDEATH" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FeignDeath,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94910e7e-baf2-49f5-986f-a7894bc1fce9" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_GLYPHOFWARDING" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_GLYPHOFWARDING" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_GlyphOfWarding,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59eaf3e2-0f1b-4da6-b554-c97ca45bcd79" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_HEALINGWORD_MASS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HEALINGWORD_MASS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_HealingWord_Mass,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="797c363a-495e-4bff-9029-de7126d0ead9" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_LAERALSSILVERLANCE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_LAERALSSILVERLANCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_LaeralsSilverLance,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ada390d4-4701-4cf1-ac4a-683072e302c3" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_PROTECTIONFROMENERGY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PROTECTIONFROMENERGY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectionFromEnergy,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="de1a0af3-0b8c-4ee7-927e-7f7d552ee831" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_REMOVECURSE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_REMOVECURSE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RemoveCurse,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e54fe1ec-3624-4a2f-bc74-cf6cd536d8ac" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_REVIVIFY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_REVIVIFY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Teleportation_Revivify,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8821120a-b5a3-499e-9804-bb18b6cb403b" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SPEAKWITHDEAD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SPEAKWITHDEAD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SpeakWithDead,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee811bad-63ce-4db5-ba41-4e3dc0fccde2" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SPIRITGUARDIANS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SPIRITGUARDIANS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SpiritGuardians,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3804aa2-d258-4157-b6cc-8dbe6c454c1f" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_TROLLBLOODINFUSION" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_TROLLBLOODINFUSION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrollbloodInfusion,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8544d35d-a9d0-4f77-9dda-0ed4b6ef21c5" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BANISHMENT" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BANISHMENT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Banishment,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b424fd56-ef79-49a7-9226-b4ce1d33ecb5" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_DEATHWARD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_DEATHWARD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DeathWard,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e82b166-2c1c-461e-972b-af1c8af008d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_FREEDOMOFMOVEMENT" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_FREEDOMOFMOVEMENT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FreedomOfMovement,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="71478d24-4b6f-42af-b3b2-40ca76a92446" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_GUARDIANOFFAITH" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_GUARDIANOFFAITH" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_GuardianOfFaith,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7029b6db-6459-4aa0-81c2-5055b5dba05e" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_CIRCLEOFPOWER" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CIRCLEOFPOWER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_CircleOfPower,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18733c75-f80f-4160-bf2d-96b94b090a67" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_CONTAGION" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CONTAGION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Contagion,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aecd0089-ae11-4ae1-9a5b-5231de13ced4" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_CUREWOUNDS_MASS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CUREWOUNDS_MASS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CureWounds_Mass,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ca9484a-82f8-429f-8483-1bba65f73194" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_DAWN" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_DAWN" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Dawn,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6b0b0354-4973-4114-9781-ccaf52114a8c" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_DISPELEVILANDGOOD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_DISPELEVILANDGOOD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_DispelEvilAndGood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="26ae7c7e-847c-43d5-9523-fc6a5fd94429" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_FLAMESTRIKE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_FLAMESTRIKE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FlameStrike,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6d6589df-560b-4dad-898e-a653cd00bd9a" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_GREATERRESTORATION" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_GREATERRESTORATION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_GreaterRestoration,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="630db095-6064-42da-8edc-55e00b36c7f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_HOLYWEAPON" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HOLYWEAPON" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HolyWeapon,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e695f64d-6d84-4bba-a5e4-1ea33c56e5e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_INSECTPLAGUE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_INSECTPLAGUE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InsectPlague,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b7c8440b-de24-4746-810a-aa9ba9d25ba7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_PLANARBINDING" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PLANARBINDING" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PlanarBinding,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20258b92-ae4f-44ae-9d08-4c3530d97a8d" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SUMMONCELESTIAL" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SUMMONCELESTIAL" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SummonCelestial,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="46966e7f-958f-4d4f-a3f5-c7586b2db58d" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BLADEBARRIER" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BLADEBARRIER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Wall_BladeBarrier,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="79e7f151-6819-41aa-b75a-5060db69bbb7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_CREATEUNDEAD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_CREATEUNDEAD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CreateUndead,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d023386b-158c-4cec-a09a-47b4f7e02e6b" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_HARM" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HARM" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Harm,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4f1aadc6-5922-4813-8ead-ef2ac961423d" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_HEAL" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HEAL" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Heal,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae812934-5053-4b71-ba39-072cd896b15a" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_HEROESFEAST" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_HEROESFEAST" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_HeroesFeast,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1f693d36-c0b7-4f65-8701-ef38ca6a7bf8" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_PLANARALLY_CONTAINER" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_PLANARALLY_CONTAINER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PlanarAlly_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b7250e70-4446-41ea-8eeb-d2edc4c03988" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SUNBEAM" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SUNBEAM" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_Sunbeam,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>

@@ -200,7 +200,6 @@
                     <attribute id="DisableEquipmentSlots" type="bool" value="true"/>
                     <attribute id="IgnoreCustomLooks" type="bool" value="false"/>
                     <attribute id="MuteEquipmentSound" type="bool" value="true"/>
-                    <attribute id="RemovePrevSpells" type="bool" value="true"/>
                     <attribute id="RetainDisplayName" type="bool" value="true"/>
                     <attribute id="RuleName" type="LSString" value="InvokeDuplicity"/>
                     <attribute id="UUID" type="guid" value="296bcfb3-9dab-4a93-8ab1-f1c53c6674c9"/>
@@ -210,13 +209,7 @@
                         <node id="ActionsCapabilities">
                             <children>
                                 <node id="ActionCapabilities">
-                                    <attribute id="Name" type="LSString" value="Attack"/>
-                                </node>
-                                <node id="ActionCapabilities">
                                     <attribute id="Name" type="LSString" value="WorldActions"/>
-                                </node>
-                                <node id="ActionCapabilities">
-                                    <attribute id="Name" type="LSString" value="RitualSpells"/>
                                 </node>
                                 <node id="ActionCapabilities">
                                     <attribute id="Name" type="LSString" value="Pickpocketing"/>
@@ -275,9 +268,6 @@
                         </node>
                         <node id="SpeakingCapabilities">
                             <children>
-                                <node id="SpeakingCapabilities">
-                                    <attribute id="Name" type="LSString" value="Spells"/>
-                                </node>
                                 <node id="SpeakingCapabilities">
                                     <attribute id="Name" type="LSString" value="Dialogue"/>
                                 </node>
