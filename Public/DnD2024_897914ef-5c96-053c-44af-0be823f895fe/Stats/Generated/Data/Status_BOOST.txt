@@ -4000,7 +4000,7 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "INVOKE_DUPLICITY_MOVE"
 data "StackType" "Ignore"
-data "Boosts" "UnlockSpellVariant(SpellId('Target_InvokeDuplicity'),ModifyUseCosts(Replace,ChannelDivinity,0,0,ChannelDivinity),ModifyIconGlow());UnlockSpell(Target_DuplicitousCasting,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_DuplicitousCantrip);"
+data "Boosts" "UnlockSpell(Teleportation_InvokeDuplicity_Move);UnlockSpell(Target_DuplicitousCasting,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_DuplicitousCantrip);"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;TickingWithSource"
 
 new entry "INVOKE_DUPLICITY_AURA_2"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
   <stat_objects>
     <stat_object is_substat="false">
@@ -4975,7 +4975,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_MOVE" />
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_MOVE" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_InvokeDuplicity'),ModifyUseCosts(Replace,ChannelDivinity,0,0,ChannelDivinity),ModifyIconGlow());UnlockSpell(Target_DuplicitousCasting,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_DuplicitousCantrip);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Teleportation_InvokeDuplicity_Move);UnlockSpell(Target_DuplicitousCasting,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_DuplicitousCantrip);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
