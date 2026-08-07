@@ -999,6 +999,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="06fda61b-8867-4f68-aee4-c1536bd11e78" />
         <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="2c9ae2d5-5b85-458e-92fe-f311dae7f174" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Bludgeoning" enumeration_type_name="Damage Type" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1192,6 +1193,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="dbb69154-0834-4ae7-b438-b831ba7cab45" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="fa3eaf23-5a9a-47a0-bc24-eb03d85d4d7a" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1264,6 +1266,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="74e18f13-510e-4f09-a8da-a21e47a5d06d" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="7d30207d-4c3f-4f01-8e50-aaff803e1992" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1336,6 +1339,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="855a50f5-6ef5-4a32-a8e1-a83273176c9a" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="53412dd1-8066-4860-a2ae-b27e77bfdab5" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1408,6 +1412,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="72ee0212-de05-4231-8036-602859ac5f2b" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="15947330-096e-488e-bec2-1086195d0498" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1479,6 +1484,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="334876ed-be5d-43d4-85db-c143c393e5ac" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="41c997d7-a298-482c-befb-bdedc4c78d3e" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Poison" enumeration_type_name="Damage Type" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1575,6 +1581,7 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="53412dd1-8066-4860-a2ae-b27e77bfdab5" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
@@ -1667,6 +1674,7 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="53412dd1-8066-4860-a2ae-b27e77bfdab5" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -1682,6 +1690,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="1a0c453c-c96d-4d36-880d-4775cd7cf93b" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeapon:1;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1693,6 +1702,7 @@
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Constitution, context.Source))" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeapon:1;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1702,6 +1712,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="0f4d9d05-8635-4b28-8dce-763e5edc005b" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeapon:1;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1711,6 +1722,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="332bc514-b92d-4e59-b428-9e342534b972" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeapon:1;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1720,6 +1732,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b30a08a4-ead3-4d68-ac87-131f840f1c3c" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeapon:1;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1731,6 +1744,7 @@
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Constitution, context.Source))" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeapon:1;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
