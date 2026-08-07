@@ -3022,6 +3022,13 @@ data "Proficiency Group" "Shortbows;SimpleWeapons"
 new entry "__SHORTSWORDS__"
 type "Weapon"
 
+new entry "WPN_Shortsword_Skeleton_AnimateDead"
+type "Weapon"
+using "WPN_Shortsword"
+data "DefaultBoosts" "WeaponDamage(1d10, Necrotic);IgnoreResistance(Piercing,Resistant)"
+data "Weapon Group" "SimpleMeleeWeapon"
+data "Proficiency Group" "Shortswords;SimpleWeapons"
+
 new entry "WPN_Shortsword_1"
 type "Weapon"
 using "WPN_Shortsword"

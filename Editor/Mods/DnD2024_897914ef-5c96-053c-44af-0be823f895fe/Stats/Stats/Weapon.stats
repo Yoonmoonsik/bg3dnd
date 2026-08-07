@@ -4025,6 +4025,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7dde20f9-a89e-4fee-9ef3-96512aa9d2f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Shortsword_Skeleton_AnimateDead" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5bfcf7ef-39ba-441b-b4c7-807771d740d1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponDamage(1d10, Necrotic);IgnoreResistance(Piercing,Resistant)" />
+        <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="SimpleMeleeWeapon" enumeration_type_name="Weapon Group" version="1" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="Shortswords;SimpleWeapons" enumeration_type_name="ProficiencyGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c6352039-a985-4b94-886a-29dd7af0d203" />
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Shortsword_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5bfcf7ef-39ba-441b-b4c7-807771d740d1" />
