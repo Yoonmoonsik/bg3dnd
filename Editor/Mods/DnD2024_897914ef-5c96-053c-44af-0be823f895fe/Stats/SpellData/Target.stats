@@ -60,6 +60,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1b6e021-a077-4a39-8ffd-097c52204498" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shove" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="71a1860f-95ef-4b18-b8d8-9394adcfe37a" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Custom_Shove" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="727f187e-c4eb-4826-915b-eac896f662bc" />
         <field name="Name" type="NameTableFieldDefinition" value="Help_BonusAction" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2dc581b0-965b-4cd5-afdf-5ec4f778afe8" />
@@ -80,15 +89,6 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="810a605a-8a5f-4f67-8407-505267f0b1f2" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="e0ca5958-42d9-4284-970a-d701287a179d" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DISTRACTED,100,1);IF(HasPassive('HarperTeamwork',context.Source)):ApplyStatus(DISADVANTAGE_ALL_SAVINGTHROW_START_TURN,100,1);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c1b6e021-a077-4a39-8ffd-097c52204498" />
-        <field name="Name" type="NameTableFieldDefinition" value="Shove" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="71a1860f-95ef-4b18-b8d8-9394adcfe37a" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Custom_Shove" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7272,6 +7272,85 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BestowCurse_6" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac9d57c1-17f7-4415-9321-754f9cad3cdd" />
+        <field name="Name" type="NameTableFieldDefinition" value="AnimateDead" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="200c59b8-96da-4045-a88c-d0b6d398808b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f6286c0c-2cc8-4f97-9d96-c0ad45616ea3" />
+        <field name="Name" type="NameTableFieldDefinition" value="AnimateDead_Skeleton" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="25ded3bc-50a0-4a60-9831-597a3e9a8265" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:SwitchDeathType(Explode);GROUND:IF(HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(6c06cda2-6e13-4663-a6f6-c4bb7564c10f,UntilLongRest,,,,UNDEADTHRALL_SUMMON,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(6c06cda2-6e13-4663-a6f6-c4bb7564c10f, UntilLongRest,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);TARGET:IF(Tagged('BONE_CORPSE_PILE')):ApplyStatus(ANIMATEDEAD_ASHPILE,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('6c06cda2-6e13-4663-a6f6-c4bb7564c10f');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a2009508-c65e-4fea-8f9c-ec987408b7d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="AnimateDead_Skeleton_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="89693659-ae36-4308-aeca-9ab8259fe3d8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:SwitchDeathType(Explode);GROUND:IF(HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(6c06cda2-6e13-4663-a6f6-c4bb7564c10f,UntilLongRest,,,,UNDEADTHRALL_SUMMON,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(6c06cda2-6e13-4663-a6f6-c4bb7564c10f, UntilLongRest,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);TARGET:IF(Tagged('BONE_CORPSE_PILE')):ApplyStatus(ANIMATEDEAD_ASHPILE,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('6c06cda2-6e13-4663-a6f6-c4bb7564c10f');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fe871079-8ecb-45a4-b5c8-47403c45cfc1" />
+        <field name="Name" type="NameTableFieldDefinition" value="AnimateDead_Zombie" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6a0b0434-d538-4ff7-be6c-83b1e791713d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:SwitchDeathType(Explode);GROUND:IF(HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(c2a2c269-ede8-4887-99f1-e0c044cc0c75,UntilLongRest,,,,UNDEADTHRALL_SUMMON,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(c2a2c269-ede8-4887-99f1-e0c044cc0c75,UntilLongRest,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);TARGET:IF(Tagged('CORPSE_PILE')):ApplyStatus(ANIMATEDEAD_EXPLODED_CORPSE,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('c2a2c269-ede8-4887-99f1-e0c044cc0c75');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dd7c8f9d-c0bc-4747-8234-502aa4ccd10b" />
+        <field name="Name" type="NameTableFieldDefinition" value="AnimateDead_Zombie_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8bcbf109-da55-4df7-984a-f625ae73e0d9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:SwitchDeathType(Explode);GROUND:IF(HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(c2a2c269-ede8-4887-99f1-e0c044cc0c75,UntilLongRest,,,,UNDEADTHRALL_SUMMON,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(c2a2c269-ede8-4887-99f1-e0c044cc0c75,UntilLongRest,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);TARGET:IF(Tagged('CORPSE_PILE')):ApplyStatus(ANIMATEDEAD_EXPLODED_CORPSE,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('c2a2c269-ede8-4887-99f1-e0c044cc0c75');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecbe3d72-ea23-47e0-b23c-dd0fff49b34c" />
+        <field name="Name" type="NameTableFieldDefinition" value="AnimateDead_FlyingGhoul" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="62bce0ba-8767-4eaa-b6b1-5911a9a44af3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:SwitchDeathType(Explode);GROUND:IF(HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(1d7bd5b7-1879-452d-980f-34a5ba58a389,UntilLongRest,,,,UNDEADTHRALL_SUMMON,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(1d7bd5b7-1879-452d-980f-34a5ba58a389, UntilLongRest,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);TARGET:IF(Tagged('CORPSE_PILE')):ApplyStatus(ANIMATEDEAD_EXPLODED_CORPSE,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('1d7bd5b7-1879-452d-980f-34a5ba58a389');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca5cb7fa-f403-4aa9-8d7b-a42978e63ef2" />
+        <field name="Name" type="NameTableFieldDefinition" value="AnimateDead_FlyingGhoul_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="71ab1233-8aff-415b-b5aa-8243822ac0aa" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:SwitchDeathType(Explode);GROUND:IF(HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(1d7bd5b7-1879-452d-980f-34a5ba58a389, UntilLongRest,,,,UNDEADTHRALL_SUMMON,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(1d7bd5b7-1879-452d-980f-34a5ba58a389, UntilLongRest,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);TARGET:IF(Tagged('CORPSE_PILE')):ApplyStatus(ANIMATEDEAD_EXPLODED_CORPSE,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('1d7bd5b7-1879-452d-980f-34a5ba58a389');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8eeeb2c3-b6aa-42c9-b26f-f897fe84dc7a" />
+        <field name="Name" type="NameTableFieldDefinition" value="AnimateDead_Ghoul" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="12508a4e-2283-4dca-b808-1639690590b2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:SwitchDeathType(Explode);GROUND:IF(HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(405e65e2-a6c9-4418-9de6-b06978d033b7,UntilLongRest,,,,UNDEADTHRALL_SUMMON,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(405e65e2-a6c9-4418-9de6-b06978d033b7, UntilLongRest,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);TARGET:IF(Tagged('CORPSE_PILE')):ApplyStatus(ANIMATEDEAD_EXPLODED_CORPSE,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('405e65e2-a6c9-4418-9de6-b06978d033b7');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8645bdd6-cefe-448c-9384-ff5794a6a086" />
+        <field name="Name" type="NameTableFieldDefinition" value="AnimateDead_Ghoul_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67cdf32d-3afa-4784-9eb9-70672e32fd37" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:SwitchDeathType(Explode);GROUND:IF(HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(405e65e2-a6c9-4418-9de6-b06978d033b7,UntilLongRest,,,,UNDEADTHRALL_SUMMON,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(405e65e2-a6c9-4418-9de6-b06978d033b7,UntilLongRest,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);TARGET:IF(Tagged('CORPSE_PILE')):ApplyStatus(ANIMATEDEAD_EXPLODED_CORPSE,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('405e65e2-a6c9-4418-9de6-b06978d033b7');" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d74f04fb-a215-43e1-a6bc-55df612ae048" />
@@ -14028,7 +14107,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="046a4d16-11c4-4a20-b40d-ef0f16f45e76" />
         <field name="Name" type="NameTableFieldDefinition" value="AnimateDead_spellscroll" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="200c59b8-96da-4045-a88c-d0b6d398808b" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ac9d57c1-17f7-4415-9321-754f9cad3cdd" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
