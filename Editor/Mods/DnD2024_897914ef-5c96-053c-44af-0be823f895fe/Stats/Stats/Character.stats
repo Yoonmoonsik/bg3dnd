@@ -19,7 +19,7 @@
         <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="RadiantResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="ThunderResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
-        <field name="Flags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="InvulnerableAndInteractive" enumeration_type_name="AttributeFlags" version="1" />
+        <field name="Flags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="AttributeFlags" version="1" />
         <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Wisdom" enumeration_type_name="Ability" version="1" />
       </fields>
     </stat_object>
@@ -823,6 +823,7 @@
         <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="POISONED;WEB;DIFFICULT_TERRAIN_WEB;SPIDER_INFESTATION;ALCH_TOXIN_BASIC_CONDITION" />
         <field name="Weight" type="FloatTableFieldDefinition" value="90" />
         <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY: HEALTHREDUCTION_EASYMODE; STATUS_HARD: HEALTHBOOST_HARDCORE; STATUS_HARD: PHASESPIDER_HARDCORE" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;FOR_SpiderQueen_SeeInvis" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -842,6 +843,7 @@
         <field name="DarkvisionRange" type="StringTableFieldDefinition" value="20" />
         <field name="Weight" type="FloatTableFieldDefinition" value="250" />
         <field name="XPReward" type="GuidObjectTableFieldDefinition" value="484393d9-eb7b-4b3b-b69b-5fdbfa940403" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;LegendaryAction_FOR_SpiderQueen;FOR_SpiderQueen_SeeInvis" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -858,6 +860,7 @@
         <field name="Armor" type="IntegerTableFieldDefinition" value="9" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="6" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.5" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1362,7 +1365,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="SCL_DriderCaravan_Drider" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d3da2f37-a690-4732-8253-bcefdf1e3dae" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="184" />
-        <field name="Passives" type="StringTableFieldDefinition" value="Multiattack_Drider;ImprovedCritical;DarkDevotion;DualWielder_PassiveBonuses;SpiderWalk;Alert;AttackOfOpportunity;SunlightSensitivity;Darkvision;DarknessRules" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Multiattack_Drider;ImprovedCritical;DarkDevotion;DualWielder_PassiveBonuses;SpiderWalk;Alert;AttackOfOpportunity;SunlightSensitivity;Darkvision;DarknessRules;LegendaryAction_SCL_Drider_PsionicVengeance" />
         <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY: HEALTHREDUCTION_EASYMODE; STATUS_HARD: HEALTHBOOST_HARDCORE; STATUS_HARD: DRIDER_HARDCORE;STATUS_EASY:DRIDER_EASY;" />
       </fields>
     </stat_object>
@@ -1477,7 +1480,7 @@
         <field name="Strength" type="IntegerTableFieldDefinition" value="18" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="112" />
         <field name="Progressions" type="StringTableFieldDefinition" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a" />
-        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;Darkvision;MartialAdvantage;UnarmouredDefence_Barbarian;" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;Darkvision;MartialAdvantage;UnarmouredDefence_Barbarian;LegendaryAction_GOB_Dror" />
         <field name="ArmorType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="ArmorType" version="1" />
         <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Charisma" enumeration_type_name="Ability" version="1" />
         <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY: HEALTHREDUCTION_EASYMODE; STATUS_HARD: HEALTHBOOST_HARDCORE;STATUS_HARD:HOBGOBLINKING_HARDCORE" />
