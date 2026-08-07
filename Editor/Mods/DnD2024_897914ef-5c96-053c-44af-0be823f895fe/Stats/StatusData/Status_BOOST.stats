@@ -8724,56 +8724,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f0a81bea-6307-4927-8d96-4b42e9742148" />
-        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_WARD_55E" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="39aa5d0b-bf72-4a03-8ff9-511961b06d1b" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2a374b86g81f6g7146ga72ag43246ef53813" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="FreezeDuration" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9e3d058egf45cgd35fge3c5g640f4f382fd6" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Status_ArcaneWard" />
-        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_ArcaneWard_MO" />
-        <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_ArcaneWard_Depleted" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ARCANE_WARD_55E" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="9" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="StatusStackType" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="370b3339-9668-49e8-bdc6-ff0a4444f8dd" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="032857a4-b931-4f22-bfcb-2ce038608002" />
-        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_WARD_55E_TECHNICAL" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ARCANE_WARD_55E_TECHNICAL" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(MaximumArcaneWardStackableStatus(context.Target) and ClassLevelHigherOrEqualThan(3,'Wizard',context.Source)):SetStatusDuration(ARCANE_WARD_55E,10,ForceSet);IF(MaximumArcaneWardStackableStatus(context.Target) and ClassLevelHigherOrEqualThan(4,'Wizard',context.Source)):SetStatusDuration(ARCANE_WARD_55E,13,ForceSet);IF(MaximumArcaneWardStackableStatus(context.Target) and ClassLevelHigherOrEqualThan(5,'Wizard',context.Source)):SetStatusDuration(ARCANE_WARD_55E,15,ForceSet);IF(MaximumArcaneWardStackableStatus(context.Target) and ClassLevelHigherOrEqualThan(6,'Wizard',context.Source)):SetStatusDuration(ARCANE_WARD_55E,17,ForceSet);IF(MaximumArcaneWardStackableStatus(context.Target) and ClassLevelHigherOrEqualThan(7,'Wizard',context.Source)):SetStatusDuration(ARCANE_WARD_55E,19,ForceSet);IF(MaximumArcaneWardStackableStatus(context.Target) and ClassLevelHigherOrEqualThan(8,'Wizard',context.Source)):SetStatusDuration(ARCANE_WARD_55E,21,ForceSet);IF(MaximumArcaneWardStackableStatus(context.Target) and ClassLevelHigherOrEqualThan(9,'Wizard',context.Source)):SetStatusDuration(ARCANE_WARD_55E,23,ForceSet);IF(MaximumArcaneWardStackableStatus(context.Target) and ClassLevelHigherOrEqualThan(10,'Wizard',context.Source)):SetStatusDuration(ARCANE_WARD_55E,25,ForceSet);IF(MaximumArcaneWardStackableStatus(context.Target) and ClassLevelHigherOrEqualThan(11,'Wizard',context.Source)):SetStatusDuration(ARCANE_WARD_55E,27,ForceSet);IF(MaximumArcaneWardStackableStatus(context.Target) and ClassLevelHigherOrEqualThan(12,'Wizard',context.Source)):SetStatusDuration(ARCANE_WARD_55E,29,ForceSet);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d2ceabe7-ce57-4730-9701-4a4da55fe229" />
-        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_WARD_55E_RESTORE" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="370b3339-9668-49e8-bdc6-ff0a4444f8dd" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c85373fe-6bbb-444f-9c3b-51661a5015a2" />
-        <field name="Name" type="NameTableFieldDefinition" value="BLADESONG" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8abc2dde-ffb3-4fc2-a3da-32627941bf3c" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1669b47agf0fagd245g92f2g0e39a2c90370" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0);Advantage(Skill,Acrobatics);RollBonus(SavingThrow, IntelligenceModifier, Constitution);AC(1);IF(AbilityGreaterThan('Intelligence',13,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',15,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',17,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',19,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',21,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',23,context.Source)):AC(1);" />
-        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsWeaponOfProficiencyGroup('Glaives|Greataxes|Greatclubs|Greatswords|Halberds|Mauls|Pikes', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or WearingArmor() or HasShieldEquipped() or (not IsProficientWithEquippedWeapon())" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnEquip" enumeration_type_name="StatusEvent" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6b907150-5400-47b8-b8b7-29c532676ffb" />
         <field name="Name" type="NameTableFieldDefinition" value="BLADESONG_BLADEWORK" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h55238b55g2b39g51dcg5270gfe86eeeec5e8" version="1" />

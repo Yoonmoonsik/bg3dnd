@@ -6778,11 +6778,19 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf84da708gedbeg7292g73f4gacc5ef7a3c10" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h211b59f7g914aga7a2gaf0eg6d3b97922133" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12103" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneWard,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockInterrupt(Interrupt_ArcaneWard_1);UnlockInterrupt(Interrupt_ArcaneWard_2);UnlockInterrupt(Interrupt_ArcaneWard_3);UnlockInterrupt(Interrupt_ArcaneWard_4);UnlockInterrupt(Interrupt_ArcaneWard_5);UnlockInterrupt(Interrupt_ArcaneWard_6);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ARCANE_WARD_55E,100,Target.ClassLevel(Wizard)*2+Target.IntelligenceModifier)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerLongRest" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c119a38d-3300-4a20-88c9-3cd33fecb9e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneWard_Resource" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcaneWard,1,0);IF(AbilityGreaterThan('Intelligence',13,context.Source)):ActionResource(ArcaneWard,1,0);IF(AbilityGreaterThan('Intelligence',15,context.Source)):ActionResource(ArcaneWard,1,0);IF(AbilityGreaterThan('Intelligence',17,context.Source)):ActionResource(ArcaneWard,1,0);IF(AbilityGreaterThan('Intelligence',19,context.Source)):ActionResource(ArcaneWard,1,0);IF(AbilityGreaterThan('Intelligence',21,context.Source)):ActionResource(ArcaneWard,1,0);IF(AbilityGreaterThan('Intelligence',23,context.Source)):ActionResource(ArcaneWard,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6790,7 +6798,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a5023f5a-8f34-49e7-b85c-8aecbd027df1" />
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneWard_Cast_55e" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ef2fc58c-aec6-4a3c-9ad3-f273f939498d" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ARCANE_WARD_55E,100,SpellPowerLevel*2);ApplyStatus(ARCANE_WARD_55E_TECHNICAL,100,1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(SpellPowerLevelEqualTo(6)):RestoreResource(SELF,ArcaneWard,12,0);IF(SpellPowerLevelEqualTo(5)):RestoreResource(SELF,ArcaneWard,10,0);IF(SpellPowerLevelEqualTo(4)):RestoreResource(SELF,ArcaneWard,8,0);IF(SpellPowerLevelEqualTo(3)):RestoreResource(SELF,ArcaneWard,6,0);IF(SpellPowerLevelEqualTo(2)):RestoreResource(SELF,ArcaneWard,4,0);IF(SpellPowerLevelEqualTo(1)):RestoreResource(SELF,ArcaneWard,2,0);" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12103" />
       </fields>
     </stat_object>
@@ -6808,14 +6816,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3be06540-48e2-47f6-abc2-395dad7e67cd" />
-        <field name="Name" type="NameTableFieldDefinition" value="ImprovedAbjuration" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8fdc14f6-2e06-4737-a00c-37c0ea88ff01" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h288cd5f8gfde5gf844g35b4g78176c8d8034" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9d3fbbaegc6b1gf48egd8c4gef06e95785f3" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ARCANE_WARD_55E,100,Target.ClassLevel(Wizard)*2+Target.IntelligenceModifier)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerShortRest" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="aaf37059-a31b-477b-9187-203d92bad27e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Abjurer_10_SpellResistance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10dbbaa0g2b5fg5521gc9cag50d5d54e8706" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha798ee23gc1b7gfd05g86c0ga477ff4d0a9d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_MagicCircle" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12110" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SpellResistance(Resistant);IF(IsSpell()):Advantage(AllSavingThrows);" />
       </fields>
     </stat_object>
     <stat_object color="#FF0000FF" is_substat="false">
