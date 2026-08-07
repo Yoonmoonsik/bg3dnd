@@ -36,9 +36,9 @@
         <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="not Self() and Ally() and not Grounded() and (Tagged('WEIGHT_MEDIUM') or Tagged('WEIGHT_SMALL') or Tagged('WEIGHT_TINY'));" />
+        <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="not Self() and Ally();" />
         <field name="Icon" type="StringTableFieldDefinition" value="PsiWarrior_3_TelekineticMovement" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h112e5aabgae68g5b63g8e95g3c2e5fd8ebb8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h789e4f7cgbbfdgd136g7526g0cb392afcf9d" version="1" />
@@ -111,6 +111,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb6ad15b6g6a5cgc8edg95d4gd631318ac05a" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;HiddenPaths:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="not Self() and Ally();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
