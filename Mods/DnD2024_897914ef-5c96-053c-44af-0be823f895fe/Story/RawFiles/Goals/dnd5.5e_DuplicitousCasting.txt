@@ -705,6 +705,43 @@ IsSpellActive(_Cleric, "Zone_Sunbeam", 1)
 THEN
 ApplyStatus(_Duplicity, "DUPLICITY_SPELL_SUNBEAM", 6.0);
 
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+THEN
+DB_DND_DuplicityConcentration((CHARACTER)_Cleric, (CHARACTER)_Duplicity);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING_CANTRIP", _Cleric, _)
+THEN
+DB_DND_DuplicityConcentration((CHARACTER)_Cleric, (CHARACTER)_Duplicity);
+
+IF
+StatusApplied(_Cleric, "DUPLICITY_CONCENTRATION_MARKER", _, _)
+AND
+DB_DND_DuplicityConcentration((CHARACTER)_Cleric, (CHARACTER)_Duplicity)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_BREAK_CONCENTRATION", 0.0);
+
+IF
+StatusApplied(_Duplicity, "DUPLICITY_CONCENTRATION_MARKER", _, _)
+AND
+DB_DND_DuplicityConcentration((CHARACTER)_Cleric, (CHARACTER)_Duplicity)
+THEN
+ApplyStatus(_Cleric, "DUPLICITY_BREAK_CONCENTRATION", 0.0);
+
+IF
+StatusApplied(_Character, "DUPLICITY_CONCENTRATION_MARKER", _, _)
+THEN
+RemoveStatus(_Character, "DUPLICITY_CONCENTRATION_MARKER", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+StatusRemoved(_Duplicity, "INVOKE_DUPLICITY_AURA", _, _)
+AND
+DB_DND_DuplicityConcentration((CHARACTER)_Cleric, (CHARACTER)_Duplicity)
+THEN
+NOT DB_DND_DuplicityConcentration((CHARACTER)_Cleric, (CHARACTER)_Duplicity);
+
+
 EXITSECTION
 
 ENDEXITSECTION

@@ -1456,6 +1456,13 @@ data "StatsFunctorContext" "OnCast;OnAttack;OnCastResolved"
 data "Conditions" "SpellId('Target_InvokeDuplicity');"
 data "StatsFunctors" "ApplyStatus(SELF,INVOKE_DUPLICITY_MOVE,100,10)"
 
+new entry "InvokeDuplicityConcentration_Passive"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "HasSpellFlag(SpellFlags.Concentration)"
+data "StatsFunctors" "ApplyStatus(SELF,DUPLICITY_CONCENTRATION_MARKER,100,1)"
+
 new entry "Trickery_6_TrickstersTransposition"
 type "PassiveData"
 data "DisplayName" "h002b7ed0g2d07g9ecbg0301g13b767a04c7e;1"

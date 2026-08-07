@@ -2025,6 +2025,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="15fb9cef-a810-499d-8698-cf1112a79db9" />
+        <field name="Name" type="NameTableFieldDefinition" value="InvokeDuplicityConcentration_Passive" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasSpellFlag(SpellFlags.Concentration)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,DUPLICITY_CONCENTRATION_MARKER,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0e4f6949-74e4-406b-bc7c-a4f31142f433" />
         <field name="Name" type="NameTableFieldDefinition" value="Trickery_6_TrickstersTransposition" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h002b7ed0g2d07g9ecbg0301g13b767a04c7e" version="1" />
