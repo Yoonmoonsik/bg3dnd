@@ -1,0 +1,72 @@
+title: "Request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Important
+        * Search existing discussions before posting, including closed ones — duplicate requests may be closed.
+        * One request = one thing. Please don't bundle unrelated requests in a single post.
+        * Classes, subclasses, and spells have their own categories. This one is for everything else — races, feats, backgrounds, items, invocations, and so on.
+        * If something already exists but behaves incorrectly, that's a bug — open a **Bug Report** issue instead.
+        * Include the official source so the content can be verified against the rules text.
+        * **Please don't link other mods (Nexus, mod.io, GitHub, etc.).** These links are always posted in good faith, but this mod is written from the rulebooks and I deliberately don't read other mods' implementations. Describe what you want in your own words and cite the official source instead.
+
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: What are you requesting?
+      options:
+        - Race or subrace
+        - Feat
+        - Background
+        - Item or equipment
+        - Eldritch Invocation
+        - Weapon mastery or fighting style
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: The official name of what you're requesting.
+      placeholder: e.g. Eladrin
+    validations:
+      required: true
+
+  - type: input
+    id: dndbeyond-link
+    attributes:
+      label: D&D Beyond link
+      description: Link to the D&D Beyond page, if available.
+      placeholder: e.g. https://www.dndbeyond.com/races/eladrin
+    validations:
+      required: false
+
+  - type: input
+    id: source
+    attributes:
+      label: Source book
+      description: Where does this come from? (e.g. PHB 2024, Xanathar's Guide, Tasha's Cauldron, Fizban's Treasury)
+      placeholder: e.g. Mordenkainen Presents Monsters of the Multiverse
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why do you think this should be added?
+      description: Explain the gap this fills.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing discussions and this hasn't already been requested.
+          required: true
+        - label: I confirmed this isn't already implemented in the current mod version.
+          required: true

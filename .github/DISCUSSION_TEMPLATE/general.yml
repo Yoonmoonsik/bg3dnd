@@ -1,0 +1,22 @@
+title: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Before you post
+        * There is probably a better category for what you're about to write:
+          * Something behaves incorrectly and you can reproduce it → open a **Bug Report** issue.
+          * A question about how the mod works or how to install it → **Q&A**.
+          * A missing class, subclass, or spell → **Class Request** / **Spell Request**.
+          * A missing race, feat, background, item, or invocation → **Other Request**.
+          * A change to something that already exists → **Ideas**.
+        * Search existing discussions before posting, including closed ones.
+        * **Please don't link other mods (Nexus, mod.io, GitHub, etc.).** These links are always posted in good faith, but this mod is written from the rulebooks and I deliberately don't read other mods' implementations. Describe what you mean in your own words instead.
+        * This mod rewrites spell lists and progressions wholesale and is **not designed to be compatible with other content mods**.
+
+  - type: textarea
+    id: body
+    attributes:
+      label: What's on your mind?
+    validations:
+      required: true

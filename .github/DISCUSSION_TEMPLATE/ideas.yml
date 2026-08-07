@@ -1,0 +1,36 @@
+title: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Important
+        * Search existing discussions before posting, including closed ones — duplicate ideas may be closed.
+        * One post = one idea. Please don't bundle unrelated suggestions together.
+        * Requests for a **class or subclass**, or for a **spell**, belong in their own categories — this one is for everything else (feats, weapon mastery, items, UI, rules handling, and so on).
+        * If something already exists but behaves incorrectly, that's a bug — open a **Bug Report** issue instead.
+        * **Please don't link other mods (Nexus, mod.io, GitHub, etc.).** These links are always posted in good faith, but this mod is written from the rulebooks and I deliberately don't read other mods' implementations. Describe what you want in your own words and cite the official source instead.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+      description: Describe the change concretely — what it does, when it triggers, and how it should behave in game.
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source book
+      description: If this comes from published rules, name the book so it can be verified against the rules text. Leave blank for homebrew ideas.
+      placeholder: e.g. PHB 2024
+    validations:
+      required: false
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why should it be added?
+      description: Explain the gap this fills, or what currently feels wrong without it.
+    validations:
+      required: false
