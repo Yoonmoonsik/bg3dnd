@@ -351,7 +351,9 @@ A Niveles Superiores. Tu dado de Inspiración Bárdica cambia cuando alcanzas ci
   <content contentuid="h1855925eg36d7g774cg4917gc8135001356f" version="1">Regla: Requisito de Fuerza (Armadura de Placas)</content>
   <content contentuid="h36e05e75gb0acgebbeg511ag25cc56fcde31" version="1">Si una criatura que lleva esta Armadura Pesada tiene una puntuación de Fuerza menor que [1], su Velocidad se reduce en [2].</content>
   <content contentuid="h1378b9e1g8e8cgbb1eg3cb7g5aad15a2e9d3" version="1">Nivel 3: Atleta Extraordinario</content>
-  <content contentuid="h8a4c8a20gcc89g49e5g2025g934de8342619" version="1">Gracias a tu atletismo, tienes Ventaja en las tiradas de Iniciativa y en las pruebas de Fuerza (&lt;LSTag Type="Skills" Tooltip="Athletics"&gt;Atletismo&lt;/LSTag&gt;).</content>
+  <content contentuid="h8a4c8a20gcc89g49e5g2025g934de8342619" version="1">Gracias a tu atletismo, tienes Ventaja en las tiradas de Iniciativa y en las pruebas de Fuerza (&lt;LSTag Type="Skills" Tooltip="Athletics"&gt;Atletismo&lt;/LSTag&gt;)
+
+Además, inmediatamente después de asestar un Golpe Crítico, puedes Moverte hasta la mitad de tu Movimiento sin provocar Ataques de Oportunidad.</content>
   <content contentuid="h070ecbffg0669ge021gd9f2gf9d31bf77f88" version="1">Atleta Extraordinario</content>
   <content contentuid="h20fe10e3g6a5cg1394g9602g64f7640b6f6d" version="1">Inmediatamente después de asestar un Golpe Crítico, puedes moverte hasta la mitad de tu Movimiento sin provocar Ataques de Oportunidad.</content>
   <content contentuid="hdc98f803g35c5gf1e3g8979g2a5e77165301" version="1">Nivel 10: Guerrero Heroico</content>
@@ -379,7 +381,7 @@ A Niveles Superiores. Tu dado de Inspiración Bárdica cambia cuando alcanzas ci
   <content contentuid="hd1fc430dg69bagc256g2318g1055bfa2fc27" version="1">Defensa Paciente</content>
   <content contentuid="h4c44c0abg262cg8e6egf06cg92cf676855e3" version="1">Puedes gastar 1 Punto de Ki para usar tanto la acción Desengancharse como la acción Esquivar como Acción Adicional.</content>
   <content contentuid="hdd4e66dbg0ac9g5c5dg463eg6076392563ce" version="1">Paso del Viento</content>
-  <content contentuid="h83374bedgf40agd759g1784gd9c5f24545a3" version="1">Puedes gastar 1 Punto de Enfoque para realizar tanto la acción Destrabarse como &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt; como Acción Adicional, y tu distancia de salto se duplica durante el turno.</content>
+  <content contentuid="h83374bedgf40agd759g1784gd9c5f24545a3" version="1">Puedes gastar 1 Punto de Ki para realizar tanto la acción Destrabarse como &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt; como Acción Adicional, y tu distancia de salto se duplica durante el turno.</content>
   <content contentuid="h554e1c9cgf636g08a4gf6ebg1d3611ee623a" version="1">Paso del Viento</content>
   <content contentuid="ha6d44a5ag5a9ag0c67gfbb0ge9a5772193c3" version="1">Tu distancia de salto se duplica durante el turno.</content>
   <content contentuid="h8e2c71efgf381g9eb7gaf5cg2760015a45e2" version="1">Correr</content>
@@ -413,7 +415,9 @@ Si esto reduce el daño a 0, puedes gastar 1 Punto de Ki para usar Redirigir Ata
   <content contentuid="h33c22a3cg9bbaga9c8g65e2g0701352832a0" version="1">Nivel 10: Enfoque Elevado</content>
   <content contentuid="h3bb523e2gc26eg22c2g87e9g4e1e0da5e1af" version="2">Tu Ráfaga de Golpes, &lt;LSTag Type="Spell" Tooltip="Shout_PatientDefense"&gt;Defensa Paciente&lt;/LSTag&gt; y Paso del Viento ganan los siguientes beneficios:
 
-Figuras Sombrías. Conoces el conjuro &lt;LSTag Type="Spell" Tooltip="Target_ImprovedMinorIllusion"&gt;Ilusión Menor&lt;/LSTag&gt;. La Sabiduría es tu característica de lanzamiento de conjuros para él.</content>
+Torbellino de Golpes: Puedes gastar 1 Punto de Ki para usar Torbellino de Golpes, realizando tres Golpes Desarmados en lugar de dos.
+
+Defensa Paciente y Paso del Viento: Cuando gastas un Punto de Enfoque para usar cualquiera de estos rasgos, ganas Puntos de Golpe Temporales iguales a dos lanzamientos de tu dado de Artes Marciales.</content>
   <content contentuid="hddf40c2dge503g0c52g70e0g81df540da740" version="1">Enfoque Elevado</content>
   <content contentuid="h96955479gc03cg5656g398ega8e7e632c8a3" version="1">Ganas un número de Puntos de Golpe Temporales iguales a dos lanzamientos de tu dado de Artes Marciales.</content>
   <content contentuid="hb0d0ae76g515agec5dg8b3fgfef5c6b386f3" version="1">Nivel 10: Autorrestauración</content>
@@ -486,11 +490,17 @@ También puedes lanzar el conjuro una vez sin gastar un espacio de conjuro, y re
   <content contentuid="h75d1a2deg8c23gb291g4a07g0b23ca7da55c" version="1">Encontrar Corcel</content>
   <content contentuid="hca271062g4f0eg4316gc46ag52e3d54b2851" version="3">Invocas un corcel de otro mundo e inmediatamente lo montas.
 
-El corcel puede realizar una de las siguientes acciones de tu elección en cada uno de sus turnos: &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt;, Destrabarse, Esquivar o Atacar.</content>
+El corcel puede realizar una de las siguientes acciones de tu elección en cada uno de sus turnos: &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt;, Destrabarse, Esquivar o Atacar.
+
+Mientras estás montado en el corcel, cuando recibes 4 o más puntos de daño, debes realizar una tirada de salvación de Destreza CD 8. Si fallas, caes del corcel y tienes la condición Derribado durante 1 turno.
+
+Solo un jugador de corazón puro puede ver al corcel.</content>
   <content contentuid="h969b831eg23d1g5115g756bg2f5d95f425ab" version="1">Encontrar Corcel</content>
   <content contentuid="h2e3d13a5gdd90g80a4g970dg3282a7a7bfa9" version="1">Invocas un corcel de otro mundo e inmediatamente lo montas.
 
-El corcel puede realizar una de las siguientes acciones de tu elección en cada uno de sus turnos: &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt;, Destrabarse, Esquivar o Atacar.</content>
+El corcel puede realizar una de las siguientes acciones de tu elección en cada uno de sus turnos: &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt;, Destrabarse, Esquivar o Atacar.
+
+Mientras estás montado en el Corcel, cuando recibes 4 o más puntos de daño, debes realizar una tirada de salvación de Destreza CD 8. Si fallas, caes del corcel y tienes la condición Derribado durante 1 turno.</content>
   <content contentuid="h1a6f7528gc5efg5c9bge4f9gf7eb55315d54" version="1">Punto de Acción del Corcel</content>
   <content contentuid="hdbb54662gd707gd172gbdfdgd57e57e3b819" version="1">El corcel puede realizar una de las siguientes acciones a tu elección en cada uno de sus turnos: Carrera, Desengancharse, Esquivar o Atacar.</content>
   <content contentuid="he8975525g4266g8430g813bg4d65176a35f5" version="1">Embestida</content>
@@ -713,14 +723,18 @@ No te beneficias de este rasgo si tienes la condición Incapacitado.</content>
   <content contentuid="h24650f10g65f0gdad5g30cdg3e4777297c7c" version="1">Nivel 2: Estudioso</content>
   <content contentuid="h32ed567egee36g91e1g2accgb992c0f4d730" version="1">Mientras estudiabas magia, también te especializaste en otro campo del saber. Elige una de las siguientes habilidades en las que tengas competencia: &lt;LSTag Type="Skills" Tooltip="Arcana"&gt;Arcana&lt;/LSTag&gt;, &lt;LSTag Type="Skills" Tooltip="History"&gt;Historia&lt;/LSTag&gt;, Investigación, &lt;LSTag Type="Skills" Tooltip="Medicine"&gt;Medicina&lt;/LSTag&gt;, &lt;LSTag Type="Skills" Tooltip="Nature"&gt;Naturaleza&lt;/LSTag&gt; o &lt;LSTag Type="Skills" Tooltip="Religion"&gt;Religión&lt;/LSTag&gt;. Tienes Pericia en la habilidad elegida.</content>
   <content contentuid="h2f5671feg10a3g6221g9db1gcd1af3a88f5b" version="1">Nivel 2: Pericia</content>
-  <content contentuid="h9e315a90g0705gb2c6g1a8eg13de362924de" version="1">Obtienes Pericia (consulta el glosario de reglas) en dos de tus competencias de habilidad a tu elección. Se recomiendan &lt;LSTag Type="Skills" Tooltip="Performance"&gt;Interpretación&lt;/LSTag&gt; y &lt;LSTag Type="Skills" Tooltip="Persuasion"&gt;Persuasión&lt;/LSTag&gt; si tienes competencia en ellas.</content>
+  <content contentuid="h9e315a90g0705gb2c6g1a8eg13de362924de" version="1">Obtienes Pericia (consulta el glosario de reglas) en dos de tus competencias de habilidad a tu elección. Se recomiendan &lt;LSTag Type="Skills" Tooltip="Performance"&gt;Interpretación&lt;/LSTag&gt; y &lt;LSTag Type="Skills" Tooltip="Persuasion"&gt;Persuasión&lt;/LSTag&gt; si tienes competencia en ellas.
+
+En el nivel 9 de Bardo, obtienes Pericia en dos competencias de habilidad más a tu elección.</content>
   <content contentuid="h1d573d0cg0ef8gc58cg5d87gf7b0ce7fc23d" version="1">Nivel 10: Secretos Mágicos</content>
   <content contentuid="hd5715a4dge184g890agee7ag4f904fb90c6b" version="1">Has aprendido secretos de diversas tradiciones mágicas. Siempre que alcanzas un nivel de Bardo (incluido este) y el número de Conjuros Preparados en la tabla de Rasgos del Bardo aumenta, puedes elegir cualquiera de tus nuevos conjuros preparados de las listas de conjuros de Bardo, Clérigo, Druida y Mago, y los conjuros elegidos cuentan como conjuros de Bardo para ti. Además, siempre que reemplaces un conjuro preparado para esta clase, puedes reemplazarlo con un conjuro de esas listas.</content>
   <content contentuid="hd4f3b039g6204g1bbagd21fgb72f806b54d8" version="1">Nivel 3: Inspiración de Combate</content>
   <content contentuid="hd0e61f8bg955fgda33g3e08gc99c259c8a16" version="1">Nivel 3: Bendiciones del Conocimiento</content>
   <content contentuid="hc9341211ge6c1g1fd9gddbeg13315817fedb" version="1">Obtienes competencia en dos de las siguientes habilidades a tu elección: &lt;LSTag Type="Skills" Tooltip="Arcana"&gt;Arcana&lt;/LSTag&gt;, &lt;LSTag Type="Skills" Tooltip="History"&gt;Historia&lt;/LSTag&gt;, &lt;LSTag Type="Skills" Tooltip="Nature"&gt;Naturaleza&lt;/LSTag&gt; o &lt;LSTag Type="Skills" Tooltip="Religion"&gt;Religión&lt;/LSTag&gt;. Tienes Pericia en esas dos habilidades.</content>
   <content contentuid="ha8b64524g7467g0f1eg9214gbd3da8ce6302" version="1">Nivel 1: Pericia</content>
-  <content contentuid="h75d54fe5g6285g141fgd2b8gca722e196ecc" version="1">Obtienes Pericia en dos de tus competencias de habilidad a tu elección. Se recomiendan &lt;LSTag Type="Skills" Tooltip="SleightOfHand"&gt;Juego de Manos&lt;/LSTag&gt; y &lt;LSTag Type="Skills" Tooltip="Stealth"&gt;Sigilo&lt;/LSTag&gt; si tienes competencia en ellas.</content>
+  <content contentuid="h75d54fe5g6285g141fgd2b8gca722e196ecc" version="1">Obtienes Pericia en dos de tus competencias de habilidad a tu elección. Se recomiendan &lt;LSTag Type="Skills" Tooltip="SleightOfHand"&gt;Juego de Manos&lt;/LSTag&gt; y &lt;LSTag Type="Skills" Tooltip="Stealth"&gt;Sigilo&lt;/LSTag&gt; si tienes competencia en ellas.
+ 
+ En el nivel 6 de Pícaro, obtienes Pericia en dos competencias de habilidad más a tu elección.</content>
   <content contentuid="hac07bd19g5886gc2efgf8dfgb838d23ca0bd" version="1">Nivel 5: Golpe Astuto</content>
   <content contentuid="h4c3e9164gb5c2g35d0g405dgb887921e3e3a" version="1">Has desarrollado formas astutas de usar tu Ataque Furtivo. Cuando infliges daño de Ataque Furtivo, puedes añadir uno de los siguientes efectos de Golpe Astuto.&lt;br&gt;&lt;br&gt;Si un efecto de Golpe Astuto requiere una tirada de salvación, la CD es igual a 8 más tu modificador de Destreza y Bonificador de Competencia.</content>
   <content contentuid="h2d4d8d0bgd8f1g3ea1g0101ga6595c40a70f" version="1">Golpe Astuto: Veneno</content>
@@ -810,7 +824,7 @@ Tras seleccionar dos trucos diferentes, este modo finaliza.</content>
   <content contentuid="heda822d9g6ca8g4d69g862cg8e593ceb6f22" version="1">Iniciado en la Magia: Resistencia</content>
   <content contentuid="h04241b75g4f7eg40dagbac2g1acb8e2326f5" version="1">Iniciado en la Magia: Llama sagrada</content>
   <content contentuid="hdd5d9c2cg059eg4e76gb6b6g01e4d851171d" version="1">Iniciado en la Magia: Shillelagh</content>
-  <content contentuid="h4527bdb1gf97cg4adcg9003g64255fe6abdf" version="1">Iniciado en la Magia: &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Toque Eléctrico&lt;/LSTag&gt;</content>
+  <content contentuid="h4527bdb1gf97cg4adcg9003g64255fe6abdf" version="1">Iniciado en la Magia: &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Agarre Eléctrizante&lt;/LSTag&gt;</content>
   <content contentuid="h29d6991cg8d76g4e4bga787g7f988a72fe15" version="1">Iniciado en la Magia: Salvar al Moribundo</content>
   <content contentuid="hb163e2e9gb2d2g4adeg8801g80dbb2b50492" version="1">Iniciado en la Magia: Fuego Estrellado</content>
   <content contentuid="h9f283e92g10dfg43b6g837dg39ee82977d4b" version="1">Iniciado en la Magia: Estallido de filos</content>
@@ -949,7 +963,9 @@ Saltar. Una vez por turno, puedes realizar un Salto gastando solo 10 pies de mov
 
 Ataque de Carga. Si te mueves al menos 10 pies en línea recta hacia un objetivo inmediatamente antes de golpearlo con una tirada de ataque cuerpo a cuerpo como parte de la acción de Atacar, elige uno de los siguientes efectos: obtén un bonificador de 1d8 a la tirada de daño del ataque, o empuja al objetivo hasta 10 pies si es de no más de un tamaño mayor que tú. Puedes usar este beneficio solo una vez en cada uno de tus turnos.</content>
   <content contentuid="hbc6e4744g6835g4d25g3453g224b9eed2a70" version="1">Dote: Cargador</content>
-  <content contentuid="h4e972de5g72bbgc7d9gfda3g1c89f2af41d0" version="2">&lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt; Mejorado. Cuando usas la acción Correr, tu Velocidad aumenta en 10 pies para esa acción.</content>
+  <content contentuid="h4e972de5g72bbgc7d9gfda3g1c89f2af41d0" version="2">&lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr Mejorado&lt;/LSTag&gt;. Cuando usas la acción Correr, se te otorgan 10 pies de Movimiento por dicha Acción.
+
+Ataque de Carga. Si te mueves al menos 10 pies en línea recta hacia un objetivo inmediatamente antes de golpearlo con una tirada de ataque cuerpo a cuerpo como parte de la acción de Atacar, elige uno de los siguientes efectos: obtén un bonificador de 1d8 a la tirada de daño del ataque, o empuja al objetivo hasta 10 pies si es de no más de un tamaño mayor que tú. Puedes usar este beneficio solo una vez en cada uno de tus turnos.</content></content>
   <content contentuid="hafd66c3cg4becg70e3gdeb1g96e635182645" version="1">Experto en Ballesta</content>
   <content contentuid="hc7b891e9gd9c0g1617g0233ga492c5e47dc7" version="2">Disparar en Cuerpo a Cuerpo. Estar a 5 pies de un enemigo no impone Desventaja en tus tiradas de ataque con ballestas.
 
@@ -970,7 +986,9 @@ Perno Hiriente. Cuando golpeas a una criatura con un ataque a distancia, tiene p
   <content contentuid="h7ed3574cg898aga3cage4bcg72bfa5e60a5c" version="1">Dote: Combatiente con Dos Armas</content>
   <content contentuid="hb2bf6fc5g6c41geefag4186g751dda5c0a20" version="1">Ataque con Mano Secundaria (Combatiente con Dos Armas)</content>
   <content contentuid="hfba39959g9b2dg1bffgffd6g069588fe122e" version="1">Explorador de Mazmorras</content>
-  <content contentuid="h9dd8a551g9f01g98dbg64f1ga485e59f0e9d" version="2">Obtienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las pruebas de &lt;LSTag Type="Skills" Tooltip="Perception"&gt;Percepción&lt;/LSTag&gt; realizadas para detectar objetos ocultos y en las &lt;LSTag Tooltip="SavingThrow"&gt;tiradas de salvación&lt;/LSTag&gt; realizadas para evitar o resistir trampas.</content>
+  <content contentuid="h9dd8a551g9f01g98dbg64f1ga485e59f0e9d" version="2">Obtienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las pruebas de &lt;LSTag Type="Skills" Tooltip="Perception"&gt;Percepción&lt;/LSTag&gt; realizadas para detectar objetos ocultos y en las &lt;LSTag Tooltip="SavingThrow"&gt;tiradas de salvación&lt;/LSTag&gt; realizadas para evitar o resistir trampas.
+
+Tienes &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño causado por trampas y &lt;br&gt;&lt;br&gt;puedes ver en la Oscuridad.</content>
   <content contentuid="h3e8e3421g4852g1a98g9d7cgf3947ee60a89" version="1">Resistente</content>
   <content contentuid="h6299a92eg8049g117bga5b7g17d26b0619d6" version="2">Desafiar a la Muerte. Tienes Ventaja en las Tiradas de Salvación contra la Muerte.
 
@@ -1010,13 +1028,17 @@ Mente Protegida. Si fallas una tirada de salvación de Inteligencia, Sabiduría 
   <content contentuid="h9f345cf4g20e3g3adbg0568g4c6d7a467ed6" version="2">Veloz</content>
   <content contentuid="h9aba9e0ag4af1g9f8fg922ag7e65e5b8a86b" version="2">Aumento de Velocidad. Tu Velocidad aumenta en 10 pies.
 
-Correr por &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Terreno Difícil&lt;/LSTag&gt;. Cuando usas la acción Correr en tu turno, el Terreno Difícil no te cuesta movimiento adicional por el resto de ese turno.</content>
+Correr por &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Terreno Difícil&lt;/LSTag&gt;. Cuando usas la acción Correr en tu turno, el Terreno Difícil no te cuesta movimiento adicional por el resto de ese turno.
+
+Movimiento Ágil. Los Ataques de Oportunidad tienen Desventaja contra ti.</content>
   <content contentuid="h8eacabe1gf4e0g46a9g32adg16f61a4b3530" version="1">Armadura Media</content>
   <content contentuid="h9683622cg2b30ga13egcae5g1c9525ef5014" version="1">Obtienes &lt;LSTag Tooltip="ArmourProficiency"&gt;Competencia con Armadura&lt;/LSTag&gt; Media y escudos, y tu &lt;LSTag Tooltip="Strength"&gt;Fuerza&lt;/LSTag&gt; o &lt;LSTag Tooltip="Dexterity"&gt;Destreza&lt;/LSTag&gt; aumenta en 1, hasta un máximo de 20.</content>
   <content contentuid="h064d8f79g7d9eg262fg76e0g2d04ce1515a6" version="2">Dote: Movil</content>
   <content contentuid="h1ea9a52fg1499gbdd8g9ab4g8e8ff63c7f3f" version="1">Aumento de Velocidad. Tu Velocidad aumenta en 10 pies.
 
-&lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt; por &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Terreno Difícil&lt;/LSTag&gt;. Cuando usas la acción Correr en tu turno, el Terreno Difícil no te cuesta movimiento adicional por el resto de ese turno.</content>
+&lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt; por &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Terreno Difícil&lt;/LSTag&gt;. Cuando usas la acción Correr en tu turno, el Terreno Difícil no te cuesta movimiento adicional por el resto de ese turno.
+
+Movimiento Ágil. Los Ataques de Oportunidad tienen Desventaja contra ti.</content>
   <content contentuid="hcece8c3cgbda0g0cf1g3872g9d5fba9e3f61" version="1">Dote: Armadura Media</content>
   <content contentuid="hae25381bgef2fgb3e0ga319g98ed9f6981b8" version="1">Suerte</content>
   <content contentuid="h8708a627g8357g1f81g5bfdgc87a5b00b9fe" version="1">Obtienes un número de &lt;LSTag Type="ActionResource" Tooltip="LuckPoint"&gt;Puntos de Suerte&lt;/LSTag&gt; igual a tu Bonificador de Competencia. Puedes usar estos puntos para obtener &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en &lt;LSTag Tooltip="AttackRoll"&gt;Tiradas de Ataque&lt;/LSTag&gt;, &lt;LSTag Tooltip="AbilityCheck"&gt;Pruebas de Característica&lt;/LSTag&gt; o &lt;LSTag Tooltip="SavingThrow"&gt;Tiradas de Salvación&lt;/LSTag&gt;, o para hacer que un enemigo repita una &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LSTag&gt;.</content>
@@ -1156,7 +1178,13 @@ El número máximo de dados de la reserva aumenta en uno cuando alcanzas los niv
   <content contentuid="h284201cfg7ef2g3386g799dgb94060c50b96" version="1">Nivel 3: Juego de pies deslumbrante</content>
   <content contentuid="h7d579a81g52d6g1a4cg3fe1ge97bcb251943" version="1">Mientras no llevas armadura ni empuñas un Escudo, obtienes los siguientes beneficios.
 
-Virtuoso de la Danza. Tienes Ventaja en cualquier prueba de Carisma (&lt;LSTag Type="Skills" Tooltip="Performance"&gt;Interpretación&lt;/LSTag&gt;) que realices y que involucre danza.</content>
+Virtuoso de la Danza. Tienes Ventaja en cualquier prueba de Carisma (&lt;LSTag Type="Skills" Tooltip="Performance"&gt;Interpretación&lt;/LSTag&gt;) que realices y que involucre danza.
+
+Defensa sin Armadura. Tu Clase de Armadura base es igual a 10 más tus modificadores de Destreza y Carisma.
+
+Golpes Ágiles. Cuando gastas un uso de tu Inspiración Bárdica como parte de una acción, una Acción Bonus o una Reacción, puedes realizar un Golpe Desarmado como parte de esa acción, Acción Bonus o Reacción.
+
+Daño Bárdico. Puedes usar Destreza en lugar de Fuerza para las tiradas de ataque de tus Golpes desarmados. Cuando infliges daño con un golpe desarmado, puedes infligir un daño contundente equivalente a una tirada de tu dado de Inspiración Bárdica más tu modificador de Destreza, en lugar del daño normal del golpe. Este Ataque no gasta tu dado de Inspiración Bardica.</content>
   <content contentuid="h75cac7b5gabc0ge6d4gcf1bg66c77bcb1d31" version="1">Nivel 6: Movimiento Inspirador</content>
   <content contentuid="h2ad23fb9gc206g78bagd3d1g8369951939b3" version="2">Puedes usar tu Reacción y gastar un uso de tu Inspiración Bárdica para moverte hasta la mitad de tu Velocidad. Luego un aliado de tu elección a 30 pies de ti también puede moverse hasta la mitad de su Velocidad. Ninguno de los movimientos de este rasgo provoca Ataques de Oportunidad.</content>
   <content contentuid="h1af76b4dg4b9cga7cdgf8e7g353530ee4ff9" version="1">Nivel 6: Paso en Tándem</content>
@@ -1427,11 +1455,19 @@ En tus turnos posteriores, puedes realizar una acción mágica para mover el Cil
   <content contentuid="he922cbadga1cagc50eg44aagb22738ab6296" version="1">Corcel Fantasmal</content>
   <content contentuid="h7d1b5755g3943g8854gdc14g83c3921a9c89" version="1">Invocas un corcel fantasma en un espacio desocupado cerca del objetivo, y el objetivo lo monta inmediatamente.
 
-El corcel puede realizar una de las siguientes acciones de tu elección en cada uno de sus turnos: &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt;, Destrabarse, Esquivar.</content>
+El corcel puede realizar una de las siguientes acciones de tu elección en cada uno de sus turnos: &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt;, Destrabarse, Esquivar.
+
+Mientras estás montado en el corcel, cuando recibes 4 o más puntos de daño, debes realizar una tirada de salvación de Destreza CD 8. Si fallas, caes del corcel y tienes la condición Derribado durante 1 turno.&lt;br&gt;&lt;br&gt;&lt;br&gt;Solo un jugador de corazón puro puede ver al corcel.
+
+Solo un jugador puro de corazón puede ver este Corcel</content>
   <content contentuid="h0f489216gb640gb35fg24f2ge484d18842ab" version="1">Corcel Fantasmal</content>
   <content contentuid="he5f0f47cg9e31g78f9g3de0gbcdc5fe67dd8" version="1">Invocas un corcel fantasma en un espacio desocupado cerca del objetivo, y el objetivo lo monta inmediatamente.
 
-El corcel puede realizar una de las siguientes acciones de tu elección en cada uno de sus turnos: &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt;, Destrabarse, Esquivar.</content>
+El corcel puede realizar una de las siguientes acciones de tu elección en cada uno de sus turnos: &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt;, Destrabarse, Esquivar.
+
+Mientras estás montado en el corcel, cuando recibes 4 o más puntos de daño, debes realizar una tirada de salvación de Destreza CD 8. Si fallas, caes del corcel y tienes la condición Derribado durante 1 turno.&lt;br&gt;&lt;br&gt;&lt;br&gt;Solo un jugador de corazón puro puede ver al corcel.
+
+Solo un jugador puro de corazón puede ver este Corcel</content>
   <content contentuid="h5f226a79g1b15g405cgf870gf64805e10151" version="2">Un rayo de energía enervante sale disparado de ti hacia una criatura dentro del alcance. El objetivo debe realizar una tirada de salvación de Constitución. En caso de éxito, el objetivo tiene Desventaja en la siguiente tirada de ataque que realice hasta el inicio de tu siguiente turno.
 
 En caso de fallo, el objetivo tiene Desventaja en las pruebas de caracteristicas basadas en Fuerza durante la duración. También resta 1d8 a todas sus tiradas de daño. El objetivo repite la tirada de salvación al final de cada uno de sus turnos, terminando el conjuro si tiene éxito.</content>
@@ -1494,7 +1530,9 @@ En caso de fallo, el objetivo tiene Desventaja en las pruebas de caracteristicas
   <content contentuid="hca029b39g4097g0379g6a74gd52bb5fd4a04" version="1">Dote: Explorador de Mazmorras</content>
   <content contentuid="h5cc8709eg0974gcec1g323cg0a299d48a147" version="2">Tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las pruebas de &lt;LSTag Type="Skills" Tooltip="Perception"&gt;Percepción&lt;/LSTag&gt; realizadas para detectar objetos ocultos.
 
-Elaborar Veneno. Ganas un Kit de Envenenador, y tienes competencia con él. Cuando infliges daño de veneno a una criatura, debe superar una tirada de salvación de Constitución o quedar &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Envenenado&lt;/LSTag&gt;.</content>
+Tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las &lt;LSTag Tooltip="SavingThrow"&gt;Tiradas de Salvación&lt;/LSTag&gt; realizadas para evitar trampas y &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño de trampas.
+
+Puedes ver en la oscuridad hasta [1].</content>
   <content contentuid="h1e93417ag9497g58f3ge9aag2e54d8ba4076" version="1">Dote: Resistente</content>
   <content contentuid="hf12dc8a9g3079g890agb1ffgdf7b91f3c03d" version="2">Desafiar a la Muerte. Tienes Ventaja en las Tiradas de Salvación contra la Muerte.
 
@@ -1622,7 +1660,7 @@ Si eliges Tierra Tropical, tienes preparados Salpicadura de Ácido, Rayo de Enfe
   <content contentuid="h58de7593g077bg934ag945fg4fe25fcdc09e" version="1">Conjuros del Círculo de la Tierra: Tierra Polar</content>
   <content contentuid="ha94194efgfa4agc8ddgfe31g0bc3f36c48a3" version="1">Si eliges Tierra Polar, tienes preparados Nube de Niebla, Inmovilizar Persona y Rayo de Escarcha al nivel 3; Tormenta de Aguanieve al nivel 5; Tormenta de Hielo al nivel 7; y Cono de Frío al nivel 9.</content>
   <content contentuid="h088b6f4dg6df4g191egb507g382423e458d7" version="1">Conjuros del Círculo de la Tierra: Tierra Templada</content>
-  <content contentuid="h317cdc52gc540g98dagc75eg4b43a1c01018" version="2">Si eliges Tierra Templada, tienes preparados Paso Brumoso, &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Toque Eléctrico&lt;/LSTag&gt; y Dormir al nivel 3; Rayo al nivel 5; Libertad de Movimiento al nivel 7; y Zancada Arbórea al nivel 9.</content>
+  <content contentuid="h317cdc52gc540g98dagc75eg4b43a1c01018" version="2">Si eliges Tierra Templada, tienes preparados Paso Brumoso, &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Agarre Electrizante&lt;/LSTag&gt; y Dormir al nivel 3; Rayo al nivel 5; Libertad de Movimiento al nivel 7; y Zancada Prodigiosa al nivel 9.</content>
   <content contentuid="hb15d992cg437fg17e9g455bg7ba99f72dc7c" version="1">Conjuros del Círculo de la Tierra: Tierra Tropical</content>
   <content contentuid="hf78b7f33g6aa9g43f9g5859ga51f9e7facde" version="1">Si eliges Tierra Tropical, tienes preparados Salpicadura de Ácido, Rayo de Enfermedad y Tela de Araña al nivel 3; Nube Fétida al nivel 5; Polimorfar al nivel 7; y Plaga de Insectos al nivel 9.</content>
   <content contentuid="h59bddf9bg3094g2868gce0dgb0fbfbb3fdd4" version="1">Furia Elemental</content>
