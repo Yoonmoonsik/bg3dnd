@@ -1,0 +1,88 @@
+name: Bug Report
+description: Report something in the mod that behaves incorrectly
+title: ""
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Important
+        * Issues are for **bugs only**. Questions, support requests, balance feedback, and general discussion belong in [Discussions](../../discussions). Class, subclass, and spell requests have their own Discussion categories.
+        * Search existing issues before reporting, **including closed ones** — duplicates may be closed.
+        * One issue = one problem. Please don't bundle unrelated bugs into a single report.
+        * Use a clear, descriptive title. Avoid vague titles such as "Bug", "Doesn't Work", or "Issue".
+        * **Please don't link other mods (Nexus, mod.io, GitHub, etc.).** These links are always posted in good faith, but: this mod is written from the rulebooks and I deliberately don't read other mods' implementations; their constraints (Script Extender, load order) usually aren't mine, so "mod X can do it" isn't evidence it's doable here; and the reference for this mod is the rules text, not another mod. Describe the behavior you want in your own words instead.
+        * This mod rewrites spell lists and progressions wholesale and is **not designed to be compatible with other content mods**. If a bug only appears alongside another mod, it will be closed as a mod conflict.
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      description: Shown in the in-game mod manager. Please confirm the bug still happens on the latest release before reporting.
+      placeholder: e.g. 4.11.21.3
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - PC (Steam)
+        - PC (GOG)
+        - Mac
+        - PlayStation 5
+        - Xbox Series X|S
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the actual in-game behavior, including the exact class, subclass, level, spell, feat, or item involved.
+      placeholder: e.g. Throwing the main-hand Psychic Blade hits the target but never applies Vex. The off-hand blade applies it correctly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+      description: What should have happened, and why? Quote the rules text (PHB / DMG / MM 2024) where it applies.
+      placeholder: e.g. Vex applies whenever the weapon hits, per the Vex mastery description — there is no main-hand-only restriction.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Number the steps precisely enough that someone else can follow them. Reports without clear reproduction steps may be closed.
+      placeholder: |
+        1. Create a level 5 Rogue (Soulknife) with ...
+        2. Enter combat and ...
+        3. Observe that ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, video, or combat log
+      description: Screenshots of the tooltip and the combat log are the single most useful thing you can attach. Drag files directly into this box.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues, including closed ones, and this hasn't already been reported.
+          required: true
+        - label: This report is about one problem, on the latest mod version.
+          required: true
+        - label: I confirmed this still happens with no other content mods enabled.
+          required: false
