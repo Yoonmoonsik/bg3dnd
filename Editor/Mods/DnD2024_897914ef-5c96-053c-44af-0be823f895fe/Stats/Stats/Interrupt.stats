@@ -948,6 +948,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6ee76e95-8ec5-4c1b-abb9-ee6ab1d2d501" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_UncannyDodge" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08ac1d1fgdd8ag32cbg0ebdgcb9a1bf0e653" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0c708c03g521bg250fg1d04g3a66d60c8fd3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_UncannyDodge" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,UNCANNY_DODGE_REDUCE_DAMAGE,100,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="958dd0a5-8538-4a5f-b627-eccc98a1b65e" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Bloodthirst_50" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h055feb92gbffeg6927gaafbg9aa2a91bc4cb" version="1" />

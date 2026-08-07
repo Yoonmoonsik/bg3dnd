@@ -4771,6 +4771,13 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9005" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9d3123fb-d492-43f2-8460-508c1e6e82fe" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he29ef8dbg9175g368fg7a30gd515573c863c" version="1" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_UncannyDodge);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
