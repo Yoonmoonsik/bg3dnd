@@ -7783,10 +7783,11 @@ data "Boosts" "IF(SizeEqualOrGreater(Size.Large)):Advantage(AttackRoll);IF(SizeE
 new entry "FierceShot"
 type "PassiveData"
 data "DisplayName" "h4796f67cg2656g7e4fg0832gdc67d0ccef8e;2"
-data "Description" "h06a155bfgfa73g3924g9442gc7875f6aba6d;1"
+data "Description" "h06a155bfgfa73g3924g9442gc7875f6aba6d;2"
 data "Icon" "Action_GoadingAttack_Ranged"
 data "PriorityOrder" "700"
 data "Properties" "Highlighted"
+data "Boosts" "UnlockInterrupt(Interrupt_FierceShot);"
 data "StatsFunctorContext" "OnCreate;OnEquip;OnCombatStarted"
 data "StatsFunctors" "ApplyEquipmentStatus(RangedMainHand, FIERCE_SHOT, 100, -1)"
 

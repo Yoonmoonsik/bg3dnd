@@ -2225,6 +2225,22 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d06a57ce-f176-43e7-b798-4403a011cca7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FierceShot" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3dc922e6ga79bg103cgc3f5g5c013438860b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdff60bb5g1f26gb017g65bfg79be313aab62" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_GoadingAttack_Ranged" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and IsRangedAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d4,MainRangedWeaponDamageType,Magical);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:5;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="430c832a-13bc-44b0-8ddc-4064df249636" />

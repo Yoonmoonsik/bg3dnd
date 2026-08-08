@@ -10770,12 +10770,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7efc0bf4-a429-4569-a3f9-1e50ca780cc3" />
         <field name="Name" type="NameTableFieldDefinition" value="FierceShot" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4796f67cg2656g7e4fg0832gdc67d0ccef8e" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h06a155bfgfa73g3924g9442gc7875f6aba6d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h06a155bfgfa73g3924g9442gc7875f6aba6d" version="2" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnEquip;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(RangedMainHand, FIERCE_SHOT, 100, -1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_GoadingAttack_Ranged" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_FierceShot);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
