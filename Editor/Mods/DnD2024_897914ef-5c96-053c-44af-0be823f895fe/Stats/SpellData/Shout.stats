@@ -1878,7 +1878,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="edae57f1-a44c-437f-a603-d1372ee785b7" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Prestidigitation" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BURNING,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BURNING_PRESTIDIGITATION_ON,100,0);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('TORCH') or Tagged('CUSTOM_BURN_VFX');" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Light" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9b77345dg3b14g2b92g2dcegb47d678b5d96" version="3" />
@@ -1892,7 +1892,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Prestidigitation_Dark" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="edae57f1-a44c-437f-a603-d1372ee785b7" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Prestidigitation" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BURNING_PRESTIDIGITATION_OFF,100,0);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('TORCH') or Tagged('CUSTOM_BURN_VFX');" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dcf36cegab2dgf436g83fag871c5d97b6a7" version="1" />

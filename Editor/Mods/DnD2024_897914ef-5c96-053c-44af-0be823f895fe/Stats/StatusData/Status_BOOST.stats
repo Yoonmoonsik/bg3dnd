@@ -3790,6 +3790,24 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03b847bc-e5ad-4133-8b63-47e95018c08d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BURNING_PRESTIDIGITATION_ON" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BURNING_PRESTIDIGITATION_ON" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BURNING,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="962d880d-7500-4ec4-aca0-5ce123c03d7f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BURNING_PRESTIDIGITATION_OFF" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BURNING_PRESTIDIGITATION_OFF" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(BURNING)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="70f83574-5a96-4317-a589-ce11b8c0a2c5" />
         <field name="Name" type="NameTableFieldDefinition" value="BODY_WARPING_OF_GORGOROTH" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h35b9b915g3bf7g0d1dg728fg2be8d9ced715" version="1" />
