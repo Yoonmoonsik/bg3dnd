@@ -3294,6 +3294,10 @@ data "PriorityOrder" "8307"
 data "Properties" "Highlighted;ForceShowInCC"
 data "Boosts" "UnlockSpell(Shout_DefensiveTactics);"
 
+new entry "MultiattackDefense"
+type "PassiveData"
+using "MultiattackDefense"
+
 new entry "Hunter_11_SuperiorHuntersPrey"
 type "PassiveData"
 data "DisplayName" "hfd10997cg1b63g1960g4918ga9e47736c018;1"

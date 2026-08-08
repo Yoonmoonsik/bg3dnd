@@ -6926,6 +6926,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ba4684d5-f967-4e3d-8ed8-fea6e90878f5" />
+        <field name="Name" type="NameTableFieldDefinition" value="MULTIATTACKDEFENSE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="68067743-5fce-4ae9-839e-86c30bc9258e" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MULTIATTACKDEFENSE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('MULTIATTACKDEFENSE_TECHNICAL',context.Target)):Disadvantage(AttackRoll);" />
+        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="97483965-d55f-4c5e-a20b-b80a77f1c376" />
         <field name="Name" type="NameTableFieldDefinition" value="DREAD_AMBUSHER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="506a5f1e-aa12-4c63-8f0f-6ea7b35f3846" />
