@@ -926,7 +926,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ef279ab3-1c9f-4a5b-9302-de4c8ac43c5f" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Vines,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -936,7 +939,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="4d4d013a-ea6f-4620-b6b1-110f321f6ed8" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Vines,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -946,7 +952,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5579c345-7251-453d-acb9-73dd9e162416" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Vines,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -956,7 +965,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="38697109-73aa-4247-b71e-e31d5945c371" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Vines,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -966,7 +978,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="6ec71bc2-2c24-4891-a85f-ab1c692a77d8" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Vines,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -976,7 +991,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="342d050f-bf8c-4b77-8317-bdec4e2a937c" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Vines,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -986,7 +1004,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="fa3bfe63-dd45-4991-9e65-a68a4b8b0766" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);GROUND:CreateSurface(6,10,Vines,true);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENSNARED_VINES,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
