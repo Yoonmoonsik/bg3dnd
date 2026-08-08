@@ -7984,6 +7984,11 @@ data "StatsFunctorContext" ""
 data "Conditions" ""
 data "StatsFunctors" ""
 
+new entry "MAG_Mobility_JumpOnDash_Passive"
+type "PassiveData"
+using "MAG_Mobility_JumpOnDash_Passive"
+data "Description" "h07de6d7ag5621g4204g93bdg12d04e9defa9;1"
+
 new entry "MAG_Mobility_ExplosionOnJump_Passive"
 type "PassiveData"
 using "MAG_Mobility_ExplosionOnJump_Passive"

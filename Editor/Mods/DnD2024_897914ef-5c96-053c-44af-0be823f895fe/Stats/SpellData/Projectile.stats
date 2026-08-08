@@ -109,6 +109,19 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb74c3fd9ga6a8g8c4bg0373g427c3edf70f7" version="4" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="67d6419d-a823-417d-94b5-1bf9bfc5cb9c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Mobility_JumpOnDash_Action" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da71ebda-72cc-460c-a1b3-254520d00371" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf9be0a35gce33ga419g1a57gcc67560214a9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa470112gc789g976ag5dcdgab4fa45eb69b" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="AddRangeFromAbility" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsJump;AddFallDamageOnLand;HasHighGroundRangeExtension;IgnoreVisionBlock;Stealth;Invisible;CannotTargetCharacter;CannotTargetItems;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="11f106b1-1069-42d8-a7ca-391be98b9deb" />
