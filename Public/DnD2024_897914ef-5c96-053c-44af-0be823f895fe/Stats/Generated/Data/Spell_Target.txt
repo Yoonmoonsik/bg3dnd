@@ -10034,6 +10034,12 @@ data "HitCosts" "DreadfulStrike:1;DreadfulStrikeTurn:1;"
 data "SpellFlags" "IsMelee;IsHarmful;CanDualWield"
 data "DamageType" "Psychic"
 
+new entry "Target_HordeBreaker"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_HordeBreaker"
+data "AreaRadius" "3"
+
 new entry "Target_FortifyingSoul"
 type "SpellData"
 data "SpellType" "Target"

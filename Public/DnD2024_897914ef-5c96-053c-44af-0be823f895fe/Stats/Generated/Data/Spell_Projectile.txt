@@ -2883,6 +2883,12 @@ data "HitCosts" "DreadfulStrike:1;DreadfulStrikeTurn:1;"
 data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful"
 data "DamageType" "Psychic"
 
+new entry "Projectile_HordeBreaker"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_HordeBreaker"
+data "ExplodeRadius" "3"
+
 new entry "Projectile_SuperiorHuntersPrey"
 type "SpellData"
 data "SpellType" "Projectile"
