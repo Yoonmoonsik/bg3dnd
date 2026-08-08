@@ -4580,6 +4580,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="041561e7-a69e-477f-be9c-096a520953c4" />
         <field name="Name" type="NameTableFieldDefinition" value="MultiattackDefense" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7c7b3982-899e-4b06-8fe3-05971219f958" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not IsMiss() and not Self() and IsAttack();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

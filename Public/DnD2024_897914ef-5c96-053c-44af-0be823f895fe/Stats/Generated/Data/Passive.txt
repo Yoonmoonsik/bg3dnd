@@ -3297,6 +3297,7 @@ data "Boosts" "UnlockSpell(Shout_DefensiveTactics);"
 new entry "MultiattackDefense"
 type "PassiveData"
 using "MultiattackDefense"
+data "Conditions" "not IsMiss() and not Self() and IsAttack();"
 
 new entry "Hunter_11_SuperiorHuntersPrey"
 type "PassiveData"

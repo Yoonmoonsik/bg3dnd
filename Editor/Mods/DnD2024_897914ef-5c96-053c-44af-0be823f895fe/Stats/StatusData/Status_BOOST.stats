@@ -6929,10 +6929,21 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ba4684d5-f967-4e3d-8ed8-fea6e90878f5" />
         <field name="Name" type="NameTableFieldDefinition" value="MULTIATTACKDEFENSE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="68067743-5fce-4ae9-839e-86c30bc9258e" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MultiattackDefense" />
         <field name="StackId" type="StringTableFieldDefinition" value="MULTIATTACKDEFENSE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('MULTIATTACKDEFENSE_TECHNICAL',context.Target)):Disadvantage(AttackRoll);" />
         <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b6e3da49-7388-4f2f-952c-92aabb1f304f" />
+        <field name="Name" type="NameTableFieldDefinition" value="MULTIATTACKDEFENSE_TECHNICAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="68067743-5fce-4ae9-839e-86c30bc9258e" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MultiattackDefense" />
+        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
