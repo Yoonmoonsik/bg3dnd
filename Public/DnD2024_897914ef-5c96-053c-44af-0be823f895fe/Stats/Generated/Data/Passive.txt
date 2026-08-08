@@ -3205,6 +3205,9 @@ data "Properties" "Highlighted;ForceShowInCC"
 data "BoostContext" "OnEquip;OnProficiencyChange;OnShortRest;OnCreate"
 data "Boosts" "ActionResource(Tireless,1,0);IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(Tireless,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(Tireless,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(Tireless,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(Tireless,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(Tireless,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(Tireless,1,0);"
 
+new entry "__BEAST MASTER__"
+type "PassiveData"
+
 new entry "CompanionsBond"
 type "PassiveData"
 using "CompanionsBond"
@@ -3222,6 +3225,9 @@ type "PassiveData"
 using "BestialFury"
 data "DisplayName" "he1cd6837ge579g13b4g4394g33ea8c725e00;1"
 data "PriorityOrder" "8111"
+
+new entry "__GLOOM STALKER__"
+type "PassiveData"
 
 new entry "GloomStalker_3_UmbralSight"
 type "PassiveData"
@@ -3257,6 +3263,18 @@ using "StalkersFlurry"
 data "DisplayName" "hd3f07304gfb55ge28ega3f7g0cf1292516a3;1"
 data "Description" "h374216bbgf985gc96cg64b3g959b101fd376;1"
 data "PriorityOrder" "8211"
+
+new entry "__HUNTER__"
+type "PassiveData"
+
+new entry "Hunter_3_HuntersLore"
+type "PassiveData"
+data "DisplayName" "h4f7bd374g4aa3g9446g3975g1173cd2a6e44;1"
+data "Description" "heb8ccc52g26b4gf1c4g7dfbge1ff8af766c2;1"
+data "Icon" "PassiveFeature_HuntersMark"
+data "PriorityOrder" "8303"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsWeaponAttack()):IgnoreResistance(Slashing, Resistant);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsWeaponAttack()):IgnoreResistance(Piercing, Resistant);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsWeaponAttack()):IgnoreResistance(Bludgeoning, Resistant);"
 
 new entry "Hunter_11_SuperiorHuntersPrey"
 type "PassiveData"
