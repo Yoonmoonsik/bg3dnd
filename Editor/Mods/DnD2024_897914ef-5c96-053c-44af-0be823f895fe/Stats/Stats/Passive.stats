@@ -4553,6 +4553,30 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dcc276ed-3b8e-4924-b798-f05dcf5dccd8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hunter_3_HuntersPrey" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h827a0d51gd394g381fg428dg6ce1c84ff2a8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd51ae331gb1a0gb3bfg9c3bg17441135a4c2" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ColossusSlayer" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="8303" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_HuntersPrey);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13943378-0c05-43f3-a4bf-5c47c21b4df6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hunter_7_DefensiveTactics" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77e1e333gb3cdg56acg9362g02fb95f15b3c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h30d5708dgfa9eg4556ga8b6g4baa0e34f874" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MultiattackDefense" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="8307" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_DefensiveTactics);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9fcb2303-b1df-4ae8-87c8-60a60914b206" />
         <field name="Name" type="NameTableFieldDefinition" value="Hunter_11_SuperiorHuntersPrey" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfd10997cg1b63g1960g4918ga9e47736c018" version="1" />

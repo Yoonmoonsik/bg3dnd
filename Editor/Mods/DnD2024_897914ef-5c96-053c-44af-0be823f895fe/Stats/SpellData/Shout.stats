@@ -3846,6 +3846,86 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="687e6389-1297-474e-ac1d-b3f45e10ab5a" />
+        <field name="Name" type="NameTableFieldDefinition" value="HuntersPrey" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_HuntersPrey_ColossusSlayer;Shout_HuntersPrey_HordeBreaker;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ColossusSlayer" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h220b1bf3g7df6g2f34g1c2bge7ef357dc73a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c530173g8791ge659gb6c1g8a5322a5aa9e" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Steady" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Steady" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;5fdb66be-7506-411a-a7ea-c4783288aac8,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b660a683-61c5-44a0-87c6-84cac5f9201d" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e9518fc-5a3d-41ca-a109-fac84c09e175" />
+        <field name="Name" type="NameTableFieldDefinition" value="HuntersPrey_ColossusSlayer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="687e6389-1297-474e-ac1d-b3f45e10ab5a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_HuntersPrey" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_COLOSSUSSLAYER,100,-1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he100fd97g8c61g7accgc8ecg6628146a240d" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_COLOSSUSSLAYER,100,-1);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a4a2f7e-861f-4e7e-ae21-86beaf7d5a4d" />
+        <field name="Name" type="NameTableFieldDefinition" value="HuntersPrey_HordeBreaker" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e9518fc-5a3d-41ca-a109-fac84c09e175" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_HORDEBREAKER,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_HordeBreaker_Ranged" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haf4865d4g944ag9cf5gf8b0g84b701adf954" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_HORDEBREAKER,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2c4b5bb1-c8bf-401b-b89b-5e6d038dce3c" />
+        <field name="Name" type="NameTableFieldDefinition" value="DefensiveTactics" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="687e6389-1297-474e-ac1d-b3f45e10ab5a" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_DefensiveTactics_EscapeTheHorde;Shout_DefensiveTactics_MultiattackDefense;" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MultiattackDefense" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0f7eeb48gb2b4g3dedg9cc2g1806dd911d89" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e6633d3-48e1-4c5d-a7fa-43cfde65a8be" />
+        <field name="Name" type="NameTableFieldDefinition" value="DefensiveTactics_EscapeTheHorde" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2c4b5bb1-c8bf-401b-b89b-5e6d038dce3c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_DefensiveTactics" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_ESCAPETHEHORDE,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_EscapeTheHorde" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha62718a8g865eg755cge556g86d7b1793646" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_ESCAPETHEHORDE,100,-1);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dd2cd7b8-ae6b-41a7-a8f4-d9c7be82a167" />
+        <field name="Name" type="NameTableFieldDefinition" value="DefensiveTactics_MultiattackDefense" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1e6633d3-48e1-4c5d-a7fa-43cfde65a8be" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_MULTIATTACKDEFENSE,100,-1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h72b0b6aeg9cf5g4b5fg0d9cg171c4820c0cd" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_MULTIATTACKDEFENSE,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3698c61d-f4a8-497c-89b2-1ab66c30627c" />
         <field name="Name" type="NameTableFieldDefinition" value="WrathOfTheWild" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WRATH_OF_THE_WILD,100,10);" />

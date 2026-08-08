@@ -6882,6 +6882,38 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9001dd56-d885-41fa-b1a4-f4730ccfe2bf" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNTERSPREY_COLOSSUSSLAYER" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ColossusSlayer;" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="491290df-efbc-4b8f-b270-c29e471cfe9b" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNTERSPREY_HORDEBREAKER" />
+        <field name="Passives" type="StringTableFieldDefinition" value="HordeBreaker;" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f501dde6-0448-4c3d-8ed1-774d84cfff8c" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEFENSIVETACTICS_ESCAPETHEHORDE" />
+        <field name="Passives" type="StringTableFieldDefinition" value="EscapeTheHorde;" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="68067743-5fce-4ae9-839e-86c30bc9258e" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEFENSIVETACTICS_MULTIATTACKDEFENSE" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MultiattackDefense;" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="97483965-d55f-4c5e-a20b-b80a77f1c376" />
         <field name="Name" type="NameTableFieldDefinition" value="DREAD_AMBUSHER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="506a5f1e-aa12-4c63-8f0f-6ea7b35f3846" />
