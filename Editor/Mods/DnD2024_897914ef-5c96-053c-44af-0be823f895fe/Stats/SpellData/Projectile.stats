@@ -3445,7 +3445,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f5237f46-e96c-4342-9994-17b9b2888821" />
         <field name="Name" type="NameTableFieldDefinition" value="PsychicTeleportation" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();GROUND:RemoveStatus(SELF,ENSNARED_VINES);GROUND:RemoveStatus(SELF,SHADOW_CURSED_VINES);" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('')" />
