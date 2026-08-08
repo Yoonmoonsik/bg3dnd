@@ -5750,6 +5750,7 @@
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(USING_METAMAGIC,100,1)" />
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(USING_METAMAGIC)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcb1875bdg0b82gd5fbg0db6g263e63afba9e" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(DistantSpellCheck(),ModifyTargetRadius(Multiplicative,2.0),ModifyUseCosts(Add,SorceryPoint,1,0));UnlockSpellVariant(DistantTouchSpellCheck(),ModifyTargetRadius(Override,9),ModifySpellFlags(Melee,0),ModifyUseCosts(Add,SorceryPoint,1,0));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

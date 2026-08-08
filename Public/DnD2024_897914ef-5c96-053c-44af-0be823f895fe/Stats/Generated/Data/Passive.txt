@@ -4138,6 +4138,7 @@ new entry "Metamagic_Distant"
 type "PassiveData"
 using "Metamagic_Distant"
 data "Description" "hcb1875bdg0b82gd5fbg0db6g263e63afba9e;1"
+data "Boosts" "UnlockSpellVariant(DistantSpellCheck(),ModifyTargetRadius(Multiplicative,2.0),ModifyUseCosts(Add,SorceryPoint,1,0));UnlockSpellVariant(DistantTouchSpellCheck(),ModifyTargetRadius(Override,9),ModifySpellFlags(Melee,0),ModifyUseCosts(Add,SorceryPoint,1,0));"
 data "ToggleOnFunctors" "ApplyStatus(USING_METAMAGIC,100,1)"
 data "ToggleOffFunctors" "RemoveStatus(USING_METAMAGIC)"
 
