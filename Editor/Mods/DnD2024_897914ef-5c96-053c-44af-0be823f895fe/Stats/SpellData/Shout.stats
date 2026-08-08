@@ -3569,7 +3569,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0d7a361c-3d8e-49ce-b0e5-17f9c46c96d0" />
         <field name="Name" type="NameTableFieldDefinition" value="StepOfTheWind" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3f56de45-417a-4c9a-89c4-2a923fe91599" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DISENGAGE,100,1);ApplyStatus(DASH,100,1);IF(HasPassive('Monk_10_HeightenedFocus',context.Source)):ApplyStatus(PATIENT_DEFENSE_TEMPHP,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DISENGAGE,100,1);ApplyStatus(DASH,100,1);ApplyStatus(STEP_OF_THE_WIND,100,1);IF(HasPassive('Monk_10_HeightenedFocus',context.Source)):ApplyStatus(PATIENT_DEFENSE_TEMPHP,100,-1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdd4e66dbg0ac9g5c5dg463eg6076392563ce" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h83374bedgf40agd759g1784gd9c5f24545a3" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DISENGAGE,100,1);ApplyStatus(DASH,100,1);ApplyStatus(STEP_OF_THE_WIND,100,1)" />
