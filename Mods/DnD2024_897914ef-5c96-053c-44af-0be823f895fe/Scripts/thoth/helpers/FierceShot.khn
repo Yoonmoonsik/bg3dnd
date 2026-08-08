@@ -1,0 +1,9 @@
+-- Fierce Shot lets you *choose* whether to use Strength instead of Dexterity for ranged
+-- attacks, so the override must never make the attack worse. The status lives on the
+-- weapon, but boost conditions still resolve context.Source to the wielder, so the
+-- wielder's ability scores can be compared here (see SHILLELAGH for the same trick).
+
+function FierceShot(entity)
+	entity = entity or context.Source
+	return ConditionResult(GetModifier(entity.Strength) >= GetModifier(entity.Dexterity))
+end

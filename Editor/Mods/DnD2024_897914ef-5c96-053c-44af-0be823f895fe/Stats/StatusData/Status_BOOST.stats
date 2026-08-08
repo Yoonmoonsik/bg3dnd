@@ -11246,7 +11246,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ddc1e812-dc57-4dec-bf95-8493dcdcaf22" />
         <field name="Name" type="NameTableFieldDefinition" value="FIERCE_SHOT" />
         <field name="StackId" type="StringTableFieldDefinition" value="FIERCE_SHOT" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollAbilityOverride(Strength);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(FierceShot()):WeaponAttackRollAbilityOverride(Strength);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>

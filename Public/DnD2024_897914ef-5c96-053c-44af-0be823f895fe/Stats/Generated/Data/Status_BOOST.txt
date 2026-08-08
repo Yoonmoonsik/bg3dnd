@@ -9028,7 +9028,7 @@ new entry "FIERCE_SHOT"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "FIERCE_SHOT"
-data "Boosts" "WeaponAttackRollAbilityOverride(Strength);"
+data "Boosts" "IF(FierceShot()):WeaponAttackRollAbilityOverride(Strength);"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
 new entry "GLEAM_OF_WRATH"
