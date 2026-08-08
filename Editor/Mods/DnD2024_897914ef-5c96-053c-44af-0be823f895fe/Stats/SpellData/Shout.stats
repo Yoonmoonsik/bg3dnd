@@ -4678,6 +4678,15 @@
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;236087a5-5597-4ee7-ab06-75b01147f596,,;ee0b6a78-c6b6-4852-aecb-d7c474a37d68,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2d800d75-2955-4cb2-898c-e68593f7ea35" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bladesong_Dismiss" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ac0bf18-5fc2-407e-936a-41cc54a3eced" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BLADESONG);ApplyEquipmentStatus(MainHand, BLADESONG_BLADEWORK_DISMISS,100, 0);ApplyEquipmentStatus(OffHand, BLADESONG_BLADEWORK_DISMISS,100, 0);" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;236087a5-5597-4ee7-ab06-75b01147f596,,;ee0b6a78-c6b6-4852-aecb-d7c474a37d68,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+      </fields>
+    </stat_object>
     <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="87d19ce2-9f9a-4137-95ef-1fb98232efde" />

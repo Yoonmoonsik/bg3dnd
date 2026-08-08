@@ -3937,6 +3937,13 @@ data "UseCosts" "BonusActionPoint:1;ArcaneRecoveryPoint:1;"
 data "SpellAnimation" "dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;236087a5-5597-4ee7-ab06-75b01147f596,,;ee0b6a78-c6b6-4852-aecb-d7c474a37d68,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,,"
 data "RequirementConditions" "BladesongAvaliable()"
 
+new entry "Shout_Bladesong_Dismiss"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Bladesong_Dismiss"
+data "SpellProperties" "RemoveStatus(BLADESONG);ApplyEquipmentStatus(MainHand, BLADESONG_BLADEWORK_DISMISS,100, 0);ApplyEquipmentStatus(OffHand, BLADESONG_BLADEWORK_DISMISS,100, 0);"
+data "SpellAnimation" "dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;236087a5-5597-4ee7-ab06-75b01147f596,,;ee0b6a78-c6b6-4852-aecb-d7c474a37d68,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,,"
+
 new entry "Shout___GUNSLINGER__"
 type "SpellData"
 data "SpellType" "Shout"
