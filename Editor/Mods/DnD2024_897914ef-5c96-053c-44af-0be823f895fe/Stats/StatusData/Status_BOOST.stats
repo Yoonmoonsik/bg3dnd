@@ -8812,6 +8812,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c85373fe-6bbb-444f-9c3b-51661a5015a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLADESONG" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8abc2dde-ffb3-4fc2-a3da-32627941bf3c" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1669b47agf0fagd245g92f2g0e39a2c90370" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0);Advantage(Skill,Acrobatics);RollBonus(SavingThrow, IntelligenceModifier, Constitution);AC(1);IF(AbilityGreaterThan('Intelligence',13,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',15,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',17,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',19,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',21,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',23,context.Source)):AC(1);" />
+        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsWeaponOfProficiencyGroup('Glaives|Greataxes|Greatclubs|Greatswords|Halberds|Mauls|Pikes', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or WearingArmor() or HasShieldEquipped() or (not IsProficientWithEquippedWeapon())" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnEquip" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6b907150-5400-47b8-b8b7-29c532676ffb" />
         <field name="Name" type="NameTableFieldDefinition" value="BLADESONG_BLADEWORK" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h55238b55g2b39g51dcg5270gfe86eeeec5e8" version="1" />
