@@ -4186,6 +4186,7 @@ new entry "Metamagic_Twinned"
 type "PassiveData"
 using "Metamagic_Twinned"
 data "Description" "h3aef575agcbdfgd3e8g1850ge006a44a0100;1"
+data "Boosts" "UnlockSpellVariant(TwinnedSpellCheck(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyUseCosts(Add,SorceryPoint,1,0));"
 data "ToggleOnFunctors" "ApplyStatus(SELF,TWINNED_ON,100,-1);ApplyStatus(USING_METAMAGIC,100,1)"
 data "ToggleOffFunctors" "RemoveStatus(SELF,TWINNED_ON,100,-1);RemoveStatus(USING_METAMAGIC)"
 

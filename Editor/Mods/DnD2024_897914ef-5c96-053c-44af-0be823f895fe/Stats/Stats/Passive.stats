@@ -5816,6 +5816,7 @@
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,TWINNED_ON,100,-1);ApplyStatus(USING_METAMAGIC,100,1)" />
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TWINNED_ON,100,-1);RemoveStatus(USING_METAMAGIC)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3aef575agcbdfgd3e8g1850ge006a44a0100" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(TwinnedSpellCheck(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyUseCosts(Add,SorceryPoint,1,0));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
