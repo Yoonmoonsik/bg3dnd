@@ -8618,7 +8618,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he6de2090g4ec1g94fdg1c3fgd41c1e984607" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PactOfTheBlade_Rapier" />
         <field name="StackId" type="StringTableFieldDefinition" value="INNATE_BLADEWORK" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(CharismaGreaterOrEqualToStrengthAndDexterity()):WeaponAttackRollAbilityOverride(Charisma);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(CharismaGreaterOrEqualToWeaponAttackAbility()):WeaponAttackRollAbilityOverride(Charisma);" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="63760e78-ec10-4c41-a097-173a6f1fe536" />
       </fields>
     </stat_object>
@@ -9117,7 +9117,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="70c39b02-c74e-4e0f-8b8e-64350af307a9" />
         <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8b907065-d4e5-4b4b-a470-a7d16e328104" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);IntrinsicSummonerProficiency();IntrinsicSourceProficiency();ItemReturnToOwner();Attribute(InventoryBound);IF(CharismaGreaterOrEqualToStrengthAndDexterity()):WeaponAttackRollAbilityOverride(Charisma);CannotBeDisarmed()" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);IntrinsicSummonerProficiency();IntrinsicSourceProficiency();ItemReturnToOwner();Attribute(InventoryBound);IF(CharismaGreaterOrEqualToWeaponAttackAbility()):WeaponAttackRollAbilityOverride(Charisma);CannotBeDisarmed()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

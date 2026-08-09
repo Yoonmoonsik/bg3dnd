@@ -71,10 +71,19 @@ function HasHexStatusReverse()
     return HasAnyStatus({'HEX_STRENGTH','HEX_DEXTERITY','HEX_CONSTITUTION','HEX_INTELLIGENCE','HEX_WISDOM','HEX_CHARISMA'}, {}, {},context.Source,context.Target)
 end
 
-function CharismaGreaterOrEqualToStrengthAndDexterity(entity)
+function CharismaGreaterOrEqualToWeaponAttackAbility(entity)
 	entity = entity or context.Source
 	local chaMod = GetModifier(entity.Charisma)
 	local strMod = GetModifier(entity.Strength)
 	local dexMod = GetModifier(entity.Dexterity)
-	return ConditionResult(chaMod >= strMod and chaMod >= dexMod)
+	local weapon = GetActiveWeapon(entity, true)
+
+	-- Only compare against the abilities the weapon itself could attack with
+	if not HasWeaponProperty(WeaponProperties.Melee, weapon).Result then
+		return ConditionResult(chaMod >= dexMod)
+	end
+	if HasWeaponProperty(WeaponProperties.Finesse, weapon).Result then
+		return ConditionResult(chaMod >= strMod and chaMod >= dexMod)
+	end
+	return ConditionResult(chaMod >= strMod)
 end
