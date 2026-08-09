@@ -66,40 +66,145 @@ HasActiveStatus(_MagicItem, "ARCANE_ARMOR_WEAPON", 1)
 THEN
 RemoveStatus(_MagicItem, "ARCANE_ARMOR_WEAPON", NULL_00000000-0000-0000-0000-000000000000);
 
-IF
-Unequipped(_MagicItem, _Char)
-AND
-HasActiveStatus(_MagicItem, "PACT_BLADE", 1)
+// ApplyEquipmentStatus removes PACT_BLADE when the weapon is unequipped.
+// Remember the pact before that happens and restore it as a persistent item
+// status after the equipment status has been removed.
+PROC
+PROC_DND55E_ClearPactBlade((CHARACTER)_Warlock, (ITEM)_Weapon)
 THEN
-RemoveStatus(_MagicItem, "PACT_BLADE", NULL_00000000-0000-0000-0000-000000000000);
+NOT DB_DND55E_PactBlade(_Warlock, _Weapon);
+NOT DB_DND55E_PactBladeNecrotic(_Warlock, _Weapon);
+NOT DB_DND55E_PactBladePsychic(_Warlock, _Weapon);
+NOT DB_DND55E_PactBladeRadiant(_Warlock, _Weapon);
+RemoveStatus(_Weapon, "PACT_BLADE", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "PACT_BLADE_NECROTIC", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "PACT_BLADE_PSYCHIC", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "PACT_BLADE_RADIANT", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "PACT_BLADE_WEAPON", NULL_00000000-0000-0000-0000-000000000000);
+
+// Register every pact weapon, including conjured weapons and all damage-type
+// variants. Applying a new bond removes the previous bond for this warlock.
+IF
+StatusApplied((ITEM)_NewWeapon, "PACT_BLADE", _, _)
+AND
+GetInventoryOwner(_NewWeapon, (CHARACTER)_Warlock)
+AND
+DB_DND55E_PactBlade(_Warlock, (ITEM)_OldWeapon)
+AND
+_OldWeapon != _NewWeapon
+THEN
+PROC_DND55E_ClearPactBlade(_Warlock, _OldWeapon);
+DB_DND55E_PactBlade(_Warlock, _NewWeapon);
 
 IF
-Unequipped(_MagicItem, _Char)
+StatusApplied((ITEM)_Weapon, "PACT_BLADE", _, _)
 AND
-HasActiveStatus(_MagicItem, "PACT_BLADE_NECROTIC", 1)
+GetInventoryOwner(_Weapon, (CHARACTER)_Warlock)
 THEN
-RemoveStatus(_MagicItem, "PACT_BLADE_NECROTIC", NULL_00000000-0000-0000-0000-000000000000);
+DB_DND55E_PactBlade(_Warlock, _Weapon);
 
 IF
-Unequipped(_MagicItem, _Char)
+StatusApplied((ITEM)_Weapon, "PACT_BLADE_NECROTIC", _, _)
 AND
-HasActiveStatus(_MagicItem, "PACT_BLADE_PSYCHIC", 1)
+GetInventoryOwner(_Weapon, (CHARACTER)_Warlock)
 THEN
-RemoveStatus(_MagicItem, "PACT_BLADE_PSYCHIC", NULL_00000000-0000-0000-0000-000000000000);
+DB_DND55E_PactBladeNecrotic(_Warlock, _Weapon);
 
 IF
-Unequipped(_MagicItem, _Char)
+StatusApplied((ITEM)_Weapon, "PACT_BLADE_PSYCHIC", _, _)
 AND
-HasActiveStatus(_MagicItem, "PACT_BLADE_RADIANT", 1)
+GetInventoryOwner(_Weapon, (CHARACTER)_Warlock)
 THEN
-RemoveStatus(_MagicItem, "PACT_BLADE_RADIANT", NULL_00000000-0000-0000-0000-000000000000);
+DB_DND55E_PactBladePsychic(_Warlock, _Weapon);
 
 IF
-Unequipped(_MagicItem, _Char)
+StatusApplied((ITEM)_Weapon, "PACT_BLADE_RADIANT", _, _)
 AND
-HasActiveStatus(_MagicItem, "PACT_BLADE_WEAPON", 1)
+GetInventoryOwner(_Weapon, (CHARACTER)_Warlock)
 THEN
-RemoveStatus(_MagicItem, "PACT_BLADE_WEAPON", NULL_00000000-0000-0000-0000-000000000000);
+DB_DND55E_PactBladeRadiant(_Warlock, _Weapon);
+
+// Existing saves do not yet contain DB_DND55E_PactBlade. Before this fix an
+// active pact weapon could only survive while equipped, so recover it from the
+// main-hand slot when the save is loaded.
+IF
+SavegameLoaded()
+AND
+DB_Players((CHARACTER)_Warlock)
+AND
+GetEquippedItem(_Warlock, "Melee Main Weapon", (ITEM)_Weapon)
+AND
+HasActiveStatus(_Weapon, "PACT_BLADE", 1)
+THEN
+DB_DND55E_PactBlade(_Warlock, _Weapon);
+
+IF
+SavegameLoaded()
+AND
+DB_Players((CHARACTER)_Warlock)
+AND
+GetEquippedItem(_Warlock, "Melee Main Weapon", (ITEM)_Weapon)
+AND
+HasActiveStatus(_Weapon, "PACT_BLADE_NECROTIC", 1)
+THEN
+DB_DND55E_PactBladeNecrotic(_Warlock, _Weapon);
+
+IF
+SavegameLoaded()
+AND
+DB_Players((CHARACTER)_Warlock)
+AND
+GetEquippedItem(_Warlock, "Melee Main Weapon", (ITEM)_Weapon)
+AND
+HasActiveStatus(_Weapon, "PACT_BLADE_PSYCHIC", 1)
+THEN
+DB_DND55E_PactBladePsychic(_Warlock, _Weapon);
+
+IF
+SavegameLoaded()
+AND
+DB_Players((CHARACTER)_Warlock)
+AND
+GetEquippedItem(_Warlock, "Melee Main Weapon", (ITEM)_Weapon)
+AND
+HasActiveStatus(_Weapon, "PACT_BLADE_RADIANT", 1)
+THEN
+DB_DND55E_PactBladeRadiant(_Warlock, _Weapon);
+
+IF
+Died((CHARACTER)_Warlock)
+AND
+DB_DND55E_PactBlade(_Warlock, (ITEM)_Weapon)
+THEN
+PROC_DND55E_ClearPactBlade(_Warlock, _Weapon);
+
+IF
+StatusRemoved((ITEM)_Weapon, "PACT_BLADE", _, _)
+AND
+DB_DND55E_PactBlade((CHARACTER)_Warlock, _Weapon)
+THEN
+ApplyStatus(_Weapon, "PACT_BLADE", -1.0, 1, _Warlock);
+
+IF
+StatusRemoved((ITEM)_Weapon, "PACT_BLADE_NECROTIC", _, _)
+AND
+DB_DND55E_PactBladeNecrotic((CHARACTER)_Warlock, _Weapon)
+THEN
+ApplyStatus(_Weapon, "PACT_BLADE_NECROTIC", -1.0, 1, _Warlock);
+
+IF
+StatusRemoved((ITEM)_Weapon, "PACT_BLADE_PSYCHIC", _, _)
+AND
+DB_DND55E_PactBladePsychic((CHARACTER)_Warlock, _Weapon)
+THEN
+ApplyStatus(_Weapon, "PACT_BLADE_PSYCHIC", -1.0, 1, _Warlock);
+
+IF
+StatusRemoved((ITEM)_Weapon, "PACT_BLADE_RADIANT", _, _)
+AND
+DB_DND55E_PactBladeRadiant((CHARACTER)_Warlock, _Weapon)
+THEN
+ApplyStatus(_Weapon, "PACT_BLADE_RADIANT", -1.0, 1, _Warlock);
 
 IF
 Unequipped(_MagicItem, _Char)
