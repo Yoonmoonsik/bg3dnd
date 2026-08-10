@@ -1839,6 +1839,7 @@ type "SpellData"
 data "SpellType" "Shout"
 using "Shout_Rage_Totem_Wolf"
 data "SpellProperties" "AI_IGNORE:IF(not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_WOLF,100,100);AI_IGNORE:IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_TOTEM_WOLF_2,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);"
+data "ExtraDescription" "h3f4c0be2gf28cg9925g8be8g0c8a747faf6e;1"
 data "TooltipStatusApply" "ApplyStatus(RAGE_TOTEM_WOLF,100,100)"
 data "Requirements" ""
 

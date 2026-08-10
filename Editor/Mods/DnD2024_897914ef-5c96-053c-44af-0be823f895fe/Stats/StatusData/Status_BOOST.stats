@@ -4391,6 +4391,7 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_STOP_REMOVE') and Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2f5f424bg14ceg447ag33b9g312025e7738d" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4398,10 +4399,20 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e9f3206f-32c2-4ccb-83fd-3b716fd09f99" />
         <field name="Name" type="NameTableFieldDefinition" value="RAGE_TOTEM_WOLF_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d168460-cd91-4cf2-84a0-2a0f546770e0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,4.5,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_PackHowl_Barbarian);Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);UnlockSpell(Shout_ExtendRage);Attribute(ForceMainhandAlternativeEquipBones);" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_STOP_REMOVE') and Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h708146b3g1fd7g7ca1g06e9g815f4a5e342b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="446451be-7f5c-4759-b3b8-72bd951bb285" />
+        <field name="Name" type="NameTableFieldDefinition" value="RAGE_TOTEM_WOLF_AURA_STATUS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ed3870f0-b4fc-418e-92ae-379147eba9d4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfc88b2cagdfdcg7342gecebg306e2918ed9e" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):SourceAllyAdvantageOnAttack(AttackTarget);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

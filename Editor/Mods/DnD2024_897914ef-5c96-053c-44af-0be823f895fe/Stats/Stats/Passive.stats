@@ -1136,6 +1136,14 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,2d6, Force,Magical);ApplyStatus(SELF,PASSIVE_WILDMAGIC_MAGICRETRIBUTION_DEFENDER,100,0);ApplyStatus(PASSIVE_WILDMAGIC_MAGICRETRIBUTION_ATTACKER,100,0)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f8e237b-f8f4-4415-8c8e-ea6fde8bfe2e" />
+        <field name="Name" type="NameTableFieldDefinition" value="TotemSpirit_Wolf" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bef64409-c9c1-412b-8d4a-5f11eb6cfa52" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h162775ecg7b9egc133g5182g07c9126dbe3d" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8c2b9822-4e1d-4443-b67e-1f10c7e9f8d7" />

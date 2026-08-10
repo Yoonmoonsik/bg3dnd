@@ -791,6 +791,11 @@ using "WildMagicBarbarian_MagicRetribution_Passive"
 data "DescriptionParams" "DealDamage(2d6, Force)"
 data "StatsFunctors" "DealDamage(SWAP,2d6, Force,Magical);ApplyStatus(SELF,PASSIVE_WILDMAGIC_MAGICRETRIBUTION_DEFENDER,100,0);ApplyStatus(PASSIVE_WILDMAGIC_MAGICRETRIBUTION_ATTACKER,100,0)"
 
+new entry "TotemSpirit_Wolf"
+type "PassiveData"
+using "TotemSpirit_Wolf"
+data "Description" "h162775ecg7b9egc133g5182g07c9126dbe3d;1"
+
 new entry "WorldTree_3_VitalityOfTheTree"
 type "PassiveData"
 data "DisplayName" "h7f11fde8g7022gc624gc07cg0bf0afe43eb0;1"
