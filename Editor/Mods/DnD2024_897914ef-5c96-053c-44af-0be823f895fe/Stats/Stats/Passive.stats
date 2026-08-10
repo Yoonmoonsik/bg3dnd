@@ -3717,6 +3717,13 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="1697beb7-5ef1-43ee-af85-b204fb265666" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha8c51db9g127cg0f8dgf557g402626436b8c" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="6004" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SLOWFALL_PASSIVE_TECHNICAL,100,-1)" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

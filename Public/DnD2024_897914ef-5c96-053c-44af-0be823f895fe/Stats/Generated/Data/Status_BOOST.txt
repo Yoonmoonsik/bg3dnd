@@ -5262,6 +5262,12 @@ data "RemoveEvents" "OnDamage"
 data "OnApplyFunctors" "IF(IsDowned()):RegainHitPoints(1)"
 data "StatusGroups" "SG_RemoveOnRespec"
 
+new entry "SLOWFALL_PASSIVE_TECHNICAL"
+type "StatusData"
+data "StatusType" "BOOST"
+using "SLOWFALL_PASSIVE_TECHNICAL"
+data "StatusPropertyFlags" ""
+
 new entry "MONK_ELEMENTAL_ATTUNEMENT"
 type "StatusData"
 data "StatusType" "BOOST"

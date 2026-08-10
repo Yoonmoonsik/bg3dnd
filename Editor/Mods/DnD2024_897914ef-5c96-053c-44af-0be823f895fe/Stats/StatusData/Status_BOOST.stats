@@ -6541,6 +6541,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="323ecfdc-08d9-4049-ba32-70e4eece2960" />
+        <field name="Name" type="NameTableFieldDefinition" value="SLOWFALL_PASSIVE_TECHNICAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fe48ecd6-3370-4d3c-9bbd-9d93604b9a7d" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6f54feee-7f24-44fc-9c4c-68be4123977d" />
         <field name="Name" type="NameTableFieldDefinition" value="MONK_ELEMENTAL_ATTUNEMENT" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5c61ee4bg56f8gfe0fgb3c5g7712a4e3d87e" version="2" />
