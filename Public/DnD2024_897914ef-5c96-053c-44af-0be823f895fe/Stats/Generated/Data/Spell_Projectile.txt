@@ -2889,6 +2889,12 @@ data "SpellType" "Projectile"
 using "Projectile_HordeBreaker"
 data "ExplodeRadius" "3"
 
+new entry "Projectile_HordeBreaker_Explosion"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_HordeBreaker_Explosion"
+data "ExplodeRadius" "3"
+
 new entry "Projectile_SuperiorHuntersPrey"
 type "SpellData"
 data "SpellType" "Projectile"
