@@ -3874,12 +3874,11 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="687e6389-1297-474e-ac1d-b3f45e10ab5a" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_HuntersPrey" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_COLOSSUSSLAYER,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_COLOSSUSSLAYER,100,-1);RemoveStatus(HUNTERSPREY_HORDEBREAKER);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he100fd97g8c61g7accgc8ecg6628146a240d" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_COLOSSUSSLAYER,100,-1);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5d9a446dg2ff8g3030g019ag9d39f2044e8a" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('HUNTERSPREY_COLOSSUSSLAYER')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3887,12 +3886,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7a4a2f7e-861f-4e7e-ae21-86beaf7d5a4d" />
         <field name="Name" type="NameTableFieldDefinition" value="HuntersPrey_HordeBreaker" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7e9518fc-5a3d-41ca-a109-fac84c09e175" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_HORDEBREAKER,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_HORDEBREAKER,100,-1);RemoveStatus(HUNTERSPREY_COLOSSUSSLAYER);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_HordeBreaker_Ranged" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haf4865d4g944ag9cf5gf8b0g84b701adf954" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_HORDEBREAKER,100,-1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd0cfde10gdf36gc51age9f2gd9dc73cd5ad3" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('HUNTERSPREY_HORDEBREAKER')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3913,13 +3911,12 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2c4b5bb1-c8bf-401b-b89b-5e6d038dce3c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_DefensiveTactics" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_ESCAPETHEHORDE,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_ESCAPETHEHORDE,100,-1);RemoveStatus(DEFENSIVETACTICS_MULTIATTACKDEFENSE);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_EscapeTheHorde" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha62718a8g865eg755cge556g86d7b1793646" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_ESCAPETHEHORDE,100,-1);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb4273983g8859g9cddgb28cge0e4b5463a5f" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('DEFENSIVETACTICS_ESCAPETHEHORDE')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3927,12 +3924,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dd2cd7b8-ae6b-41a7-a8f4-d9c7be82a167" />
         <field name="Name" type="NameTableFieldDefinition" value="DefensiveTactics_MultiattackDefense" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1e6633d3-48e1-4c5d-a7fa-43cfde65a8be" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_MULTIATTACKDEFENSE,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_MULTIATTACKDEFENSE,100,-1);RemoveStatus(DEFENSIVETACTICS_ESCAPETHEHORDE);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h72b0b6aeg9cf5g4b5fg0d9cg171c4820c0cd" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_MULTIATTACKDEFENSE,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MultiattackDefense" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb2ee2f95g8a45g9e37g0793gdda3dc90b5d7" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('DEFENSIVETACTICS_MULTIATTACKDEFENSE')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

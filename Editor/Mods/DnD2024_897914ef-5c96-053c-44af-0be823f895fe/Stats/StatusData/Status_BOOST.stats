@@ -6926,6 +6926,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ColossusSlayer" />
         <field name="Passives" type="StringTableFieldDefinition" value="ColossusSlayer;" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HUNTERSPREY" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6937,6 +6938,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_HordeBreaker_Ranged" />
         <field name="Passives" type="StringTableFieldDefinition" value="HordeBreaker;" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HUNTERSPREY" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6948,6 +6950,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_EscapeTheHorde" />
         <field name="Passives" type="StringTableFieldDefinition" value="EscapeTheHorde;" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DEFENSIVETACTICS" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6959,6 +6962,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MultiattackDefense" />
         <field name="Passives" type="StringTableFieldDefinition" value="MultiattackDefense;" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DEFENSIVETACTICS" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6981,6 +6985,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MultiattackDefense" />
         <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
