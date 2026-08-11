@@ -7917,6 +7917,11 @@ data "Boosts" "StatusImmunity(ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN);"
 new entry "__MAGIC ITEM__"
 type "PassiveData"
 
+new entry "MAG_Thunder_ReverberationOnStatusApply_Boots_Passive"
+type "PassiveData"
+using "MAG_Thunder_ReverberationOnStatusApply_Boots_Passive"
+data "Properties" "OncePerTurn"
+
 new entry "MAG_Monk_Magic_Gloves_Passive"
 type "PassiveData"
 using "MAG_Monk_Magic_Gloves_Passive"
