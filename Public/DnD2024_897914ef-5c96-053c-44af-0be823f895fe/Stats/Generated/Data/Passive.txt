@@ -7917,6 +7917,11 @@ data "Boosts" "StatusImmunity(ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN);"
 new entry "__MAGIC ITEM__"
 type "PassiveData"
 
+new entry "MAG_Thunder_Reverberation_Gloves_Passive"
+type "PassiveData"
+using "MAG_Thunder_Reverberation_Gloves_Passive"
+data "Properties" "OncePerTurn"
+
 new entry "MAG_Radiant_RadiatingOrb_Armor_Passive"
 type "PassiveData"
 using "MAG_Radiant_RadiatingOrb_Armor_Passive"
