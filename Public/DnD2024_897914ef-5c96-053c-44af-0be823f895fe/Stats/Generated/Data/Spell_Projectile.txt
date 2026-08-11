@@ -2894,6 +2894,7 @@ type "SpellData"
 data "SpellType" "Projectile"
 using "Projectile_HordeBreaker_Explosion"
 data "ExplodeRadius" "3"
+data "TargetConditions" "not HasStatus('HORDE_BREAKER_TECHNICAL') and not Item() and not Ally();"
 
 new entry "Projectile_SuperiorHuntersPrey"
 type "SpellData"

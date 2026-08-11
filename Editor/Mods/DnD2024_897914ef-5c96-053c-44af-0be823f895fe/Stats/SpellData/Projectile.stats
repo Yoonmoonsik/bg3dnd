@@ -3379,6 +3379,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="HordeBreaker_Explosion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a46f2282-17f4-4a87-ad8f-a1f4abc8d552" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasStatus('HORDE_BREAKER_TECHNICAL') and not Item() and not Ally();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
