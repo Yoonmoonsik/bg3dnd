@@ -10973,6 +10973,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b9297bfb-9ab9-4f8c-b47f-57564ab1d488" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Monk_Magic_Boots_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bd22384c-28c4-4f6d-812d-396acb7fa584" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeUnarmedAttack() and not HasPassive('ElementalAttunement_Acid',context.Source) and not HasPassive('ElementalAttunement_Cold',context.Source) and not HasPassive('ElementalAttunement_Fire',context.Source) and not HasPassive('ElementalAttunement_Lightning',context.Source) and not HasPassive('ElementalAttunement_Thunder',context.Source) and not HasPassive('KiEmpoweredStrikes',context.Source)):CharacterUnarmedDamage(WisdomModifier,Bludgeoning);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Acid',context.Source)):CharacterUnarmedDamage(WisdomModifier,Acid);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Cold',context.Source)):CharacterUnarmedDamage(WisdomModifier,Cold);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Fire',context.Source)):CharacterUnarmedDamage(WisdomModifier,Fire);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Lightning',context.Source)):CharacterUnarmedDamage(WisdomModifier,Lightning);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Thunder',context.Source)):CharacterUnarmedDamage(WisdomModifier,Thunder);IF(IsMeleeUnarmedAttack() and HasPassive('KiEmpoweredStrikes',context.Source)):CharacterUnarmedDamage(WisdomModifier,Force);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2e357082-3dca-4d3e-8ba1-d0f0c20c8b82" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Thunder_ReverberationOnRangeSpellDamage_Amulet_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d9622da3-948a-48c4-8fe0-092369603e77" />

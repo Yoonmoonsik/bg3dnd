@@ -7929,6 +7929,11 @@ data "Boosts" "StatusImmunity(ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN);"
 new entry "__MAGIC ITEM__"
 type "PassiveData"
 
+new entry "MAG_Monk_Magic_Boots_Passive"
+type "PassiveData"
+using "MAG_Monk_Magic_Boots_Passive"
+data "Boosts" "IF(IsMeleeUnarmedAttack() and not HasPassive('ElementalAttunement_Acid',context.Source) and not HasPassive('ElementalAttunement_Cold',context.Source) and not HasPassive('ElementalAttunement_Fire',context.Source) and not HasPassive('ElementalAttunement_Lightning',context.Source) and not HasPassive('ElementalAttunement_Thunder',context.Source) and not HasPassive('KiEmpoweredStrikes',context.Source)):CharacterUnarmedDamage(WisdomModifier,Bludgeoning);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Acid',context.Source)):CharacterUnarmedDamage(WisdomModifier,Acid);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Cold',context.Source)):CharacterUnarmedDamage(WisdomModifier,Cold);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Fire',context.Source)):CharacterUnarmedDamage(WisdomModifier,Fire);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Lightning',context.Source)):CharacterUnarmedDamage(WisdomModifier,Lightning);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Thunder',context.Source)):CharacterUnarmedDamage(WisdomModifier,Thunder);IF(IsMeleeUnarmedAttack() and HasPassive('KiEmpoweredStrikes',context.Source)):CharacterUnarmedDamage(WisdomModifier,Force);"
+
 new entry "MAG_Thunder_ReverberationOnRangeSpellDamage_Amulet_Passive"
 type "PassiveData"
 using "MAG_Thunder_ReverberationOnRangeSpellDamage_Amulet_Passive"
