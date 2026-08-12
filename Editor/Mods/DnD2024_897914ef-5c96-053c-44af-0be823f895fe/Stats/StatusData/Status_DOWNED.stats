@@ -10,7 +10,7 @@
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="RollDieAgainstDC(DiceType.d20,20)" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,2.5);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);StatusImmunity(SG_Prone);StatusImmunity(PRONE);StatusImmunity(PRONE_FALLEN);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_ICE);StatusImmunity(PRONE_SEWER);StatusImmunity(PRONE_THUNDEROUS_SMITE);StatusImmunity(SG_Condition);StatusImmunity(SHOCKWAVE);" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ResetCombatTurn();RestoreResource(Movement, 74%, 0);RestoreResource(BonusActionPoint, 100%, 0);IF(not HasStatus('ACTION_POINT_USED')):RestoreResource(ActionPoint, 1, 0)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ResetCombatTurn();RestoreResource(Movement, 74%, 0);RestoreResource(BonusActionPoint, 100%, 0);RestoreResource(ActionPoint, 1, 0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

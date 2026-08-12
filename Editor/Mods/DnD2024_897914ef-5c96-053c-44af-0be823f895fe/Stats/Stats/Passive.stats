@@ -81,14 +81,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="bd8b991c-423d-47dd-b968-7af96afca9c7" />
-        <field name="Name" type="NameTableFieldDefinition" value="TrackActionPointUsage" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasActionResource('ActionPoint',1,0, false)):ApplyStatus(SELF,ACTION_POINT_USED,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="04d36a71-fb9a-4fd3-b34a-16e83bdf196f" />
         <field name="Name" type="NameTableFieldDefinition" value="NoDashPreload" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />

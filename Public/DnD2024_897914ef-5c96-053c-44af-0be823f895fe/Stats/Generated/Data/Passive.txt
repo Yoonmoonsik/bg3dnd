@@ -58,11 +58,6 @@ data "Properties" "Highlighted"
 data "StatsFunctorContext" "OnLongRest"
 data "StatsFunctors" "IF(RollDieAgainstDC(DiceType.d20,11)):ApplyStatus(INSPIRATION_FROM_BACKGROUND,100,10)"
 
-new entry "TrackActionPointUsage"
-type "PassiveData"
-data "StatsFunctorContext" "OnCast"
-data "StatsFunctors" "IF(not HasActionResource('ActionPoint',1,0, false)):ApplyStatus(SELF,ACTION_POINT_USED,100,1)"
-
 new entry "NoDashPreload"
 type "PassiveData"
 data "StatsFunctorContext" "OnCombatStarted"

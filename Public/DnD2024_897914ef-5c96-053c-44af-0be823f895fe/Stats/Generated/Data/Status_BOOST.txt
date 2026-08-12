@@ -206,11 +206,6 @@ using "CRE_ASTRALPRISON_GRAVITY"
 data "StackPriority" "99"
 data "Boosts" "JumpMaxDistanceMultiplier(3);IgnoreFallDamage();CarryCapacityMultiplier(3);UnlockSpell(Projectile_LongJump_Jump);"
 
-new entry "ACTION_POINT_USED"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
-
 new entry "WET"
 type "StatusData"
 data "StatusType" "BOOST"
