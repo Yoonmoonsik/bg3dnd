@@ -7514,6 +7514,7 @@ data "SpellType" "Target"
 using "Target_RecklessAttack"
 data "SpellContainerID" "Target_RecklessAttack"
 data "SpellSuccess" "IF(not HasPassive('Barbarian_9_BrutalStrike',context.Source) and not HasStatus('RAGE_FRENZY',context.Source) and not HasStatus('RAGE_FRENZY_2',context.Source)):DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType);IF(not HasPassive('Barbarian_9_BrutalStrike',context.Source) and HasStatus('RAGE_FRENZY',context.Source)):DealDamage(MainMeleeWeapon+2d6,MainMeleeWeaponDamageType);IF(not HasPassive('Barbarian_9_BrutalStrike',context.Source) and HasStatus('RAGE_FRENZY_2',context.Source)):DealDamage(MainMeleeWeapon+3d6,MainMeleeWeaponDamageType);IF(HasPassive('Barbarian_9_BrutalStrike',context.Source) and not HasStatus('RAGE_FRENZY',context.Source) and not HasStatus('RAGE_FRENZY_2',context.Source)):DealDamage(MainMeleeWeapon+1d10,MainMeleeWeaponDamageType);IF(HasPassive('Barbarian_9_BrutalStrike',context.Source) and HasStatus('RAGE_FRENZY',context.Source)):DealDamage(MainMeleeWeapon+1d10+2d6,MainMeleeWeaponDamageType);IF(HasPassive('Barbarian_9_BrutalStrike',context.Source) and HasStatus('RAGE_FRENZY_2',context.Source)):DealDamage(MainMeleeWeapon+1d10+3d6,MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);"
+data "SpellFlags" "IsMelee;IsHarmful;AddFallDamageOnLand"
 
 new entry "Target_RecklessAttackForcefulBlow"
 type "SpellData"
