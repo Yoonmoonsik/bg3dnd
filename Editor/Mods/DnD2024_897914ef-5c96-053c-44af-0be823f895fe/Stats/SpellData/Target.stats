@@ -37,6 +37,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="34c87ba1-754a-4700-9178-d939ad7003c6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand);RemoveStatus(SELF,WEAPONMASTERY_NICK);" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('WEAPONMASTERY_NICK_BLOCK_OFFHANDATTACK');" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -44,7 +45,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="37637d34-01df-480c-a796-d3e7c401a2e2" />
         <field name="Name" type="NameTableFieldDefinition" value="OffhandAttack_DualWielder" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="34c87ba1-754a-4700-9178-d939ad7003c6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand);" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
@@ -13488,6 +13489,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="DualWielder(context.Source);" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnEquip;OnUnequip" enumeration_type_name="StatusEvent" version="1" />
         <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Melee" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13568,6 +13570,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="PolearmMaster_BonusAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d49ada2d-b5e8-418e-a99b-1596d60e4d05" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(HasAnyStatus({'SHILLELAGH_10', 'SHILLELAGH_5', 'SHILLELAGH'}, {}, {}, GetAttackWeapon())):DealDamage(1d4+SpellCastingAbilityModifier, Bludgeoning,,,0,,,,,,MainMeleeWeapon);IF(not HasAnyStatus({'SHILLELAGH_10', 'SHILLELAGH_5', 'SHILLELAGH'}, {}, {}, GetAttackWeapon()) and HasAnyStatus({}, {}, {'HEXBLADE_BIND', 'PACT_BLADE'}, GetAttackWeapon())):DealDamage(1d4+max(DexterityModifier,StrengthModifier), Bludgeoning,,,0,,,,,,MainMeleeWeapon);IF(not HasAnyStatus({'SHILLELAGH_10', 'SHILLELAGH_5', 'SHILLELAGH'}, {}, {}, GetAttackWeapon()) and HasAnyStatus({'HEXBLADE_BIND', 'PACT_BLADE'}, {}, {}, GetAttackWeapon())):DealDamage(1d4+CharismaModifier, Bludgeoning,,,0,,,,,,MainMeleeWeapon);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13584,6 +13587,14 @@
         <field name="Name" type="NameTableFieldDefinition" value="Jump_Ritual" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8a9f43f8-85cc-4ffc-836e-750508a925ab" />
         <field name="RitualCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8265fd8a-efba-4714-b729-dad4e81e1c53" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreatWeaponMaster_BonusAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="92e3b666-31b8-4ea6-8cbc-98f2cc8cc44b" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
