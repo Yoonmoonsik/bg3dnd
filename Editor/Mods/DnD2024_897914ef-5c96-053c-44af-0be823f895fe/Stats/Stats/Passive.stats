@@ -2937,7 +2937,7 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="4310" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusRemove" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Disease);StatusImmunity(SG_Poisoned);StatusImmunity(SG_Charmed,ELEMENTAL,FEY);StatusImmunity(SG_Frightened,ELEMENTAL,FEY);IF(HasStatus('LAND_ARID',context.Source)):Resistance(Fire,Resistant);IF(HasStatus('LAND_COLD',context.Source)):Resistance(Cold,Resistant);IF(HasStatus('LAND_TEMPERATE',context.Source)):Resistance(Lightning,Resistant);IF(HasStatus('LAND_PROPICAL',context.Source)):Resistance(Poison,Resistant);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Disease);StatusImmunity(SG_Poisoned);StatusImmunity(SG_Charmed,ELEMENTAL,FEY);StatusImmunity(SG_Frightened,ELEMENTAL,FEY);IF(HasStatus('LAND_ARID',context.Source)):Resistance(Fire,Resistant);IF(HasStatus('LAND_POLAR',context.Source)):Resistance(Cold,Resistant);IF(HasStatus('LAND_TEMPERATE',context.Source)):Resistance(Lightning,Resistant);IF(HasStatus('LAND_TROPICAL',context.Source)):Resistance(Poison,Resistant);" />
       </fields>
     </stat_object>
     <stat_object color="#FF9ACD32" is_substat="false">

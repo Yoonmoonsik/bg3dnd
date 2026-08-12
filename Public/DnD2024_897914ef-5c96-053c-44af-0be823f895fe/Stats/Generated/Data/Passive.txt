@@ -2122,7 +2122,7 @@ data "Icon" "PassiveFeature_NaturesWard"
 data "PriorityOrder" "4310"
 data "Properties" "Highlighted;ForceShowInCC"
 data "BoostContext" "OnStatusApply;OnStatusRemove"
-data "Boosts" "StatusImmunity(SG_Disease);StatusImmunity(SG_Poisoned);StatusImmunity(SG_Charmed,ELEMENTAL,FEY);StatusImmunity(SG_Frightened,ELEMENTAL,FEY);IF(HasStatus('LAND_ARID',context.Source)):Resistance(Fire,Resistant);IF(HasStatus('LAND_COLD',context.Source)):Resistance(Cold,Resistant);IF(HasStatus('LAND_TEMPERATE',context.Source)):Resistance(Lightning,Resistant);IF(HasStatus('LAND_PROPICAL',context.Source)):Resistance(Poison,Resistant);"
+data "Boosts" "StatusImmunity(SG_Disease);StatusImmunity(SG_Poisoned);StatusImmunity(SG_Charmed,ELEMENTAL,FEY);StatusImmunity(SG_Frightened,ELEMENTAL,FEY);IF(HasStatus('LAND_ARID',context.Source)):Resistance(Fire,Resistant);IF(HasStatus('LAND_POLAR',context.Source)):Resistance(Cold,Resistant);IF(HasStatus('LAND_TEMPERATE',context.Source)):Resistance(Lightning,Resistant);IF(HasStatus('LAND_TROPICAL',context.Source)):Resistance(Poison,Resistant);"
 
 new entry "__CIRCLE OF THE SEA 4400__"
 type "PassiveData"
