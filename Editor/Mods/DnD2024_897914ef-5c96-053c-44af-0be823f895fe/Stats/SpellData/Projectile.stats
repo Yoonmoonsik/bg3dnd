@@ -3872,6 +3872,412 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b019f2ce-865d-4e4c-84df-f4cd2290e557" />
+        <field name="Name" type="NameTableFieldDefinition" value="__NPC JUMP__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1f3884f6-0a9f-4397-a566-2aa70aea53e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEN_Jump_Spider" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="99949794-dd0b-4a04-9d44-3c02fda59c86" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="08224c96-bd71-4028-a9f4-dcedb60e46f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEN_KanonJump" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fec433f9-a917-4070-a75b-59b6b5f34c35" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f3b362bc-90b9-4ef9-9789-46b62f962453" />
+        <field name="Name" type="NameTableFieldDefinition" value="END_Jump_Ghoul_Flying" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="69032768-2325-41ff-85c5-16535f9b5ce6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd7b72e8-fbc2-401b-baf4-4813c439289e" />
+        <field name="Name" type="NameTableFieldDefinition" value="FOR_Goblin_Jump" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b64526ec-2d6a-4b67-902c-cc6b7a405133" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="08c23b1a-5209-492d-b78d-83543eb2386d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_AnimateDead_Ghoul_Flying" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9d10e897-8dba-4928-a1f9-e19df8be0fd9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="535365f4-4ece-4524-9d68-7d1fcce0d7b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Brewer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="46598b13-2edc-47b9-b3b0-1e898bccebcf" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1e54e00-da54-43b1-8670-611258ad71fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Bulette" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7505e915-e180-4584-86f1-f3073467e7b9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35c645a4-483a-4eea-8b2d-c9913bc3a71c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Bulette_Spawn" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fd6525b-dd30-434c-820d-12a5b0cd39a9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="45f93316-f68b-4626-a52b-1aa3477e642c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Cloaker" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b76ac50e-b9b0-4d8c-9407-a57c7e090c1e" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cf3d8014-0fa8-4a4c-821d-085536ce9188" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Drider" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="afba183a-3ced-4bdc-95ec-548cbef3c6cf" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cc5fafd7-ada7-4f67-83b5-f4559a46da01" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_FlamingSphere" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f83b1b0a-d684-49d3-9891-1af4b594f87e" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27bb9ed2-9482-4756-81bd-facbce3ea099" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Frog" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8aa5d3e3-4d70-4d98-8fbf-f9192a62f358" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb8a58ce-2d13-474e-b4f1-5ac30016a199" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Ghoul_Flying" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f0243679-8c04-4501-9c47-c9f129bb79cf" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9589b42f-3d2c-4f4a-bacf-74fda8ca2238" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_GiantEagle" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="40337f7e-eb87-4487-8668-5e60e56eb5f9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4fcba76f-08b4-43ac-ab1d-5dfbaef5d7e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Gnoll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c76434ad-b188-41d1-9d98-59c7db0457d4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="746cf7c7-006f-4f96-89d8-34509ec3e487" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Gremishka" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e72c2938-f186-4fc4-9094-c16f57991db4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="33e66dac-1c08-4088-9474-287a2f90e573" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Harpy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d402f3c-1313-4d8f-a80d-cc20c2525c27" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e53f3038-36f6-4d3b-ab0e-7747ad08324c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_HookHorror" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0f518d14-b441-4730-b9ae-8030d6b7b9ca" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0e656090-9055-4d5f-8553-59fcfc174470" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Imp" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb109c49-138b-4ad2-a9bc-f421394f1cda" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="49ca93de-85dd-4c93-99b0-e6980b9b8e55" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_IntellectDevourer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="75d43fed-444b-4eed-9b05-7bd166b883bc" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ec9c7711-f576-4f00-872f-4505b7016795" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Knockdown_AOE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cbbd5186-4818-493a-a03f-ecde17919910" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0519df7f-d6f0-4748-9fb1-b6a02338b980" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Knockdown_AOE_Alioramus" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b3a5fb2f-c984-4fe6-b777-98d945222265" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7db7064f-b5e5-48f4-b5e8-4ddf22fed66a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Laezel" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6b2c6621-1018-4a2c-be3b-b59a8ef653ed" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="344dd2be-cc84-47cc-a065-cc1902cf538b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Mephit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bd53fab5-3ea8-428e-b29d-857fe1c8fa0b" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e84992f3-1824-47ec-9d63-c654df61e540" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Minotaur" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="56c8562c-7bbe-4c4c-9be4-f47cc5d0f4c0" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:3;BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a3ca6b94-b351-46d8-b3fd-f60ed505f09a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_NoFallDamage" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="984a1065-9225-41bf-a6e2-eeec48b19257" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0de9c072-4a48-4a0d-9ae5-20ba4b7742a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_NPC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5f7ae569-cdb5-43cf-8b1b-b4b485f913bb" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="480b4fa5-ebde-4f35-a606-241ea8773eee" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Owlbear" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8738adfb-caa4-46e6-ac93-73403a07c994" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d6f9e98-f1d0-40e7-9b11-93ff9373cbfa" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Owlbear_Cub" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="edad127e-6445-4203-ab1d-57431f397994" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7c4d2b33-cf30-441f-8cad-8e98f80801a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Owlbear_Wildshape_Lunge" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d12c3acc-ecb5-49c5-a902-f98e657786de" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a17345f-9457-4759-9977-7c0469f1201f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Panther" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="65a16059-c24a-4bba-8162-b363afc28cab" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7639e5d-1c91-4fb2-9fdd-8aad9aca1bbd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Spectator" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fa85ca7a-0e68-4f6b-a06a-0129ebfbdd42" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="46e5c3d2-b018-442c-929c-b0fe73f7918e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Spider" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58f80a9f-1a79-4159-aed5-704f56be4c47" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a15ffbf0-f65b-41a7-a53f-620d73854d25" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Spider_Queen" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da3357a4-1fb2-4d4e-be60-b7d69686cb60" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9f932a8b-a9ca-4632-8eaf-c8fc4d484307" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Spider_Summon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a34eac72-a0ee-40c5-aaf0-75b042c93fd3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b9fddce-f14a-45c3-be3a-748ce36c1b01" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Spider_Tiny" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="817771d1-6544-423b-bc1c-fb616b37fce3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6fa300c0-be9b-418d-8db9-c4e009575bde" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Spider_WildShape" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="36c0fa07-f0a7-4aea-8ed2-9c02c403b680" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e843a4e-518f-450b-8aed-1c9f8a86160a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Tiny" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c19f3811-98a0-4a44-89e7-d3a264d66616" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="37f55818-a608-4893-b387-156394e8511b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_UndeadFace" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5716d95a-5933-46f4-a1bf-55cb0ac52522" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59458dfc-8330-4066-8129-1aa57ce8574c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Vampire_Bats" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fc77b13b-3c31-4748-a496-9b06cf5bd8c9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4d03a1bf-5a90-45d6-9327-8e4ed442eb13" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jump_Werewolf" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="21ee047e-e8d4-4271-bee0-2eb9ce2e2753" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ea4e3b1-a841-4922-b67b-3a4ae7f8cc9a" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_Dolor_Jump" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fd28420-f252-4693-a2b5-59215f3ddc69" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f142edbc-484a-49dc-9db5-976a9137ed18" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_Raphael_Jump" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b9b7cebb-d6de-4eeb-b78e-a14e0e6e7cc7" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98129bcc-92cc-4a45-9712-0900eabb50f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOO_Jump_Ghoul_Flying" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="729a2b15-0000-43c2-a759-7ce31d679e7c" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ccc96e89-4743-4598-a1af-91c29520aae6" />
+        <field name="Name" type="NameTableFieldDefinition" value="PLA_DesireJump" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f5ea4dc4-1477-4229-89b6-2ac1eb50861f" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="186bd4c0-38a9-40e1-81d6-2cb6faf9e271" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelWatcher_Biped_Jump" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="03ad5ad6-96ac-4a50-82e4-10cc0cd5ff4b" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f7ebc65-8835-4d58-8673-032d43994134" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUT_Jump_Laezel" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1c15a874-5c9d-4ca4-8884-9239a11a1012" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="76108666-ea9c-4ce4-a113-c14d818b5f03" />
+        <field name="Name" type="NameTableFieldDefinition" value="UND_DarkLake_RaftCaptainJump" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ca65cb45-e41d-49fe-9736-9494217c9946" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="547b5926-e835-447a-a20e-f2a7eb5f81ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="WYR_Ironhand_GnomeJump" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f6e85729-c882-4e81-bf1d-e2249c09a7ff" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae8c6f9c-21f5-4fc0-9767-d50743e527d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="WYR_JourneysEnd_BardJump" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="030fe43c-d9e8-4b24-9db6-f637d28cac4a" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="24158576-aa3b-4c79-9615-4617c9840656" />
         <field name="Name" type="NameTableFieldDefinition" value="__SCROLL__" />
       </fields>
