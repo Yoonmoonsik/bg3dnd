@@ -2217,7 +2217,6 @@
                     <attribute id="UUID" type="guid" value="adc920c4-56d6-43e6-9615-121c35f7abfe"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,2,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="CircleOfTheLand"/>
                     <attribute id="PassivesAdded" type="LSString" value="Land_3_CircleOfTheLandSpells;Land_3_CircleOfTheLandSpells_Arid;Land_3_CircleOfTheLandSpells_Polar;Land_3_CircleOfTheLandSpells_Temperate;Land_3_CircleOfTheLandSpells_Tropical;Land_3_LandsAid"/>
@@ -2235,7 +2234,6 @@
                     <attribute id="UUID" type="guid" value="4e1839bb-77da-4481-9b37-3e23e4075283"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="CircleOfTheLand"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -2243,11 +2241,12 @@
                     <attribute id="UUID" type="guid" value="3ba83db0-463a-48df-a581-e4fe19d0ad7e"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,3,0)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="CircleOfTheLand"/>
-                    <attribute id="PassivesAdded" type="LSString" value="LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Land_6_NaturalRecovery"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(c15f9224-a600-4a10-a5e7-642eed9c4222)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(c15f9224-a600-4a10-a5e7-642eed9c4222);AddSpells(2910859a-1126-4279-9933-d4e61e081689,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="ba1f14d6-d40b-47ce-b071-91b491d87b27"/>
                     <attribute id="UUID" type="guid" value="11d8dae5-4b10-48c8-a1f4-dd063f11ce71"/>
                 </node>
