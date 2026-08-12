@@ -1,3 +1,9 @@
+new entry "Projectile_MainHandAttack"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_MainHandAttack"
+data "SpellFlags" "IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield;AddFallDamageOnLand"
+
 new entry "Projectile_MainHandAttack_Firearm"
 type "SpellData"
 data "SpellType" "Projectile"
@@ -36,6 +42,7 @@ data "SpellType" "Projectile"
 using "Projectile_MainHandAttack"
 data "TargetRadius" "27"
 data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack);CastOffhand[Attack(AttackType.MeleeOffHandWeaponAttack)]"
+data "SpellFlags" "IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield;AddFallDamageOnLand"
 
 new entry "Projectile_Jump"
 type "SpellData"

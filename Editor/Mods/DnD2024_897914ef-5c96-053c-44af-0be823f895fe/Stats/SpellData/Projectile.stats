@@ -3,9 +3,17 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="73cc4333-e07a-4d73-8f53-91543fbc6d2d" />
+        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dfe50d36-7285-467d-87df-1274e238fd42" />
         <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_Firearm" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="73cc4333-e07a-4d73-8f53-91543fbc6d2d" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="d23ed285-77c1-4467-a064-2dbf6bc239f1,6c253ed6-8087-4c13-bb98-1513938ffaed,1b614d6d-15b6-475b-bfb2-1008db1cd3f3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Projectile_MainHandAttack_Firearm" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ef285efc-0551-4929-b591-40fcfaac8369" />
@@ -48,6 +56,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack);CastOffhand[Attack(AttackType.MeleeOffHandWeaponAttack)]" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
