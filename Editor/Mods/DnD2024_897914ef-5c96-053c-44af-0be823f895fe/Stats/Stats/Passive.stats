@@ -2873,6 +2873,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="332eeeaa-dcd1-4cc1-adf5-69b2d109cc08" />
+        <field name="Name" type="NameTableFieldDefinition" value="Land_3_LandsAid" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h773e9cb8g4f4agad4egf609gdb85666d9d37" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d366d57g2abcg334egec99gd574e5abbc31" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Druid_LandsAid" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="4303" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_LandsAid);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1e39c238-190f-4a4c-9ee6-64feb00b7671" />
         <field name="Name" type="NameTableFieldDefinition" value="Land_3_CircleOfTheLandSpells_Arid" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
