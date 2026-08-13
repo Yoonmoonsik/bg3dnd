@@ -3052,7 +3052,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfa2950d9g0184g255ag6ff3gfe24dbf54ebc" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="VOID_STRIKE_OWNER" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(SpellId('Projectile_VoidStrike')):Advantage(AttackRoll);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(SpellId('Projectile_VoidStrike')):Advantage(AttackRoll);IF(SpellId('Projectile_VoidStrike_4')):Advantage(AttackRoll);IF(SpellId('Projectile_VoidStrike_5')):Advantage(AttackRoll);IF(SpellId('Projectile_VoidStrike_6')):Advantage(AttackRoll);IF(SpellId('Projectile_VoidStrike_Recast_3')):Advantage(AttackRoll);IF(SpellId('Projectile_VoidStrike_Recast_4')):Advantage(AttackRoll);IF(SpellId('Projectile_VoidStrike_Recast_5')):Advantage(AttackRoll);IF(SpellId('Projectile_VoidStrike_Recast_6')):Advantage(AttackRoll);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
@@ -3063,6 +3063,44 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ccdea1c2-ad45-42da-b5e5-8e34053b1ea1" />
         <field name="StackId" type="StringTableFieldDefinition" value="VOID_STRIKE" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b88e6705-6851-4ad4-b17d-07d6081d307e" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_STRIKE_RECAST_3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h939b7cccgc964gc711gd6f5gecea12c2f0bf" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_VoidStrike" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VOID_STRIKE_RECAST_3" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_VoidStrike_Recast_3);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="86f1c0da-1e0a-4013-ae87-92f7bbd858f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_STRIKE_RECAST_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b88e6705-6851-4ad4-b17d-07d6081d307e" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_VoidStrike_Recast_4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="28a937ed-42fa-48e6-8c2c-4bbed560eb34" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_STRIKE_RECAST_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b88e6705-6851-4ad4-b17d-07d6081d307e" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_VoidStrike_Recast_5);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee93974a-6c8b-44cb-b376-b0ff85201cad" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_STRIKE_RECAST_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b88e6705-6851-4ad4-b17d-07d6081d307e" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_VoidStrike_Recast_6);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
