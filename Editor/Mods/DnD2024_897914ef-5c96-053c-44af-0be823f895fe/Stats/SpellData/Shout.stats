@@ -4310,6 +4310,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="CreateSorceryPoints_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b2d2a30b-e94f-4bd8-b75c-869558191663" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:1;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SORCERYPOINT_1,100,-1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasActionResource('SorceryPoint', 14, 0, false, false, context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4319,6 +4321,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="af3a0ea0-dede-4b2a-858d-21d3d12a595a" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SORCERYPOINT_2,100,-1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasActionResource('SorceryPoint', 13, 0, false, false, context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4328,6 +4332,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f4e15d94-b411-448a-9235-3d05c56eb39e" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SORCERYPOINT_3,100,-1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasActionResource('SorceryPoint', 12, 0, false, false, context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4337,6 +4343,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5c05066f-8be1-4fe3-b702-047aeee15009" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:4;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SORCERYPOINT_4,100,-1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasActionResource('SorceryPoint', 11, 0, false, false, context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4346,6 +4354,61 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="fe2d38e8-9144-4808-8979-0d247598fe32" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:5;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SORCERYPOINT_5,100,-1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasActionResource('SorceryPoint', 10, 0, false, false, context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b2b1a35c-95f2-41f4-bc70-9a1e5d76303f" />
+        <field name="Name" type="NameTableFieldDefinition" value="CreateSpellSlot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="65be4741-b683-414e-a269-4208e1739d72" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbb5691a5g5880g56bdg40c2g576cef554451" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9f663b9f-9fcf-4ee6-b9cd-67b79ea00b1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="CreateSpellSlot_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cfb873e9-5424-48cd-b803-ea282a3f7fca" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('SPELLSLOT_1',context.Source)):ApplyStatus(SPELLSLOT_1_B,100,-1);IF(not HasStatus('SPELLSLOT_1',context.Source)):ApplyStatus(SPELLSLOT_1,100,-1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc69907d4g8c9eg708ag8797ge1e6e4d47653" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0cf59270-a3bb-4209-80e0-fb8fe78cfcb6" />
+        <field name="Name" type="NameTableFieldDefinition" value="CreateSpellSlot_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="17ecfe70-7906-4206-978c-494cef267b65" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('SPELLSLOT_2',context.Source)):ApplyStatus(SPELLSLOT_2_B,100,-1);IF(not HasStatus('SPELLSLOT_2',context.Source)):ApplyStatus(SPELLSLOT_2,100,-1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc69907d4g8c9eg708ag8797ge1e6e4d47653" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="822c3be1-91b4-4bfc-8d59-fc9c21fd0a99" />
+        <field name="Name" type="NameTableFieldDefinition" value="CreateSpellSlot_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5b455df2-b000-4575-9c1a-e225dfe072c1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('SPELLSLOT_3',context.Source)):ApplyStatus(SPELLSLOT_3_B,100,-1);IF(not HasStatus('SPELLSLOT_3',context.Source)):ApplyStatus(SPELLSLOT_3,100,-1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc69907d4g8c9eg708ag8797ge1e6e4d47653" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="477ccc7c-b048-4d66-86e1-afd9f3a599e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="CreateSpellSlot_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c96ee605-c0c4-4916-8b48-3a38dbe33bfb" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('SPELLSLOT_4',context.Source)):ApplyStatus(SPELLSLOT_4_B,100,-1);IF(not HasStatus('SPELLSLOT_4',context.Source)):ApplyStatus(SPELLSLOT_4,100,-1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc69907d4g8c9eg708ag8797ge1e6e4d47653" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9986ce54-fd6f-43c7-95c8-fb10b302a110" />
+        <field name="Name" type="NameTableFieldDefinition" value="CreateSpellSlot_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3c26a1a4-522e-4b00-ae54-02033f46b7fe" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('SPELLSLOT_5',context.Source)):ApplyStatus(SPELLSLOT_5_B,100,-1);IF(not HasStatus('SPELLSLOT_5',context.Source)):ApplyStatus(SPELLSLOT_5,100,-1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc69907d4g8c9eg708ag8797ge1e6e4d47653" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
