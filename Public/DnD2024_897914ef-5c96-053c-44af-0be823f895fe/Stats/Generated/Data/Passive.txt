@@ -4342,7 +4342,7 @@ data "BoostContext" "OnCreate;OnShortRest;OnLongRest"
 data "BoostConditions" "ClassLevelHigherOrEqualThan(2,'Warlock',context.Source);"
 data "Boosts" "IF(IsWarlockCantrip() and IsCharismaModifierPositive()):DamageBonus(CharismaModifier);IF(HasPassive('Celestial_3_CelestialSpells',context.Source) and (SpellId('Target_SacredFlame') or SpellId('Target_SacredFlame_BonusAction')) and IsCharismaModifierPositive()):DamageBonus(CharismaModifier);IF(HasPassive('PactOfTheTome',context.Source) and SpellId('Target_ThornWhip') and IsCharismaModifierPositive()):DamageBonus(CharismaModifier);"
 
-new entry "DevilsSight"
+new entry "DevilsSightPlayer"
 type "PassiveData"
 using "DevilsSight"
 data "DisplayName" "h56007d5dgf3f2gc9c2g10eegc2fef230c9e6;1"
