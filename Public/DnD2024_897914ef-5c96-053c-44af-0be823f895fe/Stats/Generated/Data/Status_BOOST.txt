@@ -9308,6 +9308,23 @@ new entry "__MAGIC ITEM__"
 type "StatusData"
 data "StatusType" "BOOST"
 
+new entry "MAG_FIRE_HEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MAG_FIRE_HEAT"
+data "TickFunctors" "IF(not HasStatus('DOWNED')):ApplyStatus(MAG_FIRE_HEAT_SELFHARM_TECHNICAL,100,0)"
+
+new entry "MAG_FIRE_HEAT_SELFHARM_TECHNICAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "MAG_FIRE_HEAT_SELFHARM_DAMAGE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "OnApplyFunctors" "IF(Combat()):DealDamage(1d4, Fire,Magical)"
+
 new entry "MAG_WEAPON_ATTACK_ROLL_BONUS"
 type "StatusData"
 data "StatusType" "BOOST"

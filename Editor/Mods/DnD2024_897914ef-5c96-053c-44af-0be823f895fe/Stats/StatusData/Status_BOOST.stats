@@ -11587,6 +11587,29 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a562c46-18f6-4cbe-ba89-49a53e983e1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_FIRE_HEAT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="90c79999-5ef7-4e7c-a11d-e29fe65e3e27" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DOWNED')):ApplyStatus(MAG_FIRE_HEAT_SELFHARM_TECHNICAL,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78c016c4-ada8-44f6-8489-f120b6fbca3f" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_FIRE_HEAT_SELFHARM_TECHNICAL" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d3a722b5-3c0b-4f1d-81fd-62be0f55d659" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_FIRE_HEAT_SELFHARM_DAMAGE" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(Combat()):DealDamage(1d4, Fire,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="77a28904-98f7-42e8-91c5-9bd87fd20d89" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_WEAPON_ATTACK_ROLL_BONUS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f5c83a54-a399-4273-87a5-f026ca910a5f" />
