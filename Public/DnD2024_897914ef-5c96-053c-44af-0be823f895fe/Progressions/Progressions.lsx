@@ -3964,7 +3964,6 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice10,1,0);ActionResource(SpellSlot,1,1)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Ranger"/>
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
                     <attribute id="UUID" type="guid" value="e6179c57-47e9-4f83-831e-28b73f4b5d0d"/>
@@ -4028,7 +4027,6 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice10,1,0);ActionResource(SpellSlot,1,2)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="Ranger"/>
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
                     <attribute id="UUID" type="guid" value="1e6721bf-8ba9-4495-9ff3-bcb0192369fe"/>
@@ -4072,7 +4070,7 @@
                 </node>
                 <node id="Progression">
                     <attribute id="AllowImprovement" type="bool" value="true"/>
-                    <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice10,1,0);ActionResource(SpellSlot,1,3)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice10,1,0);"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
