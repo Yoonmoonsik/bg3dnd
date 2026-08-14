@@ -213,6 +213,12 @@ using "WET"
 data "TickType" "StartTurn"
 data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;TickingWithSource"
 
+new entry "HEALTHBOOST_HARDCORE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "HEALTHBOOST_HARDCORE"
+data "Boosts" "IncreaseMaxHP(30%);RollBonus(Attack,2);SpellSaveDC(2);UnlockSpell(Projectile_Jump_Down);"
+
 new entry "__TOXIN__"
 type "StatusData"
 data "StatusType" "BOOST"
