@@ -1141,7 +1141,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2b874be4-c74b-493c-adee-11925563b413" />
         <field name="Name" type="NameTableFieldDefinition" value="AspectOfTheBeast_Stallion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c7728198-85e0-4b09-a6f5-cad33aa94653" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('DASH', context.Source);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellCategoryIs(SpellCategory.Dash) and Combat()" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
