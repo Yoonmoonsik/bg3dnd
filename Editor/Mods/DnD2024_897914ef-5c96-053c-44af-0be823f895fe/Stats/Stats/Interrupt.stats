@@ -1835,7 +1835,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3518e2eeg9593gae20g3e88gff65f6d3e6bb" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0f8708dbgeff3g4172g8db1g4d944084b8c1" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Shield" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-(1d10+ClassLevel(Illrigger)));ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);UseSpell(OBSERVER_TARGET,Target_Interrupt_Positive,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-(1d10+ClassLevel(Illrigger)/2));ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);UseSpell(OBSERVER_TARGET,Target_Interrupt_Positive,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;Seal:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>

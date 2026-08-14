@@ -1357,7 +1357,7 @@ using "Interrupt_ProtectiveField"
 data "DisplayName" "h3518e2eeg9593gae20g3e88gff65f6d3e6bb;1"
 data "Description" "h0f8708dbgeff3g4172g8db1g4d944084b8c1;1"
 data "Icon" "Spell_Shield"
-data "Properties" "AdjustRoll(OBSERVER_TARGET,-(1d10+ClassLevel(Illrigger)));ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);UseSpell(OBSERVER_TARGET,Target_Interrupt_Positive,true,true,true);"
+data "Properties" "AdjustRoll(OBSERVER_TARGET,-(1d10+ClassLevel(Illrigger)/2));ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);UseSpell(OBSERVER_TARGET,Target_Interrupt_Positive,true,true,true);"
 data "Cost" "ReactionActionPoint:1;Seal:1;"
 data "InterruptDefaultValue" "Ask;Enabled"
 
