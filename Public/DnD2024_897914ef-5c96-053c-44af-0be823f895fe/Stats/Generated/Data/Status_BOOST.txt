@@ -4068,7 +4068,7 @@ data "StatusType" "BOOST"
 data "StackId" "INVOKE_DUPLICITY_MOVE"
 data "StackType" "Ignore"
 data "TickType" "EndTurn"
-data "Boosts" "UnlockSpell(Teleportation_InvokeDuplicity_Move);UnlockSpell(Target_DuplicitousCasting,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_DuplicitousCantrip);"
+data "Boosts" "UnlockSpell(Teleportation_InvokeDuplicity_Move);UnlockSpell(Target_DuplicitousCasting_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasPassive('Trickery_6_TrickstersTransposition',context.Source)):UnlockSpell(Target_TrickstersTransposition);"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;TickingWithSource"
 
 new entry "INVOKE_DUPLICITY_AURA_2"

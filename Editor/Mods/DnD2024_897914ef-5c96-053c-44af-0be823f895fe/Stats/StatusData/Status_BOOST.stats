@@ -5054,7 +5054,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="INVOKE_DUPLICITY_MOVE" />
         <field name="StackId" type="StringTableFieldDefinition" value="INVOKE_DUPLICITY_MOVE" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Teleportation_InvokeDuplicity_Move);UnlockSpell(Target_DuplicitousCasting,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_DuplicitousCantrip);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Teleportation_InvokeDuplicity_Move);UnlockSpell(Target_DuplicitousCasting_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasPassive('Trickery_6_TrickstersTransposition',context.Source)):UnlockSpell(Target_TrickstersTransposition);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
