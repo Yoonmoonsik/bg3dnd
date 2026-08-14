@@ -7141,6 +7141,15 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bladesong_Weapon_Message" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5528aeb-eb83-4e61-b089-85fa8f0189e3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bladesong_Bladework" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand, BLADESONG_BLADEWORK,100,10);ApplyEquipmentStatus(MeleeOffHand, BLADESONG_BLADEWORK,100,10);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="71acf0b4-411c-4ad5-ae2b-03d8048d1cc3" />

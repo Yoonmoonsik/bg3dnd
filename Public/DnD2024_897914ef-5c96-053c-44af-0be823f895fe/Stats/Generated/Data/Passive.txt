@@ -5231,6 +5231,12 @@ type "PassiveData"
 new entry "Bladesong_Weapon_Message"
 type "PassiveData"
 
+new entry "Bladesong_Bladework"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnEquip;OnCreate"
+data "StatsFunctors" "ApplyEquipmentStatus(MeleeMainHand, BLADESONG_BLADEWORK,100,10);ApplyEquipmentStatus(MeleeOffHand, BLADESONG_BLADEWORK,100,10);"
+
 new entry "__GUNSLINGER 13000__"
 type "PassiveData"
 
