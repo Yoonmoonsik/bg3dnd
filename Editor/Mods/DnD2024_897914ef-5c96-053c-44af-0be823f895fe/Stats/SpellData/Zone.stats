@@ -735,6 +735,8 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_AstralFlood" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d10,Radiant,Magical);IF(not Item()):ApplyStatus(BLINDED,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d10/2,Radiant,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -744,6 +746,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5c15277a-9dd9-4957-892b-a4ae735af058" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d10,Radiant,Magical);IF(not Item()):ApplyStatus(BLINDED,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(6d10/2,Radiant,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -753,6 +757,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5c15277a-9dd9-4957-892b-a4ae735af058" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d10,Radiant,Magical);IF(not Item()):ApplyStatus(BLINDED,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(7d10/2,Radiant,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
