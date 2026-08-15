@@ -520,6 +520,22 @@
         <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_82" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1be5aa5a-e221-4f0e-a1bf-be25f5d23224" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="ArcaneArcher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77a3f5afg2328g47c0gb00agffee653d9a1e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h85ff75b5g7ec5g445dga8ffgf95bbb8f5cbc" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="537d34a9-c60d-4f1b-be41-312ab5d8c792" />
+        <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Fighter" />
+        <field name="PrimaryAbility" type="EnumerationTableFieldDefinition" value="Strength" enumeration_type_name="Ability" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Intelligence" enumeration_type_name="Ability" version="1" />
+        <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
+        <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="537d34a9-c60d-4f1b-be41-312ab5d8c792" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="721dfac3-92d4-41f5-b773-b7072a86232f" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_27" />

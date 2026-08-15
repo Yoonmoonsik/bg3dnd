@@ -3315,6 +3315,233 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3;" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c34049d5-f656-49d3-a2cc-8484feb2b88d" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_Parent" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d1c1319g7142g4ce1ga4f1gbc3245ba6d3b" version="1" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Bow" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" value="CastOffhand" />
+        <field name="ProjectileType" type="EnumerationTableFieldDefinition" value="Arrow" enumeration_type_name="ProjectileType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="ArcaneShot:1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Ammunition" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="96760664-e1cc-42e2-a2ab-01be2a4894ed,,;,,;8b5ee54a-b63e-4e5b-8949-a427c38ccc96,,;014e7952-7088-43fa-9124-f74452f5e065,,;c9409594-8480-4ae8-886e-9c50197db5ac,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;7e67bfd0-2fc2-4d10-bed5-cfda9e660de5,,;eb054308-7fce-4b85-bf4c-7a0031fda7ac,,:4a789a60-04b8-4a26-b476-65cf26ca558b,,;a11b8bcb-ba24-417a-aa86-4e4379c41ee2,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="TooltipOnMiss" type="StringTableFieldDefinition" value="5d31fdf4-1fad-4278-bc05-9667405ea008" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7bd0429e-327b-4d8f-aa4a-f85498d33376" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_BanishingArrow" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Charisma,SourceSpellDC(10,context.Source,Ability.Intelligence))):ApplyStatus(BANISHED_TEMP,100,1);ApplyStatus(SELF,ARCANESHOT_USED,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ArcaneArcher_BanishingArrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4336aff2gfe2dg43degba75g03c6c427c4c3" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h75544dc1g1199g4beaga7fag75d08d6ec9dc" version="2" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_ArcaneShot_BanishingArrow);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Charisma" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BANISHED,100,2)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="RangedMainWeaponRange" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack)" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="3efaa4f7-969e-4daf-b9c0-c6220a2a070c" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c34049d5-f656-49d3-a2cc-8484feb2b88d" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="b5cb1c4e-71db-4e63-86b0-6a1af902947b" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ef29bc8a-a6c8-4f05-9995-023694ddd161" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Character()" />
+        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="Enemy();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb378cf1-a013-4732-8f13-63cd4fb4847a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_BeguilingArrow" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Wisdom,SourceSpellDC(10,context.Source,Ability.Intelligence))):ApplyStatus(CHARMED,100,2);ApplyStatus(SELF,ARCANESHOT_USED,100,1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ArcaneArcher_BeguilingArrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h95da6042g7f82g47edga99agb0eb777a43aa" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(2d6,Psychic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHARMED,100,2)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h493562b3gfa2ag4cd6g8023gcd18d0c5baf0" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_ArcaneShot_BeguilingArrow);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Wisdom" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="RangedMainWeaponRange" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack)" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="7f5d228c-ef43-49e7-a136-9ba66cd64029" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c34049d5-f656-49d3-a2cc-8484feb2b88d" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="e116e9f5-8395-4f67-9bb5-1875fcb84e1d" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="aa469004-ed29-486d-b8da-e752b89ebb1e" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Character()" />
+        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="Enemy();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ed81ed64-d9d8-4fa4-8c25-13deef505dc4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_BurstingArrow" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:ExecuteWeaponFunctors(MainHand);TARGET:GROUND:CreateExplosion(Projectile_ArcaneShot_BurstingForce);ApplyStatus(SELF,ARCANESHOT_USED,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ArcaneArcher_BurstingArrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h60965778g3d4fg4b76g94b6g8a8c580326f2" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Force);Distance(3)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(2d6,Force)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc730bcd8g2184g4efdg8822g3483836a5a94" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_ArcaneShot_BurstingArrow);TARGET:ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="RangedMainWeaponRange" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack)" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="7177071d-ed5f-4244-9379-ca67121a36b5" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c34049d5-f656-49d3-a2cc-8484feb2b88d" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="700f32cf-97cc-4595-afde-ea2fd58873a4" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="0d7f8c34-5119-4577-b8ad-ff8e2cfd1a56" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Character()" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0.8&#xD;&#xA;" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="Enemy();" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcaneShot:1;" />
+        <field name="HitCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84cde938-5fe0-4a12-803b-2320e9d053cd" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_BurstingForce" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ed81ed64-d9d8-4fa4-8c25-13deef505dc4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANEBURSTING_DAMAGE,100,1);" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipOnMiss" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82838f0b-147b-42fe-8bfc-697c000736c3" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_EnfeeblingArrow" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Constitution,SourceSpellDC(10,context.Source,Ability.Intelligence))):ApplyStatus(ENFEEBLINGARROW,100,2);ApplyStatus(SELF,ARCANESHOT_USED,100,1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ArcaneArcher_EnfeeblingArrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10c0e295g2834g4139g9cd5g51e611a62f09" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENFEEBLINGARROW,100,2)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hecc07b75geffeg4b3dgb7cfg7efa14222c95" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_ArcaneShot_EnfeeblingArrow);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(2d6,Necrotic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Constitution" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="RangedMainWeaponRange" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack)" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="4b07abd4-5c71-451d-a45e-a0b1fcaae78b" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c34049d5-f656-49d3-a2cc-8484feb2b88d" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="bd0e152c-aff7-47b0-b2e7-6d4576216765" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="8609a43f-41ae-4937-8b85-3945a72c0b25" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Character()" />
+        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="Enemy();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e3b6b541-71c9-49d8-a018-46f46fc8c6d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_GraspingArrow" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_ArcaneShot_GraspingArrow);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ArcaneArcher_GraspingArrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd09a6124g3393g4a85gae8dg197743d2ab74" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Poison);DealDamage(2d6,Slashing);Distance(3)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(2d6,Poison)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Strength" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(GRASPINGARROW,100,10)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd405bdcag901dg4d23ga492ga3473a4ab1a5" version="5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Strength,SourceSpellDC(10,context.Source,Ability.Intelligence))):ApplyStatus(GRASPINGARROW,100,10);ApplyStatus(SELF,ARCANESHOT_USED,100,1)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="RangedMainWeaponRange" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack)" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="2c6b5e16-37a1-4f47-87de-4db65a779f55" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c34049d5-f656-49d3-a2cc-8484feb2b88d" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2ba5d164-9480-49ed-920b-2e6c0d9f898b" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="658df566-faab-42be-ad55-acedab5bcb91" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Character()" />
+        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="Enemy();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d65acc5e-fde1-4b6a-9421-1c35e610e2d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_SeekingArrow" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:ExecuteWeaponFunctors(MainHand);ApplyStatus(FAERIE_FIRE,100,2);ApplyStatus(SELF,ARCANESHOT_USED,100,1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ArcaneArcher_SeekingArrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha304cd89ge55ag4f04g8819g485c54f2900c" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(1d6,Force)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FAERIE_FIRE,100,2)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc9a863b5g02e2g432fg9bb0g197bdf9ccc92" version="3" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:ExecuteWeaponFunctors(MainHand)" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity,SourceSpellDC(10,context.Source,Ability.Intelligence))" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="RangedMainWeaponRange" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="83cf4d39-e2f1-4118-a552-726fd1b61c1b" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c34049d5-f656-49d3-a2cc-8484feb2b88d" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="85abf30d-cd09-4fdf-bfe3-c4c718e15ec8" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="65825ed0-4404-44f1-bae1-90e825e9d099" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Character()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcaneShot:1;" />
+        <field name="HitCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h30287666ge193g488dgbcd5g5078e1d382b4" version="1" />
+        <field name="TooltipOnMiss" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6935136-7747-4615-bfae-e42d1289c5c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_ShadowArrow" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ArcaneArcher_ShadowArrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h963781b4gd2b3g460egb6fcg8c1c48cea0cc" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(2d6,Psychic)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2dc96564g688ag48bbg9f3bgab00c27b3c2d" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Wisdom,SourceSpellDC(10,context.Source,Ability.Intelligence))):ApplyStatus(BLINDED,100,2);ApplyStatus(SELF,ARCANESHOT_USED,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_ArcaneShot_ShadowArrow);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLINDED,100,2)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Wisdom" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="RangedMainWeaponRange" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack)" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="89725bd0-5cd6-41a5-b09e-46635ed52921" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c34049d5-f656-49d3-a2cc-8484feb2b88d" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="cfca93ec-07d8-4c37-af5a-b35646cbac31" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="70114f76-0a85-4b8d-a555-bda8a6cf2d68" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Character()" />
+        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="Enemy();" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="610f94c0-1fbc-4744-8402-48ba1454dd86" />
