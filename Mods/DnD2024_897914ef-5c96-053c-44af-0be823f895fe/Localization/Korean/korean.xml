@@ -4371,14 +4371,18 @@
   <content contentuid="h82eeb0d5g97f8gb543g1fccgc1ddce66a5b2" version="2">언데드 후원자</content>
   <content contentuid="h8fe28200g46b7g051cga5b0ga6bd5b6a5b73" version="1">삶과 죽음의 순환을 거스르는 존재—강력한 리치, 뱀파이어, 또는 다른 불사의 존재—와 계약을 맺었습니다. 한때 필멸자였던 이 태고의 후원자들은 야망의 길과 죽음의 문을 지나는 경로를 직접 경험으로 알고 있습니다. 이들은 산 자들 사이에서 자신의 뜻을 수행하는 이들에게 이 불경한 지식과 다른 비밀들을 기꺼이 나눠줍니다.</content>
   <content contentuid="hf3e7b3e5gd803gdb85g050dg99a565121fbd" version="1">3레벨: 공포의 형상</content>
-  <content contentuid="h60b8e3b3ge993g7677ge82egd9590a175841" version="2">겁 없는 형상. 겁에 질림 상태에 면역이 됩니다.
+  <content contentuid="h60b8e3b3ge993g7677ge82egd9590a175841" version="3">보조 행동으로 후원자가 지닌 공포스러운 힘의 화신으로 변신하여, 1분간 아래의 이점을 얻습니다. 행동불능 상태가 되거나 형상을 해제하면(행동 불필요) 조기에 종료됩니다. 매력 보정치와 같은 횟수만큼 변신할 수 있으며(최소 1회), 긴 휴식을 마치면 소모한 모든 횟수를 회복합니다.
+
+생명의 모조. 1d10에 워락 레벨을 더한 만큼의 임시 생명력을 얻습니다.
+
+겁 없는 형상. 겁에 질림 상태에 면역이 됩니다. 변신할 때 겁에 질림 상태였다면, 그 상태가 즉시 종료됩니다.
 
 공포의 화신. 자신의 턴마다 한 번, 명중 굴림으로 크리처를 적중시키면, 그 크리처에게 자신의 주문 내성 난이도에 대한 지혜 내성 굴림을 강요할 수 있습니다. 내성 굴림에 실패하면, 목표는 다음 자신의 턴이 끝날 때까지 겁에 질림 상태가 됩니다.</content>
   <content contentuid="hcd558b81gae7eg26dag6eaegf0f7e3dd0197" version="1">3레벨: 언데드 주문</content>
   <content contentuid="h72a8bf1agc8fbgec94g5bd1g5c0893342c80" version="1">후원자의 마법 덕분에 항상 특정 주문이 준비된 상태가 됩니다. 언데드 주문 표에 명시된 워락 레벨에 도달하면, 그 이후로는 항상 그 목록의 주문이 준비되어 있습니다. 3레벨에는 &lt;LSTag Type="Spell" Tooltip="Target_Bane"&gt;액운&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_Blindness"&gt;실명&lt;/LSTag&gt;, 환영력, 독 광선을 익힙니다. 5레벨에는 망자와 대화와 &lt;LSTag Type="Spell" Tooltip="Target_AnimateDead"&gt;망자 조종&lt;/LSTag&gt;을 익힙니다. 7레벨에는 &lt;LSTag Type="Spell" Tooltip="Target_Invisibility_Greater"&gt;상급 투명&lt;/LSTag&gt;과 환영 살해자를 익힙니다. 9레벨에는 죽음의 무도와 죽음 구름을 익힙니다.</content>
   <content contentuid="h423f4d8eg647cg79b9g302bg9ad97549087a" version="2">3레벨에는 액운, &lt;LSTag Type="Spell" Tooltip="Target_Blindness"&gt;실명&lt;/LSTag&gt;, 환영력, 독 광선을 익힙니다. 5레벨에는 망자와 대화와 망자 조종을 익힙니다. 7레벨에는 &lt;LSTag Type="Spell" Tooltip="Target_Invisibility_Greater"&gt;상급 투명&lt;/LSTag&gt;과 환영 살해자를 익힙니다. 9레벨에는 죽음의 무도와 죽음 구름을 익힙니다.</content>
   <content contentuid="h51d8435ag421eg4abdg2702ga3868c2dab5c" version="1">6레벨: 무덤에 닿은 자</content>
-  <content contentuid="h9978d0deg7d77g5755g43fbg0caf50e3b407" version="2">후원자의 힘이 자신의 육체와 마법에 깊은 영향을 미쳐, 다음 이점을 부여합니다.
+  <content contentuid="h9978d0deg7d77g5755g43fbg0caf50e3b407" version="3">후원자의 힘이 자신의 육체와 마법에 깊은 영향을 미쳐, 다음 이점을 부여합니다.
 
 비전 괴사. 자신의 공격, 워락 주문, 워락 특성으로 인한 사령 피해는 사령 피해 저항을 무시합니다.
 
@@ -4386,9 +4390,13 @@
 
 불사의 인내. 잠을 잘 필요가 없으며, 마법으로도 잠들게 할 수 없습니다.</content>
   <content contentuid="he206cdceg59e4gfa8cg4328gf3d7938622de" version="1">10레벨: 사령의 껍데기</content>
-  <content contentuid="hc58f0177g4e5fgb789g4272g3e57d5e733b0" version="1">불사와의 연결이 자신의 육체에 스며듭니다. 다음 이점을 얻습니다.
+  <content contentuid="hc58f0177g4e5fgb789g4272g3e57d5e733b0" version="2">불사와의 연결이 자신의 육체에 스며듭니다. 다음 이점을 얻습니다.
 
-사령 회복력. 사령 피해에 면역이 됩니다.</content>
+사령 회복력. 사령 피해에 저항을 얻습니다. 공포의 형상을 사용하는 동안에는 사령 피해에 면역이 됩니다.
+
+불경한 소생. 생명력이 0이 되고 즉사하지 않았다면, 자신의 육체가 죽음의 기운으로 폭발하게 할 수 있습니다. 자신을 중심으로 하는 9m 방사 안에 있는 원하는 크리처는 각각 자신의 주문 내성 난이도에 대한 건강 내성 굴림을 하며, 실패하면 2d10에 매력 보정치를 더한 사령 피해를 입고 성공하면 그 절반의 피해를 입습니다. 그 후 자신의 생명력은 워락 레벨의 두 배가 되며, 탈진 1단계를 얻습니다.
+
+이 이점을 한 번 사용하면, 짧은 휴식이나 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</content>
   <content contentuid="hcaaac561g47fbgc64dga290gc1f58fa033fa" version="1">영계의 범람</content>
   <content contentuid="h08797ed7gc753g8f41gd903g4ec54ed567d1" version="3">영계의 바다에서 에너지를 끌어와 자신으로부터 마법의 격류를 발산합니다. 끌어올 에너지의 유형으로 냉기와 광휘 중 하나를 선택합니다. 자신을 기점으로 하는 9m 원뿔 안에 있는 각 크리처는 민첩 내성 굴림을 해야 합니다. 실패하면 대상은 선택한 유형의 피해를 입고, 피해 유형에 따라 결정되는 추가 효과를 받습니다:
 
@@ -6471,4 +6479,28 @@
   <content contentuid="h0709c013g99b0gdc6cg2addgb8ecc04296bb" version="1">영계의 냉기</content>
   <content contentuid="hba2e93bcg0b57g355dg5803gd6ef0f19efec" version="2">다음 D20 판정에 불리 보정을 받습니다.</content>
   <content contentuid="h7ca33572ga86cgce48gd434gfe816699ddfd" version="1">영계의 실명</content>
+  <content contentuid="hb37581e4g1f18gd1e2g5637g4da5058b4ddc" version="1">공포의 형상</content>
+  <content contentuid="h790e3622gdcc2g6592g9c95g8de8f0b70afa" version="1">보조 행동으로 후원자가 지닌 공포스러운 힘의 화신으로 변신하여, 1분간 아래의 이점을 얻습니다. 행동불능 상태가 되거나 형상을 해제하면(행동 불필요) 조기에 종료됩니다. 매력 보정치와 같은 횟수만큼 변신할 수 있으며(최소 1회), 긴 휴식을 마치면 소모한 모든 횟수를 회복합니다.</content>
+  <content contentuid="hcb1640e8ge305g48c7g65beg2186fe64aa34" version="1">공포의 형상</content>
+  <content contentuid="h1a0652aag04b6g8cb4gead0g81c1b91c9fb6" version="1">보조 행동으로 후원자가 지닌 공포스러운 힘의 화신으로 변신하여, 1분간 아래의 이점을 얻습니다. 행동불능 상태가 되거나 형상을 해제하면(행동 불필요) 조기에 종료됩니다. 매력 보정치와 같은 횟수만큼 변신할 수 있으며(최소 1회), 긴 휴식을 마치면 소모한 모든 횟수를 회복합니다.
+
+생명의 모조. 1d10에 워락 레벨을 더한 만큼의 임시 생명력을 얻습니다.
+
+겁 없는 형상. 겁에 질림 상태에 면역이 됩니다. 변신할 때 겁에 질림 상태였다면, 그 상태가 즉시 종료됩니다.
+
+공포의 화신. 자신의 턴마다 한 번, 명중 굴림으로 크리처를 적중시키면, 그 크리처에게 자신의 주문 내성 난이도에 대한 지혜 내성 굴림을 강요할 수 있습니다. 내성 굴림에 실패하면, 목표는 다음 자신의 턴이 끝날 때까지 겁에 질림 상태가 됩니다.</content>
+  <content contentuid="h754ee763gfa45g5f72g1e1fgb00e69210fff" version="1">공포의 화신</content>
+  <content contentuid="h36874237g25b1g47eag13bdg179ffd6b4ec6" version="1">자신의 턴마다 한 번, 명중 굴림으로 크리처를 적중시키면, 그 크리처에게 자신의 주문 내성 난이도에 대한 지혜 내성 굴림을 강요할 수 있습니다. 내성 굴림에 실패하면, 목표는 다음 자신의 턴이 끝날 때까지 겁에 질림 상태가 됩니다.</content>
+  <content contentuid="h9d37ad4ag3569ge301gd8d6g7963c9e83ba2" version="1">공포의 형상</content>
+  <content contentuid="ha34e254dg39c8gc52bg7259gaa9e2bf59233" version="1">보조 행동으로 후원자가 지닌 공포스러운 힘의 화신으로 변신하여, 1분간 아래의 이점을 얻습니다. 행동불능 상태가 되거나 형상을 해제하면(행동 불필요) 조기에 종료됩니다. 매력 보정치와 같은 횟수만큼 변신할 수 있으며(최소 1회), 긴 휴식을 마치면 소모한 모든 횟수를 회복합니다.
+
+생명의 모조. 1d10에 워락 레벨을 더한 만큼의 임시 생명력을 얻습니다.
+
+겁 없는 형상. 겁에 질림 상태에 면역이 됩니다. 변신할 때 겁에 질림 상태였다면, 그 상태가 즉시 종료됩니다.
+
+공포의 화신. 자신의 턴마다 한 번, 명중 굴림으로 크리처를 적중시키면, 그 크리처에게 자신의 주문 내성 난이도에 대한 지혜 내성 굴림을 강요할 수 있습니다. 내성 굴림에 실패하면, 목표는 다음 자신의 턴이 끝날 때까지 겁에 질림 상태가 됩니다.</content>
+  <content contentuid="h9903ed73gfeadg630bg4306g28a1df027049" version="1">불경한 소생</content>
+  <content contentuid="h066733abg26b1g988dgf08cg01f4e3757c53" version="1">불경한 소생</content>
+  <content contentuid="h77baae07gb508ga5a7g250fg1e4e4b4a196c" version="1">생명력이 0이 되고 즉사하지 않았다면, 자신의 육체가 죽음의 기운으로 폭발하게 할 수 있습니다. 자신을 중심으로 하는 9m 방사 안에 있는 원하는 크리처는 각각 자신의 주문 내성 난이도에 대한 건강 내성 굴림을 하며, 실패하면 2d10에 매력 보정치를 더한 사령 피해를 입고 성공하면 그 절반의 피해를 입습니다. 그 후 자신의 생명력은 워락 레벨의 두 배가 되며, 탈진 1단계를 얻습니다.</content>
+  <content contentuid="h0f4e5dbfgfb84gaa42gc66eg6660538c6909" version="1">불경한 소생</content>
 </contentList>
