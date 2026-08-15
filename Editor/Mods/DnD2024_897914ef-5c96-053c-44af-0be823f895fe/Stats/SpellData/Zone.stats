@@ -791,7 +791,7 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="7d30207d-4c3f-4f01-8e50-aaff803e1992" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_AstralFlood" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Cold,Magical);IF(not Item()):ApplyStatus(ASTRAL_COLD,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Cold,Magical);IF(not Item()):ApplyStatus(ASTRAL_COLD,100,2);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d10/2,Cold,Magical);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_AstralFlood_Cold" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Cold,Magical);" />
@@ -806,7 +806,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_AstralFlood_Cold" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d10,Cold,Magical);IF(not Item()):ApplyStatus(ASTRAL_COLD,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d10,Cold,Magical);IF(not Item()):ApplyStatus(ASTRAL_COLD,100,2);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d10/2,Cold,Magical);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d10,Cold,Magical);" />
       </fields>
@@ -818,7 +818,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="6c11e0d8-60e0-4879-988d-0ac555be68da" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d10,Cold,Magical);IF(not Item()):ApplyStatus(ASTRAL_COLD,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d10,Cold,Magical);IF(not Item()):ApplyStatus(ASTRAL_COLD,100,2);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(6d10/2,Cold,Magical);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d10,Cold,Magical);" />
       </fields>
@@ -830,7 +830,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="6c11e0d8-60e0-4879-988d-0ac555be68da" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d10,Cold,Magical);IF(not Item()):ApplyStatus(ASTRAL_COLD,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d10,Cold,Magical);IF(not Item()):ApplyStatus(ASTRAL_COLD,100,2);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(7d10/2,Cold,Magical);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d10,Cold,Magical);" />
       </fields>

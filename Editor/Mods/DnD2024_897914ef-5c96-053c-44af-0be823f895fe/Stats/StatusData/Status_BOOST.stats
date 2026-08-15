@@ -2727,6 +2727,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ca33572ga86cgce48gd434gfe816699ddfd" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ASTRAL_BLIND" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;Blind;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
