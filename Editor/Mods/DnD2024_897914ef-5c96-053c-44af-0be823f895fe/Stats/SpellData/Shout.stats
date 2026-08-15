@@ -4584,6 +4584,29 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="3c7b783e-d2ee-4125-9f94-0d48d44fe3e8" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b60b55a-0d0d-4b01-b994-90dfdb890a1b" />
+        <field name="Name" type="NameTableFieldDefinition" value="FormOfDread" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FORM_OF_DREAD,100,10);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcb1640e8ge305g48c7g65beg2186fe64aa34" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1a0652aag04b6g8cb4gead0g81c1b91c9fb6" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FORM_OF_DREAD,100,10);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Paladin_OathBreaker_DreadfulAspect_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Paladin_OathBreaker_DreadfulAspect_L1to3" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;FormOfDread:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;62e74220-ba87-4fe7-aa99-9d12cab9d654,,;b1f3f86a-a1fc-43f6-8a2b-0110a9f99ead,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c218f05b-1e12-4298-beff-e4d33a5fa5a5" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="1eee1ec0-263e-4f15-8909-84da438559e4" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="68ad05e0-ad4d-48cf-8b19-84434100711a" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF0000FF" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ede7faf2-0cd7-406e-af51-6d59fd67369c" />

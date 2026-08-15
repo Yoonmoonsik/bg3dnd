@@ -740,6 +740,14 @@
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h790e3622gdcc2g6592g9c95g8de8f0b70afa" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb37581e4g1f18gd1e2g5637g4da5058b4ddc" version="1"/>
+                    <attribute id="Name" type="FixedString" value="FormOfDread"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="ff45922b-9cc8-41fa-ac02-0d65175f5a49"/>
+                </node>
             </children>
         </node>
     </region>

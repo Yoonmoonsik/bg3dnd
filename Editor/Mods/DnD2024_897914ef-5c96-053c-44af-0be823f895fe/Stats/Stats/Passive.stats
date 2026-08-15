@@ -6680,14 +6680,34 @@
         <field name="UUID" type="IdTableFieldDefinition" value="89b2503c-1d3a-4cd9-abad-6b8c1e721e83" />
         <field name="Name" type="NameTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf3e7b3e5gd803gdb85g050dg99a565121fbd" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h60b8e3b3ge993g7677ge82egd9590a175841" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h60b8e3b3ge993g7677ge82egd9590a175841" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11403" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Frightened);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_FormOfDread);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0213d5e5-ad2f-434f-b45c-5702c0cf57ae" />
+        <field name="Name" type="NameTableFieldDefinition" value="UndeadPatron_3_FormOfDread_Resource" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnProficiencyChange;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(FormOfDread,1,0);IF(AbilityGreaterThan('Charisma',13,context.Source)):ActionResource(FormOfDread,1,0);IF(AbilityGreaterThan('Charisma',15,context.Source)):ActionResource(FormOfDread,1,0);IF(AbilityGreaterThan('Charisma',17,context.Source)):ActionResource(FormOfDread,1,0);IF(AbilityGreaterThan('Charisma',19,context.Source)):ActionResource(FormOfDread,1,0);IF(AbilityGreaterThan('Charisma',21,context.Source)):ActionResource(FormOfDread,1,0);IF(AbilityGreaterThan('Charisma',23,context.Source)):ActionResource(FormOfDread,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84adeaf1-935a-443c-9e84-84e1945d9fde" />
+        <field name="Name" type="NameTableFieldDefinition" value="FormOfDread_FrightfulAvatar" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h754ee763gfa45g5f72g1e1fgb00e69210fff" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h36874237g25b1g47eag13bdg179ffd6b4ec6" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11403" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,2,,,,not SavingThrow(Ability.Wisdom,SourceSpellDC()))" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6706,7 +6726,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c46c0355-c696-4cb7-948a-d81b93b5563c" />
         <field name="Name" type="NameTableFieldDefinition" value="UndeadPatron_6_GraveTouched" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h51d8435ag421eg4abdg2702ga3868c2dab5c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9978d0deg7d77g5755g43fbg0caf50e3b407" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9978d0deg7d77g5755g43fbg0caf50e3b407" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11406" />
@@ -6719,11 +6739,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9727fdba-c873-4a78-b9f9-ecf1294bf352" />
         <field name="Name" type="NameTableFieldDefinition" value="UndeadPatron_10_NecroticHusk" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he206cdceg59e4gfa8cg4328gf3d7938622de" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc58f0177g4e5fgb789g4272g3e57d5e733b0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc58f0177g4e5fgb789g4272g3e57d5e733b0" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11410" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Necrotic, Immune);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Necrotic,Resistant);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnLongRest;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,UNHOLY_RESUSCITATION,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF8A2BE2" is_substat="false">

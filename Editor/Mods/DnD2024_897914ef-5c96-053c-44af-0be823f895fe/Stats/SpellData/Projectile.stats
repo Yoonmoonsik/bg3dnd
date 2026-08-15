@@ -3957,6 +3957,25 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h417a65f0geb7ag67d8g7e8eg6c0ea35a7357" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="04955101-4bfd-41d5-9672-3419446a8f99" />
+        <field name="Name" type="NameTableFieldDefinition" value="UnholyResuscitation" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0.8&#xD;&#xA;" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d10+CharismaModifier,Necrotic);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((2d10+CharismaModifier)/2,Necrotic);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Enemy()" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="f3096300-ab26-41ce-a157-c19015add148" />
+        <field name="Icon" type="StringTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0f4e5dbfgfb84gaa42gc66eg6660538c6909" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFF0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fdce2ff5-e6a0-4eb4-9bcd-096e6b3e1dd9" />

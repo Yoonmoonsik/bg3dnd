@@ -9050,6 +9050,34 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6bd126f4-9e17-4bcc-9429-be8b08afdc0b" />
+        <field name="Name" type="NameTableFieldDefinition" value="FORM_OF_DREAD" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d37ad4ag3569ge301gd8d6g7963c9e83ba2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha34e254dg39c8gc52bg7259gaa9e2bf59233" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FORM_OF_DREAD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d10+ClassLevel(Warlock));StatusImmunity(SG_Frightened);IF(HasPassive('UndeadPatron_10_NecroticHusk',context.Source)):Resistance(Necrotic,Immune);" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FormOfDread_FrightfulAvatar;" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_Frightened)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="cee5da66-470d-4266-9c2f-33beb6ff3b3f" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a8f77e6-3609-4784-a79e-0ed9ce7bd69c" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNHOLY_RESUSCITATION" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h066733abg26b1g988dgf08cg01f4e3757c53" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h77baae07gb508ga5a7g250fg1e4e4b4a196c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
+        <field name="StackId" type="StringTableFieldDefinition" value="UNHOLY_RESUSCITATION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DownedStatus(UNHOLY_RESUSCITATION_DOWNED,5);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF0000FF" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d2e8836c-afbd-493f-94f0-c700250d0b90" />

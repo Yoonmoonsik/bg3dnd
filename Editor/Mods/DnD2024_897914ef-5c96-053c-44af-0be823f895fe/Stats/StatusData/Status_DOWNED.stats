@@ -31,5 +31,36 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DEATH_DEFIER);RegainHitPoints(Level,Guaranteed)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a69e7148-2a91-4772-ac23-31f5c4410205" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNHOLY_RESUSCITATION_DOWNED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9903ed73gfeadg630bg4306g28a1df027049" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
+        <field name="AnimationStart" type="ShortNameTableFieldDefinition" value="7e811df9-74e7-4515-bd02-7043164dbf33" />
+        <field name="AnimationLoop" type="ShortNameTableFieldDefinition" value="d7b7cf53-fe71-4a23-8011-9675a6e1d902" />
+        <field name="AnimationEnd" type="ShortNameTableFieldDefinition" value="ade4cf7f-a34a-40c4-b810-096f0c186bc2" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Downed" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="UseLyingPickingState" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Misc_Status_Downed_MO" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Misc_Status_Downed_MO_Stop" />
+        <field name="SoundVocalEnd" type="EnumerationTableFieldDefinition" value="NONE" enumeration_type_name="SoundVocalType" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DOWNED" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,2.5);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);StatusImmunity(SG_Prone);StatusImmunity(PRONE);StatusImmunity(PRONE_FALLEN);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_ICE);StatusImmunity(PRONE_SEWER);StatusImmunity(PRONE_THUNDEROUS_SMITE);StatusImmunity(SG_Condition);StatusImmunity(SHOCKWAVE);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(UNHOLY_RESUSCITATION);RegainHitPoints(ClassLevel(Warlock)*2,Guaranteed);CreateExplosion(Projectile_UnholyResuscitation)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ResetCombatTurn();RestoreResource(Movement, 100%, 0);RestoreResource(BonusActionPoint, 100%, 0);RestoreResource(ActionPoint, 100%, 0);RestoreResource(ReactionActionPoint, 100%, 0)" />
+        <field name="StableRoll" type="StringTableFieldDefinition" value="1d20" />
+        <field name="StableRollDC" type="IntegerTableFieldDefinition" value="10" />
+        <field name="NumStableSuccess" type="IntegerTableFieldDefinition" value="3" />
+        <field name="NumStableFailed" type="IntegerTableFieldDefinition" value="3" />
+        <field name="OnSuccess" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1)" />
+        <field name="OnRollsFailed" type="FunctorsTableFieldDefinition" value="ApplyStatus(DYING,100,-1,DoT)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Incapacitated" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="bd630d9d-0bad-4cac-a7d6-fa7057f4302d" />
+        <field name="HideOverheadUI" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

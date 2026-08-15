@@ -4371,14 +4371,18 @@ Unnerving Aura. When you transform and at the start of each of your subsequent t
   <content contentuid="h82eeb0d5g97f8gb543g1fccgc1ddce66a5b2" version="2">Undead Patron</content>
   <content contentuid="h8fe28200g46b7g051cga5b0ga6bd5b6a5b73" version="1">You’ve made a pact with a creature that defies the cycle of life and death: a powerful lich, a vampire, or another entity of undeath. Having once been mortal, these ancient patrons know firsthand the paths of ambition and the routes past the doors of death. They eagerly share this profane knowledge and other secrets with those who work their will among the living.</content>
   <content contentuid="hf3e7b3e5gd803gdb85g050dg99a565121fbd" version="1">Level 3: Form of Dread</content>
-  <content contentuid="h60b8e3b3ge993g7677ge82egd9590a175841" version="2">Fearless Form. You have Immunity to the Frightened condition.
+  <content contentuid="h60b8e3b3ge993g7677ge82egd9590a175841" version="3">As a Bonus Action, you transform into an avatar of your patron’s dreadful power, gaining the benefits below for 1 minute, until you have the Incapacitated condition, or until you end the form (no action required). You can transform a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+
+Facsimile of Life. You gain Temporary Hit Points equal to 1d10 plus your Warlock level.
+
+Fearless Form. You have Immunity to the Frightened condition. If you are Frightened when you transform, the condition immediately ends for you.
 
 Frightful Avatar. Once per turn, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Frightened condition until the end of your next turn.</content>
   <content contentuid="hcd558b81gae7eg26dag6eaegf0f7e3dd0197" version="1">Level 3: Undead Spells</content>
   <content contentuid="h72a8bf1agc8fbgec94g5bd1g5c0893342c80" version="1">The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Undead Spells table, you thereafter always have the listed spells prepared. At 3rd level, you learn &lt;LSTag Type="Spell" Tooltip="Target_Bane"&gt;Bane&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_Blindness"&gt;Blindness&lt;/LSTag&gt;, Phantasmal Force, and Ray of Sickness. At 5th level, you learn Speak with Dead and &lt;LSTag Type="Spell" Tooltip="Target_AnimateDead"&gt;Animate Dead&lt;/LSTag&gt;. At 7th level, you learn &lt;LSTag Type="Spell" Tooltip="Target_Invisibility_Greater"&gt;Greater Invisibility&lt;/LSTag&gt; and Phantasmal Killer. At 9th level, you learn Danse Macabre and Cloudkill.</content>
   <content contentuid="h423f4d8eg647cg79b9g302bg9ad97549087a" version="2">At 3rd level, you learn Bane, &lt;LSTag Type="Spell" Tooltip="Target_Blindness"&gt;Blindness&lt;/LSTag&gt;, Phantasmal Force, and Ray of Sickness. At 5th level, you learn Speak with Dead and Animate Dead. At 7th level, you learn &lt;LSTag Type="Spell" Tooltip="Target_Invisibility_Greater"&gt;Greater Invisibility&lt;/LSTag&gt; and Phantasmal Killer. At 9th level, you learn Danse Macabre and Cloudkill.</content>
   <content contentuid="h51d8435ag421eg4abdg2702ga3868c2dab5c" version="1">Level 6: Grave Touched</content>
-  <content contentuid="h9978d0deg7d77g5755g43fbg0caf50e3b407" version="2">Your patron’s powers have a profound effect on your body and magic, granting you the following benefits.
+  <content contentuid="h9978d0deg7d77g5755g43fbg0caf50e3b407" version="3">Your patron’s powers have a profound effect on your body and magic, granting you the following benefits.
 
 Arcane Necrosis. Necrotic damage from your attacks, Warlock spells, and Warlock features ignores Resistance to Necrotic damage.
 
@@ -4386,9 +4390,13 @@ Dreaded Necrosis. Spells you cast and attacks you make ignore &lt;LSTag Tooltip=
 
 Undead Endurance. You don’t need to sleep, and magic can’t put you to sleep.</content>
   <content contentuid="he206cdceg59e4gfa8cg4328gf3d7938622de" version="1">Level 10: Necrotic Husk</content>
-  <content contentuid="hc58f0177g4e5fgb789g4272g3e57d5e733b0" version="1">Your connection to undeath saturates your body. You gain the following benefits.
+  <content contentuid="hc58f0177g4e5fgb789g4272g3e57d5e733b0" version="2">Your connection to undeath saturates your body. You gain the following benefits.
 
-Necrotic Resilience. You have Immunity to Necrotic damage.</content>
+Necrotic Resilience. You have Resistance to Necrotic damage. While using your Form of Dread, you have Immunity to Necrotic damage.
+
+Unholy Resuscitation. If you drop to 0 Hit Points and don’t die outright, you can cause your body to erupt with deathly energy. Each creature of your choice in a 30-foot Emanation originating from you makes a Constitution saving throw against your spell save DC, taking Necrotic damage equal to 2d10 plus your Charisma modifier on a failed save or half as much damage on a successful one. Your Hit Points then change to twice your Warlock level, and you gain 1 Exhaustion level.
+
+Once you use this benefit, you can’t use it again until you finish a Short or Long Rest.</content>
   <content contentuid="hcaaac561g47fbgc64dga290gc1f58fa033fa" version="1">Astral Flood</content>
   <content contentuid="h08797ed7gc753g8f41gd903g4ec54ed567d1" version="3">You channel energy from the Astral Sea to unleash a torrent of magic from yourself. Choose Cold or Radiant for the type of energy channeled. Each creature in a 30-foot Cone originating from you makes a Dexterity saving throw. On a failed save, the target takes damage of the chosen type and suffers an additional effect determined by the damage type:
 
@@ -6471,4 +6479,28 @@ When a creature hits you with an attack roll, that creature has Disadvantage on 
   <content contentuid="h0709c013g99b0gdc6cg2addgb8ecc04296bb" version="1">Astral Cold</content>
   <content contentuid="hba2e93bcg0b57g355dg5803gd6ef0f19efec" version="2">Has Disadvantage on the next D20 Test it makes.</content>
   <content contentuid="h7ca33572ga86cgce48gd434gfe816699ddfd" version="1">Astral Blind</content>
+  <content contentuid="hb37581e4g1f18gd1e2g5637g4da5058b4ddc" version="1">Form of Dread</content>
+  <content contentuid="h790e3622gdcc2g6592g9c95g8de8f0b70afa" version="1">As a Bonus Action, you transform into an avatar of your patron’s dreadful power, gaining the benefits below for 1 minute, until you have the Incapacitated condition, or until you end the form (no action required). You can transform a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</content>
+  <content contentuid="hcb1640e8ge305g48c7g65beg2186fe64aa34" version="1">Form of Dread</content>
+  <content contentuid="h1a0652aag04b6g8cb4gead0g81c1b91c9fb6" version="1">As a Bonus Action, you transform into an avatar of your patron’s dreadful power, gaining the benefits below for 1 minute, until you have the Incapacitated condition, or until you end the form (no action required). You can transform a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+
+Facsimile of Life. You gain Temporary Hit Points equal to 1d10 plus your Warlock level.
+
+Fearless Form. You have Immunity to the Frightened condition. If you are Frightened when you transform, the condition immediately ends for you.
+
+Frightful Avatar. Once per turn, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Frightened condition until the end of your next turn.</content>
+  <content contentuid="h754ee763gfa45g5f72g1e1fgb00e69210fff" version="1">Frightful Avatar</content>
+  <content contentuid="h36874237g25b1g47eag13bdg179ffd6b4ec6" version="1">Once per turn, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Frightened condition until the end of your next turn.</content>
+  <content contentuid="h9d37ad4ag3569ge301gd8d6g7963c9e83ba2" version="1">Form of Dread</content>
+  <content contentuid="ha34e254dg39c8gc52bg7259gaa9e2bf59233" version="1">As a Bonus Action, you transform into an avatar of your patron’s dreadful power, gaining the benefits below for 1 minute, until you have the Incapacitated condition, or until you end the form (no action required). You can transform a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+
+Facsimile of Life. You gain Temporary Hit Points equal to 1d10 plus your Warlock level.
+
+Fearless Form. You have Immunity to the Frightened condition. If you are Frightened when you transform, the condition immediately ends for you.
+
+Frightful Avatar. Once per turn, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Frightened condition until the end of your next turn.</content>
+  <content contentuid="h9903ed73gfeadg630bg4306g28a1df027049" version="1">Unholy Resuscitation</content>
+  <content contentuid="h066733abg26b1g988dgf08cg01f4e3757c53" version="1">Unholy Resuscitation</content>
+  <content contentuid="h77baae07gb508ga5a7g250fg1e4e4b4a196c" version="1">If you drop to 0 Hit Points and don’t die outright, you can cause your body to erupt with deathly energy. Each creature of your choice in a 30-foot Emanation originating from you makes a Constitution saving throw against your spell save DC, taking Necrotic damage equal to 2d10 plus your Charisma modifier on a failed save or half as much damage on a successful one. Your Hit Points then change to twice your Warlock level, and you gain 1 Exhaustion level.</content>
+  <content contentuid="h0f4e5dbfgfb84gaa42gc66eg6660538c6909" version="1">Unholy Resuscitation</content>
 </contentList>
