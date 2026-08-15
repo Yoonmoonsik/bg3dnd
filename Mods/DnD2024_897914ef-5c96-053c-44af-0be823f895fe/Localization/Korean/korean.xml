@@ -4390,7 +4390,12 @@
 
 사령 회복력. 사령 피해에 면역이 됩니다.</content>
   <content contentuid="hcaaac561g47fbgc64dga290gc1f58fa033fa" version="1">영계의 범람</content>
-  <content contentuid="h08797ed7gc753g8f41gd903g4ec54ed567d1" version="1">영계의 바다에서 에너지를 끌어와 자신으로부터 9m 원뿔형으로 마법의 격류를 발산합니다. 원뿔 안의 모든 크리처는 민첩 내성 굴림에 성공해야 하며, 실패하면 광휘 피해를 입습니다. 목표는 자신으로부터 4.5m 이내만 볼 수 있게 되며, 다음 자신의 턴이 끝날 때까지 그 거리를 넘어서는 모든 것에 대해 &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;실명&lt;/LSTag&gt; 상태가 됩니다.</content>
+  <content contentuid="h08797ed7gc753g8f41gd903g4ec54ed567d1" version="3">영계의 바다에서 에너지를 끌어와 자신으로부터 마법의 격류를 발산합니다. 끌어올 에너지의 유형으로 냉기와 광휘 중 하나를 선택합니다. 자신을 기점으로 하는 9m 원뿔 안에 있는 각 크리처는 민첩 내성 굴림을 해야 합니다. 실패하면 대상은 선택한 유형의 피해를 입고, 피해 유형에 따라 결정되는 추가 효과를 받습니다:
+
+냉기 피해. 대상은 다음 자신의 턴이 끝나기 전에 하는 첫 D20 판정에 불리 보정을 받습니다.
+광휘 피해. 대상은 다음 자신의 턴이 끝날 때까지 실명 상태가 됩니다.
+
+성공하면 그 절반만큼만 피해를 입습니다.</content>
   <content contentuid="h7b203ccagf3bbgbc50ge697g2f7d6dd55d71" version="1">사용 가능한 직업: 소서러, 위저드</content>
   <content contentuid="h5cc2b487g9e1cg67f3gff45gb8bebf140d50" version="1">사용 가능한 직업: 소서러, 위저드</content>
   <content contentuid="h81b6ff86g5390gac9bg1d77ga53e64111601" version="1">사용 가능한 직업: 소서러, 위저드</content>
@@ -6463,4 +6468,7 @@
   <content contentuid="h87fda05fg80fdg949dg6eb1g69542080219a" version="1">[1]레벨 주문 슬롯을 얻었습니다. 같은 레벨의 주문 슬롯을 다시 생성하기 전에 이 주문 슬롯을 먼저 사용하십시오.</content>
   <content contentuid="hbb5691a5g5880g56bdg40c2g576cef554451" version="1">소서리 포인트를 소모해 &lt;LSTag Tooltip="SpellSlot"&gt;주문 슬롯&lt;/LSTag&gt;을 잠금 해제합니다. 이 주문 슬롯을 사용하기 전까지는 같은 레벨의 주문 슬롯을 다시 생성해도 효과가 없습니다.</content>
   <content contentuid="hc69907d4g8c9eg708ag8797ge1e6e4d47653" version="1">[1] 소서리 포인트를 소모해 [2]레벨 &lt;LSTag Tooltip="SpellSlot"&gt;주문 슬롯&lt;/LSTag&gt;을 잠금 해제합니다. 이 주문 슬롯을 사용하기 전까지는 같은 레벨의 주문 슬롯을 다시 생성해도 효과가 없습니다.</content>
+  <content contentuid="h0709c013g99b0gdc6cg2addgb8ecc04296bb" version="1">영계의 냉기</content>
+  <content contentuid="hba2e93bcg0b57g355dg5803gd6ef0f19efec" version="2">다음 D20 판정에 불리 보정을 받습니다.</content>
+  <content contentuid="h7ca33572ga86cgce48gd434gfe816699ddfd" version="1">영계의 실명</content>
 </contentList>
