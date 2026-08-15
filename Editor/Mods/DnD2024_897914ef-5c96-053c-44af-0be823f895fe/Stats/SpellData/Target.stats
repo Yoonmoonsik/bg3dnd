@@ -14016,6 +14016,14 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (HasStatus('HIDEOUS_LAUGHTER') or HasStatus('COMMAND_GROVEL') or HasStatus('PRONE') or HasStatus('PRONE_FALLEN') or HasStatus('PRONE_GREASE') or HasStatus('PRONE_ICE') or HasStatus('PRONE_SEWER') or HasStatus('PRONE_THUNDEROUS_SMITE') or HasStatus('KNOCKED_OUT') or HasStatus('SG_Prone') or HasStatus('SG_Sleeping') or HasStatus('SG_Restrained'));" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1ce6b79-1919-412d-8bf7-96dbb40a5a04" />
+        <field name="Name" type="NameTableFieldDefinition" value="Multiattack_HookHorror" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="82cca0fe-5f43-4d15-8e1b-5643ef9641b2" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (HasStatus('HIDEOUS_LAUGHTER') or HasStatus('COMMAND_GROVEL') or HasStatus('PRONE') or HasStatus('PRONE_FALLEN') or HasStatus('PRONE_GREASE') or HasStatus('PRONE_ICE') or HasStatus('PRONE_SEWER') or HasStatus('PRONE_THUNDEROUS_SMITE') or HasStatus('KNOCKED_OUT') or HasStatus('SG_Prone') or HasStatus('SG_Sleeping'));" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0eadcc66-207f-4947-be28-f96dee1c457a" />
