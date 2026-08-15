@@ -17,6 +17,20 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;AddFallDamageOnLand;CanAreaDamageEvade;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1327359-94ed-4036-94cf-db41df6b6ba2" />
+        <field name="Name" type="NameTableFieldDefinition" value="__DRUID__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c497a6e-66a4-4070-be5d-63f68dec5baf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rush_DeepRothe" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7b2ddb35-a5e0-4c90-996f-6e82018ddb89" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(1d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(1d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);TARGET:IF(not SavingThrow(Ability.Strength,SourceSpellDC())):ApplyStatus(PRONE,100,2);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b821c56a-187e-4550-ba53-363f9b4eec6a" />

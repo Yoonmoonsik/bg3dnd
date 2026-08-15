@@ -3278,6 +3278,28 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF006400" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c693b6ed-210c-4def-9395-149edd20e6b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="__DRUID__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b878afc5-1537-4e99-8257-fa310f0d7381" />
+        <field name="Name" type="NameTableFieldDefinition" value="Pounce_Panther_Summon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58884948-b33b-4477-a10a-33e335008fc2" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(2d8+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Bludgeoning,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(2d8+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);ApplyStatus(PRONE,100,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="862a1a2c-628f-41f2-bd6d-72a39bc9cb41" />
+        <field name="Name" type="NameTableFieldDefinition" value="Pounce_Dilophosaurus" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fe67ba79-3d2b-4f0e-af10-efeb7b00c6fc" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(2d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Bludgeoning,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(2d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);ApplyStatus(PRONE,100,2);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="40eb5305-8693-4367-8838-6a45b4740bf2" />

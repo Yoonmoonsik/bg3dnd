@@ -2835,10 +2835,22 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6f13f3b2-bbf9-41ca-ac91-9b4509592101" />
         <field name="Name" type="NameTableFieldDefinition" value="Moon_6_ImprovedCircleForms" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d3aa54bg7cf4g12d5g0d79g21d13c55e1c1" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h25a52b4bg965bga6bdgaee9gb81edcb888e9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h25a52b4bg965bga6bdgaee9gb81edcb888e9" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Druid_WildShape" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="4206" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a43c729-489d-4320-b232-89e1129e8a33" />
+        <field name="Name" type="NameTableFieldDefinition" value="LunarRadiance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4e247c5ag5398g03f2g7a9cgf569bf3a693e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h334bd2c8g7709g2b93g78b1g773fe3b8ebf1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Radiant" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="4206" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasPassive('Moon_6_ImprovedCircleForms',context.Source);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

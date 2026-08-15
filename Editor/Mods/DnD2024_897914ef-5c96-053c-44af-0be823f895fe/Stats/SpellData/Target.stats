@@ -10680,6 +10680,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5577082c-6541-4d7c-9da0-47041e7aeeac" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_GiantBadger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d5f094a5-03ac-4438-bc34-91325802f874" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Radiant,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="69c12468-50b9-4d02-afbf-55a41a85691a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Claws_GiantBadger_Wildshape" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e1ab86e4-64ff-4d57-b1c1-a27187d2a7ac" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, SourceSpellDC())):Force(2);IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Slashing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Radiant,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="18b415f5-35c1-4986-aad6-2fa26acdf943" />
         <field name="Name" type="NameTableFieldDefinition" value="Burrow_GiantBadger" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="887efcc2-c5ae-4bb5-824d-36bac08749af" />
@@ -10688,10 +10704,114 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0b3b0833-b55b-4f6c-b407-483d11e59751" />
+        <field name="Name" type="NameTableFieldDefinition" value="Claws_Bear_Polar" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="84dee106-8733-4509-ab65-c42f40f9ca13" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d4+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Slashing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d4+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Radiant,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f74dc88b-5526-498f-96e5-7947631be8c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Claws_Cat" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="775a0869-d292-401c-ab9d-4115306b9817" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Slashing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Radiant,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="493d8a53-50f6-45a9-9be6-b26b07f6dbb2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Gore_DeepRothe" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="218419af-efb9-48ed-8e7c-fd85da9e417b" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(3d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(3d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);IF(HasStatus('DEBRIS_THRESHOLD') or HasStatus('DEBRIS_THRESHOLD_LESSER') or HasStatus('DEBRIS_THRESHOLD_GREATER')):DealDamage(11,Force);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a4a10ef-99d5-4f3c-b0a0-445a4cabc120" />
+        <field name="Name" type="NameTableFieldDefinition" value="RendVision_Raven_Summon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e7445f32-6112-4402-8fce-753022e0e54b" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Radiant,Magical);ApplyStatus(BLINDED,100,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc647950-4650-44e7-a2f1-72560ce506ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="Beak_Raven_Summon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="27e001e6-bd50-4024-bfca-0c515b98712e" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d4+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d4+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Radiant,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="446112b7-412f-47ea-8036-6059f9ce5a05" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_GiantSpider_Wildshape" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e796970d-e174-4183-9591-b5eb3b2ea5b0" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(POISONED,100,2);IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d8+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d8+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Radiant,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="898d8024-977b-4bd1-a310-3dab1d00c664" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_Wolf_Dire_Wildshape" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a684a41c-44b2-4664-a1b8-4c9fcb110ce7" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(1d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(1d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);ApplyStatus(EXPOSING_BITE,100,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4df23921-e236-4b33-9315-eb1ed1a96055" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_Wolf_Dire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f65a147b-08de-4031-90ac-90cc0344f703" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(2d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(2d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7729a395-ae9e-4164-86ef-9926ccca440a" />
+        <field name="Name" type="NameTableFieldDefinition" value="RipandShred_SaberTooth_Tiger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="628c8b2a-22c2-4a38-8e60-a0cca44464aa" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Slashing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Radiant,Magical);ApplyStatus(WEAKENED_ARMOR,100,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="24fbe114-427e-4b21-8228-9271e0ac61e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_SaberTooth" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b22242ef-861f-4c71-af03-79056b27a3a1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Radiant,Magical);IF(not SavingThrow(Ability.Strength,14)):ApplyStatus(PRONE,100,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a138b487-0338-44e3-9a34-2584ab61620b" />
         <field name="Name" type="NameTableFieldDefinition" value="JugularStrike_Panther" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f3ed98cc-5633-4fbd-90a3-528f435867bb" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('PrimalStrike',context.Source)):DealDamage(max(1,1d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Piercing);IF(HasPassive('PrimalStrike',context.Source)):DealDamage(max(1,1d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Piercing,Magical);IF((HasStatus('HIDEOUS_LAUGHTER',context.Target) or HasStatus('COMMAND_GROVEL',context.Target) or HasStatus('PRONE',context.Target) or HasStatus('PRONE_FALLEN',context.Target) or HasStatus('PRONE_GREASE',context.Target) or HasStatus('PRONE_ICE',context.Target) or HasStatus('PRONE_SEWER',context.Target) or HasStatus('PRONE_THUNDEROUS_SMITE',context.Target) or HasStatus('KNOCKED_OUT',context.Target) or HasStatus('SG_Prone',context.Target) or HasStatus('SG_Sleeping',context.Target)) and not HasPassive('PrimalStrike',context.Source)):DealDamage(max(1,2d6+UnarmedMeleeAbilityModifier),Piercing);IF((HasStatus('HIDEOUS_LAUGHTER',context.Target) or HasStatus('COMMAND_GROVEL',context.Target) or HasStatus('PRONE',context.Target) or HasStatus('PRONE_FALLEN',context.Target) or HasStatus('PRONE_GREASE',context.Target) or HasStatus('PRONE_ICE',context.Target) or HasStatus('PRONE_SEWER',context.Target) or HasStatus('PRONE_THUNDEROUS_SMITE',context.Target) or HasStatus('KNOCKED_OUT',context.Target) or HasStatus('SG_Prone',context.Target) or HasStatus('SG_Sleeping',context.Target)) and HasPassive('PrimalStrike',context.Source)):DealDamage(max(1,2d6+UnarmedMeleeAbilityModifier),Piercing,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Radiant,Magical);IF((HasStatus('HIDEOUS_LAUGHTER',context.Target) or HasStatus('COMMAND_GROVEL',context.Target) or HasStatus('PRONE',context.Target) or HasStatus('PRONE_FALLEN',context.Target) or HasStatus('PRONE_GREASE',context.Target) or HasStatus('PRONE_ICE',context.Target) or HasStatus('PRONE_SEWER',context.Target) or HasStatus('PRONE_THUNDEROUS_SMITE',context.Target) or HasStatus('KNOCKED_OUT',context.Target) or HasStatus('SG_Prone',context.Target) or HasStatus('SG_Sleeping',context.Target)) and not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d6+UnarmedMeleeAbilityModifier),Piercing,Magical);IF((HasStatus('HIDEOUS_LAUGHTER',context.Target) or HasStatus('COMMAND_GROVEL',context.Target) or HasStatus('PRONE',context.Target) or HasStatus('PRONE_FALLEN',context.Target) or HasStatus('PRONE_GREASE',context.Target) or HasStatus('PRONE_ICE',context.Target) or HasStatus('PRONE_SEWER',context.Target) or HasStatus('PRONE_THUNDEROUS_SMITE',context.Target) or HasStatus('KNOCKED_OUT',context.Target) or HasStatus('SG_Prone',context.Target) or HasStatus('SG_Sleeping',context.Target)) and HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d6+UnarmedMeleeAbilityModifier),Radiant,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c606ddff-7ad6-4271-8d51-6c2ded7acc89" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_Panther" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="98fff25d-b837-4be5-a3b5-8d4e1d774e18" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,3d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,3d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Radiant,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2c88528e-4082-498d-9bc2-35121b579e87" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_Dilophosaurus" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7d3ff8b5-738b-4fc4-90b1-317449976138" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(1d10+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(1d10+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);DealDamage(1d8,Acid,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0e97d4d2-8cb9-4c78-9a80-7cbc2aac89df" />
+        <field name="Name" type="NameTableFieldDefinition" value="Claws_Owlbear_WildShape" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0db52c2b-4a0f-4bed-8b62-8d5666363caf" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d8+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Slashing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d8+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Radiant,Magical);Force(1.5);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -10,6 +10,16 @@ data "SpellSuccess" "DealDamage(UnarmedDamage,Bludgeoning);TARGET:IF(not SavingT
 data "TooltipDamageList" "DealDamage(UnarmedDamage,Bludgeoning)"
 data "SpellFlags" "IsHarmful;AddFallDamageOnLand;CanAreaDamageEvade;Temporary"
 
+new entry "Rush___DRUID__"
+type "SpellData"
+data "SpellType" "Rush"
+
+new entry "Rush_Rush_DeepRothe"
+type "SpellData"
+data "SpellType" "Rush"
+using "Rush_Rush_DeepRothe"
+data "SpellSuccess" "IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(1d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(1d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);TARGET:IF(not SavingThrow(Ability.Strength,SourceSpellDC())):ApplyStatus(PRONE,100,2);"
+
 new entry "Rush___PALADIN__"
 type "SpellData"
 data "SpellType" "Rush"

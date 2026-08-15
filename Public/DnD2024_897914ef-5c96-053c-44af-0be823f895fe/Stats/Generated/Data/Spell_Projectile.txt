@@ -2812,6 +2812,22 @@ data "SpellFlags" "IsTrap;CanAreaDamageEvade"
 data "HitAnimationType" "MagicalDamage_External"
 data "DamageType" "Necrotic"
 
+new entry "Projectile___DRUID__"
+type "SpellData"
+data "SpellType" "Projectile"
+
+new entry "Projectile_Pounce_Panther_Summon"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_Pounce_Panther_Summon"
+data "SpellSuccess" "IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(2d8+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Bludgeoning,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(2d8+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);ApplyStatus(PRONE,100,2);"
+
+new entry "Projectile_Pounce_Dilophosaurus"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_Pounce_Dilophosaurus"
+data "SpellSuccess" "IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(2d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Bludgeoning,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(2d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);ApplyStatus(PRONE,100,2);"
+
 new entry "Projectile___FIGHTER__"
 type "SpellData"
 data "SpellType" "Projectile"

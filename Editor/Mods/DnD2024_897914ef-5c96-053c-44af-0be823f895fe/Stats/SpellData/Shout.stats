@@ -2958,6 +2958,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="56b23506-6fee-4073-84d9-4ef9fb76db19" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h672e82feg2734g7895ga227gd76ffbfded41" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h2d9c047cg3532g702ege224g72b70a01e316" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_BADGER_PLAYER,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2967,6 +2968,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="cc486b34-b493-49a6-bf6f-32f7168e3d70" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3d2a0062g8a04g4942g776fg8389d4b68f1b" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3b7d345ag5345g49ffg6c00g90a138a19f95" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_BEAR_POLAR_PLAYER,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2976,6 +2978,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="fe6fdabe-ddf3-4a4c-b6ea-73fa0ffdb8f3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he8e15200g5d16g3cfag9fd3g57eec75fb43b" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h2fa825ceg9a28g20c8g48d0g40216361a33e" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_CAT_PLAYER,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2985,6 +2988,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="6c2b5d8e-2f9b-49e4-b519-90f88d25bb16" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6827c922gd910gca98gee99gdbd9b0f178b1" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h1479e906gc7dag1d98gf6d0g21845e6cae8e" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_DEEP_ROTHE_PLAYER,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2993,38 +2997,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WildShape_Combat_Dilophosaurus" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="44b2f9cf-dda6-4a8f-81b9-18345333a96e" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c7d363f6-fc05-4074-8dc6-950d0a9f5505" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildShape_Combat_Myrmidon_Air" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="faa0843b-b533-4b0f-8f61-77b7ff022cb9" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="30bcb17f-6898-4200-b348-5c99d098cad5" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildShape_Combat_Myrmidon_Earth" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ac5cf74a-54d8-46c8-a6bf-b14ec1b04c8a" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="72cafbe7-2814-4bb0-b70a-e98b488c3076" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildShape_Combat_Myrmidon_Fire" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4c8d3591-0885-4562-a80f-cfff898e830a" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5f7f50fb-0fbf-446a-a1d2-a6658bb76801" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildShape_Combat_Myrmidon_Water" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="32ec143c-e074-40fc-ae2a-1497621d5148" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_DILOPHOSAURUS_PLAYER,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3033,6 +3006,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WildShape_Combat_Owlbear" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dcfb2fac-e985-40b2-a995-0211eeff586b" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_OWLBEAR_PLAYER,100,-1);ApplyStatus(OWLBEAR_WILDSHAPE_RAGE,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3041,6 +3015,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Wildshape_Combat_Panther" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="048243bf-494e-4383-89b1-9037837ed44b" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_PANTHER_PLAYER,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3050,6 +3025,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3e8260e1-51f5-4799-ae8c-48794dcf44f7" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6c004994g2426gc2fbg7e1eg48891af8e993" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h23312037g140dg2713g1d14gd9b396f2c1e0" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_RAVEN_PLAYER,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3058,6 +3034,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Wildshape_Combat_SaberTooth_Tiger" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d9d07fc5-e441-437a-9f96-29e41daa8ac8" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_SABERTOOTH_TIGER_PLAYER,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3067,6 +3044,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c4876bd4-02bd-4089-bd36-0d0770b581eb" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9f0fbf45g41d6gb607g5104g558e4732b4de" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h30b03151g5293g0f58g25ecg192e954a1d18" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_SPIDER_GIANT_PLAYER,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3076,6 +3054,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ae216258-c9c3-4134-8f16-2c6b5fde900b" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc4d3f811g2a89g0e6dg5219gcf3bfa3167c3" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hec2215cegc8c3g171bg67cdg7de02f56bba6" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILDSHAPE_WOLF_DIRE_PLAYER,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3170,7 +3149,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c3be68fb-18a3-49c3-a321-d85370178db4" />
         <field name="Name" type="NameTableFieldDefinition" value="WildShape_Combat_Heal" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Projectile_StarryWisp;Target_CureWounds;Target_Moonbeam;Target_PlantGrowth;Shout_FountOfMoonlight;Target_CureWounds_Mass;Target_MoonlightStep_Spell;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Projectile_StarryWisp;Target_CureWounds;Target_Moonbeam;Target_PlantGrowth;Shout_FountOfMoonlight;Target_CureWounds_Mass;Target_MoonlightStep;Target_MoonlightStep_Spell;" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Druid_WildShape_Heal" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8d0f6247g32e9g935cg8e24g277269d5eee0" version="1" />
