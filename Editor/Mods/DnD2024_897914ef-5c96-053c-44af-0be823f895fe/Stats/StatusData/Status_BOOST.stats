@@ -2080,6 +2080,12 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="863bdf78-b198-4f3f-a49f-bced3c407075" />
+        <field name="Name" type="NameTableFieldDefinition" value="__EVOCATION SLEVEL 1__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="097a9751-7969-4507-8b12-b1195a4c57e6" />
         <field name="Name" type="NameTableFieldDefinition" value="CANTRIP_FROSTBITE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d91582cgf795g8507gdfb6g12c4347c9ea6" version="1" />
@@ -2689,6 +2695,38 @@
         <field name="Name" type="NameTableFieldDefinition" value="WITCH_BOLT_FIRST_TURN" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c49bbfa0-f7f1-44da-8861-e00f4dbfddf6" />
+        <field name="Name" type="NameTableFieldDefinition" value="__EVOCATION SLEVEL 2__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1eab071c-2204-414f-8a19-f5db742a34bf" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASTRAL_COLD" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0709c013g99b0gdc6cg2addgb8ecc04296bb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hba2e93bcg0b57g355dg5803gd6ef0f19efec" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_AstralFlood_Cold" />
+        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="WEAK" enumeration_type_name="SoundVocalType" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASTRAL_COLD" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(AllSavingThrows);Disadvantage(AttackRoll);Disadvantage(AllAbilities);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="39044361-a2df-4730-90ca-ce37ddcbc482" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="5c53ef4c-bd94-4567-94c1-8b1a8cefa7e3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b0a82bc7-d1de-47a4-ae75-c143cc0a5b29" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASTRAL_BLIND" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a625a726-b57f-468d-aa39-cfdee3df56e1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ca33572ga86cgce48gd434gfe816699ddfd" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASTRAL_BLIND" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

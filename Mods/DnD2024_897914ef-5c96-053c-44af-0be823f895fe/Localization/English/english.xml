@@ -4390,7 +4390,12 @@ Undead Endurance. You don’t need to sleep, and magic can’t put you to sleep.
 
 Necrotic Resilience. You have Immunity to Necrotic damage.</content>
   <content contentuid="hcaaac561g47fbgc64dga290gc1f58fa033fa" version="1">Astral Flood</content>
-  <content contentuid="h08797ed7gc753g8f41gd903g4ec54ed567d1" version="1">You channel energy from the Astral Sea to unleash a torrent of magic from you in a 30-foot Cone. Each creature in the Cone must succeed on a Dexterity saving throw or take Radiant damage. The target can see only within 15 feet of itself, and it has the &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt; condition for everything beyond that distance until the end of your next turn.</content>
+  <content contentuid="h08797ed7gc753g8f41gd903g4ec54ed567d1" version="3">You channel energy from the Astral Sea to unleash a torrent of magic from yourself. Choose Cold or Radiant for the type of energy channeled. Each creature in a 30-foot Cone originating from you makes a Dexterity saving throw. On a failed save, the target takes damage of the chosen type and suffers an additional effect determined by the damage type:
+
+Cold Damage. The target has Disadvantage on the next D20 Test it makes before the end of your next turn.
+Radiant Damage. The target has the Blinded condition until the end of your next turn.
+
+On a successful save, the target takes half as much damage only.</content>
   <content contentuid="h7b203ccagf3bbgbc50ge697g2f7d6dd55d71" version="1">Usable Classes: Sorcerer, Wizard</content>
   <content contentuid="h5cc2b487g9e1cg67f3gff45gb8bebf140d50" version="1">Usable Classes: Sorcerer, Wizard</content>
   <content contentuid="h81b6ff86g5390gac9bg1d77ga53e64111601" version="1">Usable Classes: Sorcerer, Wizard</content>
@@ -6463,4 +6468,7 @@ When a creature hits you with an attack roll, that creature has Disadvantage on 
   <content contentuid="h87fda05fg80fdg949dg6eb1g69542080219a" version="1">Gained a level [1] spell slot. Use this spell slot before creating another of the same level.</content>
   <content contentuid="hbb5691a5g5880g56bdg40c2g576cef554451" version="1">Spend Sorcery Points to unlock a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;. Creating another spell slot of the same level has no effect until this one is used.</content>
   <content contentuid="hc69907d4g8c9eg708ag8797ge1e6e4d47653" version="1">Spend [1] Sorcery Points to unlock a level [2] &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;. Creating another spell slot of the same level has no effect until this one is used.</content>
+  <content contentuid="h0709c013g99b0gdc6cg2addgb8ecc04296bb" version="1">Astral Cold</content>
+  <content contentuid="hba2e93bcg0b57g355dg5803gd6ef0f19efec" version="2">Has Disadvantage on the next D20 Test it makes.</content>
+  <content contentuid="h7ca33572ga86cgce48gd434gfe816699ddfd" version="1">Astral Blind</content>
 </contentList>
