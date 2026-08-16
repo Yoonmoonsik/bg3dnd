@@ -11827,26 +11827,5 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,ProficiencyBonus,Force,Magical)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c8381d87-a050-40ba-9333-43fd5ffd1517" />
-        <field name="Name" type="NameTableFieldDefinition" value="WorgBite" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0805a747g80bagaf09g663ag5acb0587c8ac" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0df6bd7eg5ba4g8c7fg7e50g95072f249ac3" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Wolf_Bite" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(WORG_BITE,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5a71790f-0e34-45e2-b53e-229df7107382" />
-        <field name="Name" type="NameTableFieldDefinition" value="WolfBite" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c8381d87-a050-40ba-9333-43fd5ffd1517" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h39511b28g3843gdb43gabc4g14a37310891b" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
-      </fields>
-    </stat_object>
   </stat_objects>
 </stats>
