@@ -110,12 +110,6 @@ Argument Solver, Blazer of Benevolence, Cap of Curing, Chain of Liberation, Char
 
 Spell scrolls are restricted to specific classes, with cantrip scrolls and Scrolls of Revivify always exempt.
 
-[size=5][b]Creatures[/b][/size]
-
-See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Creatures]Creatures[/url].
-
-Bugbear, Displacer Beast, Drider, Ettercap, Giant Eagle, Gnoll, Goblin, Harpy, Hobgoblin, Hook Horror, Hyena, Kobold, Kuo-Toa, Raven, Spectator, Spider, Wolf, Worg.
-
 [size=5][b]Support the Mod[/b][/size]
 
 This mod is developed and maintained for free, and it always will be. If you would like to support continued development, you can do so here:

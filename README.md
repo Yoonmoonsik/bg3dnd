@@ -26,7 +26,6 @@ For gameplay examples, build ideas, and practical references, check the playthro
 - [Races](#races)
 - [Spells](#spells)
 - [Items](#items)
-- [Creatures](#creatures)
 - [Support the Mod](#support-the-mod)
 - [Credits](#credits)
 
@@ -116,12 +115,6 @@ Argument Solver, Blazer of Benevolence, Cap of Curing, Chain of Liberation, Char
 ### Spell Scrolls
 
 Spell scrolls are restricted to specific classes, with cantrip scrolls and Scrolls of Revivify always exempt.
-
-## Creatures
-
-See [Creatures](https://github.com/Yoonmoonsik/bg3dnd/wiki/Creatures).
-
-Bugbear, Displacer Beast, Drider, Ettercap, Giant Eagle, Gnoll, Goblin, Harpy, Hobgoblin, Hook Horror, Hyena, Kobold, Kuo-Toa, Raven, Spectator, Spider, Wolf, Worg.
 
 ## Support the Mod
 
