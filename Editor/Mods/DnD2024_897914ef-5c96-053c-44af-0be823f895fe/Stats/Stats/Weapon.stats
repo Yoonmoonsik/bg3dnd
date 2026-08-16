@@ -505,7 +505,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FOR_IncompleteMasterwork_SussurDagger" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fa9327dc-7661-40e6-a032-81ad13552840" />
         <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
-        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SILENCED, 100, 2);" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(Enemy() and not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SILENCED, 100, 2);" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8733edb7-f04e-4b6d-ad48-7d49fb782bef" />
         <field name="Value" type="IntegerTableFieldDefinition" value="80" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="9b6a4ab2-323b-4030-89ab-030252bb6214" />
@@ -1144,7 +1144,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FOR_IncompleteMasterwork_SussurGreatsword" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d7f4e614-dd3e-4cb6-84ca-9f9a02634058" />
         <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
-        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SILENCED, 100, 2);" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(Enemy() and not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SILENCED, 100, 2);" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="44dedec0-df82-4ed3-b9ca-147bd830e312" />
         <field name="Value" type="IntegerTableFieldDefinition" value="150" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="9b6a4ab2-323b-4030-89ab-030252bb6214" />
@@ -1634,7 +1634,7 @@
         <field name="ItemGroup" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical)" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="86e7e503-a225-4b48-819e-2e24de1f904a" />
-        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(BURNING, 100, 2);" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(Enemy() and not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(BURNING, 100, 2);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -1724,6 +1724,7 @@
         <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="9b6a4ab2-323b-4030-89ab-030252bb6214" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical)" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(Enemy() and not SavingThrow(Ability.Charisma, SourceSpellDC())):ApplyStatus(BANE, 100, 2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3941,7 +3942,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="da9f92e3-2711-4794-af9b-79e5a88134a1" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="c040d1fc-4804-4774-8367-6dfa397e27e2" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="9b6a4ab2-323b-4030-89ab-030252bb6214" />
-        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Wisdom, SourceSpellDC())):ApplyStatus(FRIGHTENED, 100, 2);" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(Enemy() and not SavingThrow(Ability.Wisdom, SourceSpellDC())):ApplyStatus(FRIGHTENED, 100, 2);" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="WeaponMasteryVex;MAG_BansheeBless_Passive;" />
         <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
@@ -4349,7 +4350,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FOR_IncompleteMasterwork_SussurSickle" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0bf6b519-393b-4d74-a34f-ef1666ccf1ec" />
         <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
-        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SILENCED, 100, 2);" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(Enemy() and not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SILENCED, 100, 2);" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="6b95bb45-41c3-4954-ac2f-ef1aa169b0b6" />
         <field name="Value" type="IntegerTableFieldDefinition" value="120" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="9b6a4ab2-323b-4030-89ab-030252bb6214" />
@@ -4529,7 +4530,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Uncommon" enumeration_type_name="Rarity" version="1" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="WeaponMasterySap;GOB_Torturer_Spear_Passive;" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="86e7e503-a225-4b48-819e-2e24de1f904a" />
-        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Charisma, ManeuverSaveDC())):ApplyStatus(GOB_TORTURED, 100, 2);" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(Enemy() and not SavingThrow(Ability.Charisma, ManeuverSaveDC())):ApplyStatus(GOB_TORTURED, 100, 2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4538,7 +4539,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FOR_TrueSoul_Spear" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6a3cb483-fa5c-4fd5-9e9f-a35f8be4f20d" />
         <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
-        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Dexterity, ManeuverSaveDC())):ApplyStatus(BLINDED, 100, 2);" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(Enemy() and not SavingThrow(Ability.Dexterity, ManeuverSaveDC())):ApplyStatus(BLINDED, 100, 2);" />
         <field name="Value" type="IntegerTableFieldDefinition" value="330" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="WeaponMasterySap;FOR_TrueSoul_SpearPassive;" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="a2f4c951-7db4-4d60-9888-f2ad50af7110" />

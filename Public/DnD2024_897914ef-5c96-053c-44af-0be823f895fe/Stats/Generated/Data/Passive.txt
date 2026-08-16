@@ -7967,6 +7967,13 @@ data "Boosts" "UnlockSpell(Shout_SwiftWitchcraft);"
 new entry "__MAGIC ITEM__"
 type "PassiveData"
 
+new entry "MAG_BG_Harold_HeavyCrossbow_Passive"
+type "PassiveData"
+using "MAG_BG_Harold_HeavyCrossbow_Passive"
+data "StatsFunctorContext" ""
+data "Conditions" ""
+data "StatsFunctors" ""
+
 new entry "MAG_Monk_Magic_Boots_Passive"
 type "PassiveData"
 using "MAG_Monk_Magic_Boots_Passive"
