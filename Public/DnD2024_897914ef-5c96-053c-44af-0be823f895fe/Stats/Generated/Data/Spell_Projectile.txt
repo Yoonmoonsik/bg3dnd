@@ -2332,6 +2332,16 @@ data "TooltipDamageList" "DealDamage(14d4,Acid);DealDamage(5d4,Acid,,,,1575c661-
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6;"
 data "PowerLevel" "6"
 
+new entry "Projectile___EVOCATION__SLEVEL_6_"
+type "SpellData"
+data "SpellType" "Projectile"
+
+new entry "Projectile_ChainLightning"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_ChainLightning"
+data "TargetConditions" "not Self() and not HasStatus('SANCTUARY',context.Target);"
+
 new entry "Projectile___CONJURATION__"
 type "SpellData"
 data "SpellType" "Projectile"

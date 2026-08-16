@@ -2681,6 +2681,20 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f059f261-5d43-41c4-ae7f-5d038d466672" />
+        <field name="Name" type="NameTableFieldDefinition" value="__EVOCATION__SLEVEL_6_" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a1dbbf7f-b0c8-4f6c-b4fd-0c73c86cd0d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChainLightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e13cb22-a55c-4a3c-81ca-4d492e0b2ccf" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not HasStatus('SANCTUARY',context.Target);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="64730d18-1d0c-4e21-9534-9a74d57734e2" />
         <field name="Name" type="NameTableFieldDefinition" value="__CONJURATION__" />
       </fields>
@@ -4676,7 +4690,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="de8cc8e4-1df6-444c-91bc-9fa798ce6442" />
         <field name="Name" type="NameTableFieldDefinition" value="ChainLightning_spellscroll" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7e13cb22-a55c-4a3c-81ca-4d492e0b2ccf" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a1dbbf7f-b0c8-4f6c-b4fd-0c73c86cd0d9" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
