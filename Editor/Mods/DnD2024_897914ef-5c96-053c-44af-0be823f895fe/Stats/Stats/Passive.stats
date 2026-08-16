@@ -804,6 +804,54 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PRONE_MOUNT,100,1,,,,not SavingThrow(Ability.Dexterity,8));" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b352e10-3dab-4157-a494-7877b26e049b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConjureMinorElementalAcid" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0fab1115gf226ge8beg030ag68b6e3209ba0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5352f3fag15fagc41ag28c5g6e8020ce8a0f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('CONJURE_MINOR_ELEMENTALS',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(2d8,Acid);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_5',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(3d8,Acid);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_6',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(4d8,Acid);" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="ConjureMinorElemental" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="76b764ee-512c-45bd-998d-53489b88afd3" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConjureMinorElementalCold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b352e10-3dab-4157-a494-7877b26e049b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd306880fga010ga0ccgee6agf2546072d84f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5d952901g443eg3888g9a0dg423e50ad15c7" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('CONJURE_MINOR_ELEMENTALS',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(2d8,Cold);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_5',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(3d8,Cold);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_6',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(4d8,Cold);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="679d2189-2279-4cbe-a7b5-ea72959b3cbe" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConjureMinorElementalFire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76b764ee-512c-45bd-998d-53489b88afd3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4873e0cdg3743g9b38gd242g3b9762fc3916" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd88ee8a8g1552gb464g7097g6ea7fa9ece9c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('CONJURE_MINOR_ELEMENTALS',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(2d8,Fire);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_5',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(3d8,Fire);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_6',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(4d8,Fire);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb793ba5-1cba-4ddb-bed4-c3b523afcce0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConjureMinorElementalLightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76b764ee-512c-45bd-998d-53489b88afd3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdc99cc75g8f81g0397g1018gfde4fcc5be57" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h89c8ae11gbccagbb70g3473gb3bc505a78c1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('CONJURE_MINOR_ELEMENTALS',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(2d8,Lightning);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_5',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(3d8,Lightning);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_6',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(4d8,Lightning);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="38aab3fd-9a52-4b1b-bb15-add338d8d6c5" />

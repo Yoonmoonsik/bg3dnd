@@ -247,7 +247,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bcd433c2-a38a-454b-9249-927393dfa495" />
         <field name="Name" type="NameTableFieldDefinition" value="SURPRISED_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b9f7b76b-9fc6-4050-b519-98a8e6030d8c" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
       </fields>
@@ -1899,6 +1899,52 @@
         <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CONJURE_WOODLAND_BEINGS_DAMAGE_RECEIVED')):DealDamage(7d8/2,Force,Magical);IF(not HasStatus('CONJURE_WOODLAND_BEINGS_DAMAGE_RECEIVED')):ApplyStatus(CONJURE_WOODLAND_BEINGS_DAMAGE_RECEIVED,100,1)" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CONJURE_WOODLAND_BEINGS_DAMAGE_RECEIVED')):DealDamage(7d8,Force,Magical);IF(not HasStatus('CONJURE_WOODLAND_BEINGS_DAMAGE_RECEIVED')):ApplyStatus(CONJURE_WOODLAND_BEINGS_DAMAGE_RECEIVED,100,1)" />
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CONJURE_WOODLAND_BEINGS_DAMAGE_RECEIVED')):DealDamage(7d8/2,Force,Magical);IF(not HasStatus('CONJURE_WOODLAND_BEINGS_DAMAGE_RECEIVED')):ApplyStatus(CONJURE_WOODLAND_BEINGS_DAMAGE_RECEIVED,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="165523b3-268b-47c8-b277-3ba8b9c53ccd" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h043e97d5gca21g42b7g823ag1274ec45c6a1" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb170c461g64a8ga1b1g8e92g84265039c932" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ConjureMinorElementals" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(DIFFICULT_TERRAIN,100,-1);TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(CONJURE_MINOR_ELEMENTALS_TARGET,100,-1);" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="ShouldCheckLOS" enumeration_type_name="AuraFlags" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ConjureMinorElementalAcid;ConjureMinorElementalCold;ConjureMinorElementalFire;ConjureMinorElementalLightning;" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="8b1aa53f-092c-4a87-bae8-0a0450766093" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d18dd5f7-6c10-42e7-a3d0-7d2d54afdf78" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="165523b3-268b-47c8-b277-3ba8b9c53ccd" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="463189c0-63c8-4c54-862a-f420f278657d" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d18dd5f7-6c10-42e7-a3d0-7d2d54afdf78" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63efc617-4bf7-4fed-8b3c-369d0c1878af" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_TARGET" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h94c82192gf055gfc18gd5bfgfcedb51b258c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h20a9acf5g3464g7749g7665g0da6684092ca" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ConjureMinorElementals" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Suffocating" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Suffocating" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="aceafbd1-c5bc-40e4-afe6-204912818878" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
