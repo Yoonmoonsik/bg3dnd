@@ -7490,6 +7490,62 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e7f14e0-20e2-407e-ad16-65638f847928" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORCEROUS_BURST_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h186d2005gce77g5134gd47dgcd1286eb95f5" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Acid,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e5832c7-11ed-4ea1-9c1b-a4f9959e9d84" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORCEROUS_BURST_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1e7f14e0-20e2-407e-ad16-65638f847928" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Cold,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6b975fbb-4d35-4454-bd3a-0bebfd1213cc" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORCEROUS_BURST_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1e7f14e0-20e2-407e-ad16-65638f847928" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Fire,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b997282-c0ea-4c35-a598-bc1a5aad0d1b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORCEROUS_BURST_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1e7f14e0-20e2-407e-ad16-65638f847928" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Lightning,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c068d1f7-e379-4ce9-89e0-55ff5b14a2fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORCEROUS_BURST_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1e7f14e0-20e2-407e-ad16-65638f847928" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Poison,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1bd437b8-72f2-467e-8079-1f6d5c32a498" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORCEROUS_BURST_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1e7f14e0-20e2-407e-ad16-65638f847928" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Psychic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55fbdcc3-94a7-4694-95b0-33a3012994e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORCEROUS_BURST_7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1e7f14e0-20e2-407e-ad16-65638f847928" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Thunder,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f663bd2d-956f-4318-b0fa-be3193490788" />
         <field name="Name" type="NameTableFieldDefinition" value="SPELLSLOT_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dcfd1a32-a578-4ba9-9145-feac516c32dd" />
