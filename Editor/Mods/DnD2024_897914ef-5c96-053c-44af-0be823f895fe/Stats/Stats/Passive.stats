@@ -11329,6 +11329,38 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('SHILLELAGH') or StatusId('SHILLELAGH_5') or StatusId('SHILLELAGH_10');" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1694180-b511-4b69-a6cc-ab6c682fdb20" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_BoundToBeBonded_Technical_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b3a04f86-2eb1-4833-a97e-986ef52e65e2" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f594c84a-a1f2-49dc-a1e3-b33b7f44f7bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Bound_Throwing_Technical_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4c161e44-8c84-442e-8ea9-4f33022fef9e" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e3ed082-52d3-48c4-899e-094f31638214" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_ShockingBound_Passive_Technical_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58462178-6280-4c35-a289-68fd4e0cedab" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0bc00bd1-ded7-4559-bfd9-39fd6e5c8378" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Bound_ProficiencyToDamage_Technical_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b9bdd8a2-9eef-4496-8749-a2701e2a0a5b" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6e19c092-a7fb-4108-a3e4-a2fb86227572" />
@@ -11814,38 +11846,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c8381d87-a050-40ba-9333-43fd5ffd1517" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h39511b28g3843gdb43gabc4g14a37310891b" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d1694180-b511-4b69-a6cc-ab6c682fdb20" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_BoundToBeBonded_Technical_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b3a04f86-2eb1-4833-a97e-986ef52e65e2" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f594c84a-a1f2-49dc-a1e3-b33b7f44f7bc" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_Bound_Throwing_Technical_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4c161e44-8c84-442e-8ea9-4f33022fef9e" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2');" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7e3ed082-52d3-48c4-899e-094f31638214" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_ShockingBound_Passive_Technical_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="58462178-6280-4c35-a289-68fd4e0cedab" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0bc00bd1-ded7-4559-bfd9-39fd6e5c8378" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_Bound_ProficiencyToDamage_Technical_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b9bdd8a2-9eef-4496-8749-a2701e2a0a5b" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');" />
       </fields>
     </stat_object>
   </stat_objects>

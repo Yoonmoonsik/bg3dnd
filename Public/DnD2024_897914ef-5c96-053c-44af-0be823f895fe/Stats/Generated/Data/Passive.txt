@@ -8170,6 +8170,26 @@ type "PassiveData"
 using "MAG_Druid_Ironvine_Shield_Technical_Passive"
 data "Conditions" "StatusId('SHILLELAGH') or StatusId('SHILLELAGH_5') or StatusId('SHILLELAGH_10');"
 
+new entry "MAG_BoundToBeBonded_Technical_Passive"
+type "PassiveData"
+using "MAG_BoundToBeBonded_Technical_Passive"
+data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');"
+
+new entry "MAG_Bound_Throwing_Technical_Passive"
+type "PassiveData"
+using "MAG_Bound_Throwing_Technical_Passive"
+data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2');"
+
+new entry "MAG_ShockingBound_Passive_Technical_Passive"
+type "PassiveData"
+using "MAG_ShockingBound_Passive_Technical_Passive"
+data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');"
+
+new entry "MAG_Bound_ProficiencyToDamage_Technical_Passive"
+type "PassiveData"
+using "MAG_Bound_ProficiencyToDamage_Technical_Passive"
+data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');"
+
 new entry "__RACE__"
 type "PassiveData"
 
@@ -8497,24 +8517,4 @@ type "PassiveData"
 using "WorgBite"
 data "Description" "h39511b28g3843gdb43gabc4g14a37310891b;1"
 data "StatsFunctors" "ApplyStatus(PRONE,100,1)"
-
-new entry "MAG_BoundToBeBonded_Technical_Passive"
-type "PassiveData"
-using "MAG_BoundToBeBonded_Technical_Passive"
-data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');"
-
-new entry "MAG_Bound_Throwing_Technical_Passive"
-type "PassiveData"
-using "MAG_Bound_Throwing_Technical_Passive"
-data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2');"
-
-new entry "MAG_ShockingBound_Passive_Technical_Passive"
-type "PassiveData"
-using "MAG_ShockingBound_Passive_Technical_Passive"
-data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');"
-
-new entry "MAG_Bound_ProficiencyToDamage_Technical_Passive"
-type "PassiveData"
-using "MAG_Bound_ProficiencyToDamage_Technical_Passive"
-data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND');"
 
