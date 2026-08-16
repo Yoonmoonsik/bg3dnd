@@ -31,7 +31,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd3ffb028g9755g52adgf223g4bb289eebf93" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant((HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not CreateSorceryPoints() and not ArcaneWard(),ModifyUseCosts(Add,OneSpellWithASpellSlotPerTurn,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant((HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not CreateSorceryPoints() and not ArcaneWard(),ModifyUseCosts(Add,OneSpellWithASpellSlotPerTurn,1,0));UnlockSpellVariant(SpellId('Shout_SwiftWitchcraft'),ModifyIconGlow());" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
@@ -11709,6 +11709,17 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(Level)" />
         <field name="StackId" type="StringTableFieldDefinition" value="DEATH_DEFIER" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DownedStatus(DEATH_DEFIER_DOWNED,5);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a25f6152-b499-4c7d-bff4-abfd806725f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SWIFT_WITCHCRAFT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb62d358fga20fg4314g8013g4f3aaddafafa" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf825d6a4g01fbg9069gd8b6gd7c305318fc8" version="3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_Passive_Metamagic_QuickenedSpell" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
