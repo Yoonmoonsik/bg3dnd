@@ -447,6 +447,14 @@
                     <attribute id="UUID" type="guid" value="04fc5f5d-7230-4061-8a17-cc72c445d8af"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h790e3622gdcc2g6592g9c95g8de8f0b70afa" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb37581e4g1f18gd1e2g5637g4da5058b4ddc" version="1"/>
+                    <attribute id="Name" type="FixedString" value="FormOfDread"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="ff45922b-9cc8-41fa-ac02-0d65175f5a49"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__WIZARD__"/>
                     <attribute id="UUID" type="guid" value="9a228eec-4a93-44f1-a1aa-0b16add44608"/>
                 </node>
@@ -741,12 +749,9 @@
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h790e3622gdcc2g6592g9c95g8de8f0b70afa" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="hb37581e4g1f18gd1e2g5637g4da5058b4ddc" version="1"/>
-                    <attribute id="Name" type="FixedString" value="FormOfDread"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="ff45922b-9cc8-41fa-ac02-0d65175f5a49"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h1bf178cfg495fgc014g2a3dg87805ddb3ddc" version="1"/>
+                    <attribute id="Name" type="FixedString" value="BlockSpellCastingPoint"/>
+                    <attribute id="UUID" type="guid" value="afcc4c04-bf4b-4bb7-832b-d629129ec696"/>
                 </node>
             </children>
         </node>
