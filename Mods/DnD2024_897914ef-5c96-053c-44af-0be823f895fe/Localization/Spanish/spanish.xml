@@ -320,7 +320,11 @@ A Niveles Superiores. Tu dado de Inspiración Bárdica cambia cuando alcanzas ci
   <content contentuid="hf0a594f4gbcafg3438g8e4cg19d60ca756cd" version="1">Hasta que el conjuro termine, tienes &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Radiante, y tus ataques cuerpo a cuerpo infligen [1] adicional al impactar.</content>
   <content contentuid="hc9501eaeg3c65g8261gbbbegc5a79478ce47" version="1">Fuente de Luz Lunar</content>
   <content contentuid="h4d3aa54bg7cf4g12d5g0d79g21d13c55e1c1" version="1">Nivel 6: Formas del Círculo Mejoradas</content>
-  <content contentuid="h25a52b4bg965bga6bdgaee9gb81edcb888e9" version="1">Mientras estás en una forma de Forma Salvaje, puedes añadir tu &lt;LSTag Tooltip="AbilityModifier"&gt;Modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; a tus Tiradas de Salvación de Constitución.</content>
+  <content contentuid="h25a52b4bg965bga6bdgaee9gb81edcb888e9" version="2">Mientras estás en una forma de Forma Salvaje, obtienes los siguientes beneficios.
+
+Resplandor Lunar. Cada uno de tus ataques en una forma de Forma Salvaje puede infligir su tipo de daño normal o daño Radiante. Haces esta elección cada vez que golpeas con esos ataques.
+
+Dureza Aumentada. Puedes añadir tu &lt;LSTag Tooltip="AbilityModifier"&gt;modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; a tus &lt;LSTag Tooltip="SavingThrow"&gt;tiradas de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Constitution"&gt;Constitución&lt;/LSTag&gt;.</content>
   <content contentuid="h7f91f61fg551cg9fe6g9a0cg340e7bc48a41" version="1">Nivel 10: Paso de Luz Lunar</content>
   <content contentuid="h4b611e19g3e33g0533g1f8cg44ab465667b3" version="1">Te transportas mágicamente, reapareciendo en un destello de luz lunar. Como Acción Adicional, te teletransportas hasta [1] a un espacio desocupado que puedas ver. Puedes usar este rasgo un número de veces igual a tu &lt;LSTag Tooltip="AbilityModifier"&gt;Modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; (mínimo una vez), y recuperas todos los usos gastados cuando completas un Descanso Largo.</content>
   <content contentuid="h9203385fgb0d0gc75egca31g0264dad5cc14" version="1">Paso de Luz Lunar</content>
@@ -4220,24 +4224,34 @@ Aura Perturbadora. Cuando te transformas y al inicio de cada uno de tus turnos p
   <content contentuid="h82eeb0d5g97f8gb543g1fccgc1ddce66a5b2" version="2">El No Muerto</content>
   <content contentuid="h8fe28200g46b7g051cga5b0ga6bd5b6a5b73" version="1">Has hecho un pacto con una criatura que desafía el ciclo de la vida y la muerte: un poderoso liche, un vampiro u otra entidad de no-muerte. Habiendo sido mortales en su día, estos antiguos patrones conocen de primera mano los caminos de la ambición y las rutas más allá de las puertas de la muerte. Comparten ansiosamente este conocimiento profano y otros secretos con quienes cumplen su voluntad entre los vivos.</content>
   <content contentuid="hf3e7b3e5gd803gdb85g050dg99a565121fbd" version="1">Nivel 3: Forma del Terror</content>
-  <content contentuid="h60b8e3b3ge993g7677ge82egd9590a175841" version="2">Forma Intrépida. Tienes Inmunidad a la condición Asustado.
+  <content contentuid="h60b8e3b3ge993g7677ge82egd9590a175841" version="3">Como Acción Adicional, te transformas en un avatar del terrible poder de tu patrón, obteniendo los beneficios siguientes durante 1 minuto, hasta que tengas la condición &lt;LSTag Type="Status" Tooltip="INCAPACITATED"&gt;Incapacitado&lt;/LSTag&gt;, o hasta que finalices la forma (no requiere acción). 
 
-Avatar Aterrador. Una vez por turno, cuando golpeas a una criatura con una tirada de ataque, puedes forzarla a realizar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; contra tu CD de conjuros. Si falla, el objetivo tiene la condición Asustado hasta el final de tu siguiente turno.</content>
+Puedes transformarte un número de veces igual a tu &lt;LSTag Tooltip="AbilityModifier"&gt;modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Charisma"&gt;Carisma&lt;/LSTag&gt; (mínimo una vez), y recuperas todos los usos gastados cuando terminas un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt;.
+
+Facsímil de Vida. Ganas &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Puntos de Golpe Temporales&lt;/LSTag&gt; iguales a 1d10 más tu nivel de Brujo.
+
+Forma Impertérrita. Tienes Inmunidad a la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt;. Si estás Asustado cuando te transformas, la condición termina inmediatamente para ti.
+
+Avatar Aterrador. Una vez por turno, cuando golpeas a una criatura con una &lt;LSTag Tooltip="AttackRoll"&gt;tirada de ataque&lt;/LSTag&gt;, puedes obligarla a realizar una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; contra tu CD de salvación de conjuros. Si falla la salvación, el objetivo tiene la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; hasta el final de tu siguiente turno.</content>
   <content contentuid="hcd558b81gae7eg26dag6eaegf0f7e3dd0197" version="1">Nivel 3: Conjuros del No-Muerto</content>
   <content contentuid="h72a8bf1agc8fbgec94g5bd1g5c0893342c80" version="1">La magia de tu patrón garantiza que siempre tengas ciertos conjuros preparados; cuando alcanzas un nivel de Brujo especificado en la tabla de Conjuros del No-Muerto, siempre tendrás preparados los conjuros listados. A nivel 3, aprendes &lt;LSTag Type="Spell" Tooltip="Target_Bane"&gt;Perdición&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_Blindness"&gt;Ceguera&lt;/LSTag&gt;, Fuerza Fantasmal y Rayo Debilitador. A nivel 5, aprendes Hablar con los Muertos y &lt;LSTag Type="Spell" Tooltip="Target_AnimateDead"&gt;Animar a los Muertos&lt;/LSTag&gt;. A nivel 7, aprendes &lt;LSTag Type="Spell" Tooltip="Target_Invisibility_Greater"&gt;Invisibilidad Mayor&lt;/LSTag&gt; y Asesino Fantasmal. A nivel 9, aprendes Danza Macabra y Nube Aniquiladora.</content>
   <content contentuid="h423f4d8eg647cg79b9g302bg9ad97549087a" version="2">Al nivel 3, aprendes &lt;LSTag Type="Spell" Tooltip="Target_Bane"&gt;Perdición&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_Blindness"&gt;Ceguera&lt;/LSTag&gt;, Fuerza Fantasmal y Rayo Envenenador. Al nivel 5, Hablar con los Muertos y Animar Muertos. Al nivel 7, &lt;LSTag Type="Spell" Tooltip="Target_Invisibility_Greater"&gt;Invisibilidad Mayor&lt;/LSTag&gt; y Asesino Fantasmal. Al nivel 9, Danza Macabra y Nube Aniquiladora.</content>
   <content contentuid="h51d8435ag421eg4abdg2702ga3868c2dab5c" version="1">Nivel 6: Tocado por la Tumba</content>
-  <content contentuid="h9978d0deg7d77g5755g43fbg0caf50e3b407" version="2">Los poderes de tu patrón tienen un efecto profundo en tu cuerpo y magia, otorgándote los siguientes beneficios.
+  <content contentuid="h9978d0deg7d77g5755g43fbg0caf50e3b407" version="3">Los poderes de tu patrón tienen un profundo efecto en tu cuerpo y tu magia, otorgándote los siguientes beneficios.
 
-Necrosis Arcana. El daño Necrótico de tus ataques, conjuros de Brujo y rasgos de Brujo ignora la Resistencia al daño Necrótico.
+Necrosis Arcana. El daño Necrótico de tus ataques, conjuros de Brujo y rasgos de Brujo ignora la &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Necrótico.
 
-Necrosis Temible. Los conjuros que lanzas y los ataques que realizas ignoran la &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Necrótico. Además, cuando infliges daño Necrótico con un conjuro, no puedes obtener un [1].
+Necrosis Temida. Los conjuros que lanzas y los ataques que realizas ignoran la &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Necrótico. Además, cuando infliges daño Necrótico con un conjuro, no puedes sacar un [1].
 
-Resistencia de No-Muerto. No necesitas dormir, y la magia no puede hacerte dormir.</content>
+Resistencia de No Muerto. No necesitas dormir, y la magia no puede inducirte el sueño.</content>
   <content contentuid="he206cdceg59e4gfa8cg4328gf3d7938622de" version="1">Nivel 10: Envoltura Necrótica</content>
-  <content contentuid="hc58f0177g4e5fgb789g4272g3e57d5e733b0" version="1">Tu conexión con la no-muerte satura tu cuerpo. Obtienes los siguientes beneficios.
+  <content contentuid="hc58f0177g4e5fgb789g4272g3e57d5e733b0" version="2">Tu conexión con la no-muerte satura tu cuerpo. Obtienes los siguientes beneficios.
 
-Resiliencia Necrótica. Tienes Inmunidad al daño Necrótico.</content>
+Resiliencia Necrótica. Tienes &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Necrótico. Mientras usas tu Forma del Terror, tienes Inmunidad al daño Necrótico.
+
+Resucitación Profana. Si caes a 0 &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; y no mueres de inmediato, puedes hacer que tu cuerpo estalle con energía mortífera. Cada criatura de tu elección en una Emanación de 30 pies originada en ti realiza una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Constitution"&gt;Constitución&lt;/LSTag&gt; contra tu CD de salvación de conjuros, recibiendo daño Necrótico igual a 2d10 más tu &lt;LSTag Tooltip="AbilityModifier"&gt;modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Charisma"&gt;Carisma&lt;/LSTag&gt; si falla la salvación, o la mitad de ese daño si tiene éxito. Tus Puntos de Golpe cambian entonces al doble de tu nivel de Brujo, y ganas 1 nivel de Agotamiento.
+
+Una vez que usas este beneficio, no puedes volver a usarlo hasta que termines un &lt;LSTag Tooltip="ShortRest"&gt;Descanso Corto&lt;/LSTag&gt; o &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt;.</content>
   <content contentuid="hcaaac561g47fbgc64dga290gc1f58fa033fa" version="1">Inundación Astral</content>
   <content contentuid="h08797ed7gc753g8f41gd903g4ec54ed567d1" version="1">Canalizas energía del Mar Astral para desatar un torrente de magia desde ti en un Cono de 30 pies. Cada criatura en el Cono debe superar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Dexterity"&gt;Destreza&lt;/LSTag&gt; o recibir daño Radiante o de Frio a tu eleccion.
 
@@ -6323,4 +6337,30 @@ Defensa contra Multataque. Cuando una criatura te golpea con una tirada de ataqu
   <content contentuid="h0709c013g99b0gdc6cg2addgb8ecc04296bb" version="1">Frío Astral</content>
   <content contentuid="hba2e93bcg0b57g355dg5803gd6ef0f19efec" version="2">Tiene &lt;LSTag Tooltip="Disadvantage"&gt;Desventaja&lt;/LSTag&gt; en la siguiente Prueba de d20 que realice.</content>
   <content contentuid="h7ca33572ga86cgce48gd434gfe816699ddfd" version="1">Ceguera Astral</content>
+  <content contentuid="hb37581e4g1f18gd1e2g5637g4da5058b4ddc" version="1">Forma del Terror</content>
+  <content contentuid="h790e3622gdcc2g6592g9c95g8de8f0b70afa" version="1">Como Acción Adicional, te transformas en un avatar del terrible poder de tu patrón, obteniendo los beneficios siguientes durante 1 minuto, hasta que tengas la condición Incapacitado, o hasta que finalices la forma (no requiere acción). Puedes transformarte un número de veces igual a tu &lt;LSTag Tooltip="AbilityModifier"&gt;modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Charisma"&gt;Carisma&lt;/LSTag&gt; (mínimo una vez), y recuperas todos los usos gastados cuando terminas un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt;.</content>
+  <content contentuid="hcb1640e8ge305g48c7g65beg2186fe64aa34" version="1">Forma del Terror</content>
+  <content contentuid="h1a0652aag04b6g8cb4gead0g81c1b91c9fb6" version="1">Como Acción Adicional, te transformas en un avatar del terrible poder de tu patrón, obteniendo los beneficios siguientes durante 1 minuto, hasta que tengas la condición Incapacitado, o hasta que finalices la forma (no requiere acción). Puedes transformarte un número de veces igual a tu &lt;LSTag Tooltip="AbilityModifier"&gt;modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Charisma"&gt;Carisma&lt;/LSTag&gt; (mínimo una vez), y recuperas todos los usos gastados cuando terminas un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt;.
+
+Facsímil de Vida. Ganas &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Puntos de Golpe Temporales&lt;/LSTag&gt; iguales a 1d10 más tu nivel de Brujo.
+
+Forma Impertérrita. Tienes Inmunidad a la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt;. Si estás Asustado cuando te transformas, la condición termina inmediatamente para ti.
+
+Avatar Aterrador. Una vez por turno, cuando golpeas a una criatura con una &lt;LSTag Tooltip="AttackRoll"&gt;tirada de ataque&lt;/LSTag&gt;, puedes obligarla a realizar una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; contra tu CD de salvación de conjuros. Si falla la salvación, el objetivo tiene la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; hasta el final de tu siguiente turno.</content>
+  <content contentuid="h754ee763gfa45g5f72g1e1fgb00e69210fff" version="1">Avatar Aterrador</content>
+  <content contentuid="h36874237g25b1g47eag13bdg179ffd6b4ec6" version="1">Una vez por turno, cuando golpeas a una criatura con una &lt;LSTag Tooltip="AttackRoll"&gt;tirada de ataque&lt;/LSTag&gt;, puedes obligarla a realizar una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; contra tu CD de salvación de conjuros. Si falla la salvación, el objetivo tiene la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; hasta el final de tu siguiente turno.</content>
+  <content contentuid="h9d37ad4ag3569ge301gd8d6g7963c9e83ba2" version="1">Forma del Terror</content>
+  <content contentuid="ha34e254dg39c8gc52bg7259gaa9e2bf59233" version="1">Como Acción Adicional, te transformas en un avatar del terrible poder de tu patrón, obteniendo los beneficios siguientes durante 1 minuto, hasta que tengas la condición Incapacitado, o hasta que finalices la forma (no requiere acción). Puedes transformarte un número de veces igual a tu &lt;LSTag Tooltip="AbilityModifier"&gt;modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Charisma"&gt;Carisma&lt;/LSTag&gt; (mínimo una vez), y recuperas todos los usos gastados cuando terminas un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt;.
+
+Facsímil de Vida. Ganas &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Puntos de Golpe Temporales&lt;/LSTag&gt; iguales a 1d10 más tu nivel de Brujo.
+
+Forma Impertérrita. Tienes Inmunidad a la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt;. Si estás Asustado cuando te transformas, la condición termina inmediatamente para ti.
+
+Avatar Aterrador. Una vez por turno, cuando golpeas a una criatura con una &lt;LSTag Tooltip="AttackRoll"&gt;tirada de ataque&lt;/LSTag&gt;, puedes obligarla a realizar una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; contra tu CD de salvación de conjuros. Si falla la salvación, el objetivo tiene la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; hasta el final de tu siguiente turno.</content>
+  <content contentuid="h9903ed73gfeadg630bg4306g28a1df027049" version="1">Resucitación Profana</content>
+  <content contentuid="h066733abg26b1g988dgf08cg01f4e3757c53" version="1">Resucitación Profana</content>
+  <content contentuid="h77baae07gb508ga5a7g250fg1e4e4b4a196c" version="1">Si caes a 0 &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; y no mueres de inmediato, puedes hacer que tu cuerpo estalle con energía mortífera. Cada criatura de tu elección en una Emanación de 30 pies originada en ti realiza una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Constitution"&gt;Constitución&lt;/LSTag&gt; contra tu CD de salvación de conjuros, recibiendo daño Necrótico igual a 2d10 más tu &lt;LSTag Tooltip="AbilityModifier"&gt;modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Charisma"&gt;Carisma&lt;/LSTag&gt; si falla la salvación, o la mitad de ese daño si tiene éxito. Tus Puntos de Golpe cambian entonces al doble de tu nivel de Brujo, y ganas 1 nivel de Agotamiento.</content>
+  <content contentuid="h0f4e5dbfgfb84gaa42gc66eg6660538c6909" version="1">Resucitación Profana</content>
+  <content contentuid="h4e247c5ag5398g03f2g7a9cgf569bf3a693e" version="1">Resplandor Lunar</content>
+  <content contentuid="h334bd2c8g7709g2b93g78b1g773fe3b8ebf1" version="1">Cada uno de tus ataques en una forma de Forma Salvaje puede infligir su tipo de daño normal o daño Radiante. Haces esta elección cada vez que golpeas con esos ataques.</content>
 </contentList>
