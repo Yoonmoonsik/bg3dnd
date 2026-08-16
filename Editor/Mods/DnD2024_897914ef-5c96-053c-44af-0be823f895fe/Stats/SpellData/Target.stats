@@ -14144,6 +14144,14 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (HasStatus('HIDEOUS_LAUGHTER') or HasStatus('COMMAND_GROVEL') or HasStatus('PRONE') or HasStatus('PRONE_FALLEN') or HasStatus('PRONE_GREASE') or HasStatus('PRONE_ICE') or HasStatus('PRONE_SEWER') or HasStatus('PRONE_THUNDEROUS_SMITE') or HasStatus('KNOCKED_OUT') or HasStatus('SG_Prone') or HasStatus('SG_Sleeping'));" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a97e14fd-6fa4-41bc-b8cb-6d8421c619d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelWatcher_Quadruped_ScryingForWeaknesses" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e1491a8a-5334-4cf8-98bb-05255b71b3dd" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0eadcc66-207f-4947-be28-f96dee1c457a" />
