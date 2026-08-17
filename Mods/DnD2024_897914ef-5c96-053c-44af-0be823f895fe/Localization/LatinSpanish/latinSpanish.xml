@@ -18,13 +18,13 @@ Ataques afectados: Las &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LS
   <content contentuid="hdbe460a9gf800gdb75g15bbg2b81a80fe8ab" version="2">Maestria: Tajo</content>
   <content contentuid="h84f8977cg06ecg1e31gebd6g21e4b7346121" version="2">Cuando realizas un ataque con un arma que tenga propiedad Ligera y maestria Tajo, puedes realizar un ataque adicional hacerlo como parte de la acción de Ataque sin gastar tu Acción Adicional. Solo puedes realizar este ataque adicional una vez por turno.</content>
   <content contentuid="h64e7021cg8b69g3f60gde38gd59f3cdc5846" version="2">Maestria: Empellón</content>
-  <content contentuid="h694f6a66g0531g98f0ga23eg525e146eb4d7" version="1">Si golpeas a una criatura con esta arma, puedes empujarla hasta [1] directamente lejos de ti si es Grande o más pequeña.</content>
+  <content contentuid="h694f6a66g0531g98f0ga23eg525e146eb4d7" version="1">Si golpeas a una criatura con esta arma, puedes empujarla hasta [1] directamente lejos de ti (no puedes empujar criaturas gargantuescas o gigantescas).</content>
   <content contentuid="haf74199bg92cbg93dega0fbgebb535603f83" version="2">Maestria: Aturdir</content>
   <content contentuid="h6846e460g6aecg1e76g52c0g8c751abe8744" version="1">Si golpeas a una criatura con esta arma, esa criatura tiene &lt;LSTag Tooltip="Disadvantage"&gt;Desventaja&lt;/LSTag&gt; en su próxima &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LSTag&gt; antes del comienzo de tu siguiente turno.</content>
   <content contentuid="hb839de91gb995ge42eg62b9g1dd41fe4da4b" version="2">Maestria: Ralentización</content>
   <content contentuid="h7773a857g54d9g0e61gc338g5671eef1378d" version="1">Si golpeas a una criatura con esta arma y le causas daño, puedes reducir su Movimiento en [1] hasta el comienzo de tu siguiente turno. Si la criatura es golpeada más de una vez por armas que tienen esta propiedad, la reducción de Movimiento no excede [1].</content>
   <content contentuid="ha395ebeag3995g70fage1d7g718229b74f9b" version="2">Maestria: Derribar</content>
-  <content contentuid="h5af643b9gd1b7g259cg51cegf17292ec2f43" version="1">Si golpeas a una criatura con esta arma, puedes obligarla a realizar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Constitution"&gt;Constitución&lt;/LSTag&gt; (CD 8 más el modificador de habilidad utilizado para realizar la &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LSTag&gt; y tu Bonificación de Competencia). Si falla la salvación, la criatura queda en estado &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt;.</content>
+  <content contentuid="h5af643b9gd1b7g259cg51cegf17292ec2f43" version="1">Si golpeas a una criatura con esta arma, puedes obligarla a realizar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Constitution"&gt;Constitución&lt;/LSTag&gt; (CD 8 más el modificador de habilidad utilizado para realizar la &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LSTag&gt; y tu &lt;LSTag Tooltip="ProficiencyBonus"&gt;Bonificador de Competencia&lt;/LSTag&gt;). Si falla la salvación, la criatura queda en estado &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt;.</content>
   <content contentuid="hdfca5f76g305cgff0cg0532gbc6b23ff9367" version="2">Maestria: Hostigar</content>
   <content contentuid="hf0019ff2g27f5g13abg7a86g646b2f8a1f55" version="1">Si impactas a una criatura con esta arma y le causas daño, tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en tu próxima &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de ataque&lt;/LSTag&gt; contra esa criatura antes del final de tu siguiente turno.</content>
   <content contentuid="h3a51e8b8gf631gf9b1g55bdg6af9de9235ef" version="1">Hacha a dos manos, Alabarda</content>
@@ -75,7 +75,7 @@ Golpe Paralizante. El Movimiento del objetivo se reduce en [1] hasta el inicio d
   <content contentuid="h42189866g05d1g89b4g6e9dg1f97d248b2a9" version="1">Nivel 10: Represalia</content>
   <content contentuid="hde644cc1g1dc6g103bg095ege867e6fa22ad" version="1">Cuando recibes daño de una criatura que está a [1] de ti, puedes usar tu Reacción para realizar un ataque cuerpo a cuerpo contra esa criatura, usando un arma o un Golpe Desarmado.</content>
   <content contentuid="hc8de1446g6777ge942g7572g5cd9d6cc8f14" version="1">Bota de los Gigantes</content>
-  <content contentuid="hf411e734g4162g32ddg2c68g075dce673ed3" version="1">Intenta patear a un objetivo para alejarlo. Tus posibilidades dependen de tu Atletismo, y son mayores si estás oculto o invisible.</content>
+  <content contentuid="hf411e734g4162g32ddg2c68g075dce673ed3" version="1">Intenta patear a un objetivo para alejarlo. Tus posibilidades dependen de tu &lt;LSTag Type="Skills" Tooltip="Athletics"&gt;Atletismo&lt;/LSTag&gt;, y son mayores si estás oculto o invisible.</content>
   <content contentuid="h5acf268bg7a2dgd7c7g4d2dg20caffe2e8a4" version="1">Puedes patear objetivos de hasta el doble del peso que te permitiría &lt;LSTag Type="Spell" Tooltip="Target_Shove"&gt;Empujar&lt;/LSTag&gt;.</content>
   <content contentuid="h0e7ef600g82aegeba0g077eg2ddad69731f8" version="1">Rodeado por la magia salvaje de un Bárbaro. Tu &lt;LSTag Tooltip="ArmourClass"&gt;Clase de Armadura&lt;/LSTag&gt; aumenta en una cantidad igual a tu bonificador de Daño de Furia hasta que tu &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Furia&lt;/LSTag&gt; termine.</content>
   <content contentuid="hd75d1783g8062gae55g78a6g651f55455f7f" version="1">Nivel 2: Aprendiz de Todo</content>
@@ -357,7 +357,7 @@ Dureza Aumentada. Puedes añadir tu &lt;LSTag Tooltip="AbilityModifier"&gt;modif
   <content contentuid="h1855925eg36d7g774cg4917gc8135001356f" version="1">Regla: Requisito de Fuerza (Armadura de Placas)</content>
   <content contentuid="h36e05e75gb0acgebbeg511ag25cc56fcde31" version="1">Si una criatura que lleva esta Armadura Pesada tiene una puntuación de Fuerza menor que [1], su Movimiento se reduce en [2].</content>
   <content contentuid="h1378b9e1g8e8cgbb1eg3cb7g5aad15a2e9d3" version="1">Nivel 3: Atleta Extraordinario</content>
-  <content contentuid="h8a4c8a20gcc89g49e5g2025g934de8342619" version="1">Gracias a tu atletismo, tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las tiradas de Iniciativa y en las &lt;LSTag Tooltip="AbilityCheck"&gt;Pruebas&lt;/LSTag&gt; de &lt;LSTag Tooltip="Strength"&gt;Fuerza&lt;/LSTag&gt; (&lt;LSTag Type="Skills" Tooltip="Athletics"&gt;Atletismo&lt;/LSTag&gt;)
+  <content contentuid="h8a4c8a20gcc89g49e5g2025g934de8342619" version="1">Gracias a tu &lt;LSTag Type="Skills" Tooltip="Athletics"&gt;Atletismo&lt;/LSTag&gt;, tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las tiradas de Iniciativa y en las &lt;LSTag Tooltip="AbilityCheck"&gt;Pruebas&lt;/LSTag&gt; de &lt;LSTag Tooltip="Strength"&gt;Fuerza&lt;/LSTag&gt; (&lt;LSTag Type="Skills" Tooltip="Athletics"&gt;Atletismo&lt;/LSTag&gt;)
 
 Además, inmediatamente después de asestar un Golpe Crítico, puedes Moverte hasta la mitad de tu Movimiento sin provocar Ataques de Oportunidad.</content>
   <content contentuid="h070ecbffg0669ge021gd9f2gf9d31bf77f88" version="1">Atleta Extraordinario</content>
@@ -2170,7 +2170,7 @@ Eres inusualmente ágil para tu raza.
 
 Aumenta tu Movimiento al caminar en 5 pies.
 
-Obtienes competencia en la habilidad Acrobacias o Atletismo (a tu elección).
+Obtienes competencia en la habilidad Acrobacias o &lt;LSTag Type="Skills" Tooltip="Athletics"&gt;Atletismo&lt;/LSTag&gt; (a tu elección).
 
 Tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en cualquier prueba de Fuerza (Atletismo) o Destreza (Acrobacias) que realices para escapar de estar inmovilizado.</content>
   <content contentuid="h1dbe3f90g3d47gc1cagd861g317e83891368" version="1">Dote: Agilidad Menuda</content>
@@ -2675,7 +2675,7 @@ Respeta los elementos y teme su ira.</content>
 
 Aplastamiento del Dao. La tierra se eleva alrededor del objetivo. El objetivo tiene la condición Inmovilizado.
 
-Escape del Djinn. Te teletransportas a un espacio desocupado que puedas ver a 30 pies de ti y adoptas una forma semiincorpórea, que dura hasta el final de tu siguiente turno. Mientras estás en esta forma, tienes Resistencia al daño Contundente, Perforante y Cortante, e Inmunidad a las condiciones &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt; e Inmovilizado.
+Escape del Djinn. Te teletransportas a un espacio desocupado que puedas ver a 30 pies de ti y adoptas una forma semiincorpórea, que dura hasta el final de tu siguiente turno. Mientras estás en esta forma, tienes &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Contundente, Perforante y Cortante, e &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a las condiciones &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt; e Inmovilizado.
 
 Furia del Efreet. El objetivo recibe 2d4 de daño de Fuego adicional, y las llamas saltan del objetivo a todos los enemigos que puedas ver a 30 pies de ti. Cada una de esas criaturas también recibe 2d4 de daño de Fuego.
 
@@ -2691,19 +2691,19 @@ También obtienes competencia en una de las siguientes habilidades a tu elecció
   <content contentuid="h7ce47465gdfeag71dcgb0bdgeadc0c987cab" version="1">Aplastamiento del Dao</content>
   <content contentuid="hb3aa275bga6abgc81agd39bg3d1c211dcc20" version="1">La tierra se eleva alrededor del objetivo. El objetivo tiene la condición Inmovilizado.</content>
   <content contentuid="hd20d93a6g9ec6gc3cdg1890g0e70817191af" version="2">Escape del Djinn</content>
-  <content contentuid="hc2eacb6dgfdd7gb76ag186cgecc6d2ed93b5" version="1">Te teletransportas a un espacio desocupado que puedas ver a 30 pies de ti y adoptas una forma semiincorpórea, que dura hasta el final de tu siguiente turno. Mientras estás en esta forma, tienes Resistencia al daño Contundente, Perforante y Cortante, e Inmunidad a las condiciones &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt; e Inmovilizado.</content>
+  <content contentuid="hc2eacb6dgfdd7gb76ag186cgecc6d2ed93b5" version="1">Te teletransportas a un espacio desocupado que puedas ver a 30 pies de ti y adoptas una forma semiincorpórea, que dura hasta el final de tu siguiente turno. Mientras estás en esta forma, tienes &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Contundente, Perforante y Cortante, e &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a las condiciones &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt; e Inmovilizado.</content>
   <content contentuid="h41d151e2g9ff2g7903gdcffg74d3df5ec77f" version="2">Furia del Efreet</content>
   <content contentuid="hbf690b7ag3334g153agbf4dgf3261e437b08" version="2">El objetivo recibe 2d4 de daño de Fuego adicional, y las llamas saltan del objetivo a todos los enemigos que puedas ver a 30 pies de ti. Cada una de esas criaturas también recibe 2d4 de daño de Fuego.</content>
   <content contentuid="h48d5140cg0c24ga6cfg77d7g5b5aac3590e3" version="2">Oleada del Marid</content>
   <content contentuid="h79a50a5ag645fgfec1g1742g3190589c1ba0" version="1">El objetivo y cada criatura de tu elección en una Emanación de 10 pies que se origina en ti realizan una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Strength"&gt;Fuerza&lt;/LSTag&gt; contra tu CD de conjuros. Si falla, la criatura es empujada 15 pies en línea recta alejándose de ti y tiene la condición &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt;.</content>
   <content contentuid="h19a32ab1gef64g369egfeb4ge2bbdbae8999" version="1">Escape del Djinn</content>
-  <content contentuid="h08615922g6a70gfeabg9ddeg3e421bcce131" version="1">Te teletransportas a un espacio desocupado que puedas ver a 30 pies de ti y adoptas una forma semiincorpórea, que dura hasta el final de tu siguiente turno. Mientras estás en esta forma, tienes Resistencia al daño Contundente, Perforante y Cortante, e Inmunidad a las condiciones &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt; e Inmovilizado.</content>
+  <content contentuid="h08615922g6a70gfeabg9ddeg3e421bcce131" version="1">Te teletransportas a un espacio desocupado que puedas ver a 30 pies de ti y adoptas una forma semiincorpórea, que dura hasta el final de tu siguiente turno. Mientras estás en esta forma, tienes &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Contundente, Perforante y Cortante, e &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a las condiciones &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt; e Inmovilizado.</content>
   <content contentuid="h2f104997g62ecgd0e7g3258g0be25d035207" version="1">Escape del Djinn</content>
-  <content contentuid="h2882b8f2g2c4dg9432gc6b0gd97aa3d6ec17" version="1">Te teletransportas a un espacio desocupado que puedas ver a 30 pies de ti y adoptas una forma semiincorpórea, que dura hasta el final de tu siguiente turno. Mientras estás en esta forma, tienes Resistencia al daño Contundente, Perforante y Cortante, e Inmunidad a las condiciones &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt; e Inmovilizado.</content>
+  <content contentuid="h2882b8f2g2c4dg9432gc6b0gd97aa3d6ec17" version="1">Te teletransportas a un espacio desocupado que puedas ver a 30 pies de ti y adoptas una forma semiincorpórea, que dura hasta el final de tu siguiente turno. Mientras estás en esta forma, tienes &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Contundente, Perforante y Cortante, e &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a las condiciones &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt; e Inmovilizado.</content>
   <content contentuid="hab8ce398geb65gdcbbgc14ega6cd5dd5da1c" version="1">Aura de Escudo Elemental</content>
   <content contentuid="h9b2090d2g2df9ga6b6g06e6g8c2dc62f5763" version="1">Tienes Resistencia al daño de Ácido, Frío, Fuego, Relámpago y Trueno.</content>
   <content contentuid="hd699c237g9c18g83b1g6f1dg6cc399770254" version="1">Nivel 3: Canto de la Hoja</content>
-  <content contentuid="h3b87eea0g36e0gf638g04c0gc6f56f797e73" version="2">Como Acción Adicional, invocas una magia élfica llamada el Canto de la hoja, siempre que no lleves armadura ni uses un Escudo.
+  <content contentuid="h3b87eea0g36e0gf638g04c0gc6f56f797e73" version="2">Como Acción Adicional, invocas una magia élfica llamada: Canto de la hoja, siempre que no lleves armadura ni uses un Escudo.
 
 El Canto de la hoja dura 1 minuto y termina anticipadamente si tienes la condición Incapacitado, si equipas Armadura o un Escudo o si empuñas un Arma dos manos. Puedes disipar la Cancion de la Hoja en cualquier momento (sin acción requerida).
 
@@ -2727,7 +2727,7 @@ Enfoque. Cuando realizas una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvac
   <content contentuid="h2bf11353gf199g41edg8f9eg584aaad22078" version="1">Nivel 3: Entrenarse para la Guerra y Canción</content>
   <content contentuid="h352f38e9g6190gf239gf947g79ecb474c84f" version="1">Obtienes Competencia con todas las armas Marciales cuerpo a cuerpo que no tengan la propiedad Dos Manos ni Pesada. Puedes usar un arma Cuerpo a Cuerpo con la que tengas competencia como &lt;LSTag Type="Spell" Tooltip="Shout_Focus"&gt;Foco de Lanzamiento de Conjuros&lt;/LSTag&gt; para tus conjuros de Mago, y puedes usar tu &lt;LSTag Tooltip="AbilityModifier"&gt;Modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Intelligence"&gt;Inteligencia&lt;/LSTag&gt; en lugar de Fuerza o Destreza para las tiradas de ataque y daño de armas Cuerpo a Cuerpo con las que tengas competencia.
 
-También obtienes competencia en una de las siguientes habilidades a tu elección: Acrobacias, Atletismo, Interpretación o Persuasión.</content>
+También obtienes competencia en una de las siguientes habilidades a tu elección: &lt;LSTag Type="Skills" Tooltip="Acrobatics"&gt;Acrobacias&lt;/LSTag&gt;, &lt;LSTag Type="Skills" Tooltip="Athletics"&gt;Atletismo&lt;/LSTag&gt;, &lt;LSTag Type="Skills" Tooltip="Performance"&gt;Interpretación&lt;/LSTag&gt; o &lt;LSTag Type="Skills" Tooltip="Persuasion"&gt;Persuasión&lt;/LSTag&gt;.</content>
   <content contentuid="hede4cb27g87edg8c8fg8923ga74ca862fc12" version="1">Canto de la Hoja</content>
   <content contentuid="hf106deb5gfb07g4bdeg0a01g623dd85de6b9" version="1">Los Cantantes de las hojas dominan una tradición de hechicería que incorpora esgrima y danza. En combate, un Canto de la hoja usa maniobras intrincadas y elegantes que repelen el daño y le permiten canalizar magia en ataques devastadores y una defensa astuta. Muchos que han observado a un Cantante de la hoja en acción recuerdan el espectáculo como una de las experiencias más hermosas de sus vidas: un glorioso baile acompañado de una hoja cantarina.
 
@@ -4227,7 +4227,7 @@ Puedes transformarte un número de veces igual a tu &lt;LSTag Tooltip="AbilityMo
 
 Facsímil de Vida. Ganas &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Puntos de Golpe Temporales&lt;/LSTag&gt; iguales a 1d10 más tu nivel de Brujo.
 
-Forma Impertérrita. Tienes Inmunidad a la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt;. Si estás &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; cuando te transformas, la condición termina inmediatamente para ti.
+Forma Impertérrita. Tienes &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt;. Si estás &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; cuando te transformas, la condición termina inmediatamente para ti.
 
 Avatar Aterrador. Una vez por turno, cuando golpeas a una criatura con una &lt;LSTag Tooltip="AttackRoll"&gt;tirada de ataque&lt;/LSTag&gt;, puedes obligarla a realizar una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; contra tu CD de salvación de conjuros. Si falla la salvación, el objetivo tiene la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; hasta el final de tu siguiente turno.</content>
   <content contentuid="hcd558b81gae7eg26dag6eaegf0f7e3dd0197" version="1">Nivel 3: Conjuros del No-Muerto</content>
@@ -4244,7 +4244,7 @@ Resistencia de No Muerto. No necesitas dormir, y la magia no puede inducirte el 
   <content contentuid="he206cdceg59e4gfa8cg4328gf3d7938622de" version="1">Nivel 10: Envoltura Necrótica</content>
   <content contentuid="hc58f0177g4e5fgb789g4272g3e57d5e733b0" version="2">Tu conexión con la no-muerte satura tu cuerpo. Obtienes los siguientes beneficios.
 
-Resiliencia Necrótica. Tienes &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Necrótico. Mientras usas tu Forma del Terror, tienes Inmunidad al daño Necrótico.
+Resiliencia Necrótica. Tienes &lt;LSTag Tooltip="Resistant"&gt;Resistencia&lt;/LSTag&gt; al daño Necrótico. Mientras usas tu Forma del Terror, tienes &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; al daño Necrótico.
 
 Resucitación Profana. Si caes a 0 &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; y no mueres de inmediato, puedes hacer que tu cuerpo estalle con energía mortífera. Cada criatura de tu elección en una Emanación de 30 pies originada en ti realiza una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Constitution"&gt;Constitución&lt;/LSTag&gt; contra tu CD de salvación de conjuros, recibiendo daño Necrótico igual a 2d10 más tu &lt;LSTag Tooltip="AbilityModifier"&gt;modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Charisma"&gt;Carisma&lt;/LSTag&gt; si falla la salvación, o la mitad de ese daño si tiene éxito. Tus &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; cambian entonces al doble de tu nivel de Brujo, y ganas 1 nivel de Agotamiento.
 
@@ -5084,10 +5084,10 @@ Cuando realizas un Golpe Desarmado, tu alcance es 5 pies mayor de lo normal.</co
   <content contentuid="h3f87293dg3247g4d73gb758gf7485044db3c" version="2">Tienes la condición &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt; durante 1 minuto. Esta invisibilidad termina en una criatura inmediatamente después de que realice una &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LSTag&gt;, inflija daño o lance un conjuro.</content>
   <content contentuid="hb4ffbe2cg154fg4614ga481g770425e23306" version="2">Tienes la condición Invisible durante 1 minuto. Esta invisibilidad termina en una criatura inmediatamente después de que realice una &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LSTag&gt;, inflija daño o lance un conjuro.</content>
   <content contentuid="h8382539fg0076g44d2gb673g042eb6831f24" version="2">Tienes la condición Invisible durante 1 minuto. Esta invisibilidad termina en una criatura inmediatamente después de que realice una &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LSTag&gt;, inflija daño o lance un conjuro.</content>
-  <content contentuid="h55adfd44g7c29g4b67g894fg9b98ff76115a" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e inmunidad a Proyectil Mágico.</content>
-  <content contentuid="h413145b9g72c2g4630ga50ag6b4c5d367395" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e inmunidad a Proyectil Mágico.</content>
-  <content contentuid="hfedbac46g363eg4c64g9537g61335c5397d3" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e inmunidad a Proyectil Mágico.</content>
-  <content contentuid="he5db46c7g00dag496fg9afag93806e384c00" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e inmunidad a Proyectil Mágico.</content>
+  <content contentuid="h55adfd44g7c29g4b67g894fg9b98ff76115a" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a Proyectil Mágico.</content>
+  <content contentuid="h413145b9g72c2g4630ga50ag6b4c5d367395" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a Proyectil Mágico.</content>
+  <content contentuid="hfedbac46g363eg4c64g9537g61335c5397d3" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a Proyectil Mágico.</content>
+  <content contentuid="he5db46c7g00dag496fg9afag93806e384c00" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a Proyectil Mágico.</content>
   <content contentuid="h09794f54g28f6g4aadgb3dbg21bb411c3001" version="1">Puedes realizar una Acción Adicional en este turno.</content>
   <content contentuid="h8f0b35d8g848bg483dgb2a3gfe6f9fbea014" version="1">Puedes realizar una Acción Adicional en este turno.</content>
   <content contentuid="h30ea4db6gf500g4da7g85degd5038eb2214b" version="1">Puedes realizar una Acción Adicional en este turno.</content>
@@ -5149,9 +5149,9 @@ Cuando realizas un Golpe Desarmado, tu alcance es 5 pies mayor de lo normal.</co
   <content contentuid="h7106d36agc729ga538g1905gc78f61424ecc" version="1">Oleada de Magia Salvaje: Resistencia</content>
   <content contentuid="h98b4d72eg56f8g0a3dg5560g0b2c9cc14f5c" version="1">Tienes Resistencia a todo el daño durante el siguiente minuto.</content>
   <content contentuid="hbc163433g954fgc50cg70b0g7d2a79b50f85" version="1">Oleada de Magia Salvaje: Escudo</content>
-  <content contentuid="h6a41193fg5cabg4e1ege044g043eb23962dc" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e inmunidad a Proyectil Mágico.</content>
+  <content contentuid="h6a41193fg5cabg4e1ege044g043eb23962dc" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a Proyectil Mágico.</content>
   <content contentuid="h847f06c4g2fddg015ag538cgf97b698de8f6" version="1">Oleada de Magia Salvaje: Escudo</content>
-  <content contentuid="hb2bb0f2eg9d2ag5515gead7g44579222fb75" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e inmunidad a Proyectil Mágico.</content>
+  <content contentuid="hb2bb0f2eg9d2ag5515gead7g44579222fb75" version="1">Un escudo espectral flota cerca de ti durante el siguiente minuto, otorgándote un bonificador de +2 a la CA e &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a Proyectil Mágico.</content>
   <content contentuid="h33261258g796fg3395g69a4gaddfad4937eb" version="1">Durante el siguiente minuto, puedes lanzar conjuros incluso mientras tienes la condición Silenciado.</content>
   <content contentuid="hb2a8f231g4f09g0714g0977ga484944bbb45" version="1">Oleada de Magia Salvaje: Conjuro Acelerado</content>
   <content contentuid="hf35665d0g7373g4d2dga1f3g0b7fc11ce883" version="1">Habilidoso: Has obtenido competencia en tres habilidades. Buena elección.</content>
@@ -6124,7 +6124,7 @@ Después de seleccionar tres trucos diferentes, este modo termina.</content>
   <content contentuid="hf2c58c13g34f2g4e5eg89a5gf8e830952d02" version="1">Pacto del Tomo: Has aprendido el truco seleccionado.</content>
   <content contentuid="hd12a19f5g37feg4c67g90c2g675801f2f329" version="1">Pacto del Tomo: Has aprendido tres trucos. Buena elección.</content>
   <content contentuid="hda79756dg4b88g4c2eg8d83g99f61071b3a7" version="1">Iniciado en la Magia: Descarga Sobrenatural</content>
-  <content contentuid="h1fff8b11ge8b9g4012gbe61gd0f4391ba557" version="1">Iniciado en la Magia: Pistolas de Dedos</content>
+  <content contentuid="h1fff8b11ge8b9g4012gbe61gd0f4391ba557" version="1">Iniciado en la Magia: Pistola de Dedo</content>
   <content contentuid="h2a7ec7c7g207cg45f8g927cg6c9f50c0fb9b" version="1">Iniciado en la Magia: Fuego Infernal</content>
   <content contentuid="h9bfda308gf51bg41ccg97c0ga96e9d21a338" version="1">Iniciado en la Magia: Explosión de Hechicería</content>
   <content contentuid="h3f64848bg052dg43f2g810eg7be150061cc4" version="1">Iniciado en la Magia: Burla Cruel</content>
@@ -6138,13 +6138,7 @@ En algunas culturas, solo quienes pueden reclamar el poder de un Alma Divina pue
   <content contentuid="h15f0ee5fga398ga6a4g198cgef588b8b978b" version="1">Nivel 3: Magia Divina</content>
   <content contentuid="h7388ec5cg457dg1ca4ge8c5g3185c4df0a9b" version="1">Tu vínculo con lo divino te permite aprender conjuros de la clase Clérigo. Cada vez que alcanzas el nivel 3, 5, 7 y 9 de Hechicero, aprendes conjuros adicionales de la lista de conjuros de Clérigo. Se convierten en conjuros de Hechicero para ti, pero no cuentan contra el número de conjuros de Hechicero que conoces.
 
-Nivel 3: dos &lt;LSTag Tooltip="Cantrip"&gt;trucos&lt;/LSTag&gt;, dos conjuros de nivel 1 y dos conjuros de nivel 2.
-
-Nivel 5: dos conjuros de nivel 3.
-
-Nivel 7: dos conjuros de nivel 4.
-
-Nivel 9: dos conjuros de nivel 5.</content>
+Nivel 3: dos &lt;LSTag Tooltip="Cantrip"&gt;trucos&lt;/LSTag&gt;, dos conjuros de nivel 1 y dos conjuros de nivel 2. Nivel 5: dos conjuros de nivel 3. Nivel 7: dos conjuros de nivel 4. Nivel 9: dos conjuros de nivel 5.</content>
   <content contentuid="h5daa3aadg2b0fga149g8553gadf0c6898df2" version="1">Nivel 6: Curación Potenciada</content>
   <content contentuid="h12940965g725dg2c79gd30cg6b45c140c9be" version="1">Cuando un conjuro que lanzas con un espacio de conjuro restaura &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; a una criatura, esa criatura recupera &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; adicionales en el turno en que lanzas el conjuro. Los &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; adicionales equivalen a 2 más el nivel del espacio de conjuro.</content>
   <content contentuid="hc42ce789g281bg29d8gca00g60263a259a8c" version="1">Nivel 3: Favorecido por los Dioses</content>
@@ -6220,7 +6214,7 @@ Al igual que otros elfos, los eladrin pueden vivir más de 750 años.</content>
 
 Al igual que otros elfos, los eladrin pueden vivir más de 750 años.</content>
   <content contentuid="hee892110g8f20gdbb7g60f8g274ed51075aa" version="1">Paso Feérico</content>
-  <content contentuid="h690f28c7gad03g1cdbgd8fegfb090b06f3dd" version="1">Puedes usar este rasgo una cantidad de veces igual a tu bonificación de competencia, y recuperas todos los usos gastados cuando terminas un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt;.</content>
+  <content contentuid="h690f28c7gad03g1cdbgd8fegfb090b06f3dd" version="1">Puedes usar este rasgo una cantidad de veces igual a tu &lt;LSTag Tooltip="ProficiencyBonus"&gt;Bonificador de Competencia&lt;/LSTag&gt;, y recuperas todos los usos gastados cuando terminas un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt;.</content>
   <content contentuid="hd5282a6cg61c4g9090gb19ag4594d3d35701" version="1">Paso Feérico: Otoño</content>
   <content contentuid="hb284f5d4gf341g5049g2ce3g9ea223e41a38" version="1">Inmediatamente después de usar tu Paso Feérico, hasta dos criaturas de tu elección que puedas ver a 3 metros (10 pies) o menos de ti deben superar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; o quedar hechizadas por ti durante 1 minuto, o hasta que tú o tus compañeros inflinjáis cualquier daño a las criaturas.</content>
   <content contentuid="h9aebcc08g580fg3628g9378gf3b3f0400749" version="1">Paso Feérico: Verano</content>
@@ -6229,7 +6223,7 @@ Al igual que otros elfos, los eladrin pueden vivir más de 750 años.</content>
   <content contentuid="hfa86f65dg33d6g9ea6g0948gfbf198214a31" version="1">Cuando usas tu Paso Feérico, una criatura de tu elección que puedas ver a 1.5 metros (5 pies) o menos de ti antes de teletransportarte debe superar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; o quedar asustada de ti hasta el final de tu siguiente turno.</content>
   <content contentuid="hccff7485gca62gd284gdabagfbef3ee11653" version="1">Paso Feérico: Invierno</content>
   <content contentuid="h9cda9df5g341bg90cag16e9gfc25dc9df498" version="1">Cuando usas tu Paso Feérico, puedes tocar una criatura voluntaria a 1.5 metros (5 pies) o menos de ti. Esa criatura se teletransporta entonces en tu lugar, apareciendo en un espacio desocupado de tu elección que puedas ver a 9 metros (30 pies) o menos de ti.</content>
-  <content contentuid="h4a8a3d05ged7ag55e3g1276g814259823391" version="1">Inmediatamente después de usar tu Paso Feérico, cada criatura de tu elección que puedas ver a 1.5 metros (5 pies) o menos de ti recibe daño por fuego igual a tu bonificación de competencia.</content>
+  <content contentuid="h4a8a3d05ged7ag55e3g1276g814259823391" version="1">Inmediatamente después de usar tu Paso Feérico, cada criatura de tu elección que puedas ver a 1.5 metros (5 pies) o menos de ti recibe daño por fuego igual a tu &lt;LSTag Tooltip="ProficiencyBonus"&gt;Bonificador de Competencia&lt;/LSTag&gt;.</content>
   <content contentuid="h5c1e93a7g2f48g4d6bg8e13ga7f4c2b60d95" version="1">Lanzamiento Duplicado</content>
   <content contentuid="h9a4f2b81gd37eg46c2gb058ge1d93f7a2c46" version="1">Gasta una acción y un espacio de conjuro para canalizar tu magia a través de tu duplicado. En su turno, puede lanzar uno de tus conjuros preparados con ese espacio, usando tu CD de salvación de conjuros y tu bonificador de ataque de conjuro, permitiéndote lanzar como si estuvieras en el espacio de la ilusión.</content>
   <content contentuid="h3f8a1c72g5e94g4b21ga7c3gd8e51f0b9a46" version="1">Lanzamiento Duplicado</content>
@@ -6343,7 +6337,7 @@ Defensa contra Multataque. Cuando una criatura te golpea con una &lt;LSTag Toolt
 
 Facsímil de Vida. Ganas &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Puntos de Golpe Temporales&lt;/LSTag&gt; iguales a 1d10 más tu nivel de Brujo.
 
-Forma Impertérrita. Tienes Inmunidad a la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt;. Si estás &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; cuando te transformas, la condición termina inmediatamente para ti.
+Forma Impertérrita. Tienes &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt;. Si estás &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; cuando te transformas, la condición termina inmediatamente para ti.
 
 Avatar Aterrador. Una vez por turno, cuando golpeas a una criatura con una &lt;LSTag Tooltip="AttackRoll"&gt;tirada de ataque&lt;/LSTag&gt;, puedes obligarla a realizar una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; contra tu CD de salvación de conjuros. Si falla la salvación, el objetivo tiene la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; hasta el final de tu siguiente turno.</content>
   <content contentuid="h754ee763gfa45g5f72g1e1fgb00e69210fff" version="1">Avatar Aterrador</content>
@@ -6353,7 +6347,7 @@ Avatar Aterrador. Una vez por turno, cuando golpeas a una criatura con una &lt;L
 
 Facsímil de Vida. Ganas &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Puntos de Golpe Temporales&lt;/LSTag&gt; iguales a 1d10 más tu nivel de Brujo.
 
-Forma Impertérrita. Tienes Inmunidad a la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt;. Si estás &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; cuando te transformas, la condición termina inmediatamente para ti.
+Forma Impertérrita. Tienes &lt;LSTag Tooltip="Immune"&gt;Inmunidad&lt;/LSTag&gt; a la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt;. Si estás &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; cuando te transformas, la condición termina inmediatamente para ti.
 
 Avatar Aterrador. Una vez por turno, cuando golpeas a una criatura con una &lt;LSTag Tooltip="AttackRoll"&gt;tirada de ataque&lt;/LSTag&gt;, puedes obligarla a realizar una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; contra tu CD de salvación de conjuros. Si falla la salvación, el objetivo tiene la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; hasta el final de tu siguiente turno.</content>
   <content contentuid="h9903ed73gfeadg630bg4306g28a1df027049" version="1">Resucitación Profana</content>
