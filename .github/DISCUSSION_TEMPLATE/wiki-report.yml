@@ -1,0 +1,66 @@
+title: "Wiki: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Important
+        * Search existing discussions before posting, including closed ones — the same pages get reported often.
+        * One post = one page. Please don't bundle reports about different pages in a single post.
+        * **The wiki is AI-generated and is not proofread page by page**, so mistakes are expected. Reports are welcome and nothing here is a bother.
+        * The wiki describes **this mod**, not vanilla Baldur's Gate 3. A page differing from vanilla behavior is usually correct, not a mistake.
+        * If the **game** behaves incorrectly, that's a bug — open a **Bug Report** issue instead. This category is only for the wiki text being wrong.
+        * **Please don't link other mods (Nexus, mod.io, GitHub, etc.).** These links are always posted in good faith, but this mod is written from the rulebooks and I deliberately don't read other mods' implementations. Describe what you mean in your own words instead.
+        * **Posts that ignore the points above may be closed or deleted without review.**
+
+  - type: input
+    id: wiki-url
+    attributes:
+      label: Wiki page URL
+      description: Link to the page you're reporting. Open the page and copy the address from your browser.
+      placeholder: e.g. https://github.com/Yoonmoonsik/bg3dnd/wiki/Subclass-Fighter-Champion
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong with it?
+      description: Quote the sentence or section you're reporting, and explain what's wrong with it. If you know what it should say instead, include that too.
+      placeholder: |
+        The Champion page says Remarkable Athlete boosts jump distance on a critical hit.
+        In game it gives extra Movement and Disengage instead — nothing about jumping.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem-type
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - Incorrect information
+        - Outdated — no longer matches the current mod version
+        - Missing information
+        - Confusing or unclear wording
+        - Broken link, image, or formatting
+        - Other
+    validations:
+      required: false
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      description: Which version you checked against, if you compared the page to the game.
+      placeholder: e.g. 4.11.23.1
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing discussions and this page hasn't already been reported.
+          required: true
+        - label: This is about the wiki text being wrong, not about the mod behaving incorrectly in game.
+          required: true
