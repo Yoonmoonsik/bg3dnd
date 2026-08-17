@@ -1842,7 +1842,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6fd27cb5-bff5-48b4-a987-ec76c0e8d921" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURE_WOODLAND_AURA_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d4e0bd80-1a63-4c03-92dd-07f742eb14d0" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(CONJURE_WOODLAND_4,100,-1)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(CONJURE_WOODLAND_5,100,-1)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(6d8,Force)" />
       </fields>
     </stat_object>
@@ -1851,7 +1851,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="34bdfb9a-d9d1-4be1-a180-f54f45d90cb1" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURE_WOODLAND_AURA_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d4e0bd80-1a63-4c03-92dd-07f742eb14d0" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(CONJURE_WOODLAND_5,100,-1)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(CONJURE_WOODLAND_6,100,-1)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(7d8,Force)" />
       </fields>
     </stat_object>
