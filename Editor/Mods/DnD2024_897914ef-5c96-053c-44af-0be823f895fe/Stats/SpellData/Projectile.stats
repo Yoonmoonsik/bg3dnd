@@ -251,7 +251,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="RangedMainWeaponRange" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('AgonizingBlast',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);IF(HasPassive('AgonizingBlast',context.Source)):DealDamage(MainRangedWeapon+CharismaModifier, MainRangedWeaponDamageType);IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(TrueStrike), Radiant);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(TrueStrike),Psychic);ExecuteWeaponFunctors(MainHand);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('AgonizingBlastPlayer',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);IF(HasPassive('AgonizingBlastPlayer',context.Source)):DealDamage(MainRangedWeapon+CharismaModifier, MainRangedWeaponDamageType);IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(TrueStrike), Radiant);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(TrueStrike),Psychic);ExecuteWeaponFunctors(MainHand);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlastPlayer',context.Source)):Force(3);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1)" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="8646984b-91d6-47b8-afd5-0a3eebe3d447" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Physical_Ranged" />
@@ -275,7 +275,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e3b2fa74-ab21-49c9-8a0a-a1400c5a6716" />
         <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_Radiant" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b96113c3-6efe-4d75-b34a-9e827b59c4e7" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(MainRangedWeapon+LevelMapValue(TrueStrike), Radiant);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(MainRangedWeapon+LevelMapValue(TrueStrike),Psychic);ExecuteWeaponFunctors(MainHand);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(MainRangedWeapon+LevelMapValue(TrueStrike), Radiant);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(MainRangedWeapon+LevelMapValue(TrueStrike),Psychic);ExecuteWeaponFunctors(MainHand);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlastPlayer',context.Source)):Force(3);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Ranged" />
       </fields>
     </stat_object>
@@ -301,7 +301,7 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d10,Force,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d10,Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d10,Force,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(1d10,Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlastPlayer',context.Source)):Force(3);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="3eaf2c46-46a9-4b52-8e05-fae7dc4e548b" />
@@ -340,7 +340,7 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6+LevelMapValue(D6Cantrip),Force,Magical);ApplyStatus(WEAPONMASTERY_SLOW,100,1);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6+LevelMapValue(D6Cantrip),Force,Magical);ApplyStatus(WEAPONMASTERY_SLOW,100,1);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlastPlayer',context.Source)):Force(3);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCritical() and HasPassive('PotentCantrip',context.Source)):DealDamage((1d6+LevelMapValue(D6Cantrip))/2,Force,Magical);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
@@ -2821,7 +2821,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedSpellAttack" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D12Cantrip),Poison,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D12Cantrip),Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D12Cantrip),Poison,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D12Cantrip),Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlastPlayer',context.Source)):Force(3);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source) and not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((LevelMapValue(D12Cantrip))/2,Poison,Magical);IF(HasPassive('PotentCantrip',context.Source) and HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((LevelMapValue(D12Cantrip))/2,Psychic,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
@@ -2835,7 +2835,7 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlast',context.Source)):Force(3);ApplyStatus(SELF,BLOOD_BOLT_TEMPHP,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Necrotic,Magical);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);IF(TargetSizeEqualOrSmaller(Size.Large) and HasPassive('RepellingBlastPlayer',context.Source)):Force(3);ApplyStatus(SELF,BLOOD_BOLT_TEMPHP,100,-1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source) and not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Necrotic,Magical);IF(HasPassive('PotentCantrip',context.Source) and HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Psychic,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
