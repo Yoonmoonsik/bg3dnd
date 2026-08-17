@@ -801,7 +801,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="6" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeSpellAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8,MainMeleeWeaponDamageType,Magical);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Character();" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f008cdbg3350gd976g5f94g72ed94e99398" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8,MainMeleeWeaponDamageType);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeSpellAttack" />

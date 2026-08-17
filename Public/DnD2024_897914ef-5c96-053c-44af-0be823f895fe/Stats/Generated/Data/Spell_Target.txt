@@ -645,7 +645,7 @@ data "SpellProperties" "ApplyStatus(SPECTRAL_SLASH_TARGET_2,100,1);ApplyStatus(S
 data "TargetRadius" "6"
 data "SpellRoll" "Attack(AttackType.MeleeSpellAttack)"
 data "SpellSuccess" "DealDamage(1d8,MainMeleeWeaponDamageType,Magical);"
-data "TargetConditions" "not Self() and not Dead()"
+data "TargetConditions" "not Self() and not Dead() and Character();"
 data "Icon" "Spell_SpectralSlash"
 data "DisplayName" "h6f008cdbg3350gd976g5f94g72ed94e99398;1"
 data "Description" "he35c6486g7f21gd1fag785egf414f915b565;1"
