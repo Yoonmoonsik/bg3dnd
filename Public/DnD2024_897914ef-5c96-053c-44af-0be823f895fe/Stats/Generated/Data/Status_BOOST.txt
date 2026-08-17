@@ -3303,7 +3303,7 @@ data "StackId" "TROLLBLOOD_INFUSION"
 data "StackType" "Overwrite"
 data "TickType" "StartTurn"
 data "Boosts" "Advantage(DeathSavingThrow);"
-data "TickFunctors" "RegainHitPoints(5)"
+data "TickFunctors" "IF(not HasStatus('DOWNED',context.Source)):RegainHitPoints(5)"
 data "IsUnique" "1"
 
 new entry "BLINK_VANISH"
