@@ -82,6 +82,8 @@
         <field name="FireResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="LightningResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ProficiencyBonus" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -141,7 +143,7 @@
         <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;SteelDefender_DeflectAttack" />
         <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
-        <field name="DifficultyStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -208,6 +210,7 @@
         <field name="Armor" type="IntegerTableFieldDefinition" value="13" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="20" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange();ProficiencyBonus(Skill,Perception);BlockRegainHP(Undead;Construct);DamageBonus(2);" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -277,6 +280,7 @@
         <field name="UnarmedRangedAttackAbility" type="EnumerationTableFieldDefinition" value="Dexterity" enumeration_type_name="Ability" version="1" />
         <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check" />
         <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="SG_Charmed" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -340,6 +344,7 @@
         <field name="Initiative" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DarkvisionRange" type="StringTableFieldDefinition" value="18" />
         <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="Maces;Shields" enumeration_type_name="ProficiencyGroupFlags" version="1" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
