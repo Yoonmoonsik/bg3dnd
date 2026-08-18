@@ -51,6 +51,11 @@
                     <attribute id="UUID" type="guid" value="c1fbd175-24a4-45c2-bf25-dbe56cedaeb2"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h1bf178cfg495fgc014g2a3dg87805ddb3ddc" version="1"/>
+                    <attribute id="Name" type="FixedString" value="BlockSpellCastingPoint"/>
+                    <attribute id="UUID" type="guid" value="afcc4c04-bf4b-4bb7-832b-d629129ec696"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__BARBARIAN__"/>
                     <attribute id="UUID" type="guid" value="dec23621-7b1f-446c-96ce-36c8cae3210f"/>
                 </node>
@@ -747,11 +752,6 @@
                     <attribute id="Name" type="FixedString" value="MoonSickle"/>
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h1bf178cfg495fgc014g2a3dg87805ddb3ddc" version="1"/>
-                    <attribute id="Name" type="FixedString" value="BlockSpellCastingPoint"/>
-                    <attribute id="UUID" type="guid" value="afcc4c04-bf4b-4bb7-832b-d629129ec696"/>
                 </node>
             </children>
         </node>
