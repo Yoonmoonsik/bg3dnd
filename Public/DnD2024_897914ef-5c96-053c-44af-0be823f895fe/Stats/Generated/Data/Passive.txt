@@ -3967,6 +3967,9 @@ data "Properties" "Highlighted;ForceShowInCC"
 data "BoostContext" "OnCast;OnCombatStarted;OnCreate;OnTurn"
 data "Boosts" "IF(not HasActionResource('InnateSorcery',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_InnateSorcery'),ModifyUseCosts(Replace,InnateSorcery,0,-1,InnateSorcery),ModifyUseCosts(Add,SorceryPoint,2,0));"
 
+new entry "StormsFury"
+type "PassiveData"
+
 new entry "__ABBERANT 10100__"
 type "PassiveData"
 
@@ -4085,7 +4088,6 @@ data "PriorityOrder" "10406"
 
 new entry "ControlledChaos"
 type "PassiveData"
-using "ControlledChaos"
 data "DisplayName" "h3fa61546gfe2agba6cga260g8953a67a0644;1"
 data "PriorityOrder" "10411"
 

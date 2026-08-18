@@ -5494,6 +5494,12 @@
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnCombatStarted;OnCreate;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82205d95-f109-4a20-98da-81d3117717d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="StormsFury" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFDC143C" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d614b884-d16c-422e-83c7-1a52c0bc7e24" />
@@ -5668,7 +5674,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bbdc5b05-f040-43d8-bb63-6779e5a6e4e2" />
         <field name="Name" type="NameTableFieldDefinition" value="ControlledChaos" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1d162eb8-d53d-4bac-9406-d40621dc7fba" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3fa61546gfe2agba6cga260g8953a67a0644" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="10411" />
       </fields>
