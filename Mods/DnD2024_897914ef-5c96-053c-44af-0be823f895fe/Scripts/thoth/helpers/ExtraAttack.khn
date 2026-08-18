@@ -11,7 +11,7 @@ function SpectralSlashCheck()
 end
 
 function ExtraAttackSpellCheck()
-    return ~TrueStrike() & ~SpellId('Target_VengefulBlade') & ~SpellId('Target_BoomingBlade_ClassSpell') & ~SpellId('Target_GreenFlameBlade') & HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack') | SpellId('Target_CommandersStrike') | SpellId('Target_Shove') | SpellId('Target_Trip') | BreathWeaponCheck() | SpectralSlashCheck() | SpellId('Target_BootOfTheGiants') | SpellId('Teleportation_PactOfTheChain') | SpellId('Target_CreepingFog')
+    return ~TrueStrike() & ~SpellId('Target_VengefulBlade') & ~SpellId('Target_BoomingBlade_ClassSpell') & ~SpellId('Target_GreenFlameBlade') & HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack') | SpellId('Target_CommandersStrike') | SpellId('Target_Shove') | SpellId('Target_Trip') | BreathWeaponCheck() | SpectralSlashCheck() | SpellId('Target_BootOfTheGiants') | SpellId('Teleportation_PactOfTheChain') | SpellId('Target_CreepingFog') | SpellId('Projectile_BreathWeapon_SummonDragon')
 end
 
 function ExtraAttackCheck()

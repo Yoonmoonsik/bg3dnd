@@ -358,5 +358,41 @@
         <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ShortResting;ExtraAttack_2" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03e03c5f-81c4-4b16-98c5-b4164dc6fd65" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonDragon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d4f7f461-7fce-4544-945b-3222e126b8d2" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="9" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="19" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="17" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Wisdom" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="19" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="50" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="SG_Charmed;SG_Frightened;SG_Poisoned" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Strength" enumeration_type_name="Ability" version="1" />
+        <field name="UnarmedAttackAbility" type="EnumerationTableFieldDefinition" value="Strength" enumeration_type_name="Ability" version="1" />
+        <field name="UnarmedRangedAttackAbility" type="EnumerationTableFieldDefinition" value="Strength" enumeration_type_name="Ability" version="1" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bd10b674-5b5e-4153-9564-13d3e087707c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonDragon_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="03e03c5f-81c4-4b16-98c5-b4164dc6fd65" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="11" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="20" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="60" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="SG_Charmed;SG_Frightened;SG_Poisoned" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack_2" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

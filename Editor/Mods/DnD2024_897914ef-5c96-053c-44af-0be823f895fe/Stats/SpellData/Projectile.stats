@@ -2806,6 +2806,22 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource(true,true);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7cf185d1-9f12-41ef-98c0-ccaea3db8f70" />
+        <field name="Name" type="NameTableFieldDefinition" value="BreathWeapon_SummonDragon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="38745705-df3d-497d-8bf7-bd8c46e95d3f" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="4" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Dexterity, GetSummoner(context.Source)))" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire,Magical);ApplyStatus(BURNING,100,2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((2d6)/2,Fire,Magical);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ddc08ef3-f67d-4603-9773-158f2aecabbc" />

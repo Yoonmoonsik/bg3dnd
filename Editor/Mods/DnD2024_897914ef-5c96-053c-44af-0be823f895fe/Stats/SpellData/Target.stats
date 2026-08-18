@@ -2047,6 +2047,52 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="d16a93f4-ddb5-4175-9b3f-22eced19ff02" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c9806f8e-3e92-4b30-9df8-a88d69452b91" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonDragon" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Conjuration" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="Ground:Summon(05b4caf9-a482-444a-82b1-579ad8d12292, -1,Projectile_AiHelper_Summon_Strong,,'SummonDragon',SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('2337e270-3c93-4088-8439-7c7450b99179') and not Character() and not Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_EndGameAlly_ZhentarimUnits" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8925bf96gcc33g196cg6b28ga8e21a86bf29" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9d6713c3gcb8cgea0fg44deg1925c2bcb55d" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_ClericSummon_Gen" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_ClericSummon_Gen" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_PlanarAlly_L6to8" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Summon_PlanarAlly_Celestial_L6to8" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="6f42f5f3-7a5a-4441-a02e-71b0450ac4b7,,;,,;c0513845-6e0e-42e8-9a8c-baa5e2b6ead6,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;42aaefdc-cf9b-4249-b159-285041851f69,,;,,;20e11c98-fff9-4417-88de-5bcc2368a1bd,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7e42016a-29f9-4922-908b-dbf010dff168" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ebd046f7-066f-4acf-b671-dd451201c58b" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="37218caf-c844-479e-830e-d4c3fc2b9591" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="175dbc3e-8895-43f6-96b5-52e0d40d68d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonDragon_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9806f8e-3e92-4b30-9df8-a88d69452b91" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="Ground:Summon(275bccb6-9c6d-4c4b-9005-6924f1beaaaf, -1,Projectile_AiHelper_Summon_Strong,,'SummonDragon',SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SummonDragon" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="938b2f08-df22-40b1-9031-09a75008cd91" />
+        <field name="Name" type="NameTableFieldDefinition" value="Slam_SummonDragon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8957e17d-f15e-4d52-86f0-740968636edb" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d8c434cf-507f-49b3-a383-f5a413ae8672" />
@@ -11076,10 +11122,10 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Slashing);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6+4+UnarmedDamage, Slashing,Magical);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Physical" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Bludgeoning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+4+UnarmedDamage, Slashing);" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
