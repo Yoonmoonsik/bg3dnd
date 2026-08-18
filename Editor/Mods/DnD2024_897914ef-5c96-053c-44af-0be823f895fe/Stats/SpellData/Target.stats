@@ -2091,6 +2091,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="Slam_SummonDragon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8957e17d-f15e-4d52-86f0-740968636edb" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6+4+UnarmedDamage, Slashing,Magical);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+4+UnarmedDamage, Slashing);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -11122,10 +11124,10 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6+4+UnarmedDamage, Slashing,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Slashing,Magical);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Physical" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+4+UnarmedDamage, Slashing);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Slashing);" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
