@@ -1720,9 +1720,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="ConjureElementals_Minor_Container" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cb77b88d-d99a-4761-8bb7-cd8a72f19e38" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONJURE_MINOR_ELEMENTALS,100,100);" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="5" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CONJURE_MINOR_ELEMENTALS,100,100);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="Self();" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd5c12bafga9aagfb28g8efbg6a56a1770bd5" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d8" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
@@ -1730,8 +1730,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_ConjureWoodlandBeing_L4to5" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7bf288a2-61a1-4e9a-be06-1b31a7e5c204" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="c4a3d033-a273-4489-a00c-ba7e52b6f1d5" />
-        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1740,9 +1739,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="ConjureElementals_Minor_Container_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="05fa1b32-bed7-492e-b5d3-5e55f4c9868f" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONJURE_MINOR_ELEMENTALS_5,100,100);" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="5" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CONJURE_MINOR_ELEMENTALS_5,100,100);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="Self();" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11cbe00dg7613g77ebgcbf6g82af126dc834" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d8" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
@@ -1750,8 +1749,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_ConjureWoodlandBeing_L4to5" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7bf288a2-61a1-4e9a-be06-1b31a7e5c204" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="c4a3d033-a273-4489-a00c-ba7e52b6f1d5" />
-        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1760,9 +1758,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="ConjureElementals_Minor_Container_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="38e1430a-9f82-4632-8649-50698b4e885b" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONJURE_MINOR_ELEMENTALS_6,100,100);" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="5" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CONJURE_MINOR_ELEMENTALS_6,100,100);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="Self();" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf72ba7eeg74aeg8025g8d10g383f2aab6a51" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d8" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
@@ -1770,8 +1768,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_ConjureWoodlandBeing_L4to5" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7bf288a2-61a1-4e9a-be06-1b31a7e5c204" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="c4a3d033-a273-4489-a00c-ba7e52b6f1d5" />
-        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1779,14 +1776,16 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e10e35c0-c24b-4386-a4fa-4ba4ce406451" />
         <field name="Name" type="NameTableFieldDefinition" value="ConjureWoodlandBeings" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8a0699ab-923a-47f8-a3b3-69ae8309a895" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONJURE_WOODLAND_AURA,100,10);" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CONJURE_WOODLAND_AURA,100,10);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Force)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h96663848g22b6g4fd3g0749gcca87a42edab" version="2" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1794,14 +1793,16 @@
         <field name="UUID" type="IdTableFieldDefinition" value="68592c7c-20d6-4dad-b53e-89c35962b23b" />
         <field name="Name" type="NameTableFieldDefinition" value="ConjureWoodlandBeings_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="57458770-908e-4ddc-9183-992c836ba87c" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONJURE_WOODLAND_AURA_5,100,10);" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CONJURE_WOODLAND_AURA_5,100,10);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Force)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfbad83efgcb7cg321ag47a0g402ce027568b" version="2" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1809,14 +1810,16 @@
         <field name="UUID" type="IdTableFieldDefinition" value="58efebd4-8a24-48bf-bf37-6d8b105b516b" />
         <field name="Name" type="NameTableFieldDefinition" value="ConjureWoodlandBeings_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="de558d1a-941f-41f0-b8f2-df251a4cdf90" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONJURE_WOODLAND_AURA_6,100,10);" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CONJURE_WOODLAND_AURA_6,100,10);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Force)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc98c1c9egd99agca86ged41g2a76a0c61645" version="2" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
