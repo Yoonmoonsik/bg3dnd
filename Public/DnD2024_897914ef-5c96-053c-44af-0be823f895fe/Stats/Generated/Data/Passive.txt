@@ -8541,3 +8541,11 @@ data "StatsFunctorContext" "OnDamaged"
 data "Conditions" "HasDamageDoneForType(DamageType.Radiant);"
 data "StatsFunctors" "DealDamage(SWAP,ProficiencyBonus,Force,Magical)"
 
+new entry "LOW_HouseOfHope_RaphaelsBlessing"
+type "PassiveData"
+using "LOW_HouseOfHope_RaphaelsBlessing"
+data "Boosts" ""
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "HasDamageDoneForType(DamageType.Radiant);"
+data "StatsFunctors" "DealDamage(SWAP,ProficiencyBonus*2,Fire,Magical)"
+

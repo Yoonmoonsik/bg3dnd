@@ -11880,5 +11880,16 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,ProficiencyBonus,Force,Magical)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82059664-bcd3-46d5-a986-b8e9ba25b00d" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_HouseOfHope_RaphaelsBlessing" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4ac4366f-223d-4d99-b8f8-01f4330da4b4" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamaged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageDoneForType(DamageType.Radiant);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,ProficiencyBonus*2,Fire,Magical)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
