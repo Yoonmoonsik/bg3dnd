@@ -224,6 +224,7 @@ local SPELL_CLASS_MAP = {
     Target_InsectPlague_spellscroll = '5 Cleric Druid Sorcerer',
     Target_MassCureWounds_spellscroll = '5 Bard Cleric Druid',
     Target_SummonCelestial_spellscroll = '5 Cleric',
+    Target_SummonDragon_spellscroll = '5 Wizard',
 
     Projectile_ChainLightning_spellscroll = '6 Sorcerer Wizard',
     Target_CircleOfDeath_spellscroll = '6 Sorcerer Warlock Wizard',
@@ -624,4 +625,5 @@ function IsScrollSpell()
 	| SpellId('Zone_RimesBindingIce_spellscroll')
 	| SpellId('Target_Frostbite_spellscroll')
 	| SpellId('Projectile_BloodBolt_spellscroll')
+	| SpellId('Target_SummonDragon_spellscroll')
 end
