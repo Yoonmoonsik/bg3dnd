@@ -4,3 +4,10 @@ data "StatusType" "FEAR"
 using "EYEBITE_PANICKED"
 data "RemoveConditions" "SavingThrow(Ability.Wisdom, SourceSpellDC(),false,DisadvantageOnHeightenedSpell())"
 
+new entry "DISSONANT_WHISPERS"
+type "StatusData"
+data "StatusType" "FEAR"
+using "COMMAND_FLEE"
+data "DisplayName" "h21d26c53g94c8g4f53ga031gc5f01f2156f8;1"
+data "Icon" "Spell_Enchantment_DissonantWhispers"
+

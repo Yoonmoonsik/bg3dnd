@@ -99,7 +99,7 @@ Acid Splash, Blade Ward, Blood Bolt, Booming Blade, Bursting Sinew, Finger Guns,
 
 ### Leveled Spells
 
-- Level 1: Absorb Elements, Armor of Agathys, Ballistic Smite, Body Warping of Gorgoroth, Catapult, Chromatic Orb, Cloak of Shadow, Color Spray, Command, Cure Wounds, False Life, Healing Word, Hell's Lash, Hungering Blade, Spectral Slash, Spellfire Flare, Thorn Armor, Thunderous Smite, Tide of Darkness, Umbral Tendril, Wardaway, Witch Bolt, Wrathful Smite.
+- Level 1: Absorb Elements, Armor of Agathys, Ballistic Smite, Body Warping of Gorgoroth, Catapult, Chromatic Orb, Cloak of Shadow, Color Spray, Command, Cure Wounds, Dissonant Whispers, False Life, Healing Word, Hell's Lash, Hungering Blade, Spectral Slash, Spellfire Flare, Thorn Armor, Thunderous Smite, Tide of Darkness, Umbral Tendril, Wardaway, Witch Bolt, Wrathful Smite.
 - Level 2: Aganazzar's Scorcher, Arcane Vigor, Darkbolt, Dazing Blast, Death Armor, Dragon's Breath, Elminster's Elusion, Find Steed, Fire Rune, Gust of Wind, Lesser Restoration, Mind Spike, Moonbeam, Prayer of Healing, Rime's Binding Ice, Searing Orb, Shadow Blade, Snilloc's Snowball Swarm, Summon Beast, Tasha's Mind Whip, Warding Bond.
 - Level 3: Ashardalon's Stride, Astral Flood, Aura of Vitality, Bestow Curse, Cacophonic Shield, Conjure Barrage, Crusader's Mantle, Elemental Exhalation, Laeral's Silver Lance, Lightning Arrow, Murmurs of Doom, Phantom Steed, Summon Fey, Tidal Wave, Trollblood Infusion, Void Strike.
 - Level 4: Conjure Woodland Beings, Fire Dance, Fount of Moonlight, Murder of Crows, Spellfire Storm, Vitriolic Sphere.
