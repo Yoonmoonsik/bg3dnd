@@ -7914,7 +7914,8 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ArcaneWard_55e;ArcaneWard_Cast_55e;ArcaneWard_Resource" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Savant(Abjuration);ActionResource(ArcaneWard,6,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcaneWard,6,0);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(63e02bc2-cdaa-417b-8f85-1f346ae0a286,2,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7937,6 +7938,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcaneWard,2,0);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(63e02bc2-cdaa-417b-8f85-1f346ae0a286,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7960,6 +7962,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcaneWard,2,0);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(63e02bc2-cdaa-417b-8f85-1f346ae0a286,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7982,6 +7985,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcaneWard,2,0);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(63e02bc2-cdaa-417b-8f85-1f346ae0a286,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8005,6 +8009,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcaneWard,2,0);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(63e02bc2-cdaa-417b-8f85-1f346ae0a286,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8152,7 +8157,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="ConjurationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Savant(Conjuration)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2956b1e8-981d-4994-a30a-dfabb9d912c5,2,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8173,6 +8178,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="ConjurationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2956b1e8-981d-4994-a30a-dfabb9d912c5,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8194,6 +8200,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="ConjurationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2956b1e8-981d-4994-a30a-dfabb9d912c5,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8214,6 +8221,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="ConjurationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2956b1e8-981d-4994-a30a-dfabb9d912c5,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8235,6 +8243,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="ConjurationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2956b1e8-981d-4994-a30a-dfabb9d912c5,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8266,7 +8275,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Portent" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Savant(Divination)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(78a63d0e-45b2-4ac1-a64c-1b933dd3d843,2,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8287,6 +8296,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="DivinationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(78a63d0e-45b2-4ac1-a64c-1b933dd3d843,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8308,6 +8318,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="DivinationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(78a63d0e-45b2-4ac1-a64c-1b933dd3d843,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8328,6 +8339,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="DivinationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(78a63d0e-45b2-4ac1-a64c-1b933dd3d843,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8349,6 +8361,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="DivinationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(78a63d0e-45b2-4ac1-a64c-1b933dd3d843,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8379,8 +8392,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EnchantmentSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(43fb9c43-ddfa-46ff-a64f-73406dddf4eb,,,,AlwaysPrepared)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Savant(Enchantment)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(43fb9c43-ddfa-46ff-a64f-73406dddf4eb,,,,AlwaysPrepared);SelectSpells(7894c2fe-5123-4b7e-bd05-cc74a0604d93,2,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8401,6 +8413,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EnchantmentSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(7894c2fe-5123-4b7e-bd05-cc74a0604d93,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8422,6 +8435,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EnchantmentSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(7894c2fe-5123-4b7e-bd05-cc74a0604d93,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8442,6 +8456,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EnchantmentSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(7894c2fe-5123-4b7e-bd05-cc74a0604d93,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8463,6 +8478,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EnchantmentSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(7894c2fe-5123-4b7e-bd05-cc74a0604d93,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8494,7 +8510,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="PotentCantripPlayer" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Savant(Evocation)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(c311599e-4478-4f68-9fc5-0f791590f5db,2,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8515,6 +8531,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EvocationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(c311599e-4478-4f68-9fc5-0f791590f5db,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8536,6 +8553,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EvocationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(c311599e-4478-4f68-9fc5-0f791590f5db,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8556,6 +8574,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EvocationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(c311599e-4478-4f68-9fc5-0f791590f5db,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8577,6 +8596,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EvocationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(c311599e-4478-4f68-9fc5-0f791590f5db,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8608,7 +8628,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ImprovedMinorIllusion" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Savant(Illusion)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2ba3eb55-24be-4267-8da2-3868657e6e50,2,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8629,6 +8649,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="IllusionSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2ba3eb55-24be-4267-8da2-3868657e6e50,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8651,6 +8672,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="IllusionSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2ba3eb55-24be-4267-8da2-3868657e6e50,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8671,6 +8693,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="IllusionSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2ba3eb55-24be-4267-8da2-3868657e6e50,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8692,6 +8715,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="IllusionSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2ba3eb55-24be-4267-8da2-3868657e6e50,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8723,7 +8747,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="GrimHarvest" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Savant(Necromancy)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(04e48c5c-d77b-44e7-9043-536293e2e18d,2,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8744,6 +8768,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="NecromancySchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(04e48c5c-d77b-44e7-9043-536293e2e18d,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8765,6 +8790,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="NecromancySchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(04e48c5c-d77b-44e7-9043-536293e2e18d,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8785,6 +8811,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="NecromancySchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(04e48c5c-d77b-44e7-9043-536293e2e18d,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8806,6 +8833,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="NecromancySchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(04e48c5c-d77b-44e7-9043-536293e2e18d,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8837,7 +8865,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ExperimentalAlchemy" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Savant(Transmutation)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(3969a273-14d4-4d28-bfff-7a57b1181fe0,2,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8858,6 +8886,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="TransmutationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(3969a273-14d4-4d28-bfff-7a57b1181fe0,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8879,6 +8908,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="TransmutationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(3969a273-14d4-4d28-bfff-7a57b1181fe0,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8899,6 +8929,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="TransmutationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(3969a273-14d4-4d28-bfff-7a57b1181fe0,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8920,6 +8951,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="TransmutationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(3969a273-14d4-4d28-bfff-7a57b1181fe0,1,0,Wizard_3_Savant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

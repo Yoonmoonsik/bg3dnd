@@ -4595,6 +4595,64 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="50235ac8-762b-455f-82f2-b69eabd2cce4" />
+        <field name="Name" type="NameTableFieldDefinition" value="SavantDummy_1" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MagicInitiateWizard" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd8f158fcg0f26g89adg3cb8g224c43224f85" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h974a5e6ag1e52gc326gd4b2g92e4681ec152" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1437cd0-82ff-4936-baba-efef926890c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="SavantDummy_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50235ac8-762b-455f-82f2-b69eabd2cce4" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f2ac28cc-73c3-4e4b-9391-60812932f596" />
+        <field name="Name" type="NameTableFieldDefinition" value="SavantDummy_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50235ac8-762b-455f-82f2-b69eabd2cce4" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d83f1909-28c4-49fb-89eb-b112bec7ad7b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SavantDummy_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50235ac8-762b-455f-82f2-b69eabd2cce4" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="133308e4-957a-4847-908b-708d308dcdd8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SavantDummy_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50235ac8-762b-455f-82f2-b69eabd2cce4" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="499d3973-5989-46b8-adb8-42d9488e40a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="SavantDummy_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50235ac8-762b-455f-82f2-b69eabd2cce4" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d4b92c6b-555d-4da6-84d2-ea929bde3e00" />
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneWard" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
