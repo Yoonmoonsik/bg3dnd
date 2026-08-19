@@ -3654,7 +3654,7 @@ data "PriorityOrder" "9203"
 data "Properties" "Highlighted;OncePerCombat"
 data "Boosts" "IF(Combat(context.Source) and Combat() and not HadTurnInCombat()):Advantage(AttackRoll)"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "IsWeaponAttack() and not IsMiss() TurnBased();"
+data "Conditions" "IsWeaponAttack() and not IsMiss() and TurnBased();"
 data "StatsFunctors" "IF(IsMeleeAttack()):DealDamage(ClassLevel(Rogue), MainMeleeWeaponDamageType,,,0,,true,true);IF(IsRangedAttack()):DealDamage(ClassLevel(Rogue), MainRangedWeaponDamageType,,,0,,true,true)"
 
 new entry "Assassin_3_AssassinsTool"

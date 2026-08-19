@@ -5069,7 +5069,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerCombat" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(Combat(context.Source) and Combat() and not HadTurnInCombat()):Advantage(AttackRoll)" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and not IsMiss() TurnBased();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and not IsMiss() and TurnBased();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(ClassLevel(Rogue), MainMeleeWeaponDamageType,,,0,,true,true);IF(IsRangedAttack()):DealDamage(ClassLevel(Rogue), MainRangedWeaponDamageType,,,0,,true,true)" />
       </fields>
     </stat_object>
