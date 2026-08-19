@@ -1437,7 +1437,7 @@ data "InterruptContextScope" "Far"
 data "Container" "YesNoDecision"
 data "Conditions" "IsAbleToReact(context.Observer) and Ally(context.Target, context.Observer);"
 data "Properties" "ApplyStatus(OBSERVER_TARGET,YOUDIEONMYCOMMAND,100,0);UseSpell(OBSERVER_TARGET,Target_Interrupt_Positive,true,true,true);"
-data "Cost" "ReactionActionPoint:1;YouDieOnMyCommandCharge:1;"
+data "Cost" "ReactionActionPoint:1;YouDieOnMyCommand:1;"
 data "Cooldown" "OncePerShortRest"
 data "InterruptDefaultValue" "Ask;Enabled"
 

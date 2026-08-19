@@ -1936,7 +1936,7 @@
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Ally(context.Target, context.Observer);" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,YOUDIEONMYCOMMAND,100,0);UseSpell(OBSERVER_TARGET,Target_Interrupt_Positive,true,true,true);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;YouDieOnMyCommandCharge:1;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;YouDieOnMyCommand:1;" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
