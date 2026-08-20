@@ -105,5 +105,58 @@
         <field name="SubRaceUUID" type="GuidTableFieldDefinition" value="32806145-fd6a-4eb8-ab90-c20000e0ba61" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="10721afe-d6b6-46f6-975c-828d8de713d3" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Hireling_Paladin" />
+        <field name="AvailableInCharacterCreation" type="EnumerationTableFieldDefinition" value="Hidden" enumeration_type_name="CharacterCreatorAvailabilityType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had7df2feg3eaag43abgacb4gd57517c59bfd" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h23d5c3ecg0184g4ca8gbb48g6c2325c59aa0" version="3" />
+        <field name="BodyType" type="EnumerationTableFieldDefinition" value="Male" enumeration_type_name="BodyType" version="1" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="ff4d9497-023c-434a-bd14-82fc367e991c" />
+        <field name="SubClassUUID" type="GuidTableFieldDefinition" value="1c761ad0-6f5f-409e-ac1d-ddf6f85c1fc4" />
+        <field name="GlobalTemplate" type="GuidTableFieldDefinition" value="244e782b-a99c-444a-bd8d-d356c26c2902" />
+        <field name="Passives" type="StringTableFieldDefinition" value="DeathSavingThrows" />
+        <field name="Unique" type="BoolTableFieldDefinition" value="False" />
+        <field name="RaceUUID" type="GuidTableFieldDefinition" value="5c39a726-71c8-4748-ba8d-f768b3c11a91" />
+        <field name="IsHenchman" type="BoolTableFieldDefinition" value="True" />
+        <field name="LockClass" type="BoolTableFieldDefinition" value="False" />
+        <field name="AppearanceLocked" type="BoolTableFieldDefinition" value="False" />
+        <field name="BodyShape" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="BodyShape" version="1" />
+        <field name="Identity" type="EnumerationTableFieldDefinition" value="Max" enumeration_type_name="Identity" version="1" />
+        <field name="BackgroundUUID" type="GuidTableFieldDefinition" value="7e820dee-a8fc-43b2-8661-2b404454bade" />
+        <field name="VoiceTableUUID" type="GuidTableFieldDefinition" value="8e5a1dd0-7ab5-4d26-81e6-b2d23b52f808" />
+        <field name="LockRace" type="BoolTableFieldDefinition" value="True" />
+        <field name="ReallyTags" type="GuidObjectListTableFieldDefinition" value="264a6880-9a51-429c-a9fc-97f8952baf90" />
+        <field name="SubRaceUUID" type="GuidTableFieldDefinition" value="a9fd49a6-bd3d-4cce-b51a-c68eab0f2a9c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_10" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7198b8ec-8fb4-4a44-9306-a68d533d1cfb" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Hireling_Ranger" />
+        <field name="AvailableInCharacterCreation" type="EnumerationTableFieldDefinition" value="Hidden" enumeration_type_name="CharacterCreatorAvailabilityType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he1ea5bcdgd3c2g4c74g86deg93defc0406de" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h16aa10aag1285g4625g848cg3eb15b1a31d9" version="3" />
+        <field name="BodyType" type="EnumerationTableFieldDefinition" value="Male" enumeration_type_name="BodyType" version="1" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="36be18ba-23db-4dff-bfa6-ae105ce43144" />
+        <field name="GlobalTemplate" type="GuidTableFieldDefinition" value="0488a406-402c-4bd1-ba38-63b28c112d8d" />
+        <field name="Passives" type="StringTableFieldDefinition" value="DeathSavingThrows" />
+        <field name="Unique" type="BoolTableFieldDefinition" value="False" />
+        <field name="RaceUUID" type="GuidTableFieldDefinition" value="4f5d1434-5175-4fa9-b7dc-ab24fba37929" />
+        <field name="IsHenchman" type="BoolTableFieldDefinition" value="True" />
+        <field name="LockClass" type="BoolTableFieldDefinition" value="False" />
+        <field name="AppearanceLocked" type="BoolTableFieldDefinition" value="False" />
+        <field name="BodyShape" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="BodyShape" version="1" />
+        <field name="Identity" type="EnumerationTableFieldDefinition" value="Max" enumeration_type_name="Identity" version="1" />
+        <field name="BackgroundUUID" type="GuidTableFieldDefinition" value="e8c84134-5e91-4ecc-881a-efc47680129b" />
+        <field name="VoiceTableUUID" type="GuidTableFieldDefinition" value="9aea6a01-05c5-4296-8223-d4f60be851c4" />
+        <field name="LockRace" type="BoolTableFieldDefinition" value="True" />
+        <field name="ReallyTags" type="GuidObjectListTableFieldDefinition" value="264a6880-9a51-429c-a9fc-97f8952baf90" />
+        <field name="SubRaceUUID" type="GuidTableFieldDefinition" value="c5f8ebdd-f4a5-4d2d-9eab-4a8d1b1dd724" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
