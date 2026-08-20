@@ -753,6 +753,14 @@
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h72243c73g089cge11bg923dgf4b6e05bcaf5" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h4bde7d56g0a2fg316bgdb44gef6cda0de1b1" version="1"/>
+                    <attribute id="Name" type="FixedString" value="RangersCompanion"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="b1a4d984-63a8-46df-ba4a-2fb5193eb356"/>
+                </node>
             </children>
         </node>
     </region>

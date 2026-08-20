@@ -5768,6 +5768,33 @@ data "Boosts" "ActionResource(Movement,3,0);"
 data "RemoveConditions" ""
 data "RemoveEvents" ""
 
+new entry "RANGERS_COMPANION_BEAR"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RANGERS_COMPANION_BEAR"
+data "DisplayName" "h0caa271dg838fg43cfgbb0bg029e8fa4e67a;2"
+data "Boosts" "RollBonus(Attack,Owner.SpellCastingAbilityModifier);DamageBonus(Owner.SpellCastingAbilityModifier);AC(1);IF(AbilityGreaterThan('Wisdom',13,GetSummoner(context.Source))):AC(1);IF(AbilityGreaterThan('Wisdom',15,GetSummoner(context.Source))):AC(1);IF(AbilityGreaterThan('Wisdom',17,GetSummoner(context.Source))):AC(1);IF(AbilityGreaterThan('Wisdom',19,GetSummoner(context.Source))):AC(1);IF(AbilityGreaterThan('Wisdom',21,GetSummoner(context.Source))):AC(1);IF(AbilityGreaterThan('Wisdom',23,GetSummoner(context.Source))):AC(1);"
+
+new entry "RANGERS_COMPANION_BOAR"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RANGERS_COMPANION_BEAR"
+
+new entry "RANGERS_COMPANION_GIANTSPIDER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RANGERS_COMPANION_BEAR"
+
+new entry "RANGERS_COMPANION_RAVEN"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RANGERS_COMPANION_BEAR"
+
+new entry "RANGERS_COMPANION_WOLF"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RANGERS_COMPANION_BEAR"
+
 new entry "HUNTERS_RIME_TEMPHP"
 type "StatusData"
 data "StatusType" "BOOST"

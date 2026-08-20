@@ -7155,6 +7155,43 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3d71508d-13ce-4712-b3fd-9b1d32e3ee0a" />
+        <field name="Name" type="NameTableFieldDefinition" value="RANGERS_COMPANION_BEAR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58f8a01e-752f-4716-a21c-788ac2fa1354" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0caa271dg838fg43cfgbb0bg029e8fa4e67a" version="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack,Owner.SpellCastingAbilityModifier);DamageBonus(Owner.SpellCastingAbilityModifier);AC(1);IF(AbilityGreaterThan('Wisdom',13,GetSummoner(context.Source))):AC(1);IF(AbilityGreaterThan('Wisdom',15,GetSummoner(context.Source))):AC(1);IF(AbilityGreaterThan('Wisdom',17,GetSummoner(context.Source))):AC(1);IF(AbilityGreaterThan('Wisdom',19,GetSummoner(context.Source))):AC(1);IF(AbilityGreaterThan('Wisdom',21,GetSummoner(context.Source))):AC(1);IF(AbilityGreaterThan('Wisdom',23,GetSummoner(context.Source))):AC(1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f4706508-0560-4cb1-beca-0dad8cf45179" />
+        <field name="Name" type="NameTableFieldDefinition" value="RANGERS_COMPANION_BOAR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d71508d-13ce-4712-b3fd-9b1d32e3ee0a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="db8138c2-a77b-4e20-8750-c03e914648d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="RANGERS_COMPANION_GIANTSPIDER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d71508d-13ce-4712-b3fd-9b1d32e3ee0a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eb06b7f2-58fb-4b33-9463-3e7429bc2660" />
+        <field name="Name" type="NameTableFieldDefinition" value="RANGERS_COMPANION_RAVEN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d71508d-13ce-4712-b3fd-9b1d32e3ee0a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="02d11701-d23f-4a0e-ac5d-2c15fa7fdcf3" />
+        <field name="Name" type="NameTableFieldDefinition" value="RANGERS_COMPANION_WOLF" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d71508d-13ce-4712-b3fd-9b1d32e3ee0a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8bfe3e4c-f6a7-48eb-b986-ed53fda58a1b" />
         <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_RIME_TEMPHP" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfb12d0cdg48ffg1464gb153g8e462f617426" version="1" />

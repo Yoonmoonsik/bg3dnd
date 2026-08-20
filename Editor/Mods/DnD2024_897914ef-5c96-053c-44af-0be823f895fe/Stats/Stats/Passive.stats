@@ -34,7 +34,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d9f934eg7721gfb63gcff8gb411e659dc78" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd3ffb028g9755g52adgf223g4bb289eebf93" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnAttack;OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and (HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not CreateSorceryPoints() and not ArcaneWard() and not Tagged('IN_CAMP');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and (HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not CreateSorceryPoints() and not ArcaneWard() and not RangersCompanion() and not Tagged('IN_CAMP');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
@@ -4557,8 +4557,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dca0a137-87c9-4d30-a301-bd79efa9d819" />
         <field name="Name" type="NameTableFieldDefinition" value="CompanionsBond" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c6628fcc-928d-48b6-93b8-6d0001e5bba6" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1fe98af2g42d0g348cga592g953cb60ce5e7" version="1" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="8105" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1fe98af2g42d0g348cga592g953cb60ce5e7" version="2" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="8103" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h02db6a63g3c71g5feeg9f17g4e0f97b6aa19" version="3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4577,6 +4578,18 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="83ebe90d-d9b6-4f45-a54c-71df272a8aab" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he1cd6837ge579g13b4g4394g33ea8c725e00" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="8111" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2f0d755egc57dga744g72aaga03c4b3365ab" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="029df08f-f262-4692-adc3-67174ad582fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="HuntersMark_RangerCompanion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="229332c2-0179-49a4-9df6-417d5cda3043" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7a7c2eeegb9f0gd7b7g089ege84222ee1a24" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('HUNTERS_MARK',context.Target,GetSummoner(context.Source)) and HasDamageEffectFlag(DamageFlags.Hit)):DamageBonus(1d6,Force);" />
       </fields>
     </stat_object>
     <stat_object color="#FF008000" is_substat="false">

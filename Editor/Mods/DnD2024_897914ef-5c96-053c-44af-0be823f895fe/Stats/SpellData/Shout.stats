@@ -3932,6 +3932,74 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="66587e5c-9ef5-4545-a76a-2a1353bdf2cc" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="89ca9fa6-8cef-46b6-a0cb-ba951d3730da" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_RangersCompanion" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(RangersCompanion,1,0);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Ranger_RangersCompanion" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5feecb41gdbe1gef09gb9dbg3d32f331a0f6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hba999864g53e8g9570g151dg74f237601880" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_RangersCompanion" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_RangersCompanion" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="VFX_Somatic_03" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="85f63b1e-1fe6-4228-863d-71f43a945b46,,;,,;551b8855-805c-45fa-973f-88df0cbe646a,,;394f93b4-106a-44e4-8e08-2feae2881df1,,;db52441a-8a80-4630-bcb8-0f220e1b8323,,;,,;f588875b-9a5f-4e05-ac41-3f3e73cdb4e4,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2adc2574-07ac-4116-ba89-9ffe367ff77b" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="a8bd13f1-3918-4c25-a3c4-ca312ef20178" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasActionResource('RangersCompanion', 1, 0, false, false, context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b80bebbd-a804-4e7a-8403-ae2d75d40196" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="89ca9fa6-8cef-46b6-a0cb-ba951d3730da" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_RangersCompanion" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7e2619c-c5d3-4aa0-9d3e-681732946519" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b80bebbd-a804-4e7a-8403-ae2d75d40196" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ed1ab41-08d1-4321-9baa-88b44f87fd02" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b80bebbd-a804-4e7a-8403-ae2d75d40196" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9c0f2284-e0c0-4097-a8c9-c7ed54ffdc21" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b80bebbd-a804-4e7a-8403-ae2d75d40196" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9b68d80c-ae3d-45b7-9020-0f5521336aed" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b80bebbd-a804-4e7a-8403-ae2d75d40196" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b44372de-ef94-4ffd-9778-c5f21922d653" />

@@ -12256,6 +12256,82 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1598aea-ce01-4cf6-ac6c-74ffed972677" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="08b67438-9680-4b09-8e79-a002638cb159" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_RangersCompanion_Bear;Target_RangersCompanion_Boar;Target_RangersCompanion_GiantSpider;Target_RangersCompanion_Raven;Target_RangersCompanion_Wolf;Shout_RangersCompanion;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="db86a5f2-9687-4832-ad15-90dc21226fe8" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_Bear" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a5d3dd43-3283-413f-8346-10f8fbd046b2" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):Summon(d642d398-f349-4eab-b98c-a82cbda19918,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BEAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(5,'Ranger') and not ClassLevelHigherOrEqualThan(7,'Ranger')):Summon(533d21da-878c-421d-a372-54e0125ae3bb,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BEAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Ranger') and not ClassLevelHigherOrEqualThan(9,'Ranger')):Summon(041f7544-d1fc-446d-b439-2108c02896ed,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BEAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(9,'Ranger') and not ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(2b290dbd-0f5f-4a65-8d23-481fa40f7aa8,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BEAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(df74b830-20ec-4fc3-b09e-3b82e7db8f80,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BEAR,SHADOWCURSE_SUMMON_CHECK);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="69bdb5bf-8b8f-4160-b262-5dfaeedc58a4" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_Boar" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9dabf403-bc84-4917-ae87-b799f95d2545" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):Summon(be71d66c-5328-490f-b962-4fdb7ca2647f,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BOAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(5,'Ranger') and not ClassLevelHigherOrEqualThan(7,'Ranger')):Summon(4ab10523-7e35-4a68-9afa-4839c484c579,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BOAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Ranger') and not ClassLevelHigherOrEqualThan(9,'Ranger')):Summon(f756eba3-1140-4be4-96f7-ca9706be60b6,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BOAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(9,'Ranger') and not ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(a6297d2a-5c08-4206-a661-00a776802160,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BOAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(aa0bc9e6-65db-4471-9c35-8ff3412212d6,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BOAR,SHADOWCURSE_SUMMON_CHECK);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="09db7b64-be1b-485f-a4e1-1be80375583d" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_GiantSpider" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ccc75109-8962-44e6-8f42-4323df834af8" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):Summon(7542dc70-4f9d-439a-ba96-1bc0c1b89d9c,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_GIANTSPIDER,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(5,'Ranger') and not ClassLevelHigherOrEqualThan(7,'Ranger')):Summon(e3161996-d439-45ff-a42a-3fdb3f76b9f4,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_GIANTSPIDER,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Ranger') and not ClassLevelHigherOrEqualThan(9,'Ranger')):Summon(79d2361b-32d4-4a8e-9f95-531a214600ce,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_GIANTSPIDER,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(9,'Ranger') and not ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(dc33b3a3-60ba-462b-9dd2-f8327491c7db,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_GIANTSPIDER,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(b7ce7396-1a43-49a3-8dd0-f41dc67f0a94,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_GIANTSPIDER,SHADOWCURSE_SUMMON_CHECK);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c273eaa0-1a70-4943-bf07-5a2730d2ec09" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_Raven" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="52b57a04-50de-412a-8ac6-1d56dfb385a1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):Summon(ca69f1a8-28c6-4eb3-863e-fa95040dc7e7,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_RAVEN,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(5,'Ranger') and not ClassLevelHigherOrEqualThan(7,'Ranger')):Summon(c390b2fc-7039-4600-bd5d-e96380dd72e9,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_RAVEN,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Ranger') and not ClassLevelHigherOrEqualThan(9,'Ranger')):Summon(7a74e578-0a94-4f66-a192-4cda690fc041,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_RAVEN,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(9,'Ranger') and not ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(32f19a95-cbd0-4c3e-965c-b5cbc3ab67cf,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_RAVEN,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(c73770fb-465e-42c4-8faf-e611f1a0201c,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_RAVEN,SHADOWCURSE_SUMMON_CHECK);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4d755590-2be4-4be0-8578-526e0944036c" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_Wolf" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="979af1b5-c725-4ad1-953f-d0490cc7f989" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):Summon(9beee5c9-279e-49d8-a4a8-18f9ee0b1519,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_WOLF,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(5,'Ranger') and not ClassLevelHigherOrEqualThan(7,'Ranger')):Summon(b428c4e0-d3ca-449c-a5c5-9e0fb310081a,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_WOLF,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Ranger') and not ClassLevelHigherOrEqualThan(9,'Ranger')):Summon(74a96845-f868-4843-8941-9dfa27be92ed,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_WOLF,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(9,'Ranger') and not ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(557fec99-a8d7-466e-8b33-517082e5d8fb,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_WOLF,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(62fd6540-17dd-405e-b305-1d88d77e8a08,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_WOLF,SHADOWCURSE_SUMMON_CHECK);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="324f5a8c-fd4d-4e38-abee-7b70da658e55" />
         <field name="Name" type="NameTableFieldDefinition" value="FortifyingSoul" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_FortifyingSoul_1;Target_FortifyingSoul_2;Target_FortifyingSoul_3;Target_FortifyingSoul_4;Target_FortifyingSoul_5;Target_FortifyingSoul_6;" />
