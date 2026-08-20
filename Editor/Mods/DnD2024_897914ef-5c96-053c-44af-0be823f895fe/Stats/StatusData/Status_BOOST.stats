@@ -2114,6 +2114,24 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a8a12a46-6dea-4a02-bec8-2f557027ab12" />
+        <field name="Name" type="NameTableFieldDefinition" value="SYNAPTIC_STATIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bf7f8e54-e294-4368-a4b6-ce625295d345" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0eb6a1ccg061cg7757g2ce7gb1ae17ae8a0f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd6166cf1gbef5ga79eg976cg003cafe77c08" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_SynapticStatic" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SYNAPTIC_STATIC" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack,-1d6);RollBonus(SavingThrow,-1d6);RollBonus(DeathSavingThrow,-1d6);" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Intelligence" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Intelligence, SourceSpellDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(SYNAPTIC_STATIC)" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="bc4f779b-7424-4770-90bb-bdea0f4e9ead" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="912f37c7-3fd9-4be3-bfda-f65c2790e9ff" />
         <field name="Name" type="NameTableFieldDefinition" value="IRRESISTIBLE_DANCE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="97764827-8e57-4655-a1e0-0ba9a2a25892" />
