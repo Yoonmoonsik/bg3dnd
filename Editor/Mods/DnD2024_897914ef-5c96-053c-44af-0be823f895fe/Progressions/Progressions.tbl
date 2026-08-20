@@ -11711,5 +11711,17 @@
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="WildShape_TempHP_NPC" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1029" />
+        <field name="UUID" type="IdTableFieldDefinition" value="fd2c526b-6d1b-48c2-8aa7-0d347bc4bb6a" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8f25082b-262e-46d1-a440-a682fdc1a364" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DhampirOrc" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Dhampir_1_TraceOfUndeath;Dhampir_1_VampiricBite" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,1.5,0)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

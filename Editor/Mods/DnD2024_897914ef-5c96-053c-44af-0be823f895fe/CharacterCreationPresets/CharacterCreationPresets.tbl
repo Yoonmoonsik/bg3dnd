@@ -833,5 +833,37 @@
         <field name="VOLinesTableUUID" type="GuidTableFieldDefinition" value="14df8f45-90af-4bd0-8024-42624da9976e" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_52" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e5d5fbe5-51d4-4d3c-9d9c-2eb98d1f2f8f" />
+        <field name="RaceUUID" type="GuidTableFieldDefinition" value="5c39a726-71c8-4748-ba8d-f768b3c11a91" />
+        <field name="SubRaceUUID" type="GuidTableFieldDefinition" value="92e8fe6e-62a0-4489-b3f9-dba5f0f51980" />
+        <field name="BodyType" type="EnumerationTableFieldDefinition" value="Male" enumeration_type_name="BodyType" version="1" />
+        <field name="RootTemplate" type="GuidTableFieldDefinition" value="c1cbd8fa-9a7e-4600-85e8-9b5fe49bbe91" />
+        <field name="Overview" type="StringTableFieldDefinition" value="HUM_MB_Camera_Overview_A" />
+        <field name="CloseUpA" type="StringTableFieldDefinition" value="HUM_MB_Camera_Closeup_A" />
+        <field name="CloseUpB" type="StringTableFieldDefinition" value="HUM_MB_Camera_Closeup_B" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Dhampir" />
+        <field name="VOLinesTableUUID" type="GuidTableFieldDefinition" value="14df8f45-90af-4bd0-8024-42624da9976e" />
+        <field name="BodyShape" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="BodyShape" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_53" />
+        <field name="UUID" type="IdTableFieldDefinition" value="33103b0b-d5b1-4203-ac65-337f2097c9b5" />
+        <field name="RaceUUID" type="GuidTableFieldDefinition" value="5c39a726-71c8-4748-ba8d-f768b3c11a91" />
+        <field name="SubRaceUUID" type="GuidTableFieldDefinition" value="92e8fe6e-62a0-4489-b3f9-dba5f0f51980" />
+        <field name="BodyType" type="EnumerationTableFieldDefinition" value="Female" enumeration_type_name="BodyType" version="1" />
+        <field name="RootTemplate" type="GuidTableFieldDefinition" value="e688f4c0-400f-4d6a-91c7-8773e5d8689f" />
+        <field name="Overview" type="StringTableFieldDefinition" value="HUM_FB_Camera_Overview_A" />
+        <field name="CloseUpA" type="StringTableFieldDefinition" value="HUM_FB_Camera_Closeup_A" />
+        <field name="CloseUpB" type="StringTableFieldDefinition" value="HUM_FB_Camera_Closeup_B" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Dhampir" />
+        <field name="VOLinesTableUUID" type="GuidTableFieldDefinition" value="14df8f45-90af-4bd0-8024-42624da9976e" />
+        <field name="BodyShape" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="BodyShape" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
