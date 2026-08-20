@@ -8689,7 +8689,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="HalfOrc"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Darkvision;RelentlessEndurance;AdrenalineRush"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Darkvision"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="74e2e44d-e8c0-4b99-a6dc-c02f43cea8a6"/>
                     <attribute id="UUID" type="guid" value="816fa8c7-7648-48f7-8309-cb4e7383e45f"/>
@@ -9052,6 +9052,14 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="7e76da16-650c-4a6e-85b0-f9e23a7f5a60"/>
                     <attribute id="UUID" type="guid" value="13b286a5-fb07-4944-97e9-58be14a32678"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="OrcOrc"/>
+                    <attribute id="PassivesAdded" type="LSString" value="RelentlessEndurance;AdrenalineRush"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="34970543-6c16-41ad-b82d-fc655139955b"/>
+                    <attribute id="UUID" type="guid" value="53e8ae4c-408c-4c4c-9866-9f0a04e6de26"/>
                 </node>
             </children>
         </node>
