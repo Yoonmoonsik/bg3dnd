@@ -6242,11 +6242,19 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2f6f2af7-d1fa-42c8-9f6e-595a1dde8e66" />
         <field name="Name" type="NameTableFieldDefinition" value="LargeForm" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f6b57c12-fac3-4bc7-917c-b6a2da294900" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ENLARGE_DUERGAR, 100, 100);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h955ac611g781fg6ebfge3d7gd118e6f415a5" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb1577082gdd8ag5ff6g60bcgd99dc936bbc9" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENLARGE_DUERGAR, 100, 100);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_Enlarge" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,,;,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="e11630b9-598a-4ce0-b2bf-c50e074e7b9d" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="419490b6-d15f-474e-87bb-635c012f0682" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
