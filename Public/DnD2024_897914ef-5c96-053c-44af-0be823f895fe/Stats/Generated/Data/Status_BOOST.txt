@@ -8241,6 +8241,13 @@ data "RemoveEvents" "OnDamage"
 data "ManagedStatusEffectType" "Positive"
 data "ManagedStatusEffectGroup" "6435c10a-c67d-4f79-8813-b84b0762f92b"
 
+new entry "ARCANE_INTERFERENCE_RECOVERY"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "ARCANE_INTERFERENCE_RECOVERY"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "OnApplyFunctors" "RestoreResource(SELF,ActionPoint,1,0);RestoreResource(SpellSlot,1,1);RestoreResource(SpellSlot,1,2);RestoreResource(SpellSlot,1,3);RestoreResource(SpellSlot,1,4);RestoreResource(SpellSlot,1,5);RestoreResource(SpellSlot,1,6)"
+
 new entry "__FIGHTING STYLE FEAT__"
 type "StatusData"
 data "StatusType" "BOOST"
