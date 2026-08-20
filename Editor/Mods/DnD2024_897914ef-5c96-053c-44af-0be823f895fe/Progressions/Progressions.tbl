@@ -11030,9 +11030,8 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Drow" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SuperiorDarkvision;FeyAncestry" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SuperiorDarkvision" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,9,0);" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(d707ec70-da8a-457b-9b69-7cf5205eef0e,,,,AlwaysPrepared);SelectPassives(8738b757-88a6-424b-bec4-7807c7af8f70,1,ElfKeenSenses);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11043,8 +11042,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Drow" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="RaceSpell_FaerieFire" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11053,6 +11050,76 @@
         <field name="UUID" type="IdTableFieldDefinition" value="db485b48-fc71-4de4-a62d-47675659678b" />
         <field name="TableUUID" type="GuidTableFieldDefinition" value="a43498f5-d72f-4a05-b721-1feea9acb3ad" />
         <field name="FSName" type="StringTableFieldDefinition" value="Drow" />
+        <field name="Level" type="ByteTableFieldDefinition" value="5" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1021" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c91bb3ce-73d0-4330-80e1-562880a53472" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="cda01bce-b09b-459a-bdb0-b162de09e54d" />
+        <field name="FSName" type="StringTableFieldDefinition" value="LolthDrow" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="FeyAncestry" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(d707ec70-da8a-457b-9b69-7cf5205eef0e,,,,AlwaysPrepared);SelectPassives(8738b757-88a6-424b-bec4-7807c7af8f70,1,ElfKeenSenses);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1023" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f91b409d-cd06-4950-8407-f923cbfe118a" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="cda01bce-b09b-459a-bdb0-b162de09e54d" />
+        <field name="FSName" type="StringTableFieldDefinition" value="LolthDrow" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="RaceSpell_FaerieFire" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1024" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1e613de6-10a6-4c41-9cab-923ebe9dd82f" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="cda01bce-b09b-459a-bdb0-b162de09e54d" />
+        <field name="FSName" type="StringTableFieldDefinition" value="LolthDrow" />
+        <field name="Level" type="ByteTableFieldDefinition" value="5" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="RaceSpell_Darkness" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1022" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3feba964-0ae4-4ae5-b2a1-e515f0973efe" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="1037326e-43ed-4840-9f37-10f1efb3779a" />
+        <field name="FSName" type="StringTableFieldDefinition" value="SeldarineDrow" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="FeyAncestry" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(d707ec70-da8a-457b-9b69-7cf5205eef0e,,,,AlwaysPrepared);SelectPassives(8738b757-88a6-424b-bec4-7807c7af8f70,1,ElfKeenSenses);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1025" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ab797e14-2032-4dd2-8c08-b949fe79c1be" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="1037326e-43ed-4840-9f37-10f1efb3779a" />
+        <field name="FSName" type="StringTableFieldDefinition" value="SeldarineDrow" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="RaceSpell_FaerieFire" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1026" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d0f4d603-6908-40d5-8435-603c2b2dd71b" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="1037326e-43ed-4840-9f37-10f1efb3779a" />
+        <field name="FSName" type="StringTableFieldDefinition" value="SeldarineDrow" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="RaceSpell_Darkness" />
@@ -11573,6 +11640,18 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8007e4a9-80cc-47d3-9cf3-3385da4b82ae" />
         <field name="TableUUID" type="GuidTableFieldDefinition" value="c588bc70-f0cd-4a34-9252-54deb7a5211b" />
         <field name="FSName" type="StringTableFieldDefinition" value="DhampirGnome" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Dhampir_1_TraceOfUndeath;Dhampir_1_VampiricBite" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,1.5,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1027" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1170ee41-37e5-4135-8ab5-8c944a3f9221" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="edf4e688-fd70-485e-93c7-ff2e0c39b59b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DhampirDrow" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Dhampir_1_TraceOfUndeath;Dhampir_1_VampiricBite" />

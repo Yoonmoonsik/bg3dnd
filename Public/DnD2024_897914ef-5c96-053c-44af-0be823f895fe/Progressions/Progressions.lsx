@@ -8553,29 +8553,78 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Drow"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SuperiorDarkvision;FeyAncestry"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SuperiorDarkvision"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(d707ec70-da8a-457b-9b69-7cf5205eef0e,,,,AlwaysPrepared);SelectPassives(8738b757-88a6-424b-bec4-7807c7af8f70,1,ElfKeenSenses);"/>
                     <attribute id="TableUUID" type="guid" value="a43498f5-d72f-4a05-b721-1feea9acb3ad"/>
                     <attribute id="UUID" type="guid" value="4a634f24-bdcb-4559-b8be-7847133ad1c3"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Drow"/>
-                    <attribute id="PassivesAdded" type="LSString" value="RaceSpell_FaerieFire"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="a43498f5-d72f-4a05-b721-1feea9acb3ad"/>
                     <attribute id="UUID" type="guid" value="334e0ddd-33cb-468f-a232-40cfe9ad23da"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2);"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Drow"/>
-                    <attribute id="PassivesAdded" type="LSString" value="RaceSpell_Darkness"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="a43498f5-d72f-4a05-b721-1feea9acb3ad"/>
                     <attribute id="UUID" type="guid" value="db485b48-fc71-4de4-a62d-47675659678b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="LolthDrow"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FeyAncestry"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(d707ec70-da8a-457b-9b69-7cf5205eef0e,,,,AlwaysPrepared);SelectPassives(8738b757-88a6-424b-bec4-7807c7af8f70,1,ElfKeenSenses);"/>
+                    <attribute id="TableUUID" type="guid" value="cda01bce-b09b-459a-bdb0-b162de09e54d"/>
+                    <attribute id="UUID" type="guid" value="c91bb3ce-73d0-4330-80e1-562880a53472"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);"/>
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="LolthDrow"/>
+                    <attribute id="PassivesAdded" type="LSString" value="RaceSpell_FaerieFire"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="cda01bce-b09b-459a-bdb0-b162de09e54d"/>
+                    <attribute id="UUID" type="guid" value="f91b409d-cd06-4950-8407-f923cbfe118a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2);"/>
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="LolthDrow"/>
+                    <attribute id="PassivesAdded" type="LSString" value="RaceSpell_Darkness"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="cda01bce-b09b-459a-bdb0-b162de09e54d"/>
+                    <attribute id="UUID" type="guid" value="1e613de6-10a6-4c41-9cab-923ebe9dd82f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="SeldarineDrow"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FeyAncestry"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(d707ec70-da8a-457b-9b69-7cf5205eef0e,,,,AlwaysPrepared);SelectPassives(8738b757-88a6-424b-bec4-7807c7af8f70,1,ElfKeenSenses);"/>
+                    <attribute id="TableUUID" type="guid" value="1037326e-43ed-4840-9f37-10f1efb3779a"/>
+                    <attribute id="UUID" type="guid" value="3feba964-0ae4-4ae5-b2a1-e515f0973efe"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);"/>
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="SeldarineDrow"/>
+                    <attribute id="PassivesAdded" type="LSString" value="RaceSpell_FaerieFire"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="1037326e-43ed-4840-9f37-10f1efb3779a"/>
+                    <attribute id="UUID" type="guid" value="ab797e14-2032-4dd2-8c08-b949fe79c1be"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2);"/>
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="SeldarineDrow"/>
+                    <attribute id="PassivesAdded" type="LSString" value="RaceSpell_Darkness"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="1037326e-43ed-4840-9f37-10f1efb3779a"/>
+                    <attribute id="UUID" type="guid" value="d0f4d603-6908-40d5-8435-603c2b2dd71b"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);"/>
@@ -8964,6 +9013,15 @@
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="c588bc70-f0cd-4a34-9252-54deb7a5211b"/>
                     <attribute id="UUID" type="guid" value="8007e4a9-80cc-47d3-9cf3-3385da4b82ae"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,1.5,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DhampirDrow"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Dhampir_1_TraceOfUndeath;Dhampir_1_VampiricBite"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="edf4e688-fd70-485e-93c7-ff2e0c39b59b"/>
+                    <attribute id="UUID" type="guid" value="1170ee41-37e5-4135-8ab5-8c944a3f9221"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
