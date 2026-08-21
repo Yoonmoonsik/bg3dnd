@@ -2342,6 +2342,7 @@ data "Properties" "Highlighted;ForceShowInCC;IsToggled;ToggledDefaultAddToHotbar
 data "Boosts" "RollBonus(SkillCheck,1d10);RollBonus(RawAbility,1d10);"
 data "StatsFunctorContext" "OnAbilityCheck"
 data "StatsFunctors" "UseActionResource(SELF,SecondWind,1,0)"
+data "ToggleOffContext" "OnAbilityCheck"
 
 new entry "Fighter_5_TacticalShift"
 type "PassiveData"

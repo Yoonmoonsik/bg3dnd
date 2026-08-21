@@ -3238,6 +3238,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,1d10);RollBonus(RawAbility,1d10);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAbilityCheck" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(SELF,SecondWind,1,0)" />
+        <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="OnAbilityCheck" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
