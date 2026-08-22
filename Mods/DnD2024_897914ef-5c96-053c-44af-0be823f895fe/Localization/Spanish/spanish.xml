@@ -466,11 +466,11 @@ Golpes Elementales: Siempre que impactas con tu Golpe Desarmado, puedes hacer qu
   <content contentuid="h90c565bfgdc8eg1fc2gde60ga457cc60135b" version="1">Mientras tu &lt;LSTag Type="Spell" Tooltip="Shout_HarmonyOfFireAndWater"&gt;Sintonía Elemental&lt;/LSTag&gt; está activa, también tienes una Velocidad de Vuelo y una Velocidad de Nado iguales a tu &lt;LSTag Tooltip="MovementSpeed"&gt;Velocidad de Movimiento&lt;/LSTag&gt;.</content>
   <content contentuid="hbe92a07bg1800gd2e8g079fg1e0f39ce73ce" version="1">Plenitud del Cuerpo</content>
   <content contentuid="h4feabb8egaa22g3d36gc857g512930772995" version="1">Nivel 6: Plenitud del Cuerpo</content>
-  <content contentuid="hd5f70284g45c5g71b8g7505g337ea5751295" version="1">Obtienes la capacidad de curarte a ti mismo. Como Acción Adicional, puedes lanzar tu dado de Ki. Al hacerlo Recuperas un número de &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; igual al número obtenido más tu &lt;LSTag Tooltip="AbilityModifier"&gt;Modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; (mínimo 1 Punto de Golpe recuperado).
+  <content contentuid="hd5f70284g45c5g71b8g7505g337ea5751295" version="1">Obtienes la capacidad de curarte a ti mismo. Como Acción Adicional, puedes lanzar tu dado de dado de artes narciales. Al hacerlo Recuperas un número de &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; igual al número obtenido más tu &lt;LSTag Tooltip="AbilityModifier"&gt;Modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; (mínimo 1 Punto de Golpe recuperado).
 
 Puedes usar este rasgo un número de veces igual a tu &lt;LSTag Tooltip="AbilityModifier"&gt;Modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; (mínimo una vez), y recuperas todos los usos gastados tras completar un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt;.</content>
   <content contentuid="h25c230c0g01dbg6406g2c50gfc3e4aa92e7f" version="1">Plenitud del Cuerpo</content>
-  <content contentuid="h202adf83g5a60g677dg2f14g1cbdfc06aeab" version="1">Como Acción Adicional usas un punto de Ki y lanzas 1d20, Recuperas un número de &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; igual al número obtenido en el dado más tu &lt;LSTag Tooltip="AbilityModifier"&gt;Modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; (mínimo 1 Punto de Golpe recuperado).</content>
+  <content contentuid="h202adf83g5a60g677dg2f14g1cbdfc06aeab" version="1">Como Acción Adicional usas un punto de Ki y lanzas lanzas tu dado de artes marciales, Recuperas un número de &lt;LSTag Tooltip="HitPoints"&gt;Puntos de Golpe&lt;/LSTag&gt; igual al número obtenido en el dado más tu &lt;LSTag Tooltip="AbilityModifier"&gt;Modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; (mínimo 1 Punto de Golpe recuperado).</content>
   <content contentuid="hbbdecd13gacf6ga6bcge4dfga9e9fdd39678" version="1">Nivel 11: Paso Veloz</content>
   <content contentuid="h9f4fd43dgb96cg804dg3440g15b0a150a3ec" version="1">Puedes usar Paso del Viento sin gastar una Acción Adicional.</content>
   <content contentuid="h0e9a944dgb216gb539gf48dg822147b343bd" version="1">Regla: Requisito de Fuerza (Arma Pesada Cuerpo a Cuerpo)</content>
@@ -486,7 +486,7 @@ Si un efecto de Canalizar Juramento requiere una &lt;LSTag Tooltip="SavingThrow"
   <content contentuid="h77c3bd23ge0bdg1ed9gc503g1a06cc920d08" version="1">Nivel 2: Castigo Divino del Paladín</content>
   <content contentuid="hab240831g4170g3e19gaf78ge733be05a5f1" version="1">Siempre tienes preparado el Conjuro Castigo Divino. Además, puedes lanzarlo sin gastar un espacio de Conjuro, pero debes completar un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt; antes de poder lanzarlo de esta manera nuevamente.</content>
   <content contentuid="h39de8d3fgd862g0342g0a3ag9205f4e7bf55" version="1">Castigo Divino del Paladín</content>
-  <content contentuid="haaa7e52ege832ge271gecfdge010d65df535" version="1">Puedes lanzar Golpe Divino sin gastar un espacio de conjuro, pero debes completar un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt; antes de poder lanzarlo de esta manera nuevamente.</content>
+  <content contentuid="haaa7e52ege832ge271gecfdge010d65df535" version="1">Puedes lanzar Castigo Divino sin gastar un espacio de conjuro, pero debes completar un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt; antes de poder lanzarlo de esta manera nuevamente.</content>
   <content contentuid="hd777f361gcaa7g7dbegeb0agb9179de1ba4b" version="1">Nivel 5: Corcel Fiel</content>
   <content contentuid="h8d9bb995gd364g7b4fgd6f8gb78ed0bdda9b" version="1">Puedes pedir la ayuda de un corcel de otro mundo. Siempre tienes preparado el conjuro Encontrar Corcel.
 
@@ -506,17 +506,19 @@ Solo un jugador de corazón puro puede ver al corcel.</content>
 
 El corcel puede realizar una de las siguientes acciones de tu elección en cada uno de sus turnos: &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Correr&lt;/LSTag&gt;, Destrabarse, Esquivar o Atacar.
 
-Mientras estás montado en el Corcel, cuando recibes 4 o más puntos de daño, debes realizar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Dexterity"&gt;Destreza&lt;/LSTag&gt; CD 8. Si fallas, caes del corcel y tienes la condición &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt; durante 1 turno.</content>
+Mientras estás montado en el Corcel, cuando recibes 4 o más puntos de daño, debes realizar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Dexterity"&gt;Destreza&lt;/LSTag&gt; CD 8. Si fallas, caes del corcel y tienes la condición &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Derribado&lt;/LSTag&gt; durante 1 turno.
+
+Solo alguien de corazón puro puede ver el corcel</content>
   <content contentuid="h1a6f7528gc5efg5c9bge4f9gf7eb55315d54" version="1">Punto de Acción del Corcel</content>
-  <content contentuid="hdbb54662gd707gd172gbdfdgd57e57e3b819" version="1">El corcel puede realizar una de las siguientes acciones a tu elección en cada uno de sus turnos: Carrera, Desengancharse, Esquivar o Atacar.</content>
+  <content contentuid="hdbb54662gd707gd172gbdfdgd57e57e3b819" version="1">El corcel puede realizar una de las siguientes acciones a tu elección en cada uno de sus turnos: Carrera, Desengancharse, Esquivar o Embestir.</content>
   <content contentuid="he8975525g4266g8430g813bg4d65176a35f5" version="1">Embestida</content>
   <content contentuid="he8006ed5gf2f6gd6ceg798dg91c566666c82" version="1">Esquivar</content>
   <content contentuid="h5c0401b6g3fc4gaadagf4bbg097715066c52" version="1">Concentrado en evitar los ataques.
 
 Las &lt;LSTag Tooltip="AttackRoll"&gt;Tiradas de Ataque&lt;/LSTag&gt; contra la entidad afectada tienen &lt;LSTag Tooltip="Disadvantage"&gt;Desventaja&lt;/LSTag&gt;, y la entidad tiene &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las &lt;LSTag Tooltip="SavingThrow"&gt;Tiradas de Salvación&lt;/LSTag&gt; de Destreza.</content>
-  <content contentuid="h3d4848abgc60eg631cgc713g605af144c9ee" version="1">Nivel 9: Conjurar Enemigos</content>
+  <content contentuid="h3d4848abgc60eg631cgc713g605af144c9ee" version="1">Nivel 9: Repudiar Enemigos</content>
   <content contentuid="h060adb3eg6617g9283g226fg6d070eb47c88" version="1">Como acción Mágica, puedes gastar un uso de Canalizar Juramento de esta clase para abrumar a los enemigos con reverencia. Al presentar tu Símbolo Sagrado o arma, puedes elegir como objetivo un número de criaturas igual a tu &lt;LSTag Tooltip="AbilityModifier"&gt;Modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Charisma"&gt;Carisma&lt;/LSTag&gt; (mínimo una criatura) que puedas ver a [1] de ti. Cada objetivo debe superar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; o tener la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; durante 1 minuto.</content>
-  <content contentuid="ha4ade769g56f1g989dg4a5dgc980f0453d08" version="1">Conjurar Enemigos</content>
+  <content contentuid="ha4ade769g56f1g989dg4a5dgc980f0453d08" version="1">Repudiar Enemigos</content>
   <content contentuid="hf0938809g82f6ge8a7gea01gff762cf6f570" version="1">Como acción Mágica, puedes gastar un uso de Canalizar Juramento de esta clase para abrumar a los enemigos con reverencia. Al presentar tu Símbolo Sagrado o arma, puedes elegir como objetivo un número de criaturas igual a tu &lt;LSTag Tooltip="AbilityModifier"&gt;Modificador&lt;/LSTag&gt; de &lt;LSTag Tooltip="Charisma"&gt;Carisma&lt;/LSTag&gt; (mínimo una criatura) que puedas ver a [1] de ti. Cada objetivo debe superar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Wisdom"&gt;Sabiduría&lt;/LSTag&gt; o tener la condición &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Asustado&lt;/LSTag&gt; durante 1 minuto.</content>
   <content contentuid="hdd546b3bg87ddg0b0eg91d9g7dd5bb69d0d5" version="1">Nivel 11: Golpes Radiantes</content>
   <content contentuid="he923c53cgfecbgb456g1ee5gbc97fd5f5a9a" version="1">Tus golpes ahora portan poder sobrenatural. Cuando golpeas a un objetivo con una &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LSTag&gt; usando un arma Cuerpo a Cuerpo o un Golpe Desarmado, el objetivo recibe 1d8 de daño Radiante adicional.</content>
@@ -570,7 +572,7 @@ Bonificador de Iniciativa. Cuando lanzas la Iniciativa, puedes añadir tu &lt;LS
 
 Eres lo suficientemente veloz como para convertir un fallo en un nuevo golpe. Cuando fallas cuna &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LSTag&gt; con cualquiera de tus Armas, puedes realizar otro Ataque de forma gratuita.</content>
   <content contentuid="hfd10997cg1b63g1960g4918ga9e47736c018" version="1">Nivel 11: Presa de la Marca del Cazador Superior</content>
-  <content contentuid="h156a3a97g9e6bg053egabdeg9a8bfdfcdee2" version="1">Una vez por turno cuando infliges daño a una criatura marcada por tu Marca del Cazador, también puedes infligir el daño adicional de ese conjuro a una criatura diferente que puedas ver a [1] de la criatura que habias impactado.</content>
+  <content contentuid="h156a3a97g9e6bg053egabdeg9a8bfdfcdee2" version="1">Una vez por turno cuando infliges daño a una criatura marcada por tu Marca del Cazador, también puedes infligir el daño de la Marca del Cazador a una criatura diferente que puedas ver a [1] de la criatura que habias marcado.</content>
   <content contentuid="h2484eb83g2df9g26e8gd9a4g528b38f355d5" version="1">Presa de la Marca del Cazador Superior</content>
   <content contentuid="h6d51897ag955egeb37g57b9g59eddbb044d1" version="1">Puntería Firme</content>
   <content contentuid="h8b43db08gaf12gc02agb86cge29d6c39df7f" version="1">Como Acción Adicional, te otorgas &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en tu siguiente &lt;LSTag Tooltip="AttackRoll"&gt;Tirada de Ataque&lt;/LSTag&gt; en el turno actual. Solo puedes usar este rasgo si no te has movido durante este turno, y después de usarlo, tu Movimiento es 0 hasta el final del turno actual.</content>
@@ -622,7 +624,7 @@ No te beneficias de este rasgo si tienes la condición Incapacitado.</content>
   <content contentuid="h82f19e57gbf88g3a8bg03e7g5886ec5f6ac0" version="1">Hechicería Innata</content>
   <content contentuid="h591ca3fag8585g7042gec5dgab33a05594bb" version="1">Un evento en tu pasado dejó una marca indeleble en ti, imbuiéndote con una magia latente. Como Acción Adicional, puedes desatar esa magia durante 1 minuto, durante el cual obtienes los siguientes beneficios:&lt;br&gt;&lt;br&gt;La CD de Tiradas de Salvación de tus conjuros de Hechicero aumenta en 1.&lt;br&gt;Tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las tiradas de ataque de los conjuros de Hechicero que lanzas.&lt;br&gt;&lt;br&gt;Puedes usar este rasgo dos veces, y recuperas todos los usos gastados cuando completas un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt;.</content>
   <content contentuid="hf7441cebg5087gb813g35d8g6732e3fae8e6" version="1">Punto(s) de Hechicería</content>
-  <content contentuid="h8b175862g0d58g482ag2d06g7b4654769d66" version="1">Los Puntos de Hechicería son una faceta importante del poder de un hechicero. Se pueden gastar para aumentar conjuros o acceder a &lt;LSTag Tooltip="SpellSlot"&gt;espacios de conjuro&lt;/LSTag&gt; de nivel superior.</content>
+  <content contentuid="h8b175862g0d58g482ag2d06g7b4654769d66" version="1">Los Puntos de Hechicería son una faceta importante del poder de un hechicero. Se pueden gastar para aumentar conjuros o acceder a &lt;LSTag Tooltip="SpellSlot"&gt;Espacios de Conjuro&lt;/LSTag&gt; de nivel superior.</content>
   <content contentuid="hc9e4f723g5054g3b21ga6bage65df9a6ae78" version="1">Metamagia</content>
   <content contentuid="h98cf324dg4c24g1b78gdb54g670e46f0f8fb" version="1">Obtienes la capacidad de torcer tus conjuros para adaptarlos a tus necesidades. Elige entre las siguientes opciones de Metamagia.&lt;br&gt;&lt;br&gt;Obtienes dos opciones más en el nivel 10 de Hechicero.</content>
   <content contentuid="ha0496c74g4123g62d8ge5a6ga853a650ab6c" version="1">Restauración de Esencia</content>
@@ -636,7 +638,7 @@ No te beneficias de este rasgo si tienes la condición Incapacitado.</content>
   <content contentuid="h20d548d9g2600gaf44geda5gd71ed6825255" version="1">Astucia Mágica</content>
   <content contentuid="h0475c80dgb3d2g65a0g32e3g51e0604b9fae" version="1">Puedes realizar un rito esotérico durante 1 minuto. Al final, recuperas los Espacios de Conjuro de Magia de Pacto gastados, pero no más de una cantidad igual a la mitad de tu máximo (redondeado hacia arriba). Una vez que uses este rasgo, no puedes volver a hacerlo hasta que completes un &lt;LSTag Tooltip="LongRest"&gt;Descanso Largo&lt;/LSTag&gt;.</content>
   <content contentuid="hbe38acefg243eg2454ge187g5d1c50d4bb2b" version="2">Nivel 1: Eldritch Mind</content>
-  <content contentuid="h9958bcb7g9126g6467g3b95g0f07e49ea19d" version="1">Tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las Tiradas de Salvación de Constitución que realizas para mantener la Concentración.</content>
+  <content contentuid="h9958bcb7g9126g6467g3b95g0f07e49ea19d" version="1">Tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las &lt;LSTag Tooltip="SavingThrow"&gt;Tiradas de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Constitution"&gt;Constitución&lt;/LSTag&gt; que realizas para mantener la Concentración.</content>
   <content contentuid="ha12d8231ga51ag15b0gaa53g6e00282dc4a2" version="1">Nivel 1: Pacto de la Hoja</content>
   <content contentuid="he1bd3e3eg338fg58d5g3de3g9be05e9302e7" version="1">Nivel 1: Pacto de la Cadena</content>
   <content contentuid="h9e2924dag8101gd3b2g68a2g6add03aed4dd" version="1">Nivel 1: Pacto del Tomo</content>
@@ -695,10 +697,10 @@ No te beneficias de este rasgo si tienes la condición Incapacitado.</content>
   <content contentuid="h3098d03bg9b76gd04eg7ef8g689022ec62ad" version="1">Invocación: Don de los Protectores</content>
   <content contentuid="had9ee1e5g5369g47b5g65c4g37b956523a59" version="1">Esquirla Mental</content>
   <content contentuid="h3f49f302g9b29g72f7g25f0g2f3ff3297c48" version="1">Intentas fragmentar temporalmente la mente de una criatura que puedas ver dentro del alcance. El objetivo debe superar una &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Intelligence"&gt;Inteligencia&lt;/LSTag&gt; o recibir daño Psíquico y restar 1d4 de la siguiente &lt;LSTag Tooltip="SavingThrow"&gt;Tirada de Salvación&lt;/LSTag&gt; que realice antes del final de tu siguiente turno.</content>
-  <content contentuid="h1be8ef4cg573bg9247g8bf7gbe003418678b" version="1">Los trucos de Brujo que infligen daño y tienen alcance tienen su alcance aumentado 1,5 veces cuando los lanzas.</content>
-  <content contentuid="h92b0f41cg7222g57a1gf293g5f9b67f6c76a" version="1">Trucos de Brujo que requieren una tirada de ataque: cuando impactas a una criatura de tamaño Grande o menor con dicho truco, puedes empujar a la criatura hasta [1] directamente alejándola de ti.</content>
+  <content contentuid="h1be8ef4cg573bg9247g8bf7gbe003418678b" version="1">Los trucos de Brujo que infligen daño y tienen alcance, aumentan dicho alcance aumentado de 30 pies por nivel de brujo.</content>
+  <content contentuid="h92b0f41cg7222g57a1gf293g5f9b67f6c76a" version="1">Cualquier truco de Brujo que requieren una tirada de ataque al impactar una criatura de tamaño Grande o menor, puedes empujar a la criatura hasta [1] metros y alejárla de ti.</content>
   <content contentuid="h63854322g2981gf688g3b17g3be3eb3cbaea" version="1">Descarga Sobrenatural</content>
-  <content contentuid="h5821657eg6a48gdd10gb380ga906788793a5" version="1">Disparas [1] rayo(s) de pura energía de Fuerza que brotan de tus manos</content>
+  <content contentuid="h5821657eg6a48gdd10gb380ga906788793a5" version="1">Disparas [1] rayo(s) de pura energía de Fuerza que brotan de tus manos.</content>
   <content contentuid="ha82b5e6dgb4b1gb2a1g8b53g475515ffec20" version="1">Filo Atronador</content>
   <content contentuid="h0e37672dgdb7bg5838g12bcg8e96a88d3d98" version="1">Imbuyes tu arma con energía sónica. Si el objetivo se mueve voluntariamente antes de tu próximo turno, la resonancia estalla infligiéndole [1] de daño de trueno.</content>
   <content contentuid="hde7eade7g981dg355bg6e30g0089c6fe0377" version="1">Golpe Certero (Cuerpo a Cuerpo)</content>
@@ -812,7 +814,7 @@ Tras seleccionar dos trucos diferentes, este modo finaliza.</content>
   <content contentuid="h711b7815g70c9g4712ga219g0ff6e0b8c207" version="1">Iniciado en la Magia: Salpicadura Ácida</content>
   <content contentuid="h70fd1410g49a4g44d1g9f8eg7f6bc1c21fea" version="1">Iniciado en la Magia: Amistad</content>
   <content contentuid="ha6ce862fg4edeg49f7g9320gb8580541d70a" version="1">Iniciado en la Magia: Descarga de Fuego</content>
-  <content contentuid="h97d2ab9cgaaf9g4bd4gb544g5862fb5d10b9" version="1">Iniciado en la Magia: &lt;LSTag Type="Spell" Tooltip="Target_DancingLights"&gt;Luces Danzantes&lt;/LSTag&gt;</content>
+  <content contentuid="h97d2ab9cgaaf9g4bd4gb544g5862fb5d10b9" version="1">Iniciado en la Magia: Luces Danzantes</content>
   <content contentuid="hc5fa63acg91f7g498fg8be8g4f77f6e608e1" version="1">Iniciado en la Magia: Toque Helado</content>
   <content contentuid="h8cab8439g423ag41e7ga45bg7c1a4c23cde3" version="1">Iniciado en la Magia: Desgarro Muscular</content>
   <content contentuid="h4def798ag029dg4d00g8d1eg8929e03098d6" version="1">Iniciado en la Magia: Filo Atronador</content>
@@ -822,7 +824,7 @@ Tras seleccionar dos trucos diferentes, este modo finaliza.</content>
   <content contentuid="h1e7a31c9g35c0g4b54g8f69g25b327a4c999" version="1">Iniciado en la Magia: Luz</content>
   <content contentuid="hee3244d3g6916g4229gb4b7gd98a4f519f8e" version="1">Iniciado en la Magia: Mano de Mago</content>
   <content contentuid="hd455a5aag6fb4g48ccgbec8gdf13c11a88ab" version="1">Iniciado en la Magia: Astilla Mental</content>
-  <content contentuid="h965b7dc5ga4acg4b60g9e4bgcd236212e8b4" version="1">Iniciado en la Magia: &lt;LSTag Type="Spell" Tooltip="Target_ImprovedMinorIllusion"&gt;Ilusión Menor&lt;/LSTag&gt;</content>
+  <content contentuid="h965b7dc5ga4acg4b60g9e4bgcd236212e8b4" version="1">Iniciado en la Magia: Ilusión Menor</content>
   <content contentuid="hcb1e67e1g69e7g4710g9cd5ga81a12763305" version="1">Iniciado en la Magia: Descarga de Veneno</content>
   <content contentuid="hf6e4b463g8945g4e41g8f63g065eb4ecdd0b" version="1">Iniciado en la Magia: Producir llama</content>
   <content contentuid="h4f7e0ea1g2ff6g48b2g937bg7cc4f590d0e7" version="1">Iniciado en la Magia: Prestidigitation</content>
@@ -830,7 +832,7 @@ Tras seleccionar dos trucos diferentes, este modo finaliza.</content>
   <content contentuid="heda822d9g6ca8g4d69g862cg8e593ceb6f22" version="1">Iniciado en la Magia: Resistencia</content>
   <content contentuid="h04241b75g4f7eg40dagbac2g1acb8e2326f5" version="1">Iniciado en la Magia: Llama sagrada</content>
   <content contentuid="hdd5d9c2cg059eg4e76gb6b6g01e4d851171d" version="1">Iniciado en la Magia: Shillelagh</content>
-  <content contentuid="h4527bdb1gf97cg4adcg9003g64255fe6abdf" version="1">Iniciado en la Magia: &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Agarre Eléctrizante&lt;/LSTag&gt;</content>
+  <content contentuid="h4527bdb1gf97cg4adcg9003g64255fe6abdf" version="1">Iniciado en la Magia: Agarre Eléctrizante</content>
   <content contentuid="h29d6991cg8d76g4e4bga787g7f988a72fe15" version="1">Iniciado en la Magia: Salvar al Moribundo</content>
   <content contentuid="hb163e2e9gb2d2g4adeg8801g80dbb2b50492" version="1">Iniciado en la Magia: Fuego Estrellado</content>
   <content contentuid="h9f283e92g10dfg43b6g837dg39ee82977d4b" version="1">Iniciado en la Magia: Estallido de filos</content>
@@ -883,25 +885,45 @@ Tras seleccionar dos trucos diferentes, este modo finaliza.</content>
   <content contentuid="h4a25b113gd59eg4b37gb1fag1d64b4e65972" version="1">Iniciado en la Magia: Custodia Lejana</content>
   <content contentuid="h4a465394gc707g4e0bga071g165709a73a35" version="1">Iniciado en la Magia: Rayo de hechicería</content>
   <content contentuid="hb75003cbgf00cga299gd802g14c70c5d2869" version="1">Charlatán</content>
-  <content contentuid="hcc3c36c6gd341g9ef3g75a6gd57375a199cd" version="3">Dote: Hábil&lt;br&gt;&lt;br&gt;Eres un experto en la manipulación, propenso a la exageración y más que dispuesto a sacar provecho de ella. Doblar la verdad y enfrentar a los aliados entre sí llevará a un mayor éxito en el futuro.</content>
+  <content contentuid="hcc3c36c6gd341g9ef3g75a6gd57375a199cd" version="3">Dote: Hábil
+
+Eres un experto en la manipulación, propenso a la exageración y más que dispuesto a sacar provecho de ella. Doblar la verdad y enfrentar a los aliados entre sí llevará a un mayor éxito en el futuro.</content>
   <content contentuid="h4b835e70g04c6g5a06g0c6dg1a3127667686" version="1">Criminal</content>
-  <content contentuid="hbcaf83c9gb788g62e0g6965g3fa62228f254" version="3">Dote: Alerta&lt;br&gt;&lt;br&gt;Tienes un historial de infringir la ley y sobrevives aprovechando conexiones no del todo legales. Beneficiarte de actividades criminales llevará a mayores oportunidades en el futuro.</content>
+  <content contentuid="hbcaf83c9gb788g62e0g6965g3fa62228f254" version="3">Dote: Alerta
+
+Tienes un historial de infringir la ley y sobrevives aprovechando conexiones no del todo legales. Beneficiarte de actividades criminales llevará a mayores oportunidades en el futuro.</content>
   <content contentuid="h71130c00gf7fegc295g7a78g226b23bab525" version="1">Artista</content>
-  <content contentuid="h2716640cg5333g5237g4376g52bc2bce3db6" version="3">Dote: Músico&lt;br&gt;&lt;br&gt;Vives para cautivar y subvertir a tu público, conectando con las masas y la alta sociedad por igual. Preservar el arte y traer alegría a los desafortunados y oprimidos realza tu aura carismática.</content>
+  <content contentuid="h2716640cg5333g5237g4376g52bc2bce3db6" version="3">Dote: Músico
+
+Vives para cautivar y subvertir a tu público, conectando con las masas y la alta sociedad por igual. Preservar el arte y traer alegría a los desafortunados y oprimidos realza tu aura carismática.</content>
   <content contentuid="h08144bfegc7fbg3b4cg2a08gf4711304db2f" version="1">Héroe del Pueblo</content>
-  <content contentuid="h16aa023egdc3cg5bc2g7476g71950aebff42" version="3">Dote: Resistente&lt;br&gt;&lt;br&gt;Eres un campeón de la gente común, enfrentándote a tiranos y monstruos para proteger a los indefensos. Salvar inocentes en peligro inminente hará crecer tu leyenda.</content>
+  <content contentuid="h16aa023egdc3cg5bc2g7476g71950aebff42" version="3">Dote: Resistente
+
+Eres un campeón de la gente común, enfrentándote a tiranos y monstruos para proteger a los indefensos. Salvar inocentes en peligro inminente hará crecer tu leyenda.</content>
   <content contentuid="h8872efb5g9022g184cg8400gc8622021c434" version="1">Artesano Gremial</content>
-  <content contentuid="hecaca218g03ebge2e3g1541g30dab1f4df21" version="3">Dote: Hábil&lt;br&gt;&lt;br&gt;Tu habilidad en un oficio particular te ha ganado la membresía en un gremio mercantil, ofreciendo privilegios y protección mientras ejerces tu arte. Reparar y descubrir artesanías raras traerá nueva inspiración.</content>
+  <content contentuid="hecaca218g03ebge2e3g1541g30dab1f4df21" version="3">Dote: Hábil
+
+Tu habilidad en un oficio particular te ha ganado la membresía en un gremio mercantil, ofreciendo privilegios y protección mientras ejerces tu arte. Reparar y descubrir artesanías raras traerá nueva inspiración.</content>
   <content contentuid="h68877c75g37c1gbf22gf33fg60fb10459cda" version="1">Noble</content>
-  <content contentuid="h11a3cb02g94efge2aagfd7eg2559e2181833" version="3">Dote: Hábil&lt;br&gt;&lt;br&gt;Fuiste criado en una familia entre la élite social, acostumbrado al poder y los privilegios. Acumular renombre, poder y lealtad elevará tu estatus.</content>
+  <content contentuid="h11a3cb02g94efge2aagfd7eg2559e2181833" version="3">Dote: Hábil
+
+Fuiste criado en una familia entre la élite social, acostumbrado al poder y los privilegios. Acumular renombre, poder y lealtad elevará tu estatus.</content>
   <content contentuid="hdffa4c4fgb9e6g20ebg7a88g407a2ca29c32" version="1">Forastero</content>
-  <content contentuid="h5039598cg6db2g2d04g6e52gb5d4956c7773" version="3">Dote: Resistente&lt;br&gt;&lt;br&gt;Creciste en la naturaleza salvaje, aprendiendo a sobrevivir lejos de las comodidades de la civilización. Sobrevivir a peligros inusuales de lo salvaje mejorará tu destreza y comprensión.</content>
+  <content contentuid="h5039598cg6db2g2d04g6e52gb5d4956c7773" version="3">Dote: Resistente
+
+Creciste en la naturaleza salvaje, aprendiendo a sobrevivir lejos de las comodidades de la civilización. Sobrevivir a peligros inusuales de lo salvaje mejorará tu destreza y comprensión.</content>
   <content contentuid="h95a25eaegdeafgb7b8g4801g7a8367fc65a7" version="1">Sabio</content>
-  <content contentuid="hca28ebc2ga938g8c68g1dbag7edf639c41fc" version="3">Dote: Iniciado en la Magia (Mago)&lt;br&gt;&lt;br&gt;Eres curioso y bien leído, con una sed insaciable de conocimiento. Aprender sobre la lore rara del mundo te inspirará a poner este conocimiento en un propósito mayor.</content>
+  <content contentuid="hca28ebc2ga938g8c68g1dbag7edf639c41fc" version="3">Dote: Iniciado en la Magia (Mago)
+
+Eres curioso y bien leído, con una sed insaciable de conocimiento. Aprender sobre la lore rara del mundo te inspirará a poner este conocimiento en un propósito mayor.</content>
   <content contentuid="h8109bc16gabcag925cgdd47gb46dba14be0c" version="1">Soldado</content>
-  <content contentuid="hc868035bgcc3dg4f6ag8137g0a3e325b8ba7" version="3">Dote: Atacante Salvaje&lt;br&gt;&lt;br&gt;Estás entrenado en tácticas de combate y guerra, habiendo servido en una milicia, compañía mercenaria o cuerpo de oficiales. Mostrar tácticas inteligentes y valentía en el campo de batalla mejorará tu destreza.</content>
+  <content contentuid="hc868035bgcc3dg4f6ag8137g0a3e325b8ba7" version="3">Dote: Atacante Salvaje
+
+Estás entrenado en tácticas de combate y guerra, habiendo servido en una milicia, compañía mercenaria o cuerpo de oficiales. Mostrar tácticas inteligentes y valentía en el campo de batalla mejorará tu destreza.</content>
   <content contentuid="hc87a3f0fgaf2eg6057g69fbg9ba7b0e2f7bb" version="1">Huérfano</content>
-  <content contentuid="h9f4e80c6g4dd1gb652gbb63g04b844b503ae" version="3">Dote: Atacante salvaje&lt;br&gt;&lt;br&gt;Después de sobrevivir a una infancia pobre y sombría, sabes cómo sacar el máximo provecho de muy poco. Usar tu inteligencia callejera refuerza tu espíritu para el viaje que tienes por delante.</content>
+  <content contentuid="h9f4e80c6g4dd1gb652gbb63g04b844b503ae" version="3">Dote: Atacante Salvaje
+
+Después de sobrevivir a una infancia pobre y sombría, sabes cómo sacar el máximo provecho de muy poco. Usar tu inteligencia callejera refuerza tu espíritu para el viaje que tienes por delante.</content>
   <content contentuid="h15a25456g93c5g2128g2199gd75ca7acd724" version="1">Dote de Origen: Experto</content>
   <content contentuid="h9c4f90acg7e1cg80f9g49b9g223423a07c77" version="1">Obtienes competencia en cualquier combinación de tres habilidades o herramientas de tu elección.</content>
   <content contentuid="h0b1ce19fg660ag4802g476bg8c05a68222d8" version="1">Hábil: Acrobacias</content>
@@ -1111,7 +1133,7 @@ Alcance Aumentado. Aumenta el alcance de los conjuros en un 50%.</content>
 
 Alcance Aumentado. Aumenta el alcance de los conjuros en un 50%.</content>
   <content contentuid="hdfe62e0fgf3abgc70ag0019g4af2fcfb5109" version="1">Lanzador en Combate</content>
-  <content contentuid="haea51e98gfb73g894eg965bg2978e243f5e4" version="1">Tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las &lt;LSTag Tooltip="SavingThrow"&gt;Tiradas de Salvación&lt;/LSTag&gt; para mantener la &lt;LSTag Tooltip="Concentration"&gt;Concentración&lt;/LSTag&gt; en un conjuro.&lt;br&gt;&lt;br&gt;También puedes usar una &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;reacción&lt;/LSTag&gt; para lanzar &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Toque Descargador&lt;/LSTag&gt; a un objetivo que se aleje del alcance cuerpo a cuerpo.</content>
+  <content contentuid="haea51e98gfb73g894eg965bg2978e243f5e4" version="1">Tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las &lt;LSTag Tooltip="SavingThrow"&gt;Tiradas de Salvación&lt;/LSTag&gt; para mantener la &lt;LSTag Tooltip="Concentration"&gt;Concentración&lt;/LSTag&gt; en un conjuro.&lt;br&gt;&lt;br&gt;También puedes usar una &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;reacción&lt;/LSTag&gt; para lanzar &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Agarre Electrizante&lt;/LSTag&gt; a un objetivo que se aleje del alcance cuerpo a cuerpo.</content>
   <content contentuid="h1e8be1d2gda52g488egf12aga4dbd08a8b2c" version="1">Maestro de Armas</content>
   <content contentuid="h71ada843g58a3g712bgd82agc840de1595e5" version="2">Obtienes &lt;LSTag Tooltip="Proficiency"&gt;Competencia&lt;/LSTag&gt; con armas marciales.
 
@@ -1119,7 +1141,7 @@ Obtienes dos propiedades de maestría de armas de tu elección.</content>
   <content contentuid="h70813330g91cdg841fgd506g43cca562e934" version="1">Dote: Francotirador de Conjuros (Cuerpo a Cuerpo)</content>
   <content contentuid="hd8edfd84g6945ged2dg5a75gac1ea9cf87c7" version="1">Lanzar en Cuerpo a Cuerpo. Estar a 5 pies de un enemigo no impone &lt;LSTag Tooltip="Disadvantage"&gt;Desventaja&lt;/LSTag&gt; en tus tiradas de ataque con conjuros.</content>
   <content contentuid="he811ea2cg5f7ega90cgc208g301ddc5eb96c" version="1">Dote: Lanzador en Combate</content>
-  <content contentuid="h2d86c838g5e8cg8763gdf9bgaeb1290ded87" version="1">Tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las &lt;LSTag Tooltip="SavingThrow"&gt;Tiradas de Salvación&lt;/LSTag&gt; para mantener la &lt;LSTag Tooltip="Concentration"&gt;Concentración&lt;/LSTag&gt; en un conjuro.&lt;br&gt;&lt;br&gt;Puedes usar una &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;reacción&lt;/LSTag&gt; para lanzar &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Toque Descargador&lt;/LSTag&gt; a un objetivo que se aleje del alcance cuerpo a cuerpo.</content>
+  <content contentuid="h2d86c838g5e8cg8763gdf9bgaeb1290ded87" version="1">Tienes &lt;LSTag Tooltip="Advantage"&gt;Ventaja&lt;/LSTag&gt; en las &lt;LSTag Tooltip="SavingThrow"&gt;Tiradas de Salvación&lt;/LSTag&gt; para mantener la &lt;LSTag Tooltip="Concentration"&gt;Concentración&lt;/LSTag&gt; en un conjuro.&lt;br&gt;&lt;br&gt;Puedes usar una &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;reacción&lt;/LSTag&gt; para lanzar &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Agarre Electrizante&lt;/LSTag&gt; a un objetivo que se aleje del alcance cuerpo a cuerpo.</content>
   <content contentuid="h6f27cfe3g88f5geb3eg8790gd6ce157dfac9" version="1">Dote: Maestro de Armas</content>
   <content contentuid="hba5a50e4g4e44gccaag18b0ga7d653029db5" version="3">Obtienes &lt;LSTag Tooltip="Proficiency"&gt;Competencia&lt;/LSTag&gt; con armas marciales.
 
@@ -1632,7 +1654,7 @@ Si eliges Tierra Árida, tienes preparados Desenfoque, Manos Ardientes y Dardo d
 
 Si eliges Tierra Polar, tienes preparados Nube de Niebla, Inmovilizar Persona y Rayo de Escarcha al nivel 3; Tormenta de Aguanieve al nivel 5; Tormenta de Hielo al nivel 7; y Cono de Frío al nivel 9.
 
-Si eliges Tierra Templada, tienes preparados Paso Brumoso, Toque Descargador y Dormir al nivel 3; Rayo al nivel 5; Libertad de Movimiento al nivel 7; y Zancada por los Árboles al nivel 9.
+Si eliges Tierra Templada, tienes preparados Paso Brumoso, Agarre Electrizante y Dormir al nivel 3; Rayo al nivel 5; Libertad de Movimiento al nivel 7; y Zancada por los Árboles al nivel 9.
 
 Si eliges Tierra Tropical, tienes preparados Salpicadura de Ácido, Rayo de Enfermedad y Tela de Araña al nivel 3; Nube Fétida al nivel 5; Polimorfar al nivel 7; y Plaga de Insectos al nivel 9.</content>
   <content contentuid="hfcdb19afgd772g8c06gc034g42384d832b3b" version="1">Nivel 3: Conjuros del Círculo de la Tierra</content>
@@ -1642,7 +1664,7 @@ Si eliges Tierra Árida, tienes preparados Desenfoque, Manos Ardientes y Dardo d
 
 Si eliges Tierra Polar, tienes preparados Nube de Niebla, Inmovilizar Persona y Rayo de Escarcha al nivel 3; Tormenta de Aguanieve al nivel 5; Tormenta de Hielo al nivel 7; y Cono de Frío al nivel 9.
 
-Si eliges Tierra Templada, tienes preparados Paso Brumoso, Toque Descargador y Dormir al nivel 3; Rayo al nivel 5; Libertad de Movimiento al nivel 7; y Restauración Mayor al nivel 9.
+Si eliges Tierra Templada, tienes preparados Paso Brumoso, Agarre Electrizante y Dormir al nivel 3; Rayo al nivel 5; Libertad de Movimiento al nivel 7; y Restauración Mayor al nivel 9.
 
 Si eliges Tierra Tropical, tienes preparados Salpicadura de Ácido, Rayo de Enfermedad y Tela de Araña al nivel 3; Nube Fétida al nivel 5; Polimorfar al nivel 7; y Plaga de Insectos al nivel 9.</content>
   <content contentuid="h571a7b7dg53fbg6786ge07dg6b9749737b6d" version="1">Conjuros del Círculo de la Tierra</content>
@@ -1652,7 +1674,7 @@ Si eliges Tierra Árida, tienes preparados Desenfoque, Manos Ardientes y Dardo d
 
 Si eliges Tierra Polar, tienes preparados Nube de Niebla, Inmovilizar Persona y Rayo de Escarcha al nivel 3; Tormenta de Aguanieve al nivel 5; Tormenta de Hielo al nivel 7; y Cono de Frío al nivel 9.
 
-Si eliges Tierra Templada, tienes preparados Paso Brumoso, Toque Descargador y Dormir al nivel 3; Rayo al nivel 5; Libertad de Movimiento al nivel 7; y Restauración Mayor al nivel 9.
+Si eliges Tierra Templada, tienes preparados Paso Brumoso, Agarre Electrizante y Dormir al nivel 3; Rayo al nivel 5; Libertad de Movimiento al nivel 7; y Restauración Mayor al nivel 9.
 
 Si eliges Tierra Tropical, tienes preparados Salpicadura de Ácido, Rayo de Enfermedad y Tela de Araña al nivel 3; Nube Fétida al nivel 5; Polimorfar al nivel 7; y Plaga de Insectos al nivel 9.</content>
   <content contentuid="h60146c67g6a55gece0g343eg45527c9e429a" version="1">Conjuros del Círculo de la Tierra: Tierra Árida</content>
@@ -1660,7 +1682,7 @@ Si eliges Tierra Tropical, tienes preparados Salpicadura de Ácido, Rayo de Enfe
   <content contentuid="hd1d44523g69ccgf313g036bga0c866484988" version="1">Conjuros del Círculo de la Tierra: Tierra Polar</content>
   <content contentuid="h5838ca69g39e0g1e69gd726g82f4309227aa" version="1">Si eliges Tierra Polar, tienes preparados Nube de Niebla, Inmovilizar Persona y Rayo de Escarcha al nivel 3; Tormenta de Aguanieve al nivel 5; Tormenta de Hielo al nivel 7; y Cono de Frío al nivel 9.</content>
   <content contentuid="hc4166e3bg3c8fgd921g84f9g8a343922a258" version="1">Conjuros del Círculo de la Tierra: Tierra Templada</content>
-  <content contentuid="h53adaf69g02c4gd6a7ge1ddg668563523831" version="3">Si eliges Tierra Templada, tienes preparados Paso Brumoso, Toque Descargador y Dormir al nivel 3; Rayo al nivel 5; Libertad de Movimiento al nivel 7; y Restauración Mayor al nivel 9.</content>
+  <content contentuid="h53adaf69g02c4gd6a7ge1ddg668563523831" version="3">Si eliges Tierra Templada, tienes preparados Paso Brumoso, Agarre Electrizante y Dormir al nivel 3; Rayo al nivel 5; Libertad de Movimiento al nivel 7; y Restauración Mayor al nivel 9.</content>
   <content contentuid="h4c72b567g1ff6gde9ag626fg50843dbe309d" version="1">Conjuros del Círculo de la Tierra: Tierra Tropical</content>
   <content contentuid="hdd145debg872fgb1b1gc2f0g1c799a4601c4" version="1">Si eliges Tierra Tropical, tienes preparados Salpicadura de Ácido, Rayo de Enfermedad y Tela de Araña al nivel 3; Nube Fétida al nivel 5; Polimorfar al nivel 7; y Plaga de Insectos al nivel 9.</content>
   <content contentuid="h2fad506dgc3b4g8cf6g2268g89dd01b7b7be" version="1">Conjuros del Círculo de la Tierra: Tierra Árida</content>
