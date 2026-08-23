@@ -1001,6 +1001,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b625e51f-490e-4b39-9851-c9c210b96db9" />
         <field name="Name" type="NameTableFieldDefinition" value="HungeringBlade_Passive" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h700ed84bg957fg2a5dg1d50g4d69487d7001" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not IsMiss() and not IsSpell();" />
