@@ -17,7 +17,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;AddFallDamageOnLand;CanAreaDamageEvade;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF6B8E23" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e1327359-94ed-4036-94cf-db41df6b6ba2" />
         <field name="Name" type="NameTableFieldDefinition" value="__DRUID__" />
@@ -55,6 +55,30 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="SteedActionPoint:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="StopAtFirstContact" type="BoolTableFieldDefinition" value="True" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Bludgeoning" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF006400" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03cced37-08da-4d54-8341-742c6b5c405b" />
+        <field name="Name" type="NameTableFieldDefinition" value="__RANGER__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bdcac4d8-fa3b-466f-bedf-3bde1736b1e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rush_Boar_Summon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="91e3fd86-bd1f-4c32-b62c-d11f6c331c79" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8+1d6+UnarmedMeleeAbilityModifier,Bludgeoning);TARGET:IF(not SavingThrow(Ability.Strength,SourceSpellDC())):ApplyStatus(PRONE,100,2);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3b3b4882g56f7g12dag4b9fgcf25e36c625d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6d9021a0gb82bgbcb8ge41bgbb23b222a400" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+1d6+UnarmedMeleeAbilityModifier,Bludgeoning)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Strength" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;Movement:6;" />
+        <field name="StopAtFirstContact" type="BoolTableFieldDefinition" value="True" />
+        <field name="OnlyHit1Target" type="BoolTableFieldDefinition" value="True" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Bludgeoning" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>

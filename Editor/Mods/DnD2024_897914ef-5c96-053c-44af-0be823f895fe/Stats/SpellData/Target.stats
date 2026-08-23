@@ -10902,7 +10902,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8a4a10ef-99d5-4f3c-b0a0-445a4cabc120" />
         <field name="Name" type="NameTableFieldDefinition" value="RendVision_Raven_Summon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e7445f32-6112-4402-8fce-753022e0e54b" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Radiant,Magical);IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(BLINDED,100,2);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(BLINDED,100,2);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, 13)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12276,6 +12279,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):Summon(d642d398-f349-4eab-b98c-a82cbda19918,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BEAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(5,'Ranger') and not ClassLevelHigherOrEqualThan(7,'Ranger')):Summon(533d21da-878c-421d-a372-54e0125ae3bb,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BEAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Ranger') and not ClassLevelHigherOrEqualThan(9,'Ranger')):Summon(041f7544-d1fc-446d-b439-2108c02896ed,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BEAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(9,'Ranger') and not ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(2b290dbd-0f5f-4a65-8d23-481fa40f7aa8,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BEAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(df74b830-20ec-4fc3-b09e-3b82e7db8f80,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BEAR,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1944ab59g9198g6ac4gba4ag5a0efe856cbb" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12289,6 +12293,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):Summon(be71d66c-5328-490f-b962-4fdb7ca2647f,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BOAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(5,'Ranger') and not ClassLevelHigherOrEqualThan(7,'Ranger')):Summon(4ab10523-7e35-4a68-9afa-4839c484c579,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BOAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Ranger') and not ClassLevelHigherOrEqualThan(9,'Ranger')):Summon(f756eba3-1140-4be4-96f7-ca9706be60b6,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BOAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(9,'Ranger') and not ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(a6297d2a-5c08-4206-a661-00a776802160,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BOAR,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(aa0bc9e6-65db-4471-9c35-8ff3412212d6,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_BOAR,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd5b90e52gc2cagaf46gca4cg4997c18e17fb" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12302,6 +12307,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):Summon(7542dc70-4f9d-439a-ba96-1bc0c1b89d9c,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_GIANTSPIDER,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(5,'Ranger') and not ClassLevelHigherOrEqualThan(7,'Ranger')):Summon(e3161996-d439-45ff-a42a-3fdb3f76b9f4,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_GIANTSPIDER,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Ranger') and not ClassLevelHigherOrEqualThan(9,'Ranger')):Summon(79d2361b-32d4-4a8e-9f95-531a214600ce,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_GIANTSPIDER,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(9,'Ranger') and not ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(dc33b3a3-60ba-462b-9dd2-f8327491c7db,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_GIANTSPIDER,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(b7ce7396-1a43-49a3-8dd0-f41dc67f0a94,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_GIANTSPIDER,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hafbed588gb94eg788agb035g22cf2f434eb4" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12315,6 +12321,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):Summon(ca69f1a8-28c6-4eb3-863e-fa95040dc7e7,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_RAVEN,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(5,'Ranger') and not ClassLevelHigherOrEqualThan(7,'Ranger')):Summon(c390b2fc-7039-4600-bd5d-e96380dd72e9,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_RAVEN,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Ranger') and not ClassLevelHigherOrEqualThan(9,'Ranger')):Summon(7a74e578-0a94-4f66-a192-4cda690fc041,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_RAVEN,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(9,'Ranger') and not ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(32f19a95-cbd0-4c3e-965c-b5cbc3ab67cf,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_RAVEN,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(c73770fb-465e-42c4-8faf-e611f1a0201c,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_RAVEN,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbd1c29f3g9d49g7f6bgd0f5g7628a41aeced" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12328,6 +12335,67 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RangersCompanion:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):Summon(9beee5c9-279e-49d8-a4a8-18f9ee0b1519,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_WOLF,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(5,'Ranger') and not ClassLevelHigherOrEqualThan(7,'Ranger')):Summon(b428c4e0-d3ca-449c-a5c5-9e0fb310081a,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_WOLF,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Ranger') and not ClassLevelHigherOrEqualThan(9,'Ranger')):Summon(74a96845-f868-4843-8941-9dfa27be92ed,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_WOLF,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(9,'Ranger') and not ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(557fec99-a8d7-466e-8b33-517082e5d8fb,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_WOLF,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Ranger')):Summon(62fd6540-17dd-405e-b305-1d88d77e8a08,Permanent,,,'CombatSummonStack',UNSUMMON_ABLE,RANGERS_COMPANION_WOLF,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67d9ca78g7e48g27e7g2e6bg3fd979f583a5" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa642a3d-c95c-41ad-a1a0-4e9c627a3898" />
+        <field name="Name" type="NameTableFieldDefinition" value="Claws_Bear_Black_Summon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c2d2092c-3251-499c-9cef-fbf4f92238dc" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier,Slashing)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier,Slashing)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60e31ad4-71d6-4932-a945-cd12aa094ab8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Tusk_Boar_Summon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="03cdf944-ba23-406a-8806-8d30f417dea6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier,Bludgeoning)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h119be29dg24e8gbccbg6e70ge67fbf2b1f17" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier,Bludgeoning)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2557fa34-46cc-40f9-a633-0e7ea1972c6d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_GiantSpider_Summon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="08364676-3596-4aae-b735-459f4568ed73" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier, Piercing)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9b257208g4458gc4b6g1ebbg7a1d4529bb88" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier, Piercing)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bbf60c2f-1806-4078-8f88-f93db385b1f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Beak_Raven_Summon_BeastMaster" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fc647950-4650-44e7-a2f1-72560ce506ab" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d4+UnarmedMeleeAbilityModifier,Piercing)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h569e85b3g31adg3b7dg3caege2af37212ff0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d4+UnarmedMeleeAbilityModifier,Piercing)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6186d609-8237-4cdf-81a4-07474a15d03a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_Wolf_Summon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e242ce10-981b-48e0-ab02-e32be8d81293" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier,Piercing)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6b1ff425g01e1g1fa1g447fgc2100804a296" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier,Piercing)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
