@@ -6,6 +6,8 @@
 -- 4. Wizard-list proxy classes (Arcane Trickster, Eldritch Knight, etc.)
 --    contribute 1/3 caster levels when WIZARD_PROXY is present.
 -- 5. Warlock is treated as a full caster for slot progression.
+-- 6. Half casters use their own class table (round up) when it grants a higher
+--    slot level than the multiclass sum (round down).
 
 local SPELL_CLASS_MAP = {
     Target_AnimalFriendship_spellscroll = '1 Bard Druid Ranger',
@@ -301,14 +303,36 @@ local function GetCasterLevelForSpell(entity, cls, isWizardProxy)
     return casterLevel
 end
 
+local HALF_CASTER_CLASSES = { 'Artificer', 'Paladin', 'Ranger' }
+
+local function GetOwnTableSlotLevel(classLevel)
+    -- 하프 캐스터의 단일 클래스 진행표: 1레벨은 슬롯이 없고, 그 이후는 올림 처리된다.
+    if classLevel < 2 then return 0 end
+
+    local casterLevel = math.min(math.floor((classLevel + 1) / 2), 20)
+    return MULTICLASS_SLOT_LEVEL[casterLevel] or 0
+end
+
 local function GetHighestSpellSlotLevel(entity, cls, isWizardProxy)
     local casterLevel = GetCasterLevelForSpell(entity, cls, isWizardProxy)
-    
-    if casterLevel <= 0 then return 0 end
-    
-    -- 캐스터 레벨이 20을 초과할 경우를 대비한 안전 장치
-    local safeLevel = math.min(casterLevel, 20)
-    return MULTICLASS_SLOT_LEVEL[safeLevel] or 0
+    local highestSlot = 0
+
+    if casterLevel > 0 then
+        -- 캐스터 레벨이 20을 초과할 경우를 대비한 안전 장치
+        highestSlot = MULTICLASS_SLOT_LEVEL[math.min(casterLevel, 20)] or 0
+    end
+
+    -- 하프 캐스터는 자기 클래스 진행표가 멀티클래스 합산(내림)보다 슬롯 레벨이 높다.
+    -- 예: 단일 클래스 5레벨 팔라딘은 2레벨 슬롯을 갖지만 합산 규칙으로는 1레벨로 계산된다.
+    for i = 1, #HALF_CASTER_CLASSES do
+        local className = HALF_CASTER_CLASSES[i]
+        if HasToken(cls, string.lower(className)) then
+            local ownSlot = GetOwnTableSlotLevel(entity.GetClassLevel(className))
+            if ownSlot > highestSlot then highestSlot = ownSlot end
+        end
+    end
+
+    return highestSlot
 end
 
 function CanUseSpellScroll(spell, entity)
