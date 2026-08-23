@@ -56,7 +56,7 @@ data "Icon" "Human_HeroicInspiration"
 data "PriorityOrder" "99998"
 data "Properties" "Highlighted"
 data "StatsFunctorContext" "OnLongRest"
-data "StatsFunctors" "IF(RollDieAgainstDC(DiceType.d20,11)):ApplyStatus(INSPIRATION_FROM_BACKGROUND,100,10)"
+data "StatsFunctors" "IF(not HasPassive('YMS_NoReroll',context.Source) and RollDieAgainstDC(DiceType.d20,11)):ApplyStatus(INSPIRATION_FROM_BACKGROUND,100,10)"
 
 new entry "NoDashPreload"
 type "PassiveData"

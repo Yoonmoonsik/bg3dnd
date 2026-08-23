@@ -76,7 +76,7 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="99998" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(RollDieAgainstDC(DiceType.d20,11)):ApplyStatus(INSPIRATION_FROM_BACKGROUND,100,10)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasPassive('YMS_NoReroll',context.Source) and RollDieAgainstDC(DiceType.d20,11)):ApplyStatus(INSPIRATION_FROM_BACKGROUND,100,10)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
