@@ -10301,24 +10301,6 @@
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c410c889-93e0-4e54-90ac-136fa2ec117d" />
-        <field name="Name" type="NameTableFieldDefinition" value="STUDIED_RESPONSE_RECOVERY" />
-        <field name="StackId" type="StringTableFieldDefinition" value="STUDIED_RESPONSE_RECOVERY" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,ActionPoint,1,0);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="751fc506-1116-495a-afe7-a96794050016" />
-        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_INTERFERENCE_RECOVERY" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ARCANE_INTERFERENCE_RECOVERY" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,ActionPoint,1,0);RestoreResource(SpellSlot,1,1);RestoreResource(SpellSlot,1,2);RestoreResource(SpellSlot,1,3);RestoreResource(SpellSlot,1,4);RestoreResource(SpellSlot,1,5);RestoreResource(SpellSlot,1,6)" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cd5cb601-39fb-41ed-9029-5d6fe8911f26" />

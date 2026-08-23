@@ -2073,7 +2073,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Ally(context.Target, context.Observer) and not Ally(context.Source, context.Observer) and HasStringInSpellRoll('Attack') and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="Counterspell();ApplyStatus(SELF,STUDIED_RESPONSE_RECOVERY,100,1);UseSpell(OBSERVER_SOURCE,Target_MainHandAttack,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Target_MainHandAttack,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded') and not HasStatus('PRONE');" />
@@ -2087,8 +2087,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="e2126d3a-8fea-418e-b601-3d1f77577b61" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he03aadf1g28cbg5549g778fgff77ace6f7ba" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_SlashingFlourish_Ranged" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Ally(context.Target, context.Observer) and not Ally(context.Source, context.Observer) and HasStringInSpellRoll('Attack') and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Source) and DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="Counterspell();ApplyStatus(SELF,STUDIED_RESPONSE_RECOVERY,100,1);UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Ally(context.Target, context.Observer) and not Ally(context.Source, context.Observer) and HasStringInSpellRoll('Attack') and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Source) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
@@ -2118,7 +2118,6 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb92bcd84g4cddg1b78g08b9g7f8b71b93820" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd1a7279cg4593g3e07ge351g2791a15d3b14" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasSpellCastBlocked(context.Observer) and IsAbleToReact(context.Observer) and not Self(context.Source, context.Observer) and Enemy(context.Source, context.Observer) and IsSpell() and not Uninterruptible() and not HasStringInSpellRoll('WeaponAttack') and not AnyEntityIsItem() and not SpellId('Shout_END_Gale_ActivateNethereseOrb') and CounterspellCheck(context.Observer, context.Source) and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="Counterspell();ApplyStatus(SELF,ARCANE_INTERFERENCE_RECOVERY,100,1);UseSpell(OBSERVER_SOURCE,Target_MainHandAttack,true,true,true);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2127,8 +2126,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ArcaneInterference_Ranged" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5c5be7c4-6129-40f1-8742-ac122bdefd36" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3b16b3ffg2270g1432g326dg3d651266daf9" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasSpellCastBlocked(context.Observer) and IsAbleToReact(context.Observer) and not Self(context.Source, context.Observer) and Enemy(context.Source, context.Observer) and IsSpell() and not Uninterruptible() and not HasStringInSpellRoll('WeaponAttack') and not AnyEntityIsItem() and not SpellId('Shout_END_Gale_ActivateNethereseOrb') and CounterspellCheck(context.Observer, context.Source) and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Source) and DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="Counterspell();ApplyStatus(SELF,ARCANE_INTERFERENCE_RECOVERY,100,1);UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasSpellCastBlocked(context.Observer) and IsAbleToReact(context.Observer) and not Self(context.Source, context.Observer) and Enemy(context.Source, context.Observer) and IsSpell() and not Uninterruptible() and not HasStringInSpellRoll('WeaponAttack') and not AnyEntityIsItem() and not SpellId('Shout_END_Gale_ActivateNethereseOrb') and CounterspellCheck(context.Observer, context.Source) and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Source);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
