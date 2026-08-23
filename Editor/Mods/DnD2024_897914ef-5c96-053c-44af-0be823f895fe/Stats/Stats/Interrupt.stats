@@ -2058,6 +2058,8 @@
         <field name="Properties" type="StringTableFieldDefinition" value="Counterspell();ApplyStatus(SELF,STUDIED_RESPONSE_RECOVERY,100,1);UseSpell(OBSERVER_SOURCE,Target_MainHandAttack,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded') and not HasStatus('PRONE');" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

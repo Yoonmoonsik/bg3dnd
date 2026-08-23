@@ -1532,6 +1532,8 @@ data "Conditions" "IsAbleToReact(context.Observer) and Ally(context.Target, cont
 data "Properties" "Counterspell();ApplyStatus(SELF,STUDIED_RESPONSE_RECOVERY,100,1);UseSpell(OBSERVER_SOURCE,Target_MainHandAttack,true,true,true);"
 data "Cost" "ReactionActionPoint:1"
 data "InterruptDefaultValue" "Enabled"
+data "EnableCondition" "not HasStatus('SG_Blinded') and not HasStatus('PRONE');"
+data "EnableContext" "OnStatusApplied;OnStatusRemoved"
 
 new entry "Interrupt_StudiedResponse_Ranged"
 type "InterruptData"
