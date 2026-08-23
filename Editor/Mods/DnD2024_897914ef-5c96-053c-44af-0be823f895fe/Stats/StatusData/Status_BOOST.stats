@@ -1256,6 +1256,27 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0a1925b-1449-4813-99b0-5c42845ee2da" />
+        <field name="Name" type="NameTableFieldDefinition" value="TRUE_STRIKE_BONUSDAMAGE_CHA_PSYCHIC" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.CharismaModifier,Psychic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d23268ae-693e-4ff9-8d2a-1aa75ae0b1a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="TRUE_STRIKE_BONUSDAMAGE_CHA_RADIANT" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.CharismaModifier,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1e9381b-578b-4552-8544-af358f449497" />
+        <field name="Name" type="NameTableFieldDefinition" value="TRUE_STRIKE_BONUSDAMAGE_WIS_RADIANT" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.WisdomModifier,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ad9c6af2-a0d5-438c-bae3-c1c0030345f5" />
         <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="47737f9a-5518-418e-8d25-4320f6dc2ae8" />

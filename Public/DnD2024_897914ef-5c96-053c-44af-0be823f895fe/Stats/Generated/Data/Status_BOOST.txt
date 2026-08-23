@@ -991,6 +991,21 @@ data "StackId" "YMS_TRUE_STRIKE_OFF"
 data "StackPriority" "3"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
+new entry "TRUE_STRIKE_BONUSDAMAGE_CHA_PSYCHIC"
+type "StatusData"
+data "StatusType" "BOOST"
+data "OnApplyFunctors" "DealDamage(Cause.CharismaModifier,Psychic,Magical)"
+
+new entry "TRUE_STRIKE_BONUSDAMAGE_CHA_RADIANT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "OnApplyFunctors" "DealDamage(Cause.CharismaModifier,Radiant,Magical)"
+
+new entry "TRUE_STRIKE_BONUSDAMAGE_WIS_RADIANT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "OnApplyFunctors" "DealDamage(Cause.WisdomModifier,Radiant,Magical)"
+
 new entry "HUNTERS_MARK"
 type "StatusData"
 data "StatusType" "BOOST"
