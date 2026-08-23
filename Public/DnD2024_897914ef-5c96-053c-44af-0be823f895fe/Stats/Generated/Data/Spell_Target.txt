@@ -9224,7 +9224,7 @@ new entry "Target_RendVision_Raven_Summon"
 type "SpellData"
 data "SpellType" "Target"
 using "Target_RendVision_Raven_Summon"
-data "SpellSuccess" "IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Radiant,Magical);ApplyStatus(BLINDED,100,2);"
+data "SpellSuccess" "IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Radiant,Magical);IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(BLINDED,100,2);"
 
 new entry "Target_Beak_Raven_Summon"
 type "SpellData"

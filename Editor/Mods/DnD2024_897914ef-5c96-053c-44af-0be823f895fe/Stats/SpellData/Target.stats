@@ -10902,7 +10902,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8a4a10ef-99d5-4f3c-b0a0-445a4cabc120" />
         <field name="Name" type="NameTableFieldDefinition" value="RendVision_Raven_Summon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e7445f32-6112-4402-8fce-753022e0e54b" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Radiant,Magical);ApplyStatus(BLINDED,100,2);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,1d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier), Radiant,Magical);IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(BLINDED,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
