@@ -10272,6 +10272,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c410c889-93e0-4e54-90ac-136fa2ec117d" />
+        <field name="Name" type="NameTableFieldDefinition" value="STUDIED_RESPONSE_RECOVERY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STUDIED_RESPONSE_RECOVERY" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,ActionPoint,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="751fc506-1116-495a-afe7-a96794050016" />
         <field name="Name" type="NameTableFieldDefinition" value="ARCANE_INTERFERENCE_RECOVERY" />
         <field name="StackId" type="StringTableFieldDefinition" value="ARCANE_INTERFERENCE_RECOVERY" />
