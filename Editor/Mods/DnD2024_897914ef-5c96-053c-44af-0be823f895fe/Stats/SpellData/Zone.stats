@@ -1664,6 +1664,83 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
+    <stat_object color="#FF008080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="812d70b2-eaba-44a5-a2f4-9faa4b873860" />
+        <field name="Name" type="NameTableFieldDefinition" value="__MONK__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da163837-d230-499f-8c51-7a485613b265" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingArcStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="90c6c068-2ae0-4d13-b742-96fab4e0ce09" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);TARGET:IF(Item()):ApplyStatus(BURNING,100,2);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6, Fire,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d6/2, Fire,Magical);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f5dd3abg56ccg8b39g80adg0a23ede4e80c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h41750364g33fcg4cefg8a48ge532dc677bbf" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Fire)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsHarmful;CanAreaDamageEvade;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(4,'Monk',context.Source);" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_SearingArcStrike_1;Zone_SearingArcStrike_2;Zone_SearingArcStrike_3;Zone_SearingArcStrike_4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c0206904-1286-44a7-9839-fc14a3939b78" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingArcStrike_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da163837-d230-499f-8c51-7a485613b265" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_SearingArcStrike" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsHarmful;CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(6,'Monk',context.Source);" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="49e3876f-53d8-49ca-84e8-49d0810e3936" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingArcStrike_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c0206904-1286-44a7-9839-fc14a3939b78" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6, Fire,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d6/2, Fire,Magical);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(8,'Monk',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16a5aa37-6678-454f-a8f7-79948e20efb8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingArcStrike_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="49e3876f-53d8-49ca-84e8-49d0810e3936" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6, Fire,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d6/2, Fire,Magical);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Fire)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(10,'Monk',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="58af5ea0-d7de-49f0-aae4-f755a1225e2b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingArcStrike_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="49e3876f-53d8-49ca-84e8-49d0810e3936" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6, Fire,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(6d6/2, Fire,Magical);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Fire)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(12,'Monk',context.Source);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c955bb74-eb59-432f-ab27-d417e2f8aeac" />

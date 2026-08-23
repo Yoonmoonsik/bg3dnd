@@ -3619,6 +3619,137 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsJump;HasHighGroundRangeExtension;IgnoreVisionBlock;RangeIgnoreVerticalThreshold;Stealth;Invisible;CannotTargetCharacter;CannotTargetItems;NoAOEDamageOnLand;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="128078ab-03a4-4b18-9481-4afb9d70b0b6" />
+        <field name="Name" type="NameTableFieldDefinition" value="RadiantSunBolt" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedUnarmedAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Radiant);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="c63c4527-1bdf-4635-ad59-7d7e2f666fa3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_GuidingBolt" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4ed59135g8036gb6acge97eg7a0fe86e5e7f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3417c2f4ga7d6g44c0g8e09gb8c2f51b93d3" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Radiant);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedUnarmedAttack" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Radiant_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Radiant_GuidingBolt_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="ba181bb4-331a-4e69-92af-d09bde86d835,,;,,;8a8b04d4-101f-48bb-a7d2-5b3c613c76b0,,;82f88eb6-b71d-44da-9da9-48349e82ba63,,;a1c2c833-b2c8-465f-a902-b6ae38f6553d,,;,,;74dead2e-d842-4d29-976a-d1cb373f7f0e,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="51422dfb-bc78-42aa-8c63-67e17535d77e" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="79a465b8-6054-47f8-92e4-9c340f96dd77" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f442bc59-0598-499a-b22f-badb201a1cf6" />
+        <field name="Name" type="NameTableFieldDefinition" value="RadiantSunBolt_BonusAction" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="128078ab-03a4-4b18-9481-4afb9d70b0b6" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="CastTargetHitDelay" type="IntegerTableFieldDefinition" value="100" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2913880g2465g80efg4ffag1eb36f934b8d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2600e327gc2bdg46fdg9dbbgcabb04899cee" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f5db107-974c-451c-a596-621578372693" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingSunburst" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Projectile_SearingSunburst_1;Projectile_SearingSunburst_2;Projectile_SearingSunburst_3;Projectile_SearingSunburst_4;" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="45" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC()) " />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d6/2,Radiant,Magical);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="6e0864cb-3453-4bf7-bc1e-8ab9f1aeb98e" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SunSoul_11_SearingSunburst" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h865531c6g912bg6238g820eg5148952630d5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf563ea3agdf1fg4c33g8803gf91061de1389" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_FlamesofthePhoenix_L5" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="ba181bb4-331a-4e69-92af-d09bde86d835,,;,,;f5fb622a-71f4-4f14-9b19-a31d2d3e6d59,,;fdb800db-41b6-4c7d-a386-f649bff4f0c7,,;a1c2c833-b2c8-465f-a902-b6ae38f6553d,,;,,;74dead2e-d842-4d29-976a-d1cb373f7f0e,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanAreaDamageEvade;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="12b395bd-32d7-45d5-b75f-288f1c0f6a7f" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="a758e379-9f9f-43de-a9d1-c0f01480770e" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="41de42e1-56d0-4336-8b44-99fc38281525" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9238ea1e-d6e2-41ab-92e1-6c1c07e039a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingSunburst_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5f5db107-974c-451c-a596-621578372693" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Projectile_SearingSunburst" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f30e0ec-8082-476e-9024-1456a41d7cae" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingSunburst_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9238ea1e-d6e2-41ab-92e1-6c1c07e039a5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Radiant,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d6/2,Radiant,Magical);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Radiant)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8ba6168-48bb-484c-9a08-856771d72ebc" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingSunburst_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6f30e0ec-8082-476e-9024-1456a41d7cae" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Radiant,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(6d6/2,Radiant,Magical);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Radiant)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:2;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b3db511e-94d2-437e-9d9a-0d14cbe1f3f1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingSunburst_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6f30e0ec-8082-476e-9024-1456a41d7cae" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d6,Radiant,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(8d6/2,Radiant,Magical);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d6,Radiant)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="40445f66-8738-43c9-bd8a-64607a53d5c5" />

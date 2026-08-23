@@ -4174,6 +4174,48 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SharpenTheBlade);" />
       </fields>
     </stat_object>
+    <stat_object color="#FF008080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="922b6dab-0ecd-49a9-a3a6-e7d52931b06e" />
+        <field name="Name" type="NameTableFieldDefinition" value="__SUN SOUL__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b80277c7-33e0-4ea5-ac4a-50e019505c9d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SunSoul_3_RadiantSunBolt" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h871abaf9gb779g0d62g59aagd648984455bd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he9d03706g649dg72b5g3adeg7dd6358e9597" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_GuidingBolt" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="6403" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_RadiantSunBolt);UnlockSpell(Projectile_RadiantSunBolt_BonusAction);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b0b3759-50da-4163-b5de-f811d6a9d712" />
+        <field name="Name" type="NameTableFieldDefinition" value="SunSoul_6_SearingArcStrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h75901064g31bag1335g2165g6c0b1c4a4e99" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb2e332fcgcd11g8a05g95d2g1993d892d032" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BurningHands" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="6406" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_SearingArcStrike);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43e090e3-f01c-42ae-97e7-1a55db420602" />
+        <field name="Name" type="NameTableFieldDefinition" value="SunSoul_11_SearingSunburst" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17636940g2365ge91ag4ad4g878cd8c4ce42" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1fe50343g3067g0a7cg5c9egd0f5250b5e84" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SunSoul_11_SearingSunburst" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="6411" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_SearingSunburst);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8fe4a910-8e68-47eb-9068-dc3f6273b033" />

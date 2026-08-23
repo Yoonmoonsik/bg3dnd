@@ -568,6 +568,22 @@
         <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_83" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d5cd71d8-c615-43e3-8716-d33e8c992ec1" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="c4598bdb-fc07-40dd-a62c-90cc138bd76f" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SunSoul" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd7428109gaeeag3e61g3948g8c56c9bf1564" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7f4b802bgb0acgfac8g29d8g4abb1f17b1a6" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="878250ea-7516-4989-812a-be1d7c9a7726" />
+        <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Monk" />
+        <field name="PrimaryAbility" type="EnumerationTableFieldDefinition" value="Dexterity" enumeration_type_name="Ability" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Wisdom" enumeration_type_name="Ability" version="1" />
+        <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
+        <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_32" />

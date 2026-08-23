@@ -4099,7 +4099,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Monk" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="d8d9e1e3-cbd6-4240-ab1e-bd3626cb5532;22894c32-54cf-49ea-b366-44bfcf01bb2a;71637280-b294-4c33-9328-b0b77c74d662;acb94255-2c1e-4472-a707-4b58d183428f;2a5e3097-384c-4d29-8d6e-054fdfd26b80;bf46d73f-d406-4cb8-9a1d-e6e758ca02c7" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="d8d9e1e3-cbd6-4240-ab1e-bd3626cb5532;22894c32-54cf-49ea-b366-44bfcf01bb2a;71637280-b294-4c33-9328-b0b77c74d662;acb94255-2c1e-4472-a707-4b58d183428f;2a5e3097-384c-4d29-8d6e-054fdfd26b80;bf46d73f-d406-4cb8-9a1d-e6e758ca02c7;d5cd71d8-c615-43e3-8716-d33e8c992ec1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HitPointDice08,1,0);ActionResource(KiPoint,1,0);ActionResource(DeflectMissiles_Charge,1,0)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="DeflectMissiles;MeleeUnarmedAttackBonus" />
       </fields>
@@ -4472,6 +4472,39 @@
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Kensei_11_SharpenTheBlade" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF008080" is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1030" />
+        <field name="UUID" type="IdTableFieldDefinition" value="546ba3a0-6c05-49ac-aa39-51e7aa881d79" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="878250ea-7516-4989-812a-be1d7c9a7726" />
+        <field name="FSName" type="StringTableFieldDefinition" value="SunSoul" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SunSoul_3_RadiantSunBolt" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1031" />
+        <field name="UUID" type="IdTableFieldDefinition" value="74f8d823-698d-4682-9d49-6ee04158ad9b" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="878250ea-7516-4989-812a-be1d7c9a7726" />
+        <field name="FSName" type="StringTableFieldDefinition" value="SunSoul" />
+        <field name="Level" type="ByteTableFieldDefinition" value="6" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SunSoul_6_SearingArcStrike" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1032" />
+        <field name="UUID" type="IdTableFieldDefinition" value="389b2ccd-1bc2-4dd0-ba9b-ea10a149756d" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="878250ea-7516-4989-812a-be1d7c9a7726" />
+        <field name="FSName" type="StringTableFieldDefinition" value="SunSoul" />
+        <field name="Level" type="ByteTableFieldDefinition" value="11" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SunSoul_11_SearingSunburst" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
