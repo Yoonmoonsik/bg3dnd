@@ -13589,19 +13589,19 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f8c6b7cd-50ba-4b2e-8a18-0a3070a32a26" />
         <field name="Name" type="NameTableFieldDefinition" value="StrikeFromTheDark" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="22db3f9e-e05b-4655-89b0-5f17c0f7a3fd" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack);CastOffhand[Attack(AttackType.MeleeOffHandWeaponAttack)]" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+LevelMapValue(ProficiencyBonusD4), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and ((HasAdvantage(AttackType.MeleeWeaponAttack) and not HasDisadvantage(AttackType.MeleeWeaponAttack)) and HasStatus('INTERDICTED',context.Target));" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and ((HasAdvantage(AttackType.MeleeWeaponAttack) and not HasDisadvantage(AttackType.MeleeWeaponAttack)) and HasStatus('INTERDICTED'));" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_ShadowsoakedBlow" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf7851a9dg2c90ga420g9853gd855b8d447bc" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2a979e60g8047g338bg7d21g17a10ae143c0" version="2" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+LevelMapValue(ProficiencyBonusD4), MainMeleeWeaponDamageType);" />
-        <field name="HitCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="StrikeFromTheDark:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

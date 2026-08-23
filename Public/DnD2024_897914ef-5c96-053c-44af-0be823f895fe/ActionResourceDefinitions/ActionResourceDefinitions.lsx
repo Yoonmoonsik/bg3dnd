@@ -324,6 +324,14 @@
                     <attribute id="UUID" type="guid" value="95ea1262-7759-475b-84e1-7a57d6e51799"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h72243c73g089cge11bg923dgf4b6e05bcaf5" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h4bde7d56g0a2fg316bgdb44gef6cda0de1b1" version="1"/>
+                    <attribute id="Name" type="FixedString" value="RangersCompanion"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="b1a4d984-63a8-46df-ba4a-2fb5193eb356"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__ROGUE__"/>
                     <attribute id="UUID" type="guid" value="4ca95f96-d55e-416c-a05d-49ba42eef7e2"/>
                 </node>
@@ -754,12 +762,10 @@
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h72243c73g089cge11bg923dgf4b6e05bcaf5" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h4bde7d56g0a2fg316bgdb44gef6cda0de1b1" version="1"/>
-                    <attribute id="Name" type="FixedString" value="RangersCompanion"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="b1a4d984-63a8-46df-ba4a-2fb5193eb356"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hf7851a9dg2c90ga420g9853gd855b8d447bc" version="1"/>
+                    <attribute id="Name" type="FixedString" value="StrikeFromTheDark"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="6748ad84-962f-4b3f-ba93-034b0db5954e"/>
                 </node>
             </children>
         </node>

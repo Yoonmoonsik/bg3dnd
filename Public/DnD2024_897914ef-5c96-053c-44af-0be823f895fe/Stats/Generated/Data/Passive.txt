@@ -5901,7 +5901,7 @@ data "Description" "hc78792c5gf4b3g8f75gc78fge4e46626954f;2"
 data "Icon" "Action_Mag_ShadowsoakedBlow"
 data "PriorityOrder" "14103"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "UnlockSpell(Target_StrikeFromTheDark);"
+data "Boosts" "ActionResource(StrikeFromTheDark,1,0);UnlockSpell(Target_StrikeFromTheDark);UnlockInterrupt(Interrupt_StrikeFromTheDark);"
 
 new entry "Shadowmaster_3_NoEscape"
 type "PassiveData"

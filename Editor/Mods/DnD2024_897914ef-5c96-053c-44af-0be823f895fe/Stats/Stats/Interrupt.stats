@@ -1941,6 +1941,24 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a65e3738-7aae-49eb-84a3-281759703660" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_StrikeFromTheDark" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf7851a9dg2c90ga420g9853gd855b8d447bc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2a979e60g8047g338bg7d21g17a10ae143c0" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_ShadowsoakedBlow" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and HasDamageEffectFlag(DamageFlags.Hit) and (IsMainHandWeaponAttack() or IsOffHandAttack()) and IsMeleeWeaponAttack() and not IsKillingBlow() and HasDamageEffectFlag(DamageFlags.AttackAdvantage) and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and not SpellId('Target_StrikeFromTheDark') and not AnyEntityIsItem() and HasStatus('INTERDICTED',context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ProficiencyBonusD4), MainMeleeWeaponDamageType,Magical);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="StrikeFromTheDark:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('StrikeFromTheDark',1,0,false,false,context.Source) and (not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'}));" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged;OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF00BFFF" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ea65ebd2-d9d2-4f44-a9ba-f3a8d635edbd" />

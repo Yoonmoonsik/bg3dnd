@@ -8043,7 +8043,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_ShadowsoakedBlow" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="14103" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_StrikeFromTheDark);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StrikeFromTheDark,1,0);UnlockSpell(Target_StrikeFromTheDark);UnlockInterrupt(Interrupt_StrikeFromTheDark);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
