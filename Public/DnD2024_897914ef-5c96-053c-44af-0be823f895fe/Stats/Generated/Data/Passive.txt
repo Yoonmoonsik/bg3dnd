@@ -58,6 +58,11 @@ data "Properties" "Highlighted"
 data "StatsFunctorContext" "OnLongRest"
 data "StatsFunctors" "IF(not HasPassive('YMS_NoReroll',context.Source) and RollDieAgainstDC(DiceType.d20,11)):ApplyStatus(INSPIRATION_FROM_BACKGROUND,100,10)"
 
+new entry "NoCriticalFailure"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "MinimumRollResult(SkillCheck,2);MinimumRollResult(RawAbility,2);MinimumRollResult(SavingThrow,2);"
+
 new entry "NoDashPreload"
 type "PassiveData"
 data "StatsFunctorContext" "OnCombatStarted"

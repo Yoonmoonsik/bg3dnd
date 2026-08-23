@@ -81,6 +81,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7696366b-158a-49d1-a6a5-bfbb826b8f12" />
+        <field name="Name" type="NameTableFieldDefinition" value="NoCriticalFailure" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="MinimumRollResult(SkillCheck,2);MinimumRollResult(RawAbility,2);MinimumRollResult(SavingThrow,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="04d36a71-fb9a-4fd3-b34a-16e83bdf196f" />
         <field name="Name" type="NameTableFieldDefinition" value="NoDashPreload" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
