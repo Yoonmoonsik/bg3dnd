@@ -3674,7 +3674,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="45" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC()) " />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC()) " />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d6/2,Radiant,Magical);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
@@ -3684,7 +3684,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h865531c6g912bg6238g820eg5148952630d5" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf563ea3agdf1fg4c33g8803gf91061de1389" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant)" />
-        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
         <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_FlamesofthePhoenix_L5" />

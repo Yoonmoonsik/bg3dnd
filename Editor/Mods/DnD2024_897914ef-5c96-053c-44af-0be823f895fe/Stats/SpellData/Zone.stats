@@ -1682,9 +1682,10 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f5dd3abg56ccg8b39g80adg0a23ede4e80c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h41750364g33fcg4cefg8a48ge532dc677bbf" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Fire)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:2;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsHarmful;CanAreaDamageEvade;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(4,'Monk',context.Source);" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_SearingArcStrike_1;Zone_SearingArcStrike_2;Zone_SearingArcStrike_3;Zone_SearingArcStrike_4;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_SearingArcStrike_1;Zone_SearingArcStrike_2;Zone_SearingArcStrike_3;Zone_SearingArcStrike_4;Zone_SearingArcStrike_5;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1693,9 +1694,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="SearingArcStrike_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="da163837-d230-499f-8c51-7a485613b265" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_SearingArcStrike" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:3;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:2;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsHarmful;CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(6,'Monk',context.Source);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(4,'Monk',context.Source);" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
@@ -1708,9 +1710,9 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d6/2, Fire,Magical);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:4;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:3;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(8,'Monk',context.Source);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(6,'Monk',context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1722,9 +1724,9 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d6/2, Fire,Magical);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Fire)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Fire)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:5;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(10,'Monk',context.Source);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(8,'Monk',context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1736,8 +1738,22 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(6d6/2, Fire,Magical);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Fire)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Fire)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:6;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(10,'Monk',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b87a99e-ae4e-4772-ad76-64ca4bcaffde" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingArcStrike_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="49e3876f-53d8-49ca-84e8-49d0810e3936" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d6, Fire,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(7d6/2, Fire,Magical);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(7d6,Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d6,Fire)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(12,'Monk',context.Source);" />
       </fields>
     </stat_object>
