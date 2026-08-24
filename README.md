@@ -57,7 +57,7 @@ See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) and each class page f
 | [Fighter](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Fighter) | Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Viking |
 | [Gunslinger](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Gunslinger) | High Roller, Spellslinger, White Hat |
 | [Illrigger](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Illrigger) | Architect of Ruin, Hellspeaker, Painkiller, Sanguine Knight, Shadowmaster |
-| [Monk](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monk) | Drunken Master, Elements, Kensei, Mercy, Open Hand, Shadow |
+| [Monk](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monk) | Drunken Master, Elements, Kensei, Mercy, Open Hand, Shadow, Sun Soul |
 | [Monster Hunter](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monster-Hunter) | Carver Guild, Devourer Guild, Occultist Guild |
 | [Paladin](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Paladin) | Ancients, Conquest, Crown, Devotion, Glory, Noble Genies, Vengeance, Watchers, Oathbreaker |
 | [Ranger](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Ranger) | Beast Master, Fey Wanderer, Gloom Stalker, Hollow Warden, Hunter, Swarm Keeper, Winter Walker |
@@ -83,7 +83,7 @@ Archery, Blind Fighting, Defense, Dueling, Great Weapon Fighting, Interception, 
 
 See [Race](https://github.com/Yoonmoonsik/bg3dnd/wiki/Races).
 
-- Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Eladrin and Ice Elf are available as Elf subrace options. Dhampir can be taken as a Human, Elf, Tiefling, Dwarf, Halfling, or Gnome subrace.
+- Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Eladrin and Ice Elf are available as Elf subrace options. Dhampir can be taken as a Human, Elf, Drow, Tiefling, Dwarf, Halfling, Gnome, or Orc subrace.
 - Dragonborn, Dwarf, Elf, Githyanki, Gnome, Half Elf, Halfling, Human, Orc, and Tiefling are supported.
 - Several species include ancestry or lineage options, including Dragonborn Draconic Ancestry, Elf and Half Elf sub-lineages, Goliath Giant Ancestry, and Tiefling legacy options.
 

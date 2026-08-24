@@ -46,7 +46,7 @@ See the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url] and each clas
 [*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Fighter]Fighter[/url][/b] — Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Viking
 [*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Gunslinger]Gunslinger[/url][/b] — High Roller, Spellslinger, White Hat
 [*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Illrigger]Illrigger[/url][/b] — Architect of Ruin, Hellspeaker, Painkiller, Sanguine Knight, Shadowmaster
-[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monk]Monk[/url][/b] — Drunken Master, Elements, Kensei, Mercy, Open Hand, Shadow
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monk]Monk[/url][/b] — Drunken Master, Elements, Kensei, Mercy, Open Hand, Shadow, Sun Soul
 [*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monster-Hunter]Monster Hunter[/url][/b] — Carver Guild, Devourer Guild, Occultist Guild
 [*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Paladin]Paladin[/url][/b] — Ancients, Conquest, Crown, Devotion, Glory, Noble Genies, Vengeance, Watchers, Oathbreaker
 [*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Ranger]Ranger[/url][/b] — Beast Master, Fey Wanderer, Gloom Stalker, Hollow Warden, Hunter, Swarm Keeper, Winter Walker
@@ -74,7 +74,7 @@ Archery, Blind Fighting, Defense, Dueling, Great Weapon Fighting, Interception, 
 See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Races]Race[/url].
 
 [list]
-[*]Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Eladrin and Ice Elf are available as Elf subrace options. Dhampir can be taken as a Human, Elf, Tiefling, Dwarf, Halfling, or Gnome subrace.
+[*]Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Eladrin and Ice Elf are available as Elf subrace options. Dhampir can be taken as a Human, Elf, Drow, Tiefling, Dwarf, Halfling, Gnome, or Orc subrace.
 [*]Dragonborn, Dwarf, Elf, Githyanki, Gnome, Half Elf, Halfling, Human, Orc, and Tiefling are supported.
 [*]Several species include ancestry or lineage options, including Dragonborn Draconic Ancestry, Elf and Half Elf sub-lineages, Goliath Giant Ancestry, and Tiefling legacy options.
 [/list]
