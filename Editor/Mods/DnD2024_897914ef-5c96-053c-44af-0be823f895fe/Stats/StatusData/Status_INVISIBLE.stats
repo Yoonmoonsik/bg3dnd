@@ -53,5 +53,13 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="84be28b3-6fdf-4b62-86e2-1f3b333aab81" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d44625d2-b5a9-4f16-9dce-f5eff17ea66e" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVISIBLE_START_TURN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb5cc1b1-a593-4ba5-882e-2d6ce450053b" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

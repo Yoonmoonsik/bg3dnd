@@ -2320,6 +2320,83 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eae4d3a4-d04e-413e-9eb2-a312a48409a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="__BIGBY PRESENTS GLORY OF THE GIANTS__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55290c18-d7b3-4da9-8b1e-a77c5489037e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_StrikeOfTheGiants_Cloud" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha3ae348eg0eb0g144cg4147g0d99a9d60eaa" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h897e40eeg7135g851fg8143gc3ccb162516c" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and HasDamageEffectFlag(DamageFlags.Hit) and (((IsMainHandWeaponAttack() or IsOffHandAttack()) and IsMeleeWeaponAttack()) or IsMeleeUnarmedAttack() or IsThrowAttackRoll()) and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d4,Thunder,Magical);ApplyStatus(OBSERVER_OBSERVER,INVISIBLE_START_TURN,100,1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="StrikeOfTheGiants:1;StrikeOfTheGiantsTurn:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e8296684-b264-454b-8454-5c2d1dff50a4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_StrikeOfTheGiants_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="55290c18-d7b3-4da9-8b1e-a77c5489037e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd57fc661gd11agdaeag80d1ge7f1fc524ee5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he2204be6g0a15geff5g35a0g192affa407ee" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d10,Fire,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fae88a81-dacb-4371-84dc-e7286d9d144c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_StrikeOfTheGiants_Frost" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="55290c18-d7b3-4da9-8b1e-a77c5489037e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he9c0fbd7g6680g65c1g973fg1031294fcd3f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e59eedfg13a0g2433g31c1g969915edce8d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold,Magical);ApplyStatus(FROST_STRIKE_MOVEMENT,100,1,,,,not SavingThrow(Ability.Constitution,StrConSaveDC()));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8e3e8615-3453-4ddd-bec5-c7fb47ae1a84" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_StrikeOfTheGiants_Hill" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="55290c18-d7b3-4da9-8b1e-a77c5489037e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h60ea299agcbc0g21cegd4dcga4a4509e0828" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05ec7064ga697gdc69g5003g66e24f5cb04b" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_TripAttack_Melee" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,Magical);ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Strength,StrConSaveDC()));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6b761bbf-0d3a-4638-9375-1e5d18864430" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_StrikeOfTheGiants_Stone" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="55290c18-d7b3-4da9-8b1e-a77c5489037e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc955fd61gc8e2gec82g251fg48d84fadc931" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc3df7c24g824ag06f4ge664geda5e80d2018" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,Magical);ApplyStatus(PUSH_3M,100,0,,,,not SavingThrow(Ability.Strength,StrConSaveDC()));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3587550f-8037-4340-beac-8db122d2d463" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_StrikeOfTheGiants_Storm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="55290c18-d7b3-4da9-8b1e-a77c5489037e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7455f49fg84f2g871bg57f4ga9d24bf08115" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf81d0d50g810egc762gf156g017583f5ab0c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Lightning,Magical);ApplyStatus(STORM_STRIKE_DISADVANTAGE,100,1,,,,not SavingThrow(Ability.Constitution,StrConSaveDC()));" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3db71161-28eb-45e5-a66e-130562ac8ad0" />
         <field name="Name" type="NameTableFieldDefinition" value="__XANATHARS GUIDE TO EVERYTHING__" />
       </fields>

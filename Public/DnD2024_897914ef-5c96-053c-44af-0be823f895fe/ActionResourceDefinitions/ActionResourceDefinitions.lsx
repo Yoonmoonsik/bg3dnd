@@ -550,6 +550,12 @@
                     <attribute id="UUID" type="guid" value="2a6e9ad6-b77d-497d-a068-493769f56916"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hf7851a9dg2c90ga420g9853gd855b8d447bc" version="1"/>
+                    <attribute id="Name" type="FixedString" value="StrikeFromTheDark"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="6748ad84-962f-4b3f-ba93-034b0db5954e"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__ARTIFICER__"/>
                     <attribute id="UUID" type="guid" value="e35d5614-0fc2-4f0f-bb61-0195077c33a3"/>
                 </node>
@@ -762,10 +768,17 @@
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="hf7851a9dg2c90ga420g9853gd855b8d447bc" version="1"/>
-                    <attribute id="Name" type="FixedString" value="StrikeFromTheDark"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0c00cb46g9e39gb8e6g91aagdf1ada85a3fc" version="1"/>
+                    <attribute id="Name" type="FixedString" value="StrikeOfTheGiants"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="022ce202-1e6f-435c-a8fd-519d72c5fb59"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="StrikeOfTheGiantsTurn"/>
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
-                    <attribute id="UUID" type="guid" value="6748ad84-962f-4b3f-ba93-034b0db5954e"/>
+                    <attribute id="UUID" type="guid" value="91155cbd-241a-429e-b6c0-381602ee9354"/>
                 </node>
             </children>
         </node>

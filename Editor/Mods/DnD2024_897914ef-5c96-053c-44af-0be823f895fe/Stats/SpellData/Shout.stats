@@ -6032,6 +6032,101 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="32d3ed89-03ed-491e-a360-777b26702f71" />
+        <field name="Name" type="NameTableFieldDefinition" value="__BIGBY PRESENTS GLORY OF THE GIANTS__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a8ee481-4773-4173-ad5c-82926accdc2e" />
+        <field name="Name" type="NameTableFieldDefinition" value="StrikeOfTheGiantsSelect" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_StrikeOfTheGiantsSelect_Cloud;Shout_StrikeOfTheGiantsSelect_Fire;Shout_StrikeOfTheGiantsSelect_Frost;Shout_StrikeOfTheGiantsSelect_Hill;Shout_StrikeOfTheGiantsSelect_Stone;Shout_StrikeOfTheGiantsSelect_Storm;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cd633a9gc293geebeg5d42gf01451b6210a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h928f5df7ga251g34dbg0162g20a1a67d1a84" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h31271d37gef33g6d93g7cfag28a0f45dd8d8" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;925779e7-8bf6-4d56-8c4d-42c3bc01c60c,,;50398f4e-dd82-4d6a-ad43-aedd578543d9,,;1c343e00-7e6c-4f53-b588-074a3cdb9c7d,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;5fdb66be-7506-411a-a7ea-c4783288aac8,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="49dd385f-fd25-4372-8628-30b775af7c79" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="2550e2bb-c9f9-4440-9cd4-146a03f2e9bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_GiantsRage" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e3105692-52e6-4bcb-a1d9-57aaed97f480" />
+        <field name="Name" type="NameTableFieldDefinition" value="StrikeOfTheGiantsSelect_Cloud" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="47292579-1642-4f0b-ad90-9da96811381d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STRIKE_OF_THE_GIANTS_CLOUD,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha3ae348eg0eb0g144cg4147g0d99a9d60eaa" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h897e40eeg7135g851fg8143gc3ccb162516c" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1bb4cb12-910e-4659-96c7-6c3d96fadaf9" />
+        <field name="Name" type="NameTableFieldDefinition" value="StrikeOfTheGiantsSelect_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0a8ee481-4773-4173-ad5c-82926accdc2e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_StrikeOfTheGiantsSelect" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STRIKE_OF_THE_GIANTS_FIRE,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd57fc661gd11agdaeag80d1ge7f1fc524ee5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he2204be6g0a15geff5g35a0g192affa407ee" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="47292579-1642-4f0b-ad90-9da96811381d" />
+        <field name="Name" type="NameTableFieldDefinition" value="StrikeOfTheGiantsSelect_Frost" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1bb4cb12-910e-4659-96c7-6c3d96fadaf9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STRIKE_OF_THE_GIANTS_FROST,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he9c0fbd7g6680g65c1g973fg1031294fcd3f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e59eedfg13a0g2433g31c1g969915edce8d" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d0666a9e-e35f-42bd-a74f-ec28bf4c4eda" />
+        <field name="Name" type="NameTableFieldDefinition" value="StrikeOfTheGiantsSelect_Hill" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="47292579-1642-4f0b-ad90-9da96811381d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STRIKE_OF_THE_GIANTS_HILL,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_TripAttack_Melee" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h60ea299agcbc0g21cegd4dcga4a4509e0828" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05ec7064ga697gdc69g5003g66e24f5cb04b" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6864b82f-6a2a-413d-a033-94cd2c327713" />
+        <field name="Name" type="NameTableFieldDefinition" value="StrikeOfTheGiantsSelect_Stone" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="47292579-1642-4f0b-ad90-9da96811381d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STRIKE_OF_THE_GIANTS_STONE,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc955fd61gc8e2gec82g251fg48d84fadc931" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc3df7c24g824ag06f4ge664geda5e80d2018" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd25e211-8de1-4b83-8145-66bda35877f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="StrikeOfTheGiantsSelect_Storm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="47292579-1642-4f0b-ad90-9da96811381d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STRIKE_OF_THE_GIANTS_STORM,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7455f49fg84f2g871bg57f4ga9d24bf08115" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf81d0d50g810egc762gf156g017583f5ab0c" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="520e7e5e-af17-4931-9881-5699243142e3" />
         <field name="Name" type="NameTableFieldDefinition" value="__XANATHARS GUIDE TO EVERYTHING__" />
       </fields>

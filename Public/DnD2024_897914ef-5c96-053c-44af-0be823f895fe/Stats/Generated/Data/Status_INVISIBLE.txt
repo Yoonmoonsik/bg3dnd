@@ -40,3 +40,9 @@ data "StatusGroups" "SG_Invisible;SG_RemoveOnRespec"
 data "TickType" "EndTurn"
 data "StatusEffect" "84be28b3-6fdf-4b62-86e2-1f3b333aab81"
 
+new entry "INVISIBLE_START_TURN"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "INVISIBLE"
+data "TickType" "StartTurn"
+
