@@ -9707,6 +9707,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="32077efd-64b2-44ef-b947-506a32df1175" />
+        <field name="Name" type="NameTableFieldDefinition" value="GuileOfTheCloudGiant" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c3331b2g4ec1g5c10g7086gbaa775ffdf3d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h20e4b6b0g60edg473ag9aeeg93ed1d74cd27" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_FogCloud" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(CloudyEscape,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(CloudyEscape,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(CloudyEscape,1,0);UnlockInterrupt(Interrupt_CloudyEscape);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="74693201-733f-4f29-99c5-13c19a39da55" />
         <field name="Name" type="NameTableFieldDefinition" value="RuneShaper" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10cb65eeg6a98g7720g30f1g78e524e4746c" version="2" />

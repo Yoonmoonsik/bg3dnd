@@ -11886,6 +11886,18 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ad70c67d-f4f6-4dea-b6b6-d871fae6ddc1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="92e128a3-bde2-4978-be7d-f6a97506c7d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUDY_ESCAPE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hee2315d9g1b06g48c6g2394gbe6914d928f1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hec5563b6ge606g541cg382eg17fce83ad82e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_FogCloud" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CLOUDY_ESCAPE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CloudyEscape);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3926f1f3-cdbd-4d6f-9616-8358d41c9bc1" />

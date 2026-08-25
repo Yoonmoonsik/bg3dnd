@@ -941,6 +941,13 @@
         <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_115" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6fc15360-5fda-45ce-ab46-599704f27517" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="__BIGBY PRESENTS GLORY OF THE GIANTS__" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_110" />
@@ -976,6 +983,16 @@
         <field name="UUID" type="IdTableFieldDefinition" value="cf951eaf-604d-4e9f-aad7-284b7eefe243" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="FrigidRetaliation" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc754da74gcba8g3950g45abgddf1f004ebb8" version="1" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_114" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4f50c9cc-caf4-498a-b893-cb11a98818ef" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="CloudyEscape" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc03bb68cg5b81gdc85ga99cg0c1d3dbff581" version="1" />
         <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
         <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
       </fields>

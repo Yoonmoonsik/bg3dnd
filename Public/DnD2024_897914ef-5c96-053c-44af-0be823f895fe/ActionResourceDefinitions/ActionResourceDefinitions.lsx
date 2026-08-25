@@ -683,6 +683,13 @@
                     <attribute id="UUID" type="guid" value="aab03dc9-8d69-48e3-b215-c97801d93aba"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc754da74gcba8g3950g45abgddf1f004ebb8" version="1"/>
+                    <attribute id="Name" type="FixedString" value="FrigidRetaliation"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="cf951eaf-604d-4e9f-aad7-284b7eefe243"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__XANATHARS GUIDE TO EVERYTHING__"/>
                     <attribute id="UUID" type="guid" value="fd6f503f-0e70-448f-8694-fd43dfa81118"/>
                 </node>
@@ -788,11 +795,15 @@
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="hc754da74gcba8g3950g45abgddf1f004ebb8" version="1"/>
-                    <attribute id="Name" type="FixedString" value="FrigidRetaliation"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc03bb68cg5b81gdc85ga99cg0c1d3dbff581" version="1"/>
+                    <attribute id="Name" type="FixedString" value="CloudyEscape"/>
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="cf951eaf-604d-4e9f-aad7-284b7eefe243"/>
+                    <attribute id="UUID" type="guid" value="4f50c9cc-caf4-498a-b893-cb11a98818ef"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Name" type="FixedString" value="__BIGBY PRESENTS GLORY OF THE GIANTS__"/>
+                    <attribute id="UUID" type="guid" value="6fc15360-5fda-45ce-ab46-599704f27517"/>
                 </node>
             </children>
         </node>
