@@ -6532,6 +6532,20 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="71520b71-6c42-438d-a9af-a4ac62d20de1" />
+        <field name="Name" type="NameTableFieldDefinition" value="__MAGIC ITEM__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a209e0eb-3e4f-4087-861e-a6edf264b193" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_MirrorImage" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5afcef7-92e8-4eb0-ac98-13033805b3dd" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b532ce38-ddaf-43a1-a2a0-2c34db4d8e49" />
         <field name="Name" type="NameTableFieldDefinition" value="__SCROLL__" />
       </fields>

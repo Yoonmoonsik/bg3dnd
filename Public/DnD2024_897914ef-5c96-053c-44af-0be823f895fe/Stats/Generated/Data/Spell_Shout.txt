@@ -5523,6 +5523,16 @@ data "SpellType" "Shout"
 using "Shout_Invisibility_Duergar"
 data "Cooldown" "OncePerRest"
 
+new entry "Shout___MAGIC ITEM__"
+type "SpellData"
+data "SpellType" "Shout"
+
+new entry "Shout_MAG_MirrorImage"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_MAG_MirrorImage"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent"
+
 new entry "Shout___SCROLL__"
 type "SpellData"
 data "SpellType" "Shout"
