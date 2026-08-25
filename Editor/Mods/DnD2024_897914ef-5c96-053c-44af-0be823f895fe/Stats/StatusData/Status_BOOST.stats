@@ -564,7 +564,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c6924447-1b36-4671-a46c-06d8af503147" />
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_ACID_DAMAGE_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cf22634f-411e-406d-9dff-69fbd7e569a6" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(1d6,Acid);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(1d6,Acid);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d6,Acid);IF(IsMeleeSpellAttack()):DamageBonus(1d6,Acid);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsMeleeAttack() and (not IsMiss() or IsCritical())" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MAG_SPELLBLADE_ACID_ENERGY_APPLIED_VFX')):ApplyStatus(MAG_SPELLBLADE_ACID_ENERGY_APPLIED_VFX, 100, -1);ApplyStatus(ABSORB_ELEMENTS_ACID_RESISTANCE, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -572,7 +574,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9a0c5483-0c9b-4933-bce9-ef34241ad836" />
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_COLD_DAMAGE_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4803f88b-271f-4daf-b128-516a23d13acd" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(1d6,Cold);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(1d6,Cold);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d6,Cold);IF(IsMeleeSpellAttack()):DamageBonus(1d6,Cold);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsMeleeAttack() and (not IsMiss() or IsCritical())" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MAG_SPELLBLADE_COLD_ENERGY_APPLIED_VFX')):ApplyStatus(MAG_SPELLBLADE_COLD_ENERGY_APPLIED_VFX, 100, -1);ApplyStatus(ABSORB_ELEMENTS_COLD_RESISTANCE, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -580,7 +584,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="27a9f316-7215-4f24-a733-37f91daa38f3" />
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_FIRE_DAMAGE_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8cdbb120-68a4-4940-95dc-7a3873ed31e8" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(1d6,Fire);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(1d6,Fire);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d6,Fire);IF(IsMeleeSpellAttack()):DamageBonus(1d6,Fire);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsMeleeAttack() and (not IsMiss() or IsCritical())" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MAG_SPELLBLADE_FIRE_ENERGY_APPLIED_VFX')):ApplyStatus(MAG_SPELLBLADE_FIRE_ENERGY_APPLIED_VFX, 100, -1);ApplyStatus(ABSORB_ELEMENTS_FIRE_RESISTANCE, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -588,7 +594,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fbe3d60c-0033-45db-ba8f-df225b86ac65" />
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_LIGHTNING_DAMAGE_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="55d16e79-041d-416e-843d-1dd27caad54d" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(1d6,Lightning);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(1d6,Lightning);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d6,Lightning);IF(IsMeleeSpellAttack()):DamageBonus(1d6,Lightning);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsMeleeAttack() and (not IsMiss() or IsCritical())" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MAG_SPELLBLADE_LIGHTNING_ENERGY_APPLIED_VFX')):ApplyStatus(MAG_SPELLBLADE_LIGHTNING_ENERGY_APPLIED_VFX, 100, -1);ApplyStatus(ABSORB_ELEMENTS_LIGHTNING_RESISTANCE, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -596,7 +604,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="074cfe09-3aab-420a-9e6c-c89a58962ed9" />
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_THUNDER_DAMAGE_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="48fbff03-d6ba-4f65-9b9f-45c693117749" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(1d6,Thunder);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(1d6,Thunder);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d6,Thunder);IF(IsMeleeSpellAttack()):DamageBonus(1d6,Thunder);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsMeleeAttack() and (not IsMiss() or IsCritical())" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MAG_SPELLBLADE_THUNDER_ENERGY_APPLIED_VFX')):ApplyStatus(MAG_SPELLBLADE_THUNDER_ENERGY_APPLIED_VFX, 100, -1);ApplyStatus(ABSORB_ELEMENTS_THUNDER_RESISTANCE, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -605,7 +615,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_ACID_DAMAGE_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c6924447-1b36-4671-a46c-06d8af503147" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6, Acid)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(2d6,Acid);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(2d6,Acid);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(2d6,Acid);IF(IsMeleeSpellAttack()):DamageBonus(2d6,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -614,7 +624,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_COLD_DAMAGE_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9a0c5483-0c9b-4933-bce9-ef34241ad836" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6, Cold)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(2d6,Cold);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(2d6,Cold);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(2d6,Cold);IF(IsMeleeSpellAttack()):DamageBonus(2d6,Cold);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -623,7 +633,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_FIRE_DAMAGE_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27a9f316-7215-4f24-a733-37f91daa38f3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6, Fire)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(2d6,Fire);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(2d6,Fire);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(2d6,Fire);IF(IsMeleeSpellAttack()):DamageBonus(2d6,Fire);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -632,7 +642,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_LIGHTNING_DAMAGE_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fbe3d60c-0033-45db-ba8f-df225b86ac65" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6, Lightning)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(2d6,Lightning);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(2d6,Lightning);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(2d6,Lightning);IF(IsMeleeSpellAttack()):DamageBonus(2d6,Lightning);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -641,7 +651,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_THUNDER_DAMAGE_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="074cfe09-3aab-420a-9e6c-c89a58962ed9" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6, Thunder)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(2d6,Thunder);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(2d6,Thunder);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(2d6,Thunder);IF(IsMeleeSpellAttack()):DamageBonus(2d6,Thunder);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -650,7 +660,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_ACID_DAMAGE_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="083b532f-73fc-4a95-b537-f0415ba8e6e9" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6, Acid)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(3d6,Acid);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(3d6,Acid);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(3d6,Acid);IF(IsMeleeSpellAttack()):DamageBonus(3d6,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -659,7 +669,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_ACID_DAMAGE_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="083b532f-73fc-4a95-b537-f0415ba8e6e9" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6, Acid)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(4d6,Acid);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(4d6,Acid);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(4d6,Acid);IF(IsMeleeSpellAttack()):DamageBonus(4d6,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -668,7 +678,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_ACID_DAMAGE_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="083b532f-73fc-4a95-b537-f0415ba8e6e9" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6, Acid)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(5d6,Acid);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(5d6,Acid);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(5d6,Acid);IF(IsMeleeSpellAttack()):DamageBonus(5d6,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -677,7 +687,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_ACID_DAMAGE_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="083b532f-73fc-4a95-b537-f0415ba8e6e9" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6, Acid)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(6d6,Acid);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(6d6,Acid);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(6d6,Acid);IF(IsMeleeSpellAttack()):DamageBonus(6d6,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -686,7 +696,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_COLD_DAMAGE_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1f70378e-7f36-46d8-ab17-e368d2bb54a6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6, Cold)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(3d6,Cold);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(3d6,Cold);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(3d6,Cold);IF(IsMeleeSpellAttack()):DamageBonus(3d6,Cold);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -695,7 +705,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_COLD_DAMAGE_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1f70378e-7f36-46d8-ab17-e368d2bb54a6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6, Cold)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(4d6,Cold);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(4d6,Cold);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(4d6,Cold);IF(IsMeleeSpellAttack()):DamageBonus(4d6,Cold);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -704,7 +714,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_COLD_DAMAGE_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1f70378e-7f36-46d8-ab17-e368d2bb54a6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6, Cold)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(5d6,Cold);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(5d6,Cold);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(5d6,Cold);IF(IsMeleeSpellAttack()):DamageBonus(5d6,Cold);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -713,7 +723,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_COLD_DAMAGE_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1f70378e-7f36-46d8-ab17-e368d2bb54a6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6, Cold)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(6d6,Cold);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(6d6,Cold);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(6d6,Cold);IF(IsMeleeSpellAttack()):DamageBonus(6d6,Cold);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -722,7 +732,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_FIRE_DAMAGE_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1f79c68f-d3f9-42eb-a7cf-c08fd2159f16" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6, Fire)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(3d6,Fire);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(3d6,Fire);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(3d6,Fire);IF(IsMeleeSpellAttack()):DamageBonus(3d6,Fire);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -731,7 +741,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_FIRE_DAMAGE_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1f79c68f-d3f9-42eb-a7cf-c08fd2159f16" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6, Fire)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(4d6,Fire);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(4d6,Fire);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(4d6,Fire);IF(IsMeleeSpellAttack()):DamageBonus(4d6,Fire);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -740,7 +750,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_FIRE_DAMAGE_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1f79c68f-d3f9-42eb-a7cf-c08fd2159f16" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6, Fire)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(5d6,Fire);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(5d6,Fire);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(5d6,Fire);IF(IsMeleeSpellAttack()):DamageBonus(5d6,Fire);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -749,7 +759,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_FIRE_DAMAGE_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1f79c68f-d3f9-42eb-a7cf-c08fd2159f16" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6, Fire)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(6d6,Fire);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(6d6,Fire);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(6d6,Fire);IF(IsMeleeSpellAttack()):DamageBonus(6d6,Fire);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -758,7 +768,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_LIGHTNING_DAMAGE_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6d193664-40a0-4e7e-a7fa-3c7ace97adb4" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6, Lightning)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(3d6,Lightning);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(3d6,Lightning);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(3d6,Lightning);IF(IsMeleeSpellAttack()):DamageBonus(3d6,Lightning);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -767,7 +777,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_LIGHTNING_DAMAGE_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6d193664-40a0-4e7e-a7fa-3c7ace97adb4" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6, Lightning)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(4d6,Lightning);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(4d6,Lightning);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(4d6,Lightning);IF(IsMeleeSpellAttack()):DamageBonus(4d6,Lightning);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -776,7 +786,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_LIGHTNING_DAMAGE_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6d193664-40a0-4e7e-a7fa-3c7ace97adb4" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6, Lightning)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(5d6,Lightning);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(5d6,Lightning);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(5d6,Lightning);IF(IsMeleeSpellAttack()):DamageBonus(5d6,Lightning);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -785,7 +795,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_LIGHTNING_DAMAGE_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6d193664-40a0-4e7e-a7fa-3c7ace97adb4" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6, Lightning)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(6d6,Lightning);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(6d6,Lightning);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(6d6,Lightning);IF(IsMeleeSpellAttack()):DamageBonus(6d6,Lightning);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -794,7 +804,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_THUNDER_DAMAGE_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="61a511b5-53df-4ca4-a5cc-b892fc74af53" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6, Thunder)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(3d6,Thunder);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(3d6,Thunder);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(3d6,Thunder);IF(IsMeleeSpellAttack()):DamageBonus(3d6,Thunder);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -803,7 +813,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_THUNDER_DAMAGE_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="61a511b5-53df-4ca4-a5cc-b892fc74af53" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6, Thunder)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(4d6,Thunder);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(4d6,Thunder);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(4d6,Thunder);IF(IsMeleeSpellAttack()):DamageBonus(4d6,Thunder);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -812,7 +822,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_THUNDER_DAMAGE_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="61a511b5-53df-4ca4-a5cc-b892fc74af53" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6, Thunder)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(5d6,Thunder);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(5d6,Thunder);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(5d6,Thunder);IF(IsMeleeSpellAttack()):DamageBonus(5d6,Thunder);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -821,7 +831,52 @@
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_THUNDER_DAMAGE_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="61a511b5-53df-4ca4-a5cc-b892fc74af53" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6, Thunder)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(6d6,Thunder);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(6d6,Thunder);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(6d6,Thunder);IF(IsMeleeSpellAttack()):DamageBonus(6d6,Thunder);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="07d916d2-0b88-4d62-a694-a1ce7efbddd1" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_ACID_RESISTANCE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Acid, Resistant);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b048812c-b703-4210-93ed-6a1796d0abd8" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_COLD_RESISTANCE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Cold, Resistant);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee081094-522a-4736-9f50-2689c2b16e4c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_FIRE_RESISTANCE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Fire, Resistant);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c4a29426-4d59-4316-b003-0e7efc60293a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_LIGHTNING_RESISTANCE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Lightning, Resistant);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d242c5e-3860-4759-9b52-21790568bbca" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_THUNDER_RESISTANCE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Thunder, Resistant);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
