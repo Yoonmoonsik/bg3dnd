@@ -6125,6 +6125,35 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf81d0d50g810egc762gf156g017583f5ab0c" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8c470d88-2882-4733-8ae1-002b47efd024" />
+        <field name="Name" type="NameTableFieldDefinition" value="SearingIgnition" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, StrWisSaveDC());" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(Fire,1d8+ProficiencyBonus);ApplyStatus(BLINDED,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(Fire,(1d8+ProficiencyBonus)/2);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Enemy() and not Dead();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h01d6d533g9bc4g0cdegde2fg1d200535c4e7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hed9510fdg4a6dge76dgaa9bg643066cb6cf5" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h29832775g4de3gb8f5ge5d0g6d6aabe5c831" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(Fire,1d8+ProficiencyBonus);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLINDED,100,1);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_FireshieldWarm_L4to5" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_FireshieldWarm_L4to5" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SearingIgnition:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;09ae2f11-f5b4-42f5-ae16-687a5b57d500,,;10caea0e-c949-4d91-8ab7-3b50019dd054,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ab9a9a13-7ceb-46ee-bd9e-74c044516fb1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="859bdcb8-c4dc-487d-8e44-452b1be1c034" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="520e7e5e-af17-4931-9881-5699243142e3" />

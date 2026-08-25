@@ -663,6 +663,19 @@
                     <attribute id="UUID" type="guid" value="c39fda10-0e11-4025-9e66-d53334cb033b"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0c00cb46g9e39gb8e6g91aagdf1ada85a3fc" version="1"/>
+                    <attribute id="Name" type="FixedString" value="StrikeOfTheGiants"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="022ce202-1e6f-435c-a8fd-519d72c5fb59"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="StrikeOfTheGiantsTurn"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="91155cbd-241a-429e-b6c0-381602ee9354"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__XANATHARS GUIDE TO EVERYTHING__"/>
                     <attribute id="UUID" type="guid" value="fd6f503f-0e70-448f-8694-fd43dfa81118"/>
                 </node>
@@ -768,17 +781,11 @@
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h0c00cb46g9e39gb8e6g91aagdf1ada85a3fc" version="1"/>
-                    <attribute id="Name" type="FixedString" value="StrikeOfTheGiants"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3af3bee1ga521g78aeg9884g7062f7adbcdc" version="1"/>
+                    <attribute id="Name" type="FixedString" value="SearingIgnition"/>
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="022ce202-1e6f-435c-a8fd-519d72c5fb59"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="IsHidden" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="StrikeOfTheGiantsTurn"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
-                    <attribute id="UUID" type="guid" value="91155cbd-241a-429e-b6c0-381602ee9354"/>
+                    <attribute id="UUID" type="guid" value="aab03dc9-8d69-48e3-b215-c97801d93aba"/>
                 </node>
             </children>
         </node>

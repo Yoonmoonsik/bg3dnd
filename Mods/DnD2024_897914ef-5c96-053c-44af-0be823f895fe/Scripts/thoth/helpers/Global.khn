@@ -51,6 +51,10 @@ function StrConSaveDC()
     return 8 + context.Source.ProficiencyBonus + math.max(GetModifier(context.Source.Strength), GetModifier(context.Source.Constitution))
 end
 
+function StrWisSaveDC()
+    return 8 + context.Source.ProficiencyBonus + math.max(GetModifier(context.Source.Strength), GetModifier(context.Source.Wisdom))
+end
+
 function YDistanceToTargetSmallerOrEqual(value)
     local errorTrue = {ConditionError("YDistanceGreaterOrEqualThan_True", {ConditionErrorData.MakeFromNumber(value, EErrorDataType.Distance)})}
     local errorFalse = {ConditionError("YDistanceGreaterOrEqualThan_False", {ConditionErrorData.MakeFromNumber(value, EErrorDataType.Distance)})}

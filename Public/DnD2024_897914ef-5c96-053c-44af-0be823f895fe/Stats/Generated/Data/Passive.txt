@@ -6999,6 +6999,15 @@ data "Boosts" "ActionResource(StrikeOfTheGiants,2,0);IF(CharacterLevelGreaterTha
 data "StatsFunctorContext" "OnCreate;OnLongRest;OnAttack"
 data "StatsFunctors" "IF(not HasStatus('STRIKE_OF_THE_GIANTS_END',context.Source)):ApplyStatus(STRIKE_OF_THE_GIANTS_START,100,-1)"
 
+new entry "EmberOfTheFireGiant"
+type "PassiveData"
+data "DisplayName" "hd96ff844gf66bg0e09g8f4bg3e72ec561d7b;1"
+data "Description" "h5c65e74bgcca7gff2agc4abg0700018dda54;2"
+data "Icon" "GenericIcon_DamageType_Fire"
+data "PriorityOrder" "700"
+data "Properties" "Highlighted"
+data "Boosts" "Resistance(Fire,Resistant);ActionResource(SearingIgnition,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(SearingIgnition,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(SearingIgnition,1,0);UnlockSpell(Shout_SearingIgnition);"
+
 new entry "RuneShaper"
 type "PassiveData"
 data "DisplayName" "h10cb65eeg6a98g7720g30f1g78e524e4746c;2"
