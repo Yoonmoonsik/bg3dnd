@@ -2395,6 +2395,27 @@
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Lightning,Magical);ApplyStatus(STORM_STRIKE_DISADVANTAGE,100,1,,,,not SavingThrow(Ability.Constitution,StrConSaveDC()));" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="76445469-d7b1-4d5c-90a3-3af33018da69" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FrigidRetaliation" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haf39fd6agb8eeg5b25g3f75gc2100e86736b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4384b84egd766gbe0ag574age428758d17bf" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="ha3dfdec9g7cd2g441dge31eg8ffc3a6ed989" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Source) and HasLastAttackTriggered();" />
+        <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,StrWisSaveDC())" />
+        <field name="Success" type="StringTableFieldDefinition" value="DealDamage(OBSERVER_SOURCE,1d8+ProficiencyBonus,Cold);ApplyStatus(OBSERVER_SOURCE,FRIGID_RETALIATION,100,2);" />
+        <field name="Failure" type="StringTableFieldDefinition" value="" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FrigidRetaliation:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3db71161-28eb-45e5-a66e-130562ac8ad0" />

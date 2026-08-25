@@ -11869,6 +11869,23 @@
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="bc4f779b-7424-4770-90bb-bdea0f4e9ead" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4f1d08ae-d962-4872-b133-6d501d2ca6d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="FRIGID_RETALIATION" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haf39fd6agb8eeg5b25g3f75gc2100e86736b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3ad4e82ag3843g4262g8a37g567cd598194f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Frost" />
+        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="EXHAUSTED" enumeration_type_name="SoundVocalType" version="1" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Misc_Status_Frost_MO" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Misc_Status_Frost_MO_Stop" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FRIGID_RETALIATION" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Restrained;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ad70c67d-f4f6-4dea-b6b6-d871fae6ddc1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3926f1f3-cdbd-4d6f-9616-8358d41c9bc1" />
