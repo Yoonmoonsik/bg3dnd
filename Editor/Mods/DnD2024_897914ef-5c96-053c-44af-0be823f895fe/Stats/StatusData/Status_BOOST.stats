@@ -12388,6 +12388,19 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ebaf59da-d1a5-42a1-8b22-58df80057f81" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHADARKAI_ALL_RESISTANCE" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Resistance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he20db01ag854cg5a64g64d9g56c85a8ea153" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6b97eed2g9255g4750g8bf9g10ce58fbcdf7" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SHADARKAI_ALL_RESISTANCE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Bludgeoning, Resistant);Resistance(Piercing, Resistant);Resistance(Slashing, Resistant);Resistance(Acid, Resistant);Resistance(Cold, Resistant);Resistance(Fire, Resistant);Resistance(Force, Resistant);Resistance(Lightning, Resistant);Resistance(Necrotic, Resistant);Resistance(Poison, Resistant);Resistance(Psychic, Resistant);Resistance(Radiant, Resistant);Resistance(Thunder, Resistant);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="8aa59540-9ded-437f-aa13-5c7c2d3c7cac" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="452a54eb-17df-4763-ab1f-4cf7a0656376" />

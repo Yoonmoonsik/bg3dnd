@@ -11563,6 +11563,54 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_AdrenalineRush);ActionResource(AdrenalineRush,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(AdrenalineRush,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(AdrenalineRush,1,0);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cee931a9-bdba-46e9-895d-9012b9e79380" />
+        <field name="Name" type="NameTableFieldDefinition" value="ResistancePassive_Necrotic" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he259a7acga98cg45cagb622gba09387457ed" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdd525457ge6d9g4690ga485g42dea9cf48c1" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="500" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Necrotic,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82b5466a-f2b0-4259-a53d-cc544d3b557b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ResistancePassive_Poison" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc36f901eg34e2g450egbfe3g4181e0fcf351" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4f2ba8b5gfb79g40a9g8c5bgbfe7b4ec39fd" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="500" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Poison,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c48a0de8-4394-407a-b2c7-cbfb5edca4d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ResistancePassive_Fire" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5dbc904bgf599g46f2ga6efg931f5cd80e86" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd516bd43g6d0cg4b92g9ebag8c1badfbb87f" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="500" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Fire,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="390f2917-a614-404e-972c-7cc4faa96d16" />
+        <field name="Name" type="NameTableFieldDefinition" value="ResistancePassive_Psychic" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7fbe174cgf6cfg4fe6gb5b1g293d7c4d3e37" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3bc8fa0fg01a0g4361g940agb1bec564346f" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="500" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Psychic,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="39849eab-6fbb-44e8-96c1-a4fe6aac6195" />

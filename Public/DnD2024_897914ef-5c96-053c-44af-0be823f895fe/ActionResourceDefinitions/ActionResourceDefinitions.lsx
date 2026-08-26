@@ -663,6 +663,10 @@
                     <attribute id="UUID" type="guid" value="c39fda10-0e11-4025-9e66-d53334cb033b"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="Name" type="FixedString" value="__BIGBY PRESENTS GLORY OF THE GIANTS__"/>
+                    <attribute id="UUID" type="guid" value="6fc15360-5fda-45ce-ab46-599704f27517"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="DisplayName" type="TranslatedString" handle="h0c00cb46g9e39gb8e6g91aagdf1ada85a3fc" version="1"/>
                     <attribute id="Name" type="FixedString" value="StrikeOfTheGiants"/>
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
@@ -688,6 +692,13 @@
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
                     <attribute id="UUID" type="guid" value="cf951eaf-604d-4e9f-aad7-284b7eefe243"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc03bb68cg5b81gdc85ga99cg0c1d3dbff581" version="1"/>
+                    <attribute id="Name" type="FixedString" value="CloudyEscape"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="4f50c9cc-caf4-498a-b893-cb11a98818ef"/>
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__XANATHARS GUIDE TO EVERYTHING__"/>
@@ -795,15 +806,12 @@
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="hc03bb68cg5b81gdc85ga99cg0c1d3dbff581" version="1"/>
-                    <attribute id="Name" type="FixedString" value="CloudyEscape"/>
+                    <attribute id="Description" type="TranslatedString" handle="h690f28c7gad03g1cdbgd8fegfb090b06f3dd" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="he20db01ag854cg5a64g64d9g56c85a8ea153" version="1"/>
+                    <attribute id="Name" type="FixedString" value="ShadarKai"/>
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="4f50c9cc-caf4-498a-b893-cb11a98818ef"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Name" type="FixedString" value="__BIGBY PRESENTS GLORY OF THE GIANTS__"/>
-                    <attribute id="UUID" type="guid" value="6fc15360-5fda-45ce-ab46-599704f27517"/>
+                    <attribute id="UUID" type="guid" value="d199ad60-f66c-4d6c-99da-7225637cec84"/>
                 </node>
             </children>
         </node>

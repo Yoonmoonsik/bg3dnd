@@ -10949,6 +10949,51 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1033" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ac58f71d-74a0-4b58-bb2a-70f240a3562f" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc" />
+        <field name="FSName" type="StringTableFieldDefinition" value="ShadarKai" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="FeyAncestry;ResistancePassive_Necrotic" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ShadarKai,2,0)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(c4b857e4-a5d8-4d08-bfd1-b4068d7d0fd4);SelectPassives(8738b757-88a6-424b-bec4-7807c7af8f70,1,ElfKeenSenses);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1034" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b6baf7c7-6ce6-4c29-b78b-59083eb34a92" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc" />
+        <field name="FSName" type="StringTableFieldDefinition" value="ShadarKai" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1035" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d4a2bb9a-5990-4a38-bf8a-ef898eeb49b7" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc" />
+        <field name="FSName" type="StringTableFieldDefinition" value="ShadarKai" />
+        <field name="Level" type="ByteTableFieldDefinition" value="5" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ShadarKai,1,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1036" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5fd33442-f928-4ace-86d6-2e0ffb8aef8e" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc" />
+        <field name="FSName" type="StringTableFieldDefinition" value="ShadarKai" />
+        <field name="Level" type="ByteTableFieldDefinition" value="9" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ShadarKai,1,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_637" />
         <field name="UUID" type="IdTableFieldDefinition" value="db13a1fb-7d64-4309-a1c8-e2a5c752ded5" />
         <field name="TableUUID" type="GuidTableFieldDefinition" value="5fd1dfd5-b5bd-4152-a04a-87fb3faba1e9" />
@@ -11284,7 +11329,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(5eada6b7-d9a2-4ef2-8872-0dce047e458c,,,,AlwaysPrepared);AddSpells(03313193-d4b4-471a-b6ac-57fc4082ff5d,,,,AlwaysPrepared)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Poison, Resistant)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="ResistancePassive_Poison" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11320,7 +11365,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(5eada6b7-d9a2-4ef2-8872-0dce047e458c,,,,AlwaysPrepared);AddSpells(ae2f64b5-aea1-475a-8066-f89988f45ac3,,,,AlwaysPrepared)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Necrotic, Resistant)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="ResistancePassive_Necrotic" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11356,7 +11401,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(5eada6b7-d9a2-4ef2-8872-0dce047e458c,,,,AlwaysPrepared);AddSpells(50aae515-92fe-455b-ac0b-cbda60c2b8f2,,,,AlwaysPrepared)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Fire, Resistant)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="ResistancePassive_Fire" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11507,10 +11552,10 @@
         <field name="TableUUID" type="GuidTableFieldDefinition" value="81e2cb57-6a12-4429-b3a5-f72549355b3b" />
         <field name="FSName" type="StringTableFieldDefinition" value="Githyanki" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Gith_MartialProdigy" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Gith_MartialProdigy;ResistancePassive_Psychic" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="2" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(5216169f-6b32-4860-8664-61348d970e48);AddSpells(4d7bfb6c-5001-4a83-8728-94e3711516d3,,Intelligence,,AlwaysPrepared)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,9,0);Resistance(Psychic,Resistant)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,9,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

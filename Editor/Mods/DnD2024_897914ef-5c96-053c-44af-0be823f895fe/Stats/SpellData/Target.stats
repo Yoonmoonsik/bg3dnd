@@ -14266,6 +14266,30 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="084d6182-d8de-4758-b858-915b0a4a7d43" />
+        <field name="Name" type="NameTableFieldDefinition" value="BlessingOfTheRavenQueen" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();GROUND:RemoveStatus(SELF,ENSNARED_VINES);GROUND:RemoveStatus(SELF,SHADOW_CURSED_VINES);GROUND:RemoveStatus(SELF,WEB);GROUND:IF(CharacterLevelGreaterThan(2)):ApplyStatus(SELF,SHADARKAI_ALL_RESISTANCE,100,1);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character() and not Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MistyStep" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he20db01ag854cg5a64g64d9g56c85a8ea153" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8c201e1agf723gd526gdedfgb1cbcf2e8fc7" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_MistyStep_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_MistyStep_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Teleport" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ShadarKai:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="LineOfSightFlags" type="EnumerationListTableFieldDefinition" value="AddSourceHeight" enumeration_type_name="LineOfSightFlags" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7121a488-7c9a-4ba1-a585-f79aaa77e97c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="71859b27-bdda-44c3-8c65-7f142a1a2f60" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1c5cb0b1-aa1f-4e6c-bdb6-a4df307756e6" />
         <field name="Name" type="NameTableFieldDefinition" value="DraconicFlight" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DRACONIC_FLIGHT,100,100);" />
