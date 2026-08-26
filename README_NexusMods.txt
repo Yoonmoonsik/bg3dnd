@@ -74,7 +74,7 @@ Archery, Blind Fighting, Defense, Dueling, Great Weapon Fighting, Interception, 
 See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Races]Race[/url].
 
 [list]
-[*]Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Eladrin and Ice Elf are available as Elf subrace options. Dhampir can be taken as a Human, Elf, Drow, Tiefling, Dwarf, Halfling, Gnome, or Orc subrace.
+[*]Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Eladrin, Ice Elf, and Shadar-kai are available as Elf subrace options. Dhampir can be taken as a Human, Elf, Drow, Tiefling, Dwarf, Halfling, Gnome, or Orc subrace.
 [*]Dragonborn, Dwarf, Elf, Githyanki, Gnome, Half Elf, Halfling, Human, Orc, and Tiefling are supported.
 [*]Several species include ancestry or lineage options, including Dragonborn Draconic Ancestry, Elf and Half Elf sub-lineages, Goliath Giant Ancestry, and Tiefling legacy options.
 [/list]
