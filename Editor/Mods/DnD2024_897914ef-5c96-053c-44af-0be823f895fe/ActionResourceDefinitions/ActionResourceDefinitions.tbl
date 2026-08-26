@@ -858,7 +858,7 @@
         <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_90" />
         <field name="UUID" type="IdTableFieldDefinition" value="dd747066-2ba5-4340-a15f-47a62a3b8f95" />
@@ -993,6 +993,16 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4f50c9cc-caf4-498a-b893-cb11a98818ef" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="CloudyEscape" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc03bb68cg5b81gdc85ga99cg0c1d3dbff581" version="1" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_117" />
+        <field name="UUID" type="IdTableFieldDefinition" value="96deb8a4-d1be-4443-8032-84ab92a29800" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="StoneThrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8fe9c3b5g29d7g3359g5a6bg0403b92ddae6" version="1" />
         <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
         <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
       </fields>

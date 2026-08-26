@@ -9720,6 +9720,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="11c10bf9-5d9e-40a1-ba59-cf822934893f" />
+        <field name="Name" type="NameTableFieldDefinition" value="KeennessOfTheStoneGiant" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb06ef4dagca4dg7a01g7aefga57eecdfe412" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbd729210g3700g0c6dgfe28g7b0dc91aaae7" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Catapult" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StoneThrow,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(StoneThrow,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(StoneThrow,1,0);UnlockSpell(Projectile_StoneThrow_Str);UnlockSpell(Projectile_StoneThrow_Wis);DarkvisionRangeMin(12);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="74693201-733f-4f29-99c5-13c19a39da55" />
         <field name="Name" type="NameTableFieldDefinition" value="RuneShaper" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10cb65eeg6a98g7720g30f1g78e524e4746c" version="2" />
