@@ -286,6 +286,38 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IncreaseMaxHP(30%);RollBonus(Attack,2);SpellSaveDC(2);UnlockSpell(Projectile_Jump_Down);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa75b8c4-902c-44c8-b1df-c2034ab35c81" />
+        <field name="Name" type="NameTableFieldDefinition" value="HIT_POINT_DIE_USE_06" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1d6+ConstitutionModifier);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3dc9c1ed-7b5f-438f-a195-a9abe0523228" />
+        <field name="Name" type="NameTableFieldDefinition" value="HIT_POINT_DIE_USE_08" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aa75b8c4-902c-44c8-b1df-c2034ab35c81" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1d8+ConstitutionModifier);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="45ce0346-5498-4aef-ab84-1d7b4e2dbcf5" />
+        <field name="Name" type="NameTableFieldDefinition" value="HIT_POINT_DIE_USE_10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aa75b8c4-902c-44c8-b1df-c2034ab35c81" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1d10+ConstitutionModifier);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9cf4796d-4ed9-46e2-96d3-3a5592ca1888" />
+        <field name="Name" type="NameTableFieldDefinition" value="HIT_POINT_DIE_USE_12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aa75b8c4-902c-44c8-b1df-c2034ab35c81" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1d12+ConstitutionModifier);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="79683d38-56b7-4116-b815-5403d4ff0526" />

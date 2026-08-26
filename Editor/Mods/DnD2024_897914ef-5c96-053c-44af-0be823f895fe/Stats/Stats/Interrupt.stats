@@ -1188,6 +1188,51 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1ca3c00e-8d6b-4259-9d70-a3f0fd5509f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Lifedrinker_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3ebd6cc3gd274g440bg9f77g71a4da3b6bd2" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h35551526g84e1g78f3g1277g241f3a6077bb" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Lifedrinker" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not IsSpellAttack() and not AnyEntityIsItem() and HasStatus('PACT_BLADE', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand, context.Source));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,HIT_POINT_DIE_USE_06,100,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice06:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="Lifedrinker" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="963948bb-4c02-48c7-b658-36d915573ab6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Lifedrinker_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1ca3c00e-8d6b-4259-9d70-a3f0fd5509f8" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,HIT_POINT_DIE_USE_08,100,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice08:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1f8aa00-83fd-4ba2-b80b-18f68e39b79b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Lifedrinker_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1ca3c00e-8d6b-4259-9d70-a3f0fd5509f8" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,HIT_POINT_DIE_USE_10,100,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice10:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4033f039-385f-4e1c-9ff1-fb4e05edb25f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Lifedrinker_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1ca3c00e-8d6b-4259-9d70-a3f0fd5509f8" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,HIT_POINT_DIE_USE_12,100,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice12:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="38241cc8-c7aa-428f-bb66-4f33d4a76b3d" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MistyEscape" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a848bcf0-aab2-44ab-8892-0b9b06583672" />

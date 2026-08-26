@@ -6506,12 +6506,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="Lifedrinker" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="860972fa-757f-4db6-991f-d7dc7c4d8593" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb8aec518g6d45g1454g58cbgbac23fec6617" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h35551526g84e1g78f3g1277g241f3a6077bb" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h35551526g84e1g78f3g1277g241f3a6077bb" version="3" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hb7444fe8g6554g6a31ged37g03cc050ef8d3" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11009" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(9,'Warlock',context.Source) and not IsMiss() and IsMeleeWeaponAttack();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Necrotic,Magical);RegainHitPoints(SELF,1d6+ConstitutionModifier)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(9,'Warlock',context.Source) and not IsMiss() and IsMeleeWeaponAttack() and HasStatus('PACT_BLADE', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand, context.Source));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,MainMeleeWeaponDamageType,Magical)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Lifedrinker_1);UnlockInterrupt(Interrupt_Lifedrinker_2);UnlockInterrupt(Interrupt_Lifedrinker_3);UnlockInterrupt(Interrupt_Lifedrinker_4);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
