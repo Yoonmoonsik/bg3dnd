@@ -11932,6 +11932,48 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CloudyEscape);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d17e3f1-6cce-48c9-b626-cd6812c98c45" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAELSTROM_AURA_SELF" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1b51a9b6ge6f5ge3b7g6dfdg59523d8e8599" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h846f6dc8g12d1g0e7ag1408g6768106740df" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAELSTROM_AURA_SELF" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and Enemy() and not Dead()):ApplyStatus(MAELSTROM_AURA)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Lightning,Resistant);Resistance(Thunder,Resistant);Disadvantage(AttackTarget);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f9502fb1-534e-4174-99ce-5fc3e530ccc3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="021c190e-8f34-4a11-8d1d-29004230892b" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAELSTROM_AURA" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfacb6d8fgcc5bgc1e7g41fbgc29515fea1f9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Strength,WisChaSaveDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAELSTROM_AURA_DEBUFF,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8d478b27-d567-41bb-bf4f-4d1b4f6d5458" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAELSTROM_AURA_DEBUFF" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h90252bbeg3393g924fg70d9g448e0be3ceb9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hae597794gcfa1gede3g8ef3g29752ae2c951" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAELSTROM_AURA_DEBUFF" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceConsumeMultiplier(Movement, 2,0);MovementSpeedLimit(Walk);" />
+        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="EXHAUSTED" enumeration_type_name="SoundVocalType" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3926f1f3-cdbd-4d6f-9616-8358d41c9bc1" />
