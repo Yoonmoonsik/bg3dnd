@@ -9744,6 +9744,21 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f8ff9d3-71a0-4c0a-8b9e-f88d5b45afcf" />
+        <field name="Name" type="NameTableFieldDefinition" value="VigorOfTheHillGiant" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2881887ega98fgbae6g4968geb831b2e271d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha9361cceg5dd0g35ecg1949g313ca2768512" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_UnrelentingFerocity" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Bulwark);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnHeal" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(ConstitutionModifier)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="74693201-733f-4f29-99c5-13c19a39da55" />
         <field name="Name" type="NameTableFieldDefinition" value="RuneShaper" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10cb65eeg6a98g7720g30f1g78e524e4746c" version="2" />

@@ -2479,6 +2479,22 @@
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c8bfec2b-855f-42fe-991d-552fb3d9a93f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Bulwark" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha90d4839gfb92gd4bfg2553g5fabe8f72404" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h625d9005geaaagf264gd451g2b3a70bba135" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Athlete_StandUp" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('PRONE',context.Target) or HasStatus('PRONE_FALLEN',context.Target) or HasStatus('PRONE_GREASE',context.Target) or HasStatus('PRONE_ICE',context.Target) or HasStatus('PRONE_MOUNT',context.Target) or HasStatus('PRONE_SEWER',context.Target) or HasStatus('PRONE_THUNDEROUS_SMITE',context.Target) or HasStatus('KNOCKED_DOWN',context.Target) or HasStatus('KNOCKED_DOWN_INSTANT',context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="RemoveStatus(OBSERVER_OBSERVER,PRONE);RemoveStatus(OBSERVER_OBSERVER,PRONE_FALLEN);RemoveStatus(OBSERVER_OBSERVER,PRONE_GREASE);RemoveStatus(OBSERVER_OBSERVER,PRONE_ICE);RemoveStatus(OBSERVER_OBSERVER,PRONE_MOUNT);RemoveStatus(OBSERVER_OBSERVER,PRONE_SEWER);RemoveStatus(OBSERVER_OBSERVER,PRONE_THUNDEROUS_SMITE);RemoveStatus(OBSERVER_OBSERVER,KNOCKED_DOWN);RemoveStatus(OBSERVER_OBSERVER,KNOCKED_DOWN_INSTANT);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3db71161-28eb-45e5-a66e-130562ac8ad0" />
