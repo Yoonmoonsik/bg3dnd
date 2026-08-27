@@ -135,6 +135,7 @@ See the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url] for full attr
 [*][b]Russian Translation:[/b] [url=https://github.com/ANizamutdinov]ANizamutdinov[/url]
 [*][b]Spanish / Latin Spanish Translation:[/b] [url=https://github.com/incolhermex-droid]incolhermex-droid[/url]
 [*][b]Turkish Translation:[/b] [url=https://github.com/batuhansekban]batuhansekban[/url]
+[*][b]Ukrainian Translation:[/b] [url=https://github.com/CrioNIK]TableTop BRAMA community[/url]
 [*][b]Item Models:[/b] [url=https://mod.io/g/baldursgate3/u/skirbie]skirbie[/url] ([url=https://mod.io/g/baldursgate3/m/viper-carbine-steampunk-rifle-gun]Viper Carbine Steampunk Rifle Gun[/url], [url=https://mod.io/g/baldursgate3/m/hand-cannon-gunslinger-weapon]Hand Cannon Gunslinger Weapon[/url])
 [/list]
 
