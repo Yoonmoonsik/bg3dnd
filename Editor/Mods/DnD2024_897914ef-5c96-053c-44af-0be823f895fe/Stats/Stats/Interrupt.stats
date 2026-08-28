@@ -2118,7 +2118,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Ally(context.Target, context.Observer) and not Ally(context.Source, context.Observer) and HasStringInSpellRoll('Attack') and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Target_MainHandAttack,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_SOURCE,Target_MainHandAttack,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded') and not HasStatus('PRONE');" />
@@ -2133,7 +2133,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he03aadf1g28cbg5549g778fgff77ace6f7ba" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_SlashingFlourish_Ranged" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Ally(context.Target, context.Observer) and not Ally(context.Source, context.Observer) and HasStringInSpellRoll('Attack') and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Source) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
@@ -2150,7 +2150,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsMeleeAttack() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsKillingBlow() and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(CarverGuild),MainMeleeWeaponDamageType);IF(HasPassive('CarverGuild_10_TerrorizeTheTerrors',context.Source)):ApplyStatus(OBSERVER_TARGET,FRIGHTENED,100,2,,,,not SavingThrow(Ability.Wisdom,SourceSpellDC()));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);DealDamage(LevelMapValue(CarverGuild),MainMeleeWeaponDamageType);IF(HasPassive('CarverGuild_10_TerrorizeTheTerrors',context.Source)):ApplyStatus(OBSERVER_TARGET,FRIGHTENED,100,2,,,,not SavingThrow(Ability.Wisdom,SourceSpellDC()));" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
@@ -2172,7 +2172,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5c5be7c4-6129-40f1-8742-ac122bdefd36" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3b16b3ffg2270g1432g326dg3d651266daf9" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasSpellCastBlocked(context.Observer) and IsAbleToReact(context.Observer) and not Self(context.Source, context.Observer) and Enemy(context.Source, context.Observer) and IsSpell() and not Uninterruptible() and not HasStringInSpellRoll('WeaponAttack') and not AnyEntityIsItem() and not SpellId('Shout_END_Gale_ActivateNethereseOrb') and CounterspellCheck(context.Observer, context.Source) and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Source);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
