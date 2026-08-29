@@ -12007,8 +12007,9 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="367a4d0a-6aa5-4078-9556-5343b1e2d5c6" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he4b058a0g2cdbgba7agf3cfg71fa968bbd61" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="LLA" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttacked" enumeration_type_name="StatusEvent" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12018,8 +12019,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="703793ed-a835-4038-826b-925b0a87bd35" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9fa0d3deg53aag92d4g5ba5g0185574f2cd7" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="LLA_OWNER" />
-        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="LordsAllianceAgent_Consume" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
