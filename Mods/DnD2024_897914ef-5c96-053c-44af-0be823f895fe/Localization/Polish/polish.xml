@@ -70,7 +70,7 @@ Podcięcie ścięgna. Szybkość celu zostaje zmniejszona o [1] do początku two
   <content contentuid="hd5311cf0g6f4fg9a03g45f9gf5ba41e2994c" version="1">Uderzenie w ścięgno podkolanowe</content>
   <content contentuid="hcba666bcgdd43g5b9agef09gdcfd2c3d20ff" version="1">Szybkość jest zmniejszana o [1] do rozpoczęcia następnej tury atakującego.</content>
   <content contentuid="hebad3866ga362g915cge97fg661e8b92ea36" version="1">Poziom 11: Nieustanna wściekłość</content>
-  <content contentuid="hfd45d1c1g9dd3g206agfb7eg456c6af02ac0" version="1">Raz na &lt;LSTag Tooltip="ShortRest"&gt;krótki odpoczynek&lt;/LSTag&gt;, gdy podczas &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szału&lt;/LSTag&gt; liczba twoich &lt;LSTag Tooltip="HitPoints"&gt;punktów wytrzymałości&lt;/LSTag&gt; miałaby spaść do [1], zamiast tego odzyskujesz punkty wytrzymałości w liczbie równej dwukrotności twojego poziomu barbarzyńcy i unikasz &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Utraty przytomności&lt;/LSTag&gt;.</content>
+  <content contentuid="hfd45d1c1g9dd3g206agfb7eg456c6af02ac0" version="1">Raz na &lt;LSTag Tooltip="ShortRest"&gt;krótki odpoczynek&lt;/LSTag&gt;, jeśli liczba twoich &lt;LSTag Tooltip="HitPoints"&gt;punktów wytrzymałości&lt;/LSTag&gt; spadnie do [1] podczas &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szału&lt;/LSTag&gt;, zamiast &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;stracić przytomność&lt;/LSTag&gt;, odzyskujesz punkty wytrzymałości w liczbie równej dwukrotności twojego poziomu barbarzyńcy.</content>
   <content contentuid="h784061e1gf2a8g748bg99cfg9e391dd4569c" version="1">Poziom 3: Szał</content>
   <content contentuid="hd21b5d53gc033g82abgfcdag21730bb83c68" version="1">Jeśli użyjesz Szaleńczego ataku podczas &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szału&lt;/LSTag&gt;, zadajesz dodatkowe obrażenia pierwszemu celowi trafionemu w swojej turze atakiem opartym na Sile. Aby określić dodatkowe obrażenia, rzuć tyloma k6, ile wynosi twoja premia do obrażeń &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szału&lt;/LSTag&gt;, i zsumuj wyniki. Obrażenia są tego samego typu co obrażenia broni albo ataku bez broni użytego do wykonania ataku.</content>
   <content contentuid="h7f8570c9g2cd6g2327g3c99g18d5c393bf5e" version="1">Poziom 6: Bezmyślna wściekłość</content>
@@ -239,7 +239,7 @@ Dodaj połowę swojego modyfikatora Mądrości do &lt;LSTag Tooltip="AbilityChec
   <content contentuid="hf5d6de51g8683g514bgcfd2gd52016de99fe" version="1">Gwiezdny ognik</content>
   <content contentuid="h9cbc738dgd21bg77f4g2687gd1ac412ca2b4" version="1">Ciskasz drobiną światła w wybraną istotę lub obiekt w zasięgu. Wykonaj przeciwko celowi dystansowy test ataku czarem. Przy trafieniu cel otrzymuje obrażenia od światłości, a do końca twojej następnej tury emituje słabe światło w promieniu [1] i nie może korzystać ze stanu &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;niewidzialności&lt;/LSTag&gt;.</content>
   <content contentuid="h6d4e8665g6567g3bc4gd9f1g206db8efad20" version="1">Gwiezdny ognik</content>
-  <content contentuid="he44a89e4gd251g9a1dg6abagca1e9807a226" version="1">Istota emituje Przyćmione Światło w promieniu [1] i nie może korzystać ze stanu &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;niewidzialności&lt;/LSTag&gt;.</content>
+  <content contentuid="he44a89e4gd251g9a1dg6abagca1e9807a226" version="1">Istota emituje słabe światło w promieniu [1] i nie może korzystać ze stanu &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;niewidzialności&lt;/LSTag&gt;.</content>
   <content contentuid="h8d4a4bb1g65b7g5025g4514gdfa80f1282ba" version="1">Grzmot</content>
   <content contentuid="h853f3b07gf693g964eg9f97g97a2cfda50ef" version="1">Każda istota w emanacji [1], której źródłem jesteś, wykonuje rzut obronny na Kondycję. Przy niepowodzeniu otrzymuje obrażenia od dźwięku.</content>
   <content contentuid="hbd2e3aa0g3258g4710g9504gbadee9cd0ea6" version="1">Poziom 1: Druid</content>
@@ -363,15 +363,15 @@ Zwiększona wytrzymałość. Możesz dodawać swój modyfikator Mądrości do rz
   <content contentuid="h62511cd9g27d2g5cbcga820gbb50c459d998" version="1">Poziom 9: Niezłomny</content>
   <content contentuid="hb015b8bcg9783ge81ag0118gaa1388097f11" version="2">Gdy nie zdasz rzutu obronnego, możesz uznać go za udany. Po skorzystaniu z tej cechy nie możesz zrobić tego ponownie, dopóki nie ukończysz długiego odpoczynku.</content>
   <content contentuid="h852a89d3g128fga1e5g2fedg98ddac129936" version="1">Gdy nie zdasz rzutu obronnego, możesz uznać go za udany.</content>
-  <content contentuid="h858b33e5g3b62g9b7fg692fg50cb883ac903" version="1">Mistrz taktyki: Pchnij</content>
+  <content contentuid="h858b33e5g3b62g9b7fg692fg50cb883ac903" version="1">Mistrz taktyki: Popchnięcie</content>
   <content contentuid="h69435982g810ege56dgacebg3bb3b371ccd9" version="1">Możesz dodatkowo zastosować do tego ataku właściwość mistrzostwa Popchnięcie.</content>
   <content contentuid="h6c90bdcbg9d73g2f85g8df7g47fbedfb078f" version="1">Poziom 9: Mistrz taktyki</content>
-  <content contentuid="h2c920020g431dge64eg8e26g01537cb63450" version="1">Kiedy wykonujesz atak bronią, możesz dodatkowo zastosować do tego ataku jedną z właściwości Pchnięcia, &lt;LSTag Type="Passive" Tooltip="Fighter_9_TacticalMaster_Sap"&gt;Sap&lt;/LSTag&gt; lub Powolności.</content>
-  <content contentuid="h53c4a6c9g7930g55a2ga6d9g74f864e922d2" version="1">Mistrz taktyczny: Sap</content>
-  <content contentuid="h0558e9e5gd74bg0f9fg2820gc589e678173e" version="1">Możesz dodatkowo zastosować do tego ataku właściwość mistrzostwa Sap.</content>
-  <content contentuid="h1bcf613agff33gdd61g8288g83128f467505" version="1">Mistrz Taktyczny: Powolny</content>
-  <content contentuid="hfd56201dg7690g59deg5771g7c00df6810c1" version="1">Możesz dodatkowo zastosować do tego ataku właściwość Powolne mistrzostwo.</content>
-  <content contentuid="h1261d64eg6ff9gfcfcg691agbb4378c7bc02" version="7">Do skutecznego poruszania się w ciężkim zbroi wymaga Siły 13.</content>
+  <content contentuid="h2c920020g431dge64eg8e26g01537cb63450" version="1">Gdy wykonujesz atak bronią, możesz dodatkowo zastosować do niego jedną z następujących właściwości mistrzostwa: Popchnięcie, &lt;LSTag Type="Passive" Tooltip="Fighter_9_TacticalMaster_Sap"&gt;Osłabienie&lt;/LSTag&gt; albo Spowolnienie.</content>
+  <content contentuid="h53c4a6c9g7930g55a2ga6d9g74f864e922d2" version="1">Mistrz taktyki: Osłabienie</content>
+  <content contentuid="h0558e9e5gd74bg0f9fg2820gc589e678173e" version="1">Możesz dodatkowo zastosować do tego ataku właściwość mistrzostwa Osłabienie.</content>
+  <content contentuid="h1bcf613agff33gdd61g8288g83128f467505" version="1">Mistrz taktyki: Spowolnienie</content>
+  <content contentuid="hfd56201dg7690g59deg5771g7c00df6810c1" version="1">Możesz dodatkowo zastosować do tego ataku właściwość mistrzostwa Spowolnienie.</content>
+  <content contentuid="h1261d64eg6ff9gfcfcg691agbb4378c7bc02" version="7">Do sprawnego poruszania się w ciężkiej zbroi wymagana jest Siła 13.</content>
   <content contentuid="he349bc27ga203ge868g3f0ag5fdf65b7e83b" version="1">Jeśli istota nosząca tę ciężką zbroję ma wynik Siły niższy niż [1], jej szybkość zostaje zmniejszona o [2].</content>
   <content contentuid="h412ee86dgfedcga2beg54adgbd1f6bc466f9" version="1">Zasada: Wymagana siła (zbroja szynowa)</content>
   <content contentuid="h1855925eg36d7g774cg4917gc8135001356f" version="1">Zasada: Wymagania dotyczące siły (zbroja płytowa)</content>
@@ -547,11 +547,11 @@ Gdy dosiadasz wierzchowca i otrzymasz obrażenia o wartości co najmniej 4, musi
   <content contentuid="hf0938809g82f6ge8a7gea01gff762cf6f570" version="1">W ramach akcji Magii możesz zużyć jedno użycie Mocy przysięgi tej klasy, aby przepełnić wrogów trwogą. Unosząc Święty Symbol albo broń, wybierasz maksymalnie tyle widocznych istot w promieniu [1] od siebie, ile wynosi twój modyfikator Charyzmy (co najmniej jedną). Każdy cel musi wykonać rzut obronny na Mądrość; w razie niepowodzenia otrzymuje stan Przerażenia na 1 minutę.</content>
   <content contentuid="hdd546b3bg87ddg0b0eg91d9g7dd5bb69d0d5" version="1">Poziom 11: Promienne Uderzenia</content>
   <content contentuid="he923c53cgfecbgb456g1ee5gbc97fd5f5a9a" version="1">Twoje uderzenia niosą teraz nadprzyrodzoną moc. Gdy trafisz cel testem ataku przy użyciu broni do walki w zwarciu lub uderzenia bez broni, cel otrzymuje dodatkowe 1k8 obrażeń od światłości.</content>
-  <content contentuid="h1b6d335fg71e3g921bg96efgd3563a3e9d4b" version="1">Paladyn i pobliscy sojusznicy mają odporność na obrażenia nekrotyczne, Psychiczne i od światłości.</content>
-  <content contentuid="he4565ab2g2625gaeb8g694eg929ab02e448c" version="1">Paladyn i pobliscy sojusznicy mają odporność na obrażenia nekrotyczne, Psychiczne i od światłości.</content>
-  <content contentuid="hae6c4966g7a68ga1edg4bc6gae39ac7aeb6b" version="1">Ty i wszyscy pobliscy sojusznicy macie Odporność na obrażenia nekrotyczne, Psychiczne i od światłości. Aura znika, jeśli upadniesz. &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Nieprzytomny&lt;/LSTag&gt;.</content>
+  <content contentuid="h1b6d335fg71e3g921bg96efgd3563a3e9d4b" version="1">Paladyn i pobliscy sojusznicy mają odporność na obrażenia nekrotyczne, psychiczne i od światłości.</content>
+  <content contentuid="he4565ab2g2625gaeb8g694eg929ab02e448c" version="1">Paladyn i pobliscy sojusznicy mają odporność na obrażenia nekrotyczne, psychiczne i od światłości.</content>
+  <content contentuid="hae6c4966g7a68ga1edg4bc6gae39ac7aeb6b" version="1">Ty i wszyscy pobliscy sojusznicy macie odporność na obrażenia nekrotyczne, psychiczne i od światłości. Aura znika, jeśli &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;stracisz przytomność&lt;/LSTag&gt;.</content>
   <content contentuid="h36197b70g60e1g9d30g020ag5ebf5202eade" version="1">Poziom 7: Bezlitosny Mściciel</content>
-  <content contentuid="h2c05bd1dg9548g9d0ag66dbgd31ce3af6dab" version="1">Gdy trafisz wroga &lt;LSTag Tooltip="OpportunityAttack"&gt;atakiem okazyjnym&lt;/LSTag&gt;, możesz zmniejszyć jego szybkość do 0 do końca bieżącej tury. W swojej następnej turze twoja &lt;LSTag Tooltip="MovementSpeed"&gt;szybkość poruszania się&lt;/LSTag&gt; zwiększa się o [1].</content>
+  <content contentuid="h2c05bd1dg9548g9d0ag66dbgd31ce3af6dab" version="1">Gdy trafisz wroga &lt;LSTag Tooltip="OpportunityAttack"&gt;atakiem okazyjnym&lt;/LSTag&gt;, możesz zmniejszyć jego szybkość do 0 do końca bieżącej tury. W swojej następnej turze twoja &lt;LSTag Tooltip="MovementSpeed"&gt;szybkość ruchu&lt;/LSTag&gt; zwiększa się o [1].</content>
   <content contentuid="hd54cf49fg52f9gc82fg23ddg240455666d75" version="1">Bezlitosny wróg Mściciela</content>
   <content contentuid="h4580d441g9dc0gbc53g7a59g25cce7bd8ba2" version="1">Nie można się poruszać. Stan Unieruchomienia wywołany &lt;LSTag Tooltip="OpportunityAttack"&gt;atakiem okazyjnym&lt;/LSTag&gt; Nieugiętego mściciela.</content>
   <content contentuid="h8a2bbcc7gff7eg7312gb3f5g2e15ba81d07c" version="3">Ulubiony wróg</content>
@@ -1231,7 +1231,7 @@ Przypływ witalności. Gdy aktywujesz szał, zyskujesz tymczasowe punkty wytrzym
   <content contentuid="h37bdd6afg8377ga414g06b2gd12131f14c73" version="1">Poziom 6: Fanatyczne skupienie</content>
   <content contentuid="h9ac99198g4fe0gd34bg57a0g52acb98ed35f" version="1">Poziom 10: Gorliwa obecność</content>
   <content contentuid="hfa0367c5gd524g439egbb91gf1d01da462a1" version="4">Ścieżka czciciela</content>
-  <content contentuid="h0e363cf3g0162gc215g7872g2aa8512bdbd6" version="1">Barbarzyńcy kroczący Ścieżką Zeloty otrzymują łaski od boga lub panteonu. Ci Barbarzyńcy doświadczają &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szał&lt;/LSTag&gt; jako ekstatyczny epizod boskiego zjednoczenia, który napełnia ich mocą. Często są sojusznikami kapłanów i innych wyznawców swojego boga lub panteonu.</content>
+  <content contentuid="h0e363cf3g0162gc215g7872g2aa8512bdbd6" version="1">Barbarzyńcy kroczący Ścieżką Zeloty otrzymują łaski od boga lub panteonu. Przeżywają swój &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szał&lt;/LSTag&gt; jako ekstatyczny stan boskiego zjednoczenia, który napełnia ich mocą. Często są sojusznikami kapłanów i innych wyznawców swojego boga lub panteonu.</content>
   <content contentuid="h15b91354gf2d6ga550g86cag97a1796054d7" version="1">Możesz nasycać swoje ciosy boską mocą. W każdej twojej turze, gdy twój &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szał&lt;/LSTag&gt; jest aktywny, pierwsza istota trafiona przez ciebie bronią albo atakiem bez broni otrzymuje dodatkowe obrażenia w liczbie równej 1k6 plus połowa twojego poziomu Barbarzyńcy (zaokrąglając w dół). Za każdym razem wybierasz, czy dodatkowe obrażenia są nekrotyczne, czy od światłości.</content>
   <content contentuid="hc4c144a0g2e9bg6166g297cg8829f3a2bd83" version="1">Boska istota pomaga ci pozostać w walce. Dysponujesz pulą czterech kości k12, które możesz zużywać, aby się leczyć. W ramach akcji dodatkowej możesz zużyć dowolną liczbę kości z puli, rzucić nimi i odzyskać punkty wytrzymałości w liczbie równej sumie wyników.
 
@@ -1396,7 +1396,7 @@ W późniejszych turach możesz wykonać akcję Magii, aby przesunąć Cylinder 
   <content contentuid="h8732bd5dg5f3cgfb87gb512gfda761f8c710" version="1">Nałożenie klątwy: Utrata Charyzmy</content>
   <content contentuid="h848bdb6bgb349gd182ga57fg8c2e333de3c6" version="1">Dotknięciem nakładasz na wybraną istotę klątwę. Otrzymuje ona &lt;LSTag Tooltip="Disadvantage"&gt;utrudnienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AbilityCheck"&gt;testach&lt;/LSTag&gt; i &lt;LSTag Tooltip="SavingThrow"&gt;rzutach obronnych&lt;/LSTag&gt; dotyczących Charyzmy.</content>
   <content contentuid="h1d14466cgc566g3697g7afcg23f2cda6b626" version="1">Nałożenie klątwy: Utrudnienie w ataku</content>
-  <content contentuid="h03f4e692g56c6g5001g17adg72f182951516" version="1">Nałóż klątwę dotykiem. Istota pod jej wpływem ma &lt;LSTag Tooltip="Disadvantage"&gt;utrudnienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AttackRoll"&gt;rzutach obronnych&lt;/LSTag&gt; przeciwko tobie.</content>
+  <content contentuid="h03f4e692g56c6g5001g17adg72f182951516" version="1">Nałóż klątwę dotykiem. Istota pod jej wpływem ma &lt;LSTag Tooltip="Disadvantage"&gt;utrudnienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AttackRoll"&gt;testach ataku&lt;/LSTag&gt; przeciwko tobie.</content>
   <content contentuid="h60de7a54g35b6gffcag2182gf832019fac15" version="1">Nałożenie klątwy: Dodatkowe obrażenia</content>
   <content contentuid="hbf980649gb1b1gd67cg8cd9g1369291fa4d0" version="1">Dotknięciem nakładasz na wybraną istotę klątwę. Twoje ataki i czary zadają celowi dodatkowo [1].</content>
   <content contentuid="h9961c64ag4195gb937g4da3g2313af9bbb31" version="1">Nałożenie klątwy: Groza</content>
@@ -1406,7 +1406,7 @@ W późniejszych turach możesz wykonać akcję Magii, aby przesunąć Cylinder 
   <content contentuid="h11d7d8f1g23a0gf9a4gf2a3ge05280ee0ccb" version="1">Nałożenie klątwy: Dodatkowe obrażenia</content>
   <content contentuid="h939eeb3ag4c51g814fg5bf4g9fa6032ff773" version="1">Dotknięciem nakładasz na wybraną istotę klątwę. Twoje ataki i czary zadają celowi dodatkowo [1].</content>
   <content contentuid="h18946b2fg2799g5d8cg1191ga2ad1070c791" version="1">Nałożenie klątwy: Utrudnienie w ataku</content>
-  <content contentuid="hc0faf0e3g6b1bgefbbge13cg61d3cdca920b" version="1">Nałóż klątwę dotykiem. Istota pod jej wpływem ma &lt;LSTag Tooltip="Disadvantage"&gt;utrudnienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AttackRoll"&gt;rzutach obronnych&lt;/LSTag&gt; przeciwko tobie.</content>
+  <content contentuid="hc0faf0e3g6b1bgefbbge13cg61d3cdca920b" version="1">Nałóż klątwę dotykiem. Istota pod jej wpływem ma &lt;LSTag Tooltip="Disadvantage"&gt;utrudnienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AttackRoll"&gt;testach ataku&lt;/LSTag&gt; przeciwko tobie.</content>
   <content contentuid="h48d03ba3g804fg652dg12b7g4a3946dd70bb" version="1">Nałożenie klątwy: Utrata Charyzmy</content>
   <content contentuid="h11528aaeg2fcfg0c2cge5e2g2687b402d219" version="1">Dotknięciem nakładasz na wybraną istotę klątwę. Otrzymuje ona &lt;LSTag Tooltip="Disadvantage"&gt;utrudnienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AbilityCheck"&gt;testach&lt;/LSTag&gt; i &lt;LSTag Tooltip="SavingThrow"&gt;rzutach obronnych&lt;/LSTag&gt; dotyczących Charyzmy.</content>
   <content contentuid="hb6067f83ga83eg2305g1b53geefaa2c43f57" version="1">Nałożenie klątwy: Utrata Mądrości</content>
@@ -1779,9 +1779,9 @@ Gdy przejawiasz emanację, a także w ramach akcji dodatkowej w kolejnych turach
   <content contentuid="h52d70b1eg7be8gdc25g22fcg6446989e556c" version="1">Poziom 10: Zrodzony z burzy</content>
   <content contentuid="hcd9d1097ga19dg7c70g4d29gc5f6d7f4a948" version="1">Twój Gniew morza zapewnia ci dwa dodatkowe efekty, gdy jest aktywny, jak opisano poniżej.
 
-Lot. Zyskujesz szybkość Lotu równą swojej szybkości.
+Lot. Zyskujesz szybkość lotu równą swojej szybkości ruchu.
 
-Odporność. Masz Odporność na obrażenia od zimna, elektryczności i dźwięku.</content>
+Odporność. Masz odporność na obrażenia od zimna, elektryczności i dźwięku.</content>
   <content contentuid="h7f73ecccg72adgef93gb362g40f93abb7b1c" version="1">Psioniczny wojownik</content>
   <content contentuid="h59454ac0g0de7g8defg7a22g0fd1397b1f85" version="1">Wojownicy psioniczni budzą moc swoich umysłów, by wzmocnić fizyczną potęgę. Wykorzystują energię psioniczną do nasycania ciosów broni, uderzania telekinetyczną siłą i tworzenia barier z energii umysłu.</content>
   <content contentuid="hf1367018g2ff0g0c06g94e6g7b5a5f21d863" version="1">Wojownik Miłosierdzia</content>
@@ -2025,7 +2025,7 @@ Na 3. poziomie są to Pomoc, Leczenie ran, Pocisk wiodący, Mniejsze przywrócen
 
 W ramach akcji dodatkowej możesz uleczyć siebie albo jedną istotę, którą widzisz w promieniu 18 m od siebie, zużywając kości z puli. Maksymalna liczba kości, które możesz zużyć naraz, jest równa twojemu modyfikatorowi Charyzmy (co najmniej jedna kość). Rzuć zużytymi kośćmi i przywróć punkty wytrzymałości w liczbie równej sumie wyników. Wszystkie zużyte kości wracają do puli po ukończeniu długiego odpoczynku.</content>
   <content contentuid="h0c3b5562gfcc3gad99gd963g1df27e943cd2" version="1">Poziom 6: Promienna Dusza</content>
-  <content contentuid="h870b18d3g13d8ge83dg1253gf5261403acb2" version="1">Twoje powiązanie z patronem pozwala ci stać się źródłem promiennej energii. Masz Odporność na obrażenia od światłości. Raz na turę, gdy czar, który rzucasz, zadaje obrażenia od światłości lub ognia, możesz dodać swój modyfikator Charyzmy do obrażeń tego czaru przeciwko jednemu z jego celów.</content>
+  <content contentuid="h870b18d3g13d8ge83dg1253gf5261403acb2" version="1">Twoje powiązanie z patronem pozwala ci stać się źródłem promiennej energii. Masz odporność na obrażenia od światłości. Raz na turę, gdy czar, który rzucasz, zadaje obrażenia od światłości lub ognia, możesz dodać swój modyfikator Charyzmy do obrażeń tego czaru przeciwko jednemu z jego celów.</content>
   <content contentuid="heab6ca12g945dg3d00g4c47g4b04d1d8218e" version="1">Poziom 10: Niebiańska odporność</content>
   <content contentuid="hcdda7ab4ge734g2112g0666gf41d8d14e579" version="2">Ty oraz każdy sojusznik w promieniu 9 m od ciebie zyskujecie tymczasowe punkty wytrzymałości w liczbie równej sumie twojego poziomu czarownika i modyfikatora Charyzmy. Po użyciu tej cechy nie możesz zrobić tego ponownie, dopóki nie ukończysz krótkiego odpoczynku.</content>
   <content contentuid="h57173a7egcdf0g4150gbb9eg91bada654a99" version="1">Uzdrawiające światło</content>
@@ -3485,7 +3485,7 @@ Masz ułatwienie w testach Zręczności (&lt;LSTag Type="Skills" Tooltip="Stealt
   <content contentuid="hf7851a9dg2c90ga420g9853gd855b8d447bc" version="1">Atak z ciemności</content>
   <content contentuid="h6185df85g28ceg3fe6g4e39g5afb82fc5604" version="1">Żadnej ucieczki</content>
   <content contentuid="h581f8d48gd1d3g12bag5dbegf06507357e90" version="1">Żadnej ucieczki</content>
-  <content contentuid="hb18d7e9eg37d4g8642g14a4g092815e31296" version="1">Dotknięta istota zostaje uduszona garotą. Jest to &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;uciszona&lt;/LSTag&gt; i pobiera [1] na turę.</content>
+  <content contentuid="hb18d7e9eg37d4g8642g14a4g092815e31296" version="1">Dotknięta istota jest duszona garotą, &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;uciszona&lt;/LSTag&gt; i otrzymuje [1] na turę.</content>
   <content contentuid="he467cf73g1f92gd216gb3e7g005114acd9e7" version="1">Żadnej ucieczki</content>
   <content contentuid="hc11719c6g4c2age8c5gfbecg13c2297e09b8" version="1">Uduszenie istoty garotą.</content>
   <content contentuid="h2fe200c7ga105g2c4eg493fg373d790dcb13" version="1">Mistrz Cieni</content>
@@ -3698,7 +3698,7 @@ Choć druidzi ci noszą w sobie chaos natury, trening i dyscyplina pozwalają im
   <content contentuid="h698d6323ge92fg1fd9g8d8bg36d7db994d94" version="1">Dzikie odzyskiwanie</content>
   <content contentuid="hc24409fagede8g0aaag1ad3g32c2949bb667" version="2">Uczysz się regenerować dzięki dzikiej, zwierzęcej magii płynącej w twoich żyłach. W ramach akcji dodatkowej możesz zużyć jedno użycie Dzikiej Postaci, aby odzyskać punkty wytrzymałości w liczbie równej sumie 2k6 i twojego poziomu druida. Leczenie zwiększa się o 1k6 na 5. poziomie druida (3k6 plus poziom druida) i ponownie na 10. poziomie (4k6 plus poziom druida).</content>
   <content contentuid="hc064fa21ge684g65c0g9633g796b118177b3" version="1">Żrące uderzenie</content>
-  <content contentuid="h33a83d2bg7e97g9bebg4b1ag640c88459c92" version="1">Zadajesz dodatkowe obrażenia od kwasu w ilości równej twojej &lt;LSTag Tooltip="ProficiencyBonus"&gt;premii biegłości&lt;/LSTag&gt;. Przy trafieniu tworzysz wokół celu kałużę kwasu, która zmniejsza jego &lt;LSTag Tooltip="ArmourClass"&gt;Klasę Pancerza&lt;/LSTag&gt; o [1]. </content>
+  <content contentuid="h33a83d2bg7e97g9bebg4b1ag640c88459c92" version="1">Zadajesz dodatkowe obrażenia od kwasu w liczbie równej twojej &lt;LSTag Tooltip="ProficiencyBonus"&gt;premii z biegłości&lt;/LSTag&gt;. Przy trafieniu tworzysz wokół celu kałużę kwasu, która zmniejsza jego &lt;LSTag Tooltip="ArmourClass"&gt;Klasę Pancerza&lt;/LSTag&gt; o [1].</content>
   <content contentuid="h93ef7658ga110g9063ga99fg02ab90d1135d" version="1">Trująca Mgła</content>
   <content contentuid="hbbc19e32g5427g3585gaaabg3a72c966a807" version="1">Zadaj dodatkowe obrażenia od trucizny w liczbie równej &lt;LSTag Tooltip="ProficiencyBonus"&gt;premii z biegłości&lt;/LSTag&gt;. Po trafieniu otocz cel trującą chmurą, która może &lt;LSTag Type="Status" Tooltip="POISONED"&gt;zatruć&lt;/LSTag&gt; znajdujące się w niej istoty.</content>
   <content contentuid="hed352d94g7b9dg3b87g2d2bgb0b679111113" version="1">Przy trafieniu istnieje szansa na nałożenie stanu Płonięcia. Płonącym celom zadaje dodatkowe [1].</content>
@@ -4130,7 +4130,7 @@ Po osiągnięciu 11. poziomu łowcy potworów dodatkowe obrażenia wzrastają do
   <content contentuid="h313bab3cg67c1gfa03ge6f3g354db3046e48" version="1">Przemyślana odpowiedź (wręcz)</content>
   <content contentuid="h2f932b68g4347ga354g521cgc438d3f99c6d" version="1">Gdy widoczna istota w promieniu 18 m od ciebie obiera cię albo inną istotę za cel ataku wręcz lub dystansowego, możesz w ramach reakcji wykonać przeciwko napastnikowi jeden atak bronią.</content>
   <content contentuid="he03aadf1g28cbg5549g778fgff77ace6f7ba" version="1">Przemyślana odpowiedź (dystansowa)</content>
-  <content contentuid="he571e586gc384gf9bbg0231g7c7be2144adc" version="1">Zniknij w ciemność i stań się &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;niewidzialne&lt;/LSTag&gt;.</content>
+  <content contentuid="he571e586gc384gf9bbg0231g7c7be2144adc" version="1">Rozpłyń się w mroku i zyskaj &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;niewidzialność&lt;/LSTag&gt;.</content>
   <content contentuid="h87d3e26ag5e53gdf92g801cg4e8c26aac78e" version="1">Mag bitewny: Grzmiące ostrze</content>
   <content contentuid="ha738254bg5dbag724ag511ag8d59cf1fed09" version="1">Mag bitewny: Ostrze zielonego płomienia</content>
   <content contentuid="h7e0866bbgdec1g07c2g7725gef3c6eb68247" version="1">Mag bitewny: Prawdziwe uderzenie</content>
@@ -4580,11 +4580,11 @@ Cechy fizyczne goliatów przypominają olbrzymów z ich rodów. Niektórzy wygl�
   <content contentuid="h41691e6fg7ecbgcaa8ga939gf512c0bc7016" version="1">W ramach akcji Magii dotykasz istoty i rzucasz tyloma kośćmi k4, ile wynosi twoja premia z biegłości. Istota odzyskuje punkty wytrzymałości w liczbie równej sumie wyników. Po użyciu tej zdolności musisz ukończyć długi odpoczynek, zanim użyjesz jej ponownie.</content>
   <content contentuid="h4545e270g8facg12e9geda5gd28be0c71012" version="1">Niosący światło</content>
   <content contentuid="h1e2aaf16gdbc2g54c6g171cgeae9eb0ce5c5" version="1">Znasz sztuczkę Światła.</content>
-  <content contentuid="hc5a84737g0024g47c9g1052gdf0e4350d3ec" version="1">Niebiańskie skrzydła. Z twoich pleców tymczasowo wyrastają widmowe skrzydła. Dopóki transformacja trwa, masz szybkość Lotu równą twojej szybkości.
+  <content contentuid="hc5a84737g0024g47c9g1052gdf0e4350d3ec" version="1">Niebiańskie skrzydła. Z twoich pleców tymczasowo wyrastają widmowe skrzydła. Dopóki transformacja trwa, masz szybkość lotu równą swojej szybkości ruchu.
 
-Wewnętrzny blask. Palące światło tymczasowo bije z twoich oczu i ust. Na czas trwania promieniujesz Jasnym Światłem w promieniu 3 m oraz Słabym Światłem w dodatkowym promieniu 3 m, a na koniec każdej twojej tury każde istota w odległości 3 m od ciebie otrzymuje obrażenia od światłości równe twojej premii z biegłości.
+Wewnętrzny blask. Z twoich oczu i ust tymczasowo bije palące światło. Podczas trwania efektu emitujesz jasne światło w promieniu 3 m oraz słabe światło na dalsze 3 m. Ponadto na koniec każdej ze swoich tur każda istota w promieniu 3 m od ciebie otrzymuje obrażenia od światłości w liczbie równej twojej premii z biegłości.
 
-Nekrotyczny całun. Twoje oczy przejściowo stają się otchłaniami ciemności, a z twoich pleców wyrastają skrzydła bez zdolności latania. Istoty inne niż twoi sojusznicy w odległości 3 m od ciebie muszą wykonać udany rzut obronny na Charyzmę (ST 8 + twój modyfikator Charyzmy + twoja premia z Biegłości) albo zyskują stan Przerażony do końca twojej następnej tury.</content>
+Nekrotyczny całun. Twoje oczy na krótko stają się otchłaniami ciemności, a z twoich pleców tymczasowo wyrastają nielotne skrzydła. Wszystkie istoty poza twoimi sojusznikami w promieniu 3 m od ciebie muszą zdać rzut obronny na Charyzmę (ST wynosi 8 + twój modyfikator Charyzmy + twoja premia z biegłości) albo zyskują stan przerażenia do końca twojej następnej tury.</content>
   <content contentuid="h1441708fgd061g4a56g61b7gb8e8733cc36d" version="1">Aasimar</content>
   <content contentuid="h17794a45gbffdg8b0dg0332g414e8cee0aa7" version="1">Aasimar (wymawiane AH-sih-mar) to śmiertelnicy, którzy noszą w swoich duszach iskrę Wyższych Planów. Niezależnie od tego, czy pochodzą od anielskiej istoty, czy są nasyceni mocą Niebianina, potrafią rozniecić tę iskrę, aby nieść światło, uzdrawiać i wyzwalać niebiański gniew.
 
@@ -4598,7 +4598,7 @@ Aasimar mogą pojawić się wśród każdej populacji śmiertelników. Przypomin
   <content contentuid="hce58bf73g30e5ged4aga02cgfc3a7316df41" version="2">Dampir</content>
   <content contentuid="h79662482g09c0g2520g7473g0b463567c37f" version="2">Dampiry to żywi ludzie, którzy mają wampiryczne zdolności, ale są przeklęci makabrycznym głodem. Większość dampirów pragnie krwi, ale niektóre czerpią pożywienie ze snów, energii życiowej lub innych ważnych źródeł. Dampiry muszą wybrać, czy walczyć, aby kontrolować swój głód, czy poddać się drapieżnym pragnieniom.</content>
   <content contentuid="h52cf869egf5cag4c87g68e9g5b3aec207282" version="1">Ślad Nieumarłych</content>
-  <content contentuid="h33a29ccdg7caegb5f1gbffagf05c192d4365" version="1">Masz Odporność na obrażenia nekrotyczne.</content>
+  <content contentuid="h33a29ccdg7caegb5f1gbffagf05c192d4365" version="1">Masz odporność na obrażenia nekrotyczne.</content>
   <content contentuid="h46b0c2f8g60cfgf514g75e0g2b9f80721ed5" version="1">Dampir</content>
   <content contentuid="h2fb7412egdbddg4e3cgd275g9982279ad118" version="1">Dampiry to żywi ludzie, którzy mają wampiryczne zdolności, ale są przeklęci makabrycznym głodem. Większość dampirów pragnie krwi, ale niektóre czerpią pożywienie ze snów, energii życiowej lub innych ważnych źródeł. Dampiry muszą wybrać, czy walczyć, aby kontrolować swój głód, czy poddać się drapieżnym pragnieniom.
 
@@ -4614,7 +4614,7 @@ Dampiry często powstają w wyniku spotkań z wampirami; niektórzy są potomkam
   <content contentuid="hd5d6a1b0g7f08g3a12g364agc72eb40de46b" version="1">Dwoisty umysł</content>
   <content contentuid="ha8516a36g6307g1d10g28acge1491664cc54" version="1">Masz ułatwienie w rzutach obronnych na Mądrość i Charyzmę.</content>
   <content contentuid="hb34d9e37g9dacgc539ga29dgfa6196ae1daa" version="1">Dyscyplina umysłu</content>
-  <content contentuid="hb138c39cgbb30gf571ga733gc5887d878bd0" version="1">Masz Odporność na obrażenia psychiczne.</content>
+  <content contentuid="hb138c39cgbb30gf571ga733gc5887d878bd0" version="1">Masz odporność na obrażenia psychiczne.</content>
   <content contentuid="ha860cb95g7c9ag10c1g85f5gc9e5b708f2a5" version="1">Kalashtar</content>
   <content contentuid="hd180b5fege06agd03ag32b2g4030476ac579" version="1">Kalashtar (wymawiane kal-ASZ-tar) powstali z połączenia ludzi i zbuntowanych duchów zwanych quori ze sfery snów. Kalashtar wyglądają jak ludzie, ale ich duchowa więź wpływa na nich na różne sposoby. Mają symetryczne, lekko kanciaste rysy, a ich oczy często jaśnieją, gdy się koncentrują albo przeżywają silne emocje.
 
@@ -4750,7 +4750,7 @@ Zwoje Ożywianie są zawsze zwolnione z tego ograniczenia i mogą być używane 
   <content contentuid="hff219b81gb634gcfe0g4f39gf3e454dd21c9" version="1">Mag odpychania</content>
   <content contentuid="h1862f304g5affgfe27g9f72g632fb90f977f" version="1">Studiujesz przede wszystkim czary, które blokują, odpędzają lub chronią — usuwają szkodliwe efekty, wypędzają złowrogie wpływy i osłaniają słabszych. Magowie szkoły odpychania są poszukiwani, gdy złowrogie duchy wymagają egzorcyzmu, miejsca trzeba zabezpieczyć przed magicznym szpiegostwem, a portale do innych sfer egzystencji — zamknąć. Drużyny poszukiwaczy przygód cenią ich za ochronę przed rozmaitymi wrogimi czarami i innymi atakami.</content>
   <content contentuid="hf84da708gedbeg7292g73f4gacc5ef7a3c10" version="1">Poziom 3: Magiczna powłoka</content>
-  <content contentuid="h211b59f7g914aga7a2gaf0eg6d3b97922133" version="1">Potrafisz splatać wokół siebie ochronną magię. Gdy za pomocą komórki rzucasz czar odpychania, możesz jednocześnie wykorzystać część jego magii, aby utworzyć na sobie magiczną powłokę trwającą do ukończenia długiego odpoczynku. Maksymalna liczba punktów wytrzymałości powłoki jest równa dwukrotności twojego poziomu maga plus twój modyfikator Inteligencji. Gdy otrzymujesz obrażenia, zamiast ciebie otrzymuje je magiczna powłoka. Jeśli masz Odporność albo Podatność na te obrażenia, zastosuj ją przed zmniejszeniem punktów wytrzymałości powłoki. Jeśli obrażenia zmniejszą jej punkty wytrzymałości do 0, otrzymujesz pozostałe obrażenia. Powłoka o 0 punktach wytrzymałości nie może pochłaniać obrażeń, lecz jej magia pozostaje aktywna.
+  <content contentuid="h211b59f7g914aga7a2gaf0eg6d3b97922133" version="1">Potrafisz splatać wokół siebie ochronną magię. Gdy za pomocą komórki rzucasz czar odpychania, możesz jednocześnie wykorzystać część jego magii, aby utworzyć na sobie magiczną powłokę trwającą do ukończenia długiego odpoczynku. Maksymalna liczba punktów wytrzymałości powłoki jest równa dwukrotności twojego poziomu maga plus twój modyfikator Inteligencji. Gdy otrzymujesz obrażenia, zamiast ciebie otrzymuje je magiczna powłoka. Jeśli masz odporność albo podatność na te obrażenia, zastosuj ją przed zmniejszeniem punktów wytrzymałości powłoki. Jeśli obrażenia zmniejszą jej punkty wytrzymałości do 0, otrzymujesz pozostałe obrażenia. Powłoka o 0 punktach wytrzymałości nie może pochłaniać obrażeń, lecz jej magia pozostaje aktywna.
 
 Gdy za pomocą komórki rzucasz czar odpychania, powłoka odzyskuje punkty wytrzymałości w liczbie równej dwukrotności poziomu tej komórki. W ramach akcji dodatkowej możesz również zużyć komórkę czaru, aby powłoka odzyskała punkty wytrzymałości w liczbie równej dwukrotności poziomu zużytej komórki.</content>
   <content contentuid="h2a374b86g81f6g7146ga72ag43246ef53813" version="1">Gdy otrzymujesz obrażenia, pochłania je magiczna powłoka. Jeśli masz odporność albo podatność na te obrażenia, zastosuj ją przed odjęciem obrażeń od punktów wytrzymałości powłoki. Jeśli obrażenia zmniejszą jej punkty wytrzymałości do 0, otrzymujesz pozostałe obrażenia. Powłoka o 0 punktach wytrzymałości nie może pochłaniać obrażeń, lecz jej magia pozostaje aktywna.</content>
@@ -4953,7 +4953,7 @@ Po każdym krótkim odpoczynku możesz odprawić rytuał nad bronią do walki wr
   <content contentuid="hd4c5ce4dgcb1bg633fg9549gc049d53401cf" version="1">Uświęcone ostrze</content>
   <content contentuid="hb8fdcfc4ga498g2b1cg07dfg1712e7560d44" version="1">Po każdym krótkim odpoczynku możesz odprawić rytuał nad bronią do walki wręcz, w której masz biegłość i która zadaje obrażenia kłute albo cięte, uświęcając ją. Broń staje się twoim uświęconym ostrzem; jednocześnie możesz mieć tylko jedno takie ostrze. Zyskuje ono dla ciebie właściwość Finezja, a wykonywane nim ataki przeciwko aberracjom, czartom i nieumarłym ignorują odporność na obrażenia.</content>
   <content contentuid="h690e847bge185g8948g88e3g81fa0004b7a4" version="1">Uświęcone ostrze</content>
-  <content contentuid="h76a22005g0fd5g7e8bgedc0g71ee16b02cd7" version="1">Ostrze zyskuje dla ciebie właściwość Finezja, a ataki wykonane nim przeciwko Aberracjom, Bitom i Nieumarłym ignorują Odporność na obrażenia.</content>
+  <content contentuid="h76a22005g0fd5g7e8bgedc0g71ee16b02cd7" version="1">Ostrze jest dla ciebie bronią finezyjną, a wykonane nim ataki przeciwko wynaturzeniom, czartom i nieumarłym ignorują odporność na obrażenia.</content>
   <content contentuid="h7a334947g9694gb548gb4e4g4bfde199cc8d" version="1">Poziom 3: Boskie błogosławieństwa</content>
   <content contentuid="h0f7b9f58g4722gc431g724fgbbd26f346b33" version="1">Twoje oddanie objawia się jako sprawiedliwa moc. Dysponujesz pulą punktów boskości równą 1 plus twój modyfikator Mądrości (co najmniej 1). Wszystkie wydane punkty boskości odzyskujesz po krótkim albo długim odpoczynku.
 
@@ -5004,7 +5004,7 @@ Zasięg twoich ataków bez broni zwiększa się o 1,5 m.</content>
   <content contentuid="h534ed7cdg1c82g686bg5c11g853eb4fc79da" version="1">Oblicze szału: Powalenie</content>
   <content contentuid="h9ab20eb3gc598g3449gb504g354483f2972b" version="1">Gdy aktywujesz &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szał&lt;/LSTag&gt; i trafisz istotę atakiem bez broni, możesz zmusić ją do rzutu obronnego na Kondycję (ST 8 plus twój modyfikator Siły i premia z biegłości). Przy niepowodzeniu istota otrzymuje stan Powalenia.</content>
   <content contentuid="hf0667bf6g77dagda24g515cg27017347e947" version="1">Ścieżka berserkera</content>
-  <content contentuid="h054c34e8gf7acg1ce5g9297g2f198a57cc90" version="2">Barbarzyńcy kroczący Ścieżką Berserkera kierują swoje &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szał&lt;/LSTag&gt; przede wszystkim w stronę przemocy. Ich ścieżka to nieskrępowana wściekłość i drżą w chaosie bitwy, gdy pozwalają swojemu &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szał&lt;/LSTag&gt; przejąć ich i wzmocnić.</content>
+  <content contentuid="h054c34e8gf7acg1ce5g9297g2f198a57cc90" version="2">Barbarzyńcy kroczący Ścieżką Berserkera kierują swój &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szał&lt;/LSTag&gt; przede wszystkim ku przemocy. Ich ścieżkę wyznacza nieokiełznana furia; rozkoszują się chaosem bitwy, pozwalając, by &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szał&lt;/LSTag&gt; nimi zawładnął i napełnił ich mocą.</content>
   <content contentuid="hfe2d7a7cg1f66g7b4cg4485g45ffc2e4f8ca" version="1">Ścieżka dzikiego serca</content>
   <content contentuid="h0a89d75bg6efag48a6gf526g8742bbe1176f" version="2">Barbarzyńcy podążający Ścieżką Dzikiego Serca uważają się za krewnych zwierząt. Ci Barbarzyńcy uczą się magicznych sposobów komunikowania się ze zwierzętami, a ich &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szał&lt;/LSTag&gt; wzmacnia ich więź ze zwierzętami, napełniając ich nadprzyrodzoną mocą.</content>
   <content contentuid="h20c62466g58aegc458g775bg12619ff97e87" version="1">Ścieżka Olbrzyma</content>
@@ -5211,10 +5211,10 @@ Zasięg twoich ataków bez broni zwiększa się o 1,5 m.</content>
   <content contentuid="h5cb55472gb6b7g47b1g89e1g030b53720520" version="2">Do końca swojej następnej tury podczas rzucania czaru zadającego obrażenia rzucasz każdą kością obrażeń dwukrotnie i wykorzystujesz wyższy wynik.</content>
   <content contentuid="hb2ec585cg90ddg450ag98dagbeb32d75fa7d" version="2">Do końca swojej następnej tury podczas rzucania czaru zadającego obrażenia rzucasz każdą kością obrażeń dwukrotnie i wykorzystujesz wyższy wynik.</content>
   <content contentuid="ha4eee424g6b14g40beg8738g0cec17ad0409" version="2">Do końca swojej następnej tury podczas rzucania czaru zadającego obrażenia rzucasz każdą kością obrażeń dwukrotnie i wykorzystujesz wyższy wynik.</content>
-  <content contentuid="h39c12d1fgb5dcg4d51g87bbg18512a184b4e" version="1">Masz Odporność na wszystkie obrażenia przez następną minutę.</content>
-  <content contentuid="h5f8b193egd0abg40e0g8557g3311b46354cc" version="1">Masz Odporność na wszystkie obrażenia przez następną minutę.</content>
-  <content contentuid="h29599a87g8b49g4020g9e8bg84709ef67c1d" version="1">Masz Odporność na wszystkie obrażenia przez następną minutę.</content>
-  <content contentuid="hc5ab4d91g0b67g4cf9ga593g3e5b2af9ac23" version="1">Masz Odporność na wszystkie obrażenia przez następną minutę.</content>
+  <content contentuid="h39c12d1fgb5dcg4d51g87bbg18512a184b4e" version="1">Masz odporność na wszystkie obrażenia przez następną minutę.</content>
+  <content contentuid="h5f8b193egd0abg40e0g8557g3311b46354cc" version="1">Masz odporność na wszystkie obrażenia przez następną minutę.</content>
+  <content contentuid="h29599a87g8b49g4020g9e8bg84709ef67c1d" version="1">Masz odporność na wszystkie obrażenia przez następną minutę.</content>
+  <content contentuid="hc5ab4d91g0b67g4cf9ga593g3e5b2af9ac23" version="1">Masz odporność na wszystkie obrażenia przez następną minutę.</content>
   <content contentuid="he8a359d2g85c2g4182g876cg6b35007745eb" version="1">Zmieniasz się w owcę do początku swojej następnej tury. W tej postaci masz stan Obezwładnienia i podatność na wszystkie obrażenia. Jeśli twoje punkty wytrzymałości spadną do 0, natychmiast wracasz do swojej zwykłej postaci.</content>
   <content contentuid="hd4eb497cg5894g467ega7feg4d27550eff7f" version="1">Zmieniasz się w owcę do początku swojej następnej tury. W tej postaci masz stan Obezwładnienia i podatność na wszystkie obrażenia. Jeśli twoje punkty wytrzymałości spadną do 0, natychmiast wracasz do swojej zwykłej postaci.</content>
   <content contentuid="h5809be0ega7e9g4091gb93cg6307099b32e3" version="1">Zmieniasz się w owcę do początku swojej następnej tury. W tej postaci masz stan Obezwładnienia i podatność na wszystkie obrażenia. Jeśli twoje punkty wytrzymałości spadną do 0, natychmiast wracasz do swojej zwykłej postaci.</content>
@@ -5290,7 +5290,7 @@ Zasięg twoich ataków bez broni zwiększa się o 1,5 m.</content>
   <content contentuid="h0630aaa0g6aa0g06a9ge0fag26faab98fa0c" version="1">Przypływ dzikiej magii: Wzmocnione czar</content>
   <content contentuid="h81455b0dge9d7gec74g4a50gc7fa88afc73e" version="1">Do końca swojej następnej tury podczas rzucania czaru zadającego obrażenia rzucasz każdą kością obrażeń dwukrotnie i wykorzystujesz wyższy wynik.</content>
   <content contentuid="h7106d36agc729ga538g1905gc78f61424ecc" version="1">Przypływ dzikiej magii: odporność</content>
-  <content contentuid="h98b4d72eg56f8g0a3dg5560g0b2c9cc14f5c" version="1">Masz Odporność na wszystkie obrażenia przez następną minutę.</content>
+  <content contentuid="h98b4d72eg56f8g0a3dg5560g0b2c9cc14f5c" version="1">Masz odporność na wszystkie obrażenia przez następną minutę.</content>
   <content contentuid="hbc163433g954fgc50cg70b0g7d2a79b50f85" version="1">Przypływ dzikiej magii: Tarcza</content>
   <content contentuid="h6a41193fg5cabg4e1ege044g043eb23962dc" version="1">Widmowa tarcza unosi się obok ciebie przez następną minutę, dając ci premię +2 do KP oraz Niewrażliwość na Magiczny pocisk.</content>
   <content contentuid="h847f06c4g2fddg015ag538cgf97b698de8f6" version="1">Przypływ dzikiej magii: Tarcza</content>
@@ -6213,7 +6213,7 @@ Paladyni, którzy wypełniają przysięgę Obserwatorów, są zawsze czujni w wy
   <content contentuid="hffe71531ga373g6aebg5c04g34c95b77fed1" version="1">Wola obserwatora</content>
   <content contentuid="hcade1749gdcc0g1f97g1533gca440242cfde" version="1">Możesz użyć Mocy przysięgi, aby nasycić swoją obecność ochronną mocą wiary. Wybierz widoczne istoty w promieniu 9 m od siebie w liczbie nieprzekraczającej twojego modyfikatora Charyzmy (co najmniej jedną). Przez 1 minutę ty i wybrane istoty wykonujecie z ułatwieniem rzuty obronne na Inteligencję, Mądrość i Charyzmę.</content>
   <content contentuid="h54a6679dg10f0g981egf460g55ffbc1cfcaf" version="1">Porzuć to, co pozaplanarne</content>
-  <content contentuid="h8f70346agdae6g92b8gc487gb1bbc53e7cbd" version="1">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Odpędź&lt;/LSTag&gt; pobliskie aberracje, istoty niebiańskie, żywiołaki, wróżki lub potwory. Są zmuszeni do ucieczki i nie mogą się do ciebie zbliżyć.</content>
+  <content contentuid="h8f70346agdae6g92b8gc487gb1bbc53e7cbd" version="1">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Odpędź&lt;/LSTag&gt; wynaturzenia, niebian, żywiołaki, fey albo czarty w pobliżu. Muszą uciekać i nie mogą się do ciebie zbliżyć.</content>
   <content contentuid="h19f6ac0dg82e0g24f3g61f4ge443d1f54e72" version="1">Założenia Obserwatorów</content>
   <content contentuid="h33e17780g9ca6g87f9g62b0gdbc3715ada11" version="1">Paladyn, który składa Przysięgę Obserwatorów, przysięga chronić królestwa śmiertelników przed zagrożeniami z nieziemskiego świata.
 
@@ -6243,7 +6243,7 @@ Dyscyplina. Jesteś tarczą przed niekończącymi się terrorami, które kryją 
   <content contentuid="h06e44f53g108ag0c88g6e39g3ed51371b74c" version="1">Rozkaz: Uciekaj</content>
   <content contentuid="h807fdee2g6faagd89bgd238g06ee74951945" version="1">Nakaż istocie, żeby w swojej turze uciekła od ciebie i nie wykonywała żadnych innych akcji.</content>
   <content contentuid="hd931bfa1g19c2g9666g6536gc1cace368615" version="1">Rozkaz: Ukorzenie się</content>
-  <content contentuid="h409cb932g8ed1gc110g3616g0fa1bc73cc21" version="1">Nakaż stworzeniu, by natychmiast &lt;LSTag Type="Status" Tooltip="PRONE"&gt;padło&lt;/LSTag&gt; na ziemię.</content>
+  <content contentuid="h409cb932g8ed1gc110g3616g0fa1bc73cc21" version="1">Nakaż istocie, by natychmiast &lt;LSTag Type="Status" Tooltip="PRONE"&gt;padła&lt;/LSTag&gt; na ziemię.</content>
   <content contentuid="he43c6e06g10c8g5acfgdff0g03b51d7b5fc1" version="1">Rozkaz: Zatrzymanie</content>
   <content contentuid="hea75c4c8gb2f4gbcaeg222bgdd00ad78c2d4" version="1">Nakaż istocie zatrzymać się, uniemożliwiając jej ruch i wykonywanie jakichkolwiek akcji.</content>
   <content contentuid="hf6670ab9g66a2g89b8gc628g4941759ee8a3" version="1">Nakaż [1] istotom, żeby w swoich turach przemieściły się w twoim kierunku i nie wykonywały żadnych innych akcji.</content>
@@ -6424,7 +6424,7 @@ Podobnie jak inne elfy, eladriny mogą żyć ponad 750 lat.</content>
   <content contentuid="hb93f37d6g6f2dga4d4ga8a2g7f92495d2388" version="1">Magiczna powłoka</content>
   <content contentuid="h9ecd6711g2397g780fgf43bg3fef96b7272b" version="1">Gdy otrzymujesz obrażenia, pochłania je magiczna powłoka. Jeśli masz odporność albo podatność na te obrażenia, zastosuj ją przed odjęciem obrażeń od punktów wytrzymałości powłoki. Jeśli obrażenia zmniejszą jej punkty wytrzymałości do 0, otrzymujesz pozostałe obrażenia. Powłoka o 0 punktach wytrzymałości nie może pochłaniać obrażeń, lecz jej magia pozostaje aktywna.</content>
   <content contentuid="h10dbbaa0g2b5fg5521gc9cag50d5d54e8706" version="2">Poziom 10: Odporność na czary</content>
-  <content contentuid="ha798ee23gc1b7gfd05g86c0ga477ff4d0a9d" version="1">Masz ułatwienie do rzutów obronnych przeciwko czarom, a także masz Odporność na obrażenia od czarów.</content>
+  <content contentuid="ha798ee23gc1b7gfd05g86c0ga477ff4d0a9d" version="1">Masz ułatwienie w rzutach obronnych przeciwko czarom oraz odporność na obrażenia od czarów.</content>
   <content contentuid="h07de6d7ag5621g4204g93bdg12d04e9defa9" version="1">Raz na turę, po tym, jak użytkownik &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Sprint&lt;/LSTag&gt; lub wykona podobną akcję, może &lt;LSTag Type="Spell" Tooltip="Projectile_MAG_Mobility_JumpOnDash_Action"&gt;Skok w dal&lt;/LSTag&gt;: skok na odległość do 9 m, zużywając tylko 3 m ruchu.</content>
   <content contentuid="h3dc922e6ga79bg103cgc3f5g5c013438860b" version="1">Ostry strzał</content>
   <content contentuid="hdff60bb5g1f26gb017g65bfg79be313aab62" version="1">Jeśli w tej samej turze poruszysz się nie więcej niż o połowę ze swoją szybkością i trafisz istotę atakiem bronią dystansową, możesz użyć akcji dodatkowej, aby atak zadał 1k4 dodatkowe obrażenia typu broni.</content>
@@ -6458,8 +6458,8 @@ Gdy istota trafi cię atakiem, do końca tej tury ma utrudnienie we wszystkich p
   <content contentuid="h3ac90d83g4cc2ge765ga080gab2406cc59ff" version="1">Taktyka obronna</content>
   <content contentuid="hb4273983g8859g9cddgb28cge0e4b5463a5f" version="1">Umknąć hordzie</content>
   <content contentuid="hb2ee2f95g8a45g9e37g0793gdda3dc90b5d7" version="1">Defensywa przed Wielokrotnym atakiem</content>
-  <content contentuid="h2f5f424bg14ceg447ag33b9g312025e7738d" version="1">Zadaje dodatkowe [1] obrażeń bronią do walki wręcz, bronią improwizowaną i rzucanymi przedmiotami. &lt;br&gt;&lt;br&gt;Sojusznicy mają &lt;LSTag Tooltip="Advantage"&gt;ułatwienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AttackRoll"&gt;testach ataku&lt;/LSTag&gt; przeciwko przeciwnikom w obrębie [2].&lt;br&gt;&lt;br&gt;Ma również odporność na obrażenia fizyczne oraz ułatwienie w testach Siły &lt;LSTag Tooltip="AbilityCheck"&gt;cechy&lt;/LSTag&gt; i &lt;LSTag Tooltip="SavingThrow"&gt;rzutach obronnych&lt;/LSTag&gt; na Siłę.&lt;br&gt;&lt;br&gt;Nie może rzucać czarów ani utrzymywać koncentracji.</content>
-  <content contentuid="h708146b3g1fd7g7ca1g06e9g815f4a5e342b" version="1">Zadaje dodatkowe [1] obrażeń bronią do walki wręcz, bronią improwizowaną i rzucanymi przedmiotami. &lt;br&gt;&lt;br&gt;Sojusznicy mają &lt;LSTag Tooltip="Advantage"&gt;ułatwienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AttackRoll"&gt;testach ataku&lt;/LSTag&gt; przeciwko przeciwnikom w obrębie [2].&lt;br&gt;&lt;br&gt;Ma również odporność na obrażenia fizyczne oraz ułatwienie w testach Siły &lt;LSTag Tooltip="AbilityCheck"&gt;cechy&lt;/LSTag&gt; i &lt;LSTag Tooltip="SavingThrow"&gt;rzutach obronnych&lt;/LSTag&gt; na Siłę.&lt;br&gt;&lt;br&gt;Nie może rzucać czarów ani utrzymywać koncentracji.</content>
+  <content contentuid="h2f5f424bg14ceg447ag33b9g312025e7738d" version="1">Zadaje dodatkowe [1] obrażeń bronią do walki wręcz, bronią improwizowaną i rzucanymi przedmiotami. &lt;br&gt;&lt;br&gt;Sojusznicy mają &lt;LSTag Tooltip="Advantage"&gt;ułatwienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AttackRoll"&gt;testach ataku&lt;/LSTag&gt; przeciwko przeciwnikom w obrębie [2].&lt;br&gt;&lt;br&gt;Ma również odporność na obrażenia fizyczne oraz ułatwienie w &lt;LSTag Tooltip="AbilityCheck"&gt;testach cechy&lt;/LSTag&gt; i &lt;LSTag Tooltip="SavingThrow"&gt;rzutach obronnych&lt;/LSTag&gt; na Siłę.&lt;br&gt;&lt;br&gt;Nie może rzucać czarów ani utrzymywać koncentracji.</content>
+  <content contentuid="h708146b3g1fd7g7ca1g06e9g815f4a5e342b" version="1">Zadaje dodatkowe [1] obrażeń bronią do walki wręcz, bronią improwizowaną i rzucanymi przedmiotami. &lt;br&gt;&lt;br&gt;Sojusznicy mają &lt;LSTag Tooltip="Advantage"&gt;ułatwienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AttackRoll"&gt;testach ataku&lt;/LSTag&gt; przeciwko przeciwnikom w obrębie [2].&lt;br&gt;&lt;br&gt;Ma również odporność na obrażenia fizyczne oraz ułatwienie w &lt;LSTag Tooltip="AbilityCheck"&gt;testach cechy&lt;/LSTag&gt; i &lt;LSTag Tooltip="SavingThrow"&gt;rzutach obronnych&lt;/LSTag&gt; na Siłę.&lt;br&gt;&lt;br&gt;Nie może rzucać czarów ani utrzymywać koncentracji.</content>
   <content contentuid="h3f4c0be2gf28cg9925g8be8g0c8a747faf6e" version="1">Możesz używać &lt;LSTag Type="Spell" Tooltip="Shout_PackHowl_Barbarian"&gt;Pobudzającego wycia&lt;/LSTag&gt;, a twoi sojusznicy mają &lt;LSTag Tooltip="Advantage"&gt;ułatwienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AttackRoll"&gt;testach ataku&lt;/LSTag&gt; przeciwko przeciwnikom w obrębie [1] od ciebie.</content>
   <content contentuid="h162775ecg7b9egc133g5182g07c9126dbe3d" version="1">Dopóki trwa twój &lt;LSTag Type="Status" Tooltip="RAGE"&gt;szał&lt;/LSTag&gt;, możesz używać &lt;LSTag Type="Spell" Tooltip="Shout_PackHowl_Barbarian"&gt;Pobudzającego wycia&lt;/LSTag&gt;, a twoi sojusznicy wykonują z &lt;LSTag Tooltip="Advantage"&gt;ułatwieniem&lt;/LSTag&gt; &lt;LSTag Tooltip="AttackRoll"&gt;testy ataku&lt;/LSTag&gt; przeciwko wrogom w promieniu [1] od ciebie.</content>
   <content contentuid="hfc88b2cagdfdcg7342gecebg306e2918ed9e" version="1">Znajduje się w pobliżu barbarzyńcy w szale z Wilczym Sercem. &lt;br&gt;&lt;br&gt;Sojusznicy barbarzyńcy mają &lt;LSTag Tooltip="Advantage"&gt;ułatwienie&lt;/LSTag&gt; w &lt;LSTag Tooltip="AttackRoll"&gt;testach ataku&lt;/LSTag&gt; przeciwko tej istocie.</content>
@@ -6705,13 +6705,13 @@ Podobnie jak inne elfy, shadar-kai mogą żyć ponad 750 lat.</content>
 Od 3. poziomu, gdy teleportujesz się za pomocą tej cechy, zyskujesz również odporność na wszystkie obrażenia do początku swojej następnej tury. W tym czasie wyglądasz widmowo i półprzezroczyście.</content>
   <content contentuid="h6b97eed2g9255g4750g8bf9g10ce58fbcdf7" version="1">Mają odporność na wszelkie obrażenia. Twoja postać jest upiorna i przezroczysta.</content>
   <content contentuid="he259a7acga98cg45cagb622gba09387457ed" version="1">Odporność na obrażenia nekrotyczne</content>
-  <content contentuid="hdd525457ge6d9g4690ga485g42dea9cf48c1" version="1">Masz Odporność na obrażenia nekrotyczne.</content>
+  <content contentuid="hdd525457ge6d9g4690ga485g42dea9cf48c1" version="1">Masz odporność na obrażenia nekrotyczne.</content>
   <content contentuid="hc36f901eg34e2g450egbfe3g4181e0fcf351" version="1">Odporność na trucizny</content>
-  <content contentuid="h4f2ba8b5gfb79g40a9g8c5bgbfe7b4ec39fd" version="1">Masz Odporność na obrażenia od trucizn.</content>
+  <content contentuid="h4f2ba8b5gfb79g40a9g8c5bgbfe7b4ec39fd" version="1">Masz odporność na obrażenia od trucizn.</content>
   <content contentuid="h5dbc904bgf599g46f2ga6efg931f5cd80e86" version="1">Odporność na ogień</content>
-  <content contentuid="hd516bd43g6d0cg4b92g9ebag8c1badfbb87f" version="1">Masz Odporność na obrażenia od ognia.</content>
+  <content contentuid="hd516bd43g6d0cg4b92g9ebag8c1badfbb87f" version="1">Masz odporność na obrażenia od ognia.</content>
   <content contentuid="h7fbe174cgf6cfg4fe6gb5b1g293d7c4d3e37" version="1">Odporność na obrażenia psychiczne</content>
-  <content contentuid="h3bc8fa0fg01a0g4361g940agb1bec564346f" version="1">Masz Odporność na obrażenia psychiczne.</content>
+  <content contentuid="h3bc8fa0fg01a0g4361g940agb1bec564346f" version="1">Masz odporność na obrażenia psychiczne.</content>
   <content contentuid="h8fe9c3b5g29d7g3359g5a6bg0403b92ddae6" version="1">Rzut kamieniem</content>
   <content contentuid="hb06ef4dagca4dg7a01g7aefga57eecdfe412" version="1">Atut: Zapał kamiennego olbrzyma</content>
   <content contentuid="hbd729210g3700g0c6dgfe28g7b0dc91aaae7" version="1">Przepastny wzrok. Zyskujesz widzenie w ciemności o zasięgu 18 m. Jeśli już masz widzenie w ciemności z innego źródła, jego zasięg zwiększa się o 18 m.
