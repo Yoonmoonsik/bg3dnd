@@ -97,7 +97,7 @@ Acid Splash, Blade Ward, Blood Bolt, Booming Blade, Bursting Sinew, Finger Guns,
 [*][b]Level 3:[/b] Ashardalon's Stride, Astral Flood, Aura of Vitality, Bestow Curse, Cacophonic Shield, Conjure Barrage, Crusader's Mantle, Elemental Exhalation, Laeral's Silver Lance, Lightning Arrow, Murmurs of Doom, Phantom Steed, Summon Fey, Tidal Wave, Trollblood Infusion, Void Strike.
 [*][b]Level 4:[/b] Conjure Woodland Beings, Fire Dance, Fount of Moonlight, Murder of Crows, Spellfire Storm, Vitriolic Sphere.
 [*][b]Level 5:[/b] Awaken, Circle of Power, Cone of Cold, Dawn, Dream, Enervation, Holy Weapon, Steel Wind Strike, Summon Celestial, Summon Dragon, Synaptic Static.
-[*][b]Level 6:[/b] Circle of Death, Disintegrate.
+[*][b]Level 6:[/b] Circle of Death, Disintegrate, Planar Ally.
 [/list]
 
 [size=5][b]Items[/b][/size]
