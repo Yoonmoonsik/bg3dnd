@@ -2097,6 +2097,44 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="44d463c7-035f-4c71-bd98-86c1c69a6e46" />
+        <field name="Name" type="NameTableFieldDefinition" value="__CONJURATION__SLEVEL_6__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="784902f7-d1bd-451f-8310-a571de0bcd6c" />
+        <field name="Name" type="NameTableFieldDefinition" value="PlanarAlly_Container" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a84333da-ffd5-4019-9361-2c253f52f9ed" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsLinkedSpellContainer;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f0fece6-1fc0-49c5-ae1b-65d6adb5dee2" />
+        <field name="Name" type="NameTableFieldDefinition" value="PlanarAlly_Cambion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dcfac38d-223c-4575-82df-f2d07ecfcba1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d219e073-eb66-4344-9c99-5d6e8831f03b" />
+        <field name="Name" type="NameTableFieldDefinition" value="PlanarAlly_Deva" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="551fc021-3fd1-4642-bf34-c4989f33fb9f" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03352880-13be-49c8-9d6b-e60fffd3236b" />
+        <field name="Name" type="NameTableFieldDefinition" value="PlanarAlly_Djinni" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="71c304ea-00cb-4510-a24d-2882f501ff6f" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d8c434cf-507f-49b3-a383-f5a413ae8672" />
         <field name="Name" type="NameTableFieldDefinition" value="__DIVINATION__" />
       </fields>
@@ -15544,7 +15582,8 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f38ddfcb-75b8-4b33-bfa0-08cadef3cb13" />
         <field name="Name" type="NameTableFieldDefinition" value="PlanarAlly_spellscroll" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="551fc021-3fd1-4642-bf34-c4989f33fb9f" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d219e073-eb66-4344-9c99-5d6e8831f03b" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
