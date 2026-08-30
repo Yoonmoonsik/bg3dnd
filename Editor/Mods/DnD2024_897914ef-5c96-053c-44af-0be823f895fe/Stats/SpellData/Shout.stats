@@ -73,6 +73,7 @@
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_HitPointDice06;Shout_HitPointDice08;Shout_HitPointDice10;Shout_HitPointDice12;" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h28992689gab7eg0bcega955gb5ee06d7deaf" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SHORT_RESTING')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

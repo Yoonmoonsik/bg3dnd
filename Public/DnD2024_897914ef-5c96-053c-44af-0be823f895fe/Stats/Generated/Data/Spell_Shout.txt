@@ -57,6 +57,7 @@ data "SpellFlags" "IsLinkedSpellContainer"
 data "HitAnimationType" "MagicalNonDamage"
 data "SpellAnimationIntentType" "Peaceful"
 data "Requirements" "!Combat"
+data "RequirementConditions" "HasStatus('SHORT_RESTING')"
 
 new entry "Shout_HitPointDice06"
 type "SpellData"

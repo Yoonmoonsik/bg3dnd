@@ -58,7 +58,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ShortResting" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="359ef9a1-57cc-4ab0-9e44-ff99fe7e7a59" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="99999" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1);ApplyStatus(SHORT_RESTING,100,20)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4fbdbfa6g8ef2g4e61g0c7bg465466a0df32" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd791ef7g7534g8fdcgba6ag9741c29e31d4" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="HitPointDice06" />

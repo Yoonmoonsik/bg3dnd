@@ -288,6 +288,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="09f2333a-894c-4ee7-b42a-0d7d76259266" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHORT_RESTING" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha7e36a64gf9b4ge4cdge8cfg3a2c8714b1f5" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="HitPointDice08" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Shout_HitPointDice'),ModifyIconGlow());" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="aa75b8c4-902c-44c8-b1df-c2034ab35c81" />
         <field name="Name" type="NameTableFieldDefinition" value="HIT_POINT_DIE_USE_06" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
