@@ -2107,5 +2107,19 @@
         <field name="ValueLevel" type="IntegerTableFieldDefinition" value="10" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fd149bce-7dd2-4b7a-8f1d-491b2c7aef26" />
+        <field name="Name" type="NameTableFieldDefinition" value="OBJ_Scroll_CharmMonster_YMS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d8dae55-ce17-4fec-a9cb-833e83f4f6a2" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="04aa5599-7769-42ac-9100-3350307f2608" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="MagicScroll_4" />
+        <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="7" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

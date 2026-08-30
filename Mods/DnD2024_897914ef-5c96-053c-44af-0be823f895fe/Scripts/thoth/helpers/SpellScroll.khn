@@ -177,6 +177,7 @@ local SPELL_CLASS_MAP = {
     Target_Banishment_spellscroll = '4 Cleric Paladin Sorcerer Warlock Wizard',
     Target_BlackTentacles_spellscroll = '4 Wizard',
     Target_Blight_spellscroll = '4 Druid Sorcerer Warlock Wizard',
+    Target_CharmMonster_spellscroll = '4 Bard Druid Sorcerer Warlock Wizard',
     Target_ConjureElementals_Minor_Container_spellscroll = '4 Druid Wizard',
     Teleportation_DimensionDoor_spellscroll = '4 Bard Sorcerer Warlock Wizard',
     Shout_FireShield_spellscroll = '4 Druid Sorcerer Wizard',
@@ -650,4 +651,5 @@ function IsScrollSpell()
 	| SpellId('Target_Frostbite_spellscroll')
 	| SpellId('Projectile_BloodBolt_spellscroll')
 	| SpellId('Target_SummonDragon_spellscroll')
+	| SpellId('Target_CharmMonster_spellscroll')
 end

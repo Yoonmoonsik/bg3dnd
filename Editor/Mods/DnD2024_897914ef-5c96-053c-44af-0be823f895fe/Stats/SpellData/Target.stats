@@ -4465,6 +4465,62 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(DOMINATE_BEAST,100,10);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1bfa896c-6ec6-4552-9b81-cecfec202ecf" />
+        <field name="Name" type="NameTableFieldDefinition" value="CharmMonster" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="4" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC(), AdvantageOnCharmed())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(CHARMED,100,-1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL_CHARM_SUBTLE, 100, 0)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Item() and not Self() and Character();" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_CharmMonster" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdf3ad6cbg407cg0625gf796gbd2b01f64913" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha49909ccgbb48gcda2gfd1fg1f26911f185f" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHARMED,100,-1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="04cc3403-f67a-4747-b49e-a1802cc7a6ad" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="967064bf-5cdf-44c7-a17c-86924aa04ae7;676ef361-c11d-4e5a-bcae-3b0332cbebf5" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Control_CharmPerson_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Control_CharmPerson_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_CharmPerson" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and not Ally() and not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;af94aac1-d8eb-4ccb-9520-694ade11b61c,,;f5db4001-b136-4c48-9aa4-026c4a7dd3b7,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="d7ff6074-0dee-46eb-84c2-fed6118b0cc3" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="238adc5b-64e5-474a-b5fa-c4c5d032a21b" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="5cd08691-b441-43e1-b9d7-14668e4affa5" />
+        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="ef76e96c-3b6e-41f1-8d62-7c8813ca7624" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="187dbcdf-5351-45cc-942a-00782027f69b" />
+        <field name="Name" type="NameTableFieldDefinition" value="CharmMonster_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1bfa896c-6ec6-4552-9b81-cecfec202ecf" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_CharmMonster" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ec5616e2-678c-4ffb-87e7-1fb8904edb26" />
+        <field name="Name" type="NameTableFieldDefinition" value="CharmMonster_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="187dbcdf-5351-45cc-942a-00782027f69b" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f3a2e98b-4995-4a5a-bcf6-d6a492b43fd4" />
@@ -15808,6 +15864,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="71d4b625-b77f-418b-9455-1786ea695773" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonDragon_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c9806f8e-3e92-4b30-9df8-a88d69452b91" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="69c3f5d3-f2c8-492a-a14e-d9c80bf4a21c" />
+        <field name="Name" type="NameTableFieldDefinition" value="CharmMonster_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1bfa896c-6ec6-4552-9b81-cecfec202ecf" />
       </fields>
     </stat_object>
   </stat_objects>
