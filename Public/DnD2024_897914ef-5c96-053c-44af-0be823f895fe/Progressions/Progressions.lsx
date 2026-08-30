@@ -5006,6 +5006,7 @@
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="DraconicBloodline"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(fe4e7aad-c024-4ee4-a8a7-37862da0189c,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="35aa255d-3eb7-4e93-8092-7545ced25b09"/>
                     <attribute id="UUID" type="guid" value="13ec757d-6c9f-4d2a-8f74-4d9da3d6a27c"/>
                 </node>
@@ -8496,6 +8497,39 @@
                     <attribute id="UUID" type="guid" value="ccb56b1c-694d-4ec7-adc7-fdc0c56301e7"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ShadarKai,2,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ShadarKai"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FeyAncestry;ResistancePassive_Necrotic"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(c4b857e4-a5d8-4d08-bfd1-b4068d7d0fd4);SelectPassives(8738b757-88a6-424b-bec4-7807c7af8f70,1,ElfKeenSenses);"/>
+                    <attribute id="TableUUID" type="guid" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc"/>
+                    <attribute id="UUID" type="guid" value="ac58f71d-74a0-4b58-bb2a-70f240a3562f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="ShadarKai"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc"/>
+                    <attribute id="UUID" type="guid" value="b6baf7c7-6ce6-4c29-b78b-59083eb34a92"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ShadarKai,1,0)"/>
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="ShadarKai"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc"/>
+                    <attribute id="UUID" type="guid" value="d4a2bb9a-5990-4a38-bf8a-ef898eeb49b7"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ShadarKai,1,0)"/>
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="ShadarKai"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc"/>
+                    <attribute id="UUID" type="guid" value="5fd33442-f928-4ace-86d6-2e0ffb8aef8e"/>
+                </node>
+                <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="HighElf"/>
                     <attribute id="PassivesAdded" type="LSString" value="FeyAncestry"/>
@@ -9097,39 +9131,6 @@
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="8f25082b-262e-46d1-a440-a682fdc1a364"/>
                     <attribute id="UUID" type="guid" value="fd2c526b-6d1b-48c2-8aa7-0d347bc4bb6a"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ShadarKai,2,0)"/>
-                    <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="ShadarKai"/>
-                    <attribute id="PassivesAdded" type="LSString" value="FeyAncestry;ResistancePassive_Necrotic"/>
-                    <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(c4b857e4-a5d8-4d08-bfd1-b4068d7d0fd4);SelectPassives(8738b757-88a6-424b-bec4-7807c7af8f70,1,ElfKeenSenses);"/>
-                    <attribute id="TableUUID" type="guid" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc"/>
-                    <attribute id="UUID" type="guid" value="ac58f71d-74a0-4b58-bb2a-70f240a3562f"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="ShadarKai"/>
-                    <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="TableUUID" type="guid" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc"/>
-                    <attribute id="UUID" type="guid" value="b6baf7c7-6ce6-4c29-b78b-59083eb34a92"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ShadarKai,1,0)"/>
-                    <attribute id="Level" type="uint8" value="5"/>
-                    <attribute id="Name" type="LSString" value="ShadarKai"/>
-                    <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="TableUUID" type="guid" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc"/>
-                    <attribute id="UUID" type="guid" value="d4a2bb9a-5990-4a38-bf8a-ef898eeb49b7"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ShadarKai,1,0)"/>
-                    <attribute id="Level" type="uint8" value="9"/>
-                    <attribute id="Name" type="LSString" value="ShadarKai"/>
-                    <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="TableUUID" type="guid" value="04dc5432-4d5a-45f1-acb4-a5bec09be5dc"/>
-                    <attribute id="UUID" type="guid" value="5fd33442-f928-4ace-86d6-2e0ffb8aef8e"/>
                 </node>
             </children>
         </node>
