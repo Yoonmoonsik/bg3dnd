@@ -805,6 +805,66 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4cc85d09-1997-42bd-b5d7-847d74360618" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DaosCrush_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e963fa9e-e54e-45bf-9732-abb43e127bba" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not IsSpellAttack() and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);ApplyStatus(RESTRAINED,100,10);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;ChannelOath:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="DivineSmite" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3161ac5e-fa4a-483e-b9ab-16abfc37efe1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DaosCrush_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4cc85d09-1997-42bd-b5d7-847d74360618" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);ApplyStatus(RESTRAINED,100,10);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5a28b5de-9dbf-4a29-81ca-26a48e710d14" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DaosCrush_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4cc85d09-1997-42bd-b5d7-847d74360618" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);ApplyStatus(RESTRAINED,100,10);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03766f7f-2bc4-4c23-9bbd-24aed07c1f24" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DaosCrush_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4cc85d09-1997-42bd-b5d7-847d74360618" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);ApplyStatus(RESTRAINED,100,10);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c0556bb5-bdce-4289-807f-9f76e9156ab5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DaosCrush_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="03766f7f-2bc4-4c23-9bbd-24aed07c1f24" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);ApplyStatus(RESTRAINED,100,10);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;ChannelOath:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="011e78c3-41eb-40a8-a0b6-b0bb0a0e3623" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DaosCrush_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="03766f7f-2bc4-4c23-9bbd-24aed07c1f24" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);ApplyStatus(RESTRAINED,100,10);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;ChannelOath:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="83db5161-9a05-4dac-9fcf-f3869fc76ac6" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DjinnisEscape" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e963fa9e-e54e-45bf-9732-abb43e127bba" />
@@ -815,6 +875,64 @@
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18e6c89a-e429-4389-bb6e-692be53bc619" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DjinnisEscape_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="83db5161-9a05-4dac-9fcf-f3869fc76ac6" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not IsSpellAttack() and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);ApplyStatus(OBSERVER_OBSERVER,DJINNIS_ESCAPE,100,2);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;ChannelOath:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="DivineSmite" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c17f3811-53ee-4af2-acaa-adcc3f2c6eca" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DjinnisEscape_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="18e6c89a-e429-4389-bb6e-692be53bc619" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);ApplyStatus(OBSERVER_OBSERVER,DJINNIS_ESCAPE,100,2);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c77f2f67-27c7-4338-bbcb-756572d3897f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DjinnisEscape_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="18e6c89a-e429-4389-bb6e-692be53bc619" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);ApplyStatus(OBSERVER_OBSERVER,DJINNIS_ESCAPE,100,2);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0e3b2130-53eb-4596-b2f8-6d2b49a00388" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DjinnisEscape_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="18e6c89a-e429-4389-bb6e-692be53bc619" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);ApplyStatus(OBSERVER_OBSERVER,DJINNIS_ESCAPE,100,2);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7928621f-1a31-4e40-9abf-6527ea3aae50" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DjinnisEscape_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0e3b2130-53eb-4596-b2f8-6d2b49a00388" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;ChannelOath:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="24be23d4-dfad-48ce-af32-773a90528559" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DjinnisEscape_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0e3b2130-53eb-4596-b2f8-6d2b49a00388" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;ChannelOath:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -833,6 +951,64 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="95b3e4d6-ac48-4355-91dc-a214f994c79e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EfreetisFury_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="205761bc-2fe6-4f67-a043-8a78dd869b90" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not IsSpellAttack() and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);DealDamage(2d4,Fire,Magical);CreateExplosion(Projectile_EfreetisFury);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;ChannelOath:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="DivineSmite" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e214ebe-45f3-4368-af95-a64fbc2c00cd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EfreetisFury_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="95b3e4d6-ac48-4355-91dc-a214f994c79e" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);DealDamage(2d4,Fire,Magical);CreateExplosion(Projectile_EfreetisFury);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c360407d-66ee-4c8b-8266-ee577bb882c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EfreetisFury_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="95b3e4d6-ac48-4355-91dc-a214f994c79e" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);DealDamage(2d4,Fire,Magical);CreateExplosion(Projectile_EfreetisFury);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="158de767-dede-4358-8949-fa6151013ddb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EfreetisFury_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="95b3e4d6-ac48-4355-91dc-a214f994c79e" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);DealDamage(2d4,Fire,Magical);CreateExplosion(Projectile_EfreetisFury);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b9dbcce3-a6fb-4b4a-b9a3-be48a39e33d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EfreetisFury_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="158de767-dede-4358-8949-fa6151013ddb" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;ChannelOath:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8cba4f01-e2f6-4927-a473-98ef49b209b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EfreetisFury_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="158de767-dede-4358-8949-fa6151013ddb" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;ChannelOath:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="51d528b3-91d5-48fc-aade-045fc2cca51e" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MaridsSurge" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e963fa9e-e54e-45bf-9732-abb43e127bba" />
@@ -842,6 +1018,64 @@
         <field name="Properties" type="StringTableFieldDefinition" value="CreateExplosion(Projectile_MaridsSurge);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);Distance(4.5)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b09b41a-4c87-4878-8f16-4a4ae12a701e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MaridsSurge_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="51d528b3-91d5-48fc-aade-045fc2cca51e" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not IsSpellAttack() and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);CreateExplosion(Projectile_MaridsSurge);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;ChannelOath:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="DivineSmite" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7157d225-db10-4ed7-9eca-a7d52c35dbfa" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MaridsSurge_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4b09b41a-4c87-4878-8f16-4a4ae12a701e" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);CreateExplosion(Projectile_MaridsSurge);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="358fd4d7-c692-437b-b1b4-9af3271b73d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MaridsSurge_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4b09b41a-4c87-4878-8f16-4a4ae12a701e" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);CreateExplosion(Projectile_MaridsSurge);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a4cc9ca-2bb1-40a4-9a16-3bdc8178e81f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MaridsSurge_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4b09b41a-4c87-4878-8f16-4a4ae12a701e" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);CreateExplosion(Projectile_MaridsSurge);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;ChannelOath:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Radiant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8d58b058-9724-4aa2-80a9-d22d5643a1f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MaridsSurge_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a4cc9ca-2bb1-40a4-9a16-3bdc8178e81f" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;ChannelOath:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fd6c5ca8-bc94-4a6e-bbd8-51d19b51da72" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MaridsSurge_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a4cc9ca-2bb1-40a4-9a16-3bdc8178e81f" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;ChannelOath:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
