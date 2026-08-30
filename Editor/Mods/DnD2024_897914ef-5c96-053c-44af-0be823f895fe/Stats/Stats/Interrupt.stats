@@ -2641,7 +2641,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="9f2c7e1c-0d0c-4e6e-9092-0885ddd2ef40" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h72da1e02g769fgc8d7g7225g3cd201f1dbdb" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf8e40d0g3c82gf0f5gdd0aga190d5e39a3e" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and not IsKillingBlow() and IsHit() and not IsDivineStrike() and Character() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d10,Fire,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="Goliath:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -2655,7 +2655,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="e9a71b36-bfed-431c-bf1a-52bbab849309" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1d1c4cffgbb73g4ef9g71d5gd8a78baa4388" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h49c049d7g63a5ga36cgc3a4g77287ea4217d" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and not IsKillingBlow() and IsHit() and not IsDivineStrike() and Character() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold,Magical);ApplyStatus(RAY_OF_FROST,100,2);" />
         <field name="Cost" type="StringTableFieldDefinition" value="Goliath:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -2674,7 +2674,7 @@
         <field name="Cost" type="StringTableFieldDefinition" value="Goliath:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and not IsCritical() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
