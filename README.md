@@ -135,10 +135,11 @@ See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) for full attribution.
 - **French Translation**: [CyberBoloss](https://github.com/mcz-xiocku)
 - **Italian Translation**: Alessandro
 - **Japanese Translation**: [Eolaloe](https://www.nexusmods.com/profile/Eolaloe)
+- **Polish Translation**: [TableTop BRAMA community](https://discord.gg/VxSvMqQ6sS)
 - **Russian Translation**: [ANizamutdinov](https://github.com/ANizamutdinov)
 - **Spanish / Latin Spanish Translation**: [incolhermex-droid](https://github.com/incolhermex-droid)
 - **Turkish Translation**: [batuhansekban](https://github.com/batuhansekban)
-- **Ukrainian Translation**: [TableTop BRAMA community](https://github.com/CrioNIK)
+- **Ukrainian Translation**: [TableTop BRAMA community](https://discord.gg/VxSvMqQ6sS)
 - **Item Models**: [skirbie](https://mod.io/g/baldursgate3/u/skirbie) ([Viper Carbine Steampunk Rifle Gun](https://mod.io/g/baldursgate3/m/viper-carbine-steampunk-rifle-gun), [Hand Cannon Gunslinger Weapon](https://mod.io/g/baldursgate3/m/hand-cannon-gunslinger-weapon))
 
 ## Legal
