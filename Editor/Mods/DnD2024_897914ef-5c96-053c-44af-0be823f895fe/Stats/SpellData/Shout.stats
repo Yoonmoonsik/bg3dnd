@@ -125,6 +125,79 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd6b15ae8g883dgdf02gd6abg7ee0b10eb571" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f6c035e-3859-4088-ac0f-002ed19d9755" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpeedyRecovery" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94925ee4-4e61-4e91-a41e-1a87bf773590" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SpeedyRecovery06;Shout_SpeedyRecovery08;Shout_SpeedyRecovery10;Shout_SpeedyRecovery12;" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SpeedyRecovery06" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1d8bc12ega854g9fa6g115fg40f33b2e239c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfb0b810fg2b5egfcf3g6d93ge130d15d3a4b" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e13053cf-1e44-48c1-b380-7b92bad4777e" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpeedyRecovery06" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f6c035e-3859-4088-ac0f-002ed19d9755" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SpeedyRecovery" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SpeedyRecovery06" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1cfa58a7g0e63gc978gdfebg07ca3910c91d" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d6+ConstitutionModifier);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;HitPointDice06:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e2f82bce-6f88-4bbf-b23c-707049e32bbc" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpeedyRecovery08" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f6c035e-3859-4088-ac0f-002ed19d9755" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SpeedyRecovery" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ConstitutionModifier);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SpeedyRecovery08" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdc2803e7g3ab7gce12ge2e6g43b054b38cf0" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ConstitutionModifier);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;HitPointDice08:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6752c2ff-55fd-4d9d-9e81-665b19fd43bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpeedyRecovery10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f6c035e-3859-4088-ac0f-002ed19d9755" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SpeedyRecovery" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d10+ConstitutionModifier);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SpeedyRecovery10" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdde6e8d1g2ffbg6a90g60c2g5429dfd26e6d" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d10+ConstitutionModifier);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;HitPointDice10:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f38d4341-a511-46b3-b1cd-b0bd17ee01d2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpeedyRecovery12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f6c035e-3859-4088-ac0f-002ed19d9755" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SpeedyRecovery" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d12+ConstitutionModifier);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SpeedyRecovery12" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8abbf551g5ac0g6ad5g3629g6c8cc9989df7" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d12+ConstitutionModifier);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;HitPointDice12:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ddffddcf-e01a-400b-83d4-b69369964c9e" />

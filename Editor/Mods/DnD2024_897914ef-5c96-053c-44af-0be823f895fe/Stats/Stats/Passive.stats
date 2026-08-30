@@ -9071,9 +9071,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="Durable" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a19d5831-defd-45fe-9da1-2fd7a7facd8d" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e93417ag9497g58f3ge9aag2e54d8ba4076" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf12dc8a9g3079g890agb1ffgdf7b91f3c03d" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf12dc8a9g3079g890agb1ffgdf7b91f3c03d" version="3" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="MaximizeHealing(Incoming);Advantage(DeathSavingThrow);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(DeathSavingThrow);UnlockSpell(Shout_SpeedyRecovery);IF(HasActionResource('HitPointDice12', 1,0, false, false, context.Source)):UnlockSpellVariant(SpellId('Shout_SpeedyRecovery'),ModifyVisuals(SpeedyRecovery12));IF(HasActionResource('HitPointDice10', 1,0, false, false, context.Source) and not HasActionResource('HitPointDice12', 1,0, false, false, context.Source)):UnlockSpellVariant(SpellId('Shout_SpeedyRecovery'),ModifyVisuals(SpeedyRecovery10));IF(HasActionResource('HitPointDice08', 1,0, false, false, context.Source) and not HasActionResource('HitPointDice12', 1,0, false, false, context.Source) and not HasActionResource('HitPointDice10', 1,0, false, false, context.Source)):UnlockSpellVariant(SpellId('Shout_SpeedyRecovery'),ModifyVisuals(SpeedyRecovery08));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
