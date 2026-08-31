@@ -2693,6 +2693,26 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not HasStatus('SANCTUARY',context.Target);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="39ba1224-a1f5-4564-b49c-3fcc4441af97" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreezingSphere_Hurl" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8bd412c5-748e-4364-88ed-bbf23046b744" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(9,10,WaterFrozen);RemoveStatus(BURNING);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="90" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="18" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="029bbd23-2b3a-41d3-91b8-0cf30b755733" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreezingSphere_Hurl_Bomb" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a3e48322-5d15-4e48-8c79-d80754f57cf8" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="18" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="64730d18-1d0c-4e21-9534-9a74d57734e2" />
