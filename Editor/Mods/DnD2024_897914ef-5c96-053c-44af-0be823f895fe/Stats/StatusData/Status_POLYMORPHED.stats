@@ -78,6 +78,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a47a3643-7604-44f0-8386-2823e7f7d792" />
+        <field name="Name" type="NameTableFieldDefinition" value="GOB_WolfPens_WILDSHAPE_BEAR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="16c55783-dad0-4a5c-b80f-c43405a3791e" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WildShape_Dismiss);UnlockSpell(Shout_WildShape_Combat_Heal,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpellVariant(IsScrollSpell(),ModifyUseCosts(Add,BlockSpellCastingPoint,1,0));" />
+        <field name="Rules" type="GuidObjectTableFieldDefinition" value="9c580a1d-dab9-4b17-b0da-b16c7d7360e0" />
+        <field name="Passives" type="StringTableFieldDefinition" value="LunarRadiance;" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WILDSHAPE_ACTIVE,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="eae6ede0-f443-41ff-8812-148b90be4c9c" />
         <field name="Name" type="NameTableFieldDefinition" value="WILDSHAPE_BEAR_POLAR_PLAYER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b5a5b652-26b8-4164-b703-c665372366f0" />
@@ -449,15 +460,6 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdcc80e1bg50d8g4d7egf3c5gd88613415b9a" version="1" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="4c928f84-e72e-4a10-9e15-3549f2c65dc0" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Druid_WildShape_DireWolf" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a47a3643-7604-44f0-8386-2823e7f7d792" />
-        <field name="Name" type="NameTableFieldDefinition" value="GOB_WolfPens_WILDSHAPE_BEAR" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="16c55783-dad0-4a5c-b80f-c43405a3791e" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WildShape_Dismiss);UnlockSpell(Shout_WildShape_Combat_Heal,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
-        <field name="Rules" type="GuidObjectTableFieldDefinition" value="9c580a1d-dab9-4b17-b0da-b16c7d7360e0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
