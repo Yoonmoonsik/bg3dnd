@@ -2459,6 +2459,42 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f67fa0f4-79c0-4a27-93ea-201775de19ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="__DIVINATION__SLEVEL_4__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03842bdc-cc10-4633-a283-320e5cf80179" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneEye" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c12ed10f-d8c7-4cfd-9880-e20b35283ccc" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Divination" enumeration_type_name="SpellSchool" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(2f83206a-13c3-4ecb-a599-f6aa4708e149, -1,,,,UNSUMMON_ABLE,INVISIBILITY);" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a8236eb-6edf-4dea-ad60-a871a47d96c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneEye_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="03842bdc-cc10-4633-a283-320e5cf80179" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_ArcaneEye" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f87b965b-66d3-4f64-aed5-f9fdc276a214" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneEye_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0a8236eb-6edf-4dea-ad60-a871a47d96c0" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b302e534-7dad-459e-a72f-79b88e485e7c" />
         <field name="Name" type="NameTableFieldDefinition" value="__ENCHANTMENT__" />
       </fields>
@@ -16003,6 +16039,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="69c3f5d3-f2c8-492a-a14e-d9c80bf4a21c" />
         <field name="Name" type="NameTableFieldDefinition" value="CharmMonster_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1bfa896c-6ec6-4552-9b81-cecfec202ecf" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4aee851c-52b3-44b6-99f6-6f4d070e97c7" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneEye_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="03842bdc-cc10-4633-a283-320e5cf80179" />
       </fields>
     </stat_object>
   </stat_objects>
