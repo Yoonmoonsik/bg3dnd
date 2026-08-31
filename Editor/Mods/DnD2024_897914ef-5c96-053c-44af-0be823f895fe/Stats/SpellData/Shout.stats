@@ -3277,6 +3277,147 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnObscurityChanged" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab6328e2-c082-41e2-aad9-a6cd6ba52ec0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticAffinity" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ChromaticAffinity_Acid;Shout_ChromaticAffinity_Cold;Shout_ChromaticAffinity_Fire;Shout_ChromaticAffinity_Lightning;Shout_ChromaticAffinity_Poison;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_EndGameAlly_ZhentarimUnits" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h917c7e4ag19b5g9911g778dgac0c75a9bba9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf814f210g333ag4aeag5f87g929a9260c5cb" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h95ac559eg6dcdg0056g3f01g9fd5c3cd7651" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Buff_WildShape_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Buff_WildShape_L1to3" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Buff_WildShapeBadger_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="2f0d97b9-4a1f-4bf3-a3c2-32efb563d601,,;,,;70ddfd63-fc3f-45f4-b067-75389b85d540,,;90face3a-6607-4b3d-87e6-c6090b069160,,;57e449b3-b712-4508-afcf-f2e91dc473f6,,;,,;84f3727f-aabc-4e34-bf31-c6cd0160bec9,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="17173dd6-e330-4769-b6bd-d757689e7f9a" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="eb96a8c6-37b4-4a13-a622-034a1dcbee60" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="32d71967-b080-4ac9-a1cf-c2829839bd90" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66aaeb3b-ce30-4ecc-aca1-3675ce8dc365" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticAffinity_Acid" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ab6328e2-c082-41e2-aad9-a6cd6ba52ec0" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ChromaticAffinity" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_AFFINITY_ACID,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb2f87a7eg90a5g255cg636bg1f5548aff156" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_AFFINITY_ACID,100,-1);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6deb47da-2f70-4297-a4ff-58fd4f555117" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticAffinity_Cold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="66aaeb3b-ce30-4ecc-aca1-3675ce8dc365" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_AFFINITY_COLD,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5cfa6ed7gb49cg717eg9b8eg52489fe685fa" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_AFFINITY_COLD,100,-1);" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="cc7c02e9-b4f2-4c4d-bb4a-7526d7bef885" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="31fdeb9c-f917-4fc5-a0ac-93993a17cab4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e5f68ab-5e11-4c20-87a6-912972b21b10" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticAffinity_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6deb47da-2f70-4297-a4ff-58fd4f555117" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_AFFINITY_FIRE,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha0376bb1gdbb7g0bb3ga698gc766dfb4c76d" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_AFFINITY_FIRE,100,-1);" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="25fc6c31-fc26-497a-af6d-ef816a82be3c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="3911e604-b850-43da-baa6-816ca49aa823" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ebf0084-640f-43f3-92a4-39d0f5fc49d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticAffinity_Lightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6deb47da-2f70-4297-a4ff-58fd4f555117" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_AFFINITY_LIGHTNING,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he8275a17g6f90ge548g0527g7eb734361d44" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_AFFINITY_LIGHTNING,100,-1);" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="a0aead53-5047-4b0f-a31f-ecc89e5599c0" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="fa7b3b8f-3187-45c2-9895-f1ce4c432679" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01eff7d9-2d00-4a0c-aae5-260d6e9288c3" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticAffinity_Poison" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6deb47da-2f70-4297-a4ff-58fd4f555117" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_AFFINITY_POISON,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h83d343fag216fgb910gf153gf26139ab8f44" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_AFFINITY_POISON,100,-1);" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="92a96bf8-28c7-4565-8ceb-7cd02978b1ee" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ecd2a765-5888-42bc-bc88-7bb2303e82b7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2132b9c2-c43c-47fe-90d0-5d9bc08a33e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="DraconicMajesty" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_DraconicMajesty_Charm;Shout_DraconicMajesty_Fear;" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Enemy() and Character();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MantleOfMajesty" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5f5a35c1g26a9g4d26gd62dg67f7db26195d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h929e2b24g4c43g4ea9g6a85g0a755b1c242c" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Buff_WildShape_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Buff_WildShape_L1to3" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Buff_WildShapeBadger_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ChannelDivinity:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="2f0d97b9-4a1f-4bf3-a3c2-32efb563d601,,;,,;70ddfd63-fc3f-45f4-b067-75389b85d540,,;90face3a-6607-4b3d-87e6-c6090b069160,,;57e449b3-b712-4508-afcf-f2e91dc473f6,,;,,;84f3727f-aabc-4e34-bf31-c6cd0160bec9,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="a9a50d7f-8a81-4c26-82a7-5020bbd43148" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="af38c779-6ed5-4e15-a18e-5b219ceabdd2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5786e9dc-294f-43b6-b91a-2dd7e20b1774" />
+        <field name="Name" type="NameTableFieldDefinition" value="DraconicMajesty_Charm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2132b9c2-c43c-47fe-90d0-5d9bc08a33e0" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_DraconicMajesty" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CharmPerson" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb624c73cg11bag0d81g0177g2934801a6f74" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRACONIC_MAJESTY_CHARM,100,10);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="5cd08691-b441-43e1-b9d7-14668e4affa5" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC());" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(DRACONIC_MAJESTY_CHARM,100,10);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ead4754-4167-4937-a320-5388de70f9fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="DraconicMajesty_Fear" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5786e9dc-294f-43b6-b91a-2dd7e20b1774" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Fear" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6845e7aag9f14gfc51ga53fg76a2de6fedff" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRACONIC_MAJESTY_FEAR,100,10);" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="3ec121cf-0862-40b9-ba59-0881af7da550" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(DRACONIC_MAJESTY_FEAR,100,10);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF9ACD32" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bae7b948-aeb3-41dd-8360-b568a2fe4127" />

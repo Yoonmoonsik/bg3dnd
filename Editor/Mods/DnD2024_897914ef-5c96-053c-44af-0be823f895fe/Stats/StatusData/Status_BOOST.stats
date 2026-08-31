@@ -6435,6 +6435,78 @@
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="313170ee-1231-42b2-90d8-c61da076813c" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHROMATIC_AFFINITY_ACID" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h09a86c40g734agfef8ga34ag6e9bb7f6107b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6f54d84fg4fd2g1714g3774ge9393a34b2a1" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CHROMATIC_AFFINITY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ChromaticAffinity_Acid);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="085fe9c8-606f-4839-963b-e4a872fddf91" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHROMATIC_AFFINITY_COLD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="313170ee-1231-42b2-90d8-c61da076813c" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ChromaticAffinity_Cold);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="261359a5-8970-49dc-8791-578834f113c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHROMATIC_AFFINITY_FIRE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="313170ee-1231-42b2-90d8-c61da076813c" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ChromaticAffinity_Fire);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="697d504c-1b9b-4f24-b56c-18983afb0808" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHROMATIC_AFFINITY_LIGHTNING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="313170ee-1231-42b2-90d8-c61da076813c" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ChromaticAffinity_Lightning);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb0a32f0-5a7b-43ea-a112-c441dc1bc9ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHROMATIC_AFFINITY_POISON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="313170ee-1231-42b2-90d8-c61da076813c" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ChromaticAffinity_Poison);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1883afae-314f-47a9-b775-1e598b05d5fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRACONIC_MAJESTY_CHARM" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fbc76b9c-f545-4a10-942d-e0a130e664da" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haeaea6cdg7780g0792g7800g63f6fd5ec861" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRACONIC_MAJESTY_CHARM" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(DRACONIC_MAJESTY_CHARM)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d35afc6-b413-4038-ac27-21d60e7088d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRACONIC_MAJESTY_FEAR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60a09934-feba-4335-b387-f1581fc07702" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc2270a33gb236gcf12g676bga9ec6586e785" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRACONIC_MAJESTY_FEAR" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;OverheadOnTurn" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(DRACONIC_MAJESTY_FEAR)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF9ACD32" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9bf598df-0e5c-45e6-b178-41684541d2f2" />

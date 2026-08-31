@@ -349,6 +349,63 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5,Fire);DealDamage(ClassLevel(Cleric),Fire);DealDamage(ClassLevel(Cleric),Fire)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="24d44e20-4345-4ea3-a2f5-811da1bef246" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ChromaticAffinity_Acid" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8042d3adgdd7eg4c14g16d3gf172853c762d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbcae2db7gfa67g091fg9f12gd7c998b920f3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not IsKillingBlow() and not AnyEntityIsItem() and TotalDamageDoneGreaterThan(0);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Cleric),Acid);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ChromaticAffinity:1;ChromaticAffinityTurn:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="ChromaticAffinity" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f39de970-6531-493e-b383-538c0affc394" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ChromaticAffinity_Cold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="24d44e20-4345-4ea3-a2f5-811da1bef246" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc1a4e31fgc275g5c08g42adgaa576cec3cda" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Cleric),Cold);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca868fe5-a78b-4ebd-90ce-d7b48c976163" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ChromaticAffinity_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="24d44e20-4345-4ea3-a2f5-811da1bef246" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h76b4fd55gd816g6a6bgf036gd751e5af63d9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Cleric),Fire);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e708eff1-0188-448a-a099-5fad6e031efa" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ChromaticAffinity_Lightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="24d44e20-4345-4ea3-a2f5-811da1bef246" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf56293bcgbef0g670dgdc2cgaafbafce938b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Cleric),Lightning);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb980ba3-4a63-4cab-8b27-c8c0d0709921" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ChromaticAffinity_Poison" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="24d44e20-4345-4ea3-a2f5-811da1bef246" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14d47d15g4714gda83gb886gb2129b493f72" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Cleric),Poison);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="468d8269-7090-46eb-aaed-ab7aec258538" />

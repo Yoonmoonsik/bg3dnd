@@ -150,6 +150,14 @@
                     <attribute id="UUID" type="guid" value="64337b25-b5fa-4422-b146-c8e66d5e1e76"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h4b5feaf6g9b01g5ee4gd966g55a524693904" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="ChromaticAffinity"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="ff37894d-a30e-4e9d-b815-d71fff5cb84a"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__DRUID__"/>
                     <attribute id="UUID" type="guid" value="1a855711-a234-412c-b00d-9d2e8d239ba4"/>
                 </node>
@@ -708,6 +716,13 @@
                     <attribute id="UUID" type="guid" value="96deb8a4-d1be-4443-8032-84ab92a29800"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h135cc22fg7bf6geac7ga8eeg0ae4644a1b15" version="1"/>
+                    <attribute id="Name" type="FixedString" value="MaelstromAura"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="d05446cf-e1b7-4016-88c8-55967c0d2144"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__XANATHARS GUIDE TO EVERYTHING__"/>
                     <attribute id="UUID" type="guid" value="fd6f503f-0e70-448f-8694-fd43dfa81118"/>
                 </node>
@@ -821,11 +836,10 @@
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h135cc22fg7bf6geac7ga8eeg0ae4644a1b15" version="1"/>
-                    <attribute id="Name" type="FixedString" value="MaelstromAura"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="d05446cf-e1b7-4016-88c8-55967c0d2144"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="ChromaticAffinityTurn"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="77cd2421-5377-4123-814e-43c60f386598"/>
                 </node>
             </children>
         </node>

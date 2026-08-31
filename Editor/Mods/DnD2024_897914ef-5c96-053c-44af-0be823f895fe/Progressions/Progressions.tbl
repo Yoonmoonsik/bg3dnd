@@ -1396,7 +1396,7 @@
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(2968a3e6-6c8a-4c2e-882a-ad295a2ad8ac)" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="UnlockedSpellSlotLevel2" />
-        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="4d7bc9f4-526f-4902-b9a2-b31577203d02;0a7ae8c2-4fd5-48d8-9e5e-6a29189f3fb1;b927a22a-d64b-48d6-bc7c-38c5f7f6a061;47bb5544-fcd6-4187-81b8-6616ce07b028;aa644f08-d368-40d3-802a-b3bce31cd4e8;ebe18794-b5e1-41c4-befa-4b9d6922b0ec;4b5da2f5-b999-4623-8bff-a63df5560fb3;c54d7591-b305-4f22-b2a7-1bf5c4a3470a;bfad935f-cefd-4e18-bb9c-e052fcb0229e;6dec76d0-df22-411c-8a78-3d6fb843ae50;926bed98-903f-45db-8df1-b8a57742c622;89bacf1b-8f15-4972-ada7-bf59c7c78441;f013d01b-3310-43f7-81bf-a51130442b5e;6a75d401-8aba-40d3-83aa-ae3bb1855448;b9ccf90e-b35b-4b73-b896-8ed2d32ae8c6" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="4d7bc9f4-526f-4902-b9a2-b31577203d02;0a7ae8c2-4fd5-48d8-9e5e-6a29189f3fb1;b927a22a-d64b-48d6-bc7c-38c5f7f6a061;7fb5b4be-5fb3-4a1e-af7a-458598e57940;47bb5544-fcd6-4187-81b8-6616ce07b028;aa644f08-d368-40d3-802a-b3bce31cd4e8;ebe18794-b5e1-41c4-befa-4b9d6922b0ec;4b5da2f5-b999-4623-8bff-a63df5560fb3;c54d7591-b305-4f22-b2a7-1bf5c4a3470a;bfad935f-cefd-4e18-bb9c-e052fcb0229e;6dec76d0-df22-411c-8a78-3d6fb843ae50;926bed98-903f-45db-8df1-b8a57742c622;89bacf1b-8f15-4972-ada7-bf59c7c78441;f013d01b-3310-43f7-81bf-a51130442b5e;6a75d401-8aba-40d3-83aa-ae3bb1855448;b9ccf90e-b35b-4b73-b896-8ed2d32ae8c6" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2640,6 +2640,62 @@
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(83099155-2bcc-42f0-9b2c-19d973641ff5,,,,AlwaysPrepared)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFFD700" is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1037" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e81d0bdd-914a-4e57-840b-e636d582e087" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8c4f7e8a-2e36-4ece-9327-ca309b45617b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DragonDomain" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DragonDomain_3_ChromaticAffinity;DragonDomain_3_DragonDomainSpells;DragonDomain_3_DraconicMajesty;DragonDomain_3_ChromaticAffinity_Resource" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(d5da948b-cc02-44b5-b52b-618f13209ca5,,,,AlwaysPrepared)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1038" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7bca1418-3913-4fbe-9642-8191d8875527" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8c4f7e8a-2e36-4ece-9327-ca309b45617b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DragonDomain" />
+        <field name="Level" type="ByteTableFieldDefinition" value="5" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f375bebb-de96-49ce-b93a-211bc58db56a,,,,AlwaysPrepared)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1039" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b3c189e1-6cd6-49d9-9846-51ddc6f59f1a" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8c4f7e8a-2e36-4ece-9327-ca309b45617b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DragonDomain" />
+        <field name="Level" type="ByteTableFieldDefinition" value="6" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DragonDomain_6_WyrmsBlessing" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1040" />
+        <field name="UUID" type="IdTableFieldDefinition" value="97a9781f-9e3f-4fd3-bbe8-d11c1b2cbced" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8c4f7e8a-2e36-4ece-9327-ca309b45617b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DragonDomain" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(c89f149c-6e09-4631-83df-88eca4cb32f9,,,,AlwaysPrepared)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1041" />
+        <field name="UUID" type="IdTableFieldDefinition" value="69718b55-c55b-48b0-8c4f-9b35fe982dbc" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8c4f7e8a-2e36-4ece-9327-ca309b45617b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DragonDomain" />
+        <field name="Level" type="ByteTableFieldDefinition" value="9" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(71c6bd22-5400-4192-8c46-193dd2d0fe14,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FF9ACD32" is_substat="false">

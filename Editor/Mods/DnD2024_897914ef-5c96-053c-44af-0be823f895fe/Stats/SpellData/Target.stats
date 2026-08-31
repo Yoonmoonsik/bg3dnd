@@ -590,6 +590,73 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h917f9908g4fcbge66dgb997gdac87ffc4aff" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da048943-7c4e-4bfc-8e4f-945fa889ee95" />
+        <field name="Name" type="NameTableFieldDefinition" value="__ABJURATION__SLEVEL_3__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a764a7bc-3208-46ca-977a-0bcb131e3e98" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectionFromEnergy_Cleric" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f3c789c-2d22-40f4-a0ab-5f9891da79c0" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_ProtectionFromEnergy_Cleric_Acid;Target_ProtectionFromEnergy_Cleric_Cold;Target_ProtectionFromEnergy_Cleric_Fire;Target_ProtectionFromEnergy_Cleric_Lightning;Target_ProtectionFromEnergy_Cleric_Thunder;" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc79d025ag7d3dg2747g4484gd5d955fd41ce" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsLinkedSpellContainer;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6cdf0f8-352e-422e-8375-c076ed79afd0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectionFromEnergy_Cleric_Acid" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aafb4e5f-1a5a-4d22-a472-797f61969665" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ProtectionFromEnergy_Cleric" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d3a5213-93ad-4b20-b968-28f4068ecf95" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectionFromEnergy_Cleric_Cold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ca78b2ae-8ff9-4be2-bf97-650f71a7676d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ProtectionFromEnergy_Cleric" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="23abb229-8cd3-4859-b32a-c59f846a69dc" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectionFromEnergy_Cleric_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4855aa99-854f-4d28-afe8-281f7fe14cfe" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ProtectionFromEnergy_Cleric" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ec70c0a-78cb-4c29-b14a-b6bec70d2d8d" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectionFromEnergy_Cleric_Lightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9666159-1284-433a-acb1-3e68481f5cf4" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ProtectionFromEnergy_Cleric" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d87b4554-ddee-433c-a8f8-e3b21b09a02f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectionFromEnergy_Cleric_Thunder" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4242ee5a-6cb8-46c8-8702-19f815ccbc22" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ProtectionFromEnergy_Cleric" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="849caa3a-43fc-4eb4-b203-025a88cb1fc4" />
@@ -8861,6 +8928,67 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONS_BREATH_POISON_6,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ff250bf-40fd-4523-9fe7-a7cdbf668810" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Cleric" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a8b90ea4-2cbb-4372-80ae-22cd6dfe72a0" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_DragonsBreath_Cleric_Acid;Target_DragonsBreath_Cleric_Cold;Target_DragonsBreath_Cleric_Fire;Target_DragonsBreath_Cleric_Lightning;Target_DragonsBreath_Cleric_Poison;" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha5ac9c2egbb38gb14cg097ag8ecd055eca21" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7409fb3b-0817-4c96-8706-0f024d99baca" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Cleric_Acid" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fa3ca989-39b8-4634-bc17-d261f3de22ee" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath_Cleric" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4782ecbc-2b41-46ee-b0e0-975df59adfa1" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Cleric_Cold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e95df3e8-35fc-468e-b12a-ec5282531a72" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath_Cleric" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="53d72a07-9b58-4969-a8b6-b8a1369d1c26" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Cleric_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="390cf8a4-e142-49fa-8d54-92d59eeabd6f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath_Cleric" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c41bada7-74e7-4df5-bcb1-84ef8a45ebf7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Cleric_Lightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="90eede8c-0fdc-4c42-9d3b-a7367a5ba34f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath_Cleric" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6fae587-3bc0-43a7-8734-3f5cdfbbc432" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Cleric_Poison" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0342fb8c-6355-4a48-9b1f-ee45b0627e7c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath_Cleric" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ChannelDivinity:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
