@@ -1574,6 +1574,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d6296638-b0a4-46b0-85d5-847a879015d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DarkOnesOwnLuck" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8b958c8ag5476g5bd5g1951gae850853f115" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h08045ad1gb50dgc96dg8318gd971f112b84f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DarkOnesBlessing" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(10);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,1d10);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="DarkOnesOwnLuck:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dd70c9f2-c3b7-4409-9aca-727a04f0e631" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EntropicWard_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="90a5dbbe-d109-4c0b-883f-02911295d57b" />

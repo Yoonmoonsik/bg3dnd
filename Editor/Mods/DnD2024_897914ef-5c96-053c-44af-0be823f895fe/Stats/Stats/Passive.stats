@@ -6772,10 +6772,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a459153-64b3-4aad-9b58-98d194ede2ac" />
+        <field name="Name" type="NameTableFieldDefinition" value="DarkOnesOwnLuck_Interrupt" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_DarkOnesOwnLuck);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="63c14715-228b-4778-8367-735e1ddbe4e4" />
         <field name="Name" type="NameTableFieldDefinition" value="DarkOnesOwnLuck_Resource" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnProficiencyChange;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',13,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',15,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',17,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',19,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',21,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',23,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

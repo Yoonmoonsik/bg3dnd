@@ -4981,8 +4981,14 @@ data "EnabledContext" "OnAbilityCheck;OnInterruptUsed;OnShortRest;OnLongRest"
 data "Properties" "IsToggled;ToggledDefaultAddToHotbar"
 data "StatsFunctors" "UseActionResource(SELF,DarkOnesOwnLuck,1,0)"
 
+new entry "DarkOnesOwnLuck_Interrupt"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "UnlockInterrupt(Interrupt_DarkOnesOwnLuck);"
+
 new entry "DarkOnesOwnLuck_Resource"
 type "PassiveData"
+data "Properties" "IsHidden"
 data "BoostContext" "OnEquip;OnProficiencyChange;OnShortRest;OnCreate"
 data "Boosts" "ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',13,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',15,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',17,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',19,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',21,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);IF(AbilityGreaterThan('Charisma',23,context.Source)):ActionResource(DarkOnesOwnLuck,1,0);"
 
