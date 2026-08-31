@@ -3926,7 +3926,7 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedUnarmedAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d4+DexterityModifier,Psychic);ApplyStatus(WEAPONMASTERY_VEX,100,2);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source)):DealDamage(1d4+DexterityModifier,Psychic);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source)):DealDamage(1d4+DexterityModifier+2,Psychic);ApplyStatus(WEAPONMASTERY_VEX,100,2);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="738f5715-9415-4f38-a7d8-5999d8a7e4fd,edb4e94d-2efa-4335-b18a-2125656a3eb7,91b3ac49-bd61-4302-bfdd-aa784f9816fd" />
         <field name="Icon" type="StringTableFieldDefinition" value="Throw_Soulknife" />
