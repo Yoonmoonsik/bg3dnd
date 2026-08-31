@@ -8147,11 +8147,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1f65b3b0-039b-4089-b6fe-eca63c83e773" />
         <field name="Name" type="NameTableFieldDefinition" value="CircleOfDeath" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5940c685-cd68-4d61-a516-d666389ac4bb" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="36" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="45" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d8,Necrotic,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((8d8)/2,Necrotic,Magical);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="(Character() or Tagged('FUNGUS')) and not Ally();" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(8d8, Necrotic)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8, Necrotic)" />
       </fields>
@@ -15246,7 +15245,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="547f6e47-a5d0-4aa9-8fc0-17a3bb5931cd" />
         <field name="Name" type="NameTableFieldDefinition" value="CircleOfDeath_spellscroll" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5940c685-cd68-4d61-a516-d666389ac4bb" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1f65b3b0-039b-4089-b6fe-eca63c83e773" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
