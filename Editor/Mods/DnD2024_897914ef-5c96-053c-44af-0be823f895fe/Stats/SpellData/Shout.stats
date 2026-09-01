@@ -2369,15 +2369,6 @@
         <field name="RitualCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1c78f803-eef2-4d95-a2f2-81315f8c9ce6" />
-        <field name="Name" type="NameTableFieldDefinition" value="UND_FeatherFall_Tower_Boots" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="59b41554-843a-457f-b7e2-ab7b031a652b" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
-        <field name="RitualCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1dc7421b-0469-4b12-9ad7-abb2954cfea3" />
@@ -7042,6 +7033,16 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_MirrorImage" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c5afcef7-92e8-4eb0-ac98-13033805b3dd" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c78f803-eef2-4d95-a2f2-81315f8c9ce6" />
+        <field name="Name" type="NameTableFieldDefinition" value="UND_FeatherFall_Tower_Boots" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="59b41554-843a-457f-b7e2-ab7b031a652b" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
