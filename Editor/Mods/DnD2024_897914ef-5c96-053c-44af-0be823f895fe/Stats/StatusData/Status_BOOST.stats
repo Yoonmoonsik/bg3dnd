@@ -8628,7 +8628,9 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h088d47bfg6808g4533gaec0g5f56a095eab4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hafefa2e1g90b1g4c2bga373g2d641dd61b87" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);DealDamage(1d6,Fire)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_Burning,true,true,true)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(WILDMAGIC_YMS_61)" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() or Item()):ApplyStatus(WILD_MAGIC_BURNING_TRIGGER)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8638,6 +8640,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3dbd7d5d-601e-46bc-91dc-7e283385ae01" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2dfdc35fg3778g4a55g8ba8g0f758f18172a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd1b48940g58d3g4e8ega4dcg7ed2dee94101" version="3" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(WILDMAGIC_YMS_62)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8647,6 +8650,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="88193609-69bc-479f-8ca7-4e2f9dcac84a" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3fb43e6age8adg44f4gb372g446fa2f664b6" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hce4f5a31g0d0ag4b63g942egbffb8f14a92c" version="3" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(WILDMAGIC_YMS_63)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8656,6 +8660,16 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="6fa97471-c028-444e-af89-b57aaa4bdeef" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1a0cf79ge96eg46c5gb1e4g4fa9d9a9a4c8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hed397eecg9b3bg4678gba35gcf91f0402409" version="3" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(WILDMAGIC_YMS_64)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8f2ae2d-0ca6-4ff2-a851-ecce6f5c5c82" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BURNING_TRIGGER" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(WILD_MAGIC_BURNING,100,5)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8666,6 +8680,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h27cacff3g5518g47bagb42cg08a2ddc140bb" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4ea41309gb768g42f0g8f88g2da72126a223" version="3" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DEATH_WARD,100,-1)" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
