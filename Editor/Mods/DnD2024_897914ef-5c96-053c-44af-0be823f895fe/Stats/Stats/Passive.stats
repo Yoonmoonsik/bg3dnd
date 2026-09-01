@@ -298,7 +298,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h0fbee9aag6abeg6294g3fd8gbeb26ffd19f6" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Slash" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Graze', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and not IsHit();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Graze', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and not IsHit() and Character();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(WeaponAttackRollAbility(Ability.Strength)):DealDamage(StrengthModifier, MainMeleeWeaponDamageType);IF(WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(DexterityModifier, MainMeleeWeaponDamageType);IF(WeaponAttackRollAbility(Ability.Intelligence)):DealDamage(IntelligenceModifier, MainMeleeWeaponDamageType);IF(WeaponAttackRollAbility(Ability.Wisdom)):DealDamage(WisdomModifier, MainMeleeWeaponDamageType);IF(WeaponAttackRollAbility(Ability.Charisma)):DealDamage(CharismaModifier, MainMeleeWeaponDamageType)" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Graze', context.Source);" />
       </fields>
@@ -328,7 +328,7 @@
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Ranged" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Push', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Push', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit() and not IsKillingBlow() and Character();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF(TargetSizeEqualOrSmaller(Size.Large)):Force(3);" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Push', context.Source);" />
       </fields>
@@ -343,7 +343,7 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:ApplyStatus(WEAPONMASTERY_SAP,100,1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_ConcussiveSmash" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Sap', context.Source);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Sap', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Sap', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit() and not IsKillingBlow() and Character();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -356,7 +356,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_HamstringShot" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:ApplyStatus(WEAPONMASTERY_SLOW,100,1)" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Slow', context.Source);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Slow', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Slow', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit() and not IsKillingBlow() and Character();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -369,7 +369,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Topple" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(WeaponAttackRollAbility(Ability.Strength)):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Constitution, ManeuverSaveDC()));IF(WeaponAttackRollAbility(Ability.Dexterity)):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Constitution, ManeuverSaveDC()));IF(WeaponAttackRollAbility(Ability.Intelligence)):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Constitution, IntAttackSaveDC()));IF(WeaponAttackRollAbility(Ability.Wisdom)):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Constitution, WisAttackSaveDC()));IF(WeaponAttackRollAbility(Ability.Charisma)):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Constitution, ChaAttackSaveDC()));" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Topple', context.Source);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Topple', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Topple', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit() and not IsKillingBlow() and Character();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -382,7 +382,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_OpeningAttack" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:ApplyStatus(WEAPONMASTERY_VEX,100,2)" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Vex', context.Source);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Vex', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HasWeaponMastery_Vex', context.Source) and AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit() and not IsKillingBlow() and Character();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
