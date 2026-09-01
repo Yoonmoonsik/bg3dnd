@@ -131,6 +131,22 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsJump;AddFallDamageOnLand;HasHighGroundRangeExtension;IgnoreVisionBlock;Stealth;Invisible;CannotTargetCharacter;CannotTargetItems;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2813538c-1e6f-438d-8748-4e0bf2645f8f" />
+        <field name="Name" type="NameTableFieldDefinition" value="WaterSplash" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1b10431d-6acb-45f5-8991-0b44da4ff7e4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WET,100, 1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2d39cdd2-7a7d-4eb5-9562-6f9dd083e746" />
+        <field name="Name" type="NameTableFieldDefinition" value="WaterSplash_Large" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="87ac05af-3333-41d5-86d5-fb0cecb2cd6d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WET,100, 1);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="11f106b1-1069-42d8-a7ca-391be98b9deb" />

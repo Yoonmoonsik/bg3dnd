@@ -119,6 +119,18 @@ data "Description" "hfa470112gc789g976ag5dcdgab4fa45eb69b;1"
 data "UseCosts" "Movement:3;"
 data "SpellFlags" "IsJump;AddFallDamageOnLand;HasHighGroundRangeExtension;IgnoreVisionBlock;Stealth;Invisible;CannotTargetCharacter;CannotTargetItems;Temporary"
 
+new entry "Projectile_WaterSplash"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_WaterSplash"
+data "SpellProperties" "ApplyStatus(WET,100, 1);"
+
+new entry "Projectile_WaterSplash_Large"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_WaterSplash_Large"
+data "SpellProperties" "ApplyStatus(WET,100, 1);"
+
 new entry "Projectile___ABJURATION__"
 type "SpellData"
 data "SpellType" "Projectile"
