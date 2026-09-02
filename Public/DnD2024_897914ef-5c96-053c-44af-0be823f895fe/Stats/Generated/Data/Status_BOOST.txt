@@ -5636,6 +5636,13 @@ new entry "__PALADIN__"
 type "StatusData"
 data "StatusType" "BOOST"
 
+new entry "DREADFUL_ASPECT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "FRIGHTENED"
+data "TickType" "StartTurn"
+data "OnTickSuccess" "RemoveStatus(DREADFUL_ASPECT)"
+
 new entry "FAITHFUL_STEED"
 type "StatusData"
 data "StatusType" "BOOST"

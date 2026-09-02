@@ -4187,6 +4187,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78a16131-93c6-4b9c-b1b2-021425a6dbbd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dreadful_Aspect" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1217923a-b2c2-4676-839a-41c54ec18a19" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(DREADFUL_ASPECT,100,10);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ChannelOath:1;" />
+        <field name="RechargeValues" type="StringTableFieldDefinition" value="5-6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8be53088-bd3c-4d56-bedd-d5d26438ee3d" />
         <field name="Name" type="NameTableFieldDefinition" value="ConqueringPresence" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />

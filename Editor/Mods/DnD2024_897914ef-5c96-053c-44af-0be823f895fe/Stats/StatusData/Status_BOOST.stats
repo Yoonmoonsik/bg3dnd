@@ -6999,6 +6999,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1be56b67-9255-4ab0-840b-aa9d9df6cfc3" />
+        <field name="Name" type="NameTableFieldDefinition" value="DREADFUL_ASPECT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60a09934-feba-4335-b387-f1581fc07702" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(DREADFUL_ASPECT)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="519a8125-def3-4274-b601-02f8f8e87b6c" />
         <field name="Name" type="NameTableFieldDefinition" value="FAITHFUL_STEED" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e887af9gf132g931bgf5ffgfd331943059d" version="1" />
