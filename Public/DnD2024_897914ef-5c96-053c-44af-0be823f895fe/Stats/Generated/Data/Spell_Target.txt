@@ -12510,6 +12510,12 @@ new entry "Target___NPC__"
 type "SpellData"
 data "SpellType" "Target"
 
+new entry "Target_ClawsOfTheGrave_Necromite"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ClawsOfTheGrave_Necromite"
+data "SpellFlags" "HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful;IsSwarmAttack"
+
 new entry "Target_Devour_Ghoul_AnimateDead"
 type "SpellData"
 data "SpellType" "Target"
