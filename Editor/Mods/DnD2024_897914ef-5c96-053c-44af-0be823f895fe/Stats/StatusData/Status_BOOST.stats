@@ -6589,6 +6589,15 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab8796fd-9e28-4026-be17-9ea1a638b41a" />
+        <field name="Name" type="NameTableFieldDefinition" value="REGENERATION_SABERTOOTH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="eac5b021-7544-4ba1-8208-c97d16a0d746" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d8)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(Combat() and HasHPLessThan(60,context.Source)):RegainHitPoints(1d8)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF9ACD32" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3e0f22ee-f994-4566-a1df-4d98be460859" />

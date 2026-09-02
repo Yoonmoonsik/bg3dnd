@@ -5325,6 +5325,13 @@ data "Boosts" "UnlockSpell(Target_WrathOfTheSea_FirstTurn);"
 data "RemoveEvents" "OnTurn"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
+new entry "REGENERATION_SABERTOOTH"
+type "StatusData"
+data "StatusType" "BOOST"
+using "REGENERATION_SABERTOOTH"
+data "DescriptionParams" "RegainHitPoints(1d8)"
+data "TickFunctors" "IF(Combat() and HasHPLessThan(60,context.Source)):RegainHitPoints(1d8)"
+
 new entry "__CIRCLE OF THE LAND 4300__"
 type "StatusData"
 data "StatusType" "BOOST"
