@@ -6573,7 +6573,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(9,'Warlock',context.Source) and not IsMiss() and IsMeleeWeaponAttack() and HasStatus('PACT_BLADE', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand, context.Source));" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,MainMeleeWeaponDamageType,Magical)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Lifedrinker_1);UnlockInterrupt(Interrupt_Lifedrinker_2);UnlockInterrupt(Interrupt_Lifedrinker_3);UnlockInterrupt(Interrupt_Lifedrinker_4);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Lifedrinker_1);UnlockInterrupt(Interrupt_Lifedrinker_2);UnlockInterrupt(Interrupt_Lifedrinker_3);UnlockInterrupt(Interrupt_Lifedrinker_4);ActionResource(LifedrinkerTurn,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
