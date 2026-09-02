@@ -2153,6 +2153,7 @@
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Wisdom, SourceSpellDC())" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(FRIGHTENED)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(AllAbilities);Disadvantage(AttackRoll);ActionResourceBlock(Movement)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2318,6 +2319,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="60a09934-feba-4335-b387-f1581fc07702" />
         <field name="StackId" type="StringTableFieldDefinition" value="FRIGHTENED_COLDFIRE" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(FRIGHTENED_COLDFIRE)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3292,9 +3294,10 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9953e881-5e20-4a32-80b2-fd97c9bd522e" />
         <field name="Name" type="NameTableFieldDefinition" value="VOID_STRIKE" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ccdea1c2-ad45-42da-b5e5-8e34053b1ea1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60a09934-feba-4335-b387-f1581fc07702" />
         <field name="StackId" type="StringTableFieldDefinition" value="VOID_STRIKE" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(VOID_STRIKE)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
