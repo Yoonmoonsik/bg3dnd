@@ -5352,6 +5352,64 @@
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;236087a5-5597-4ee7-ab06-75b01147f596,,;ee0b6a78-c6b6-4852-aecb-d7c474a37d68,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6976f00-effc-46ee-a32b-9e68d4d3e29c" />
+        <field name="Name" type="NameTableFieldDefinition" value="DistantTransposition" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_DistantTransposition_3;Shout_DistantTransposition_4;Shout_DistantTransposition_5;Shout_DistantTransposition_6;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(BenignTransposition,1,0);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Wizard_ArcaneRecovery" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6aeeffe5ga331g4d44gda45g81df573d25ff" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7e99425cg912fg30f6gef4ag9591cab2c074" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_ArcaneRecovery" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_ArcaneRecovery" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03114753-8d91-4c52-8207-728a67cdd59b,,;,,;51c06d74-c048-452a-a248-41a751728e3e,,;e9731a5c-e4ba-4872-8950-36d625061ec3,,;8fcb1f19-a84b-486d-81fa-098aaf7cc9be,,;,,;c5bd6ce6-281c-4314-9f74-9f7bb2f4cf03,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="271665f4-5c3c-4bb4-933d-8a7daf8268b5" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b88e4a1e-4eef-470c-8d12-6db53c48a1e8" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d52042a-f8cb-465a-9687-4f6c73b1b53d" />
+        <field name="Name" type="NameTableFieldDefinition" value="DistantTransposition_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e6976f00-effc-46ee-a32b-9e68d4d3e29c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_DistantTransposition" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="197181fa-e65c-40d7-adf4-6dfe4984e248" />
+        <field name="Name" type="NameTableFieldDefinition" value="DistantTransposition_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d52042a-f8cb-465a-9687-4f6c73b1b53d" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c8bc6743-301d-40fb-89e1-e7dafca27248" />
+        <field name="Name" type="NameTableFieldDefinition" value="DistantTransposition_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d52042a-f8cb-465a-9687-4f6c73b1b53d" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="50b02af5-0e5c-4558-9b69-069ef2ddf746" />
+        <field name="Name" type="NameTableFieldDefinition" value="DistantTransposition_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d52042a-f8cb-465a-9687-4f6c73b1b53d" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:6;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="87d19ce2-9f9a-4137-95ef-1fb98232efde" />

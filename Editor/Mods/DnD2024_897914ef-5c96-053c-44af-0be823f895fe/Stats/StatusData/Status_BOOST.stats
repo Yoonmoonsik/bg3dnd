@@ -9497,6 +9497,33 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18330a0f-cea0-4d24-8231-9bbe5f68c7ca" />
+        <field name="Name" type="NameTableFieldDefinition" value="DURABLE_SUMMONS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h845a3236geefbg33beg185bg2467fff43415" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h676e103bg0c14g6342g9a43ge904948df27a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Durable" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DURABLE_SUMMONS" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DURABLE_SUMMONS_TEMPHP,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DURABLE_SUMMONS_TEMPHP)" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8e8e3c8-1250-45fa-9d9c-5e014a7a1ac3" />
+        <field name="Name" type="NameTableFieldDefinition" value="DURABLE_SUMMONS_TEMPHP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="18330a0f-cea0-4d24-8231-9bbe5f68c7ca" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DURABLE_SUMMONS_TEMPHP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(Owner.ClassLevel(Wizard)*2);Resistance(Acid, Resistant);Resistance(Bludgeoning, Resistant);Resistance(Cold, Resistant);Resistance(Fire, Resistant);Resistance(Lightning, Resistant);Resistance(Piercing, Resistant);Resistance(Poison, Resistant);Resistance(Slashing, Resistant);Resistance(Thunder, Resistant);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c85373fe-6bbb-444f-9c3b-51661a5015a2" />
         <field name="Name" type="NameTableFieldDefinition" value="BLADESONG" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8abc2dde-ffb3-4fc2-a3da-32627941bf3c" />

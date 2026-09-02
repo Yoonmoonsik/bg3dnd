@@ -7161,6 +7161,58 @@
     </stat_object>
     <stat_object color="#FF0000FF" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="abc5dbc0-4f6b-410a-a45c-cd77f57a2ee3" />
+        <field name="Name" type="NameTableFieldDefinition" value="__WIZARD CONJURER__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a69a02ba-9a1c-409f-937b-aabed40577a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Conjurer_3_BenignTransposition" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h75b66feageb05g5a0fg580agd8c59865fa54" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8d3354dag4ecag38a2g2766ge86be91e3c69" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BenignTransposition_Swap" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12103" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',13,context.Source)):ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',15,context.Source)):ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',17,context.Source)):ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',19,context.Source)):ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',21,context.Source)):ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',23,context.Source)):ActionResource(BenignTransposition,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b57f75dc-4090-429a-9b89-ff6543f6cbda" />
+        <field name="Name" type="NameTableFieldDefinition" value="Conjurer_6_DistantTransposition" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcccc4dceg63b3gc519geaffg4222fa9c8272" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h548afd77gc2b3g89dfgd738gf776357e3e79" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BenignTransposition_Swap" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12106" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_BenignTransposition_Teleport'),ModifyTargetRadius(Multiplicative,2.0));UnlockSpell(Shout_DistantTransposition,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94699a96-33ac-48a4-be3a-6bf8ec332f90" />
+        <field name="Name" type="NameTableFieldDefinition" value="Conjurer_6_DurableSummons" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h032fd619gf949g7b67gc02bg1aa49a47f618" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h348b7b47g62dbg7635g9ffdgd83c78b35a50" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Durable" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12106" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DurableSummons);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94818ba4-8eca-431c-923e-5115e95690b1" />
+        <field name="Name" type="NameTableFieldDefinition" value="FocusedConjuration" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="471c186d-eb60-4736-ae38-86aea1a63a85" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3310d1eg838ag9594g63d0gcbf4b8b107d2" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12110" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0000FF" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="92a35c16-1faa-451d-bd2b-92c93439e30d" />
         <field name="Name" type="NameTableFieldDefinition" value="__WIZARD__DIVINDER__" />
       </fields>

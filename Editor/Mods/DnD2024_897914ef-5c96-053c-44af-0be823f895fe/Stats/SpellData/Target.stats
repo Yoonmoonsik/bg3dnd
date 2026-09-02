@@ -13625,6 +13625,36 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0dcc10fb-e1f3-439a-8f6a-ed9672acddac" />
+        <field name="Name" type="NameTableFieldDefinition" value="BenignTransposition_Teleport" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c3571f68-51d4-4c07-8096-e7585dcae867" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(CanStand('')):TeleportSource();IF(Ally()):SwapPlaces();" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;BenignTransposition:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0f361487-4d51-4b1c-a7aa-0dc10bd74d8d" />
+        <field name="Name" type="NameTableFieldDefinition" value="DurableSummons" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DURABLE_SUMMONS,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('SUMMON') and not HasStatus('DURABLE_SUMMONS',context.Target);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Durable" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haae34dd9ga779g179bg2051g0adab6f310a9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb61679e8gf7a0g939cgc02dg8a227cb4d2d5" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_FindFamiliar_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Summon_FindFamiliar_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="6f42f5f3-7a5a-4441-a02e-71b0450ac4b7,,;,,;605d49b4-03b9-47f6-96e9-7f80e6be7514,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;42aaefdc-cf9b-4249-b159-285041851f69,,;,,;20e11c98-fff9-4417-88de-5bcc2368a1bd,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="739617e8-1255-4429-8b96-cc86296e0366" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="23d05225-027b-4656-97f8-564b185d37a2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="05c88076-360c-43b0-95df-20d78aa620d1" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonBeast_Illusion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0d9eab81-a6e3-4da5-a4c8-f94f98836ecc" />

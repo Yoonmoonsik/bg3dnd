@@ -6439,15 +6439,15 @@
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="ConjurationSchool"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(13622b91-fb6d-4921-afb0-dc42da978511,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="91892607-d017-4a06-b904-0788fc84bf6a"/>
                     <attribute id="UUID" type="guid" value="f7b1bfed-d4bd-4e05-8cd9-f9cb59ccc2e0"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="ConjurationSchool"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Conjurer_3_BenignTransposition"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(2956b1e8-981d-4994-a30a-dfabb9d912c5,2,0,Wizard_3_Savant);"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(804e3405-7758-4496-8d30-7e61794baae8,,,,AlwaysPrepared);SelectSpells(2956b1e8-981d-4994-a30a-dfabb9d912c5,2,0,Wizard_3_Savant);"/>
                     <attribute id="TableUUID" type="guid" value="91892607-d017-4a06-b904-0788fc84bf6a"/>
                     <attribute id="UUID" type="guid" value="e6a249d9-2c05-4530-bfbf-79c4dc8a364c"/>
                 </node>
@@ -6469,8 +6469,8 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="ConjurationSchool"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Conjurer_6_DistantTransposition;Conjurer_6_DurableSummons"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(804e3405-7758-4496-8d30-7e61794baae8,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="91892607-d017-4a06-b904-0788fc84bf6a"/>
                     <attribute id="UUID" type="guid" value="455e8b56-0681-434c-9499-6506c06b5081"/>
                 </node>

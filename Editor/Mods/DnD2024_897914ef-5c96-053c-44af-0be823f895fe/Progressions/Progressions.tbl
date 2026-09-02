@@ -8237,7 +8237,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="ConjurationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="2" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(13622b91-fb6d-4921-afb0-dc42da978511,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8248,7 +8247,8 @@
         <field name="FSName" type="StringTableFieldDefinition" value="ConjurationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2956b1e8-981d-4994-a30a-dfabb9d912c5,2,0,Wizard_3_Savant);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(804e3405-7758-4496-8d30-7e61794baae8,,,,AlwaysPrepared);SelectSpells(2956b1e8-981d-4994-a30a-dfabb9d912c5,2,0,Wizard_3_Savant);" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Conjurer_3_BenignTransposition" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8280,7 +8280,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="ConjurationSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="6" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(804e3405-7758-4496-8d30-7e61794baae8,,,,AlwaysPrepared)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Conjurer_6_DistantTransposition;Conjurer_6_DurableSummons" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

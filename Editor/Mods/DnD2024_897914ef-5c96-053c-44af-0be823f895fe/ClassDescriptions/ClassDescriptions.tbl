@@ -1060,6 +1060,23 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_85" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7a3feb8d-dda7-46ec-9029-1f302f537432" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="a865965f-501b-46e9-9eaa-7748e8c04d09" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="ConjurationSchool" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd109ef3g9b77g45c3g3819g04b7311ec63c" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="91892607-d017-4a06-b904-0788fc84bf6a" />
+        <field name="PrimaryAbility" type="EnumerationTableFieldDefinition" value="Intelligence" enumeration_type_name="Ability" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Intelligence" enumeration_type_name="Ability" version="1" />
+        <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
+        <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+        <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Wizard" />
+        <field name="MustPrepareSpells" type="BoolTableFieldDefinition" value="True" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc7b7ab9ag8476g62b1g36d1g41c9e880470e" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_64" />
         <field name="UUID" type="IdTableFieldDefinition" value="7577b0e1-a517-4f82-8f72-05a227dc5e88" />
         <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="a865965f-501b-46e9-9eaa-7748e8c04d09" />

@@ -433,6 +433,12 @@
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="LifedrinkerTurn"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="828963d2-3037-462e-9ae7-37f62a3d1def"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
                     <attribute id="MaxLevel" type="uint32" value="0"/>
                     <attribute id="MaxValue" type="uint32" value="1"/>
                     <attribute id="Name" type="FixedString" value="BeguilingDefenses"/>
@@ -842,10 +848,13 @@
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="IsHidden" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="LifedrinkerTurn"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
-                    <attribute id="UUID" type="guid" value="828963d2-3037-462e-9ae7-37f62a3d1def"/>
+                    <attribute id="Description" type="TranslatedString" handle="hc4ff4646g7186g7eccgcd65ge739c13a4219" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc41c5523g44d9gbf23g1e24gff79280418c3" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="BenignTransposition"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="f1ed0ec5-da11-4f38-b661-65e4dc0e74e9"/>
                 </node>
             </children>
         </node>
