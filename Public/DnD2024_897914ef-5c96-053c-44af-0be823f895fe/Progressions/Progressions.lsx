@@ -6615,8 +6615,9 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Enchanter_3_EnchantingConversationalist;Enchanter_3_HypnoticPresence"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(43fb9c43-ddfa-46ff-a64f-73406dddf4eb,,,,AlwaysPrepared);SelectSpells(7894c2fe-5123-4b7e-bd05-cc74a0604d93,2,0,Wizard_3_Savant);"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ba723f53-ea12-40aa-ba54-f11698e9a18a,1,Enchanter_3_EnchantingConversationalist);SelectSpells(7894c2fe-5123-4b7e-bd05-cc74a0604d93,2,0,Wizard_3_Savant);AddSpells(43fb9c43-ddfa-46ff-a64f-73406dddf4eb,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
                     <attribute id="UUID" type="guid" value="c3751d51-3158-4503-8c59-ebd0b0103936"/>
                 </node>
@@ -6638,7 +6639,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
-                    <attribute id="PassivesAdded" type="LSString" value="InstinctiveCharm"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SplitEnchantment;SplitEnchantment_Resource"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
                     <attribute id="UUID" type="guid" value="94de7452-526d-4cd2-836a-a5fdd7620b3c"/>
@@ -6669,7 +6670,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SplitEnchantment"/>
+                    <attribute id="PassivesAdded" type="LSString" value="InstinctiveCharm"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
                     <attribute id="UUID" type="guid" value="79663a80-517b-4036-b895-4cf75bb4075c"/>

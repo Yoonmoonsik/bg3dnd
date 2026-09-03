@@ -8483,7 +8483,8 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EnchantmentSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(43fb9c43-ddfa-46ff-a64f-73406dddf4eb,,,,AlwaysPrepared);SelectSpells(7894c2fe-5123-4b7e-bd05-cc74a0604d93,2,0,Wizard_3_Savant);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ba723f53-ea12-40aa-ba54-f11698e9a18a,1,Enchanter_3_EnchantingConversationalist);SelectSpells(7894c2fe-5123-4b7e-bd05-cc74a0604d93,2,0,Wizard_3_Savant);AddSpells(43fb9c43-ddfa-46ff-a64f-73406dddf4eb,,,,AlwaysPrepared)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Enchanter_3_EnchantingConversationalist;Enchanter_3_HypnoticPresence" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8515,7 +8516,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EnchantmentSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="6" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="InstinctiveCharm" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SplitEnchantment;SplitEnchantment_Resource" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8558,7 +8559,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="EnchantmentSchool" />
         <field name="Level" type="ByteTableFieldDefinition" value="10" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SplitEnchantment" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="InstinctiveCharm" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

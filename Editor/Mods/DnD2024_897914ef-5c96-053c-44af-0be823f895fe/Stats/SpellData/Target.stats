@@ -13655,6 +13655,20 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d0fbf1fe-26e8-4d98-87a6-a1acfd65ae23" />
+        <field name="Name" type="NameTableFieldDefinition" value="HypnoticGaze" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b14ba538-c59a-4316-ac68-a26309dc1779" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(HYPNOTIC_GAZE,100,10);ApplyStatus(SELF,HYPNOTIC_GAZE_OWNER,100,10);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h647d27f8gbc52g96e1g69cdg315a86dcccf8" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HYPNOTIC_GAZE,100,10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HypnoticPresence:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="05c88076-360c-43b0-95df-20d78aa620d1" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonBeast_Illusion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0d9eab81-a6e3-4da5-a4c8-f94f98836ecc" />

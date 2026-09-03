@@ -9524,6 +9524,34 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c7abd8a0-cfae-41ca-8028-d5da3993d929" />
+        <field name="Name" type="NameTableFieldDefinition" value="HYPNOTIC_GAZE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="45b6a7b8-4825-4f02-9889-2e8e2108e867" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h31766f48g123fg5436g7cebgadbfe368d420" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bfc55d82-e131-4922-9f24-07ade5e1c82a" />
+        <field name="Name" type="NameTableFieldDefinition" value="HYPNOTIC_GAZE_OWNER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8c969ba0-1383-4c40-855c-7a38a795b590" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb8b45ed8gd527g7604ge1c1g6df8c0481f88" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h399533aeg04deg1545ge033g15234947d673" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(HasStatus('HYPNOTIC_GAZE',context.Target)):ApplyStatus(HYPNOTIC_GAZE_AURA)" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="307db2fb-a037-41b7-85e3-cb829a652802" />
+        <field name="Name" type="NameTableFieldDefinition" value="HYPNOTIC_GAZE_AURA" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;NonExtendable" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(HYPNOTIC_GAZE)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c85373fe-6bbb-444f-9c3b-51661a5015a2" />
         <field name="Name" type="NameTableFieldDefinition" value="BLADESONG" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8abc2dde-ffb3-4fc2-a3da-32627941bf3c" />

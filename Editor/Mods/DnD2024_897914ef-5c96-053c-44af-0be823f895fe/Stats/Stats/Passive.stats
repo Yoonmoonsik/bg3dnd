@@ -675,11 +675,18 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8067e2b2-758c-4558-90b5-44523baf3f2f" />
         <field name="Name" type="NameTableFieldDefinition" value="NoSkillProficiency" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d7a0c3eg115bg4ae2gad78gc3e65c3e40bc" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbfc3c711gf795g4750g93f7ga4084ef4f25d" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Info" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16123b20-5890-4a64-ad70-b7bbd7377ceb" />
+        <field name="Name" type="NameTableFieldDefinition" value="NoSkillProficiency_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8067e2b2-758c-4558-90b5-44523baf3f2f" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -7170,11 +7177,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a69a02ba-9a1c-409f-937b-aabed40577a3" />
         <field name="Name" type="NameTableFieldDefinition" value="Conjurer_3_BenignTransposition" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h75b66feageb05g5a0fg580agd8c59865fa54" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8d3354dag4ecag38a2g2766ge86be91e3c69" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8d3354dag4ecag38a2g2766ge86be91e3c69" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BenignTransposition_Swap" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12103" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',13,context.Source)):ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',15,context.Source)):ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',17,context.Source)):ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',19,context.Source)):ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',21,context.Source)):ActionResource(BenignTransposition,1,0);IF(AbilityGreaterThan('Intelligence',23,context.Source)):ActionResource(BenignTransposition,1,0);" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3b09fcbeg2879g3b52ge18ag616f586c2db2" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7239,6 +7247,78 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h15504b2agf3a9gc7f3g51e1g6775163e7006" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12106" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0000FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b0643173-47f4-45fc-9851-b0338c4edadf" />
+        <field name="Name" type="NameTableFieldDefinition" value="__WIZARD ENCHANTER__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b60da863-e304-47cc-87ca-19b8f6e9bbdd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enchanter_3_EnchantingConversationalist" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9bde2779g064egab2ege791gee222211a30b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h84aa3819g842cg5b17g3e49g4427df0447bd" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Deception" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12103" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Deception,IntelligenceModifier);Skill(Intimidation,IntelligenceModifier);Skill(Persuasion,IntelligenceModifier);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b9aa4f43-a832-4ca7-bb8e-f9e6c49e9054" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enchanter_3_HypnoticPresence" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bb95d5cg43aeg5524g5c91ga2aac1cc18fb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h44ce0999gffb8gccf4g4429gb9df80d8aa64" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3bc5a082gab19g8d32gbfdbgd768db453f47" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_HypnoticGaze" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12103" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HypnoticPresence,1,0);IF(AbilityGreaterThan('Intelligence',13,context.Source)):ActionResource(HypnoticPresence,1,0);IF(AbilityGreaterThan('Intelligence',15,context.Source)):ActionResource(HypnoticPresence,1,0);IF(AbilityGreaterThan('Intelligence',17,context.Source)):ActionResource(HypnoticPresence,1,0);IF(AbilityGreaterThan('Intelligence',19,context.Source)):ActionResource(HypnoticPresence,1,0);IF(AbilityGreaterThan('Intelligence',21,context.Source)):ActionResource(HypnoticPresence,1,0);IF(AbilityGreaterThan('Intelligence',23,context.Source)):ActionResource(HypnoticPresence,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e5220f2-3453-4f7f-948b-d47e57b0c182" />
+        <field name="Name" type="NameTableFieldDefinition" value="SplitEnchantment" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ec41e67-10b1-43f6-9170-d05702ce53b2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd522fd82g6859g80ddg72bdge8cf9faa0204" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1b565bd8g75aagd7d4g1b3bg1fcb7e03fd42" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7d534ffdg3cbfg9db5g5b60g59c579d97371" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12106" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('SplitEnchantment', 1, 0, false, false, context.Source);" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved;OnLongRest;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;MetaMagic;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SplitEnchantmentProjectileSpellCheck(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyTooltipDescription(),ModifyIconGlow(),ModifyUseCosts(Add,SplitEnchantment,1,0));UnlockSpellVariant(SplitEnchantmentTargetSpellCheck(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyTooltipDescription(),ModifyIconGlow(),ModifyUseCosts(Add,SplitEnchantment,1,0));UnlockSpellVariant(SplitEnchantmentTargetTouchSpellCheck(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyTooltipDescription(),ModifyIconGlow(),ModifyUseCosts(Add,SplitEnchantment,1,0));" />
+        <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="255f0ccd-480f-4df1-a090-051b3934e739" />
+        <field name="Name" type="NameTableFieldDefinition" value="SplitEnchantment_Resource" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SplitEnchantment,1,0);IF(AbilityGreaterThan('Intelligence',13,context.Source)):ActionResource(SplitEnchantment,1,0);IF(AbilityGreaterThan('Intelligence',15,context.Source)):ActionResource(SplitEnchantment,1,0);IF(AbilityGreaterThan('Intelligence',17,context.Source)):ActionResource(SplitEnchantment,1,0);IF(AbilityGreaterThan('Intelligence',19,context.Source)):ActionResource(SplitEnchantment,1,0);IF(AbilityGreaterThan('Intelligence',21,context.Source)):ActionResource(SplitEnchantment,1,0);IF(AbilityGreaterThan('Intelligence',23,context.Source)):ActionResource(SplitEnchantment,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="53169716-3e9a-45c8-87b2-23135fffa096" />
+        <field name="Name" type="NameTableFieldDefinition" value="InstinctiveCharm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="607a1731-6933-46b0-945d-ce1e50cc6d04" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h03f62749g8d93g697age178g6e00c7505c96" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he504c8bcgc377gbf92g559cgc2e5c646bb4c" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hbb9b2b7eg8826g4f26g8eebg4b4f9f10f7cf" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="12110" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_InstinctiveCharm);ActionResource(InstinctiveCharm,1,0);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpellOfSchool(SpellSchool.Enchantment) and not IsCantrip() and (HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot'));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,InstinctiveCharm,1,0);" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;InstinctiveCharm:1" />
       </fields>
     </stat_object>
     <stat_object color="#FF0000FF" is_substat="false">

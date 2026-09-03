@@ -65,3 +65,15 @@ function ArcaneWard()
 	 | SpellId('Shout_ArcaneWard_5')
 	 | SpellId('Shout_ArcaneWard_6')
 end
+
+function SplitEnchantmentProjectileSpellCheck()
+    return ~NumberOfTargetsGreaterThan(1) & ~AreaRadiusGreaterThan(0) & HasSpellFlag(SpellFlags.Spell) & SpellTypeIs(SpellType.Projectile) & IsSpellOfSchool(SpellSchool.Enchantment) & ~SpellId('Target_CrownOfMadness') & ~SpellId('Target_DominatePerson')
+end
+
+function SplitEnchantmentTargetSpellCheck()
+    return TargetRadiusGreaterThan(1.5) & ~AreaRadiusGreaterThan(0) & HasSpellFlag(SpellFlags.Spell) & SpellTypeIs(SpellType.Target) & ~HasFunctor(StatsFunctorType.Summon) & IsSpellOfSchool(SpellSchool.Enchantment) & ~NumberOfTargetsGreaterThan(1) & ~SpellId('Target_CrownOfMadness') & ~SpellId('Target_DominatePerson')
+end
+
+function SplitEnchantmentTargetTouchSpellCheck()
+    return TargetRadiusGreaterThan(0) & ~TargetRadiusGreaterThan(1.5) & ~AreaRadiusGreaterThan(0) & HasSpellFlag(SpellFlags.Spell) & SpellTypeIs(SpellType.Target) & ~HasFunctor(StatsFunctorType.Summon) & IsSpellOfSchool(SpellSchool.Enchantment) & ~NumberOfTargetsGreaterThan(1) & ~SpellId('Target_CrownOfMadness') & ~SpellId('Target_DominatePerson')
+end

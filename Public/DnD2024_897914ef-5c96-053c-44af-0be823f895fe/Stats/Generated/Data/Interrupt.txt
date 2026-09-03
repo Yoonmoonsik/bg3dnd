@@ -1313,6 +1313,14 @@ data "Conditions" "IsAbleToReact(context.Observer) and not Self() and not Item()
 new entry "__WIZARD__"
 type "InterruptData"
 
+new entry "Interrupt_InstinctiveCharm"
+type "InterruptData"
+using "Interrupt_InstinctiveCharm"
+data "Description" "h2b3e0b5egc58eg3bcfg3be2g8ffaee250109;2"
+data "ExtraDescription" "h9fba7f8cg5990g9731g72f0gc76809331e7a;1"
+data "Conditions" "IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and HasStringInSpellRoll('Attack') and not AnyEntityIsItem() and not HasStatus('INSTINCTIVE_CHARM_UNTARGETABLE',context.Source,context.Observer) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Source);"
+data "Cost" "ReactionActionPoint:1;InstinctiveCharm:1;"
+
 new entry "Interrupt_ProjectedWard"
 type "InterruptData"
 using "Interrupt_ProjectedWard"
