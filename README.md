@@ -57,7 +57,7 @@ See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) and each class page f
 | [Fighter](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Fighter) | Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Viking |
 | [Gunslinger](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Gunslinger) | High Roller, Spellslinger, White Hat |
 | [Illrigger](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Illrigger) | Architect of Ruin, Hellspeaker, Painkiller, Sanguine Knight, Shadowmaster |
-| [Monk](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monk) | Drunken Master, Elements, Kensei, Mercy, Open Hand, Shadow, Sun Soul |
+| [Monk](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monk) | Drunken Master, Elements, Kensei, Mercy, Mystic Arts, Open Hand, Shadow, Sun Soul |
 | [Monster Hunter](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Monster-Hunter) | Carver Guild, Devourer Guild, Occultist Guild |
 | [Paladin](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Paladin) | Ancients, Conquest, Crown, Devotion, Glory, Noble Genies, Vengeance, Watchers, Oathbreaker |
 | [Ranger](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Ranger) | Beast Master, Fey Wanderer, Gloom Stalker, Hollow Warden, Hunter, Swarm Keeper, Winter Walker |
