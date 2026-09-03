@@ -3,6 +3,12 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b71ec1fd-d0bf-49ef-8ee6-5bfe028767d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="__NPC__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8829ad02-ded2-402e-9e07-298aa7134387" />
         <field name="Name" type="NameTableFieldDefinition" value="MinorIllusion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e43eb35f-3283-44cd-ad17-d83a32db36bc" />
@@ -56,6 +62,14 @@
         <field name="LightningResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="DarkvisionRange" type="StringTableFieldDefinition" value="18" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d42b7cdb-5dd1-4d7d-b54b-8df17eaa1756" />
+        <field name="Name" type="NameTableFieldDefinition" value="Spider_Phase_Tiny" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cf5d3949-6954-4348-ac82-fe1fa22f853c" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="Skill(Perception, 5);Skill(Stealth, 7);BlockRegainHP(Undead;Construct);IgnoreFallDamage();" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

@@ -1,3 +1,6 @@
+new entry "__NPC__"
+type "Character"
+
 new entry "MinorIllusion"
 type "Character"
 using "MinorIllusion"
@@ -45,6 +48,11 @@ data "LightningResistance" "Resistant"
 data "PoisonResistance" "Resistant"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "DarkvisionRange" "18"
+
+new entry "Spider_Phase_Tiny"
+type "Character"
+using "Spider_Phase_Tiny"
+data "DefaultBoosts" "Skill(Perception, 5);Skill(Stealth, 7);BlockRegainHP(Undead;Construct);IgnoreFallDamage();"
 
 new entry "__DRUID__"
 type "Character"
