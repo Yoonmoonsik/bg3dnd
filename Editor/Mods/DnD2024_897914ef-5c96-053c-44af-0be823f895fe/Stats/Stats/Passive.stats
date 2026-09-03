@@ -7915,6 +7915,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ffe94c5-1a48-4849-9955-0e6d9328c432" />
+        <field name="Name" type="NameTableFieldDefinition" value="InterdictBoons_2_SwiftRetribution" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he593bdb3gf499g45f7g7575g4056a12e962e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h452a000dga353g062cg813ag5f0dbe397e9d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_OpportunityAttack" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="14002" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SwiftRetribution);ActionResource(SwiftRetribution,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d74de910-a995-471c-9f79-02788678abe4" />
         <field name="Name" type="NameTableFieldDefinition" value="InterdictBoons_7_AcheronsChain" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfa888bb3gb8a0ge2a8g81c2g00ae8844f692" version="4" />

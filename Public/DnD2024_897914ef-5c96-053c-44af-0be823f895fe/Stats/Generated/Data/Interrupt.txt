@@ -1619,6 +1619,14 @@ data "Properties" "AdjustRoll(OBSERVER_TARGET,-(1d10+ClassLevel(Illrigger)/2));A
 data "Cost" "ReactionActionPoint:1;Seal:1;"
 data "InterruptDefaultValue" "Ask;Enabled"
 
+new entry "Interrupt_SwiftRetribution"
+type "InterruptData"
+using "Interrupt_AttackOfOpportunity"
+data "DisplayName" "h82ab0f55g1aa2g4c20ga6dcg6e0ed9ea3d25;1"
+data "Description" "h5f232606g766cg4c15ga98cg4f29d9809829;1"
+data "Conditions" "IsAbleToReact(context.Observer) and not Self(context.Observer, context.Target) and Enemy() and not HasStatus('SANCTUARY',context.Source) and not WieldingWeapon('Ammunition', false, false, context.Source) and not (not Player(context.Source) and Tagged('AI_IGNORED_TARGET')  and not HasStatus('GNOLL_SUDDENRUSH')) and not HasStatus('SHOCKWAVE') and not (HasStatus('MOBILE_NO_AOO', context.Source) and HasStatus('MOBILE_NO_AOO_SOURCE', context.Target)) and not HasStatus('FLAMING_SPHERE_AURA') and not HasStatus('SNEAKING',context.Target) and not HasStatus('SG_Ignore_AOO',context.Target)  and not AnyEntityIsItem() and not HasSpellFlag(SpellFlags.IgnoreAoO, context.Target) and not (HasStatus('FANCYFOOTWORK', context.Source,context.Target) and HasStatus('FANCYFOOTWORK_OWNER', context.Target)) and ((not HasStatus('PANACHE', context.Source)) or (HasStatus('PANACHE', context.Source) and HasStatus('PANACHE_OWNER', context.Target))) and HasStatus('INTERDICTED',context.Target);"
+data "Cost" "SwiftRetribution:1;"
+
 new entry "Interrupt_VengefulShot"
 type "InterruptData"
 using "Interrupt_LayDownTheLaw"

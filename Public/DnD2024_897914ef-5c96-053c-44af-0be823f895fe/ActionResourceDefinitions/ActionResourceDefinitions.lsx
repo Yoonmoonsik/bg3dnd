@@ -510,6 +510,33 @@
                     <attribute id="UUID" type="guid" value="f1ed0ec5-da11-4f38-b661-65e4dc0e74e9"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="he44f5a5ag8903g58a8g0e1cg2ea347073734" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h41be3339gff95gfe41g8417g1c4c7af89f07" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="HypnoticPresence"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="30cbebae-0fe1-4e1b-8a59-f0c5710f86ce"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="ha516d403gf15cgb9d8ga87dgc79c55b2ab57" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h11957647g4276gb09ag4435g42f5fce38d74" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="SplitEnchantment"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="334814f7-c72e-422d-a752-3c7a12cdee7e"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="ha168556fge640g4803ge1f6g5b1181795ede" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0005f137g771bg2b3cg5627g7a45c18cdc2f" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="InstinctiveCharm"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="e8d0016e-a9c1-4eb6-a64f-123fcfbf5133"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__GUNSLINGER__"/>
                     <attribute id="UUID" type="guid" value="929d806a-8db8-40a3-b53c-4cd04337bb1e"/>
                 </node>
@@ -857,31 +884,10 @@
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="he44f5a5ag8903g58a8g0e1cg2ea347073734" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h41be3339gff95gfe41g8417g1c4c7af89f07" version="1"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="HypnoticPresence"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="30cbebae-0fe1-4e1b-8a59-f0c5710f86ce"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="ha516d403gf15cgb9d8ga87dgc79c55b2ab57" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h11957647g4276gb09ag4435g42f5fce38d74" version="1"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="SplitEnchantment"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="334814f7-c72e-422d-a752-3c7a12cdee7e"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="ha168556fge640g4803ge1f6g5b1181795ede" version="2"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h0005f137g771bg2b3cg5627g7a45c18cdc2f" version="1"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="InstinctiveCharm"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="e8d0016e-a9c1-4eb6-a64f-123fcfbf5133"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="SwiftRetribution"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="182c27ce-001d-4c11-8c0b-8ee0686825ba"/>
                 </node>
             </children>
         </node>
