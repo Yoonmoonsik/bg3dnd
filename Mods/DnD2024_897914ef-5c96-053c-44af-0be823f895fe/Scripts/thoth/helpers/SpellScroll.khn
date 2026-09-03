@@ -4,7 +4,8 @@
 --    of the listed class requirements.
 -- 3. The character must have a spell slot level equal to or higher than (spell level - 1).
 -- 4. Wizard-list proxy classes (Arcane Trickster, Eldritch Knight, etc.)
---    contribute 1/3 caster levels when WIZARD_PROXY is present.
+--    contribute 1/3 caster levels when WIZARD_PROXY is present, and Sorcerer-list
+--    proxy classes (Warrior of the Mystic Arts) do the same with SORCERER_PROXY.
 -- 5. Warlock is treated as a full caster for slot progression.
 -- 6. Half casters use their own class table (round up) when it grants a higher
 --    slot level than the multiclass sum (round down).
@@ -277,7 +278,7 @@ local function ParseSpellInfo(spell)
     return tonumber(spellLevel), classList
 end
 
-local function GetCasterLevelForSpell(entity, cls, isWizardProxy)
+local function GetCasterLevelForSpell(entity, cls, isWizardProxy, isSorcererProxy)
     local casterLevel = 0
 
     -- Full casters
@@ -293,13 +294,16 @@ local function GetCasterLevelForSpell(entity, cls, isWizardProxy)
     if HasToken(cls, 'paladin') then casterLevel = casterLevel + math.floor(entity.GetClassLevel('Paladin') / 2) end
     if HasToken(cls, 'ranger') then casterLevel = casterLevel + math.floor(entity.GetClassLevel('Ranger') / 2) end
 
-    -- Third casters (using cached isWizardProxy)
+    -- Third casters (using the cached proxy flags)
     if HasToken(cls, 'wizard') and isWizardProxy then
         if entity.GetClassLevel('Rogue') >= 3 then casterLevel = casterLevel + math.floor(entity.GetClassLevel('Rogue') / 3) end
         if entity.GetClassLevel('Fighter') >= 3 then casterLevel = casterLevel + math.floor(entity.GetClassLevel('Fighter') / 3) end
         if entity.GetClassLevel('Illrigger') >= 3 then casterLevel = casterLevel + math.floor(entity.GetClassLevel('Illrigger') / 3) end
         if entity.GetClassLevel('Gunslinger') >= 3 then casterLevel = casterLevel + math.floor(entity.GetClassLevel('Gunslinger') / 3) end
         if entity.GetClassLevel('MonsterHunter') >= 3 then casterLevel = casterLevel + math.floor(entity.GetClassLevel('MonsterHunter') / 3) end
+    end
+    if HasToken(cls, 'sorcerer') and isSorcererProxy then
+        if entity.GetClassLevel('Monk') >= 3 then casterLevel = casterLevel + math.floor(entity.GetClassLevel('Monk') / 3) end
     end
 
     return casterLevel
@@ -315,8 +319,8 @@ local function GetOwnTableSlotLevel(classLevel)
     return MULTICLASS_SLOT_LEVEL[casterLevel] or 0
 end
 
-local function GetHighestSpellSlotLevel(entity, cls, isWizardProxy)
-    local casterLevel = GetCasterLevelForSpell(entity, cls, isWizardProxy)
+local function GetHighestSpellSlotLevel(entity, cls, isWizardProxy, isSorcererProxy)
+    local casterLevel = GetCasterLevelForSpell(entity, cls, isWizardProxy, isSorcererProxy)
     local highestSlot = 0
 
     if casterLevel > 0 then
@@ -358,6 +362,11 @@ function CanUseSpellScroll(spell, entity)
         entity.GetClassLevel('MonsterHunter') >= 3
     )
 
+    local isSorcererProxyTag = Tagged('SORCERER_PROXY', entity).Result
+    local isSorcererProxy = isSorcererProxyTag and (
+        entity.GetClassLevel('Monk') >= 3
+    )
+
     -- Rule 2: Check if character meets class requirements
     local canUse =
         (HasToken(cls, 'bard') and entity.GetClassLevel('Bard') >= 1) or
@@ -366,7 +375,7 @@ function CanUseSpellScroll(spell, entity)
         (HasToken(cls, 'druid') and entity.GetClassLevel('Druid') >= 1) or
         (HasToken(cls, 'paladin') and entity.GetClassLevel('Paladin') >= 1) or
         (HasToken(cls, 'ranger') and entity.GetClassLevel('Ranger') >= 1) or
-        (HasToken(cls, 'sorcerer') and entity.GetClassLevel('Sorcerer') >= 1) or
+        (HasToken(cls, 'sorcerer') and (entity.GetClassLevel('Sorcerer') >= 1 or isSorcererProxy)) or
         (HasToken(cls, 'warlock') and entity.GetClassLevel('Warlock') >= 1) or
         (HasToken(cls, 'wizard') and (entity.GetClassLevel('Wizard') >= 1 or isWizardProxy))
 
@@ -375,7 +384,7 @@ function CanUseSpellScroll(spell, entity)
     end
 
     -- Rule 3: Check spell slot level requirement (Custom: 1 Level lower allowed)
-    local highestSlot = GetHighestSpellSlotLevel(entity, cls, isWizardProxyTag)
+    local highestSlot = GetHighestSpellSlotLevel(entity, cls, isWizardProxyTag, isSorcererProxyTag)
 
     return ConditionResult(highestSlot >= (spellLevel - 1))
 end

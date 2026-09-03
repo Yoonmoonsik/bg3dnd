@@ -4155,7 +4155,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Monk" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="d8d9e1e3-cbd6-4240-ab1e-bd3626cb5532;22894c32-54cf-49ea-b366-44bfcf01bb2a;71637280-b294-4c33-9328-b0b77c74d662;acb94255-2c1e-4472-a707-4b58d183428f;2a5e3097-384c-4d29-8d6e-054fdfd26b80;bf46d73f-d406-4cb8-9a1d-e6e758ca02c7;d5cd71d8-c615-43e3-8716-d33e8c992ec1" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="d8d9e1e3-cbd6-4240-ab1e-bd3626cb5532;22894c32-54cf-49ea-b366-44bfcf01bb2a;71637280-b294-4c33-9328-b0b77c74d662;acb94255-2c1e-4472-a707-4b58d183428f;e4ff8e22-91fb-45bc-98a6-30eff8ca794d;2a5e3097-384c-4d29-8d6e-054fdfd26b80;bf46d73f-d406-4cb8-9a1d-e6e758ca02c7;d5cd71d8-c615-43e3-8716-d33e8c992ec1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HitPointDice08,1,0);ActionResource(KiPoint,1,0);ActionResource(DeflectMissiles_Charge,1,0)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="DeflectMissiles;MeleeUnarmedAttackBonus" />
       </fields>
@@ -4561,6 +4561,122 @@
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="SunSoul_11_SearingSunburst" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF008080" is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1042" />
+        <field name="UUID" type="IdTableFieldDefinition" value="282c37b0-21f5-4dd9-876a-dd0576df1172" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8514c075-f719-4540-a8c6-08b516a302d8" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MysticArts" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,2,1);Tag(SORCERER_PROXY)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,2,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,3,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1043" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9614aadd-4b8c-4a91-bc74-851849760436" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8514c075-f719-4540-a8c6-08b516a302d8" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MysticArts" />
+        <field name="Level" type="ByteTableFieldDefinition" value="4" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1044" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2eaded1e-90e5-49c8-86ce-f4ac5ffd99b7" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8514c075-f719-4540-a8c6-08b516a302d8" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MysticArts" />
+        <field name="Level" type="ByteTableFieldDefinition" value="5" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,0,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1045" />
+        <field name="UUID" type="IdTableFieldDefinition" value="435cf3c7-6651-4b08-b27b-d53fe55fac74" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8514c075-f719-4540-a8c6-08b516a302d8" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MysticArts" />
+        <field name="Level" type="ByteTableFieldDefinition" value="6" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="MysticArts_6_MysticFocus;ExtraAttack_Warmagic;WarMagic;" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,0,1);AddSpells(ce2ca502-5940-45d9-92b8-a2101e26140f);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1046" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8172a72b-ba6d-449f-9799-d72c11b4c491" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8514c075-f719-4540-a8c6-08b516a302d8" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MysticArts" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(f80396e2-cb76-4694-b0db-5c34da61a478,1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1047" />
+        <field name="UUID" type="IdTableFieldDefinition" value="49e313d9-5339-48e6-a048-6ade5ff05c0a" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8514c075-f719-4540-a8c6-08b516a302d8" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MysticArts" />
+        <field name="Level" type="ByteTableFieldDefinition" value="8" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(f80396e2-cb76-4694-b0db-5c34da61a478,1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1048" />
+        <field name="UUID" type="IdTableFieldDefinition" value="67bff2f9-6eb2-47f3-b38d-c7dce7030643" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8514c075-f719-4540-a8c6-08b516a302d8" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MysticArts" />
+        <field name="Level" type="ByteTableFieldDefinition" value="9" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(f80396e2-cb76-4694-b0db-5c34da61a478,0,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1049" />
+        <field name="UUID" type="IdTableFieldDefinition" value="10036e72-483a-44e6-8372-4a7d726c696e" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8514c075-f719-4540-a8c6-08b516a302d8" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MysticArts" />
+        <field name="Level" type="ByteTableFieldDefinition" value="10" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,2)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(f80396e2-cb76-4694-b0db-5c34da61a478,1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1050" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2d50315f-b679-4c34-8e7e-801d3689aa3e" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8514c075-f719-4540-a8c6-08b516a302d8" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MysticArts" />
+        <field name="Level" type="ByteTableFieldDefinition" value="11" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="MysticArts_11_FocusedStrike" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(f80396e2-cb76-4694-b0db-5c34da61a478,1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1051" />
+        <field name="UUID" type="IdTableFieldDefinition" value="890414a1-8c65-46f7-9551-37e62a419817" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8514c075-f719-4540-a8c6-08b516a302d8" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MysticArts" />
+        <field name="Level" type="ByteTableFieldDefinition" value="12" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(f80396e2-cb76-4694-b0db-5c34da61a478,0,1);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -5940,7 +6056,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="10" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,2)" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,1,0,ArcaneTricksterIlluEnch);SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0) " />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,1,1,ArcaneTricksterIlluEnch);SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0) " />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5951,7 +6067,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="ArcaneTrickster" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,1,0,ArcaneTricksterIlluEnch)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,1,1,ArcaneTricksterIlluEnch)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -4150,6 +4150,133 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="666cc10f-40d4-4445-a4b1-a65d5e84c9fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConvertingSpellSlotsToFocusPoints" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ConvertingSpellSlotsToFocusPoints_1;Shout_ConvertingSpellSlotsToFocusPoints_2;Shout_ConvertingSpellSlotsToFocusPoints_3;Shout_ConvertingSpellSlotsToFocusPoints_4;" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(KiPoint,1,0);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_KiRestoration" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf7dfcf7fg4e1ag688fg2a49g07e3bc897b31" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb46caa96g23cdg8908gb49eg3c668e19bb74" version="2" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Utility" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Action_Loop_Monk_StepoftheWind" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_WholenessOfBody_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="355a5479-07c9-4a34-9ab6-3b2669fdd248,,;,,;032e057c-c5af-47a8-b65a-bf297ba03601,,;c6ba268f-f7a2-4710-aed2-dcd241b078e9,,;1c5627cb-6352-454b-9b84-c5b10ef2d201,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="66e75793-b0e1-42cd-812a-ee1f403a58da" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="fa88f7ad-1ef6-4913-8166-573d1248d907" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d09109d-5729-4628-af0d-05038eee094b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConvertingSpellSlotsToFocusPoints_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="666cc10f-40d4-4445-a4b1-a65d5e84c9fc" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConvertingSpellSlotsToFocusPoints" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5802551c-3dae-42ad-b830-757770bd7b58" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConvertingSpellSlotsToFocusPoints_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7d09109d-5729-4628-af0d-05038eee094b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(KiPoint,2,0);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f70bb4c2-0629-4846-9f75-9ac61cbae785" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConvertingSpellSlotsToFocusPoints_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5802551c-3dae-42ad-b830-757770bd7b58" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(KiPoint,3,0);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c312e133-73d9-482b-9fd9-5c8c613e8c9a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConvertingSpellSlotsToFocusPoints_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5802551c-3dae-42ad-b830-757770bd7b58" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(KiPoint,4,0);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3ccddbb-0ed7-498c-bc16-2d63db2011d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="RecoveringSpellSlots" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="666cc10f-40d4-4445-a4b1-a65d5e84c9fc" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_RecoveringSpellSlots_1;Shout_RecoveringSpellSlots_2;Shout_RecoveringSpellSlots_3;Shout_RecoveringSpellSlots_4;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SpellSlot,1,1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Wizard_ArcaneRecovery" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc923040bgca3dgc5c9g86f9g4961f50ef2b1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h521fcee3g5076g1662gb3feg58e482fefd60" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="KiPoint:2;" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(6,'Monk',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d948b60-35ff-43fb-ae38-e4b629e18ab5" />
+        <field name="Name" type="NameTableFieldDefinition" value="RecoveringSpellSlots_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c3ccddbb-0ed7-498c-bc16-2d63db2011d3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_RecoveringSpellSlots" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57a2f24a-db61-4627-9db2-5182b8ad003e" />
+        <field name="Name" type="NameTableFieldDefinition" value="RecoveringSpellSlots_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9d948b60-35ff-43fb-ae38-e4b629e18ab5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SpellSlot,1,2);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="KiPoint:3;" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Monk',context.Source);" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ff992aa-e824-451b-a100-eaccf7698472" />
+        <field name="Name" type="NameTableFieldDefinition" value="RecoveringSpellSlots_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57a2f24a-db61-4627-9db2-5182b8ad003e" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SpellSlot,1,3);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="KiPoint:5;" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(13,'Monk',context.Source);" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="19f1c34d-f206-468c-a68c-eba7f87ffd65" />
+        <field name="Name" type="NameTableFieldDefinition" value="RecoveringSpellSlots_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57a2f24a-db61-4627-9db2-5182b8ad003e" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SpellSlot,1,4);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="KiPoint:6;" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(19,'Monk',context.Source);" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="db1ab0d0-21c9-4aa6-a587-f7341fc6731f" />

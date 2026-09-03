@@ -10098,11 +10098,17 @@ data "AmountOfTargets" "LevelMapValue(FlurryOfBlows)"
 data "TooltipDamageList" "DealDamage(MartialArtsUnarmedDamage, Bludgeoning)"
 data "SpellFlags" "IsMelee;IsHarmful;DisableBlood;AddFallDamageOnLand"
 
+new entry "Target_StunningStrike"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_StunningStrike"
+data "SpellSuccess" "IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(HasPassive('MysticArts_11_FocusedStrike',context.Source)):ApplyStatus(FOCUSED_STRIKE,100,2);"
+
 new entry "Target_StunningStrike_Unarmed"
 type "SpellData"
 data "SpellType" "Target"
 using "Target_StunningStrike_Unarmed"
-data "SpellSuccess" "IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);IF(not HasPassive('ElementalAttunement_Acid',context.Source) and not HasPassive('ElementalAttunement_Cold',context.Source) and not HasPassive('ElementalAttunement_Fire',context.Source) and not HasPassive('ElementalAttunement_Lightning',context.Source) and not HasPassive('ElementalAttunement_Thunder',context.Source) and not HasPassive('KiEmpoweredStrikes',context.Source)):DealDamage(UnarmedDamage, Bludgeoning);IF(HasPassive('ElementalAttunement_Acid',context.Source)):DealDamage(UnarmedDamage, Acid);IF(HasPassive('ElementalAttunement_Cold',context.Source)):DealDamage(UnarmedDamage, Cold);IF(HasPassive('ElementalAttunement_Fire',context.Source)):DealDamage(UnarmedDamage, Fire);IF(HasPassive('ElementalAttunement_Lightning',context.Source)):DealDamage(UnarmedDamage, Lightning);IF(HasPassive('ElementalAttunement_Thunder',context.Source)):DealDamage(UnarmedDamage, Thunder);IF(HasPassive('KiEmpoweredStrikes',context.Source)):DealDamage(UnarmedDamage, Force);"
+data "SpellSuccess" "IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);IF(not HasPassive('ElementalAttunement_Acid',context.Source) and not HasPassive('ElementalAttunement_Cold',context.Source) and not HasPassive('ElementalAttunement_Fire',context.Source) and not HasPassive('ElementalAttunement_Lightning',context.Source) and not HasPassive('ElementalAttunement_Thunder',context.Source) and not HasPassive('KiEmpoweredStrikes',context.Source)):DealDamage(UnarmedDamage, Bludgeoning);IF(HasPassive('ElementalAttunement_Acid',context.Source)):DealDamage(UnarmedDamage, Acid);IF(HasPassive('ElementalAttunement_Cold',context.Source)):DealDamage(UnarmedDamage, Cold);IF(HasPassive('ElementalAttunement_Fire',context.Source)):DealDamage(UnarmedDamage, Fire);IF(HasPassive('ElementalAttunement_Lightning',context.Source)):DealDamage(UnarmedDamage, Lightning);IF(HasPassive('ElementalAttunement_Thunder',context.Source)):DealDamage(UnarmedDamage, Thunder);IF(HasPassive('KiEmpoweredStrikes',context.Source)):DealDamage(UnarmedDamage, Force);IF(HasPassive('MysticArts_11_FocusedStrike',context.Source)):ApplyStatus(FOCUSED_STRIKE,100,2);"
 data "SpellFlags" "IsMelee;IsHarmful;DisableBlood;AddFallDamageOnLand"
 
 new entry "Target_OpenHandTechnique_Knock"

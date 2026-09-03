@@ -34,7 +34,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d9f934eg7721gfb63gcff8gb411e659dc78" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd3ffb028g9755g52adgf223g4bb289eebf93" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnAttack;OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and (HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not CreateSorceryPoints() and not ArcaneWard() and not RangersCompanion() and not Tagged('IN_CAMP');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and (HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not CreateSorceryPoints() and not ArcaneWard() and not RangersCompanion() and not ConvertingSpellSlotsToFocusPoints() and not Tagged('IN_CAMP');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
@@ -4282,6 +4282,34 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="6411" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_SearingSunburst);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF008080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5898193a-3568-4390-a8df-3e9565acc0a4" />
+        <field name="Name" type="NameTableFieldDefinition" value="__MYSTIC ARTS__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="469c2224-5aa5-474f-9ab1-e8237577ca63" />
+        <field name="Name" type="NameTableFieldDefinition" value="MysticArts_6_MysticFocus" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hec0b81e7gcaecg454dg6a01gf7ee3f06f85d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hecde9e49gd641g0f52g4669g1283cdf5dab4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_CreateSpellSlot_1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="6406" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2bff6f33-4032-49b2-b544-a5b4c8fbe105" />
+        <field name="Name" type="NameTableFieldDefinition" value="MysticArts_11_FocusedStrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1846a635g5d11g2a48gdfa8g34c7ee362d62" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52765eb1g3d0bge0a8g7790g0698b9e7e8e0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StunningStrike_Weapon" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="6411" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">

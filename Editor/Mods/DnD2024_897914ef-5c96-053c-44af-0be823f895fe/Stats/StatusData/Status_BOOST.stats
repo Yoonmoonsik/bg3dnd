@@ -31,7 +31,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd3ffb028g9755g52adgf223g4bb289eebf93" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant((HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not CreateSorceryPoints() and not ArcaneWard(),ModifyUseCosts(Add,OneSpellWithASpellSlotPerTurn,1,0));UnlockSpellVariant(SpellId('Shout_SwiftWitchcraft'),ModifyIconGlow());" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant((HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not CreateSorceryPoints() and not ArcaneWard() and not RangersCompanion() and not ConvertingSpellSlotsToFocusPoints(),ModifyUseCosts(Add,OneSpellWithASpellSlotPerTurn,1,0));UnlockSpellVariant(SpellId('Shout_SwiftWitchcraft'),ModifyIconGlow());" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
@@ -6998,6 +6998,16 @@
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="6994e8dc-14ac-48a5-9c8e-c1925031e852" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="359918c9-0c9a-4714-a032-0deac359d00b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="05e1c979-5684-40f1-a6ad-03ba29ea1a49" />
+        <field name="Name" type="NameTableFieldDefinition" value="FOCUSED_STRIKE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e87e588b-ad1e-4b31-8a24-9d835a329b4a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd40f8684ge685g4a35gcbaeg8aa04eb449f0" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FOCUSED_STRIKE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('FOCUSED_STRIKE', context.Target, context.Source)):Disadvantage(AllSavingThrows);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
