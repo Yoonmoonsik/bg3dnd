@@ -1019,7 +1019,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h700ed84bg957fg2a5dg1d50g4d69487d7001" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not IsMiss() and not IsSpell();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not IsMiss() and not IsSpell() and (IsWeaponAttack() or IsUnarmedAttack());" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,HUNGERING_BLADE_TEMPHP,100,-1);DealDamage(SpellCastingAbilityModifier,Necrotic)" />
       </fields>
     </stat_object>
