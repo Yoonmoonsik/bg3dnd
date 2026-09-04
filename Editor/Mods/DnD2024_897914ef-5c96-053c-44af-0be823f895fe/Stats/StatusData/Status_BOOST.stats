@@ -140,7 +140,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="BLINDED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8cc0e13c-ea75-4f4c-b1ba-9b245e22f2bb" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;Blind;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -149,7 +148,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="BLINDNESS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a0d18e92-7e8f-4155-b25c-a3302d356b32" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;Blind;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, SourceSpellDC(),false,DisadvantageOnHeightenedSpell())" />
       </fields>
     </stat_object>
@@ -158,7 +156,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ebd1dcc5-41dd-4500-9c14-d68158a98205" />
         <field name="Name" type="NameTableFieldDefinition" value="DAZED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="98d3bc76-ade0-498a-8584-34f9bf6c3fb7" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -166,15 +163,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1c8c3e3d-9d36-4f4f-b790-cb6a087f68eb" />
         <field name="Name" type="NameTableFieldDefinition" value="GAPING_WOUND" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="39e3e3c8-88e9-4406-b8f0-e0fb0a1f3fe4" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a76501bd-cdb4-41a1-9e0a-7fc255eb1bc9" />
-        <field name="Name" type="NameTableFieldDefinition" value="POISONED" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c55d0a13-1ef8-48a2-9c94-fba4f93072d3" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -182,7 +170,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fd6ef129-e223-4d67-9758-c0eed67638d0" />
         <field name="Name" type="NameTableFieldDefinition" value="POISONED_CLOUD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7c29c70e-bfa0-4caf-8b66-dee0a7a9d36b" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -190,7 +177,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8f6cfd9e-0912-4ded-8682-36bdb86b2c20" />
         <field name="Name" type="NameTableFieldDefinition" value="BIBBERBANG_FUMES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f3cc8192-d0cb-46d7-ab03-e88982115acb" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7082,6 +7068,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dec0a4be-c23e-4993-811e-2883ea00046b" />
         <field name="Name" type="NameTableFieldDefinition" value="VOW_OF_ENMITY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b1934fcb-647d-4416-a65e-121cd21fe2f6" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7658,6 +7645,7 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="StatusDurationLessThan(context.Target,'CUNNINGSTRIKE_POISON',9) and SavingThrow(Ability.Constitution, ManeuverSaveDC())" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
         <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

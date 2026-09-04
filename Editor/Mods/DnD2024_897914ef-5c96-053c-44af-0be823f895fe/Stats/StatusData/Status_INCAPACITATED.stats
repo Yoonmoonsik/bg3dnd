@@ -7,8 +7,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="SLEEP" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3e043fcd-bcd0-4962-bd61-04aa9acd4955" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(SavingThrow(Ability.Wisdom, SourceSpellDC(),false,DisadvantageOnHeightenedSpell())):RemoveStatus(SLEEP)" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;OverheadOnTurn;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);IF(StatusDurationLessThan(context.Target,'SLEEP',10)):CriticalHit(AttackTarget,Success,Always,3);DetectDisturbancesBlock(true);Advantage(AttackTarget);SightRangeOverride(0);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd31e4d13g939ag101eg9e56g93956331fc9c" version="1" />
       </fields>
