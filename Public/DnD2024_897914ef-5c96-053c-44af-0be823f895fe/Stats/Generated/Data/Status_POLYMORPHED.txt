@@ -66,7 +66,7 @@ type "StatusData"
 data "StatusType" "POLYMORPHED"
 using "GOB_WolfPens_WILDSHAPE_BEAR"
 data "Boosts" "UnlockSpell(Shout_WildShape_Dismiss);UnlockSpell(Shout_WildShape_Combat_Heal,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpellVariant(IsScrollSpell(),ModifyUseCosts(Add,BlockSpellCastingPoint,1,0));"
-data "Passives" "LunarRadiance;"
+data "Passives" "LunarRadiance;HalsinSpells;"
 data "OnApplyFunctors" "ApplyStatus(SELF,WILDSHAPE_ACTIVE,100,-1)"
 data "Rules" "9c580a1d-dab9-4b17-b0da-b16c7d7360e0"
 

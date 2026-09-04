@@ -83,7 +83,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="16c55783-dad0-4a5c-b80f-c43405a3791e" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WildShape_Dismiss);UnlockSpell(Shout_WildShape_Combat_Heal,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpellVariant(IsScrollSpell(),ModifyUseCosts(Add,BlockSpellCastingPoint,1,0));" />
         <field name="Rules" type="GuidObjectTableFieldDefinition" value="9c580a1d-dab9-4b17-b0da-b16c7d7360e0" />
-        <field name="Passives" type="StringTableFieldDefinition" value="LunarRadiance;" />
+        <field name="Passives" type="StringTableFieldDefinition" value="LunarRadiance;HalsinSpells;" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WILDSHAPE_ACTIVE,100,-1)" />
       </fields>
     </stat_object>
