@@ -50,6 +50,9 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="99999" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="SetStatusDuration(ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN, 1, ForceSet)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
