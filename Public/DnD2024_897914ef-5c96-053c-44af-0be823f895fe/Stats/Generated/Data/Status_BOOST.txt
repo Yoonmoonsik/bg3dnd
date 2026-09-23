@@ -2722,6 +2722,16 @@ data "StackType" "Overwrite"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 data "OnApplyFunctors" "ApplyEquipmentStatus(MeleeMainHand,HOLY_WEAPON_OFF,100,1);ApplyEquipmentStatus(MeleeOffHand,HOLY_WEAPON_OFF,100,1);ApplyEquipmentStatus(RangedMainHand,HOLY_WEAPON_OFF,100,1);ApplyEquipmentStatus(RangedOffHand,HOLY_WEAPON_OFF,100,1)"
 
+new entry "__EVOCATION SLEVEL 6__"
+type "StatusData"
+data "StatusType" "BOOST"
+
+new entry "SUNBEAM_OWNER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "SUNBEAM_OWNER"
+data "StatusEffect" "c15c513d-b7df-43c9-b35d-b3e73b5c51b7"
+
 new entry "__ILLUSION__"
 type "StatusData"
 data "StatusType" "BOOST"
