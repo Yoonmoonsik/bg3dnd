@@ -77,6 +77,21 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_PRODUCEFLAME", -1.0, 1, _Player);
 
 IF
+CastedSpell((CHARACTER)_Player,"Shout_ProduceFlame",_,_,_)
+AND
+HasActiveStatus(_Player, "LFO_MAGICINITIATE_DRUID_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_DRUID_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_PRODUCEFLAME", 1)
+AND
+ResolveTranslatedString("hc9f0aba8gd775g4df7gb799gd7c53747085b", _Msg)
+THEN
+ApplyStatus(_Player, "LFO_MAGICINITIATE_DRUID_CANTRIP", 6.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_PRODUCEFLAME", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Resistance",_, _)
 AND
 HasActiveStatus(_Player, "LFO_MAGICINITIATE_DRUID_CANTRIP_START", 1)
@@ -93,6 +108,21 @@ ApplyStatus(_Player, "MAGICINITIATE_RESISTANCE", -1.0, 1, _Player);
 
 IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_Shillelagh",_, _)
+AND
+HasActiveStatus(_Player, "LFO_MAGICINITIATE_DRUID_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_DRUID_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_SHILLELAGH", 1)
+AND
+ResolveTranslatedString("hc9f0aba8gd775g4df7gb799gd7c53747085b", _Msg)
+THEN
+ApplyStatus(_Player, "LFO_MAGICINITIATE_DRUID_CANTRIP", 6.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_SHILLELAGH", -1.0, 1, _Player);
+
+IF
+CastedSpell((CHARACTER)_Player,"Shout_Shillelagh",_,_,_)
 AND
 HasActiveStatus(_Player, "LFO_MAGICINITIATE_DRUID_CANTRIP_START", 1)
 AND
@@ -153,6 +183,21 @@ ApplyStatus(_Player, "MAGICINITIATE_THORNWHIP", -1.0, 1, _Player);
 
 IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_Thunderclap",_, _)
+AND
+HasActiveStatus(_Player, "LFO_MAGICINITIATE_DRUID_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_DRUID_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_THUNDERCLAP", 1)
+AND
+ResolveTranslatedString("hc9f0aba8gd775g4df7gb799gd7c53747085b", _Msg)
+THEN
+ApplyStatus(_Player, "LFO_MAGICINITIATE_DRUID_CANTRIP", 6.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_THUNDERCLAP", -1.0, 1, _Player);
+
+IF
+CastedSpell((CHARACTER)_Player,"Shout_Thunderclap",_,_,_)
 AND
 HasActiveStatus(_Player, "LFO_MAGICINITIATE_DRUID_CANTRIP_START", 1)
 AND

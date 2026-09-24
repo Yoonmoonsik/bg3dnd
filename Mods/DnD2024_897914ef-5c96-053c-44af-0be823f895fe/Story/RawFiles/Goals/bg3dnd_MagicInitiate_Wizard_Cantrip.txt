@@ -43,6 +43,19 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_BLADEWARD", -1.0, 1, _Player);
 
 IF
+CastedSpell((CHARACTER)_Player,"Shout_BladeWard",_,_,_)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_BLADEWARD", 1)
+AND
+ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP", 6.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_BLADEWARD", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Projectile_BloodBolt",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
@@ -251,6 +264,19 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", -1.0, 1, _Player);
 
 IF
+CastedSpell((CHARACTER)_Player,"Shout_Prestidigitation_Light",_,_,_)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", 1)
+AND
+ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP", 6.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_Prestidigitation_Dark",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
@@ -264,7 +290,33 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", -1.0, 1, _Player);
 
 IF
+CastedSpell((CHARACTER)_Player,"Shout_Prestidigitation_Dark",_,_,_)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", 1)
+AND
+ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP", 6.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_Prestidigitation_Clean",_, _)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", 1)
+AND
+ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP", 6.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_PRESTIDIGITATION", -1.0, 1, _Player);
+
+IF
+CastedSpell((CHARACTER)_Player,"Shout_Prestidigitation_Clean",_,_,_)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND
@@ -316,7 +368,33 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_SWORDBURST", -1.0, 1, _Player);
 
 IF
+CastedSpell((CHARACTER)_Player,"Shout_SwordBurst",_,_,_)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_SWORDBURST", 1)
+AND
+ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP", 6.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_SWORDBURST", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_Thunderclap",_, _)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_THUNDERCLAP", 1)
+AND
+ResolveTranslatedString("h60a4f1cegab44g4361g8e56ge21f825230e2", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP", 6.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_THUNDERCLAP", -1.0, 1, _Player);
+
+IF
+CastedSpell((CHARACTER)_Player,"Shout_Thunderclap",_,_,_)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_CANTRIP_START", 1)
 AND

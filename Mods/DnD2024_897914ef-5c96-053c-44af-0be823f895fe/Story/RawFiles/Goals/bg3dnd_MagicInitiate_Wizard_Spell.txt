@@ -17,6 +17,19 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_ABSORBELEMENTS", -1.0, 1, _Player);
 
 IF
+CastedSpell((CHARACTER)_Player,"Shout_AbsorbElements_Dummy",_,_,_)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_ABSORBELEMENTS", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_ABSORBELEMENTS", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_BodyWarpingOfGorgoroth",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
@@ -160,6 +173,19 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_CLOAKOFSHADOW", -1.0, 1, _Player);
 
 IF
+CastedSpell((CHARACTER)_Player,"Shout_CloakOfShadow",_,_,_)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_CLOAKOFSHADOW", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_CLOAKOFSHADOW", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Zone_ColorSpray",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
@@ -186,6 +212,19 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_EXPEDITIOUSRETREAT", -1.0, 1, _Player);
 
 IF
+CastedSpell((CHARACTER)_Player,"Shout_ExpeditiousRetreat",_,_,_)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_EXPEDITIOUSRETREAT", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_EXPEDITIOUSRETREAT", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_FalseLife",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
@@ -199,7 +238,33 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_FALSELIFE", -1.0, 1, _Player);
 
 IF
+CastedSpell((CHARACTER)_Player,"Shout_FalseLife",_,_,_)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_FALSELIFE", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_FALSELIFE", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_FeatherFall",_, _)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_FEATHERFALL", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_FEATHERFALL", -1.0, 1, _Player);
+
+IF
+CastedSpell((CHARACTER)_Player,"Shout_FeatherFall",_,_,_)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
 AND
@@ -433,6 +498,19 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_SHIELD", -1.0, 1, _Player);
 
 IF
+CastedSpell((CHARACTER)_Player,"Shout_Shield_Dummy",_,_,_)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_SHIELD", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_SHIELD", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Sleep",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
@@ -486,6 +564,19 @@ ApplyStatus(_Player, "MAGICINITIATE_THUNDERWAVE", -1.0, 1, _Player);
 
 IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_TideOfDarkness",_, _)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_TIDEOFDARKNESS", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_TIDEOFDARKNESS", -1.0, 1, _Player);
+
+IF
+CastedSpell((CHARACTER)_Player,"Shout_TideOfDarkness",_,_,_)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
 AND
