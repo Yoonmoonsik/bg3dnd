@@ -7720,7 +7720,7 @@ data "Description" "hede9123cg6b75g7af2ge6a9g09aa7751575f;1"
 data "Icon" "Action_Bladesong"
 data "StackId" "BLADESONG_BLADEWORK"
 data "StackPriority" "1"
-data "Boosts" "WeaponAttackRollAbilityOverride(Intelligence);CannotBeDisarmed();Attribute(InventoryBound);"
+data "Boosts" "IF(BladeworkIntelligenceIsBetter()):WeaponAttackRollAbilityOverride(Intelligence);CannotBeDisarmed();Attribute(InventoryBound);"
 data "IsUnique" "1"
 
 new entry "BLADESONG_BLADEWORK_DISMISS"

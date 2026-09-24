@@ -4,6 +4,15 @@ function HasLightArmor(entity)
     return IsOfProficiencyGroup("LightArmor", armor)
 end
 
+-- Bladework lets you *choose* Intelligence for Bladesong weapon attacks, so the override
+-- must never make the attack worse. The status lives on the weapon, but boost conditions
+-- still resolve context.Source to the wielder (see FierceShot for the same trick).
+function BladeworkIntelligenceIsBetter(entity)
+    entity = entity or context.Source
+    local intMod = GetModifier(entity.Intelligence)
+    return ConditionResult(intMod > GetModifier(entity.Strength) and intMod > GetModifier(entity.Dexterity))
+end
+
 function BladesongAvaliable()
     local hasbladesong = HasStatus('BLADESONG')
     if hasbladesong.Result then 

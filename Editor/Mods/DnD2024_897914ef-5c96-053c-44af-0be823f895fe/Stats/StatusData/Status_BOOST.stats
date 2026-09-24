@@ -9582,7 +9582,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h55238b55g2b39g51dcg5270gfe86eeeec5e8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hede9123cg6b75g7af2ge6a9g09aa7751575f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Bladesong" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollAbilityOverride(Intelligence);CannotBeDisarmed();Attribute(InventoryBound);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(BladeworkIntelligenceIsBetter()):WeaponAttackRollAbilityOverride(Intelligence);CannotBeDisarmed();Attribute(InventoryBound);" />
         <field name="StackId" type="StringTableFieldDefinition" value="BLADESONG_BLADEWORK" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
