@@ -5971,6 +5971,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5505fd16-aadc-4ae5-b3b3-3bdc4ac965eb" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h312226b3g88ffg25afg2137g749c468fee54" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="10503" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7);Tag(BLINDSIGHT);StatusImmunity(SG_Blinded);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8948,7 +8949,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Blindness" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="500" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Blinded);IgnoreSurfaceCover(SurfaceDarknessCloud);DarkvisionRangeMin(3);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(BLINDSIGHT);StatusImmunity(SG_Blinded);DarkvisionRangeMin(3);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9753,7 +9754,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Hide" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Blinded);IgnoreSurfaceCover(SurfaceDarknessCloud);DarkvisionRangeMin(3);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Blinded);DarkvisionRangeMin(3);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
