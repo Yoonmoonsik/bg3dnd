@@ -10223,7 +10223,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9748c223gcbccga7c5g7a8dgfd5991c7bf21" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h702473e0g560fg4915gdb8cgbf0d46580368" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ThoughtShield_PsychicResistance" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsConcentrating() and not (HasSavingThrowWithAbility(Ability.Constitution) or HasSavingThrowWithAbility(Ability.Strength) or HasSavingThrowWithAbility(Ability.Dexterity) or HasSavingThrowWithAbility(Ability.Intelligence) or HasSavingThrowWithAbility(Ability.Wisdom)or HasSavingThrowWithAbility(Ability.Charisma))):MinimumRollResult(SavingThrow,10);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsConcentrating() and not (HasSavingThrowWithAbility(Ability.Constitution) or HasSavingThrowWithAbility(Ability.Strength) or HasSavingThrowWithAbility(Ability.Dexterity) or HasSavingThrowWithAbility(Ability.Intelligence) or HasSavingThrowWithAbility(Ability.Wisdom) or HasSavingThrowWithAbility(Ability.Charisma))):MinimumRollResult(SavingThrow,10);" />
         <field name="StackId" type="StringTableFieldDefinition" value="RMI_CONCENTRATION" />
       </fields>
     </stat_object>

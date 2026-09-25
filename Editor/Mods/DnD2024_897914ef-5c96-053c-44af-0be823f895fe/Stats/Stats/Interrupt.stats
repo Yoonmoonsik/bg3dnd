@@ -2603,7 +2603,7 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsMeleeAttack() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack()and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsMeleeAttack() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsKillingBlow() and not AnyEntityIsItem();" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PUSH_5FEET,100,0,,,,not SavingThrow(Ability.Strength,ManeuverSaveDC()));" />
         <field name="Cost" type="StringTableFieldDefinition" value="ShieldMaster:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasShieldEquipped(context.Source) and not HasStatus('SG_Polymorph');" />
