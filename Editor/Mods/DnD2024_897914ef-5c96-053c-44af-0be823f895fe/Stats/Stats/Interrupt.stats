@@ -6,7 +6,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b514fde4-524c-4e2b-b3fc-f2eb504bf688" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_AttackOfOpportunity" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6b435f5b-931f-4d26-aa61-656582325124" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not HasPassive('Sentinel_ZeroSpeed',context.Source)):UseAttack();IF(HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_Sentinel_AttackOfOpportunity,true,true,true);TutorialEvent(SWAP,f658a860-7e3e-44fd-807b-88d3c0c31217);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_MainHandAttack_OpportunityAttack,true,true,true);IF(HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_Sentinel_AttackOfOpportunity,true,true,true);TutorialEvent(SWAP,f658a860-7e3e-44fd-807b-88d3c0c31217);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

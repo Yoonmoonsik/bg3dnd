@@ -1,7 +1,7 @@
 new entry "Interrupt_AttackOfOpportunity"
 type "InterruptData"
 using "Interrupt_AttackOfOpportunity"
-data "Properties" "ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not HasPassive('Sentinel_ZeroSpeed',context.Source)):UseAttack();IF(HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_Sentinel_AttackOfOpportunity,true,true,true);TutorialEvent(SWAP,f658a860-7e3e-44fd-807b-88d3c0c31217);"
+data "Properties" "ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_MainHandAttack_OpportunityAttack,true,true,true);IF(HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_Sentinel_AttackOfOpportunity,true,true,true);TutorialEvent(SWAP,f658a860-7e3e-44fd-807b-88d3c0c31217);"
 
 new entry "__ABJURATION__"
 type "InterruptData"
