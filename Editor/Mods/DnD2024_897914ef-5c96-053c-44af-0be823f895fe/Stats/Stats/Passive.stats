@@ -34,7 +34,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d9f934eg7721gfb63gcff8gb411e659dc78" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd3ffb028g9755g52adgf223g4bb289eebf93" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnAttack;OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and (HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not CreateSorceryPoints() and not ArcaneWard() and not RangersCompanion() and not ConvertingSpellSlotsToFocusPoints() and not Tagged('IN_CAMP');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and (HasUseCosts('SpellSlot',true) or HasUseCosts('WarlockSpellSlot',true) or HasUseCosts('ShadowSpellSlot',true)) and not IsScrollSpell() and not SpellId('Shout_FeatherFall_Ritual') and not SpellId('Target_Longstrider_Ritual') and not SpellId('Target_Jump_Ritual') and not CreateSorceryPoints() and not ArcaneWard() and not RangersCompanion() and not ConvertingSpellSlotsToFocusPoints() and not Tagged('IN_CAMP');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
@@ -2180,7 +2180,7 @@
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('ChannelDivinity', 1, 0, false, false, context.Source);" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved;OnLongRest;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;IsToggled;MetaMagic;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(MindMagic(),ModifyIconGlow(),ModifyTooltipDescription(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(MindMagic(),ModifyIconGlow(),ModifyTooltipDescription(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn));" />
         <field name="ToggleOnEffect" type="StringTableFieldDefinition" value="VFX_Spells_Cast_Sorcerer_Metamagic_Quickened_HeadFX_01:Dummy_HeadFX" />
         <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
@@ -3631,7 +3631,7 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5503" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnCombatStarted;OnCreate;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('FavoredEnemy',1,0,false,false,context.Source)):UnlockSpellVariant(HuntersMark(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,FavoredEnemy,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('FavoredEnemy',1,0,false,false,context.Source)):UnlockSpellVariant(HuntersMark(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,FavoredEnemy,1,0),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4665,7 +4665,7 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="8001" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnCombatStarted;OnCreate;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('FavoredEnemy',1,0,false,false,context.Source)):UnlockSpellVariant(HuntersMark(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,FavoredEnemy,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('FavoredEnemy',1,0,false,false,context.Source)):UnlockSpellVariant(HuntersMark(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,FavoredEnemy,1,0),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn));" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h0707320dgdc67g5261gca84g8c7ba39b2add" version="1" />
       </fields>
     </stat_object>
@@ -4927,7 +4927,7 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="8411" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnCombatStarted;OnCreate;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('MistyStep',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_MistyStep'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,MistyStep,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('MistyStep',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_MistyStep'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,MistyStep,1,0),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5690,7 +5690,9 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Abberant_6_PsionicSorcery" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="10103" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;MetaMagic;Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(AbberantPsionicSpells(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,SorceryPoint,SpellPowerLevel,0),ModifySpellFlags(Verbal,0),ModifySpellFlags(Stealth,1));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(AbberantPsionicSpells(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,SorceryPoint,SpellPowerLevel,0),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifySpellFlags(Verbal,0),ModifySpellFlags(Stealth,1));" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,PSIONIC_SORCERY_ACTIVE,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,PSIONIC_SORCERY_ACTIVE)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7005,7 +7007,7 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11403" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnCombatStarted;OnCreate;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('HexbladeManifest',1,0,false,false,context.Source)):UnlockSpellVariant(Hex(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,HexbladeManifest,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('HexbladeManifest',1,0,false,false,context.Source)):UnlockSpellVariant(Hex(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,HexbladeManifest,1,0),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8557,7 +8559,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnCombatStarted;OnCreate;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('RestorativeReagents',1,0,false,false,context.Source);" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_LesserRestoration'),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RestorativeReagents,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_LesserRestoration'),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RestorativeReagents,1,0),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

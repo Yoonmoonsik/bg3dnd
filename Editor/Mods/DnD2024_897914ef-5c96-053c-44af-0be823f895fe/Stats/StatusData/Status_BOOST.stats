@@ -31,7 +31,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd3ffb028g9755g52adgf223g4bb289eebf93" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant((HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not CreateSorceryPoints() and not ArcaneWard() and not RangersCompanion() and not ConvertingSpellSlotsToFocusPoints(),ModifyUseCosts(Add,OneSpellWithASpellSlotPerTurn,1,0));UnlockSpellVariant(SpellId('Shout_SwiftWitchcraft'),ModifyIconGlow());" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="StatusTickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('TAD_FREECAST',context.Source) and not HasStatus('MAG_MAGIC_ITEM_POWERED_CAST',context.Source)):UnlockSpellVariant((HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')) and not IsScrollSpell() and not SpellId('Shout_FeatherFall_Ritual') and not SpellId('Target_Longstrider_Ritual') and not SpellId('Target_Jump_Ritual') and not CreateSorceryPoints() and not ArcaneWard() and not RangersCompanion() and not ConvertingSpellSlotsToFocusPoints(),ModifyUseCosts(Add,OneSpellWithASpellSlotPerTurn,1,0));UnlockSpellVariant(SpellId('Shout_SwiftWitchcraft'),ModifyIconGlow());" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
@@ -7033,7 +7034,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0aaffea6g03a3g6185g2b3eg67a082d34700" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_FindSteed" />
         <field name="StackId" type="StringTableFieldDefinition" value="FIND_STEED" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(FindSteed(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow());" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(FindSteed(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn));" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
       </fields>
@@ -9203,6 +9204,18 @@
         <field name="StackId" type="StringTableFieldDefinition" value="USING_METAMAGIC" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8FE78A44-94D9-4D0E-AC21-1A6D57B4A9B0" />
+        <field name="Name" type="NameTableFieldDefinition" value="PSIONIC_SORCERY_ACTIVE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc47eeb0bg59b3g6c84g97bbg6e37b0afac07" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4aa07c08gb93egab88g61e1g0ced3d3207e0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Abberant_6_PsionicSorcery" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PSIONIC_SORCERY_ACTIVE" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
