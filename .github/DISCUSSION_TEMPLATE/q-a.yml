@@ -16,8 +16,23 @@ body:
     id: mod-version
     attributes:
       label: Mod version
-      description: Only if your question is about the mod's in-game behavior.
+      description: Only if your question is about the mod's in-game behavior. Shown in the in-game mod manager.
       placeholder: e.g. 4.11.21.3
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Only if your question is about the mod's in-game behavior.
+      options:
+        - PC (Steam)
+        - PC (GOG)
+        - Mac
+        - PlayStation 5
+        - "Xbox Series X|S"
+        - Other
     validations:
       required: false
 
