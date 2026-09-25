@@ -1,6 +1,7 @@
 function IsDruidCantrip()
 	return SpellId('Projectile_PoisonSpray')
 	 | SpellId('Projectile_ProduceFlame_Hurl')
+	 | SpellId('Projectile_ProduceFlame_Hurl_Free')
 	 | SpellId('Projectile_StarryWisp')
 	 | SpellId('Target_Frostbite')
 	 | SpellId('Target_ThornWhip')
