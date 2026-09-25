@@ -2365,7 +2365,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="Icon" type="StringTableFieldDefinition" value="Armorer_Guardian" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and IsAbleToReact(context.Observer) and not HasStatus('SHOCKWAVE') and not (HasStatus('MOBILE_NO_AOO', context.Source) and HasStatus('MOBILE_NO_AOO_SOURCE', context.Target)) and not HasStatus('FLAMING_SPHERE_AURA') and not HasStatus('SNEAKING',context.Target) and not HasStatus('SG_Ignore_AOO',context.Target) and not AnyEntityIsItem() and Enemy();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="UseAttack();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_MainHandAttack_OpportunityAttack,true,true,true);IF(HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_Sentinel_AttackOfOpportunity,true,true,true);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
