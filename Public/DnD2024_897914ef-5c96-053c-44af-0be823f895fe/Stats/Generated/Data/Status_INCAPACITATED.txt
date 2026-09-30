@@ -37,3 +37,10 @@ type "StatusData"
 data "StatusType" "INCAPACITATED"
 using "SLEEPING_EYEBITE"
 
+new entry "SUMMON_UNDEAD_PARALYZED"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+using "PARALYZED"
+data "StackId" "SUMMON_UNDEAD_PARALYZED"
+data "TickType" "EndTurn"
+

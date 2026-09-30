@@ -735,6 +735,16 @@ data "StatsFunctorContext" "OnAttacked"
 data "Conditions" "IsMeleeAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not SpellTypeIs(SpellType.Throw)"
 data "StatsFunctors" "DealDamage(SWAP,2d4,Necrotic,Magical)"
 
+new entry "SummonUndead_FesteringAura"
+type "PassiveData"
+data "DisplayName" "hace7aa6dgad2fg481dg83degc4fc536c1bb6;1"
+data "Description" "h3f8e64a8g98a5g4956g90fcg73d6b6481b00;1"
+data "DescriptionParams" "Distance(1.5)"
+data "Icon" "Spell_Conjuration_StinkingCloud"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+data "StatsFunctors" "ApplyStatus(SELF,SUMMON_UNDEAD_FESTERING_AURA,100,-1)"
+
 new entry "__BARBARIAN__"
 type "PassiveData"
 

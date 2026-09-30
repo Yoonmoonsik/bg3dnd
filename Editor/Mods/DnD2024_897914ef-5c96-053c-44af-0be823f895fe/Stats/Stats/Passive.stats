@@ -1053,6 +1053,19 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,2d4,Necrotic,Magical)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="89cae020-d4c8-44a4-a1a1-6f8d35cbfbff" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonUndead_FesteringAura" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hace7aa6dgad2fg481dg83degc4fc536c1bb6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f8e64a8g98a5g4956g90fcg73d6b6481b00" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_StinkingCloud" />
+        <field name="Properties" type="StringTableFieldDefinition" value="Highlighted" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnCombatStarted;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,SUMMON_UNDEAD_FESTERING_AURA,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0be7940c-ca66-4b1e-9547-52b4f0ecef61" />

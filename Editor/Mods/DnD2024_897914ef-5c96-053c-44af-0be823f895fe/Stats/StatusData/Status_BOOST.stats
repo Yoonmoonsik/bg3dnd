@@ -3986,6 +3986,89 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, SourceSpellDC(),false,DisadvantageOnHeightenedSpell())" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="550d9b6b-3103-4ac2-a46e-e4c1ccf05b5a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUMMON_UNDEAD_4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h97180a9fgfd29g43c4gbf82ge0b2c444c10d" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SUMMON_UNDEAD_UPCAST" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1);IncreaseMaxHP(10);DamageBonus(1)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ExtraAttack" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6af902cd-d640-4800-8d5c-f63871f0c41c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUMMON_UNDEAD_5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h97180a9fgfd29g43c4gbf82ge0b2c444c10d" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SUMMON_UNDEAD_UPCAST" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2);IncreaseMaxHP(20);DamageBonus(2)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ExtraAttack" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="209e2e79-40a2-4e2b-8089-925caa15017f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUMMON_UNDEAD_6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h97180a9fgfd29g43c4gbf82ge0b2c444c10d" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SUMMON_UNDEAD_UPCAST" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(3);IncreaseMaxHP(30);DamageBonus(3)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ExtraAttack_2" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa3b5136-dc1a-481e-ac48-006673d39c19" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUMMON_UNDEAD_FRIGHTENED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60a09934-feba-4335-b387-f1581fc07702" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SUMMON_UNDEAD_FRIGHTENED" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;OverheadOnTurn" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="92205093-60de-4763-9966-9655d6ac76cb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUMMON_UNDEAD_POISONED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c55d0a13-1ef8-48a2-9c94-fba4f93072d3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SUMMON_UNDEAD_POISONED" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9a45183c-c135-451e-b867-c5be1dc38a4d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUMMON_UNDEAD_FESTERING_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hace7aa6dgad2fg481dg83degc4fc536c1bb6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f8e64a8g98a5g4956g90fcg73d6b6481b00" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_StinkingCloud" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SUMMON_UNDEAD_FESTERING_AURA" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1.5" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and not Dead() and not Self() and not Self(context.Target, GetSummoner(context.Source))):ApplyStatus(SUMMON_UNDEAD_FESTERING,100,-1)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2c75a4c9-eb3d-4175-a47d-f93dab8694be" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUMMON_UNDEAD_FESTERING" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hace7aa6dgad2fg481dg83degc4fc536c1bb6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f8e64a8g98a5g4956g90fcg73d6b6481b00" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_StinkingCloud" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SUMMON_UNDEAD_FESTERING" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, CalculateSpellDC(Ability.PreferredCastingAbility, GetSummoner(context.Source)))" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(SUMMON_UNDEAD_POISONED,100,1)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cb9821dc-2f33-4b0c-90b7-b52ee85d20cb" />

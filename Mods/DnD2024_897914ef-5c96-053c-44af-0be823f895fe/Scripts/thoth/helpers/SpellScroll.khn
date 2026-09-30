@@ -152,6 +152,7 @@ local SPELL_CLASS_MAP = {
     Target_SpeakWithDead_spellscroll = '3 Bard Cleric Wizard',
     Target_StinkingCloud_spellscroll = '3 Bard Sorcerer Wizard',
     Target_SummonFey_spellscroll = '3 Druid Ranger Warlock Wizard',
+    Target_SummonUndead_spellscroll = '3 Warlock Wizard',
     Zone_TidalWave_spellscroll = '3 Druid Sorcerer Wizard',
     Target_TrollbloodInfusion_spellscroll = '3 Bard Cleric Druid Warlock',
     Target_VampiricTouch_spellscroll = '3 Sorcerer Warlock Wizard',
@@ -479,6 +480,7 @@ function IsScrollSpell()
     | SpellId('Zone_AstralFlood_spellscroll')
     | SpellId('Shout_FlameBlade_spellscroll')
     | SpellId('Target_SummonFey_spellscroll')
+    | SpellId('Target_SummonUndead_spellscroll')
     | SpellId('Shout_Blur_spellscroll')
     | SpellId('Target_FleshToStone_spellscroll')
     | SpellId('Shout_CloakOfShadow_spellscroll')

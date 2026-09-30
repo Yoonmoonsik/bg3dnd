@@ -904,5 +904,110 @@
         <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack_2" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c4b726d-0957-4fb3-aca6-4b22887f95ca" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonUndead_Ghostly" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5dbad2ff-36b5-4f92-9686-3d8e63d3b4de" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="12" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="16" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="15" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="4" />
+        <field name="Wisdom" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="9" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="14" />
+        <field name="ArmorType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="ArmorType" version="1" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="30" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="DialogueBlock();BlockRegainHP(Undead;Construct);" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="SG_Poisoned;SG_Frightened;SG_Paralyzed;EXHAUSTED" />
+        <field name="NecroticResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="AcidResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ColdResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="LightningResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ThunderResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="RadiantResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PiercingResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="DarkvisionRange" type="StringTableFieldDefinition" value="18" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Wisdom" enumeration_type_name="Ability" version="1" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c8372a7d-f4d9-43f6-a17f-3c1869b960b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonUndead_Putrid" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f8fc45c1-b22f-4993-a206-8e76f9b68b56" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="12" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="16" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="15" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="4" />
+        <field name="Wisdom" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="9" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="14" />
+        <field name="ArmorType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="ArmorType" version="1" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="30" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="DialogueBlock();BlockRegainHP(Undead;Construct);" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="SG_Poisoned;SG_Frightened;SG_Paralyzed;EXHAUSTED" />
+        <field name="NecroticResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="AcidResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ColdResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="LightningResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ThunderResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="RadiantResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PiercingResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="DarkvisionRange" type="StringTableFieldDefinition" value="18" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Wisdom" enumeration_type_name="Ability" version="1" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;SummonUndead_FesteringAura" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5de51325-c56e-4ccc-af6f-f3c343fb8ead" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonUndead_Skeletal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c086d8ca-e020-40e4-b043-7a56a1758792" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="12" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="16" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="15" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="4" />
+        <field name="Wisdom" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="9" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="14" />
+        <field name="ArmorType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="ArmorType" version="1" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="20" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="DialogueBlock();BlockRegainHP(Undead;Construct);" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="SG_Poisoned;SG_Frightened;SG_Paralyzed;EXHAUSTED" />
+        <field name="NecroticResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="AcidResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ColdResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="LightningResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ThunderResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="RadiantResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PiercingResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="DarkvisionRange" type="StringTableFieldDefinition" value="18" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Wisdom" enumeration_type_name="Ability" version="1" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
