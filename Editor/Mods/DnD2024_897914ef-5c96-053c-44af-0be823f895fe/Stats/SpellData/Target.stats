@@ -17738,7 +17738,24 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5add438a-5f92-4ea5-b029-5d4780e1c597" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonBeast_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d9eab81-a6e3-4da5-a4c8-f94f98836ecc" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SummonBeast_GiantEagle_spellscroll;Target_SummonBeast_Wolf_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7b378797-eda0-445f-bec8-5ce9f0b61547" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonBeast_GiantEagle_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="52a38b8f-fc90-41d0-9699-27da457e9976" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonBeast_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6fff1151-323c-4fca-ae27-98edf2991d64" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonBeast_Wolf_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="022eea39-fc86-4cdc-be6b-5a0f431343c3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonBeast_spellscroll" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -17850,7 +17867,48 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ef6e2243-a42c-45a0-8223-5a04a57b33c1" />
         <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a8b90ea4-2cbb-4372-80ae-22cd6dfe72a0" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_DragonsBreath_Acid_spellscroll;Target_DragonsBreath_Cold_spellscroll;Target_DragonsBreath_Fire_spellscroll;Target_DragonsBreath_Lightning_spellscroll;Target_DragonsBreath_Poison_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0039dfe-071f-4d50-b531-b60c22769514" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Acid_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fa3ca989-39b8-4634-bc17-d261f3de22ee" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="05441b90-4c26-4985-bb33-62ac3c066334" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Cold_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e95df3e8-35fc-468e-b12a-ec5282531a72" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d551500f-e913-4190-a998-772a85a4d192" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Fire_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="390cf8a4-e142-49fa-8d54-92d59eeabd6f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9833dcd-deb9-4795-a3fb-1c0816455486" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Lightning_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="90eede8c-0fdc-4c42-9d3b-a7367a5ba34f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="616971fe-276b-4110-8b11-5f20836ae56c" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsBreath_Poison_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0342fb8c-6355-4a48-9b1f-ee45b0627e7c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath_spellscroll" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -17920,14 +17978,118 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="20de79db-2c19-4086-babc-9557c907fb90" />
         <field name="Name" type="NameTableFieldDefinition" value="Hex_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fed088b-4166-4434-9904-77a8356b2ab5" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Hex_Strength_spellscroll;Target_Hex_Dexterity_spellscroll;Target_Hex_Constitution_spellscroll;Target_Hex_Intelligence_spellscroll;Target_Hex_Wisdom_spellscroll;Target_Hex_Charisma_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fcdce539-4cf5-417b-9fe0-2ba65a168583" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Strength_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="37545771-8cf3-45a2-91b9-62c8bd83a883" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Hex_spellscroll" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e665734a-b860-4d0a-a67e-91e250e04d23" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Dexterity_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="187fc9a2-3a64-4edc-b997-d7e006cf726b" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Hex_spellscroll" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="33c0dcbf-cf11-4ef5-839b-56b3ed168542" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Constitution_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="13e5a8d0-a667-4bcc-bfbb-975ccaf8281c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Hex_spellscroll" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2cfbc816-8bcd-4d20-8af5-10ad57a79762" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Intelligence_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4892c754-ad9b-4107-a2c6-a07b2cf60e0d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Hex_spellscroll" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab372683-f583-4108-b99b-779e8f8e7282" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Wisdom_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2cedc9c0-2850-46a8-aded-a471ccc828be" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Hex_spellscroll" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eb9008e4-c786-41aa-8364-2455f7b89e88" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Charisma_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="388b9b81-bed6-4547-a035-6700c68e8343" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Hex_spellscroll" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="17a27748-cbee-4e8a-b778-0c4f377e1783" />
         <field name="Name" type="NameTableFieldDefinition" value="Contagion_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f0254175-3720-4d33-bdf7-f266d0ecf813" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Contagion_BlindingSickness_spellscroll;Target_Contagion_FilthFever_spellscroll;Target_Contagion_FleshRot_spellscroll;Target_Contagion_Mindfire_spellscroll;Target_Contagion_Seizure_spellscroll;Target_Contagion_SlimyDoom_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18b45bb9-79e9-49c5-9aef-3827138fc682" />
+        <field name="Name" type="NameTableFieldDefinition" value="Contagion_BlindingSickness_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ccb6b3b-b487-48f4-8d95-1d0bf221eb48" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Contagion_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="47a6bcbc-aac0-404f-8eda-8cde4ad37d3a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Contagion_FilthFever_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="effc86c9-24bc-4376-a28c-7710f7dc7708" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Contagion_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2bf7b339-ec29-433c-b446-7713673fa534" />
+        <field name="Name" type="NameTableFieldDefinition" value="Contagion_FleshRot_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="13eff187-4dda-4034-a568-2a02c9cdec91" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Contagion_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e508f959-1b10-4eb4-b7a9-a0cab151cea0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Contagion_Mindfire_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb8bea9f-baf0-410b-b624-7406731bf4c3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Contagion_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="763a84b2-5960-404d-a67e-0f47f5c5cfd2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Contagion_Seizure_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="10a659ee-a2e0-495e-88d1-94b837a7a29b" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Contagion_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af2615c9-2050-477e-88e5-8a19ef98ed16" />
+        <field name="Name" type="NameTableFieldDefinition" value="Contagion_SlimyDoom_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5b0c150a-8df9-48dd-b673-4b4f4cad034c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Contagion_spellscroll" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -17990,7 +18152,24 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fa045d8f-b348-45b7-866c-a8abced111cd" />
         <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="def7aa93-b48c-4bdb-8f08-d00517b8bc29" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_TrueStrike_Melee_spellscroll;Projectile_TrueStrike_Ranged_spellscroll;Target_TrueStrike_Radiant_spellscroll;Projectile_TrueStrike_Radiant_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b998108-e4b7-4b1d-9546-945d265330a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_Melee_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="df292230-8467-4510-a646-8b27bd6ee8e7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_TrueStrike_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="81e7860d-514f-4e5b-b39b-c003fb187f98" />
+        <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_Radiant_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a58aeff1-e8a9-4cdd-b2d2-be8ce02c01ea" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_TrueStrike_spellscroll" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -18011,7 +18190,53 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a86de5a0-4f52-40a0-938b-675356ef11d8" />
         <field name="Name" type="NameTableFieldDefinition" value="Command_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a631e302-0dae-4049-9f0d-68780c23718d" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Command_Halt_spellscroll;Target_Command_Approach_spellscroll;Target_Command_Drop_spellscroll;Target_Command_Flee_spellscroll;Target_Command_Grovel_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0bb5e906-98b0-4a0d-8249-a1c7a438e686" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Halt_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="305e6f89-89e5-42cf-9637-18eb4096a0bc" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_spellscroll" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fdc181b3-76a9-48d5-b950-64b3aea62e4e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Approach_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bbbcf1ba-1778-44f9-b208-e1648d81a089" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_spellscroll" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f6d583fc-7a51-4ea2-93c9-b19f7aebb994" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Drop_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="570adbf4-b226-450f-89f6-04399cccc344" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_spellscroll" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c1b668c-a656-48d2-ba0d-5236c5743794" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Flee_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ef22ab30-609f-453a-a152-93c36d1417a7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_spellscroll" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da6bc8ce-4794-4219-b111-c08adc62fa3b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Grovel_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ebe799b9-7e76-4acf-abd7-3d2828a65a42" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Command_spellscroll" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -18158,7 +18383,25 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e4e4c763-9c59-4a25-988b-c47a8f4e30ca" />
         <field name="Name" type="NameTableFieldDefinition" value="DanseMacabre_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7469e101-d9d5-42de-a7b3-b011001d65e9" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_DanseMacabre_Skeleton_spellscroll;Target_DanseMacabre_Zombie_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aaafb70f-47f8-467d-bc53-d6dc06b53894" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanseMacabre_Skeleton_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="54da2cf7-5162-4ded-8ee2-84d005995918" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DanseMacabre_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="082cd245-4196-4d05-977f-b5a08d810338" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanseMacabre_Zombie_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53dcc46a-b97b-4297-a372-95211bdca284" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DanseMacabre_spellscroll" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -18446,14 +18689,73 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e4782db1-2c6a-409c-aae3-2f809be3fdcb" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonAberration_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="690e51ae-3825-43b5-956d-cc54a3c3b3c6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SummonAberration_IntellectDevourer_spellscroll;Target_SummonAberration_Beholder_spellscroll;Target_SummonAberration_MindFlayer_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb7b2e11-1091-4f22-8d90-af7b2af7c9cc" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonAberration_IntellectDevourer_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="28d8efb4-34c6-4fd0-b028-e524a2dbb7b1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonAberration_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="084c6007-8ddc-485a-a925-9dd603f6540d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonAberration_Beholder_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3e34f6fa-1daa-4758-9ef3-00acd2776eb7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonAberration_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9c85c97f-fc21-4ac3-a8f6-08ad43753f8f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonAberration_MindFlayer_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b4d76405-b4bf-4eb6-a133-6a7b70f42408" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonAberration_spellscroll" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2b350c65-6e3d-412d-9753-8116da6dbcf3" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonElemental_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3b3b16e5-488a-4dfb-975b-3470f0d2acb8" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SummonElemental_Air_spellscroll;Target_SummonElemental_Earth_spellscroll;Target_SummonElemental_Fire_spellscroll;Target_SummonElemental_Water_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aea966e6-cdfb-414d-9a4f-f56e0182d635" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonElemental_Air_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="16d197f8-ac81-4763-9eb3-6c6efe183a3c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonElemental_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c8e8c9ac-e99b-4c98-a0d9-8e87d43e02a1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonElemental_Earth_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a607675-d52b-430f-8c11-79c73792edd9" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonElemental_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a272a6bb-8520-44c3-b672-291af595d402" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonElemental_Fire_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5a45e994-384f-422f-8240-cb924600fb3a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonElemental_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a5dbca90-f8e9-4267-aa0e-dcf16cf7784f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonElemental_Water_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="eaba9944-976a-41d5-b525-f4753a17593e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonElemental_spellscroll" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

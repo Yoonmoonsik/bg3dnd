@@ -2205,7 +2205,24 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3f98cc7b-9d0e-47e1-af3b-380a510a0a3f" />
         <field name="Name" type="NameTableFieldDefinition" value="AstralFlood_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d2000371-15f7-4dba-b1be-ac7d420bf89c" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_AstralFlood_Cold_spellscroll;Zone_AstralFlood_Radiant_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a0077a40-40c5-43a6-be9e-8effad8101b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="AstralFlood_Cold_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="567bf31f-ddec-449f-9814-bc938de02c75" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_AstralFlood_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9a37bd3e-24a7-43be-b8d6-95d764383209" />
+        <field name="Name" type="NameTableFieldDefinition" value="AstralFlood_Radiant_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a5cd0306-8a55-4a58-b6c8-ef8db4aa64ad" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_AstralFlood_spellscroll" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2226,7 +2243,53 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="20f43f10-c22b-4533-8e73-0fe8e2c796a1" />
         <field name="Name" type="NameTableFieldDefinition" value="ElementalExhalation_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78fec449-4592-4b84-85e4-e577cc0c3d25" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_ElementalExhalation_Air_spellscroll;Zone_ElementalExhalation_Coldfire_spellscroll;Zone_ElementalExhalation_Earth_spellscroll;Zone_ElementalExhalation_Fire_spellscroll;Zone_ElementalExhalation_Water_spellscroll" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e8184876-0464-4c3c-aef4-9233060674d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="ElementalExhalation_Air_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b71df858-ef6c-45ba-a704-e79b1a5b0535" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_ElementalExhalation_spellscroll" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b5afaeb8-dcbe-4015-9a99-111abdacfaec" />
+        <field name="Name" type="NameTableFieldDefinition" value="ElementalExhalation_Coldfire_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d141d7b7-5b04-41f6-ab93-997dc382f9a9" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_ElementalExhalation_spellscroll" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="186de863-38a5-43bc-a051-56d13e9df3ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="ElementalExhalation_Earth_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="edaeebcd-4a68-4e68-b83b-64ade0a8ba6d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_ElementalExhalation_spellscroll" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cff78708-405d-479b-a699-d6622210f5f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="ElementalExhalation_Fire_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ca067a7-c40e-4125-96da-2366651cde71" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_ElementalExhalation_spellscroll" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8d36a63b-dd0e-4e21-8895-9504ebe20873" />
+        <field name="Name" type="NameTableFieldDefinition" value="ElementalExhalation_Water_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ec8494fa-20f4-4eae-866b-841398183ae1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_ElementalExhalation_spellscroll" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
