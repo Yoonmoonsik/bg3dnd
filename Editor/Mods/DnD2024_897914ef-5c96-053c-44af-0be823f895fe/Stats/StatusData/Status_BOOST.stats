@@ -1654,8 +1654,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="WEB" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e248b105-1148-4498-b741-239c36b77a97" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TooltipSave" type="StringTableFieldDefinition" value="Strength" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(SavingThrow(Ability.Strength, SourceSpellDC(),false,DisadvantageOnHeightenedSpell())):RemoveStatus(WEB)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hacf33076g240bg4b07ga79ag09d4d27db2d7" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="RestrainedAthleticsCheck()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1666,7 +1667,8 @@
         <field name="StackId" type="StringTableFieldDefinition" value="WEB" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="9" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(SavingThrow(Ability.Strength, SourceSpellDC(),false,DisadvantageOnHeightenedSpell())):RemoveStatus(WEB_ARACHNOID_STALKER)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="RestrainedAthleticsCheckDex()" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf30d582fg341eg451bgb278g1c024892f548" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
