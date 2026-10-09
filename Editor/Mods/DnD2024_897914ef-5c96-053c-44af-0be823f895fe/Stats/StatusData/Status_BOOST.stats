@@ -8555,7 +8555,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="CHAINS_OF_JUDGEMENT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8ebec1f1-ed98-40f8-a0b3-f5757f7c7f7f" />
         <field name="Icon" type="StringTableFieldDefinition" value="BladeOfRadiance_9_ChainsOfJudgement" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.WisdomModifier,Radiant,Magical)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFDC143C" is_substat="false">
