@@ -484,6 +484,21 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_SHIELD", -1.0, 1, _Player);
 
 IF
+StartedPreviewingSpell((CHARACTER)_Player,"Target_ShroudBlood_Dummy",_, _)
+AND
+HasActiveStatus(_Player, "LFO_MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_SHROUDBLOOD", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "LFO_MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_SHROUDBLOOD", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Sleep",_, _)
 AND
 HasActiveStatus(_Player, "LFO_MAGICINITIATE_WIZARD_SPELL_START", 1)
