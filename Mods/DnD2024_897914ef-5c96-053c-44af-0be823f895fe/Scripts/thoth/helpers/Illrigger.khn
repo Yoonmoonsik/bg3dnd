@@ -20,3 +20,12 @@ function RedCantCheck(entity)
     local isSkill4 = context.CheckedSkill == Skill.Persuasion
     return ConditionResult(isAbility or isSkill1 or isSkill2 or isSkill3 or isSkill4)
 end
+
+function HellsLashSavingThrow()
+    local hellsLashDC = math.max(
+        SourceSpellDC(10, context.Source, Ability.Intelligence),
+        SourceSpellDC(10, context.Source, Ability.Wisdom),
+        SourceSpellDC(10, context.Source, Ability.Charisma))
+    local st = SavingThrow(Ability.Constitution, hellsLashDC, false, HasStatus('INTERDICTED', context.Target) | DisadvantageOnHeightenedSpell(), context.Target)
+    return ConditionResult(st.Result,{},{},st.Chance)
+end

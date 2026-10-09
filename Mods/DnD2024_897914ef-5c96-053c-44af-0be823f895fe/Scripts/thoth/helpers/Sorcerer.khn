@@ -21,13 +21,6 @@ function DisadvantageOnRestrained(source, target)
     return Tagged('RESTRAINED_DISADV', target) | HasPassive('FavoredEnemy_BountyHunter',source) | HasPassive('MAG_RestrainingAdvantage_Passive',source) | HasStatus('HEIGHTENED_TARGET', target)
 end
 
-function DisadvantageOnRestrainedIllrigger(source, target)
-    source = source or context.Source
-    target = target or context.Target
-
-    return Tagged('RESTRAINED_DISADV', target) | HasPassive('FavoredEnemy_BountyHunter',source) | HasPassive('MAG_RestrainingAdvantage_Passive',source) | HasStatus('HEIGHTENED_TARGET', target) | HasStatus('INTERDICTED', target)
-end
-
 function TwinnedSpellCheck()
     return SpellId('Projectile_Darkbolt')
      | SpellId('Projectile_Darkbolt_3')
