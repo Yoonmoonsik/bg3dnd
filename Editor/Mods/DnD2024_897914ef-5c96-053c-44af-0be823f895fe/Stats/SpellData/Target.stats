@@ -12526,6 +12526,430 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration;IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="154f7546-f754-42e7-b8a3-165aeff8d6f5" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_VibratingHumors6;Target_VibratingHumors8;Target_VibratingHumors10;Target_VibratingHumors12;" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_VibratingHumors" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0fbc88c5g4d04g4812gb274g3c471a5ea76b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h62f8a9ebg2b57g4beag87b3g190825c82222" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;DealDamage(1d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Thunder)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="d89c6930-0f91-411a-9a7b-3dd890505b04" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Thunder_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Damage_Thunder_Gen_L1to3" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Thunder_Shatter_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_Thunder_Shatter_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2af907e1-127c-4c83-a117-af18f211c59d" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ee3c85ae-0078-4223-9345-c2594535d1f2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce8372e9-549a-4cdb-9870-a47e60cd1749" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="154f7546-f754-42e7-b8a3-165aeff8d6f5" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_VibratingHumors6_2;Target_VibratingHumors8_2;Target_VibratingHumors10_2;Target_VibratingHumors12_2;" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_VibratingHumors" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="716f550c-7011-4090-937f-396047d9c927" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce8372e9-549a-4cdb-9870-a47e60cd1749" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_VibratingHumors6_3;Target_VibratingHumors8_3;Target_VibratingHumors10_3;Target_VibratingHumors12_3;" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(3d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ca38c00-5bd4-4262-af08-5fecb74aa2f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce8372e9-549a-4cdb-9870-a47e60cd1749" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_VibratingHumors6_4;Target_VibratingHumors8_4;Target_VibratingHumors10_4;Target_VibratingHumors12_4;" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;DealDamage(4d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5bf7af61-2bee-4d98-a91e-35dd1b25615d" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce8372e9-549a-4cdb-9870-a47e60cd1749" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_VibratingHumors6_5;Target_VibratingHumors8_5;Target_VibratingHumors10_5;Target_VibratingHumors12_5;" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;DealDamage(5d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="15b67a75-4ecf-4fae-96d1-e3b602ac71a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce8372e9-549a-4cdb-9870-a47e60cd1749" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_VibratingHumors6_6;Target_VibratingHumors8_6;Target_VibratingHumors10_6;Target_VibratingHumors12_6;" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;DealDamage(6d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5bf5c7a8-8f1c-43df-9208-108d2c775a54" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="154f7546-f754-42e7-b8a3-165aeff8d6f5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h36dd5fa4g4ae2g443eg938dgb9a7c0dfdd95" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice06:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee53ec07-b5fa-4a7d-9719-87980f908617" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors6_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5bf5c7a8-8f1c-43df-9208-108d2c775a54" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_2" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_VibratingHumors6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3470e752-8937-490a-922e-f3167b4b1344" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ee53ec07-b5fa-4a7d-9719-87980f908617" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(3d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa2cf451-1d9d-40e4-b396-f4ecb4dc5e45" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ee53ec07-b5fa-4a7d-9719-87980f908617" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;DealDamage(4d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="67cf16b9-25c7-4ec1-8d05-bdf49a523dc6" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ee53ec07-b5fa-4a7d-9719-87980f908617" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;DealDamage(5d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2a621f6d-5be3-4af8-a133-ab6e4cd9ab10" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ee53ec07-b5fa-4a7d-9719-87980f908617" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;DealDamage(6d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13775378-f8d7-47b7-a4e6-e4ac231d80ac" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5bf5c7a8-8f1c-43df-9208-108d2c775a54" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf660a818g1398g48a1g8b19g8e9d92a64c94" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;DealDamage(1d8,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice08:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a60e87d-b3a4-40bb-8d91-dde6acdd6eae" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors8_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="13775378-f8d7-47b7-a4e6-e4ac231d80ac" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_2" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d8,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_VibratingHumors8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1265b033-ddfd-44df-aa0f-e3fd93ef2c98" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a60e87d-b3a4-40bb-8d91-dde6acdd6eae" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(3d8,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a102caf-a877-4018-a2a4-012edd269b76" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a60e87d-b3a4-40bb-8d91-dde6acdd6eae" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;DealDamage(4d8,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98d35673-24af-4d57-9835-a5ad7f80d79e" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a60e87d-b3a4-40bb-8d91-dde6acdd6eae" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;DealDamage(5d8,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab0158b6-b8a1-4f60-a23b-bf60d35d41c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a60e87d-b3a4-40bb-8d91-dde6acdd6eae" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d8,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;DealDamage(6d8,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="85175502-e4e9-4844-923c-8e68d254bfc2" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="13775378-f8d7-47b7-a4e6-e4ac231d80ac" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbaf487a6gf3acg4766ga6d7gc2299eb8c007" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;DealDamage(1d10,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice10:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a55f172c-885a-4994-bb52-a696b5fa896a" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors10_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="85175502-e4e9-4844-923c-8e68d254bfc2" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_2" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d10,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d10,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_VibratingHumors10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6c4176f-de3b-46fd-960c-14936b965e75" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a55f172c-885a-4994-bb52-a696b5fa896a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(3d10,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b3a9df4e-585e-4513-8d3a-298f2b615ea7" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a55f172c-885a-4994-bb52-a696b5fa896a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;DealDamage(4d10,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="695ab8c5-787f-4320-9041-80e1c6d312a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a55f172c-885a-4994-bb52-a696b5fa896a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d10,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;DealDamage(5d10,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d10,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e693c93e-259f-405a-9b51-001ec9444f78" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a55f172c-885a-4994-bb52-a696b5fa896a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d10,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;DealDamage(6d10,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d10,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4d5ad62e-3f70-4918-9b04-e62a693220fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="85175502-e4e9-4844-923c-8e68d254bfc2" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d12,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha056ef8fg8fa3g4604ga6d1gc4b7b964ac07" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;DealDamage(1d12,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d12,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice12:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c31767fe-e7cc-4b46-84c3-e1dcdfe793f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors12_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4d5ad62e-3f70-4918-9b04-e62a693220fc" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_2" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d12,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d12,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d12,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_VibratingHumors12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bc1bf5c2-40d8-46b3-8da3-41fd1068dd30" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c31767fe-e7cc-4b46-84c3-e1dcdfe793f6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d12,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(3d12,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d12,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1278ddf4-1af5-4035-95fa-2f68f76f20b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c31767fe-e7cc-4b46-84c3-e1dcdfe793f6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d12,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;DealDamage(4d12,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d12,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f992cdd7-0cb8-4460-89ec-4504d6f605a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c31767fe-e7cc-4b46-84c3-e1dcdfe793f6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d12,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;DealDamage(5d12,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d12,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a091912-ba0c-4eb7-87b4-55dcdcf23504" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c31767fe-e7cc-4b46-84c3-e1dcdfe793f6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_VibratingHumors_6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d12,Thunder,Magical);ApplyStatus(VIBRATING_HUMORS,100,10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;DealDamage(6d12,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d12,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ed95e7a-3a55-4aec-a282-30274af853e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="VibratingHumors_Dummy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="154f7546-f754-42e7-b8a3-165aeff8d6f5" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d1095f08-ab53-4789-8336-04d066559346" />

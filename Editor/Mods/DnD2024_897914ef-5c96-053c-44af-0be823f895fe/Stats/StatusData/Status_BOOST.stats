@@ -5504,6 +5504,22 @@
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="RemoveStatus(CONSUMPTION_D12)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="33832b4f-e8a3-44d6-8ce0-c14d0bd1fef0" />
+        <field name="Name" type="NameTableFieldDefinition" value="VIBRATING_HUMORS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0fbc88c5g4d04g4812gb274g3c471a5ea76b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb1d320c7g6ef3g4843g9765gb5d7e10f2e2f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_VibratingHumors" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VIBRATING_HUMORS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(Skill,Stealth)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, SourceSpellDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(VIBRATING_HUMORS)" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />
@@ -12574,6 +12590,16 @@
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CONSUMPTION" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Consumption,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h32544316gabe3g47b4gbf17gbf9c2e8f017a" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f06dfc77-200e-4627-9326-f7b94c8694ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_VIBRATINGHUMORS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_VIBRATINGHUMORS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_VibratingHumors,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf01df5c2gf552g420cg954cg25f57d05b46c" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
