@@ -3384,7 +3384,7 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Conjuration" enumeration_type_name="SpellSchool" version="1" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_CrimsonLash6;Shout_CrimsonLash8;Shout_CrimsonLash10;Shout_CrimsonLash12;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_CrimsonLash" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he60ceef6g1e5ag4107gaf3dgac1d58815e58" version="1" />
@@ -3412,7 +3412,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="09395053-4c6d-49b7-bd85-f3551fe59b89" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_CrimsonLash6_2;Shout_CrimsonLash8_2;Shout_CrimsonLash10_2;Shout_CrimsonLash12_2;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_CrimsonLash" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
@@ -3424,7 +3424,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="006313ed-0530-48fc-aa4f-c4f695b8904a" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_CrimsonLash6_3;Shout_CrimsonLash8_3;Shout_CrimsonLash10_3;Shout_CrimsonLash12_3;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
@@ -3435,7 +3435,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="006313ed-0530-48fc-aa4f-c4f695b8904a" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_CrimsonLash6_4;Shout_CrimsonLash8_4;Shout_CrimsonLash10_4;Shout_CrimsonLash12_4;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
       </fields>
@@ -3446,7 +3446,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="006313ed-0530-48fc-aa4f-c4f695b8904a" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_CrimsonLash6_5;Shout_CrimsonLash8_5;Shout_CrimsonLash10_5;Shout_CrimsonLash12_5;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
       </fields>
@@ -3457,7 +3457,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="006313ed-0530-48fc-aa4f-c4f695b8904a" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_CrimsonLash6_6;Shout_CrimsonLash8_6;Shout_CrimsonLash10_6;Shout_CrimsonLash12_6;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
@@ -3480,7 +3480,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash6_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="37dce615-ea15-46b2-bf2b-54fad5c9ab8b" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_2" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:1;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_CrimsonLash6" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
@@ -3492,7 +3492,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash6_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="42ba916c-feee-437d-9ef6-710f5109510c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
@@ -3503,7 +3503,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash6_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="42ba916c-feee-437d-9ef6-710f5109510c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_4" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
       </fields>
@@ -3514,7 +3514,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash6_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="42ba916c-feee-437d-9ef6-710f5109510c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
       </fields>
@@ -3525,7 +3525,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash6_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="42ba916c-feee-437d-9ef6-710f5109510c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(f9c1bcdf-9141-4994-938e-322b0c727b28,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
@@ -3535,7 +3535,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="28cfa8d2-663a-4d82-a51d-651527be1d1f" />
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash8" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="37dce615-ea15-46b2-bf2b-54fad5c9ab8b" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,CRIMSON_LASH);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19cc1044g6cbfg4234g9ddage152861f56b7" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
@@ -3548,7 +3548,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash8_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="28cfa8d2-663a-4d82-a51d-651527be1d1f" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_2" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,CRIMSON_LASH);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:1;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_CrimsonLash8" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
@@ -3560,7 +3560,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash8_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aeb623b9-14f2-4c7a-8000-bd879a4a196a" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
@@ -3571,7 +3571,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash8_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aeb623b9-14f2-4c7a-8000-bd879a4a196a" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_4" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
       </fields>
@@ -3582,7 +3582,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash8_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aeb623b9-14f2-4c7a-8000-bd879a4a196a" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
       </fields>
@@ -3593,7 +3593,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash8_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aeb623b9-14f2-4c7a-8000-bd879a4a196a" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(fc4000a8-77e6-4a25-a071-bc6ea1645a54,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
@@ -3603,7 +3603,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="13eaa0c5-9f1f-4567-8cf4-f41dc9108ff1" />
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash10" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="28cfa8d2-663a-4d82-a51d-651527be1d1f" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,CRIMSON_LASH);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3c59f98ge38cg448cgac08gdaee20df4b96" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic)" />
@@ -3616,7 +3616,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash10_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="13eaa0c5-9f1f-4567-8cf4-f41dc9108ff1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_2" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,CRIMSON_LASH);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:1;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_CrimsonLash10" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
@@ -3628,7 +3628,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash10_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="77dd1265-3c72-419a-a862-b34f2ca63ec1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
@@ -3639,7 +3639,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash10_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="77dd1265-3c72-419a-a862-b34f2ca63ec1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_4" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
       </fields>
@@ -3650,7 +3650,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash10_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="77dd1265-3c72-419a-a862-b34f2ca63ec1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
       </fields>
@@ -3661,7 +3661,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash10_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="77dd1265-3c72-419a-a862-b34f2ca63ec1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(72198cd7-0c5e-42ae-81a1-37689481851d,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
@@ -3671,7 +3671,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="576b25bd-c991-4974-af50-f923d47164e2" />
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash12" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="13eaa0c5-9f1f-4567-8cf4-f41dc9108ff1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,CRIMSON_LASH);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcad7b313gfe8dg4ba9ga2c3gb1d51919e61f" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic)" />
@@ -3684,7 +3684,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash12_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="576b25bd-c991-4974-af50-f923d47164e2" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_2" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,CRIMSON_LASH);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:1;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_CrimsonLash12" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
@@ -3696,7 +3696,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash12_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b9901ccd-f5e8-4b9d-b2cf-c6248fd21939" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
@@ -3707,7 +3707,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash12_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b9901ccd-f5e8-4b9d-b2cf-c6248fd21939" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_4" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
       </fields>
@@ -3718,7 +3718,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash12_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b9901ccd-f5e8-4b9d-b2cf-c6248fd21939" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
       </fields>
@@ -3729,7 +3729,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash12_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b9901ccd-f5e8-4b9d-b2cf-c6248fd21939" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CrimsonLash_6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(5aa62c5f-2447-4b06-b87d-42abd99d9165,10,1,true,true,true,,,'CrimsonLash',CRIMSON_LASH);ApplyStatus(SELF,CRIMSON_LASH_ATTACKS_2,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
