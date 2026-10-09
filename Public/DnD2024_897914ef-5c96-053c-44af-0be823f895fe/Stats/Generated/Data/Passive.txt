@@ -7966,6 +7966,13 @@ data "DisplayName" "h52a19910g3cc7g493eg8fabg8b7f5c9d64ba;1"
 data "Icon" "Spell_Enchantment_AnimalFriendship"
 data "Boosts" "UnlockSpell(Target_AnimalFriendship,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);"
 
+new entry "MagicInitiate_Druid_BloodRush"
+type "PassiveData"
+using "MagicInitiate_Druid_AbsorbElements"
+data "DisplayName" "h8392f5e6g9217g496bga290gd92f8e61f338;1"
+data "Icon" "Spell_BloodRush"
+data "Boosts" "UnlockSpell(Shout_BloodRush,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);"
+
 new entry "MagicInitiate_Druid_CharmPerson"
 type "PassiveData"
 using "MagicInitiate_Druid_AbsorbElements"
