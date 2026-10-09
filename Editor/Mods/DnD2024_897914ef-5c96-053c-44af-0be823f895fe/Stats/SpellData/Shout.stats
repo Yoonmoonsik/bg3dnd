@@ -150,7 +150,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="08ecdc25-31ea-4f32-8787-19b97971a9f1" />
         <field name="CinematicArenaFlags" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="CinematicArenaFlags" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('Movement', 4.5, 0, false, false, context.Source)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:4.5" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -159,7 +159,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="RemoveProne_StandUp" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="197dadfa-8185-4051-80d7-77565ea7edae" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE_REMOVING_STANDUP,100,0);" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('Movement', 1.5, 0, false, false, context.Source)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:1.5" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
