@@ -1080,6 +1080,233 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,2d4,Necrotic,Magical)" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d072693e-a2a3-43e8-b261-a30e2da11694" />
+        <field name="Name" type="NameTableFieldDefinition" value="__SANGROMANCY__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D6_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbdad2730gd2ffg4b68gb617ga4b0d4dc93db" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haea15fe6g0525g4e04gbba0g1f3fa17d133c" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Radiant)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodbaneRune" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not IsMiss() and AttackedWithPassiveSourceWeapon() and Tagged('UNDEAD',context.Target);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e6a4d34-1067-4584-bf66-c1f067a67180" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D6_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1a83259-4327-4979-802a-d0f9e57ef7e8" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d6,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ba4a67c-1d26-465d-b794-d0f1eeae22d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d6,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0926ae6e-5c26-4ee9-8cbc-b1d16842eba1" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5bd2d77a-fcad-4589-9974-1935e17ab84c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d6,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cfbb3418-28e7-4a0a-9372-abd34f4579f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D8_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="47291d48-9dba-472e-ba15-ba3e703c254f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D8_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="130906a1-7bb8-4ade-bfa9-c21d69d8317f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d8,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc115bd2-fcdd-4adb-aab4-d5a368c913af" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d8,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ba02cb8-87ad-4f1f-96f5-74231638a105" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d8,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d8,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="147645af-a9d2-40d1-b6a2-d90294786310" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d8,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d8,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e5453da4-13a5-4b24-a58d-f8397ffa8944" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D10_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d10,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ffa002c2-4183-4468-a43e-d4c14fc0d010" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D10_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d10,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6525a54-cce3-40bb-a9db-098abef6b809" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d10,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d10,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63731563-5f46-41f2-8a34-b5ee0656bdc0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d10,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b6401be8-c126-4174-8eeb-4307e2790c70" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d10,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d10,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d761e515-ad17-48f2-b811-6e0e202e3b1d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d10,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d10,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4d662cc3-1e20-4ed3-bbff-2f56d97f2ad5" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D12_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d12,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03f78e8a-14dd-4e88-8b4a-fdd74e72c929" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D12_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d12,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d12,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4181316a-0e59-40bd-9fff-2b816ece965c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d12,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d12,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="db921a10-b99b-4798-8495-745f9464461e" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d12,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d12,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1f6b86c-7abb-43b4-8a81-44450b4d8da6" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d12,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d12,Radiant,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a71f8c7e-d8f3-42c7-a13f-2672586d4dab" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_D12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19c43b85-12d4-45c4-b1dd-5913f55b0f96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d12,Radiant)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d12,Radiant,Magical)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0be7940c-ca66-4b1e-9547-52b4f0ecef61" />
@@ -10818,6 +11045,16 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6dafbdc7g7942g4ac3g9634ga623f2f279cc" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bless,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Bless" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43d0eaf8-86a1-4e3e-aa21-c3f1a2f29ef4" />
+        <field name="Name" type="NameTableFieldDefinition" value="MagicInitiate_Cleric_BloodbaneRune" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5e4c13a7-317c-4ce0-8ba7-08e26648d1e1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hefe7aa02g2948g498dgacc7g10aa72450943" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BloodbaneRune,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodbaneRune" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

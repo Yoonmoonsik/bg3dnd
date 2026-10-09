@@ -5226,6 +5226,237 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8424b9f7-cddd-465a-b2ac-ddf50cbc6bef" />
+        <field name="Name" type="NameTableFieldDefinition" value="__SANGROMANCY__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D6_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbdad2730gd2ffg4b68gb617ga4b0d4dc93db" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haea15fe6g0525g4e04gbba0g1f3fa17d133c" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Radiant)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodbaneRune" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOODBANE_RUNE" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D6_1;" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="6994e8dc-14ac-48a5-9c8e-c1925031e852" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="359918c9-0c9a-4714-a032-0deac359d00b" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_MagicWeapon_MO" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_MagicWeapon_MO_Stop" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d6a247c4-280f-4f16-9ac1-78cbd43ad989" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D6_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D6_2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40d848b6-37c8-46c2-b664-001cc12d0eee" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D6_3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ed860afe-49df-4fb9-82d1-cee6f53513f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D6_4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84c0ef2f-1ea5-4523-b2dd-3c283354ff8f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D6_5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0693930f-afd3-4054-8f8f-d1b8b5f5abcf" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D6_6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb321989-1b90-4b7e-8d57-664bf7259323" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D8_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D8_1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0d00cba-c56c-451e-b2e2-1ce307cd6649" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D8_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D8_2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce215eb2-0bfb-4745-adb2-3d8c3dc600d7" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D8_3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fdec6494-f527-46ce-afb3-4ff7e0083c14" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D8_4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1c99a8a-660c-445a-bdd3-a138e73c4eef" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d8,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D8_5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2d15d601-81ba-499f-bec6-2221fd578692" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d8,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D8_6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8e7b5a8c-9703-430c-8978-a38737ff6341" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D10_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D10_1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6d102b4b-190e-4c9b-b70b-5eed9d561e59" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D10_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D10_2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0785144c-0dbf-4145-8650-baf3fe402be4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d10,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D10_3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6f987e9-e41d-4bc4-a8c1-2d51b9e73d33" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D10_4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d0d3a60-27fc-4557-b61f-1db714df7fb9" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d10,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D10_5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c611910e-eae4-477b-b5ec-e62fdb61085f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d10,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D10_6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b85515d-a56f-4f26-9cc4-bf89677037e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D12_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D12_1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f31ad3a3-25ca-4178-b49c-aa1bf3038286" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D12_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d12,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D12_2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0bf5bf1-8628-4ca5-9a87-175fdd425dc0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d12,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D12_3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="24c36f68-1351-4f38-a952-8d8d61bcdec5" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d12,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D12_4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="79b1ab58-e1ad-48da-9c78-05c10153bb42" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d12,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D12_5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bfbb1070-478c-4ef4-a700-7f468e6ec0a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODBANE_RUNE_D12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39cdf085-4187-4944-85cd-be45246dc1bf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d12,Radiant)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D12_6;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />
@@ -6320,6 +6551,16 @@
         <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BLESS" />
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BLESS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bless,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="74547bd4-67f4-4a7a-a69b-06464dcd2231" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BLOODBANERUNE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BLOODBANERUNE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BloodbaneRune,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
@@ -12236,6 +12477,16 @@
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BANE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bane,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcf286fcbga673g4b58g9ca2g7cb218338271" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03f2d880-d6a7-4680-b576-926a961e082d" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BLOODBANERUNE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BLOODBANERUNE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BloodbaneRune,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd36397d4g4ac8g4306gba25g376e82091899" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -30,6 +30,19 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_BLESS", -1.0, 1, _Player);
 
 IF
+StartedPreviewingSpell((CHARACTER)_Player,"Target_BloodbaneRune_Dummy",_, _)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_BLOODBANERUNE", 1)
+AND
+ResolveTranslatedString("hd4f0c01cgfa4cg494eg93dagc7401dc42e35", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_BLOODBANERUNE", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_Command_Dummy",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_CLERIC_SPELL_START", 1)

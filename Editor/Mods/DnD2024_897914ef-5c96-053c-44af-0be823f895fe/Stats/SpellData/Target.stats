@@ -11350,6 +11350,460 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(FLESH_TO_STONE_1,100,1,,,,,true);IF(HasPassive('Metamagic_Heightened',context.Source)):ApplyStatus(HEIGHTENED_TARGET,100,10);" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c58f2649-8283-4766-b92e-0f1b3b985cca" />
+        <field name="Name" type="NameTableFieldDefinition" value="__SANGROMANCY__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="238cad4c-551c-42dc-baf5-078ad27f4e67" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodbaneRune6;Target_BloodbaneRune8;Target_BloodbaneRune10;Target_BloodbaneRune12;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_1,100,10);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_1,100,10)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Item() or (Ally() and HasWeaponInMainHand())" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodbaneRune" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbdad2730gd2ffg4b68gb617ga4b0d4dc93db" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hda7fb1b1gc6cag4e62gaa6agd1ec89600f4b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;DealDamage(1d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_1,100,10)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="3342b31d-00a3-46a8-943a-06b054702955" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Buff_Gen_L1to3_01" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Buff_Gen_L1to3_01_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Buff_MagicWeapon_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_MagicWeapon_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;a4da186a-0872-461e-ae5e-93d5b32b9bef,,;527ca082-4ffa-4edb-a23f-5e7fa798a6ce,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;499b7945-9eff-40a2-9911-73b8963108e4,,;1d3a29f0-9409-462e-81cd-3f24944f63ca,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;IsConcentration;IsMelee;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="33302a46-4a12-41dd-8845-6b7314d50022" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bcd66fb0-b0bc-41d0-abba-ad443d63dd72" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4673c2a3-2610-411c-a86f-2dc7f3e22aa7" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="238cad4c-551c-42dc-baf5-078ad27f4e67" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodbaneRune6_2;Target_BloodbaneRune8_2;Target_BloodbaneRune10_2;Target_BloodbaneRune12_2;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_2,100,100);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_2,100,100)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_2,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodbaneRune" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca9d0616-9b8d-4c74-80e2-c8fc35baaba8" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4673c2a3-2610-411c-a86f-2dc7f3e22aa7" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodbaneRune6_3;Target_BloodbaneRune8_3;Target_BloodbaneRune10_3;Target_BloodbaneRune12_3;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_3,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_3,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(3d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_3,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c65c77d-716f-47e1-a0f1-f6ab8f1605ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4673c2a3-2610-411c-a86f-2dc7f3e22aa7" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodbaneRune6_4;Target_BloodbaneRune8_4;Target_BloodbaneRune10_4;Target_BloodbaneRune12_4;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_4,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_4,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;DealDamage(4d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_4,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7f5f90de-4d9c-4561-b48a-08735f3bea9a" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4673c2a3-2610-411c-a86f-2dc7f3e22aa7" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodbaneRune6_5;Target_BloodbaneRune8_5;Target_BloodbaneRune10_5;Target_BloodbaneRune12_5;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_5,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_5,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;DealDamage(5d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_5,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="47e2f5d3-5bd3-44de-9adb-897485c78563" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4673c2a3-2610-411c-a86f-2dc7f3e22aa7" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodbaneRune6_6;Target_BloodbaneRune8_6;Target_BloodbaneRune10_6;Target_BloodbaneRune12_6;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_6,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_6,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;DealDamage(6d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bc796939-158a-4511-92e5-7193d3c5be1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="238cad4c-551c-42dc-baf5-078ad27f4e67" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha30a36b5g09cbg497dgac51gf4227f3d96cd" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice06:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;IsConcentration;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;DealDamage(1d6,Radiant)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="34569c64-014f-43c7-9a8b-19b9b24bdc75" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune6_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bc796939-158a-4511-92e5-7193d3c5be1c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_2,100,100);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_2,100,100)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_2,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodbaneRune6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ad0af478-4dc1-40b8-8dd5-ddf3fc816c47" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="34569c64-014f-43c7-9a8b-19b9b24bdc75" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_3,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_3,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(3d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_3,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3e87c6c-36c8-4831-97bf-bbde581ee810" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="34569c64-014f-43c7-9a8b-19b9b24bdc75" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_4,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_4,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;DealDamage(4d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_4,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6762f000-e440-4236-ac08-23c803350ba3" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="34569c64-014f-43c7-9a8b-19b9b24bdc75" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_5,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_5,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;DealDamage(5d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_5,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="99c24457-a955-4a9a-b2e1-ce9e5e87f063" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="34569c64-014f-43c7-9a8b-19b9b24bdc75" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D6_6,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D6_6,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;DealDamage(6d6,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D6_6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="357dcab4-81aa-4875-9d4b-8d875cc6ec77" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bc796939-158a-4511-92e5-7193d3c5be1c" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D8_1,100,10);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D8_1,100,10)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0bfe514ga569g4836g8f65g83b8ea3a97d1" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D8_1,100,10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice08:1;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;DealDamage(1d8,Radiant)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9a82cd68-1564-4510-8cc5-df640cd555a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune8_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="357dcab4-81aa-4875-9d4b-8d875cc6ec77" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D8_2,100,100);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D8_2,100,100)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d8,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D8_2,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodbaneRune8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="693f385a-a87a-46ed-9a3b-17945390fe01" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9a82cd68-1564-4510-8cc5-df640cd555a6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D8_3,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D8_3,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(3d8,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D8_3,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="69391302-0683-4ff6-a2ae-85026922fc92" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9a82cd68-1564-4510-8cc5-df640cd555a6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D8_4,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D8_4,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;DealDamage(4d8,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D8_4,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e31e2e6-2052-48f1-84fa-71ac1ab47b69" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9a82cd68-1564-4510-8cc5-df640cd555a6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D8_5,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D8_5,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;DealDamage(5d8,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D8_5,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4cdedaf-f5c8-42b3-a13b-51224fe48f28" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9a82cd68-1564-4510-8cc5-df640cd555a6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D8_6,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D8_6,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;DealDamage(6d8,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D8_6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="be03df86-0ef7-4a3b-b900-618026a6c4db" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="357dcab4-81aa-4875-9d4b-8d875cc6ec77" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D10_1,100,10);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D10_1,100,10)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc01600f8gcc72g4f83g9e2cg4e02b1dfe5c5" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D10_1,100,10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice10:1;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;DealDamage(1d10,Radiant)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20f5d335-84c4-4f11-9f32-347d2aaea962" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune10_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="be03df86-0ef7-4a3b-b900-618026a6c4db" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D10_2,100,100);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D10_2,100,100)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d10,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D10_2,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodbaneRune10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cba88092-57ec-409e-b290-a595d03d8e57" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="20f5d335-84c4-4f11-9f32-347d2aaea962" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D10_3,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D10_3,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(3d10,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D10_3,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2c076f91-b08b-47ca-8bb1-cde0b1779c74" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="20f5d335-84c4-4f11-9f32-347d2aaea962" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D10_4,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D10_4,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;DealDamage(4d10,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D10_4,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="185ed355-1e3d-432c-9be8-d1275ee19a2d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="20f5d335-84c4-4f11-9f32-347d2aaea962" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D10_5,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D10_5,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;DealDamage(5d10,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d10,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D10_5,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e76ccce-857b-4c6c-9122-7191f444bebd" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="20f5d335-84c4-4f11-9f32-347d2aaea962" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D10_6,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D10_6,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;DealDamage(6d10,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d10,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D10_6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6996784-25ef-4390-9ad5-994f904e4826" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="be03df86-0ef7-4a3b-b900-618026a6c4db" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D12_1,100,10);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D12_1,100,10)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h208ace86g27dfg42a9gaaf9gea3daa5b6fff" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d12,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D12_1,100,10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice12:1;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;DealDamage(1d12,Radiant)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d80dbe40-cc0f-492a-8c44-12bfa2d57ff4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune12_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c6996784-25ef-4390-9ad5-994f904e4826" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D12_2,100,100);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D12_2,100,100)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d12,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d12,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D12_2,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodbaneRune12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01e48d21-43e1-4556-85dd-469a2e2af0dd" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d80dbe40-cc0f-492a-8c44-12bfa2d57ff4" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D12_3,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D12_3,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(3d12,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d12,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D12_3,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8e09e11-10cf-4333-86d7-6d0c82ef955f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d80dbe40-cc0f-492a-8c44-12bfa2d57ff4" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D12_4,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D12_4,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;DealDamage(4d12,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d12,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D12_4,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="48b99402-bff9-491e-894c-279cc995e571" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d80dbe40-cc0f-492a-8c44-12bfa2d57ff4" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D12_5,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D12_5,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;DealDamage(5d12,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d12,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D12_5,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8bc1330c-3af0-41d6-9cbb-99771820693f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d80dbe40-cc0f-492a-8c44-12bfa2d57ff4" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodbaneRune_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLOODBANE_RUNE_D12_6,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLOODBANE_RUNE_D12_6,100,-1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;DealDamage(6d12,Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d12,Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOODBANE_RUNE_D12_6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="804bfb73-df3d-4a35-bc87-bb977c135aab" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodbaneRune_Dummy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="238cad4c-551c-42dc-baf5-078ad27f4e67" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;IsConcentration;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d1095f08-ab53-4789-8336-04d066559346" />
