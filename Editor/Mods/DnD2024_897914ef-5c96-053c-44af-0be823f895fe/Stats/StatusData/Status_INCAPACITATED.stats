@@ -14,6 +14,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f13f0af8-e7f2-40b2-9caa-291eb3edc6be" />
+        <field name="Name" type="NameTableFieldDefinition" value="SOMNOLENCE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f23a92e-c431-47f6-91fd-04a6e92e2232" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SOMNOLENCE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(SavingThrow(Ability.Wisdom, SourceSpellDC(),false,DisadvantageOnHeightenedSpell())):RemoveStatus(SOMNOLENCE)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);IF(StatusDurationLessThan(context.Target,'SOMNOLENCE',10)):CriticalHit(AttackTarget,Success,Always,3);DetectDisturbancesBlock(true);Advantage(AttackTarget);SightRangeOverride(0);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="45727491-adee-4f58-bd50-84969e1345fa" />
         <field name="Name" type="NameTableFieldDefinition" value="STUN_DAZING_BLAST" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="960dad73-5352-431a-a15e-1b62b1816cd0" />
