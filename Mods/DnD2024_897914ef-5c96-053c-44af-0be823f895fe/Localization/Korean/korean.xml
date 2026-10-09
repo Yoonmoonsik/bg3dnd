@@ -7008,4 +7008,11 @@
 
 주문이 끝날 때까지, 크리처나 물체에 불을 던져 [2]를 줄 수 있습니다. 이 주문을 다시 시전하면 종료됩니다.</content>
   <content contentuid="h84fdaae4gf5f2g4d7dg9fd2gb5a952add89b" version="1">크리처나 물체에 불을 던집니다. 원거리 주문 공격을 가합니다.</content>
+  <content contentuid="h6a01d569g16d9g4646gb6bdg26cedca429d0" version="1">사거리 내 [1] 정사각형 범위의 땅에서 움켜쥐는 식물이 솟아납니다. 지속시간 동안 이 식물은 범위 안의 땅을 &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;험지&lt;/LSTag&gt;로 만듭니다. 식물은 주문이 끝나면 사라집니다.
+
+주문을 시전할 때 범위 안에 있던 크리처(자신 제외)는 각각 근력 내성 굴림에 성공하지 못하면 주문이 끝날 때까지 &lt;LSTag Type="Status" Tooltip="ENSNARED_VINES"&gt;구속&lt;/LSTag&gt; 상태가 됩니다.</content>
+  <content contentuid="he02336d4gdd7eg4829gb4d7ge797695759a8" version="1">구속 상태인 크리처는 자신의 턴이 시작될 때마다 시전자의 주문 내성 난이도에 대한 근력(&lt;LSTag Type="Skills" Tooltip="Athletics"&gt;운동&lt;/LSTag&gt;) 판정을 합니다. 성공하면 풀려나 더 이상 구속 상태가 아닙니다.</content>
+  <content contentuid="h372cfd49gd35fg439bgba78g704339ce057b" version="1">이동할 수 없습니다. 영향을 받은 대상에 대한 &lt;LSTag Tooltip="AttackRoll"&gt;명중 굴림&lt;/LSTag&gt;에 &lt;LSTag Tooltip="Advantage"&gt;유리 보정&lt;/LSTag&gt;을 받고, 대상은 명중 굴림과 민첩 &lt;LSTag Tooltip="SavingThrow"&gt;내성 굴림&lt;/LSTag&gt;에 &lt;LSTag Tooltip="Disadvantage"&gt;불리 보정&lt;/LSTag&gt;을 받습니다.
+
+구속 상태인 크리처는 자신의 턴이 시작될 때마다 시전자의 주문 내성 난이도에 대한 근력(&lt;LSTag Type="Skills" Tooltip="Athletics"&gt;운동&lt;/LSTag&gt;) 판정을 합니다. 성공하면 풀려나 더 이상 구속 상태가 아닙니다.</content>
 </contentList>

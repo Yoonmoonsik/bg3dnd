@@ -417,6 +417,23 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6b8435b4-9453-481d-b04c-12cb688519cc" />
+        <field name="Name" type="NameTableFieldDefinition" value="__RESTRAINED__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="31cf3119-0e8a-45d7-bfda-e9a5801e17b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="ENSNARED_VINES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5270043e-c7e3-4a53-bdf9-84c80deb8f15" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="RestrainedAthleticsCheck()" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h372cfd49gd35fg439bgba78g704339ce057b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="79683d38-56b7-4116-b815-5403d4ff0526" />
         <field name="Name" type="NameTableFieldDefinition" value="__TOXIN__" />
       </fields>

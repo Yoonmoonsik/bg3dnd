@@ -1,0 +1,8 @@
+function RestrainedAthleticsCheck()
+    local restrainedDC = math.max(
+        SourceSpellDC(10, context.Source, Ability.Intelligence),
+        SourceSpellDC(10, context.Source, Ability.Wisdom),
+        SourceSpellDC(10, context.Source, Ability.Charisma))
+    local check = SkillCheck(Skill.Athletics, restrainedDC, AdvantageOnRestrained(), DisadvantageOnRestrained(), context.Target, context.Target)
+    return ConditionResult(check.Result,{},{},check.Chance)
+end
