@@ -14234,6 +14234,8 @@
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="5" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Ally() and not Self();" />
         <field name="AoEConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Ally() and not Self();" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d1766e1g9372g4c83gbf61g1e5627181ff1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

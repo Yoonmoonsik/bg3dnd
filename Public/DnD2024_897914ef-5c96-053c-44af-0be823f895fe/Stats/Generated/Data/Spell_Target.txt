@@ -12028,6 +12028,8 @@ data "TargetRadius" "1.5"
 data "AreaRadius" "5"
 data "TargetConditions" "not Ally() and not Self();"
 data "AoEConditions" "Character() and not Dead() and not Ally() and not Self();"
+data "Description" "h7d1766e1g9372g4c83gbf61g1e5627181ff1;1"
+data "DescriptionParams" "Distance(4.5)"
 
 new entry "Target_VowOfEnmity"
 type "SpellData"

@@ -361,6 +361,14 @@ data "RemoveConditions" "SavingThrow(Ability.Strength, SourceSpellDC(),Advantage
 data "TickType" "EndTurn"
 data "TooltipSave" "Strength"
 
+new entry "NATURES_WRATH"
+type "StatusData"
+data "StatusType" "BOOST"
+using "NATURES_WRATH"
+data "RemoveConditions" ""
+data "RemoveEvents" ""
+data "TickFunctors" "IF(SavingThrow(Ability.Strength, SourceSpellDC(10, context.Source, Ability.Charisma))):RemoveStatus(NATURES_WRATH)"
+
 new entry "__TOXIN__"
 type "StatusData"
 data "StatusType" "BOOST"

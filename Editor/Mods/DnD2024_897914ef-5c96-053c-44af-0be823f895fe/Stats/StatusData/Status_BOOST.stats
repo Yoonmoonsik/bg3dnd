@@ -466,6 +466,16 @@
         <field name="TooltipSave" type="StringTableFieldDefinition" value="Strength" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e27b7b1d-94c2-4952-be00-52bfc19a1438" />
+        <field name="Name" type="NameTableFieldDefinition" value="NATURES_WRATH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="229bafd8-58cc-4e67-a0f4-7d789be56e2f" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(SavingThrow(Ability.Strength, SourceSpellDC(10, context.Source, Ability.Charisma))):RemoveStatus(NATURES_WRATH)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="79683d38-56b7-4116-b815-5403d4ff0526" />
