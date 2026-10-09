@@ -6567,6 +6567,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df3d57c8-0b2f-47ea-801a-e85db1546233" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_BOILBLOOD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_BOILBLOOD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BoilBlood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c7a0c3a7-d4c1-426b-a0b0-966042de1f62" />
         <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_COMMAND_CONTAINER" />
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_COMMAND_CONTAINER" />
@@ -12497,6 +12507,16 @@
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BLOODRUSH" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BloodRush,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haf6db600g1cecg48cag96c0g52a1bd0797be" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e00f89c3-9904-4bb6-9beb-49cbf97cd259" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BOILBLOOD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BOILBLOOD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BoilBlood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f332b10g34a4g4747g86c0g8128cf330c99" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -295,6 +295,13 @@ ApplyStatus(_Duplicity, "DUPLICITY_SPELL_BLOODBANERUNE", 6.0);
 IF
 StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
 AND
+IsSpellActive(_Cleric, "Target_BoilBlood", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_BOILBLOOD", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
 IsSpellActive(_Cleric, "Target_Command_Container", 1)
 THEN
 ApplyStatus(_Duplicity, "DUPLICITY_SPELL_COMMAND_CONTAINER", 6.0);

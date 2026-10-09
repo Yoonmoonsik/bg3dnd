@@ -11804,6 +11804,351 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;IsConcentration;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d9cbe93-34ea-4bef-a5e0-6afc2a79d28a" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BoilBlood6;Target_BoilBlood8;Target_BoilBlood10;Target_BoilBlood12;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(1d6,Fire,Magical);RemoveStatus(SG_Poisoned)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and not Dead()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BoilBlood" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h533bc738g9f3cg4066g916bg7947fa13ee60" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf3a05381gc0d7g4125g97e5gc81be7d98b0e" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Fire)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_LesserRestoration_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Healing_LesserRestoration_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_RemoveNegativeStatuses" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;454e3439-19f2-4c42-8773-e18cf4ee233a,15209db5-584b-451e-9fde-65fc5fa83945,c79098ac-4635-4bb3-a761-5541d5c0b057;ccdf11dc-08f7-4d7f-bca9-55cfcc8f94bd,a1257697-f0d0-41e1-916c-a56e2c5a4bb5,83da82ea-147d-45ba-9549-cfdd3e39b109;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;236087a5-5597-4ee7-ab06-75b01147f596,,;ee0b6a78-c6b6-4852-aecb-d7c474a37d68,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsMelee;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead()" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="96a51ac8-2e7e-4718-bb62-dcfd18964a02" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b3087bdc-96ad-495a-9199-18846152088d" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="0b923965-fccd-41cc-9227-f886c427f65f" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="764052db-7074-4b57-a769-0683500114eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d9cbe93-34ea-4bef-a5e0-6afc2a79d28a" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BoilBlood6_2;Target_BoilBlood8_2;Target_BoilBlood10_2;Target_BoilBlood12_2;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BoilBlood" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bae8aab8-c405-4492-8dc8-fe8aeb384957" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="764052db-7074-4b57-a769-0683500114eb" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BoilBlood6_3;Target_BoilBlood8_3;Target_BoilBlood10_3;Target_BoilBlood12_3;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8217bfe2-0c9b-4436-a97f-e0a79be47be3" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="764052db-7074-4b57-a769-0683500114eb" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BoilBlood6_4;Target_BoilBlood8_4;Target_BoilBlood10_4;Target_BoilBlood12_4;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3e8c822f-9c32-4333-a426-3a1686a3b72e" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="764052db-7074-4b57-a769-0683500114eb" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BoilBlood6_5;Target_BoilBlood8_5;Target_BoilBlood10_5;Target_BoilBlood12_5;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="51efab73-ea50-469a-a490-bb7cefca532b" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="764052db-7074-4b57-a769-0683500114eb" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BoilBlood6_6;Target_BoilBlood8_6;Target_BoilBlood10_6;Target_BoilBlood12_6;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a706c2e1-a637-4998-80ff-12954eb5a15c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d9cbe93-34ea-4bef-a5e0-6afc2a79d28a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77494f21gc7e9g496bg94f0g97e2c6ed3eb6" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice06:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f967f182-4679-4678-9dcd-cf7ca2c38606" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood6_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a706c2e1-a637-4998-80ff-12954eb5a15c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:1;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BoilBlood6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f869cbae-9633-4b93-a1f4-24bb2c74f6b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f967f182-4679-4678-9dcd-cf7ca2c38606" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e33a599b-a6db-4d3f-b2f0-71926d9974a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f967f182-4679-4678-9dcd-cf7ca2c38606" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ea5a7931-d28e-4db6-bc4d-707e8448226d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f967f182-4679-4678-9dcd-cf7ca2c38606" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ebe1e0da-c9a0-4193-9468-ce3b09f2b84e" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f967f182-4679-4678-9dcd-cf7ca2c38606" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e20e7f2-315e-4aae-9b84-fb8b7444852d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a706c2e1-a637-4998-80ff-12954eb5a15c" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(1d8,Fire,Magical);RemoveStatus(SG_Poisoned)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdcff73bbgdbfag4471g9574gb17cfc76be95" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8,Fire)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice08:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="93a63995-4d8b-4e90-b6eb-c25588957271" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood8_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6e20e7f2-315e-4aae-9b84-fb8b7444852d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:1;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BoilBlood8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9982fe17-4780-40c8-b27d-659947e01efc" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="93a63995-4d8b-4e90-b6eb-c25588957271" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="740a4a11-da83-4b65-90ab-fc596edd3704" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="93a63995-4d8b-4e90-b6eb-c25588957271" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac2640f1-60ee-4fa4-bd33-78bbd01908c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="93a63995-4d8b-4e90-b6eb-c25588957271" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eec663c2-7e2f-4c9f-a3b0-668069aa9108" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="93a63995-4d8b-4e90-b6eb-c25588957271" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="29824705-95c3-461c-8974-8bcff46d49e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6e20e7f2-315e-4aae-9b84-fb8b7444852d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(1d10,Fire,Magical);RemoveStatus(SG_Poisoned)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6aaf22b0g35bfg4758g905agc84e31da4669" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10,Fire)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice10:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0deb181f-1dbc-47df-89a3-b3d77cb7e94c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood10_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="29824705-95c3-461c-8974-8bcff46d49e2" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:1;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BoilBlood10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cee32375-1872-4542-8914-02e506bfb68c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0deb181f-1dbc-47df-89a3-b3d77cb7e94c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1f431b7f-ba42-4f62-b4e7-89094dacacd6" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0deb181f-1dbc-47df-89a3-b3d77cb7e94c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="603b65a1-4e2b-4c90-8970-fa8a45cf25de" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0deb181f-1dbc-47df-89a3-b3d77cb7e94c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cf774274-0254-4e9e-b27e-5602e0dbcf6b" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0deb181f-1dbc-47df-89a3-b3d77cb7e94c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="896cb80a-d5da-41dc-bd70-4d32f3524bd1" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="29824705-95c3-461c-8974-8bcff46d49e2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(1d12,Fire,Magical);RemoveStatus(SG_Poisoned)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4ab20771g566bg49eag94a1g794f97207602" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d12,Fire)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice12:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b627f3f4-646c-46a8-82aa-04a590a8a40a" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood12_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="896cb80a-d5da-41dc-bd70-4d32f3524bd1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:1;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BoilBlood12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="efd70d34-0abb-4481-a532-c6970c5e2e02" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b627f3f4-646c-46a8-82aa-04a590a8a40a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee7d4d67-d139-402c-ad06-bac6907a62d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b627f3f4-646c-46a8-82aa-04a590a8a40a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b26f6334-91f4-46fc-abdd-85f2bc0666d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b627f3f4-646c-46a8-82aa-04a590a8a40a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6c99354-99b7-4bab-8288-3aa1a9d46b45" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b627f3f4-646c-46a8-82aa-04a590a8a40a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BoilBlood_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7338ef81-8912-4868-b58f-985da71b91d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoilBlood_Dummy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d9cbe93-34ea-4bef-a5e0-6afc2a79d28a" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d1095f08-ab53-4789-8336-04d066559346" />

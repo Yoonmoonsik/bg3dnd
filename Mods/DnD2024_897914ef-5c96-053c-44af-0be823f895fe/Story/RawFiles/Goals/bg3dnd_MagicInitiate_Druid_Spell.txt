@@ -69,6 +69,19 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_BLOODRUSH", -1.0, 1, _Player);
 
 IF
+StartedPreviewingSpell((CHARACTER)_Player,"Target_BoilBlood_Dummy",_, _)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_BOILBLOOD", 1)
+AND
+ResolveTranslatedString("h758b92a3gedfcg4ab3g8e8fg85ad854a1ce6", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_DRUID_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_BOILBLOOD", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Target_CharmPerson",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_DRUID_SPELL_START", 1)
