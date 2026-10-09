@@ -5520,6 +5520,41 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8c4974c9-2528-483f-ad75-62b01d4f48ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="CRIMSON_LASH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he60ceef6g1e5ag4107gaf3dgac1d58815e58" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd1f0eda1gc981g4c29gb65agef6ffe5d63aa" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_CrimsonLash" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CRIMSON_LASH" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Item(context.Source)):WeaponProperty(Unstowable);Attribute(InventoryBound);IF(IntelligenceIsBestAttackAbility()):WeaponAttackRollAbilityOverride(Intelligence);IF(WisdomIsBestAttackAbility()):WeaponAttackRollAbilityOverride(Wisdom);IF(CharismaIsBestAttackAbility()):WeaponAttackRollAbilityOverride(Charisma);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78bd732e-c94c-4b5a-8e9f-8cca30fad777" />
+        <field name="Name" type="NameTableFieldDefinition" value="CRIMSON_LASH_ATTACKS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha01d0015g9f12g4233gab78gd2b829f5bb40" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb4822b45gb756g4c64g93eeg831206a2f6eb" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_CrimsonLash" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CRIMSON_LASH_ATTACKS" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ExtraAttack" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55ce9c5a-98f5-46a4-9ebd-fa3e50e78c36" />
+        <field name="Name" type="NameTableFieldDefinition" value="CRIMSON_LASH_ATTACKS_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78bd732e-c94c-4b5a-8e9f-8cca30fad777" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ExtraAttack_2" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />
@@ -12610,6 +12645,16 @@
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SHROUDBLOOD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShroudBlood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7e60f1fg77ecg4bf3ga4dag5e983f313b90" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="031404b2-061d-4d02-adbc-b79f256374b1" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CRIMSONLASH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CRIMSONLASH" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_CrimsonLash,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2de0004ag5b77g48c6ga80eg0460ac14d524" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

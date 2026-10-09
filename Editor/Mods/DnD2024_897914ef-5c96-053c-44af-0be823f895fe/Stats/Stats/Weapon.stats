@@ -3875,6 +3875,78 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2cfb2646-c37a-4a6e-8acd-f5f5c6cb01a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_CrimsonLash_D6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7b854117-660e-4f29-8677-2032221bb41e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f9c1bcdf-9141-4994-938e-322b0c727b28" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="1d6" />
+        <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);CannotBeDisarmed();HiddenDuringCinematic();" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="WEAPON_COATED_WITH_POISON;POISON_BASIC;POISON_SERPENT_VENOM;POISON_WYVERN;POISON_WYVERN_DIPPED;POISON_PURPLE_WORM;DIPPED_FIRE;DIPPED_POISON;DIPPED_WATER" />
+        <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="SimpleMeleeWeapon" enumeration_type_name="Weapon Group" version="1" />
+        <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Finesse;Light;Melee;Reach" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="Sickles;SimpleWeapons" enumeration_type_name="ProficiencyGroupFlags" version="1" />
+        <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="250" />
+        <field name="PassivesOffHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0047f9aa-4a85-4395-9c64-218f54679603" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_CrimsonLash_D8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7b854117-660e-4f29-8677-2032221bb41e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="fc4000a8-77e6-4a25-a071-bc6ea1645a54" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="1d8" />
+        <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);CannotBeDisarmed();HiddenDuringCinematic();" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="WEAPON_COATED_WITH_POISON;POISON_BASIC;POISON_SERPENT_VENOM;POISON_WYVERN;POISON_WYVERN_DIPPED;POISON_PURPLE_WORM;DIPPED_FIRE;DIPPED_POISON;DIPPED_WATER" />
+        <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="SimpleMeleeWeapon" enumeration_type_name="Weapon Group" version="1" />
+        <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Finesse;Light;Melee;Reach" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="Sickles;SimpleWeapons" enumeration_type_name="ProficiencyGroupFlags" version="1" />
+        <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="250" />
+        <field name="PassivesOffHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="327f5d63-4ae2-4586-ad4c-0d2bcec20615" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_CrimsonLash_D10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7b854117-660e-4f29-8677-2032221bb41e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="72198cd7-0c5e-42ae-81a1-37689481851d" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="1d10" />
+        <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);CannotBeDisarmed();HiddenDuringCinematic();" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="WEAPON_COATED_WITH_POISON;POISON_BASIC;POISON_SERPENT_VENOM;POISON_WYVERN;POISON_WYVERN_DIPPED;POISON_PURPLE_WORM;DIPPED_FIRE;DIPPED_POISON;DIPPED_WATER" />
+        <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="SimpleMeleeWeapon" enumeration_type_name="Weapon Group" version="1" />
+        <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Finesse;Light;Melee;Reach" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="Sickles;SimpleWeapons" enumeration_type_name="ProficiencyGroupFlags" version="1" />
+        <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="250" />
+        <field name="PassivesOffHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ebf4c4ad-f6ca-46d2-8fd8-7399c3b3395a" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_CrimsonLash_D12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7b854117-660e-4f29-8677-2032221bb41e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="5aa62c5f-2447-4b06-b87d-42abd99d9165" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="1d12" />
+        <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);CannotBeDisarmed();HiddenDuringCinematic();" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="WEAPON_COATED_WITH_POISON;POISON_BASIC;POISON_SERPENT_VENOM;POISON_WYVERN;POISON_WYVERN_DIPPED;POISON_PURPLE_WORM;DIPPED_FIRE;DIPPED_POISON;DIPPED_WATER" />
+        <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="SimpleMeleeWeapon" enumeration_type_name="Weapon Group" version="1" />
+        <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Finesse;Light;Melee;Reach" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="Sickles;SimpleWeapons" enumeration_type_name="ProficiencyGroupFlags" version="1" />
+        <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="250" />
+        <field name="PassivesOffHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8b004026-e65b-4510-b404-b8e2ebd8ae66" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Blindside_Shortsword" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c6352039-a985-4b94-886a-29dd7af0d203" />

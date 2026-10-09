@@ -8353,6 +8353,13 @@ data "DisplayName" "h2b55cbd1g9005g4e28g8aa3gc86f1fa9bde6;1"
 data "Icon" "Spell_Consumption"
 data "Boosts" "UnlockSpell(Target_Consumption,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);"
 
+new entry "MagicInitiate_Wizard_CrimsonLash"
+type "PassiveData"
+using "MagicInitiate_Wizard_AbsorbElements"
+data "DisplayName" "h69754b8bg1e33g4b45g89c4gace3508bf404;1"
+data "Icon" "Spell_CrimsonLash"
+data "Boosts" "UnlockSpell(Shout_CrimsonLash,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);"
+
 new entry "MagicInitiate_Wizard_DisguiseSelf"
 type "PassiveData"
 using "MagicInitiate_Wizard_AbsorbElements"

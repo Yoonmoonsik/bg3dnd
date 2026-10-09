@@ -147,6 +147,32 @@ OpenMessageBox(_Player, _Msg);
 ApplyStatus(_Player, "MAGICINITIATE_CONSUMPTION", -1.0, 1, _Player);
 
 IF
+StartedPreviewingSpell((CHARACTER)_Player,"Shout_CrimsonLash_Dummy",_, _)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_CRIMSONLASH", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_CRIMSONLASH", -1.0, 1, _Player);
+
+IF
+CastedSpell((CHARACTER)_Player,"Shout_CrimsonLash_Dummy",_,_,_)
+AND
+HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)
+AND
+NOT HasActiveStatus(_Player, "MAGICINITIATE_CRIMSONLASH", 1)
+AND
+ResolveTranslatedString("h2e45d3c2gc1beg4101g9a04gcbaaaac11f0a", _Msg)
+THEN
+ApplyStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_END", -1.0, 1, _Player);
+OpenMessageBox(_Player, _Msg);
+ApplyStatus(_Player, "MAGICINITIATE_CRIMSONLASH", -1.0, 1, _Player);
+
+IF
 StartedPreviewingSpell((CHARACTER)_Player,"Shout_EarthTremor",_, _)
 AND
 HasActiveStatus(_Player, "MAGICINITIATE_WIZARD_SPELL_START", 1)

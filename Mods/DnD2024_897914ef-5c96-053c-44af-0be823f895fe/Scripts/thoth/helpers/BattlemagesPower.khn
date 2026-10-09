@@ -31,5 +31,7 @@ function ArcaneAcuityGlovesCondition()
     | ((HasStatus('FLAME_BLADE_6', GetActiveWeapon()) & ~IsOffHandAttack()) | (HasStatus('FLAME_BLADE_6', GetActiveWeapon(context.Source, false)) & IsMeleeSpellAttack()))
     | (IsMainHandWeaponAttack() & (HasStatus('SHADOW_BLADE', GetAttackWeapon()) | HasStatus('SHADOWBLADE_TECHNICAL', GetAttackWeapon())))
     | (IsOffHandAttack() & (HasStatus('SHADOW_BLADE', GetActiveWeapon(context.Source, false)) | HasStatus('SHADOWBLADE_TECHNICAL', GetActiveWeapon(context.Source, false))))
+    | (IsMainHandWeaponAttack() & HasStatus('CRIMSON_LASH', GetAttackWeapon()))
+    | (IsOffHandAttack() & HasStatus('CRIMSON_LASH', GetActiveWeapon(context.Source, false)))
     | (IsSpell() & IsWeaponAttack())
 end
