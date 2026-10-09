@@ -326,7 +326,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="33288668-4060-4817-9026-0a5b2be9b950" />
         <field name="Name" type="NameTableFieldDefinition" value="PRONE_REMOVING" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,PRONE);RemoveStatus(SELF,PRONE_FALLEN);RemoveStatus(SELF,PRONE_GREASE);RemoveStatus(SELF,PRONE_ICE);RemoveStatus(SELF,PRONE_SEWER);RemoveStatus(SELF,PRONE_THUNDEROUS_SMITE);RemoveStatus(SELF,PRONE_MOUNT);RemoveStatus(SELF,PRONE_RECOVERED_FROM_DOWN);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,PRONE);RemoveStatus(SELF,PRONE_FALLEN);RemoveStatus(SELF,PRONE_GREASE);RemoveStatus(SELF,PRONE_ICE);RemoveStatus(SELF,PRONE_SEWER);RemoveStatus(SELF,PRONE_THUNDEROUS_SMITE);RemoveStatus(SELF,PRONE_MOUNT);RemoveStatus(SELF,PRONE_RECOVERED_FROM_DOWN);UseActionResource(Movement, 4.5, 0, true);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -334,7 +334,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="cfa49150-dbb6-4a35-9963-5ab99e1f7360" />
         <field name="Name" type="NameTableFieldDefinition" value="PRONE_REMOVING_STANDUP" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="33288668-4060-4817-9026-0a5b2be9b950" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,PRONE);RemoveStatus(SELF,PRONE_FALLEN);RemoveStatus(SELF,PRONE_GREASE);RemoveStatus(SELF,PRONE_ICE);RemoveStatus(SELF,PRONE_SEWER);RemoveStatus(SELF,PRONE_THUNDEROUS_SMITE);RemoveStatus(SELF,PRONE_MOUNT);RemoveStatus(SELF,PRONE_RECOVERED_FROM_DOWN);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,PRONE);RemoveStatus(SELF,PRONE_FALLEN);RemoveStatus(SELF,PRONE_GREASE);RemoveStatus(SELF,PRONE_ICE);RemoveStatus(SELF,PRONE_SEWER);RemoveStatus(SELF,PRONE_THUNDEROUS_SMITE);RemoveStatus(SELF,PRONE_MOUNT);RemoveStatus(SELF,PRONE_RECOVERED_FROM_DOWN);UseActionResource(Movement, 1.5, 0, true);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
