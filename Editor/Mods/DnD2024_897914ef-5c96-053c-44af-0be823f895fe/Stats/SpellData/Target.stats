@@ -12931,9 +12931,12 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f47f1783-bf93-4910-8977-874073958849" />
         <field name="Name" type="NameTableFieldDefinition" value="ShadowGrasp" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SHADOW_GRASP,100,2);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(SHADOW_GRASP,100,2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SHADOW_GRASP,100,2);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Strength" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead();" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Cleric_ShadowGrasp" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h40671bc4g4e10g2c2egd92cg6a9ae5dc8595" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7630efebgc128g1a88g3056g3cd8dbd6ce14" version="1" />
