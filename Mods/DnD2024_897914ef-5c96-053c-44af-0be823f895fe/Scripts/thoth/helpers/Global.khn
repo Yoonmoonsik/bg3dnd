@@ -3,6 +3,10 @@ function Blooded(entity)
     return ConditionResult(entity.HPPercentageWithoutTemporaryHP < 50)
 end
 
+function StrAttackSaveDC()
+    return 8 + context.Source.ProficiencyBonus + GetModifier(context.Source.Strength)
+end
+
 function IntAttackSaveDC()
     return 8 + context.Source.ProficiencyBonus + GetModifier(context.Source.Intelligence)
 end

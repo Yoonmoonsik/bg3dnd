@@ -11578,7 +11578,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BranchesOfTheTree" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC())" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, StrAttackSaveDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:IF(not Grounded() and TargetSizeEqualOrSmaller(Size.Large)):Force(-6, OriginToEntity, Neutral, false, true);ApplyStatus(BRANCHES_OF_THE_TREE,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and (Item() or Character() or Dead())" />
