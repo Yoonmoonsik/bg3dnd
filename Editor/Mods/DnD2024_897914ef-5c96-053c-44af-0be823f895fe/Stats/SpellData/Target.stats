@@ -2765,6 +2765,42 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="660f9753-0782-4747-aaa8-b03101e91354" />
+        <field name="Name" type="NameTableFieldDefinition" value="BlackTentacles" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="398af52e-38b6-4792-b5e1-884038c9a785" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(BLACK_TENTACLES,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLACK_TENTACLES,100,10);" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he02336d4gdd7eg4829gb4d7ge797695759a8" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2379801f-4e3a-4491-88e7-c7c352f9d078" />
+        <field name="Name" type="NameTableFieldDefinition" value="BlackTentacles_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3038df39-3a79-4887-bbbd-047a64440bec" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(BLACK_TENTACLES,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLACK_TENTACLES,100,10);" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he02336d4gdd7eg4829gb4d7ge797695759a8" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63ccb5af-a494-42e6-ab41-7e8d2e4a68ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="BlackTentacles_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e430d593-c152-438c-a4fc-efaefc671ded" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(BLACK_TENTACLES,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLACK_TENTACLES,100,10);" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he02336d4gdd7eg4829gb4d7ge797695759a8" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dc50653c-5d14-45f2-983a-bd124a6cbc51" />

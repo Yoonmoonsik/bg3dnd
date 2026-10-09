@@ -432,6 +432,20 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h372cfd49gd35fg439bgba78g704339ce057b" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3477ef1b-bc24-47c0-a4db-7054c3fa3198" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLACK_TENTACLES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="443e8ec5-8785-4ba6-a604-f7726a1b0bb3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb56ec774g35a5g4be0gbde5g6f4227d59afb" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="RestrainedAthleticsCheck()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BLACK_TENTACLES_TECHNICAL,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,SANCTUARY);RemoveStatus(SELF,SANCTUARY_TRANQUILITY);DealDamage(3d6,Bludgeoning,Magical);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="79683d38-56b7-4116-b815-5403d4ff0526" />
