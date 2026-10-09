@@ -5457,6 +5457,53 @@
         <field name="Passives" type="StringTableFieldDefinition" value="BloodbaneRune_D12_6;" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e02bddd-cacd-45ce-b904-ac167a7ea68d" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONSUMPTION_D6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdee2e15fg7bccg4e46g8f71g6014ee76ace5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6f827734g94acg4d95ga41cgc95d5fe3f678" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Consumption" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CONSUMPTION" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Necrotic,Magical)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="RemoveStatus(CONSUMPTION_D6)" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="098a964a-9f9a-4531-9bfa-92820e74c480" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONSUMPTION_D8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e02bddd-cacd-45ce-b904-ac167a7ea68d" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Necrotic,Magical)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="RemoveStatus(CONSUMPTION_D8)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f31f7cc-f330-4f5d-b1db-a44b51049218" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONSUMPTION_D10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e02bddd-cacd-45ce-b904-ac167a7ea68d" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic)" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d10,Necrotic,Magical)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="RemoveStatus(CONSUMPTION_D10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="832a7ecb-0e00-4cac-82eb-ecfb2226ed37" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONSUMPTION_D12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e02bddd-cacd-45ce-b904-ac167a7ea68d" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic)" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d12,Necrotic,Magical)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="RemoveStatus(CONSUMPTION_D12)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />
@@ -12517,6 +12564,16 @@
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BOILBLOOD" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BoilBlood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f332b10g34a4g4747g86c0g8128cf330c99" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c720b891-3b2e-4385-a506-3204a4202bbe" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CONSUMPTION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CONSUMPTION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Consumption,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h32544316gabe3g47b4gbf17gbf9c2e8f017a" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
