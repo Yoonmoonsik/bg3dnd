@@ -5721,6 +5721,192 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D6_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h146caa62g1cfcg4249g9e55ge88c7adc37f7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcb8ed40cg3097g4123g8f7eg5e2fb5141230" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d6" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_TheftOfVitae" />
+        <field name="StackId" type="StringTableFieldDefinition" value="THEFT_OF_VITAE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d6)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="96632c50-6c5f-499f-8790-81c80539f24a" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d6" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d6)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf7af6cc-744d-469d-b057-debd5bc79bea" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d6" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d6)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7722ac6c-fc30-4403-961a-fcc2db4fd513" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d6" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d6)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9746cf55-d39a-4e60-b28e-6dbb9727c80e" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d6" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d6)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fca029fa-a560-43a0-80b6-6527e0b3ee3f" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D8_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d8" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d8)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="993775af-8d59-46bb-9796-c7ba63344c9b" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d8" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d8)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="65d9ea75-54d6-4c31-aee9-c6ec53801958" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d8" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d8)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1deaffc1-b857-4067-85a8-21aab12e8a6b" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d8" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d8)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c47960e-0e7f-4f84-8cd8-74a571aa2d1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d8" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d8)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a4d7803-8a2b-4e6d-aa3d-b641eef82e27" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D10_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d10" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd6e0e7f-101f-4d48-82f5-acf4844cff51" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d10" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="52fcc13d-b5ae-45f2-8f0e-599816651b8e" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d10" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="519c3b47-8459-4654-81cf-47632fd2ddbe" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d10" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="21d46c62-380a-4dd6-a119-c60feef5ed91" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d10" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01349b59-3aa9-47a0-a9c9-fde0bab183ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D12_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d12" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d12)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63e3f387-21d2-4c84-94d6-91781d994a12" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d12" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d12)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ee87963-e749-44ae-9dec-f25882e5fdda" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d12" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d12)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b0991709-206c-45d4-880d-2126e5154996" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d12" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d12)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40da82ff-1346-4ab3-827b-8677a478164f" />
+        <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d12" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d12)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />

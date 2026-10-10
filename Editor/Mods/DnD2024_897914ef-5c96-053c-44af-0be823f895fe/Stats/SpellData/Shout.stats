@@ -4413,6 +4413,364 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="acb5e1f6-0d6b-423a-a8fa-3f9487a81754" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_TheftOfVitae6;Shout_TheftOfVitae8;Shout_TheftOfVitae10;Shout_TheftOfVitae12;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_TheftOfVitae" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h146caa62g1cfcg4249g9e55ge88c7adc37f7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he8976fa4g0cd7g405aga191ge39adfa10f4e" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;Distance(9);DealDamage(2d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Necrotic)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="06713acb-6fac-4dd2-b3e8-6bac001c7a8d" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9122eb08-93f1-4010-a275-f5ae3ec7c76e,,;,,;2860e825-ec12-4008-8471-d797fc00abc4,,;b6540e92-9e06-4695-9d8e-552d5eac45c2,,;5301d674-b7da-47b6-b4cf-2802ba33a9e9,,;,,;86b3cf93-21fb-4a3d-bed9-97d0a567d084,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f38beb65-0214-4bbc-8d69-627103897603" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acb5e1f6-0d6b-423a-a8fa-3f9487a81754" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_TheftOfVitae6_3;Shout_TheftOfVitae8_3;Shout_TheftOfVitae10_3;Shout_TheftOfVitae12_3;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;Distance(9);DealDamage(3d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2257e93f-dba0-48b6-ac9f-0e0b9a8cc88a" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acb5e1f6-0d6b-423a-a8fa-3f9487a81754" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_TheftOfVitae6_4;Shout_TheftOfVitae8_4;Shout_TheftOfVitae10_4;Shout_TheftOfVitae12_4;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;Distance(9);DealDamage(4d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="857a2b10-0df6-4700-9226-80ed11005535" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acb5e1f6-0d6b-423a-a8fa-3f9487a81754" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_TheftOfVitae6_5;Shout_TheftOfVitae8_5;Shout_TheftOfVitae10_5;Shout_TheftOfVitae12_5;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;Distance(9);DealDamage(5d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df6d6e22-8a49-454f-aa35-87e5db807d20" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acb5e1f6-0d6b-423a-a8fa-3f9487a81754" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_TheftOfVitae6_6;Shout_TheftOfVitae8_6;Shout_TheftOfVitae10_6;Shout_TheftOfVitae12_6;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;Distance(9);DealDamage(6d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4679f51f-ef7e-4bb6-8756-5c1e598eae64" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acb5e1f6-0d6b-423a-a8fa-3f9487a81754" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65c4c661g90d7g443cg8d59g901c9e2cccd5" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;Distance(9);DealDamage(2d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63498aaa-e8b1-44ea-9b68-f5be967dc269" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4679f51f-ef7e-4bb6-8756-5c1e598eae64" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;Distance(9);DealDamage(3d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae6_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc15b845-9ee9-491a-ac11-7e401851600a" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4679f51f-ef7e-4bb6-8756-5c1e598eae64" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;Distance(9);DealDamage(4d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae6_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a91a7b2d-a1a4-41f7-be5b-d4cf9a4743b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4679f51f-ef7e-4bb6-8756-5c1e598eae64" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;Distance(9);DealDamage(5d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae6_5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7109900b-33d3-475a-9795-844c5294baa6" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4679f51f-ef7e-4bb6-8756-5c1e598eae64" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;Distance(9);DealDamage(6d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae6_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82f8cccd-32ad-47e2-9bfa-34866c02d60e" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acb5e1f6-0d6b-423a-a8fa-3f9487a81754" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h94cdc886g9a9dg4c27g842bg591c4d909b97" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;Distance(9);DealDamage(2d8,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b428c28c-5424-4553-b9f8-f70ed3d4e228" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="82f8cccd-32ad-47e2-9bfa-34866c02d60e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;Distance(9);DealDamage(3d8,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae8_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="162203a7-c0df-486a-b5eb-b8af94e7d824" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="82f8cccd-32ad-47e2-9bfa-34866c02d60e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;Distance(9);DealDamage(4d8,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae8_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb374402-d34f-408b-92aa-4a5f214d1782" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="82f8cccd-32ad-47e2-9bfa-34866c02d60e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;Distance(9);DealDamage(5d8,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae8_5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5103c7e9-1dfe-4581-bbaf-6283f980e0be" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="82f8cccd-32ad-47e2-9bfa-34866c02d60e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;Distance(9);DealDamage(6d8,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae8_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="410ad03a-5016-496d-a8fb-385d4a62d256" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acb5e1f6-0d6b-423a-a8fa-3f9487a81754" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c478cbdg2ad4g4280gbdf3g5e398f8b9911" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;Distance(9);DealDamage(2d10,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="086248a3-e54f-4c81-8e0d-4277cb5d94e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="410ad03a-5016-496d-a8fb-385d4a62d256" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;Distance(9);DealDamage(3d10,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae10_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="53a14366-a27d-4e85-98c5-6f91023b8897" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="410ad03a-5016-496d-a8fb-385d4a62d256" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;Distance(9);DealDamage(4d10,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae10_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57404589-e0b7-4fc0-b9c1-bb514bdfe8a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="410ad03a-5016-496d-a8fb-385d4a62d256" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;Distance(9);DealDamage(5d10,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d10,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae10_5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="12e8d7b2-83ef-436e-976f-334cb8fd606d" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="410ad03a-5016-496d-a8fb-385d4a62d256" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;Distance(9);DealDamage(6d10,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d10,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae10_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="844c19ab-0fe1-404a-b711-31f889ee5d1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acb5e1f6-0d6b-423a-a8fa-3f9487a81754" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hba4e7c05g348cg488agb818ga954f47490d1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;Distance(9);DealDamage(2d12,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d12,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae12" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="73bd63dc-c85b-4660-b02d-3b33d162e6b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="844c19ab-0fe1-404a-b711-31f889ee5d1a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;Distance(9);DealDamage(3d12,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d12,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae12_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b0329038-1767-4017-a25d-e5f58f909c45" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="844c19ab-0fe1-404a-b711-31f889ee5d1a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;Distance(9);DealDamage(4d12,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d12,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae12_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8c62375b-4d27-4fb5-9274-1b79fc4622fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="844c19ab-0fe1-404a-b711-31f889ee5d1a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;Distance(9);DealDamage(5d12,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d12,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae12_5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a286097f-be80-47be-81e8-c334dc377860" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheftOfVitae12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="844c19ab-0fe1-404a-b711-31f889ee5d1a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae_6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;Distance(9);DealDamage(6d12,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d12,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_TheftOfVitae12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_TheftOfVitae12_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="de40b830-88a1-40dd-9785-b38cf857558e" />
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash_Dummy" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="09395053-4c6d-49b7-bd85-f3551fe59b89" />

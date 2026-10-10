@@ -245,6 +245,219 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41499540-4ec6-49fd-bd0b-27c3602966e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65c4c661g90d7g443cg8d59g901c9e2cccd5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc22d3bbbg1710g4c44gb2d7gdbccff736f35" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(2d6,Necrotic);2d6" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_TheftOfVitae" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Self(context.Target,context.Observer) and IsAbleToReact(context.Observer) and not HasVerbalComponentBlocked(context.Observer) and Enemy(context.Target,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and HasFunctor(StatsFunctorType.DealDamage) and not Dead(context.Target) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(2d6,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D6_2,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:2;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="TheftOfVitae" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="063b79ad-a438-4c51-9650-43b5f2127ab9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41499540-4ec6-49fd-bd0b-27c3602966e6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d6,Necrotic);3d6" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(3d6,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D6_3,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0220575c-ddc5-446e-88e7-ac3989ce0f1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41499540-4ec6-49fd-bd0b-27c3602966e6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(4d6,Necrotic);4d6" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(4d6,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D6_4,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c9ccdd4e-611f-49bf-8e44-06fceb2a70d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41499540-4ec6-49fd-bd0b-27c3602966e6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(5d6,Necrotic);5d6" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(5d6,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D6_5,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="630abb1f-b10f-485b-bbff-6b97d2f80c5a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41499540-4ec6-49fd-bd0b-27c3602966e6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(6d6,Necrotic);6d6" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(6d6,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D6_6,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4cf49fed-a687-4fa6-80ee-d52d75b1e45a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41499540-4ec6-49fd-bd0b-27c3602966e6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h94cdc886g9a9dg4c27g842bg591c4d909b97" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(2d8,Necrotic);2d8" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(2d8,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D8_2,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4f52d2bd-6b8f-4cc2-9d13-fe4f5371170d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4cf49fed-a687-4fa6-80ee-d52d75b1e45a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d8,Necrotic);3d8" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(3d8,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D8_3,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c380c97-3464-45e4-acc7-3e4a8486a8be" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4cf49fed-a687-4fa6-80ee-d52d75b1e45a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(4d8,Necrotic);4d8" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(4d8,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D8_4,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0e8d0cf6-bd60-43c1-9ab2-a1ac880f1e04" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4cf49fed-a687-4fa6-80ee-d52d75b1e45a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(5d8,Necrotic);5d8" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(5d8,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D8_5,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06600679-82a8-4841-ae1d-24616a56fb30" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4cf49fed-a687-4fa6-80ee-d52d75b1e45a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(6d8,Necrotic);6d8" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(6d8,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D8_6,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="877349e2-2a8c-4b8f-aee7-af2418707e0a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41499540-4ec6-49fd-bd0b-27c3602966e6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c478cbdg2ad4g4280gbdf3g5e398f8b9911" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(2d10,Necrotic);2d10" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(2d10,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D10_2,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b51683c-9fe7-4d39-8ff0-325bf2d61e59" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="877349e2-2a8c-4b8f-aee7-af2418707e0a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d10,Necrotic);3d10" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(3d10,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D10_3,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="90c3dbf6-74fa-45ee-bedf-414b80c91d9c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="877349e2-2a8c-4b8f-aee7-af2418707e0a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(4d10,Necrotic);4d10" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(4d10,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D10_4,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ef5b4398-bec9-42cb-83a2-7cbc93696742" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="877349e2-2a8c-4b8f-aee7-af2418707e0a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(5d10,Necrotic);5d10" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(5d10,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D10_5,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a5b77f9-2460-4fa4-b6b9-6cf43dd7a53c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="877349e2-2a8c-4b8f-aee7-af2418707e0a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(6d10,Necrotic);6d10" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(6d10,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D10_6,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84c90744-1cc4-447b-b750-008603315e51" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41499540-4ec6-49fd-bd0b-27c3602966e6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hba4e7c05g348cg488agb818ga954f47490d1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(2d12,Necrotic);2d12" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(2d12,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D12_2,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f47e4583-14d1-47e2-a717-3dd3bc95664d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="84c90744-1cc4-447b-b750-008603315e51" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d12,Necrotic);3d12" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(3d12,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D12_3,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="941fbc70-5057-4b44-b75a-38442388bfc2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="84c90744-1cc4-447b-b750-008603315e51" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(4d12,Necrotic);4d12" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(4d12,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D12_4,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ed4e1f3-8e2b-4cf4-bb05-8f3c39215408" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="84c90744-1cc4-447b-b750-008603315e51" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(5d12,Necrotic);5d12" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(5d12,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D12_5,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f90739a3-2096-46e1-b0f3-ff5ef7b75fb7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheftOfVitae12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="84c90744-1cc4-447b-b750-008603315e51" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(6d12,Necrotic);6d12" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_TheftOfVitae_Dummy,true,true,true);DealDamage(6d12,Necrotic,Magical);ApplyStatus(OBSERVER_OBSERVER,THEFT_OF_VITAE_D12_6,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:6;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5fa81f45-86d6-4d85-a7ba-7e96c43ca697" />
