@@ -5555,6 +5555,103 @@
         <field name="Passives" type="StringTableFieldDefinition" value="ExtraAttack_2" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7cd593a1-3e8d-4b8e-97e1-6441f9614b5a" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_WISP_D6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h05902fe0g43aag47c9gb140g697495fcc9ad" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h095f6e64g810dg483bg9b33g91834913f260" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodWisp" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_WISP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BloodWispTurn,1,0);" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodWisp" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a874149f-582b-485f-b5f0-d47646bec9c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_WISP_D8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h05902fe0g43aag47c9gb140g697495fcc9ad" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h095f6e64g810dg483bg9b33g91834913f260" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodWisp" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_WISP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BloodWispTurn,1,0);" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodWisp" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df5209ec-ce0c-40bd-aff4-409a29be4bb5" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_WISP_D10" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h05902fe0g43aag47c9gb140g697495fcc9ad" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h095f6e64g810dg483bg9b33g91834913f260" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodWisp" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_WISP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BloodWispTurn,1,0);" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodWisp" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="367c5c81-8420-4b38-9aad-3c8e5477bd36" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_WISP_D12" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h05902fe0g43aag47c9gb140g697495fcc9ad" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h095f6e64g810dg483bg9b33g91834913f260" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodWisp" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_WISP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BloodWispTurn,1,0);" />
+        <field name="Passives" type="StringTableFieldDefinition" value="BloodWisp" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="834a1531-f4c7-40d7-98e8-ab898d821a40" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_WISP_4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_WISP_CHARGES" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BloodWisp,4,0);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="541ff9e2-bda2-43fe-9e88-350109a8db8f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_WISP_5" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_WISP_CHARGES" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BloodWisp,5,0);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="31f7c2ee-6ee5-442b-900d-affecd83d8ff" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_WISP_6" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_WISP_CHARGES" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BloodWisp,6,0);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b3a3aea2-7cfb-4f77-8d11-c7703d2ca539" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_WISP_7" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_WISP_CHARGES" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BloodWisp,7,0);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d517cd7-f937-43f6-ac75-9e0ecfe726c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_WISP_8" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_WISP_CHARGES" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BloodWisp,8,0);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />

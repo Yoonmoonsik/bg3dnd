@@ -1332,5 +1332,26 @@
         <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Turn" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_133" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a8f1bd6a-4852-4380-94df-c804c2c7296c" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="BloodWisp" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6cfafd49g4db7g407ag83e5g60a9a685bef1" version="1" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_134" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dc5d7f06-92fd-454b-9ebe-116d1504b5de" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="BloodWispTurn" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Turn" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

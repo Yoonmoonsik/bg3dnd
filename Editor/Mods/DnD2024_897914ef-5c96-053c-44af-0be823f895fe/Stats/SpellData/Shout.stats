@@ -3736,6 +3736,330 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8e4f971-c3ae-411d-b3d5-5223ab9451dd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_BloodWisp6;Shout_BloodWisp8;Shout_BloodWisp10;Shout_BloodWisp12;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D6,100,-1);ApplyStatus(BLOOD_WISP_4,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodWisp" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h05902fe0g43aag47c9gb140g697495fcc9ad" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2113ff55gc12cg4673gaf23g23fb99f0a1ce" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;4" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D6,100,-1)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Necrotic)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="e33fe82e-132e-47e5-91f6-030d0b40eaff" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_ConjureWoodlandBeing_L4to5" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;4156d364-d2c0-4a01-908c-3552f78f434d,,;6f0a29b6-0ae8-4ebf-a1e4-8069c4a6ad16,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7bf288a2-61a1-4e9a-be06-1b31a7e5c204" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fad8fdd0-dd62-4c96-aaaa-f6bdd6cb9718" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8e4f971-c3ae-411d-b3d5-5223ab9451dd" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_BloodWisp6_3;Shout_BloodWisp8_3;Shout_BloodWisp10_3;Shout_BloodWisp12_3;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodWisp" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="25da33e1-4d0c-400b-99bb-dca2ef140325" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8e4f971-c3ae-411d-b3d5-5223ab9451dd" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_BloodWisp6_4;Shout_BloodWisp8_4;Shout_BloodWisp10_4;Shout_BloodWisp12_4;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodWisp" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ce07f79-6b31-4881-8fbb-90e09daf026b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8e4f971-c3ae-411d-b3d5-5223ab9451dd" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_BloodWisp6_5;Shout_BloodWisp8_5;Shout_BloodWisp10_5;Shout_BloodWisp12_5;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;7" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodWisp" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5520a969-b317-473a-97fc-83f818e09478" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8e4f971-c3ae-411d-b3d5-5223ab9451dd" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_BloodWisp6_6;Shout_BloodWisp8_6;Shout_BloodWisp10_6;Shout_BloodWisp12_6;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;8" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodWisp" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf0c287e-9fa9-4e89-9949-27b805749db0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8e4f971-c3ae-411d-b3d5-5223ab9451dd" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h01f6fac1gd7abg4334g97c3g4768271af932" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ff233442-7327-4742-8e23-9d936fd20385" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bf0c287e-9fa9-4e89-9949-27b805749db0" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D6,100,-1);ApplyStatus(BLOOD_WISP_5,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodWisp6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a35deeb-c232-4390-a3eb-4cd90bd69b16" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff233442-7327-4742-8e23-9d936fd20385" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D6,100,-1);ApplyStatus(BLOOD_WISP_6,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1b472530-e3ef-44b9-b0d8-040af2ea4fd7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff233442-7327-4742-8e23-9d936fd20385" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D6,100,-1);ApplyStatus(BLOOD_WISP_7,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;7" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa594933-0786-4d91-aa46-2fa26150c01b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff233442-7327-4742-8e23-9d936fd20385" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D6,100,-1);ApplyStatus(BLOOD_WISP_8,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;8" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d074a365-55a5-4bfe-a208-28b86ec97f05" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bf0c287e-9fa9-4e89-9949-27b805749db0" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D8,100,-1);ApplyStatus(BLOOD_WISP_4,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D8,100,-1)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34eebf30g8ccag4005g83d2g3456ebeca076" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="14cdf808-af9e-4517-86aa-5de5e25ee392" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d074a365-55a5-4bfe-a208-28b86ec97f05" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D8,100,-1);ApplyStatus(BLOOD_WISP_5,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodWisp8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="709481eb-8b9f-4839-b8b5-a68a7e2a628b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="14cdf808-af9e-4517-86aa-5de5e25ee392" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D8,100,-1);ApplyStatus(BLOOD_WISP_6,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b9cbcfc-d7f6-4475-9485-0115df1b805b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="14cdf808-af9e-4517-86aa-5de5e25ee392" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D8,100,-1);ApplyStatus(BLOOD_WISP_7,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;7" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c71c4b82-d3c2-4673-ac23-fef6dd909f2a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="14cdf808-af9e-4517-86aa-5de5e25ee392" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D8,100,-1);ApplyStatus(BLOOD_WISP_8,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;8" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca82f267-e866-4c95-a96c-d5148bc09f98" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d074a365-55a5-4bfe-a208-28b86ec97f05" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D10,100,-1);ApplyStatus(BLOOD_WISP_4,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D10,100,-1)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h60472fbeg8017g4aa6g9d52gb15893bed07c" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6dee266d-0940-49c2-9236-a7148bdce200" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ca82f267-e866-4c95-a96c-d5148bc09f98" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D10,100,-1);ApplyStatus(BLOOD_WISP_5,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodWisp10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d6b4156d-0191-4087-a9b5-e3eeb5256945" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6dee266d-0940-49c2-9236-a7148bdce200" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D10,100,-1);ApplyStatus(BLOOD_WISP_6,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d8c6e8b-d736-4715-a1c1-93eee8ee86c3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6dee266d-0940-49c2-9236-a7148bdce200" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D10,100,-1);ApplyStatus(BLOOD_WISP_7,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;7" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca45a692-3eee-4ddd-9088-87108a6e1ed1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6dee266d-0940-49c2-9236-a7148bdce200" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D10,100,-1);ApplyStatus(BLOOD_WISP_8,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;8" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="56ad9e1a-c8f1-426f-8374-da0172afc74f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ca82f267-e866-4c95-a96c-d5148bc09f98" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D12,100,-1);ApplyStatus(BLOOD_WISP_4,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D12,100,-1)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha0380905ga0e4g4f05ga01bg4be3fb33abc7" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ff48ab5-566a-4d58-a26d-5155bba0b8cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="56ad9e1a-c8f1-426f-8374-da0172afc74f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D12,100,-1);ApplyStatus(BLOOD_WISP_5,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodWisp12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="156ba800-fe20-4f73-aa22-ace343b33d76" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ff48ab5-566a-4d58-a26d-5155bba0b8cf" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D12,100,-1);ApplyStatus(BLOOD_WISP_6,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:4;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="300bc8cf-4c83-43b2-89fe-509b661090e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ff48ab5-566a-4d58-a26d-5155bba0b8cf" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D12,100,-1);ApplyStatus(BLOOD_WISP_7,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;7" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:5;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d56c32e8-3e49-41c6-a5dc-b0d6d59b0f92" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shout_BloodWisp12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ff48ab5-566a-4d58-a26d-5155bba0b8cf" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodWisp_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_WISP_D12,100,-1);ApplyStatus(BLOOD_WISP_8,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;8" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:6;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="de40b830-88a1-40dd-9785-b38cf857558e" />
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash_Dummy" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="09395053-4c6d-49b7-bd85-f3551fe59b89" />

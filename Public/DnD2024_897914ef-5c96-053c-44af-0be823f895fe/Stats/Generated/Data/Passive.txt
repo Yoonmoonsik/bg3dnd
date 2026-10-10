@@ -634,6 +634,16 @@ data "DescriptionParams" "DealDamage(2d8,Lightning)"
 data "Icon" "GenericIcon_DamageType_Lightning"
 data "StatsFunctors" "IF(HasStatus('CONJURE_MINOR_ELEMENTALS',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(2d8,Lightning);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_5',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(3d8,Lightning);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_6',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(4d8,Lightning);"
 
+new entry "BloodWisp"
+type "PassiveData"
+data "DisplayName" "h05902fe0g43aag47c9gb140g697495fcc9ad;1"
+data "Description" "h3640439cgd77ag4513ga58bgb47a266c8410;1"
+data "Icon" "Spell_BloodWisp"
+data "Properties" "IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Temporary"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsSpell() and Enemy() and HasActionResource('BloodWisp',1,0,false,false,context.Source) and HasActionResource('BloodWispTurn',1,0,false,false,context.Source);"
+data "StatsFunctors" "IF(HasStatus('BLOOD_WISP_D6',context.Source)):DealDamage(1d6,Necrotic,Magical);IF(HasStatus('BLOOD_WISP_D8',context.Source)):DealDamage(1d8,Necrotic,Magical);IF(HasStatus('BLOOD_WISP_D10',context.Source)):DealDamage(1d10,Necrotic,Magical);IF(HasStatus('BLOOD_WISP_D12',context.Source)):DealDamage(1d12,Necrotic,Magical);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D6);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D8);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D10);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D12);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_4);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_5);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_6);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_7);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_8);UseActionResource(SELF,BloodWisp,1,0);UseActionResource(SELF,BloodWispTurn,1,0);"
+
 new entry "__DIVINATION__"
 type "PassiveData"
 

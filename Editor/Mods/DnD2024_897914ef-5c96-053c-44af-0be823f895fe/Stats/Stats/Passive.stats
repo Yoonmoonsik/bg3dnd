@@ -895,6 +895,19 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('CONJURE_MINOR_ELEMENTALS',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(2d8,Lightning);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_5',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(3d8,Lightning);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_6',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(4d8,Lightning);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="39003216-d5fa-4daa-afd7-1c3045a1bfb2" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodWisp" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h05902fe0g43aag47c9gb140g697495fcc9ad" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3640439cgd77ag4513ga58bgb47a266c8410" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodWisp" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and Enemy() and HasActionResource('BloodWisp',1,0,false,false,context.Source) and HasActionResource('BloodWispTurn',1,0,false,false,context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('BLOOD_WISP_D6',context.Source)):DealDamage(1d6,Necrotic,Magical);IF(HasStatus('BLOOD_WISP_D8',context.Source)):DealDamage(1d8,Necrotic,Magical);IF(HasStatus('BLOOD_WISP_D10',context.Source)):DealDamage(1d10,Necrotic,Magical);IF(HasStatus('BLOOD_WISP_D12',context.Source)):DealDamage(1d12,Necrotic,Magical);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D6);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D8);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D10);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D12);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_4);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_5);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_6);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_7);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_8);UseActionResource(SELF,BloodWisp,1,0);UseActionResource(SELF,BloodWispTurn,1,0);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="38aab3fd-9a52-4b1b-bb15-add338d8d6c5" />
