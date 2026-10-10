@@ -6171,6 +6171,155 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="accbe47e-0105-4153-88c9-50868b551adb" />
+        <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_D6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d6;2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d6);RollBonus(Attack,2);RollBonus(SavingThrow,2);RollBonus(SkillCheck,2);RollBonus(RawAbility,2);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainTemporaryHitPoints(100);ApplyStatus(REANIMATE_DRAIN,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(REANIMATE_DRAIN)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="04747d91-3387-4407-bf83-3b6f722de49d" />
+        <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_D8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d8;2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d8);RollBonus(Attack,2);RollBonus(SavingThrow,2);RollBonus(SkillCheck,2);RollBonus(RawAbility,2);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainTemporaryHitPoints(100);ApplyStatus(REANIMATE_DRAIN,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(REANIMATE_DRAIN)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4dad84e6-7e81-469c-8ad6-a9b914c05ab1" />
+        <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_D10" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d10;2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d10);RollBonus(Attack,2);RollBonus(SavingThrow,2);RollBonus(SkillCheck,2);RollBonus(RawAbility,2);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainTemporaryHitPoints(100);ApplyStatus(REANIMATE_DRAIN,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(REANIMATE_DRAIN)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98fafcf6-48d6-4354-b118-41e75f955291" />
+        <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_D12" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d12;2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d12);RollBonus(Attack,2);RollBonus(SavingThrow,2);RollBonus(SkillCheck,2);RollBonus(RawAbility,2);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainTemporaryHitPoints(100);ApplyStatus(REANIMATE_DRAIN,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(REANIMATE_DRAIN)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="29c40a57-5a57-4282-9002-a7306428cbc3" />
+        <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_PENDING_D6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d6;2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE_PENDING" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead()):ApplyStatus(REANIMATE_D6,100,-1)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Dead()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;RemoveOnLongRest;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="457145b4-4986-4c5b-a3cb-0a135a92dda7" />
+        <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_PENDING_D8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d8;2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE_PENDING" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead()):ApplyStatus(REANIMATE_D8,100,-1)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Dead()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;RemoveOnLongRest;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="00ce94d8-762e-4e8d-a85c-2039d4c1ce0e" />
+        <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_PENDING_D10" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d10;2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE_PENDING" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead()):ApplyStatus(REANIMATE_D10,100,-1)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Dead()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;RemoveOnLongRest;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d127b3a-e678-4f70-a5bf-acbf569ef01e" />
+        <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_PENDING_D12" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d12;2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE_PENDING" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead()):ApplyStatus(REANIMATE_D12,100,-1)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Dead()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;RemoveOnLongRest;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03865077-8d1b-4cc1-948c-b5303ae3d4dc" />
+        <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_DRAIN" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE_DRAIN" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(HasTemporaryHP()):DealDamage(1,Necrotic,Magical,Nonlethal,0,,true,true,false,true)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;RemoveOnLongRest;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />

@@ -207,6 +207,210 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(ENSNARED_VINES);RemoveStatus(SHADOW_CURSED_VINES);RemoveStatus(WEB);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c40d1abc-86bb-444a-8a6f-bf0300c4a6e3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ea988d3a-a45d-4912-9022-79e4809acbe9" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate" />
+        <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1); Resurrect(100,1);RestoreResource(Movement, 100%, 0);UseActionResource(ActionPoint,100%,0);UseActionResource(BonusActionPoint,100%,0);ApplyStatus(RESURRECTING, 100, 1);ApplyStatus(REANIMATE_PENDING_D6,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf09572cbg23deg4b30g8529gedfa55c27bf9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h56cc5bbag3e63g47d4g9d30gca02e964252f" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;3d6;2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(REANIMATE_D6,100,-1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a27dcf44-36ed-4ea2-bc51-35107ac9e565" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c40d1abc-86bb-444a-8a6f-bf0300c4a6e3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dd8e3eb5-c478-4e4f-a5c6-a73b1747c0e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c40d1abc-86bb-444a-8a6f-bf0300c4a6e3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="227afb33-667d-4754-aba8-912c6ee594c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c40d1abc-86bb-444a-8a6f-bf0300c4a6e3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a19508b-751e-4762-884e-bb6f051b78cb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ea988d3a-a45d-4912-9022-79e4809acbe9" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate" />
+        <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1); Resurrect(100,1);RestoreResource(Movement, 100%, 0);UseActionResource(ActionPoint,100%,0);UseActionResource(BonusActionPoint,100%,0);ApplyStatus(RESURRECTING, 100, 1);ApplyStatus(REANIMATE_PENDING_D8,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5f45120g4ad0g4e71gbfecgdf0dd1c4cec9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h56cc5bbag3e63g47d4g9d30gca02e964252f" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;3d8;2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(REANIMATE_D8,100,-1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5e483b7-2b42-4a4d-8437-0031dd7f8f6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7a19508b-751e-4762-884e-bb6f051b78cb" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="840f9437-589b-40fe-98a5-ea087d769faf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7a19508b-751e-4762-884e-bb6f051b78cb" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="131486e0-cf0a-48c6-8fec-94a214860ae2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7a19508b-751e-4762-884e-bb6f051b78cb" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7fc5fb4e-9f51-48c0-9250-48f3731090dd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ea988d3a-a45d-4912-9022-79e4809acbe9" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate" />
+        <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1); Resurrect(100,1);RestoreResource(Movement, 100%, 0);UseActionResource(ActionPoint,100%,0);UseActionResource(BonusActionPoint,100%,0);ApplyStatus(RESURRECTING, 100, 1);ApplyStatus(REANIMATE_PENDING_D10,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h196865abg940ag4497gba4ag9698303452ce" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h56cc5bbag3e63g47d4g9d30gca02e964252f" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;3d10;2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(REANIMATE_D10,100,-1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27c46923-481d-4713-b1bf-eacbbd4033cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7fc5fb4e-9f51-48c0-9250-48f3731090dd" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01e1e719-4dcc-4db6-af81-e16d843206e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7fc5fb4e-9f51-48c0-9250-48f3731090dd" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="44dafc6f-bcda-4bdf-91fc-46dd26b74c84" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7fc5fb4e-9f51-48c0-9250-48f3731090dd" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3df1a3bf-c3c8-499e-ac9b-b9e094f39e11" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ea988d3a-a45d-4912-9022-79e4809acbe9" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate" />
+        <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1); Resurrect(100,1);RestoreResource(Movement, 100%, 0);UseActionResource(ActionPoint,100%,0);UseActionResource(BonusActionPoint,100%,0);ApplyStatus(RESURRECTING, 100, 1);ApplyStatus(REANIMATE_PENDING_D12,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h78d622e8g0d14g4421gbaacg984a282c5fc3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h56cc5bbag3e63g47d4g9d30gca02e964252f" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;3d12;2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(REANIMATE_D12,100,-1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b2b5ac43-7479-4746-be49-cc62789584b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3df1a3bf-c3c8-499e-ac9b-b9e094f39e11" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da14749a-9821-4b3e-afec-e8979889e190" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3df1a3bf-c3c8-499e-ac9b-b9e094f39e11" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c298a2ed-0428-4554-ab1f-ed23a9c71247" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3df1a3bf-c3c8-499e-ac9b-b9e094f39e11" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Reanimate_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Reanimate12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3b565678-b5af-43e5-867d-6b29ecdbfc12" />

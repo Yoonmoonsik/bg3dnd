@@ -14309,6 +14309,66 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D12,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ea22ac3-feec-4e2e-9e2e-608a23b5a2f1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Teleportation_Reanimate6;Teleportation_Reanimate8;Teleportation_Reanimate10;Teleportation_Reanimate12;" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Dead()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hec34cf5cg4095g4cf0gab5fg36915aebb89b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h56cc5bbag3e63g47d4g9d30gca02e964252f" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;3d6;2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(REANIMATE_D6,100,-1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_Revivify_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Healing_Revivify_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="StringTableFieldDefinition" value="1162f3ba-ed65-4cd0-9e1f-5882414c0097" />
+        <field name="CastEffect" type="StringTableFieldDefinition" value="ab2e7fd5-7785-41ba-84b0-5d0c0b115757" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57dec008-6640-4315-963a-07e5f5a3a11b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ea22ac3-feec-4e2e-9e2e-608a23b5a2f1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Teleportation_Reanimate6_4;Teleportation_Reanimate8_4;Teleportation_Reanimate10_4;Teleportation_Reanimate12_4;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Reanimate" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="65e2a3f6-cb83-4cb9-987c-f6273a17e2b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ea22ac3-feec-4e2e-9e2e-608a23b5a2f1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Teleportation_Reanimate6_5;Teleportation_Reanimate8_5;Teleportation_Reanimate10_5;Teleportation_Reanimate12_5;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Reanimate" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1688c18-5707-4fa8-9eb5-53b4dac36784" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ea22ac3-feec-4e2e-9e2e-608a23b5a2f1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Teleportation_Reanimate6_6;Teleportation_Reanimate8_6;Teleportation_Reanimate10_6;Teleportation_Reanimate12_6;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Reanimate" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d1095f08-ab53-4789-8336-04d066559346" />
