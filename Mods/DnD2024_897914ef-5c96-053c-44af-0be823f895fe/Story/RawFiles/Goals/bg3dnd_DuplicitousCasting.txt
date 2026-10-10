@@ -498,6 +498,13 @@ ApplyStatus(_Duplicity, "DUPLICITY_SPELL_DAYLIGHT_CONTAINER", 6.0);
 IF
 StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
 AND
+IsSpellActive(_Cleric, "Shout_ExtractIron", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_EXTRACTIRON", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
 IsSpellActive(_Cleric, "Target_FeignDeath", 1)
 THEN
 ApplyStatus(_Duplicity, "DUPLICITY_SPELL_FEIGNDEATH", 6.0);

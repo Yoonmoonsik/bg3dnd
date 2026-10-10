@@ -5156,6 +5156,264 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c9297535-e68e-4bc6-8528-e78444820703" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ExtractIron6;Shout_ExtractIron8;Shout_ExtractIron10;Shout_ExtractIron12;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_ExtractIron" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf5e67ae5g3e04g4abcga47eg7389ae5a7879" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haac46e16gf223g4c76ga44fg3924517fbbef" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="74b06f5d-a76d-4c63-820b-3ea3b3e4c344" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_ConjureWoodlandBeing_L4to5" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;4156d364-d2c0-4a01-908c-3552f78f434d,,;6f0a29b6-0ae8-4ebf-a1e4-8069c4a6ad16,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7bf288a2-61a1-4e9a-be06-1b31a7e5c204" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0d36da4-39d5-460d-afab-74f43bb8d905" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9297535-e68e-4bc6-8528-e78444820703" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ExtractIron6_4;Shout_ExtractIron8_4;Shout_ExtractIron10_4;Shout_ExtractIron12_4;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55c7147c-5734-43f2-b969-fd5b993fe03c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9297535-e68e-4bc6-8528-e78444820703" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ExtractIron6_5;Shout_ExtractIron8_5;Shout_ExtractIron10_5;Shout_ExtractIron12_5;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e81c9042-b7b3-4d03-b8fe-4611d1a4a5ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9297535-e68e-4bc6-8528-e78444820703" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ExtractIron6_6;Shout_ExtractIron8_6;Shout_ExtractIron10_6;Shout_ExtractIron12_6;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eff8e7de-1b0b-4b77-a9b4-a148703dfbaf" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9297535-e68e-4bc6-8528-e78444820703" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha104cffcgb71dg42d6gbaebg9d2083398fd9" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="47a1295f-c198-4317-b3c7-c097badf0420" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="eff8e7de-1b0b-4b77-a9b4-a148703dfbaf" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="934d220b-5ede-463b-b37c-f904c04ef74b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="eff8e7de-1b0b-4b77-a9b4-a148703dfbaf" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7da9478d-4976-4aa8-afba-b845ef5b8fcf" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="eff8e7de-1b0b-4b77-a9b4-a148703dfbaf" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78642d4a-c4e2-4a25-8997-f14aaacc6e6e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9297535-e68e-4bc6-8528-e78444820703" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1d2696d4gc62dg4f9aga28dg829d795bb977" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="12285212-cfc6-4db9-98e6-65a3f29cd308" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78642d4a-c4e2-4a25-8997-f14aaacc6e6e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="808b62ce-a573-4f64-9c8a-4fd59eedda31" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78642d4a-c4e2-4a25-8997-f14aaacc6e6e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2c5ebe85-f264-4bd6-90d1-fee7e3e17d82" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78642d4a-c4e2-4a25-8997-f14aaacc6e6e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="76693541-6584-4f2d-988a-48b6e6c84c51" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9297535-e68e-4bc6-8528-e78444820703" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h798c7b68g3328g4d78gaa49g53287736fe32" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="25b0f13f-9271-4bee-8bd0-f9c6d0f9b8cc" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76693541-6584-4f2d-988a-48b6e6c84c51" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5ecdc90-5e4c-4f9c-8b7e-a3dcfb789eee" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76693541-6584-4f2d-988a-48b6e6c84c51" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bcb47a38-51f6-406a-8410-bd669aeb9a94" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76693541-6584-4f2d-988a-48b6e6c84c51" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06250794-2447-4c81-8ede-4afef38c899c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9297535-e68e-4bc6-8528-e78444820703" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h81d9d219g4245g463bgb085gbb4c3f62b681" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03ea5b35-9b40-427e-b53d-5d42868305a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="06250794-2447-4c81-8ede-4afef38c899c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="49cfbc7c-d8f5-4586-914f-adc11d8aca5c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="06250794-2447-4c81-8ede-4afef38c899c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8738ceec-d06e-4126-9baa-89bdc1f6d304" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExtractIron12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="06250794-2447-4c81-8ede-4afef38c899c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtractIron_6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExtractIron12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c58d5984-d9d7-4f8c-97a7-449158f95b36" />

@@ -102,14 +102,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c213ca01-3767-457b-a5c8-fd4c1dd656e2" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Bard SLevel 3 List" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Zone_AstralFlood;Target_BestowCurse;Shout_CacophonicShield;Zone_Fear;Target_FeignDeath;Target_GlyphOfWarding;Shout_HealingWord_Mass;Target_HypnoticPattern;Target_MurmursOfDoom;Target_PlantGrowth;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_TrollbloodInfusion" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Zone_AstralFlood;Target_BestowCurse;Shout_CacophonicShield;Shout_ExtractIron;Zone_Fear;Target_FeignDeath;Target_GlyphOfWarding;Shout_HealingWord_Mass;Target_HypnoticPattern;Target_MurmursOfDoom;Target_PlantGrowth;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_TrollbloodInfusion" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bc490c83-b9f4-4084-9870-4d2f3d6d7081" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Bard SLevel 3 List to Bard" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Zone_AstralFlood;Target_BestowCurse;Shout_CacophonicShield;Zone_Fear;Target_FeignDeath;Target_GlyphOfWarding;Shout_HealingWord_Mass;Target_HypnoticPattern;Target_MurmursOfDoom;Target_PlantGrowth;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_TrollbloodInfusion" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Zone_AstralFlood;Target_BestowCurse;Shout_CacophonicShield;Shout_ExtractIron;Zone_Fear;Target_FeignDeath;Target_GlyphOfWarding;Shout_HealingWord_Mass;Target_HypnoticPattern;Target_MurmursOfDoom;Target_PlantGrowth;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_TrollbloodInfusion" />
         <field name="MergedInto" type="GuidObjectTableFieldDefinition" value="858d4322-9e9f-4aa4-aada-9c68835dc6fe" />
       </fields>
     </stat_object>
@@ -343,14 +343,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="21be0992-499f-4c7a-a77a-4430085e947a" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Cleric SLevel 3 List" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Zone_AstralFlood;Shout_AuraOfVitality;Shout_BeaconOfHope;Target_BestowCurse;Target_Daylight_Container;Target_FeignDeath;Target_GlyphOfWarding;Shout_HealingWord_Mass;Zone_LaeralsSilverLance;Target_ProtectionFromEnergy;Target_RemoveCurse;Teleportation_Revivify;Target_SpeakWithDead;Shout_SpiritGuardians;Target_TrollbloodInfusion" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Zone_AstralFlood;Shout_AuraOfVitality;Shout_BeaconOfHope;Target_BestowCurse;Target_Daylight_Container;Shout_ExtractIron;Target_FeignDeath;Target_GlyphOfWarding;Shout_HealingWord_Mass;Zone_LaeralsSilverLance;Target_ProtectionFromEnergy;Target_RemoveCurse;Teleportation_Revivify;Target_SpeakWithDead;Shout_SpiritGuardians;Target_TrollbloodInfusion" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="92126467-9055-4b99-b3c4-e582063284a0" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Cleric SLevel 3 List to Bard" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Zone_AstralFlood;Shout_AuraOfVitality;Shout_BeaconOfHope;Target_BestowCurse;Target_Daylight_Container;Target_FeignDeath;Target_GlyphOfWarding;Shout_HealingWord_Mass;Zone_LaeralsSilverLance;Target_ProtectionFromEnergy;Target_RemoveCurse;Teleportation_Revivify;Target_SpeakWithDead;Shout_SpiritGuardians;Target_TrollbloodInfusion" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Zone_AstralFlood;Shout_AuraOfVitality;Shout_BeaconOfHope;Target_BestowCurse;Target_Daylight_Container;Shout_ExtractIron;Target_FeignDeath;Target_GlyphOfWarding;Shout_HealingWord_Mass;Zone_LaeralsSilverLance;Target_ProtectionFromEnergy;Target_RemoveCurse;Teleportation_Revivify;Target_SpeakWithDead;Shout_SpiritGuardians;Target_TrollbloodInfusion" />
         <field name="MergedInto" type="GuidObjectTableFieldDefinition" value="858d4322-9e9f-4aa4-aada-9c68835dc6fe" />
       </fields>
     </stat_object>
@@ -886,14 +886,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3156daf5-9266-41d0-b52c-5bc559a98654" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Druid SLevel 3 List" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Shout_AuraOfVitality;Target_BloodBond;Target_CallLightning;Target_Daylight_Container;Zone_ElementalExhalation;Target_ElementalWeapon;Target_FeignDeath;Target_PlantGrowth;Target_ProtectionFromEnergy;Teleportation_Revivify;Target_SleetStorm;Target_SummonFey;Zone_TidalWave;Target_TrollbloodInfusion" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_AuraOfVitality;Target_BloodBond;Target_CallLightning;Target_Daylight_Container;Zone_ElementalExhalation;Target_ElementalWeapon;Shout_ExtractIron;Target_FeignDeath;Target_PlantGrowth;Target_ProtectionFromEnergy;Teleportation_Revivify;Target_SleetStorm;Target_SummonFey;Zone_TidalWave;Target_TrollbloodInfusion" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7dc7cd4c-d5ca-4b5b-81a8-c7528f76866d" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Druid SLevel 3 List to Bard" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Shout_AuraOfVitality;Target_BloodBond;Target_CallLightning;Target_Daylight_Container;Zone_ElementalExhalation;Target_ElementalWeapon;Target_FeignDeath;Target_PlantGrowth;Target_ProtectionFromEnergy;Teleportation_Revivify;Target_SleetStorm;Target_SummonFey;Zone_TidalWave;Target_TrollbloodInfusion" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_AuraOfVitality;Target_BloodBond;Target_CallLightning;Target_Daylight_Container;Zone_ElementalExhalation;Target_ElementalWeapon;Shout_ExtractIron;Target_FeignDeath;Target_PlantGrowth;Target_ProtectionFromEnergy;Teleportation_Revivify;Target_SleetStorm;Target_SummonFey;Zone_TidalWave;Target_TrollbloodInfusion" />
         <field name="MergedInto" type="GuidObjectTableFieldDefinition" value="858d4322-9e9f-4aa4-aada-9c68835dc6fe" />
       </fields>
     </stat_object>
@@ -2346,14 +2346,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="22755771-ca11-49f4-b772-13d8b8fecd93" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Wizard SLevel 3" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Shout_AshardalonsStride;Zone_AstralFlood;Target_BestowCurse;Shout_Blink;Shout_CacophonicShield;Target_Counterspell;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Zone_LaeralsSilverLance;Zone_LightningBolt;Target_PhantomSteed;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonFey;Target_SummonUndead;Zone_TidalWave;Target_VampiricTouch;Projectile_VoidStrike" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Shout_AshardalonsStride;Zone_AstralFlood;Target_BestowCurse;Shout_Blink;Shout_CacophonicShield;Target_Counterspell;Shout_ExtractIron;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Zone_LaeralsSilverLance;Zone_LightningBolt;Target_PhantomSteed;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonFey;Target_SummonUndead;Zone_TidalWave;Target_VampiricTouch;Projectile_VoidStrike" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e8c03337-0d0b-4746-afb8-8a5f07afe3b0" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Wizard SLevel 3 to Bard" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Shout_AshardalonsStride;Zone_AstralFlood;Target_BestowCurse;Shout_Blink;Shout_CacophonicShield;Target_Counterspell;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Zone_LaeralsSilverLance;Zone_LightningBolt;Target_PhantomSteed;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonFey;Target_SummonUndead;Zone_TidalWave;Target_VampiricTouch;Projectile_VoidStrike" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Shout_AshardalonsStride;Zone_AstralFlood;Target_BestowCurse;Shout_Blink;Shout_CacophonicShield;Target_Counterspell;Shout_ExtractIron;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Zone_LaeralsSilverLance;Zone_LightningBolt;Target_PhantomSteed;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonFey;Target_SummonUndead;Zone_TidalWave;Target_VampiricTouch;Projectile_VoidStrike" />
         <field name="MergedInto" type="GuidObjectTableFieldDefinition" value="858d4322-9e9f-4aa4-aada-9c68835dc6fe" />
       </fields>
     </stat_object>
@@ -2361,7 +2361,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="308b5066-ac24-41d8-bab7-178c31d18361" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Wizard SLevel 3 to 6" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Shout_AshardalonsStride;Zone_AstralFlood;Target_BestowCurse;Shout_Blink;Shout_CacophonicShield;Target_Counterspell;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Zone_LaeralsSilverLance;Zone_LightningBolt;Target_PhantomSteed;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonFey;Target_SummonUndead;Zone_TidalWave;Target_VampiricTouch;Projectile_VoidStrike" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Shout_AshardalonsStride;Zone_AstralFlood;Target_BestowCurse;Shout_Blink;Shout_CacophonicShield;Target_Counterspell;Shout_ExtractIron;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Zone_LaeralsSilverLance;Zone_LightningBolt;Target_PhantomSteed;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonFey;Target_SummonUndead;Zone_TidalWave;Target_VampiricTouch;Projectile_VoidStrike" />
         <field name="MergedInto" type="GuidObjectTableFieldDefinition" value="bc917f22-7f71-4a25-9a77-7d2f91a96a65" />
       </fields>
     </stat_object>
@@ -2369,7 +2369,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fe4c0b8c-317d-4c04-b3b8-b600b51cb160" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Wizard SLevel 3 to 5" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Shout_AshardalonsStride;Zone_AstralFlood;Target_BestowCurse;Shout_Blink;Shout_CacophonicShield;Target_Counterspell;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Zone_LaeralsSilverLance;Zone_LightningBolt;Target_PhantomSteed;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonFey;Target_SummonUndead;Zone_TidalWave;Target_VampiricTouch;Projectile_VoidStrike" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Shout_AshardalonsStride;Zone_AstralFlood;Target_BestowCurse;Shout_Blink;Shout_CacophonicShield;Target_Counterspell;Shout_ExtractIron;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Zone_LaeralsSilverLance;Zone_LightningBolt;Target_PhantomSteed;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonFey;Target_SummonUndead;Zone_TidalWave;Target_VampiricTouch;Projectile_VoidStrike" />
         <field name="MergedInto" type="GuidObjectTableFieldDefinition" value="f781a25e-d288-43b4-bf5d-3d8d98846687" />
       </fields>
     </stat_object>
@@ -2377,7 +2377,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="394b7a10-19de-491a-a334-6429bbe87b42" />
         <field name="Name" type="NameTableFieldDefinition" value="5.5 Wizard SLevel 3 to 4" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Shout_AshardalonsStride;Zone_AstralFlood;Target_BestowCurse;Shout_Blink;Shout_CacophonicShield;Target_Counterspell;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Zone_LaeralsSilverLance;Zone_LightningBolt;Target_PhantomSteed;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonFey;Target_SummonUndead;Zone_TidalWave;Target_VampiricTouch;Projectile_VoidStrike" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_AnimateDead;Shout_AshardalonsStride;Zone_AstralFlood;Target_BestowCurse;Shout_Blink;Shout_CacophonicShield;Target_Counterspell;Shout_ExtractIron;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Zone_LaeralsSilverLance;Zone_LightningBolt;Target_PhantomSteed;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonFey;Target_SummonUndead;Zone_TidalWave;Target_VampiricTouch;Projectile_VoidStrike" />
         <field name="MergedInto" type="GuidObjectTableFieldDefinition" value="820b1220-0385-426d-ae15-458dc8a6f5c0" />
       </fields>
     </stat_object>
@@ -2607,7 +2607,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3969a273-14d4-4d28-bfff-7a57b1181fe0" />
         <field name="Name" type="NameTableFieldDefinition" value="Wizard Savant Transmutation" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Projectile_Disintegrate;Target_FleshToStone;Throw_Telekinesis;Target_Polymorph;Target_Stoneskin;Shout_AshardalonsStride;Shout_Blink;Target_Fly;Target_GaseousForm;Target_Haste;Target_Slow;Shout_AlterSelf;Target_Blindness;Target_Darkvision;Target_DragonsBreath;Target_EnhanceAbility;Target_EnlargeReduce;Target_Knock;Target_MagicWeapon;Shout_TheftOfVitae;Target_BodyWarpingOfGorgoroth;Projectile_Catapult;Shout_ExpeditiousRetreat;Shout_FeatherFall;Target_Jump;Target_Longstrider" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Projectile_Disintegrate;Target_FleshToStone;Throw_Telekinesis;Target_Polymorph;Target_Stoneskin;Shout_AshardalonsStride;Shout_Blink;Shout_ExtractIron;Target_Fly;Target_GaseousForm;Target_Haste;Target_Slow;Shout_AlterSelf;Target_Blindness;Target_Darkvision;Target_DragonsBreath;Target_EnhanceAbility;Target_EnlargeReduce;Target_Knock;Target_MagicWeapon;Shout_TheftOfVitae;Target_BodyWarpingOfGorgoroth;Projectile_Catapult;Shout_ExpeditiousRetreat;Shout_FeatherFall;Target_Jump;Target_Longstrider" />
       </fields>
     </stat_object>
     <stat_object color="#FF00BFFF" is_substat="false">

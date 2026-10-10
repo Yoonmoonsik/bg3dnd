@@ -7571,6 +7571,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c19487ae-5dd5-4398-af02-3b0ac1375754" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_EXTRACTIRON" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_EXTRACTIRON" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ExtractIron,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e2a0f90e-c066-47cf-9e11-83dd7e17f162" />
         <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_FEIGNDEATH" />
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_FEIGNDEATH" />

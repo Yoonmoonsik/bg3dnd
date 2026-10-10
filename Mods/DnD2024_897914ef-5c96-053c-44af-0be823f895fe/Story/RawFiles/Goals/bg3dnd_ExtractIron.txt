@@ -1,0 +1,65 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Extract Iron: dagger count per cast spell (3 at level 3, one more per slot level above 3)
+DB_bg3dnd_ExtractIron("Shout_ExtractIron6",3);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron6_4",4);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron6_5",5);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron6_6",6);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron8",3);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron8_4",4);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron8_5",5);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron8_6",6);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron10",3);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron10_4",4);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron10_5",5);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron10_6",6);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron12",3);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron12_4",4);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron12_5",5);
+DB_bg3dnd_ExtractIron("Shout_ExtractIron12_6",6);
+KBSECTION
+IF
+CastedSpell((CHARACTER)_Caster,_Spell,_,_,_)
+AND
+DB_bg3dnd_ExtractIron(_Spell,_Count)
+THEN
+PROC_bg3dnd_ExtractIron_CreateDagger(_Caster,_Count);
+
+// Create the daggers one at a time, each scattered up to 0.6 m around the caster
+PROC
+PROC_bg3dnd_ExtractIron_CreateDagger((CHARACTER)_Caster,(INTEGER)_Count)
+AND
+_Count > 0
+AND
+GetPosition(_Caster,_X,_Y,_Z)
+AND
+Random(121,_RandX)
+AND
+Random(121,_RandZ)
+AND
+IntegerToReal(_RandX,_RealX)
+AND
+IntegerToReal(_RandZ,_RealZ)
+AND
+RealSubtract(_RealX,60.0,_CenteredX)
+AND
+RealSubtract(_RealZ,60.0,_CenteredZ)
+AND
+RealDivide(_CenteredX,100.0,_OffsetX)
+AND
+RealDivide(_CenteredZ,100.0,_OffsetZ)
+AND
+RealSum(_X,_OffsetX,_DropX)
+AND
+RealSum(_Z,_OffsetZ,_DropZ)
+AND
+CreateAt((ITEMROOT)WPN_HUM_Dagger_A_0_569b0f3d-abcd-4b01-aaf0-979091288163,_DropX,_Y,_DropZ,0,0,"",_Dagger)
+AND
+IntegerSubtract(_Count,1,_Remaining)
+THEN
+RequestPing(_DropX,_Y,_DropZ,_Dagger,_Caster);
+PROC_bg3dnd_ExtractIron_CreateDagger(_Caster,_Remaining);
+EXITSECTION
+
+ENDEXITSECTION
