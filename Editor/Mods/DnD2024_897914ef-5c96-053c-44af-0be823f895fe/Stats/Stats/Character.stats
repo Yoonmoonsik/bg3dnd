@@ -1589,5 +1589,57 @@
         <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ShortResting;ExtraAttack_2" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60095576-c231-488c-843f-6f71a5bd289c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88d99248-c9b6-4072-9450-78dfe5a337b8" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="16" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="15" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="6" />
+        <field name="Wisdom" type="IntegerTableFieldDefinition" value="8" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="7" />
+        <field name="ArmorType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="ArmorType" version="1" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="30" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="DamageBonus(3);" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="UnarmedAttackAbility" type="EnumerationTableFieldDefinition" value="Dexterity" enumeration_type_name="Ability" version="1" />
+        <field name="UnarmedRangedAttackAbility" type="EnumerationTableFieldDefinition" value="Dexterity" enumeration_type_name="Ability" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Intelligence" enumeration_type_name="Ability" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;ShortResting;SanguinePoppet_DeathBurst" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4bd8ac4b-b867-41a8-a59a-0204dd6335a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60095576-c231-488c-843f-6f71a5bd289c" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="7" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="DamageBonus(4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b357668-f507-41ca-97e7-d8289244c252" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60095576-c231-488c-843f-6f71a5bd289c" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="9" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="DamageBonus(5);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="54a0eecd-f453-4428-9c24-315d7704e70d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60095576-c231-488c-843f-6f71a5bd289c" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="11" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="DamageBonus(6);" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

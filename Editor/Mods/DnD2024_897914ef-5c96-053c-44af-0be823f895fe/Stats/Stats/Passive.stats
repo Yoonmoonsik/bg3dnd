@@ -1361,6 +1361,15 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d12,Radiant,Magical)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4215fe6-a7a1-4d11-bc81-b0ba77cf81d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_DeathBurst" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2cd25251gc04bg4e3bgb4fag7e7950a5d44d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Explosion" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0be7940c-ca66-4b1e-9547-52b4f0ecef61" />

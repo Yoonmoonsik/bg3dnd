@@ -6320,6 +6320,253 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;RemoveOnLongRest;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07c6de60g44ffg4abbg960ag2e63d5294c29" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf0860902g77e6g4ddfg9380g32e0f2e900b4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SanguinePoppet" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SANGUINE_POPPET" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(SanguinePoppetACBonusAtLeast(1)):AC(1);IF(SanguinePoppetACBonusAtLeast(2)):AC(1);IF(SanguinePoppetACBonusAtLeast(3)):AC(1);IF(SanguinePoppetACBonusAtLeast(4)):AC(1);IF(SanguinePoppetACBonusAtLeast(5)):AC(1);IF(SanguinePoppetACBonusAtLeast(6)):AC(1);IF(SanguinePoppetACBonusAtLeast(7)):AC(1);IF(SanguinePoppetACBonusAtLeast(8)):AC(1);IF(SanguinePoppetACBonusAtLeast(9)):AC(1);IF(SanguinePoppetACBonusAtLeast(10)):AC(1);IF(SanguinePoppetACBonusAtLeast(11)):AC(1);IF(SanguinePoppetACBonusAtLeast(12)):AC(1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa04f383-c3e7-499e-8c97-ed23bcd82a35" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01838752-0f6c-40b4-bcd3-7506f0e72283" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4756d88c-87df-4251-b46d-295e7a230d55" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf738595-4c46-4c89-b5cb-babfe6359de5" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4e3958ff-f172-4195-8f6f-df3e5a6b74d2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="386c2cd9-02f6-4e56-bc8a-e91983acbbde" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b6343fc0-84d6-4a67-ad6e-a2be0e1dd587" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="775c2195-b28b-4670-bce0-e4604ab1bc2a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1eb9e89e-9cce-407c-967d-b97f1ab0db4b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="47f76b69-64b5-4d32-96d1-14ce9229fe51" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a997555-655e-4bc2-8c58-b9da8a4159b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="092014ec-da47-475a-9a6e-a86e9ec3378a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="daf92bfc-1c3a-4c2c-a6f5-6db14bcda3ef" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fcd38fc4-3065-4c7e-bca8-cb64961e033c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="736574e9-f69e-4da4-986b-a53ba5a1a3d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3d211620-4227-415a-a861-b16c9aae85de" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_D12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0f294eb-7a72-4518-b44a-27d5c72b575c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07c6de60g44ffg4abbg960ag2e63d5294c29" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2101cc35g2017g44cdga70cgc9822cd02f0c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SanguinePoppet" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SANGUINE_POPPET_OWNER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SanguinePoppet_Detonate);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ecee950-80f0-4579-a86d-1baa77ccd537" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="33eb7c5e-f999-4e59-a31b-6323acc4fd13" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="51b90f48-d3b9-4f8b-aa15-771a9c9ea89f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="394918e4-9260-402e-86a6-ec17f8ba1710" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8607d94-a2b1-46b7-84a0-fc812cc87daa" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c3dee75-bb22-4709-933f-09d367550d47" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5cc427ca-c20e-4fbf-92cb-471288145ccf" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e36c43a0-9976-4d0d-977c-ae1cba68b5a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e963e47f-a0ef-480a-9fab-c5632498884f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0682c4c-27d0-4a6f-9968-8b1f779185ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f1bd847-ce34-4c4c-b130-fe6ba2b99e6e" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2694924a-def4-47f1-ac77-2d9c62dae7b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a82f11f0-7028-4434-b46b-1f8d7b3562f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="89bc6074-2a6f-4bb0-bd74-cb3dde9866c6" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e8254e21-3838-4098-a851-9b0a9a31717f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7fb96545-1f45-417b-a739-5d33dbdbc5ed" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_POPPET_OWNER_D12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9f5a1f7-8621-4772-9716-fab4e9de715b" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />

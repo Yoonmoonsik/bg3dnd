@@ -12261,3 +12261,149 @@ using "SKILLED_END"
 data "StackId" "LFO_SKILLED_END"
 data "OnApplyFunctors" "RemoveStatus(LFO_SKILLED)"
 
+new entry "SANGUINE_POPPET"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h07c6de60g44ffg4abbg960ag2e63d5294c29;1"
+data "Description" "hf0860902g77e6g4ddfg9380g32e0f2e900b4;1"
+data "Icon" "Spell_SanguinePoppet"
+data "StackId" "SANGUINE_POPPET"
+data "Boosts" "IF(SanguinePoppetACBonusAtLeast(1)):AC(1);IF(SanguinePoppetACBonusAtLeast(2)):AC(1);IF(SanguinePoppetACBonusAtLeast(3)):AC(1);IF(SanguinePoppetACBonusAtLeast(4)):AC(1);IF(SanguinePoppetACBonusAtLeast(5)):AC(1);IF(SanguinePoppetACBonusAtLeast(6)):AC(1);IF(SanguinePoppetACBonusAtLeast(7)):AC(1);IF(SanguinePoppetACBonusAtLeast(8)):AC(1);IF(SanguinePoppetACBonusAtLeast(9)):AC(1);IF(SanguinePoppetACBonusAtLeast(10)):AC(1);IF(SanguinePoppetACBonusAtLeast(11)):AC(1);IF(SanguinePoppetACBonusAtLeast(12)):AC(1);"
+
+new entry "SANGUINE_POPPET_D6_3"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D6_4"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D6_5"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D6_6"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D8_3"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D8_4"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D8_5"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D8_6"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D10_3"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D10_4"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D10_5"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D10_6"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D12_3"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D12_4"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D12_5"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_D12_6"
+type "StatusData"
+using "SANGUINE_POPPET"
+
+new entry "SANGUINE_POPPET_OWNER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h07c6de60g44ffg4abbg960ag2e63d5294c29;1"
+data "Description" "h2101cc35g2017g44cdga70cgc9822cd02f0c;1"
+data "Icon" "Spell_SanguinePoppet"
+data "StackId" "SANGUINE_POPPET_OWNER"
+data "Boosts" "UnlockSpell(Target_SanguinePoppet_Detonate);"
+data "OnRemoveFunctors" "BreakConcentration()"
+
+new entry "SANGUINE_POPPET_OWNER_D6_3"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D6_4"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D6_5"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D6_6"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D8_3"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D8_4"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D8_5"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D8_6"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D10_3"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D10_4"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D10_5"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D10_6"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D12_3"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D12_4"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D12_5"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"
+
+new entry "SANGUINE_POPPET_OWNER_D12_6"
+type "StatusData"
+using "SANGUINE_POPPET_OWNER"

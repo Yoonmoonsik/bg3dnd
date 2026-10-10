@@ -101,3 +101,10 @@ function IsDisengageAction()
     | SpellId('Target_RecklessAttackForcefulBlow')
     | SpellId('Target_RecklessAttackForcefulBlow_Unarmed')
 end
+
+function SanguinePoppetACBonusAtLeast(value)
+    local summoner = GetSummoner(context.Source)
+    local bonus = summoner.ProficiencyBonus + math.max(GetModifier(summoner.Intelligence), GetModifier(summoner.Wisdom), GetModifier(summoner.Charisma))
+    return ConditionResult(bonus >= value)
+end
+

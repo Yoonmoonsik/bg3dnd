@@ -5333,5 +5333,188 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c6ee3d49-3f23-45e3-87ed-02aa8ebd7166" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f2fc380-5df8-440e-b8fd-1af491bce01c" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, 15)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((3d6)/2,Necrotic,Magical)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead()" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SanguinePoppet" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2cd25251gc04bg4e3bgb4fag7e7950a5d44d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h443ad59cg702cg4cabg9809g2e7b97cd061d" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Necrotic)" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="74c3d8de-5937-4a60-84b4-ef5005c039f2" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Cleric_DeathDomain_BurstingSinew" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa795187-23f1-4591-b794-cb5ff73ff8e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((3d6)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40f66128-a914-4188-aca7-ec6feec21f1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d6)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="26f712d7-0c05-48af-a647-20239479d5ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((5d6)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="47d80e1f-688c-468d-aef7-543c6e39eb54" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((6d6)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f2023b29-e7ae-4cd9-ba0a-03b3a0a9aaa6" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((3d8)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa13a8c6-9626-4e0d-a592-7882e087063a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d8)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d2b77293-fab7-4f72-91ba-f916e1bf7abb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((5d8)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7dd107c3-990f-4c6b-b01b-9ede2370a63b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d8,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((6d8)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9806bd67-4d8a-4992-a6c6-be9cdcb85ca7" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((3d10)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2041921e-9878-4890-8afa-d42bb036d667" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d10)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8546d409-73a6-4fce-8409-3216832ee2ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d10,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((5d10)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d10,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b099f64-6d31-4ce4-937a-42a50ccf8739" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d10,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((6d10)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d10,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7c979afa-86c5-4c80-a3b1-fb4fb0b63437" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d12,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((3d12)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d12,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55cc1541-e173-496f-a8a3-8620ce9c7e7c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d12,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d12)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d12,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9447749c-03f7-4da1-aa8f-0b9689871d07" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d12,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((5d12)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d12,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b5d284f3-70f3-481b-a632-6f2dd95188d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Explosion12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88bc8af1-a134-4c32-ad2d-30bd0051c664" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d12,Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((6d12)/2,Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d12,Necrotic)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

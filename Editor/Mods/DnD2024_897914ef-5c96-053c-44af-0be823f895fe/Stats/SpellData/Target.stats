@@ -14369,6 +14369,347 @@
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a59aa4d6-e5fd-42c7-a733-dd02e0b15a8c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SanguinePoppet6;Target_SanguinePoppet8;Target_SanguinePoppet10;Target_SanguinePoppet12;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(ca6374c7-c79f-457d-a7da-dc6f3cea9eee,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_3,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(ca6374c7-c79f-457d-a7da-dc6f3cea9eee,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_3,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D6_3,100,-1);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('ca6374c7-c79f-457d-a7da-dc6f3cea9eee') and not Character() and not Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SanguinePoppet" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07c6de60g44ffg4abbg960ag2e63d5294c29" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h54bbc7fegc1bdg4da9gb6fcgb93580b469e7" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Necrotic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="7f8e7904-6fdb-4921-8eef-3eca34a30069" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_AnimateDead_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="6f42f5f3-7a5a-4441-a02e-71b0450ac4b7,,;,,;c0513845-6e0e-42e8-9a8c-baa5e2b6ead6,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;42aaefdc-cf9b-4249-b159-285041851f69,,;,,;20e11c98-fff9-4417-88de-5bcc2368a1bd,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;CannotTargetCharacter;CannotTargetItems;IsConcentration;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="239d0263-eb26-4d7e-9683-4d7be6b6a1cf" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="111a8b8c-b395-46d0-b2f0-a10ac6f9731f" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Summon_InsectPlague_L4to5" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Summon_InsectPlague_L4to5" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Summon_AnimateDead_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_AnimateDead" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="a082692d-ad88-44e2-ab4e-f92e69150438" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="25b02dac-e9d0-4ee7-881a-a3c439641fdd" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a59aa4d6-e5fd-42c7-a733-dd02e0b15a8c" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SanguinePoppet6_4;Target_SanguinePoppet8_4;Target_SanguinePoppet10_4;Target_SanguinePoppet12_4;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(8679d7a2-180e-4ac2-80e9-cf0c88fafea5,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_4,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(8679d7a2-180e-4ac2-80e9-cf0c88fafea5,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_4,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D6_4,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bdb28951-8903-4723-b707-150e663f6d11" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a59aa4d6-e5fd-42c7-a733-dd02e0b15a8c" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SanguinePoppet6_5;Target_SanguinePoppet8_5;Target_SanguinePoppet10_5;Target_SanguinePoppet12_5;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(f3f7052c-da5b-4716-b6e7-93ee5d85ce44,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_5,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(f3f7052c-da5b-4716-b6e7-93ee5d85ce44,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_5,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D6_5,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="42a02f1d-8b40-46e1-bc77-c3293f62f029" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a59aa4d6-e5fd-42c7-a733-dd02e0b15a8c" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SanguinePoppet6_6;Target_SanguinePoppet8_6;Target_SanguinePoppet10_6;Target_SanguinePoppet12_6;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(e04c07f4-759a-4cee-b030-9dbdf39ce4a0,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_6,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(e04c07f4-759a-4cee-b030-9dbdf39ce4a0,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_6,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D6_6,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01335274-8f3d-4182-b9ba-a665dd602ddb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a59aa4d6-e5fd-42c7-a733-dd02e0b15a8c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(ca6374c7-c79f-457d-a7da-dc6f3cea9eee,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_3,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(ca6374c7-c79f-457d-a7da-dc6f3cea9eee,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_3,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D6_3,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc11cefebgc39bg4370gb912g7974aed07509" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;CannotTargetCharacter;CannotTargetItems;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18a3a1c5-abd9-4039-b3bc-508e3b1b5208" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01335274-8f3d-4182-b9ba-a665dd602ddb" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(8679d7a2-180e-4ac2-80e9-cf0c88fafea5,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_4,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(8679d7a2-180e-4ac2-80e9-cf0c88fafea5,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_4,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D6_4,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0306c890-aa05-4531-949e-35b8499184ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01335274-8f3d-4182-b9ba-a665dd602ddb" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(f3f7052c-da5b-4716-b6e7-93ee5d85ce44,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_5,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(f3f7052c-da5b-4716-b6e7-93ee5d85ce44,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_5,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D6_5,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7f0c655-f4d8-4647-b71e-6419e6b3ab44" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01335274-8f3d-4182-b9ba-a665dd602ddb" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(e04c07f4-759a-4cee-b030-9dbdf39ce4a0,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_6,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(e04c07f4-759a-4cee-b030-9dbdf39ce4a0,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D6_6,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D6_6,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="68954aee-59b8-4bf3-8599-30edea53503f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a59aa4d6-e5fd-42c7-a733-dd02e0b15a8c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(ca6374c7-c79f-457d-a7da-dc6f3cea9eee,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D8_3,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(ca6374c7-c79f-457d-a7da-dc6f3cea9eee,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D8_3,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D8_3,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h273e3140g1594g4562g8d1cg2f36887b2ddc" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;CannotTargetCharacter;CannotTargetItems;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="795a29d2-804c-4c7a-a56b-f05ac4ea4931" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="68954aee-59b8-4bf3-8599-30edea53503f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(8679d7a2-180e-4ac2-80e9-cf0c88fafea5,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D8_4,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(8679d7a2-180e-4ac2-80e9-cf0c88fafea5,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D8_4,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D8_4,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e6bbb37-6508-4c51-bcaf-9c9c5c2e2f47" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="68954aee-59b8-4bf3-8599-30edea53503f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(f3f7052c-da5b-4716-b6e7-93ee5d85ce44,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D8_5,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(f3f7052c-da5b-4716-b6e7-93ee5d85ce44,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D8_5,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D8_5,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b886546f-a1f8-47d2-87f6-986a10eaa138" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="68954aee-59b8-4bf3-8599-30edea53503f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(e04c07f4-759a-4cee-b030-9dbdf39ce4a0,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D8_6,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(e04c07f4-759a-4cee-b030-9dbdf39ce4a0,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D8_6,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D8_6,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c5b428b0-29db-4bbc-99a8-26f35fc8838c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a59aa4d6-e5fd-42c7-a733-dd02e0b15a8c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(ca6374c7-c79f-457d-a7da-dc6f3cea9eee,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D10_3,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(ca6374c7-c79f-457d-a7da-dc6f3cea9eee,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D10_3,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D10_3,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcd8849e4g2f85g4d30ga9f9gd8f44334b16b" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;CannotTargetCharacter;CannotTargetItems;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7556c2d9-8e10-4bb9-8470-ba71573727b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5b428b0-29db-4bbc-99a8-26f35fc8838c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(8679d7a2-180e-4ac2-80e9-cf0c88fafea5,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D10_4,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(8679d7a2-180e-4ac2-80e9-cf0c88fafea5,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D10_4,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D10_4,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9623bf63-b9f9-4492-8042-407a14f0337d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5b428b0-29db-4bbc-99a8-26f35fc8838c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(f3f7052c-da5b-4716-b6e7-93ee5d85ce44,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D10_5,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(f3f7052c-da5b-4716-b6e7-93ee5d85ce44,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D10_5,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D10_5,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d10,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="889b4329-ec27-47bd-bcb9-5bc1bcb92b5c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5b428b0-29db-4bbc-99a8-26f35fc8838c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(e04c07f4-759a-4cee-b030-9dbdf39ce4a0,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D10_6,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(e04c07f4-759a-4cee-b030-9dbdf39ce4a0,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D10_6,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D10_6,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d10,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35ffc5b3-e287-48d8-85e2-b49ab7cc332d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a59aa4d6-e5fd-42c7-a733-dd02e0b15a8c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(ca6374c7-c79f-457d-a7da-dc6f3cea9eee,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D12_3,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(ca6374c7-c79f-457d-a7da-dc6f3cea9eee,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D12_3,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D12_3,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h69adff09g8b75g4d01g8849g05835a76788f" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d12,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;CannotTargetCharacter;CannotTargetItems;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c0684a96-c5b2-47c6-9245-9869157e31d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35ffc5b3-e287-48d8-85e2-b49ab7cc332d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(8679d7a2-180e-4ac2-80e9-cf0c88fafea5,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D12_4,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(8679d7a2-180e-4ac2-80e9-cf0c88fafea5,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D12_4,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D12_4,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d12,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c9c4bb73-033a-4fa9-98d0-3e4c81378b5c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35ffc5b3-e287-48d8-85e2-b49ab7cc332d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(f3f7052c-da5b-4716-b6e7-93ee5d85ce44,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D12_5,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(f3f7052c-da5b-4716-b6e7-93ee5d85ce44,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D12_5,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D12_5,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d12,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="52e03304-f8d3-4acb-b8d1-346ef1e4db61" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35ffc5b3-e287-48d8-85e2-b49ab7cc332d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SanguinePoppet_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(e04c07f4-759a-4cee-b030-9dbdf39ce4a0,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D12_6,SUMMON_ATTACK_BONUS,UNDEAD_FORTITUDE_NECROMANCER,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(not HasPassive('Necromancer_6_UndeadThralls',context.Source)):Summon(e04c07f4-759a-4cee-b030-9dbdf39ce4a0,-1,,,'SanguinePoppetStack',SANGUINE_POPPET_D12_6,SUMMON_ATTACK_BONUS,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:ApplyStatus(SELF,SANGUINE_POPPET_OWNER_D12_6,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d12,Necrotic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SanguinePoppet12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="56e079a1-cf07-46c5-994f-d4028d3f4ffa" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Detonate" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('SANGUINE_POPPET_OWNER_D6_3',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion6_3);IF(HasStatus('SANGUINE_POPPET_OWNER_D6_4',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion6_4);IF(HasStatus('SANGUINE_POPPET_OWNER_D6_5',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion6_5);IF(HasStatus('SANGUINE_POPPET_OWNER_D6_6',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion6_6);IF(HasStatus('SANGUINE_POPPET_OWNER_D8_3',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion8_3);IF(HasStatus('SANGUINE_POPPET_OWNER_D8_4',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion8_4);IF(HasStatus('SANGUINE_POPPET_OWNER_D8_5',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion8_5);IF(HasStatus('SANGUINE_POPPET_OWNER_D8_6',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion8_6);IF(HasStatus('SANGUINE_POPPET_OWNER_D10_3',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion10_3);IF(HasStatus('SANGUINE_POPPET_OWNER_D10_4',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion10_4);IF(HasStatus('SANGUINE_POPPET_OWNER_D10_5',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion10_5);IF(HasStatus('SANGUINE_POPPET_OWNER_D10_6',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion10_6);IF(HasStatus('SANGUINE_POPPET_OWNER_D12_3',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion12_3);IF(HasStatus('SANGUINE_POPPET_OWNER_D12_4',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion12_4);IF(HasStatus('SANGUINE_POPPET_OWNER_D12_5',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion12_5);IF(HasStatus('SANGUINE_POPPET_OWNER_D12_6',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion12_6);Kill();RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D6_3);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D6_4);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D6_5);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D6_6);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D8_3);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D8_4);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D8_5);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D8_6);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D10_3);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D10_4);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D10_5);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D10_6);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D12_3);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D12_4);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D12_5);RemoveStatus(SELF,SANGUINE_POPPET_OWNER_D12_6);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="60" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="HasPassive('SanguinePoppet_DeathBurst') and not Dead()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SanguinePoppet" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb5b5cc70gc1e8g4b3eg9c47gbf7e791e272d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h07185031g9415g426ega0f7gdc74dc799fa5" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;09ae2f11-f5b4-42f5-ae16-687a5b57d500,,;10caea0e-c949-4d91-8ab7-3b50019dd054,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="a1b229db-954a-466b-bfeb-0536dc17d673" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Cleric_DeathDomain_Gen" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="4d22ced8-9206-41d7-a842-a3f4c290277a" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="0aae35fb-4e0f-4ecd-b8c9-8929e89a257b" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Cleric_DeathDomain_Gen" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Cleric_DeathDomain_Gen" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="74c3d8de-5937-4a60-84b4-ef5005c039f2" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Cleric_DeathDomain_BurstingSinew" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9249a208-bd13-4701-bc43-a2833c6a5df9" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Slam" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6+UnarmedMeleeAbilityModifier,Necrotic);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+UnarmedMeleeAbilityModifier,Necrotic)" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d1095f08-ab53-4789-8336-04d066559346" />

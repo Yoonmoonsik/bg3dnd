@@ -9549,3 +9549,8 @@ data "StatsFunctorContext" "OnDamaged"
 data "Conditions" "HasDamageDoneForType(DamageType.Radiant);"
 data "StatsFunctors" "DealDamage(SWAP,ProficiencyBonus*2,Fire,Magical)"
 
+new entry "SanguinePoppet_DeathBurst"
+type "PassiveData"
+data "DisplayName" "h2cd25251gc04bg4e3bgb4fag7e7950a5d44d;1"
+data "Icon" "PassiveFeature_Generic_Explosion"
+data "Properties" "IsHidden"

@@ -5414,6 +5414,34 @@
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b4b1e3e8-eaeb-497c-9da5-9a214b6a6eb0" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinePoppet_Detonate" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('SANGUINE_POPPET_D6_3',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion6_3);IF(HasStatus('SANGUINE_POPPET_D6_4',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion6_4);IF(HasStatus('SANGUINE_POPPET_D6_5',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion6_5);IF(HasStatus('SANGUINE_POPPET_D6_6',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion6_6);IF(HasStatus('SANGUINE_POPPET_D8_3',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion8_3);IF(HasStatus('SANGUINE_POPPET_D8_4',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion8_4);IF(HasStatus('SANGUINE_POPPET_D8_5',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion8_5);IF(HasStatus('SANGUINE_POPPET_D8_6',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion8_6);IF(HasStatus('SANGUINE_POPPET_D10_3',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion10_3);IF(HasStatus('SANGUINE_POPPET_D10_4',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion10_4);IF(HasStatus('SANGUINE_POPPET_D10_5',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion10_5);IF(HasStatus('SANGUINE_POPPET_D10_6',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion10_6);IF(HasStatus('SANGUINE_POPPET_D12_3',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion12_3);IF(HasStatus('SANGUINE_POPPET_D12_4',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion12_4);IF(HasStatus('SANGUINE_POPPET_D12_5',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion12_5);IF(HasStatus('SANGUINE_POPPET_D12_6',context.Source)):CreateExplosion(Projectile_SanguinePoppet_Explosion12_6);Kill();" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SanguinePoppet" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb5b5cc70gc1e8g4b3eg9c47gbf7e791e272d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h07185031g9415g426ega0f7gdc74dc799fa5" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;09ae2f11-f5b4-42f5-ae16-687a5b57d500,,;10caea0e-c949-4d91-8ab7-3b50019dd054,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="a1b229db-954a-466b-bfeb-0536dc17d673" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Cleric_DeathDomain_Gen" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="4d22ced8-9206-41d7-a842-a3f4c290277a" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="0aae35fb-4e0f-4ecd-b8c9-8929e89a257b" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Cleric_DeathDomain_Gen" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Cleric_DeathDomain_Gen" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="74c3d8de-5937-4a60-84b4-ef5005c039f2" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Cleric_DeathDomain_BurstingSinew" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c58d5984-d9d7-4f8c-97a7-449158f95b36" />
