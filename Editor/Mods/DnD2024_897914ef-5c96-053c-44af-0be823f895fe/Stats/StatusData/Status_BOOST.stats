@@ -6093,6 +6093,84 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d12+7);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9fcd96a1-8398-413b-bf6d-7860da2ba8b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOND_D6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha956a77ag00a5g4260g825cgc732af36d57b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52b3f79ag1b5eg41b3g8199g11c9df38f3a3" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d6" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBond" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOND" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d6);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e51eda80-ed87-4160-a4b0-65ab8db7b4a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOND_D8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha956a77ag00a5g4260g825cgc732af36d57b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52b3f79ag1b5eg41b3g8199g11c9df38f3a3" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d8" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBond" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOND" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d8);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66235fdf-37b0-46cd-830b-01710d972dba" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOND_D10" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha956a77ag00a5g4260g825cgc732af36d57b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52b3f79ag1b5eg41b3g8199g11c9df38f3a3" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d10" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBond" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOND" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d10);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="99ba9559-7d40-4f65-9a4f-dbcb220e5d49" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOND_D12" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha956a77ag00a5g4260g825cgc732af36d57b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52b3f79ag1b5eg41b3g8199g11c9df38f3a3" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d12" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBond" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOND" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d12);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8bc19c6-6b88-4323-aae4-db67c27b26a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOND_WARD" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h18f00ae7g83f4g4326g8640gbaccd7a8762a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h34b34560gb68ag4fb6ga6cfgc8e57f0f016e" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBond" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOND_WARD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1);RollBonus(SavingThrow,1);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />

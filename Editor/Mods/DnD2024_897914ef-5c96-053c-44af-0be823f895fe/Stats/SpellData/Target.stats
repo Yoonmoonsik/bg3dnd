@@ -14041,6 +14041,274 @@
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;c17a3562-3758-4c4a-96e8-790cebed1df4,,;a8012b19-b279-45ec-89b0-86a1b73ad584,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8e8f71e7-bb88-4c9c-9034-889b6d487d83" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodBond6;Target_BloodBond8;Target_BloodBond10;Target_BloodBond12;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,100)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Enemy() and not Self() and not Dead()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBond" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h18f00ae7g83f4g4326g8640gbaccd7a8762a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h201bfcc4g44fcg4874g877fgfef5b61bae27" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,100)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="0ecf6a2c-d115-40b5-a4ed-2e7619888d71" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Buff_Gen_L1to3_01" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Buff_Gen_L1to3_01_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Buff_WardingBond_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_WardingBond_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;5e7e63e1-0e69-46e7-ade7-fe3dadcc9184,,;e9ad50df-e7f1-43a0-b782-4c08f92b0f5a,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="SpellHitAnimationType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="176da553-3284-4f20-b3be-12a578f84ef3" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="e337c385-2f32-423c-a5d1-255039b105d6" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="0b1e0e8a-fa78-4125-b027-e132a8d7b2d8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c9eea658-4e8e-44b2-aaac-239f34a2251e" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8e8f71e7-bb88-4c9c-9034-889b6d487d83" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodBond6_4;Target_BloodBond8_4;Target_BloodBond10_4;Target_BloodBond12_4;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f7a3a4a7-82cd-49eb-b312-96dd970c455f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8e8f71e7-bb88-4c9c-9034-889b6d487d83" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodBond6_5;Target_BloodBond8_5;Target_BloodBond10_5;Target_BloodBond12_5;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="137bd2a7-c67e-49d5-905c-117c169c4a7a" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8e8f71e7-bb88-4c9c-9034-889b6d487d83" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodBond6_6;Target_BloodBond8_6;Target_BloodBond10_6;Target_BloodBond12_6;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ec2baadc-2021-4522-b0f2-b341d4dc04fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8e8f71e7-bb88-4c9c-9034-889b6d487d83" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,100)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4fdd4d69gfa0eg4301g95ebga6195837d541" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce76f5e9-d8a0-4f64-be0e-0b61dc855308" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec2baadc-2021-4522-b0f2-b341d4dc04fa" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c08a8fa5-58b7-41a0-88d3-64de5135ef8d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec2baadc-2021-4522-b0f2-b341d4dc04fa" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ac7ff96-1926-4028-b06d-10ec32dfe2e4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec2baadc-2021-4522-b0f2-b341d4dc04fa" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D6,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="23e794b4-271e-4d64-a037-ba05e5ff23b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec2baadc-2021-4522-b0f2-b341d4dc04fa" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D8,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,100)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd435073dg5a51g4c83g975fg64aacc064801" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D8,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="928ef3c0-9a80-4a19-9c82-35820b9ff5f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="23e794b4-271e-4d64-a037-ba05e5ff23b7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a54cbb1-538c-47ae-937a-698664996fe8" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="23e794b4-271e-4d64-a037-ba05e5ff23b7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D8,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D8,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18db11f2-8d12-4f33-bbe2-bd5c163038c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="23e794b4-271e-4d64-a037-ba05e5ff23b7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D8,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D8,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b0d72aea-8958-49d6-9c95-0a11175d3f7a" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec2baadc-2021-4522-b0f2-b341d4dc04fa" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D10,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,100)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heed58104ge662g48d3g9a6fg57e012834d4b" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D10,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30e98f0c-bd69-4257-8b91-2bc3b47b031c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b0d72aea-8958-49d6-9c95-0a11175d3f7a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8dcccf72-8a01-44c3-8d6f-9fd2f01bf4f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b0d72aea-8958-49d6-9c95-0a11175d3f7a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D10,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D10,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66c2b990-42f0-4f40-832c-c80e175c2cc0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b0d72aea-8958-49d6-9c95-0a11175d3f7a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D10,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D10,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee404c9f-d1e4-4422-a4f4-623d6c39f0f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec2baadc-2021-4522-b0f2-b341d4dc04fa" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D12,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,100)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02bdc062g9c58g4153gbf05g5a362c4d8cda" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D12,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="62d03c40-2ff9-489d-ae4c-2f183fbcc5d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ee404c9f-d1e4-4422-a4f4-623d6c39f0f4" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3e1577c1-d56f-4a35-892a-89496ed78173" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ee404c9f-d1e4-4422-a4f4-623d6c39f0f4" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D12,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D12,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0950cc62-9147-41ff-a91e-827c6ef9e42c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBond12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ee404c9f-d1e4-4422-a4f4-623d6c39f0f4" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BloodBond_6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BloodBond12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D12,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLOOD_BOND_D12,100,-1);ApplyStatus(BLOOD_BOND_WARD,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d1095f08-ab53-4789-8336-04d066559346" />
