@@ -19157,7 +19157,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h854823d6g3f6bg1eb4g1910g0b257fdf29dd" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h742a9d61gdb3fgfc8fg01f1g4eaa6842ed54" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1442ebd7-9774-40af-a82a-2c2437101eab" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer')):ApplyStatus(RMI_WAND,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer'))ApplyStatus(RMI_WAND_2,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer')):ApplyStatus(RMI_WAND,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer')):ApplyStatus(RMI_WAND_2,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MagicInitiateCleric" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RMI_WAND,100,-1)" />
       </fields>
@@ -19170,7 +19170,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h691f58a3ge691g16f4gde31g4c0d91423c51" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he84d9497g813dgb574g14d2gb058fd491739" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1442ebd7-9774-40af-a82a-2c2437101eab" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer')):ApplyStatus(RMI_MAGICWEAPON,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer'))ApplyStatus(RMI_MAGICWEAPON_2,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer')):ApplyStatus(RMI_MAGICWEAPON,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer')):ApplyStatus(RMI_MAGICWEAPON_2,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_MagicWeapon" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RMI_MAGICWEAPON,100,-1)" />
       </fields>
@@ -19183,7 +19183,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h79b37e05gb883gd560g64b2g438c7bb607f1" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h1c0dd1f2g5d3cgb248g24b7gdebae85359ea" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1442ebd7-9774-40af-a82a-2c2437101eab" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer')):ApplyStatus(RMI_MAGICGLOVES,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer'))ApplyStatus(RMI_MAGICGLOVES_2,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer')):ApplyStatus(RMI_MAGICGLOVES,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer')):ApplyStatus(RMI_MAGICGLOVES_2,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MartialArts_BonusUnarmedStrike" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RMI_MAGICGLOVES,100,-1)" />
       </fields>
