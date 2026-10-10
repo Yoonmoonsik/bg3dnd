@@ -1991,7 +1991,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a1e7fb48-4a49-41de-ba17-b0ef5ac27dfe" />
         <field name="Name" type="NameTableFieldDefinition" value="FlameBlade" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e25f75dd-ff6f-4233-98a4-398f539c1066" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5bd9458131,100,1,true,true,true,,,FLAME_BLADE,FLAME_BLADE_2);AI_ONLY:IF(not HasStatus('FLAME_BLADE',GetActiveWeapon())):ApplyStatus(AI_HELPER_FLAMEBLADE,100,5);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5bd9458131,100,1,true,true,true,,,'FlameBlade',FLAME_BLADE_2);AI_ONLY:IF(not HasStatus('FLAME_BLADE',GetActiveWeapon())):ApplyStatus(AI_HELPER_FLAMEBLADE,100,5);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -2000,7 +2000,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b3d5abd0-80bf-43e9-bde6-3b62a775ee30" />
         <field name="Name" type="NameTableFieldDefinition" value="FlameBlade_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2c2d7b24-2f79-430e-934d-ce5cd71c5f6d" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5bd9458131,100,1,true,true,true,,,FLAME_BLADE,FLAME_BLADE_3);AI_ONLY:IF(not HasStatus('FLAME_BLADE',GetActiveWeapon())):ApplyStatus(AI_HELPER_FLAMEBLADE,100,5);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5bd9458131,100,1,true,true,true,,,'FlameBlade',FLAME_BLADE_3);AI_ONLY:IF(not HasStatus('FLAME_BLADE',GetActiveWeapon())):ApplyStatus(AI_HELPER_FLAMEBLADE,100,5);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -2009,7 +2009,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f9cf6d5d-34f9-4907-a813-f3140ede0d4c" />
         <field name="Name" type="NameTableFieldDefinition" value="FlameBlade_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b04c568b-24e9-4926-9634-0091ad85df51" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5bd9458131,100,1,true,true,true,,,FLAME_BLADE,FLAME_BLADE_4);AI_ONLY:IF(not HasStatus('FLAME_BLADE',GetActiveWeapon())):ApplyStatus(AI_HELPER_FLAMEBLADE_4,100,5);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5bd9458131,100,1,true,true,true,,,'FlameBlade',FLAME_BLADE_4);AI_ONLY:IF(not HasStatus('FLAME_BLADE',GetActiveWeapon())):ApplyStatus(AI_HELPER_FLAMEBLADE_4,100,5);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -2018,7 +2018,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6371174e-5c63-47db-9077-4ba5f6c93e1b" />
         <field name="Name" type="NameTableFieldDefinition" value="FlameBlade_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="968e8300-3bd4-4ac1-8578-09da4acc4278" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5bd9458131,100,1,true,true,true,,,FLAME_BLADE,FLAME_BLADE_5);AI_ONLY:IF(not HasStatus('FLAME_BLADE',GetActiveWeapon())):ApplyStatus(AI_HELPER_FLAMEBLADE_4,100,5);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5bd9458131,100,1,true,true,true,,,'FlameBlade',FLAME_BLADE_5);AI_ONLY:IF(not HasStatus('FLAME_BLADE',GetActiveWeapon())):ApplyStatus(AI_HELPER_FLAMEBLADE_4,100,5);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -2027,7 +2027,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="84b6acb2-b236-4ec9-9df4-029712c6b7ce" />
         <field name="Name" type="NameTableFieldDefinition" value="FlameBlade_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="89afb2b9-bf42-43a4-9ff0-a4172f1bfe38" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5bd9458131,100,1,true,true,true,,,FLAME_BLADE,FLAME_BLADE_6);AI_ONLY:IF(not HasStatus('FLAME_BLADE',GetActiveWeapon())):ApplyStatus(AI_HELPER_FLAMEBLADE_6,100,5);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5bd9458131,100,1,true,true,true,,,'FlameBlade',FLAME_BLADE_6);AI_ONLY:IF(not HasStatus('FLAME_BLADE',GetActiveWeapon())):ApplyStatus(AI_HELPER_FLAMEBLADE_6,100,5);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
