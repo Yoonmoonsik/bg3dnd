@@ -5907,6 +5907,192 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d12)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D6_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5c407c6dg210cg4562g8867gba54ecd484ea" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h267135f7gaa39g4523ga5e4g6de2b4116d57" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d6+4;2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SanguineShield" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SANGUINE_SHIELD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d6+4);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c41f4b97-cf3d-407d-b21d-22a41c47f3f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d6+4;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d6+4);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6cfc5d34-be30-43a1-a734-01fdb863f9b2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d6+4;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d6+4);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="053f1239-51b3-41d8-a81d-4819cc3b1ce4" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d6+4;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d6+4);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2e0e4537-3749-4d74-b61c-aa10d3226ca3" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d6+4;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d6+4);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="788734ae-5e70-4ea5-ae46-852dba4d92d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D8_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d8+5;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d8+5);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1f8ace7-e3c8-4ea0-9ad6-adee8166f6cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d8+5;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d8+5);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="75e34c88-6a99-462f-b976-5a4c0162741b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d8+5;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d8+5);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b4af556-9709-4317-a6bc-e114444b6fce" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d8+5;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d8+5);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="51841145-6a36-4386-879e-8195ade5d450" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d8+5;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d8+5);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a96553de-fe14-4175-8cd9-e1cc674bea19" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D10_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d10+6;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d10+6);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a2bd27e-431f-4d3f-9193-85d047054e58" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d10+6;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d10+6);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="26a5892f-1568-447f-b3ab-d4e17bac92a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d10+6;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d10+6);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40dabd8b-558d-4f4e-ae9f-22f0ca71dc16" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d10+6;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d10+6);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="00f3c3c2-1f99-4149-bcd3-4dab3d74009b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d10+6;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d10+6);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a68310cd-b285-4105-b6a9-905ceacc305e" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D12_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d12+7;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d12+7);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9743e665-5520-4884-b1bd-12d5915610b2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d12+7;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d12+7);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d6fe79c-39de-40d0-a6f7-a65c7f50075d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d12+7;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d12+7);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a283bc8c-3fbc-4f45-91d0-1737763b3fab" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d12+7;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d12+7);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="933b4ed0-ef1e-4145-9b7d-9d326933061b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SANGUINE_SHIELD_D12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b27a5785-af4f-4285-a799-8e4745770a9a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d12+7;2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d12+7);AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />
