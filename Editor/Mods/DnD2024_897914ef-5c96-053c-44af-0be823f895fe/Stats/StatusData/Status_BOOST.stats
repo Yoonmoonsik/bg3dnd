@@ -5708,6 +5708,19 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="38c6c918-0179-47ed-ab6e-3d8cd174d09b" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILTING_SMITE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h63575f1dg4527g4621ga1f6g7f1ac28ad1b8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc26b0621g1ac8g47b3g9378g0b420b193531" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_WiltingSmite" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WILTING_SMITE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Necrotic,Vulnerable)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />
