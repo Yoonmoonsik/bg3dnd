@@ -908,6 +908,47 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('BLOOD_WISP_D6',context.Source)):DealDamage(1d6,Necrotic,Magical);IF(HasStatus('BLOOD_WISP_D8',context.Source)):DealDamage(1d8,Necrotic,Magical);IF(HasStatus('BLOOD_WISP_D10',context.Source)):DealDamage(1d10,Necrotic,Magical);IF(HasStatus('BLOOD_WISP_D12',context.Source)):DealDamage(1d12,Necrotic,Magical);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D6);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D8);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D10);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_D12);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_4);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_5);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_6);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_7);IF(not HasActionResource('BloodWisp',2,0,false,false,context.Source)):RemoveStatus(SELF,BLOOD_WISP_8);UseActionResource(SELF,BloodWisp,1,0);UseActionResource(SELF,BloodWispTurn,1,0);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="64d33cd7-2b61-4883-ae39-4ddfe852098b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood_D6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02948054gc638g4defg94bbg4dc7a76d84d0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h633b865fg8665g4417ga99cgfe44523893ba" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SenseLifeblood" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsMiss() and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50,context.Target) and not Tagged('UNDEAD',context.Target) and not Tagged('CONSTRUCT',context.Target) and not Tagged('ELEMENTAL',context.Target);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Necrotic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b69c6de0-408a-4ebf-92b7-4f2f8bc4010b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood_D8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="64d33cd7-2b61-4883-ae39-4ddfe852098b" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Necrotic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d9aefcf5-0201-4695-9498-3e2c31c0da28" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood_D10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="64d33cd7-2b61-4883-ae39-4ddfe852098b" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d10,Necrotic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ec8dd013-05c6-4120-a52a-e841c3c5422d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood_D12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="64d33cd7-2b61-4883-ae39-4ddfe852098b" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d12,Necrotic)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d12,Necrotic,Magical)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="38aab3fd-9a52-4b1b-bb15-add338d8d6c5" />

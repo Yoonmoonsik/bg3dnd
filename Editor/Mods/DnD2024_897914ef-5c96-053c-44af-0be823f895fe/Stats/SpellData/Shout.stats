@@ -4060,6 +4060,359 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e0c80a1-6e78-44cb-8ce3-40bb5526faa7" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Divination" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SenseLifeblood6;Shout_SenseLifeblood8;Shout_SenseLifeblood10;Shout_SenseLifeblood12;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D6,100,100);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SenseLifeblood" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02948054gc638g4defg94bbg4dc7a76d84d0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa599f0cg711bg40d6gb4d4g13f6ab27e271" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D6,100,100)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="b578d282-7102-4efe-81bf-e5d18d9f04ce" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_ConjureWoodlandBeing_L4to5" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;4156d364-d2c0-4a01-908c-3552f78f434d,,;6f0a29b6-0ae8-4ebf-a1e4-8069c4a6ad16,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;IsConcentration;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7bf288a2-61a1-4e9a-be06-1b31a7e5c204" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="af05b622-2a1e-406a-b1a0-41a7ceb77253" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="373b34cb-9745-4940-ae2f-5c58774051ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9e0c80a1-6e78-44cb-8ce3-40bb5526faa7" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SenseLifeblood6_3;Shout_SenseLifeblood8_3;Shout_SenseLifeblood10_3;Shout_SenseLifeblood12_3;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D6,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6957d74d-658f-4301-95d4-63ce15e61732" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9e0c80a1-6e78-44cb-8ce3-40bb5526faa7" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SenseLifeblood6_4;Shout_SenseLifeblood8_4;Shout_SenseLifeblood10_4;Shout_SenseLifeblood12_4;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D6,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca3e78b4-75a6-414e-a329-e114b6be6f50" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9e0c80a1-6e78-44cb-8ce3-40bb5526faa7" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SenseLifeblood6_5;Shout_SenseLifeblood8_5;Shout_SenseLifeblood10_5;Shout_SenseLifeblood12_5;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D6,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7095917-b906-4fa6-bb18-0fed56337618" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9e0c80a1-6e78-44cb-8ce3-40bb5526faa7" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SenseLifeblood6_6;Shout_SenseLifeblood8_6;Shout_SenseLifeblood10_6;Shout_SenseLifeblood12_6;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D6,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7fdb689-05f7-4b87-84c7-31f91b56dd00" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9e0c80a1-6e78-44cb-8ce3-40bb5526faa7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D6,100,100);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha38b515cgf37dg4ce2ga1edg4c66585fc0c9" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d6,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D6,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a936f777-adb9-448e-aef6-631d3ebb48d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d7fdb689-05f7-4b87-84c7-31f91b56dd00" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D6,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="214f2526-9ee0-406d-9f7e-b6b3a599a714" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d7fdb689-05f7-4b87-84c7-31f91b56dd00" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D6,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b5bd3aa-b286-4413-b7a0-08f439988c98" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d7fdb689-05f7-4b87-84c7-31f91b56dd00" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D6,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="89a9c25e-f986-4dd7-8b6d-8c04f910cfde" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d7fdb689-05f7-4b87-84c7-31f91b56dd00" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D6,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D6,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="85d8edeb-aaca-4a3f-a336-9fce0fb819bb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9e0c80a1-6e78-44cb-8ce3-40bb5526faa7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D8,100,100);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0388a865g740cg44cdga179g6aaa0ca2db77" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d8,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D8,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dd3b4986-7223-4cf7-8cec-67e8cdfdc48c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="85d8edeb-aaca-4a3f-a336-9fce0fb819bb" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D8,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D8,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eaef1752-6e59-4d28-a072-a863f253ea29" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="85d8edeb-aaca-4a3f-a336-9fce0fb819bb" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D8,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D8,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="537935fb-d731-4a26-ab6a-d90441ef77df" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="85d8edeb-aaca-4a3f-a336-9fce0fb819bb" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D8,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D8,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="420d7600-3267-45c0-ad01-af6d0350e1c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="85d8edeb-aaca-4a3f-a336-9fce0fb819bb" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D8,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D8,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c95136e3-4b82-4627-b8b8-93e858cb5e15" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9e0c80a1-6e78-44cb-8ce3-40bb5526faa7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D10,100,100);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h26eb8a58g2bd3g4c50gb360g2748d8a44285" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d10,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D10,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7c5c2182-ef15-4165-908c-9b573d41bf27" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c95136e3-4b82-4627-b8b8-93e858cb5e15" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D10,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D10,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="382a095d-e669-47fd-aa3d-c64359248ceb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c95136e3-4b82-4627-b8b8-93e858cb5e15" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D10,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D10,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30457e5b-0321-4c99-8423-1c632b073204" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c95136e3-4b82-4627-b8b8-93e858cb5e15" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D10,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D10,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0dd175e-fb52-4041-887e-10a98db6ae6d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c95136e3-4b82-4627-b8b8-93e858cb5e15" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D10,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D10,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="afc0596a-b3d2-4e77-ac5f-7c6f0a3cbf8f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9e0c80a1-6e78-44cb-8ce3-40bb5526faa7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D12,100,100);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd1077868g3220g4f46g8384g263a47d52507" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;DealDamage(2d12,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d12,Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D12,100,100)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="813a0eef-a935-48ab-ad24-0fed16a1a95c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="afc0596a-b3d2-4e77-ac5f-7c6f0a3cbf8f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D12,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D12,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0fb830ca-4ae6-4c9e-a65b-1f2a6bcbb824" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="afc0596a-b3d2-4e77-ac5f-7c6f0a3cbf8f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D12,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D12,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="de8ebe78-d8fc-4ee5-abfe-2614547923cc" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="afc0596a-b3d2-4e77-ac5f-7c6f0a3cbf8f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D12,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D12,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e51cd9b2-acff-4353-b819-4a5ded940e96" />
+        <field name="Name" type="NameTableFieldDefinition" value="SenseLifeblood12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="afc0596a-b3d2-4e77-ac5f-7c6f0a3cbf8f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SENSE_LIFEBLOOD_D12,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SENSE_LIFEBLOOD_D12,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:2;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SenseLifeblood12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="de40b830-88a1-40dd-9785-b38cf857558e" />
         <field name="Name" type="NameTableFieldDefinition" value="CrimsonLash_Dummy" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="09395053-4c6d-49b7-bd85-f3551fe59b89" />

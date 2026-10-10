@@ -5652,6 +5652,62 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20ac804d-e335-4b7e-83cf-46b1652779ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="SENSE_LIFEBLOOD_D6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02948054gc638g4defg94bbg4dc7a76d84d0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h633b865fg8665g4417ga99cgfe44523893ba" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SenseLifeblood" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SENSE_LIFEBLOOD" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SenseLifeblood_D6" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bbc3ebc7-c5a2-4ebd-8e9d-a64b06e124a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="SENSE_LIFEBLOOD_D8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02948054gc638g4defg94bbg4dc7a76d84d0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h633b865fg8665g4417ga99cgfe44523893ba" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SenseLifeblood" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SENSE_LIFEBLOOD" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SenseLifeblood_D8" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0ec5edc4-76bb-4229-906a-bd586e08c1a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="SENSE_LIFEBLOOD_D10" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02948054gc638g4defg94bbg4dc7a76d84d0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h633b865fg8665g4417ga99cgfe44523893ba" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SenseLifeblood" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SENSE_LIFEBLOOD" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SenseLifeblood_D10" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="36cd2363-abcf-44c6-a323-60270bf98d26" />
+        <field name="Name" type="NameTableFieldDefinition" value="SENSE_LIFEBLOOD_D12" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02948054gc638g4defg94bbg4dc7a76d84d0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h633b865fg8665g4417ga99cgfe44523893ba" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d12,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SenseLifeblood" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SENSE_LIFEBLOOD" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SenseLifeblood_D12" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />
