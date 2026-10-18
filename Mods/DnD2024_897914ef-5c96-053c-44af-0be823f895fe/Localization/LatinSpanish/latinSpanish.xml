@@ -6959,6 +6959,11 @@ Al inicio de cada uno de sus turnos, el objetivo &lt;LSTag Type="Status" Tooltip
 
 Hasta que el conjuro termine, puedes arrojar fuego a una criatura o un objeto para causar [2]. El conjuro termina si lo lanzas de nuevo.</content>
   <content contentuid="h84fdaae4gf5f2g4d7dg9fd2gb5a952add89b" version="1">Arroja fuego a una criatura o un objeto. Realiza un ataque de conjuro a distancia.</content>
+  <content contentuid="h1cc53e1bg08eag444bgb3e3g72f3e0bd1b42" version="1">Invocas una masa de telarañas pegajosas en un punto dentro del alcance. Las telarañas llenan un radio de [1] allí durante la duración. Las telarañas son &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Terreno Difícil&lt;/LSTag&gt;, y el área dentro de ellas está ligeramente oscurecida.
+
+La primera vez que una criatura entra en las telarañas en un turno o comienza su turno allí, debe superar una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Dexterity"&gt;Destreza&lt;/LSTag&gt; o tener la condición &lt;LSTag Type="Status" Tooltip="WEB"&gt;Inmovilizado&lt;/LSTag&gt; mientras esté en las telarañas o hasta que se libere.
+
+Las telarañas son inflamables.</content>
   <content contentuid="h6a01d569g16d9g4646gb6bdg26cedca429d0" version="1">Plantas agarradoras brotan del suelo en un radio de [1] dentro del alcance. Durante la duración, estas plantas convierten el suelo del área en &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Terreno Difícil&lt;/LSTag&gt;. Desaparecen cuando el conjuro termina.
 
 Cada criatura (distinta de ti) en el área cuando lanzas el conjuro debe superar una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Strength"&gt;Fuerza&lt;/LSTag&gt; o tener la condición &lt;LSTag Type="Status" Tooltip="ENSNARED_VINES"&gt;Inmovilizado&lt;/LSTag&gt; hasta que el conjuro termine o salga de las plantas.</content>
@@ -7238,5 +7243,5 @@ Al inicio de cada uno de sus turnos, una criatura Inmovilizada realiza una prueb
 
 Cada criatura en esa área realiza una &lt;LSTag Tooltip="SavingThrow"&gt;tirada de salvación&lt;/LSTag&gt; de &lt;LSTag Tooltip="Strength"&gt;Fuerza&lt;/LSTag&gt;. Si falla la salvación, recibe [2] y tiene la condición &lt;LSTag Type="Status" Tooltip="BLACK_TENTACLES"&gt;Inmovilizado&lt;/LSTag&gt; hasta que el conjuro termine. Una criatura también realiza esa salvación si entra en el área o termina su turno allí. Una criatura realiza esa salvación solo una vez por turno.</content>
   <content contentuid="h1059faf4gd11fg0008gb771g3025f6c3973d" version="1">Resurgimiento Heroico</content>
-  <content contentuid="h08f284c8gc228g439fg91d7g15f48ceac64c" version="1">Al borde de la muerte, una chispa de desafío se enciende. Tomas una respiración entrecortada, recuperas 1 punto de golpe y te pones de pie.</content>
+  <content contentuid="h08f284c8gc228g439fg91d7g15f48ceac64c" version="1">Al borde de la muerte, una chispa de desafío se enciende. Tu respiración se agudiza, recuperas 1 punto de golpe y te pones de pie.</content>
 </contentList>
