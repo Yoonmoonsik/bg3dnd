@@ -1385,7 +1385,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="THORN_ARMOR_1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73991020g32ffg9f15g55bcgd13afd4a160b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf4db5d55g3f59g3137gd662g4504298dce7d" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d6)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_ThornArmor" />
         <field name="StackId" type="StringTableFieldDefinition" value="THORN_ARMOR" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
@@ -1402,7 +1402,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="82ff383f-7616-4fde-9e64-55f7df90af7e" />
         <field name="Name" type="NameTableFieldDefinition" value="THORN_ARMOR_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="22e06ddb-eef6-47a3-984f-8863a71f731c" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(5d6)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d6);" />
       </fields>
@@ -1412,7 +1412,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="18c343c4-7dff-4b26-9879-fd09bcb840c8" />
         <field name="Name" type="NameTableFieldDefinition" value="THORN_ARMOR_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="22e06ddb-eef6-47a3-984f-8863a71f731c" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="7d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(7d6)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(7d6);" />
       </fields>
@@ -1422,7 +1422,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="444cd07a-9ea0-466e-a29e-b648ec97d402" />
         <field name="Name" type="NameTableFieldDefinition" value="THORN_ARMOR_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="22e06ddb-eef6-47a3-984f-8863a71f731c" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="9d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(9d6)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(9d6);" />
       </fields>
@@ -1432,7 +1432,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ab5a3c7d-e88a-4243-bc8a-bc4c28e10b7f" />
         <field name="Name" type="NameTableFieldDefinition" value="THORN_ARMOR_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="22e06ddb-eef6-47a3-984f-8863a71f731c" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="11d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(11d6)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(11d6);" />
       </fields>
@@ -1442,7 +1442,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0c03544f-0e21-4780-8b34-78cab5202b47" />
         <field name="Name" type="NameTableFieldDefinition" value="THORN_ARMOR_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="22e06ddb-eef6-47a3-984f-8863a71f731c" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="13d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(13d6)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(13d6);" />
       </fields>
     </stat_object>
@@ -4884,7 +4884,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="HUNGERING_BLADE_TEMPHP" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb6e6fab4gd077g545dge824g9e58b1ec530c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0903fdd3gbfadg55a1gd56cga67f82c909ac" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="SpellCastingAbilityModifier" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(SpellCastingAbilityModifier)" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
         <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_Buff_MO" />
         <field name="StackId" type="StringTableFieldDefinition" value="HUNGERING_BLADE_TEMPHP" />
@@ -6326,7 +6326,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D6_2" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h146caa62g1cfcg4249g9e55ge88c7adc37f7" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcb8ed40cg3097g4123g8f7eg5e2fb5141230" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(2d6)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_TheftOfVitae" />
         <field name="StackId" type="StringTableFieldDefinition" value="THEFT_OF_VITAE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d6)" />
@@ -6340,7 +6340,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="96632c50-6c5f-499f-8790-81c80539f24a" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D6_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d6)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d6)" />
       </fields>
     </stat_object>
@@ -6349,7 +6349,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bf7af6cc-744d-469d-b057-debd5bc79bea" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D6_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(4d6)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d6)" />
       </fields>
     </stat_object>
@@ -6358,7 +6358,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7722ac6c-fc30-4403-961a-fcc2db4fd513" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D6_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(5d6)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d6)" />
       </fields>
     </stat_object>
@@ -6367,7 +6367,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9746cf55-d39a-4e60-b28e-6dbb9727c80e" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D6_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(6d6)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d6)" />
       </fields>
     </stat_object>
@@ -6376,7 +6376,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fca029fa-a560-43a0-80b6-6527e0b3ee3f" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D8_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d8" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(2d8)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d8)" />
       </fields>
     </stat_object>
@@ -6385,7 +6385,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="993775af-8d59-46bb-9796-c7ba63344c9b" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D8_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d8" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d8)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d8)" />
       </fields>
     </stat_object>
@@ -6394,7 +6394,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="65d9ea75-54d6-4c31-aee9-c6ec53801958" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D8_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d8" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(4d8)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d8)" />
       </fields>
     </stat_object>
@@ -6403,7 +6403,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1deaffc1-b857-4067-85a8-21aab12e8a6b" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D8_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d8" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(5d8)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d8)" />
       </fields>
     </stat_object>
@@ -6412,7 +6412,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6c47960e-0e7f-4f84-8cd8-74a571aa2d1c" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D8_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d8" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(6d8)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d8)" />
       </fields>
     </stat_object>
@@ -6421,7 +6421,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7a4d7803-8a2b-4e6d-aa3d-b641eef82e27" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D10_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d10" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(2d10)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d10)" />
       </fields>
     </stat_object>
@@ -6430,7 +6430,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="cd6e0e7f-101f-4d48-82f5-acf4844cff51" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D10_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d10" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d10)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d10)" />
       </fields>
     </stat_object>
@@ -6439,7 +6439,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="52fcc13d-b5ae-45f2-8f0e-599816651b8e" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D10_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d10" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(4d10)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d10)" />
       </fields>
     </stat_object>
@@ -6448,7 +6448,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="519c3b47-8459-4654-81cf-47632fd2ddbe" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D10_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d10" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(5d10)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d10)" />
       </fields>
     </stat_object>
@@ -6457,7 +6457,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="21d46c62-380a-4dd6-a119-c60feef5ed91" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D10_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d10" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(6d10)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d10)" />
       </fields>
     </stat_object>
@@ -6466,7 +6466,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="01349b59-3aa9-47a0-a9c9-fde0bab183ab" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D12_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2d12" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(2d12)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d12)" />
       </fields>
     </stat_object>
@@ -6475,7 +6475,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="63e3f387-21d2-4c84-94d6-91781d994a12" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D12_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d12" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d12)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d12)" />
       </fields>
     </stat_object>
@@ -6484,7 +6484,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3ee87963-e749-44ae-9dec-f25882e5fdda" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D12_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4d12" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(4d12)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4d12)" />
       </fields>
     </stat_object>
@@ -6493,7 +6493,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b0991709-206c-45d4-880d-2126e5154996" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D12_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5d12" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(5d12)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(5d12)" />
       </fields>
     </stat_object>
@@ -6502,7 +6502,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="40da82ff-1346-4ab3-827b-8677a478164f" />
         <field name="Name" type="NameTableFieldDefinition" value="THEFT_OF_VITAE_D12_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f325abc4-e050-46ea-add5-82fa2ae4a038" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6d12" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(6d12)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6d12)" />
       </fields>
     </stat_object>
@@ -6751,7 +6751,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOND_D6" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha956a77ag00a5g4260g825cgc732af36d57b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52b3f79ag1b5eg41b3g8199g11c9df38f3a3" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d6)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBond" />
         <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOND" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d6);" />
@@ -6767,7 +6767,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOND_D8" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha956a77ag00a5g4260g825cgc732af36d57b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52b3f79ag1b5eg41b3g8199g11c9df38f3a3" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d8" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d8)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBond" />
         <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOND" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d8);" />
@@ -6783,7 +6783,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOND_D10" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha956a77ag00a5g4260g825cgc732af36d57b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52b3f79ag1b5eg41b3g8199g11c9df38f3a3" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d10" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d10)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBond" />
         <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOND" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d10);" />
@@ -6799,7 +6799,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOND_D12" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha956a77ag00a5g4260g825cgc732af36d57b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52b3f79ag1b5eg41b3g8199g11c9df38f3a3" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d12" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d12)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBond" />
         <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOND" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d12);" />
@@ -6829,7 +6829,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_D6" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d6;2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d6);2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
         <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d6);RollBonus(Attack,2);RollBonus(SavingThrow,2);RollBonus(SkillCheck,2);RollBonus(RawAbility,2);" />
@@ -6847,7 +6847,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_D8" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d8;2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d8);2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
         <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d8);RollBonus(Attack,2);RollBonus(SavingThrow,2);RollBonus(SkillCheck,2);RollBonus(RawAbility,2);" />
@@ -6865,7 +6865,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_D10" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d10;2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d10);2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
         <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d10);RollBonus(Attack,2);RollBonus(SavingThrow,2);RollBonus(SkillCheck,2);RollBonus(RawAbility,2);" />
@@ -6883,7 +6883,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_D12" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d12;2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d12);2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
         <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d12);RollBonus(Attack,2);RollBonus(SavingThrow,2);RollBonus(SkillCheck,2);RollBonus(RawAbility,2);" />
@@ -6901,7 +6901,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_PENDING_D6" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d6;2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d6);2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
         <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE_PENDING" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead()):ApplyStatus(REANIMATE_D6,100,-1)" />
@@ -6917,7 +6917,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_PENDING_D8" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d8;2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d8);2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
         <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE_PENDING" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead()):ApplyStatus(REANIMATE_D8,100,-1)" />
@@ -6933,7 +6933,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_PENDING_D10" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d10;2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d10);2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
         <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE_PENDING" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead()):ApplyStatus(REANIMATE_D10,100,-1)" />
@@ -6949,7 +6949,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="REANIMATE_PENDING_D12" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50a7bd37g6aa0g4c8ag9cf5g73b203c96e83" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had051424g78adg476bg90f1gbe726ab0fccc" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3d12;2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(3d12);2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Reanimate" />
         <field name="StackId" type="StringTableFieldDefinition" value="REANIMATE_PENDING" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead()):ApplyStatus(REANIMATE_D12,100,-1)" />
@@ -7225,7 +7225,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CIRCLE_OF_SCARLET_TEMPHP_4" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb5d8b6e7g183eg42f9gab96g762a82ef1c88" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4c1f7e2ag9b3dg4e81ga6f2g3d5b8c9e0a17" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="20" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(20)" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
         <field name="StackId" type="StringTableFieldDefinition" value="CIRCLE_OF_SCARLET_TEMPHP" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
@@ -7243,7 +7243,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CIRCLE_OF_SCARLET_TEMPHP_5" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb5d8b6e7g183eg42f9gab96g762a82ef1c88" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4c1f7e2ag9b3dg4e81ga6f2g3d5b8c9e0a17" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="25" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(25)" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
         <field name="StackId" type="StringTableFieldDefinition" value="CIRCLE_OF_SCARLET_TEMPHP" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
@@ -7261,7 +7261,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CIRCLE_OF_SCARLET_TEMPHP_6" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb5d8b6e7g183eg42f9gab96g762a82ef1c88" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4c1f7e2ag9b3dg4e81ga6f2g3d5b8c9e0a17" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="30" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(30)" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
         <field name="StackId" type="StringTableFieldDefinition" value="CIRCLE_OF_SCARLET_TEMPHP" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
@@ -13486,7 +13486,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="EC_PROTECTOR" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a989f61f-c98c-4cfc-b7d7-9871fd7a5876" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h702ee012gf2cegac5agc807g4f790f5c4902" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(Cause.LevelMapValue(EldritchCannonProtector)+Cause.IntelligenceModifier)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6a5b7fdeg4a50g4bcfg876egea3558ce3f64" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(Cause.LevelMapValue(EldritchCannonProtector))" />
         <field name="StackId" type="StringTableFieldDefinition" value="EC_PROTECTOR" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(Cause.LevelMapValue(EldritchCannonProtector)+Cause.IntelligenceModifier);" />
       </fields>
