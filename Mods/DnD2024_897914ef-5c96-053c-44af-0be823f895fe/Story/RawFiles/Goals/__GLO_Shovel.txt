@@ -1,0 +1,304 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//DB_ShovelArea((ITEM)_DirtMound,(ITEM)_ItemReward);
+//DB_Shovel_ChestMoundType(_IsInvisible,_IsChest,_VisualTag,_Dialog);
+
+//Mound is not invisible, Reward is defined (an object)
+DB_Shovel_ChestMoundType(0,1,(TAG)MOUND_GRAVEL_c3613de9-f008-49c0-bf69-af42030743fa,(DIALOGRESOURCE)BHVR_WRLD_Dig_Visible_Gravel_Chest_8ffccc7a-5aa3-af02-aafb-77ad45e95c72);
+DB_Shovel_ChestMoundType(0,1,(TAG)MOUND_MUD_7e6a4698-c855-4fce-a53f-c2e575edd9ee,(DIALOGRESOURCE)BHVR_WRLD_Dig_Visible_Mud_Chest_9ecf2b0e-e4b8-addc-76fa-846c9717a621);
+DB_Shovel_ChestMoundType(0,1,(TAG)MOUND_SAND_ceed37ff-d663-4694-b231-ceb2a1df10fc,(DIALOGRESOURCE)BHVR_WRLD_Dig_Visible_Sand_Chest_b4a4954a-d9c9-4861-25f2-f4a0d3c41906);
+
+//Mound is invisible, Reward is defined (an object)
+DB_Shovel_ChestMoundType(1,1,(TAG)MOUND_GRAVEL_c3613de9-f008-49c0-bf69-af42030743fa,(DIALOGRESOURCE)BHVR_WRLD_Dig_Invisible_Gravel_Chest_6ab2d7c7-9261-a8ac-b071-36cea3b3b86e);
+DB_Shovel_ChestMoundType(1,1,(TAG)MOUND_MUD_7e6a4698-c855-4fce-a53f-c2e575edd9ee,(DIALOGRESOURCE)BHVR_WRLD_Dig_Invisible_Mud_Chest_d086d360-19bc-7dcc-bcc1-523b99e9623d);
+DB_Shovel_ChestMoundType(1,1,(TAG)MOUND_SAND_ceed37ff-d663-4694-b231-ceb2a1df10fc,(DIALOGRESOURCE)BHVR_WRLD_Dig_Invisible_Sand_Chest_c7797a47-b9b9-1064-4d8b-f855009f9057);
+
+//Mound is not invisible, Reward is not defined (NULL)
+DB_Shovel_ChestMoundType(0,0,(TAG)MOUND_GRAVEL_c3613de9-f008-49c0-bf69-af42030743fa,(DIALOGRESOURCE)BHVR_WRLD_Dig_Visible_Gravel_33231007-a314-51c0-05c1-79a5e1de90bc);
+DB_Shovel_ChestMoundType(0,0,(TAG)MOUND_MUD_7e6a4698-c855-4fce-a53f-c2e575edd9ee,(DIALOGRESOURCE)BHVR_WRLD_Dig_Visible_Mud_cb080539-feed-cf26-6fd5-54b708be9fc1);
+DB_Shovel_ChestMoundType(0,0,(TAG)MOUND_SAND_ceed37ff-d663-4694-b231-ceb2a1df10fc,(DIALOGRESOURCE)BHVR_WRLD_Dig_Visible_Sand_a1c2125b-237f-3ff2-dfeb-85280bcae185);
+
+//Mound is invisible, Reward is not defined (NULL)
+DB_Shovel_ChestMoundType(1,0,(TAG)MOUND_GRAVEL_c3613de9-f008-49c0-bf69-af42030743fa,(DIALOGRESOURCE)BHVR_WRLD_Dig_Invisible_Gravel_bf387b8a-a8fe-6019-ec5f-99b7444b8abb);
+DB_Shovel_ChestMoundType(1,0,(TAG)MOUND_MUD_7e6a4698-c855-4fce-a53f-c2e575edd9ee,(DIALOGRESOURCE)BHVR_WRLD_Dig_Invisible_Mud_0675b8c3-1352-e6a8-efd1-2fca00e1717e);
+DB_Shovel_ChestMoundType(1,0,(TAG)MOUND_SAND_ceed37ff-d663-4694-b231-ceb2a1df10fc,(DIALOGRESOURCE)BHVR_WRLD_Dig_Invisible_Sand_b364e06e-c1c9-4f08-9807-47a223c91009);
+KBSECTION
+//REGION Init
+IF
+DB_ShovelArea((ITEM)_DirtMound,(ITEM)_ItemReward)
+THEN
+SetOnStage(_ItemReward,0);
+//END_REGION
+
+
+//REGION Process Uses of Dig spell
+IF
+UsingSpell((CHARACTER)_Character,"Target_Dig",_,_,_)
+AND
+HasActiveStatus(_Character,"DIG",1)
+AND
+DB_ShovelArea(_DirtMound, _ItemReward)
+AND
+NOT DB_Shovelling_Mound(_,_,_DirtMound,_)
+AND
+GetInnerDistanceTo(_Character,_DirtMound,_Distance)
+AND
+_Distance <= 2.5 //BUG: Player can dig a different mound, if there are two close together
+THEN
+PROC_Shovel_CheckDialog(_Character,_DirtMound,_ItemReward);
+
+//Mound is not invisible, Reward is a chest
+PROC
+PROC_Shovel_CheckDialog((CHARACTER)_Character,(ITEM)_DirtMound,(ITEM)_ItemReward)
+AND
+IsInvisible(_DirtMound,0)
+AND
+_ItemReward != NULL_00000000-0000-0000-0000-000000000000
+AND
+DB_Shovel_ChestMoundType(0,1,_Tag,_DigDialog)
+AND
+IsTagged(_DirtMound,_Tag,1)
+THEN
+DB_Shovelling_Mound(_DigDialog,_Character,_DirtMound,_ItemReward);
+
+//Mound is invisible, Reward is a chest
+PROC
+PROC_Shovel_CheckDialog((CHARACTER)_Character,(ITEM)_DirtMound,(ITEM)_ItemReward)
+AND
+IsInvisible(_DirtMound,1)
+AND
+_ItemReward != NULL_00000000-0000-0000-0000-000000000000
+AND
+DB_Shovel_ChestMoundType(1,1,_Tag,_DigDialog)
+AND
+IsTagged(_DirtMound,_Tag,1)
+THEN
+DB_Shovelling_Mound(_DigDialog,_Character,_DirtMound,_ItemReward);
+
+//Mound is not invisible, Reward is not a chest
+PROC
+PROC_Shovel_CheckDialog((CHARACTER)_Character,(ITEM)_DirtMound,(ITEM)_ItemReward)
+AND
+IsInvisible(_DirtMound,0)
+AND
+_ItemReward == NULL_00000000-0000-0000-0000-000000000000
+AND
+DB_Shovel_ChestMoundType(0,0,_Tag,_DigDialog)
+AND
+IsTagged(_DirtMound,_Tag,1)
+THEN
+DB_Shovelling_Mound(_DigDialog,_Character,_DirtMound,_ItemReward);
+
+//Mound is invisible, Reward is not a chest
+PROC
+PROC_Shovel_CheckDialog((CHARACTER)_Character,(ITEM)_DirtMound,(ITEM)_ItemReward)
+AND
+IsInvisible(_DirtMound,1)
+AND
+_ItemReward == NULL_00000000-0000-0000-0000-000000000000
+AND
+DB_Shovel_ChestMoundType(1,0,_Tag,_DigDialog)
+AND
+IsTagged(_DirtMound,_Tag,1)
+THEN
+DB_Shovelling_Mound(_DigDialog,_Character,_DirtMound,_ItemReward);
+
+IF
+DB_Shovelling_Mound(_DigDialog,_Character,_DirtMound,_ItemReward)
+THEN
+PROC_Shovel_StartBehaviourDialog(_DigDialog,_DirtMound,_ItemReward,_Character);
+
+PROC
+PROC_Shovel_StartBehaviourDialog((DIALOGRESOURCE)_DigDialog,(GUIDSTRING)_DirtMound,(GUIDSTRING)_ItemReward,(CHARACTER)_Character)
+THEN
+DialogRequestStopTimelineDialogs(_Character);
+
+PROC
+PROC_Shovel_StartBehaviourDialog((DIALOGRESOURCE)_DigDialog,(GUIDSTRING)_DirtMound,(GUIDSTRING)_ItemReward,(CHARACTER)_Character)
+AND
+StartBehaviorDialog_Internal(_DigDialog, 0,	_DirtMound,_ItemReward, _Character,
+	NULL_00000000-0000-0000-0000-000000000000, NULL_00000000-0000-0000-0000-000000000000,
+	NULL_00000000-0000-0000-0000-000000000000, NULL_00000000-0000-0000-0000-000000000000, 
+	NULL_00000000-0000-0000-0000-000000000000, NULL_00000000-0000-0000-0000-000000000000,
+	_Success, _)
+THEN
+PROC_Shovel_HandleDialogSuccess(_Character, _Success);
+
+PROC
+PROC_Shovel_HandleDialogSuccess((CHARACTER)_Character, 1)
+THEN
+ApplyStatus(_Character,"DIGGING",6.0);
+
+PROC
+PROC_Shovel_HandleDialogSuccess((CHARACTER)_Character, 0)
+AND
+DB_Shovelling_Mound(_DigDialog,_Character,_DirtMound,_)
+THEN
+PROC_Shovel_CleanupMoundFallback(_DirtMound);
+PROC_Shovel_CleanupMound(_DirtMound);
+
+//END_REGION
+
+
+//REGION Dig by interacting with pile
+IF
+UseStarted(_Player,_DirtMound)
+AND
+DB_ShovelArea(_DirtMound,_)
+AND
+TaggedItemsGetCountInMagicPockets("SHOVEL_e2db698a-0705-43f4-9674-06fff1fd1e67",_Player,0)
+AND
+HasPassive(_Player, "Artificer_1_TinkersMagic", 0)
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)GLO_AD_ShovelRequired_eb1e1401-a7c0-b3d2-caee-ebd450c3db11, _Player);
+
+IF
+UseStarted(_Player,_DirtMound)
+AND
+DB_ShovelArea(_DirtMound,_)
+AND
+NOT DB_Shovelling_Mound(_,_,_DirtMound,_)
+AND
+TaggedItemsGetCountInMagicPockets("SHOVEL_e2db698a-0705-43f4-9674-06fff1fd1e67",_Player,_Count)
+AND
+_Count > 0
+AND
+IsTagged(_Player,(TAG)WILDSHAPE_04ae77c4-f708-4ffa-8b8c-763b062a2e6e,0)
+THEN
+UseSpell(_Player,"Target_Dig",_DirtMound);
+
+IF
+UseStarted(_Player,_DirtMound)
+AND
+DB_ShovelArea(_DirtMound,_)
+AND
+NOT DB_Shovelling_Mound(_,_,_DirtMound,_)
+AND
+TaggedItemsGetCountInMagicPockets("SHOVEL_e2db698a-0705-43f4-9674-06fff1fd1e67",_Player,_Count)
+AND
+_Count == 0
+AND
+HasPassive(_Player, "Artificer_1_TinkersMagic", 1)
+AND
+IsTagged(_Player,(TAG)WILDSHAPE_04ae77c4-f708-4ffa-8b8c-763b062a2e6e,0)
+THEN
+UseSpell(_Player,"Target_Dig",_DirtMound);
+//END_REGION
+
+
+//REGION Handling the digging
+IF
+CastedSpell((CHARACTER)_Player,"Target_Dig",_,_,_)
+AND
+DB_Players(_Player)
+AND
+HasActiveStatus(_Player,"DIG",0)
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)GLO_AD_ShovelFailed_03fffbbd-fb9d-a0c3-338c-151e9b4c8642, _Player);
+
+IF
+AutomatedDialogRequestFailed(_DigDialog,_Instance)
+AND
+DB_DialogNPCs(_Instance,_DirtMound,_)
+AND
+DB_Shovelling_Mound(_DigDialog,_,(ITEM)_DirtMound,_)
+THEN
+PROC_Shovel_CleanupMoundFallback(_DirtMound);
+PROC_Shovel_CleanupMound(_DirtMound);
+
+IF
+AutomatedDialogForceStopping(_DigDialog,_Instance)
+AND
+DB_DialogNPCs(_Instance,_DirtMound,_)
+AND
+DB_Shovelling_Mound(_DigDialog,_,(ITEM)_DirtMound,_Reward)
+THEN
+PROC_Shovel_CleanupMoundFallback(_DirtMound);
+PROC_Shovel_CleanupMound(_DirtMound);
+
+
+IF
+AutomatedDialogEnded(_DigDialog,_Instance)
+AND
+DB_DialogNPCs(_Instance,_DirtMound,_)
+AND
+DB_Shovelling_Mound(_DigDialog,_,(ITEM)_DirtMound,_)
+THEN
+//Reward should be set on stage by timeline when it's done
+PROC_Shovel_CleanupMound(_DirtMound);
+
+
+//END_REGION
+
+
+//REGION Cleaning After Dig
+PROC
+PROC_Shovel_CleanupMoundFallback((ITEM)_DirtMound)
+AND
+DB_Shovelling_Mound(_,_Player,_DirtMound,_ItemReward)
+THEN
+DebugText(_Player,"Dialog failed, fallback triggered");
+Die(_DirtMound);
+SetOnStage(_ItemReward,1);
+
+PROC
+PROC_Shovel_CleanupMound((ITEM)_DirtMound)
+AND
+DB_Shovelling_Mound(_,_Player,_DirtMound,_)
+THEN
+PROC_Achievements_Quest12_GivenShovelRewardsHook(_Player);
+
+//TODO:FIXME: this should not be here, but story execution order means we need to refactor this a bit. 
+PROC
+PROC_Achievements_Quest12_GivenShovelRewardsHook((CHARACTER)_Player) 
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_Shovel_CleanupMound((ITEM)_DirtMound)
+AND
+DB_Shovelling_Mound(_,_,_DirtMound,_)
+THEN
+//Changing of template to dug should happen in timeline
+SetVisible(_DirtMound,1); //Preferably should be revealed in timeline
+
+PROC
+PROC_Shovel_CleanupMound((ITEM)_DirtMound)
+AND
+DB_Shovelling_Mound(_DigDialog,_Player,_DirtMound,_ItemReward)
+THEN
+NOT DB_Shovelling_Mound(_DigDialog,_Player,_DirtMound,_ItemReward);
+
+PROC
+PROC_Shovel_CleanupMound((ITEM)_DirtMound)
+AND
+DB_ShovelArea(_DirtMound,_ItemReward)
+THEN
+NOT DB_ShovelArea(_DirtMound,_ItemReward);
+
+//END_REGION
+
+//REGION Reveals a remote dirt mound
+PROC
+PROC_Shovel_RevealRemoteMound((ITEM)_DirtMound, (CHARACTER)_Player)
+AND
+GUIDToString(_DirtMound, _DirtMoundStr)
+THEN
+SetForceUpdate(_DirtMound, 1);
+DB_Shovel_RemoteMoundTimer((ITEM)_DirtMound, (STRING)_DirtMoundStr, (CHARACTER)_Player);
+TimerLaunch(_DirtMoundStr, 1); // SetForceUpdate is deferred, so we wait a bit
+
+IF
+TimerFinished(_DirtMoundStr)
+AND
+DB_Shovel_RemoteMoundTimer(_DirtMound, _DirtMoundStr, _Player)
+THEN
+NOT DB_Shovel_RemoteMoundTimer(_DirtMound, _DirtMoundStr, _Player);
+ConstellationTriggerInputSocket(_DirtMound, "Reveal", _Player, NULL_00000000-0000-0000-0000-000000000000);
+SetForceUpdate(_DirtMound, 0);
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
