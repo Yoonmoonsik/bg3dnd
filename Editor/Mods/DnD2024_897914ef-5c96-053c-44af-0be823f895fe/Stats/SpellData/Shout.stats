@@ -260,7 +260,7 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hca4ee385g4997g48dbgb486g08312e60e5e5" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf4b6b5e7g21bfg455fg9aa7g17978e8a6a53" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ConstitutionModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d8)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodRush" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ConstitutionModifier);RemoveStatus(STEAL_BLOOD);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ConstitutionModifier);" />
@@ -641,7 +641,7 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="1162f3ba-ed65-4cd0-9e1f-5882414c0097" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="fb2cd1f1-3fb7-4efc-87cc-61f08868f567" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ArcaneVigor6;Shout_ArcaneVigor8;Shout_ArcaneVigor10;Shout_ArcaneVigor12;Shout_ArcaneVigorMinor6;Shout_ArcaneVigorMinor8;Shout_ArcaneVigorMinor10;Shout_ArcaneVigorMinor12;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d6)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -649,7 +649,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ea569e3c-1ccb-4333-96c8-b666064871c8" />
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneVigor_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9d2df13c-143c-4a15-8c64-62476423723a" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(3d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor" />
@@ -662,7 +662,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="697837a7-abb0-43a5-8cf7-077d3c34c3ad" />
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneVigor_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ea569e3c-1ccb-4333-96c8-b666064871c8" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
@@ -674,7 +674,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4144c7e0-6e97-4082-a0e3-52318d3ef7c1" />
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneVigor_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ea569e3c-1ccb-4333-96c8-b666064871c8" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -686,7 +686,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ca4d7d6b-6695-4f8c-8ed0-a7fe1d7f935a" />
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneVigor_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ea569e3c-1ccb-4333-96c8-b666064871c8" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(6d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(6d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
@@ -704,7 +704,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h87a45194g95b7g00ceg2f9eg6c288ed38884" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:2;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d6)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -714,7 +714,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="979682ed-346c-45d1-b869-cea70e9052b5" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(3d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(3d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor6" />
@@ -728,7 +728,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b393f0d1-f8f5-4cd2-b21a-298057cba459" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
@@ -741,7 +741,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b393f0d1-f8f5-4cd2-b21a-298057cba459" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -754,7 +754,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b393f0d1-f8f5-4cd2-b21a-298057cba459" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(6d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(6d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(6d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
@@ -770,7 +770,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hebba7f87g6370g87ceg8319g29430a465253" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:2;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d8)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -780,7 +780,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="da61c004-e2f3-4c85-a431-d4bfeac860b1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(3d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(3d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor8" />
@@ -794,7 +794,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="24039c4c-5a19-4a1e-83cd-4d49c00c5523" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
@@ -807,7 +807,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="24039c4c-5a19-4a1e-83cd-4d49c00c5523" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -820,7 +820,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="24039c4c-5a19-4a1e-83cd-4d49c00c5523" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(6d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(6d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(6d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
@@ -836,7 +836,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h61c3e42cg02b0g7f38gda65gdc3642939a49" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:2;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d10)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -846,7 +846,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="a0364a06-5daf-4777-aae2-4f97efb807a5" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(3d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(3d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor10" />
@@ -860,7 +860,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="21c7c5b6-35ef-41e8-b183-fcc4b7974067" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
@@ -873,7 +873,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="21c7c5b6-35ef-41e8-b183-fcc4b7974067" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -886,7 +886,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="21c7c5b6-35ef-41e8-b183-fcc4b7974067" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(6d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(6d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(6d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
@@ -902,7 +902,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2c125804g85eegc3ecgdd44g25edc8c0bb5c" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:2;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d12)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -912,7 +912,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d65fb76-0a74-41e3-866e-4923c563e8da" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(3d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(3d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor12" />
@@ -926,7 +926,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="152bda45-328c-4c3f-90c4-89aaa558774b" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
@@ -939,7 +939,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="152bda45-328c-4c3f-90c4-89aaa558774b" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -952,7 +952,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="152bda45-328c-4c3f-90c4-89aaa558774b" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(6d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(6d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(6d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
@@ -964,7 +964,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneVigorMinor6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="979682ed-346c-45d1-b869-cea70e9052b5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(1d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(1d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:1;" />
       </fields>
@@ -976,7 +976,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5e4cdc24-ea57-4d8c-88ba-8e6e9027edf4" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(2d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor6" />
@@ -990,7 +990,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5e4cdc24-ea57-4d8c-88ba-8e6e9027edf4" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(3d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(3d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor6" />
@@ -1004,7 +1004,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5e4cdc24-ea57-4d8c-88ba-8e6e9027edf4" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:4;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor6" />
@@ -1018,7 +1018,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5e4cdc24-ea57-4d8c-88ba-8e6e9027edf4" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:5;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor6" />
@@ -1031,7 +1031,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneVigorMinor8" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="da61c004-e2f3-4c85-a431-d4bfeac860b1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(1d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(1d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:1;" />
       </fields>
@@ -1043,7 +1043,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="82fe09c1-a639-4514-8fb9-2a536887fd0e" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(2d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor8" />
@@ -1057,7 +1057,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="82fe09c1-a639-4514-8fb9-2a536887fd0e" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(3d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(3d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor8" />
@@ -1071,7 +1071,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="82fe09c1-a639-4514-8fb9-2a536887fd0e" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:4;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor8" />
@@ -1085,7 +1085,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="82fe09c1-a639-4514-8fb9-2a536887fd0e" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:5;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor8" />
@@ -1098,7 +1098,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneVigorMinor10" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a0364a06-5daf-4777-aae2-4f97efb807a5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(1d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(1d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:1;" />
       </fields>
@@ -1110,7 +1110,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="951e4a55-feb6-4118-a396-722847af5bdd" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(2d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor10" />
@@ -1124,7 +1124,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="951e4a55-feb6-4118-a396-722847af5bdd" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(3d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(3d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor10" />
@@ -1138,7 +1138,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="951e4a55-feb6-4118-a396-722847af5bdd" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:4;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor10" />
@@ -1152,7 +1152,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="951e4a55-feb6-4118-a396-722847af5bdd" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:5;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor10" />
@@ -1165,7 +1165,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneVigorMinor12" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d65fb76-0a74-41e3-866e-4923c563e8da" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(1d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(1d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:1;" />
       </fields>
@@ -1177,7 +1177,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5b68b759-5d5a-4668-b23e-186b48957a7c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(2d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(2d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor12" />
@@ -1191,7 +1191,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5b68b759-5d5a-4668-b23e-186b48957a7c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(3d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(3d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(3d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor12" />
@@ -1205,7 +1205,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5b68b759-5d5a-4668-b23e-186b48957a7c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(4d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:4;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor12" />
@@ -1219,7 +1219,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5b68b759-5d5a-4668-b23e-186b48957a7c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(5d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:5;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigorMinor12" />
@@ -1283,7 +1283,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="1f1c4931-56e3-4e99-af4e-24131f6fc374" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Abjuration" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(2d4+SpellCastingAbilityModifier)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(2d4+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(2d4)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1293,7 +1293,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="40d9f9a8-d774-42f5-b180-17560dc49162" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Abjuration" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(3d4+SpellCastingAbilityModifier)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(3d4+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(3d4)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1303,7 +1303,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7eaf9023-493c-4f1c-9496-392b70793cf5" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Abjuration" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d4+SpellCastingAbilityModifier)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(4d4+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(4d4)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1313,7 +1313,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="151650d2-cb43-45b7-aa12-b1b7c0970572" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Abjuration" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(2d4+SpellCastingAbilityModifier)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(2d4+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(2d4)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -1393,7 +1393,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_AlustrielsMooncloak" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h633c8862gfa02g4292g893egc6825f0f5169" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h37585662g45f4g40d4g96a8g7792328d063d" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);RegainHitPoints(4d10)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ALUSTRIELS_MOONCLOAK_AURA,100,10);" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Paladin_AuraOfDevotion_L1to3" />
@@ -5313,7 +5313,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodRush" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h451367ceg43e4g488eg9d16g1ff87dbc32b5" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdba027d2gd432g46d3g86b3g3eeeccefb01b" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(2d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(2d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d6+SpellCastingAbilityModifier)" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="017c55e3-df97-4a1a-b9f2-ee7754f09b54" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_PrayerOfHealing_L1to3" />
@@ -5336,7 +5336,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BloodRush_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a5e29322-3614-406e-bea4-dee88ed3a502" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_BloodRush6_2;Shout_BloodRush8_2;Shout_BloodRush10_2;Shout_BloodRush12_2;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(4d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(4d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodRush" />
@@ -5349,7 +5349,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BloodRush_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="78f7eda1-f852-48ab-be5e-7a2ad16f1abc" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_BloodRush6_3;Shout_BloodRush8_3;Shout_BloodRush10_3;Shout_BloodRush12_3;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(6d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(6d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
@@ -5361,7 +5361,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BloodRush_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="78f7eda1-f852-48ab-be5e-7a2ad16f1abc" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_BloodRush6_4;Shout_BloodRush8_4;Shout_BloodRush10_4;Shout_BloodRush12_4;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(8d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(8d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(8d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
@@ -5373,7 +5373,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BloodRush_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="78f7eda1-f852-48ab-be5e-7a2ad16f1abc" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_BloodRush6_5;Shout_BloodRush8_5;Shout_BloodRush10_5;Shout_BloodRush12_5;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(10d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(10d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(10d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -5385,7 +5385,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BloodRush_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="78f7eda1-f852-48ab-be5e-7a2ad16f1abc" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_BloodRush6_6;Shout_BloodRush8_6;Shout_BloodRush10_6;Shout_BloodRush12_6;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(12d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(12d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(12d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
@@ -5402,7 +5402,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h783cb9bcg506eg4753gb874g2e664c9c12f3" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice06:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(2d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(2d6)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5412,7 +5412,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="28c2034e-7c1a-44fa-b179-77903a30a4d9" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_2" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(4d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(4d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice06:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodRush6" />
@@ -5426,7 +5426,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7f5b5ee8-9f08-483e-9a42-171760674ca1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(6d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(6d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(6d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice06:3;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
@@ -5439,7 +5439,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7f5b5ee8-9f08-483e-9a42-171760674ca1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(8d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(8d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(8d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(8d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice06:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
@@ -5452,7 +5452,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7f5b5ee8-9f08-483e-9a42-171760674ca1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(10d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(10d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(10d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(10d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice06:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -5465,7 +5465,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7f5b5ee8-9f08-483e-9a42-171760674ca1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(12d6+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(12d6+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(12d6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(12d6+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice06:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
@@ -5481,7 +5481,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf8464b18g3d1ag4f9bg8666ga788bc19ba54" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice08:1;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(2d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(2d8)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5491,7 +5491,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c5d3da8f-49e4-4070-9818-92eb79fc5fa8" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_2" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(4d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(4d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice08:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodRush8" />
@@ -5505,7 +5505,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5f17c8c3-5919-4f72-8ffc-2a9d3ec63bef" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(6d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(6d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(6d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice08:3;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
@@ -5518,7 +5518,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5f17c8c3-5919-4f72-8ffc-2a9d3ec63bef" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(8d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(8d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(8d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(8d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice08:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
@@ -5531,7 +5531,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5f17c8c3-5919-4f72-8ffc-2a9d3ec63bef" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(10d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(10d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(10d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(10d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice08:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -5544,7 +5544,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5f17c8c3-5919-4f72-8ffc-2a9d3ec63bef" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(12d8+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(12d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(12d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(12d8+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice08:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
@@ -5560,7 +5560,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h53990d25gc7f0g4f88gb950g110385ea847d" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice10:1;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(2d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(2d10)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5570,7 +5570,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="fc9b3bdb-b36c-4fb5-a6cb-37f26d89ef6a" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_2" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(4d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice10:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodRush10" />
@@ -5584,7 +5584,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="283e1f02-d1b4-4a76-81b8-2a684afd1bf6" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(6d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(6d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(6d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice10:3;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
@@ -5597,7 +5597,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="283e1f02-d1b4-4a76-81b8-2a684afd1bf6" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(8d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(8d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(8d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(8d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice10:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
@@ -5610,7 +5610,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="283e1f02-d1b4-4a76-81b8-2a684afd1bf6" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(10d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(10d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(10d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(10d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice10:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -5623,7 +5623,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="283e1f02-d1b4-4a76-81b8-2a684afd1bf6" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(12d10+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(12d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(12d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(12d10+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice10:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
@@ -5639,7 +5639,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8bd93e0age230g4cf5gbdb9g4a153f81ee4d" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;HitPointDice12:1;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(2d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;RegainHitPoints(2d12)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5649,7 +5649,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="de118edd-05f1-435d-8f26-2091310734c9" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_2" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(4d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;RegainHitPoints(4d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;HitPointDice12:2;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodRush12" />
@@ -5663,7 +5663,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ab17746f-8f9d-45a1-ba1e-afe4f634b390" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(6d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(6d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;RegainHitPoints(6d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;HitPointDice12:3;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
@@ -5676,7 +5676,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ab17746f-8f9d-45a1-ba1e-afe4f634b390" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_4" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(8d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(8d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;RegainHitPoints(8d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(8d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;HitPointDice12:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
@@ -5689,7 +5689,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ab17746f-8f9d-45a1-ba1e-afe4f634b390" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(10d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(10d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5;RegainHitPoints(10d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(10d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;HitPointDice12:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -5702,7 +5702,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ab17746f-8f9d-45a1-ba1e-afe4f634b390" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_BloodRush_6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(12d12+SpellCastingAbilityModifier);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(12d12+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6;RegainHitPoints(12d12)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(12d12+SpellCastingAbilityModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />

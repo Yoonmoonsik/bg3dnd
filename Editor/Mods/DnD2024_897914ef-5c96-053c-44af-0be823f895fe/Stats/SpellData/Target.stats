@@ -927,7 +927,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Abjuration" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5d8+SpellCastingAbilityModifier);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(5d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(5d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d8+SpellCastingAbilityModifier)" />
       </fields>
     </stat_object>
@@ -939,7 +939,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Abjuration" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(6d8+SpellCastingAbilityModifier);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(6d8+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(6d8)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(6d8+SpellCastingAbilityModifier)" />
       </fields>
     </stat_object>
@@ -1030,7 +1030,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_AlustrielsMooncloak" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbdb2364dgf1e6g4733g888eg07e9922e368e" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52d747f0g8f3eg41a1g8b7dgbd781d5ca332" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(4d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_ActivateAuraOfVitality_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
