@@ -7738,7 +7738,7 @@ new entry "SLOWFALL_PASSIVE_TECHNICAL"
 type "StatusData"
 data "StatusType" "BOOST"
 using "SLOWFALL_PASSIVE_TECHNICAL"
-data "StatusPropertyFlags" "DisableOverhead"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
 
 new entry "MONK_ELEMENTAL_ATTUNEMENT"
 type "StatusData"
