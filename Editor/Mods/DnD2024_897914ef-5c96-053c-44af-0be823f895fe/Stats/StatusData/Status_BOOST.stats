@@ -10333,7 +10333,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h319bdef0g52b5g7c9dg095eg8fdb31fd0953" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_NaturalExplorer_WastelandWanderer_Cold" />
         <field name="StackId" type="StringTableFieldDefinition" value="HUNTERS_RIME_TEMPHP" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d8+ClassLevel(Ranger));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d10+ClassLevel(Ranger));" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(IsDowned()):RegainHitPoints(1)" />
