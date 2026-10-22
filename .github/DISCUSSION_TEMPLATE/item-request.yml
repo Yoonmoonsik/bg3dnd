@@ -1,0 +1,91 @@
+title: "Item Request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Important
+        * Search existing discussions before posting, including closed ones — duplicate requests may be closed.
+        * One request = one item. Please don't bundle multiple unrelated items in a single post.
+        * This category is for equipment that is **missing** or **not yet implemented** in the mod. If an item already exists but behaves incorrectly, please open a Bug Report issue instead.
+        * Include the official source so the item can be verified against the rules text.
+        * Check on **a campaign created on the current release** before reporting something as missing. A campaign that was updated mid-playthrough keeps whatever the older version granted its characters, so content that's already in the mod can look missing there.
+        * **Please don't link other mods (Nexus, mod.io, GitHub, etc.).** These links are always posted in good faith, but this mod is written from the rulebooks and I deliberately don't read other mods' implementations. Describe what you want in your own words and cite the official source instead.
+        * **Posts that ignore the points above may be closed or deleted without review.**
+
+  - type: input
+    id: item-name
+    attributes:
+      label: Item name
+      description: The official item name (add the D&D Beyond / source name if the BG3 name differs).
+      placeholder: e.g. Flame Tongue
+    validations:
+      required: true
+
+  - type: input
+    id: dndbeyond-link
+    attributes:
+      label: D&D Beyond link
+      description: Link to the item's D&D Beyond page, if available.
+      placeholder: e.g. https://www.dndbeyond.com/magic-items/...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: item-type
+    attributes:
+      label: Item type
+      options:
+        - Weapon
+        - Armor
+        - Shield
+        - Helmet
+        - Cloak
+        - Gloves
+        - Boots
+        - Amulet
+        - Ring
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: rarity
+    attributes:
+      label: Rarity
+      options:
+        - Mundane (not magical)
+        - Common
+        - Uncommon
+        - Rare
+        - Very Rare
+        - Legendary
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source book
+      description: Where does this item come from? (e.g. DMG 2024, PHB 2024, Xanathar's Guide, Tasha's Cauldron)
+      placeholder: e.g. Dungeon Master's Guide
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why do you think this item should be added?
+      description: Explain the gap this fills (e.g. missing weapon type, iconic item for a build, etc.).
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing discussions and this item hasn't already been requested.
+          required: true
+        - label: I confirmed this item is not already implemented, on a campaign created on the current mod version.
+          required: true
