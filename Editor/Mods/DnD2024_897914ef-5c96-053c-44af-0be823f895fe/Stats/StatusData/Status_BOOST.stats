@@ -1524,6 +1524,34 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd8f3acc-97dc-4a86-85f0-460a17228700" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALUSTRIELS_MOONCLOAK_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h633c8862gfa02g4292g893egc6825f0f5169" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h37585662g45f4g40d4g96a8g7792328d063d" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_AlustrielsMooncloak" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ALUSTRIELS_MOONCLOAK_AURA" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not Dead() and not Enemy() and not Self()):ApplyStatus(ALUSTRIELS_MOONCLOAK)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2);RollBonus(SavingThrow,2,Dexterity);Resistance(Cold,Resistant);Resistance(Lightning,Resistant);Resistance(Radiant,Resistant);GameplayLight(6,false,0.1);UnlockSpell(Target_AlustrielsMooncloak_Respite);UnlockInterrupt(Interrupt_AlustrielsMooncloak_Liberation);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="eab76c6a-a5a7-445b-8430-bfce0e7bb5ea" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ff2f06fd-d89f-4c24-99a9-d5b893bff0dd" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALUSTRIELS_MOONCLOAK" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h633c8862gfa02g4292g893egc6825f0f5169" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e689baeg1abeg40b3g98e9gdf6e888d3ae3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_AlustrielsMooncloak" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ALUSTRIELS_MOONCLOAK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2);RollBonus(SavingThrow,2,Dexterity);Resistance(Cold,Resistant);Resistance(Lightning,Resistant);Resistance(Radiant,Resistant);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="61fe31f9-ae4b-4926-a033-e56ea67c7d92" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3900f76b-863f-41bc-b27b-57764c32a08a" />
         <field name="Name" type="NameTableFieldDefinition" value="DISPEL_EVIL_AND_GOOD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="86ac9f09-32c4-4011-b060-830f6d6dce95" />

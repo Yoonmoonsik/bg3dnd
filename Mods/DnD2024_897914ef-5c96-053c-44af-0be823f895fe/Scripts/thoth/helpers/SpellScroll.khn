@@ -227,6 +227,7 @@ local SPELL_CLASS_MAP = {
     Target_Dream_spellscroll = '5 Bard Cleric Warlock Wizard',
     Target_Enervation_spellscroll = '5 Sorcerer Warlock Wizard',
     Shout_CircleOfPower_spellscroll = '5 Cleric Wizard',
+    Shout_AlustrielsMooncloak_spellscroll = '5 Bard Druid Wizard',
     Target_Contagion_spellscroll = '5 Cleric Druid',
     Target_DanseMacabre_spellscroll = '5 Warlock Wizard',
     Target_Dawn_spellscroll = '5 Cleric Wizard',
@@ -679,4 +680,5 @@ function IsScrollSpell()
     | SpellId('Target_StaggeringSmite_spellscroll')
     | SpellId('Shout_SerpentTongue_spellscroll')
     | SpellId('Target_Wrack_spellscroll')
+    | SpellId('Shout_AlustrielsMooncloak_spellscroll')
 end

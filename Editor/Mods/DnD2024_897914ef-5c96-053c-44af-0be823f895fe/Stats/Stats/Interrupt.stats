@@ -161,6 +161,22 @@
         <field name="Roll" type="StringTableFieldDefinition" value="CounterspellSavingThrow()" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="62168c73-9af4-44d2-87a5-8112a31d8cfe" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_AlustrielsMooncloak_Liberation" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h59792facge4d5g432fgb218g17b5b4eb98a3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5edb32abg9f34g4a97g8f71g4df4a19166c8" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_AlustrielsMooncloak" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Target,context.Observer) and (HasStatus('SG_Frightened',context.Target) or HasStatus('SG_Restrained',context.Target));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="RemoveStatus(OBSERVER_OBSERVER,SG_Frightened);RemoveStatus(OBSERVER_OBSERVER,SG_Restrained);RemoveStatus(OBSERVER_OBSERVER,ALUSTRIELS_MOONCLOAK_AURA);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6a34857e-005c-4f80-99d2-f6921b17cf63" />

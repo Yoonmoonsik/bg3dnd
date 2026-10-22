@@ -1018,6 +1018,31 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand); DealDamage(5d10, Force,Magical,,0,,true,true);IF(HasHPLessThan(50) and not HasHPLessThan(1)):ApplyStatus(BANISHING_SMITE, 100, 2)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e2efb7bc-5ddb-4d5c-995c-c9162e7a5423" />
+        <field name="Name" type="NameTableFieldDefinition" value="AlustrielsMooncloak_Respite" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Abjuration" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier);RemoveStatus(SELF,ALUSTRIELS_MOONCLOAK_AURA);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="6" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and not Dead()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_AlustrielsMooncloak" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbdb2364dgf1e6g4733g888eg07e9922e368e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52d747f0g8f3eg41a1g8b7dgbd781d5ca332" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d10+SpellCastingAbilityModifier)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_ActivateAuraOfVitality_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;8252328a-66dd-4dc0-bbe0-00eea3204922,,;982d842b-5d44-4ef6-ab33-14d5ae514a50,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;236087a5-5597-4ee7-ab06-75b01147f596,,;ee0b6a78-c6b6-4852-aecb-d7c474a37d68,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="1160f003-0364-4844-b8c5-4e0f6612b18e" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="3af34030-5917-4091-8963-cf016d1218b5" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b730bde9-de9f-4134-9948-94daf4fb9245" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e3f7b69e-b25c-4f39-b19b-2974cc677bfe" />
