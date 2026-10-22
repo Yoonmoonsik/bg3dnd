@@ -2329,6 +2329,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="HungerOfHadar" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cfdb10f2-ed14-40b9-af77-f7dbaa6997a1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source) and not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC);GROUND:IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_NECROTIC);" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2336,7 +2338,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3a0ed415-d888-46df-9cff-0c61e6c2e10c" />
         <field name="Name" type="NameTableFieldDefinition" value="HungerOfHadar_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4ef105da-e968-4ba6-bf09-5d3ad0a90e27" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source) and not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC);GROUND:IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_NECROTIC);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source) and not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_4);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC_4);GROUND:IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_NECROTIC_4);" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Cold);DealDamage(2d6,Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Cold);DealDamage(2d6,Acid,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(VOID_AURA_4,100,10)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2344,7 +2351,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="eb96f8b0-4cd7-4859-bf8d-55bd73412a41" />
         <field name="Name" type="NameTableFieldDefinition" value="HungerOfHadar_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aaef6d16-a27c-4c11-b754-77cbf485dbde" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source) and not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC);GROUND:IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_NECROTIC);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source) and not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_5);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC_5);GROUND:IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_NECROTIC_5);" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Cold);DealDamage(2d6,Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Cold);DealDamage(2d6,Acid,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(VOID_AURA_5,100,10)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2352,7 +2364,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a9ac6757-455c-42b3-9d6c-499dd704de45" />
         <field name="Name" type="NameTableFieldDefinition" value="HungerOfHadar_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0732ae4e-2d2f-4082-95f3-8d57f31aa361" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source) and not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC);GROUND:IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_NECROTIC);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source) and not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_6);GROUND:IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_PSYCHIC_6);GROUND:IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):Summon(672a929d-44af-454c-8886-2923b796947f, 10,Projectile_AiHelper_HungerOfHadar,,HungerOfHadar,VOID_AURA_NECROTIC_6);" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Cold);DealDamage(2d6,Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Cold);DealDamage(2d6,Acid,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(VOID_AURA_6,100,10)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
