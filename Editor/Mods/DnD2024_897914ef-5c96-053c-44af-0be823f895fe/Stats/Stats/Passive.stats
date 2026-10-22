@@ -38,6 +38,7 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,0.1,1);ActionResource(SpellSlot,0.1,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
