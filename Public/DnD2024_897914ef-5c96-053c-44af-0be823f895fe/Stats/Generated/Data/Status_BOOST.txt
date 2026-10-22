@@ -1675,6 +1675,7 @@ new entry "VOID_END"
 type "StatusData"
 data "StatusType" "BOOST"
 using "VOID_END"
+data "OnTickRoll" "not SavingThrow(Ability.Dexterity,CalculateSpellDC(context.PreferredCastingAbility, GetSummoner(context.Source)))"
 
 new entry "VOID_END_PSYCHIC"
 type "StatusData"

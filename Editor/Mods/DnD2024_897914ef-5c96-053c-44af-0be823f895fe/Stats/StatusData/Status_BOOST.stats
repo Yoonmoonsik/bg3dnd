@@ -2129,6 +2129,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9858569c-dc53-45cb-bce2-65782fcb319f" />
         <field name="Name" type="NameTableFieldDefinition" value="VOID_END" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="333adb98-b272-423c-8a99-c0491db0edfe" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Dexterity,CalculateSpellDC(context.PreferredCastingAbility, GetSummoner(context.Source)))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
