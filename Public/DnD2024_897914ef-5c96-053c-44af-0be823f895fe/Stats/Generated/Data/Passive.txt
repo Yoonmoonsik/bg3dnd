@@ -119,6 +119,14 @@ type "PassiveData"
 using "AttackOfOpportunity"
 data "Boosts" "UnlockInterrupt(Interrupt_AttackOfOpportunity);UnlockInterrupt(Interrupt_AttackOfOpportunityUnarmed);"
 
+new entry "HalfCover"
+type "PassiveData"
+data "DisplayName" "hf0dacdaegddcbg4df8ga7cdgd329793fd7f5;1"
+data "Description" "h969327acg9157g4e31g8426g9d823372edac;1"
+data "Icon" "GenericIcon_Intent_Buff"
+data "Properties" "Highlighted"
+data "Boosts" "AC(2);RollBonus(SavingThrow,2,Dexterity);"
+
 new entry "Firearm"
 type "PassiveData"
 

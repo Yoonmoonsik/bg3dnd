@@ -167,6 +167,17 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_AttackOfOpportunity);UnlockInterrupt(Interrupt_AttackOfOpportunityUnarmed);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="735e6879-7b73-48c4-a14a-6c73ccde5076" />
+        <field name="Name" type="NameTableFieldDefinition" value="HalfCover" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf0dacdaegddcbg4df8ga7cdgd329793fd7f5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h969327acg9157g4e31g8426g9d823372edac" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Buff" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2);RollBonus(SavingThrow,2,Dexterity);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1d5ba88e-fb1c-4cc0-8e37-dffa7708a906" />
