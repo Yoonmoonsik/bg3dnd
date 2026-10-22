@@ -365,7 +365,7 @@
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="KO_Fallen" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="UseLyingPickingState" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoredByImmobilized;InitiateCombat;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING)" />
         <field name="SplatterDirtAmount" type="FloatTableFieldDefinition" value="0.1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -417,7 +417,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9fd0780b-e894-446a-b6f8-a1d1c321128d" />
         <field name="Name" type="NameTableFieldDefinition" value="PRONE_MOUNT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="39e07d50-9fb5-4bbd-9e7c-2479524c4c53" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping);RemoveStatus(PHANTOM_STEED);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING);RemoveStatus(PHANTOM_STEED);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
