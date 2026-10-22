@@ -3243,7 +3243,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_BloodBolt" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hac2038b1g27f4g7096gf7e6ga4a86b7083cd" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1158b478ge2c6g812bgbf23gffe3f6e81257" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic);GainTemporaryHitPoints(ProficiencyBonus)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedSpellAttack" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3" />

@@ -1756,7 +1756,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WorldTree_3_VitalityOfTheTree" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7f11fde8g7022gc624gc07cg0bf0afe43eb0" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h17806188g48eag72daga9fag423961387d39" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);GainTemporaryHitPoints(ClassLevel(Barbarian))" />
         <field name="Icon" type="StringTableFieldDefinition" value="WorldTree_3_VitalityOfTheTree" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1203" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
@@ -3452,6 +3452,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Druid_2_WildShape" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8f1b692bg604cgb34cg9e64g7c5d22aebe85" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc6dea6aag9290gf3cegeb8ag0351bd8d0fc5" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Druid))" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Druid_WildShape" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="4002" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
@@ -8853,6 +8854,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="InterdictBoons_2_SoulEater" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70a4510cgf224gfccfg83dbge051b2c47f34" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcdb79176g44f6gae88g5df2g09e6221e8525" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Illrigger))" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="14002" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
@@ -9851,6 +9853,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DevourerGuild_10_GnawingHunger" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h529b8a58gb300g1753gdff4gbd3ce84b211c" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h90ab5cd5g9998gb661g7d18ga57aad811d98" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(6)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Wolf_InfectiousBite" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="16110" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
@@ -13051,6 +13054,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="AdrenalineRush" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h046f2142g4017g500fg9e5cg829c2bf7808e" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8306332bg4a42gfdaag8e32g05d5b2d0a005" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ProficiencyBonus)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Mobile_DashAcrossDifficultTerrain" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="500" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />

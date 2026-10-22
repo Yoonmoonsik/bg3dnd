@@ -11322,7 +11322,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARMOR_2,100,-1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d4fd894g81e1g69a7gb31ag685f124bd58d" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h59b9ca7dgb3a7g13d9gaca8g5cb0cc11512f" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Thunder)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Thunder);GainTemporaryHitPoints(ClassLevel(Artificer))" />
         <field name="Icon" type="StringTableFieldDefinition" value="Armorer_Guardian" />
       </fields>
     </stat_object>
@@ -11361,6 +11361,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVE_FIELD,100,-1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha072f922ge3c6g116bgc7feg773bb825e8e2" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha243be2aged30g4c6dg9dedge3df9a10db81" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Artificer))" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVE_FIELD,100,-1);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
@@ -12425,6 +12426,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Mobile_DashAcrossDifficultTerrain" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf861876fg4ca8gf9c0g6492g1bb8a0a92ebb" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he98b170fg0b2bg4502g8a0fg3f8f765d62aa" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ProficiencyBonus)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;AdrenalineRush:1;" />
       </fields>
     </stat_object>
