@@ -76,8 +76,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f48dfb67-37f1-45aa-9148-74b7c25e28fc" />
         <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SHADOW_CURSED_VINES);" />
         <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="not Self() and Ally();" />
         <field name="Icon" type="StringTableFieldDefinition" value="PsiWarrior_3_TelekineticMovement" />
