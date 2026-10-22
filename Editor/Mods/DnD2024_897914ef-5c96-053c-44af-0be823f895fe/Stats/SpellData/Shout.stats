@@ -1949,7 +1949,7 @@
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6,Bludgeoning,Magical);ApplyStatus(PRONE,100,2);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self();" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_EarthTremor" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2aff1a0dg832fgb4b6g0e9fgd82db7aa5212" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he17e2324g5221g4179ga084g607b2b2104d5" version="1" />
@@ -1959,18 +1959,21 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,2);" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Bludgeoning);" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Buff_WildShape_L1to3" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Buff_WildShape_L1to3" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Buff_WildShapeBadger_L1to3" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="CrSpell_Prepare_Myrmidon_Earth" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="CrSpell_Loop_Myrmidon_Earth" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_Myrmidon_Earth_MudSlap" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1;" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="f324c7b4-4fb8-4088-ae4a-02fa323a8701,,;,,;825a94f3-b675-402a-a275-adcc465f4f62,,;721abca5-2d52-4317-82a3-2a2e970a7a16,,;c5b317da-4fc3-4d59-a45e-2681592cf0ed,,;,,;ad2cf583-ad84-4165-8d04-9fea86af396e,,;,,;,," />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="6e19d885-4656-4eae-8b5d-e8cf73fef5d3,,;,,;27b389b2-17b4-4141-a6d2-288f5207bfab,,;9f59e57e-3c7b-453e-a8fc-f413c171089a,,;cbd4bd42-8a34-45e0-a1ae-64bb384950c9,,;,,;cfcc0394-662c-45e1-ae54-3cd25b46d8aa,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="22330577-b4cb-49ea-ade9-7ff183aa9209" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="cc1dcf3b-9fc9-4d11-993d-296af54dc67a" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="386ce447-5995-4d1b-8ea9-414280db68b0" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="a6d772b7-6416-4942-8b8d-f33d4ce9f143" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Bludgeoning" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Impact_Myrmidon_Earth_MudSlap" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
