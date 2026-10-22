@@ -114,6 +114,7 @@ local SPELL_CLASS_MAP = {
     Projectile_SnowballSwarm_spellscroll = '2 Sorcerer Wizard',
     Target_SummonBeast_spellscroll = '2 Druid Ranger',
     Target_Web_spellscroll = '2 Sorcerer Wizard',
+    Target_Wrack_spellscroll = '2 Cleric',
     Target_DragonsBreath_spellscroll = '2 Artificer Sorcerer Wizard',
     Target_Barkskin_spellscroll = '2 Druid Ranger',
     Target_BrandingSmite_spellscroll = '2 Paladin',
@@ -677,4 +678,5 @@ function IsScrollSpell()
     | SpellId('Shout_EarthTremor_spellscroll')
     | SpellId('Target_StaggeringSmite_spellscroll')
     | SpellId('Shout_SerpentTongue_spellscroll')
+    | SpellId('Target_Wrack_spellscroll')
 end

@@ -456,6 +456,13 @@ ApplyStatus(_Duplicity, "DUPLICITY_SPELL_WARDINGBOND", 6.0);
 IF
 StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
 AND
+IsSpellActive(_Cleric, "Target_Wrack", 1)
+THEN
+ApplyStatus(_Duplicity, "DUPLICITY_SPELL_WRACK", 6.0);
+
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_CASTING", _Cleric, _)
+AND
 IsSpellActive(_Cleric, "Target_AnimateDead", 1)
 THEN
 ApplyStatus(_Duplicity, "DUPLICITY_SPELL_ANIMATEDEAD", 6.0);

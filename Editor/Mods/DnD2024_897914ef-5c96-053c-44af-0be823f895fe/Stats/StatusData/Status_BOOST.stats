@@ -4989,6 +4989,25 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0fb4de0b-8bbb-4b90-ae15-cf4c4de3e5a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="WRACK" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2345f2b8gcb85g4637g8611g97c1a159d580" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h70d55668gfbfag48ffgb935gd8b56f9c16ca" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Wrack" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="PAIN" enumeration_type_name="SoundVocalType" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WRACK" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceMultiplier(Movement,50,0);MovementSpeedLimit(Walk);Disadvantage(AttackRoll);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, SourceSpellDC(),false,DisadvantageOnHeightenedSpell())" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="131ae698-d8a7-4a61-b494-51aeee3dd55c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0fb1d290-5f8f-4741-abc3-0f939faec2a1" />
         <field name="Name" type="NameTableFieldDefinition" value="FESTERING_AURA" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2c2c5420g1f96gc750g01e1g7189f0ca8722" version="1" />
@@ -8618,6 +8637,16 @@
         <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_WARDINGBOND" />
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_WARDINGBOND" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_WardingBond,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2357360f-8b5f-4788-bb1d-4c20c87a4ba2" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_WRACK" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_WRACK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Wrack,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
