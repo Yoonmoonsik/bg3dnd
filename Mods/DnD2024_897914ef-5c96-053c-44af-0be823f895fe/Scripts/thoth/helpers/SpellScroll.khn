@@ -250,6 +250,7 @@ local SPELL_CLASS_MAP = {
     Target_FreezingSphere_spellscroll = '6 Sorcerer Wizard',
     Target_GlobeOfInvulnerability_spellscroll = '6 Sorcerer Wizard',
     Target_IrresistibleDance_spellscroll = '6 Bard Wizard',
+    Target_MentalPrison_spellscroll = '6 Sorcerer Warlock Wizard',
     Zone_Sunbeam_spellscroll = '6 Cleric Druid Sorcerer Wizard',
     Wall_WallOfIce_spellscroll = '6 Wizard',
     Teleportation_ArcaneGate_spellscroll = '6 Sorcerer Wizard',
@@ -685,4 +686,5 @@ function IsScrollSpell()
     | SpellId('Shout_AlustrielsMooncloak_spellscroll')
     | SpellId('Shout_ShadowOfMoil_spellscroll')
     | SpellId('Target_FiendFlesh_spellscroll')
+    | SpellId('Target_MentalPrison_spellscroll')
 end

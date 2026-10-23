@@ -1119,7 +1119,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="5.5 Sorcerer SLevel 6 List"/>
-                    <attribute id="Spells" type="LSString" value="Teleportation_ArcaneGate;Projectile_ChainLightning;Target_CircleOfDeath;Projectile_Disintegrate;Target_Eyebite;Target_FleshToStone;Target_FreezingSphere;Target_GlobeOfInvulnerability;Zone_Sunbeam"/>
+                    <attribute id="Spells" type="LSString" value="Teleportation_ArcaneGate;Projectile_ChainLightning;Target_CircleOfDeath;Projectile_Disintegrate;Target_Eyebite;Target_FleshToStone;Target_FreezingSphere;Target_GlobeOfInvulnerability;Target_MentalPrison;Zone_Sunbeam"/>
                     <attribute id="UUID" type="guid" value="1270a6db-980b-4e3b-bf26-2924da61dfd5"/>
                 </node>
                 <node id="SpellList">
@@ -1662,13 +1662,13 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="5.5 Wizard SLevel 6"/>
-                    <attribute id="Spells" type="LSString" value="Teleportation_ArcaneGate;Projectile_ChainLightning;Target_CircleOfDeath;Target_CreateUndead;Projectile_Disintegrate;Target_Eyebite;Target_FleshToStone;Target_FreezingSphere;Target_GlobeOfInvulnerability;Target_IrresistibleDance;Zone_Sunbeam;Wall_WallOfIce"/>
+                    <attribute id="Spells" type="LSString" value="Teleportation_ArcaneGate;Projectile_ChainLightning;Target_CircleOfDeath;Target_CreateUndead;Projectile_Disintegrate;Target_Eyebite;Target_FleshToStone;Target_FreezingSphere;Target_GlobeOfInvulnerability;Target_IrresistibleDance;Target_MentalPrison;Zone_Sunbeam;Wall_WallOfIce"/>
                     <attribute id="UUID" type="guid" value="bc917f22-7f71-4a25-9a77-7d2f91a96a65"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="MergedInto" type="guid" value="858d4322-9e9f-4aa4-aada-9c68835dc6fe"/>
                     <attribute id="Name" type="FixedString" value="5.5 Wizard SLevel 6 to Bard"/>
-                    <attribute id="Spells" type="LSString" value="Teleportation_ArcaneGate;Projectile_ChainLightning;Target_CircleOfDeath;Target_CreateUndead;Projectile_Disintegrate;Target_Eyebite;Target_FleshToStone;Target_FreezingSphere;Target_GlobeOfInvulnerability;Target_IrresistibleDance;Zone_Sunbeam;Wall_WallOfIce"/>
+                    <attribute id="Spells" type="LSString" value="Teleportation_ArcaneGate;Projectile_ChainLightning;Target_CircleOfDeath;Target_CreateUndead;Projectile_Disintegrate;Target_Eyebite;Target_FleshToStone;Target_FreezingSphere;Target_GlobeOfInvulnerability;Target_IrresistibleDance;Target_MentalPrison;Zone_Sunbeam;Wall_WallOfIce"/>
                     <attribute id="UUID" type="guid" value="959c3c49-eec8-4869-8321-7a3e53e69505"/>
                 </node>
                 <node id="SpellList">
@@ -1902,7 +1902,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Wizard Savant Illusion"/>
-                    <attribute id="Spells" type="LSString" value="Target_Dream;Target_Seeming;Shout_FireDance;Target_Invisibility_Greater;Target_PhantasmalKiller;Zone_Fear;Target_HypnoticPattern;Target_PhantomSteed;Shout_Blur;Target_Invisibility;Shout_MirrorImage;Target_PhantasmalForce;Shout_ShadowBlade_Class;Shout_CloakOfShadow;Zone_ColorSpray;Shout_DisguiseSelf;Target_ShroudBlood"/>
+                    <attribute id="Spells" type="LSString" value="Target_MentalPrison;Target_Dream;Target_Seeming;Shout_FireDance;Target_Invisibility_Greater;Target_PhantasmalKiller;Zone_Fear;Target_HypnoticPattern;Target_PhantomSteed;Shout_Blur;Target_Invisibility;Shout_MirrorImage;Target_PhantasmalForce;Shout_ShadowBlade_Class;Shout_CloakOfShadow;Zone_ColorSpray;Shout_DisguiseSelf;Target_ShroudBlood"/>
                     <attribute id="UUID" type="guid" value="2ba3eb55-24be-4267-8da2-3868657e6e50"/>
                 </node>
                 <node id="SpellList">
@@ -2102,7 +2102,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Warlock Mysic Arcanum SLevel 6"/>
-                    <attribute id="Spells" type="LSString" value="Target_CircleOfDeath;Teleportation_ArcaneGate;Target_Eyebite;Target_CreateUndead"/>
+                    <attribute id="Spells" type="LSString" value="Target_CircleOfDeath;Teleportation_ArcaneGate;Target_Eyebite;Target_CreateUndead;Target_MentalPrison"/>
                     <attribute id="UUID" type="guid" value="e6ccab5e-3b3b-4b34-8fa2-1058dff2b3e6"/>
                 </node>
             </children>

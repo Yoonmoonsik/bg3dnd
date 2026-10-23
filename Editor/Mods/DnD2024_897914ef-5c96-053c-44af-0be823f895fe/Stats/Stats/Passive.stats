@@ -1331,6 +1331,26 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="74d869cb-c0ca-4f6b-b9a2-493ffa3dcc8c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MentalPrison_Backlash" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5112de1agc373g4d69ga568ge091ad3d1426" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasUseCosts('ActionPoint', true) or HasUseCosts('BonusActionPoint', true)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SELF,10d10,Psychic,Magical);RemoveStatus(SELF,MENTAL_PRISON)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_MentalPrison" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca436886-d8b2-4375-b2b9-257d1e459f99" />
+        <field name="Name" type="NameTableFieldDefinition" value="MentalPrison_Backlash_Necrotic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="74d869cb-c0ca-4f6b-b9a2-493ffa3dcc8c" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SELF,10d10,Necrotic,Magical);RemoveStatus(SELF,MENTAL_PRISON_NECROTIC)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a5bfdbf8-bdbc-4ac0-85a7-f1ea0edc3785" />
         <field name="Name" type="NameTableFieldDefinition" value="ShadowOfMoil_Psychic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="91be86f6-f54f-498c-bf1f-b191b021246b" />

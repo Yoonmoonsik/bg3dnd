@@ -3200,6 +3200,35 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Wisdom, SourceSpellDC(), AdvantageOnCharmed(),DisadvantageOnHeightenedSpell())" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="664a6e72-b191-43c4-b7ce-604ae2408581" />
+        <field name="Name" type="NameTableFieldDefinition" value="MENTAL_PRISON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60bd9b9f-247a-41d3-8c6d-9a188f918083" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5112de1agc373g4d69ga568ge091ad3d1426" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1359d187g4052g4557g87b4g775b70e6a5e5" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(10d10,Psychic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_MentalPrison" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MENTAL_PRISON" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MentalPrison_Backlash" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AiArchetypeOverride(madness,99);Advantage(AttackTarget);Disadvantage(AttackRoll);ActionResourceBlock(Movement);Disadvantage(SavingThrow,Dexterity);Attribute(Grounded)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Confused;SG_Restrained;SG_Mad" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="54bddd3c-3e36-4e3b-a036-88aa09871421" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e00f18cd-fbc0-4091-ad4f-c9ea5a662238" />
+        <field name="Name" type="NameTableFieldDefinition" value="MENTAL_PRISON_NECROTIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="664a6e72-b191-43c4-b7ce-604ae2408581" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(10d10,Necrotic)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MentalPrison_Backlash_Necrotic" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a664167f-49ee-460a-afc2-6cc0e44b0a12" />
