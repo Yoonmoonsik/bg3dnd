@@ -3774,8 +3774,8 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Death Type" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Psychic);ApplyStatus(MIND_SPIKE,100,3);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d8/2,Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(3d8,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(3d8,Necrotic);ApplyStatus(MIND_SPIKE,100,3);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(3d8/2,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(3d8/2,Necrotic);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_MindSpike" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h84a10acdg5e1fgb4f6g3b55g7f5134f52d10" version="1" />
@@ -3810,8 +3810,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f69cab47-98b4-456c-af21-92f391192223" />
         <field name="Name" type="NameTableFieldDefinition" value="MindSpike_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a2a75c80-56a6-4611-8c85-893b292348d3" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Psychic);ApplyStatus(MIND_SPIKE,100,3);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d8/2,Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(4d8,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(4d8,Necrotic);ApplyStatus(MIND_SPIKE,100,3);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(4d8/2,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(4d8/2,Necrotic);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Psychic)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8, Psychic)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
@@ -3824,8 +3824,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="14d5313d-5549-4f02-b066-edb412d6149f" />
         <field name="Name" type="NameTableFieldDefinition" value="MindSpike_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f69cab47-98b4-456c-af21-92f391192223" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Psychic);ApplyStatus(MIND_SPIKE,100,3);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d8/2,Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(5d8,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(5d8,Necrotic);ApplyStatus(MIND_SPIKE,100,3);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(5d8/2,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(5d8/2,Necrotic);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d8,Psychic)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8, Psychic)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
@@ -3837,8 +3837,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="812f2da7-c54f-4dbc-a3c9-14ebaf5b5db4" />
         <field name="Name" type="NameTableFieldDefinition" value="MindSpike_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f69cab47-98b4-456c-af21-92f391192223" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d8,Psychic);ApplyStatus(MIND_SPIKE,100,3);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(6d8/2,Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(6d8,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(6d8,Necrotic);ApplyStatus(MIND_SPIKE,100,3);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(6d8/2,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(6d8/2,Necrotic);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d8,Psychic)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8, Psychic)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
@@ -3850,8 +3850,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bea6fa4e-b9fd-462a-903c-43bbb21b30f1" />
         <field name="Name" type="NameTableFieldDefinition" value="MindSpike_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f69cab47-98b4-456c-af21-92f391192223" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d8,Psychic);ApplyStatus(MIND_SPIKE,100,3);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(7d8/2,Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(7d8,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(7d8,Necrotic);ApplyStatus(MIND_SPIKE,100,3);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(7d8/2,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(7d8/2,Necrotic);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(7d8,Psychic)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d8, Psychic)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
@@ -3909,7 +3909,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Death Type" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Intelligence, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Psychic);ApplyStatus(MIND_SLIVER,100,2);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Necrotic);ApplyStatus(MIND_SLIVER,100,2);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_MindSliver" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had9ee1e5g5369g47b5g65c4g37b956523a59" version="1" />
@@ -3932,7 +3932,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b4dcc63a-058d-4a1c-9720-2d18512c0ed2" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="6300f7da-fb9d-416a-93f4-d43ed720c739" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCritical() and HasPassive('PotentCantripPlayer',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Psychic);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCritical() and HasPassive('PotentCantripPlayer',context.Source) and not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Psychic);IF(not IsCritical() and HasPassive('PotentCantripPlayer',context.Source) and HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Necrotic);" />
         <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="da341132-7322-4dab-af7e-def589d7ece7" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
@@ -6136,8 +6136,8 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="36" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Intelligence, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d6,Psychic);ApplyStatus(SYNAPTIC_STATIC,100,10);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(8d6/2,Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(8d6,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(8d6,Necrotic);ApplyStatus(SYNAPTIC_STATIC,100,10);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(8d6/2,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(8d6/2,Necrotic);" />
         <field name="AoEConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_SynapticStatic" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd666f94dg1a88g5b93g7dcbgfbc951360305" version="1" />

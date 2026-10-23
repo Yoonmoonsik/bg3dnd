@@ -4811,7 +4811,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ShadowOfMoil" />
         <field name="Level" type="IntegerTableFieldDefinition" value="4" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SHADOW_OF_MOIL,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(SELF,SHADOW_OF_MOIL,100,10);IF(HasPassive('GreatOldOne_3_PsychicSpells',context.Source)):ApplyStatus(SELF,SHADOW_OF_MOIL_PSYCHIC,100,10);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_ShadowOfMoil" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3dd2e59cgdd04g4cf0gad86g2c9a0b80ca1f" version="1" />

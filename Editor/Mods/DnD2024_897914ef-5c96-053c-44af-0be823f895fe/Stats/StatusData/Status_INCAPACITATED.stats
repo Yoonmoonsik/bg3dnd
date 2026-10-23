@@ -39,7 +39,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb0fea27dgc56fg62a0ge057g7c9ddc6f463e" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic)" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d6,Psychic)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(3d6,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(3d6,Necrotic)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

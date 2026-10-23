@@ -29,7 +29,7 @@ data "DisplayName" "hb36377c1g08c0g556fge8fbg80cbd9b569ef;1"
 data "Description" "hb0fea27dgc56fg62a0ge057g7c9ddc6f463e;1"
 data "DescriptionParams" "DealDamage(3d6,Psychic)"
 data "TickFunctors" ""
-data "OnRemoveFunctors" "DealDamage(3d6,Psychic)"
+data "OnRemoveFunctors" "IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(3d6,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(3d6,Necrotic)"
 
 new entry "HOLD_PERSON"
 type "StatusData"

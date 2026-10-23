@@ -921,6 +921,11 @@ data "StatsFunctorContext" "OnAttacked"
 data "Conditions" "(not DistanceToTargetGreaterThan(3)) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit)"
 data "StatsFunctors" "DealDamage(SWAP,2d8,Necrotic,Magical,,0,,true,true)"
 
+new entry "ShadowOfMoil_Psychic"
+type "PassiveData"
+using "ShadowOfMoil"
+data "StatsFunctors" "DealDamage(SWAP,2d8,Psychic,Magical,,0,,true,true)"
+
 new entry "__SANGROMANCY__"
 type "PassiveData"
 

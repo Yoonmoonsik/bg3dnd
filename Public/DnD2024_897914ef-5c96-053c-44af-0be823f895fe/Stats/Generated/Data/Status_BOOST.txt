@@ -4152,6 +4152,12 @@ data "Passives" "ShadowOfMoil"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "StatusEffect" "6bf336ba-a5f6-46da-93a0-b07502d53487"
 
+new entry "SHADOW_OF_MOIL_PSYCHIC"
+type "StatusData"
+data "StatusType" "BOOST"
+using "SHADOW_OF_MOIL"
+data "Passives" "ShadowOfMoil_Psychic"
+
 new entry "__CONTAGION__"
 type "StatusData"
 data "StatusType" "BOOST"

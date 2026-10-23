@@ -1329,6 +1329,14 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_ShadowOfMoil" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a5bfdbf8-bdbc-4ac0-85a7-f1ea0edc3785" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShadowOfMoil_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="91be86f6-f54f-498c-bf1f-b191b021246b" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,2d8,Psychic,Magical,,0,,true,true)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d072693e-a2a3-43e8-b261-a30e2da11694" />
