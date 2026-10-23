@@ -7,6 +7,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_AttackOfOpportunity" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6b435f5b-931f-4d26-aa61-656582325124" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(Player(context.Source)):UseSpell(Target_MainHandAttack_OpportunityAttack,true,true,true);IF(not Player(context.Source) and not HasPassive('Sentinel_ZeroSpeed',context.Source)):UseAttack();IF(not Player(context.Source) and HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_Sentinel_AttackOfOpportunity,true,true,true);" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded') and not HasStatus('SHOCKING_GRASP') and not HasStatus('MUSCLE_WIZARD_SHOCKING_GRASP');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -725,6 +726,57 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb2b57f7-d584-4e37-a73a-df199414f875" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MuscleWizard_MageHand" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h055d3e7ag1af2gcc14g7da0g2e88e0d97f44" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9b234697g811dg5d52g7b80g6534894d2844" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MageHand" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and (IsMeleeAttack() or IsThrowAttackRoll()) and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not IsSpellAttack() and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not HasStatus('SG_Rage',context.Source)):ApplyStatus(OBSERVER_TARGET,PUSH_5FEET,100,0);IF(TargetSizeEqualOrSmaller(Size.Large) and HasStatus('SG_Rage',context.Source)):ApplyStatus(OBSERVER_TARGET,PUSH_3M,100,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="MuscleWizardCantrip;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="MuscleWizardCantrip" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="de0f2c70-b62b-44d6-a4b4-6c82ea343607" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MuscleWizard_ShockingGrasp" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb2b57f7-d584-4e37-a73a-df199414f875" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d121df1g9ab0g4eedg3bbcg1b7ec7c5c25b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h35c5950ag19a2g8a6dg24d5gdd50dc7d3558" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ShockingGrasp" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasStatus('SG_Rage',context.Source)):ApplyStatus(OBSERVER_TARGET,MUSCLE_WIZARD_SHOCKING_GRASP,100,1);IF(HasStatus('SG_Rage',context.Source)):ApplyStatus(OBSERVER_TARGET,SHOCKING_GRASP,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc52303b-cf18-44ca-8191-51abc47da105" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MuscleWizard_TrueStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb2b57f7-d584-4e37-a73a-df199414f875" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha4eeaf7dg45d5gb72cg9076g470b575083b0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67612f7ag5f5bgf419g94b7g7fae092ee82f" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasStatus('SG_Rage',context.Source)):DealDamage(1d6,Force,Magical,,0,,true,true);IF(HasStatus('SG_Rage',context.Source)):DealDamage(1d6+ClassLevel(Barbarian)/2,Force,Magical,,0,,true,true);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2227825f-149a-4d0e-87f0-829519de933f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Shield_MuscleWizard" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="74651f6a-0491-4326-9a37-09fe93af65f5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hab25959ag8683g4e80g9d3egd52283ae9e8c" version="1" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;MuscleWizardShield:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasStatus('SG_Rage') and (not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER','WILDSHAPE_SEA','DRAGONSHAPE_10'}));" />
       </fields>
     </stat_object>
     <stat_object color="#FFEE82EE" is_substat="false">

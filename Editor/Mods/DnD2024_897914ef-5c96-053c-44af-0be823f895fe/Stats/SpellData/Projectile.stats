@@ -3654,6 +3654,24 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6, Radiant)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c804ef56-39e1-4ecc-843b-168b018559f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="MuscleWizard_MagicMissile" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8d19b0e7-28df-4618-91fa-b8d14b5fc89d" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SG_Rage');" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6+StrengthModifier,Bludgeoning);" />
+        <field name="CastTargetHitDelay" type="IntegerTableFieldDefinition" value="300" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_MagicMissile" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h26ebb30fg0fc3gb633g9878g7afee6098d40" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7812d364g4eb1gec33gc0d8ge97f55268d6f" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+StrengthModifier,Bludgeoning)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedUnarmedAttack" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFEE82EE" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3023ff1b-8e7b-48d5-b0a1-cfa06dfb3fa6" />

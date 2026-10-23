@@ -179,6 +179,22 @@
         <field name="Tags" type="GuidObjectListTableFieldDefinition" value="1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_92" />
+        <field name="UUID" type="IdTableFieldDefinition" value="676f7e88-e51e-48b0-8bac-ec69cd1a031c" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="d8cadb42-0ff9-4049-afaf-e5d78d06a399" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="MuscleWizard" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd1e62f2cg1c83g641ag7ce7g363ee59427b3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbbc1d125g606ag29a6g3e99g096d3b2e0497" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="eaf4acf0-4799-4c8d-8a30-8c5a2aa990e7" />
+        <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Barbarian" />
+        <field name="PrimaryAbility" type="EnumerationTableFieldDefinition" value="Strength" enumeration_type_name="Ability" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Charisma" enumeration_type_name="Ability" version="1" />
+        <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
+        <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFEE82EE" is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />

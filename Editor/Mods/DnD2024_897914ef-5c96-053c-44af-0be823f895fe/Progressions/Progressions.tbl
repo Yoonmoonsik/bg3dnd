@@ -56,7 +56,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HitPointDice12,1,0);ActionResource(Rage,1,0)" />
-        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="32eee7d8-1b2f-4de5-b9ee-78fbd286c6ef;1434b384-f51c-4f78-ad7f-db0f13f5a3ee;07234f31-c239-4a57-aeb4-868f3e1a318e;8287c130-a3aa-4c88-bceb-be9d8fe1be84;2e585948-d775-451d-b58b-15b75321d11e;d6bf00fc-3518-4d63-ba8b-03532c1abc4d;d6db66be-cc60-4ebd-bf63-2a856bbfedaf;0e37e9bc-3909-49f4-8035-6d9736ad6867" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="32eee7d8-1b2f-4de5-b9ee-78fbd286c6ef;1434b384-f51c-4f78-ad7f-db0f13f5a3ee;07234f31-c239-4a57-aeb4-868f3e1a318e;676f7e88-e51e-48b0-8bac-ec69cd1a031c;8287c130-a3aa-4c88-bceb-be9d8fe1be84;2e585948-d775-451d-b58b-15b75321d11e;d6bf00fc-3518-4d63-ba8b-03532c1abc4d;d6db66be-cc60-4ebd-bf63-2a856bbfedaf;0e37e9bc-3909-49f4-8035-6d9736ad6867" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Barbarian_3_PrimalKnowledge" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(4f027368-7aa6-4a3a-a1ce-d5195ba2ba27,1)" />
       </fields>
@@ -452,6 +452,39 @@
         <field name="Level" type="ByteTableFieldDefinition" value="10" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Fractured_10_CunningAndBrutal" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFB22222" is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1073" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b896ca4f-71ef-4977-8859-a51072c5b03a" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="eaf4acf0-4799-4c8d-8a30-8c5a2aa990e7" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MuscleWizard" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="MuscleWizard_3_UnarguableWizardry;MuscleWizard_3_Cantrips" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1074" />
+        <field name="UUID" type="IdTableFieldDefinition" value="63c47d69-5f59-4c48-bdda-1d32a831d5dc" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="eaf4acf0-4799-4c8d-8a30-8c5a2aa990e7" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MuscleWizard" />
+        <field name="Level" type="ByteTableFieldDefinition" value="6" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="MuscleWizard_6_Spells" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1075" />
+        <field name="UUID" type="IdTableFieldDefinition" value="96fe86a8-ef4d-44f7-b960-44362784b819" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="eaf4acf0-4799-4c8d-8a30-8c5a2aa990e7" />
+        <field name="FSName" type="StringTableFieldDefinition" value="MuscleWizard" />
+        <field name="Level" type="ByteTableFieldDefinition" value="10" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="MuscleWizard_10_MagicResistance" />
       </fields>
     </stat_object>
     <stat_object color="#FFEE82EE" is_substat="false">

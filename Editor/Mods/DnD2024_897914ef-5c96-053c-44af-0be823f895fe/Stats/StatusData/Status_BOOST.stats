@@ -3237,6 +3237,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="596452f2-f44b-44aa-a561-b4e2563bba14" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHOCKING_GRASP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9783c16-115c-4698-a566-4dabb5f913b8" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9763c2e0gf2b3g998fgec40g805ece3274ef" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="863bdf78-b198-4f3f-a49f-bced3c407075" />
         <field name="Name" type="NameTableFieldDefinition" value="__EVOCATION SLEVEL 1__" />
       </fields>
@@ -7665,6 +7674,16 @@
         <field name="Name" type="NameTableFieldDefinition" value="FLUMPH_EXPLODE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7f02da2c-8bda-41d1-a581-7f2e0744c356" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(2d6,Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8687e240-802f-465b-b8bd-6a12c02fd965" />
+        <field name="Name" type="NameTableFieldDefinition" value="MUSCLE_WIZARD_SHOCKING_GRASP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="596452f2-f44b-44aa-a561-b4e2563bba14" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf5fe97f4ga042g7f76gf80dg7be4e8947cf1" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">

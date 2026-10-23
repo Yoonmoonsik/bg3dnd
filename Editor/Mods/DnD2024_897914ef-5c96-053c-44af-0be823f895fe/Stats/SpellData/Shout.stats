@@ -8321,6 +8321,20 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_FerociousAppetite" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b394de7e-4e75-4252-9aaa-6f47b920aee8" />
+        <field name="Name" type="NameTableFieldDefinition" value="MuscleWizard_Shield" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="037d8467-971c-42bb-b148-d957f34363db" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_Shield_MuscleWizard" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hab25959ag8683g4e80g9d3egd52283ae9e8c" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFEE82EE" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="932d1ae0-3293-467e-993a-8dacbc0222a3" />

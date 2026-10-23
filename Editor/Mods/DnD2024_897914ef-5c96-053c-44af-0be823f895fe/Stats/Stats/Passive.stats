@@ -2072,6 +2072,55 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('SG_Rage', context.Source)):UnlockSpell(Shout_Disengage_BonusAction_Temp);IF(not HasStatus('SG_Rage', context.Source)):UnlockSpell(Target_Help_BonusAction);IF(HasStatus('SG_Rage', context.Source) and IsMeleeUnarmedAttack()):ReduceCriticalAttackThreshold(1);" />
       </fields>
     </stat_object>
+    <stat_object color="#FFB22222" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecbccc87-c18d-4f4e-bbb7-6b32fb1e94fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="MuscleWizard_3_UnarguableWizardry" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he28600f3g7125g481eg34c5g79380af84da2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4cf59924ge1f6gabcbgf4e1gc9bf8f3e3c22" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WildMagicRage" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1303" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill,Intimidation);UnlockSpellVariant(SpellId('Shout_Rage'),ModifyUseCosts(Replace,ReactionActionPoint,1,0,BonusActionPoint));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="edb16e45-eaf5-45a6-9a71-f7f5aec1dc4b" />
+        <field name="Name" type="NameTableFieldDefinition" value="MuscleWizard_3_Cantrips" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1af88722g0d85gccc5g077fg167e9777067e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heecb95bcg6afeg212ag19bag14edd7578b35" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);Distance(3);DealDamage(1d6,Force)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MageHand" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1303" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(MuscleWizardCantrip,1,0);UnlockInterrupt(Interrupt_MuscleWizard_MageHand);UnlockInterrupt(Interrupt_MuscleWizard_ShockingGrasp);UnlockInterrupt(Interrupt_MuscleWizard_TrueStrike);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3da671fb-a9ca-458a-bff0-ed1eb9043dc8" />
+        <field name="Name" type="NameTableFieldDefinition" value="MuscleWizard_6_Spells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2c1a448cg25dfgb55eg81bfgf28ab420cac7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h45691e59g2b6dg0678g5392g96be9707275d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BurningHands" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1306" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_MuscleWizard_BurningHands);UnlockSpell(Projectile_MuscleWizard_MagicMissile);IF(SpellId('Projectile_MuscleWizard_MagicMissile')):Advantage(AttackRoll);ActionResource(MuscleWizardShield,1,0);UnlockSpell(Shout_MuscleWizard_Shield);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43d6a4cb-c149-4268-8845-0f74dca78637" />
+        <field name="Name" type="NameTableFieldDefinition" value="MuscleWizard_10_MagicResistance" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b7fa914f-ba80-4564-a099-65a2027f4989" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9dd4f7b4g9b39g02afg890dgd85ffcd75a7f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h79e9777cge222g95edgc4a0g225eb62731e1" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1310" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('SG_Rage') and HasSpellFlag(SpellFlags.Spell)):Advantage(AllSavingThrows)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFEE82EE" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="152e5b9f-4ddf-4005-8e45-65c53081eb4f" />

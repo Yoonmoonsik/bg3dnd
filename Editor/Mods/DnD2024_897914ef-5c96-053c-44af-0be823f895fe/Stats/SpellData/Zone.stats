@@ -1764,6 +1764,34 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="45952ab6-96f7-4690-a597-e848e6940993" />
+        <field name="Name" type="NameTableFieldDefinition" value="MuscleWizard_BurningHands" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0f3a7657-4168-438d-8591-764712f1df52" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SurfaceType" type="EnumerationTableFieldDefinition" value="Sentinel" enumeration_type_name="Surface Type" version="1" />
+        <field name="SurfaceLifetime" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SurfaceGrowStep" type="IntegerTableFieldDefinition" value="100" />
+        <field name="SurfaceGrowInterval" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SG_Rage');" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8+StrengthModifier,Bludgeoning,Magical);IF(Character()):ApplyStatus(WEAPONMASTERY_SAP,100,1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and not Ally();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BurningHands" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he325a532g75b9g6d5cgf6a7gc679e1c7a534" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h56d62994gdb71g6a05g6bdfgb4b81e5c6fdc" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8+StrengthModifier,Bludgeoning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+StrengthModifier,Bludgeoning);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(WEAPONMASTERY_SAP,100,1);" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Bludgeoning" enumeration_type_name="Damage Type" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF9ACD32" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="14452afd-6c65-4f8c-84d6-9380edd7ccac" />
