@@ -6092,7 +6092,7 @@ new entry "RECKLESS_ATTACK"
 type "StatusData"
 data "StatusType" "BOOST"
 using "RECKLESS_ATTACK"
-data "Boosts" "IF(IsMeleeAttack()):Advantage(AttackRoll);IF(IsUnarmedAttack()):Advantage(AttackRoll);IF(IsThrowAttackRoll()):Advantage(AttackRoll);Advantage(AttackTarget);"
+data "Boosts" "IF(IsMeleeAttack()):Advantage(AttackRoll);IF(IsUnarmedAttack()):Advantage(AttackRoll);IF(IsThrowAttackRoll()):Advantage(AttackRoll);IF(HasPassive('FierceShot',context.Source) and IsRangedWeaponAttack()):Advantage(AttackRoll);Advantage(AttackTarget);"
 
 new entry "INSTINCTIVE_POUNCE"
 type "StatusData"

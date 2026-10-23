@@ -7564,7 +7564,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="229bcbca-f97a-4228-aef1-f7d0042f9dbd" />
         <field name="Name" type="NameTableFieldDefinition" value="RECKLESS_ATTACK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5e942caa-772e-4bee-a7a7-63b6417e6031" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):Advantage(AttackRoll);IF(IsUnarmedAttack()):Advantage(AttackRoll);IF(IsThrowAttackRoll()):Advantage(AttackRoll);Advantage(AttackTarget);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):Advantage(AttackRoll);IF(IsUnarmedAttack()):Advantage(AttackRoll);IF(IsThrowAttackRoll()):Advantage(AttackRoll);IF(HasPassive('FierceShot',context.Source) and IsRangedWeaponAttack()):Advantage(AttackRoll);Advantage(AttackTarget);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
