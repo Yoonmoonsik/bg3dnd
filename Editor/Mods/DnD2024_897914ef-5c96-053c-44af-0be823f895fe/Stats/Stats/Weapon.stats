@@ -488,6 +488,14 @@
         <field name="PassivesOffHand" type="StringTableFieldDefinition" value="WeaponMasteryNick;MAG_TheClover_OffHand_Passive;" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4191ef8e-e70e-4ad7-8f7b-14a97c0256e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Dart" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="148dedd8-9b3a-4497-99ec-5f82a03409d2" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b2be9041-726f-461b-9ae2-fbcd15fbd310" />
@@ -1325,7 +1333,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="37cee654-fa7a-475b-8a6d-97254951444c" />
         <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
         <field name="Damage" type="DiceTableFieldDefinition" value="1d6" />
-        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="1500" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
         <field name="Projectile" type="StringTableFieldDefinition" value="ff93ba9c-124c-454e-ac8c-436c136bcef2" />
         <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="MartialRangedWeapon" enumeration_type_name="Weapon Group" version="1" />
         <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Ammunition;Loading;Light;Dippable" enumeration_type_name="WeaponFlags" version="1" />
@@ -1511,7 +1519,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="37cee654-fa7a-475b-8a6d-97254951444c" />
         <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
         <field name="Damage" type="DiceTableFieldDefinition" value="1d10" />
-        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="1800" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
         <field name="Projectile" type="StringTableFieldDefinition" value="ff93ba9c-124c-454e-ac8c-436c136bcef2" />
         <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="MartialRangedWeapon" enumeration_type_name="Weapon Group" version="1" />
         <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Ammunition;Loading;Heavy;Twohanded;Dippable" enumeration_type_name="WeaponFlags" version="1" />
@@ -1741,7 +1749,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="37cee654-fa7a-475b-8a6d-97254951444c" />
         <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
         <field name="Damage" type="DiceTableFieldDefinition" value="1d8" />
-        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="1800" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
         <field name="Projectile" type="StringTableFieldDefinition" value="ff93ba9c-124c-454e-ac8c-436c136bcef2" />
         <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="SimpleRangedWeapon" enumeration_type_name="Weapon Group" version="1" />
         <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Ammunition;Loading;Twohanded;Dippable" enumeration_type_name="WeaponFlags" version="1" />
@@ -1923,7 +1931,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="37cee654-fa7a-475b-8a6d-97254951444c" />
         <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
         <field name="Damage" type="DiceTableFieldDefinition" value="1d8" />
-        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="1800" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
         <field name="Projectile" type="StringTableFieldDefinition" value="ff93ba9c-124c-454e-ac8c-436c136bcef2" />
         <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="MartialRangedWeapon" enumeration_type_name="Weapon Group" version="1" />
         <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Ammunition;Heavy;Twohanded;Dippable" enumeration_type_name="WeaponFlags" version="1" />
@@ -3599,7 +3607,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="37cee654-fa7a-475b-8a6d-97254951444c" />
         <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
         <field name="Damage" type="DiceTableFieldDefinition" value="1d6" />
-        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="1800" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
         <field name="Projectile" type="StringTableFieldDefinition" value="ff93ba9c-124c-454e-ac8c-436c136bcef2" />
         <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="SimpleRangedWeapon" enumeration_type_name="Weapon Group" version="1" />
         <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Ammunition;Twohanded;Dippable" enumeration_type_name="WeaponFlags" version="1" />
@@ -4235,6 +4243,14 @@
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_MoonSickle_Passive;MAG_ArcaneEnchantment_Lesser_Passive;" />
         <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="525c0011-0c35-4f0a-8c07-c791090095a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Sling" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="16b53342-0d76-41a5-8744-e8462c40d205" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
