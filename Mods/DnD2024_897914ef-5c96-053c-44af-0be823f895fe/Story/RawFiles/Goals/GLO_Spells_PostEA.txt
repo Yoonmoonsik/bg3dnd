@@ -1,0 +1,1004 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_GLO_Spells_WildMagic_FlumphTemplate((GUIDSTRING)Flumph_Wildmagic_0e40a847-a275-4eea-95d7-dd6bad6643ca);
+DB_GLO_Spells_Portent_Statuses("PORTENT_1");
+DB_GLO_Spells_Portent_Statuses("PORTENT_2");
+DB_GLO_Spells_Portent_Statuses("PORTENT_3");
+DB_GLO_Spells_Portent_Statuses("PORTENT_4");
+DB_GLO_Spells_Portent_Statuses("PORTENT_5");
+DB_GLO_Spells_Portent_Statuses("PORTENT_6");
+DB_GLO_Spells_Portent_Statuses("PORTENT_7");
+DB_GLO_Spells_Portent_Statuses("PORTENT_8");
+DB_GLO_Spells_Portent_Statuses("PORTENT_9");
+DB_GLO_Spells_Portent_Statuses("PORTENT_10");
+DB_GLO_Spells_Portent_Statuses("PORTENT_11");
+DB_GLO_Spells_Portent_Statuses("PORTENT_12");
+DB_GLO_Spells_Portent_Statuses("PORTENT_13");
+DB_GLO_Spells_Portent_Statuses("PORTENT_14");
+DB_GLO_Spells_Portent_Statuses("PORTENT_15");
+DB_GLO_Spells_Portent_Statuses("PORTENT_16");
+DB_GLO_Spells_Portent_Statuses("PORTENT_17");
+DB_GLO_Spells_Portent_Statuses("PORTENT_18");
+DB_GLO_Spells_Portent_Statuses("PORTENT_19");
+DB_GLO_Spells_Portent_Statuses("PORTENT_20");
+DB_GLO_Spells_Portent_Statuses_PickCandidate("");
+NOT DB_GLO_Spells_Portent_Statuses_PickCandidate("");
+
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_ACID");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_BLUDGEONING");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_COLD");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_FIRE");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_FORCE");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_LIGHTNING");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_NECROTIC");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_PIERCING");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_POISON");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_PSYCHIC");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_RADIANT");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_SLASHING");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_DAMAGE_THUNDER");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_SCHOOL_ABJURATION");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_SCHOOL_CONJURATION");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_SCHOOL_DIVINATION");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_SCHOOL_ENCHANTMENT");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_SCHOOL_EVOCATION");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_SCHOOL_ILLUSION");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_SCHOOL_NECROMANCY");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_SCHOOL_TRANSMUTATION");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_SCROLL_LEARN");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_ALLY_HELP");
+DB_GLO_Spells_Portent_Challenges("DIVINATION_ENEMY_KILLED");
+DB_GLO_Spells_Portent_Challenges_PickCandidate("");
+NOT DB_GLO_Spells_Portent_Challenges_PickCandidate("");
+
+DB_GLO_Spells_Portent_Statuses_Characters((CHARACTER)00000000-0000-0000-0000-000000000000, 0, 0);
+NOT DB_GLO_Spells_Portent_Statuses_Characters(00000000-0000-0000-0000-000000000000, 0, 0);
+
+DB_GLO_Spells_Portent_Challenges_Characters((CHARACTER)00000000-0000-0000-0000-000000000000, 0);
+NOT DB_GLO_Spells_Portent_Challenges_Characters(00000000-0000-0000-0000-000000000000, 0);
+
+DB_GLO_Spells_AnimateDead_Triggers("SCL_Main_A",(TRIGGER)S_COL_AnimateDeadTrigger_01_45066fbf-e06a-4d26-99e2-42283d528db2,"ANIMATEDEAD_ZONE");
+DB_GLO_Spells_AnimateDead_Triggers("SCL_Main_A",(TRIGGER)S_COL_AnimateDeadTrigger_02_e57dccfc-fd81-4122-88f1-966848f324c9,"ANIMATEDEAD_ZONE");
+DB_GLO_Spells_AnimateDead_Triggers("SCL_Main_A",(TRIGGER)S_SHA_AnimateDeadTrigger_01_3975a31c-7d3d-4ad4-8d47-37cae3cf9de3,"BONE_ZONE");
+
+// For handling timed explosives add the root template of it in this DB to handle things like keeping them in a character's inventory.
+// Make sure that 
+//	DB_GLO_Spells_TimedExplosives((ROOT)_ExplosiveTemplate, (STRING)_TimerStatus, (REAL)_TimeToExplode, (INTEGER)_ApplyStatus)
+// 	- _ForceApplyStatus: if we need to manually apply the status. If not set as 0
+DB_GLO_Spells_TimedExplosives((ROOT)LOOT_Throwable_Spell_FrozenOrb_e4478067-bd82-4586-a68f-e03a087a494c, "FREEZING_ORB_TIMER", 60.0, 1);
+NOT DB_GLO_Spells_TimedExplosives_Delayed("", 0);
+
+//Magic items that unlocks summoning spells
+DB_GLO_GlobalItems_SummoningMagicItems_Statuses("MAG_CIRCLET_OF_MYRKUL_MAGIC_ITEM","MAG_CIRCLET_OF_MYRKUL_SUMMON");
+DB_GLO_GlobalItems_SummoningMagicItems_Statuses("MAG_SPIRITUAL_WEAPON_MAGIC_ITEM","MAG_SPIRITUAL_WEAPON");
+DB_GLO_GlobalItems_SummoningMagicItems_Statuses("MAG_SPIRITUAL_WEAPON_MAGIC_ITEM","MAG_SPIRITUAL_WEAPON_4");
+DB_GLO_GlobalItems_SummoningMagicItems_Statuses("MAG_SPIRITUAL_WEAPON_MAGIC_ITEM","MAG_SPIRITUAL_WEAPON_6");
+DB_GLO_GlobalItems_SummoningMagicItems_Statuses("MAG_CREATE_UNDEAD_MAGIC_ITEM","MAG_CREATE_UNDEAD");
+DB_GLO_GlobalItems_SummoningMagicItems_Statuses("MAG_SHADOW_SUMMON_MAGIC_ITEM","MAG_SHADOW_SUMMON");
+DB_GLO_GlobalItems_SummoningMagicItems_Statuses("MAG_CAMBION_SUMMON_MAGIC_ITEM","MAG_CAMBION_SUMMON");
+DB_GLO_GlobalItems_SummoningMagicItems_Statuses("MAG_DJINNI_MAGE_HAND_MAGIC_ITEM","MAG_DJINNI_MAGE_HAND");
+DB_GLO_GlobalItems_SummoningMagicItems_Statuses("MAG_FIND_FAMILIAR_RAVEN_MAGIC_ITEM","MAG_FIND_FAMILIAR_RAVEN");
+
+//Transmutation stones
+DB_GLO_Spells_TransmutationStoneRoots((ROOT)LOOT_Spell_TransmutersStone_Constitution_5e6c5da3-43cc-4502-8e29-99a51fe7f661);
+DB_GLO_Spells_TransmutationStoneRoots(LOOT_Spell_TransmutersStone_Darkness_4b3afc03-01f2-43b6-88f8-bd22af6533d8);
+DB_GLO_Spells_TransmutationStoneRoots(LOOT_Spell_TransmutersStone_MovementSpeed_9cb9fb55-772a-4df1-bf8b-5b6d81d67baa);
+DB_GLO_Spells_TransmutationStoneRoots(LOOT_Spell_TransmutersStone_Resistance_Acid_dfc6b155-c3e1-4610-b412-f6ffecb14ebd);
+DB_GLO_Spells_TransmutationStoneRoots(LOOT_Spell_TransmutersStone_Resistance_Cold_992925fb-c27c-4c5d-9845-07abf216376b);
+DB_GLO_Spells_TransmutationStoneRoots(LOOT_Spell_TransmutersStone_Resistance_Fire_50966f21-977d-408f-95fc-8862e9572ce0);
+DB_GLO_Spells_TransmutationStoneRoots(LOOT_Spell_TransmutersStone_Resistance_Lightning_8233e8e7-55c9-4f72-8e7b-5f3dc36e250f);
+DB_GLO_Spells_TransmutationStoneRoots(LOOT_Spell_TransmutersStone_Resistance_Thunder_f4e4ecf9-9170-4264-a9d9-bd5e57044f38);
+
+DB_GLO_InvokeDuplicity((CHARACTER)00000000-0000-0000-0000-000000000000, (CHARACTER)00000000-0000-0000-0000-000000000000);
+NOT DB_GLO_InvokeDuplicity((CHARACTER)00000000-0000-0000-0000-000000000000, (CHARACTER)00000000-0000-0000-0000-000000000000);
+
+DB_GLO_Spells_BladesongEquipSlots("Breast", EQUIPMENTSLOT.Breast);
+DB_GLO_Spells_BladesongEquipSlots("Melee Main Weapon", EQUIPMENTSLOT.MeleeMainHand);
+DB_GLO_Spells_BladesongEquipSlots("Melee Offhand Weapon", EQUIPMENTSLOT.MeleeOffHand);
+
+DB_GLO_Spells_BladesongProficiencyBlockers("Shields", "BLADESONG_SHIELD");
+DB_GLO_Spells_BladesongProficiencyBlockers("Shields", "BLADESONG_SHIELD_MESSAGE");
+DB_GLO_Spells_BladesongProficiencyBlockers("MediumArmor", "BLADESONG_ARMOR_MESSAGE");
+DB_GLO_Spells_BladesongProficiencyBlockers("HeavyArmor", "BLADESONG_ARMOR_MESSAGE");
+DB_GLO_Spells_BladesongWeaponBlockers((TAG)WPN_DAGGER_7490e5d0-d346-4b0e-80c6-04e977160863);
+DB_GLO_Spells_BladesongWeaponBlockers((TAG)WPN_SICKLE_bfdc63bd-b8f6-4eac-9363-0c71882ff46f);
+DB_GLO_Spells_BladesongWeaponBlockers((TAG)WPN_SHORTSWORD_c826fd1e-4780-43d4-b49b-87f30c060fe6);
+DB_GLO_Spells_BladesongWeaponBlockers((TAG)WPN_LONGSWORD_96a99a42-ec5d-4081-9d62-c9e3f0057136);
+DB_GLO_Spells_BladesongWeaponBlockers((TAG)WPN_RAPIER_aeaf4e95-38d7-45ec-8900-40bc9e6106b0);
+DB_GLO_Spells_BladesongWeaponBlockers((TAG)WPN_SCIMITAR_206f9701-7b24-4eaf-9ac4-a47746c251e2);
+
+DB_GLO_Spells_BladesongStatuses("BLADESONG_UNARMED");
+DB_GLO_Spells_BladesongStatuses("BLADESONG_UNARMED_MESSAGE");
+DB_GLO_Spells_BladesongStatuses("BLADESONG_ARMOR_MESSAGE");
+DB_GLO_Spells_BladesongStatuses("BLADESONG_WEAPON_MESSAGE");
+DB_GLO_Spells_BladesongStatuses("BLADESONG_SHIELD_MESSAGE");
+DB_GLO_Spells_BladesongStatuses("BLADESONG_SHIELD");
+KBSECTION
+//REGION Dominate Beast
+IF
+StatusApplied(_Char, "DOMINATE_BEAST", _Caster, _)
+AND
+DB_PartyMembers((CHARACTER)_Caster)
+AND
+NOT DB_PartyMembers((CHARACTER)_Char)
+AND
+IsPartyFollower((CHARACTER)_Caster,1)
+AND
+CharacterGetOwner((CHARACTER)_Caster,_Owner)
+THEN
+PROC_Spell_DominateBeast_AddToParty((CHARACTER)_Char, (CHARACTER)_Owner, (CHARACTER)_Caster);
+
+IF
+StatusApplied(_Char, "DOMINATE_BEAST", _Caster, _)
+AND
+DB_PartyMembers((CHARACTER)_Caster)
+AND
+NOT DB_PartyMembers((CHARACTER)_Char)
+AND
+IsPartyFollower((CHARACTER)_Caster,0)
+THEN
+PROC_Spell_DominateBeast_AddToParty((CHARACTER)_Char, (CHARACTER)_Caster, (CHARACTER)_Caster);
+
+PROC
+PROC_Spell_DominateBeast_AddToParty((CHARACTER)_Char, (CHARACTER)_Owner, (CHARACTER)_Caster)
+AND
+NOT DB_Spell_DominateBeastFollower(_Char,_Owner,_Caster)
+THEN
+DB_Spell_DominateBeastFollower(_Char,_Owner,_Caster);
+AddPartyFollower(_Char,_Owner);
+SetEntityEvent(_Char,"SetPeaceReturnFromStory");
+
+IF
+StatusRemoved(_Char, "DOMINATE_BEAST", _, _)
+AND
+DB_Spell_DominateBeastFollower((CHARACTER)_Char,(CHARACTER)_Owner,(CHARACTER)_Caster)
+THEN
+NOT DB_Spell_DominateBeastFollower(_Char,_Owner,_Caster);
+RemovePartyFollower(_Char,_Owner);
+
+IF
+CharacterLeftParty(_Caster)
+AND
+DB_Spell_DominateBeastFollower(_Char,_Owner,_Caster)
+THEN
+RemovePartyFollower(_Char,_Owner);
+
+IF
+CharacterJoinedParty(_Caster)
+AND
+DB_Spell_DominateBeastFollower(_Char,_Owner,_Caster)
+THEN
+AddPartyFollower(_Char,_Owner);
+//END_REGION
+
+//REGION Blink
+IF
+StatusApplied(_Character, "BLINK_VANISH", _, _)
+AND
+IsCharacter(_Character, 1)
+THEN
+SetDetached((CHARACTER)_Character, 1);
+
+IF
+StatusRemoved(_Character, "BLINK_VANISH", _, _)
+AND
+IsCharacter(_Character, 1)
+THEN
+SetDetached((CHARACTER)_Character, 0);
+//END_REGION
+
+//REGION Wild Magic Flumph
+IF
+StatusAttempt(_Flumph,"FLUMPH_EXPLODE",_Causee,_)
+AND
+GetTemplate(_Flumph,_FlumphTemplate)
+AND
+DB_GLO_Spells_WildMagic_FlumphTemplate(_FlumphTemplate)
+THEN
+DB_GLO_Spells_WildMagic_Flumph((CHARACTER)_Flumph);
+
+IF
+UsingSpellOnTarget(_, (CHARACTER)_Flumph, _, _, _, _)
+AND
+DB_GLO_Spells_WildMagic_Flumph((CHARACTER)_Flumph)
+THEN
+RemoveStatus(_Flumph, "FLUMPH_EXPLODE", _Flumph);
+
+IF
+StatusRemoved(_Flumph, "FLUMPH_EXPLODE", _, _)
+AND
+DB_GLO_Spells_WildMagic_Flumph((CHARACTER)_Flumph)
+THEN
+Die(_Flumph, DEATHTYPE.DoT, _Flumph, 0, 0, 0.0);
+
+PROC
+PROC_StateSet_PermaDefeated(_Flumph)
+AND
+DB_GLO_Spells_WildMagic_Flumph((CHARACTER)_Flumph)
+THEN
+SetOnStage(_Flumph, 0);
+NOT DB_GLO_Spells_WildMagic_Flumph(_Flumph);
+
+//END_REGION
+
+//REGION Creating and keeping the frozen orb
+IF
+TemplateAddedTo(_ExplosiveRoot, _Explosive, _Owner, _)
+AND
+DB_GLO_Spells_TimedExplosives(_ExplosiveRoot, _Status, _TimeToExplode, 1)
+AND
+HasActiveStatus(_Explosive, _Status, 0)
+THEN
+ApplyStatus(_Explosive, _Status, _TimeToExplode, 1, _Owner);
+
+IF
+StatusApplied((ITEM)_Explosive, _Status, _Caster, _) // We don't have a way to know when an item is created, so instead listen to when the status is applied.
+AND
+NOT DB_GLO_Spells_TimedExplosives_Explosive(_Explosive, _)
+AND
+DB_GLO_Spells_TimedExplosives(_, _Status, _, _)
+THEN
+DB_GLO_Spells_TimedExplosives_Explosive(_Explosive, _Caster);
+
+IF
+DB_GLO_Spells_TimedExplosives_Explosive(_Explosive, _Caster)
+THEN
+SetDualEntityEvent(_Caster, _Explosive, "SetGrenadeCaster", 1);
+
+// It can be possible that the grenade has been already destroyed when the status is removed, so instead trigger the explosion when it's being destroyed.
+IF
+DestroyingBy((ITEM)_Explosive, _, _, _)
+AND
+DB_GLO_Spells_TimedExplosives_Explosive(_Explosive, _)
+THEN
+PROC_GLO_Spells_TriggerTimedExplosive(_Explosive, ""); // Don't delay explosions since there won't be an item to explode anymore
+
+IF
+StatusRemoved((ITEM)_Explosive, _Status, _Owner, _)
+AND
+DB_GLO_Spells_TimedExplosives(_, _Status, _, _)
+THEN
+PROC_GLO_Spells_TriggerTimedExplosive((ITEM)_Explosive, _Status);
+
+PROC
+PROC_GLO_Spells_TriggerTimedExplosive((ITEM)_Explosive, (STRING)_Status)
+AND
+DB_GLO_Spells_TimedExplosives_Delayed(_DelayStatus, _Delay)
+AND
+HasAppliedStatus(_Explosive, _DelayStatus, 1)
+THEN
+RealtimeObjectTimerLaunch(_Explosive, "TriggerExplosive", _Delay);
+
+IF
+ObjectTimerFinished((ITEM)_Explosive, "TriggerExplosive")
+THEN
+PROC_GLO_Spells_TriggerTimedExplosive_Internal(_Explosive);
+
+PROC
+PROC_GLO_Spells_TriggerTimedExplosive((ITEM)_Explosive, (STRING)_Status)
+AND
+NOT QRY_GLO_Spells_TimedExplosiveHasDelayStatus(_Explosive)
+THEN
+PROC_GLO_Spells_TriggerTimedExplosive_Internal(_Explosive);
+
+QRY
+QRY_GLO_Spells_TimedExplosiveHasDelayStatus((ITEM)_Explosive)
+AND
+DB_GLO_Spells_TimedExplosives_Delayed(_DelayedStatus, _Delay)
+AND
+HasAppliedStatus(_Explosive, _DelayedStatus, 1)
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_GLO_Spells_TriggerTimedExplosive_Internal((ITEM)_Explosive)
+AND
+DB_GLO_Spells_TimedExplosives_Explosive(_Explosive, _Caster)
+THEN
+NOT DB_GLO_Spells_TimedExplosives_Explosive(_Explosive, _Caster);
+
+PROC
+PROC_GLO_Spells_TriggerTimedExplosive_Internal((ITEM)_Explosive)
+AND
+IsInInventory(_Explosive, 0)
+THEN
+SetDualEntityEvent(NULL_00000000-0000-0000-0000-000000000000, _Explosive, "ExplodeGrenade", 1);
+
+PROC
+PROC_GLO_Spells_TriggerTimedExplosive_Internal((ITEM)_Explosive)
+AND
+IsInInventory(_Explosive, 1)
+AND
+GetInventoryOwner(_Explosive, _InventoryHolder)
+THEN
+SetDualEntityEvent(_InventoryHolder, _Explosive, "ExplodeGrenade", 1);
+//END_REGION
+
+//REGION Scratch Discovery
+IF 
+UseFinished(_Character,_Item,1)
+AND
+DB_Players(_Character)
+AND
+HasActiveStatus(_Item,"SCRATCH_AURA",1)
+THEN
+RemoveStatus(_Item,"SCRATCH_AURA");
+//END_REGION
+
+//REGION Animate Dead Zombie Horde
+IF
+StatusApplied(_Char,"CRAWLING_GNAW_SWITCH",_Zombie,_)
+AND
+QRY_GetSummonOwner(_Zombie)
+AND 
+DB_QRYRTN_GetSummonOwner(_Owner)
+THEN
+DB_GLO_Spells_AnimateDead_Infected(_Char, _Owner);
+
+
+IF
+StatusApplied(_Char,"CRAWLING_GNAW_TECHNICAL",_,_)
+AND
+DB_GLO_Spells_AnimateDead_Infected(_Char, _Owner)
+AND
+GetPosition(_Char,_X,_Y,_Z)
+AND
+NOT DB_GLO_Spells_AnimateDead(_Char,_Owner)
+AND
+CreateAt((CHARACTERROOT)Undead_Zombie_Melee_AnimateDead_Swarm_82d6ff04-db9d-4b02-82aa-fd4db21f5b7d,_X,_Y,_Z,1,1,"GLO_Spells_AnimateDead_Summon",_Zombie)
+THEN
+DB_GLO_Spells_AnimateDead(_Zombie,_Owner);
+NOT DB_GLO_Spells_AnimateDead_Infected(_Char, _Owner);
+
+IF
+EntityEvent(_Zombie, "GLO_Spells_AnimateDead_Summon")
+AND
+DB_GLO_Spells_AnimateDead(_Zombie,_Owner)
+AND
+GetFaction(_Owner, _Faction)
+THEN
+AddPartyFollower((CHARACTER)_Zombie,(CHARACTER)_Owner);
+SetFaction(_Zombie,_Faction);
+
+IF
+Dying(_Zombie)
+AND
+DB_PartyFollowers(_Zombie)
+AND
+DB_GLO_Spells_AnimateDead(_Zombie,_Owner)
+THEN
+RemovePartyFollower((CHARACTER)_Zombie,(CHARACTER)_Owner);
+
+IF
+Died(_Zombie)
+AND
+DB_GLO_Spells_AnimateDead(_Zombie,_Owner)
+THEN
+NOT DB_GLO_Spells_AnimateDead(_Zombie,_Owner);
+RequestDeleteTemporary((CHARACTER)_Zombie);
+
+QRY
+QRY_CrimeCharacterBlockCreateMurder((CHARACTER)_Defender)
+AND
+DB_GLO_Spells_AnimateDead(_Defender,_)
+THEN
+DB_NOOP(1);
+
+
+//END_REGION
+
+//REGION Portent
+IF
+TemplateUseStarted(_Character, _, _Item)
+AND
+IsTagged(_Item, (TAG)SCROLL_dd86c045-0370-4ec9-b7c5-b0b160706f09, 1)
+AND
+HasActiveStatus(_Character, "DIVINATION_SCROLL_LEARN", 1)
+THEN
+RemoveStatus(_Character, "DIVINATION_SCROLL_LEARN", _Character);
+ApplyStatus(_Character, "PORTENT", 6.0, 1, _Character);
+
+PROC
+PROC_GLO_Spells_Portent_Statuses_Pick((INTEGER)_Count)
+AND
+QRY_DoNTimes(_Count)
+AND
+DB_QRY_RTN_DoNTimes(_)
+AND
+QRY_GetRandom("DB_GLO_Spells_Portent_Statuses", 1, "DB_GLO_Spells_Portent_Statuses_PickCandidate")
+AND
+DB_GLO_Spells_Portent_Statuses_PickCandidate(_Status)
+THEN
+DB_GLO_Spells_Portent_Statuses_Picked(_Status);
+NOT DB_GLO_Spells_Portent_Statuses_PickCandidate(_Status);
+NOT DB_GLO_Spells_Portent_Statuses(_Status);
+
+PROC
+PROC_GLO_Spells_Portent_Statuses_Apply((CHARACTER) _Character)
+AND
+DB_GLO_Spells_Portent_Statuses_Picked(_Status)
+THEN
+ApplyStatus(_Character, _Status, -1.0, 1, _Character);
+DB_GLO_Spells_Portent_Statuses(_Status);
+NOT DB_GLO_Spells_Portent_Statuses_Picked(_Status);
+
+PROC
+PROC_GLO_Spells_Portent_FillPortent((CHARACTER)_Character)
+AND
+DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, _Count)
+AND
+IntegerSubtract(_Max, _Count, _Res)
+THEN
+PROC_GLO_Spells_Portent_Statuses_Pick(_Res);
+PROC_GLO_Spells_Portent_Statuses_Apply((CHARACTER) _Character);
+
+PROC
+PROC_GLO_Spells_Portent_Clear((CHARACTER) _Character)
+AND
+DB_GLO_Spells_Portent_Statuses(_Status)
+THEN
+RemoveStatus(_Character, _Status, _Character);
+
+IF
+LongRestFinished()
+AND
+DB_GLO_Spells_Portent_Challenges_Characters(_Character, _Count)
+THEN
+NOT DB_GLO_Spells_Portent_Challenges_Characters(_Character, _Count);
+DB_GLO_Spells_Portent_Challenges_Characters(_Character, 0);
+
+IF
+LongRestFinished()
+AND
+DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, _Count)
+THEN
+NOT DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, _Count);
+DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, 0);
+PROC_GLO_Spells_Portent_FillPortent(_Character);
+
+IF
+LeveledUp(_Character)
+THEN
+ObjectTimerLaunch(_Character, "Portent_Timer", 200, 0);
+
+IF
+ObjectTimerFinished(_Character, "Portent_Timer")
+AND
+DB_GLO_Spells_Portent_Statuses_Characters((CHARACTER)_Character, _Max, _Count)
+AND
+HasPassive(_Character, "Portent", 0)
+THEN
+NOT DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, _Count);
+PROC_GLO_Spells_Portent_Clear((CHARACTER) _Character);
+
+IF
+ObjectTimerFinished(_Character, "Portent_Timer")
+AND
+NOT DB_GLO_Spells_Portent_Statuses_Characters((CHARACTER)_Character, _, _)
+AND
+HasPassive(_Character, "Portent", 1)
+AND
+HasPassive(_Character, "ExpertDivination", 0)
+THEN
+PROC_GLO_Spells_Portent_Clear((CHARACTER) _Character);
+DB_GLO_Spells_Portent_Statuses_Characters(_Character, 2, 0);
+PROC_GLO_Spells_Portent_FillPortent((CHARACTER)_Character);
+
+IF
+ObjectTimerFinished(_Character, "Portent_Timer")
+AND
+DB_GLO_Spells_Portent_Statuses_Characters((CHARACTER)_Character, 2, _Count)
+AND
+HasPassive(_Character, "Portent", 1)
+AND
+HasPassive(_Character, "ExpertDivination", 1)
+THEN
+NOT DB_GLO_Spells_Portent_Statuses_Characters(_Character, 2, _Count);
+DB_GLO_Spells_Portent_Statuses_Characters(_Character, 3, _Count);
+PROC_GLO_Spells_Portent_Statuses_Pick(1);
+PROC_GLO_Spells_Portent_Statuses_Apply((CHARACTER) _Character);
+
+IF
+ObjectTimerFinished(_Character, "Portent_Timer")
+AND
+NOT DB_GLO_Spells_Portent_Statuses_Characters((CHARACTER)_Character, _, _)
+AND
+HasPassive(_Character, "Portent", 1)
+AND
+HasPassive(_Character, "ExpertDivination", 1)
+THEN
+PROC_GLO_Spells_Portent_Clear((CHARACTER) _Character);
+DB_GLO_Spells_Portent_Statuses_Characters(_Character, 3, 0);
+PROC_GLO_Spells_Portent_FillPortent((CHARACTER)_Character);
+
+IF
+StatusApplied(_Character, "PORTENT", _, _)
+AND
+DB_GLO_Spells_Portent_Statuses_Characters((CHARACTER)_Character, _Max, _Count)
+AND
+_Max != _Count
+THEN
+PROC_GLO_Spells_Portent_Statuses_Pick(1);
+PROC_GLO_Spells_Portent_Statuses_Apply((CHARACTER) _Character);
+
+IF
+StatusApplied(_Character, _Status, _, _)
+AND
+DB_GLO_Spells_Portent_Statuses(_Status)
+AND
+DB_GLO_Spells_Portent_Statuses_Characters((CHARACTER)_Character, _Max, _Count)
+AND
+IntegerSum(_Count, 1, _NewCount)
+THEN
+NOT DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, _Count);
+DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, _NewCount);
+
+IF
+StatusRemoved(_Character, _Status, _, _)
+AND
+DB_GLO_Spells_Portent_Statuses(_Status)
+AND
+DB_GLO_Spells_Portent_Statuses_Characters((CHARACTER)_Character, _Max, _Count)
+AND
+IntegerSubtract(_Count, 1, _NewCount)
+THEN
+NOT DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, _Count);
+DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, _NewCount);
+
+IF
+StatusApplied(_Character, _Status, _, _)
+AND
+DB_GLO_Spells_Portent_Challenges(_Status)
+AND
+DB_GLO_Spells_Portent_Challenges_Characters((CHARACTER)_Character, _Count)
+AND
+IntegerSum(_Count, 1, _NewCount)
+THEN
+NOT DB_GLO_Spells_Portent_Challenges_Characters(_Character, _Count);
+DB_GLO_Spells_Portent_Challenges_Characters(_Character, _NewCount);
+
+IF
+StatusApplied(_Character, _Status, _, _)
+AND
+DB_GLO_Spells_Portent_Challenges(_Status)
+AND
+NOT DB_GLO_Spells_Portent_Challenges_Characters((CHARACTER)_Character, _)
+THEN
+DB_GLO_Spells_Portent_Challenges_Characters(_Character, 1);
+
+IF
+StatusRemoved(_Character, _Status, _, _)
+AND
+DB_GLO_Spells_Portent_Challenges(_Status)
+AND
+DB_GLO_Spells_Portent_Challenges_Characters((CHARACTER)_Character, _Count)
+AND
+IntegerSubtract(_Count, 1, _NewCount)
+THEN
+NOT DB_GLO_Spells_Portent_Challenges_Characters(_Character, _Count);
+DB_GLO_Spells_Portent_Challenges_Characters(_Character, _NewCount);
+
+PROC
+PROC_GLO_Spells_Portent_Challenges_Pick((INTEGER)_Count)
+AND
+QRY_DoNTimes(_Count)
+AND
+DB_QRY_RTN_DoNTimes(_)
+AND
+QRY_GetRandom("DB_GLO_Spells_Portent_Challenges", 1, "DB_GLO_Spells_Portent_Challenges_PickCandidate")
+AND
+DB_GLO_Spells_Portent_Challenges_PickCandidate(_Status)
+THEN
+DB_GLO_Spells_Portent_Challenges_Picked(_Status);
+NOT DB_GLO_Spells_Portent_Challenges_PickCandidate(_Status);
+NOT DB_GLO_Spells_Portent_Challenges(_Status);
+
+PROC
+PROC_GLO_Spells_Portent_Challenges_Apply((CHARACTER) _Character)
+AND
+DB_GLO_Spells_Portent_Challenges_Picked(_Status)
+THEN
+ApplyStatus(_Character, _Status, -1.0, 1, _Character);
+DB_GLO_Spells_Portent_Challenges(_Status);
+NOT DB_GLO_Spells_Portent_Challenges_Picked(_Status);
+
+IF
+ShortRested(_Character)
+AND
+HasPassive(_Character, "ExpertDivination", 1)
+AND
+DB_GLO_Spells_Portent_Challenges_Characters((CHARACTER)_Character, _ChallengeCount)
+AND
+DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, _Count)
+AND
+IntegerSubtract(_Max, _Count, _Temp)
+AND
+IntegerSubtract(_Temp, _ChallengeCount, _Res)
+THEN
+PROC_GLO_Spells_Portent_Challenges_Pick(_Res);
+PROC_GLO_Spells_Portent_Challenges_Apply((CHARACTER) _Character);
+
+IF
+ShortRested(_Character)
+AND
+HasPassive(_Character, "ExpertDivination", 1)
+AND
+NOT DB_GLO_Spells_Portent_Challenges_Characters((CHARACTER)_Character, _)
+AND
+DB_GLO_Spells_Portent_Statuses_Characters(_Character, _Max, _Count)
+AND
+IntegerSubtract(_Max, _Count, _Res)
+THEN
+PROC_GLO_Spells_Portent_Challenges_Pick(_Res);
+PROC_GLO_Spells_Portent_Challenges_Apply((CHARACTER) _Character);
+
+//END_REGION Portent
+
+//REGION Animate Dead Triggers
+PROC
+PROC_LevelLoadedOnce(_LevelName)
+AND
+DB_GLO_Spells_AnimateDead_Triggers(_LevelName,_Trigger,_)
+THEN
+PROC_TriggerRegisterForPlayers(_Trigger);
+
+IF
+EnteredTrigger(_Player,_Trigger)
+AND
+DB_GLO_Spells_AnimateDead_Triggers(_,_Trigger,_Status)
+THEN
+ApplyStatus(_Player,_Status,-1.0);
+
+IF 
+LeftTrigger(_Player,_Trigger)
+AND
+DB_GLO_Spells_AnimateDead_Triggers(_,_Trigger,_Status)
+THEN
+RemoveStatus(_Player,_Status);
+//END_REGION
+
+//REGION Arcane Gate
+IF
+EnteredLevel(_ArcaneGate,(ROOT)PUZ_ArcaneGate_721dcc51-9733-463b-87c5-6afcda6fef65,_Level)
+AND
+DB_CurrentLevel(_Level)
+THEN
+RealtimeObjectTimerLaunch(_ArcaneGate, "GLO_Spells_ArcaneGate_WaitForOwnerToGetSet", 0);
+
+IF
+ObjectTimerFinished(_ArcaneGate, "GLO_Spells_ArcaneGate_WaitForOwnerToGetSet")
+AND
+GetOwner((ITEM)_ArcaneGate,_Character)
+AND
+_Character != NULL_00000000-0000-0000-0000-000000000000
+THEN
+DB_GLO_Spells_SpawningArcaneGate(_ArcaneGate,_Character);
+
+IF
+DB_GLO_Spells_SpawningArcaneGate(_ArcaneGateOne,_Character)
+AND
+DB_GLO_Spells_SpawningArcaneGate(_ArcaneGateTwo,_Character)
+AND
+_ArcaneGateOne != _ArcaneGateTwo
+AND
+// Make them face each other for vfx reasons
+GetPosition(_ArcaneGateOne,_X1,_Y1,_Z1)
+AND
+GetPosition(_ArcaneGateTwo,_X2,_Y2,_Z2)
+AND
+GetAngleXToDirection(_X1,_Z1,_X2,_Z2,_NewAngleOne)
+AND
+GetAngleXToDirection(_X2,_Z2,_X1,_Z1,_NewAngleTwo)
+AND
+IntegerSubtract(270,_NewAngleOne,_NewAngleOnePatched)
+AND
+IntegerSubtract(270,_NewAngleTwo,_NewAngleTwoPatched)
+AND
+IntegerModulo(_NewAngleOnePatched,360,_NewAngleOneNormalised)
+AND
+IntegerModulo(_NewAngleTwoPatched,360,_NewAngleTwoNormalised)
+AND
+IntegerToReal(_NewAngleOneNormalised, _NewAngleOneReal)
+AND
+IntegerToReal(_NewAngleTwoNormalised, _NewAngleTwoReal)
+THEN
+SetTeleportTargetOverride(_ArcaneGateOne, _ArcaneGateTwo);
+SetTeleportTargetOverride(_ArcaneGateTwo, _ArcaneGateOne);
+ItemRotateYToAngle(_ArcaneGateOne,_NewAngleOneReal,100000.0);
+ItemRotateYToAngle(_ArcaneGateTwo,_NewAngleTwoReal,100000.0);
+NOT DB_GLO_Spells_SpawningArcaneGate(_ArcaneGateOne,_Character);
+NOT DB_GLO_Spells_SpawningArcaneGate(_ArcaneGateTwo,_Character);
+
+//END_REGION
+
+//REGION MAGIC ITEMS
+//Unsummon creature summoned from magic items when the item is unequipped
+IF
+Unequipped(_Item, _Player)
+AND
+DB_GLO_GlobalItems_SummoningMagicItems_Statuses(_MagicItemStatus,_SummonStatus)
+AND
+Exists(_Item,1)
+AND
+HasActiveStatus((ITEM)_Item, _MagicItemStatus, 1)
+AND
+DB_PlayerSummons(_Summon)
+AND
+HasActiveStatus(_Summon, _SummonStatus, 1)
+AND
+CharacterGetOwner(_Summon, _Player)
+THEN
+Die(_Summon, DEATHTYPE.Lifetime, _Summon, 0, 0);
+
+//END_REGION
+
+//REGION Invoke Duplicity Duplication
+IF
+StatusApplied(_Duplicity, "INVOKE_DUPLICITY_TECHNICAL", _Player, _)
+THEN
+CopyCharacterEquipment((CHARACTER)_Duplicity, (CHARACTER)_Player);
+DB_GLO_InvokeDuplicity((CHARACTER)_Duplicity, (CHARACTER)_Player);
+RealtimeObjectTimerLaunch(_Duplicity, "InvokeDuplicity", 100);
+
+IF
+ObjectTimerFinished(_Duplicity, "InvokeDuplicity")
+AND
+DB_GLO_InvokeDuplicity((CHARACTER)_Duplicity, (CHARACTER)_Player)
+THEN
+Transform(_Duplicity, _Player, INVOKEDUPLICITY_296bcfb3-9dab-4a93-8ab1-f1c53c6674c9);
+RemoveStatus(_Duplicity, "INVOKE_DUPLICITY_TECHNICAL", _Player);
+//END_REGION
+
+//REGION Transmutation stones
+
+IF
+TemplateAddedTo(_StoneRoot, _Stone, _, _)
+AND
+DB_GLO_Spells_TransmutationStoneRoots(_StoneRoot)
+AND
+GetOriginalOwner((ITEM)_Stone, _Caster)
+AND
+DB_PartyMembers(_Caster)
+THEN
+DB_GLO_Spells_TransmutationStones((ITEM)_Stone, _Caster);
+
+IF
+CharacterLeftParty(_Caster)
+AND
+DB_GLO_Spells_TransmutationStones(_Stone, _Caster)
+THEN
+RequestDelete(_Stone);
+NOT DB_GLO_Spells_TransmutationStones(_Stone, _Caster);
+
+IF
+DestroyedBy(_Stone, _, _, _)
+AND
+DB_GLO_Spells_TransmutationStones(_Stone, _Caster)
+THEN
+NOT DB_GLO_Spells_TransmutationStones(_Stone, _Caster);
+
+//END_REGION
+
+//REGION Magic Archer
+
+IF
+TagSet(_Character, MAGICARROW_PASSIVE_d9c60671-8dc3-4bc8-8a89-9d03fbd5b501)
+AND
+GetEquippedItem((CHARACTER)_Character, "Ranged Main Weapon", _RangedWeapon)
+AND
+NOT DB_GLO_Spells_MagicArrowWeapon(_RangedWeapon)
+THEN
+ApplyStatus(_RangedWeapon, "MAGIC_ARROW", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+TagCleared((CHARACTER)_Character, MAGICARROW_PASSIVE_d9c60671-8dc3-4bc8-8a89-9d03fbd5b501)
+AND
+GetEquippedItem(_Character, "Ranged Main Weapon", _RangedWeapon)
+AND
+DB_GLO_Spells_MagicArrowWeapon(_RangedWeapon)
+THEN
+RemoveStatus(_RangedWeapon, "MAGIC_ARROW", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+Equipped(_RangedWeapon, _Character)
+AND
+IsWeapon(_RangedWeapon, 1)
+AND
+HasPassive(_Character, "MagicArrow", 1)
+AND
+IsRangedWeapon(_RangedWeapon, 0, 1)
+AND
+NOT DB_GLO_Spells_MagicArrowWeapon(_RangedWeapon)
+THEN
+ApplyStatus(_RangedWeapon, "MAGIC_ARROW", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+StatusApplied(_RangedWeapon, "MAGIC_ARROW", _, _)
+AND
+NOT DB_GLO_Spells_MagicArrowWeapon((ITEM)_RangedWeapon)
+THEN
+DB_GLO_Spells_MagicArrowWeapon((ITEM)_RangedWeapon);
+
+IF
+Unequipped(_RangedWeapon, _)
+AND
+DB_GLO_Spells_MagicArrowWeapon(_RangedWeapon)
+THEN
+RemoveStatus(_RangedWeapon, "MAGIC_ARROW", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+StatusRemoved(_RangedWeapon, "MAGIC_ARROW", _, _)
+THEN
+NOT DB_GLO_Spells_MagicArrowWeapon((ITEM)_RangedWeapon);
+
+//END_REGION
+
+//REGION Bladesong
+IF
+TagSet((CHARACTER)_Character, (TAG)WIZARD_Bladesong_bc52a699-cf55-4dad-9710-927e655910fd)
+THEN
+DB_GLO_Spells_Bladesong(_Character);
+PROC_GLO_Spells_BladesongInitCheck(_Character, "Breast");
+PROC_GLO_Spells_BladesongInitCheck(_Character, "Melee Main Weapon");
+PROC_GLO_Spells_BladesongInitCheck(_Character, "Melee Offhand Weapon");
+PROC_GLO_Spells_BladesongCheckUnarmed((CHARACTER)_Character);
+
+PROC
+PROC_GLO_Spells_BladesongInitCheck((CHARACTER)_Character, (STRING)_SlotString)
+AND
+GetEquippedItem(_Character, _SlotString, _Item)
+AND
+DB_GLO_Spells_BladesongEquipSlots(_SlotString, _Slot)
+THEN
+PROC_GLO_Spells_BladesongCheckEquippedItem(_Character, _Item, _Slot);
+
+IF
+Equipped(_Item, _Character)
+AND
+DB_GLO_Spells_Bladesong(_Character)
+AND
+GetEquipmentSlotForItem(_Item, _Slot)
+THEN
+PROC_GLO_Spells_BladesongCheckEquippedItem(_Character, _Item, _Slot);
+
+PROC
+PROC_GLO_Spells_BladesongCheckEquippedItem((CHARACTER)_Character, (ITEM)_Item, EQUIPMENTSLOT.MeleeMainHand)
+AND
+IsWeapon(_Item, 1)
+AND
+NOT QRY_GLO_Spells_HasBladesongWeaponTags(_Item)
+THEN
+ApplyStatus(_Character, "BLADESONG_WEAPON_MESSAGE", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+DB_GLO_Spells_BladesongBlockingItem(_Character, _Item, "BLADESONG_WEAPON_MESSAGE");
+
+PROC
+PROC_GLO_Spells_BladesongCheckEquippedItem((CHARACTER)_Character, (ITEM)_Item, EQUIPMENTSLOT.MeleeOffHand)
+AND
+IsEquipmentWithProficiency(_Item, "Shields", 0)
+AND
+IsWeapon(_Item, 1)
+AND
+NOT QRY_GLO_Spells_HasBladesongWeaponTags(_Item)
+THEN
+ApplyStatus(_Character, "BLADESONG_WEAPON_MESSAGE", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+DB_GLO_Spells_BladesongBlockingItem(_Character, _Item, "BLADESONG_WEAPON_MESSAGE");
+
+PROC
+PROC_GLO_Spells_BladesongCheckEquippedItem((CHARACTER)_Character, (ITEM)_Item, (EQUIPMENTSLOT)_EquipSlot)
+AND
+DB_GLO_Spells_BladesongProficiencyBlockers(_Proficiency, _Status)
+AND
+IsEquipmentWithProficiency(_Item, _Proficiency, 1)
+THEN
+ApplyStatus(_Character, _Status, -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+DB_GLO_Spells_BladesongBlockingItem(_Character, _Item, _Status);
+
+QRY
+QRY_GLO_Spells_HasBladesongWeaponTags((ITEM)_Weapon)
+AND
+DB_GLO_Spells_BladesongWeaponBlockers(_Tag)
+AND
+IsTagged(_Weapon, _Tag, 1)
+THEN
+DB_NOOP(1);
+
+IF
+Unequipped(_Item, _Character)
+AND
+DB_GLO_Spells_BladesongBlockingItem(_Character, _Item, _Status)
+THEN
+NOT DB_GLO_Spells_BladesongBlockingItem(_Character, _Item, _Status);
+PROC_GLO_Spells_CheckRemoveBladesongStatus(_Item, _Status, _Character);
+
+PROC
+PROC_GLO_Spells_CheckRemoveBladesongStatus((ITEM)_Item, (STRING)_Status, (CHARACTER)_Character)
+AND
+NOT QRY_GLO_Spells_OtherBlockingItem(_Character, _Item, _Status)
+THEN
+RemoveStatus(_Character, _Status, NULL_00000000-0000-0000-0000-000000000000);
+
+QRY
+QRY_GLO_Spells_OtherBlockingItem((CHARACTER)_Character,(ITEM)_Item, (STRING)_Status)
+AND
+DB_GLO_Spells_BladesongBlockingItem(_Character, _OtherItem, _Status)
+AND
+_OtherItem != _Item
+THEN
+DB_NOOP(1);
+
+//Unarmed logic
+IF
+Unequipped(_Item, _Character)
+AND
+DB_GLO_Spells_Bladesong(_Character)
+AND
+IsWeapon(_Item, 1)
+THEN
+PROC_GLO_Spells_BladesongCheckUnarmed(_Character);
+
+IF
+Equipped(_Item, _Character)
+AND
+DB_GLO_Spells_Bladesong(_Character)
+AND
+IsWeapon(_Item, 1)
+THEN
+PROC_GLO_Spells_BladesongCheckUnarmed(_Character);
+
+PROC
+PROC_GLO_Spells_BladesongCheckUnarmed((CHARACTER)_Character)
+AND
+NOT QRY_GLO_Spells_IsCharacterArmed(_Character)
+THEN
+ApplyStatus(_Character, "BLADESONG_UNARMED", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+ApplyStatus(_Character, "BLADESONG_UNARMED_MESSAGE", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+DB_GLO_Spells_BladesongUnarmed(_Character);
+
+QRY
+QRY_GLO_Spells_IsCharacterArmed((CHARACTER)_Character)
+AND
+GetEquippedItem(_Character, "Melee Main Weapon", _Item)
+AND
+IsWeapon(_Item, 1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_GLO_Spells_IsCharacterArmed((CHARACTER)_Character)
+AND
+GetEquippedItem(_Character, "Melee Offhand Weapon", _Item)
+AND
+IsWeapon(_Item, 1)
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_GLO_Spells_BladesongCheckUnarmed((CHARACTER)_Character)
+AND
+QRY_GLO_Spells_IsCharacterArmed(_Character)
+AND
+DB_GLO_Spells_BladesongUnarmed(_Character)
+THEN
+RemoveStatus(_Character, "BLADESONG_UNARMED", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Character, "BLADESONG_UNARMED_MESSAGE", NULL_00000000-0000-0000-0000-000000000000);
+NOT DB_GLO_Spells_BladesongUnarmed(_Character);
+
+//Cleanup
+IF
+TagCleared((CHARACTER)_Character, (TAG)WIZARD_Bladesong_bc52a699-cf55-4dad-9710-927e655910fd)
+THEN
+NOT DB_GLO_Spells_Bladesong(_Character);
+PROC_GLO_Spells_BladesongRemoveStatuses(_Character);
+
+PROC
+PROC_GLO_Spells_BladesongRemoveStatuses((CHARACTER)_Character)
+AND
+DB_GLO_Spells_BladesongStatuses(_Status)
+THEN
+RemoveStatus(_Character, _Status, NULL_00000000-0000-0000-0000-000000000000);
+
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
