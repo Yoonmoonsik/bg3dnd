@@ -697,6 +697,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="8864b766-567d-4495-ac94-31ca55789160" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsUnarmedAttack() or IsMeleeWeaponAttack() or (HasPassive('FierceShot',context.Source) and IsRangedWeaponAttack())) and not HasStatus('RECKLESS_ATTACK',context.Observer) and not AnyEntityIsItem();" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF((HasPassive('BrutalStrike_ForcefulBlow',context.Source) or HasPassive('BrutalStrike_HamstringBlow',context.Source)) and not InterruptHasDisadvantage()):ApplyStatus(OBSERVER_OBSERVER,BRUTAL_STRIKE,100,1);IF(not (HasPassive('BrutalStrike_ForcefulBlow',context.Source) or HasPassive('BrutalStrike_HamstringBlow',context.Source)) or InterruptHasDisadvantage()):SetAdvantage();ApplyStatus(OBSERVER_OBSERVER,RECKLESS_ATTACK,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -6105,6 +6105,12 @@ data "Boosts" "ActionResource(Movement,4.5,0);"
 data "ManagedStatusEffectType" "Positive"
 data "ManagedStatusEffectGroup" "d787f666-8ee6-4185-9365-6aac9ebe76ae"
 
+new entry "BRUTAL_STRIKE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "TickType" "StartTurn"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
 new entry "RECKLESSATTACK_FORCEFULBLOW"
 type "StatusData"
 data "StatusType" "BOOST"

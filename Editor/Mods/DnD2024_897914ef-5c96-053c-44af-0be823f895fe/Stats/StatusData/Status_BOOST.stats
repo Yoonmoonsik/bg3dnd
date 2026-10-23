@@ -7582,6 +7582,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ec4a34c6-5e55-4f34-a4dd-19b1e0ffe05b" />
+        <field name="Name" type="NameTableFieldDefinition" value="BRUTAL_STRIKE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="80d7a20e-e875-4aae-be5e-350b441f6638" />
         <field name="Name" type="NameTableFieldDefinition" value="RECKLESSATTACK_FORCEFULBLOW" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2fea2840g0902gdf2bg7797g549c20c3d6e3" version="1" />
