@@ -91,6 +91,7 @@ local SPELL_CLASS_MAP = {
     Target_DeathArmor_spellscroll = '2 Sorcerer Wizard',
     Shout_ElminstersElusion_spellscroll = '2 Wizard',
     Target_EnlargeReduce_spellscroll = '2 Bard Druid Sorcerer Wizard Artificer',
+    Target_FiendFlesh_spellscroll = '2 Bard Cleric Sorcerer Warlock Wizard',
     Shout_FindSteed_spellscroll = '2 Paladin',
     Target_FireRune_spellscroll = '2 Wizard',
     Shout_FlameBlade_spellscroll = '2 Druid Sorcerer',
@@ -683,4 +684,5 @@ function IsScrollSpell()
     | SpellId('Target_Wrack_spellscroll')
     | SpellId('Shout_AlustrielsMooncloak_spellscroll')
     | SpellId('Shout_ShadowOfMoil_spellscroll')
+    | SpellId('Target_FiendFlesh_spellscroll')
 end
