@@ -205,6 +205,7 @@ local SPELL_CLASS_MAP = {
     Projectile_VitriolicSphere_spellscroll = '4 Sorcerer Wizard',
     Wall_WallOfFire_spellscroll = '4 Druid Sorcerer Wizard',
     Shout_FireDance_spellscroll = '4 Bard Sorcerer Warlock Wizard',
+    Shout_ShadowOfMoil_spellscroll = '4 Warlock',
     Target_ConjureWoodlandBeings_spellscroll = '4 Druid Ranger',
     Target_DeathWard_spellscroll = '4 Cleric Paladin',
     Target_DominateBeast_spellscroll = '4 Druid Ranger Sorcerer',
@@ -681,4 +682,5 @@ function IsScrollSpell()
     | SpellId('Shout_SerpentTongue_spellscroll')
     | SpellId('Target_Wrack_spellscroll')
     | SpellId('Shout_AlustrielsMooncloak_spellscroll')
+    | SpellId('Shout_ShadowOfMoil_spellscroll')
 end

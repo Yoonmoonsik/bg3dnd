@@ -5106,6 +5106,21 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, SourceSpellDC(),false,DisadvantageOnHeightenedSpell())" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f018cac-11e5-4e89-afc4-c0cf802053fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHADOW_OF_MOIL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3dd2e59cgdd04g4cf0gad86g2c9a0b80ca1f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6dc100c9gcc40g4359g86acgf997e3b65619" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(2d8,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_ShadowOfMoil" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SHADOW_OF_MOIL" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Radiant,Resistant);GameplayObscurity(3)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ShadowOfMoil" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="6bf336ba-a5f6-46da-93a0-b07502d53487" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cb9821dc-2f33-4b0c-90b7-b52ee85d20cb" />

@@ -912,6 +912,15 @@ data "StatsFunctorContext" "OnAttacked"
 data "Conditions" "IsMeleeAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not SpellTypeIs(SpellType.Throw)"
 data "StatsFunctors" "DealDamage(SWAP,2d4,Necrotic,Magical,,0,,true,true)"
 
+new entry "ShadowOfMoil"
+type "PassiveData"
+data "DisplayName" "h3dd2e59cgdd04g4cf0gad86g2c9a0b80ca1f;1"
+data "Icon" "Spell_ShadowOfMoil"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnAttacked"
+data "Conditions" "(not DistanceToTargetGreaterThan(3)) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit)"
+data "StatsFunctors" "DealDamage(SWAP,2d8,Necrotic,Magical,,0,,true,true)"
+
 new entry "__SANGROMANCY__"
 type "PassiveData"
 

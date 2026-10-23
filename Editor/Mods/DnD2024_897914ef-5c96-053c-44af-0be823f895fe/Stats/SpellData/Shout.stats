@@ -4805,6 +4805,56 @@
         <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Target_Enervation_6" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f68dd71b-9c3e-4a47-901a-d81374d55b51" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShadowOfMoil" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="4" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SHADOW_OF_MOIL,100,10);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_ShadowOfMoil" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3dd2e59cgdd04g4cf0gad86g2c9a0b80ca1f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2cf537a0g4078g4dd5g88f8g30360f18c3fd" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(2d8,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SHADOW_OF_MOIL,100,10)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_MindSpike" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;62e74220-ba87-4fe7-aa99-9d12cab9d654,,;b1f3f86a-a1fc-43f6-8a2b-0110a9f99ead,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ec80b3cd-29fd-40d2-a41a-b703db1b6f8e" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="1a4b0423-005b-4577-b376-815a08809675" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e8546374-5461-4ed2-9c23-0cc28505d25c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShadowOfMoil_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f68dd71b-9c3e-4a47-901a-d81374d55b51" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ShadowOfMoil" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27efdce5-a893-46fa-96e6-d21ff867ccc6" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShadowOfMoil_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f68dd71b-9c3e-4a47-901a-d81374d55b51" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ShadowOfMoil" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="725b3161-6bf5-48be-9173-8ba985a26c8c" />
@@ -12849,6 +12899,14 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2ec056b9-178e-437d-bc5c-3b1566e3901a" />
         <field name="Name" type="NameTableFieldDefinition" value="FountOfMoonlight_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="10ba27a0-0f55-4f06-8145-15fa3e46d88f" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="50798be8-74d8-4c99-bdc0-7a8d025ccb33" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShadowOfMoil_spellscroll" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f68dd71b-9c3e-4a47-901a-d81374d55b51" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
       </fields>
     </stat_object>
