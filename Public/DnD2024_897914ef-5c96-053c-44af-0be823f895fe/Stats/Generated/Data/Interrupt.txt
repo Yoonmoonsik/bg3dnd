@@ -477,7 +477,7 @@ type "InterruptData"
 new entry "Interrupt_RecklessAttack"
 type "InterruptData"
 using "Interrupt_RecklessAttack"
-data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsUnarmedAttack() or IsMeleeWeaponAttack()) and not HasStatus('RECKLESS_ATTACK',context.Observer) and not RecklessAttack() and not AnyEntityIsItem();"
+data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsUnarmedAttack() or IsMeleeWeaponAttack()) and not HasStatus('RECKLESS_ATTACK',context.Observer) and not AnyEntityIsItem();"
 data "InterruptDefaultValue" "Enabled"
 
 new entry "Interrupt_Berserker_10_Retaliation"

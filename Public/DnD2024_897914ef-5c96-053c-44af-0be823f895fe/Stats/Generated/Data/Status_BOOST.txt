@@ -12879,12 +12879,6 @@ data "StatusType" "BOOST"
 using "SHADOW_MOUND_HARDCORE"
 data "Boosts" "Resistance(Piercing,Resistance);"
 
-new entry "SHA_TORTURETRIAL_DOUBLE_BARBARIAN"
-type "StatusData"
-data "StatusType" "BOOST"
-using "SHA_TORTURETRIAL_DOUBLE_BARBARIAN"
-data "Boosts" "IncreaseMaxHP(25);Ability(Strength,4);AiArchetypeOverride(melee,1);ActionResource(Rage,2,0);UnlockSpell(Shout_Rage,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);UnlockSpell(Target_RecklessAttack,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);ActionResource(RecklessAttack,1,0);"
-
 new entry "DAMAGE_SHIELD_NPC_RADIANT"
 type "StatusData"
 data "StatusType" "BOOST"

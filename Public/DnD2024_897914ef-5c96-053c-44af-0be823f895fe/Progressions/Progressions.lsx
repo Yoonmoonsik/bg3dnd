@@ -33,7 +33,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice12,1,0);"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Barbarian"/>
-                    <attribute id="PassivesAdded" type="LSString" value="DangerSense;RecklessAttack"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DangerSense;Barbarian_2_RecklessAttack"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
                     <attribute id="UUID" type="guid" value="89986e8a-09b1-4163-b1d0-ddb2332bf3c5"/>
@@ -130,7 +130,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice12,1,0);"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="Barbarian"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Barbarian_9_BrutalStrike"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Barbarian_9_BrutalStrike;BrutalStrike_ForcefulBlow;BrutalStrike_HamstringBlow"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
                     <attribute id="UUID" type="guid" value="2b2be55c-8c01-4bcd-84ff-b4c9ca23faf8"/>
@@ -368,6 +368,30 @@
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="c6417c1d-3d25-48f4-86ab-0a1d4d69be6f"/>
                     <attribute id="UUID" type="guid" value="4a90cd2e-bf5d-4453-bee7-b3157b6764fa"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="MuscleWizard"/>
+                    <attribute id="PassivesAdded" type="LSString" value="MuscleWizard_3_UnarguableWizardry;MuscleWizard_3_Cantrips"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="eaf4acf0-4799-4c8d-8a30-8c5a2aa990e7"/>
+                    <attribute id="UUID" type="guid" value="b896ca4f-71ef-4977-8859-a51072c5b03a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="MuscleWizard"/>
+                    <attribute id="PassivesAdded" type="LSString" value="MuscleWizard_6_Spells"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="eaf4acf0-4799-4c8d-8a30-8c5a2aa990e7"/>
+                    <attribute id="UUID" type="guid" value="63c47d69-5f59-4c48-bdda-1d32a831d5dc"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="MuscleWizard"/>
+                    <attribute id="PassivesAdded" type="LSString" value="MuscleWizard_10_MagicResistance"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="eaf4acf0-4799-4c8d-8a30-8c5a2aa990e7"/>
+                    <attribute id="UUID" type="guid" value="96fe86a8-ef4d-44f7-b960-44362784b819"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(HitPointDice08,1,0);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting)"/>
@@ -9400,30 +9424,6 @@
                     <attribute id="Selectors" type="LSString" value="SelectSpells(6fa0def5-0a99-4c43-bea1-215d54a21558,0,1,SanguineThiefSpells)"/>
                     <attribute id="TableUUID" type="guid" value="0d7fc95e-bc63-4f54-b839-307f5266a5b9"/>
                     <attribute id="UUID" type="guid" value="852a9218-b8d3-49ed-8929-6d7ae1dfbccd"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="MuscleWizard"/>
-                    <attribute id="PassivesAdded" type="LSString" value="MuscleWizard_3_UnarguableWizardry;MuscleWizard_3_Cantrips"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="eaf4acf0-4799-4c8d-8a30-8c5a2aa990e7"/>
-                    <attribute id="UUID" type="guid" value="b896ca4f-71ef-4977-8859-a51072c5b03a"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="6"/>
-                    <attribute id="Name" type="LSString" value="MuscleWizard"/>
-                    <attribute id="PassivesAdded" type="LSString" value="MuscleWizard_6_Spells"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="eaf4acf0-4799-4c8d-8a30-8c5a2aa990e7"/>
-                    <attribute id="UUID" type="guid" value="63c47d69-5f59-4c48-bdda-1d32a831d5dc"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="10"/>
-                    <attribute id="Name" type="LSString" value="MuscleWizard"/>
-                    <attribute id="PassivesAdded" type="LSString" value="MuscleWizard_10_MagicResistance"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="eaf4acf0-4799-4c8d-8a30-8c5a2aa990e7"/>
-                    <attribute id="UUID" type="guid" value="96fe86a8-ef4d-44f7-b960-44362784b819"/>
                 </node>
             </children>
         </node>

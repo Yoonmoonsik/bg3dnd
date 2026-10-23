@@ -28,23 +28,6 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="HasteActionPoint:1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f7b66287-82eb-412f-8346-198c913daa74" />
-        <field name="Name" type="NameTableFieldDefinition" value="Throw_RecklessAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ecaf4911-925e-45ed-bb54-db3339c11bd9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(1,Bludgeoning);TARGET:IF(HasStatus('MAG_PROJECTILE_SHOES_TECHNICAL', context.HitDescription.ThrownObject)):DealDamage(2d4, Psychic,Magical,,0,,true);TARGET:IF(HasStatus('MAG_THE_THORNS_WEAPON_BOND', context.HitDescription.ThrownObject)):ApplyStatus(MAG_THE_THORNS_AOE_DAMAGE_TECHNICAL, 100, 0);TARGET:IF(HasStatus('MAG_FIRE_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Fire,Magical,,0,,true);TARGET:IF(HasStatus('MAG_COLD_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Cold,Magical,,0,,true);TARGET:IF(HasStatus('MAG_LIGHTNING_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Lightning,Magical,,0,,true);TARGET:IF(HasStatus('MAG_THUNDER_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Thunder,Magical,,0,,true);TARGET:IF(HasStatus('MAG_ACID_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Acid,Magical,,0,,true);TARGET:IF(HasStatus('MAG_POISON_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Poison,Magical,,0,,true);TARGET:IF(HasStatus('MAG_NECROTIC_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Necrotic,Magical,,0,,true);TARGET:IF(HasStatus('MAG_FORCE_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Force,Magical,,0,,true);TARGET:IF(HasStatus('MAG_PSYCHIC_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Psychic,Magical,,0,,true);TARGET:IF((HasStatus('BURNING', context.HitDescription.ThrownObject) or HasStatus('FLAMING_SPHERE_AURA', context.HitDescription.ThrownObject))):ApplyStatus(SELF, BURNING,100,1);ApplyStatus(SELF,RECKLESS_ATTACK, 100, 1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="RestoreResource(SELF,RecklessAttack,1,0);" />
-        <field name="Template" type="StringTableFieldDefinition" value="c062a5c4-094e-469c-b283-0d7c919b2028" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_FrenziedThrow" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4106fdf0gc3b1gdbbcg41bagb5124ca360ca" version="1" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_FrenziedThrow" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RecklessAttack:1" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="b1befe57-ee3e-4126-8c9d-3b6cec7eb3f4,,;697d5963-13d6-4737-8de7-80b97dfe2216,,;f8baa5a0-4c8d-4cab-8fc1-04d3e2fba478,,;29f1f751-fd05-429f-9e67-4368c63623af,,;5b4905be-03fd-42fb-9652-c2d1c772f4d3,,;5d37434a-b746-4eb9-9bdb-487e9a21ff7f,,;e81ffae4-6be0-47fd-8502-48b9961004e9,,;,,;,," />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="adfdab5b-a3df-4415-86b5-01ff9d541564" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="7a553dd4-06bf-4092-b211-8de50aabed0f" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="49d6a0ad-f95e-4368-b304-edbda478964d" />

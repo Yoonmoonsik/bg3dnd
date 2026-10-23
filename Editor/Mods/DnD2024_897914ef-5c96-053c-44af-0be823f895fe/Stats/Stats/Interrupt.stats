@@ -695,7 +695,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="18a2b26e-a668-45d8-96e5-45e81880c032" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_RecklessAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8864b766-567d-4495-ac94-31ca55789160" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsUnarmedAttack() or IsMeleeWeaponAttack()) and not HasStatus('RECKLESS_ATTACK',context.Observer) and not RecklessAttack() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsUnarmedAttack() or IsMeleeWeaponAttack()) and not HasStatus('RECKLESS_ATTACK',context.Observer) and not AnyEntityIsItem();" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>

@@ -1659,14 +1659,11 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c7258cb8-e201-490a-b9ac-6f3a409f2f78" />
-        <field name="Name" type="NameTableFieldDefinition" value="RecklessAttack" />
+        <field name="Name" type="NameTableFieldDefinition" value="Barbarian_2_RecklessAttack" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h15f5369ag7498g0546gf49cg5dc8a3b696d3" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_RecklessAttack" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1002" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RecklessAttack,1,0);UnlockInterrupt(Interrupt_RecklessAttack);UnlockSpell(Target_RecklessAttack);UnlockSpell(Target_RecklessAttack_Unarmed);UnlockSpell(Throw_Throw_RecklessAttack);IF(RecklessAttack()):Advantage(AttackRoll);" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() or IsUnarmedAttack();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,FIRST_ATTACK_TURN,100,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_RecklessAttack);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0b8da32fgebbdg01f7g7f3fg0064d08eed5b" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -1700,6 +1697,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7c047839g4177g2aaega022g36a5cb07886a" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1007" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1710,7 +1708,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb025275gf26dg03dfg7370g4dddf3f0ffb9" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Rage" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1007" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasUseCosts('Rage');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,INSTINCTIVE_POUNCE,100,1)" />
@@ -1725,8 +1723,34 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5);DealDamage(1d10,MainMeleeWeaponDamageType)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_BrutalCritical" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1009" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(RecklessAttack()):DamageBonus(1d10);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and AttackRollAbility(Ability.Strength) and not IsReactionAttack(context.Source) and HasDamageEffectFlag(DamageFlags.Hit) and HasStatus('RECKLESS_ATTACK',context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):DealDamage(1d10,MainMeleeWeaponDamageType,,,0,,true,true);IF(IsRangedWeaponAttack()):DealDamage(1d10,MainRangedWeaponDamageType,,,0,,true,true);IF(IsThrowAttackRoll()):DealDamage(1d10,ThrownWeaponDamageType,,,0,,true,true);IF(IsMeleeUnarmedAttack() and not HasPassive('ElementalAttunement_Acid',context.Source) and not HasPassive('ElementalAttunement_Cold',context.Source) and not HasPassive('ElementalAttunement_Fire',context.Source) and not HasPassive('ElementalAttunement_Lightning',context.Source) and not HasPassive('ElementalAttunement_Thunder',context.Source) and not HasPassive('KiEmpoweredStrikes',context.Source) and not HasPassive('Fractured_3_FaceOfRage_Toggle_Force',context.Source)):DealDamage(1d10,Bludgeoning,,,0,,true,true);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Acid',context.Source)):DealDamage(1d10,Acid,,,0,,true,true);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Cold',context.Source)):DealDamage(1d10,Cold,,,0,,true,true);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Fire',context.Source)):DealDamage(1d10,Fire,,,0,,true,true);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Lightning',context.Source)):DealDamage(1d10,Lightning,,,0,,true,true);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Thunder',context.Source)):DealDamage(1d10,Thunder,,,0,,true,true);IF(IsMeleeUnarmedAttack() and (HasPassive('KiEmpoweredStrikes',context.Source) or HasPassive('Fractured_3_FaceOfRage_Toggle_Force',context.Source))):DealDamage(1d10,Force,,,0,,true,true);IF(HasPassive('BrutalStrike_ForcefulBlow',context.Source)):Force(4.5);IF(HasPassive('BrutalStrike_ForcefulBlow',context.Source)):ApplyStatus(SELF,RECKLESSATTACK_FORCEFULBLOW,100,1);IF(HasPassive('BrutalStrike_HamstringBlow',context.Source)):ApplyStatus(RECKLESSATTACK_HAMSTRINGBLOW,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dade0df9-5fd3-4afb-866f-c6c3f1568a30" />
+        <field name="Name" type="NameTableFieldDefinition" value="BrutalStrike_ForcefulBlow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3733cedfg3133g8148gbf58g8884adb0866f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hab5f59ebgf7a8g70bag4453g8c9195f80563" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="Barbarian_9_BrutalStrike" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="39c70671-dabc-4475-a943-1152ca1fed8e" />
+        <field name="Name" type="NameTableFieldDefinition" value="BrutalStrike_HamstringBlow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb8daacc1g2940gc6a6g60eegb90ee36186c9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0eff4b2bgeb61g4e62ga1ffg3b4f777317e1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_CripplingStrike" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="Barbarian_9_BrutalStrike" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
