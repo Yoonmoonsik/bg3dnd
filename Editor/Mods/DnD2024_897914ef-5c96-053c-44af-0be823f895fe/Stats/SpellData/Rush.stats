@@ -17,6 +17,37 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;AddFallDamageOnLand;CanAreaDamageEvade;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f75dfd14-2603-4b38-9b4d-d2c06380a182" />
+        <field name="Name" type="NameTableFieldDefinition" value="ForcefulBlow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a166eebb-8db2-49c2-b4d3-a72382f3f18f" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and HasStatus('FORCEFULBLOW_TARGET');" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,FORCEFULBLOW);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="HitRadius" type="FloatTableFieldDefinition" value="1" />
+        <field name="MovementSpeed" type="IntegerTableFieldDefinition" value="36000" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Mobile_DashAcrossDifficultTerrain" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1adbe27dg071agcfa2g9dcbg88d8be667a62" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h91a252b0g2adfg6ef9g2687g16705f45ad9a" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_SpringAttack" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;AddFallDamageOnLand;Temporary;IgnoreAoO;CannotTargetTerrain;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="82154992-95d0-4323-8e2e-35f06976736e" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="6137834a-4e00-466d-beef-3e9a515c8d60" />
+        <field name="OnlyHit1Target" type="BoolTableFieldDefinition" value="True" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF6B8E23" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e1327359-94ed-4036-94cf-db41df6b6ba2" />

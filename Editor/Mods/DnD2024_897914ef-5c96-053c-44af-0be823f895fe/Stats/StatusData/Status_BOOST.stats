@@ -7591,29 +7591,37 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="80d7a20e-e875-4aae-be5e-350b441f6638" />
-        <field name="Name" type="NameTableFieldDefinition" value="RECKLESSATTACK_FORCEFULBLOW" />
+        <field name="Name" type="NameTableFieldDefinition" value="FORCEFULBLOW" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2fea2840g0902gdf2bg7797g549c20c3d6e3" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd10eb1fgc367ga39egd371g5e071e079549" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd10eb1fgc367ga39egd371g5e071e079549" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_RecklessAttack" />
-        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="DODGE" enumeration_type_name="SoundVocalType" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="RECKLESSATTACK_FORCEFULBLOW" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FORCEFULBLOW" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange();ActionResource(Movement,4.5,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Rush_ForcefulBlow)" />
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="d787f666-8ee6-4185-9365-6aac9ebe76ae" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4853cee9-9cbb-481e-a0bb-3c85e2141c67" />
+        <field name="Name" type="NameTableFieldDefinition" value="FORCEFULBLOW_TARGET" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha3fa1938g7aebg4126g8840g9af44c7d5355" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="59acf56b-2f9f-4400-b7ef-13c682c6aba3" />
-        <field name="Name" type="NameTableFieldDefinition" value="RECKLESSATTACK_HAMSTRINGBLOW" />
+        <field name="Name" type="NameTableFieldDefinition" value="HAMSTRINGBLOW" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5311cf0g6f4fg9a03g45f9gf5ba41e2994c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcba666bcgdd43g5b9agef09gdcfd2c3d20ff" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_RecklessAttack" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StillAnimPriority" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="RECKLESSATTACK_HAMSTRINGBLOW" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HAMSTRINGBLOW" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,-4.5,0);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
