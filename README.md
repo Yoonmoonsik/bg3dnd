@@ -50,7 +50,7 @@ See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) and each class page f
 | Class | Subclasses and Notes |
 | --- | --- |
 | [Artificer](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Artificer) | Alchemist, Armorer, Artillerist, Battle Smith |
-| [Barbarian](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Barbarian) | Berserker, Fractured, Giant, Shadow Gnawer, Wild Magic, Wildheart, World Tree, Zealot |
+| [Barbarian](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Barbarian) | Berserker, Fractured, Giant, Muscle Wizard, Shadow Gnawer, Wild Magic, Wildheart, World Tree, Zealot |
 | [Bard](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Bard) | Choreography, Dance, Glamour, Lore, Moon, Spirits, Swords, Valor |
 | [Cleric](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Cleric) | Apocalypse, Astral, Death, Dragon, Forge, Grave, Nature, Shadow, Tempest, Knowledge, Life, Light, Mind, Trickery, Twilight, War |
 | [Druid](https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Druid) | Circle of Dragons, Dreams, Stars, Land, Moon, Sea, Spores, Unbroken |

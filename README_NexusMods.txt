@@ -39,7 +39,7 @@ See the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url] and each clas
 
 [list]
 [*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Artificer]Artificer[/url][/b] — Alchemist, Armorer, Artillerist, Battle Smith
-[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Barbarian]Barbarian[/url][/b] — Berserker, Fractured, Giant, Shadow Gnawer, Wild Magic, Wildheart, World Tree, Zealot
+[*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Barbarian]Barbarian[/url][/b] — Berserker, Fractured, Giant, Muscle Wizard, Shadow Gnawer, Wild Magic, Wildheart, World Tree, Zealot
 [*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Bard]Bard[/url][/b] — Choreography, Dance, Glamour, Lore, Moon, Spirits, Swords, Valor
 [*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Cleric]Cleric[/url][/b] — Apocalypse, Astral, Death, Dragon, Forge, Grave, Nature, Shadow, Tempest, Knowledge, Life, Light, Mind, Trickery, Twilight, War
 [*][b][url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Class-Druid]Druid[/url][/b] — Circle of Dragons, Dreams, Stars, Land, Moon, Sea, Spores, Unbroken
