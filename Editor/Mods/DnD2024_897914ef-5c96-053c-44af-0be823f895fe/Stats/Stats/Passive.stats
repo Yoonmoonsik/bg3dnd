@@ -12887,6 +12887,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43f02703-31aa-4337-b2c4-04a1a8aa21c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Druid_Wildshape_TempHP_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f567071d-409b-4501-bef2-37397f270369" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MAG_DRUID_WILDSHAPE_TEMP_HP') and (StatusHasStatusGroup(context.StatusId, 'SG_Polymorph_BeastShape') or StatusId('WILDSHAPE_STARRY_ARCHER_PLAYER') or StatusId('WILDSHAPE_STARRY_CHALICE_PLAYER') or StatusId('WILDSHAPE_STARRY_DRAGON_PLAYER') or StatusId('WILDSHAPE_SEA'))):ApplyStatus(MAG_DRUID_WILDSHAPE_TEMP_HP, 100, -1)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6b7bf055g23feg4c07g91e8g299ae0aa31c1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2e357082-3dca-4d3e-8ba1-d0f0c20c8b82" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Thunder_ReverberationOnRangeSpellDamage_Amulet_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d9622da3-948a-48c4-8fe0-092369603e77" />

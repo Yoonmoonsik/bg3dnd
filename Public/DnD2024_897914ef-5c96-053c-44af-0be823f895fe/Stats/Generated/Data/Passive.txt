@@ -9345,6 +9345,13 @@ type "PassiveData"
 using "MAG_Monk_Magic_Boots_Passive"
 data "Boosts" "IF(IsMeleeUnarmedAttack() and not HasPassive('ElementalAttunement_Acid',context.Source) and not HasPassive('ElementalAttunement_Cold',context.Source) and not HasPassive('ElementalAttunement_Fire',context.Source) and not HasPassive('ElementalAttunement_Lightning',context.Source) and not HasPassive('ElementalAttunement_Thunder',context.Source) and not HasPassive('KiEmpoweredStrikes',context.Source)):DamageBonus(WisdomModifier,Bludgeoning);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Acid',context.Source)):DamageBonus(WisdomModifier,Acid);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Cold',context.Source)):DamageBonus(WisdomModifier,Cold);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Fire',context.Source)):DamageBonus(WisdomModifier,Fire);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Lightning',context.Source)):DamageBonus(WisdomModifier,Lightning);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Thunder',context.Source)):DamageBonus(WisdomModifier,Thunder);IF(IsMeleeUnarmedAttack() and HasPassive('KiEmpoweredStrikes',context.Source)):DamageBonus(WisdomModifier,Force);"
 
+new entry "MAG_Druid_Wildshape_TempHP_Passive"
+type "PassiveData"
+using "MAG_Druid_Wildshape_TempHP_Passive"
+data "StatsFunctors" "IF(not HasStatus('MAG_DRUID_WILDSHAPE_TEMP_HP') and (StatusHasStatusGroup(context.StatusId, 'SG_Polymorph_BeastShape') or StatusId('WILDSHAPE_STARRY_ARCHER_PLAYER') or StatusId('WILDSHAPE_STARRY_CHALICE_PLAYER') or StatusId('WILDSHAPE_STARRY_DRAGON_PLAYER') or StatusId('WILDSHAPE_SEA'))):ApplyStatus(MAG_DRUID_WILDSHAPE_TEMP_HP, 100, -1)"
+data "Description" "h6b7bf055g23feg4c07g91e8g299ae0aa31c1;1"
+data "DescriptionParams" "2"
+
 new entry "MAG_Thunder_ReverberationOnRangeSpellDamage_Amulet_Passive"
 type "PassiveData"
 using "MAG_Thunder_ReverberationOnRangeSpellDamage_Amulet_Passive"

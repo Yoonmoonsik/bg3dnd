@@ -128,6 +128,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40a3797b-fa0e-44e1-9517-b4f2c4519f3c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_DRUID_WILDSHAPE_TEMP_HP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="34e52452-3253-4be4-baf4-d59ff84b5a7e" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h639fa2afg0b32g439bga502g8c5913c196c3" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAG_DRUID_WILDSHAPE_TEMP_HP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,2)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dff4f0b0-3a7a-4792-a31b-0c2743a5aaf3" />
         <field name="Name" type="NameTableFieldDefinition" value="BLEEDING" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b67ac2b9-1af6-4810-bb68-48f447df53fa" />
