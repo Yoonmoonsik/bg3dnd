@@ -4957,6 +4957,17 @@
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5686c662-8931-41a0-9e58-20a120f65f5b" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Blunderbuss_GiantSlayer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3b4f4c07-3150-44e0-a011-ab422ca9ea3a" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="b5a5df52-cc0e-4f8f-b961-86bb4dabca40" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="81764c3c-c7a9-49a7-b145-d31ffd5aebe1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="HeavyWeapon_Ranged;WeaponMasteryPush;Scatter;Blunderbuss_GiantSlayer_Passive;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0b214c69-ef36-4084-9358-38790d8d4c6d" />

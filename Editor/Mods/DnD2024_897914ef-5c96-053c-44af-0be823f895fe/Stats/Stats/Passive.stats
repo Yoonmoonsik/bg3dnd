@@ -12857,6 +12857,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b700d992-a88e-4b2a-9827-652bd3757eb5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blunderbuss_GiantSlayer_Passive" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17c9c8c5g18d6g4146g83f2g96f4534212ca" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h046a6dcdgb6acg40fbg8d20g7a00641e6ad3" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,MainRangedWeaponDamageType)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and IsWeaponAttack() and IsHit() and Character();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF(not TargetSizeEqualOrSmaller(Size.Medium)):DealDamage(2d6, MainRangedWeaponDamageType,,,0,,true,true)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6ff6ce71-e2f8-47ba-9a43-c4171f79c427" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_BG_Harold_HeavyCrossbow_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c662a264-85bd-48b3-bfe7-3a15a61a8ef4" />
