@@ -4487,8 +4487,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9f9efee4-0796-4e0b-9a6f-1d3b52e58986" />
         <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_3_GiantsMight" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h234cd41egb166g8eb3g6939g36498884c3ea" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hffd4abcage782g546dgaeacgc8fe055bd42e" version="2" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,MainWeaponDamageType)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hffd4abcage782g546dgaeacgc8fe055bd42e" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(GiantsMight),MainWeaponDamageType)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_EnlargeReduce" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5503" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
