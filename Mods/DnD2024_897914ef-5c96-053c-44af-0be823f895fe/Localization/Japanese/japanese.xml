@@ -3023,9 +3023,9 @@
   <content contentuid="h62929300g0a1ag65dcg0311gee7ce76b7030" version="1">ルーン・ナイト</content>
   <content contentuid="h0e929a83g6124gede3gd6d6g810f31fc91bf" version="1">ルーン・ナイトは、巨人から始まった古代の慣習であるルーンの超自然的な力を用いて、武勇を高める。ルーンの彫り手はいかなる巨人の家族の中にも見られ、あなたもおそらくそのような神秘的な職人から直接、あるいは間接的にその手法を学んだのだろう。巨人の作品が丘や洞窟に刻まれているのを見つけたのか、賢者からルーンについて学んだのか、あるいは巨人に直接会ったのかにかかわらず、あなたは巨人の技を研究し、装備を強化するために魔法のルーンを適用する方法を学んだ。</content>
   <content contentuid="h8810d94cg3f6ag7eebgb3e6g1e498faee90a" version="2">ルーンの彫り手</content>
-  <content contentuid="hea7ba403g54b1gb4c6g477cg081231fd6e91" version="2">魔法のルーンを使用して装備を強化できる。レベル3で「クラウド」、「ファイアー」、「フロスト」、「ストーン」のルーンを習得する。レベル7で「ヒル」と「ストーム」のルーンを習得する。
+  <content contentuid="hea7ba403g54b1gb4c6g477cg081231fd6e91" version="4">レベル3で好きなルーンを2つ習得し、レベル7とレベル10でさらに1つずつ習得する。「ヒル」と「ストーム」のルーンはレベル7から習得できる。
 
-ファイター・レベルに基づいてルーンを使用できる：レベル3で3回、レベル7で4回、レベル10で5回。小休憩を終えると消費したすべての使用回数を回復する。
+習得したルーンはそれぞれ1回ずつ発動でき、小休憩を終えるとその使用回数を回復する。
 
 ルーンがセーヴィング・スローを要求する場合、その難易度は8＋習熟ボーナス＋耐久力修正値となる。</content>
   <content contentuid="h234cd41egb166g8eb3g6939g36498884c3ea" version="2">巨人の力</content>
@@ -3035,9 +3035,9 @@
   <content contentuid="h4e152278g0424g0354g3000g79c86331ed68" version="2">偉大なる体躯</content>
   <content contentuid="hdbd971c9g92f8ga84bg8f1eg267b38cd8ffc" version="1">「巨人の力」特徴で与える追加ダメージが1d8に増加する。</content>
   <content contentuid="hb3ae9e73g81e6g120dg8548g27684eff651f" version="1">クラウド・ルーン発動</content>
-  <content contentuid="hfd1bcc8cg898egba47gb579gfd786513a783" version="1">攻撃してくる敵を&lt;LSTag Type="Status" Tooltip="CHARMED"&gt;魅了&lt;/LSTag&gt;状態にする。可能なら新しい目標を攻撃する</content>
+  <content contentuid="hfd1bcc8cg898egba47gb579gfd786513a783" version="2">自身または[1]以内の味方が攻撃の目標になったとき、ルーンを発動してその攻撃を無効にする。攻撃者は自身のターン終了時まで自分の側で戦い、可能なら別のクリーチャーを攻撃する。</content>
   <content contentuid="h3a4d5e28gabe3g3168ge119g17a00c4aa941" version="1">ファイアー・ルーン発動</content>
-  <content contentuid="h80302dc6gefa4ga829g206ag2011c0e0baca" version="2">武器を用いた攻撃でクリーチャーに命中させた際、ルーンを発動させて炎の拘束具を召喚できる：目標は追加で[1]を受け、1分（10ターン）間拘束状態になる。拘束具によって拘束されている間、目標は各ターンの開始時に[1]を受ける。目標は各ターンの終了時にセーヴィング・スローを繰り返すことができ、成功すれば拘束具を消滅させられる。</content>
+  <content contentuid="h80302dc6gefa4ga829g206ag2011c0e0baca" version="3">武器を用いた攻撃でクリーチャーに命中させた際、ルーンを発動させて炎の拘束具を召喚できる：目標は追加で[1]を受け、【筋力】セーヴィング・スローに失敗すると1分（10ターン）間拘束状態になる。拘束具によって拘束されている間、目標は各ターンの開始時に[1]を受ける。目標は各ターンの終了時にセーヴィング・スローを繰り返すことができ、成功すれば拘束具を消滅させられる。</content>
   <content contentuid="h06dee418g7023gcae2g1dd4g7246a7a21faf" version="1">ファイアー・ルーン</content>
   <content contentuid="h0738e060g6dbdgd884ga7eag9103f532652e" version="1">拘束具によって拘束されている間、目標は各ターンの開始時に[1]を受ける。目標は各ターンの終了時にセーヴィング・スローを繰り返すことができ、成功すれば拘束具を消滅させられる。</content>
   <content contentuid="h99fb6d15gdad4gf9ebgb1f5gfc423b34bdf4" version="1">フロスト・ルーン</content>
@@ -3045,7 +3045,7 @@
   <content contentuid="hd49600e9gaa19g5b9bgab38g6740603067eb" version="1">フロスト・ルーン発動</content>
   <content contentuid="h8eaac1bdg758fg66f4g7051gef7c1044f979" version="1">筋力または耐久力を使用するすべての能力値判定とセーヴィング・スローに+2のボーナスを得る。</content>
   <content contentuid="ha9c39a13gb33cg2948g41efg78e3649d79ac" version="1">ストーン・ルーン発動</content>
-  <content contentuid="hbeb30ce1gced1g1c41gd105g57e6ea60c80e" version="1">ストーン・ルーンを発動させて、クリーチャーを1分（10ターン）間催眠状態に追い込むことができる。</content>
+  <content contentuid="hbeb30ce1gced1g1c41gd105g57e6ea60c80e" version="2">ルーンを発動し、[1]以内のクリーチャー1体に【判断力】セーヴィング・スローを行わせる。失敗すると1分（10ターン）間魅了状態になり、移動速度が0になって行動不能状態になる。目標は各ターンの終了時にセーヴィング・スローを繰り返し、成功すると効果が終了する。</content>
   <content contentuid="hea790591g5d78g720ag188bgcefd45615ff0" version="1">ヒル・ルーン発動</content>
   <content contentuid="h5873afb5ga1a1gb7ddgaea4gaf5ab082ffd4" version="1">ボーナス・アクションとしてルーンを発動させ、1分（10ターン）間、殴打、刺突、および斬撃ダメージに対する抵抗を得ることができる。</content>
   <content contentuid="hea634b92g74a3g2000gc22bgfecaeff7c7dd" version="1">ストーム・ルーン発動</content>

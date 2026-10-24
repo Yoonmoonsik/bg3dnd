@@ -3081,9 +3081,9 @@ Once you cast the spell with this feature, you can’t do so in this way again u
   <content contentuid="h62929300g0a1ag65dcg0311gee7ce76b7030" version="1">Rune Knight</content>
   <content contentuid="h0e929a83g6124gede3gd6d6g810f31fc91bf" version="1">Rune Knights enhance their martial prowess using the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan. Whether you found the giant’s work carved into a hill or cave, learned of the runes from a sage, or met the giant in person, you studied the giant’s craft and learned how to apply magic runes to empower your equipment.</content>
   <content contentuid="h8810d94cg3f6ag7eebgb3e6g1e498faee90a" version="2">Rune Carver</content>
-  <content contentuid="hea7ba403g54b1gb4c6g477cg081231fd6e91" version="2">You can use magic runes to enhance your gear. At 3rd level, you learn the Cloud, Fire, Frost, and Stone runes. At 7th level, you learn the Hill and Storm runes.
+  <content contentuid="hea7ba403g54b1gb4c6g477cg081231fd6e91" version="4">At 3rd level, you learn 2 runes of your choice, and you learn 1 more rune at 7th and 10th level. The Hill and Storm runes require 7th level.
 
-You can use your runes a number of times based on your Fighter level: 3 uses at 3rd level, 4 uses at 7th level, and 5 uses at 10th level. You regain all expended uses when you finish a Short Rest.
+You can invoke each rune you know once, and you regain its use when you finish a Short Rest.
 
 If a rune requires a saving throw, its save DC equals 8 + your proficiency bonus + your Constitution modifier.</content>
   <content contentuid="h234cd41egb166g8eb3g6939g36498884c3ea" version="2">Giant’s Might</content>
@@ -3093,9 +3093,9 @@ If a rune requires a saving throw, its save DC equals 8 + your proficiency bonus
   <content contentuid="h4e152278g0424g0354g3000g79c86331ed68" version="2">Great Stature</content>
   <content contentuid="hdbd971c9g92f8ga84bg8f1eg267b38cd8ffc" version="1">The extra damage you deal with your Giant’s Might feature increases to 1d8.</content>
   <content contentuid="hb3ae9e73g81e6g120dg8548g27684eff651f" version="1">Invoke Cloud Rune</content>
-  <content contentuid="hfd1bcc8cg898egba47gb579gfd786513a783" version="1">&lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charm&lt;/LSTag&gt; an enemy attacking you. They will attack a new target if possible.</content>
+  <content contentuid="hfd1bcc8cg898egba47gb579gfd786513a783" version="2">When you or an ally within [1] is targeted by an attack, invoke the rune to cancel the attack. The attacker fights on your side until the end of its turn and attacks a different creature if possible.</content>
   <content contentuid="h3a4d5e28gabe3g3168ge119g17a00c4aa941" version="1">Invoke Fire Rune</content>
-  <content contentuid="h80302dc6gefa4ga829g206ag2011c0e0baca" version="2">When you hit a creature with an attack using a weapon, you can invoke the rune to summon fiery shackles: the target takes an extra [1], and it be restrained for 1 minute. While restrained by the shackles, the target takes [1] at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, banishing the shackles on a success.</content>
+  <content contentuid="h80302dc6gefa4ga829g206ag2011c0e0baca" version="3">When you hit a creature with an attack using a weapon, you can invoke the rune to summon fiery shackles: the target takes an extra [1], and it must succeed on a Strength saving throw or be restrained for 1 minute. While restrained by the shackles, the target takes [1] at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, banishing the shackles on a success.</content>
   <content contentuid="h06dee418g7023gcae2g1dd4g7246a7a21faf" version="1">Fire Rune</content>
   <content contentuid="h0738e060g6dbdgd884ga7eag9103f532652e" version="1">While restrained by the shackles, the target takes [1] at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, banishing the shackles on a success.</content>
   <content contentuid="h99fb6d15gdad4gf9ebgb1f5gfc423b34bdf4" version="1">Frost Rune</content>
@@ -3103,7 +3103,7 @@ If a rune requires a saving throw, its save DC equals 8 + your proficiency bonus
   <content contentuid="hd49600e9gaa19g5b9bgab38g6740603067eb" version="1">Invoke Frost Rune</content>
   <content contentuid="h8eaac1bdg758fg66f4g7051gef7c1044f979" version="1">You gain a +2 bonus to all ability checks and saving throws that use Strength or Constitution.</content>
   <content contentuid="ha9c39a13gb33cg2948g41efg78e3649d79ac" version="1">Invoke Stone Rune</content>
-  <content contentuid="hbeb30ce1gced1g1c41gd105g57e6ea60c80e" version="1">You can invoke the Stone Rune to force a creature into a hypnotic state for 1 minute.</content>
+  <content contentuid="hbeb30ce1gced1g1c41gd105g57e6ea60c80e" version="2">Invoke the rune to force a creature within [1] to make a Wisdom saving throw. On a failure, it is charmed for 1 minute: its speed is 0 and it is incapacitated. It repeats the saving throw at the end of each of its turns, ending the effect on a success.</content>
   <content contentuid="hea790591g5d78g720ag188bgcefd45615ff0" version="1">Invoke Hill Rune</content>
   <content contentuid="h5873afb5ga1a1gb7ddgaea4gaf5ab082ffd4" version="1">You can invoke the rune as a bonus action, gaining resistance to bludgeoning, piercing, and slashing damage for 1 minute.</content>
   <content contentuid="hea634b92g74a3g2000gc22bgfecaeff7c7dd" version="1">Invoke Storm Rune</content>
@@ -7359,4 +7359,29 @@ Additionally, if someone questions your legitimate magical prowess, you can take
   <content contentuid="h1adbe27dg071agcfa2g9dcbg88d8be667a62" version="1">Forceful Blow: Follow Through</content>
   <content contentuid="h91a252b0g2adfg6ef9g2687g16705f45ad9a" version="1">Move straight toward a creature with &lt;LSTag Type="Status" Tooltip="FORCEFULBLOW_TARGET"&gt;Forceful Blow: Knocked Back&lt;/LSTag&gt; without provoking Opportunity Attacks.</content>
   <content contentuid="ha3fa1938g7aebg4126g8840g9af44c7d5355" version="1">Forceful Blow: Knocked Back</content>
+  <content contentuid="h2a99bd0ega911ge24eg0b24gab6f8af8bc96" version="1">Fire Rune</content>
+  <content contentuid="ha17ac2f5g43c2ge769gbdf1g03fabaa7250e" version="1">Cloud Rune</content>
+  <content contentuid="h43a1cd77g3665g77f6gba4eg93c115633110" version="1">Frost Rune</content>
+  <content contentuid="hc48e8a6ege19ag1f21g42cbg00d93cf6c3cb" version="1">Stone Rune</content>
+  <content contentuid="h8dba15a1g192ege646ge38fg51559f39db73" version="1">Hill Rune</content>
+  <content contentuid="hf2bc71f5g20f7gff54gdbd1g15bb93655bb9" version="1">Storm Rune</content>
+  <content contentuid="h8731bf04g0d45g59b5g2a17ga0d5dfba3123" version="1">Fire Rune</content>
+  <content contentuid="hee38303dg6245g8ae7gacaegab26a9db9d7e" version="1">Cloud Rune</content>
+  <content contentuid="hdf2cc9f9g2f95gbb2dg00ecg182d31e2e3a8" version="1">Frost Rune</content>
+  <content contentuid="hf38075b4gdadag2724gb8e9g2335567b5d4b" version="1">Stone Rune</content>
+  <content contentuid="h17b55b62gb6dfgbdceg5ce9g79540b0ef163" version="1">Hill Rune</content>
+  <content contentuid="h4d862e71g8cd8ge82ag7facga5208adc310a" version="1">Storm Rune</content>
+  <content contentuid="heb50c7aagc059g4bf0g8600g2cc3b60a235d" version="1">Your proficiency bonus is doubled for any ability check you make that uses your proficiency. In addition, you can use Invoke Fire Rune. Once you invoke this rune, you can't do so again until you finish a short or long rest.</content>
+  <content contentuid="h3d056599gaebeg4ac7gb8f9ge1584bfb027f" version="1">You have Advantage on Sleight of Hand and Deception checks. In addition, you can use Invoke Cloud Rune as a reaction. Once you invoke this rune, you can't do so again until you finish a short or long rest.</content>
+  <content contentuid="h2cf78a55g8d4eg4dd5ga1eeg5eed063a9812" version="1">You have Advantage on Animal Handling and Intimidation checks. In addition, you can use &lt;LSTag Type="Spell" Tooltip="Shout_FrostRune"&gt;Invoke Frost Rune&lt;/LSTag&gt; as a bonus action. Once you invoke this rune, you can't do so again until you finish a short or long rest.</content>
+  <content contentuid="hda71fc77g847bg4f82g8819gb93682d42985" version="1">You have Advantage on Insight checks, and you have Darkvision out to a range of [1]. In addition, you can use &lt;LSTag Type="Spell" Tooltip="Target_StoneRune"&gt;Invoke Stone Rune&lt;/LSTag&gt;. Once you invoke this rune, you can't do so again until you finish a short or long rest.</content>
+  <content contentuid="h7115a75ag61a5g4eddg81b5gea2c0bec6752" version="1">You have Advantage on saving throws against being &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt;, and you have Resistance to Poison damage. In addition, you can use &lt;LSTag Type="Spell" Tooltip="Shout_HillRune"&gt;Invoke Hill Rune&lt;/LSTag&gt; as a bonus action. Once you invoke this rune, you can't do so again until you finish a short or long rest.</content>
+  <content contentuid="hd0af8fbcg0351g416bga89cg39b41770162f" version="1">You have Advantage on Arcana checks, and you can't be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;. In addition, you can use &lt;LSTag Type="Spell" Tooltip="Shout_StormRune"&gt;Invoke Storm Rune&lt;/LSTag&gt; as a bonus action. Once you invoke this rune, you can't do so again until you finish a short or long rest.</content>
+  <content contentuid="h2bdda436g6487g483agb820g9b724ac04957" version="1">Cloud Rune: Misdirection</content>
+  <content contentuid="hc7ffab06gf12dg4b42gb2abg851618c19c6a" version="1">The attacker fights on your side until the end of its turn and attacks a different creature if possible.</content>
+  <content contentuid="h489d465dga60cg4868g96e3g620ac738f4ee" version="1">Misdirected</content>
+  <content contentuid="h06a461c5gc043g4261g8c06g9d6d1f04bfdf" version="1">This creature fights on the side of the creature that invoked the Cloud Rune.</content>
+  <content contentuid="h52497db7gb532gddfeg0bf4g71f7c84fdda2" version="1">Giant's Might</content>
+  <content contentuid="hc0ecfdf2gd898g43e3g820fgd793555c69a9" version="1">Stone Rune: Dreamy Stupor</content>
+  <content contentuid="h95488580gaa93g469cg9814g744c990dc5c2" version="1">Charmed. Speed is 0 and can't take actions, bonus actions, or reactions. Repeats the Wisdom saving throw at the end of each turn, ending the effect on a success.</content>
 </contentList>

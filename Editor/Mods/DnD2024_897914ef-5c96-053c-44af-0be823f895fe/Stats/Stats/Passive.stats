@@ -4427,11 +4427,59 @@
         <field name="UUID" type="IdTableFieldDefinition" value="56743894-5c42-4660-9a94-9cbeb8667104" />
         <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_3_RuneCarver" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8810d94cg3f6ag7eebgb3e6g1e498faee90a" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hea7ba403g54b1gb4c6g477cg081231fd6e91" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hea7ba403g54b1gb4c6g477cg081231fd6e91" version="4" />
         <field name="Icon" type="StringTableFieldDefinition" value="RuneKnight_3_RuneCarver" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5503" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_CloudRune);UnlockInterrupt(Interrupt_FireRune);UnlockSpell(Shout_FrostRune);UnlockSpell(Target_StoneRune);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b01f82c7-4f61-4416-95e2-11434f908a72" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_3_CloudRune" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha17ac2f5g43c2ge769gbdf1g03fabaa7250e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3d056599gaebeg4ac7gb8f9ge1584bfb027f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_GasCloud" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill,SleightOfHand);Advantage(Skill,Deception);UnlockInterrupt(Interrupt_CloudRune);ActionResource(RuneKnight_Cloud,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b09852c7-5a19-4566-a311-ca59acdbc122" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_3_FireRune" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a99bd0ega911ge24eg0b24gab6f8af8bc96" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heb50c7aagc059g4bf0g8600g2cc3b60a235d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasProficiencyBonus(context.CheckedAbility,context.CheckedSkill,context.Source)):RollBonus(SkillCheck,ProficiencyBonus);IF(HasProficiencyBonus(context.CheckedAbility,context.CheckedSkill,context.Source)):RollBonus(RawAbility,ProficiencyBonus);UnlockInterrupt(Interrupt_FireRune);ActionResource(RuneKnight_Fire,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="81d1a7ba-16f5-4bfc-b115-beec066bdfa9" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_3_FrostRune" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h43a1cd77g3665g77f6gba4eg93c115633110" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2cf78a55g8d4eg4dd5ga1eeg5eed063a9812" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill,AnimalHandling);Advantage(Skill,Intimidation);UnlockSpell(Shout_FrostRune);ActionResource(RuneKnight_Frost,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="054ddc1e-d209-4061-a970-a96164a107ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_3_StoneRune" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc48e8a6ege19ag1f21g42cbg00d93cf6c3cb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hda71fc77g847bg4f82g8819gb93682d42985" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(24)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="StoneThrow" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill,Insight);DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7);UnlockSpell(Target_StoneRune);ActionResource(RuneKnight_Stone,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4443,8 +4491,35 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,MainWeaponDamageType)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_EnlargeReduce" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5503" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_GiantsMight);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(IsWeaponAttack() or IsUnarmedAttack()) and not IsReactionAttack(context.Source) and HasDamageEffectFlag(DamageFlags.Hit) and HasStatus('GIANTS_MIGHT',context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsMeleeWeaponAttack()):DealDamage(LevelMapValue(GiantsMight),MainMeleeWeaponDamageType,,,0,,true,true);IF(IsRangedWeaponAttack()):DealDamage(LevelMapValue(GiantsMight),MainRangedWeaponDamageType,,,0,,true,true);IF(IsThrowAttackRoll()):DealDamage(LevelMapValue(GiantsMight),ThrownWeaponDamageType,,,0,,true,true);IF(IsMeleeUnarmedAttack() and not HasPassive('ElementalAttunement_Acid',context.Source) and not HasPassive('ElementalAttunement_Cold',context.Source) and not HasPassive('ElementalAttunement_Fire',context.Source) and not HasPassive('ElementalAttunement_Lightning',context.Source) and not HasPassive('ElementalAttunement_Thunder',context.Source) and not HasPassive('KiEmpoweredStrikes',context.Source) and not HasPassive('Fractured_3_FaceOfRage_Toggle_Force',context.Source)):DealDamage(LevelMapValue(GiantsMight),Bludgeoning,,,0,,true,true);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Acid',context.Source)):DealDamage(LevelMapValue(GiantsMight),Acid,,,0,,true,true);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Cold',context.Source)):DealDamage(LevelMapValue(GiantsMight),Cold,,,0,,true,true);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Fire',context.Source)):DealDamage(LevelMapValue(GiantsMight),Fire,,,0,,true,true);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Lightning',context.Source)):DealDamage(LevelMapValue(GiantsMight),Lightning,,,0,,true,true);IF(IsMeleeUnarmedAttack() and HasPassive('ElementalAttunement_Thunder',context.Source)):DealDamage(LevelMapValue(GiantsMight),Thunder,,,0,,true,true);IF(IsMeleeUnarmedAttack() and (HasPassive('KiEmpoweredStrikes',context.Source) or HasPassive('Fractured_3_FaceOfRage_Toggle_Force',context.Source))):DealDamage(LevelMapValue(GiantsMight),Force,,,0,,true,true);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1c5d0db-3e61-471b-9fd8-59fe73fab9eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_7_HillRune" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dba15a1g192ege646ge38fg51559f39db73" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7115a75ag61a5g4eddg81b5gea2c0bec6752" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Stoneskin" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5507" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Poison, Resistant);Tag(POISONED_ADV);UnlockSpell(Shout_HillRune);ActionResource(RuneKnight_Hill,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="36f9b4dc-8b96-4119-8044-681af3a33e7c" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_7_StormRune" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2bc71f5g20f7gff54gdbd1g15bb93655bb9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd0af8fbcg0351g416bga89cg39b41770162f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5507" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill,Arcana);StatusImmunity(SURPRISED);UnlockSpell(Shout_StormRune);ActionResource(RuneKnight_Storm,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4457,7 +4532,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Shield" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5507" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_HillRune);UnlockSpell(Shout_StormRune);UnlockInterrupt(Interrupt_RunicShield);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_RunicShield);ActionResource(RunicShield,1,0);IF(AbilityGreaterThan('Constitution',13,context.Source)):ActionResource(RunicShield,1,0);IF(AbilityGreaterThan('Constitution',15,context.Source)):ActionResource(RunicShield,1,0);IF(AbilityGreaterThan('Constitution',17,context.Source)):ActionResource(RunicShield,1,0);IF(AbilityGreaterThan('Constitution',19,context.Source)):ActionResource(RunicShield,1,0);IF(AbilityGreaterThan('Constitution',21,context.Source)):ActionResource(RunicShield,1,0);IF(AbilityGreaterThan('Constitution',23,context.Source)):ActionResource(RunicShield,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

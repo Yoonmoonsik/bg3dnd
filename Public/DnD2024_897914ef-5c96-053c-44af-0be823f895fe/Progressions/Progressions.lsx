@@ -3127,25 +3127,26 @@
                     <attribute id="UUID" type="guid" value="80c83d90-529b-45ad-ad7b-0b6ff1cc14f0"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(Rune,3,0)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(GiantsMight,2,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="RuneKnight"/>
                     <attribute id="PassivesAdded" type="LSString" value="RuneKnight_3_RuneCarver;RuneKnight_3_GiantsMight"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(5af8047d-ced8-4558-8d38-3b91188f2e70,2)"/>
                     <attribute id="TableUUID" type="guid" value="b8a2b9b8-8c2e-47bd-aae9-35e191ec1162"/>
                     <attribute id="UUID" type="guid" value="b8a2b9b8-8c2e-47bd-aae9-35e191ec1162"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(Rune,1,0);ActionResource(RunicShield,3,0)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="RuneKnight"/>
                     <attribute id="PassivesAdded" type="LSString" value="RuneKnight_7_RunicShield"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(22922e4f-4e69-4287-a52e-1285d5c04434,1)"/>
                     <attribute id="TableUUID" type="guid" value="b8a2b9b8-8c2e-47bd-aae9-35e191ec1162"/>
                     <attribute id="UUID" type="guid" value="f59db700-bb5d-4abf-a6e2-a733a8318fb7"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(RunicShield,1,0)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(GiantsMight,1,0)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="RuneKnight"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -3153,11 +3154,11 @@
                     <attribute id="UUID" type="guid" value="38a6372c-1913-4d51-8350-f76f3e2b7dc0"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(Rune,1,0)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="RuneKnight"/>
                     <attribute id="PassivesAdded" type="LSString" value="RuneKnight_10_GreatStature"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(22922e4f-4e69-4287-a52e-1285d5c04434,1)"/>
                     <attribute id="TableUUID" type="guid" value="b8a2b9b8-8c2e-47bd-aae9-35e191ec1162"/>
                     <attribute id="UUID" type="guid" value="56d1febc-0e13-483a-b274-c36505c925ce"/>
                 </node>
@@ -9424,6 +9425,14 @@
                     <attribute id="Selectors" type="LSString" value="SelectSpells(6fa0def5-0a99-4c43-bea1-215d54a21558,0,1,SanguineThiefSpells)"/>
                     <attribute id="TableUUID" type="guid" value="0d7fc95e-bc63-4f54-b839-307f5266a5b9"/>
                     <attribute id="UUID" type="guid" value="852a9218-b8d3-49ed-8929-6d7ae1dfbccd"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(GiantsMight,1,0)"/>
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="RuneKnight"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="b8a2b9b8-8c2e-47bd-aae9-35e191ec1162"/>
+                    <attribute id="UUID" type="guid" value="5f350c3b-d4d5-4087-874f-9b3af8d2687e"/>
                 </node>
             </children>
         </node>

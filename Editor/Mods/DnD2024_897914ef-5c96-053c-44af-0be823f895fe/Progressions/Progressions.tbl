@@ -4031,7 +4031,19 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="RuneKnight_3_RuneCarver;RuneKnight_3_GiantsMight" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Rune,3,0)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(5af8047d-ced8-4558-8d38-3b91188f2e70,2)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(GiantsMight,2,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1076" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5f350c3b-d4d5-4087-874f-9b3af8d2687e" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="b8a2b9b8-8c2e-47bd-aae9-35e191ec1162" />
+        <field name="FSName" type="StringTableFieldDefinition" value="RuneKnight" />
+        <field name="Level" type="ByteTableFieldDefinition" value="5" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(GiantsMight,1,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4043,7 +4055,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="RuneKnight_7_RunicShield" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Rune,1,0);ActionResource(RunicShield,3,0)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(22922e4f-4e69-4287-a52e-1285d5c04434,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4054,7 +4066,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="RuneKnight" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RunicShield,1,0)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(GiantsMight,1,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4066,7 +4078,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="10" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="RuneKnight_10_GreatStature" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Rune,1,0)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(22922e4f-4e69-4287-a52e-1285d5c04434,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">

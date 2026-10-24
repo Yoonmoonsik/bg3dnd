@@ -18229,14 +18229,15 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7395f148-756f-4f7e-a52a-06c97fd9756a" />
         <field name="Name" type="NameTableFieldDefinition" value="StoneRune" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC(), AdvantageOnCharmed())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(HYPNOTIC_PATTERN,100,10);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC(10,context.Source,Ability.Constitution), AdvantageOnCharmed())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(STONE_RUNE,100,10);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL_CHARM, 100, 0)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_HypnoticPattern" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha9c39a13gb33cg2948g41efg78e3649d79ac" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbeb30ce1gced1g1c41gd105g57e6ea60c80e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbeb30ce1gced1g1c41gd105g57e6ea60c80e" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HYPNOTIC_PATTERN,100,10)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(STONE_RUNE,100,10);" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Control_Gen_L1to3_01" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Control_Gen_L1to3_01_Loop" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Control_HypnoticPattern_L4to5" />
@@ -18244,13 +18245,24 @@
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Rune:1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;RuneKnight_Stone:1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;54ae8856-36b2-4f70-8bd3-c2a760f93fd5,,;8ce3e582-e8bb-4d2f-9c5c-46c70c9b87c0,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2fa6b127-6f8a-4150-8be6-6f62b7a85911" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b4221f40-bcc3-4703-acc5-1afaee284839" />
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="eed7578c-35c5-4531-9315-a83239028487" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="262a174e-a02b-4c3a-86e8-fb408116639d" />
+        <field name="Name" type="NameTableFieldDefinition" value="CloudRune" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc51589-710e-4a27-8fef-0e2be490ed1f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CLOUD_RUNE,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_GasCloud" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2bdda436g6487g483agb820g9b724ac04957" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc7ffab06gf12dg4b42gb2abg851618c19c6a" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

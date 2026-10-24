@@ -73,5 +73,18 @@
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="742349ae-ccb5-4c57-942e-b54cd4322742" />
+        <field name="Name" type="NameTableFieldDefinition" value="STONE_RUNE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f14ae208-8964-4359-bf32-4fd78c7158b6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc0ecfdf2gd898g43e3g820fgd793555c69a9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h95488580gaa93g469cg9814g744c990dc5c2" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(SavingThrow(Ability.Wisdom, SourceSpellDC(10,context.Source,Ability.Constitution),AdvantageOnCharmed(),DisadvantageOnHeightenedSpell())):RemoveStatus(STONE_RUNE)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

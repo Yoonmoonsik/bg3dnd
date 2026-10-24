@@ -1150,14 +1150,15 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8a833d0e-c23c-4ca5-b3ff-f3ffa716cce0" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CloudRune" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3ae9e73g81e6g120dg8548g27684eff651f" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd1bcc8cg898egba47gb579gfd786513a783" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_InstinctiveCharm" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd1bcc8cg898egba47gb579gfd786513a783" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_GasCloud" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="InterruptContext" version="1" />
-        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and HasStringInSpellRoll('Attack') and not AnyEntityIsItem() and not HasStatus('INSTINCTIVE_CHARM_UNTARGETABLE',context.Source,context.Observer)" />
-        <field name="Properties" type="StringTableFieldDefinition" value="Counterspell();UseSpell(OBSERVER_SOURCE,Target_InstinctiveCharm,true,true,true);IF(HasAnyExtraAttack(context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_Q,100,1);IF(not HasAnyExtraAttack(context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;Rune:1;" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and (Self(context.Target,context.Observer) or Ally(context.Target,context.Observer)) and HasStringInSpellRoll('Attack') and not AnyEntityIsItem() and not HasStatus('INSTINCTIVE_CHARM_UNTARGETABLE',context.Source,context.Observer) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="Counterspell();UseSpell(OBSERVER_SOURCE,Target_CloudRune,true,true,true);IF(HasAnyExtraAttack(context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_Q,100,1);IF(not HasAnyExtraAttack(context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RuneKnight_Cloud:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
@@ -1168,15 +1169,17 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a85957ea-e17d-4689-bb12-397f35bc121c" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FireRune" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a4d5e28gabe3g3168ge119g17a00c4aa941" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80302dc6gefa4ga829g206ag2011c0e0baca" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80302dc6gefa4ga829g206ag2011c0e0baca" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SearingSmite" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire,Magical,,0,,true,true);ApplyStatus(OBSERVER_TARGET,FIRE_RUNE,100,10);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="Rune:1;" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire,Magical,,0,,true,true);" />
+        <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC(10,context.Observer,Ability.Constitution), AdvantageOnRestrained())" />
+        <field name="Success" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,FIRE_RUNE,100,10);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="RuneKnight_Fire:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
@@ -1221,7 +1224,7 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasDisadvantage();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasDisadvantage() and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Target);" />
         <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0)" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RunicShield:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
