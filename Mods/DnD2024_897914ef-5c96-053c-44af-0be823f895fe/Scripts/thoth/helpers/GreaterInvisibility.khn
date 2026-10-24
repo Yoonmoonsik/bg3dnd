@@ -1,0 +1,8 @@
+function GreaterInvisibilityCheck_InvisSpellOrRoll()
+    local invisSpell = IsStatusEvent(StatusEvent.OnSpellCast) and HasSpellFlag(SpellFlags.Invisible)
+    if (invisSpell.Result) then
+        return ConditionResult(false)
+    end
+    local skillCheck = SkillCheck(Skill.Stealth, 11, false, false, context.Target, context.Target)
+    return ConditionResult(not skillCheck.Result)
+end
