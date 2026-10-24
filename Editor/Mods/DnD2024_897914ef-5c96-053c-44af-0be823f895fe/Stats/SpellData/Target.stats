@@ -10426,6 +10426,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BODY_WARPING_OF_GORGOROTH_TARGET,100,-1);ApplyStatus(SELF,BODY_WARPING_OF_GORGOROTH,100,-1);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('HUMANOID');" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('MINDFLAYER') and not Tagged('WYLL_DEVIL');" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_BodyWarpingOfGorgoroth" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h68cc0961gb6ceg3e67g1ae5g31162e46016b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2ee464d4g6606g2b85g7008gfc6f4aaa15b0" version="1" />
@@ -21934,6 +21935,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CHANGELING_SHAPESHIFTER_TARGET,100,-1);ApplyStatus(SELF,CHANGELING_SHAPESHIFTER,100,-1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('HUMANOID');" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('MINDFLAYER') and not Tagged('WYLL_DEVIL');" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Shapechanger" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h45db1baag1a66g5173g7046g451d6c939820" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haddbec72gf9c4g510bg8c8cgba4bcfd87301" version="1" />

@@ -12699,6 +12699,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ShapeShifterDismiss" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(CHANGELING_SHAPESHIFTER);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('MINDFLAYER') and not Tagged('WYLL_DEVIL');" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Druid_WildShape_Dismiss" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h91db12d5g8008g270dg0954g09a1733b596c" version="1" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Tadpole_AberrantShapeDismiss_L1to3" />

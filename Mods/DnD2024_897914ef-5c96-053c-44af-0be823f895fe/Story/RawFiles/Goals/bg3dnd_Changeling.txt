@@ -18,6 +18,10 @@ Transform(_Player, _Duplicity, DisguiseKeepName_c7c3381e-b901-416e-a0c4-bc745e1f
 
 IF
 StatusRemoved(_Player, "CHANGELING_SHAPESHIFTER", _, _)
+AND
+IsTagged(_Player, (TAG)MINDFLAYER_8ee4d870-3f6b-466c-968f-ab0ba2be6229, 0)
+AND
+IsTagged(_Player, (TAG)WYLL_DEVIL_5e844f0e-d822-4210-a28e-6af149a7bd4b, 0)
 THEN
 RemoveTransforms(_Player);
 
@@ -27,6 +31,10 @@ AND
 DB_Players(_Player)
 AND
 HasAppliedStatus(_Player,"CHANGELING_SHAPESHIFTER",1)
+AND
+IsTagged(_Player, (TAG)MINDFLAYER_8ee4d870-3f6b-466c-968f-ab0ba2be6229, 0)
+AND
+IsTagged(_Player, (TAG)WYLL_DEVIL_5e844f0e-d822-4210-a28e-6af149a7bd4b, 0)
 THEN
 RemoveStatus(_Player,"CHANGELING_SHAPESHIFTER");
 RemoveTransforms(_Player);
