@@ -104,7 +104,7 @@ Acid Splash, Blade Ward, Blood Bolt, Booming Blade, Bursting Sinew, Finger Guns,
 
 [size=4][b]Equipment[/b][/size]
 
-Argument Solver, Blazer of Benevolence, Cap of Curing, Chain of Liberation, Charge-Bound Warhammer, Corrosive Flail, Dragon's Grasp, Enforcer Club, Enforcer Helmet, Enforcer Shield, Gloves of Heroism, Hellrider's Pride, Helmet of Smiting, Holy Avenger, Hoppy, Hunting Shortbow, Moon Sickle, Musket, Musket +1, Musket +2, Pistol, Pistol +1, Pistol +2, Rupturing Blade, Spellthief, The Baneful, The Oak Father's Embrace, The Sacred Star, True Name, Voltedge, Whip, Whip +1, Whip +2, Xyanyde.
+Argument Solver, Blazer of Benevolence, Blunderbuss, Blunderbuss +1, Blunderbuss +2, Cap of Curing, Chain of Liberation, Charge-Bound Warhammer, Corrosive Flail, Dragon's Grasp, Enforcer Club, Enforcer Helmet, Enforcer Shield, Gloves of Heroism, Hellrider's Pride, Helmet of Smiting, Holy Avenger, Hoppy, Hunting Shortbow, Lucent Destroyer, Moon Sickle, Musket, Musket +1, Musket +2, Pistol, Pistol +1, Pistol +2, Rupturing Blade, Spellthief, The Baneful, The Oak Father's Embrace, The Sacred Star, Thunderbuss, True Name, Voltedge, Whip, Whip +1, Whip +2, Xyanyde.
 
 [size=4][b]Spell Scrolls[/b][/size]
 
@@ -138,6 +138,7 @@ See the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url] for full attr
 [*][b]Turkish Translation:[/b] [url=https://github.com/batuhansekban]batuhansekban[/url]
 [*][b]Ukrainian Translation:[/b] [url=https://discord.gg/VxSvMqQ6sS]TableTop BRAMA community[/url]
 [*][b]Item Models:[/b] [url=https://mod.io/g/baldursgate3/u/skirbie]skirbie[/url] ([url=https://mod.io/g/baldursgate3/m/viper-carbine-steampunk-rifle-gun]Viper Carbine Steampunk Rifle Gun[/url], [url=https://mod.io/g/baldursgate3/m/hand-cannon-gunslinger-weapon]Hand Cannon Gunslinger Weapon[/url])
+[*][b]Item Models:[/b] [url=https://sketchfab.com/dakotakimble]Dak Attack[/url] ([url=https://sketchfab.com/3d-models/blunderbuss-dabef1eda0e845efbbe3216cc07376f9]Blunderbuss[/url], licensed under [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url], converted for BG3)
 [/list]
 
 [size=5][b]Legal[/b][/size]

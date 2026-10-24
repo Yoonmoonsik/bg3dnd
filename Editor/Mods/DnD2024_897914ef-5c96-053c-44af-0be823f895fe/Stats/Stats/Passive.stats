@@ -211,10 +211,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f8aec279-db4c-4d91-8576-992ca4a975ab" />
         <field name="Name" type="NameTableFieldDefinition" value="Firearm_MainHand" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1060906fg1496g1454g9846g4f2197c2c188" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h05daeb7eg0489g5774g293ag23a57911c159" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05daeb7eg0489g5774g293ag23a57911c159" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="10" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Projectile_MainHandAttack_Firearm,Projectile_MainHandAttack);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -222,8 +222,17 @@
         <field name="UUID" type="IdTableFieldDefinition" value="d830a6d6-b78f-4c67-b568-95e6e9810140" />
         <field name="Name" type="NameTableFieldDefinition" value="Firearm_Offhand" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f8aec279-db4c-4d91-8576-992ca4a975ab" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Projectile_OffhandAttack_Firearm,Projectile_OffhandAttack);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9dd795ae-9e32-4d0e-99da-e2d42261af5d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Scatter" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h51167b68ge058gdf96g8f86g942d4561d96b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd4ae8dfegb122ga4e9g89f3g3b407ad2984d" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnorePointBlankDisadvantage(Ammunition);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

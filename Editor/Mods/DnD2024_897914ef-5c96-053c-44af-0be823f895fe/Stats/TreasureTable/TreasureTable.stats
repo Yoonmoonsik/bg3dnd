@@ -20,6 +20,15 @@
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c8b23193-7d5a-4820-8413-93d558d753bc" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1337e10c-af99-4f6a-a031-a91650e1bde2" />
+        <field name="Name" type="NameTableFieldDefinition" value="c8b23193-7d5a-4820-8413-93d558d753bc_substat_1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_WPN_Blunderbuss" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6c9f9541-f90e-441b-8a34-10f96771cc4b" />
@@ -49,6 +58,16 @@
         <field name="StartLevel" type="IntegerTableFieldDefinition" value="3" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_WPN_Longbow_1" />
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6c9f9541-f90e-441b-8a34-10f96771cc4b" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f157a0df-4548-4c0a-a087-10154a709f34" />
+        <field name="Name" type="NameTableFieldDefinition" value="6c9f9541-f90e-441b-8a34-10f96771cc4b_substat_2" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_WPN_Blunderbuss_1" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StartLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -117,6 +136,16 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5d5674dc-31b9-4498-86cb-c67758482cc0" />
         <field name="Name" type="NameTableFieldDefinition" value="5ba12e15-577e-47d6-ac32-d580968c6a4c_substat_2" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_WPN_Musket_2" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StartLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ba12e15-577e-47d6-ac32-d580968c6a4c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8700961e-f062-4d99-a2cb-7e802d37803b" />
+        <field name="Name" type="NameTableFieldDefinition" value="5ba12e15-577e-47d6-ac32-d580968c6a4c_substat_3" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_WPN_Blunderbuss_2" />
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
         <field name="StartLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>

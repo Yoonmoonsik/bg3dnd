@@ -4922,6 +4922,43 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dfad0dfc-e430-4bad-8651-3d2d39e733a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="__BLUNDERBUSS__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cc97eec4-8f4e-4f0c-9b07-7826d825a9df" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Blunderbuss" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="42126588-6320-4cdd-8b14-2b8337099b26" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="1fa8b6be-1b8d-49dc-9919-cb39e538b5ba" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="1d12" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="1800" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="HeavyWeapon_Ranged;WeaponMasteryPush;Scatter;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b4f4c07-3150-44e0-a011-ab422ca9ea3a" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Blunderbuss_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cc97eec4-8f4e-4f0c-9b07-7826d825a9df" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="86e7e503-a225-4b48-819e-2e24de1f904a" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Uncommon" enumeration_type_name="Rarity" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9a9b5566-d7d8-4940-9834-41be09adca7f" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Blunderbuss_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cc97eec4-8f4e-4f0c-9b07-7826d825a9df" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="9b6a4ab2-323b-4030-89ab-030252bb6214" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0b214c69-ef36-4084-9358-38790d8d4c6d" />
         <field name="Name" type="NameTableFieldDefinition" value="__WHIP__" />
       </fields>

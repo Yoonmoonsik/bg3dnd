@@ -110,7 +110,7 @@ Acid Splash, Blade Ward, Blood Bolt, Booming Blade, Bursting Sinew, Finger Guns,
 
 ### Equipment
 
-Argument Solver, Blazer of Benevolence, Cap of Curing, Chain of Liberation, Charge-Bound Warhammer, Corrosive Flail, Dragon's Grasp, Enforcer Club, Enforcer Helmet, Enforcer Shield, Gloves of Heroism, Hellrider's Pride, Helmet of Smiting, Holy Avenger, Hoppy, Hunting Shortbow, Moon Sickle, Musket, Musket +1, Musket +2, Pistol, Pistol +1, Pistol +2, Rupturing Blade, Spellthief, The Baneful, The Oak Father's Embrace, The Sacred Star, True Name, Voltedge, Whip, Whip +1, Whip +2, Xyanyde.
+Argument Solver, Blazer of Benevolence, Blunderbuss, Blunderbuss +1, Blunderbuss +2, Cap of Curing, Chain of Liberation, Charge-Bound Warhammer, Corrosive Flail, Dragon's Grasp, Enforcer Club, Enforcer Helmet, Enforcer Shield, Gloves of Heroism, Hellrider's Pride, Helmet of Smiting, Holy Avenger, Hoppy, Hunting Shortbow, Lucent Destroyer, Moon Sickle, Musket, Musket +1, Musket +2, Pistol, Pistol +1, Pistol +2, Rupturing Blade, Spellthief, The Baneful, The Oak Father's Embrace, The Sacred Star, Thunderbuss, True Name, Voltedge, Whip, Whip +1, Whip +2, Xyanyde.
 
 ### Spell Scrolls
 
@@ -141,6 +141,7 @@ See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) for full attribution.
 - **Turkish Translation**: [batuhansekban](https://github.com/batuhansekban)
 - **Ukrainian Translation**: [TableTop BRAMA community](https://discord.gg/VxSvMqQ6sS)
 - **Item Models**: [skirbie](https://mod.io/g/baldursgate3/u/skirbie) ([Viper Carbine Steampunk Rifle Gun](https://mod.io/g/baldursgate3/m/viper-carbine-steampunk-rifle-gun), [Hand Cannon Gunslinger Weapon](https://mod.io/g/baldursgate3/m/hand-cannon-gunslinger-weapon))
+- **Item Models**: [Dak Attack](https://sketchfab.com/dakotakimble) ([Blunderbuss](https://sketchfab.com/3d-models/blunderbuss-dabef1eda0e845efbbe3216cc07376f9), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), converted for BG3)
 
 ## Legal
 
