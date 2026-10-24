@@ -78,12 +78,14 @@
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="DragonFear"/>
                     <attribute id="PassivesAdded" type="LSString" value="DragonFear"/>
+                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;DRAGONBORN&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(6f722be8-f281-4eee-8948-a56f04d4943d,1,1,STR_CON_CHA)"/>
                     <attribute id="UUID" type="guid" value="5d4b9689-6e3c-4970-bc2f-23d4a3c41f5d"/>
                 </node>
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="DragonHide"/>
                     <attribute id="PassivesAdded" type="LSString" value="DragonHide;DragonHide_UnarmedDamage"/>
+                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;DRAGONBORN&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(6f722be8-f281-4eee-8948-a56f04d4943d,1,1,STR_CON_CHA)"/>
                     <attribute id="UUID" type="guid" value="e0c2d7b8-d6de-46bf-aeba-133b63f744be"/>
                 </node>
@@ -120,6 +122,7 @@
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="DwarvenFortitude"/>
                     <attribute id="PassivesAdded" type="LSString" value="DwarvenFortitude"/>
+                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;DWARF&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(a0129b5e-ae05-4b07-905e-ec1c244728ae,1,1,CON)"/>
                     <attribute id="UUID" type="guid" value="5be836d8-c798-4fe3-99a3-412165b11842"/>
                 </node>
@@ -137,6 +140,7 @@
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="ElvenAccuracy"/>
                     <attribute id="PassivesAdded" type="LSString" value="ElvenAccuracy"/>
+                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;ELF&apos;,context.Source) or Tagged(&apos;HALFELF&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(fe3d9cad-c1a0-41fe-8662-ba0e75691ff2,1,1,DEX_INT_WIS_CHA)"/>
                     <attribute id="UUID" type="guid" value="3d755d1a-82d9-42a8-8b6e-265aa9c3b0f9"/>
                 </node>
@@ -161,6 +165,7 @@
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="FadeAway"/>
                     <attribute id="PassivesAdded" type="LSString" value="FadeAway"/>
+                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;GNOME&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(15494b6c-d694-4782-ae5c-c0bf7e0f0cf2,1,1,DEX_INT)"/>
                     <attribute id="UUID" type="guid" value="9e850cf0-8b7f-4b87-8c00-72040822555c"/>
                 </node>
@@ -190,6 +195,7 @@
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="FlamesOfPhlegethos"/>
                     <attribute id="PassivesAdded" type="LSString" value="FlamesOfPhlegethos"/>
+                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;TIEFLING&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(6e2f58d6-3434-49b1-a786-b4685e96343b,1,1,INT_CHA)"/>
                     <attribute id="UUID" type="guid" value="ea66dbc0-86df-4a4a-9c41-be5e4edcc16f"/>
                 </node>
@@ -263,6 +269,7 @@
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="InfernalConstitution"/>
                     <attribute id="PassivesAdded" type="LSString" value="InfernalConstitution"/>
+                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;TIEFLING&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(a0129b5e-ae05-4b07-905e-ec1c244728ae,1,1,CON)"/>
                     <attribute id="UUID" type="guid" value="f6d75b9a-93ad-4b7a-bcd4-15645bea97ba"/>
                 </node>
@@ -397,6 +404,7 @@
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="OrcishFury"/>
                     <attribute id="PassivesAdded" type="LSString" value="OrcishFury"/>
+                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;HALFORC&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(111c055b-ddcf-430e-a5b0-1a0a598e203a,1,1,STR_CON)"/>
                     <attribute id="UUID" type="guid" value="8c182840-eca5-411f-92b2-783e8b80dfaf"/>
                 </node>
@@ -534,6 +542,7 @@
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="SquatNimbleness"/>
                     <attribute id="PassivesAdded" type="LSString" value="SquatNimbleness"/>
+                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;DWARF&apos;,context.Source) or Tagged(&apos;GNOME&apos;,context.Source) or Tagged(&apos;HALFLING&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(499230af-5946-4680-a7ee-4d76d421f2ef,1,1,STR_DEX);SelectSkills(d263c18a-c305-4c25-909c-10ff69e48aee,1,SkilledSkills);"/>
                     <attribute id="UUID" type="guid" value="4ed110ea-6f86-4567-8469-973e9591fec5"/>
                 </node>

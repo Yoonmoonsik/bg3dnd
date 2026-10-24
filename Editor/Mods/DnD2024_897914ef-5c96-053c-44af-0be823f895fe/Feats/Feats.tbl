@@ -113,6 +113,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_45" />
         <field name="UUID" type="IdTableFieldDefinition" value="5d4b9689-6e3c-4970-bc2f-23d4a3c41f5d" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="DragonFear" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('DRAGONBORN',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="DragonFear" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(6f722be8-f281-4eee-8948-a56f04d4943d,1,1,STR_CON_CHA)" />
       </fields>
@@ -122,6 +123,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_46" />
         <field name="UUID" type="IdTableFieldDefinition" value="e0c2d7b8-d6de-46bf-aeba-133b63f744be" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="DragonHide" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('DRAGONBORN',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="DragonHide;DragonHide_UnarmedDamage" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(6f722be8-f281-4eee-8948-a56f04d4943d,1,1,STR_CON_CHA)" />
       </fields>
@@ -176,6 +178,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_47" />
         <field name="UUID" type="IdTableFieldDefinition" value="5be836d8-c798-4fe3-99a3-412165b11842" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="DwarvenFortitude" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('DWARF',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="DwarvenFortitude" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(a0129b5e-ae05-4b07-905e-ec1c244728ae,1,1,CON)" />
       </fields>
@@ -202,6 +205,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_48" />
         <field name="UUID" type="IdTableFieldDefinition" value="3d755d1a-82d9-42a8-8b6e-265aa9c3b0f9" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="ElvenAccuracy" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('ELF',context.Source) or Tagged('HALFELF',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ElvenAccuracy" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(fe3d9cad-c1a0-41fe-8662-ba0e75691ff2,1,1,DEX_INT_WIS_CHA)" />
       </fields>
@@ -238,6 +242,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_49" />
         <field name="UUID" type="IdTableFieldDefinition" value="9e850cf0-8b7f-4b87-8c00-72040822555c" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="FadeAway" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('GNOME',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="FadeAway" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(15494b6c-d694-4782-ae5c-c0bf7e0f0cf2,1,1,DEX_INT)" />
       </fields>
@@ -282,6 +287,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_50" />
         <field name="UUID" type="IdTableFieldDefinition" value="ea66dbc0-86df-4a4a-9c41-be5e4edcc16f" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="FlamesOfPhlegethos" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('TIEFLING',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="FlamesOfPhlegethos" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(6e2f58d6-3434-49b1-a786-b4685e96343b,1,1,INT_CHA)" />
       </fields>
@@ -391,6 +397,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_51" />
         <field name="UUID" type="IdTableFieldDefinition" value="f6d75b9a-93ad-4b7a-bcd4-15645bea97ba" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="InfernalConstitution" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('TIEFLING',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="InfernalConstitution" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(a0129b5e-ae05-4b07-905e-ec1c244728ae,1,1,CON)" />
       </fields>
@@ -591,6 +598,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_52" />
         <field name="UUID" type="IdTableFieldDefinition" value="8c182840-eca5-411f-92b2-783e8b80dfaf" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="OrcishFury" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('HALFORC',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="OrcishFury" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(111c055b-ddcf-430e-a5b0-1a0a598e203a,1,1,STR_CON)" />
       </fields>
@@ -797,6 +805,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_53" />
         <field name="UUID" type="IdTableFieldDefinition" value="4ed110ea-6f86-4567-8469-973e9591fec5" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="SquatNimbleness" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('DWARF',context.Source) or Tagged('GNOME',context.Source) or Tagged('HALFLING',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="SquatNimbleness" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(499230af-5946-4680-a7ee-4d76d421f2ef,1,1,STR_DEX);SelectSkills(d263c18a-c305-4c25-909c-10ff69e48aee,1,SkilledSkills);" />
       </fields>
