@@ -14891,6 +14891,18 @@ data "SpellType" "Target"
 using "Target_Claws_Cat"
 data "SpellSuccess" "IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Slashing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Radiant,Magical);"
 
+new entry "Target_Claws_Bear_Brown"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Claws_Bear_Brown"
+data "SpellSuccess" "AI_ONLY:DealDamage(max(1,2d6+UnarmedMeleeAbilityModifier),Slashing);AI_IGNORE:IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Slashing,Magical);AI_IGNORE:IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Radiant,Magical);"
+
+new entry "Target_GOB_WolfPens_HalsinMultiAttack_Bear"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_GOB_WolfPens_HalsinMultiAttack_Bear"
+data "SpellSuccess" "IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(2d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier,Slashing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(2d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier,Radiant,Magical);Cast2[IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(1d8+UnarmedMeleeAbilityModifier,Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(1d8+UnarmedMeleeAbilityModifier,Radiant,Magical)]"
+
 new entry "Target_Gore_DeepRothe"
 type "SpellData"
 data "SpellType" "Target"

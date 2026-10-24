@@ -17596,6 +17596,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6ed36efd-1f07-45d5-8984-b16488132e8d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Claws_Bear_Brown" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d0778974-3ddc-4425-b175-d21d7c2c6244" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="AI_ONLY:DealDamage(max(1,2d6+UnarmedMeleeAbilityModifier),Slashing);AI_IGNORE:IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Slashing,Magical);AI_IGNORE:IF(HasPassive('LunarRadiance',context.Source)):DealDamage(max(1,2d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier),Radiant,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1ab0e83e-cffd-41e8-b9fd-58d1f638992c" />
+        <field name="Name" type="NameTableFieldDefinition" value="GOB_WolfPens_HalsinMultiAttack_Bear" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ae954d0c-8592-42c7-b3ad-c9bdfb362f78" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(2d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier,Slashing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(2d6+LevelMapValue(WildShapeDamageLow)+UnarmedMeleeAbilityModifier,Radiant,Magical);Cast2[IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(1d8+UnarmedMeleeAbilityModifier,Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(1d8+UnarmedMeleeAbilityModifier,Radiant,Magical)]" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="493d8a53-50f6-45a9-9be6-b26b07f6dbb2" />
         <field name="Name" type="NameTableFieldDefinition" value="Gore_DeepRothe" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="218419af-efb9-48ed-8e7c-fd85da9e417b" />

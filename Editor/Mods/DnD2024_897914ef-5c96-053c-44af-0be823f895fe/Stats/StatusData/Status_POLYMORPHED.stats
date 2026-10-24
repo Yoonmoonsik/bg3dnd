@@ -85,6 +85,7 @@
         <field name="Rules" type="GuidObjectTableFieldDefinition" value="9c580a1d-dab9-4b17-b0da-b16c7d7360e0" />
         <field name="Passives" type="StringTableFieldDefinition" value="LunarRadiance;HalsinSpells;" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WILDSHAPE_ACTIVE,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WILDSHAPE_BEAR_POLAR_REMOVE_VFX,100,1);ApplyStatus(SELF, WILDSHAPE_TECHNICAL,100,1);RemoveStatus(WILDSHAPE_ACTIVE)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
