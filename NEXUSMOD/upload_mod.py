@@ -7,10 +7,12 @@ Upload flow:
   2. PUT file data to presigned URL(s)
   3. Finalise upload session
   4. Create mod file  — OR — create new mod file version (if mod_file_id is set)
+  5. Add changelog (HEAD commit message + commits since the previous meta.lsx commit)
 """
 
 import argparse
 import json
+import subprocess
 import sys
 import tempfile
 import time
@@ -307,6 +309,42 @@ def create_mod_file_version(api_key: str, upload_id: str, mod_file_id: str, cfg:
 
 
 # ---------------------------------------------------------------------------
+# Step 5 — add changelog
+# ---------------------------------------------------------------------------
+
+META_LSX_REL = "Mods/DnD2024_897914ef-5c96-053c-44af-0be823f895fe/meta.lsx"
+
+
+def _git(repo: Path, *args: str) -> str:
+    return subprocess.run(
+        ["git", "-C", str(repo), *args],
+        check=True, capture_output=True, text=True, encoding="utf-8",
+    ).stdout.strip()
+
+
+def build_changelog(repo: Path) -> str:
+    """HEAD commit message, then subjects of commits since the previous meta.lsx commit."""
+    head_msg = _git(repo, "log", "-1", "--format=%B", "HEAD")
+    # HEAD is the release commit itself; the one before it touching meta.lsx is the previous release.
+    meta_commits = _git(repo, "log", "-n", "2", "--format=%H", "HEAD", "--", META_LSX_REL).splitlines()
+    rev_range = f"{meta_commits[1]}..HEAD~1" if len(meta_commits) > 1 else "HEAD~1"
+    subjects = _git(repo, "log", "--no-merges", "--format=- %s", rev_range)
+    return f"{head_msg}\n\n{subjects}" if subjects else head_msg
+
+
+def add_changelog(api_key: str, mod_id: str, version: str, changelog: str) -> dict:
+    print(f"[INFO] Adding changelog for {version} …")
+    resp = requests.post(
+        f"{BASE_URL}/mods/{mod_id}/changelogs",
+        headers=make_headers(api_key),
+        json={"version": version, "changelog": changelog},
+        timeout=30,
+    )
+    _raise_for_status(resp, "add changelog")
+    return resp.json()["data"]
+
+
+# ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
@@ -404,6 +442,16 @@ def main() -> None:
 
     print("\n[SUCCESS] Upload completed.")
     print(json.dumps(result, indent=2, ensure_ascii=False))
+
+    # 5. Changelog
+    if not cfg.get("mod_id"):
+        print("[WARN] 'mod_id' not set — skipping changelog.")
+        return
+    changelog = build_changelog(Path(__file__).parent.parent)
+    print(f"[INFO] Changelog:\n{changelog}")
+    added = add_changelog(api_key, cfg["mod_id"], cfg["version"], changelog)
+    print("[SUCCESS] Changelog added.")
+    print(json.dumps(added, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":
