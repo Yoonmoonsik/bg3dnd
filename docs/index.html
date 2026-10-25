@@ -15,12 +15,13 @@
   </div>
   <div class="top-actions">
     <nav class="pages">
-      <a class="link current" href="./" aria-current="page" data-i18n="nav_home">Home</a>
+      <a class="link current" aria-current="page" href="./" data-i18n="nav_home">Home</a>
       <a class="link" href="backgrounds.html" data-i18n="nav_backgrounds">Backgrounds</a>
       <a class="link" href="feats.html" data-i18n="nav_feats">Feats</a>
-      <a class="link" href="species.html" data-i18n="nav_species">Species</a>
+      <a class="link" href="fighting-styles.html" data-i18n="nav_fighting">Fighting Styles</a>
       <a class="link" href="species.html" data-i18n="nav_species">Species</a>
       <a class="link" href="spells.html" data-i18n="nav_spells">Spells</a>
+      <a class="link" href="weapon-mastery.html" data-i18n="nav_mastery">Weapon Mastery</a>
     </nav>
     <a class="link" href="https://github.com/Yoonmoonsik/bg3dnd/wiki" data-i18n="wiki">Wiki</a>
     <div class="lang" role="group" aria-label="Language">
@@ -31,7 +32,7 @@
 </header>
 
 <main>
-  <p class="intro" data-i18n="intro">Search the mod's backgrounds, feats, species and spells. Every page is generated from the mod's game data.</p>
+  <p class="intro" data-i18n="intro">Search the mod's backgrounds, feats, fighting styles, species, spells and weapon masteries. Every page is generated from the mod's game data.</p>
   <div class="cards">
     <a class="card" href="backgrounds.html" data-page="backgrounds">
       <span class="card-count" id="count-backgrounds">—</span>
@@ -43,6 +44,11 @@
       <span class="card-title" data-i18n="feats">Feats</span>
       <span class="card-text" data-i18n="feats_text">Filter by ability score, prerequisite, granted spells and actions, proficiencies and more.</span>
     </a>
+    <a class="card" href="fighting-styles.html" data-page="fighting">
+      <span class="card-count" id="count-fighting">—</span>
+      <span class="card-title" data-i18n="fighting">Fighting Styles</span>
+      <span class="card-text" data-i18n="fighting_text"></span>
+    </a>
     <a class="card" href="species.html" data-page="species">
       <span class="card-count" id="count-species">—</span>
       <span class="card-title" data-i18n="species">Species</span>
@@ -52,6 +58,11 @@
       <span class="card-count" id="count-spells">—</span>
       <span class="card-title" data-i18n="spells">Spells</span>
       <span class="card-text" data-i18n="spells_text">Filter by level, class, school, casting time, damage type, saving throw and more.</span>
+    </a>
+    <a class="card" href="weapon-mastery.html" data-page="mastery">
+      <span class="card-count" id="count-mastery">—</span>
+      <span class="card-title" data-i18n="mastery">Weapon Mastery</span>
+      <span class="card-text" data-i18n="mastery_text"></span>
     </a>
   </div>
 </main>
@@ -64,9 +75,11 @@
 "use strict";
 const T = {
   en: {
-    subtitle: "Baldur's Gate 3 mod · data browser", nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_species: "Species", nav_backgrounds: "Backgrounds",
-    wiki: "Wiki", intro: "Search the mod's backgrounds, feats, species and spells. Every page is generated from the mod's game data.",
-    spells: "Spells", feats: "Feats", backgrounds: "Backgrounds", species: "Species",
+    subtitle: "Baldur's Gate 3 mod · data browser", nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_species: "Species", nav_backgrounds: "Backgrounds",
+    wiki: "Wiki", intro: "Search the mod's backgrounds, feats, fighting styles, species, spells and weapon masteries. Every page is generated from the mod's game data.",
+    spells: "Spells", feats: "Feats", backgrounds: "Backgrounds", species: "Species", fighting: "Fighting Styles", mastery: "Weapon Mastery",
+    fighting_text: "See each fighting style and which classes, subclasses and feats grant it.",
+    mastery_text: "See each weapon mastery, its weapons, and who gets mastery picks.",
     species_text: "Filter by parent species, darkvision, species spells, resistances and more.",
     backgrounds_text: "Filter by skill proficiency; see each background's feat.",
     spells_text: "Filter by level, class, school, casting time, damage type, saving throw and more.",
@@ -74,9 +87,11 @@ const T = {
     footer: "Generated from the mod's game data.",
   },
   ko: {
-    subtitle: "발더스 게이트 3 모드 · 데이터 검색", nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_species: "종족", nav_backgrounds: "배경",
-    wiki: "위키", intro: "모드의 배경, 재주, 종족, 주문을 찾아볼 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
-    spells: "주문", feats: "재주", backgrounds: "배경", species: "종족",
+    subtitle: "발더스 게이트 3 모드 · 데이터 검색", nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_species: "종족", nav_backgrounds: "배경",
+    wiki: "위키", intro: "모드의 배경, 재주, 전투 방식, 종족, 주문, 무기 숙련술을 찾아볼 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
+    spells: "주문", feats: "재주", backgrounds: "배경", species: "종족", fighting: "전투 방식", mastery: "무기 숙련술",
+    fighting_text: "전투 방식마다 효과와 얻는 직업·하위 직업·재주를 봅니다.",
+    mastery_text: "숙련술마다 효과와 해당 무기, 숙련술을 얻는 곳을 봅니다.",
     species_text: "상위 종족, 암시야, 종족 주문, 저항 등으로 거릅니다.",
     backgrounds_text: "기술 숙련으로 거르고, 배경마다 얻는 재주를 봅니다.",
     spells_text: "레벨, 직업, 학파, 시전 시간, 피해 유형, 내성 굴림 등으로 거릅니다.",
@@ -94,6 +109,16 @@ function apply() {
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = T[lang][el.dataset.i18n]; });
   document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+  // Menu and cards follow the shown language: Home first, then the page names sorted (abc / 가나다).
+  const byName = (x, y) => x.textContent.localeCompare(y.textContent, lang);
+  const nav = document.querySelector("nav.pages");
+  const links = [...nav.querySelectorAll("a")];
+  [...links.filter(x => x.dataset.i18n === "nav_home"),
+   ...links.filter(x => x.dataset.i18n !== "nav_home").sort(byName)].forEach(x => nav.appendChild(x));
+  const cards = document.querySelector(".cards");
+  [...cards.querySelectorAll("a.card")]
+    .sort((x, y) => byName(x.querySelector(".card-title"), y.querySelector(".card-title")))
+    .forEach(x => cards.appendChild(x));
   document.querySelectorAll("nav.pages a, a.card").forEach(a => {
     a.href = a.getAttribute("href").split("#")[0] + "#lang=" + lang;
   });
@@ -106,9 +131,9 @@ document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click
 }));
 apply();
 
-for (const [page, key] of [["spells", "spells"], ["feats", "feats"], ["backgrounds", "backgrounds"], ["species", "species"]]) {
+for (const [page, key, id = page] of [["spells", "spells"], ["feats", "feats"], ["backgrounds", "backgrounds"], ["species", "species"], ["fighting_styles", "styles", "fighting"], ["weapon_mastery", "masteries", "mastery"]]) {
   fetch(`data/${page}.json`).then(r => r.json()).then(d => {
-    document.getElementById("count-" + page).textContent = d[key].length;
+    document.getElementById("count-" + id).textContent = d[key].length;
   });
 }
 </script>

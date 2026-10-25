@@ -3,7 +3,7 @@
 const T = {
   en: {
     title: "Species", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
-    nav_home: "Home", nav_backgrounds: "Backgrounds", nav_feats: "Feats", nav_species: "Species", nav_spells: "Spells",
+    nav_home: "Home", nav_backgrounds: "Backgrounds", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_species: "Species", nav_spells: "Spells",
     search: "Search species by name, trait or spell", filters: "Filters", reset: "Reset",
     col_name: "Name", col_parent: "Parent Species", col_speed: "Speed", col_darkvision: "Darkvision", col_spells: "Spells",
     empty: "No species match these filters.", footer: "Generated from the mod's game data.",
@@ -19,7 +19,7 @@ const T = {
   },
   ko: {
     title: "종족", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
-    nav_home: "홈", nav_backgrounds: "배경", nav_feats: "재주", nav_species: "종족", nav_spells: "주문",
+    nav_home: "홈", nav_backgrounds: "배경", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_species: "종족", nav_spells: "주문",
     search: "종족 이름, 특성, 주문으로 검색", filters: "필터", reset: "초기화",
     col_name: "이름", col_parent: "상위 종족", col_speed: "이동 속도", col_darkvision: "암시야", col_spells: "주문",
     empty: "조건에 맞는 종족이 없습니다.", footer: "모드 게임 데이터에서 생성했습니다.",
@@ -159,6 +159,14 @@ function applyLang() {
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
   document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === state.lang));
+  // Menu order follows the shown language: Home first, then the page names sorted (abc / 가나다).
+  const nav = document.querySelector("nav.pages");
+  if (nav) {
+    const links = [...nav.querySelectorAll("a")];
+    const rest = links.filter(a => a.dataset.i18n !== "nav_home")
+      .sort((a, b) => a.textContent.localeCompare(b.textContent, state.lang));
+    [...links.filter(a => a.dataset.i18n === "nav_home"), ...rest].forEach(a => nav.appendChild(a));
+  }
   document.querySelectorAll("nav.pages a").forEach(a => {
     a.href = a.getAttribute("href").split("#")[0] + "#lang=" + state.lang;
   });

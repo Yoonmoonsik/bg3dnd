@@ -1,0 +1,54 @@
+{
+  "generated": "2026-10-25 e330fdde",
+  "sources": [{"kind": "class", "name": {"en": "Barbarian", "ko": "바바리안"}, "level": 1, "count": 2}, {"kind": "class", "name": {"en": "Barbarian", "ko": "바바리안"}, "level": 4, "count": 1}, {"kind": "class", "name": {"en": "Barbarian", "ko": "바바리안"}, "level": 10, "count": 1}, {"kind": "class", "name": {"en": "Fighter", "ko": "파이터"}, "level": 1, "count": 3}, {"kind": "class", "name": {"en": "Fighter", "ko": "파이터"}, "level": 4, "count": 1}, {"kind": "class", "name": {"en": "Fighter", "ko": "파이터"}, "level": 10, "count": 1}, {"kind": "class", "name": {"en": "Gunslinger", "ko": "건슬링어"}, "level": 2, "count": 2}, {"kind": "class", "name": {"en": "Illrigger", "ko": "일리거"}, "level": 1, "count": 2}, {"kind": "class", "name": {"en": "Monster Hunter", "ko": "괴물 사냥꾼"}, "level": 1, "count": 2}, {"kind": "class", "name": {"en": "Monster Hunter", "ko": "괴물 사냥꾼"}, "level": 5, "count": 1}, {"kind": "class", "name": {"en": "Monster Hunter", "ko": "괴물 사냥꾼"}, "level": 11, "count": 1}, {"kind": "class", "name": {"en": "Paladin", "ko": "팔라딘"}, "level": 1, "count": 2}, {"kind": "class", "name": {"en": "Ranger", "ko": "레인저"}, "level": 1, "count": 2}, {"kind": "class", "name": {"en": "Rogue", "ko": "로그"}, "level": 1, "count": 2}, {"kind": "feat", "name": {"en": "Weapon Master", "ko": "무기의 달인"}, "level": null, "count": 1}],
+  "masteries": [
+    {
+      "id": "HasWeaponMastery_Cleave",
+      "name": {"en": "Cleave", "ko": "가르기"},
+      "desc": {"en": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 1.5m of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.", "ko": "이 무기를 사용한 근거리 명중 굴림으로 크리처를 적중시키면, 첫 번째 대상에서 1.5m 이내에 있고 자신의 사거리 안에 있는 두 번째 크리처에게 이 무기로 근거리 명중 굴림을 가할 수 있습니다. 적중 시 두 번째 크리처는 무기 피해를 입지만, 능력 보정치가 음수가 아닌 한 그 피해에 능력 보정치를 더하지 않습니다. 이 추가 공격은 턴당 한 번만 가할 수 있습니다."},
+      "weapons": [{"en": "Greataxes", "ko": "대형 도끼"}, {"en": "Halberds", "ko": "미늘창"}]
+    },
+    {
+      "id": "HasWeaponMastery_Graze",
+      "name": {"en": "Graze", "ko": "스치기"},
+      "desc": {"en": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.", "ko": "이 무기로 한 명중 굴림이 크리처를 빗맞히면, 명중 굴림에 사용한 능력 보정치만큼 해당 크리처에게 피해를 입힐 수 있습니다. 이 피해는 무기와 동일한 유형이며, 능력 보정치를 늘려야만 피해량을 늘릴 수 있습니다."},
+      "weapons": [{"en": "Glaives", "ko": "협도"}, {"en": "Greatswords", "ko": "대검"}]
+    },
+    {
+      "id": "HasWeaponMastery_Nick",
+      "name": {"en": "Nick", "ko": "흠집내기"},
+      "desc": {"en": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.", "ko": "경량 속성의 추가 공격을 가할 때, 보조 행동 대신 공격 행동의 일부로 가할 수 있습니다. 이 추가 공격은 턴당 한 번만 가할 수 있습니다."},
+      "weapons": [{"en": "Daggers", "ko": "단검"}, {"en": "Light Hammers", "ko": "경량 망치"}, {"en": "Scimitars", "ko": "언월도"}, {"en": "Sickles", "ko": "낫"}]
+    },
+    {
+      "id": "HasWeaponMastery_Push",
+      "name": {"en": "Push", "ko": "밀기"},
+      "desc": {"en": "If you hit a creature with this weapon, you can push the creature up to 3m straight away from yourself if it is Large or smaller.", "ko": "이 무기로 크리처를 적중시키면, 대상이 대형 이하일 경우 자신으로부터 3m만큼 직선으로 밀어낼 수 있습니다."},
+      "weapons": [{"en": "Blunderbuss", "ko": "블런더버스"}, {"en": "Greatclubs", "ko": "대형 곤봉"}, {"en": "Heavy Crossbows", "ko": "중쇠뇌"}, {"en": "Pikes", "ko": "장창"}, {"en": "Warhammers", "ko": "전쟁 망치"}]
+    },
+    {
+      "id": "HasWeaponMastery_Sap",
+      "name": {"en": "Sap", "ko": "흐트러뜨리기"},
+      "desc": {"en": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.", "ko": "이 무기로 크리처를 적중시키면, 해당 크리처는 다음 자신의 턴이 시작되기 전까지 시도하는 다음 명중 굴림에 불리 보정을 받습니다."},
+      "weapons": [{"en": "Flails", "ko": "도리깨"}, {"en": "Longswords", "ko": "장검"}, {"en": "Maces", "ko": "철퇴"}, {"en": "Morningstars", "ko": "모닝스타"}, {"en": "Spears", "ko": "창"}, {"en": "Warpicks", "ko": "전쟁 곡괭이"}]
+    },
+    {
+      "id": "HasWeaponMastery_Slow",
+      "name": {"en": "Slow", "ko": "늦추기"},
+      "desc": {"en": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 3m until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn’t exceed 3m.", "ko": "이 무기로 크리처를 적중시켜 피해를 입히면, 다음 자신의 턴이 시작될 때까지 대상의 이동 속도를 3m만큼 감소시킬 수 있습니다. 크리처가 이 특성을 가진 무기에 여러 번 적중되더라도 이동 속도 감소량은 3m을 초과하지 않습니다."},
+      "weapons": [{"en": "Clubs", "ko": "곤봉"}, {"en": "Javelins", "ko": "투창"}, {"en": "Light Crossbows", "ko": "경쇠뇌"}, {"en": "Longbows", "ko": "장궁"}, {"en": "Musket", "ko": "머스킷"}, {"en": "Whip", "ko": "채찍"}]
+    },
+    {
+      "id": "HasWeaponMastery_Topple",
+      "name": {"en": "Topple", "ko": "넘어뜨리기"},
+      "desc": {"en": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.", "ko": "이 무기로 크리처를 적중시키면, 크리처에게 건강 내성 굴림(난이도 8 + 명중 굴림에 사용한 능력 보정치 + 숙련 보너스)을 강제할 수 있습니다. 내성 굴림에 실패하면 크리처는 넘어짐 상태가 됩니다."},
+      "weapons": [{"en": "Battleaxes", "ko": "전투 도끼"}, {"en": "Mauls", "ko": "대형 망치"}, {"en": "Quarterstaffs", "ko": "육척봉"}, {"en": "Tridents", "ko": "삼지창"}]
+    },
+    {
+      "id": "HasWeaponMastery_Vex",
+      "name": {"en": "Vex", "ko": "몰아붙이기"},
+      "desc": {"en": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.", "ko": "이 무기로 크리처를 적중시키고 피해를 입히면, 다음 자신의 턴이 끝나기 전까지 해당 크리처에 대한 다음 명중 굴림에 유리 보정을 받습니다."},
+      "weapons": [{"en": "Hand Crossbows", "ko": "손 쇠뇌"}, {"en": "Handaxes", "ko": "손도끼"}, {"en": "Pistol", "ko": "피스톨"}, {"en": "Rapiers", "ko": "레이피어"}, {"en": "Shortbows", "ko": "단궁"}, {"en": "Shortswords", "ko": "소검"}]
+    }
+  ]
+}
