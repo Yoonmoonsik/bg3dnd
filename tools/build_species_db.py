@@ -9,7 +9,8 @@ preset and progression nodes merge by UUID over the vanilla paks, then the mod. 
 from the wiki text.
   host races   Aasimar, Changeling, Dhampir, Goliath, Kalashtar … are Human subraces only because
                of Larian's console certification rules; they are shown as species of their own.
-               Every Human subrace except Human's own (HumanHuman) is promoted this way.
+               Every Human subrace except Human's own (HumanHuman) is promoted this way and marked
+               "human_subrace", since character creation lists it under Human.
   Dhampir      one Dhampir subrace per parent species; they share the Dhampir traits and are shown
                as one species listing its parents.
   traits       the parent's progression table plus the subrace's, ProgressionType 2, by level:
@@ -203,6 +204,8 @@ class Builder:
                 "parent": None if promoted or not sub else
                           {"en": text(race.get("DisplayName"), False), "ko": text(race.get("DisplayName"), True)},
                 "desc": {"en": text(shown.get("Description"), False), "ko": text(shown.get("Description"), True)},
+                # Character creation lists it under Human: players look for it there.
+                "human_subrace": promoted,
                 "source": "new" if shown["UUID"] not in self.van_races else
                           ("revised" if self.changed(chain, passives) else "vanilla"),
                 **info,
