@@ -8,8 +8,8 @@ Which entries count as spells:
   - an entry of a base class spell list ("5.5 <Class> Cantrip ..." / "5.5 <Class> SLevel N ...")
   - that also has a row in the wiki Spells.md (the wiki is the editorial list of real spells;
     class features such as EC_ForceBallista also sit in spell lists).
-Wiki rows are matched to entries by Icon + level. The wiki supplies the names, the short change
-notes and the scroll column; every mechanic comes from the stats (vanilla merged with Honour and
+Wiki rows are matched to entries by Icon + level. The wiki supplies the short change notes and
+the scroll column; names are the in-game DisplayName; every mechanic comes from the stats (vanilla merged with Honour and
 the mod, through `using`, by the bg3-data scripts).
 Source: "new" when no vanilla entry has the id; "revised" when any field of the merged entry
 differs from the vanilla merge (technical fixes included); otherwise "vanilla".
@@ -188,6 +188,15 @@ def damage_types(f):
     return set(DMG_TYPE.findall(" ".join(plain)))
 
 
+def game_names(db, sid, wiki_en, wiki_ko):
+    """In-game DisplayName in English and Korean; the wiki names only when the entry has none."""
+    r = stats.resolve(db, sid, "DisplayName")
+    h = handle_of(r[0]) if r else None
+    en = clean(loca.text(h)) if h else ""
+    ko = clean(loca.korean(h)[0]) if h else ""
+    return {"en": en or wiki_en, "ko": ko or wiki_ko}
+
+
 def changed(db, vanilla, sid):
     """True when the mod changes any field of sid after `using` resolves."""
     a = {k: v[0] for k, v in stats.all_fields(vanilla, sid).items()}
@@ -208,24 +217,31 @@ def main():
     vanilla = stats.load(include_mod=False)
     en_rows = wiki_rows(WIKI / "Spells.md")
     ko_rows = wiki_rows(WIKI / "ko" / "주문.md")
-    if len(en_rows) != len(ko_rows):
-        sys.exit(f"wiki rows differ: Spells.md {len(en_rows)} vs ko/주문.md {len(ko_rows)}")
+    # The Korean page sorts rows by Korean name, so rows pair by level + icon, not by position.
+    ko_by_key = {(r[0], r[1]): r for r in ko_rows}
+    missing = [f"L{r[0]} {r[2]}" for r in en_rows if (r[0], r[1]) not in ko_by_key]
+    if missing or len(ko_by_key) != len(en_rows):
+        sys.exit(f"wiki rows differ between Spells.md and ko/주문.md: {missing}")
 
-    by_key = {}
+    by_key, child_icons = {}, {}
     for sid in classes:
         if sid not in db:
             continue
         m = mechanics(db, sid)
         # The wiki sometimes shows a variant's icon (Eyebite_Asleep) and drops apostrophes.
-        icons = {m["icon"]} | {stats.resolve(db, c, "Icon")[0] for c in m["children"]
-                               if c in db and stats.resolve(db, c, "Icon")}
-        for ic in icons:
-            by_key.setdefault((m["level"], ic.replace("'", "")), []).append((sid, m))
+        by_key.setdefault((m["level"], m["icon"].replace("'", "")), []).append((sid, m))
+        for c in m["children"]:
+            r = stats.resolve(db, c, "Icon") if c in db else None
+            if r:
+                child_icons.setdefault((m["level"], r[0].replace("'", "")), []).append((sid, m))
 
     spells, unmatched, class_diff = [], [], []
-    for en, ko in zip(en_rows, ko_rows):
+    for en in en_rows:
+        ko = ko_by_key[(en[0], en[1])]
         level, icon, name, school, note, scroll, wiki_cls = en
-        cands = by_key.get((level, icon), [])
+        # An entry's own icon wins; a variant's icon only when nothing else has it
+        # (Animate Dead's Zombie variant shares the Summon Undead: Ghoul icon).
+        cands = by_key.get((level, icon)) or child_icons.get((level, icon), [])
         if not cands and (level, icon) in WIKI_ICON_IDS:
             sid = WIKI_ICON_IDS[(level, icon)]
             cands = [(sid, mechanics(db, sid))]
@@ -234,7 +250,10 @@ def main():
             continue
         # Same icon twice at one level (class variants such as Shield_Sorcerer/_Wizard): merge.
         # Prefer an entry from a base class list over a feature list's copy.
-        cands.sort(key=lambda c: not classes[c[0]])
+        # Feature-list copies with the same icon (Shout_EC_Protector, SpeakWithAnimals_Barbarian)
+        # are not the spell; keep base-list entries when there are any.
+        if any(classes[c[0]] for c in cands):
+            cands = [c for c in cands if classes[c[0]]]
         sid, m = cands[0]
         data_cls = sorted({c for s, _ in cands for c in classes[s]})
         # Classes come from the base lists (game data wins over the wiki); the wiki is the
@@ -256,7 +275,7 @@ def main():
             "source": "new" if new else ("revised" if revised else "vanilla"),
             "icon": icon,
             "scroll": scroll,
-            "name": {"en": name, "ko": ko[2]},
+            "name": game_names(db, sid, name, ko[2]),
             "note": {"en": note, "ko": ko[4]},
             "desc": {"en": describe(m["desc_h"], m["params"], False),
                      "ko": describe(m["desc_h"], m["params"], True)},
