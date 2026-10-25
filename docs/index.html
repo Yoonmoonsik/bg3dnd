@@ -16,9 +16,9 @@
   <div class="top-actions">
     <nav class="pages">
       <a class="link current" href="./" aria-current="page" data-i18n="nav_home">Home</a>
-      <a class="link" href="spells.html" data-i18n="nav_spells">Spells</a>
-      <a class="link" href="feats.html" data-i18n="nav_feats">Feats</a>
       <a class="link" href="backgrounds.html" data-i18n="nav_backgrounds">Backgrounds</a>
+      <a class="link" href="feats.html" data-i18n="nav_feats">Feats</a>
+      <a class="link" href="spells.html" data-i18n="nav_spells">Spells</a>
     </nav>
     <a class="link" href="https://github.com/Yoonmoonsik/bg3dnd/wiki" data-i18n="wiki">Wiki</a>
     <div class="lang" role="group" aria-label="Language">
@@ -29,22 +29,22 @@
 </header>
 
 <main>
-  <p class="intro" data-i18n="intro">Search the mod's spells, feats and backgrounds. Every page is generated from the mod's game data.</p>
+  <p class="intro" data-i18n="intro">Search the mod's backgrounds, feats and spells. Every page is generated from the mod's game data.</p>
   <div class="cards">
-    <a class="card" href="spells.html" data-page="spells">
-      <span class="card-count" id="count-spells">—</span>
-      <span class="card-title" data-i18n="spells">Spells</span>
-      <span class="card-text" data-i18n="spells_text">Filter by level, class, school, casting time, damage type, saving throw and more.</span>
+    <a class="card" href="backgrounds.html" data-page="backgrounds">
+      <span class="card-count" id="count-backgrounds">—</span>
+      <span class="card-title" data-i18n="backgrounds">Backgrounds</span>
+      <span class="card-text" data-i18n="backgrounds_text">Filter by skill proficiency; see each background's feat.</span>
     </a>
     <a class="card" href="feats.html" data-page="feats">
       <span class="card-count" id="count-feats">—</span>
       <span class="card-title" data-i18n="feats">Feats</span>
       <span class="card-text" data-i18n="feats_text">Filter by ability score, prerequisite, granted spells and actions, proficiencies and more.</span>
     </a>
-    <a class="card" href="backgrounds.html" data-page="backgrounds">
-      <span class="card-count" id="count-backgrounds">—</span>
-      <span class="card-title" data-i18n="backgrounds">Backgrounds</span>
-      <span class="card-text" data-i18n="backgrounds_text">Filter by skill proficiency; see each background's feat.</span>
+    <a class="card" href="spells.html" data-page="spells">
+      <span class="card-count" id="count-spells">—</span>
+      <span class="card-title" data-i18n="spells">Spells</span>
+      <span class="card-text" data-i18n="spells_text">Filter by level, class, school, casting time, damage type, saving throw and more.</span>
     </a>
   </div>
 </main>
@@ -58,7 +58,7 @@
 const T = {
   en: {
     subtitle: "Baldur's Gate 3 mod · data browser", nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_backgrounds: "Backgrounds",
-    wiki: "Wiki", intro: "Search the mod's spells, feats and backgrounds. Every page is generated from the mod's game data.",
+    wiki: "Wiki", intro: "Search the mod's backgrounds, feats and spells. Every page is generated from the mod's game data.",
     spells: "Spells", feats: "Feats", backgrounds: "Backgrounds",
     backgrounds_text: "Filter by skill proficiency; see each background's feat.",
     spells_text: "Filter by level, class, school, casting time, damage type, saving throw and more.",
@@ -67,7 +67,7 @@ const T = {
   },
   ko: {
     subtitle: "발더스 게이트 3 모드 · 데이터 검색", nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_backgrounds: "배경",
-    wiki: "위키", intro: "모드의 주문, 재주, 배경을 찾아볼 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
+    wiki: "위키", intro: "모드의 배경, 재주, 주문을 찾아볼 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
     spells: "주문", feats: "재주", backgrounds: "배경",
     backgrounds_text: "기술 숙련으로 거르고, 배경마다 얻는 재주를 봅니다.",
     spells_text: "레벨, 직업, 학파, 시전 시간, 피해 유형, 내성 굴림 등으로 거릅니다.",

@@ -7,7 +7,9 @@ Backgrounds: every Background node the game loads (vanilla Shared, SharedDev, Gu
 mod, merged by UUID). Nothing is read from the wiki text. The Background "Passives" field holds
 everything a background grants:
   skills       passives whose Boosts is ProficiencyBonus(Skill,X); the name is the passive's
-  feats        the other visible passives (IsHidden ones are parts of a feat), named by DisplayName
+  feats        the other visible passives (IsHidden ones are parts of a feat), named by DisplayName;
+               "id" is the Feat whose PassivesAdded or SelectPassives list holds the passive (null for
+               the background-only OriginFeat_* passives, which no Feat node carries)
   new          the background carries InspirationFromBackground: the backgrounds the mod adds,
                which give a chance of Heroic Inspiration on each Long Rest. Haunted One (the Dark
                Urge origin's background) has a mod UUID but no such passive: it is a game background.
@@ -32,6 +34,15 @@ INSPIRATION = "InspirationFromBackground"
 def main():
     db = stats.load(include_mod=True)
     van, backgrounds = layered(Path("Backgrounds/Backgrounds.lsx"), "Background")
+    _, feat_nodes = layered(Path("Feats/Feats.lsx"), "Feat")
+    _, passive_lists = layered(Path("Lists/PassiveLists.lsx"), "PassiveList")
+    feat_of = {}
+    for feat in feat_nodes.values():
+        given = [p for p in feat.get("PassivesAdded", "").split(";") if p]
+        given += [p for lid in re.findall(r"SelectPassives\(([\w-]+)", feat.get("Selectors", ""))
+                  for p in passive_lists.get(lid, {}).get("Passives", "").split(",") if p]
+        for p in given:
+            feat_of.setdefault(p, feat["Name"])
     out, missing = [], []
     for uuid, bg in backgrounds.items():
         skills, feats = [], []
@@ -45,8 +56,8 @@ def main():
                 skills.append({"id": m.group(1), "name": name_of(db, p)})
             elif p != INSPIRATION and "IsHidden" not in f.get("Properties", ""):
                 name = name_of(db, p)
-                if name not in feats:
-                    feats.append(name)
+                if all(f["name"] != name for f in feats):
+                    feats.append({"id": feat_of.get(p), "name": name})
         out.append({
             "id": uuid,
             "name": {"en": text(bg.get("DisplayName"), False), "ko": text(bg.get("DisplayName"), True)},

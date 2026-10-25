@@ -223,6 +223,15 @@ function readHash() {
     if (v) state.sel[f.key] = new Set(v.split(","));
   }
   state.dir = p.get("sort") === "-name" ? -1 : 1;
+  state.open = p.get("open") || state.open;
+}
+
+// #open=<feat id> (links from the background page) expands that row and scrolls to it once.
+function openFromHash() {
+  const id = new URLSearchParams(location.hash.slice(1)).get("open");
+  if (!id) return;
+  const row = [...document.querySelectorAll("tr.row")].find(r => r.dataset.id === id);
+  if (row) row.scrollIntoView({ block: "center" });
 }
 
 function render() { renderFilters(); renderTable(); writeHash(); }
@@ -268,5 +277,6 @@ fetch("data/feats.json")
     $("#q").value = state.q;
     bind();
     render();
+    openFromHash();
     if (d.generated) $("#generated").textContent = "· " + d.generated;
   });

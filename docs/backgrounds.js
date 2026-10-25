@@ -26,6 +26,7 @@ const T = {
 const state = { lang: "en", q: "", skills: new Set(), dir: 1, open: null };
 let BACKGROUNDS = [];
 let SKILLS = [];  // [{id, name}] from the data, one per skill
+let FEATS = {};   // feat id -> feat from feats.json, for the hover preview
 
 const $ = s => document.querySelector(s);
 const t = k => T[state.lang][k] ?? k;
@@ -40,7 +41,7 @@ function matches(b) {
   if (state.q) {
     const q = state.q.toLowerCase();
     const hay = [b.name.en, b.name.ko, b.desc.en, b.desc.ko, ...b.skills.flatMap(s => [s.name.en, s.name.ko]),
-      ...b.feats.flatMap(f => [f.en, f.ko])].join("\n").toLowerCase();
+      ...b.feats.flatMap(f => [f.name.en, f.name.ko])].join("\n").toLowerCase();
     if (!hay.includes(q)) return false;
   }
   for (const s of state.skills) if (!b.skills.some(x => x.id === s)) return false;
@@ -63,7 +64,7 @@ function renderTable() {
     const row = `<tr class="row" data-id="${esc(b.id)}" aria-expanded="${open}">
       <td><strong>${esc(L(b.name))}</strong>${b.new ? `<span class="tags"><span class="tag new">${esc(t("new"))}</span></span>` : ""}</td>
       <td>${esc(b.skills.map(s => L(s.name)).join(", "))}</td>
-      <td>${esc(b.feats.map(L).join(", "))}</td>
+      <td>${b.feats.map(featLink).join(", ")}</td>
     </tr>`;
     const detail = `<tr class="detail"><td colspan="3">
       ${L(b.desc) ? `<p>${esc(L(b.desc))}</p>` : ""}
@@ -71,6 +72,18 @@ function renderTable() {
     </td></tr>`;
     return open ? row + detail : row;
   }).join("");
+}
+
+const ABILITY_KO = { Strength: "근력", Dexterity: "민첩", Constitution: "건강", Intelligence: "지능", Wisdom: "지혜", Charisma: "매력" };
+
+// A feat the data links to opens its row on the feat page; hovering shows its ability scores and text.
+function featLink(f) {
+  const name = esc(L(f.name));
+  if (!f.id) return name;
+  const feat = FEATS[f.id];
+  const tip = feat ? `<span class="tip" role="tooltip"><span class="k">${esc(feat.abilities
+    .map(a => state.lang === "ko" ? ABILITY_KO[a] || a : a).join(", "))}</span>${esc(L(feat.desc))}</span>` : "";
+  return `<a class="feat-link" href="feats.html#lang=${state.lang}&open=${encodeURIComponent(f.id)}">${name}${tip}</a>`;
 }
 
 function applyLang() {
@@ -123,6 +136,7 @@ function bind() {
     state.dir = -state.dir; renderTable(); writeHash();
   });
   $("#backgrounds tbody").addEventListener("click", e => {
+    if (e.target.closest("a")) return;
     const tr = e.target.closest("tr.row");
     if (!tr) return;
     state.open = state.open === tr.dataset.id ? null : tr.dataset.id;
@@ -141,9 +155,10 @@ function bind() {
   });
 }
 
-fetch("data/backgrounds.json")
-  .then(r => r.json())
-  .then(d => {
+Promise.all([fetch("data/backgrounds.json").then(r => r.json()),
+  fetch("data/feats.json").then(r => r.json()).catch(() => ({ feats: [] }))])
+  .then(([d, f]) => {
+    for (const feat of f.feats) FEATS[feat.id] = feat;
     BACKGROUNDS = d.backgrounds;
     const seen = new Map();
     for (const b of BACKGROUNDS) for (const s of b.skills) if (!seen.has(s.id)) seen.set(s.id, s);
