@@ -38,6 +38,7 @@ let KINDS = [];
 let MASTERIES = [];
 let PLUSES = [];
 let RARITIES = [];
+let MASTERY = new Map();  // English name -> weapon_mastery.json entry
 
 const $ = s => document.querySelector(s);
 const t = k => T[state.lang][k] ?? k;
@@ -50,7 +51,21 @@ const mas = w => (w.mastery ? w.mastery.en : "none");
 // Item frame colors from the game's rarityFrame_*_front textures; Common has no frame color.
 const RARITY_COLOR = { Uncommon: "#01bd39", Rare: "#01bfff", "Very Rare": "#d1017b", Legendary: "#e7b64d" };
 const tint = r => (RARITY_COLOR[r.en] ? ` class="rarity" style="--rarity:${RARITY_COLOR[r.en]}"` : "");
-const damage = w => `${w.damage} ${L(w.damageType)}`;
+// Mastery name linking to its row on the Weapon Mastery page, with the description on hover.
+function masteryLink(w) {
+  if (!w.mastery) return "—";
+  const m = MASTERY.get(w.mastery.en);
+  if (!m) return esc(L(w.mastery));
+  const href = `weapon-mastery.html#lang=${state.lang}&open=${encodeURIComponent(m.id)}`;
+  return `<a class="mastery" href="${href}" title="${esc(L(m.desc))}">${esc(L(w.mastery))}</a>`;
+}
+// Damage type colors from the game's GenericIcon_DamageType_* icons (glow average); physical types stay uncolored.
+const DAMAGE_COLOR = {
+  Acid: "#eff25c", Cold: "#33c4e7", Fire: "#e17528", Force: "#df7072", Lightning: "#5389e6", Necrotic: "#4fbf79",
+  Poison: "#bfdd4c", Psychic: "#c657ac", Radiant: "#dcc154", Thunder: "#ac73c7",
+};
+const damageCell = w => `${esc(w.damage)} ${DAMAGE_COLOR[w.damageType.en]
+  ? `<span class="dmg" style="--dmg:${DAMAGE_COLOR[w.damageType.en]}">${esc(L(w.damageType))}</span>` : esc(L(w.damageType))}`;
 
 function matches(w) {
   if (state.q) {
@@ -99,13 +114,13 @@ function renderTable() {
     const row = `<tr class="row" data-id="${esc(w.id)}" aria-expanded="${open}">
       <td><strong${tint(w.rarity)}>${esc(L(w.name))}</strong></td>
       <td>${esc(L(w.kind))}</td>
-      <td>${esc(damage(w))}</td>
-      <td>${esc(w.mastery ? L(w.mastery) : "—")}</td>
+      <td>${damageCell(w)}</td>
+      <td>${masteryLink(w)}</td>
       <td>${esc(plus(w))}</td>
     </tr>`;
     const facts = [
       [t("group"), L(w.group)],
-      [t("col_damage"), damage(w)],
+      [t("col_damage"), null, damageCell(w)],
       [t("enchant"), plus(w)],
       w.range ? [t("range"), t("m")(w.range)] : null,
       w.props.length ? [t("props"), w.props.map(L).join(", ")] : null,
@@ -116,7 +131,7 @@ function renderTable() {
     ].filter(Boolean);
     const detail = `<tr class="detail"><td colspan="5">
       <p><strong>${esc(L(w.name))}</strong> — ${esc(L(w.kind))}</p>
-      <div class="grid">${facts.map(([k, v]) => `<div><div class="k">${esc(k)}</div><div>${esc(v)}</div></div>`).join("")}</div>
+      <div class="grid">${facts.map(([k, v, html]) => `<div><div class="k">${esc(k)}</div><div>${html ?? esc(v)}</div></div>`).join("")}</div>
     </td></tr>`;
     return open ? row + detail : row;
   }).join("");
@@ -187,6 +202,7 @@ function bind() {
     renderTable(); writeHash();
   });
   $("#list tbody").addEventListener("click", e => {
+    if (e.target.closest("a")) return;
     const tr = e.target.closest("tr.row");
     if (!tr) return;
     state.open = state.open === tr.dataset.id ? null : tr.dataset.id;
@@ -207,9 +223,9 @@ function bind() {
   });
 }
 
-fetch("data/weapons.json")
-  .then(r => r.json())
-  .then(d => {
+Promise.all([fetch("data/weapons.json").then(r => r.json()), fetch("data/weapon_mastery.json").then(r => r.json())])
+  .then(([d, wm]) => {
+    MASTERY = new Map(wm.masteries.map(m => [m.name.en, m]));
     WEAPONS = d.weapons;
     const seen = new Map();
     for (const w of WEAPONS) if (!seen.has(w.group.en)) seen.set(w.group.en, w.group);

@@ -91,6 +91,12 @@ let SPELLS = [];
 
 const $ = s => document.querySelector(s);
 const t = k => T[state.lang][k] ?? k;
+// Damage type colors from the game's GenericIcon_DamageType_* icons (glow average); physical types stay uncolored.
+const DAMAGE_COLOR = {
+  Acid: "#eff25c", Cold: "#33c4e7", Fire: "#e17528", Force: "#df7072", Lightning: "#5389e6", Necrotic: "#4fbf79",
+  Poison: "#bfdd4c", Psychic: "#c657ac", Radiant: "#dcc154", Thunder: "#ac73c7",
+};
+const dmgSpan = d => (DAMAGE_COLOR[d] ? `<span class="dmg" style="--dmg:${DAMAGE_COLOR[d]}">${esc(nm("damage", d))}</span>` : esc(nm("damage", d)));
 const nm = (group, v) => (NAMES[group] && NAMES[group][v]) ? NAMES[group][v][state.lang === "ko" ? 1 : 0] : v;
 
 function valueLabel(f, v) {
@@ -190,7 +196,7 @@ function renderTable() {
       <td>${esc(s.cast.map(t).join(", "))}</td>
       <td class="hide-sm">${esc(rangeText(s))}</td>
       <td class="hide-sm">${esc(effectText(s))}</td>
-      <td class="hide-md">${esc(s.damage.map(d => nm("damage", d)).join(", "))}</td>
+      <td class="hide-md">${s.damage.map(dmgSpan).join(", ")}</td>
       <td class="hide-md">${esc(nm("school", s.school))}</td>
     </tr>`;
     return open ? row + detail(s) : row;
@@ -210,13 +216,13 @@ function detail(s) {
     [t("concentration"), s.concentration ? t("yes") : t("no")],
     s.ritual && [t("ritual"), t("yes")],
     effectText(s) && [t("col_effect"), effectText(s)],
-    s.damage.length && [t("col_damage"), s.damage.map(d => nm("damage", d)).join(", ")],
+    s.damage.length && [t("col_damage"), null, s.damage.map(dmgSpan).join(", ")],
     [t("d_classes"), s.classes.map(c => nm("classes", c)).join(", ")],
     [t("d_scroll"), s.scroll ? t("yes") : t("no")],
     [t("d_id"), s.id],
   ].filter(Boolean);
   return `<tr class="detail"><td colspan="7">
-    <div class="grid">${items.map(([k, v]) => `<div><div class="k">${esc(k)}</div>${esc(v)}</div>`).join("")}</div>
+    <div class="grid">${items.map(([k, v, html]) => `<div><div class="k">${esc(k)}</div>${html ?? esc(v)}</div>`).join("")}</div>
     ${s.desc[L] ? `<p>${esc(s.desc[L])}</p>` : ""}
     ${s.variants.length ? `<div class="k">${esc(t("d_variants"))}</div><ul>${s.variants.map(v => `<li>${esc(v.name[L])}</li>`).join("")}</ul>` : ""}
   </td></tr>`;
