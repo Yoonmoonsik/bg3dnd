@@ -12,6 +12,7 @@ Upload flow:
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -322,13 +323,24 @@ def _git(repo: Path, *args: str) -> str:
     ).stdout.strip()
 
 
+# Commits about the repo's docs (the GitHub Pages spell browser, READMEs) are not mod changes:
+# "docs: ...", "docs(x): ..." and any "<type>(docs): ...".
+DOCS_COMMIT = re.compile(r"^(?:docs(?:\([^)]*\))?|\w+\(docs\))!?:")
+
+
+def changelog_subjects(repo: Path, rev_range: str) -> str:
+    """'- <subject>' lines for rev_range, without docs commits."""
+    lines = _git(repo, "log", "--no-merges", "--format=%s", rev_range).splitlines()
+    return "\n".join(f"- {s}" for s in lines if s and not DOCS_COMMIT.match(s))
+
+
 def build_changelog(repo: Path) -> str:
     """HEAD commit message, then subjects of commits since the previous meta.lsx commit."""
     head_msg = _git(repo, "log", "-1", "--format=%B", "HEAD")
     # HEAD is the release commit itself; the one before it touching meta.lsx is the previous release.
     meta_commits = _git(repo, "log", "-n", "2", "--format=%H", "HEAD", "--", META_LSX_REL).splitlines()
     rev_range = f"{meta_commits[1]}..HEAD~1" if len(meta_commits) > 1 else "HEAD~1"
-    subjects = _git(repo, "log", "--no-merges", "--format=- %s", rev_range)
+    subjects = changelog_subjects(repo, rev_range)
     return f"{head_msg}\n\n{subjects}" if subjects else head_msg
 
 

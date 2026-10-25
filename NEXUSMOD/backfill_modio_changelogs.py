@@ -15,7 +15,7 @@ from pathlib import Path
 import requests
 
 from update_modio_changelog import DEFAULT_BASE_URL, _raise_for_status, version_at
-from upload_mod import META_LSX_REL, _git, load_config
+from upload_mod import META_LSX_REL, _git, changelog_subjects, load_config
 
 
 def release_changelogs(repo: Path, uploaded: set[str]) -> list[tuple[str, str]]:
@@ -33,7 +33,7 @@ def release_changelogs(repo: Path, uploaded: set[str]) -> list[tuple[str, str]]:
                      if versions[j] in uploaded and versions[j] != version), None)
         rev_range = f"{prev}..{newest}~1" if prev else f"{newest}~1"
         head_msg = _git(repo, "log", "-1", "--format=%B", newest)
-        subjects = _git(repo, "log", "--no-merges", "--format=- %s", rev_range)
+        subjects = changelog_subjects(repo, rev_range)
         result.append((version, f"{head_msg}\n\n{subjects}" if subjects else head_msg))
     return result
 

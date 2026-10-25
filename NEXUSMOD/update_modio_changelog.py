@@ -15,7 +15,7 @@ from xml.etree import ElementTree as ET
 
 import requests
 
-from upload_mod import META_LSX_REL, _decode_version64, _git, load_config, read_version_from_meta
+from upload_mod import META_LSX_REL, _decode_version64, _git, changelog_subjects, load_config, read_version_from_meta
 
 DEFAULT_BASE_URL = "https://g-6715.modapi.io/v1"
 
@@ -47,7 +47,7 @@ def build_changelog(cfg: dict, repo: Path, version: str) -> str:
         if v and v != version and modfiles_with_version(cfg, v):
             prev = commit
             break
-    subjects = _git(repo, "log", "--no-merges", "--format=- %s", f"{prev}..HEAD~1" if prev else "HEAD~1")
+    subjects = changelog_subjects(repo, f"{prev}..HEAD~1" if prev else "HEAD~1")
     return f"{head_msg}\n\n{subjects}" if subjects else head_msg
 
 
