@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
   <defs>
     <radialGradient id="bgGlow" cx="50%" cy="28%" r="75%">
       <stop offset="0%" stop-color="#241c3f"/>
@@ -21,7 +21,8 @@
   </defs>
 
   <!-- background -->
-  <rect x="0" y="0" width="1280" height="720" fill="url(#bgGlow)"/>
+  <image xlink:href="slides/svg/assets/image.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="0" y="0" width="1280" height="720" fill="#09070f" fill-opacity="0.7"/>
 
   <!-- scattered arcane specks -->
   <g fill="#f7dd97" opacity="0.35">
@@ -82,14 +83,14 @@
     <text x="545" y="472" font-size="82" font-weight="800" fill="url(#goldGrad)">98</text>
     <text x="545" y="534" font-size="28" font-weight="600" fill="#cdc4e0">Feats</text>
 
-    <text x="735" y="472" font-size="82" font-weight="800" fill="url(#goldGrad)">148</text>
+    <text x="735" y="472" font-size="82" font-weight="800" fill="url(#goldGrad)">313</text>
     <text x="735" y="534" font-size="28" font-weight="600" fill="#cdc4e0">Spells</text>
 
     <text x="925" y="472" font-size="82" font-weight="800" fill="url(#goldGrad)">41</text>
     <text x="925" y="534" font-size="28" font-weight="600" fill="#cdc4e0">Backgrounds</text>
 
-    <text x="1115" y="472" font-size="82" font-weight="800" fill="url(#goldGrad)">15</text>
-    <text x="1115" y="534" font-size="25" font-weight="600" fill="#cdc4e0">New Subraces</text>
+    <text x="1115" y="472" font-size="82" font-weight="800" fill="url(#goldGrad)">46</text>
+    <text x="1115" y="534" font-size="28" font-weight="600" fill="#cdc4e0">Subspecies</text>
   </g>
 
   <!-- footer -->

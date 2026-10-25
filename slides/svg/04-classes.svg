@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
   <defs>
     <radialGradient id="bgGlow" cx="50%" cy="24%" r="80%">
       <stop offset="0%" stop-color="#241c3f"/>
@@ -17,7 +17,8 @@
     </linearGradient>
 </defs>
 
-  <rect x="0" y="0" width="1280" height="720" fill="url(#bgGlow)"/>
+  <image xlink:href="assets/image.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="0" y="0" width="1280" height="720" fill="#09070f" fill-opacity="0.7"/>
   
   <g fill="#f7dd97" opacity="0.28">
     <circle cx="110" cy="70" r="1.5"/>
@@ -34,8 +35,8 @@
   <text x="70" y="62" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="5" fill="#c9a45c">D&amp;D 5.5e ALL-IN-ONE BEYOND</text>
   <text x="1210" y="62" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#8f88a3">04 / 14</text>
   <text x="70" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700" fill="url(#goldGrad)">Classes</text>
-  <text x="1210" y="128" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="80" font-weight="800" fill="url(#goldGrad)">16</text>
-  <text x="1210" y="160" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#9089a8">classes</text>
+  <text x="1210" y="128" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="80" font-weight="800" fill="url(#goldGrad)">125</text>
+  <text x="1210" y="160" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#9089a8">total subclasses</text>
 <text x="70" y="172" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#9089a8">Monk → Ranger</text>
   <line x1="70" y1="195" x2="1210" y2="195" stroke="#e8b84b" stroke-opacity="0.35" stroke-width="1.5"/>
 <line x1="355.0" y1="205" x2="355.0" y2="655" stroke="#4a4370" stroke-width="1"/>

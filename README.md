@@ -69,9 +69,9 @@ See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) and each class page f
 
 ## Feats
 
-See [Feat](https://github.com/Yoonmoonsik/bg3dnd/wiki/Feats).
+See [Feats](https://github.com/Yoonmoonsik/bg3dnd/wiki/Feats).
 
-Actor, Alert, Altered, Athlete, Charger, Charm Twister, Cold Caster, Crossbow Expert, Crusher, Cult of the Dragon Initiate, Deadly Archery, Death Defier, Defensive Duelist, Dragon Fear, Dragon Hide, Dragonscarred, Dragon-Slayer, Dual Wielder, Dungeon Delver, Durable, Dwarven Fortitude, Eldritch Adept, Elemental Adept, Elven Accuracy, Ember of the Fire Giant, Emerald Enclave Fledgling, Enclave Magic, Fade Away, Fairy Trickster, Fey Touched, Fierce Shot, Fighting Initiate, Flames of Phlegethos, Fury of the Frost Giant, Genie Magic, Gleam of Wrath, Grave Keeper, Great Weapon Master, Guile of the Cloud Giant, Harper Agent, Harper Teamwork, Healer, Heavily Armored, Heavy Armor Master, Infernal Constitution, Inspiring Leader, Keenness of the Stone Giant, Lightly Armored, Lordly Resolve, Lords' Alliance Agent, Lucky, Mage Slayer, Magic Initiate: Cleric, Magic Initiate: Druid, Magic Initiate: Wizard, Martial Adept, Medium Armor Master, Metamagic Adept, Moderately Armored, Mounted Combatant, Musician, Mythal Touched, Nimbleness, Orcish Fury, Order's Resilience, Piercer, Poisoner, Polearm Master, Purple Dragon Commandant, Purple Dragon Rook, Resilient, Ritual Caster, Rune Shaper, Savage Attacker, Sentinel, Shadow Touched, Sharpshooter, Shield Master, Skill Expert, Skilled, Skulker, Slasher, Soul of the Storm Giant, Speedy, Spellfire Adept, Spellfire Spark, Spell Sniper, Squat Nimbleness, Strike of the Giants, Swift Witchcraft, Tavern Brawler, Tough, Tyro of the Gauntlet, War Caster, Weapon Master, Zhentarim Ruffian, Zhentarim Tactics.
+Actor, Alert, Altered, Athlete, Charger, Charm Twister, Cold Caster, Crossbow Expert, Crusher, Cult of the Dragon Initiate, Deadly Archery, Death Defier, Defensive Duelist, Dragon Fear, Dragon Hide, Dragon-Slayer, Dragonscarred, Dual Wielder, Dungeon Delver, Durable, Dwarven Fortitude, Eldritch Adept, Elemental Adept, Elven Accuracy, Ember of the Fire Giant, Emerald Enclave Fledgling, Enclave Magic, Fade Away, Fairy Trickster, Fey Touched, Fierce Shot, Fighting Initiate, Flames of Phlegethos, Fury of the Frost Giant, Genie Magic, Gleam of Wrath, Grave Keeper, Great Weapon Master, Guile of the Cloud Giant, Harper Agent, Harper Teamwork, Healer, Heavily Armored, Heavy Armor Master, Infernal Constitution, Inspiring Leader, Keenness of the Stone Giant, Lightly Armored, Lordly Resolve, Lords' Alliance Agent, Lucky, Mage Slayer, Magic Initiate: Cleric, Magic Initiate: Druid, Magic Initiate: Wizard, Martial Adept, Medium Armor Master, Metamagic Adept, Moderately Armored, Mounted Combatant, Musician, Mythal Touched, Nimbleness, Orcish Fury, Order's Resilience, Piercer, Poisoner, Polearm Master, Purple Dragon Commandant, Purple Dragon Rook, Resilient, Ritual Caster, Rune Shaper, Savage Attacker, Sentinel, Shadow Touched, Sharpshooter, Shield Master, Skill Expert, Skilled, Skulker, Slasher, Soul of the Storm Giant, Speedy, Spell Sniper, Spellfire Adept, Spellfire Spark, Squat Nimbleness, Strike of the Giants, Swift Witchcraft, Tavern Brawler, Tough, Tyro of the Gauntlet, Vigor of the Hill Giant, War Caster, Weapon Master, Zhentarim Ruffian, Zhentarim Tactics.
 
 ### Fighting Styles
 
@@ -83,28 +83,28 @@ Archery, Blind Fighting, Defense, Dueling, Great Weapon Fighting, Interception, 
 
 See [Species](https://github.com/Yoonmoonsik/bg3dnd/wiki/Species).
 
-- Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Eladrin, Ice Elf, and Shadar-kai are available as Elf subrace options. Dhampir can be taken as a Human, Elf, Drow, Tiefling, Dwarf, Halfling, Gnome, or Orc subrace.
+- Aasimar, Changeling, Goliath, and Kalashtar are available as Human subspecies options. Eladrin, Ice Elf, and Shadar-kai are available as Elven Lineage options. Dhampir can be taken as a Human, Elf, Drow, Tiefling, Dwarf, Halfling, Gnome, or Orc subspecies.
 - Dragonborn, Dwarf, Elf, Githyanki, Gnome, Half Elf, Halfling, Human, Orc, and Tiefling are supported.
 - Several species include ancestry or lineage options, including Dragonborn Draconic Ancestry, Elf and Half Elf sub-lineages, Goliath Giant Ancestry, and Tiefling legacy options.
 
 ## Spells
 
-See [Spell](https://github.com/Yoonmoonsik/bg3dnd/wiki/Spells).
+See [Spells](https://github.com/Yoonmoonsik/bg3dnd/wiki/Spells).
 
 The lists below cover new and revised spells only. The wiki has the complete per-level tables, including spells that are unchanged.
 
 ### Cantrips
 
-Acid Splash, Blade Ward, Blood Bolt, Booming Blade, Bursting Sinew, Finger Guns, Frightful Start, Green-Flame Blade, Hellfire, Holy Word, Mind Sliver, Primal Savagery, Produce Flame, Sorcerous Burst, Spare the Dying, Starry Wisp, Sword Burst, Thunderclap, Toll the Dead, True Strike, Vengeful Blade, Word of Radiance.
+Acid Splash, Blade Ward, Blood Bolt, Booming Blade, Bursting Sinew, Finger Guns, Frightful Start, Frostbite, Green-Flame Blade, Hellfire, Holy Word, Mind Sliver, Primal Savagery, Produce Flame, Sorcerous Burst, Spare the Dying, Starry Wisp, Sword Burst, Thunderclap, Toll the Dead, True Strike, Vengeful Blade, Word of Radiance.
 
 ### Leveled Spells
 
-- Level 1: Absorb Elements, Armor of Agathys, Ballistic Smite, Blood Rush, Bloodbane Rune, Body Warping of Gorgoroth, Boil Blood, Catapult, Chromatic Orb, Cloak of Shadow, Color Spray, Command, Consumption, Crimson Lash, Cure Wounds, Dissonant Whispers, Earth Tremor, False Life, Fog Cloud, Grease, Healing Word, Hell's Lash, Hideous Laughter, Hungering Blade, Shroud Blood, Somnolence, Spectral Slash, Spellfire Flare, Thorn Armor, Thunderous Smite, Tide of Darkness, Umbral Tendril, Vibrating Humors, Wardaway, Witch Bolt, Wrathful Smite.
+- Level 1: Absorb Elements, Armour of Agathys, Ballistic Smite, Blood Rush, Bloodbane Rune, Body Warping of Gorgoroth, Boil Blood, Catapult, Chromatic Orb, Cloak of Shadow, Colour Spray, Command, Consumption, Crimson Lash, Cure Wounds, Dissonant Whispers, Earth Tremor, False Life, Fog Cloud, Grease, Healing Word, Hell's Lash, Hungering Blade, Shroud Blood, Somnolence, Spectral Slash, Spellfire Flare, Tasha's Hideous Laughter, Thorn Armor, Thunderous Smite, Tide of Darkness, Umbral Tendril, Vibrating Humors, Wardaway, Witch Bolt, Wrathful Smite.
 - Level 2: Aganazzar's Scorcher, Alter Self, Arcane Vigor, Barkskin, Blood Wisp, Darkbolt, Dazing Blast, Death Armor, Dragon's Breath, Elminster's Elusion, Fiend Flesh, Find Steed, Fire Rune, Gust of Wind, Lesser Restoration, Mind Spike, Moonbeam, Prayer of Healing, Rime's Binding Ice, Sanguine Shield, Searing Orb, Sense Lifeblood, Shadow Blade, Snilloc's Snowball Swarm, Summon Beast, Tasha's Mind Whip, Theft of Vitae, Warding Bond, Web, Wilting Smite, Wrack.
-- Level 3: Animate Dead, Ashardalon's Stride, Astral Flood, Aura of Vitality, Bestow Curse, Blood Bond, Cacophonic Shield, Conjure Barrage, Counterspell, Crusader's Mantle, Elemental Exhalation, Extract Iron, Haste, Laeral's Silver Lance, Lightning Arrow, Murmurs of Doom, Phantom Steed, Reanimate, Sanguine Poppet, Serpent Tongue, Summon Fey, Summon Undead, Tidal Wave, Trollblood Infusion, Void Strike.
-- Level 4: Arcane Eye, Charm Monster, Circle of Scarlet, Conjure Woodland Beings, Dark Sacrament, Fire Dance, Fount of Moonlight, Murder of Crows, Shadow of Moil, Spellfire Storm, Summon Aberration, Summon Elemental, Viscous Sheath, Vitriolic Sphere.
-- Level 5: Alustriel's Mooncloak, Awaken, Circle of Power, Cone of Cold, Conjure Elemental, Danse Macabre, Dawn, Dispel Evil and Good, Dream, Enervation, Holy Weapon, Steel Wind Strike, Summon Celestial, Summon Dragon, Synaptic Static.
-- Level 6: Circle of Death, Disintegrate, Freezing Sphere, Mental Prison, Planar Ally.
+- Level 3: Animate Dead, Ashardalon's Stride, Astral Flood, Aura of Vitality, Bestow Curse, Blood Bond, Cacophonic Shield, Conjure Barrage, Counterspell, Crusader's Mantle, Elemental Exhalation, Extract Iron, Haste, Laeral's Silver Lance, Lightning Arrow, Murmurs of Doom, Phantom Steed, Reanimate, Sanguine Poppet, Serpent Tongue, Summon Fey: Red Cap, Summon Undead: Ghoul, Tidal Wave, Trollblood Infusion, Void Strike.
+- Level 4: Arcane Eye, Charm Monster, Circle of Scarlet, Conjure Woodland Being, Dark Sacrament, Fire Dance, Fount of Moonlight, Murder of Crows, Shadow of Moil, Spellfire Storm, Summon Aberration, Summon Elemental, Viscous Sheath, Vitriolic Sphere.
+- Level 5: Alustriel's Mooncloak, Awaken, Circle of Power, Cone of Cold, Conjure Elemental, Danse Macabre, Dawn, Dispel Evil And Good, Dream, Enervation, Holy Weapon, Steel Wind Strike, Summon Celestial, Summon Dragon, Synaptic Static.
+- Level 6: Circle of Death, Disintegrate, Mental Prison, Otiluke's Freezing Sphere, Planar Ally.
 
 ## Items
 

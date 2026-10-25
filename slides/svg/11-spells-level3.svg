@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
   <defs>
     <radialGradient id="bgGlow" cx="50%" cy="24%" r="80%">
       <stop offset="0%" stop-color="#241c3f"/>
@@ -17,7 +17,8 @@
     </linearGradient>
 </defs>
 
-  <rect x="0" y="0" width="1280" height="720" fill="url(#bgGlow)"/>
+  <image xlink:href="assets/image.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="0" y="0" width="1280" height="720" fill="#09070f" fill-opacity="0.7"/>
 
   <g fill="#f7dd97" opacity="0.28">
     <circle cx="110" cy="70" r="1.5"/>
@@ -34,51 +35,59 @@
   <text x="70" y="62" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="5" fill="#c9a45c">D&amp;D 5.5e ALL-IN-ONE BEYOND</text>
   <text x="1210" y="62" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#8f88a3">11 / 14</text>
   <text x="70" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700" fill="url(#goldGrad)">Level 3</text>
-  <text x="1210" y="128" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="80" font-weight="800" fill="url(#goldGrad)">25</text>
-  <text x="1210" y="160" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#9089a8">level 3 spells</text>
-<text x="70" y="172" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#9089a8">Animate Dead through Void Strike — new spells alongside 5.5e-revised classics.</text>
+  <text x="1210" y="128" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="80" font-weight="800" fill="url(#goldGrad)">51</text>
+  <text x="1210" y="160" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#9089a8">total level 3 spells</text>
+<text x="70" y="172" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#9089a8">Animate Dead through Void Strike — every level 3 spell on the class spell lists.</text>
   <line x1="70" y1="195" x2="1210" y2="195" stroke="#e8b84b" stroke-opacity="0.35" stroke-width="1.5"/>
-<text x="70" y="222" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Ashardalon&#39;s Stride</tspan><tspan fill="#cdc4e0"> — Concentration; your Speed increases by 20 ft and you</tspan></text>
-<text x="70" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">don&#39;t provoke Opportunity…</text>
-<text x="70" y="262" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Aura of Vitality</tspan><tspan fill="#cdc4e0"> — Concentration; grants a Bonus Action each turn to cast</tspan></text>
-<text x="70" y="280" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">Restore Vitality and…</text>
-<text x="70" y="302" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Blood Bond</tspan><tspan fill="#cdc4e0"> — Touch; expend three Hit Point Dice to grant Temporary Hit Points;</tspan></text>
-<text x="70" y="320" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">plus +1 AC and saving throws for 100 turns</text>
-<text x="70" y="342" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Cacophonic Shield</tspan><tspan fill="#cdc4e0"> — Concentration; 10-ft Emanation around you for the</tspan></text>
-<text x="70" y="360" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">duration</text>
-<text x="70" y="382" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Counterspell</tspan><tspan fill="#cdc4e0"> — Reaction; a creature casting a spell must succeed on a</tspan></text>
-<text x="70" y="400" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">Constitution save or the spell and its slot are wasted</text>
-<text x="70" y="422" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Crusader&#39;s Mantle</tspan><tspan fill="#cdc4e0"> — Aura that adds radiant damage to allies&#39; attacks</tspan></text>
-<text x="70" y="444" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Laeral&#39;s Silver Lance</tspan><tspan fill="#cdc4e0"> — Strength save; each creature you choose in a</tspan></text>
-<text x="70" y="462" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">120-ft-long, 5-ft-wide Line takes…</text>
-<text x="70" y="484" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Murmurs of Doom</tspan><tspan fill="#cdc4e0"> — Concentration; creates a 30-ft aura; on cast and at the</tspan></text>
-<text x="70" y="502" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">start of each of your…</text>
-<text x="70" y="524" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Sanguine Poppet</tspan><tspan fill="#cdc4e0"> — Concentration; expend three Hit Point Dice to create a</tspan></text>
-<text x="70" y="542" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">poppet that detonates for Necrotic damage</text>
-<text x="70" y="564" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Summon Fey</tspan><tspan fill="#cdc4e0"> — Conjure a fey spirit with multiple mood options</tspan></text>
-<text x="70" y="586" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Summon Undead</tspan><tspan fill="#cdc4e0"> — Conjure an Undead Spirit ally in the form of a ghoul</tspan></text>
-<text x="70" y="608" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Trollblood Infusion</tspan><tspan fill="#cdc4e0"> — Touch a creature to infuse it with regenerative</tspan></text>
-<text x="70" y="626" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">troll blood</text>
-<text x="670" y="222" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Animate Dead</tspan><tspan fill="#cdc4e0"> — Raise Medium or Small corpses as Skeleton or Zombie allies that</tspan></text>
-<text x="670" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">last through Long Rests</text>
-<text x="670" y="262" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Astral Flood</tspan><tspan fill="#cdc4e0"> — 30-ft Cone of Radiant energy; Dexterity save</tspan></text>
-<text x="670" y="284" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Bestow Curse</tspan><tspan fill="#cdc4e0"> — Touch; choose: Disadvantage on checks/saves/attacks, deal</tspan></text>
-<text x="670" y="302" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">bonus damage, or rob…</text>
-<text x="670" y="324" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Conjure Barrage</tspan><tspan fill="#cdc4e0"> — Cone of weapon projectiles dealing force damage (5d8)</tspan></text>
-<text x="670" y="346" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Elemental Exhalation</tspan><tspan fill="#cdc4e0"> — 30-ft Cone; choose the damage type: Air (Thunder,</tspan></text>
-<text x="670" y="364" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">pushes creatures 10 ft away…</text>
-<text x="670" y="386" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Extract Iron</tspan><tspan fill="#cdc4e0"> — Expend three Hit Point Dice to create three nonmagical</tspan></text>
-<text x="670" y="404" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">daggers from your blood; +1 die and dagger per slot level</text>
-<text x="670" y="426" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Haste</tspan><tspan fill="#cdc4e0"> — Concentration; Speed doubled, +2 AC, and an extra action</tspan></text>
-<text x="670" y="444" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">limited to one attack, Dash, Disengage, or Hide</text>
-<text x="670" y="466" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Lightning Arrow</tspan><tspan fill="#cdc4e0"> — Transform a weapon attack: 4d8 Lightning on a hit (half</tspan></text>
-<text x="670" y="484" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">on a miss)</text>
-<text x="670" y="506" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Phantom Steed</tspan><tspan fill="#cdc4e0"> — Summons a mount that can Dash, Disengage, or Dodge each</tspan></text>
-<text x="670" y="524" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">turn; rider falls Prone…</text>
-<text x="670" y="546" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Reanimate</tspan><tspan fill="#cdc4e0"> — Touch; expend three Hit Point Dice to revive a dead creature</tspan></text>
-<text x="670" y="564" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">with Temporary Hit Points and +2 to checks, attacks, and saves</text>
-<text x="670" y="586" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Serpent Tongue</tspan><tspan fill="#cdc4e0"> — Bonus Action melee spell attacks for 1d12 Piercing and Poisoned</tspan></text>
-<text x="670" y="608" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Tidal Wave</tspan><tspan fill="#cdc4e0"> — Conjure a wave of water crashing down on a 30x10x10 ft area</tspan></text>
-<text x="670" y="630" font-family="Arial, Helvetica, sans-serif" font-size="13.5"><tspan font-weight="700" fill="#e8b84b">Void Strike</tspan><tspan fill="#cdc4e0"> — Ranged spell attack with Advantage; 5d8 Necrotic damage and</tspan></text>
-<text x="670" y="648" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#cdc4e0">the target is…</text>
+<text x="70" y="228" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Animate Dead</text>
+<text x="70" y="254" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Ashardalon's Stride</text>
+<text x="70" y="280" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Astral Flood</text>
+<text x="70" y="306" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Aura of Vitality</text>
+<text x="70" y="332" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Beacon of Hope</text>
+<text x="70" y="358" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Bestow Curse</text>
+<text x="70" y="384" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Blinding Smite</text>
+<text x="70" y="410" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Blink</text>
+<text x="70" y="436" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Blood Bond</text>
+<text x="70" y="462" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Cacophonic Shield</text>
+<text x="70" y="488" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Call Lightning</text>
+<text x="70" y="514" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Conjure Barrage</text>
+<text x="70" y="540" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Counterspell</text>
+<text x="70" y="566" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Crusader's Mantle</text>
+<text x="70" y="592" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Daylight</text>
+<text x="70" y="618" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Elemental Exhalation</text>
+<text x="70" y="644" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Elemental Weapon</text>
+<text x="450" y="228" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Extract Iron</text>
+<text x="450" y="254" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Fear</text>
+<text x="450" y="280" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Feign Death</text>
+<text x="450" y="306" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Fireball</text>
+<text x="450" y="332" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Fly</text>
+<text x="450" y="358" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Gaseous Form</text>
+<text x="450" y="384" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Glyph of Warding</text>
+<text x="450" y="410" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Haste</text>
+<text x="450" y="436" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Hunger of Hadar</text>
+<text x="450" y="462" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Hypnotic Pattern</text>
+<text x="450" y="488" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Laeral's Silver Lance</text>
+<text x="450" y="514" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Lightning Arrow</text>
+<text x="450" y="540" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Lightning Bolt</text>
+<text x="450" y="566" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Mass Healing Word</text>
+<text x="450" y="592" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Murmurs of Doom</text>
+<text x="450" y="618" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Phantom Steed</text>
+<text x="450" y="644" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Plant Growth</text>
+<text x="830" y="228" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Protection from Energy</text>
+<text x="830" y="254" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Reanimate</text>
+<text x="830" y="280" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Remove Curse</text>
+<text x="830" y="306" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Revivify</text>
+<text x="830" y="332" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Sanguine Poppet</text>
+<text x="830" y="358" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Serpent Tongue</text>
+<text x="830" y="384" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Sleet Storm</text>
+<text x="830" y="410" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Slow</text>
+<text x="830" y="436" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Speak with Dead</text>
+<text x="830" y="462" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Spirit Guardians</text>
+<text x="830" y="488" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Stinking Cloud</text>
+<text x="830" y="514" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Summon Fey: Red Cap</text>
+<text x="830" y="540" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Summon Undead: Ghoul</text>
+<text x="830" y="566" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Tidal Wave</text>
+<text x="830" y="592" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Trollblood Infusion</text>
+<text x="830" y="618" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Vampiric Touch</text>
+<text x="830" y="644" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e8b84b">Void Strike</text>
 </svg>
