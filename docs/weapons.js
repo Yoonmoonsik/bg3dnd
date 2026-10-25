@@ -101,7 +101,7 @@ function renderFilters() {
     `<div class="fgroup" data-f="plus"><div class="label">${esc(t("f_plus"))}</div><div class="chips">${
       PLUSES.map(n => chip(String(n), n ? `+${n}` : t("none"), state.plus)).join("")}</div></div>` +
     `<div class="fgroup" data-f="rar"><div class="label">${esc(t("f_rarity"))}</div><div class="chips">${
-      RARITIES.map(r => chip(r.en, L(r), state.rar).replace('class="chip"', tint(r).replace('class="', 'class="chip '))).join("")}</div></div>`;
+      RARITIES.map(r => tint(r) ? chip(r.en, L(r), state.rar).replace('class="chip"', tint(r).replace('class="', 'class="chip ')) : chip(r.en, L(r), state.rar)).join("")}</div></div>`;
 }
 
 function renderTable() {
