@@ -7,6 +7,7 @@
            DisplayName), damage, range, properties, rarity, enchantment, mastery, the passives and
            spells the weapon grants, and where to find it.
 Where to find it comes from the mod's own placements, checked by hand against the game data:
+  others   the rest of the mod's Weapon.txt (SKIP drops variants, creature and spell weapons), left blank
   general  TreasureTable.txt merges each type into the vanilla ST_Martial*Weapons(_1/_2) tables
            (+1 StartLevel 3, +2 StartLevel 6), which vanilla weapon traders and random loot use
   unique   Levels/*.lsf placements, Equipment.txt sets on level characters, and the
@@ -49,6 +50,11 @@ UNIQUE = {
     "MAG_Voltedge": {"en": "Underdark - Arcane Tower, equipped by an Animated Armour",
                      "ko": "언더다크 - 비전의 탑, 움직이는 갑옷이 장착"},
 }
+# Weapon.txt entries players do not use as their own weapon: variants, creature and spell weapons.
+SKIP = re.compile(r"_(Pact|Rusty|B|C|Copy|NoPassives|Makeshift|Gith|Shar|AnimateDead|CelestialSpirit|Druid)$"
+                  r"|^WPN_(Goblin|Kuotoa|Imp|Merregon|ShadowBlade|CrimsonLash|FeyBlade|Scimitar_FlameBlade)_?"
+                  r"|^(MAG_Infernal_Mace_2|WPN_MagicStaff|WPN_Dart|WPN_Sling|WPN_KingsKnife)$"
+                  r"|^WPN_(Pitchfork|ToySword|MinePickaxe|MeatCleaver|Torch|Salami|WhippingCane|Lantern)$")
 # Passives every weapon of its kind carries, or that only drive visuals: not listed as effects.
 HIDDEN = re.compile(r"^(WeaponMastery|Firearm_|VFX_|HeavyWeapon_)")
 PROPS = ["Finesse", "Light", "Heavy", "Reach", "Versatile", "Twohanded", "Ammunition", "Loading", "Magical"]
@@ -56,6 +62,7 @@ PROP_NAMES = {"Twohanded": "Two-Handed"}
 GROUPS = {
     "SimpleMeleeWeapon": {"en": "Simple Melee", "ko": "일반 근접"},
     "MartialMeleeWeapon": {"en": "Martial Melee", "ko": "군용 근접"},
+    "SimpleRangedWeapon": {"en": "Simple Ranged", "ko": "일반 원거리"},
     "MartialRangedWeapon": {"en": "Martial Ranged", "ko": "군용 원거리"},
 }
 RARITY = {
@@ -107,7 +114,8 @@ def weapon(d, n, where):
     props = [p for p in PROPS if p in f.get("Weapon Properties", "").split(";")]
     group = f.get("Weapon Group", "")
     return {
-        "id": n, "name": name, "unique": n not in [t + s for t in TYPES for s in ("", "_1", "_2")],
+        "id": n, "name": name, "unique": n not in (base, base + "_1", base + "_2"),
+        "new": n not in stats.load(include_mod=False),
         "kind": kind, "group": GROUPS[group], "melee": "Melee" in group,
         "damage": f["Damage"], "damageType": d.term(f["Damage Type"]),
         "range": None if "Melee" in group else int(f["WeaponRange"]) / 100,
@@ -127,6 +135,11 @@ def weapons(d):
             out.append(weapon(d, t + s, where))
     for n, where in UNIQUE.items():
         out.append(weapon(d, n, where))
+    # The rest of the mod's Weapon.txt, where to find left blank for now.
+    done = {w["id"] for w in out}
+    for n in re.findall(r'^new entry "([^"]+)"', stats.MOD_TXT.joinpath("Weapon.txt").read_text("utf-8-sig"), re.M):
+        if n not in done and not n.startswith("__") and not SKIP.search(n):
+            out.append(weapon(d, n, {"en": "", "ko": ""}))
     return out
 
 
