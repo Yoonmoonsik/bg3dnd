@@ -71,8 +71,9 @@ TAG = re.compile(r"<[^>]+>")
 def clean(s):
     if not s:
         return ""
-    s = re.sub(r"<br\s*/?>", "\n", s, flags=re.I)
-    return html.unescape(TAG.sub("", html.unescape(s))).strip()
+    # Unescape first: the mod's xml stores <br> as &lt;br&gt;.
+    s = re.sub(r"<br\s*/?>", "\n", html.unescape(s), flags=re.I)
+    return html.unescape(TAG.sub("", s)).strip()
 
 def handle_of(v):
     return v.split(";")[0] if v else None

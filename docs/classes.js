@@ -4,7 +4,7 @@ const T = {
   en: {
     title: "Classes", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
     nav_home: "Home", nav_backgrounds: "Backgrounds", nav_classes: "Classes", nav_feats: "Feats",
-    nav_fighting: "Fighting Styles", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery",
+    nav_fighting: "Fighting Styles", nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     search: "Search classes or subclasses by name or feature", filters: "Filters", reset: "Reset",
     col_name: "Class", col_hp: "Hit Points", col_primary: "Primary Ability", col_caster: "Spellcasting",
     col_subclasses: "Subclasses",
@@ -23,7 +23,7 @@ const T = {
   ko: {
     title: "직업", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
     nav_home: "홈", nav_backgrounds: "배경", nav_classes: "직업", nav_feats: "재주",
-    nav_fighting: "전투 방식", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술",
+    nav_fighting: "전투 방식", nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     search: "직업이나 하위 직업 이름, 기능으로 검색", filters: "필터", reset: "초기화",
     col_name: "직업", col_hp: "생명력", col_primary: "주 능력치", col_caster: "주문 시전",
     col_subclasses: "하위 직업",

@@ -20,9 +20,11 @@
       <a class="link" href="classes.html" data-i18n="nav_classes">Classes</a>
       <a class="link" href="feats.html" data-i18n="nav_feats">Feats</a>
       <a class="link" href="fighting-styles.html" data-i18n="nav_fighting">Fighting Styles</a>
+      <a class="link" href="rules.html" data-i18n="nav_rules">Rules</a>
       <a class="link" href="species.html" data-i18n="nav_species">Species</a>
       <a class="link" href="spells.html" data-i18n="nav_spells">Spells</a>
       <a class="link" href="weapon-mastery.html" data-i18n="nav_mastery">Weapon Mastery</a>
+      <a class="link" href="weapons.html" data-i18n="nav_weapons">Weapons</a>
     </nav>
     <a class="link" href="https://github.com/Yoonmoonsik/bg3dnd/wiki" data-i18n="wiki">Wiki</a>
     <div class="lang" role="group" aria-label="Language">
@@ -33,7 +35,7 @@
 </header>
 
 <main>
-  <p class="intro" data-i18n="intro">Search the mod's backgrounds, classes, feats, fighting styles, species, spells and weapon masteries. Every page is generated from the mod's game data.</p>
+  <p class="intro" data-i18n="intro">Search the mod's backgrounds, classes, feats, fighting styles, rules, species, spells, weapon masteries and weapons. Every page is generated from the mod's game data.</p>
   <div class="cards">
     <a class="card" href="backgrounds.html" data-page="backgrounds">
       <span class="card-count" id="count-backgrounds">—</span>
@@ -54,6 +56,16 @@
       <span class="card-count" id="count-fighting">—</span>
       <span class="card-title" data-i18n="fighting">Fighting Styles</span>
       <span class="card-text" data-i18n="fighting_text"></span>
+    </a>
+    <a class="card" href="rules.html" data-page="rules">
+      <span class="card-count" id="count-rules">—</span>
+      <span class="card-title" data-i18n="rules">Rules</span>
+      <span class="card-text" data-i18n="rules_text"></span>
+    </a>
+    <a class="card" href="weapons.html" data-page="weapons">
+      <span class="card-count" id="count-weapons">—</span>
+      <span class="card-title" data-i18n="weapons">Weapons</span>
+      <span class="card-text" data-i18n="weapons_text"></span>
     </a>
     <a class="card" href="species.html" data-page="species">
       <span class="card-count" id="count-species">—</span>
@@ -81,11 +93,13 @@
 "use strict";
 const T = {
   en: {
-    subtitle: "Baldur's Gate 3 mod · data browser", nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_species: "Species", nav_backgrounds: "Backgrounds", nav_classes: "Classes",
-    wiki: "Wiki", intro: "Search the mod's backgrounds, classes, feats, fighting styles, species, spells and weapon masteries. Every page is generated from the mod's game data.",
+    subtitle: "Baldur's Gate 3 mod · data browser", nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons", nav_rules: "Rules", nav_species: "Species", nav_backgrounds: "Backgrounds", nav_classes: "Classes",
+    wiki: "Wiki", intro: "Search the mod's backgrounds, classes, feats, fighting styles, rules, species, spells, weapon masteries and weapons. Every page is generated from the mod's game data.",
     spells: "Spells", feats: "Feats", backgrounds: "Backgrounds", species: "Species", classes: "Classes",
     classes_text: "Each class with its subclasses and features by level.",
-    fighting: "Fighting Styles", mastery: "Weapon Mastery",
+    fighting: "Fighting Styles", mastery: "Weapon Mastery", rules: "Rules", weapons: "Weapons",
+    weapons_text: "The weapons the mod adds, with their stats and where to find them.",
+    rules_text: "Rule changes from the 5.5 rules that apply to every character.",
     fighting_text: "See each fighting style and which classes, subclasses and feats grant it.",
     mastery_text: "See each weapon mastery, its weapons, and who gets mastery picks.",
     species_text: "Filter by parent species, darkvision, species spells, resistances and more.",
@@ -95,11 +109,13 @@ const T = {
     footer: "Generated from the mod's game data.",
   },
   ko: {
-    subtitle: "발더스 게이트 3 모드 · 데이터 검색", nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_species: "종족", nav_backgrounds: "배경", nav_classes: "직업",
-    wiki: "위키", intro: "모드의 배경, 직업, 재주, 전투 방식, 종족, 주문, 무기 숙련술을 찾아볼 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
+    subtitle: "발더스 게이트 3 모드 · 데이터 검색", nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_weapons: "무기", nav_rules: "규칙", nav_species: "종족", nav_backgrounds: "배경", nav_classes: "직업",
+    wiki: "위키", intro: "모드의 배경, 직업, 재주, 전투 방식, 규칙, 종족, 주문, 무기 숙련술, 무기를 찾아볼 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
     spells: "주문", feats: "재주", backgrounds: "배경", species: "종족", classes: "직업",
     classes_text: "직업마다 하위 직업과 레벨별 기능을 봅니다.",
-    fighting: "전투 방식", mastery: "무기 숙련술",
+    fighting: "전투 방식", mastery: "무기 숙련술", rules: "규칙", weapons: "무기",
+    weapons_text: "모드가 추가한 무기의 성능과 얻는 곳을 봅니다.",
+    rules_text: "모든 캐릭터에 적용되는 5.5 룰 규칙 변경을 봅니다.",
     fighting_text: "전투 방식마다 효과와 얻는 직업·하위 직업·재주를 봅니다.",
     mastery_text: "숙련술마다 효과와 해당 무기, 숙련술을 얻는 곳을 봅니다.",
     species_text: "상위 종족, 암시야, 종족 주문, 저항 등으로 거릅니다.",
@@ -141,7 +157,7 @@ document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click
 }));
 apply();
 
-for (const [page, key, id = page] of [["classes", "classes"], ["spells", "spells"], ["feats", "feats"], ["backgrounds", "backgrounds"], ["species", "species"], ["fighting_styles", "styles", "fighting"], ["weapon_mastery", "masteries", "mastery"]]) {
+for (const [page, key, id = page] of [["classes", "classes"], ["spells", "spells"], ["feats", "feats"], ["backgrounds", "backgrounds"], ["species", "species"], ["fighting_styles", "styles", "fighting"], ["weapon_mastery", "masteries", "mastery"], ["rules", "rules"], ["weapons", "weapons"]]) {
   fetch(`data/${page}.json`).then(r => r.json()).then(d => {
     document.getElementById("count-" + id).textContent = d[key].length;
   });

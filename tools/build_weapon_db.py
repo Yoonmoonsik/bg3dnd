@@ -1,0 +1,138 @@
+#!/usr/bin/env python
+"""Build docs/data/weapons.json from the mod's game data.
+
+  python tools/build_weapon_db.py
+
+  weapons  the weapon types the mod adds (base, +1, +2) and its unique magic weapons: name (RootTemplate
+           DisplayName), damage, range, properties, rarity, enchantment, mastery, the passives and
+           spells the weapon grants, and where to find it.
+Where to find it comes from the mod's own placements, checked by hand against the game data:
+  general  TreasureTable.txt merges each type into the vanilla ST_Martial*Weapons(_1/_2) tables
+           (+1 StartLevel 3, +2 StartLevel 6), which vanilla weapon traders and random loot use
+  unique   Levels/*.lsf placements, Equipment.txt sets on level characters, and the
+           MOO_BugBearvendor_Trade table
+"""
+import re
+import sys
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO / ".claude" / "skills" / "bg3-data" / "scripts"))
+sys.path.insert(0, str(REPO / "tools"))
+import loca      # noqa: E402
+import stats     # noqa: E402
+import template  # noqa: E402
+from build_combat_db import DATA, Data, write  # noqa: E402
+from build_feat_db import name_of  # noqa: E402
+
+TYPES = ["WPN_Blunderbuss", "WPN_Musket", "WPN_Pistol", "WPN_Whip"]
+LOOT = {
+    "ranged": {"en": "Ranged weapon traders and random weapon loot",
+               "ko": "원거리 무기 상인과 무작위 무기 전리품"},
+    "melee": {"en": "Melee weapon traders and random weapon loot",
+              "ko": "근접 무기 상인과 무작위 무기 전리품"},
+}
+TIER = {1: {"en": " (from level 3)", "ko": " (3레벨부터)"}, 2: {"en": " (from level 6)", "ko": " (6레벨부터)"}}
+UNIQUE = {
+    "WPN_Blunderbuss_GiantSlayer": {"en": "Moonrise Towers, sold by Lann Tarv",
+                                    "ko": "달오름 탑, 란 타브가 판매"},
+    "MAG_HolyAvenger": {"en": "Rosymorn Monastery, beside the Lathander prayer spot",
+                        "ko": "장밋빛 아침 수도원, 라샌더 기도 장소 옆"},
+    "WPN_Musket_LucentDestroyer": {"en": "Crèche Y'llek, in the Blue Jay's Find buried chest",
+                                   "ko": "일릭 양성소, '큰어치가 발견한 것' 묻힌 상자"},
+    "MAG_MoonSickle": {"en": "Emerald Grove, beside the Sacred Pool where the druids hold their ritual",
+                       "ko": "에메랄드 숲, 드루이드가 의식을 치르는 신성한 연못 옆"},
+    "WPN_Pistol_Thunderbuss": {"en": "Underdark - Ancient Forge, buried chest near the Animated Armour",
+                               "ko": "언더다크 - 고대 용광로, 움직이는 갑옷 근처 묻힌 상자"},
+    "MAG_TrueName": {"en": "Shadow-Cursed Lands, equipped by He Who Was",
+                     "ko": "그림자 저주에 물든 땅, 소멸된 자가 장착"},
+    "MAG_Voltedge": {"en": "Underdark - Arcane Tower, equipped by an Animated Armour",
+                     "ko": "언더다크 - 비전의 탑, 움직이는 갑옷이 장착"},
+}
+# Passives every weapon of its kind carries, or that only drive visuals: not listed as effects.
+HIDDEN = re.compile(r"^(WeaponMastery|Firearm_|VFX_|HeavyWeapon_)")
+PROPS = ["Finesse", "Light", "Heavy", "Reach", "Versatile", "Twohanded", "Ammunition", "Loading", "Magical"]
+PROP_NAMES = {"Twohanded": "Two-Handed"}
+GROUPS = {
+    "SimpleMeleeWeapon": {"en": "Simple Melee", "ko": "일반 근접"},
+    "MartialMeleeWeapon": {"en": "Martial Melee", "ko": "군용 근접"},
+    "MartialRangedWeapon": {"en": "Martial Ranged", "ko": "군용 원거리"},
+}
+RARITY = {
+    "Common": {"en": "Common", "ko": "일반"}, "Uncommon": {"en": "Uncommon", "ko": "고급"},
+    "Rare": {"en": "Rare", "ko": "희귀"}, "VeryRare": {"en": "Very Rare", "ko": "진귀"},
+    "Legendary": {"en": "Legendary", "ko": "전설"},
+}
+
+
+def fields(db, n):
+    return {k: v[0] for k, v in stats.all_fields(db, n).items()}
+
+
+INDEX = None
+
+
+def template_name(uuid):
+    """DisplayName of a RootTemplate, following ParentTemplateId when the template has none."""
+    global INDEX
+    INDEX = INDEX or template.load_index()
+    while uuid in INDEX:
+        node = INDEX[uuid][-1][2]
+        h = (node.val("DisplayName") or "").split(";")[0]
+        if h:
+            return {"en": loca.text(h), "ko": loca.korean(h)[0] or loca.text(h)}
+        uuid = node.val("ParentTemplateId")
+    return None
+
+
+def weapon(d, n, where):
+    f = fields(d.db, n)
+    name = template_name(f["RootTemplate"])
+    plus = re.search(r"WeaponEnchantment\((\d)\)", f.get("DefaultBoosts", ""))
+    plus = int(plus.group(1)) if plus else 0
+    # WPN_Pistol_1 shares the base template; WPN_Whip_1 has its own named "Whip +1".
+    if n.startswith("WPN_") and n.split("_")[-1].isdigit():
+        name = {k: v if v.endswith(f"+{plus}") else f"{v} +{plus}" for k, v in name.items()}
+    # The weapon type is the plain base entry in the using chain (MAG_Voltedge -> WPN_Shortsword).
+    base = next(c for c in stats.chain(d.db, n) if re.fullmatch(r"WPN_[A-Za-z]+", c))
+    kind = template_name(fields(d.db, base)["RootTemplate"])
+    passives = [p for p in re.split(r"[;,]", f.get("PassivesOnEquip", "")) if p.strip()]
+    # Light weapons carry Nick in PassivesOffHand (WPN_Sickle -> MAG_MoonSickle).
+    offhand = [p for p in f.get("PassivesOffHand", "").split(";") if p.strip()]
+    mastery = next((p for p in passives + offhand if p.startswith("WeaponMastery")), None)
+    effects = [name_of(d.db, p) for p in passives + [x for x in f.get("PassivesMainHand", "").split(";") if x]
+               if not HIDDEN.match(p)]
+    spells = re.findall(r"UnlockSpell\(([^)]+)\)", f.get("Boosts", "") + f.get("BoostsOnEquipMainHand", ""))
+    effects += [name_of(d.db, s) for s in spells]
+    props = [p for p in PROPS if p in f.get("Weapon Properties", "").split(";")]
+    group = f.get("Weapon Group", "")
+    return {
+        "id": n, "name": name, "unique": n not in [t + s for t in TYPES for s in ("", "_1", "_2")],
+        "kind": kind, "group": GROUPS[group], "melee": "Melee" in group,
+        "damage": f["Damage"], "damageType": d.term(f["Damage Type"]),
+        "range": None if "Melee" in group else int(f["WeaponRange"]) / 100,
+        "props": [d.term(PROP_NAMES.get(p, p)) for p in props],
+        "rarity": RARITY[f.get("Rarity") or "Common"], "plus": plus,
+        "mastery": name_of(d.db, mastery) if mastery else None,
+        "effects": effects, "where": where,
+    }
+
+
+def weapons(d):
+    out = []
+    for t in TYPES:
+        loot = LOOT["melee" if t == "WPN_Whip" else "ranged"]
+        for i, s in enumerate(("", "_1", "_2")):
+            where = {k: v + (TIER[i][k] if i else "") for k, v in loot.items()}
+            out.append(weapon(d, t + s, where))
+    for n, where in UNIQUE.items():
+        out.append(weapon(d, n, where))
+    return out
+
+
+def main():
+    write(DATA / "weapons.json", "weapons", weapons(Data()))
+
+
+if __name__ == "__main__":
+    main()

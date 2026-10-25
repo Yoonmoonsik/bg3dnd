@@ -1,0 +1,85 @@
+{
+  "generated": "2026-10-26 38312a68",
+  "rules": [
+    {
+      "id": "Rules_AttackAction",
+      "name": {"en": "Attack [Action]", "ko": "공격 [행동]"},
+      "desc": {"en": "Equipping and Unequipping Weapons: Equipping a weapon costs 1 Action Point. The cost is restored once per turn if you haven't yet made an attack, cast a spell, or made an unarmed attack this turn.", "ko": "무기 장착과 해제: 무기를 장착하면 행동 포인트 1을 소모합니다. 그 턴에 아직 공격하거나 주문을 시전하거나 맨손 공격을 하지 않았다면 소모한 포인트를 돌려받습니다(턴당 1회)."}
+    },
+    {
+      "id": "Rules_Bloodied",
+      "name": {"en": "Bloodied", "ko": "피투성이"},
+      "desc": {"en": "A creature has the Blooded condition while its Hit Points are below half its Hit Point maximum. The condition has no effect of its own and ends as soon as the creature is healed above that threshold. Spells and features that affect Bloodied creatures check for this condition.", "ko": "크리처는 생명력이 최대치의 절반 아래인 동안 피투성이 상태입니다. 이 상태 자체에는 효과가 없고, 생명력이 그 기준 위로 회복되는 즉시 사라집니다. 피투성이 크리처에게 작용하는 주문과 기능은 이 상태를 확인합니다."}
+    },
+    {
+      "id": "Rules_D20Test",
+      "name": {"en": "D20 Test", "ko": "D20 판정"},
+      "desc": {"en": "If you roll a 1 on the d20 for an attack roll or a death saving throw, the roll fails. If you roll a 1 on the d20 for an ability check or any other saving throw, the roll counts as a 2 and is compared to the DC as usual.\n\nIf you roll a 20 on the d20 for any D20 Test, the roll succeeds.", "ko": "명중 굴림이나 사망 내성 굴림의 d20에서 1이 나오면 실패합니다. 능력 판정이나 그 밖의 내성 굴림의 d20에서 1이 나오면 2로 취급하고 평소처럼 난이도와 비교합니다.\n\n모든 D20 판정의 d20에서 20이 나오면 성공합니다."}
+    },
+    {
+      "id": "Rules_DistractAction",
+      "name": {"en": "Distract [Action]", "ko": "교란 [행동]"},
+      "desc": {"en": "When you take the Distract action, you give one enemy the Distracted condition. Your allies have Advantage on their next attack roll against that enemy.", "ko": "교란 행동을 하면 적 하나에게 교란 상태를 부여합니다. 아군은 그 적에 대한 다음 명중 굴림에 유리 보정을 받습니다."}
+    },
+    {
+      "id": "Rules_DodgeAction",
+      "name": {"en": "Dodge [Action]", "ko": "회피 [행동]"},
+      "desc": {"en": "When you take the Dodge action, you gain the Dodging condition until the start of your next turn: attack rolls against you have Disadvantage, and you have Advantage on Dexterity saving throws.", "ko": "회피 행동을 하면 다음 자기 턴이 시작될 때까지 회피 상태를 얻습니다. 자신에 대한 명중 굴림은 불리 보정을 받고, 자신은 민첩 내성 굴림에 유리 보정을 받습니다."}
+    },
+    {
+      "id": "Rules_DownedCondition",
+      "name": {"en": "Downed [Condition]", "ko": "쓰러짐 [상태]"},
+      "desc": {"en": "When the Downed condition ends, you regain your Action Points and have the Prone condition.", "ko": "쓰러짐 상태가 끝나면 행동 포인트를 회복하고 넘어짐 상태가 됩니다."}
+    },
+    {
+      "id": "Rules_EquipmentRequirements",
+      "name": {"en": "Equipment Ability Score Requirements", "ko": "장비 능력치 요구 조건"},
+      "desc": {"en": "Heavy Armor: If your Strength is below 13, your movement speed is reduced by 3m.\n\nHeavy Weapons: If your Strength is below 13, you have Disadvantage on attack rolls with Heavy melee weapons. If your Dexterity is below 13, you have Disadvantage on attack rolls with Heavy ranged weapons.", "ko": "중갑: 근력이 13 미만이면 이동 속도가 3m 감소합니다.\n\n중량 무기: 근력이 13 미만이면 중량 근접 무기의 명중 굴림에 불리 보정을 받습니다. 민첩이 13 미만이면 중량 원거리 무기의 명중 굴림에 불리 보정을 받습니다."}
+    },
+    {
+      "id": "Rules_ExtraAttack",
+      "name": {"en": "Extra Attack", "ko": "추가 공격"},
+      "desc": {"en": "Extra Attack lets you attack twice when you take the Attack action. Cantrips that make a weapon attack as a Magic action, such as Booming Blade, don't benefit from Extra Attack.\n\nWar Magic (Eldritch Knight, College of Valour): You can replace one of those attacks with a cantrip that has a casting time of an action, once per turn.", "ko": "추가 공격이 있으면 공격 행동을 할 때 두 번 공격합니다. 폭음의 검처럼 마법 행동으로 무기 공격을 하는 소마법은 추가 공격의 혜택을 받지 않습니다.\n\n전쟁 마법(비술 기사, 용맹학파): 그중 한 번의 공격 대신 시전 시간이 행동인 소마법을 턴당 한 번 시전할 수 있습니다."}
+    },
+    {
+      "id": "Rules_HeroicInspiration",
+      "name": {"en": "Heroic Inspiration", "ko": "영웅적 영감"},
+      "desc": {"en": "After each Long Rest, you have a 50% chance to gain 1 Heroic Inspiration from your Background. This applies only to the backgrounds added by this mod.", "ko": "긴 휴식을 마칠 때마다 50% 확률로 배경에서 영웅적 영감 1을 얻습니다. 이 모드가 추가한 배경에만 적용됩니다."}
+    },
+    {
+      "id": "Rules_HideAction",
+      "name": {"en": "Hide [Action]", "ko": "숨기 [행동]"},
+      "desc": {"en": "With the Hide action, you try to conceal yourself. To do so, you must succeed on a DC 20 Stealth check while you aren't in bright light. On a successful check, you have the Invisible condition for 1 turn. You can attempt this once per turn.", "ko": "숨기 행동으로 몸을 숨기려 시도합니다. 밝은 빛 속에 있지 않을 때 난이도 20의 은신 판정에 성공해야 합니다. 판정에 성공하면 1턴 동안 투명 상태가 됩니다. 턴당 한 번 시도할 수 있습니다."}
+    },
+    {
+      "id": "Rules_HitPointDice",
+      "name": {"en": "Hit Point Dice", "ko": "생명력 주사위"},
+      "desc": {"en": "You have Hit Point Dice equal to your character level, and your class determines their size. After a Short Rest, you can spend Hit Point Dice to regain Hit Points. A Short Rest doesn't restore Hit Points on its own.", "ko": "캐릭터 레벨만큼 생명력 주사위가 있으며, 주사위 크기는 직업에 따라 정해집니다. 짧은 휴식 후에 생명력 주사위를 써서 생명력을 회복할 수 있습니다. 짧은 휴식만으로는 생명력이 회복되지 않습니다."}
+    },
+    {
+      "id": "Rules_Jumping",
+      "name": {"en": "Jumping", "ko": "도약"},
+      "desc": {"en": "A jump costs no Bonus Action. It costs movement equal to the distance you jump.", "ko": "도약에는 보조 행동이 들지 않습니다. 뛴 거리만큼 이동력을 소모합니다."}
+    },
+    {
+      "id": "Rules_OneSpellSlotPerTurn",
+      "name": {"en": "One Spell with a Spell Slot per Turn", "ko": "턴당 주문 슬롯 주문 하나"},
+      "desc": {"en": "You can expend only one spell slot per turn. For example, you can't cast a spell with a spell slot using the Magic action and another spell with a spell slot using a Bonus Action on the same turn.", "ko": "턴마다 주문 슬롯은 하나만 쓸 수 있습니다. 예를 들어 같은 턴에 마법 행동으로 주문 슬롯 주문을 시전하고 보조 행동으로 또 다른 주문 슬롯 주문을 시전할 수 없습니다."}
+    },
+    {
+      "id": "Rules_ProneCondition",
+      "name": {"en": "Prone [Condition]", "ko": "넘어짐 [상태]"},
+      "desc": {"en": "Restricted Movement: You crawl when you move. Every 1m you crawl costs 2m of movement. Standing up is a separate action that costs 4.5m of movement. You attack, cast spells, and react to hits without standing up.\n\nAttacks Affected: You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 3m of you. Otherwise, that attack roll has Disadvantage.\n\nConcentration: Falling Prone doesn't break your Concentration.", "ko": "이동 제한: 이동하면 기어갑니다. 1m를 기어갈 때마다 이동력 2m를 소모합니다. 일어서기는 별도 행동이며 이동력 4.5m를 소모합니다. 일어서지 않은 채 공격하고 주문을 시전하고 피격에 대응합니다.\n\n공격 영향: 자신의 명중 굴림에 불리 보정을 받습니다. 자신에 대한 명중 굴림은 공격자가 3m 이내에 있으면 유리 보정을, 그렇지 않으면 불리 보정을 받습니다.\n\n집중: 넘어짐 상태여도 집중이 깨지지 않습니다."}
+    },
+    {
+      "id": "Rules_SpellScroll",
+      "name": {"en": "Spell Scroll", "ko": "주문 두루마리"},
+      "desc": {"en": "You can use a spell scroll only if the spell is on your class or subclass spell list and your highest spell slot is no more than one level lower than the scroll's spell level. For a multiclass character, count only the levels of classes and subclasses that have the spell on their spell list.\n\nArcane Trickster, Architect of Ruin, Eldritch Knight, Occultist Guild and Spellslinger count as having the Wizard spell list, and Warrior of the Mystic Arts the Sorcerer spell list, once they gain their Spellcasting feature.\n\nHalf-caster classes (Artificer, Paladin and Ranger) contribute half their levels, rounded down, when combined with other casters. On their own they use their class's spell slot table.\n\nCantrip scrolls and scrolls of Revivify and Detect Thoughts have no restriction.", "ko": "주문 두루마리는 그 주문이 자신의 직업이나 하위 직업 주문 목록에 있고, 가진 가장 높은 주문 슬롯이 두루마리 주문 레벨보다 최대 한 레벨 낮을 때 쓸 수 있습니다. 다중 직업 캐릭터는 그 주문이 주문 목록에 있는 직업과 하위 직업의 레벨만 셉니다.\n\n비전 괴도, 파멸의 건축가, 비술 기사, 오컬트 길드, 주문사수는 위저드 주문 목록을, 신비술의 전사는 소서러 주문 목록을 주문 시전 기능을 얻은 뒤부터 가진 것으로 취급합니다.\n\n절반 시전자 직업(아티피서, 팔라딘, 레인저)은 다른 시전자와 합칠 때 레벨의 절반(내림)을 더합니다. 단독일 때는 자기 직업의 주문 슬롯 표를 씁니다.\n\n소마법 두루마리와 생환·생각 탐지 두루마리에는 제한이 없습니다."}
+    },
+    {
+      "id": "Rules_UnarmedStrike",
+      "name": {"en": "Unarmed Strike", "ko": "맨손 공격"},
+      "desc": {"en": "Shove: Shoving a creature takes an action. The target makes a Strength or Dexterity saving throw (whichever is higher) against a DC of 8 plus your Strength modifier and Proficiency Bonus.\n\nTopple: Topple knocks a creature Prone. The target makes a Strength or Dexterity saving throw (whichever is higher) against the same DC.", "ko": "밀기: 크리처를 밀려면 행동을 소모합니다. 대상은 근력과 민첩 중 더 높은 쪽으로 내성 굴림을 하며, 난이도는 8 + 근력 보정치 + 숙련 보너스입니다.\n\n넘어뜨리기: 넘어뜨리기는 크리처를 넘어짐 상태로 만듭니다. 대상은 근력과 민첩 중 더 높은 쪽으로 같은 난이도의 내성 굴림을 합니다."}
+    }
+  ]
+}
