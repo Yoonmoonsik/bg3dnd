@@ -85,6 +85,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 20px 24px 40px; }
 }
 .chip:hover { border-color: var(--accent); }
 .chip[aria-pressed="true"] { background: var(--chip-on); color: var(--chip-on-text); }
+.rarity { color: var(--rarity); }
+.chip.rarity[aria-pressed="true"] { background: var(--rarity); border-color: var(--rarity); color: #000; }
 
 .count { color: var(--muted); font-size: 13px; margin: 16px 2px 8px; }
 

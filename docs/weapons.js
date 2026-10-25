@@ -11,7 +11,7 @@ const T = {
     count: (n, all) => `${n} of ${all} weapons`,
     f_category: "Unique", general: "Not unique", unique: "Unique",
     f_src: "Source", mod: "Added by the mod", vanilla: "Vanilla",
-    f_kind: "Weapon type", f_group: "Weapon group", f_mastery: "Mastery", none: "None",
+    f_kind: "Weapon type", f_group: "Weapon group", f_mastery: "Mastery", none: "None", f_plus: "Enchantment", f_rarity: "Rarity", enchant: "Enchantment",
     group: "Group", range: "Range", props: "Properties", rarity: "Rarity", mastery: "Mastery", effects: "Effects",
     m: n => `${n}m`,
   },
@@ -25,17 +25,19 @@ const T = {
     count: (n, all) => `무기 ${all}종 중 ${n}종`,
     f_category: "고유 여부", general: "고유 아님", unique: "고유",
     f_src: "출처", mod: "모드 추가", vanilla: "바닐라",
-    f_kind: "무기 종류", f_group: "무기 분류", f_mastery: "숙련술", none: "없음",
+    f_kind: "무기 종류", f_group: "무기 분류", f_mastery: "숙련술", none: "없음", f_plus: "강화", f_rarity: "등급", enchant: "강화",
     group: "분류", range: "사거리", props: "속성", rarity: "등급", mastery: "숙련술", effects: "효과",
     m: n => `${n}m`,
   },
 };
 
-const state = { lang: "en", q: "", src: new Set(), cat: new Set(), kind: new Set(), mas: new Set(), grp: new Set(), open: null };
+const state = { lang: "en", q: "", src: new Set(), cat: new Set(), kind: new Set(), mas: new Set(), plus: new Set(), rar: new Set(), grp: new Set(), open: null };
 let WEAPONS = [];
 let GROUPS = [];
 let KINDS = [];
 let MASTERIES = [];
+let PLUSES = [];
+let RARITIES = [];
 
 const $ = s => document.querySelector(s);
 const t = k => T[state.lang][k] ?? k;
@@ -43,7 +45,11 @@ const L = o => (o ? o[state.lang] || o.en : "");
 const esc = x => String(x).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const cat = w => (w.unique ? "unique" : "general");
 const src = w => (w.new ? "mod" : "vanilla");
+const plus = w => (w.plus ? `+${w.plus}` : "—");
 const mas = w => (w.mastery ? w.mastery.en : "none");
+// Item frame colors from the game's rarityFrame_*_front textures; Common has no frame color.
+const RARITY_COLOR = { Uncommon: "#01bd39", Rare: "#01bfff", "Very Rare": "#d1017b", Legendary: "#e7b64d" };
+const tint = r => (RARITY_COLOR[r.en] ? ` class="rarity" style="--rarity:${RARITY_COLOR[r.en]}"` : "");
 const damage = w => `${w.damage} ${L(w.damageType)}`;
 
 function matches(w) {
@@ -55,6 +61,8 @@ function matches(w) {
   if (state.src.size && !state.src.has(src(w))) return false;
   if (state.cat.size && !state.cat.has(cat(w))) return false;
   if (state.mas.size && !state.mas.has(mas(w))) return false;
+  if (state.plus.size && !state.plus.has(String(w.plus))) return false;
+  if (state.rar.size && !state.rar.has(w.rarity.en)) return false;
   if (state.kind.size && !state.kind.has(w.kind.en)) return false;
   return !state.grp.size || state.grp.has(w.group.en);
 }
@@ -74,7 +82,11 @@ function renderFilters() {
     `<div class="fgroup" data-f="grp"><div class="label">${esc(t("f_group"))}</div><div class="chips">${
       GROUPS.map(g => chip(g.en, L(g), state.grp)).join("")}</div></div>` +
     `<div class="fgroup" data-f="mas"><div class="label">${esc(t("f_mastery"))}</div><div class="chips">${
-      byName(MASTERIES).map(m => chip(m.en, L(m), state.mas)).join("")}${chip("none", t("none"), state.mas)}</div></div>`;
+      byName(MASTERIES).map(m => chip(m.en, L(m), state.mas)).join("")}${chip("none", t("none"), state.mas)}</div></div>` +
+    `<div class="fgroup" data-f="plus"><div class="label">${esc(t("f_plus"))}</div><div class="chips">${
+      PLUSES.map(n => chip(String(n), n ? `+${n}` : t("none"), state.plus)).join("")}</div></div>` +
+    `<div class="fgroup" data-f="rar"><div class="label">${esc(t("f_rarity"))}</div><div class="chips">${
+      RARITIES.map(r => chip(r.en, L(r), state.rar).replace('class="chip"', tint(r).replace('class="', 'class="chip '))).join("")}</div></div>`;
 }
 
 function renderTable() {
@@ -85,15 +97,16 @@ function renderTable() {
   $("#list tbody").innerHTML = rows.map(w => {
     const open = state.open === w.id;
     const row = `<tr class="row" data-id="${esc(w.id)}" aria-expanded="${open}">
-      <td><strong>${esc(L(w.name))}</strong></td>
+      <td><strong${tint(w.rarity)}>${esc(L(w.name))}</strong></td>
       <td>${esc(L(w.kind))}</td>
       <td>${esc(damage(w))}</td>
       <td>${esc(w.mastery ? L(w.mastery) : "—")}</td>
-      <td>${esc(L(w.where))}</td>
+      <td>${esc(plus(w))}</td>
     </tr>`;
     const facts = [
       [t("group"), L(w.group)],
-      [t("col_damage"), damage(w) + (w.plus ? ` (+${w.plus})` : "")],
+      [t("col_damage"), damage(w)],
+      [t("enchant"), plus(w)],
       w.range ? [t("range"), t("m")(w.range)] : null,
       w.props.length ? [t("props"), w.props.map(L).join(", ")] : null,
       [t("rarity"), L(w.rarity)],
@@ -132,6 +145,8 @@ function writeHash() {
   if (state.q) p.set("q", state.q);
   if (state.src.size) p.set("source", [...state.src].join(","));
   if (state.mas.size) p.set("mastery", [...state.mas].join(","));
+  if (state.plus.size) p.set("plus", [...state.plus].join(","));
+  if (state.rar.size) p.set("rarity", [...state.rar].join(","));
   if (state.cat.size) p.set("cat", [...state.cat].join(","));
   if (state.kind.size) p.set("type", [...state.kind].join(","));
   if (state.grp.size) p.set("group", [...state.grp].join(","));
@@ -151,6 +166,8 @@ function readHash() {
   state.q = p.get("q") || "";
   state.src = new Set((p.get("source") || "").split(",").filter(Boolean));
   state.mas = new Set((p.get("mastery") || "").split(",").filter(Boolean));
+  state.plus = new Set((p.get("plus") || "").split(",").filter(Boolean));
+  state.rar = new Set((p.get("rarity") || "").split(",").filter(Boolean));
   state.cat = new Set((p.get("cat") || "").split(",").filter(Boolean));
   state.kind = new Set((p.get("type") || "").split(",").filter(Boolean));
   state.grp = new Set((p.get("group") || "").split(",").filter(Boolean));
@@ -164,7 +181,7 @@ function bind() {
   $("#filters").addEventListener("click", e => {
     const b = e.target.closest(".chip");
     if (!b) return;
-    const sel = { src: state.src, cat: state.cat, kind: state.kind, grp: state.grp, mas: state.mas }[b.closest(".fgroup").dataset.f];
+    const sel = { src: state.src, cat: state.cat, kind: state.kind, grp: state.grp, mas: state.mas, plus: state.plus, rar: state.rar }[b.closest(".fgroup").dataset.f];
     sel.has(b.dataset.v) ? sel.delete(b.dataset.v) : sel.add(b.dataset.v);
     b.setAttribute("aria-pressed", sel.has(b.dataset.v));
     renderTable(); writeHash();
@@ -181,7 +198,7 @@ function bind() {
     render();
   }));
   $("#reset").addEventListener("click", () => {
-    state.q = ""; state.src = new Set(); state.mas = new Set(); state.cat = new Set(); state.kind = new Set(); state.grp = new Set(); state.open = null; $("#q").value = ""; render();
+    state.q = ""; state.src = new Set(); state.mas = new Set(); state.plus = new Set(); state.rar = new Set(); state.cat = new Set(); state.kind = new Set(); state.grp = new Set(); state.open = null; $("#q").value = ""; render();
   });
   $("#toggle-filters").addEventListener("click", e => {
     const box = $("#filters");
@@ -198,6 +215,11 @@ fetch("data/weapons.json")
     for (const w of WEAPONS) if (!seen.has(w.group.en)) seen.set(w.group.en, w.group);
     GROUPS = [...seen.values()];
     MASTERIES = [...new Map(WEAPONS.filter(w => w.mastery).map(w => [w.mastery.en, w.mastery])).values()];
+    PLUSES = [...new Set(WEAPONS.map(w => w.plus))].sort((a, b) => a - b);
+    // Rarity in game order, Common to Legendary.
+    const order = ["Common", "Uncommon", "Rare", "Very Rare", "Legendary"];
+    RARITIES = [...new Map(WEAPONS.map(w => [w.rarity.en, w.rarity])).values()]
+      .sort((a, b) => order.indexOf(a.en) - order.indexOf(b.en));
     KINDS = [...new Map(WEAPONS.map(w => [w.kind.en, w.kind])).values()];
     readHash();
     $("#q").value = state.q;

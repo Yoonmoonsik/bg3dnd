@@ -59,6 +59,14 @@ SKIP = re.compile(r"_(Pact|Rusty|B|C|Copy|NoPassives|Makeshift|Gith|Shar|Animate
 HIDDEN = re.compile(r"^(WeaponMastery|Firearm_|VFX_|HeavyWeapon_)")
 PROPS = ["Finesse", "Light", "Heavy", "Reach", "Versatile", "Twohanded", "Ammunition", "Loading", "Magical"]
 PROP_NAMES = {"Twohanded": "Two-Handed"}
+# Korean names of the weapon properties (Finesse -> "Finesse Weapon", Loading -> 장전, not 불러오는 중).
+PROP_HANDLES = {
+    "Finesse": "h95e41a96g0bbcg4932gabf4g1fda223a1ee9", "Light": "h5cc9c7e9g048ag43c7g8b08gba53ec2423a2",
+    "Heavy": "h5bc7fbd4gfd81g4e6eg94a5g1b655286b07c", "Reach": "ha287aa54g9a53g4c18ga0f4gfeb652a28da4",
+    "Versatile": "h3aa10065g9edcg407bg82f8g4c445f4c0ae2", "Twohanded": "hc18aa105g6477g47dcg9962gc0554eda3c77",
+    "Ammunition": "hc2a87d26g99e3g40f8gb2cag8145328af515", "Loading": "hff3fef16g4dcbg44e3g8bfbg3b15c27102c5",
+    "Magical": "h9da3be37gadf4g4777ga7e6g6ef0c1f907b0",
+}
 GROUPS = {
     "SimpleMeleeWeapon": {"en": "Simple Melee", "ko": "일반 근접"},
     "MartialMeleeWeapon": {"en": "Martial Melee", "ko": "군용 근접"},
@@ -92,6 +100,11 @@ def template_name(uuid):
     return None
 
 
+def prop(d, p):
+    ko = re.sub(r"(<|&lt;).*?(>|&gt;)", "", loca.korean(PROP_HANDLES[p])[0])
+    return {"en": PROP_NAMES.get(p, p), "ko": ko}
+
+
 def weapon(d, n, where):
     f = fields(d.db, n)
     name = template_name(f["RootTemplate"])
@@ -119,7 +132,7 @@ def weapon(d, n, where):
         "kind": kind, "group": GROUPS[group], "melee": "Melee" in group,
         "damage": f["Damage"], "damageType": d.term(f["Damage Type"]),
         "range": None if "Melee" in group else int(f["WeaponRange"]) / 100,
-        "props": [d.term(PROP_NAMES.get(p, p)) for p in props],
+        "props": [prop(d, p) for p in props],
         "rarity": RARITY[f.get("Rarity") or "Common"], "plus": plus,
         "mastery": name_of(d.db, mastery) if mastery else None,
         "effects": effects, "where": where,
