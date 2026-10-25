@@ -52,6 +52,8 @@ const $ = s => document.querySelector(s);
 const t = k => T[state.lang][k] ?? k;
 const L = o => o[state.lang] || o.en;
 const ab = a => a && ABILITY[a] ? ABILITY[a][state.lang === "ko" ? 1 : 0] : "—";
+// Lore text comes with line breaks and padding from the game strings: shown as one paragraph.
+const lore = o => L(o).replace(/\s+/g, " ").trim();
 const esc = x => String(x).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
 function buildFilters() {
@@ -100,7 +102,7 @@ function subList(c) {
       + (s.caster === "third" ? ` <span class="tag blood">${esc(t("third_tag"))} · ${esc(ab(s.spellcasting))}</span>` : "");
     return `<li class="sub${hit ? " hit" : ""}"><button type="button" class="sub-toggle" data-sub="${esc(s.id)}"
       aria-expanded="${open}">${esc(L(s.name))}</button>${tag}
-      ${open ? `<div class="sub-detail">${L(s.desc) ? `<p>${esc(L(s.desc))}</p>` : ""}${renderLevels(s.levels, state.lang, esc, { levels: c.levels, name: L(c.name) })}</div>` : ""}</li>`;
+      ${open ? `<div class="sub-detail">${L(s.desc) ? `<p class="lore">${esc(lore(s.desc))}</p>` : ""}${renderLevels(s.levels, state.lang, esc, { levels: c.levels, name: L(c.name) })}</div>` : ""}</li>`;
   }).join("");
 }
 
@@ -113,7 +115,7 @@ function detail(c) {
   ];
   return `<tr class="detail"><td colspan="5">
     <div class="grid">${facts.map(([k, v]) => `<div><div class="k">${esc(k)}</div>${esc(v)}</div>`).join("")}</div>
-    ${L(c.desc) ? `<p>${esc(L(c.desc))}</p>` : ""}
+    ${L(c.desc) ? `<p class="lore">${esc(lore(c.desc))}</p>` : ""}
     ${c.subclasses.length ? `<div class="k">${esc(t("subclasses_at")(c.subclass_level))}</div><ul class="subs">${subList(c)}</ul>` : ""}
     <div class="k">${esc(t("features"))}</div>
     ${renderLevels(c.levels, state.lang, esc)}

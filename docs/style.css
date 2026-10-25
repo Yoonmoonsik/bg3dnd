@@ -183,3 +183,7 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 .lv .lv-n { width: 56px; white-space: nowrap; font-weight: 600; }
 .lv ul { margin: 0; padding-left: 18px; }
 .tag.from { color: var(--muted); font-weight: 500; }
+.lv td { border-bottom: 1px solid var(--line); }
+.lv tr.lv-first td { border-top: 2px solid var(--line); }
+.lv .lv-n { vertical-align: top; }
+.detail p.lore { white-space: normal; }

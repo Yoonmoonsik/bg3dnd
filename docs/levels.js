@@ -16,7 +16,7 @@ const LEVEL_T = {
   },
 };
 
-// One level's grants as list items; chip marks items that come from another table (the class).
+// One level's grants, one HTML string each; chip marks items that come from another table (the class).
 function levelItems(l, lang, esc, chip) {
   const t = k => LEVEL_T[lang][k];
   const L = o => o[lang] || o.en;
@@ -26,15 +26,15 @@ function levelItems(l, lang, esc, chip) {
     : esc(L(x.name));
   const res = r => r.slot ? `${t("slot")(r.slot)} +${r.count}` : `${L(r.name)} +${r.count}`;
   return [
-    ...l.traits.map(x => `<li><strong>${esc(L(x.name))}</strong>${tag}${L(x.desc) ? ` — ${esc(L(x.desc))}` : ""}</li>`),
-    l.spells.length ? `<li>${esc(t("spells"))}: ${l.spells.map(spell).join(", ")}${tag}</li>` : "",
-    ...l.learn.map(x => `<li>${esc(t(x.kind === "cantrip" ? "learn_cantrip" : "learn_spell")(x.count))}${tag}</li>`),
-    ...l.choices.map(c => `<li>${esc(t("choose")(c.count))}: ${c.options.map(o => esc(L(o))).join(", ")}${tag}</li>`),
-    l.skills ? `<li>${esc(t("skills")(l.skills))}${tag}</li>` : "",
-    l.expertise ? `<li>${esc(t("expertise")(l.expertise))}${tag}</li>` : "",
-    (l.proficiencies || []).length ? `<li>${esc(t("proficiency"))}: ${l.proficiencies.map(x => esc(L(x))).join(", ")}${tag}</li>` : "",
-    l.feat ? `<li>${esc(t("feat"))}${tag}</li>` : "",
-    l.resources.length ? `<li>${esc(l.resources.map(res).join(", "))}${tag}</li>` : "",
+    ...l.traits.map(x => `<strong>${esc(L(x.name))}</strong>${tag}${L(x.desc) ? ` — ${esc(L(x.desc))}` : ""}`),
+    l.spells.length ? `${esc(t("spells"))}: ${l.spells.map(spell).join(", ")}${tag}` : "",
+    ...l.learn.map(x => `${esc(t(x.kind === "cantrip" ? "learn_cantrip" : "learn_spell")(x.count))}${tag}`),
+    ...l.choices.map(c => `${esc(t("choose")(c.count))}: ${c.options.map(o => esc(L(o))).join(", ")}${tag}`),
+    l.skills ? `${esc(t("skills")(l.skills))}${tag}` : "",
+    l.expertise ? `${esc(t("expertise")(l.expertise))}${tag}` : "",
+    (l.proficiencies || []).length ? `${esc(t("proficiency"))}: ${l.proficiencies.map(x => esc(L(x))).join(", ")}${tag}` : "",
+    l.feat ? `${esc(t("feat"))}${tag}` : "",
+    l.resources.length ? `${esc(l.resources.map(res).join(", "))}${tag}` : "",
   ].filter(Boolean);
 }
 
@@ -49,7 +49,8 @@ function renderLevels(levels, lang, esc, base) {
   };
   if (base) for (const l of base.levels) add(l, base.name);
   for (const l of levels) add(l, null);
-  const body = [...rows.keys()].sort((a, b) => a - b)
-    .map(n => `<tr><td class="lv-n">${n}</td><td><ul>${rows.get(n).join("")}</ul></td></tr>`).join("");
+  // One table row per grant; the level cell spans all rows of its level.
+  const body = [...rows.keys()].sort((a, b) => a - b).map(n => rows.get(n).map((item, i) =>
+    `<tr${i ? "" : ' class="lv-first"'}>${i ? "" : `<td class="lv-n" rowspan="${rows.get(n).length}">${n}</td>`}<td>${item}</td></tr>`).join("")).join("");
   return `<table class="lv"><thead><tr><th>${esc(t("level"))}</th><th>${esc(t("content"))}</th></tr></thead><tbody>${body}</tbody></table>`;
 }
