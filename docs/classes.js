@@ -16,6 +16,7 @@ const T = {
     new: "New", revised: "Revised", vanilla: "Unchanged",
     hp: h => `${h.base} + ${h.per_level}/level`, saves: "Saving Throws", armor: "Armour", weapons: "Weapons",
     feat_levels: "Feat levels", subclasses_at: n => `Subclasses (chosen at level ${n})`, features: "Class features",
+    with_base: "Include class features",
     light: "Light Armour", medium: "Medium Armour", heavy: "Heavy Armour", shield: "Shields",
     SimpleWeapons: "Simple Weapons", MartialWeapons: "Martial Weapons", casting: a => `${a} (spellcasting)`,
   },
@@ -34,6 +35,7 @@ const T = {
     new: "새 직업", revised: "개정", vanilla: "변경 없음",
     hp: h => `${h.base} + 레벨당 ${h.per_level}`, saves: "내성 굴림", armor: "갑옷", weapons: "무기",
     feat_levels: "재주 레벨", subclasses_at: n => `하위 직업 (${n}레벨에 선택)`, features: "직업 기능",
+    with_base: "본래 직업 기능 포함",
     light: "경갑", medium: "평갑", heavy: "중갑", shield: "방패",
     SimpleWeapons: "단순 무기", MartialWeapons: "군용 무기", casting: a => `${a} (주문 시전)`,
   },
@@ -43,7 +45,7 @@ const ABILITY = {
   Intelligence: ["Intelligence", "지능"], Wisdom: ["Wisdom", "지혜"], Charisma: ["Charisma", "매력"],
 };
 
-const state = { lang: "en", q: "", sel: {}, open: null, openSub: null };
+const state = { lang: "en", q: "", sel: {}, open: null, openSub: null, withBase: true };
 let CLASSES = [];
 let SUBS = {};  // class id -> subclasses
 let FILTERS = [];
@@ -102,7 +104,8 @@ function subList(c) {
       + (s.caster === "third" ? ` <span class="tag blood">${esc(t("third_tag"))} · ${esc(ab(s.spellcasting))}</span>` : "");
     return `<li class="sub${hit ? " hit" : ""}"><button type="button" class="sub-toggle" data-sub="${esc(s.id)}"
       aria-expanded="${open}">${esc(L(s.name))}</button>${tag}
-      ${open ? `<div class="sub-detail">${L(s.desc) ? `<p class="lore">${esc(lore(s.desc))}</p>` : ""}${renderLevels(s.levels, state.lang, esc, { levels: c.levels, name: L(c.name) })}</div>` : ""}</li>`;
+      ${open ? `<div class="sub-detail">${L(s.desc) ? `<p class="lore">${esc(lore(s.desc))}</p>` : ""}<button type="button" class="chip base-toggle" aria-pressed="${state.withBase}">${esc(t("with_base"))}</button>`
+        + `${renderLevels(s.levels, state.lang, esc, state.withBase ? { levels: c.levels, name: L(c.name) } : null, L(s.name))}</div>` : ""}</li>`;
   }).join("");
 }
 
@@ -196,6 +199,11 @@ function bind() {
   });
   $("#list tbody").addEventListener("click", e => {
     if (e.target.closest("a")) return;
+    if (e.target.closest(".base-toggle")) {
+      state.withBase = !state.withBase;
+      renderTable();
+      return;
+    }
     const sub = e.target.closest(".sub-toggle");
     if (sub) {
       state.openSub = state.openSub === sub.dataset.sub ? null : sub.dataset.sub;

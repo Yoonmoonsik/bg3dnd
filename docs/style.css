@@ -121,7 +121,7 @@ tbody tr:last-child td { border-bottom: 0; }
   display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 8px 18px; margin-bottom: 12px;
 }
 .detail .k { color: var(--muted); font-size: 12px; }
-.detail p { margin: 0 0 10px; white-space: pre-line; max-width: 80ch; }
+.detail p { margin: 0 0 10px; white-space: pre-line; }
 .detail .note { border-left: 3px solid var(--accent); padding-left: 10px; }
 .detail ul { margin: 0; padding-left: 18px; }
 
@@ -141,7 +141,7 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 }
 
 /* Home page */
-.intro { color: var(--muted); margin: 6px 2px 18px; max-width: 70ch; }
+.intro { color: var(--muted); margin: 6px 2px 18px; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
 .card {
   display: grid; gap: 6px; padding: 20px; background: var(--panel); border: 1px solid var(--line);
@@ -183,6 +183,8 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 .lv .lv-n { width: 56px; white-space: nowrap; font-weight: 600; }
 .lv ul { margin: 0; padding-left: 18px; }
 .tag.from { color: var(--muted); font-weight: 500; }
+.tag.own { color: var(--accent); font-weight: 500; }
+.sub-detail .base-toggle { margin: 4px 0 2px; }
 .lv td { border-bottom: 1px solid var(--line); }
 .lv tr.lv-first td { border-top: 2px solid var(--line); }
 .lv .lv-n { vertical-align: top; }
