@@ -330,24 +330,39 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     built = subprocess.run(["git", "-C", str(REPO), "log", "-1", "--format=%cs %h"],
                            capture_output=True, text=True).stdout.strip()
-    OUT.write_text(json.dumps({"generated": built, "spells": spells}, ensure_ascii=False, separators=(",", ":")),
-                   encoding="utf-8")
+    OUT.write_text(readable_json(built, spells), encoding="utf-8", newline="\n")
     copy_icons(spells)
     print(f"wrote {OUT.relative_to(REPO)} ({OUT.stat().st_size // 1024} KB)")
 
 
+def readable_json(built, spells):
+    """JSON laid out for people reading the file in the repo: one block per spell, one field per
+    line. A field's value (lists, the en/ko pairs) stays on its line."""
+    one = lambda v: json.dumps(v, ensure_ascii=False)
+    blocks = []
+    for s in spells:
+        fields = ",\n".join(f"      {one(k)}: {one(v)}" for k, v in s.items())
+        blocks.append("    {\n" + fields + "\n    }")
+    return '{\n  "generated": ' + one(built) + ',\n  "spells": [\n' + ",\n".join(blocks) + "\n  ]\n}\n"
+
+
 def copy_icons(spells):
     """48px PNGs named by the stat Icon. The wiki keeps those renders of the game icons; a vanilla
-    icon it lacks is converted from the unpacked game DDS."""
+    icon it lacks is converted from the unpacked game DDS once (a reconversion changes the PNG
+    bytes, so an existing converted icon is kept)."""
     ICON_OUT.mkdir(parents=True, exist_ok=True)
+    wanted = {f"{s['icon']}.png" for s in spells}
     for old in ICON_OUT.glob("*.png"):
-        old.unlink()
+        if old.name not in wanted:
+            old.unlink()
     for s in spells:
         dst = ICON_OUT / f"{s['icon']}.png"
         png = ICON_PNG / dst.name
         dds = VANILLA_ICON_DDS / f"{s['icon']}.DDS"
         if png.exists():
             shutil.copy2(png, dst)
+        elif dst.exists():
+            continue
         elif dds.exists():
             subprocess.run(["magick", str(dds), "-resize", "48x48", str(dst)], check=True)
         else:
