@@ -57,7 +57,7 @@ function renderTable() {
     const open = state.open === f.id;
     const row = `<tr class="row" data-id="${esc(f.id)}" aria-expanded="${open}">
       <td><strong>${esc(short(L(f.name)))}</strong></td>
-      <td>${esc(f.sources.map(srcText).join(", "))}</td>
+      <td>${esc([...new Set(f.sources.map(s => L(s.name)))].join(", "))}</td>
     </tr>`;
     const detail = `<tr class="detail"><td colspan="2">
       <p><strong>${esc(L(f.name))}</strong></p>

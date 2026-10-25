@@ -48,6 +48,12 @@ def english_handles():
     return out
 
 
+def source_order(s):
+    """Classes in abc order, each followed by its subclasses in abc order; feats last."""
+    return (s["kind"] == "feat", (s.get("class") or s["name"])["en"], s["kind"] == "subclass",
+            s["name"]["en"], s["level"] or 0)
+
+
 class Data:
     def __init__(self):
         self.db = stats.load(include_mod=True)
@@ -57,12 +63,16 @@ class Data:
         _, self.feats = layered("Feats/Feats.lsx", "Feat")
         _, descs = layered("Feats/FeatDescriptions.lsx", "FeatDescription")
         self.feat_desc = {d["FeatId"]: d for d in descs.values()}
-        self.table = {}
+        self.table, self.parent = {}, {}
+        names = {}
+        for c in classes.values():
+            h = c.get("DisplayName")
+            names[c["UUID"]] = {"en": text(h, False) or c.get("Name"), "ko": text(h, True) or c.get("Name")}
         for c in classes.values():
             if c.get("ProgressionTableUUID"):
-                h = c.get("DisplayName")
-                self.table[c["ProgressionTableUUID"]] = {"en": text(h, False) or c.get("Name"),
-                                                         "ko": text(h, True) or c.get("Name")}
+                self.table[c["ProgressionTableUUID"]] = names[c["UUID"]]
+                # A subclass's ParentGuid is its class: sources sort under it (Fighter, then Champion).
+                self.parent[c["ProgressionTableUUID"]] = names.get(c.get("ParentGuid"), names[c["UUID"]])
         self.en = english_handles()
 
     def passive(self, p):
@@ -84,14 +94,15 @@ class Data:
                 continue
             for n in re.findall(r"SelectPassives\(%s,(\d+)" % re.escape(list_uuid), p.get("Selectors", "")):
                 out.append({"kind": "subclass" if p.get("ProgressionType") == "1" else "class",
-                            "name": self.table[p["TableUUID"]], "level": int(p["Level"]), "count": int(n)})
+                            "name": self.table[p["TableUUID"]], "class": self.parent[p["TableUUID"]],
+                            "level": int(p["Level"]), "count": int(n)})
         for f in self.feats.values():
             if list_uuid in f.get("Selectors", ""):
                 d = self.feat_desc.get(f["UUID"], {})
                 out.append({"kind": "feat", "name": {"en": text(d.get("DisplayName"), False) or f["Name"],
                                                     "ko": text(d.get("DisplayName"), True) or f["Name"]},
                             "level": None, "count": 1})
-        out.sort(key=lambda s: (s["kind"] == "feat", s["name"]["en"], s["level"] or 0))
+        out.sort(key=source_order)
         return out
 
 
@@ -111,6 +122,8 @@ def fighting_styles(d):
                 if s not in styles[m]["sources"]:
                     styles[m]["sources"].append(s)
     out = [s for s in styles.values() if s["sources"]]
+    for s in out:
+        s["sources"].sort(key=source_order)
     out.sort(key=lambda s: s["name"]["en"].lower())
     return out
 
