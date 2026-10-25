@@ -4,6 +4,8 @@
 
 For deeper gameplay notes, class details, spell behavior, item locations, and community-maintained documentation, see the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki).
 
+To search every spell and feat in the mod by filters, use the [data browser](https://yoonmoonsik.github.io/bg3dnd/). It is generated from the mod's game data.
+
 > Note: The Wiki is maintained by community contributors and is not officially written or managed by the mod developer. Some information may be incomplete, outdated, or inaccurate.
 
 ## Bug Reports and Questions
