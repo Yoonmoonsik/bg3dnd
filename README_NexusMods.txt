@@ -69,9 +69,9 @@ See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Fighting-Styles]Fighting Sty
 
 Archery, Blind Fighting, Defense, Dueling, Great Weapon Fighting, Interception, Protection, Thrown Weapon Fighting, Two-Weapon Fighting, Unarmed Fighting.
 
-[size=5][b]Races[/b][/size]
+[size=5][b]Species[/b][/size]
 
-See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Races]Race[/url].
+See [url=https://github.com/Yoonmoonsik/bg3dnd/wiki/Species]Species[/url].
 
 [list]
 [*]Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Eladrin, Ice Elf, and Shadar-kai are available as Elf subrace options. Dhampir can be taken as a Human, Elf, Drow, Tiefling, Dwarf, Halfling, Gnome, or Orc subrace.

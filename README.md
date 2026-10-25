@@ -23,7 +23,7 @@ For gameplay examples, build ideas, and practical references, check the playthro
 - [Backgrounds](#backgrounds)
 - [Classes](#classes)
 - [Feats](#feats)
-- [Races](#races)
+- [Species](#species)
 - [Spells](#spells)
 - [Items](#items)
 - [Support the Mod](#support-the-mod)
@@ -79,9 +79,9 @@ See [Fighting Styles](https://github.com/Yoonmoonsik/bg3dnd/wiki/Fighting-Styles
 
 Archery, Blind Fighting, Defense, Dueling, Great Weapon Fighting, Interception, Protection, Thrown Weapon Fighting, Two-Weapon Fighting, Unarmed Fighting.
 
-## Races
+## Species
 
-See [Race](https://github.com/Yoonmoonsik/bg3dnd/wiki/Races).
+See [Species](https://github.com/Yoonmoonsik/bg3dnd/wiki/Species).
 
 - Aasimar, Changeling, Goliath, and Kalashtar are available as Human subrace options. Eladrin, Ice Elf, and Shadar-kai are available as Elf subrace options. Dhampir can be taken as a Human, Elf, Drow, Tiefling, Dwarf, Halfling, Gnome, or Orc subrace.
 - Dragonborn, Dwarf, Elf, Githyanki, Gnome, Half Elf, Halfling, Human, Orc, and Tiefling are supported.
