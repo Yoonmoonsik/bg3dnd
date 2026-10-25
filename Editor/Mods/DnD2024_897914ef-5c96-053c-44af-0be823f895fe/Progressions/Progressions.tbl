@@ -58,7 +58,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HitPointDice12,1,0);ActionResource(Rage,1,0)" />
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="32eee7d8-1b2f-4de5-b9ee-78fbd286c6ef;1434b384-f51c-4f78-ad7f-db0f13f5a3ee;07234f31-c239-4a57-aeb4-868f3e1a318e;676f7e88-e51e-48b0-8bac-ec69cd1a031c;8287c130-a3aa-4c88-bceb-be9d8fe1be84;2e585948-d775-451d-b58b-15b75321d11e;d6bf00fc-3518-4d63-ba8b-03532c1abc4d;d6db66be-cc60-4ebd-bf63-2a856bbfedaf;0e37e9bc-3909-49f4-8035-6d9736ad6867" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Barbarian_3_PrimalKnowledge" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(4f027368-7aa6-4a3a-a1ce-d5195ba2ba27,1)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(4f027368-7aa6-4a3a-a1ce-d5195ba2ba27,1,Barbarian_3_PrimalKnowledge)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -429,7 +429,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Fractured_3_FaceOfRage;Fractured_3_FaceOfRage_Toggle_Push;Fractured_3_FaceOfRage_Toggle_Prone;Fractured_3_MaskOfCivility;MeleeUnarmedAttackBonus;Fractured_3_FaceOfRage_Toggle_Force" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(28657ca3-eab0-44d5-b1ac-1fae260dd486,1,MaskOfCivility)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(28657ca3-eab0-44d5-b1ac-1fae260dd486,1,Fractured_3_MaskOfCivility)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4031,7 +4031,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="RuneKnight_3_RuneCarver;RuneKnight_3_GiantsMight" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(5af8047d-ced8-4558-8d38-3b91188f2e70,2)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(5af8047d-ced8-4558-8d38-3b91188f2e70,2,RuneKnight_3_RuneCarver)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(GiantsMight,2,0)" />
       </fields>
     </stat_object>
@@ -4055,7 +4055,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="RuneKnight_7_RunicShield" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(22922e4f-4e69-4287-a52e-1285d5c04434,1)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(22922e4f-4e69-4287-a52e-1285d5c04434,1,RuneKnight_3_RuneCarver)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4078,7 +4078,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="10" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="RuneKnight_10_GreatStature" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(22922e4f-4e69-4287-a52e-1285d5c04434,1)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(22922e4f-4e69-4287-a52e-1285d5c04434,1,RuneKnight_3_RuneCarver)" />
       </fields>
     </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
@@ -10304,7 +10304,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HitPointDice10,1,0);" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(1dbdafe6-448d-4226-98a1-9007650a995f,1);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(1dbdafe6-448d-4226-98a1-9007650a995f,1,Illrigger_11_TerrorizingForce);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

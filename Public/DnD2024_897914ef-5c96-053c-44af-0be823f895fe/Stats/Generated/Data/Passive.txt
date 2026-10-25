@@ -1164,6 +1164,10 @@ data "PriorityOrder" "1003"
 data "Properties" "Highlighted"
 data "Boosts" "IF(HasStatus('SG_Rage', context.Source) and IsStrengthModifierPositive()):Skill(Acrobatics,StrengthModifier);IF(HasStatus('SG_Rage', context.Source) and IsStrengthModifierPositive()):Skill(Intimidation,StrengthModifier);IF(HasStatus('SG_Rage', context.Source) and IsStrengthModifierPositive()):Skill(Perception,StrengthModifier);IF(HasStatus('SG_Rage', context.Source) and IsStrengthModifierPositive()):Skill(Stealth,StrengthModifier);IF(HasStatus('SG_Rage', context.Source) and IsStrengthModifierPositive()):Skill(Survival,StrengthModifier);"
 
+new entry "Barbarian_3_PrimalKnowledge_NoSelection"
+type "PassiveData"
+using "NoSkillProficiency"
+
 new entry "FastMovement"
 type "PassiveData"
 using "FastMovement"
@@ -1473,6 +1477,10 @@ data "Description" "hb18ef098g90c9g4ad7gaf03g5aee30c02615;1"
 data "Icon" "Investigation"
 data "PriorityOrder" "1303"
 data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "Fractured_3_MaskOfCivility_NoSelection"
+type "PassiveData"
+using "NoSkillProficiency"
 
 new entry "Fractured_6_BrainsAndBrawn"
 type "PassiveData"
