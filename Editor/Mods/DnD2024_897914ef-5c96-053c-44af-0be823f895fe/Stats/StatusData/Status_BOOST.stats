@@ -221,8 +221,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0b3f1e0c-c437-48c9-ad7f-c801760a12c2" />
         <field name="Name" type="NameTableFieldDefinition" value="DISADVANTAGE_ALL_SAVINGTHROW_START_TURN" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="16999899-6a9a-4d5a-b44d-387d5cc502cd" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8ee570adg0fe2g0097g40e1g8134e53943ad" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="DISADVANTAGE_ALL_SAVINGTHROW_START_TURN" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowDisadvantage_BewilderingWordplay);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -353,6 +355,26 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnHeal" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a9a4b3f9-4127-44a9-b107-9e9b205f56c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SAVING_THROWS_PENALTY" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6ef5198eg577fg6ca6gc4d9gb725efc2c584" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h868292b4g07bag5039g7a39g8b646671c67e" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowPenalty);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="WEAK" enumeration_type_name="SoundVocalType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a15aaf6c-5fcd-4602-a7b5-343c98d49591" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SAVING_THROWS_PENALTY" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -3122,15 +3144,12 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a9a4b3f9-4127-44a9-b107-9e9b205f56c1" />
-        <field name="Name" type="NameTableFieldDefinition" value="MIND_SLIVER" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="bf7f8e54-e294-4368-a4b6-ce625295d345" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6ef5198eg577fg6ca6gc4d9gb725efc2c584" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h868292b4g07bag5039g7a39g8b646671c67e" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_MindSliver" />
-        <field name="StackId" type="StringTableFieldDefinition" value="MIND_SLIVER" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_MindSliver_RemoveStatus);" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4611ce47-30fa-4b1c-b041-558fc1fa92da" />
+        <field name="Name" type="NameTableFieldDefinition" value="SAVING_THROWS_PENALTY_MIND_SLIVER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9a4b3f9-4127-44a9-b107-9e9b205f56c1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had9ee1e5g5369g47b5g65c4g37b956523a59" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowPenalty_MindSliver);" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SAVING_THROWS_PENALTY_MIND_SLIVER" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9264,7 +9283,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Apocalypse_6_AllWillBeDust" />
         <field name="StackId" type="StringTableFieldDefinition" value="ALL_WILL_BE_DUST" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasSpellFlag(SpellFlags.Spell)):Disadvantage(AllSavingThrows);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowDisadvantage_AllWillBeDust);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
@@ -9909,6 +9928,14 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce36033f-ee1a-4dff-ae4c-6050fe27c476" />
+        <field name="Name" type="NameTableFieldDefinition" value="ELDRITCH_STRIKE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e87e588b-ad1e-4b31-8a24-9d835a329b4a" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowDisadvantage_EldritchStrike);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="39ed4673-c749-4248-963c-700038f953f0" />
@@ -10019,7 +10046,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="e87e588b-ad1e-4b31-8a24-9d835a329b4a" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd40f8684ge685g4a35gcbaeg8aa04eb449f0" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="FOCUSED_STRIKE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('FOCUSED_STRIKE', context.Target, context.Source)):Disadvantage(AllSavingThrows);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowDisadvantage_FocusedStrike);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -10840,6 +10867,25 @@
         <field name="Icon" type="StringTableFieldDefinition" value="BladeOfRadiance_9_ChainsOfJudgement" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.WisdomModifier,Radiant,Magical,,0,,true,true)" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF483D8B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="49aa573c-4862-4036-bc82-75ef878c2cb5" />
+        <field name="Name" type="NameTableFieldDefinition" value="__SANGUINE THIEF__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b75285e-f0fa-4488-8a1a-e0bad723c281" />
+        <field name="Name" type="NameTableFieldDefinition" value="STEAL_BLOOD" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdabc148bg5d98g401fg8800g10a80074789e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d66bde8ge699g4921gb4ffg94363cdaf03e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Blood" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STEAL_BLOOD" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_StealBlood_RestoreDie);UnlockSpell(Shout_StealBlood_Mend);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFDC143C" is_substat="false">
@@ -12488,7 +12534,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hca3e32abg4341g51e2ga8f4gba89522cb18f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse" />
         <field name="StackId" type="StringTableFieldDefinition" value="STYMYING_MARK" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(AllSavingThrows);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowDisadvantage_StymyingMark);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
@@ -15595,6 +15641,16 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d6+Cause.ProficiencyBonus);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82313e8c-bf66-420a-99ce-1961843279a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="SAVING_THROWS_PENALTY_COLD_CASTER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9a4b3f9-4127-44a9-b107-9e9b205f56c1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d91582cgf795g8507gdfb6g12c4347c9ea6" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowPenalty_ColdCaster);" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SAVING_THROWS_PENALTY_COLD_CASTER" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6901e24c-0ec4-4b6d-a682-d40afac02684" />
@@ -16536,19 +16592,6 @@
         <field name="Passives" type="StringTableFieldDefinition" value="DarkSacrament_Passive" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;FreezeDuration;ApplyToDead;DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3b75285e-f0fa-4488-8a1a-e0bad723c281" />
-        <field name="Name" type="NameTableFieldDefinition" value="STEAL_BLOOD" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdabc148bg5d98g401fg8800g10a80074789e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d66bde8ge699g4921gb4ffg94363cdaf03e" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Blood" />
-        <field name="StackId" type="StringTableFieldDefinition" value="STEAL_BLOOD" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_StealBlood_RestoreDie);UnlockSpell(Shout_StealBlood_Mend);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

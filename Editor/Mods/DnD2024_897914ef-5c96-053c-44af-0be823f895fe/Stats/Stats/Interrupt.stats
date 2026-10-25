@@ -28,6 +28,32 @@
         <field name="Properties" type="StringTableFieldDefinition" value="IF(Player(context.Source)):UseSpell(Target_MainHandAttack_OpportunityAttack,true,true,true);IF(not Player(context.Source) and not HasPassive('Sentinel_ZeroSpeed',context.Source)):UseAttack();IF(not Player(context.Source) and HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_Sentinel_AttackOfOpportunity,true,true,true);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="738254d4-c0d1-4cd6-bfaf-fc723c30ed81" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowPenalty" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h463f00d2g43d4g6387ga3e8g5af46bc31369" version="4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasInterruptedSavingThrow() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-1d4);RemoveStatus(OBSERVER_OBSERVER,SAVING_THROWS_PENALTY);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5a876037-ad21-479f-8acf-cbd95e69aa6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowDisadvantage" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasInterruptedSavingThrow() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bb57d3d5-bd0e-4875-85bf-99189aeead8b" />
@@ -362,6 +388,20 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('SPECTRAL_SLASH_TARGET',context.Target) and HasStatus('SPECTRAL_SLASH_TARGET_2',context.Target);" />
         <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_SpectralSlash_Attack,true,true,true);" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f65564f-c0b3-4011-bb6d-9c43c70b96e5" />
+        <field name="Name" type="NameTableFieldDefinition" value="__ENCHANTMENT__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7194d617-8d2b-45f5-9c91-5b749d92b966" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowPenalty_MindSliver" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="738254d4-c0d1-4cd6-bfaf-fc723c30ed81" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-1d4);RemoveStatus(OBSERVER_OBSERVER,SAVING_THROWS_PENALTY_MIND_SLIVER);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -989,6 +1029,17 @@
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Cleric),Poison,,,0,,true,true);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="633bc133-fd14-4f87-9e84-e88b23ba981a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowDisadvantage_AllWillBeDust" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5a876037-ad21-479f-8acf-cbd95e69aa6f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfe532d12gf352g0812g7cdag063a8aa309df" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Apocalypse_6_AllWillBeDust" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasInterruptedSavingThrow() and IsSpell() and HasPassive('Apocalypse_6_AllWillBeDust', context.Source) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();RemoveStatus(OBSERVER_OBSERVER,ALL_WILL_BE_DUST);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="468d8269-7090-46eb-aaed-ab7aec258538" />
@@ -1024,6 +1075,17 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4dfef820g9b72g3d0egde23ga602945eec3c" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Heroism" />
         <field name="Cost" type="StringTableFieldDefinition" value="HeroicWarrior:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5360df1e-3553-44ae-b33a-c15dbc691d66" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowDisadvantage_EldritchStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5a876037-ad21-479f-8acf-cbd95e69aa6f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0da46890gdf01g4aafg8838g448555deb977" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasInterruptedSavingThrow() and HasStatus('ELDRITCH_STRIKE', context.Target, context.Source) and HasPassive('EldritchStrike', context.Source) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();RemoveStatus(OBSERVER_OBSERVER,ELDRITCH_STRIKE);" />
       </fields>
     </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
@@ -1296,6 +1358,17 @@
         <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(MartialArts), MainMeleeWeaponDamageType,,,0,,true,true);IF(IsRangedAttack() and not FingerGuns()):DealDamage(LevelMapValue(MartialArts), MainRangedWeaponDamageType,,,0,,true,true);IF(FingerGuns()):DealDamage(LevelMapValue(MartialArts), Force,,,0,,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="KiPoint:1;DeftStrike:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6b4ef997-a6c8-4e1a-b17e-c7d3903b20f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowDisadvantage_FocusedStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5a876037-ad21-479f-8acf-cbd95e69aa6f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd40f8684ge685g4a35gcbaeg8aa04eb449f0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasInterruptedSavingThrow() and HasStatus('FOCUSED_STRIKE', context.Target, context.Source) and HasPassive('MysticArts_11_FocusedStrike', context.Source) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();RemoveStatus(OBSERVER_OBSERVER,FOCUSED_STRIKE);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -2387,6 +2460,16 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsRangedAttack() and not FingerGuns() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not IsSpellAttack() and IsCritical() and not IsKillingBlow() and not AnyEntityIsItem() and HasStatus('PACT_BLADE', GetItemInEquipmentSlot(EquipmentSlot.RangedMainHand, context.Source));" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="37f473c9-d060-4267-8f9b-2b75dfd60fc3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowDisadvantage_StymyingMark" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5a876037-ad21-479f-8acf-cbd95e69aa6f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8af79815gc7d3gf37ag99eage18bc75980e0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();RemoveStatus(OBSERVER_OBSERVER,STYMYING_MARK);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF0000FF" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="abd271fb-37a4-4173-9cc5-d6aae0955f4c" />
@@ -3099,26 +3182,6 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7d6da526-60a3-4e62-b42b-7212aca66f2b" />
-        <field name="Name" type="NameTableFieldDefinition" value="__SPELL__" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="738254d4-c0d1-4cd6-bfaf-fc723c30ed81" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MindSliver_RemoveStatus" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h463f00d2g43d4g6387ga3e8g5af46bc31369" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_MindSliver" />
-        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll;OnCastHit;OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
-        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
-        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(-1d4);RemoveStatus(OBSERVER_OBSERVER,MIND_SLIVER);" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF000000" is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c92b2f4b-211b-41c6-bc5d-4a2826de83c5" />
         <field name="Name" type="NameTableFieldDefinition" value="__FIGHTING STYLE FEAT__" />
       </fields>
@@ -3546,6 +3609,24 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="667616e6-2240-439f-918d-5f0390517ff1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowPenalty_ColdCaster" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="738254d4-c0d1-4cd6-bfaf-fc723c30ed81" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-1d4);RemoveStatus(OBSERVER_OBSERVER,SAVING_THROWS_PENALTY_COLD_CASTER);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4f6f0324-6691-415f-bbd0-9b65fdeb43f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowDisadvantage_BewilderingWordplay" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5a876037-ad21-479f-8acf-cbd95e69aa6f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8ee570adg0fe2g0097g40e1g8134e53943ad" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();RemoveStatus(OBSERVER_OBSERVER,DISADVANTAGE_ALL_SAVINGTHROW_START_TURN);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

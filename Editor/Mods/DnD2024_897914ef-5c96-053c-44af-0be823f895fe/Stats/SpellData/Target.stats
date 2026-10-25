@@ -3974,7 +3974,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Death Type" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Intelligence, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Necrotic);ApplyStatus(MIND_SLIVER,100,2);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Necrotic);ApplyStatus(SAVING_THROWS_PENALTY_MIND_SLIVER,100,2);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_MindSliver" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had9ee1e5g5369g47b5g65c4g37b956523a59" version="1" />
@@ -3982,7 +3982,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Psychic)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Psychic);" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Intelligence" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(MIND_SLIVER,100,2)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SAVING_THROWS_PENALTY_MIND_SLIVER,100,2)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_MentalSlam" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Impact_MentalSlam" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />

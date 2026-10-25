@@ -12515,8 +12515,8 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_RayOfFrost);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and HasAttackDamageDoneForType(DamageType.Cold);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BANE,100,2)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(IsAttack() and HasAttackDamageDoneForType(DamageType.Cold)) or (HasPassive('WinterWalker_3_FirigidExplorer', context.Source) and not HasStatus('POLARSTRIKE_DAMAGE_TAKEN',context.Target));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SAVING_THROWS_PENALTY_COLD_CASTER,100,2)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_RayOfFrost" />
       </fields>
     </stat_object>
