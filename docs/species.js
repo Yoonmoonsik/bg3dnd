@@ -12,7 +12,7 @@ const T = {
     f_source: "Source", none: "None", own: "Own species", has_spells: "Has spells", spell_level: n => `Level ${n}`,
     resistance: "Resistance", skills: "Skill proficiency", choices: "Choice of traits",
     new: "New", revised: "Revised", vanilla: "Unchanged",
-    human_note: "In character creation, this species is selectable as a Human subrace.",
+    human_note: "In character creation, this species is selectable as a Human subrace.", male: "male", female: "female",
     d_level: n => `Level ${n}`, d_spells: "Spells", d_actions: "Actions", d_action: "Action:", d_choose: (n, k) => `Choose ${n} ${k}`,
     k_spell: "spell", k_trait: "trait", d_parents: "Parent species", d_resist: "Resistances", d_uses: "Limited uses",
     d_skills: n => `${n} skill proficiencies`, long: "per Long Rest", short: "per Short Rest",
@@ -28,7 +28,7 @@ const T = {
     f_source: "구분", none: "없음", own: "독립 종족", has_spells: "주문 있음", spell_level: n => `${n}레벨`,
     resistance: "저항", skills: "기술 숙련", choices: "특성 선택",
     new: "새 종족", revised: "개정", vanilla: "변경 없음",
-    human_note: "캐릭터 생성에서 인간의 하위 종족으로서 선택할 수 있습니다.",
+    human_note: "캐릭터 생성에서 인간의 하위 종족으로서 선택할 수 있습니다.", male: "남성", female: "여성",
     d_level: n => `${n}레벨`, d_spells: "주문", d_actions: "행동", d_action: "행동:", d_choose: (n, k) => `${k} ${n}개 선택`,
     k_spell: "주문", k_trait: "특성", d_parents: "상위 종족", d_resist: "저항", d_uses: "횟수 제한",
     d_skills: n => `기술 숙련 ${n}개`, long: "긴 휴식마다", short: "짧은 휴식마다",
@@ -124,6 +124,8 @@ function detail(s) {
   }).join("");
   return `<tr class="detail"><td colspan="5">
     ${facts.length ? `<div class="grid">${facts.map(([k, v]) => `<div><div class="k">${esc(k)}</div>${esc(v)}</div>`).join("")}</div>` : ""}
+    ${s.portrait ? `<div class="portraits">${["Male", "Female"].map(x =>
+      `<img src="portraits/Race_${esc(s.portrait)}_${x}.png" alt="${esc(L(s.name))} ${x === "Male" ? t("male") : t("female")}" width="150" height="150" loading="lazy">`).join("")}</div>` : ""}
     ${s.human_subrace ? `<p class="note">${esc(t("human_note"))}</p>` : ""}
     ${L(s.desc) ? `<p>${esc(L(s.desc))}</p>` : ""}
     ${levels}

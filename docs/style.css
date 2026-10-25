@@ -163,3 +163,7 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 .feat-link .tip .k { display: block; margin-bottom: 4px; }
 .feat-link:hover .tip, .feat-link:focus .tip { display: block; }
 .table-wrap { overflow: visible; }
+
+/* Character creation portraits (species page) */
+.portraits { display: flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
+.portraits img { width: 150px; height: 150px; border-radius: 10px; border: 1px solid var(--line); object-fit: cover; }

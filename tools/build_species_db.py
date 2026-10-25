@@ -42,6 +42,13 @@ from build_spell_db import describe  # noqa: E402
 from subrace_data import NULL, PUB, UNPACKED, nodes  # noqa: E402
 
 OUT = REPO / "docs" / "data" / "species.json"
+# Character creation portraits of the subraces the mod adds (wiki screenshots, Race_<key>_Male/Female.png),
+# keyed by the shown Race node's Name. Copied to docs/portraits at 300px.
+FACES = REPO.parent / "bg3dnd.wiki" / "bg3dnd_race_faces" / "cropped"
+PORTRAIT_OUT = REPO / "docs" / "portraits"
+PORTRAITS = {"Eladrin": "ElfEladrin", "Elf_IceElf": "ElfIce", "ShadarKai": "ElfShadarKai",
+             "HumanAasimar": "HumanAasimar", "Changeling": "HumanChangeling", "Goliath": "HumanGoliath",
+             "Kalashtar": "HumanKalashtar", "Dhampir": "HumanDhampir"}
 VANILLA_PAKS = ["Shared/Public/Shared", "Shared/Public/SharedDev", "Gustav/Public/Gustav",
                 "Gustav/Public/GustavDev", "GustavX/Public/GustavX"]
 HUMAN_OWN = "HumanHuman"
@@ -206,6 +213,7 @@ class Builder:
                 "desc": {"en": text(shown.get("Description"), False), "ko": text(shown.get("Description"), True)},
                 # Character creation lists it under Human: players look for it there.
                 "human_subrace": promoted,
+                "portrait": PORTRAITS.get(shown.get("Name")),
                 "source": "new" if shown["UUID"] not in self.van_races else
                           ("revised" if self.changed(chain, passives) else "vanilla"),
                 **info,
@@ -233,6 +241,19 @@ class Builder:
         return out
 
 
+def copy_portraits(species):
+    """300px copies of the portraits; an existing copy is kept (re-encoding changes the bytes)."""
+    PORTRAIT_OUT.mkdir(parents=True, exist_ok=True)
+    for s in species:
+        for sex in ("Male", "Female") if s["portrait"] else ():
+            name = f"Race_{s['portrait']}_{sex}.png"
+            src, dst = FACES / name, PORTRAIT_OUT / name
+            if not src.exists():
+                print("  no portrait:", name)
+            elif not dst.exists():
+                subprocess.run(["magick", str(src), "-resize", "300x300", "-strip", str(dst)], check=True)
+
+
 def main():
     b = Builder()
     species = b.run()
@@ -242,6 +263,7 @@ def main():
     blocks = ["    {\n" + ",\n".join(f"      {one(k)}: {one(v)}" for k, v in s.items()) + "\n    }" for s in species]
     OUT.write_text('{\n  "generated": ' + one(built) + ',\n  "species": [\n' + ",\n".join(blocks) + "\n  ]\n}\n",
                    encoding="utf-8", newline="\n")
+    copy_portraits(species)
     print(b.stats_line)
     print(f"species {len(species)}: " + ", ".join(f"{k} {sum(s['source'] == k for s in species)}"
                                                  for k in ("new", "revised", "vanilla")))
