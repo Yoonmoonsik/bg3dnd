@@ -8,9 +8,11 @@ Which entries count as spells:
   - an entry of a base class spell list ("5.5 <Class> Cantrip ..." / "5.5 <Class> SLevel N ...")
   - that also has a row in the wiki Spells.md (the wiki is the editorial list of real spells;
     class features such as EC_ForceBallista also sit in spell lists).
-Wiki rows are matched to entries by Icon + level. The wiki supplies new/revised, the short
-change notes and the scroll column; every mechanic comes from the stats (vanilla merged with
-Honour and the mod, through `using`, by the bg3-data scripts).
+Wiki rows are matched to entries by Icon + level. The wiki supplies the names, the short change
+notes and the scroll column; every mechanic comes from the stats (vanilla merged with Honour and
+the mod, through `using`, by the bg3-data scripts).
+Source: "new" when no vanilla entry has the id; "revised" when any field of the merged entry
+differs from the vanilla merge (technical fixes included); otherwise "vanilla".
 """
 import argparse
 import html
@@ -186,6 +188,13 @@ def damage_types(f):
     return set(DMG_TYPE.findall(" ".join(plain)))
 
 
+def changed(db, vanilla, sid):
+    """True when the mod changes any field of sid after `using` resolves."""
+    a = {k: v[0] for k, v in stats.all_fields(vanilla, sid).items()}
+    b = {k: v[0] for k, v in stats.all_fields(db, sid).items()}
+    return a != b
+
+
 def out_type_is_zone(f):
     return f.get("SpellType") in ("Zone", "Wall") or bool(f.get("Shape"))
 
@@ -236,6 +245,7 @@ def main():
             class_diff.append(f"L{level} {name}: wiki {wiki_cls} / base lists {data_cls}")
 
         new = sid not in vanilla
+        revised = not new and any(changed(db, vanilla, i) for i, _ in cands if i in vanilla)
         spells.append({
             "id": sid,
             "ids": [s for s, _ in cands],
@@ -243,7 +253,7 @@ def main():
             "school": m["school"],
             "sangromancy": "Sangromancy" in school,
             "classes": cls,
-            "source": "new" if new else ("revised" if note else "vanilla"),
+            "source": "new" if new else ("revised" if revised else "vanilla"),
             "icon": icon,
             "scroll": scroll,
             "name": {"en": name, "ko": ko[2]},
