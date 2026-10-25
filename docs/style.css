@@ -167,3 +167,11 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 /* Character creation portraits (species page) */
 .portraits { display: flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
 .portraits img { width: 150px; height: 150px; border-radius: 10px; border: 1px solid var(--line); object-fit: cover; }
+
+/* Subclasses inside a class detail (class page) */
+.subs { list-style: none; padding: 0; margin: 0 0 14px; display: grid; gap: 4px; }
+.subs .sub-toggle { background: none; border: 0; padding: 2px 0; color: var(--accent); cursor: pointer; font: inherit; }
+.subs .sub-toggle:hover { text-decoration: underline; }
+.subs .sub-toggle[aria-expanded="true"] { font-weight: 600; }
+.subs .hit .sub-toggle { font-weight: 600; }
+.sub-detail { margin: 6px 0 10px 12px; padding-left: 12px; border-left: 2px solid var(--line); }

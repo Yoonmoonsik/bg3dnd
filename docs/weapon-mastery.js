@@ -3,7 +3,7 @@
 const T = {
   en: {
     title: "Weapon Mastery", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
-    nav_home: "Home", nav_backgrounds: "Backgrounds", nav_feats: "Feats", nav_fighting: "Fighting Styles",
+    nav_home: "Home", nav_backgrounds: "Backgrounds", nav_classes: "Classes", nav_feats: "Feats", nav_fighting: "Fighting Styles",
     nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery",
     search: "Search masteries by name, weapon or effect", filters: "Filters", reset: "Reset",
     col_name: "Mastery", col_weapons: "Weapons",
@@ -14,7 +14,7 @@ const T = {
   },
   ko: {
     title: "무기 숙련술", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
-    nav_home: "홈", nav_backgrounds: "배경", nav_feats: "재주", nav_fighting: "전투 방식",
+    nav_home: "홈", nav_backgrounds: "배경", nav_classes: "직업", nav_feats: "재주", nav_fighting: "전투 방식",
     nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술",
     search: "숙련술 이름, 무기, 효과로 검색", filters: "필터", reset: "초기화",
     col_name: "숙련술", col_weapons: "무기",
