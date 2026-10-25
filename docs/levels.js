@@ -87,7 +87,8 @@ function optionLists(levels, lang, esc, scope) {
   const L = o => o[lang] || o.en;
   const lists = new Map();
   for (const l of levels) for (const c of l.choices) {
-    if (!c.label) continue;
+    // Fighting styles and weapon masteries have their own pages (PREVIEWS): not listed here.
+    if (!c.label || c.options.every(o => PREVIEWS[o.id])) continue;
     const opts = lists.get(c.label.en) || lists.set(c.label.en, { label: c.label, opts: new Map() }).get(c.label.en);
     for (const o of c.options) opts.opts.set(o.id, o);
   }
