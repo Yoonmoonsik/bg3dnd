@@ -324,12 +324,13 @@ def _git(repo: Path, *args: str) -> str:
 
 
 # Commits about the repo's docs (the GitHub Pages spell browser, READMEs) are not mod changes:
-# "docs: ...", "docs(x): ..." and any "<type>(docs): ...".
-DOCS_COMMIT = re.compile(r"^(?:docs(?:\([^)]*\))?|\w+\(docs\))!?:")
+# "docs: ...", "docs(x): ..." and any "<type>(docs): ...". Chores are not mod changes either:
+# "chore: ...", "chore(x): ...".
+DOCS_COMMIT = re.compile(r"^(?:docs(?:\([^)]*\))?|chore(?:\([^)]*\))?|\w+\(docs\))!?:")
 
 
 def changelog_subjects(repo: Path, rev_range: str) -> str:
-    """'- <subject>' lines for rev_range, without docs commits."""
+    """'- <subject>' lines for rev_range, without docs and chore commits."""
     lines = _git(repo, "log", "--no-merges", "--format=%s", rev_range).splitlines()
     return "\n".join(f"- {s}" for s in lines if s and not DOCS_COMMIT.match(s))
 
