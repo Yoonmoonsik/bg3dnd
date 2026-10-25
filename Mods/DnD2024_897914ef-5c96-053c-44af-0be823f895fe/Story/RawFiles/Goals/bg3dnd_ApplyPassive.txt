@@ -18,6 +18,17 @@ NOT DB_DND55e_Initialized(0);
 DB_DND55e_Initialized(1);
 
 
+// Display Rules
+IF
+DB_Players(_Player)
+AND
+DB_DND55e_Initialized(1)
+AND
+HasPassive(_Player, "Rules_All", 0)
+THEN
+AddPassive(_Player, "Rules_All");
+
+
 // EquippingWeapons
 IF
 DB_Players(_Player)

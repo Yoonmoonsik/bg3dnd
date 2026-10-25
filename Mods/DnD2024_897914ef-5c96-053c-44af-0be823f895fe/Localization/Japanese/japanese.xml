@@ -5475,4 +5475,45 @@
   <content contentuid="h43c7ed41g0c76g4c1cg8555g3622987390d2" version="1">使用可能なクラス：アーティフィサー、ソーサラー、ウィザード</content>
   <content contentuid="h68f18197gef59g4d42g89d4g359f077b2f65" version="1">力の円環の巻物</content>
   <content contentuid="h45bfef77gc136g4fcdga0c9g905ed940113b" version="1">使用可能なクラス：クレリック、ウィザード</content>
+  <content contentuid="hefb81c0eg897cg4dfeg8a7ag94cc3ffbd24b" version="1">ルール</content>
+  <content contentuid="h96c80190g7b6cg43a3ga1a9g6114e02a2d53" version="1">このMODは以下のルールを変更する。ルールにカーソルを合わせると内容を確認できる。&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Passive" Tooltip="Rules_AttackAction"&gt;攻撃［アクション］&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_Bloodied"&gt;血まみれ&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_D20Test"&gt;d20テスト&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_DistractAction"&gt;気をそらす［アクション］&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_DodgeAction"&gt;回避［アクション］&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_DownedCondition"&gt;瀕死［状態］&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_EquipmentRequirements"&gt;装備の能力値要件&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_ExtraAttack"&gt;追加攻撃&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_HeroicInspiration"&gt;英雄的インスピレーション&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_HideAction"&gt;隠れる［アクション］&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_HitPointDice"&gt;ヒット・ダイス&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_Jumping"&gt;跳躍&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_OneSpellSlotPerTurn"&gt;1ターンに呪文スロット呪文1つ&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_ProneCondition"&gt;伏せ［状態］&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_Range"&gt;射程&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_SpellScroll"&gt;呪文の巻物&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Rules_UnarmedStrike"&gt;素手攻撃&lt;/LSTag&gt;</content>
+  <content contentuid="h4474df55g98abg44aegb8c8gb1fa7f28c85f" version="1">攻撃［アクション］</content>
+  <content contentuid="hdfb5a94ag838fg493agb60bg0560ebc3e430" version="1">武器の装備と解除：武器を装備するとアクション・ポイントを1消費する。そのターンにまだ攻撃、呪文の発動、素手攻撃を行っていなければ、消費したポイントは戻る（ターンに1回）。</content>
+  <content contentuid="h919a4d3ag7807g42f4g9cb8g5135af27e838" version="1">血まみれ</content>
+  <content contentuid="hfcf81a8bg97e1g416cg8b23g5ffe5833bd80" version="1">クリーチャーはヒット・ポイントが最大値の半分未満である間、&lt;LSTag Type="Status" Tooltip="BLOODED"&gt;血まみれ&lt;/LSTag&gt;状態になる。この状態自体に効果はなく、その基準を超えて回復するとすぐに終了する。血まみれのクリーチャーに作用する呪文や特徴はこの状態を確認する。</content>
+  <content contentuid="h0800f7dagbf1fg456eg95a5gf214e3d57582" version="1">d20テスト</content>
+  <content contentuid="h3c78a793g5109g4555g8637g0743f2153f63" version="1">攻撃ロールまたは死亡セーヴィング・スローのd20で1が出ると失敗する。能力値判定またはその他のセーヴィング・スローのd20で1が出た場合は2として扱い、通常どおり難易度と比較する。&lt;br&gt;&lt;br&gt;すべてのd20テストでd20の出目が20なら成功する。</content>
+  <content contentuid="hcd023602g4b05g43ebg9177g83a502631934" version="1">気をそらす［アクション］</content>
+  <content contentuid="h338ff06ag669cg4aaag890cg91b8d5f86b45" version="1">気をそらすアクションを行うと、敵1体に&lt;LSTag Type="Status" Tooltip="DISTRACTED"&gt;注意散漫&lt;/LSTag&gt;状態を与える。味方はその敵に対する次の攻撃ロールで有利を得る。</content>
+  <content contentuid="h51f98bd8g10dbg4efcg817egfeb62b39b02f" version="1">回避［アクション］</content>
+  <content contentuid="hdf723600g316eg45b0gaadcg27ee7bec533c" version="1">回避アクションを行うと、自分の次のターンの開始時まで&lt;LSTag Type="Status" Tooltip="DODGE"&gt;回避&lt;/LSTag&gt;状態を得る。自分に対する攻撃ロールは不利を受け、自分は【敏捷力】セーヴィング・スローに有利を得る。</content>
+  <content contentuid="h72c88b16g2e31g4d7dgb1f2gca5510a0e023" version="1">瀕死［状態］</content>
+  <content contentuid="h88cdb54bgdc61g45cdg9a61gac6e68cd6562" version="1">&lt;LSTag Type="Status" Tooltip="DOWNED"&gt;瀕死状態&lt;/LSTag&gt;が終了すると、アクション・ポイントを回復し、&lt;LSTag Type="Status" Tooltip="PRONE"&gt;伏せ状態&lt;/LSTag&gt;になる。</content>
+  <content contentuid="h7795297dg6e14g4662g8147g9627deee9e61" version="1">装備の能力値要件</content>
+  <content contentuid="h543e3525ge767g4c5fga30eg3b9a70a4e11a" version="1">重装鎧：【筋力】が13未満なら、移動速度が[1]減少する。&lt;br&gt;&lt;br&gt;重い武器：【筋力】が13未満なら、重い近接武器の攻撃ロールに不利を受ける。【敏捷力】が13未満なら、重い遠隔武器の攻撃ロールに不利を受ける。</content>
+  <content contentuid="h2f5ef7c7gb487g4524g8833g2b71c6e5ebc1" version="1">追加攻撃</content>
+  <content contentuid="hbec71bb0g1d09g49f3gb7a2g92f7d1a61662" version="1">追加攻撃があれば、攻撃アクションで2回攻撃できる。&lt;LSTag Type="Spell" Tooltip="Target_BoomingBlade"&gt;ブーミング・ブレード&lt;/LSTag&gt;のように魔法アクションとして武器攻撃を行う初級呪文は、追加攻撃の恩恵を受けない。&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Passive" Tooltip="WarMagic"&gt;戦闘魔法&lt;/LSTag&gt;（エルドリッチ・ナイト、武勇の学派）：それらの攻撃の1回を、発動時間が1アクションの初級呪文に置き換えられる（ターンに1回）。</content>
+  <content contentuid="hb41882b6ge887g4d1cg8a6dgfba68fabbcac" version="1">英雄的インスピレーション</content>
+  <content contentuid="he5a9c4c4g9c7cg4f43g8625g3a8dd8b12dd7" version="1">大休憩を終えるたびに、50％の確率で背景から英雄的インスピレーションを1得る。このMODが追加した背景にのみ適用される。</content>
+  <content contentuid="h396716cfgd6c1g4a96ga265g4ea4cd847465" version="1">隠れる［アクション］</content>
+  <content contentuid="h1dd2aa8agb7b2g4b44g82fbg91ab3b948aaf" version="1">隠れるアクションで身を隠そうとする。明るい光の中にいないときに、難易度20の隠密判定に成功しなければならない。成功すると、1ターンの間&lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;不可視状態&lt;/LSTag&gt;になる。ターンに1回試みられる。</content>
+  <content contentuid="h7043d6fagf3efg40b4g8db3gcb285def4d30" version="1">ヒット・ダイス</content>
+  <content contentuid="hcbfb9db1gf433g4f09g9487g1919c820b176" version="1">キャラクター・レベルに等しい数のヒット・ダイスを持ち、そのサイズはクラスで決まる。小休憩の後にヒット・ダイスを消費してヒット・ポイントを回復できる。小休憩だけではヒット・ポイントは回復しない。</content>
+  <content contentuid="h9343433egf188g4206gbf71g4685af5bf66b" version="1">跳躍</content>
+  <content contentuid="hc5d580d0g9d50g405fgb38fg39ea18415697" version="1">跳躍にボーナス・アクションは不要である。跳んだ距離に等しい移動力を消費する。</content>
+  <content contentuid="h0bd6fc00g91b0g4085gaeaag1b5f9e4d3824" version="1">1ターンに呪文スロット呪文1つ</content>
+  <content contentuid="he52050dfg64a3g432bga6b6g496330ebc398" version="1">呪文スロットは1ターンに1つしか消費できない。たとえば同じターンに、魔法アクションで呪文スロットを使う呪文を発動し、ボーナス・アクションでもう1つ呪文スロットを使う呪文を発動することはできない。</content>
+  <content contentuid="h8ec93243g6d7ag4502g9021gbca74bd901d4" version="1">伏せ［状態］</content>
+  <content contentuid="h6627bbf0g8d4dg4e78ga47cgb7449be3f897" version="1">移動制限：移動するときは這う。這って[1]進むごとに移動力を[2]消費する。立ち上がるのは別のアクションで、移動力を[3]消費する。立ち上がらずに攻撃、呪文の発動、被弾への反応を行う。&lt;br&gt;&lt;br&gt;攻撃への影響：自分の攻撃ロールは不利を受ける。自分に対する攻撃ロールは、攻撃者が[4]以内にいれば有利、そうでなければ不利を受ける。&lt;br&gt;&lt;br&gt;集中：&lt;LSTag Type="Status" Tooltip="PRONE"&gt;伏せ状態&lt;/LSTag&gt;になっても集中は途切れない。</content>
+  <content contentuid="h8f5140d6g824eg4642ga881gb4fa2a996e21" version="1">呪文の巻物</content>
+  <content contentuid="h49c4bd76gf9bfg40edg8921g386eab61435f" version="1">呪文の巻物は、その呪文が自分のクラスまたはサブクラスの呪文リストにあり、自分の最も高い呪文スロットが巻物の呪文レベルより最大1レベル低い場合にのみ使用できる。マルチクラスのキャラクターは、その呪文がリストにあるクラスとサブクラスのレベルだけを数える。&lt;br&gt;&lt;br&gt;アーケイン・トリックスター、Architect of Ruin、エルドリッチ・ナイト、Occultist Guild、Spellslingerは、呪文発動の特徴を得た後はウィザードの呪文リストを、Warrior of the Mystic Artsはソーサラーの呪文リストを持つものとして扱う。&lt;br&gt;&lt;br&gt;ハーフキャスターのクラス（アーティフィサー、パラディン、レンジャー）は、他の呪文使いと組み合わせるとレベルの半分（切り捨て）を加える。単独では自分のクラスの呪文スロット表を使う。&lt;br&gt;&lt;br&gt;初級呪文の巻物と、リヴィヴィファイおよびディテクト・ソーツの巻物には制限がない。</content>
+  <content contentuid="h43e91c45g8042g48e1gb224g04f5b5a41d1f" version="1">素手攻撃</content>
+  <content contentuid="h95cc756dg94deg4b03gae3dg25aa2722cdcb" version="1">押しやり：クリーチャーを押しやるにはアクションを消費する。目標は【筋力】と【敏捷力】のうち高いほうでセーヴィング・スローを行い、難易度は8＋自分の【筋力】修正値＋習熟ボーナスである。&lt;br&gt;&lt;br&gt;転倒：転倒はクリーチャーを&lt;LSTag Type="Status" Tooltip="PRONE"&gt;伏せ状態&lt;/LSTag&gt;にする。目標は【筋力】と【敏捷力】のうち高いほうで同じ難易度のセーヴィング・スローを行う。</content>
+  <content contentuid="h179c7064g4eccg43c0gb380g396b345cb8a8" version="2">1日に2回、小休憩を取ることができる。休憩後、ヒット・ダイスを消費してヒット・ポイントを回復できる。ウォーロックは呪文スロットも回復する。</content>
+  <content contentuid="h3bcbb7a6ge501g4dfdg88f1g23fa9f89c038" version="2">1日に2回、小休憩を取ることができる。休憩後、ヒット・ダイスを消費してヒット・ポイントを回復できる。ウォーロックは呪文スロットも回復する。</content>
+  <content contentuid="h4126ffbfga055g4bbcgac93g8462ec3759e3" version="2">1日に2回、小休憩を取ることができる。休憩後、ヒット・ダイスを消費して&lt;LSTag Tooltip="HitPoints"&gt;ヒット・ポイント&lt;/LSTag&gt;を回復できる。ウォーロックは&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;も回復する。</content>
+  <content contentuid="h5f8707edgc150g4445gaefeg8fe0236fca03" version="2">1日に2回、小休憩を取ることができる。休憩後、ヒット・ダイスを消費して&lt;LSTag Tooltip="HitPoints"&gt;ヒット・ポイント&lt;/LSTag&gt;を回復できる。ウォーロックは&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;も回復する。</content>
+  <content contentuid="h9425fb12g8a1fg4aaeg8872g55770351e977" version="2">1日に2回、小休憩を取ることができる。休憩後、ヒット・ダイスを消費して&lt;LSTag Tooltip="HitPoints"&gt;ヒット・ポイント&lt;/LSTag&gt;を回復できる。ウォーロックは&lt;LSTag Tooltip="WarlockSpellSlot"&gt;呪文スロット&lt;/LSTag&gt;も回復する。</content>
+  <content contentuid="h45738507g1014g452fgb26ag2a79f2a80e1e" version="1">射程</content>
+  <content contentuid="h2f964406gdb70g4d15ga3bagabb069030776" version="1">遠隔武器には通常射程と最大射程がある。武器と遠隔武器攻撃アクションに表示される射程は最大射程で、通常射程の1.5倍である。通常射程の外にいる目標への攻撃ロールは不利を受ける。</content>
 </contentList>
