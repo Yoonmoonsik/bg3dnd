@@ -209,6 +209,8 @@ function bind() {
       e.preventDefault();
       const to = document.getElementById(jump.dataset.jump);
       if (to) {
+        const box = to.closest("details");
+        if (box) box.open = true;
         to.scrollIntoView({ behavior: "smooth", block: "center" });
         to.classList.remove("flash"); void to.offsetWidth; to.classList.add("flash");
       }

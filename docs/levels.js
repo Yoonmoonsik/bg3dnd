@@ -92,8 +92,9 @@ function optionLists(levels, lang, esc, scope) {
     const opts = lists.get(c.label.en) || lists.set(c.label.en, { label: c.label, opts: new Map() }).get(c.label.en);
     for (const o of c.options) opts.opts.set(o.id, o);
   }
-  return [...lists.values()].map(x => `<div class="k">${esc(L(x.label))}</div><dl class="plist">`
+  // Each list starts folded; an option link in the table opens it.
+  return [...lists.values()].map(x => `<details class="plist-box"><summary class="k">${esc(L(x.label))} (${x.opts.size})</summary><dl class="plist">`
     + [...x.opts.values()].map(o => `<dt id="${esc(optionAnchor(scope, o.id))}">${esc(L(o.name))}</dt><dd>`
       + `${o.extra && L(o.extra) ? `<span class="extra">${esc(L(o.extra))}</span>` : ""}${o.desc ? esc(L(o.desc)) : ""}</dd>`).join("")
-    + "</dl>").join("");
+    + "</dl></details>").join("");
 }
