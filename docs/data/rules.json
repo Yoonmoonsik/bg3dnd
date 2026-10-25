@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26 38312a68",
+  "generated": "2026-10-26 d3648e3a",
   "rules": [
     {
       "id": "Rules_AttackAction",
@@ -70,6 +70,11 @@
       "id": "Rules_ProneCondition",
       "name": {"en": "Prone [Condition]", "ko": "넘어짐 [상태]"},
       "desc": {"en": "Restricted Movement: You crawl when you move. Every 1m you crawl costs 2m of movement. Standing up is a separate action that costs 4.5m of movement. You attack, cast spells, and react to hits without standing up.\n\nAttacks Affected: You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 3m of you. Otherwise, that attack roll has Disadvantage.\n\nConcentration: Falling Prone doesn't break your Concentration.", "ko": "이동 제한: 이동하면 기어갑니다. 1m를 기어갈 때마다 이동력 2m를 소모합니다. 일어서기는 별도 행동이며 이동력 4.5m를 소모합니다. 일어서지 않은 채 공격하고 주문을 시전하고 피격에 대응합니다.\n\n공격 영향: 자신의 명중 굴림에 불리 보정을 받습니다. 자신에 대한 명중 굴림은 공격자가 3m 이내에 있으면 유리 보정을, 그렇지 않으면 불리 보정을 받습니다.\n\n집중: 넘어짐 상태여도 집중이 깨지지 않습니다."}
+    },
+    {
+      "id": "Rules_Range",
+      "name": {"en": "Range", "ko": "사거리"},
+      "desc": {"en": "A ranged weapon has a normal range and a long range. The range shown on the weapon and on ranged weapon attack actions is its long range, which is 1.5 times its normal range. You have Disadvantage on attack rolls against a target beyond normal range.", "ko": "원거리 무기에는 기본 사거리와 최대 사거리가 있습니다. 무기와 원거리 무기 공격 행동에 표시되는 사거리는 최대 사거리이며, 기본 사거리의 1.5배입니다. 기본 사거리 밖에 있는 대상에 대한 명중 굴림에는 불리 보정을 받습니다."}
     },
     {
       "id": "Rules_SpellScroll",
