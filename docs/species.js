@@ -12,7 +12,7 @@ const T = {
     f_source: "Source", none: "None", own: "Own species", has_spells: "Has spells", spell_level: n => `Level ${n}`,
     resistance: "Resistance", skills: "Skill proficiency", choices: "Choice of traits",
     new: "New", revised: "Revised", vanilla: "Unchanged",
-    d_level: n => `Level ${n}`, d_spells: "Spells", d_actions: "Actions", d_choose: (n, k) => `Choose ${n} ${k}`,
+    d_level: n => `Level ${n}`, d_spells: "Spells", d_actions: "Actions", d_action: "Action:", d_choose: (n, k) => `Choose ${n} ${k}`,
     k_spell: "spell", k_trait: "trait", d_parents: "Parent species", d_resist: "Resistances", d_uses: "Limited uses",
     d_skills: n => `${n} skill proficiencies`, long: "per Long Rest", short: "per Short Rest",
   },
@@ -27,7 +27,7 @@ const T = {
     f_source: "구분", none: "없음", own: "독립 종족", has_spells: "주문 있음", spell_level: n => `${n}레벨`,
     resistance: "저항", skills: "기술 숙련", choices: "특성 선택",
     new: "새 종족", revised: "개정", vanilla: "변경 없음",
-    d_level: n => `${n}레벨`, d_spells: "주문", d_actions: "행동", d_choose: (n, k) => `${k} ${n}개 선택`,
+    d_level: n => `${n}레벨`, d_spells: "주문", d_actions: "행동", d_action: "행동:", d_choose: (n, k) => `${k} ${n}개 선택`,
     k_spell: "주문", k_trait: "특성", d_parents: "상위 종족", d_resist: "저항", d_uses: "횟수 제한",
     d_skills: n => `기술 숙련 ${n}개`, long: "긴 휴식마다", short: "짧은 휴식마다",
   },
@@ -115,7 +115,7 @@ function detail(s) {
     const items = [
       ...l.traits.map(x => `<li><strong>${esc(L(x.name))}</strong>${L(x.desc) ? ` — ${esc(L(x.desc))}` : ""}</li>`),
       l.spells.length ? `<li>${esc(t("d_spells"))}: ${l.spells.map(spellItem).join(", ")}</li>` : "",
-      l.actions.length ? `<li>${esc(t("d_actions"))}: ${l.actions.map(x => esc(L(x.name))).join(", ")}</li>` : "",
+      ...l.actions.map(x => `<li>${esc(t("d_action"))} <strong>${esc(L(x.name))}</strong>${x.desc && L(x.desc) ? ` — ${esc(L(x.desc))}` : ""}</li>`),
       ...l.choices.map(c => `<li>${esc(t("d_choose")(c.count, t("k_" + c.kind)))}: ${c.options.map(o => c.kind === "spell" ? spellItem(o) : esc(L(o.name))).join(", ")}</li>`),
     ].join("");
     return `<div class="k">${esc(t("d_level")(l.level))}</div><ul>${items}</ul>`;

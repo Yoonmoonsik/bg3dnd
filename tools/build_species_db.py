@@ -98,9 +98,16 @@ class Builder:
         return {k: v[0] for k, v in stats.all_fields(db, entry).items()} if entry in db else {}
 
     def spell(self, sid):
-        """id is set when the spell browser lists it; spell is false for actions (no IsSpell flag)."""
-        return {"id": sid if sid in self.spell_ids else None, "name": name_of(self.db, sid),
-                "spell": "IsSpell" in self.fields(sid).get("SpellFlags", "")}
+        """id is set when the spell browser lists it; spell is false for actions (no IsSpell flag).
+        Actions carry their own description (DescriptionParams filled in): no other page shows them."""
+        f = self.fields(sid)
+        out = {"id": sid if sid in self.spell_ids else None, "name": name_of(self.db, sid),
+               "spell": "IsSpell" in f.get("SpellFlags", "")}
+        if not out["spell"]:
+            h = (f.get("Description") or "").split(";")[0]
+            out["desc"] = {"en": describe(h, f.get("DescriptionParams", ""), False),
+                           "ko": describe(h, f.get("DescriptionParams", ""), True)}
+        return out
 
     def traits(self, race_nodes):
         """Merged traits of the given Race nodes' progression tables."""
