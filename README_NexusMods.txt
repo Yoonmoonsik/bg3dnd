@@ -2,9 +2,9 @@
 
 [url=https://github.com/Yoonmoonsik/bg3dnd]DnD 5.5e All-in-One BEYOND[/url] is a Baldur's Gate 3 mod that packs a broad set of D&D 5.5e-inspired rules, player options, spells, feats, equipment, and class updates into a single all-in-one mod.
 
-For deeper gameplay notes, class details, spell behavior, item locations, and community-maintained documentation, see the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url].
+[b]We built a data browser where you can look up the mod's data — classes and subclasses, spells, feats, backgrounds, species, fighting styles and weapon masteries — with search and filters, all generated from the mod's game data: [url=https://yoonmoonsik.github.io/bg3dnd/]Data Browser[/url][/b]
 
-To search every spell and feat in the mod by filters, use the [url=https://yoonmoonsik.github.io/bg3dnd/]data browser[/url]. It is generated from the mod's game data.
+For deeper gameplay notes, class details, spell behavior, item locations, and community-maintained documentation, see the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url].
 
 [i]Note: The Wiki is maintained by community contributors and is not officially written or managed by the mod developer. Some information may be incomplete, outdated, or inaccurate.[/i]
 
