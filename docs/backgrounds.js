@@ -74,15 +74,12 @@ function renderTable() {
   }).join("");
 }
 
-const ABILITY_KO = { Strength: "근력", Dexterity: "민첩", Constitution: "건강", Intelligence: "지능", Wisdom: "지혜", Charisma: "매력" };
-
 // A feat the data links to opens its row on the feat page; hovering shows its ability scores and text.
 function featLink(f) {
   const name = esc(L(f.name));
   if (!f.id) return name;
   const feat = FEATS[f.id];
-  const tip = feat ? `<span class="tip" role="tooltip"><span class="k">${esc(feat.abilities
-    .map(a => state.lang === "ko" ? ABILITY_KO[a] || a : a).join(", "))}</span>${esc(L(feat.desc))}</span>` : "";
+  const tip = feat ? `<span class="tip" role="tooltip">${esc(L(feat.desc))}</span>` : "";
   return `<a class="feat-link" href="feats.html#lang=${state.lang}&open=${encodeURIComponent(f.id)}">${name}${tip}</a>`;
 }
 
