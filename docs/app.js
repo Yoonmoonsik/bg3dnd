@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: "Spells", subtitle: "D&D 5.5e Beyond Fantasy · Baldur's Gate 3 mod", wiki: "Wiki",
+    title: "Spells", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
     search: "Search spells by name or description", filters: "Filters", reset: "Reset",
     col_name: "Name", col_level: "Level", col_cast: "Casting Time", col_range: "Range",
     col_effect: "Attack / Save", col_damage: "Damage", col_school: "School",
@@ -21,7 +21,7 @@ const T = {
     shape_Cone: "Cone", shape_Square: "Square", radius: "radius", weapon_range: "Weapon range",
   },
   ko: {
-    title: "주문", subtitle: "D&D 5.5e Beyond Fantasy · 발더스 게이트 3 모드", wiki: "위키",
+    title: "주문", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
     search: "주문 이름이나 설명으로 검색", filters: "필터", reset: "초기화",
     col_name: "이름", col_level: "레벨", col_cast: "시전 시간", col_range: "사거리",
     col_effect: "공격 / 내성", col_damage: "피해", col_school: "학파",
@@ -225,7 +225,7 @@ function applyLang() {
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
   document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === state.lang));
-  document.title = `${t("title")} · D&D 5.5e Beyond Fantasy`;
+  document.title = `${t("title")} · D&D 5.5e All-in-One BEYOND`;
 }
 
 // Filters live in the URL hash so a search can be shared: #lang=ko&level=1,2&classes=Wizard
