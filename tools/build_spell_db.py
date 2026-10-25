@@ -78,24 +78,87 @@ def handle_of(v):
     return v.split(";")[0] if v else None
 
 DICE_MAP = re.compile(r"LevelMapValue\((?:D(\d+)Cantrip|([A-Za-z0-9_]+))\)")
+ABILITY_KO = {"Strength": "근력", "Dexterity": "민첩", "Constitution": "건강", "Intelligence": "지능",
+              "Wisdom": "지혜", "Charisma": "매력"}
+_LOOKUP = {}
+
+
+def _lookup():
+    """Level maps (Name -> values at levels 1-12, the mod over vanilla) and class names (Name -> {en, ko})."""
+    if not _LOOKUP:
+        sys.path.insert(0, str(REPO / "tools"))
+        from build_feat_db import text
+        from build_species_db import layered
+        _, maps = layered("Levelmaps/LevelMapValues.lsx", "LevelMapSeries")
+        _LOOKUP["maps"] = {m["Name"]: [m[f"Level{i}"] for i in range(1, 13) if m.get(f"Level{i}")] or
+                           [m["FallbackValue"]] for m in maps.values() if m.get("Name")
+                           and (m.get("FallbackValue") or any(m.get(f"Level{i}") for i in range(1, 13)))}
+        _, cls = layered("ClassDescriptions/ClassDescriptions.lsx", "ClassDescription")
+        _LOOKUP["cls"] = {c["Name"]: {"en": text(c.get("DisplayName"), False) or c["Name"],
+                                      "ko": text(c.get("DisplayName"), True) or c["Name"]} for c in cls.values()}
+    return _LOOKUP
+
+
+def level_map(name):
+    """A level map's values up to level 12 in level order, as one range: "1d6~1d10", or "1d8"."""
+    vals = list(dict.fromkeys(_lookup()["maps"].get(name, [])))
+    return name if not vals else vals[0] if len(vals) == 1 else f"{vals[0]}~{vals[-1]}"
+
+
+def expr(p, ko):
+    """Game formula terms in a description parameter -> words: ClassLevel(Bard), WisdomModifier,
+    SpellCastingAbilityModifier, ProficiencyBonus, level-map names (SuperiorityDie)."""
+    look = _lookup()
+    p = re.sub(r"max\(\s*(\d+)\s*,\s*([^()]+)\)", lambda m: f"{m.group(2)} (최소 {m.group(1)})" if ko
+               else f"{m.group(2)} (minimum {m.group(1)})", p)
+    p = re.sub(r"ClassLevel\((\w+)\)", lambda m: (look["cls"].get(m.group(1), {}).get("ko" if ko else "en", m.group(1))
+               + (" 레벨" if ko else " level")), p)
+    p = re.sub(r"(?<!\w)(\w+?)Modifier(?!\w)", lambda m: ("주문 시전 능력 보정치" if ko else "spellcasting ability modifier")
+               if m.group(1) == "SpellCastingAbility" else (f"{ABILITY_KO[m.group(1)]} 보정치" if ko
+               else f"{m.group(1)} modifier") if m.group(1) in ABILITY_KO else m.group(0), p)
+    p = re.sub(r"(?<!\w)ProficiencyBonus(?!\w)", "숙련 보너스" if ko else "Proficiency Bonus", p)
+    return re.sub(r"(?<!\w)[A-Z]\w*", lambda m: level_map(m.group(0)) if m.group(0) in look["maps"] else m.group(0), p)
+
+
+def split_args(s):
+    """Top-level comma split: "max(1,IntelligenceModifier),Necrotic" -> two arguments."""
+    out, depth, cur = [], 0, ""
+    for ch in s:
+        if ch == "," and not depth:
+            out.append(cur.strip())
+            cur = ""
+            continue
+        depth += (ch == "(") - (ch == ")")
+        cur += ch
+    return out + [cur.strip()]
+
 
 def fmt_param(p, ko):
     p = p.strip()
     p = DICE_MAP.sub(lambda m: "1d" + m.group(1) if m.group(1) else m.group(2), p)
-    m = re.match(r"DealDamage\(([^,]+),\s*(\w+)", p)
+    m = re.match(r"GainTemporaryHitPoints\((.+)\)$", p)
     if m:
-        amt, typ = m.groups()
+        return f"임시 생명력 {expr(m.group(1), ko)}" if ko else f"{expr(m.group(1), ko)} temporary hit points"
+    m = re.match(r"DealDamage\((.*)\)$", p)
+    if m and len(args := split_args(m.group(1))) >= 2:
+        amt, typ = expr(args[0], ko), args[1]
+        # The wielded weapon's type (MainMeleeWeaponDamageType …) and dice (MainRangedWeapon) have no
+        # fixed value: shown as "weapon damage".
+        if re.fullmatch(r"Main(Melee|Ranged)?WeaponDamageType", typ):
+            if re.fullmatch(r"Main(Melee|Ranged)?Weapon", args[0]):
+                return "무기 피해" if ko else "weapon damage"
+            return f"{amt} 무기 피해" if ko else f"{amt} weapon damage"
         return f"{amt} {DAMAGE_KO.get(typ, typ)} 피해" if ko else f"{amt} {typ} damage"
     m = re.match(r"RegainHitPoints\(([^)]+)\)", p)
     if m:
-        return f"생명력 {m.group(1)}" if ko else f"{m.group(1)} hit points"
+        return f"생명력 {expr(m.group(1), ko)}" if ko else f"{expr(m.group(1), ko)} hit points"
     m = re.match(r"Distance\(([\d.]+)\)", p)
     if m:
         return f"{m.group(1)}m"
     m = re.match(r"(?:Temporary)?HitPoints?\(([^)]+)\)", p)
     if m:
-        return m.group(1)
-    return p
+        return expr(m.group(1), ko)
+    return expr(p, ko)
 
 def describe(handle, params, ko):
     if not handle:

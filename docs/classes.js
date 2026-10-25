@@ -104,8 +104,8 @@ function subList(c) {
       + (s.caster === "third" ? ` <span class="tag blood">${esc(t("third_tag"))} · ${esc(ab(s.spellcasting))}</span>` : "");
     return `<li class="sub${hit ? " hit" : ""}"><button type="button" class="sub-toggle" data-sub="${esc(s.id)}"
       aria-expanded="${open}">${esc(L(s.name))}</button>${tag}
-      ${open ? `<div class="sub-detail">${L(s.desc) ? `<p class="lore">${esc(lore(s.desc))}</p>` : ""}<button type="button" class="chip base-toggle" aria-pressed="${state.withBase}">${esc(t("with_base"))}</button>`
-        + `${renderLevels(s.levels, state.lang, esc, state.withBase ? { levels: c.levels, name: L(c.name) } : null, L(s.name))}</div>` : ""}</li>`;
+      ${open ? `<div class="sub-detail">${L(s.desc) ? `<p class="lore">${esc(lore(s.desc))}</p>` : ""}<label class="base-toggle"><input type="checkbox"${state.withBase ? " checked" : ""}> ${esc(t("with_base"))}</label>`
+        + `${renderLevels(s.levels, state.lang, esc, state.withBase ? { levels: c.levels, name: L(c.name), id: c.id } : null, L(s.name), s.id)}</div>` : ""}</li>`;
   }).join("");
 }
 
@@ -121,7 +121,7 @@ function detail(c) {
     ${L(c.desc) ? `<p class="lore">${esc(lore(c.desc))}</p>` : ""}
     ${c.subclasses.length ? `<div class="k">${esc(t("subclasses_at")(c.subclass_level))}</div><ul class="subs">${subList(c)}</ul>` : ""}
     <div class="k">${esc(t("features"))}</div>
-    ${renderLevels(c.levels, state.lang, esc)}
+    ${renderLevels(c.levels, state.lang, esc, null, null, c.id)}
   </td></tr>`;
 }
 
@@ -147,6 +147,11 @@ function applyLang() {
   document.documentElement.lang = state.lang;
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
+  $("#list tbody").addEventListener("change", e => {
+    if (!e.target.closest(".base-toggle")) return;
+    state.withBase = e.target.checked;
+    renderTable();
+  });
   document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === state.lang));
   // Menu order follows the shown language: Home first, then the page names sorted (abc / 가나다).
   const nav = document.querySelector("nav.pages");
@@ -198,12 +203,19 @@ function bind() {
     renderTable(); writeHash();
   });
   $("#list tbody").addEventListener("click", e => {
-    if (e.target.closest("a")) return;
-    if (e.target.closest(".base-toggle")) {
-      state.withBase = !state.withBase;
-      renderTable();
+    // An option link jumps to its entry in the option list under the table, without touching the hash.
+    const jump = e.target.closest("a[data-jump]");
+    if (jump) {
+      e.preventDefault();
+      const to = document.getElementById(jump.dataset.jump);
+      if (to) {
+        to.scrollIntoView({ behavior: "smooth", block: "center" });
+        to.classList.remove("flash"); void to.offsetWidth; to.classList.add("flash");
+      }
       return;
     }
+    if (e.target.closest("a")) return;
+    if (e.target.closest(".base-toggle")) return;  // the checkbox's change event below
     const sub = e.target.closest(".sub-toggle");
     if (sub) {
       state.openSub = state.openSub === sub.dataset.sub ? null : sub.dataset.sub;

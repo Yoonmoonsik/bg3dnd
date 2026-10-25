@@ -20,17 +20,22 @@ const LEVEL_T = {
 // fighting_styles.json and weapon_mastery.json.
 const PREVIEWS = {};
 
-function option(o, lang, esc) {
+// scope: the class or subclass id whose option list (under its table) the link jumps to.
+function option(o, lang, esc, scope) {
   const L = x => x[lang] || x.en;
   const p = PREVIEWS[o.id];
-  if (!p) return esc(L(o.name));
-  return `<a class="feat-link" href="${p.href}#lang=${lang}&open=${encodeURIComponent(o.id)}">${esc(L(o.name))}`
+  if (p) return `<a class="feat-link" href="${p.href}#lang=${lang}&open=${encodeURIComponent(o.id)}">${esc(L(o.name))}`
     + `<span class="tip" role="tooltip">${esc(L(p.desc))}</span></a>`;
+  if (!o.desc || !L(o.desc)) return esc(L(o.name));
+  const extra = o.extra && L(o.extra) ? `<span class="k">${esc(L(o.extra))}</span>` : "";
+  return `<a class="feat-link" href="#" data-jump="${esc(optionAnchor(scope, o.id))}">${esc(L(o.name))}`
+    + `<span class="tip" role="tooltip">${extra}${esc(L(o.desc))}</span></a>`;
 }
+const optionAnchor = (scope, id) => `opt-${scope}-${id}`;
 
 // One level's grants, one HTML string each, led by a chip naming where the item comes from
 // (own: the subclass itself, accent-coloured; otherwise the class, muted).
-function levelItems(l, lang, esc, chip, own) {
+function levelItems(l, lang, esc, chip, own, scope) {
   const t = k => LEVEL_T[lang][k];
   const L = o => o[lang] || o.en;
   const tag = chip ? `<span class="tag ${own ? "own" : "from"}">${esc(chip)}</span> ` : "";
@@ -47,8 +52,8 @@ function levelItems(l, lang, esc, chip, own) {
     // A named choice ("Choose 1: Eldritch Invocations") folds its options under the name.
     ...l.choices.map(c => c.label
       ? `<details class="choice"><summary>${tag}${esc(t("choose")(c.count))}: ${esc(L(c.label))}</summary>`
-        + `${c.options.map(o => option(o, lang, esc)).join(", ")}</details>`
-      : `${esc(t("choose")(c.count))}: ${c.options.map(o => option(o, lang, esc)).join(", ")}`),
+        + `${c.options.map(o => option(o, lang, esc, scope)).join(", ")}</details>`
+      : `${esc(t("choose")(c.count))}: ${c.options.map(o => option(o, lang, esc, scope)).join(", ")}`),
     l.skills ? `${esc(t("skills")(l.skills))}` : "",
     l.expertise ? `${esc(t("expertise")(l.expertise))}` : "",
     (l.proficiencies || []).length ? `${esc(t("proficiency"))}: ${l.proficiencies.map(x => esc(L(x))).join(", ")}` : "",
@@ -57,19 +62,37 @@ function levelItems(l, lang, esc, chip, own) {
   ].filter(Boolean).map(x => x.startsWith("<details") ? x : tag + x);
 }
 
-// levels: this table's levels, chipped with own (the subclass name) when given. base: {levels, name}
+// levels: this table's levels, chipped with own (the subclass name) when given. base: {levels, name, id}
 // of the class a subclass belongs to; its levels are merged in and chipped with the class name.
-function renderLevels(levels, lang, esc, base, own) {
+// scope: this table's class or subclass id. The table is followed by its named option lists.
+function renderLevels(levels, lang, esc, base, own, scope) {
   const t = k => LEVEL_T[lang][k];
   const rows = new Map();
-  const add = (l, chip, mine) => {
-    const items = levelItems(l, lang, esc, chip, mine);
+  const add = (l, chip, mine, sc) => {
+    const items = levelItems(l, lang, esc, chip, mine, sc);
     if (items.length) rows.set(l.level, [...(rows.get(l.level) || []), ...items]);
   };
-  if (base) for (const l of base.levels) add(l, base.name);
-  for (const l of levels) add(l, own || null, true);
+  if (base) for (const l of base.levels) add(l, base.name, false, base.id);
+  for (const l of levels) add(l, own || null, true, scope);
   // One table row per grant; the level cell spans all rows of its level.
   const body = [...rows.keys()].sort((a, b) => a - b).map(n => rows.get(n).map((item, i) =>
     `<tr${i ? "" : ' class="lv-first"'}>${i ? "" : `<td class="lv-n" rowspan="${rows.get(n).length}">${n}</td>`}<td>${item}</td></tr>`).join("")).join("");
-  return `<table class="lv"><thead><tr><th>${esc(t("level"))}</th><th>${esc(t("content"))}</th></tr></thead><tbody>${body}</tbody></table>`;
+  return `<table class="lv"><thead><tr><th>${esc(t("level"))}</th><th>${esc(t("content"))}</th></tr></thead><tbody>${body}</tbody></table>`
+    + optionLists(levels, lang, esc, scope);
+}
+
+// Every named choice of a table ("Eldritch Invocations"), once, with all options across its levels:
+// name, ExtraDescription (prerequisites or notes) and description.
+function optionLists(levels, lang, esc, scope) {
+  const L = o => o[lang] || o.en;
+  const lists = new Map();
+  for (const l of levels) for (const c of l.choices) {
+    if (!c.label) continue;
+    const opts = lists.get(c.label.en) || lists.set(c.label.en, { label: c.label, opts: new Map() }).get(c.label.en);
+    for (const o of c.options) opts.opts.set(o.id, o);
+  }
+  return [...lists.values()].map(x => `<div class="k">${esc(L(x.label))}</div><dl class="plist">`
+    + [...x.opts.values()].map(o => `<dt id="${esc(optionAnchor(scope, o.id))}">${esc(L(o.name))}</dt><dd>`
+      + `${o.extra && L(o.extra) ? `<span class="extra">${esc(L(o.extra))}</span>` : ""}${o.desc ? esc(L(o.desc)) : ""}</dd>`).join("")
+    + "</dl>").join("");
 }

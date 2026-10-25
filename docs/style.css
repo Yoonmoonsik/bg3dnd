@@ -184,7 +184,14 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 .lv ul { margin: 0; padding-left: 18px; }
 .tag.from { color: var(--muted); font-weight: 500; }
 .tag.own { color: var(--accent); font-weight: 500; }
-.sub-detail .base-toggle { margin: 4px 0 2px; }
+.sub-detail .base-toggle { display: inline-flex; align-items: center; gap: 6px; margin: 4px 0 2px; cursor: pointer; font-size: 13px; }
+.base-toggle input { accent-color: var(--accent); width: 15px; height: 15px; margin: 0; cursor: pointer; }
+.plist { margin: 4px 0 14px; }
+.plist dt { font-weight: 600; margin-top: 8px; border-radius: 4px; }
+.plist dd { margin: 2px 0 0 12px; }
+.plist .extra { display: block; color: var(--muted); font-size: 12px; }
+.plist dt.flash { animation: flash 1.6s ease-out; }
+@keyframes flash { from { background: var(--accent-soft); } to { background: transparent; } }
 .lv td { border-bottom: 1px solid var(--line); }
 .lv tr.lv-first td { border-top: 2px solid var(--line); }
 .lv .lv-n { vertical-align: top; }

@@ -13,8 +13,8 @@ mod's level cap; IsMulticlass progression nodes are left out.
                (SUBCLASS_LEVEL). A subclass with MulticlassSpellcasterModifier is a third caster.
   levels       per progression node: PassivesAdded (IsHidden left out, with descriptions),
                AddSpells (granted spells), SelectSpells (learn N cantrips/spells), SelectPassives
-               (choose N of a list), SelectSkills / SelectSkillsExpertise, AllowImprovement (feat),
-               ActionResource gains (spell slots and class resources; hit dice and movement left out)
+               (choose N of a list; each option with its Description and ExtraDescription), SelectSkills / SelectSkillsExpertise, AllowImprovement (feat),
+               ActionResource gains (spell slots and class resources; hit dice, movement and IsHidden left out)
   source       "new" when no vanilla node has the UUID; "revised" when the mod changes the
                ClassDescription or one of its progression nodes; otherwise "vanilla"
 """
@@ -44,6 +44,9 @@ SKIP_RESOURCES = re.compile(r"^(HitPointDice\d+|Movement)$")
 ARMOR = {"LightArmor": "light", "MediumArmor": "medium", "HeavyArmor": "heavy", "Shields": "shield"}
 TOOLS = {"MusicalInstrument"}
 # Game spelling of the armour proficiency names (the ids are American: LightArmor).
+# SelectPassives with no ProgressionDescription name (Rune Knight runes, Barbarian skills …) are
+# labelled with the vanilla "Passive" string (Korean 상시 발동).
+PASSIVE_LABEL = "h68b5a020ga692g416eg8606gef8a995b12ba"
 ARMOR_EN = {"LightArmor": "Light Armour", "MediumArmor": "Medium Armour", "HeavyArmor": "Heavy Armour", "Shields": "Shields"}
 
 
@@ -77,6 +80,7 @@ class Builder:
         _, res = layered("ActionResourceDefinitions/ActionResourceDefinitions.lsx", "ActionResourceDefinition")
         self.res_name = {r["Name"]: {"en": text(r.get("DisplayName"), False) or r["Name"],
                                      "ko": text(r.get("DisplayName"), True) or r["Name"]} for r in res.values()}
+        self.res_hidden = {r["Name"] for r in res.values() if r.get("IsHidden") == "true"}
         self.spell_ids = {i for s in json.loads((DATA / "spells.json").read_text(encoding="utf-8"))["spells"]
                           for i in s["ids"]}
 
@@ -96,6 +100,17 @@ class Builder:
 
     def spell(self, sid):
         return {"id": sid if sid in self.spell_ids else None, "name": name_of(self.db, sid)}
+
+    def option(self, ps):
+        """A SelectPassives option: name, description, and ExtraDescription, the tooltip's extra line
+        (prerequisites such as "Prerequisite: Level 9+ Warlock, Pact of the Blade Invocation", or notes)."""
+        f = self.fields(ps)
+        out = {"id": ps, "name": name_of(self.db, ps)}
+        for key, k in (("Description", "desc"), ("ExtraDescription", "extra")):
+            h = (f.get(key) or "").split(";")[0]
+            prm = f.get(key + "Params", "")
+            out[k] = {"en": describe(h, prm, False), "ko": describe(h, prm, True)}
+        return out
 
     def name(self, node, key="DisplayName"):
         return {"en": text(node.get(key), False) or node.get("Name", ""), "ko": text(node.get(key), True) or node.get("Name", "")}
@@ -133,15 +148,17 @@ class Builder:
                 ids += lst(m.get("Passives"), ",")
             # id: the passive, so the page can link fighting styles and weapon masteries to their pages.
             # Hidden helper passives (ThirstingBlade_Check) are not choices.
-            opts = [{"id": x, "name": name_of(self.db, x)} for x in dict.fromkeys(ids)
+            opts = [self.option(x) for x in dict.fromkeys(ids)
                     if self.fields(x) and "IsHidden" not in self.fields(x).get("Properties", "")]
             label = self.selector_name.get((key, p.get("TableUUID"))) or self.selector_name.get((key, None))
+            if not label:
+                label = {"en": loca.text(PASSIVE_LABEL), "ko": loca.korean(PASSIVE_LABEL)[0]}
             if opts:
                 out["choices"].append({"count": int(n), "label": label, "options": opts})
         out["skills"] = sum(int(n) for n in re.findall(r"SelectSkills\([\w-]+,(\d+)", sel))
         out["expertise"] = sum(int(n) for n in re.findall(r"SelectSkillsExpertise\([\w-]+,(\d+)", sel))
         for r, n, lvl in re.findall(r"ActionResource\((\w+),([\d.]+),(\d+)\)", boosts):
-            if SKIP_RESOURCES.match(r):
+            if SKIP_RESOURCES.match(r) or r in self.res_hidden:
                 continue
             out["resources"].append({"name": self.res_name.get(r, {"en": r, "ko": r}),
                                      "count": float(n) if "." in n else int(n), "slot": int(lvl)})
