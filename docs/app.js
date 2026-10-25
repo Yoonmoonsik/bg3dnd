@@ -17,7 +17,7 @@ const T = {
     new: "New", revised: "Revised", vanilla: "Unchanged",
     save_suffix: " save", self: "Self", melee: "Melee", touch: "Touch",
     d_components: "Components", d_area: "Area", d_classes: "Classes", d_variants: "Options",
-    d_note: "Changes in this mod", d_id: "Spell ID", d_scroll: "Scroll", yes: "Yes", no: "No",
+    d_id: "Spell ID", d_scroll: "Scroll", yes: "Yes", no: "No",
     shape_Cone: "Cone", shape_Square: "Square", radius: "radius", weapon_range: "Weapon range",
   },
   ko: {
@@ -36,7 +36,7 @@ const T = {
     new: "새 주문", revised: "개정", vanilla: "변경 없음",
     save_suffix: " 내성", self: "자신", melee: "근접", touch: "접촉",
     d_components: "구성 요소", d_area: "범위", d_classes: "직업", d_variants: "선택지",
-    d_note: "이 모드의 변경점", d_id: "주문 ID", d_scroll: "두루마리", yes: "있음", no: "없음",
+    d_id: "주문 ID", d_scroll: "두루마리", yes: "있음", no: "없음",
     shape_Cone: "원뿔", shape_Square: "사각형", radius: "반경", weapon_range: "무기 사거리",
   },
 };
@@ -117,7 +117,7 @@ function effectText(s) {
 function matches(s) {
   if (state.q) {
     const q = state.q.toLowerCase();
-    const hay = [s.name.en, s.name.ko, s.desc.en, s.desc.ko, s.note.en, s.note.ko, s.id].join("\n").toLowerCase();
+    const hay = [s.name.en, s.name.ko, s.desc.en, s.desc.ko, s.id].join("\n").toLowerCase();
     if (!hay.includes(q)) return false;
   }
   for (const f of FILTERS) {
@@ -216,7 +216,6 @@ function detail(s) {
   return `<tr class="detail"><td colspan="7">
     <div class="grid">${items.map(([k, v]) => `<div><div class="k">${esc(k)}</div>${esc(v)}</div>`).join("")}</div>
     ${s.desc[L] ? `<p>${esc(s.desc[L])}</p>` : ""}
-    ${s.note[L] ? `<p class="note"><span class="k">${esc(t("d_note"))}</span><br>${esc(s.note[L])}</p>` : ""}
     ${s.variants.length ? `<div class="k">${esc(t("d_variants"))}</div><ul>${s.variants.map(v => `<li>${esc(v.name[L])}</li>`).join("")}</ul>` : ""}
   </td></tr>`;
 }
