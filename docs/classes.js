@@ -108,7 +108,7 @@ function detail(c) {
   const facts = [
     [t("saves"), c.saves.map(ab).join(", ")],
     [t("armor"), c.armor.map(t).join(", ") || "—"],
-    [t("weapons"), c.weapons.map(t).join(", ") || "—"],
+    [t("weapons"), c.weapons.map(L).join(", ") || "—"],
     [t("feat_levels"), c.feat_levels.join(", ")],
   ];
   return `<tr class="detail"><td colspan="5">

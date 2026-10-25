@@ -28,6 +28,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / ".claude" / "skills" / "bg3-data" / "scripts"))
 sys.path.insert(0, str(REPO / "tools"))
+import loca   # noqa: E402
 import stats  # noqa: E402
 from build_feat_db import name_of, text  # noqa: E402
 from build_species_db import layered  # noqa: E402
@@ -41,6 +42,9 @@ SUBCLASS_LEVEL = 3
 ABILITY = {1: "Strength", 2: "Dexterity", 3: "Constitution", 4: "Intelligence", 5: "Wisdom", 6: "Charisma"}
 SKIP_RESOURCES = re.compile(r"^(HitPointDice\d+|Movement)$")
 ARMOR = {"LightArmor": "light", "MediumArmor": "medium", "HeavyArmor": "heavy", "Shields": "shield"}
+TOOLS = {"MusicalInstrument"}
+# Game spelling of the armour proficiency names (the ids are American: LightArmor).
+ARMOR_EN = {"LightArmor": "Light Armour", "MediumArmor": "Medium Armour", "HeavyArmor": "Heavy Armour", "Shields": "Shields"}
 
 
 def lst(v, sep=";"):
@@ -64,6 +68,17 @@ class Builder:
         self.spell_ids = {i for s in json.loads((DATA / "spells.json").read_text(encoding="utf-8"))["spells"]
                           for i in s["ids"]}
 
+    def term(self, ident):
+        """Proficiency id -> {en, ko}: "HandCrossbows" -> "Hand Crossbows" / its game translation."""
+        english = ARMOR_EN.get(ident) or re.sub(r"(?<=[a-z])(?=[A-Z])", " ", ident)
+        if not hasattr(self, "_en"):
+            self._en = {}
+            for _, table in loca.english():
+                for h, (t, _) in table.items():
+                    self._en.setdefault(t.strip(), h)
+        h = self._en.get(english)
+        return {"en": english, "ko": (loca.korean(h)[0] if h else None) or english}
+
     def fields(self, entry):
         return {k: v[0] for k, v in stats.all_fields(self.db, entry).items()} if entry in self.db else {}
 
@@ -73,11 +88,18 @@ class Builder:
     def name(self, node, key="DisplayName"):
         return {"en": text(node.get(key), False) or node.get("Name", ""), "ko": text(node.get(key), True) or node.get("Name", "")}
 
-    def level(self, p):
-        """One progression node -> what the level grants."""
+    def level(self, p, proficiency=False):
+        """One progression node -> what the level grants. proficiency: also list the armour and
+        weapon proficiencies the node's Boosts and its passives' Boosts give (subclass tables; a
+        class's level-1 proficiencies are shown apart)."""
         boosts, sel = p.get("Boosts", ""), p.get("Selectors", "")
         out = {"level": int(p["Level"]), "traits": [], "spells": [], "learn": [], "choices": [], "resources": [],
-               "skills": 0, "expertise": 0, "feat": p.get("AllowImprovement") == "true"}
+               "skills": 0, "expertise": 0, "feat": p.get("AllowImprovement") == "true", "proficiencies": []}
+        if proficiency:
+            ids = re.findall(r"\bProficiency\((\w+)\)", boosts)
+            for ps in lst(p.get("PassivesAdded")):
+                ids += re.findall(r"\bProficiency\((\w+)\)", self.fields(ps).get("Boosts", ""))
+            out["proficiencies"] = [self.term(x) for x in dict.fromkeys(ids) if x not in TOOLS]
         for ps in lst(p.get("PassivesAdded")):
             f = self.fields(ps)
             if not f or "IsHidden" in f.get("Properties", ""):
@@ -106,11 +128,11 @@ class Builder:
                                      "count": float(n) if "." in n else int(n), "slot": int(lvl)})
         return out
 
-    def levels(self, table):
+    def levels(self, table, proficiency=False):
         nodes = sorted(self.tables.get(table, []), key=lambda p: int(p["Level"]))
-        out = [self.level(p) for p in nodes]
+        out = [self.level(p, proficiency) for p in nodes]
         return [l for l in out if any(l[k] for k in ("traits", "spells", "learn", "choices", "resources",
-                                                      "skills", "expertise", "feat"))]
+                                                      "skills", "expertise", "feat", "proficiencies"))]
 
     def source(self, node):
         if node["UUID"] not in self.van_cls:
@@ -141,7 +163,10 @@ class Builder:
                 "caster": "pact" if pact else {"1": "full", "0.5": "half"}.get(mc),
                 "saves": re.findall(r"ProficiencyBonus\(SavingThrow,\s*(\w+)\)", b1),
                 "armor": [ARMOR[x] for x in re.findall(r"\bProficiency\((\w+)\)", b1) if x in ARMOR],
-                "weapons": [x for x in re.findall(r"\bProficiency\((\w+)\)", b1) if "Weapon" in x],
+                # Every level-1 Proficiency(...) other than armour and tools: weapon groups and weapon
+                # types (Rogue: SimpleWeapons + HandCrossbows, Scimitars, Shortswords, Rapiers).
+                "weapons": [self.term(x) for x in re.findall(r"\bProficiency\((\w+)\)", b1)
+                            if x not in ARMOR and x not in TOOLS],
                 "feat_levels": sorted(int(p["Level"]) for p in self.tables.get(c["ProgressionTableUUID"], [])
                                       if p.get("AllowImprovement") == "true"),
                 "subclass_level": SUBCLASS_LEVEL if subs[u] else None,
@@ -150,7 +175,7 @@ class Builder:
                 "levels": self.levels(c["ProgressionTableUUID"]),
             })
             for s in subs[u]:
-                lv = self.levels(s["ProgressionTableUUID"])
+                lv = self.levels(s["ProgressionTableUUID"], proficiency=True)
                 subclasses.append({
                     "id": s["Name"], "name": self.name(s), "desc": self.name(s, "Description"),
                     "class": {"id": c["Name"], "name": self.name(c)}, "source": self.source(s),

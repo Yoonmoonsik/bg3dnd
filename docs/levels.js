@@ -6,13 +6,13 @@ const LEVEL_T = {
     level: "Level", content: "Features", spells: "Spells", learn_cantrip: n => `Learn ${n} cantrip${n > 1 ? "s" : ""}`,
     learn_spell: n => `Learn ${n} spell${n > 1 ? "s" : ""}`, choose: n => `Choose ${n}`,
     skills: n => `${n} skill proficienc${n > 1 ? "ies" : "y"}`, expertise: n => `Expertise in ${n} skill${n > 1 ? "s" : ""}`,
-    feat: "Feat", slot: n => `Level ${n} spell slot`,
+    feat: "Feat", slot: n => `Level ${n} spell slot`, proficiency: "Proficiency",
   },
   ko: {
     level: "레벨", content: "내용", spells: "주문", learn_cantrip: n => `소마법 ${n}개 습득`,
     learn_spell: n => `주문 ${n}개 습득`, choose: n => `${n}개 선택`,
     skills: n => `기술 숙련 ${n}개`, expertise: n => `기술 통달 ${n}개`,
-    feat: "재주", slot: n => `${n}레벨 주문 슬롯`,
+    feat: "재주", slot: n => `${n}레벨 주문 슬롯`, proficiency: "숙련",
   },
 };
 
@@ -32,6 +32,7 @@ function levelItems(l, lang, esc, chip) {
     ...l.choices.map(c => `<li>${esc(t("choose")(c.count))}: ${c.options.map(o => esc(L(o))).join(", ")}${tag}</li>`),
     l.skills ? `<li>${esc(t("skills")(l.skills))}${tag}</li>` : "",
     l.expertise ? `<li>${esc(t("expertise")(l.expertise))}${tag}</li>` : "",
+    (l.proficiencies || []).length ? `<li>${esc(t("proficiency"))}: ${l.proficiencies.map(x => esc(L(x))).join(", ")}${tag}</li>` : "",
     l.feat ? `<li>${esc(t("feat"))}${tag}</li>` : "",
     l.resources.length ? `<li>${esc(l.resources.map(res).join(", "))}${tag}</li>` : "",
   ].filter(Boolean);
