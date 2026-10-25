@@ -228,10 +228,11 @@ def main():
         cands.sort(key=lambda c: not classes[c[0]])
         sid, m = cands[0]
         data_cls = sorted({c for s, _ in cands for c in classes[s]})
-        # Classes follow the wiki: base classes only, not ones that learn it only through a
-        # subclass (new-spell skill). Differences from the base lists are printed for review.
-        cls = wiki_cls
-        if sorted(c for c in wiki_cls if c in CLASSES) != data_cls:
+        # Classes come from the base lists (game data wins over the wiki); the wiki is the
+        # fallback for spells granted only by a feature list (Find Steed, Paladin).
+        order = lambda cs: sorted(cs, key=lambda c: (c == "Artificer", c))
+        cls = order(data_cls) if data_cls else wiki_cls
+        if data_cls and sorted(c for c in wiki_cls if c in CLASSES) != data_cls:
             class_diff.append(f"L{level} {name}: wiki {wiki_cls} / base lists {data_cls}")
 
         new = sid not in vanilla
