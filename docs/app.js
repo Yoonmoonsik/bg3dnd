@@ -3,6 +3,7 @@
 const T = {
   en: {
     title: "Spells", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
+    nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats",
     search: "Search spells by name or description", filters: "Filters", reset: "Reset",
     col_name: "Name", col_level: "Level", col_cast: "Casting Time", col_range: "Range",
     col_effect: "Attack / Save", col_damage: "Damage", col_school: "School",
@@ -22,6 +23,7 @@ const T = {
   },
   ko: {
     title: "주문", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
+    nav_home: "홈", nav_spells: "주문", nav_feats: "재주",
     search: "주문 이름이나 설명으로 검색", filters: "필터", reset: "초기화",
     col_name: "이름", col_level: "레벨", col_cast: "시전 시간", col_range: "사거리",
     col_effect: "공격 / 내성", col_damage: "피해", col_school: "학파",
@@ -225,6 +227,9 @@ function applyLang() {
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
   document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === state.lang));
+  document.querySelectorAll("nav.pages a").forEach(a => {
+    a.href = a.getAttribute("href").split("#")[0] + "#lang=" + state.lang;
+  });
   document.title = `${t("title")} · D&D 5.5e All-in-One BEYOND`;
 }
 

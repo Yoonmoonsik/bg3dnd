@@ -3,17 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>D&amp;D 5.5e All-in-One BEYOND · Spells</title>
+<title>D&amp;D 5.5e All-in-One BEYOND</title>
 <link rel="icon" href="icons/Spell_Evocation_FireBolt.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
   <div class="brand">
-    <h1 data-i18n="title">Spells</h1>
-    <span class="sub" data-i18n="subtitle">D&amp;D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod</span>
+    <h1>D&amp;D 5.5e All-in-One BEYOND</h1>
+    <span class="sub" data-i18n="subtitle">Baldur's Gate 3 mod · data browser</span>
   </div>
   <div class="top-actions">
+    <nav class="pages">
+      <a class="link current" href="./" aria-current="page" data-i18n="nav_home">Home</a>
+      <a class="link" href="spells.html" data-i18n="nav_spells">Spells</a>
+      <a class="link" href="feats.html" data-i18n="nav_feats">Feats</a>
+    </nav>
     <a class="link" href="https://github.com/Yoonmoonsik/bg3dnd/wiki" data-i18n="wiki">Wiki</a>
     <div class="lang" role="group" aria-label="Language">
       <button type="button" data-lang="en">EN</button>
@@ -23,40 +28,72 @@
 </header>
 
 <main>
-  <section class="search">
-    <input id="q" type="search" autocomplete="off" data-i18n-placeholder="search">
-    <button type="button" id="toggle-filters" class="ghost" aria-expanded="true" data-i18n="filters">Filters</button>
-    <button type="button" id="reset" class="ghost" data-i18n="reset">Reset</button>
-  </section>
-
-  <section id="filters" class="filters"></section>
-
-  <p class="count" id="count" aria-live="polite"></p>
-
-  <div class="table-wrap">
-    <table id="spells">
-      <thead>
-        <tr>
-          <th data-sort="name" data-i18n="col_name">Name</th>
-          <th data-sort="level" data-i18n="col_level">Level</th>
-          <th data-sort="cast" data-i18n="col_cast">Casting Time</th>
-          <th data-sort="range" class="hide-sm" data-i18n="col_range">Range</th>
-          <th class="hide-sm" data-i18n="col_effect">Attack / Save</th>
-          <th class="hide-md" data-i18n="col_damage">Damage</th>
-          <th data-sort="school" class="hide-md" data-i18n="col_school">School</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+  <p class="intro" data-i18n="intro">Search the mod's spells and feats. Every page is generated from the mod's game data.</p>
+  <div class="cards">
+    <a class="card" href="spells.html" data-page="spells">
+      <span class="card-count" id="count-spells">—</span>
+      <span class="card-title" data-i18n="spells">Spells</span>
+      <span class="card-text" data-i18n="spells_text">Filter by level, class, school, casting time, damage type, saving throw and more.</span>
+    </a>
+    <a class="card" href="feats.html" data-page="feats">
+      <span class="card-count" id="count-feats">—</span>
+      <span class="card-title" data-i18n="feats">Feats</span>
+      <span class="card-text" data-i18n="feats_text">Filter by ability score, prerequisite, granted spells and actions, proficiencies and more.</span>
+    </a>
   </div>
-  <p class="empty" id="empty" hidden data-i18n="empty">No spells match these filters.</p>
 </main>
 
 <footer>
   <span data-i18n="footer">Generated from the mod's game data.</span>
-  <span id="generated"></span>
 </footer>
 
-<script src="app.js"></script>
+<script>
+"use strict";
+const T = {
+  en: {
+    subtitle: "Baldur's Gate 3 mod · data browser", nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats",
+    wiki: "Wiki", intro: "Search the mod's spells and feats. Every page is generated from the mod's game data.",
+    spells: "Spells", feats: "Feats",
+    spells_text: "Filter by level, class, school, casting time, damage type, saving throw and more.",
+    feats_text: "Filter by ability score, prerequisite, granted spells and actions, proficiencies and more.",
+    footer: "Generated from the mod's game data.",
+  },
+  ko: {
+    subtitle: "발더스 게이트 3 모드 · 데이터 검색", nav_home: "홈", nav_spells: "주문", nav_feats: "재주",
+    wiki: "위키", intro: "모드의 주문과 재주를 찾아볼 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
+    spells: "주문", feats: "재주",
+    spells_text: "레벨, 직업, 학파, 시전 시간, 피해 유형, 내성 굴림 등으로 거릅니다.",
+    feats_text: "능력치, 선행 조건, 얻는 주문과 행동, 숙련 등으로 거릅니다.",
+    footer: "모드 게임 데이터에서 생성했습니다.",
+  },
+};
+let lang = new URLSearchParams(location.hash.slice(1)).get("lang");
+if (!lang) {
+  try { lang = localStorage.getItem("bg3dnd-lang"); } catch (e) { /* storage blocked */ }
+}
+if (!T[lang]) lang = (navigator.language || "").startsWith("ko") ? "ko" : "en";
+
+function apply() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = T[lang][el.dataset.i18n]; });
+  document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+  document.querySelectorAll("nav.pages a, a.card").forEach(a => {
+    a.href = a.getAttribute("href").split("#")[0] + "#lang=" + lang;
+  });
+  history.replaceState(null, "", "#lang=" + lang);
+}
+document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => {
+  lang = b.dataset.lang;
+  try { localStorage.setItem("bg3dnd-lang", lang); } catch (e) { /* storage blocked */ }
+  apply();
+}));
+apply();
+
+for (const [page, key] of [["spells", "spells"], ["feats", "feats"]]) {
+  fetch(`data/${page}.json`).then(r => r.json()).then(d => {
+    document.getElementById("count-" + page).textContent = d[key].length;
+  });
+}
+</script>
 </body>
 </html>
