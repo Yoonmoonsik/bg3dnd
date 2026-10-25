@@ -3,7 +3,7 @@
 const T = {
   en: {
     title: "Backgrounds", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
-    nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_backgrounds: "Backgrounds",
+    nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_species: "Species", nav_backgrounds: "Backgrounds",
     search: "Search backgrounds by name, skill or feat", filters: "Filters", reset: "Reset",
     col_name: "Name", col_skills: "Skills", col_feat: "Feat",
     empty: "No backgrounds match these filters.", footer: "Generated from the mod's game data.",
@@ -13,7 +13,7 @@ const T = {
   },
   ko: {
     title: "배경", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
-    nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_backgrounds: "배경",
+    nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_species: "종족", nav_backgrounds: "배경",
     search: "배경 이름, 기술, 재주로 검색", filters: "필터", reset: "초기화",
     col_name: "이름", col_skills: "기술", col_feat: "재주",
     empty: "조건에 맞는 배경이 없습니다.", footer: "모드 게임 데이터에서 생성했습니다.",

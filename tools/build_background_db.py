@@ -8,8 +8,8 @@ mod, merged by UUID). Nothing is read from the wiki text. The Background "Passiv
 everything a background grants:
   skills       passives whose Boosts is ProficiencyBonus(Skill,X); the name is the passive's
   feats        the other visible passives (IsHidden ones are parts of a feat), named by DisplayName;
-               "id" is the Feat whose PassivesAdded or SelectPassives list holds the passive (null for
-               the background-only OriginFeat_* passives, which no Feat node carries)
+               "id" is the Feat whose PassivesAdded or SelectPassives list holds the passive; the
+               background-only OriginFeat_* passives use ORIGIN_FEAT_LINKS (same-named feat)
   new          the background carries InspirationFromBackground: the backgrounds the mod adds,
                which give a chance of Heroic Inspiration on each Long Rest. Haunted One (the Dark
                Urge origin's background) has a mod UUID but no such passive: it is a game background.
@@ -29,6 +29,14 @@ from build_feat_db import layered, name_of, text  # noqa: E402
 OUT = REPO / "docs" / "data" / "backgrounds.json"
 SKILL = re.compile(r"^ProficiencyBonus\(Skill,\s*(\w+)\)$")
 INSPIRATION = "InspirationFromBackground"
+# The background-only OriginFeat_* passives sit on no Feat node; by the user's call (2026-10-25)
+# only these link to the feat with the matching name.
+ORIGIN_FEAT_LINKS = {
+    "OriginFeat_Skilled": "Skilled",
+    "OriginFeat_MagicInitiate_Cleric": "MagicInitiateCleric",
+    "OriginFeat_MagicInitiate_Druid": "MagicInitiateDruid",
+    "OriginFeat_MagicInitiate_Wizard": "MagicInitiateWizard",
+}
 
 
 def main():
@@ -57,7 +65,7 @@ def main():
             elif p != INSPIRATION and "IsHidden" not in f.get("Properties", ""):
                 name = name_of(db, p)
                 if all(f["name"] != name for f in feats):
-                    feats.append({"id": feat_of.get(p), "name": name})
+                    feats.append({"id": feat_of.get(p) or ORIGIN_FEAT_LINKS.get(p), "name": name})
         out.append({
             "id": uuid,
             "name": {"en": text(bg.get("DisplayName"), False), "ko": text(bg.get("DisplayName"), True)},

@@ -18,6 +18,8 @@
       <a class="link current" href="./" aria-current="page" data-i18n="nav_home">Home</a>
       <a class="link" href="backgrounds.html" data-i18n="nav_backgrounds">Backgrounds</a>
       <a class="link" href="feats.html" data-i18n="nav_feats">Feats</a>
+      <a class="link" href="species.html" data-i18n="nav_species">Species</a>
+      <a class="link" href="species.html" data-i18n="nav_species">Species</a>
       <a class="link" href="spells.html" data-i18n="nav_spells">Spells</a>
     </nav>
     <a class="link" href="https://github.com/Yoonmoonsik/bg3dnd/wiki" data-i18n="wiki">Wiki</a>
@@ -29,7 +31,7 @@
 </header>
 
 <main>
-  <p class="intro" data-i18n="intro">Search the mod's backgrounds, feats and spells. Every page is generated from the mod's game data.</p>
+  <p class="intro" data-i18n="intro">Search the mod's backgrounds, feats, species and spells. Every page is generated from the mod's game data.</p>
   <div class="cards">
     <a class="card" href="backgrounds.html" data-page="backgrounds">
       <span class="card-count" id="count-backgrounds">—</span>
@@ -40,6 +42,11 @@
       <span class="card-count" id="count-feats">—</span>
       <span class="card-title" data-i18n="feats">Feats</span>
       <span class="card-text" data-i18n="feats_text">Filter by ability score, prerequisite, granted spells and actions, proficiencies and more.</span>
+    </a>
+    <a class="card" href="species.html" data-page="species">
+      <span class="card-count" id="count-species">—</span>
+      <span class="card-title" data-i18n="species">Species</span>
+      <span class="card-text" data-i18n="species_text">Filter by parent species, darkvision, species spells, resistances and more.</span>
     </a>
     <a class="card" href="spells.html" data-page="spells">
       <span class="card-count" id="count-spells">—</span>
@@ -57,18 +64,20 @@
 "use strict";
 const T = {
   en: {
-    subtitle: "Baldur's Gate 3 mod · data browser", nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_backgrounds: "Backgrounds",
-    wiki: "Wiki", intro: "Search the mod's backgrounds, feats and spells. Every page is generated from the mod's game data.",
-    spells: "Spells", feats: "Feats", backgrounds: "Backgrounds",
+    subtitle: "Baldur's Gate 3 mod · data browser", nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_species: "Species", nav_backgrounds: "Backgrounds",
+    wiki: "Wiki", intro: "Search the mod's backgrounds, feats, species and spells. Every page is generated from the mod's game data.",
+    spells: "Spells", feats: "Feats", backgrounds: "Backgrounds", species: "Species",
+    species_text: "Filter by parent species, darkvision, species spells, resistances and more.",
     backgrounds_text: "Filter by skill proficiency; see each background's feat.",
     spells_text: "Filter by level, class, school, casting time, damage type, saving throw and more.",
     feats_text: "Filter by ability score, prerequisite, granted spells and actions, proficiencies and more.",
     footer: "Generated from the mod's game data.",
   },
   ko: {
-    subtitle: "발더스 게이트 3 모드 · 데이터 검색", nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_backgrounds: "배경",
-    wiki: "위키", intro: "모드의 배경, 재주, 주문을 찾아볼 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
-    spells: "주문", feats: "재주", backgrounds: "배경",
+    subtitle: "발더스 게이트 3 모드 · 데이터 검색", nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_species: "종족", nav_backgrounds: "배경",
+    wiki: "위키", intro: "모드의 배경, 재주, 종족, 주문을 찾아볼 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
+    spells: "주문", feats: "재주", backgrounds: "배경", species: "종족",
+    species_text: "상위 종족, 암시야, 종족 주문, 저항 등으로 거릅니다.",
     backgrounds_text: "기술 숙련으로 거르고, 배경마다 얻는 재주를 봅니다.",
     spells_text: "레벨, 직업, 학파, 시전 시간, 피해 유형, 내성 굴림 등으로 거릅니다.",
     feats_text: "능력치, 선행 조건, 얻는 주문과 행동, 숙련 등으로 거릅니다.",
@@ -97,7 +106,7 @@ document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click
 }));
 apply();
 
-for (const [page, key] of [["spells", "spells"], ["feats", "feats"], ["backgrounds", "backgrounds"]]) {
+for (const [page, key] of [["spells", "spells"], ["feats", "feats"], ["backgrounds", "backgrounds"], ["species", "species"]]) {
   fetch(`data/${page}.json`).then(r => r.json()).then(d => {
     document.getElementById("count-" + page).textContent = d[key].length;
   });
