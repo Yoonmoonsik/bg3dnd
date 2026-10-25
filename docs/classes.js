@@ -100,7 +100,7 @@ function subList(c) {
       + (s.caster === "third" ? ` <span class="tag blood">${esc(t("third_tag"))} · ${esc(ab(s.spellcasting))}</span>` : "");
     return `<li class="sub${hit ? " hit" : ""}"><button type="button" class="sub-toggle" data-sub="${esc(s.id)}"
       aria-expanded="${open}">${esc(L(s.name))}</button>${tag}
-      ${open ? `<div class="sub-detail">${L(s.desc) ? `<p>${esc(L(s.desc))}</p>` : ""}${renderLevels(s.levels, state.lang, esc)}</div>` : ""}</li>`;
+      ${open ? `<div class="sub-detail">${L(s.desc) ? `<p>${esc(L(s.desc))}</p>` : ""}${renderLevels(s.levels, state.lang, esc, { levels: c.levels, name: L(c.name) })}</div>` : ""}</li>`;
   }).join("");
 }
 

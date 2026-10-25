@@ -175,3 +175,11 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 .subs .sub-toggle[aria-expanded="true"] { font-weight: 600; }
 .subs .hit .sub-toggle { font-weight: 600; }
 .sub-detail { margin: 6px 0 10px 12px; padding-left: 12px; border-left: 2px solid var(--line); }
+
+/* Level tables (class page) */
+.lv { width: 100%; border-collapse: collapse; margin: 6px 0 14px; border: 1px solid var(--line); border-radius: 8px; }
+.lv th, .lv td { padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+.lv th { position: static; font-size: 12px; }
+.lv .lv-n { width: 56px; white-space: nowrap; font-weight: 600; }
+.lv ul { margin: 0; padding-left: 18px; }
+.tag.from { color: var(--muted); font-weight: 500; }
