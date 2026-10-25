@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D&amp;D 5.5e All-in-One BEYOND · Backgrounds</title>
+<link rel="icon" href="icons/Spell_Evocation_FireBolt.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1 data-i18n="title">Backgrounds</h1>
+    <span class="sub" data-i18n="subtitle">D&amp;D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod</span>
+  </div>
+  <div class="top-actions">
+    <nav class="pages">
+      <a class="link" href="./" data-i18n="nav_home">Home</a>
+      <a class="link" href="spells.html" data-i18n="nav_spells">Spells</a>
+      <a class="link" href="feats.html" data-i18n="nav_feats">Feats</a>
+      <a class="link current" href="backgrounds.html" aria-current="page" data-i18n="nav_backgrounds">Backgrounds</a>
+    </nav>
+    <a class="link" href="https://github.com/Yoonmoonsik/bg3dnd/wiki" data-i18n="wiki">Wiki</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ko">한국어</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="search">
+    <input id="q" type="search" autocomplete="off" data-i18n-placeholder="search">
+    <button type="button" id="toggle-filters" class="ghost" aria-expanded="true" data-i18n="filters">Filters</button>
+    <button type="button" id="reset" class="ghost" data-i18n="reset">Reset</button>
+  </section>
+
+  <section id="filters" class="filters"></section>
+
+  <p class="count" id="count" aria-live="polite"></p>
+
+  <div class="table-wrap">
+    <table id="backgrounds">
+      <thead>
+        <tr>
+          <th data-sort="name" data-i18n="col_name">Name</th>
+          <th data-i18n="col_skills">Skills</th>
+          <th data-i18n="col_feat">Feat</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p class="empty" id="empty" hidden data-i18n="empty">No backgrounds match these filters.</p>
+</main>
+
+<footer>
+  <span data-i18n="footer">Generated from the mod's game data.</span>
+  <span id="generated"></span>
+</footer>
+
+<script src="backgrounds.js"></script>
+</body>
+</html>

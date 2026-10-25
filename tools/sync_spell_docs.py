@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-"""Write every spell count and spell list in the mod's docs from docs/data/spells.json.
+"""Write every spell count and spell list in the mod's docs from docs/data/spells.json, and the
+feat count from docs/data/feats.json.
 
   python tools/sync_spell_docs.py            README lists, meta.lsx and thumbnail spell counts
   python tools/sync_spell_docs.py --slides   slides 08-14 (name lists and big numbers) and their PNGs
@@ -20,6 +21,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 MOD = "DnD2024_897914ef-5c96-053c-44af-0be823f895fe"
 DATA = REPO / "docs" / "data" / "spells.json"
+FEAT_DATA = REPO / "docs" / "data" / "feats.json"
 META = REPO / "Mods" / MOD / "meta.lsx"
 THUMB_SVG = REPO / "thumbnail.svg"
 THUMB_PNG = REPO / "thumbnail.png"
@@ -79,16 +81,44 @@ def readmes(lv):
         rewrite(REPO / name, fix)
 
 
-def counts(total):
+def counts(total, feats):
     rewrite(META, lambda t: sub_once(r"(\d+)( spells,)", lambda m: f"{total}{m.group(2)}", t, "meta.lsx"))
+    rewrite(META, lambda t: sub_once(r"(\d+)( feats)", lambda m: f"{feats}{m.group(2)}", t, "meta.lsx feats"))
     before = THUMB_SVG.read_text(encoding="utf-8")
     rewrite(THUMB_SVG, lambda t: sub_once(r">\d+(</text>\s*<text[^>]*>Spells</text>)",
                                           lambda m: f">{total}{m.group(1)}", t, "thumbnail.svg"))
+    rewrite(THUMB_SVG, lambda t: sub_once(r">\d+(</text>\s*<text[^>]*>Feats</text>)",
+                                          lambda m: f">{feats}{m.group(1)}", t, "thumbnail.svg feats"))
     if THUMB_SVG.read_text(encoding="utf-8") != before:
         subprocess.run(["magick", "-density", "144", "-background", "none", str(THUMB_SVG), str(THUMB_PNG)],
                        check=True)
         shutil.copy2(THUMB_PNG, PROJECT_THUMB)
         print("rendered thumbnail.png and copied it to", PROJECT_THUMB.relative_to(REPO))
+
+
+FEAT_NAME = re.compile(r'  <text x="([\d.]+)" y="[\d.]+" font-family="Arial, Helvetica, sans-serif" '
+                       r'font-size="14\.5" fill="#e8dcc0">[^<]*</text>\n')
+
+
+def feat_slide(names):
+    """Slide 06: the big number and the name columns follow feats.json. The columns keep their x
+    positions; names run top to bottom, 17px apart from y 232."""
+    p = SLIDE_DIR / "svg" / "06-feats.svg"
+    svg = p.read_text(encoding="utf-8")
+    xs = sorted({float(x) for x in FEAT_NAME.findall(svg)})
+    rows = math.ceil(len(names) / len(xs))
+    lines = "".join(f'  <text x="{xs[i // rows]:.1f}" y="{232 + (i % rows) * 17:.1f}" '
+                    f'font-family="Arial, Helvetica, sans-serif" font-size="14.5" fill="#e8dcc0">'
+                    f'{html.escape(n, quote=False)}</text>\n' for i, n in enumerate(names))
+    first = FEAT_NAME.search(svg).start()
+    new = svg[:first] + lines + FEAT_NAME.sub("", svg[first:])
+    new = re.sub(r'(font-size="80" font-weight="800" fill="url\(#goldGrad\)">)\d+(</text>)',
+                 r"\g<1>%d\g<2>" % len(names), new, count=1)
+    if new != svg:
+        p.write_text(new, encoding="utf-8", newline="\n")
+        png = SLIDE_DIR / "png" / "06-feats.png"
+        subprocess.run(["magick", "-density", "144", "-background", "none", str(p), str(png)], check=True)
+        print("updated", p.relative_to(REPO), "and", png.relative_to(REPO))
 
 
 def slides(lv):
@@ -128,11 +158,14 @@ def main():
     ap.add_argument("--slides", action="store_true")
     args = ap.parse_args()
     lv = levels()
+    feat_names = sorted((f["name"]["en"] for f in json.loads(FEAT_DATA.read_text(encoding="utf-8"))["feats"]),
+                        key=str.lower)
     if args.slides:
         slides(lv)
+        feat_slide(feat_names)
         return
     readmes(lv)
-    counts(sum(len(v) for v in lv.values()))
+    counts(sum(len(v) for v in lv.values()), len(feat_names))
 
 
 if __name__ == "__main__":
