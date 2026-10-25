@@ -17,7 +17,7 @@ For deeper gameplay notes, class details, spell behavior, item locations, and co
 
 [size=5][b]YouTube[/b][/size]
 
-For gameplay examples, build ideas, and practical references, check the playthrough videos on the [url=https://www.youtube.com/@bg3dnd]YouTube channel[/url] and the dedicated [url=https://www.youtube.com/playlist?list=PLOxzTx3j5VdueKEU6lfAmzKL5KQt0rNhi]playthrough playlist[/url].
+For gameplay examples, build ideas, and practical references, check the playthrough videos on the [url=https://www.youtube.com/@bg3dnd]YouTube channel[/url] and the playthrough playlists: [url=https://www.youtube.com/playlist?list=PLOxzTx3j5VdueKEU6lfAmzKL5KQt0rNhi]Honor Mode playthrough[/url] and [url=https://www.youtube.com/playlist?list=PLEZTjfEePePw]Season 4 Honor Mode playthrough[/url].
 
 [size=5][b]Rules and Actions[/b][/size]
 
