@@ -88,6 +88,7 @@ function renderTable() {
       <td><strong>${esc(L(w.name))}</strong></td>
       <td>${esc(L(w.kind))}</td>
       <td>${esc(damage(w))}</td>
+      <td>${esc(w.mastery ? L(w.mastery) : "—")}</td>
       <td>${esc(L(w.where))}</td>
     </tr>`;
     const facts = [
@@ -100,7 +101,7 @@ function renderTable() {
       w.effects.length ? [t("effects"), w.effects.map(L).join(", ")] : null,
       L(w.where) ? [t("col_where"), L(w.where)] : null,
     ].filter(Boolean);
-    const detail = `<tr class="detail"><td colspan="4">
+    const detail = `<tr class="detail"><td colspan="5">
       <p><strong>${esc(L(w.name))}</strong> — ${esc(L(w.kind))}</p>
       <div class="grid">${facts.map(([k, v]) => `<div><div class="k">${esc(k)}</div><div>${esc(v)}</div></div>`).join("")}</div>
     </td></tr>`;
