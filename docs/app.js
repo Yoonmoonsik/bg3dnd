@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: "Spells", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
+    title: "Spells", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod",
     nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons", nav_rules: "Rules", nav_species: "Species", nav_backgrounds: "Backgrounds", nav_classes: "Classes",
     search: "Search spells by name or description", filters: "Filters", reset: "Reset",
     col_name: "Name", col_level: "Level", col_cast: "Casting Time", col_range: "Range",
@@ -22,7 +22,7 @@ const T = {
     shape_Cone: "Cone", shape_Square: "Square", radius: "radius", weapon_range: "Weapon range",
   },
   ko: {
-    title: "주문", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
+    title: "주문", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드",
     nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_weapons: "무기", nav_rules: "규칙", nav_species: "종족", nav_backgrounds: "배경", nav_classes: "직업",
     search: "주문 이름이나 설명으로 검색", filters: "필터", reset: "초기화",
     col_name: "이름", col_level: "레벨", col_cast: "시전 시간", col_range: "사거리",

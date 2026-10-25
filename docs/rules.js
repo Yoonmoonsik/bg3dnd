@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: "Rules", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
+    title: "Rules", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod",
     nav_home: "Home", nav_backgrounds: "Backgrounds", nav_classes: "Classes", nav_feats: "Feats", nav_fighting: "Fighting Styles",
     nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     search: "Search rules by name or description", reset: "Reset",
@@ -11,7 +11,7 @@ const T = {
     count: (n, all) => `${n} of ${all} rules`,
   },
   ko: {
-    title: "규칙", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
+    title: "규칙", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드",
     nav_home: "홈", nav_backgrounds: "배경", nav_classes: "직업", nav_feats: "재주", nav_fighting: "전투 방식",
     nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     search: "규칙 이름이나 설명으로 검색", reset: "초기화",
@@ -116,7 +116,7 @@ fetch("data/rules.json")
     $("#q").value = state.q;
     bind();
     render();
-    // #open=<id> (links from the wiki) expands that row; scroll to it once.
+    // #open=<id> expands that row; scroll to it once.
     const row = [...document.querySelectorAll("tr.row")].find(r => r.dataset.id === state.open);
     if (row) row.scrollIntoView({ block: "center" });
     if (d.generated) $("#generated").textContent = "· " + d.generated;

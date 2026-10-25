@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: "Classes", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
+    title: "Classes", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod",
     nav_home: "Home", nav_backgrounds: "Backgrounds", nav_classes: "Classes", nav_feats: "Feats",
     nav_fighting: "Fighting Styles", nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     search: "Search classes or subclasses by name or feature", filters: "Filters", reset: "Reset",
@@ -21,7 +21,7 @@ const T = {
     SimpleWeapons: "Simple Weapons", MartialWeapons: "Martial Weapons", casting: a => `${a} (spellcasting)`,
   },
   ko: {
-    title: "직업", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
+    title: "직업", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드",
     nav_home: "홈", nav_backgrounds: "배경", nav_classes: "직업", nav_feats: "재주",
     nav_fighting: "전투 방식", nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     search: "직업이나 하위 직업 이름, 기능으로 검색", filters: "필터", reset: "초기화",
@@ -182,6 +182,10 @@ function readHash() {
   if (!lang) lang = (navigator.language || "").startsWith("ko") ? "ko" : "en";
   state.lang = T[lang] ? lang : "en";
   state.q = p.get("q") || "";
+  // #open=<class id>&sub=<subclass English name> (links from the other pages) opens that class and subclass.
+  state.open = p.get("open") || state.open;
+  const sub = p.get("sub") && (SUBS[state.open] || []).find(x => x.name.en === p.get("sub"));
+  if (sub) state.openSub = sub.id;
   state.sel = {};
   for (const f of FILTERS) {
     const v = p.get(f.key);
@@ -257,5 +261,7 @@ Promise.all([fetch("data/classes.json").then(r => r.json()), fetch("data/subclas
     $("#q").value = state.q;
     bind();
     render();
+    const row = [...document.querySelectorAll("tr.row")].find(r => r.dataset.id === state.open);
+    if (row) (document.querySelector(".sub-toggle[aria-expanded=\"true\"]") || row).scrollIntoView({ block: "center" });
     if (c.generated) $("#generated").textContent = "· " + c.generated;
   });

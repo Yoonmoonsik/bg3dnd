@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: "Fighting Styles", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
+    title: "Fighting Styles", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod",
     nav_home: "Home", nav_backgrounds: "Backgrounds", nav_classes: "Classes", nav_feats: "Feats", nav_fighting: "Fighting Styles",
     nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     search: "Search fighting styles by name or description", filters: "Filters", reset: "Reset",
@@ -12,7 +12,7 @@ const T = {
     f_source: "Gained from", level: n => `level ${n}`, feat: "feat", choose: n => `choose ${n}`,
   },
   ko: {
-    title: "전투 방식", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
+    title: "전투 방식", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드",
     nav_home: "홈", nav_backgrounds: "배경", nav_classes: "직업", nav_feats: "재주", nav_fighting: "전투 방식",
     nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     search: "전투 방식 이름이나 설명으로 검색", filters: "필터", reset: "초기화",
@@ -33,6 +33,14 @@ const L = o => o[state.lang] || o.en;
 const esc = x => String(x).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 // "Fighting Style: Archery" -> "Archery" for the table; the full name stays in the detail.
 const short = n => n.replace(/^[^:：]+[:：]\s*/, "");
+// Link to where a source comes from: a feat on the Feats page, a class or subclass on the Classes page.
+function srcHref(s) {
+  const id = x => x.en.replace(/\W/g, "");
+  if (s.kind === "feat") return `feats.html#lang=${state.lang}&open=${id(s.name)}`;
+  const cls = s.kind === "subclass" ? s.class : s.name;
+  return `classes.html#lang=${state.lang}&open=${id(cls)}${s.kind === "subclass" ? `&sub=${encodeURIComponent(s.name.en)}` : ""}`;
+}
+const srcLink = (s, text) => `<a href="${srcHref(s)}">${esc(text)}</a>`;
 const srcText = s => `${L(s.name)} (${s.kind === "feat" ? t("feat") : t("level")(s.level)})`;
 
 function matches(f) {
@@ -57,13 +65,13 @@ function renderTable() {
     const open = state.open === f.id;
     const row = `<tr class="row" data-id="${esc(f.id)}" aria-expanded="${open}">
       <td><strong>${esc(short(L(f.name)))}</strong></td>
-      <td>${esc([...new Set(f.sources.map(s => L(s.name)))].join(", "))}</td>
+      <td>${[...new Map(f.sources.map(s => [s.name.en, s])).values()].map(s => srcLink(s, L(s.name))).join(", ")}</td>
     </tr>`;
     const detail = `<tr class="detail"><td colspan="2">
       <p><strong>${esc(L(f.name))}</strong></p>
       ${L(f.desc) ? `<p>${esc(L(f.desc))}</p>` : ""}
       <div class="k">${esc(t("col_sources"))}</div>
-      <ul>${f.sources.map(s => `<li>${esc(srcText(s))}${s.count > 1 ? ` — ${esc(t("choose")(s.count))}` : ""}</li>`).join("")}</ul>
+      <ul>${f.sources.map(s => `<li>${srcLink(s, srcText(s))}${s.count > 1 ? ` — ${esc(t("choose")(s.count))}` : ""}</li>`).join("")}</ul>
     </td></tr>`;
     return open ? row + detail : row;
   }).join("");
@@ -120,6 +128,7 @@ function bind() {
     renderTable(); writeHash();
   });
   $("#list tbody").addEventListener("click", e => {
+    if (e.target.closest("a")) return;
     const tr = e.target.closest("tr.row");
     if (!tr) return;
     state.open = state.open === tr.dataset.id ? null : tr.dataset.id;

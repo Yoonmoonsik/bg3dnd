@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: "Weapon Mastery", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod", wiki: "Wiki",
+    title: "Weapon Mastery", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod",
     nav_home: "Home", nav_backgrounds: "Backgrounds", nav_classes: "Classes", nav_feats: "Feats", nav_fighting: "Fighting Styles",
     nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     search: "Search masteries by name, weapon or effect", filters: "Filters", reset: "Reset",
@@ -13,7 +13,7 @@ const T = {
     masteries: n => `${n} ${n > 1 ? "masteries" : "mastery"}`, plus: n => `+${n}`,
   },
   ko: {
-    title: "무기 숙련술", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드", wiki: "위키",
+    title: "무기 숙련술", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드",
     nav_home: "홈", nav_backgrounds: "배경", nav_classes: "직업", nav_feats: "재주", nav_fighting: "전투 방식",
     nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     search: "숙련술 이름, 무기, 효과로 검색", filters: "필터", reset: "초기화",
@@ -26,6 +26,7 @@ const T = {
 };
 
 const state = { lang: "en", q: "", sel: new Set(), open: null };
+let KINDS = new Map();  // Korean weapon type name -> English name the Weapons page filters by
 let MASTERIES = [];
 let WEAPONS = [];
 let SOURCES = [];
@@ -51,16 +52,31 @@ function renderFilters() {
 }
 
 // Who picks masteries: each class's levels in one line ("Fighter: Level 1 3 masteries, Level 4 +1 …").
+// Link to where a source comes from: a feat on the Feats page, a class or subclass on the Classes page.
+function srcHref(s) {
+  const id = x => x.en.replace(/\W/g, "");
+  if (s.kind === "feat") return `feats.html#lang=${state.lang}&open=${id(s.name)}`;
+  const cls = s.kind === "subclass" ? s.class : s.name;
+  return `classes.html#lang=${state.lang}&open=${id(cls)}${s.kind === "subclass" ? `&sub=${encodeURIComponent(s.name.en)}` : ""}`;
+}
+
 function renderSources() {
   const by = new Map();
   for (const s of SOURCES) {
     const key = s.name.en;
-    if (!by.has(key)) by.set(key, { name: s.name, kind: s.kind, items: [] });
+    if (!by.has(key)) by.set(key, { name: s.name, kind: s.kind, class: s.class, items: [] });
     by.get(key).items.push(s);
   }
   $("#sources").innerHTML = `<div class="k">${esc(t("who"))}</div><ul>${[...by.values()].map(g =>
-    `<li><strong>${esc(L(g.name))}</strong>${g.kind === "feat" ? ` (${esc(t("feat"))})` : ""}: ${g.items.map((s, i) =>
+    `<li><strong><a href="${srcHref(g)}">${esc(L(g.name))}</a></strong>${g.kind === "feat" ? ` (${esc(t("feat"))})` : ""}: ${g.items.map((s, i) =>
       s.level ? `${esc(t("level")(s.level))} ${esc(i ? t("plus")(s.count) : t("masteries")(s.count))}` : esc(t("masteries")(s.count))).join(", ")}</li>`).join("")}</ul>`;
+}
+
+// Weapon name linking to that weapon type on the Weapons page; the names match by Korean (Greataxes = Greataxe = 대형 도끼).
+function weaponLink(w) {
+  const kind = KINDS.get(w.ko);
+  if (!kind) return esc(L(w));
+  return `<a href="weapons.html#lang=${state.lang}&type=${encodeURIComponent(kind)}">${esc(L(w))}</a>`;
 }
 
 function renderTable() {
@@ -71,7 +87,7 @@ function renderTable() {
     const open = state.open === m.id;
     const row = `<tr class="row" data-id="${esc(m.id)}" aria-expanded="${open}">
       <td><strong>${esc(L(m.name))}</strong></td>
-      <td>${esc(m.weapons.map(L).join(", "))}</td>
+      <td>${m.weapons.map(weaponLink).join(", ")}</td>
     </tr>`;
     const detail = `<tr class="detail"><td colspan="2">${L(m.desc) ? `<p>${esc(L(m.desc))}</p>` : ""}</td></tr>`;
     return open ? row + detail : row;
@@ -129,6 +145,7 @@ function bind() {
     renderTable(); writeHash();
   });
   $("#list tbody").addEventListener("click", e => {
+    if (e.target.closest("a")) return;
     const tr = e.target.closest("tr.row");
     if (!tr) return;
     state.open = state.open === tr.dataset.id ? null : tr.dataset.id;
@@ -147,9 +164,9 @@ function bind() {
   });
 }
 
-fetch("data/weapon_mastery.json")
-  .then(r => r.json())
-  .then(d => {
+Promise.all([fetch("data/weapon_mastery.json").then(r => r.json()), fetch("data/weapons.json").then(r => r.json())])
+  .then(([d, wd]) => {
+    KINDS = new Map(wd.weapons.map(w => [w.kind.ko, w.kind.en]));
     MASTERIES = d.masteries;
     SOURCES = d.sources;
     WEAPONS = MASTERIES.flatMap(m => m.weapons);

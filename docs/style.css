@@ -96,6 +96,9 @@ table { width: 100%; border-collapse: collapse; }
 th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
 /* Level, casting time and school are short labels; keep each on one line. */
 tr.row td:nth-child(2), tr.row td:nth-child(3), tr.row td:nth-child(7), th { white-space: nowrap; }
+/* Rules page: the second column is the description, so it wraps and the name stays on one line. */
+.rules-table tr.row td:nth-child(2) { white-space: normal; }
+.rules-table tr.row td:first-child { white-space: nowrap; }
 th {
   font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .04em;
   background: var(--panel); position: sticky; top: 0; user-select: none;
