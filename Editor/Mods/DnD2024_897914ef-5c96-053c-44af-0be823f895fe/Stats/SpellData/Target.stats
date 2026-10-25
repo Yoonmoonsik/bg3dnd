@@ -1546,6 +1546,35 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;HasVerbalComponent;HasHighGroundRangeExtension;CannotTargetCharacter;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c4010be3-d207-4f0a-bec7-f1f89e81ac71" />
+        <field name="Name" type="NameTableFieldDefinition" value="FindFamiliar" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_FindFamiliar" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7cdde2cagd199g498bg8ae1gf693a97f57cc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h90a8893dg8023g4be2gbcd2gfa1857d7c23f" version="2" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="6f42f5f3-7a5a-4441-a02e-71b0450ac4b7,,;,,;605d49b4-03b9-47f6-96e9-7f80e6be7514,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;42aaefdc-cf9b-4249-b159-285041851f69,,;,,;20e11c98-fff9-4417-88de-5bcc2368a1bd,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;HasVerbalComponent;HasHighGroundRangeExtension;IsLinkedSpellContainer;CannotTargetCharacter;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Conjuration" enumeration_type_name="SpellSchool" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Summon_FindFamiliar_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Summon_FindFamiliar_L1to3" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_FindFamiliar_Cat;Target_FindFamiliar_Crab;Target_FindFamiliar_Frog;Target_FindFamiliar_Rat;Target_FindFamiliar_Raven;Target_FindFamiliar_Spider" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="739617e8-1255-4429-8b96-cc86296e0366" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="23d05225-027b-4656-97f8-564b185d37a2" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="TutorialSummonBlockCheck()" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="75e23376-ed2f-4aac-81d6-69caa1b3b26d" />
@@ -2161,6 +2190,7 @@
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SummonBeast_GiantEagle;Target_SummonBeast_Wolf;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;HasVerbalComponent;HasHighGroundRangeExtension;CannotTargetCharacter;CannotTargetItems;IsConcentration;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2da1fb01g5e2cg4896g82bega2d9ec4dc533" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2419,7 +2449,6 @@
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="8e035a07-8928-4008-a86d-7f45ed61e39a" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="23d05225-027b-4656-97f8-564b185d37a2" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2466,6 +2495,38 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b0b2519f-1352-44e2-9b6d-37edc9d6cadf" />
         <field name="Name" type="NameTableFieldDefinition" value="__CONJURATION__SLEVEL_4__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4cef3ddb-8a1e-4713-9256-2ec6ebdb8f47" />
+        <field name="Name" type="NameTableFieldDefinition" value="GraspingVine" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60cf7652-bcf0-4b8d-b3ff-69aee07dc1d0" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="44f3e44f-b3f9-4c22-9b0b-a7e91ffa1f0a" />
+        <field name="Name" type="NameTableFieldDefinition" value="GraspingVine_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ca3773d0-355f-41b7-8cc2-64a992187f74" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2c89159b-5dea-407c-b347-8cee73937990" />
+        <field name="Name" type="NameTableFieldDefinition" value="GraspingVine_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7294c28d-32cf-432d-96c1-7bc538245ed4" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="926e831c-1d73-4ef8-b7c6-37a53ee1ea03" />
+        <field name="Name" type="NameTableFieldDefinition" value="GraspingVine_Pull" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="95a29f2f-9331-463a-a1de-888d82baf40a" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3566,6 +3627,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="PlanarAlly_Cambion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dcfac38d-223c-4575-82df-f2d07ecfcba1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3574,6 +3636,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="PlanarAlly_Deva" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="551fc021-3fd1-4642-bf34-c4989f33fb9f" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3582,6 +3645,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="PlanarAlly_Djinni" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="71c304ea-00cb-4510-a24d-2882f501ff6f" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -10417,6 +10481,54 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Acid_Gen_L1to3" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Acid_Gen_L1to3_Loop" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c830cb45-98d8-4a07-bb14-0f45435e8056" />
+        <field name="Name" type="NameTableFieldDefinition" value="Goodberry" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ddafbfad-c646-40d5-9929-c781b653b957" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b6238a2c-47fd-49b7-986a-6abfcd40f274" />
+        <field name="Name" type="NameTableFieldDefinition" value="Goodberry_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="36d9e05e-55f3-4cde-991e-8d64c8e201dc" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="718ee013-cbfd-4c90-8c7b-c4b1e06f675e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Goodberry_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3af00fc4-f6a8-4be9-abd1-ce3cb9c26784" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d40d334-c6dc-4126-8dfd-0765c8fa7a1e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Goodberry_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6a9b0b81-a0a3-4080-9f4c-6896c917784e" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ff8153b6-1188-488e-be6c-57724e804fe5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Goodberry_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8eb68356-adde-475b-a503-b4623d0d8399" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6fb51b7e-94ae-44ab-a830-1c090cbd06f9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Goodberry_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="516ac61f-598a-4fb9-b9c0-2a70000141a5" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -20136,6 +20248,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="ha4e30eadg110ag421bgb760gbad030df097d" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SummonBeast_GiantEagle_Illusion;Target_SummonBeast_Wolf_Illusion;" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -22285,7 +22398,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5fb3dffb-871d-4dcc-93ab-d1561bd3b888" />
         <field name="Name" type="NameTableFieldDefinition" value="Goodberry_spellscroll" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ddafbfad-c646-40d5-9929-c781b653b957" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c830cb45-98d8-4a07-bb14-0f45435e8056" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
       </fields>
     </stat_object>
@@ -22501,6 +22614,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FindFamiliar_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c4010be3-d207-4f0a-bec7-f1f89e81ac71" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
