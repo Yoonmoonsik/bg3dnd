@@ -187,3 +187,5 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 .lv tr.lv-first td { border-top: 2px solid var(--line); }
 .lv .lv-n { vertical-align: top; }
 .detail p.lore { white-space: normal; }
+.lv details.choice summary { cursor: pointer; }
+.lv details.choice[open] summary { margin-bottom: 4px; }

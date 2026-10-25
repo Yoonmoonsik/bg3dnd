@@ -61,6 +61,18 @@ class Builder:
             if p.get("TableUUID") and p.get("IsMulticlass") != "true" and int(p.get("Level", 0)) <= MAX_LEVEL:
                 self.tables[p["TableUUID"]].append(p)
         _, self.plists = layered("Lists/PassiveLists.lsx", "PassiveList")
+        # A list's options include every list MergedInto it (Warlock invocations: "1 to 12", "2 to 12" …).
+        self.merged = defaultdict(list)
+        for l in self.plists.values():
+            if l.get("MergedInto"):
+                self.merged[l["MergedInto"]].append(l)
+        # SelectPassives(list, n, <SelectorId>): ProgressionDescriptions name the choice ("Eldritch Invocations").
+        _, pdesc = layered("Progressions/ProgressionDescriptions.lsx", "ProgressionDescription")
+        self.selector_name = {}
+        for d in pdesc.values():
+            if d.get("SelectorId"):
+                key = (d["SelectorId"], d.get("ProgressionTableId"))
+                self.selector_name[key] = {"en": text(d.get("DisplayName"), False), "ko": text(d.get("DisplayName"), True)}
         _, self.slists = layered("Lists/SpellLists.lsx", "SpellList")
         _, res = layered("ActionResourceDefinitions/ActionResourceDefinitions.lsx", "ActionResourceDefinition")
         self.res_name = {r["Name"]: {"en": text(r.get("DisplayName"), False) or r["Name"],
@@ -115,10 +127,17 @@ class Builder:
             cantrips = bool(spells) and all(self.fields(s).get("Level", "0") == "0" for s in spells)
             if int(n):
                 out["learn"].append({"kind": "cantrip" if cantrips else "spell", "count": int(n)})
-        for lid, n in re.findall(r"SelectPassives\(([\w-]+),(\d+)", sel):
-            opts = [name_of(self.db, x) for x in lst(self.plists.get(lid, {}).get("Passives"), ",")]
+        for lid, n, key in re.findall(r"SelectPassives\(([\w-]+),(\d+)(?:,(\w*))?", sel):
+            ids = lst(self.plists.get(lid, {}).get("Passives"), ",")
+            for m in self.merged.get(lid, []):
+                ids += lst(m.get("Passives"), ",")
+            # id: the passive, so the page can link fighting styles and weapon masteries to their pages.
+            # Hidden helper passives (ThirstingBlade_Check) are not choices.
+            opts = [{"id": x, "name": name_of(self.db, x)} for x in dict.fromkeys(ids)
+                    if self.fields(x) and "IsHidden" not in self.fields(x).get("Properties", "")]
+            label = self.selector_name.get((key, p.get("TableUUID"))) or self.selector_name.get((key, None))
             if opts:
-                out["choices"].append({"count": int(n), "options": opts})
+                out["choices"].append({"count": int(n), "label": label, "options": opts})
         out["skills"] = sum(int(n) for n in re.findall(r"SelectSkills\([\w-]+,(\d+)", sel))
         out["expertise"] = sum(int(n) for n in re.findall(r"SelectSkillsExpertise\([\w-]+,(\d+)", sel))
         for r, n, lvl in re.findall(r"ActionResource\((\w+),([\d.]+),(\d+)\)", boosts):

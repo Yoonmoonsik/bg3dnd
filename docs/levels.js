@@ -16,6 +16,18 @@ const LEVEL_T = {
   },
 };
 
+// Pages that explain a choice option: passive id -> {href, desc}. The class page fills it from
+// fighting_styles.json and weapon_mastery.json.
+const PREVIEWS = {};
+
+function option(o, lang, esc) {
+  const L = x => x[lang] || x.en;
+  const p = PREVIEWS[o.id];
+  if (!p) return esc(L(o.name));
+  return `<a class="feat-link" href="${p.href}#lang=${lang}&open=${encodeURIComponent(o.id)}">${esc(L(o.name))}`
+    + `<span class="tip" role="tooltip">${esc(L(p.desc))}</span></a>`;
+}
+
 // One level's grants, one HTML string each; chip marks items that come from another table (the class).
 function levelItems(l, lang, esc, chip) {
   const t = k => LEVEL_T[lang][k];
@@ -29,7 +41,11 @@ function levelItems(l, lang, esc, chip) {
     ...l.traits.map(x => `<strong>${esc(L(x.name))}</strong>${tag}${L(x.desc) ? ` — ${esc(L(x.desc))}` : ""}`),
     l.spells.length ? `${esc(t("spells"))}: ${l.spells.map(spell).join(", ")}${tag}` : "",
     ...l.learn.map(x => `${esc(t(x.kind === "cantrip" ? "learn_cantrip" : "learn_spell")(x.count))}${tag}`),
-    ...l.choices.map(c => `${esc(t("choose")(c.count))}: ${c.options.map(o => esc(L(o))).join(", ")}${tag}`),
+    // A named choice ("Choose 1: Eldritch Invocations") folds its options under the name.
+    ...l.choices.map(c => c.label
+      ? `<details class="choice"><summary>${esc(t("choose")(c.count))}: ${esc(L(c.label))}${tag}</summary>`
+        + `${c.options.map(o => option(o, lang, esc)).join(", ")}</details>`
+      : `${esc(t("choose")(c.count))}: ${c.options.map(o => option(o, lang, esc)).join(", ")}${tag}`),
     l.skills ? `${esc(t("skills")(l.skills))}${tag}` : "",
     l.expertise ? `${esc(t("expertise")(l.expertise))}${tag}` : "",
     (l.proficiencies || []).length ? `${esc(t("proficiency"))}: ${l.proficiencies.map(x => esc(L(x))).join(", ")}${tag}` : "",

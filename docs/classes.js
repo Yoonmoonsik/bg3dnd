@@ -221,8 +221,12 @@ function bind() {
   });
 }
 
-Promise.all([fetch("data/classes.json").then(r => r.json()), fetch("data/subclasses.json").then(r => r.json())])
-  .then(([c, s]) => {
+Promise.all([fetch("data/classes.json").then(r => r.json()), fetch("data/subclasses.json").then(r => r.json()),
+  fetch("data/fighting_styles.json").then(r => r.json()).catch(() => ({ styles: [] })),
+  fetch("data/weapon_mastery.json").then(r => r.json()).catch(() => ({ masteries: [] }))])
+  .then(([c, s, fs, wm]) => {
+    for (const x of fs.styles) PREVIEWS[x.id] = { href: "fighting-styles.html", desc: x.desc };
+    for (const x of wm.masteries) PREVIEWS[x.id] = { href: "weapon-mastery.html", desc: x.desc };
     CLASSES = c.classes;
     for (const x of s.subclasses) (SUBS[x.class.id] = SUBS[x.class.id] || []).push(x);
     for (const id in SUBS) SUBS[id].sort((a, b) => a.name.en.localeCompare(b.name.en));

@@ -96,6 +96,7 @@ function writeHash() {
 }
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
+  state.open = p.get("open") || state.open;
   let lang = p.get("lang");
   if (!lang) {
     try { lang = localStorage.getItem("bg3dnd-lang"); } catch (e) { /* storage blocked */ }
@@ -148,5 +149,8 @@ fetch("data/fighting_styles.json")
     $("#q").value = state.q;
     bind();
     render();
+    // #open=<id> (links from the class page) expands that row; scroll to it once.
+    const row = [...document.querySelectorAll("tr.row")].find(r => r.dataset.id === state.open);
+    if (row) row.scrollIntoView({ block: "center" });
     if (d.generated) $("#generated").textContent = "· " + d.generated;
   });
