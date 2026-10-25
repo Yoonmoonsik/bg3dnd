@@ -4,10 +4,6 @@
 
 [b]We built a data browser where you can look up the mod's data — classes and subclasses, spells, feats, backgrounds, species, fighting styles and weapon masteries — with search and filters, all generated from the mod's game data: [url=https://yoonmoonsik.github.io/bg3dnd/]Data Browser[/url][/b]
 
-For deeper gameplay notes, class details, spell behavior, item locations, and community-maintained documentation, see the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url].
-
-[i]Note: The Wiki is maintained by community contributors and is not officially written or managed by the mod developer. Some information may be incomplete, outdated, or inaccurate.[/i]
-
 [size=5][b]Bug Reports and Questions[/b][/size]
 
 [list]
@@ -37,7 +33,7 @@ See [url=https://yoonmoonsik.github.io/bg3dnd/backgrounds.html]Backgrounds[/url]
 
 [size=5][b]Classes[/b][/size]
 
-See the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url] and each class page for detailed level progression and subclass features.
+See the [url=https://yoonmoonsik.github.io/bg3dnd/classes.html]Classes[/url] page for detailed level progression and subclass features.
 
 [list]
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Artificer]Artificer[/url][/b] — Alchemist, Armorer, Artillerist, Battle Smith
@@ -85,7 +81,7 @@ See [url=https://yoonmoonsik.github.io/bg3dnd/species.html]Species[/url].
 
 See [url=https://yoonmoonsik.github.io/bg3dnd/spells.html]Spells[/url].
 
-The lists below cover every spell in the mod. The wiki has per-level tables with schools, classes and scrolls.
+The lists below cover every spell in the mod. The [url=https://yoonmoonsik.github.io/bg3dnd/spells.html]Spells[/url] page has filters for level, school, class and scroll.
 
 [size=4][b]Cantrips[/b][/size]
 
@@ -126,8 +122,6 @@ Contributions go toward purchasing the official D&D rulebooks that this mod is b
 Support is entirely voluntary and grants no special access, priority requests, or exclusive content. Sharing feedback, reporting bugs, and helping others in Discussions are just as valuable.
 
 [size=5][b]Credits[/b][/size]
-
-See the [url=https://github.com/Yoonmoonsik/bg3dnd/wiki]Wiki[/url] for full attribution.
 
 [list]
 [*][b]Brazilian Portuguese Translation:[/b] [url=https://mod.io/u/shadowahjin]ShadowAhJin[/url] ([url=https://github.com/CaioShin93]CaioShin93[/url])

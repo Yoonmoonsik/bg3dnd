@@ -4,10 +4,6 @@
 
 **We built a data browser where you can look up the mod's data — classes and subclasses, spells, feats, backgrounds, species, fighting styles and weapon masteries — with search and filters, all generated from the mod's game data: [Data Browser](https://yoonmoonsik.github.io/bg3dnd/)**
 
-For deeper gameplay notes, class details, spell behavior, item locations, and community-maintained documentation, see the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki).
-
-> Note: The Wiki is maintained by community contributors and is not officially written or managed by the mod developer. Some information may be incomplete, outdated, or inaccurate.
-
 ## Bug Reports and Questions
 
 - **Bug reports**: open a report in [Issues](https://github.com/Yoonmoonsik/bg3dnd/issues).
@@ -47,7 +43,7 @@ See [Backgrounds](https://yoonmoonsik.github.io/bg3dnd/backgrounds.html).
 
 ## Classes
 
-See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) and each class page for detailed level progression and subclass features.
+See the [Classes](https://yoonmoonsik.github.io/bg3dnd/classes.html) page for detailed level progression and subclass features.
 
 | Class | Subclasses and Notes |
 | --- | --- |
@@ -93,7 +89,7 @@ See [Species](https://yoonmoonsik.github.io/bg3dnd/species.html).
 
 See [Spells](https://yoonmoonsik.github.io/bg3dnd/spells.html).
 
-The lists below cover every spell in the mod. The wiki has per-level tables with schools, classes and scrolls.
+The lists below cover every spell in the mod. The [Spells](https://yoonmoonsik.github.io/bg3dnd/spells.html) page has filters for level, school, class and scroll.
 
 ### Cantrips
 
@@ -130,8 +126,6 @@ Contributions go toward purchasing the official D&D rulebooks that this mod is b
 Support is entirely voluntary and grants no special access, priority requests, or exclusive content. Sharing feedback, reporting bugs, and helping others in Discussions are just as valuable.
 
 ## Credits
-
-See the [Wiki](https://github.com/Yoonmoonsik/bg3dnd/wiki) for full attribution.
 
 - **Brazilian Portuguese Translation**: [ShadowAhJin](https://mod.io/u/shadowahjin) ([CaioShin93](https://github.com/CaioShin93))
 - **French Translation**: [CyberBoloss](https://github.com/mcz-xiocku)
