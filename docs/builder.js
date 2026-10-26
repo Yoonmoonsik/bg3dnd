@@ -6,7 +6,7 @@ const T = {
     nav_home: "Home", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_classes: "Classes", nav_feats: "Feats",
     nav_fighting: "Fighting Styles", nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     footer: "Generated from the mod's game data.",
-    save: "Save JSON", load: "Load JSON", md: "Export Markdown", reset: "Reset",
+    save: "Save JSON", load: "Load JSON", md: "Export Markdown", shot: "Save Screenshots", summary_suffix: "Summary", shot_failed: "Could not make the screenshots.", reset: "Reset",
     loaded: "Build loaded.", bad_file: "This file is not a saved build.", missing: n => `Not in the current data, skipped: ${n}`,
     character: "Character", build_name: "Build Name", species: "Species", background: "Background", abilities: "Ability Scores",
     points: (u, all) => `Points ${u} / ${all}`, preset: "Class preset", over: "Over the 27-point budget",
@@ -30,7 +30,7 @@ const T = {
     nav_home: "홈", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_classes: "직업", nav_feats: "재주",
     nav_fighting: "전투 방식", nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     footer: "모드 게임 데이터에서 생성했습니다.",
-    save: "JSON 저장", load: "JSON 불러오기", md: "마크다운 내보내기", reset: "초기화",
+    save: "JSON 저장", load: "JSON 불러오기", md: "마크다운 내보내기", shot: "스크린샷 저장", summary_suffix: "요약", shot_failed: "스크린샷을 만들지 못했습니다.", reset: "초기화",
     loaded: "빌드를 불러왔습니다.", bad_file: "저장한 빌드 파일이 아닙니다.", missing: n => `현재 데이터에 없어 건너뛴 항목: ${n}`,
     character: "캐릭터", build_name: "빌드 이름", species: "종족", background: "배경", abilities: "능력치",
     points: (u, all) => `포인트 ${u} / ${all}`, preset: "직업 기본 분배", over: "27포인트를 넘었습니다",
@@ -452,7 +452,7 @@ function render() {
   const classes = D.classes.slice().sort((a, b) => L(a.name).localeCompare(L(b.name), state.lang));
   let html = characterBlock() + (build.levels.length ? abilityBlock(r) : "");
   r.tl.forEach(e => { html += levelBlock(e, r); });
-  html += `<section class="bld-card bld-row">${build.levels.length < MAX_LEVEL ? `<select data-act="addclass">
+  html += `<section class="bld-card bld-row bld-controls">${build.levels.length < MAX_LEVEL ? `<select data-act="addclass">
     ${classes.map(c => `<option value="${c.id}" ${c.id === build.levels[build.levels.length - 1]?.class ? "selected" : ""}>${esc(L(c.name))}</option>`).join("")}</select>
     <button type="button" class="ghost" data-act="add">${esc(t("add_level"))}</button>` : ""}
     ${build.levels.length ? `<button type="button" class="ghost" data-act="remove">${esc(t("remove_level"))}</button>` : ""}</section>`;
@@ -582,15 +582,39 @@ function download(name, text, type) {
   setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 0);
 }
 
-function fileName(ext) {
+function fileName(ext, suffix) {
   const r = derive(), counts = {};
   r.tl.forEach(e => { counts[e.c.id] = e.k; });
   // Species-Class12-Build name, in the page language (기스양키-파이터12-…); spaces and symbols dropped.
   const part = s => (s || "").replace(/[^\p{L}\p{N}]+/gu, "");
   const sp = spec();
   const parts = [sp && part(L(sp.sub_name) || L(sp.race_name)),
-    ...Object.entries(counts).map(([id, k]) => part(L(cls(id).name)) + k), part(build.name)].filter(Boolean);
+    ...Object.entries(counts).map(([id, k]) => part(L(cls(id).name)) + k), part(build.name), suffix].filter(Boolean);
   return (parts.join("-") || "bg3dnd-build") + "." + ext;
+}
+
+// Screenshots (html2canvas, loaded on first use): the character card through the last level without
+// the add/remove controls, and the summary on its own, named <build>-Summary.
+let h2c;
+async function screenshots() {
+  h2c = h2c || new Promise((ok, fail) => {
+    const s = document.createElement("script");
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
+    s.onload = () => ok(window.html2canvas); s.onerror = fail;
+    document.head.appendChild(s);
+  });
+  const html2canvas = await h2c;
+  const opts = { backgroundColor: getComputedStyle(document.body).backgroundColor, scale: 2,
+                 ignoreElements: el => el.classList.contains("bld-controls") };
+  const save = async (el, name) => {
+    const c = await html2canvas(el, opts);
+    const a = document.createElement("a");
+    a.href = c.toDataURL("image/png");
+    a.download = name;
+    a.click();
+  };
+  await save(document.getElementById("steps"), fileName("png"));
+  await save(document.getElementById("summary"), fileName("png", t("summary_suffix")));
 }
 
 function load(obj) {
@@ -701,6 +725,7 @@ function bind() {
   document.getElementById("save").addEventListener("click", () =>
     download(fileName("json"), JSON.stringify(build, null, 2), "application/json"));
   document.getElementById("md").addEventListener("click", () => download(fileName("md"), markdown(), "text/markdown"));
+  document.getElementById("shot").addEventListener("click", () => screenshots().catch(() => toast(t("shot_failed"))));
   document.getElementById("new").addEventListener("click", () => { build = blank(); msg.textContent = ""; render(); });
   document.getElementById("load").addEventListener("change", async ev => {
     const file = ev.target.files[0];
