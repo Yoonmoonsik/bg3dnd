@@ -8,7 +8,7 @@ const T = {
     footer: "Generated from the mod's game data.",
     save: "Save JSON", load: "Load JSON", md: "Export Markdown", reset: "Reset",
     loaded: "Build loaded.", bad_file: "This file is not a saved build.", missing: n => `Not in the current data, skipped: ${n}`,
-    character: "Character", species: "Species", background: "Background", abilities: "Ability Scores",
+    character: "Character", build_name: "Build Name", species: "Species", background: "Background", abilities: "Ability Scores",
     points: (u, all) => `Points ${u} / ${all}`, preset: "Class preset", over: "Over the 27-point budget",
     level: n => `Level ${n}`, add_level: "Add level", remove_level: "Remove last level",
     cls: "Class", subclass: "Subclass", multiclass: "multiclass", choose: "— choose —",
@@ -32,7 +32,7 @@ const T = {
     footer: "모드 게임 데이터에서 생성했습니다.",
     save: "JSON 저장", load: "JSON 불러오기", md: "마크다운 내보내기", reset: "초기화",
     loaded: "빌드를 불러왔습니다.", bad_file: "저장한 빌드 파일이 아닙니다.", missing: n => `현재 데이터에 없어 건너뛴 항목: ${n}`,
-    character: "캐릭터", species: "종족", background: "배경", abilities: "능력치",
+    character: "캐릭터", build_name: "빌드 이름", species: "종족", background: "배경", abilities: "능력치",
     points: (u, all) => `포인트 ${u} / ${all}`, preset: "직업 기본 분배", over: "27포인트를 넘었습니다",
     level: n => `${n}레벨`, add_level: "레벨 추가", remove_level: "마지막 레벨 삭제",
     cls: "직업", subclass: "하위 직업", multiclass: "멀티클래스", choose: "— 선택 —",
@@ -166,7 +166,7 @@ function derive() {
       (f.abilities || []).forEach((a, j) => { if (a) bonus[a] += f.id === ASI && f.mode !== "split" ? 2 : 1; });
       (f.skills || []).forEach(s => r.skills.add(s));
       (f.expertise || []).forEach(s => r.expertise.add(s));
-      (f.choices || []).forEach(i => fd.choices[i] && r.choices.push({ name: fd.choices[i] }));
+      (f.choices || []).forEach(i => fd.choices[i] && r.choices.push({ id: fd.choice_ids?.[i], name: fd.choices[i] }));
       fd.proficiency.saves.length === 1 && r.saves.add(fd.proficiency.saves[0]);
     }
   });
@@ -274,6 +274,7 @@ function characterBlock() {
     `<option value="${esc(v)}" ${v === cur ? "selected" : ""}>${esc(n)}</option>`).join("")}</select>`;
   const b = bg();
   return `<section class="bld-card"><h2>${esc(t("character"))}</h2>
+    <label class="bld-row"><span>${esc(t("build_name"))}</span><input type="text" data-act="name" maxlength="60" value="${esc(build.name || "")}"></label>
     <label class="bld-row"><span>${esc(t("species"))}</span>${sel("species", sp, build.species, L(spec()?.desc))}</label>
     <label class="bld-row"><span>${esc(t("background"))}</span>${sel("background", bgs, build.background, L(b?.desc))}</label>
     ${b ? `<p class="mini">${esc(t("skills"))}: ${b.skills.map(s => esc(L(s.name))).join(", ")} · ${esc(t("feats"))}: ${tipSpans(b.feats.map(f => [L(f.name), L(feat(f.id)?.desc)]))}</p>` : ""}
@@ -372,7 +373,11 @@ function featBlock(i, r) {
   const fkey = k => `f:${i}:${k}`;
   if (fd.choices.length) {
     const idx = fd.choices.map((_, j) => String(j));
-    html += checklist(fkey("choices"), idx, fd.choice_count || fd.choices.length,t("feat_choice"), j => L(fd.choices[j]));
+    // A manoeuvre (or other passive) already picked elsewhere is blocked, as in class picks.
+    const own = new Set((f.choices || []).map(j => fd.choice_ids?.[j]));
+    const have = new Set(r.choices.map(o => o.id).filter(id => id && !own.has(id)));
+    const blocked = new Map(idx.filter(j => have.has(fd.choice_ids?.[j])).map(j => [j, t("has_passive")]));
+    html += checklist(fkey("choices"), idx, fd.choice_count || fd.choices.length, t("feat_choice"), j => L(fd.choices[j]), { blocked });
   }
   if (fd.proficiency.skills) html += checklist(fkey("skills"), Object.keys(D.skills), fd.proficiency.skills, t("feat_skills"), skillName, { blocked: skillBlocks(r, fkey("skills")) });
   if (fd.proficiency.expertise) html += checklist(fkey("expertise"), Object.keys(D.skills), fd.proficiency.expertise, t("feat_expertise"), skillName, { blocked: expertiseBlocks(r, fkey("expertise"), Object.keys(D.skills)) });
@@ -507,7 +512,8 @@ function syncFeat(key) {
 function onChange(ev) {
   const s = ev.target, act = s.dataset.act;
   if (!act) return;
-  if (act === "species") { build.species = s.value || null; dropRacePicks(); }
+  if (act === "name") build.name = s.value.trim();
+  else if (act === "species") { build.species = s.value || null; dropRacePicks(); }
   else if (act === "background") build.background = s.value || null;
   else if (act === "class") {
     const i = +s.dataset.i;
@@ -558,9 +564,12 @@ function download(name, text, type) {
 function fileName(ext) {
   const r = derive(), counts = {};
   r.tl.forEach(e => { counts[e.c.id] = e.k; });
+  // Species-Class12-Build name, in the page language (기스양키-파이터12-…); spaces and symbols dropped.
+  const part = s => (s || "").replace(/[^\p{L}\p{N}]+/gu, "");
   const sp = spec();
-  const race = sp ? (L(sp.sub_name) || L(sp.race_name)) : "";
-  return (race ? race.replace(/[^\p{L}\p{N}]+/gu, "").toLowerCase() + "-" : "") + "bg3dnd-build-" + (Object.entries(counts).map(([id, k]) => id + k).join("-") || "empty") + "." + ext;
+  const parts = [sp && part(L(sp.sub_name) || L(sp.race_name)),
+    ...Object.entries(counts).map(([id, k]) => part(L(cls(id).name)) + k), part(build.name)].filter(Boolean);
+  return (parts.join("-") || "bg3dnd-build") + "." + ext;
 }
 
 function load(obj) {
@@ -579,6 +588,7 @@ function load(obj) {
   b.subclass = {};
   Object.entries(obj.subclass || {}).forEach(([c, s]) => { if (sub(cls(c), s)) b.subclass[c] = s; else if (s) missing.push(s); });
   b.picks = obj.picks && typeof obj.picks === "object" ? obj.picks : {};
+  b.name = typeof obj.name === "string" ? obj.name : "";
   build = b;
   return missing;
 }
