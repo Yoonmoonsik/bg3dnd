@@ -209,7 +209,11 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 
 /* Build simulator */
 .bld-party { position: relative; display: flex; gap: 24px; overflow-x: auto; align-items: start; }
-.bld-party > .bld { flex: 1 0 min(100%, 1000px); min-width: 0; }
+/* Each character is one column: steps, then the summary below the last level. */
+.bld-party > .bld { display: block; flex: 1 0 min(100%, 600px); min-width: 0; }
+.bld-party .bld-summary { position: static; }
+/* The builder uses the whole window width so several characters fit side by side. */
+.page-builder main, .page-builder footer { max-width: none; }
 .bld-party > .bld + .bld { border-left: 1px solid var(--line); padding-left: 24px; }
 .bld-actions.bld-col { grid-column: 1 / -1; margin: 0; }
 .bld { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 16px; align-items: start; }
