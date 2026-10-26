@@ -99,6 +99,8 @@ const tipSpans = items => {
   const seen = new Set();
   return items.filter(([n]) => !seen.has(n) && seen.add(n)).map(([n, d]) => `<span class="bld-tip"${tip(d)}>${esc(n)}</span>`).join(", ");
 };
+// Sorted by the shown name in the page language (abc / 가나다).
+const byName = (list, nameOf) => list.slice().sort((a, b) => nameOf(a).localeCompare(nameOf(b), state.lang));
 const tipList = (title, items) => `<dt>${esc(title)}</dt><dd>${items.length ? tipSpans(items) : t("none")}</dd>`;
 
 // Everything the build has at character level i: the class, its level, the progression nodes.
@@ -341,12 +343,26 @@ function nodeBlock(src, node, r, e) {
         { blocked: passiveBlocks(r, key, p.options), descOf: id => [L(by[id]?.desc), L(by[id]?.extra)].filter(Boolean).join("\n\n") }));
     } else if (p.kind === "skill") parts.push(checklist(key, p.options, p.count, t("skill"), skillName, { blocked: skillBlocks(r, key) }));
     else if (p.kind === "expertise") parts.push(checklist(key, p.options, p.count, t("expertise"), skillName, { blocked: expertiseBlocks(r, key, p.options) }));
-    else parts.push(checklist(key, p.options, p.count, t(p.kind), spellName, { blocked: spellBlocks(r, key, p.options), descOf: spellDesc }));
+    else {
+      // A class or subclass spell pick offers only spells of a level its own slots reach at this class
+      // level (a level-3 Wizard's Savant pick: up to level 2).
+      const top = src.startsWith("r:") ? 0 : maxSlot(e);
+      const opts = p.options.filter(id => p.kind !== "spell" || !top || (D.spells[id]?.level ?? 0) <= top);
+      // Merged lists (n to m): spell level high to low, then by name.
+      const sorted = p.merged ? byName(opts, spellName).sort((x, y) => (D.spells[y]?.level ?? 0) - (D.spells[x]?.level ?? 0)) : byName(opts, spellName);
+      parts.push(checklist(key, sorted, p.count, t(p.kind), spellName, { blocked: spellBlocks(r, key, opts), descOf: spellDesc }));
+    }
   });
   return parts.join("");
 }
 
 // Skills the character already has from elsewhere: a skill pick can't take them twice.
+// Highest spell slot level of this class (and its subclass) at its class level; 0 when it has none.
+function maxSlot(e) {
+  const nodes = [...e.c.levels.filter(n => n.level <= e.k), ...(e.s ? e.s.levels.filter(n => n.level <= e.k) : [])];
+  return Math.max(0, ...nodes.flatMap(n => n.resources.filter(x => /SpellSlot$/.test(x.id)).map(x => x.slot)));
+}
+
 // Cantrips and spells already known (granted or picked elsewhere) can't be picked again. Variants of one
 // spell under another entry name (…_ClassSpell) share the English name, so the name counts too.
 function spellBlocks(r, key, options) {
@@ -425,7 +441,7 @@ function levelBlock(e, r) {
       `<option value="${c.id}" ${c.id === lv.class ? "selected" : ""}>${esc(L(c.name))}</option>`).join("")}</select></label>`;
   if (e.c.subclass_level && e.k === e.c.subclass_level) {
     html += `<label class="bld-row"><span>${esc(t("subclass"))}</span><select data-act="subclass" data-c="${e.c.id}"${tip(L(e.s?.desc))}>
-      <option value="">${esc(t("choose"))}</option>${e.c.subclasses.map(s => `<option value="${s.id}" ${s.id === build.subclass?.[e.c.id] ? "selected" : ""}>${esc(L(s.name))}</option>`).join("")}</select></label>`;
+      <option value="">${esc(t("choose"))}</option>${byName(e.c.subclasses, s => L(s.name)).map(s => `<option value="${s.id}" ${s.id === build.subclass?.[e.c.id] ? "selected" : ""}>${esc(L(s.name))}</option>`).join("")}</select></label>`;
   }
   e.nodes.forEach(({ src, node }) => { html += nodeBlock(src, node, r, e); });
   if (e.nodes.some(({ node }) => node.feat)) html += featBlock(i, r);

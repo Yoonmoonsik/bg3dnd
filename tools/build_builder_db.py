@@ -78,6 +78,10 @@ class Sim(bcd.Builder):
                             and r["Name"] not in ("SpellSlot", "WarlockSpellSlot")}
         self.spells = {}
         self.skills = {}
+        self.spell_merged = defaultdict(list)
+        for l in self.slists.values():
+            if l.get("MergedInto"):
+                self.spell_merged[l["MergedInto"]].append(l)
 
     def spell_ref(self, sid):
         if sid not in self.spells:
@@ -122,10 +126,19 @@ class Sim(bcd.Builder):
         for lid in re.findall(r"AddSpells\(([\w-]+)", sel):
             out["spells"] += [self.spell_ref(s) for s in lst(self.slists.get(lid, {}).get("Spells"))]
         for lid, n in re.findall(r"SelectSpells\(([\w-]+),(\d+)", sel):
-            opts = [self.spell_ref(s) for s in lst(self.slists.get(lid, {}).get("Spells"))]
+            # Spell lists MergedInto this one ("5.5 Wizard SLevel 1 to 3" -> "SLevel 3") join its options;
+            # placeholder entries (Shout_SavantDummy_N) are left out.
+            ids = lst(self.slists.get(lid, {}).get("Spells"))
+            merged = self.spell_merged.get(lid, [])
+            for m in merged:
+                ids += lst(m.get("Spells"))
+            opts = [self.spell_ref(s) for s in dict.fromkeys(ids) if "Dummy" not in s]
             if int(n) and opts:
                 cantrip = all(self.spells[s]["level"] == 0 for s in opts)
-                out["picks"].append({"kind": "cantrip" if cantrip else "spell", "count": int(n), "options": opts})
+                pick = {"kind": "cantrip" if cantrip else "spell", "count": int(n), "options": opts}
+                if merged:
+                    pick["merged"] = True
+                out["picks"].append(pick)
         for lid, n, key in re.findall(r"SelectPassives\(([\w-]+),(\d+)(?:,(\w*))?", sel):
             ids = lst(self.plists.get(lid, {}).get("Passives"), ",")
             for m in self.merged.get(lid, []):
