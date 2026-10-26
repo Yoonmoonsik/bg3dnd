@@ -209,6 +209,7 @@ def main():
             "requirement": req,
             "repeatable": feat.get("CanBeTakenMultipleTimes") == "true",
             "choices": [name_of(db, p) for p in options],
+            "choice_count": sum(int(n) for n in re.findall(r"SelectPassives\([\w-]+,(\d+)", sel)),
             "spells": [name_of(db, s) for s in spells],
             "actions": [{"name": name_of(db, a), "cost": k} for a, k in actions.items()],
             "proficiency": prof,

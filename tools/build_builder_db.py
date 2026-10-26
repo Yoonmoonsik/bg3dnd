@@ -130,7 +130,10 @@ class Sim(bcd.Builder):
             ids = lst(self.plists.get(lid, {}).get("Passives"), ",")
             for m in self.merged.get(lid, []):
                 ids += lst(m.get("Passives"), ",")
-            opts = [{**self.option(x), "maxhp": self.maxhp(self.fields(x).get("Boosts"))} for x in dict.fromkeys(ids)
+            opts = [{**self.option(x), "maxhp": self.maxhp(self.fields(x).get("Boosts")),
+                     "skills": [self.skill_ref(k) for k in
+                                re.findall(r"ProficiencyBonus\(Skill,\s*(\w+)\)", self.fields(x).get("Boosts", ""))]}
+                    for x in dict.fromkeys(ids)
                     if self.fields(x) and "IsHidden" not in self.fields(x).get("Properties", "")]
             label = self.selector_name.get((key, p.get("TableUUID"))) or self.selector_name.get((key, None))
             if opts:
@@ -153,7 +156,13 @@ class Sim(bcd.Builder):
     def merged_nodes(self, nodes):
         """Several nodes of one table and level (a blank mod override beside the vanilla node) -> one."""
         by = defaultdict(list)
+        seen = set()
         for p in nodes:
+            # The same node under two UUIDs (Shared and SharedDev, both overridden alike) counts once.
+            same = (p["Level"], p.get("Boosts", ""), p.get("Selectors", ""), p.get("PassivesAdded", ""))
+            if same in seen:
+                continue
+            seen.add(same)
             by[int(p["Level"])].append(self.node(p))
         out = []
         for lv, parts in sorted(by.items()):

@@ -20,7 +20,7 @@ const T = {
     summary: "Summary", hp: "Hit Points", total: "Total level", saves: "Saving Throw Proficiencies", skills: "Skills",
     prof: "Equipment Proficiencies", traits: "Features", slots: "Spell Slots", pact: "Warlock Spell Slots", resources: "Resources",
     choices: "Choices", feats: "Feats", none: "—", caster_level: n => `caster level ${n}`,
-    has_skill: "You already have this skill.", not_prof: "You can only take expertise in a skill you are proficient in.",
+    has_skill: "You already have this skill.", has_passive: "You already have this.",not_prof: "You can only take expertise in a skill you are proficient in.",
     level1_bonus: "Level 1 bonus", spell_lv: n => `Level ${n} Spells`, actions: "Actions", hp_bonus: n => `max HP boosts +${n}`, slot_lv: (l, n) => `Level ${l}: ${n}`, save_prof: "Saving Throw Proficiencies",
     slot_note: "Multiclass spellcasting: slots from the multiclass caster level (each class's level × 1 / 0.5 / 0.34, rounded down). Warlock spell slots are counted separately.",
     md_title: "Build", md_species: "Species", md_background: "Background", md_classes: "Classes", md_levels: "Levels",
@@ -44,7 +44,7 @@ const T = {
     summary: "요약", hp: "생명력", total: "총 레벨", saves: "내성 굴림 숙련", skills: "기술",
     prof: "장비 숙련", traits: "기능", slots: "주문 슬롯", pact: "워락 주문 슬롯", resources: "자원",
     choices: "선택", feats: "재주", none: "—", caster_level: n => `시전자 레벨 ${n}`,
-    has_skill: "이미 가지고 있는 기술입니다.", not_prof: "숙련되지 않은 기술은 선택할 수 없습니다.",
+    has_skill: "이미 가지고 있는 기술입니다.", has_passive: "이미 가지고 있습니다.",not_prof: "숙련되지 않은 기술은 선택할 수 없습니다.",
     level1_bonus: "1레벨 보너스", spell_lv: n => `${n}레벨 주문`, actions: "행동", hp_bonus: n => `최대 생명력 증가 +${n}`, slot_lv: (l, n) => `${l}레벨 ${n}개`, save_prof: "내성 굴림 숙련",
     slot_note: "멀티클래스로 주문을 시전하면 멀티클래스 시전자 레벨(직업 레벨 × 1 / 0.5 / 0.34 합계, 내림)로 슬롯을 계산합니다. 워락 주문 슬롯은 따로 셉니다.",
     md_title: "빌드", md_species: "종족", md_background: "배경", md_classes: "직업", md_levels: "레벨",
@@ -153,7 +153,7 @@ function derive() {
         else if (p.kind === "expertise") v.forEach(s => r.expertise.add(s));
         else if (p.kind === "passive") v.forEach(id => {
           const o = p.options.find(o => o.id === id);
-          if (o) { r.choices.push(o); hpExprs.push(...(o.maxhp || [])); }
+          if (o) { r.choices.push(o); hpExprs.push(...(o.maxhp || [])); (o.skills || []).forEach(s => r.skills.add(s)); }
         });
         else v.forEach(s => r.spells.push(s));
       });
@@ -304,6 +304,9 @@ function nodeBlock(src, node, r, e) {
   const parts = [];
   const got = [...node.traits.map(x => [L(x.name), L(x.desc)]), ...node.spells.map(id => [spellName(id), spellDesc(id)])];
   if (got.length) parts.push(`<p class="mini">${esc(t("granted"))}: ${tipSpans(got)}</p>`);
+  // Action resources this level adds (Superiority Die +1 …); spell slots are in the summary.
+  const res = node.resources.filter(x => !/SpellSlot$/.test(x.id));
+  if (res.length) parts.push(`<p class="mini">${esc(t("resources"))}: ${res.map(x => `${esc(L(x.name))} +${x.count}`).join(", ")}</p>`);
   if (node.saves.length && !e.multi) parts.push(`<p class="mini">${esc(t("save_prof"))}: ${node.saves.map(ab).map(esc).join(", ")}</p>`);
   node.picks.forEach((p, j) => {
     const key = pickKey(src, j);
@@ -312,7 +315,7 @@ function nodeBlock(src, node, r, e) {
     } else if (p.kind === "passive") {
       const by = Object.fromEntries(p.options.map(o => [o.id, o]));
       parts.push(checklist(key, p.options.map(o => o.id), p.count, L(p.label) || t("passive"), id => L(by[id]?.name) || id,
-        { descOf: id => [L(by[id]?.desc), L(by[id]?.extra)].filter(Boolean).join("\n\n") }));
+        { blocked: passiveBlocks(r, key, p.options), descOf: id => [L(by[id]?.desc), L(by[id]?.extra)].filter(Boolean).join("\n\n") }));
     } else if (p.kind === "skill") parts.push(checklist(key, p.options, p.count, t("skill"), skillName, { blocked: skillBlocks(r, key) }));
     else if (p.kind === "expertise") parts.push(checklist(key, p.options, p.count, t("expertise"), skillName, { blocked: expertiseBlocks(r, key, p.options) }));
     else parts.push(checklist(key, p.options, p.count, t(p.kind), spellName, { descOf: spellDesc }));
@@ -324,6 +327,18 @@ function nodeBlock(src, node, r, e) {
 function skillBlocks(r, key) {
   const own = new Set(picked(key));
   return new Map([...r.skills].filter(s => !own.has(s)).map(s => [s, t("has_skill")]));
+}
+
+// Passives (weapon masteries, manoeuvres …) already picked at another level: not twice. A passive that
+// grants a skill (Keen Senses, Skillful) counts as a skill pick: blocked when the skill is already known.
+function passiveBlocks(r, key, options) {
+  const own = new Set(picked(key));
+  const ownSkills = new Set(options.filter(o => own.has(o.id)).flatMap(o => o.skills || []));
+  const m = new Map(r.choices.filter(o => o.id && !own.has(o.id)).map(o => [o.id, t("has_passive")]));
+  options.forEach(o => {
+    if (!own.has(o.id) && !m.has(o.id) && (o.skills || []).some(s => r.skills.has(s) && !ownSkills.has(s))) m.set(o.id, t("has_skill"));
+  });
+  return m;
 }
 
 // Expertise only in a skill the character is proficient in, and not twice.
@@ -357,7 +372,7 @@ function featBlock(i, r) {
   const fkey = k => `f:${i}:${k}`;
   if (fd.choices.length) {
     const idx = fd.choices.map((_, j) => String(j));
-    html += checklist(fkey("choices"), idx, fd.choices.length, t("feat_choice"), j => L(fd.choices[j]));
+    html += checklist(fkey("choices"), idx, fd.choice_count || fd.choices.length,t("feat_choice"), j => L(fd.choices[j]));
   }
   if (fd.proficiency.skills) html += checklist(fkey("skills"), Object.keys(D.skills), fd.proficiency.skills, t("feat_skills"), skillName, { blocked: skillBlocks(r, fkey("skills")) });
   if (fd.proficiency.expertise) html += checklist(fkey("expertise"), Object.keys(D.skills), fd.proficiency.expertise, t("feat_expertise"), skillName, { blocked: expertiseBlocks(r, fkey("expertise"), Object.keys(D.skills)) });
@@ -543,7 +558,9 @@ function download(name, text, type) {
 function fileName(ext) {
   const r = derive(), counts = {};
   r.tl.forEach(e => { counts[e.c.id] = e.k; });
-  return "bg3dnd-build-" + (Object.entries(counts).map(([id, k]) => id + k).join("-") || "empty") + "." + ext;
+  const sp = spec();
+  const race = sp ? (L(sp.sub_name) || L(sp.race_name)) : "";
+  return (race ? race.replace(/[^\p{L}\p{N}]+/gu, "").toLowerCase() + "-" : "") + "bg3dnd-build-" + (Object.entries(counts).map(([id, k]) => id + k).join("-") || "empty") + "." + ext;
 }
 
 function load(obj) {
