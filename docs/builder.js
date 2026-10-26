@@ -17,10 +17,12 @@ const T = {
     pick: (n, all) => `${n} / ${all}`, cantrip: "Cantrips", spell: "Spells", skill: "Skill proficiency",
     expertise: "Expertise", ability: "Ability bonus", passive: "Choose",
     feat_choice: "Feat options", feat_skills: "Feat skill proficiency", feat_expertise: "Feat expertise",
-    summary: "Summary", hp: "Hit Points", total: "Total level", saves: "Saving Throws", skills: "Skills",
-    prof: "Proficiencies", traits: "Features", slots: "Spell Slots", pact: "Pact Slots", resources: "Resources",
+    summary: "Summary", hp: "Hit Points", total: "Total level", saves: "Saving Throw Proficiencies", skills: "Skills",
+    prof: "Equipment Proficiencies", traits: "Features", slots: "Spell Slots", pact: "Warlock Spell Slots", resources: "Resources",
     choices: "Choices", feats: "Feats", none: "—", caster_level: n => `caster level ${n}`,
-    slot_note: "Two or more spellcasting classes: slots from the multiclass caster level (each class's level × 1 / 0.5 / 0.34, rounded down).",
+    has_skill: "You already have this skill.", not_prof: "You can only take expertise in a skill you are proficient in.",
+    level1_bonus: "Level 1 bonus", spell_lv: n => `Level ${n} Spells`, actions: "Actions", hp_bonus: n => `max HP boosts +${n}`, slot_lv: (l, n) => `Level ${l}: ${n}`, save_prof: "Saving Throw Proficiencies",
+    slot_note: "Multiclass spellcasting: slots from the multiclass caster level (each class's level × 1 / 0.5 / 0.34, rounded down). Warlock spell slots are counted separately.",
     md_title: "Build", md_species: "Species", md_background: "Background", md_classes: "Classes", md_levels: "Levels",
   },
   ko: {
@@ -39,10 +41,12 @@ const T = {
     pick: (n, all) => `${n} / ${all}`, cantrip: "소마법", spell: "주문", skill: "기술 숙련",
     expertise: "전문화", ability: "능력치 보너스", passive: "선택",
     feat_choice: "재주 선택지", feat_skills: "재주 기술 숙련", feat_expertise: "재주 전문화",
-    summary: "요약", hp: "생명력", total: "총 레벨", saves: "내성 굴림", skills: "기술",
-    prof: "숙련", traits: "기능", slots: "주문 슬롯", pact: "계약 슬롯", resources: "자원",
+    summary: "요약", hp: "생명력", total: "총 레벨", saves: "내성 굴림 숙련", skills: "기술",
+    prof: "장비 숙련", traits: "기능", slots: "주문 슬롯", pact: "워락 주문 슬롯", resources: "자원",
     choices: "선택", feats: "재주", none: "—", caster_level: n => `시전자 레벨 ${n}`,
-    slot_note: "주문 시전 직업이 둘 이상이면 멀티클래스 시전자 레벨(직업 레벨 × 1 / 0.5 / 0.34 합계, 내림)로 슬롯을 계산합니다.",
+    has_skill: "이미 가지고 있는 기술입니다.", not_prof: "숙련되지 않은 기술은 선택할 수 없습니다.",
+    level1_bonus: "1레벨 보너스", spell_lv: n => `${n}레벨 주문`, actions: "행동", hp_bonus: n => `최대 생명력 증가 +${n}`, slot_lv: (l, n) => `${l}레벨 ${n}개`, save_prof: "내성 굴림 숙련",
+    slot_note: "멀티클래스로 주문을 시전하면 멀티클래스 시전자 레벨(직업 레벨 × 1 / 0.5 / 0.34 합계, 내림)로 슬롯을 계산합니다. 워락 주문 슬롯은 따로 셉니다.",
     md_title: "빌드", md_species: "종족", md_background: "배경", md_classes: "직업", md_levels: "레벨",
   },
 };
@@ -83,6 +87,14 @@ const bg = () => D.backgrounds.find(b => b.id === build.background);
 const feat = id => D.feats.find(f => f.id === id);
 const spellName = id => L(D.spells[id]?.name) || id;
 const skillName = id => L(D.skills[id]) || id;
+const spellDesc = id => L(D.spells[id]?.desc);
+// Native hover text: shows the collected description without covering the page.
+const tip = d => d ? ` title="${esc(d)}"` : "";
+const tipSpans = items => {
+  const seen = new Set();
+  return items.filter(([n]) => !seen.has(n) && seen.add(n)).map(([n, d]) => `<span class="bld-tip"${tip(d)}>${esc(n)}</span>`).join(", ");
+};
+const tipList = (title, items) => `<dt>${esc(title)}</dt><dd>${items.length ? tipSpans(items) : t("none")}</dd>`;
 
 // Everything the build has at character level i: the class, its level, the progression nodes.
 function timeline() {
@@ -119,8 +131,10 @@ function derive() {
               spells: [], choices: [], feats: [], res: new Map(), slots: {}, pact: null, casterLevel: null };
   const b = bg();
   if (b) b.skills.forEach(s => r.skills.add(s.id));
+  const hpExprs = [];
   tl.forEach(e => {
     e.nodes.forEach(({ src, node }) => {
+      hpExprs.push(...(node.maxhp || []));
       if (e.level === 1 || !e.multi) node.saves.forEach(s => r.saves.add(s));
       node.prof.forEach(p => r.prof.set(p.en, p));
       node.traits.forEach(x => r.traits.push(x));
@@ -139,7 +153,7 @@ function derive() {
         else if (p.kind === "expertise") v.forEach(s => r.expertise.add(s));
         else if (p.kind === "passive") v.forEach(id => {
           const o = p.options.find(o => o.id === id);
-          if (o) r.choices.push(o.name);
+          if (o) { r.choices.push(o); hpExprs.push(...(o.maxhp || [])); }
         });
         else v.forEach(s => r.spells.push(s));
       });
@@ -147,11 +161,12 @@ function derive() {
     const f = build.levels[e.level - 1].feat;
     if (f && f.id && feat(f.id)) {
       const fd = feat(f.id);
-      r.feats.push(fd.name);
+      r.feats.push(fd);
+      hpExprs.push(...(D.featHp[fd.id] || []));
       (f.abilities || []).forEach((a, j) => { if (a) bonus[a] += f.id === ASI && f.mode !== "split" ? 2 : 1; });
       (f.skills || []).forEach(s => r.skills.add(s));
       (f.expertise || []).forEach(s => r.expertise.add(s));
-      (f.choices || []).forEach(i => fd.choices[i] && r.choices.push(fd.choices[i]));
+      (f.choices || []).forEach(i => fd.choices[i] && r.choices.push({ name: fd.choices[i] }));
       fd.proficiency.saves.length === 1 && r.saves.add(fd.proficiency.saves[0]);
     }
   });
@@ -160,6 +175,11 @@ function derive() {
   // Hit points: the first class's BaseHp at level 1, HpPerLevel after; Constitution modifier each level.
   const con = mod(r.scores.Constitution);
   r.hp = tl.reduce((hp, e) => hp + (e.level === 1 ? e.c.hp.base : e.c.hp.per_level) + con, 0);
+  // IncreaseMaxHP(...) of granted passives, picked passives, feats and progression Boosts, on the finished build.
+  const classLevels = {};
+  tl.forEach(e => { classLevels[e.c.id] = e.k; });
+  r.hpBonus = hpExprs.reduce((s, x) => s + evalHp(x, tl.length, classLevels, r.scores), 0);
+  r.hp += r.hpBonus;
   // Spell slots: one spellcasting class -> its own grants; two or more -> the multiclass caster level
   // on the full caster (Wizard) table. Pact slots are always their own.
   const casters = {};
@@ -176,7 +196,9 @@ function derive() {
     if (x.id === "WarlockSpellSlot") pact[x.slot] = (pact[x.slot] || 0) + x.count;
   })));
   const ids = Object.keys(casters);
-  if (ids.length >= 2) {
+  // A spellcasting class taken as a multiclass gets no SpellSlot in its multiclass level-1 node: its
+  // slots come from the caster level too. Warlock (no MulticlassSpellcasterModifier) stays apart.
+  if (ids.length >= 2 || (ids.length === 1 && ids[0] !== tl[0]?.c.id)) {
     const cl = Math.floor(ids.reduce((s, id) => s + levels[id] * casters[id] + 1e-9, 0));
     r.casterLevel = cl;
     const wiz = cls("Wizard");
@@ -189,18 +211,57 @@ function derive() {
   return r;
 }
 
+// An IncreaseMaxHP argument: Level, ClassLevel(X), <Ability>Modifier, numbers and + - * /.
+// Anything else counts as 0 rather than being guessed.
+function evalHp(expr, level, classLevels, scores) {
+  const s = expr.replace(/\b(Owner|Context\.Source)\./g, "")
+    .replace(/ClassLevel\((\w+)\)/g, (_, c) => classLevels[c] || 0)
+    .replace(/\b(\w+)Modifier\b/g, (_, a) => scores[a] != null ? mod(scores[a]) : "x")
+    .replace(/\bLevel\b/g, level);
+  if (!/^[\d+\-*/ ().]+$/.test(s)) return 0;
+  return Math.floor(Function(`"use strict"; return (${s});`)());
+}
+
+// Summary spells, one row per spell level: cantrips first, then level 1, 2 … (Level of the spell entry);
+// entries without the IsSpell flag (class actions such as Turn Undead) get a row of their own.
+function spellsByLevel(ids) {
+  if (!ids.length) return tipList(t("spells"), []);
+  const by = {};
+  const actions = ids.filter(id => D.spells[id] && !D.spells[id].spell);
+  ids.filter(id => !actions.includes(id)).forEach(id => { const lv = D.spells[id]?.level ?? 0; (by[lv] = by[lv] || []).push(id); });
+  return Object.keys(by).map(Number).sort((a, b) => a - b)
+    .map(lv => tipList(lv ? t("spell_lv")(lv) : t("cantrip"), by[lv].map(id => [spellName(id), spellDesc(id)]))).join("")
+    + (actions.length ? tipList(t("actions"), actions.map(id => [spellName(id), spellDesc(id)])) : "");
+}
+
 // ---- rendering ----------------------------------------------------------------------------------
+
+// The level-1 class's SelectAbilityBonus (+2 / +1): picked in the ability table itself.
+function firstBonus(r) {
+  const e = r.tl[0];
+  if (!e) return null;
+  for (const { src, node } of e.nodes) {
+    if (!src.startsWith("c:")) continue;
+    const j = node.picks.findIndex(p => p.kind === "ability");
+    if (j >= 0) return { key: pickKey(src, j), p: node.picks[j] };
+  }
+  return null;
+}
 
 function abilityBlock(r) {
   const used = ABILITIES.reduce((s, a) => s + COST[build.base[a]], 0);
   const first = cls(build.levels[0]?.class);
+  const fb = firstBonus(r), v = fb ? picked(fb.key) : [];
+  const bonusCell = (a, j) => fb.p.options.includes(a)
+    ? `<td><button type="button" class="chip" data-act="abset" data-key="${esc(fb.key)}" data-j="${j}" data-ab="${a}" aria-pressed="${v[j] === a}">+${fb.p.bonuses[j]}</button></td>` : "<td></td>";
   return `<section class="bld-card"><h2>${esc(t("abilities"))}</h2>
     <p class="mini">${esc(t("points")(used, BUDGET))}${used > BUDGET ? ` · <strong>${esc(t("over"))}</strong>` : ""}
     ${first?.preset ? ` · <button type="button" class="chip" data-act="preset">${esc(t("preset"))}: ${esc(L(first.name))}</button>` : ""}</p>
-    <table class="lv bld-ab"><tbody>${ABILITIES.map(a => `<tr><th>${esc(ab(a))}</th>
+    <table class="lv bld-ab">${fb ? `<thead><tr><th></th><th></th><th colspan="2">${esc(t("level1_bonus"))}</th><th></th><th></th></tr></thead>` : ""}<tbody>${ABILITIES.map(a => `<tr><th>${esc(ab(a))}${r.saves.has(a) ? ` <span class="tag" title="${esc(t("save_prof"))}">${esc(t("saves"))}</span>` : ""}</th>
       <td><button type="button" class="chip" data-act="dec" data-ab="${a}" ${build.base[a] <= 8 ? "disabled" : ""}>−</button>
       <strong>${build.base[a]}</strong>
       <button type="button" class="chip" data-act="inc" data-ab="${a}" ${build.base[a] >= 15 || used - COST[build.base[a]] + COST[build.base[a] + 1] > BUDGET ? "disabled" : ""}>+</button></td>
+      ${fb ? bonusCell(a, 0) + bonusCell(a, 1) : ""}
       <td>${r.bonus[a] ? sign(r.bonus[a]) : ""}</td><td><strong>${r.scores[a]}</strong> (${sign(mod(r.scores[a]))})</td></tr>`).join("")}
     </tbody></table></section>`;
 }
@@ -209,24 +270,26 @@ function characterBlock() {
   const sp = D.species.map(s => [speciesKey(s), s.sub_name ? `${L(s.race_name)} · ${L(s.sub_name)}` : L(s.race_name)])
     .sort((a, b) => a[1].localeCompare(b[1], state.lang));
   const bgs = D.backgrounds.map(b => [b.id, L(b.name)]).sort((a, b) => a[1].localeCompare(b[1], state.lang));
-  const sel = (act, list, cur) => `<select data-act="${act}"><option value="">${esc(t("choose"))}</option>${list.map(([v, n]) =>
+  const sel = (act, list, cur, d) => `<select data-act="${act}"${tip(d)}><option value="">${esc(t("choose"))}</option>${list.map(([v, n]) =>
     `<option value="${esc(v)}" ${v === cur ? "selected" : ""}>${esc(n)}</option>`).join("")}</select>`;
   const b = bg();
   return `<section class="bld-card"><h2>${esc(t("character"))}</h2>
-    <label class="bld-row"><span>${esc(t("species"))}</span>${sel("species", sp, build.species)}</label>
-    <label class="bld-row"><span>${esc(t("background"))}</span>${sel("background", bgs, build.background)}</label>
-    ${b ? `<p class="mini">${esc(t("skills"))}: ${b.skills.map(s => esc(L(s.name))).join(", ")} · ${esc(t("feats"))}: ${b.feats.map(f => esc(L(f.name))).join(", ")}</p>` : ""}
+    <label class="bld-row"><span>${esc(t("species"))}</span>${sel("species", sp, build.species, L(spec()?.desc))}</label>
+    <label class="bld-row"><span>${esc(t("background"))}</span>${sel("background", bgs, build.background, L(b?.desc))}</label>
+    ${b ? `<p class="mini">${esc(t("skills"))}: ${b.skills.map(s => esc(L(s.name))).join(", ")} · ${esc(t("feats"))}: ${tipSpans(b.feats.map(f => [L(f.name), L(feat(f.id)?.desc)]))}</p>` : ""}
   </section>`;
 }
 
-function checklist(key, options, count, label, nameOf, taken) {
+// blocked: option -> reason. A blocked option stays clickable so a click can say why it can't be taken.
+function checklist(key, options, count, label, nameOf, { blocked, descOf } = {}) {
   const v = picked(key);
   return `<details class="choice bld-pick" ${v.length < count ? "open" : ""}><summary>${esc(label)} <span class="mini">${esc(t("pick")(v.length, count))}</span>
     ${v.length ? `— ${v.map(x => esc(nameOf(x))).join(", ")}` : ""}</summary>
     <div class="chips">${options.map(o => {
-      const on = v.includes(o), dis = !on && (v.length >= count || (taken && taken.has(o)));
-      return `<button type="button" class="chip" data-act="pick" data-key="${esc(key)}" data-val="${esc(o)}" data-max="${count}"
-        aria-pressed="${on}" ${dis ? "disabled" : ""}>${esc(nameOf(o))}</button>`;
+      const on = v.includes(o), why = !on && blocked && blocked.get(o);
+      const full = !on && !why && v.length >= count;
+      return `<button type="button" class="chip${why ? " off" : ""}" data-act="pick" data-key="${esc(key)}" data-val="${esc(o)}" data-max="${count}"
+        aria-pressed="${on}" ${why ? `aria-disabled="true" data-why="${esc(why)}"` : ""} ${full ? "disabled" : ""}${tip(why || (descOf && descOf(o)))}>${esc(nameOf(o))}</button>`;
     }).join("")}</div></details>`;
 }
 
@@ -237,34 +300,44 @@ function abilityPick(key, p) {
   return `<div class="bld-pick">${esc(t("ability"))}: +${p.bonuses[0]} ${one(0)} +${p.bonuses[1]} ${one(1)}</div>`;
 }
 
-function nodeBlock(src, node, r) {
+function nodeBlock(src, node, r, e) {
   const parts = [];
-  const got = [...new Set([...node.traits.map(L), ...node.spells.map(spellName)])];
-  if (got.length) parts.push(`<p class="mini">${esc(t("granted"))}: ${got.map(esc).join(", ")}</p>`);
+  const got = [...node.traits.map(x => [L(x.name), L(x.desc)]), ...node.spells.map(id => [spellName(id), spellDesc(id)])];
+  if (got.length) parts.push(`<p class="mini">${esc(t("granted"))}: ${tipSpans(got)}</p>`);
+  if (node.saves.length && !e.multi) parts.push(`<p class="mini">${esc(t("save_prof"))}: ${node.saves.map(ab).map(esc).join(", ")}</p>`);
   node.picks.forEach((p, j) => {
     const key = pickKey(src, j);
-    if (p.kind === "ability") parts.push(abilityPick(key, p));
-    else if (p.kind === "passive") {
-      const names = Object.fromEntries(p.options.map(o => [o.id, L(o.name)]));
-      parts.push(checklist(key, p.options.map(o => o.id), p.count, L(p.label) || t("passive"), id => names[id] || id));
-    } else if (p.kind === "skill") parts.push(checklist(key, p.options, p.count, t("skill"), skillName, otherSkills(r, key)));
-    else if (p.kind === "expertise") parts.push(checklist(key, p.options, p.count, t("expertise"), skillName));
-    else parts.push(checklist(key, p.options, p.count, t(p.kind), spellName));
+    if (p.kind === "ability") {
+      if (!(e.level === 1 && src.startsWith("c:"))) parts.push(abilityPick(key, p));
+    } else if (p.kind === "passive") {
+      const by = Object.fromEntries(p.options.map(o => [o.id, o]));
+      parts.push(checklist(key, p.options.map(o => o.id), p.count, L(p.label) || t("passive"), id => L(by[id]?.name) || id,
+        { descOf: id => [L(by[id]?.desc), L(by[id]?.extra)].filter(Boolean).join("\n\n") }));
+    } else if (p.kind === "skill") parts.push(checklist(key, p.options, p.count, t("skill"), skillName, { blocked: skillBlocks(r, key) }));
+    else if (p.kind === "expertise") parts.push(checklist(key, p.options, p.count, t("expertise"), skillName, { blocked: expertiseBlocks(r, key, p.options) }));
+    else parts.push(checklist(key, p.options, p.count, t(p.kind), spellName, { descOf: spellDesc }));
   });
   return parts.join("");
 }
 
-// Skills the character already has from elsewhere (so a skill pick can't take them twice).
-function otherSkills(r, key) {
+// Skills the character already has from elsewhere: a skill pick can't take them twice.
+function skillBlocks(r, key) {
   const own = new Set(picked(key));
-  return new Set([...r.skills].filter(s => !own.has(s)));
+  return new Map([...r.skills].filter(s => !own.has(s)).map(s => [s, t("has_skill")]));
+}
+
+// Expertise only in a skill the character is proficient in, and not twice.
+function expertiseBlocks(r, key, options) {
+  const own = new Set(picked(key));
+  return new Map(options.filter(s => !own.has(s) && (!r.skills.has(s) || r.expertise.has(s)))
+    .map(s => [s, r.skills.has(s) ? t("has_skill") : t("not_prof")]));
 }
 
 function featBlock(i, r) {
   const f = build.levels[i].feat || {};
   const list = D.feats.slice().sort((a, b) => L(a.name).localeCompare(L(b.name), state.lang));
   const taken = new Set(build.levels.filter((x, j) => j !== i && x.feat?.id).map(x => x.feat.id));
-  let html = `<label class="bld-row"><span>${esc(t("feat"))}</span><select data-act="feat" data-i="${i}">
+  let html = `<label class="bld-row"><span>${esc(t("feat"))}</span><select data-act="feat" data-i="${i}"${tip(L(feat(f.id)?.desc))}>
     <option value="">${esc(t("choose"))}</option>${list.map(x => `<option value="${x.id}" ${x.id === f.id ? "selected" : ""}
     ${taken.has(x.id) && !x.repeatable ? "disabled" : ""}>${esc(L(x.name))}</option>`).join("")}</select></label>`;
   const fd = feat(f.id);
@@ -286,8 +359,8 @@ function featBlock(i, r) {
     const idx = fd.choices.map((_, j) => String(j));
     html += checklist(fkey("choices"), idx, fd.choices.length, t("feat_choice"), j => L(fd.choices[j]));
   }
-  if (fd.proficiency.skills) html += checklist(fkey("skills"), Object.keys(D.skills), fd.proficiency.skills, t("feat_skills"), skillName, otherSkills(r, fkey("skills")));
-  if (fd.proficiency.expertise) html += checklist(fkey("expertise"), Object.keys(D.skills), fd.proficiency.expertise, t("feat_expertise"), skillName);
+  if (fd.proficiency.skills) html += checklist(fkey("skills"), Object.keys(D.skills), fd.proficiency.skills, t("feat_skills"), skillName, { blocked: skillBlocks(r, fkey("skills")) });
+  if (fd.proficiency.expertise) html += checklist(fkey("expertise"), Object.keys(D.skills), fd.proficiency.expertise, t("feat_expertise"), skillName, { blocked: expertiseBlocks(r, fkey("expertise"), Object.keys(D.skills)) });
   return html;
 }
 
@@ -295,13 +368,13 @@ function levelBlock(e, r) {
   const i = e.level - 1, lv = build.levels[i];
   const classes = D.classes.slice().sort((a, b) => L(a.name).localeCompare(L(b.name), state.lang));
   let html = `<section class="bld-card"><h2>${esc(t("level")(e.level))} · ${esc(L(e.c.name))} ${e.k}${e.multi ? ` <span class="tag">${esc(t("multiclass"))}</span>` : ""}</h2>
-    <label class="bld-row"><span>${esc(t("cls"))}</span><select data-act="class" data-i="${i}">${classes.map(c =>
+    <label class="bld-row"><span>${esc(t("cls"))}</span><select data-act="class" data-i="${i}"${tip(L(e.c.desc))}>${classes.map(c =>
       `<option value="${c.id}" ${c.id === lv.class ? "selected" : ""}>${esc(L(c.name))}</option>`).join("")}</select></label>`;
   if (e.c.subclass_level && e.k === e.c.subclass_level) {
-    html += `<label class="bld-row"><span>${esc(t("subclass"))}</span><select data-act="subclass" data-c="${e.c.id}">
+    html += `<label class="bld-row"><span>${esc(t("subclass"))}</span><select data-act="subclass" data-c="${e.c.id}"${tip(L(e.s?.desc))}>
       <option value="">${esc(t("choose"))}</option>${e.c.subclasses.map(s => `<option value="${s.id}" ${s.id === build.subclass?.[e.c.id] ? "selected" : ""}>${esc(L(s.name))}</option>`).join("")}</select></label>`;
   }
-  e.nodes.forEach(({ src, node }) => { html += nodeBlock(src, node, r); });
+  e.nodes.forEach(({ src, node }) => { html += nodeBlock(src, node, r, e); });
   if (e.nodes.some(({ node }) => node.feat)) html += featBlock(i, r);
   return html + "</section>";
 }
@@ -314,29 +387,29 @@ function summaryBlock(r) {
     return `${L(c.name)} ${k}${s ? ` (${L(s.name)})` : ""}`;
   }).join(" / ");
   const list = (title, items) => `<dt>${esc(title)}</dt><dd>${items.length ? items.map(esc).join(", ") : t("none")}</dd>`;
-  const slots = Object.entries(r.slots).filter(([, n]) => n).map(([l, n]) => `${l}: ${n}`);
-  const uniq = a => [...new Set(a)];
+  const slots = Object.entries(r.slots).filter(([, n]) => n).map(([l, n]) => t("slot_lv")(l, n));
   return `<h2>${esc(t("summary"))}</h2><dl class="plist">
     <dt>${esc(t("total"))}</dt><dd>${r.tl.length} · ${esc(clsLine || t("none"))}</dd>
-    <dt>${esc(t("hp"))}</dt><dd>${r.tl.length ? r.hp : t("none")}</dd>
+    <dt>${esc(t("hp"))}</dt><dd>${r.tl.length ? r.hp + (r.hpBonus ? ` (${esc(t("hp_bonus")(r.hpBonus))})` : "") : t("none")}</dd>
     <dt>${esc(t("abilities"))}</dt><dd>${ABILITIES.map(a => `${esc(ab(a))} ${r.scores[a]}`).join(" · ")}</dd>
     ${list(t("saves"), [...r.saves].map(ab))}
-    ${list(t("skills"), [...r.skills].map(s => skillName(s) + (r.expertise.has(s) ? " ★" : "")))}
+    ${list(t("skill"), [...r.skills].map(skillName))}
+    ${list(t("expertise"), [...r.expertise].map(skillName))}
     ${list(t("prof"), [...r.prof.values()].map(L))}
     ${list(t("slots"), slots.concat(r.casterLevel != null ? [`(${t("caster_level")(r.casterLevel)})`] : []))}
-    ${r.pact ? list(t("pact"), [`${r.pact.slot}: ${r.pact.count}`]) : ""}
+    ${r.pact ? list(t("pact"), [t("slot_lv")(r.pact.slot, r.pact.count)]) : ""}
     ${list(t("resources"), [...r.res.values()].map(x => `${L(x.name)} ${x.count}`))}
-    ${list(t("feats"), r.feats.map(L))}
-    ${list(t("choices"), uniq(r.choices.map(L)))}
-    ${list(t("traits"), uniq(r.traits.map(L)))}
-    ${list(t("spells"), uniq(r.spells.map(spellName)))}
+    ${tipList(t("feats"), r.feats.map(x => [L(x.name), L(x.desc)]))}
+    ${tipList(t("choices"), r.choices.map(x => [L(x.name), L(x.desc)]))}
+    ${tipList(t("traits"), r.traits.map(x => [L(x.name), L(x.desc)]))}
+    ${spellsByLevel(r.spells)}
   </dl>${r.casterLevel != null ? `<p class="mini">${esc(t("slot_note"))}</p>` : ""}`;
 }
 
 function render() {
   const r = derive();
   const classes = D.classes.slice().sort((a, b) => L(a.name).localeCompare(L(b.name), state.lang));
-  let html = characterBlock() + abilityBlock(r);
+  let html = characterBlock() + (build.levels.length ? abilityBlock(r) : "");
   r.tl.forEach(e => { html += levelBlock(e, r); });
   html += `<section class="bld-card bld-row">${build.levels.length < MAX_LEVEL ? `<select data-act="addclass">
     ${classes.map(c => `<option value="${c.id}" ${c.id === build.levels[build.levels.length - 1]?.class ? "selected" : ""}>${esc(L(c.name))}</option>`).join("")}</select>
@@ -368,6 +441,7 @@ function dropFrom(i) {
 function onClick(ev) {
   const b = ev.target.closest("[data-act]");
   if (!b || b.tagName === "SELECT") return;
+  if (b.dataset.why) { toast(b.dataset.why); return; }
   const act = b.dataset.act;
   if (act === "inc" || act === "dec") build.base[b.dataset.ab] += act === "inc" ? 1 : -1;
   else if (act === "preset") Object.assign(build.base, cls(build.levels[0].class).preset);
@@ -385,6 +459,11 @@ function onClick(ev) {
     if (at >= 0) v.splice(at, 1); else if (v.length < +b.dataset.max) v.push(x);
     build.picks[b.dataset.key] = v;
     syncFeat(b.dataset.key);
+  } else if (act === "abset") {
+    const v = picked(b.dataset.key).slice(), j = +b.dataset.j, a = b.dataset.ab;
+    v[j] = v[j] === a ? null : a;
+    if (v[1 - j] === a) v[1 - j] = null;
+    build.picks[b.dataset.key] = v;
   } else if (act === "asimode") {
     const f = build.levels[+b.dataset.i].feat;
     f.mode = b.dataset.mode;
@@ -394,6 +473,15 @@ function onClick(ev) {
 }
 
 // Feat skill / choice picks live in build.picks under f:<i>:<kind>; mirror them on the feat.
+let toastTimer;
+function toast(text) {
+  const el = document.getElementById("toast");
+  el.textContent = text;
+  el.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.hidden = true; }, 2200);
+}
+
 function syncFeat(key) {
   const m = /^f:(\d+):(\w+)$/.exec(key);
   if (!m) return;
@@ -489,14 +577,15 @@ function markdown() {
   }).join(" / ") || "—"}`, "");
   lines.push(`- **${t("md_species")}:** ${sp ? L(sp.race_name) + (sp.sub_name ? " · " + L(sp.sub_name) : "") : "—"}`);
   lines.push(`- **${t("md_background")}:** ${b ? L(b.name) : "—"}`);
-  lines.push(`- **${t("hp")}:** ${r.tl.length ? r.hp : "—"}`, "");
+  lines.push(`- **${t("hp")}:** ${r.tl.length ? r.hp + (r.hpBonus ? ` (${t("hp_bonus")(r.hpBonus)})` : "") : "—"}`, "");
   lines.push(`| ${ABILITIES.map(ab).join(" | ")} |`, `|${ABILITIES.map(() => "---").join("|")}|`,
     `| ${ABILITIES.map(a => `${r.scores[a]} (${sign(mod(r.scores[a]))})`).join(" | ")} |`, "");
   const sum = [[t("saves"), [...r.saves].map(ab)],
-    [t("skills"), [...r.skills].map(s => skillName(s) + (r.expertise.has(s) ? " (" + t("expertise") + ")" : ""))],
+    [t("skill"), [...r.skills].map(skillName)],
+    [t("expertise"), [...r.expertise].map(skillName)],
     [t("prof"), [...r.prof.values()].map(L)],
-    [t("slots"), Object.entries(r.slots).filter(([, n]) => n).map(([l, n]) => `${l}: ${n}`)],
-    [t("pact"), r.pact ? [`${r.pact.slot}: ${r.pact.count}`] : []],
+    [t("slots"), Object.entries(r.slots).filter(([, n]) => n).map(([l, n]) => t("slot_lv")(l, n))],
+    [t("pact"), r.pact ? [t("slot_lv")(r.pact.slot, r.pact.count)] : []],
     [t("feats"), r.feats.map(L)]];
   sum.forEach(([k, v]) => v.length && lines.push(`- **${k}:** ${v.join(", ")}`));
   lines.push("", `## ${t("md_levels")}`, "");
@@ -504,7 +593,7 @@ function markdown() {
     lines.push(`### ${t("level")(e.level)} · ${L(e.c.name)} ${e.k}${e.multi ? ` (${t("multiclass")})` : ""}`);
     if (e.s && e.k === e.c.subclass_level) lines.push(`- ${t("subclass")}: ${L(e.s.name)}`);
     e.nodes.forEach(({ src, node }) => {
-      const got = [...new Set([...node.traits.map(L), ...node.spells.map(spellName)])];
+      const got = [...new Set([...node.traits.map(x => L(x.name)), ...node.spells.map(spellName)])];
       if (got.length) lines.push(`- ${t("granted")}: ${got.join(", ")}`);
       node.picks.forEach((p, j) => {
         const v = picked(pickKey(src, j)).filter(Boolean);
@@ -582,9 +671,10 @@ function bind() {
 async function init() {
   readLang();
   const get = f => fetch(`data/${f}.json`).then(r => r.json());
-  const [b, sp, spl, sk, bgs, fts] = await Promise.all(
-    ["builder", "builder_species", "builder_spells", "builder_skills", "backgrounds", "feats"].map(get));
+  const [b, sp, spl, sk, bgs, fts, fhp] = await Promise.all(
+    ["builder", "builder_species", "builder_spells", "builder_skills", "backgrounds", "feats", "builder_feat_hp"].map(get));
   D = { classes: b.classes, species: sp.species, backgrounds: bgs.backgrounds, feats: fts.feats,
+        featHp: Object.fromEntries(fhp.feats.map(f => [f.id, f.maxhp])),
         spells: Object.fromEntries(spl.spells.map(s => [s.id, s])),
         skills: Object.fromEntries(sk.skills.map(s => [s.id, s.name])) };
   document.getElementById("generated").textContent = b.generated ? "· " + b.generated : "";

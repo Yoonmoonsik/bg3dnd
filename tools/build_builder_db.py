@@ -9,6 +9,12 @@ paks, then the mod). Levels stop at 12. Run build_spell_db.py first (spell ids f
                starting point-buy distribution of each class
   classes      per class: the normal progression table, and "multiclass": the IsMulticlass level-1
                nodes the game uses when the class is taken as a second or later class
+  maxhp        unconditional IncreaseMaxHP(...) arguments (percentages left out) from a node's Boosts,
+               its passives' Boosts, a passive option's Boosts and a feat's passives (Tough: Level*2, given by a
+               one-option SelectPassives list);
+               the page evaluates them on the finished build
+  desc         descriptions (DescriptionParams filled in) of spells, passives, choices, classes,
+               subclasses and species, shown on hover
   levels       PassivesAdded, AddSpells, SelectSpells (with the list's options), SelectPassives,
                SelectSkills / SelectSkillsExpertise (with the SkillList), SelectAbilityBonus
                (AbilityList and the bonuses), Proficiency / ProficiencyBonus(SavingThrow) boosts,
@@ -32,11 +38,13 @@ import build_class_db as bcd  # noqa: E402
 from build_class_db import MAX_LEVEL, SUBCLASS_LEVEL, lst, write  # noqa: E402
 from build_feat_db import name_of, text  # noqa: E402
 from build_species_db import layered  # noqa: E402
+from build_spell_db import describe  # noqa: E402
 from subrace_data import NULL  # noqa: E402
 
 DATA = REPO / "docs" / "data"
 PRESETS = (REPO / "Editor" / "Mods" / "DnD2024_897914ef-5c96-053c-44af-0be823f895fe"
            / "CharacterCreationPresets" / "AbilityDistributionPresets.tbl")
+MAXHP = re.compile(r"(?:^|;)\s*IncreaseMaxHP\(((?:[^()]|\([^()]*\))*)\)")
 ABILITIES = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
 
 
@@ -63,14 +71,31 @@ class Sim(bcd.Builder):
         self.skill_lists = {u: lst(s.get("Skills"), ",") for u, s in sk.items()}
         _, ab = layered("Lists/AbilityLists.lsx", "AbilityList")
         self.ability_lists = {u: lst(a.get("Abilities"), ",") for u, a in ab.items()}
+        # Resources the game keeps off the action resource panel (MoonSickle, HolyAvenger: attunement
+        # markers) are hidden as well; spell slots are kept for the slot table.
+        _, res = layered("ActionResourceDefinitions/ActionResourceDefinitions.lsx", "ActionResourceDefinition")
+        self.res_hidden |= {r["Name"] for r in res.values() if r.get("ShowOnActionResourcePanel") != "true"
+                            and r["Name"] not in ("SpellSlot", "WarlockSpellSlot")}
         self.spells = {}
         self.skills = {}
 
     def spell_ref(self, sid):
         if sid not in self.spells:
-            self.spells[sid] = {"name": name_of(self.db, sid), "level": int(self.fields(sid).get("Level") or 0),
-                                "link": sid in self.spell_ids}
+            f = self.fields(sid)
+            self.spells[sid] = {"name": name_of(self.db, sid), "level": int(f.get("Level") or 0),
+                                "link": sid in self.spell_ids, "desc": self.desc(f),
+                                # false for class actions (Turn Undead): no IsSpell flag
+                                "spell": "IsSpell" in f.get("SpellFlags", "")}
         return sid
+
+    @staticmethod
+    def desc(f, key="Description"):
+        h = (f.get(key) or "").split(";")[0]
+        prm = f.get(key + "Params", "")
+        return {"en": describe(h, prm, False), "ko": describe(h, prm, True)}
+
+    def maxhp(self, boosts):
+        return [x.strip() for x in MAXHP.findall(boosts or "") if "%" not in x]
 
     def skill_ref(self, s):
         if s not in self.skills:
@@ -82,7 +107,7 @@ class Sim(bcd.Builder):
         boosts, sel = p.get("Boosts", ""), p.get("Selectors", "")
         out = {"level": lvl or int(p["Level"]), "traits": [], "spells": [], "picks": [], "resources": [],
                "prof": [], "saves": re.findall(r"ProficiencyBonus\(SavingThrow,\s*(\w+)\)", boosts),
-               "feat": p.get("AllowImprovement") == "true"}
+               "feat": p.get("AllowImprovement") == "true", "maxhp": self.maxhp(boosts)}
         ids = re.findall(r"\bProficiency\((\w+)\)", boosts)
         for ps in lst(p.get("PassivesAdded")):
             f = self.fields(ps)
@@ -90,8 +115,9 @@ class Sim(bcd.Builder):
                 continue
             ids += re.findall(r"\bProficiency\((\w+)\)", f.get("Boosts", ""))
             out["saves"] += re.findall(r"ProficiencyBonus\(SavingThrow,\s*(\w+)\)", f.get("Boosts", ""))
+            out["maxhp"] += self.maxhp(f.get("Boosts"))
             if "IsHidden" not in f.get("Properties", ""):
-                out["traits"].append(name_of(self.db, ps))
+                out["traits"].append({"name": name_of(self.db, ps), "desc": self.desc(f)})
         out["prof"] = [self.term(x) for x in dict.fromkeys(ids) if x not in bcd.TOOLS]
         for lid in re.findall(r"AddSpells\(([\w-]+)", sel):
             out["spells"] += [self.spell_ref(s) for s in lst(self.slists.get(lid, {}).get("Spells"))]
@@ -104,7 +130,7 @@ class Sim(bcd.Builder):
             ids = lst(self.plists.get(lid, {}).get("Passives"), ",")
             for m in self.merged.get(lid, []):
                 ids += lst(m.get("Passives"), ",")
-            opts = [{"id": x, "name": name_of(self.db, x)} for x in dict.fromkeys(ids)
+            opts = [{**self.option(x), "maxhp": self.maxhp(self.fields(x).get("Boosts"))} for x in dict.fromkeys(ids)
                     if self.fields(x) and "IsHidden" not in self.fields(x).get("Properties", "")]
             label = self.selector_name.get((key, p.get("TableUUID"))) or self.selector_name.get((key, None))
             if opts:
@@ -133,7 +159,7 @@ class Sim(bcd.Builder):
         for lv, parts in sorted(by.items()):
             m = parts[0]
             for x in parts[1:]:
-                for k in ("traits", "spells", "picks", "resources", "prof", "saves"):
+                for k in ("traits", "spells", "picks", "resources", "prof", "saves", "maxhp"):
                     m[k] += x[k]
                 m["feat"] = m["feat"] or x["feat"]
             out.append(m)
@@ -156,6 +182,7 @@ class Sim(bcd.Builder):
                 nodes += [p for p in self.race_tables.get(r.get("ProgressionTableUUID"), [])
                           if int(p["Level"]) <= MAX_LEVEL]
             out.append({"race": race_id, "race_name": self.name(race),
+                        "desc": self.name(sub or race, "Description"),
                         "sub": sub["UUID"] if sub else None, "sub_name": self.name(sub) if sub else None,
                         "levels": self.merged_nodes(nodes)})
         out.sort(key=lambda s: (s["race_name"]["en"], (s["sub_name"] or {}).get("en", "")))
@@ -172,7 +199,7 @@ class Sim(bcd.Builder):
         for u, c in bases.items():
             t = c["ProgressionTableUUID"]
             classes.append({
-                "id": c["Name"], "uuid": u, "name": self.name(c),
+                "id": c["Name"], "uuid": u, "name": self.name(c), "desc": self.name(c, "Description"),
                 "hp": {"base": int(c.get("BaseHp", 0)), "per_level": int(c.get("HpPerLevel", 0))},
                 "primary": bcd.ABILITY.get(int(c.get("PrimaryAbility", 0))),
                 "spellcasting": bcd.ABILITY.get(int(c.get("SpellCastingAbility", 0))),
@@ -182,7 +209,7 @@ class Sim(bcd.Builder):
                 "levels": self.table(t),
                 "multiclass": self.merged_nodes(self.multi.get(t, [])),
                 "subclasses": sorted(({
-                    "id": s["Name"], "name": self.name(s),
+                    "id": s["Name"], "name": self.name(s), "desc": self.name(s, "Description"),
                     "caster": float(s.get("MulticlassSpellcasterModifier") or 0),
                     "spellcasting": bcd.ABILITY.get(int(s.get("SpellCastingAbility", 0)))
                                     if s.get("MulticlassSpellcasterModifier") else None,
@@ -193,6 +220,16 @@ class Sim(bcd.Builder):
         return classes, self.species()
 
 
+def feat_passives(sim, f):
+    """A feat's PassivesAdded, plus a SelectPassives list with a single option (Tough: no real choice)."""
+    out = lst(f.get("PassivesAdded"))
+    for lid in re.findall(r"SelectPassives\(([\w-]+)", f.get("Selectors", "")):
+        opts = lst(sim.plists.get(lid, {}).get("Passives"), ",")
+        if len(opts) == 1:
+            out += opts
+    return out
+
+
 def main():
     sim = Sim()
     classes, species = sim.build()
@@ -201,6 +238,10 @@ def main():
     # species, spells and skills go in their own files: write() takes one list per file.
     write(DATA / "builder_species.json", "species", species)
     write(DATA / "builder_spells.json", "spells", [{"id": k, **v} for k, v in sorted(sim.spells.items())])
+    _, feats = layered("Feats/Feats.lsx", "Feat")
+    feat_hp = [{"id": f["Name"], "maxhp": hp} for f in feats.values()
+               if (hp := [x for ps in feat_passives(sim, f) for x in sim.maxhp(sim.fields(ps).get("Boosts"))])]
+    write(DATA / "builder_feat_hp.json", "feats", sorted(feat_hp, key=lambda f: f["id"]))
     write(DATA / "builder_skills.json", "skills", [{"id": k, "name": v} for k, v in sorted(sim.skills.items())])
     print(f"presets {len(presets())}, classes without a preset: {missing or 'none'}")
     print(f"multiclass level-1 nodes: {sum(bool(c['multiclass']) for c in classes)} of {len(classes)} classes")

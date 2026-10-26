@@ -226,3 +226,11 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
   .bld { grid-template-columns: 1fr; }
   .bld-summary { position: static; }
 }
+.chip.off { opacity: .4; cursor: not-allowed; }
+.bld-tip[title] { text-decoration: underline dotted var(--muted); cursor: help; }
+.bld-toast {
+  position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); max-width: calc(100% - 32px);
+  background: var(--text); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 14px;
+  pointer-events: none; z-index: 10;
+}
+.bld-toast[hidden] { display: none; }
