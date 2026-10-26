@@ -44,7 +44,7 @@ from subrace_data import NULL, PUB, UNPACKED, nodes  # noqa: E402
 OUT = REPO / "docs" / "data" / "species.json"
 # Character creation portraits of the subraces the mod adds (wiki screenshots, Race_<key>_Male/Female.png),
 # keyed by the shown Race node's Name. Copied to docs/portraits at 300px.
-FACES = REPO.parent / "bg3dnd.wiki" / "bg3dnd_race_faces" / "cropped"
+FACES = REPO / "assets" / "bg3dnd_race_faces" / "cropped"
 PORTRAIT_OUT = REPO / "docs" / "portraits"
 PORTRAITS = {"Eladrin": "ElfEladrin", "Elf_IceElf": "ElfIce", "ShadarKai": "ElfShadarKai",
              "HumanAasimar": "HumanAasimar", "Changeling": "HumanChangeling", "Goliath": "HumanGoliath",

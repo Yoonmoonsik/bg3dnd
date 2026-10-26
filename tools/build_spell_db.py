@@ -31,7 +31,7 @@ import stats  # noqa: E402
 from bg3paths import MOD, UNPACKED  # noqa: E402
 
 WIZARD_KHN = REPO / "Mods" / MOD / "Scripts" / "thoth" / "helpers" / "Wizard.khn"
-ICON_PNG = REPO.parent / "bg3dnd.wiki" / "bg3dnd_icons" / "bg3dnd_action" / "4_Readme_48"
+ICON_PNG = REPO / "assets" / "bg3dnd_icons" / "bg3dnd_action" / "4_Readme_48"
 OUT = REPO / "docs" / "data" / "spells.json"
 ICON_OUT = REPO / "docs" / "icons"
 VANILLA_ICON_DDS = UNPACKED / "Game" / "Public" / "Game" / "GUI" / "AssetsLowRes" / "Tooltips" / "Icons"
