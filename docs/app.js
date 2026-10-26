@@ -240,6 +240,7 @@ function applyLang() {
     const rest = links.filter(a => a.dataset.i18n !== "nav_home")
       .sort((a, b) => a.textContent.localeCompare(b.textContent, state.lang));
     [...links.filter(a => a.dataset.i18n === "nav_home"), ...rest].forEach(a => nav.appendChild(a));
+    nav.appendChild(nav.querySelector("[data-i18n=nav_builder]")); // Build Simulator is a tool, not a lookup: last
   }
   document.querySelectorAll("nav.pages a").forEach(a => {
     a.href = a.getAttribute("href").split("#")[0] + "#lang=" + state.lang;

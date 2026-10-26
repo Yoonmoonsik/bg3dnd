@@ -162,10 +162,12 @@ function apply() {
   const links = [...nav.querySelectorAll("a")];
   [...links.filter(x => x.dataset.i18n === "nav_home"),
    ...links.filter(x => x.dataset.i18n !== "nav_home").sort(byName)].forEach(x => nav.appendChild(x));
+  nav.appendChild(nav.querySelector("[data-i18n=nav_builder]")); // Build Simulator is a tool, not a lookup: last
   const cards = document.querySelector(".cards");
   [...cards.querySelectorAll("a.card")]
     .sort((x, y) => byName(x.querySelector(".card-title"), y.querySelector(".card-title")))
     .forEach(x => cards.appendChild(x));
+  cards.appendChild(cards.querySelector("[data-page=builder]"));
   cards.appendChild(cards.querySelector(".card.support"));
   document.querySelectorAll("nav.pages a, a.card").forEach(a => {
     a.href = a.getAttribute("href").split("#")[0] + "#lang=" + lang;
