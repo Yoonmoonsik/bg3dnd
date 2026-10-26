@@ -208,6 +208,10 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 .lv details.choice[open] summary { margin-bottom: 4px; }
 
 /* Build simulator */
+.bld-party { display: flex; gap: 24px; overflow-x: auto; align-items: start; }
+.bld-party > .bld { flex: 1 0 min(100%, 1000px); min-width: 0; }
+.bld-party > .bld + .bld { border-left: 1px solid var(--line); padding-left: 24px; }
+.bld-actions.bld-col { grid-column: 1 / -1; margin: 0; }
 .bld { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 16px; align-items: start; }
 .bld-card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; }
 .bld-card h2 { font-size: 16px; margin: 0 0 8px; }

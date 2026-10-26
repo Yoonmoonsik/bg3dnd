@@ -6,7 +6,7 @@ const T = {
     nav_home: "Home", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_classes: "Classes", nav_feats: "Feats",
     nav_fighting: "Fighting Styles", nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     footer: "Generated from the mod's game data.",
-    save: "Save JSON", load: "Load JSON", md: "Export Markdown", shot: "Save Screenshots", summary_suffix: "Summary", shot_failed: "Could not make the screenshots.", reset: "Reset",
+    save: "Save JSON", load: "Load JSON", md: "Export Markdown", shot: "Save Screenshots", add_char: "Add Character to Party", del_char: "Remove Character", char_name: "Character Name", summary_suffix: "Summary", shot_failed: "Could not make the screenshots.", reset: "Reset",
     loaded: "Build loaded.", bad_file: "This file is not a saved build.", missing: n => `Not in the current data, skipped: ${n}`,
     character: "Character", build_name: "Build Name", species: "Species", background: "Background", abilities: "Ability Scores",
     points: (u, all) => `Points ${u} / ${all}`, preset: "Class preset", over: "Over the 27-point budget",
@@ -30,7 +30,7 @@ const T = {
     nav_home: "홈", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_classes: "직업", nav_feats: "재주",
     nav_fighting: "전투 방식", nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     footer: "모드 게임 데이터에서 생성했습니다.",
-    save: "JSON 저장", load: "JSON 불러오기", md: "마크다운 내보내기", shot: "스크린샷 저장", summary_suffix: "요약", shot_failed: "스크린샷을 만들지 못했습니다.", reset: "초기화",
+    save: "JSON 저장", load: "JSON 불러오기", md: "마크다운 내보내기", shot: "스크린샷 저장", add_char: "파티에 캐릭터 추가", del_char: "캐릭터 삭제", char_name: "캐릭터 이름", summary_suffix: "요약", shot_failed: "스크린샷을 만들지 못했습니다.", reset: "초기화",
     loaded: "빌드를 불러왔습니다.", bad_file: "저장한 빌드 파일이 아닙니다.", missing: n => `현재 데이터에 없어 건너뛴 항목: ${n}`,
     character: "캐릭터", build_name: "빌드 이름", species: "종족", background: "배경", abilities: "능력치",
     points: (u, all) => `포인트 ${u} / ${all}`, preset: "직업 기본 분배", over: "27포인트를 넘었습니다",
@@ -64,7 +64,10 @@ const ASI = "AbilityScoreIncrease";
 
 let D = {};
 const state = { lang: "en" };
-let build = blank();
+// The party: up to MAX_PARTY builds side by side. `build` is the one being rendered or edited.
+const MAX_PARTY = 4;
+let party = [blank()];
+let build = party[0];
 
 const t = k => T[state.lang][k] ?? k;
 const L = o => (o && (o[state.lang] || o.en)) || "";
@@ -290,6 +293,7 @@ function characterBlock() {
     `<option value="${esc(v)}" ${v === cur ? "selected" : ""}>${esc(n)}</option>`).join("")}</select>`;
   const b = bg();
   return `<section class="bld-card"><h2>${esc(t("character"))}</h2>
+    <label class="bld-row"><span>${esc(t("char_name"))}</span><input type="text" data-act="charname" maxlength="40" value="${esc(build.charName || "")}"></label>
     <label class="bld-row"><span>${esc(t("build_name"))}</span><input type="text" data-act="name" maxlength="60" value="${esc(build.name || "")}"></label>
     <label class="bld-row"><span>${esc(t("species"))}</span>${sel("species", sp, build.species, L(spec()?.desc))}</label>
     <label class="bld-row"><span>${esc(t("background"))}</span>${sel("background", bgs, build.background, L(b?.desc))}</label>
@@ -447,7 +451,9 @@ function summaryBlock(r) {
   </dl>${r.casterLevel != null ? `<p class="mini">${esc(t("slot_note"))}</p>` : ""}`;
 }
 
-function render() {
+// One character's column: its action buttons, the steps and the summary.
+function column(c) {
+  build = party[c];
   const r = derive();
   const classes = D.classes.slice().sort((a, b) => L(a.name).localeCompare(L(b.name), state.lang));
   let html = characterBlock() + (build.levels.length ? abilityBlock(r) : "");
@@ -456,10 +462,23 @@ function render() {
     ${classes.map(c => `<option value="${c.id}" ${c.id === build.levels[build.levels.length - 1]?.class ? "selected" : ""}>${esc(L(c.name))}</option>`).join("")}</select>
     <button type="button" class="ghost" data-act="add">${esc(t("add_level"))}</button>` : ""}
     ${build.levels.length ? `<button type="button" class="ghost" data-act="remove">${esc(t("remove_level"))}</button>` : ""}</section>`;
-  const open = [...document.querySelectorAll("#steps details")].map(d => d.open);
-  document.getElementById("steps").innerHTML = html;
-  document.getElementById("summary").innerHTML = summaryBlock(r);
-  if (open.length) document.querySelectorAll("#steps details").forEach((d, i) => { if (i < open.length && open[i]) d.open = true; });
+  const bar = `<section class="search bld-actions bld-col">
+    <button type="button" class="ghost" data-act="save">${esc(t("save"))}</button>
+    <label class="ghost bld-file"><span>${esc(t("load"))}</span><input type="file" data-act="load" accept=".json,application/json" hidden></label>
+    <button type="button" class="ghost" data-act="md">${esc(t("md"))}</button>
+    <button type="button" class="ghost" data-act="shot">${esc(t("shot"))}</button>
+    <button type="button" class="ghost" data-act="reset">${esc(t("reset"))}</button>
+    ${party.length > 1 ? `<button type="button" class="ghost" data-act="delchar">${esc(t("del_char"))}</button>` : ""}</section>`;
+  return `<div class="bld" data-c="${c}">${bar}<div class="bld-steps">${html}</div><aside class="bld-summary">${summaryBlock(r)}</aside></div>`;
+}
+
+function render() {
+  const cur = build;
+  const open = [...document.querySelectorAll("#party details")].map(d => d.open);
+  document.getElementById("party").innerHTML = party.map((_, c) => column(c)).join("");
+  if (open.length) document.querySelectorAll("#party details").forEach((d, i) => { if (i < open.length && open[i]) d.open = true; });
+  document.getElementById("addchar").disabled = party.length >= MAX_PARTY;
+  build = party.includes(cur) ? cur : party[0];
   save();
 }
 
@@ -481,13 +500,20 @@ function dropFrom(i) {
 
 function onClick(ev) {
   const b = ev.target.closest("[data-act]");
-  if (!b || b.tagName === "SELECT") return;
+  if (!b || b.tagName === "SELECT" || b.tagName === "INPUT") return;
   if (b.dataset.why) { toast(b.dataset.why); return; }
+  const col = b.closest(".bld");
+  build = party[+col.dataset.c];
   const act = b.dataset.act;
-  if (act === "inc" || act === "dec") build.base[b.dataset.ab] += act === "inc" ? 1 : -1;
+  if (act === "save") { download(fileName("json"), JSON.stringify(build, null, 2), "application/json"); return; }
+  if (act === "md") { download(fileName("md"), markdown(), "text/markdown"); return; }
+  if (act === "shot") { screenshots(col, build).catch(() => toast(t("shot_failed"))); return; }
+  if (act === "reset") party[+col.dataset.c] = build = blank();
+  else if (act === "delchar") party.splice(+col.dataset.c, 1);
+  else if (act === "inc" || act === "dec") build.base[b.dataset.ab] += act === "inc" ? 1 : -1;
   else if (act === "preset") Object.assign(build.base, cls(build.levels[0].class).preset);
   else if (act === "add") {
-    const c = document.querySelector('[data-act="addclass"]').value;
+    const c = col.querySelector('[data-act="addclass"]').value;
     build.levels.push({ class: c });
     if (build.levels.length === 1 && cls(c).preset) Object.assign(build.base, cls(c).preset);
   } else if (act === "remove") {
@@ -530,10 +556,26 @@ function syncFeat(key) {
   if (f) f[m[2]] = m[2] === "choices" ? picked(key).map(Number) : picked(key);
 }
 
-function onChange(ev) {
+async function onChange(ev) {
   const s = ev.target, act = s.dataset.act;
   if (!act) return;
+  const c = +s.closest(".bld").dataset.c;
+  build = party[c];
+  if (act === "load") {
+    const file = s.files[0], msg = document.getElementById("msg");
+    if (!file) return;
+    try {
+      const missing = load(JSON.parse(await file.text()));
+      party[c] = build;
+      msg.textContent = t("loaded") + (missing.length ? " " + t("missing")(missing.join(", ")) : "");
+    } catch (e) {
+      msg.textContent = t("bad_file");
+    }
+    render();
+    return;
+  }
   if (act === "name") build.name = s.value.trim();
+  else if (act === "charname") build.charName = s.value.trim();
   else if (act === "species") { build.species = s.value || null; dropRacePicks(); }
   else if (act === "background") build.background = s.value || null;
   else if (act === "class") {
@@ -570,7 +612,7 @@ function dropRacePicks() {
 // ---- save / load / markdown ---------------------------------------------------------------------
 
 function save() {
-  try { localStorage.setItem("bg3dnd-build", JSON.stringify(build)); } catch (e) { /* storage blocked */ }
+  try { localStorage.setItem("bg3dnd-build", JSON.stringify(party)); } catch (e) { /* storage blocked */ }
 }
 
 function download(name, text, type) {
@@ -585,10 +627,10 @@ function download(name, text, type) {
 function fileName(ext, suffix) {
   const r = derive(), counts = {};
   r.tl.forEach(e => { counts[e.c.id] = e.k; });
-  // Species-Class12-Build name, in the page language (기스양키-파이터12-…); spaces and symbols dropped.
+  // Character-Species-Class12-Build name, in the page language (레이젤-기스양키-파이터12-…); spaces and symbols dropped.
   const part = s => (s || "").replace(/[^\p{L}\p{N}]+/gu, "");
   const sp = spec();
-  const parts = [sp && part(L(sp.sub_name) || L(sp.race_name)),
+  const parts = [part(build.charName), sp && part(L(sp.sub_name) || L(sp.race_name)),
     ...Object.entries(counts).map(([id, k]) => part(L(cls(id).name)) + k), part(build.name), suffix].filter(Boolean);
   return (parts.join("-") || "bg3dnd-build") + "." + ext;
 }
@@ -596,7 +638,7 @@ function fileName(ext, suffix) {
 // Screenshots (html2canvas, loaded on first use): the character card through the last level without
 // the add/remove controls, and the summary on its own, named <build>-Summary.
 let h2c;
-async function screenshots() {
+async function screenshots(col, me) {
   h2c = h2c || new Promise((ok, fail) => {
     const s = document.createElement("script");
     s.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
@@ -613,8 +655,10 @@ async function screenshots() {
     a.download = name;
     a.click();
   };
-  await save(document.getElementById("steps"), fileName("png"));
-  await save(document.getElementById("summary"), fileName("png", t("summary_suffix")));
+  build = me;
+  const names = [fileName("png"), fileName("png", t("summary_suffix"))];
+  await save(col.querySelector(".bld-steps"), names[0]);
+  await save(col.querySelector(".bld-summary"), names[1]);
 }
 
 function load(obj) {
@@ -634,6 +678,7 @@ function load(obj) {
   Object.entries(obj.subclass || {}).forEach(([c, s]) => { if (sub(cls(c), s)) b.subclass[c] = s; else if (s) missing.push(s); });
   b.picks = obj.picks && typeof obj.picks === "object" ? obj.picks : {};
   b.name = typeof obj.name === "string" ? obj.name : "";
+  b.charName = typeof obj.charName === "string" ? obj.charName : "";
   build = b;
   return missing;
 }
@@ -713,32 +758,19 @@ function readLang() {
 }
 
 function bind() {
-  document.getElementById("steps").addEventListener("click", onClick);
-  document.getElementById("steps").addEventListener("change", onChange);
+  const box = document.getElementById("party");
+  box.addEventListener("click", onClick);
+  box.addEventListener("change", onChange);
+  document.getElementById("addchar").addEventListener("click", () => {
+    if (party.length < MAX_PARTY) party.push(blank());
+    render();
+  });
   document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => {
     state.lang = b.dataset.lang;
     try { localStorage.setItem("bg3dnd-lang", state.lang); } catch (e) { /* storage blocked */ }
     applyLang();
     render();
   }));
-  const msg = document.getElementById("msg");
-  document.getElementById("save").addEventListener("click", () =>
-    download(fileName("json"), JSON.stringify(build, null, 2), "application/json"));
-  document.getElementById("md").addEventListener("click", () => download(fileName("md"), markdown(), "text/markdown"));
-  document.getElementById("shot").addEventListener("click", () => screenshots().catch(() => toast(t("shot_failed"))));
-  document.getElementById("new").addEventListener("click", () => { build = blank(); msg.textContent = ""; render(); });
-  document.getElementById("load").addEventListener("change", async ev => {
-    const file = ev.target.files[0];
-    ev.target.value = "";
-    if (!file) return;
-    try {
-      const missing = load(JSON.parse(await file.text()));
-      msg.textContent = t("loaded") + (missing.length ? " " + t("missing")(missing.join(", ")) : "");
-    } catch (e) {
-      msg.textContent = t("bad_file");
-    }
-    render();
-  });
 }
 
 async function init() {
@@ -753,9 +785,12 @@ async function init() {
         skills: Object.fromEntries(sk.skills.map(s => [s.id, s.name])) };
   document.getElementById("generated").textContent = b.generated ? "· " + b.generated : "";
   try {
+    // Saved as the party array; an older save holds one build.
     const saved = JSON.parse(localStorage.getItem("bg3dnd-build") || "null");
-    if (saved) load(saved);
-  } catch (e) { build = blank(); }
+    if (saved) party = (Array.isArray(saved) ? saved : [saved]).slice(0, MAX_PARTY).map(x => { load(x); return build; });
+  } catch (e) { party = [blank()]; }
+  if (!party.length) party = [blank()];
+  build = party[0];
   applyLang();
   bind();
   render();
