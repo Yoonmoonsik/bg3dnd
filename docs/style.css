@@ -53,6 +53,9 @@ button, input { font: inherit; color: inherit; }
 .link:hover { text-decoration: underline; }
 .pages { display: flex; gap: 12px; }
 .pages .current { color: var(--text); font-weight: 600; }
+.support-nav { font-weight: 600; }
+/* Support links: Ko-fi in English, Toonation in Korean */
+html:lang(ko) [data-support-lang="en"], html:not(:lang(ko)) [data-support-lang="ko"] { display: none; }
 .lang { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 .lang button { border: 0; background: transparent; padding: 5px 10px; cursor: pointer; font-size: 13px; }
 .lang button[aria-pressed="true"] { background: var(--accent); color: var(--chip-on-text); }
