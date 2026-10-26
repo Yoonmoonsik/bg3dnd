@@ -52,6 +52,8 @@ const T = {
 };
 
 const ABILITIES = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"];
+// Ability choices always in Strength … Charisma order, whatever the page language.
+const byAbility = list => ABILITIES.filter(a => list.includes(a));
 const AB_NAME = {
   Strength: ["Strength", "근력"], Dexterity: ["Dexterity", "민첩"], Constitution: ["Constitution", "건강"],
   Intelligence: ["Intelligence", "지능"], Wisdom: ["Wisdom", "지혜"], Charisma: ["Charisma", "매력"],
@@ -131,7 +133,7 @@ function derive() {
               spells: [], choices: [], feats: [], res: new Map(), slots: {}, pact: null, casterLevel: null };
   const b = bg();
   if (b) b.skills.forEach(s => r.skills.add(s.id));
-  const hpExprs = [];
+  const hpExprs = [], resList = [];
   tl.forEach(e => {
     e.nodes.forEach(({ src, node }) => {
       hpExprs.push(...(node.maxhp || []));
@@ -139,11 +141,7 @@ function derive() {
       node.prof.forEach(p => r.prof.set(p.en, p));
       node.traits.forEach(x => r.traits.push(x));
       node.spells.forEach(x => r.spells.push(x));
-      node.resources.forEach(x => {
-        if (/SpellSlot$/.test(x.id)) return;
-        const key = x.id, cur = r.res.get(key);
-        r.res.set(key, { name: x.name, count: (cur ? cur.count : 0) + x.count });
-      });
+      resList.push(...node.resources);
       node.picks.forEach((p, j) => {
         const v = picked(pickKey(src, j));
         if (p.kind === "ability") {
@@ -153,7 +151,7 @@ function derive() {
         else if (p.kind === "expertise") v.forEach(s => r.expertise.add(s));
         else if (p.kind === "passive") v.forEach(id => {
           const o = p.options.find(o => o.id === id);
-          if (o) { r.choices.push(o); hpExprs.push(...(o.maxhp || [])); (o.skills || []).forEach(s => r.skills.add(s)); }
+          if (o) { r.choices.push(o); hpExprs.push(...(o.maxhp || [])); resList.push(...(o.resources || [])); (o.skills || []).forEach(s => r.skills.add(s)); }
         });
         else v.forEach(s => r.spells.push(s));
       });
@@ -163,6 +161,7 @@ function derive() {
       const fd = feat(f.id);
       r.feats.push(fd);
       hpExprs.push(...(D.featHp[fd.id] || []));
+      resList.push(...(D.featRes[fd.id] || []));
       (f.abilities || []).forEach((a, j) => { if (a) bonus[a] += f.id === ASI && f.mode !== "split" ? 2 : 1; });
       (f.skills || []).forEach(s => r.skills.add(s));
       (f.expertise || []).forEach(s => r.expertise.add(s));
@@ -180,6 +179,12 @@ function derive() {
   tl.forEach(e => { classLevels[e.c.id] = e.k; });
   r.hpBonus = hpExprs.reduce((s, x) => s + evalHp(x, tl.length, classLevels, r.scores), 0);
   r.hp += r.hpBonus;
+  // Action resources of progressions, granted and picked passives and feats; IF() conditions on the finished build.
+  resList.forEach(x => {
+    if (/SpellSlot$/.test(x.id) || !resCond(x.if, tl.length, r.scores)) return;
+    const cur = r.res.get(x.id);
+    r.res.set(x.id, { name: x.name, count: (cur ? cur.count : 0) + x.count });
+  });
   // Spell slots: one spellcasting class -> its own grants; two or more -> the multiclass caster level
   // on the full caster (Wizard) table. Pact slots are always their own.
   const casters = {};
@@ -209,6 +214,17 @@ function derive() {
   const top = Math.max(0, ...Object.keys(pact).map(Number));
   if (top) r.pact = { slot: top, count: pact[top] };
   return r;
+}
+
+// A resource boost's IF(): AbilityGreaterThan and CharacterLevelGreaterThan are read; any other
+// condition counts as not met rather than being guessed.
+function resCond(c, level, scores) {
+  if (!c) return true;
+  let m = /^AbilityGreaterThan\('(\w+)',(\d+),context\.Source\)$/.exec(c);
+  if (m) return scores[m[1]] > +m[2];
+  m = /^CharacterLevelGreaterThan\((\d+)\)$/.exec(c);
+  if (m) return level > +m[1];
+  return false;
 }
 
 // An IncreaseMaxHP argument: Level, ClassLevel(X), <Ability>Modifier, numbers and + - * /.
@@ -297,7 +313,7 @@ function checklist(key, options, count, label, nameOf, { blocked, descOf } = {})
 function abilityPick(key, p) {
   const v = picked(key);
   const one = (j) => `<select data-act="abpick" data-key="${esc(key)}" data-j="${j}"><option value="">${esc(t("choose"))}</option>
-    ${p.options.map(a => `<option value="${a}" ${v[j] === a ? "selected" : ""} ${v[1 - j] === a ? "disabled" : ""}>${esc(ab(a))}</option>`).join("")}</select>`;
+    ${byAbility(p.options).map(a => `<option value="${a}" ${v[j] === a ? "selected" : ""} ${v[1 - j] === a ? "disabled" : ""}>${esc(ab(a))}</option>`).join("")}</select>`;
   return `<div class="bld-pick">${esc(t("ability"))}: +${p.bonuses[0]} ${one(0)} +${p.bonuses[1]} ${one(1)}</div>`;
 }
 
@@ -306,8 +322,10 @@ function nodeBlock(src, node, r, e) {
   const got = [...node.traits.map(x => [L(x.name), L(x.desc)]), ...node.spells.map(id => [spellName(id), spellDesc(id)])];
   if (got.length) parts.push(`<p class="mini">${esc(t("granted"))}: ${tipSpans(got)}</p>`);
   // Action resources this level adds (Superiority Die +1 …); spell slots are in the summary.
-  const res = node.resources.filter(x => !/SpellSlot$/.test(x.id));
-  if (res.length) parts.push(`<p class="mini">${esc(t("resources"))}: ${res.map(x => `${esc(L(x.name))} +${x.count}`).join(", ")}</p>`);
+  const res = new Map();
+  node.resources.filter(x => !/SpellSlot$/.test(x.id) && resCond(x.if, r.tl.length, r.scores))
+    .forEach(x => res.set(x.id, { name: x.name, count: (res.get(x.id)?.count || 0) + x.count }));
+  if (res.size) parts.push(`<p class="mini">${esc(t("resources"))}: ${[...res.values()].map(x => `${esc(L(x.name))} +${x.count}`).join(", ")}</p>`);
   if (node.saves.length && !e.multi) parts.push(`<p class="mini">${esc(t("save_prof"))}: ${node.saves.map(ab).map(esc).join(", ")}</p>`);
   node.picks.forEach((p, j) => {
     const key = pickKey(src, j);
@@ -368,7 +386,7 @@ function featBlock(i, r) {
       <button type="button" class="chip" data-act="asimode" data-i="${i}" data-mode="split" aria-pressed="${f.mode === "split"}">${esc(t("asi_split"))}</button></div>`;
     const v = f.abilities || [];
     html += `<div class="bld-pick">${esc(t("feat_abilities"))}: ${[...Array(n).keys()].map(j => `<select data-act="featab" data-i="${i}" data-j="${j}">
-      <option value="">${esc(t("choose"))}</option>${fd.abilities.map(a => `<option value="${a}" ${v[j] === a ? "selected" : ""} ${v[1 - j] === a && n === 2 ? "disabled" : ""}>${esc(ab(a))}</option>`).join("")}</select>`).join(" ")}</div>`;
+      <option value="">${esc(t("choose"))}</option>${byAbility(fd.abilities).map(a => `<option value="${a}" ${v[j] === a ? "selected" : ""} ${v[1 - j] === a && n === 2 ? "disabled" : ""}>${esc(ab(a))}</option>`).join("")}</select>`).join(" ")}</div>`;
   }
   const fkey = k => `f:${i}:${k}`;
   if (fd.choices.length) {
@@ -705,6 +723,7 @@ async function init() {
     ["builder", "builder_species", "builder_spells", "builder_skills", "backgrounds", "feats", "builder_feat_hp"].map(get));
   D = { classes: b.classes, species: sp.species, backgrounds: bgs.backgrounds, feats: fts.feats,
         featHp: Object.fromEntries(fhp.feats.map(f => [f.id, f.maxhp])),
+        featRes: Object.fromEntries(fhp.feats.map(f => [f.id, f.resources || []])),
         spells: Object.fromEntries(spl.spells.map(s => [s.id, s])),
         skills: Object.fromEntries(sk.skills.map(s => [s.id, s.name])) };
   document.getElementById("generated").textContent = b.generated ? "· " + b.generated : "";

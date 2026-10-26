@@ -131,6 +131,7 @@ class Sim(bcd.Builder):
             for m in self.merged.get(lid, []):
                 ids += lst(m.get("Passives"), ",")
             opts = [{**self.option(x), "maxhp": self.maxhp(self.fields(x).get("Boosts")),
+                     "resources": self.resources(self.fields(x).get("Boosts")),
                      "skills": [self.skill_ref(k) for k in
                                 re.findall(r"ProficiencyBonus\(Skill,\s*(\w+)\)", self.fields(x).get("Boosts", ""))]}
                     for x in dict.fromkeys(ids)
@@ -146,11 +147,25 @@ class Sim(bcd.Builder):
         for lid, _, a, b in re.findall(r"SelectAbilityBonus\(([\w-]+),(\w+),(\d+),(\d+)\)", sel):
             out["picks"].append({"kind": "ability", "bonuses": [int(a), int(b)],
                                  "options": self.ability_lists.get(lid, ABILITIES)})
-        for r, n, lv in re.findall(r"ActionResource\((\w+),([\d.]+),(\d+)\)", boosts):
-            if bcd.SKIP_RESOURCES.match(r) or r in self.res_hidden:
-                continue
-            out["resources"].append({"id": r, "name": self.res_name.get(r, {"en": r, "ko": r}),
-                                     "count": float(n) if "." in n else int(n), "slot": int(lv)})
+        # Granted passives add their resources too; spell slots stay the node's own (the slot tables).
+        out["resources"] = self.resources(boosts) + [x for ps in lst(p.get("PassivesAdded"))
+                                                     for x in self.resources(self.fields(ps).get("Boosts"))
+                                                     if not x["id"].endswith("SpellSlot")]
+        return out
+
+    def resources(self, boosts):
+        """ActionResource(...) boosts shown on the action resource panel; an IF(...) condition is kept as "if"."""
+        out = []
+        for part in (boosts or "").split(";"):
+            cond = re.match(r"\s*IF\((.*)\):", part)
+            for r, n, lv in re.findall(r"ActionResource\((\w+),([\d.]+),(\d+)\)", part):
+                if bcd.SKIP_RESOURCES.match(r) or r in self.res_hidden:
+                    continue
+                x = {"id": r, "name": self.res_name.get(r, {"en": r, "ko": r}),
+                     "count": float(n) if "." in n else int(n), "slot": int(lv)}
+                if cond:
+                    x["if"] = cond.group(1)
+                out.append(x)
         return out
 
     def merged_nodes(self, nodes):
@@ -248,8 +263,14 @@ def main():
     write(DATA / "builder_species.json", "species", species)
     write(DATA / "builder_spells.json", "spells", [{"id": k, **v} for k, v in sorted(sim.spells.items())])
     _, feats = layered("Feats/Feats.lsx", "Feat")
-    feat_hp = [{"id": f["Name"], "maxhp": hp} for f in feats.values()
-               if (hp := [x for ps in feat_passives(sim, f) for x in sim.maxhp(sim.fields(ps).get("Boosts"))])]
+    # IncreaseMaxHP and action resources of a feat's own passives (Tough, Martial Adept's Superiority Die).
+    feat_hp = []
+    for f in feats.values():
+        boosts = [sim.fields(ps).get("Boosts") for ps in feat_passives(sim, f)]
+        hp = [x for b in boosts for x in sim.maxhp(b)]
+        res = [x for b in boosts for x in sim.resources(b)]
+        if hp or res:
+            feat_hp.append({"id": f["Name"], "maxhp": hp, "resources": res})
     write(DATA / "builder_feat_hp.json", "feats", sorted(feat_hp, key=lambda f: f["id"]))
     write(DATA / "builder_skills.json", "skills", [{"id": k, "name": v} for k, v in sorted(sim.skills.items())])
     print(f"presets {len(presets())}, classes without a preset: {missing or 'none'}")

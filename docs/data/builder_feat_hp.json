@@ -1,9 +1,100 @@
 {
-  "generated": "2026-10-26 124ff724",
+  "generated": "2026-10-26 b26b6878",
   "feats": [
     {
+      "id": "DragonFear",
+      "maxhp": [],
+      "resources": [{"id": "BreathWeapon", "name": {"en": "Breath Weapon", "ko": "숨결 무기"}, "count": 1, "slot": 0}]
+    },
+    {
+      "id": "EmberOfTheFireGiant",
+      "maxhp": [],
+      "resources": [{"id": "SearingIgnition", "name": {"en": "Searing Ignition", "ko": "작열의 점화"}, "count": 2, "slot": 0}, {"id": "SearingIgnition", "name": {"en": "Searing Ignition", "ko": "작열의 점화"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "SearingIgnition", "name": {"en": "Searing Ignition", "ko": "작열의 점화"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "FairyTrickster",
+      "maxhp": [],
+      "resources": [{"id": "FairyTrickster", "name": {"en": "Flustering Strike", "ko": "당황시키는 일격"}, "count": 2, "slot": 0}, {"id": "FairyTrickster", "name": {"en": "Flustering Strike", "ko": "당황시키는 일격"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "FairyTrickster", "name": {"en": "Flustering Strike", "ko": "당황시키는 일격"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "FuryOfTheFrostGiant",
+      "maxhp": [],
+      "resources": [{"id": "FrigidRetaliation", "name": {"en": "Frigid Retaliation", "ko": "냉기의 보복"}, "count": 2, "slot": 0}, {"id": "FrigidRetaliation", "name": {"en": "Frigid Retaliation", "ko": "냉기의 보복"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "FrigidRetaliation", "name": {"en": "Frigid Retaliation", "ko": "냉기의 보복"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "GenieMagic",
+      "maxhp": [],
+      "resources": [{"id": "SpellSlot", "name": {"en": "Spell Slot", "ko": "주문 슬롯"}, "count": 2, "slot": 1}, {"id": "SpellSlot", "name": {"en": "Spell Slot", "ko": "주문 슬롯"}, "count": 1, "slot": 2}]
+    },
+    {
+      "id": "GraveKeeper",
+      "maxhp": [],
+      "resources": [{"id": "ChannelDivinity", "name": {"en": "Channel Divinity", "ko": "신성한 권능"}, "count": 1, "slot": 0}]
+    },
+    {
+      "id": "GuileOfTheCloudGiant",
+      "maxhp": [],
+      "resources": [{"id": "CloudyEscape", "name": {"en": "Cloudy Escape", "ko": "구름 탈출"}, "count": 2, "slot": 0}, {"id": "CloudyEscape", "name": {"en": "Cloudy Escape", "ko": "구름 탈출"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "CloudyEscape", "name": {"en": "Cloudy Escape", "ko": "구름 탈출"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "Healer",
+      "maxhp": [],
+      "resources": [{"id": "Healer", "name": {"en": "Healer's Kit", "ko": "치유 도구"}, "count": 2, "slot": 0}, {"id": "Healer", "name": {"en": "Healer's Kit", "ko": "치유 도구"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "Healer", "name": {"en": "Healer's Kit", "ko": "치유 도구"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "KeennessOfTheStoneGiant",
+      "maxhp": [],
+      "resources": [{"id": "StoneThrow", "name": {"en": "Stone Throw", "ko": "돌 던지기"}, "count": 2, "slot": 0}, {"id": "StoneThrow", "name": {"en": "Stone Throw", "ko": "돌 던지기"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "StoneThrow", "name": {"en": "Stone Throw", "ko": "돌 던지기"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "Lucky",
+      "maxhp": [],
+      "resources": [{"id": "LuckPoint", "name": {"en": "Luck Point(s)", "ko": "행운 포인트"}, "count": 2, "slot": 0}, {"id": "LuckPoint", "name": {"en": "Luck Point(s)", "ko": "행운 포인트"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "LuckPoint", "name": {"en": "Luck Point(s)", "ko": "행운 포인트"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "MageSlayer",
+      "maxhp": [],
+      "resources": [{"id": "MageSlayer", "name": {"en": "Guarded Mind", "ko": "수호받는 정신"}, "count": 1, "slot": 0}]
+    },
+    {
+      "id": "MartialAdept",
+      "maxhp": [],
+      "resources": [{"id": "SuperiorityDie", "name": {"en": "Superiority Die", "ko": "우월성 주사위"}, "count": 1, "slot": 0}]
+    },
+    {
+      "id": "MetamagicAdept",
+      "maxhp": [],
+      "resources": [{"id": "SorceryPoint", "name": {"en": "Sorcery Point(s)", "ko": "소서리 포인트"}, "count": 2, "slot": 0}]
+    },
+    {
+      "id": "Poisoner",
+      "maxhp": [],
+      "resources": [{"id": "Poisoner", "name": {"en": "Poisoner's Kit", "ko": "독살 도구"}, "count": 2, "slot": 0}, {"id": "Poisoner", "name": {"en": "Poisoner's Kit", "ko": "독살 도구"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "Poisoner", "name": {"en": "Poisoner's Kit", "ko": "독살 도구"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "PurpleDragonCommandant",
+      "maxhp": [],
+      "resources": [{"id": "EncourageAlly", "name": {"en": "Encourage Ally", "ko": "아군 격려"}, "count": 2, "slot": 0}, {"id": "EncourageAlly", "name": {"en": "Encourage Ally", "ko": "아군 격려"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "EncourageAlly", "name": {"en": "Encourage Ally", "ko": "아군 격려"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "SoulOfTheStormGiant",
+      "maxhp": [],
+      "resources": [{"id": "MaelstromAura", "name": {"en": "Maelstrom Aura", "ko": "소용돌이 오라"}, "count": 2, "slot": 0}, {"id": "MaelstromAura", "name": {"en": "Maelstrom Aura", "ko": "소용돌이 오라"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "MaelstromAura", "name": {"en": "Maelstrom Aura", "ko": "소용돌이 오라"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "SpellfireSpark",
+      "maxhp": [],
+      "resources": [{"id": "SacredFlame", "name": {"en": "Spellfire Flame", "ko": "주문화염 불길"}, "count": 2, "slot": 0}, {"id": "SacredFlame", "name": {"en": "Spellfire Flame", "ko": "주문화염 불길"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "SacredFlame", "name": {"en": "Spellfire Flame", "ko": "주문화염 불길"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
+      "id": "StrikeOfTheGiants",
+      "maxhp": [],
+      "resources": [{"id": "StrikeOfTheGiants", "name": {"en": "Strike of the Giants", "ko": "거인의 일격"}, "count": 2, "slot": 0}, {"id": "StrikeOfTheGiants", "name": {"en": "Strike of the Giants", "ko": "거인의 일격"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(4)"}, {"id": "StrikeOfTheGiants", "name": {"en": "Strike of the Giants", "ko": "거인의 일격"}, "count": 1, "slot": 0, "if": "CharacterLevelGreaterThan(8)"}]
+    },
+    {
       "id": "Tough",
-      "maxhp": ["Level*2"]
+      "maxhp": ["Level*2"],
+      "resources": []
     }
   ]
 }
