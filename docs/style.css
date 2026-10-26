@@ -157,6 +157,10 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 .card-count { font-size: 34px; font-weight: 700; color: var(--accent); line-height: 1; }
 .card-title { font-size: 18px; font-weight: 600; }
 .card-text { color: var(--muted); font-size: 14px; }
+.card.support:hover { border-color: var(--line); }
+.support-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+.support-links a { padding: 6px 12px; border: 1px solid var(--accent); border-radius: 6px; color: var(--accent); text-decoration: none; font-weight: 600; }
+.support-links a:hover { background: var(--accent); color: var(--bg); }
 
 /* Feat link with a hover preview (background page) */
 .feat-link { position: relative; color: var(--accent); text-decoration: none; }
