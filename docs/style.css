@@ -206,3 +206,23 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 .detail p.lore { white-space: normal; }
 .lv details.choice summary { cursor: pointer; }
 .lv details.choice[open] summary { margin-bottom: 4px; }
+
+/* Build simulator */
+.bld { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 16px; align-items: start; }
+.bld-card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; }
+.bld-card h2 { font-size: 16px; margin: 0 0 8px; }
+.bld-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 6px 0; }
+.bld-row > span { min-width: 90px; color: var(--muted); }
+.bld select { max-width: 100%; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--text); }
+.bld-pick { margin: 6px 0; }
+.bld-pick .chips { margin-top: 6px; }
+.chip:disabled { opacity: .4; cursor: default; }
+.bld-ab td, .bld-ab th { padding: 4px 8px; }
+.bld-summary { position: sticky; top: 12px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.bld-summary h2 { font-size: 16px; margin: 0 0 8px; }
+.bld-actions { flex-wrap: wrap; }
+.bld-file { display: inline-flex; align-items: center; cursor: pointer; }
+@media (max-width: 900px) {
+  .bld { grid-template-columns: 1fr; }
+  .bld-summary { position: static; }
+}

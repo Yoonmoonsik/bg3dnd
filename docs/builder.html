@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D&amp;D 5.5e All-in-One BEYOND · Build Simulator</title>
+<link rel="icon" href="icons/Spell_Evocation_FireBolt.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1 data-i18n="title">Build Simulator</h1>
+    <span class="sub" data-i18n="subtitle">D&amp;D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod</span>
+  </div>
+  <div class="top-actions">
+    <nav class="pages">
+      <a class="link" href="./" data-i18n="nav_home">Home</a>
+      <a class="link" href="backgrounds.html" data-i18n="nav_backgrounds">Backgrounds</a>
+      <a class="link current" href="builder.html" aria-current="page" data-i18n="nav_builder">Build Simulator</a>
+      <a class="link" href="classes.html" data-i18n="nav_classes">Classes</a>
+      <a class="link" href="feats.html" data-i18n="nav_feats">Feats</a>
+      <a class="link" href="fighting-styles.html" data-i18n="nav_fighting">Fighting Styles</a>
+      <a class="link" href="rules.html" data-i18n="nav_rules">Rules</a>
+      <a class="link" href="species.html" data-i18n="nav_species">Species</a>
+      <a class="link" href="spells.html" data-i18n="nav_spells">Spells</a>
+      <a class="link" href="weapon-mastery.html" data-i18n="nav_mastery">Weapon Mastery</a>
+      <a class="link" href="weapons.html" data-i18n="nav_weapons">Weapons</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ko">한국어</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="search bld-actions">
+    <button type="button" id="save" class="ghost" data-i18n="save">Save JSON</button>
+    <label class="ghost bld-file"><span data-i18n="load">Load JSON</span><input type="file" id="load" accept=".json,application/json" hidden></label>
+    <button type="button" id="md" class="ghost" data-i18n="md">Export Markdown</button>
+    <button type="button" id="new" class="ghost" data-i18n="reset">Reset</button>
+  </section>
+  <p class="count" id="msg" aria-live="polite"></p>
+  <div class="bld">
+    <div id="steps"></div>
+    <aside id="summary" class="bld-summary"></aside>
+  </div>
+</main>
+
+<footer>
+  <span data-i18n="footer">Generated from the mod's game data.</span>
+  <span id="generated"></span>
+</footer>
+
+<script src="builder.js"></script>
+</body>
+</html>
