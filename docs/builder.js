@@ -6,7 +6,7 @@ const T = {
     nav_home: "Home", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_classes: "Classes", nav_feats: "Feats",
     nav_fighting: "Fighting Styles", nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     footer: "Generated from the mod's game data.",
-    save: "Save JSON", load: "Load JSON", md: "Export Markdown", shot: "Save Screenshots", add_char: "Add Character to Party", del_char: "Remove Character", char_name: "Character Name", summary_suffix: "Summary", shot_failed: "Could not make the screenshots.", reset: "Reset",
+    save: "Save JSON", load: "Load JSON", md: "Export Markdown", shot: "Save Screenshots", save_party: "Export Whole Party", load_party: "Load Whole Party", prev_char: "◀ Previous Character", next_char: "Next Character ▶", party_file: "Party", add_char: "Add Character to Party", del_char: "Remove Character", char_name: "Character Name", summary_suffix: "Summary", shot_failed: "Could not make the screenshots.", reset: "Reset",
     loaded: "Build loaded.", bad_file: "This file is not a saved build.", missing: n => `Not in the current data, skipped: ${n}`,
     character: "Character", build_name: "Build Name", species: "Species", background: "Background", abilities: "Ability Scores",
     points: (u, all) => `Points ${u} / ${all}`, preset: "Class preset", over: "Over the 27-point budget",
@@ -30,7 +30,7 @@ const T = {
     nav_home: "홈", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_classes: "직업", nav_feats: "재주",
     nav_fighting: "전투 방식", nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     footer: "모드 게임 데이터에서 생성했습니다.",
-    save: "JSON 저장", load: "JSON 불러오기", md: "마크다운 내보내기", shot: "스크린샷 저장", add_char: "파티에 캐릭터 추가", del_char: "캐릭터 삭제", char_name: "캐릭터 이름", summary_suffix: "요약", shot_failed: "스크린샷을 만들지 못했습니다.", reset: "초기화",
+    save: "JSON 저장", load: "JSON 불러오기", md: "마크다운 내보내기", shot: "스크린샷 저장", save_party: "파티 전부 내보내기", load_party: "파티 전부 불러오기", prev_char: "◀ 이전 캐릭터", next_char: "다음 캐릭터 ▶", party_file: "파티", add_char: "파티에 캐릭터 추가", del_char: "캐릭터 삭제", char_name: "캐릭터 이름", summary_suffix: "요약", shot_failed: "스크린샷을 만들지 못했습니다.", reset: "초기화",
     loaded: "빌드를 불러왔습니다.", bad_file: "저장한 빌드 파일이 아닙니다.", missing: n => `현재 데이터에 없어 건너뛴 항목: ${n}`,
     character: "캐릭터", build_name: "빌드 이름", species: "종족", background: "배경", abilities: "능력치",
     points: (u, all) => `포인트 ${u} / ${all}`, preset: "직업 기본 분배", over: "27포인트를 넘었습니다",
@@ -478,6 +478,7 @@ function render() {
   document.getElementById("party").innerHTML = party.map((_, c) => column(c)).join("");
   if (open.length) document.querySelectorAll("#party details").forEach((d, i) => { if (i < open.length && open[i]) d.open = true; });
   document.getElementById("addchar").disabled = party.length >= MAX_PARTY;
+  document.getElementById("prevchar").disabled = document.getElementById("nextchar").disabled = party.length < 2;
   build = party.includes(cur) ? cur : party[0];
   save();
 }
@@ -761,6 +762,38 @@ function bind() {
   const box = document.getElementById("party");
   box.addEventListener("click", onClick);
   box.addEventListener("change", onChange);
+  // Whole party: one JSON file { party: [build, …] }, named Party-<character names>.
+  document.getElementById("saveparty").addEventListener("click", () => {
+    const names = party.map(b => (b.charName || "").replace(/[^\p{L}\p{N}]+/gu, "")).filter(Boolean);
+    download([t("party_file"), ...names].join("-") + ".json", JSON.stringify({ version: SAVE_VERSION, party }, null, 2), "application/json");
+  });
+  document.getElementById("loadparty").addEventListener("change", async ev => {
+    const file = ev.target.files[0], msg = document.getElementById("msg");
+    ev.target.value = "";
+    if (!file) return;
+    try {
+      const obj = JSON.parse(await file.text());
+      const list = Array.isArray(obj.party) ? obj.party : [obj];
+      const missing = [];
+      const loaded = list.slice(0, MAX_PARTY).map(x => { missing.push(...load(x)); return build; });
+      if (!loaded.length) throw new Error("empty");
+      party = loaded;
+      build = party[0];
+      msg.textContent = t("loaded") + (missing.length ? " " + t("missing")(missing.join(", ")) : "");
+    } catch (e) {
+      msg.textContent = t("bad_file");
+    }
+    render();
+  });
+  // Previous / next character: scroll the party row to the neighbouring column.
+  const step = dir => {
+    const cols = [...box.querySelectorAll(":scope > .bld")];
+    const x = box.scrollLeft, cur = cols.findIndex(c => c.offsetLeft >= x - 4);
+    const to = cols[Math.max(0, Math.min(cols.length - 1, (cur < 0 ? cols.length - 1 : cur) + dir))];
+    if (to) box.scrollTo({ left: to.offsetLeft, behavior: "smooth" });
+  };
+  document.getElementById("prevchar").addEventListener("click", () => step(-1));
+  document.getElementById("nextchar").addEventListener("click", () => step(1));
   document.getElementById("addchar").addEventListener("click", () => {
     if (party.length < MAX_PARTY) party.push(blank());
     render();
