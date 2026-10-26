@@ -458,7 +458,9 @@ function summaryBlock(r) {
   const list = (title, items) => `<dt>${esc(title)}</dt><dd>${items.length ? items.map(esc).join(", ") : t("none")}</dd>`;
   const slots = Object.entries(r.slots).filter(([, n]) => n).map(([l, n]) => t("slot_lv")(l, n));
   const sp = spec(), b = bg();
-  return `<h2>${esc(t("summary"))}</h2><dl class="plist">
+  // Heading: Character name - Build name, so party columns tell apart; "Summary" when both are empty.
+  const head = [build.charName, build.name].filter(Boolean).join(" - ") || t("summary");
+  return `<h2>${esc(head)}</h2><dl class="plist">
     ${tipList(t("species"), sp ? [[sp.sub_name ? `${L(sp.race_name)} · ${L(sp.sub_name)}` : L(sp.race_name), L(sp.desc)]] : [])}
     ${tipList(t("background"), b ? [[L(b.name), L(b.desc)]] : [])}
     <dt>${esc(t("total"))}</dt><dd>${r.tl.length} · ${esc(clsLine || t("none"))}</dd>
