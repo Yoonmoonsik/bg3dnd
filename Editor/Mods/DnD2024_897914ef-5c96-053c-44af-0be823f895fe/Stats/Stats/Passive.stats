@@ -2267,7 +2267,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Fractured_3_FaceOfRage" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1303" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('SG_Rage', context.Source)):MonkWeaponDamageDiceOverride(LevelMapValue(FaceOfRage));IF(HasStatus('SG_Rage', context.Source)):UnlockSpellVariant(HasStringInSpellRoll('AttackType.MeleeUnarmedAttack'),ModifyTargetRadius(Multiplicative, 1.5));" />
       </fields>
     </stat_object>
@@ -2338,7 +2338,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="MindDomain_3_MindDomainSpells" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1306" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('SG_Rage', context.Source)):Resistance(Psychic,Resistant);IF(HasStatus('SG_Rage', context.Source)):Resistance(Acid, Resistant);IF(HasStatus('SG_Rage', context.Source)):Resistance(Cold, Resistant);IF(HasStatus('SG_Rage', context.Source)):Resistance(Fire, Resistant);IF(HasStatus('SG_Rage', context.Source)):Resistance(Lightning, Resistant);IF(HasStatus('SG_Rage', context.Source)):Resistance(Necrotic, Resistant);IF(HasStatus('SG_Rage', context.Source)):Resistance(Poison, Resistant);IF(HasStatus('SG_Rage', context.Source)):Resistance(Radiant, Resistant);IF(HasStatus('SG_Rage', context.Source)):Resistance(Thunder, Resistant);" />
       </fields>
     </stat_object>
@@ -2351,7 +2351,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Disengage_Bonus" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1310" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('SG_Rage', context.Source)):UnlockSpell(Shout_Disengage_BonusAction_Temp);IF(not HasStatus('SG_Rage', context.Source)):UnlockSpell(Target_Help_BonusAction);IF(HasStatus('SG_Rage', context.Source) and IsMeleeUnarmedAttack()):ReduceCriticalAttackThreshold(1);" />
       </fields>
     </stat_object>
@@ -4022,7 +4022,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1e39c238-190f-4a4c-9ee6-64feb00b7671" />
         <field name="Name" type="NameTableFieldDefinition" value="Land_3_CircleOfTheLandSpells_Arid" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusRemove" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('LAND_ARID',context.Source)):UnlockSpell(Projectile_FireBolt);IF(HasStatus('LAND_ARID',context.Source)):UnlockSpell(Zone_BurningHands,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasStatus('LAND_ARID',context.Source)):UnlockSpell(Shout_Blur,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasStatus('LAND_ARID',context.Source) and ClassLevelHigherOrEqualThan(5,'Druid')):UnlockSpell(Projectile_Fireball,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasStatus('LAND_ARID',context.Source) and ClassLevelHigherOrEqualThan(7,'Druid')):UnlockSpell(Target_Blight,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasStatus('LAND_ARID',context.Source) and ClassLevelHigherOrEqualThan(9,'Druid')):UnlockSpell(Wall_WallOfStone,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
       </fields>
     </stat_object>
@@ -4070,7 +4070,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_NaturesWard" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="4310" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusRemove" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Disease);StatusImmunity(SG_Poisoned);StatusImmunity(SG_Charmed,ELEMENTAL,FEY);StatusImmunity(SG_Frightened,ELEMENTAL,FEY);IF(HasStatus('LAND_ARID',context.Source)):Resistance(Fire,Resistant);IF(HasStatus('LAND_POLAR',context.Source)):Resistance(Cold,Resistant);IF(HasStatus('LAND_TEMPERATE',context.Source)):Resistance(Lightning,Resistant);IF(HasStatus('LAND_TROPICAL',context.Source)):Resistance(Poison,Resistant);" />
       </fields>
     </stat_object>
@@ -6185,7 +6185,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="HollowWarden_3_WrathOfTheWild" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="8507" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,WisdomModifier,Constitution);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and HasStatus('BLOODED',context.Source) and HasStatus('WRATH_OF_THE_WILD',context.Source);" />
