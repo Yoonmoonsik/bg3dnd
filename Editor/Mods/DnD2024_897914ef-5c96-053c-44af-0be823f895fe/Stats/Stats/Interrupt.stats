@@ -38,7 +38,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasInterruptedSavingThrow() and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-1d4);RemoveStatus(OBSERVER_OBSERVER,SAVING_THROWS_PENALTY);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="RemoveStatus(OBSERVER_OBSERVER,SAVING_THROWS_PENALTY);" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
@@ -401,7 +401,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7194d617-8d2b-45f5-9c91-5b749d92b966" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowPenalty_MindSliver" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="738254d4-c0d1-4cd6-bfaf-fc723c30ed81" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-1d4);RemoveStatus(OBSERVER_OBSERVER,SAVING_THROWS_PENALTY_MIND_SLIVER);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="RemoveStatus(OBSERVER_OBSERVER,SAVING_THROWS_PENALTY_MIND_SLIVER);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -3616,7 +3616,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="667616e6-2240-439f-918d-5f0390517ff1" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowPenalty_ColdCaster" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="738254d4-c0d1-4cd6-bfaf-fc723c30ed81" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-1d4);RemoveStatus(OBSERVER_OBSERVER,SAVING_THROWS_PENALTY_COLD_CASTER);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="RemoveStatus(OBSERVER_OBSERVER,SAVING_THROWS_PENALTY_COLD_CASTER);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

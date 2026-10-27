@@ -364,7 +364,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6ef5198eg577fg6ca6gc4d9gb725efc2c584" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h868292b4g07bag5039g7a39g8b646671c67e" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowPenalty);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,-1d4);UnlockInterrupt(Interrupt_SavingThrowPenalty);" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StillAnimPriority" version="1" />
@@ -3149,7 +3149,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="SAVING_THROWS_PENALTY_MIND_SLIVER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a9a4b3f9-4127-44a9-b107-9e9b205f56c1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had9ee1e5g5369g47b5g65c4g37b956523a59" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowPenalty_MindSliver);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,-1d4);UnlockInterrupt(Interrupt_SavingThrowPenalty_MindSliver);" />
         <field name="StackId" type="StringTableFieldDefinition" value="SAVING_THROWS_PENALTY_MIND_SLIVER" />
       </fields>
     </stat_object>
@@ -15649,7 +15649,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="SAVING_THROWS_PENALTY_COLD_CASTER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a9a4b3f9-4127-44a9-b107-9e9b205f56c1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d91582cgf795g8507gdfb6g12c4347c9ea6" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowPenalty_ColdCaster);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,-1d4);UnlockInterrupt(Interrupt_SavingThrowPenalty_ColdCaster);" />
         <field name="StackId" type="StringTableFieldDefinition" value="SAVING_THROWS_PENALTY_COLD_CASTER" />
       </fields>
     </stat_object>
