@@ -3312,7 +3312,6 @@ data "Boosts" "UnlockSpell(Target_Darkness_Recast);"
 data "RemoveConditions" "not (HasStatus('DARKNESS_CASTER') or HasStatus('DARKNESS_CASTER_RECAST'))"
 data "RemoveEvents" "OnTurn;OnDamage"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
-data "OnApplyFunctors" "ApplyStatus(SELF,DARKNESS_RECAST,100,10)"
 
 new entry "FLAME_BLADE"
 type "StatusData"
