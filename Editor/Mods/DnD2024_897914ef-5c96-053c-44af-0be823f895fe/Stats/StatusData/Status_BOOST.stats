@@ -689,7 +689,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="18acb5cb-34a7-4d00-81c3-aefd9be088e9" />
         <field name="Name" type="NameTableFieldDefinition" value="WEAPONMASTERY_NICK" />
         <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MainHandAttack_OnlyNick, Target_MainHandAttack);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
         <field name="StackId" type="StringTableFieldDefinition" value="WEAPONMASTERY_NICK" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
@@ -707,7 +707,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
         <field name="StackId" type="StringTableFieldDefinition" value="WEAPONMASTERY_NICK_BLOCK_OFFHANDATTACK" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -720,6 +720,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h004828cbg6ae4g9d9fgef10g00102cb4f553" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3a446706g6505g19b1g3826gb313d8b63d3f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
