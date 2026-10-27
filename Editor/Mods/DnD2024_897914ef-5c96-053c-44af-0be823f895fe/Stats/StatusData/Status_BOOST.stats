@@ -14046,7 +14046,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BODYWARPINGOFGORGOROTH" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BODYWARPINGOFGORGOROTH" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BodyWarpingOfGorgoroth,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_BodyWarpingOfGorgoroth'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BodyWarpingOfGorgoroth,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_BodyWarpingOfGorgoroth'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfb5ff22bgbb91g4598ga3acg629a9bc0bbf5" version="1" />
       </fields>
     </stat_object>
@@ -14056,7 +14056,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CATAPULT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CATAPULT" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_Catapult,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_Catapult'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_Catapult,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_Catapult'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h531eb181g2185g4a8eg9a93g7866406491b2" version="1" />
       </fields>
     </stat_object>
@@ -14066,7 +14066,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_THORNARMOR" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_THORNARMOR" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ThornArmor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_ThornArmor'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ThornArmor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_ThornArmor'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5aaf459egc2f8g443cgbd6cgea65032712ea" version="1" />
       </fields>
     </stat_object>
@@ -14356,7 +14356,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_TIDEOFDARKNESS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_TIDEOFDARKNESS" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_TideOfDarkness,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_TideOfDarkness'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_TideOfDarkness,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_TideOfDarkness'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hde134590g10deg4df4g9d4age5320c74f0fb" version="1" />
       </fields>
     </stat_object>
@@ -14386,7 +14386,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_UMBRALTENDRIL" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_UMBRALTENDRIL" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UmbralTendril,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_UmbralTendril'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UmbralTendril,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_UmbralTendril'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6c91c1d0geff6g49ddg9fd0gd5d83740ee64" version="1" />
       </fields>
     </stat_object>
@@ -14506,7 +14506,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_ANIMALFRIENDSHIP" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_ANIMALFRIENDSHIP" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_AnimalFriendship,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_AnimalFriendship'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_AnimalFriendship,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_AnimalFriendship'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h21645e9ag9d9cg418aga245g6a9015289552" version="1" />
       </fields>
     </stat_object>
@@ -14516,7 +14516,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CREATEDESTROYWATER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CREATEDESTROYWATER" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CreateDestroyWater,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastCreateDestroyWater(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CreateDestroyWater,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastCreateDestroyWater(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdf583f63gea12g4423g9944g3daa981713d3" version="1" />
       </fields>
     </stat_object>
@@ -14526,7 +14526,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_COMMAND" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_COMMAND" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Command_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastCommand(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Command_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastCommand(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcc29c239gc13fg4023gb368g06aa956b1eb2" version="1" />
       </fields>
     </stat_object>
@@ -14536,7 +14536,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_COLORSPRAY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_COLORSPRAY" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_ColorSpray,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Zone_ColorSpray'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_ColorSpray,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Zone_ColorSpray'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hce902b37g2b1fg4c69gb496g34f99e16b2db" version="1" />
       </fields>
     </stat_object>
@@ -14546,7 +14546,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CLOAKOFSHADOW" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CLOAKOFSHADOW" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_CloakOfShadow,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_CloakOfShadow'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_CloakOfShadow,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_CloakOfShadow'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc3ea7a0bg4a33g447egab4cg59b3544f61a4" version="1" />
       </fields>
     </stat_object>
@@ -14556,7 +14556,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CHROMATICORB" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CHROMATICORB" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_ChromaticOrb,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastChromaticOrb(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_ChromaticOrb,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastChromaticOrb(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h20d0eed4gb780g487cg8ab2g2a8f0df204ec" version="1" />
       </fields>
     </stat_object>
@@ -14566,7 +14566,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CHARMPERSON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CHARMPERSON" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CharmPerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_CharmPerson'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CharmPerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_CharmPerson'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbcff1db6g661fg44b2gaa19ge984fa1cedb3" version="1" />
       </fields>
     </stat_object>
@@ -14576,7 +14576,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BURNINGHANDS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BURNINGHANDS" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_BurningHands,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Zone_BurningHands'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_BurningHands,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Zone_BurningHands'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h32091888g9007g441cgb899gf48ab4745ec0" version="1" />
       </fields>
     </stat_object>
@@ -14586,7 +14586,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BLESS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BLESS" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bless,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Bless'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bless,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Bless'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb964961egd956g43e4gb1f4gbbd5199911f7" version="1" />
       </fields>
     </stat_object>
@@ -14596,7 +14596,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BANE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BANE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bane,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Bane'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bane,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Bane'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcf286fcbga673g4b58g9ca2g7cb218338271" version="1" />
       </fields>
     </stat_object>
@@ -14606,7 +14606,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BLOODBANERUNE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BLOODBANERUNE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BloodbaneRune,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastBloodbaneRune(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BloodbaneRune,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastBloodbaneRune(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd36397d4g4ac8g4306gba25g376e82091899" version="1" />
       </fields>
     </stat_object>
@@ -14616,7 +14616,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BLOODRUSH" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BLOODRUSH" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BloodRush,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastBloodRush(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BloodRush,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastBloodRush(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haf6db600g1cecg48cag96c0g52a1bd0797be" version="1" />
       </fields>
     </stat_object>
@@ -14626,7 +14626,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BOILBLOOD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BOILBLOOD" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BoilBlood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastBoilBlood(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BoilBlood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastBoilBlood(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f332b10g34a4g4747g86c0g8128cf330c99" version="1" />
       </fields>
     </stat_object>
@@ -14636,7 +14636,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CONSUMPTION" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CONSUMPTION" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Consumption,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastConsumption(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Consumption,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastConsumption(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h32544316gabe3g47b4gbf17gbf9c2e8f017a" version="1" />
       </fields>
     </stat_object>
@@ -14646,7 +14646,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_VIBRATINGHUMORS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_VIBRATINGHUMORS" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_VibratingHumors,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastVibratingHumors(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_VibratingHumors,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastVibratingHumors(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf01df5c2gf552g420cg954cg25f57d05b46c" version="1" />
       </fields>
     </stat_object>
@@ -14656,7 +14656,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_SHROUDBLOOD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SHROUDBLOOD" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShroudBlood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastShroudBlood(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShroudBlood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastShroudBlood(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7e60f1fg77ecg4bf3ga4dag5e983f313b90" version="1" />
       </fields>
     </stat_object>
@@ -14666,7 +14666,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CRIMSONLASH" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CRIMSONLASH" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_CrimsonLash,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastCrimsonLash(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_CrimsonLash,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastCrimsonLash(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2de0004ag5b77g48c6ga80eg0460ac14d524" version="1" />
       </fields>
     </stat_object>
@@ -14676,7 +14676,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CUREWOUNDS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CUREWOUNDS" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CureWounds,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_CureWounds'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CureWounds,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_CureWounds'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h40603322g7144g4076ga600g816c1a3bf347" version="1" />
       </fields>
     </stat_object>
@@ -14686,7 +14686,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_EARTHTREMOR" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_EARTHTREMOR" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_EarthTremor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_EarthTremor'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_EarthTremor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_EarthTremor'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3310c159g253eg4839g9f91ga53946126139" version="1" />
       </fields>
     </stat_object>
@@ -14696,7 +14696,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_ENTANGLE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_ENTANGLE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Entangle,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Entangle'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Entangle,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Entangle'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h21dc2164g914fg40f1g96f0g6370fd2112f5" version="1" />
       </fields>
     </stat_object>
@@ -14706,7 +14706,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_EXPEDITIOUSRETREAT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_EXPEDITIOUSRETREAT" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ExpeditiousRetreat,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_ExpeditiousRetreat'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ExpeditiousRetreat,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_ExpeditiousRetreat'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1b472549g17edg4c6bgac27gf0b44463bc4c" version="1" />
       </fields>
     </stat_object>
@@ -14716,7 +14716,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_FAERIEFIRE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_FAERIEFIRE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FaerieFire,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_FaerieFire',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Target_FaerieFire'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FaerieFire,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_FaerieFire',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Target_FaerieFire'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hffc26135gf1a3g4a40ga837gc93edb478e30" version="1" />
       </fields>
     </stat_object>
@@ -14726,7 +14726,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_FALSELIFE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_FALSELIFE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_FalseLife,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_FalseLife',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Shout_FalseLife'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_FalseLife,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_FalseLife',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Shout_FalseLife'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4ded108bga017g4608gbf95g21aa64af5306" version="1" />
       </fields>
     </stat_object>
@@ -14736,7 +14736,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_FEATHERFALL" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_FEATHERFALL" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_FeatherFall,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_FeatherFall'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_FeatherFall,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_FeatherFall'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haba60ef6g99aag4749g96b9g8d1f04316129" version="1" />
       </fields>
     </stat_object>
@@ -14746,7 +14746,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_FINDFAMILIAR" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_FINDFAMILIAR" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FindFamiliar,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastFindFamiliar(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FindFamiliar,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(FreeCastFindFamiliar(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h38f40cc0g5620g4711g8d56gdd9c138dc7bf" version="1" />
       </fields>
     </stat_object>
@@ -14756,7 +14756,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_FOGCLOUD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_FOGCLOUD" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FogCloud,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_FogCloud'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FogCloud,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_FogCloud'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf8e02fcbgdb8bg4268gb21cg13293d623b07" version="1" />
       </fields>
     </stat_object>
@@ -14766,7 +14766,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_GOODBERRY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_GOODBERRY" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Goodberry,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Goodberry'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Goodberry,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Goodberry'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7fe00d2bgea8ag4b0fgbbacgdbf44e74157c" version="1" />
       </fields>
     </stat_object>
@@ -14776,7 +14776,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_GREASE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_GREASE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Grease,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Grease'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Grease,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Grease'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc6e80bc7gdc11g4a8egafadg36b0c70eecad" version="1" />
       </fields>
     </stat_object>
@@ -14786,7 +14786,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_GUIDINGBOLT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_GUIDINGBOLT" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_GuidingBolt,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_GuidingBolt'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_GuidingBolt,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_GuidingBolt'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h06ce1335g4a93g488eg9ce8g7f24e3f055ce" version="1" />
       </fields>
     </stat_object>
@@ -14796,7 +14796,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_HEALINGWORD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_HEALINGWORD" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HealingWord,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_HealingWord'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HealingWord,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_HealingWord'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h050d8dc6gbc79g42dbg906dg75bd310a68ea" version="1" />
       </fields>
     </stat_object>
@@ -14806,7 +14806,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_HELLSLASH" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_HELLSLASH" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HellsLash,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_HellsLash'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HellsLash,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_HellsLash'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb920e5dbgbbccg4712g9904g35edd94a4d41" version="1" />
       </fields>
     </stat_object>
@@ -14816,7 +14816,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_HIDEOUSLAUGHTER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_HIDEOUSLAUGHTER" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HideousLaughter,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_HideousLaughter'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HideousLaughter,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_HideousLaughter'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3ea7727eg6fb7g4437g8abfg5b8b01c08404" version="1" />
       </fields>
     </stat_object>
@@ -14826,7 +14826,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_ICEKNIFE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_ICEKNIFE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_IceKnife,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_IceKnife',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Projectile_IceKnife'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_IceKnife,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_IceKnife',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Projectile_IceKnife'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdc5cb67eg6726g4f71ga0a5g19d3f916892d" version="1" />
       </fields>
     </stat_object>
@@ -14836,7 +14836,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_INFLICTWOUNDS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_INFLICTWOUNDS" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InflictWounds,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_InflictWounds'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InflictWounds,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_InflictWounds'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h86f50d94gf85eg4f54g9043g7300025a6b85" version="1" />
       </fields>
     </stat_object>
@@ -14846,7 +14846,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_JUMP" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_JUMP" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Jump,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_Jump',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Target_Jump'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Jump,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_Jump',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Target_Jump'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h57c34580gbbf4g41acgbcb6g5f4b946ba3e2" version="1" />
       </fields>
     </stat_object>
@@ -14856,7 +14856,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_LONGSTRIDER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_LONGSTRIDER" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Longstrider,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_Longstrider',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Target_Longstrider'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Longstrider,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_Longstrider',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Target_Longstrider'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h931b6d31gbc0cg42a0ga0fdg6bf79513d2f8" version="1" />
       </fields>
     </stat_object>
@@ -14866,7 +14866,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_MAGEARMOR" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_MAGEARMOR" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MageArmor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_MageArmor'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MageArmor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_MageArmor'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3cb9ecd6gc656g434eg9178g4828fbd9e74c" version="1" />
       </fields>
     </stat_object>
@@ -14876,7 +14876,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_MAGICMISSILE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_MAGICMISSILE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_MagicMissile,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_MagicMissile'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_MagicMissile,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_MagicMissile'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc12ab9b5ga37dg4463g97c9gcfaef383ed25" version="1" />
       </fields>
     </stat_object>
@@ -14886,7 +14886,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_PROTECTIONFROMEVILANDGOOD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_PROTECTIONFROMEVILANDGOOD" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_ProtectionFromEvilAndGood'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_ProtectionFromEvilAndGood'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7380d024gd726g4ecbgaf7bg7053d764150b" version="1" />
       </fields>
     </stat_object>
@@ -14896,7 +14896,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_RAYOFSICKNESS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_RAYOFSICKNESS" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_RayOfSickness,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_RayOfSickness',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Projectile_RayOfSickness'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_RayOfSickness,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source) and not (HasPassive('RaceSpell_RayOfSickness',context.Source) and HasActionResource('RaceSpellLevel1',1,0,false,false,context.Source))):UnlockSpellVariant(SpellId('Projectile_RayOfSickness'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8ec3e1ffgcbf4g4037g9bc0g84441c8fa842" version="1" />
       </fields>
     </stat_object>
@@ -14906,7 +14906,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_SANCTUARY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SANCTUARY" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Sanctuary,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Sanctuary'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Sanctuary,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Sanctuary'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h124523e9g22fbg4ef6g9eadg44197da47bfb" version="1" />
       </fields>
     </stat_object>
@@ -14926,7 +14926,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_SHIELDOFFAITH" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SHIELDOFFAITH" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShieldOfFaith,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_ShieldOfFaith'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShieldOfFaith,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_ShieldOfFaith'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2ad87388g142dg4348gbbedg0e1f69d37af7" version="1" />
       </fields>
     </stat_object>
@@ -14936,7 +14936,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_SLEEP" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SLEEP" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Sleep,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Sleep'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Sleep,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Sleep'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h11e7e65ag5981g4ae2g8c38gc618d023f94b" version="1" />
       </fields>
     </stat_object>
@@ -14946,7 +14946,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_SPEAKWITHANIMALS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SPEAKWITHANIMALS" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SpeakWithAnimals,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_SpeakWithAnimals'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SpeakWithAnimals,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_SpeakWithAnimals'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcacff426g1d0ag44e6g9598gd4e780c75798" version="1" />
       </fields>
     </stat_object>
@@ -14956,7 +14956,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_SPELLFIREFLARE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SPELLFIREFLARE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_SpellfireFlare,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_SpellfireFlare'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_SpellfireFlare,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_SpellfireFlare'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h64a62e32ge165g4a0bgba51g3a56f6fbc678" version="1" />
       </fields>
     </stat_object>
@@ -14966,7 +14966,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_THUNDERWAVE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_THUNDERWAVE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_Thunderwave,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Zone_Thunderwave'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_Thunderwave,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Zone_Thunderwave'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5aa03de7gf337g42a1gb453ge89a6f671278" version="1" />
       </fields>
     </stat_object>
@@ -14976,7 +14976,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_WARDAWAY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_WARDAWAY" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_Wardaway,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_Wardaway'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_Wardaway,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_Wardaway'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4a25b113gd59eg4b37gb1fag1d64b4e65972" version="1" />
       </fields>
     </stat_object>
@@ -14986,7 +14986,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_WITCHBOLT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_WITCHBOLT" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_WitchBolt,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_WitchBolt'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_WitchBolt,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Projectile_WitchBolt'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4a465394gc707g4e0bga071g165709a73a35" version="1" />
       </fields>
     </stat_object>
