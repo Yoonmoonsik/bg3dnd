@@ -275,6 +275,11 @@ data "Properties" "RemoveStatus(OBSERVER_OBSERVER,SAVING_THROWS_PENALTY_MIND_SLI
 new entry "__EVOCATION__"
 type "InterruptData"
 
+new entry "Interrupt_SavingThrowPenalty_AstralCold"
+type "InterruptData"
+using "Interrupt_SavingThrowPenalty"
+data "Properties" "RemoveStatus(OBSERVER_OBSERVER,ASTRAL_COLD);"
+
 new entry "Interrupt_SpellfireStorm"
 type "InterruptData"
 data "DisplayName" "hf91e618bg7cfcg3668g95bbg4b7e8eb659d9;2"
