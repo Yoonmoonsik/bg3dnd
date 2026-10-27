@@ -621,7 +621,7 @@ new entry "Interrupt_WarGodsBlessing_Ally"
 type "InterruptData"
 using "Interrupt_WarGodsBlessing"
 data "DisplayName" "hcc124e06g703dga91ag38b5g45f683e89b78;1"
-data "Conditions" "IsAbleToReact(context.Observer) and Ally(context.Source,context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(10, context.Source);"
+data "Conditions" "IsAbleToReact(context.Observer) and Ally(context.Source,context.Observer) and not Self(context.Source,context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(10, context.Source);"
 data "Cost" "ReactionActionPoint:1;ChannelDivinity:1;"
 
 new entry "Interrupt_PathToTheGrave_Radiant"

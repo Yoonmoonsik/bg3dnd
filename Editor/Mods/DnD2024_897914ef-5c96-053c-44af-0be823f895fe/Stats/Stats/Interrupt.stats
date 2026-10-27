@@ -893,7 +893,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_WarGodsBlessing_Ally" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd3e3624-53da-4f5d-93ae-a0f61b704715" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcc124e06g703dga91ag38b5g45f683e89b78" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Ally(context.Source,context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(10, context.Source);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Ally(context.Source,context.Observer) and not Self(context.Source,context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(10, context.Source);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;ChannelDivinity:1;" />
       </fields>
     </stat_object>
