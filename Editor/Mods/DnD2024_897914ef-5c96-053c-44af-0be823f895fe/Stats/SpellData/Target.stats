@@ -211,6 +211,55 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb291dd01gaa36gf848g9cb2g11776f6a95ba" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="365ad180-22a1-4918-b111-f04519722e1e" />
+        <field name="Name" type="NameTableFieldDefinition" value="__ABJURATION__SLEVEL_1__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4370e76-3be0-490e-9641-444fe2d97901" />
+        <field name="Name" type="NameTableFieldDefinition" value="MageArmor" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b2e2410f-f3bf-4698-b6d5-2a47a23e2fbd" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Enemy() and not WearingArmor() and not HasStatus('MAGE_ARMOR',context.Target);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7524f6db-581f-482d-a25c-ace76f8cf659" />
+        <field name="Name" type="NameTableFieldDefinition" value="MageArmor_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8dc0a1bb-b530-4e8f-be0c-0432f922f367" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d3de243c-59e0-433a-99a1-77af6112fbd8" />
+        <field name="Name" type="NameTableFieldDefinition" value="MageArmor_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="160b4a99-7fdc-47f9-ba78-e6af36cf4984" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa336fb4-a388-42d3-bfaa-26826dffe962" />
+        <field name="Name" type="NameTableFieldDefinition" value="MageArmor_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1f174b0f-f0ea-4f6b-81c0-a5fdc1581d1d" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2bd4c862-dd89-49e3-8a46-564ff6900b1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="MageArmor_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d0b0dfbd-6897-4045-b0b4-5ee755a9d08d" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2275b0c3-e35e-4462-8cc5-803db7cdf1c4" />
+        <field name="Name" type="NameTableFieldDefinition" value="MageArmor_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f5ea363d-a04a-4682-83d4-8bc7fab89e84" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1e88e145-1ca4-4595-a378-8f73e9b3233c" />

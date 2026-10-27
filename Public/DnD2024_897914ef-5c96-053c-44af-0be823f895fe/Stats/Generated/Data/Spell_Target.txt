@@ -168,6 +168,41 @@ data "SpellType" "Target"
 using "Target_MAG_Resistance"
 data "Description" "hb291dd01gaa36gf848g9cb2g11776f6a95ba;1"
 
+new entry "Target___ABJURATION__SLEVEL_1__"
+type "SpellData"
+data "SpellType" "Target"
+
+new entry "Target_MageArmor"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MageArmor"
+data "TargetConditions" "Character() and not Enemy() and not WearingArmor() and not HasStatus('MAGE_ARMOR',context.Target);"
+
+new entry "Target_MageArmor_2"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MageArmor_2"
+
+new entry "Target_MageArmor_3"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MageArmor_3"
+
+new entry "Target_MageArmor_4"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MageArmor_4"
+
+new entry "Target_MageArmor_5"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MageArmor_5"
+
+new entry "Target_MageArmor_6"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MageArmor_6"
+
 new entry "Target_ThornArmor"
 type "SpellData"
 data "SpellType" "Target"
