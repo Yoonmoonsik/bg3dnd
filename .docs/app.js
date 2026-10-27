@@ -20,7 +20,9 @@ const T = {
     new: "New", revised: "Revised", vanilla: "Unchanged",
     save_suffix: " save", self: "Self", melee: "Melee", touch: "Touch",
     d_components: "Components", d_area: "Area", d_classes: "Classes", d_variants: "Options",
+    d_damage: "Damage", d_status: "Statuses",
     d_id: "Spell ID", d_scroll: "Scroll", yes: "Yes", no: "No",
+    turn_long: "until long rest", turns: n => n === 1 ? "1 turn" : n + " turns",
     shape_Cone: "Cone", shape_Square: "Square", radius: "radius", weapon_range: "Weapon range",
   },
   ko: {
@@ -42,7 +44,9 @@ const T = {
     new: "새 주문", revised: "개정", vanilla: "변경 없음",
     save_suffix: " 내성", self: "자신", melee: "근접", touch: "접촉",
     d_components: "구성 요소", d_area: "범위", d_classes: "직업", d_variants: "선택지",
+    d_damage: "피해", d_status: "상태 효과",
     d_id: "주문 ID", d_scroll: "두루마리", yes: "있음", no: "없음",
+    turn_long: "긴 휴식까지", turns: n => n + "턴",
     shape_Cone: "원뿔", shape_Square: "사각형", radius: "반경", weapon_range: "무기 사거리",
   },
 };
@@ -103,6 +107,24 @@ const DAMAGE_COLOR = {
 };
 const dmgSpan = d => (DAMAGE_COLOR[d] ? `<span class="dmg" style="--dmg:${DAMAGE_COLOR[d]}">${esc(nm("damage", d))}</span>` : esc(nm("damage", d)));
 const nm = (group, v) => (NAMES[group] && NAMES[group][v]) ? NAMES[group][v][state.lang === "ko" ? 1 : 0] : v;
+// Color the damage-type word inside a damage expression ("1d10 Piercing damage" -> the type word).
+const tdlSpan = e => {
+  const txt = e[state.lang];
+  if (!e.type || !DAMAGE_COLOR[e.type]) return esc(txt);
+  const word = nm("damage", e.type);
+  const i = txt.indexOf(word);
+  if (i < 0) return esc(txt);
+  const span = `<span class="dmg" style="--dmg:${DAMAGE_COLOR[e.type]}">${esc(word)}</span>`;
+  return esc(txt.slice(0, i)) + span + esc(txt.slice(i + word.length));
+};
+// A status id ("ARMS_OF_HADAR") as a readable name ("Arms of Hadar"); small words stay lowercase.
+const statusName = id => {
+  const small = new Set(["of", "and", "the", "for", "to"]);
+  return id.replace(/_/g, " ").toLowerCase().split(" ").map((w, i) =>
+    (i !== 0 && small.has(w)) ? w : (w ? w[0].toUpperCase() + w.slice(1) : w)).join(" ");
+};
+const durText = n => n === -1 ? t("turn_long") : t("turns")(n);
+const tsaSpan = e => `${esc(statusName(e.status))} (${esc(durText(e.turns))})`;
 
 function valueLabel(f, v) {
   if (f.key === "level") return v === 0 ? t("cantrip") : t("level")(v);
@@ -222,7 +244,8 @@ function detail(s) {
     [t("concentration"), s.concentration ? t("yes") : t("no")],
     s.ritual && [t("ritual"), t("yes")],
     effectText(s) && [t("col_effect"), effectText(s)],
-    s.damage.length && [t("col_damage"), null, s.damage.map(dmgSpan).join(", ")],
+    (s.tdl.length ? [t("d_damage"), null, s.tdl.map(tdlSpan).join("<br>")] : (s.damage.length && [t("col_damage"), null, s.damage.map(dmgSpan).join(", ")])),
+    s.tsa.length && [t("d_status"), null, s.tsa.map(tsaSpan).join(", ")],
     [t("d_classes"), s.classes.map(c => nm("classes", c)).join(", ")],
     [t("d_scroll"), s.scroll ? t("yes") : t("no")],
     [t("d_id"), s.id],
