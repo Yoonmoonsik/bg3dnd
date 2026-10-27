@@ -9,9 +9,11 @@ const T = {
     col_effect: "Attack / Save", col_damage: "Damage", col_school: "School",
     empty: "No spells match these filters.", footer: "Generated from the mod's game data.",
     count: (n, all) => `${n} of ${all} spells`,
-    f_level: "Level", f_class: "Class", f_school: "School", f_cast: "Casting Time",
+    f_level: "Level", f_class: "Class", f_school: "School", f_cast: "Casting Time", f_dur: "Duration",
     f_props: "Properties", f_damage: "Damage Type", f_save: "Saving Throw", f_attack: "Attack",
     f_source: "Source",
+    dur_instant: "Instant", dur_1min: "1 minute", dur_10min: "10 minutes", dur_long: "Until long rest",
+    d_upcast: "Upcast",
     cantrip: "Cantrip", level: n => `${n}`,
     action: "Action", bonus: "Bonus Action", reaction: "Reaction",
     concentration: "Concentration", ritual: "Ritual", scroll: "Has a scroll", sangromancy: "Sangromancy",
@@ -29,9 +31,11 @@ const T = {
     col_effect: "공격 / 내성", col_damage: "피해", col_school: "학파",
     empty: "조건에 맞는 주문이 없습니다.", footer: "모드 게임 데이터에서 생성했습니다.",
     count: (n, all) => `주문 ${all}종 중 ${n}종`,
-    f_level: "레벨", f_class: "직업", f_school: "학파", f_cast: "시전 시간",
+    f_level: "레벨", f_class: "직업", f_school: "학파", f_cast: "시전 시간", f_dur: "지속 시간",
     f_props: "속성", f_damage: "피해 유형", f_save: "내성 굴림", f_attack: "공격",
     f_source: "구분",
+    dur_instant: "즉시", dur_1min: "1분", dur_10min: "10분", dur_long: "긴 휴식까지",
+    d_upcast: "업캐스트",
     cantrip: "소마법", level: n => `${n}레벨`,
     action: "행동", bonus: "보조 행동", reaction: "대응",
     concentration: "집중", ritual: "의식", scroll: "두루마리 있음", sangromancy: "혈마법",
@@ -79,6 +83,7 @@ const FILTERS = [
   { key: "classes", label: "f_class", values: Object.keys(NAMES.classes) },
   { key: "school", label: "f_school", values: Object.keys(NAMES.school) },
   { key: "cast", label: "f_cast", values: ["action", "bonus", "reaction"] },
+  { key: "dur", label: "f_dur", values: ["instant", "1min", "10min", "long"] },
   { key: "props", label: "f_props", values: ["concentration", "ritual", "scroll", "sangromancy"], all: true },
   { key: "damage", label: "f_damage", values: Object.keys(NAMES.damage) },
   { key: "saves", label: "f_save", values: Object.keys(NAMES.saves) },
@@ -102,6 +107,7 @@ const nm = (group, v) => (NAMES[group] && NAMES[group][v]) ? NAMES[group][v][sta
 function valueLabel(f, v) {
   if (f.key === "level") return v === 0 ? t("cantrip") : t("level")(v);
   if (["cast", "props", "source"].includes(f.key)) return t(v);
+  if (f.key === "dur") return t("dur_" + v);
   return nm(f.key, v);
 }
 
@@ -224,6 +230,7 @@ function detail(s) {
   return `<tr class="detail"><td colspan="7">
     <div class="grid">${items.map(([k, v, html]) => `<div><div class="k">${esc(k)}</div>${html ?? esc(v)}</div>`).join("")}</div>
     ${s.desc[L] ? `<p>${esc(s.desc[L])}</p>` : ""}
+    ${s.upcast ? `<div class="k">${esc(t("d_upcast"))}</div><p>${esc(s.upcast[L])}</p>` : ""}
     ${s.variants.length ? `<div class="k">${esc(t("d_variants"))}</div><ul>${s.variants.map(v => `<li>${esc(v.name[L])}</li>`).join("")}</ul>` : ""}
   </td></tr>`;
 }

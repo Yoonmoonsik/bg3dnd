@@ -14,7 +14,8 @@ const T = {
     cls: "Class", subclass: "Subclass", multiclass: "multiclass", choose: "— choose —",
     granted: "Gained", spells: "Spells", feat: "Feat", feat_abilities: "Ability increase",
     asi_two: "+2 to one", asi_split: "+1 to two", requirement: "Prerequisite",
-    pick: (n, all) => `${n} / ${all}`, cantrip: "Cantrips", spell: "Spells", skill: "Skill proficiency",
+    pick: (n, all) => `${n} / ${all}`, cantrip: "Cantrips", cantrip_one: "Cantrip", spell: "Spells", skill: "Skill proficiency",
+    concentration: "Concentration",
     expertise: "Expertise", ability: "Ability bonus", passive: "Choose",
     feat_choice: "Feat options", feat_skills: "Feat skill proficiency", feat_expertise: "Feat expertise",
     summary: "Summary", hp: "Hit Points", total: "Total level", saves: "Saving Throw Proficiencies", skills: "Skills",
@@ -38,7 +39,8 @@ const T = {
     cls: "직업", subclass: "하위 직업", multiclass: "멀티클래스", choose: "— 선택 —",
     granted: "획득", spells: "주문", feat: "재주", feat_abilities: "능력치 증가",
     asi_two: "한 능력치 +2", asi_split: "두 능력치 +1", requirement: "선행 조건",
-    pick: (n, all) => `${n} / ${all}`, cantrip: "소마법", spell: "주문", skill: "기술 숙련",
+    pick: (n, all) => `${n} / ${all}`, cantrip: "소마법", cantrip_one: "소마법", spell: "주문", skill: "기술 숙련",
+    concentration: "집중",
     expertise: "전문화", ability: "능력치 보너스", passive: "선택",
     feat_choice: "재주 선택지", feat_skills: "재주 기술 숙련", feat_expertise: "재주 전문화",
     summary: "요약", hp: "생명력", total: "총 레벨", saves: "내성 굴림 숙련", skills: "기술",
@@ -57,6 +59,12 @@ const byAbility = list => ABILITIES.filter(a => list.includes(a));
 const AB_NAME = {
   Strength: ["Strength", "근력"], Dexterity: ["Dexterity", "민첩"], Constitution: ["Constitution", "건강"],
   Intelligence: ["Intelligence", "지능"], Wisdom: ["Wisdom", "지혜"], Charisma: ["Charisma", "매력"],
+};
+const SCHOOL = {
+  Abjuration: ["Abjuration", "방호술"], Conjuration: ["Conjuration", "창조술"],
+  Divination: ["Divination", "예지술"], Enchantment: ["Enchantment", "환혹술"],
+  Evocation: ["Evocation", "방출술"], Illusion: ["Illusion", "환영술"],
+  Necromancy: ["Necromancy", "사령술"], Transmutation: ["Transmutation", "변환술"],
 };
 const COST = { 8: 0, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 7, 15: 9 };
 const BUDGET = 27, MAX_LEVEL = 12, SCORE_CAP = 20, SAVE_VERSION = 1;
@@ -92,7 +100,17 @@ const bg = () => D.backgrounds.find(b => b.id === build.background);
 const feat = id => D.feats.find(f => f.id === id);
 const spellName = id => L(D.spells[id]?.name) || id;
 const skillName = id => L(D.skills[id]) || id;
-const spellDesc = id => L(D.spells[id]?.desc);
+const spellDesc = id => {
+  const s = D.spells[id];
+  if (!s) return "";
+  // [Level · School · Concentration] header, then the collected description.
+  const parts = [s.level === 0 ? t("cantrip_one") : t("level")(s.level)];
+  if (s.school && s.school !== "None") parts.push(SCHOOL[s.school] ? SCHOOL[s.school][state.lang === "ko" ? 1 : 0] : s.school);
+  if (s.concentration) parts.push(t("concentration"));
+  const meta = `[${parts.join(" · ")}]`;
+  const d = L(s.desc);
+  return d ? `${meta}\n${d}` : meta;
+};
 // Native hover text: shows the collected description without covering the page.
 const tip = d => d ? ` title="${esc(d)}"` : "";
 const tipSpans = items => {
