@@ -7,18 +7,30 @@ const LEVEL_T = {
     learn_spell: n => `Learn ${n} spell${n > 1 ? "s" : ""}`, choose: n => `Choose ${n}`,
     skills: n => `${n} skill proficienc${n > 1 ? "ies" : "y"}`, expertise: n => `Expertise in ${n} skill${n > 1 ? "s" : ""}`,
     feat: "Feat", slot: n => `Level ${n} spell slot`, proficiency: "Proficiency", resources: "Resources",
+    cantrip_one: "Cantrip", level_n: n => `Level ${n}`, concentration: "Concentration",
   },
   ko: {
     level: "레벨", content: "내용", spells: "주문", actions: "직업 행동", learn_cantrip: n => `소마법 ${n}개 습득`,
     learn_spell: n => `주문 ${n}개 습득`, choose: n => `${n}개 선택`,
     skills: n => `기술 숙련 ${n}개`, expertise: n => `기술 통달 ${n}개`,
     feat: "재주", slot: n => `${n}레벨 주문 슬롯`, proficiency: "숙련", resources: "자원",
+    cantrip_one: "소마법", level_n: n => `${n}레벨`, concentration: "집중",
   },
 };
 
 // Pages that explain a choice option: passive id -> {href, desc}. The class page fills it from
 // fighting_styles.json and weapon_mastery.json.
 const PREVIEWS = {};
+
+// School names for the spell hover tooltip (the spell browser's set).
+const SCHOOL = {
+  Abjuration: ["Abjuration", "방호술"], Conjuration: ["Conjuration", "창조술"],
+  Divination: ["Divination", "예지술"], Enchantment: ["Enchantment", "환혹술"],
+  Evocation: ["Evocation", "방출술"], Illusion: ["Illusion", "환영술"],
+  Necromancy: ["Necromancy", "사령술"], Transmutation: ["Transmutation", "변환술"],
+};
+// The page fills SPELL_MAP (spell id -> spell) from spells.json for the spell hover tooltip.
+const SPELL_MAP = {};
 
 // scope: the class or subclass id whose option list (under its table) the link jumps to.
 function option(o, lang, esc, scope) {
@@ -39,9 +51,20 @@ function levelItems(l, lang, esc, chip, own, scope) {
   const t = k => LEVEL_T[lang][k];
   const L = o => o[lang] || o.en;
   const tag = chip ? `<span class="tag ${own ? "own" : "from"}">${esc(chip)}</span> ` : "";
-  const spell = x => x.id
-    ? `<a class="feat-link" href="spells.html#lang=${lang}&q=${encodeURIComponent(x.name.en)}">${esc(L(x.name))}</a>`
-    : esc(L(x.name));
+  const spell = x => {
+    if (!x.id) return esc(L(x.name));
+    // Hover preview, like the builder: [Level · School · Concentration] then the description.
+    const s = SPELL_MAP[x.id];
+    let tip = "";
+    if (s) {
+      const parts = [s.level === 0 ? t("cantrip_one") : t("level_n")(s.level)];
+      if (s.school && s.school !== "None") parts.push(SCHOOL[s.school] ? SCHOOL[s.school][lang === "ko" ? 1 : 0] : s.school);
+      if (s.concentration) parts.push(t("concentration"));
+      const d = L(s.desc);
+      tip = `<span class="tip" role="tooltip"><span class="k">${esc(parts.join(" · "))}</span>${d ? esc(d) : ""}</span>`;
+    }
+    return `<a class="feat-link" href="spells.html#lang=${lang}&q=${encodeURIComponent(x.name.en)}">${esc(L(x.name))}${tip}</a>`;
+  };
   const res = r => r.slot ? `${t("slot")(r.slot)} +${r.count}` : `${L(r.name)} +${r.count}`;
   return [
     ...l.traits.map(x => `<strong>${esc(L(x.name))}</strong>${L(x.desc) ? ` — ${esc(L(x.desc))}` : ""}`),
