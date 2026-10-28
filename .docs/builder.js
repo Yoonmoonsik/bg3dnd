@@ -289,6 +289,17 @@ function firstBonus(r) {
   return null;
 }
 
+// Pre-fill the level-1 ability pick with the class's default (+2 / +1) from Abilities.tbl.
+function applyDefaultAbility(classId) {
+  const d = cls(classId).ability_default;
+  if (!d) return;
+  const level1 = cls(classId).levels.find(n => n.level === 1);
+  if (!level1) return;
+  const j = level1.picks.findIndex(p => p.kind === "ability");
+  if (j < 0) return;
+  build.picks[pickKey(`c:${classId}:1`, j)] = d;
+}
+
 function abilityBlock(r) {
   const used = ABILITIES.reduce((s, a) => s + COST[build.base[a]], 0);
   const first = cls(build.levels[0]?.class);
@@ -565,7 +576,10 @@ function onClick(ev) {
   else if (act === "add") {
     const c = col.querySelector('[data-act="addclass"]').value;
     build.levels.push({ class: c });
-    if (build.levels.length === 1 && cls(c).preset) Object.assign(build.base, cls(c).preset);
+    if (build.levels.length === 1) {
+      if (cls(c).preset) Object.assign(build.base, cls(c).preset);
+      applyDefaultAbility(c);
+    }
   } else if (act === "remove") {
     build.levels.pop();
     dropFrom(build.levels.length);
@@ -632,7 +646,10 @@ async function onChange(ev) {
     const i = +s.dataset.i;
     dropFrom(i);
     build.levels[i].class = s.value;
-    if (i === 0 && cls(s.value).preset) Object.assign(build.base, cls(s.value).preset);
+    if (i === 0) {
+      if (cls(s.value).preset) Object.assign(build.base, cls(s.value).preset);
+      applyDefaultAbility(s.value);
+    }
   } else if (act === "subclass") {
     build.subclass = build.subclass || {};
     build.subclass[s.dataset.c] = s.value || undefined;
