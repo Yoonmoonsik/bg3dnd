@@ -128,7 +128,12 @@ function subList(c) {
 // Armour keys -> the English proficiency names used in the builder's multiclass data.
 const ARMOR_EN = { light: "Light Armour", medium: "Medium Armour", heavy: "Heavy Armour", shield: "Shields" };
 // A level-1 armour/weapon proficiency not in the class's multiclass list can't be picked up by multiclassing.
-const isL1 = (c, en) => { const mc = MC_PROF[c.id]; return mc ? !mc.has(en) : false; };
+// "Simple Weapons" is the exception: every class has it at level 1, so it is not a level-1-only distinction.
+const isL1 = (c, en) => {
+  if (en === "Simple Weapons") return false;
+  const mc = MC_PROF[c.id];
+  return mc ? !mc.has(en) : false;
+};
 
 function detail(c) {
   // Saving throws are always level-1-only; some armour/weapon profs are too (the ones not in the class's multiclass list).
