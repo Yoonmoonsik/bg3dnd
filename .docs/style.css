@@ -132,6 +132,13 @@ tbody tr:last-child td { border-bottom: 0; }
 .detail .k { color: var(--muted); font-size: 12px; }
 .detail p { margin: 0 0 10px; white-space: pre-line; }
 .detail .note { border-left: 3px solid var(--accent); padding-left: 10px; }
+/* Saving throw proficiencies are level-1-only (not gained by multiclassing): highlighted. */
+.detail .grid .l1 { border-left: 3px solid var(--accent); padding-left: 10px; }
+.detail .grid .l1 .k { color: var(--accent); font-weight: 600; }
+.l1-tag {
+  display: inline-block; font-size: 10px; font-weight: 600; color: var(--chip-on-text); background: var(--accent);
+  border-radius: 4px; padding: 0 5px; margin-left: 5px; cursor: help; vertical-align: middle;
+}
 .detail ul { margin: 0; padding-left: 18px; }
 
 .empty { text-align: center; color: var(--muted); padding: 30px; }

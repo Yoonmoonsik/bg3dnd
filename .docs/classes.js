@@ -10,11 +10,13 @@ const T = {
     col_subclasses: "Subclasses",
     empty: "No classes match these filters.", footer: "Generated from the mod's game data.",
     count: (n, all) => `${n} of ${all} classes`,
-    f_caster: "Spellcasting", f_primary: "Primary Ability", f_source: "Source",
+    f_caster: "Spellcasting", f_primary: "Primary Ability", f_source: "Source", f_attack: "Attack",
     full: "Full caster", half: "Half caster", pact: "Pact magic", third: "Third caster (subclass)", none: "None",
+    extraattack: "Extra Attack", warmagic: "War Magic",
     third_tag: "Third caster", new_sub: "New subclass",
     new: "New", revised: "Revised", vanilla: "Unchanged",
-    hp: h => `${h.base} + ${h.per_level}/level`, saves: "Saving Throws", armor: "Armour", weapons: "Weapons",
+    hp: h => `${h.base} + ${h.per_level}/level`, saves: "Saving Throw Proficiencies", armor: "Armour Proficiencies", weapons: "Weapon Proficiencies",
+    l1_tag: "Level 1 only", l1_title: "Not gained by multiclassing — only at level 1, when you start the class.",
     feat_levels: "Feat levels", subclasses_at: n => `Subclasses (chosen at level ${n})`, features: "Class features",
     with_base: "Include class features",
     light: "Light Armour", medium: "Medium Armour", heavy: "Heavy Armour", shield: "Shields",
@@ -29,11 +31,13 @@ const T = {
     col_subclasses: "하위 직업",
     empty: "조건에 맞는 직업이 없습니다.", footer: "모드 게임 데이터에서 생성했습니다.",
     count: (n, all) => `직업 ${all}종 중 ${n}종`,
-    f_caster: "주문 시전", f_primary: "주 능력치", f_source: "구분",
+    f_caster: "주문 시전", f_primary: "주 능력치", f_source: "구분", f_attack: "공격",
     full: "전 시전자", half: "반 시전자", pact: "계약 마법", third: "1/3 시전자 (하위 직업)", none: "없음",
+    extraattack: "추가 공격", warmagic: "전쟁 마법",
     third_tag: "1/3 시전자", new_sub: "새 하위 직업",
     new: "새 직업", revised: "개정", vanilla: "변경 없음",
-    hp: h => `${h.base} + 레벨당 ${h.per_level}`, saves: "내성 굴림", armor: "갑옷", weapons: "무기",
+    hp: h => `${h.base} + 레벨당 ${h.per_level}`, saves: "내성 굴림 숙련", armor: "갑옷 숙련", weapons: "무기 숙련",
+    l1_tag: "1레벨 한정", l1_title: "멀티클래스로는 얻을 수 없으며, 1레벨(직업 시작)에서만 얻습니다.",
     feat_levels: "재주 레벨", subclasses_at: n => `하위 직업 (${n}레벨에 선택)`, features: "직업 기능",
     with_base: "본래 직업 기능 포함",
     light: "경갑", medium: "평갑", heavy: "중갑", shield: "방패",
@@ -64,6 +68,17 @@ function buildFilters() {
       test: (c, v) => v === "third" ? (SUBS[c.id] || []).some(s => s.caster === "third") : (c.caster || "none") === v },
     { key: "primary", label: "f_primary", values: Object.keys(ABILITY), text: v => ab(v), test: (c, v) => c.primary === v },
     { key: "source", label: "f_source", values: ["new", "revised", "vanilla"], text: v => t(v), test: (c, v) => c.source === v },
+    // Extra Attack / War Magic are passives granted by the class (core or a subclass). War Magic always rides on Extra Attack,
+    // so the two selections overlap; "none" is the clean complement.
+    { key: "attack", label: "f_attack", values: ["extraattack", "warmagic", "none"], text: v => v === "none" ? t("none") : t(v),
+      test: (c, v) => {
+        const has = name => {
+          const inLevels = levels => (levels || []).some(l => (l.traits || []).some(f => f.name.en === name));
+          return inLevels(c.levels) || (SUBS[c.id] || []).some(s => inLevels(s.levels));
+        };
+        const ea = has("Extra Attack"), wm = has("War Magic");
+        return v === "extraattack" ? ea : v === "warmagic" ? wm : !ea && !wm;
+      } },
   ];
 }
 
@@ -110,14 +125,17 @@ function subList(c) {
 }
 
 function detail(c) {
+  // Saving throw proficiencies are the only ones you can't pick up by multiclassing — level 1 only.
   const facts = [
-    [t("saves"), c.saves.map(ab).join(", ")],
-    [t("armor"), c.armor.map(t).join(", ") || "—"],
-    [t("weapons"), c.weapons.map(L).join(", ") || "—"],
-    [t("feat_levels"), c.feat_levels.join(", ")],
+    [t("saves"), c.saves.map(ab).join(", "), true],
+    [t("armor"), c.armor.map(t).join(", ") || "—", false],
+    [t("weapons"), c.weapons.map(L).join(", ") || "—", false],
+    [t("feat_levels"), c.feat_levels.join(", "), false],
   ];
+  const fact = ([k, v, l1]) => `<div${l1 ? ' class="l1"' : ""}><div class="k">${esc(k)}`
+    + `${l1 ? ` <span class="l1-tag" title="${esc(t("l1_title"))}">${esc(t("l1_tag"))}</span>` : ""}</div>${esc(v)}</div>`;
   return `<tr class="detail"><td colspan="5">
-    <div class="grid">${facts.map(([k, v]) => `<div><div class="k">${esc(k)}</div>${esc(v)}</div>`).join("")}</div>
+    <div class="grid">${facts.map(fact).join("")}</div>
     ${L(c.desc) ? `<p class="lore">${esc(lore(c.desc))}</p>` : ""}
     ${c.subclasses.length ? `<div class="k">${esc(t("subclasses_at")(c.subclass_level))}</div><ul class="subs">${subList(c)}</ul>` : ""}
     <div class="k">${esc(t("features"))}</div>
