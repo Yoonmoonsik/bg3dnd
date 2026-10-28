@@ -65,10 +65,10 @@ const NAMES = {
   },
   damage: {
     Acid: ["Acid", "산성"], Bludgeoning: ["Bludgeoning", "타격"], Cold: ["Cold", "냉기"],
-    Fire: ["Fire", "화염"], Force: ["Force", "역장"], Lightning: ["Lightning", "번개"],
-    Necrotic: ["Necrotic", "사령"], Piercing: ["Piercing", "관통"], Poison: ["Poison", "독"],
-    Psychic: ["Psychic", "정신"], Radiant: ["Radiant", "광휘"], Slashing: ["Slashing", "참격"],
-    Thunder: ["Thunder", "천둥"],
+    Fire: ["Fire", "화염"], Force: ["Force", "역장"], Heal: ["Heal", "치유"],
+    Lightning: ["Lightning", "번개"], Necrotic: ["Necrotic", "사령"], Piercing: ["Piercing", "관통"],
+    Poison: ["Poison", "독"], Psychic: ["Psychic", "정신"], Radiant: ["Radiant", "광휘"],
+    Slashing: ["Slashing", "참격"], Thunder: ["Thunder", "천둥"],
   },
   saves: {
     Strength: ["Strength", "근력"], Dexterity: ["Dexterity", "민첩"], Constitution: ["Constitution", "건강"],
@@ -102,8 +102,9 @@ const $ = s => document.querySelector(s);
 const t = k => T[state.lang][k] ?? k;
 // Damage type colors from the game's GenericIcon_DamageType_* icons (glow average); physical types stay uncolored.
 const DAMAGE_COLOR = {
-  Acid: "#eff25c", Cold: "#33c4e7", Fire: "#e17528", Force: "#df7072", Lightning: "#5389e6", Necrotic: "#4fbf79",
-  Poison: "#bfdd4c", Psychic: "#c657ac", Radiant: "#dcc154", Thunder: "#ac73c7",
+  Acid: "#eff25c", Cold: "#33c4e7", Fire: "#e17528", Force: "#df7072", Heal: "#5ae4de",
+  Lightning: "#5389e6", Necrotic: "#4fbf79", Poison: "#bfdd4c", Psychic: "#c657ac",
+  Radiant: "#dcc154", Thunder: "#ac73c7",
 };
 // Casting-time colors from the game's ActionPoint / BonusActionPoint / ReactionActionPoint icons.
 const CAST_COLOR = {
@@ -113,12 +114,13 @@ const dmgSpan = d => (DAMAGE_COLOR[d] ? `<span class="dmg" style="--dmg:${DAMAGE
 const castSpan = c => (CAST_COLOR[c] ? `<span class="cast" style="--cast:${CAST_COLOR[c]}">${esc(t(c))}</span>` : esc(t(c)));
 const nm = (group, v) => (NAMES[group] && NAMES[group][v]) ? NAMES[group][v][state.lang === "ko" ? 1 : 0] : v;
 // Color the damage-type word inside a damage expression ("1d10 Piercing damage" -> the type word).
+// When the type word isn't in the text (heal: "1d4 hit points"), color the whole line.
 const tdlSpan = e => {
   const txt = e[state.lang];
   if (!e.type || !DAMAGE_COLOR[e.type]) return esc(txt);
   const word = nm("damage", e.type);
   const i = txt.indexOf(word);
-  if (i < 0) return esc(txt);
+  if (i < 0) return `<span class="dmg" style="--dmg:${DAMAGE_COLOR[e.type]}">${esc(txt)}</span>`;
   const span = `<span class="dmg" style="--dmg:${DAMAGE_COLOR[e.type]}">${esc(word)}</span>`;
   return esc(txt.slice(0, i)) + span + esc(txt.slice(i + word.length));
 };
