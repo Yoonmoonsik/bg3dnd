@@ -138,6 +138,10 @@ function valueLabel(f, v) {
   if (f.key === "dur") return t("dur_" + v);
   return nm(f.key, v);
 }
+// Damage-type filter chips show the type in its matching damage color (physical types stay uncolored).
+const chipLabel = (f, v) => (f.key === "damage" && DAMAGE_COLOR[v])
+  ? `<span class="dmg" style="--dmg:${DAMAGE_COLOR[v]}">${esc(valueLabel(f, v))}</span>`
+  : esc(valueLabel(f, v));
 
 function rangeText(s) {
   const r = s.range;
@@ -198,7 +202,7 @@ function renderFilters() {
       <div class="label">${esc(t(f.label))}</div>
       <div class="chips">${f.values.map(v => {
         const on = state.sel[f.key] && state.sel[f.key].has(v);
-        return `<button type="button" class="chip" data-f="${f.key}" data-v="${esc(v)}" aria-pressed="${!!on}">${esc(valueLabel(f, v))}</button>`;
+        return `<button type="button" class="chip" data-f="${f.key}" data-v="${esc(v)}" aria-pressed="${!!on}">${chipLabel(f, v)}</button>`;
       }).join("")}</div>
     </div>`).join("");
 }
