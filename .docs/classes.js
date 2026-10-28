@@ -133,7 +133,7 @@ function detail(c) {
     [t("feat_levels"), c.feat_levels.join(", "), false],
   ];
   const fact = ([k, v, l1]) => `<div${l1 ? ' class="l1"' : ""}><div class="k">${esc(k)}`
-    + `${l1 ? ` <span class="l1-tag" title="${esc(t("l1_title"))}">${esc(t("l1_tag"))}</span>` : ""}</div>${esc(v)}</div>`;
+    + `${l1 ? ` <span class="l1-tag tip-host">${esc(t("l1_tag"))}<span class="tip">${esc(t("l1_title"))}</span></span>` : ""}</div>${esc(v)}</div>`;
   return `<tr class="detail"><td colspan="5">
     <div class="grid">${facts.map(fact).join("")}</div>
     ${L(c.desc) ? `<p class="lore">${esc(lore(c.desc))}</p>` : ""}

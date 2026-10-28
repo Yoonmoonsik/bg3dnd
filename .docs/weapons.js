@@ -57,7 +57,7 @@ function masteryLink(w) {
   const m = MASTERY.get(w.mastery.en);
   if (!m) return esc(L(w.mastery));
   const href = `weapon-mastery.html#lang=${state.lang}&open=${encodeURIComponent(m.id)}`;
-  return `<a class="mastery" href="${href}" title="${esc(L(m.desc))}">${esc(L(w.mastery))}</a>`;
+  return `<a class="mastery tip-host" href="${href}">${esc(L(w.mastery))}<span class="tip">${esc(L(m.desc))}</span></a>`;
 }
 // Damage type colors from the game's GenericIcon_DamageType_* icons (glow average); physical types stay uncolored.
 const DAMAGE_COLOR = {

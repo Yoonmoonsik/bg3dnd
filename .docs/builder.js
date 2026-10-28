@@ -111,11 +111,13 @@ const spellDesc = id => {
   const d = L(s.desc);
   return d ? `${meta}\n${d}` : meta;
 };
-// Native hover text: shows the collected description without covering the page.
+// Native hover text for form controls (selects/buttons); the collected .bld-tip names use an instant .tip tooltip instead.
 const tip = d => d ? ` title="${esc(d)}"` : "";
 const tipSpans = items => {
   const seen = new Set();
-  return items.filter(([n]) => !seen.has(n) && seen.add(n)).map(([n, d]) => `<span class="bld-tip"${tip(d)}>${esc(n)}</span>`).join(", ");
+  return items.filter(([n]) => !seen.has(n) && seen.add(n)).map(([n, d]) => d
+    ? `<span class="bld-tip tip-host">${esc(n)}<span class="tip">${esc(d)}</span></span>`
+    : `<span class="bld-tip">${esc(n)}</span>`).join(", ");
 };
 // Sorted by the shown name in the page language (abc / 가나다).
 const byName = (list, nameOf) => list.slice().sort((a, b) => nameOf(a).localeCompare(nameOf(b), state.lang));

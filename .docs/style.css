@@ -181,13 +181,15 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 /* Feat link with a hover preview (background page) */
 .feat-link { position: relative; color: var(--accent); text-decoration: none; }
 .feat-link:hover { text-decoration: underline; }
-.feat-link .tip {
-  display: none; position: absolute; left: 0; top: calc(100% + 6px); z-index: 10; width: min(360px, 80vw);
+/* An inline element that hosts a hover tooltip: its .tip child shows on hover, positioned relative to it. */
+.tip-host { position: relative; }
+.tip {
+  display: none; position: absolute; left: 0; top: calc(100% + 6px); z-index: 50; width: min(360px, 80vw);
   padding: 10px 12px; background: var(--panel); color: var(--text); border: 1px solid var(--line);
   border-radius: 8px; box-shadow: 0 6px 20px rgba(0, 0, 0, .25); font-size: 13px; white-space: normal;
 }
-.feat-link .tip .k { display: block; margin-bottom: 4px; }
-.feat-link:hover .tip, .feat-link:focus .tip { display: block; }
+.tip .k { display: block; margin-bottom: 4px; }
+.feat-link:hover .tip, .feat-link:focus .tip, .tip-host:hover .tip, .tip-host:focus .tip { display: block; }
 .table-wrap { overflow: visible; }
 
 /* Character creation portraits (species page) */
@@ -255,7 +257,7 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
   .bld-summary { position: static; }
 }
 .chip.off { opacity: .4; cursor: not-allowed; }
-.bld-tip[title] { text-decoration: underline dotted var(--muted); cursor: help; }
+.bld-tip.tip-host { text-decoration: underline dotted var(--muted); cursor: help; }
 .bld-toast {
   position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); max-width: calc(100% - 32px);
   background: var(--text); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 14px;
