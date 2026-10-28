@@ -7506,7 +7506,7 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11002" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnShortRest;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source);" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWarlockCantrip() and IsCharismaModifierPositive()):DamageBonus(CharismaModifier);IF(HasPassive('Celestial_3_CelestialSpells',context.Source) and (SpellId('Target_SacredFlame') or SpellId('Target_SacredFlame_BonusAction')) and IsCharismaModifierPositive()):DamageBonus(CharismaModifier);IF(HasPassive('PactOfTheTome',context.Source) and SpellId('Target_ThornWhip') and IsCharismaModifierPositive()):DamageBonus(CharismaModifier);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasPassive('PactOfTheTome',context.Source) and IsSpell() and IsCharismaModifierPositive()):DamageBonus(CharismaModifier);IF(not HasPassive('PactOfTheTome',context.Source) and (IsWarlockCantrip() or (HasPassive('Celestial_3_CelestialSpells',context.Source) and (SpellId('Target_SacredFlame') or SpellId('Target_SacredFlame_BonusAction')))) and IsCharismaModifierPositive()):DamageBonus(CharismaModifier);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf16702a8g0c7fgdd18g3ea0g64f4822587ba" version="1" />
       </fields>
     </stat_object>
