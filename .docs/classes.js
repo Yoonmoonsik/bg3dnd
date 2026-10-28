@@ -53,6 +53,7 @@ const state = { lang: "en", q: "", sel: {}, open: null, openSub: null, withBase:
 let CLASSES = [];
 let SUBS = {};  // class id -> subclasses
 let FILTERS = [];
+let MC_PROF = {};  // class id -> Set of armour/weapon proficiencies gained by multiclassing (the rest are level-1-only)
 
 const $ = s => document.querySelector(s);
 const t = k => T[state.lang][k] ?? k;
@@ -124,16 +125,26 @@ function subList(c) {
   }).join("");
 }
 
+// Armour keys -> the English proficiency names used in the builder's multiclass data.
+const ARMOR_EN = { light: "Light Armour", medium: "Medium Armour", heavy: "Heavy Armour", shield: "Shields" };
+// A level-1 armour/weapon proficiency not in the class's multiclass list can't be picked up by multiclassing.
+const isL1 = (c, en) => { const mc = MC_PROF[c.id]; return mc ? !mc.has(en) : false; };
+
 function detail(c) {
-  // Saving throw proficiencies are the only ones you can't pick up by multiclassing — level 1 only.
+  // Saving throws are always level-1-only; some armour/weapon profs are too (the ones not in the class's multiclass list).
+  const item = (name, l1) => l1
+    ? `<span class="l1-item tip-host">${esc(name)}<span class="tip">${esc(t("l1_title"))}</span></span>`
+    : esc(name);
+  const armor = c.armor.map(a => item(t(a), isL1(c, ARMOR_EN[a])));
+  const weapons = c.weapons.map(w => item(L(w), isL1(c, w.en)));
   const facts = [
-    [t("saves"), c.saves.map(ab).join(", "), true],
-    [t("armor"), c.armor.map(t).join(", ") || "—", false],
-    [t("weapons"), c.weapons.map(L).join(", ") || "—", false],
-    [t("feat_levels"), c.feat_levels.join(", "), false],
+    [t("saves"), esc(c.saves.map(ab).join(", ")), true],
+    [t("armor"), armor.join(", ") || "—", false],
+    [t("weapons"), weapons.join(", ") || "—", false],
+    [t("feat_levels"), esc(c.feat_levels.join(", ")), false],
   ];
   const fact = ([k, v, l1]) => `<div${l1 ? ' class="l1"' : ""}><div class="k">${esc(k)}`
-    + `${l1 ? ` <span class="l1-tag tip-host">${esc(t("l1_tag"))}<span class="tip">${esc(t("l1_title"))}</span></span>` : ""}</div>${esc(v)}</div>`;
+    + `${l1 ? ` <span class="l1-tag tip-host">${esc(t("l1_tag"))}<span class="tip">${esc(t("l1_title"))}</span></span>` : ""}</div>${v}</div>`;
   return `<tr class="detail"><td colspan="5">
     <div class="grid">${facts.map(fact).join("")}</div>
     ${L(c.desc) ? `<p class="lore">${esc(lore(c.desc))}</p>` : ""}
@@ -269,12 +280,18 @@ function bind() {
 Promise.all([fetch("data/classes.json").then(r => r.json()), fetch("data/subclasses.json").then(r => r.json()),
   fetch("data/fighting_styles.json").then(r => r.json()).catch(() => ({ styles: [] })),
   fetch("data/weapon_mastery.json").then(r => r.json()).catch(() => ({ masteries: [] })),
-  fetch("data/spells.json").then(r => r.json()).catch(() => ({ spells: [] }))])
-  .then(([c, s, fs, wm, sp]) => {
+  fetch("data/spells.json").then(r => r.json()).catch(() => ({ spells: [] })),
+  fetch("data/builder.json").then(r => r.json()).catch(() => ({ classes: [] }))])
+  .then(([c, s, fs, wm, sp, bd]) => {
     for (const x of fs.styles) PREVIEWS[x.id] = { href: "fighting-styles.html", desc: x.desc };
     for (const x of wm.masteries) PREVIEWS[x.id] = { href: "weapon-mastery.html", desc: x.desc };
     // Spell ids (base and variant) -> the spell, for the level-table spell hover tooltip.
     for (const x of sp.spells) { SPELL_MAP[x.id] = x; for (const i of x.ids) SPELL_MAP[i] = x; }
+    // Armour/weapon proficiencies gained by multiclassing (the builder's multiclass node); the rest are level-1-only.
+    for (const bc of (bd.classes || [])) {
+      const prof = (bc.multiclass && bc.multiclass[0] && bc.multiclass[0].prof) || [];
+      MC_PROF[bc.id] = new Set(prof.map(p => p.en));
+    }
     CLASSES = c.classes;
     for (const x of s.subclasses) (SUBS[x.class.id] = SUBS[x.class.id] || []).push(x);
     for (const id in SUBS) SUBS[id].sort((a, b) => a.name.en.localeCompare(b.name.en));
