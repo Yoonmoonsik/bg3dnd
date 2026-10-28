@@ -124,7 +124,13 @@ const statusName = id => {
     (i !== 0 && small.has(w)) ? w : (w ? w[0].toUpperCase() + w.slice(1) : w)).join(" ");
 };
 const durText = n => n === -1 ? t("turn_long") : t("turns")(n);
-const tsaSpan = e => `${esc(statusName(e.status))} (${esc(durText(e.turns))})`;
+// One lasting condition: the localized name + duration, with the localized description below it.
+const tsaBlock = e => {
+  const L = state.lang;
+  const name = esc((e.name && (e.name[L] || e.name.en)) || statusName(e.status));
+  const desc = e.desc && e.desc[L] ? `<div class="tsa-d">${esc(e.desc[L])}</div>` : "";
+  return `<div class="tsa"><span class="tsa-n">${name}</span> <span class="tsa-dur">(${esc(durText(e.turns))})</span>${desc}</div>`;
+};
 
 function valueLabel(f, v) {
   if (f.key === "level") return v === 0 ? t("cantrip") : t("level")(v);
@@ -245,13 +251,13 @@ function detail(s) {
     s.ritual && [t("ritual"), t("yes")],
     effectText(s) && [t("col_effect"), effectText(s)],
     (s.tdl.length ? [t("d_damage"), null, s.tdl.map(tdlSpan).join("<br>")] : (s.damage.length && [t("col_damage"), null, s.damage.map(dmgSpan).join(", ")])),
-    s.tsa.length && [t("d_status"), null, s.tsa.map(tsaSpan).join(", ")],
+    s.tsa.length && [t("d_status"), null, `<div class="tsa-list">${s.tsa.map(tsaBlock).join("")}</div>`, "tsa-cell"],
     [t("d_classes"), s.classes.map(c => nm("classes", c)).join(", ")],
     [t("d_scroll"), s.scroll ? t("yes") : t("no")],
     [t("d_id"), s.id],
   ].filter(Boolean);
   return `<tr class="detail"><td colspan="7">
-    <div class="grid">${items.map(([k, v, html]) => `<div><div class="k">${esc(k)}</div>${html ?? esc(v)}</div>`).join("")}</div>
+    <div class="grid">${items.map(([k, v, html, cls]) => `<div${cls ? ` class="${cls}"` : ""}><div class="k">${esc(k)}</div>${html ?? esc(v)}</div>`).join("")}</div>
     ${s.desc[L] ? `<p>${esc(s.desc[L])}</p>` : ""}
     ${s.upcast ? `<div class="k">${esc(t("d_upcast"))}</div><p>${esc(s.upcast[L])}</p>` : ""}
     ${s.variants.length ? `<div class="k">${esc(t("d_variants"))}</div><ul>${s.variants.map(v => `<li>${esc(v.name[L])}</li>`).join("")}</ul>` : ""}
