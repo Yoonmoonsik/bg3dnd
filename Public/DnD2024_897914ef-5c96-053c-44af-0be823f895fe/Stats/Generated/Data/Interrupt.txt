@@ -590,7 +590,7 @@ data "InterruptContextScope" "Nearby"
 data "Container" "YesNoDecision"
 data "Conditions" "Self(context.Source,context.Observer) and Ally(context.Target, context.Observer) and IsHeallingSpell();"
 data "Properties" "ApplyStatus(OBSERVER_TARGET,LUNAR_VITALITY,100,1);"
-data "Cost" "BardicInspiration:1;LunarVitality:1;"
+data "Cost" "BardicInspiration:1;LunarVitalityTurn:1;"
 data "InterruptDefaultValue" "Ask;Enabled"
 
 new entry "Interrupt_CombatInspiration_Damage"

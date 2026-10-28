@@ -102,9 +102,9 @@
                     <attribute id="UUID" type="guid" value="e4e4d529-5386-489f-b547-57425041cfe9"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="hc939b12eg2ee5g197bgc522ga5abc592a4b0" version="1"/>
-                    <attribute id="Name" type="FixedString" value="LunarVitality"/>
+                    <attribute id="Name" type="FixedString" value="LunarVitalityTurn"/>
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
                     <attribute id="UUID" type="guid" value="707b34bf-aa14-461c-8a38-19bd0ee9b76e"/>
                 </node>
                 <node id="ActionResourceDefinition">
@@ -263,6 +263,13 @@
                     <attribute id="Name" type="FixedString" value="PsionicStrikeTurn"/>
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
                     <attribute id="UUID" type="guid" value="07ac3923-0845-4050-956f-e04976a5db8a"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h52497db7gb532gddfeg0bf4g71f7c84fdda2" version="1"/>
+                    <attribute id="Name" type="FixedString" value="GiantsMight"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="34d749af-e793-4ad2-ba4f-6b35ec43148a"/>
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="DisplayName" type="TranslatedString" handle="hee38303dg6245g8ae7gacaegab26a9db9d7e" version="1"/>
@@ -1081,13 +1088,6 @@
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
                     <attribute id="UUID" type="guid" value="77fd4b90-31ed-4ada-95ff-2ba739aab878"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h52497db7gb532gddfeg0bf4g71f7c84fdda2" version="1"/>
-                    <attribute id="Name" type="FixedString" value="GiantsMight"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="34d749af-e793-4ad2-ba4f-6b35ec43148a"/>
                 </node>
             </children>
         </node>

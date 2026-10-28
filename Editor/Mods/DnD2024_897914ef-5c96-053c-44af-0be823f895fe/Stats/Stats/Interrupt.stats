@@ -847,7 +847,7 @@
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and Ally(context.Target, context.Observer) and IsHeallingSpell();" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,LUNAR_VITALITY,100,1);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="BardicInspiration:1;LunarVitality:1;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BardicInspiration:1;LunarVitalityTurn:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>

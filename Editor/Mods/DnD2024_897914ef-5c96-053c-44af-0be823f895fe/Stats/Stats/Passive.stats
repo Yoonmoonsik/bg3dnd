@@ -2638,7 +2638,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Moonbeam" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="2503" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InspiredEclipse);ActionResource(LunarVitality,1,0);UnlockInterrupt(Interrupt_LunarVitality);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InspiredEclipse);ActionResource(LunarVitalityTurn,1,0);UnlockInterrupt(Interrupt_LunarVitality);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasUseCosts('BardicInspiration');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,INSPIRED_ECLIPSE,100,1)" />
