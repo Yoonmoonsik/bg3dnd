@@ -41,7 +41,7 @@ const T = {
     feat_levels: "재주 레벨", subclasses_at: n => `하위 직업 (${n}레벨에 선택)`, features: "직업 기능",
     with_base: "본래 직업 기능 포함",
     light: "경갑", medium: "평갑", heavy: "중갑", shield: "방패",
-    SimpleWeapons: "단순 무기", MartialWeapons: "군용 무기", casting: a => `${a} (주문 시전)`,
+    SimpleWeapons: "일반 무기", MartialWeapons: "군용 무기", casting: a => `${a} (주문 시전)`,
   },
 };
 const ABILITY = {
