@@ -74,6 +74,23 @@ const DAMAGE_COLOR = {
 };
 const damageCell = w => `${esc(w.damage)} ${DAMAGE_COLOR[w.damageType.en]
   ? `<span class="dmg" style="--dmg:${DAMAGE_COLOR[w.damageType.en]}">${esc(L(w.damageType))}</span>` : esc(L(w.damageType))}`;
+// Weapon property descriptions from the game's LSTooltips (Tooltips.xaml) and the mod's Passive descriptions.
+// Properties without a description (Heavy, Ammunition, Loading, Magical) get no entry.
+const PROP_TIPS = {
+  "Finesse": { en: "Scales with your Dexterity instead of your Strength if your Dexterity is higher.", ko: "캐릭터의 민첩이 근력보다 높으면, 근력이 아니라 민첩에 비례합니다." },
+  "Light": { en: "Can be dual wielded with another Light weapon.", ko: "다른 경량 무기와 쌍수로 사용할 수 있습니다." },
+  "Reach": { en: "Has increased range and can be used to attack from further away.", ko: "시전 범위가 증가해 더욱 멀리서 공격할 수 있습니다." },
+  "Versatile": { en: "Can be used with one hand or both. Deals more damage when wielded with both hands.", ko: "한 손이나 양손으로 사용할 수 있습니다. 양손으로 사용하면 더 큰 피해를 줍니다." },
+  "Two-Handed": { en: "Requires two hands to use.", ko: "양손으로 사용해야 합니다." },
+  "Firearm": { en: "If you lack the Firearm Expert property, you don't add your ability modifier to this weapon's damage rolls.", ko: "총기 전문가 특성이 없다면, 이 무기의 피해 굴림에 능력 보정치를 더하지 않습니다." },
+  "Scatter": { en: "Being within 5 feet of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.", ko: "적으로부터 1.5m 이내에 있어도 이 무기를 사용한 원거리 명중 굴림에 불리 보정을 받지 않습니다." },
+};
+const propSpan = p => {
+  const tip = PROP_TIPS[p.en];
+  return tip
+    ? `<span class="tip-host">${esc(L(p))}<span class="tip">${esc(tip[state.lang])}</span></span>`
+    : esc(L(p));
+};
 
 function matches(w) {
   if (state.q) {
@@ -111,7 +128,7 @@ function renderFilters() {
     `<div class="fgroup" data-f="rng"><div class="label">${esc(t("f_rng"))}</div><div class="chips">${
       RANGES.map(r => chip(r.en, L(r), state.rng)).join("")}</div></div>` +
     `<div class="fgroup" data-f="prop"><div class="label">${esc(t("f_prop"))}</div><div class="chips">${
-      byName(PROPS).map(p => chip(p.en, L(p), state.prop)).join("")}</div></div>` +
+      byName(PROPS).map(p => chip(p.en, L(p), state.prop, PROP_TIPS[p.en] ? PROP_TIPS[p.en][state.lang] : null)).join("")}</div></div>` +
     `<div class="fgroup" data-f="mas"><div class="label">${esc(t("f_mastery"))}</div><div class="chips">${
       byName(MASTERIES).map(m => chip(m.en, L(m), state.mas)).join("")}${chip("none", t("none"), state.mas)}</div></div>` +
     `<div class="fgroup" data-f="plus"><div class="label">${esc(t("f_plus"))}</div><div class="chips">${
@@ -143,7 +160,7 @@ function renderTable() {
       [t("col_damage"), null, damageCell(w)],
       [t("enchant"), plus(w)],
       w.range ? [t("range"), t("m")(w.range)] : null,
-      w.props.length ? [t("props"), w.props.map(L).join(", ")] : null,
+      w.props.length ? [t("props"), null, w.props.map(propSpan).join(", ")] : null,
       [t("rarity"), L(w.rarity)],
       w.mastery ? [t("mastery"), L(w.mastery)] : null,
       w.effects.length ? [t("effects"), w.effects.map(L).join(", ")] : null,
