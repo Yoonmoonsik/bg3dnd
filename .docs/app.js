@@ -105,7 +105,12 @@ const DAMAGE_COLOR = {
   Acid: "#eff25c", Cold: "#33c4e7", Fire: "#e17528", Force: "#df7072", Lightning: "#5389e6", Necrotic: "#4fbf79",
   Poison: "#bfdd4c", Psychic: "#c657ac", Radiant: "#dcc154", Thunder: "#ac73c7",
 };
+// Casting-time colors from the game's ActionPoint / BonusActionPoint / ReactionActionPoint icons.
+const CAST_COLOR = {
+  action: "#00a540", bonus: "#ff5200", reaction: "#fe88fa",
+};
 const dmgSpan = d => (DAMAGE_COLOR[d] ? `<span class="dmg" style="--dmg:${DAMAGE_COLOR[d]}">${esc(nm("damage", d))}</span>` : esc(nm("damage", d)));
+const castSpan = c => (CAST_COLOR[c] ? `<span class="cast" style="--cast:${CAST_COLOR[c]}">${esc(t(c))}</span>` : esc(t(c)));
 const nm = (group, v) => (NAMES[group] && NAMES[group][v]) ? NAMES[group][v][state.lang === "ko" ? 1 : 0] : v;
 // Color the damage-type word inside a damage expression ("1d10 Piercing damage" -> the type word).
 const tdlSpan = e => {
@@ -139,9 +144,14 @@ function valueLabel(f, v) {
   return nm(f.key, v);
 }
 // Damage-type filter chips show the type in its matching damage color (physical types stay uncolored).
-const chipLabel = (f, v) => (f.key === "damage" && DAMAGE_COLOR[v])
-  ? `<span class="dmg" style="--dmg:${DAMAGE_COLOR[v]}">${esc(valueLabel(f, v))}</span>`
-  : esc(valueLabel(f, v));
+// Casting-time filter chips show the type in its matching cast color.
+const chipLabel = (f, v) => {
+  if (f.key === "damage" && DAMAGE_COLOR[v])
+    return `<span class="dmg" style="--dmg:${DAMAGE_COLOR[v]}">${esc(valueLabel(f, v))}</span>`;
+  if (f.key === "cast" && CAST_COLOR[v])
+    return `<span class="cast" style="--cast:${CAST_COLOR[v]}">${esc(valueLabel(f, v))}</span>`;
+  return esc(valueLabel(f, v));
+};
 
 function rangeText(s) {
   const r = s.range;
@@ -231,7 +241,7 @@ function renderTable() {
       <td><div class="name"><img src="icons/${esc(s.icon)}.png" alt="" loading="lazy" width="32" height="32">
         <div><strong>${esc(s.name[L])}</strong><span class="tags">${tags}</span>${flags ? `<div class="mini">${esc(flags)}</div>` : ""}</div></div></td>
       <td>${esc(levelText(s.level))}</td>
-      <td>${esc(s.cast.map(t).join(", "))}</td>
+      <td>${s.cast.map(castSpan).join(", ")}</td>
       <td class="hide-sm">${esc(rangeText(s))}</td>
       <td class="hide-sm">${esc(effectText(s))}</td>
       <td class="hide-md">${s.damage.map(dmgSpan).join(", ")}</td>
@@ -247,7 +257,7 @@ function detail(s) {
   const items = [
     [t("col_level"), levelText(s.level)],
     [t("col_school"), nm("school", s.school) + (s.sangromancy ? ` (${t("sangromancy")})` : "")],
-    [t("col_cast"), s.cast.map(t).join(", ")],
+    [t("col_cast"), null, s.cast.map(castSpan).join(", ")],
     [t("col_range"), rangeText(s)],
     area && [t("d_area"), area],
     [t("d_components"), s.components.join(", ") || "—"],
