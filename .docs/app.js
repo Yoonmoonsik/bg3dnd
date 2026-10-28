@@ -209,14 +209,19 @@ function esc(x) {
 
 function renderFilters() {
   const box = $("#filters");
-  box.innerHTML = FILTERS.map(f => `
+  box.innerHTML = FILTERS.map(f => {
+    let vals = f.values;
+    if (state.lang === "ko" && f.key === "damage")
+      vals = [...vals].sort((a, b) => NAMES.damage[a][1].localeCompare(NAMES.damage[b][1], "ko"));
+    return `
     <div class="fgroup">
       <div class="label">${esc(t(f.label))}</div>
-      <div class="chips">${f.values.map(v => {
+      <div class="chips">${vals.map(v => {
         const on = state.sel[f.key] && state.sel[f.key].has(v);
         return `<button type="button" class="chip" data-f="${f.key}" data-v="${esc(v)}" aria-pressed="${!!on}">${chipLabel(f, v)}</button>`;
       }).join("")}</div>
-    </div>`).join("");
+    </div>`;
+  }).join("");
 }
 
 function renderTable() {
