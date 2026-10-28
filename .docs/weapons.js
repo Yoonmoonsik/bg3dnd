@@ -13,6 +13,7 @@ const T = {
     f_src: "Source", mod: "Added by the mod", vanilla: "Vanilla",
     f_kind: "Weapon type", f_group: "Weapon group", f_mastery: "Mastery", none: "None", f_plus: "Enchantment", f_rarity: "Rarity", enchant: "Enchantment",
     group: "Group", range: "Range", props: "Properties", rarity: "Rarity", mastery: "Mastery", effects: "Effects",
+    simpleWeaponTip: "Simple weapons are treated as something all characters are proficient in.",
     m: n => `${n}m`,
   },
   ko: {
@@ -27,6 +28,7 @@ const T = {
     f_src: "출처", mod: "모드 추가", vanilla: "바닐라",
     f_kind: "무기 종류", f_group: "무기 분류", f_mastery: "숙련술", none: "없음", f_plus: "강화", f_rarity: "등급", enchant: "강화",
     group: "분류", range: "사거리", props: "속성", rarity: "등급", mastery: "숙련술", effects: "효과",
+    simpleWeaponTip: "일반 무기는 모든 캐릭터가 숙련된 것으로 취급됩니다.",
     m: n => `${n}m`,
   },
 };
@@ -48,6 +50,8 @@ const cat = w => (w.unique ? "unique" : "general");
 const src = w => (w.new ? "mod" : "vanilla");
 const plus = w => (w.plus ? `+${w.plus}` : "—");
 const mas = w => (w.mastery ? w.mastery.en : "none");
+// Simple weapons are a universal proficiency: every character has them, so flag those groups for the tooltip.
+const isSimpleGroup = g => g.en === "Simple Melee" || g.en === "Simple Ranged";
 // Item frame colors from the game's rarityFrame_*_front textures; Common has no frame color.
 const RARITY_COLOR = { Uncommon: "#01bd39", Rare: "#01bfff", "Very Rare": "#d1017b", Legendary: "#e7b64d" };
 const tint = r => (RARITY_COLOR[r.en] ? ` class="rarity" style="--rarity:${RARITY_COLOR[r.en]}"` : "");
@@ -82,8 +86,9 @@ function matches(w) {
   return !state.grp.size || state.grp.has(w.group.en);
 }
 
-function chip(v, label, sel) {
-  return `<button type="button" class="chip" data-v="${esc(v)}" aria-pressed="${sel.has(v)}">${esc(label)}</button>`;
+function chip(v, label, sel, tipText) {
+  const tip = tipText ? `<span class="tip">${esc(tipText)}</span>` : "";
+  return `<button type="button" class="chip${tipText ? " tip-host" : ""}" data-v="${esc(v)}" aria-pressed="${sel.has(v)}">${esc(label)}${tip}</button>`;
 }
 function renderFilters() {
   const byName = list => [...list].sort((a, b) => L(a).localeCompare(L(b), state.lang));
@@ -95,7 +100,7 @@ function renderFilters() {
     `<div class="fgroup" data-f="kind"><div class="label">${esc(t("f_kind"))}</div><div class="chips">${
       byName(KINDS).map(k => chip(k.en, L(k), state.kind)).join("")}</div></div>` +
     `<div class="fgroup" data-f="grp"><div class="label">${esc(t("f_group"))}</div><div class="chips">${
-      GROUPS.map(g => chip(g.en, L(g), state.grp)).join("")}</div></div>` +
+      GROUPS.map(g => chip(g.en, L(g), state.grp, isSimpleGroup(g) ? t("simpleWeaponTip") : null)).join("")}</div></div>` +
     `<div class="fgroup" data-f="mas"><div class="label">${esc(t("f_mastery"))}</div><div class="chips">${
       byName(MASTERIES).map(m => chip(m.en, L(m), state.mas)).join("")}${chip("none", t("none"), state.mas)}</div></div>` +
     `<div class="fgroup" data-f="plus"><div class="label">${esc(t("f_plus"))}</div><div class="chips">${
@@ -118,8 +123,11 @@ function renderTable() {
       <td>${masteryLink(w)}</td>
       <td>${esc(plus(w))}</td>
     </tr>`;
+    const groupHtml = isSimpleGroup(w.group)
+      ? `<span class="tip-host">${esc(L(w.group))}<span class="tip">${esc(t("simpleWeaponTip"))}</span></span>`
+      : null;
     const facts = [
-      [t("group"), L(w.group)],
+      [t("group"), L(w.group), groupHtml],
       [t("col_damage"), null, damageCell(w)],
       [t("enchant"), plus(w)],
       w.range ? [t("range"), t("m")(w.range)] : null,
