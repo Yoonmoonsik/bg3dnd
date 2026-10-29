@@ -10760,6 +10760,12 @@ data "SpellType" "Shout"
 using "Shout_MAG_Monk_Restore_Ki_Lesser"
 data "UseCosts" "ActionPoint:1"
 
+new entry "Shout_Shout_MAG_Monk_Restore_Ki"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_MAG_Monk_Restore_Ki"
+data "UseCosts" "ActionPoint:1"
+
 new entry "Shout_MAG_MirrorImage"
 type "SpellData"
 data "SpellType" "Shout"
