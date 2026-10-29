@@ -2514,6 +2514,20 @@
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CACOPHONIC_SHIELD_DAMAGE_RECEIVED') or StatusDurationLessThan(context.Source, 'CACOPHONIC_SHIELD_DAMAGE_RECEIVED', 0.1)):DealDamage(6d6/2,Thunder,Magical);ApplyStatus(CACOPHONIC_SHIELD_DAMAGE_RECEIVED,100,1)" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5be836ec-8182-465d-bc4f-48621768c41a" />
+        <field name="Name" type="NameTableFieldDefinition" value="__CONJURATION__SLEVEL 4__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8585081a-2f87-48b1-b024-2bf859ebcda0" />
+        <field name="Name" type="NameTableFieldDefinition" value="GUARDIAN_OF_FAITH_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ba5cfafd-ad5d-43fa-b956-5db7b3e1a05e" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MainHandAttack_GuardianOfFaith, Target_MainHandAttack);ActionResourceBlock(Movement);" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="09f2caa6-2a57-499d-87ef-be653354b997" />
