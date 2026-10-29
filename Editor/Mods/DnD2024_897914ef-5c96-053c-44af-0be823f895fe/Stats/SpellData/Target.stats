@@ -7026,7 +7026,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2692dea5-6368-42a6-a6c1-4f77140d6e00" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasAnyStatus({'MOONBEAM_OWNER','MOONBEAM_OWNER_3','MOONBEAM_OWNER_4','MOONBEAM_OWNER_5','MOONBEAM_OWNER_6'})" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant);IF(HasPassive('Moon_6_BlessingsOfMoonlight',context.Source)):ApplyStatus(SELF,BLESSINGS_OF_MOONLIGHT,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d10/2,Radiant);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb5c8a2c2gcb05g89ceg701dg519dda931a2d" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant);Distance(1.5);Distance(12);Distance(18)" />
@@ -7038,7 +7038,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Moonbeam_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b42e6c5e-f360-46fb-9e5c-845782ada49c" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Radiant)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Radiant);IF(HasPassive('Moon_6_BlessingsOfMoonlight',context.Source)):ApplyStatus(SELF,BLESSINGS_OF_MOONLIGHT,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d10/2,Radiant);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc24592adg7667g3703g77f3g28bd0167f967" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant);Distance(1.5);Distance(12);Distance(18)" />
@@ -7050,7 +7050,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Moonbeam_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bdeb2569-4881-4c4c-a063-950985c812b8" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant);IF(HasPassive('Moon_6_BlessingsOfMoonlight',context.Source)):ApplyStatus(SELF,BLESSINGS_OF_MOONLIGHT,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d10/2,Radiant);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2a605fbbg9e30g5d2fg99cfge3895f1bc658" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant);Distance(1.5);Distance(12);Distance(18)" />
@@ -7062,7 +7062,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Moonbeam_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="eed2f7c6-a446-4285-87b6-7155b57a9a4b" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d10,Radiant)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d10,Radiant);IF(HasPassive('Moon_6_BlessingsOfMoonlight',context.Source)):ApplyStatus(SELF,BLESSINGS_OF_MOONLIGHT,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d10/2,Radiant);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3d8e9323g4462gb81dg88e1g83c02f1a2c2b" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant);Distance(1.5);Distance(12);Distance(18)" />
@@ -7074,7 +7074,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Moonbeam_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7da4d733-1a42-45fb-ac60-804fdbc22c15" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d10,Radiant)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d10,Radiant);IF(HasPassive('Moon_6_BlessingsOfMoonlight',context.Source)):ApplyStatus(SELF,BLESSINGS_OF_MOONLIGHT,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(6d10/2,Radiant);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heee3ac7dg3b5cg3d93geb1dgae3f70c163c3" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant);Distance(1.5);Distance(12);Distance(18)" />
@@ -7131,7 +7131,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="255ad93d-754c-49cc-b45f-5d760b11cde9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant);IF(HasPassive('Moon_6_BlessingsOfMoonlight',context.Source)):ApplyStatus(SELF,BLESSINGS_OF_MOONLIGHT,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d10/2,Radiant);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2effdbc6g3649ga065g631ag652379eb3394" version="1" />
       </fields>
@@ -7142,7 +7142,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Moonbeam_Move_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="595233f5-2811-48cf-b8ef-becc4f4dd6a2" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Radiant)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Radiant);IF(HasPassive('Moon_6_BlessingsOfMoonlight',context.Source)):ApplyStatus(SELF,BLESSINGS_OF_MOONLIGHT,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d10/2,Radiant);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h743085a1g10dfg57d1g29eagd8357d3c8d91" version="1" />
       </fields>
@@ -7153,7 +7153,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Moonbeam_Move_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bc4970a6-29c1-4193-bbf8-ae58cdbbdec5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant);IF(HasPassive('Moon_6_BlessingsOfMoonlight',context.Source)):ApplyStatus(SELF,BLESSINGS_OF_MOONLIGHT,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d10/2,Radiant);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h86e6e70dg96a1gf0b3g1ac9g183926c4fc52" version="1" />
       </fields>
@@ -7164,7 +7164,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Moonbeam_Move_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d269b88e-4954-436b-9f6f-943e4045a744" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d10,Radiant)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d10,Radiant);IF(HasPassive('Moon_6_BlessingsOfMoonlight',context.Source)):ApplyStatus(SELF,BLESSINGS_OF_MOONLIGHT,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d10/2,Radiant);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hab03ad6cgd566g99b9g7354g5588d613d94d" version="1" />
       </fields>
@@ -7175,7 +7175,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Moonbeam_Move_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e1646bf4-2519-422b-bf8c-de5b33cee0e9" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d10,Radiant)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d10,Radiant);IF(HasPassive('Moon_6_BlessingsOfMoonlight',context.Source)):ApplyStatus(SELF,BLESSINGS_OF_MOONLIGHT,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(6d10/2,Radiant);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8816ef8fg0960g42a5g2260g3c275dbbd0f6" version="1" />
       </fields>
@@ -16496,7 +16496,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="00de6a3b-ea9f-41ea-96ba-05440de4f1da" />
         <field name="Name" type="NameTableFieldDefinition" value="InspiredEclipse" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();GROUND:ApplyStatus(SELF,INVISIBILITY,100,2);GROUND:RemoveStatus(SELF,SHADOW_CURSED_VINES);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();GROUND:RemoveStatus(SELF,SHADOW_CURSED_VINES);GROUND:RemoveStatus(SELF,INSPIRED_ECLIPSE);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('INSPIRED_ECLIPSE');" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnAttack" enumeration_type_name="StatusEvent" version="1" />
@@ -16525,15 +16525,15 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f0972eb9-9c3f-413e-8660-ece89946c991" />
         <field name="Name" type="NameTableFieldDefinition" value="BlessingsOfMoonlight" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(2d4);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(2d4);RemoveStatus(SELF,BLESSINGS_OF_MOONLIGHT);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('MOONBEAM_OWNER') or HasStatus('MOONBEAM_OWNER_3') or HasStatus('MOONBEAM_OWNER_4') or HasStatus('MOONBEAM_OWNER_5') or HasStatus('MOONBEAM_OWNER_6');" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('BLESSINGS_OF_MOONLIGHT');" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnAttack" enumeration_type_name="StatusEvent" version="1" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT')" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h97618a1dg57f7g2acfg001dg5ba785249fde" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h13f755b1gb20cg69d9g98a6g40d319bcab11" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h13f755b1gb20cg69d9g98a6g40d319bcab11" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18);RegainHitPoints(2d4)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d4)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_HealingWord_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Healing_HealingWord_L1to3" />

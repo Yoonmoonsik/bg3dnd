@@ -2660,12 +2660,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9dde4262-b7cd-4b97-97f2-07117e7ebaf9" />
         <field name="Name" type="NameTableFieldDefinition" value="Moon_6_BlessingsOfMoonlight" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3911c437g16cagdddcgede4gaa0c643aec8c" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haa5e73d8ga7e5ge281g8b67gae695bb23d75" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haa5e73d8ga7e5ge281g8b67gae695bb23d75" version="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18);RegainHitPoints(2d4)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Moonbeam" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="2506" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BlessingsOfMoonlight);ActionResource(SpellSlot,1,2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BlessingsOfMoonlight);" />
       </fields>
     </stat_object>
     <stat_object color="#FFDA70D6" is_substat="false">

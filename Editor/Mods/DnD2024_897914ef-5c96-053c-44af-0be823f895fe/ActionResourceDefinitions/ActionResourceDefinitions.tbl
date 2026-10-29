@@ -635,6 +635,17 @@
         <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_136" />
+        <field name="UUID" type="IdTableFieldDefinition" value="77fd4b90-31ed-4ada-95ff-2ba739aab878" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="StealBlood" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0187b94g38b7g4bf6g9320gde97c5b1b6c3" version="1" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFDC143C" is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_18" />
@@ -1535,17 +1546,6 @@
         <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Turn" />
         <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
         <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_136" />
-        <field name="UUID" type="IdTableFieldDefinition" value="77fd4b90-31ed-4ada-95ff-2ba739aab878" />
-        <field name="NameFS" type="FixedStringTableFieldDefinition" value="StealBlood" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0187b94g38b7g4bf6g9320gde97c5b1b6c3" version="1" />
-        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
-        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
-        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
   </stat_objects>

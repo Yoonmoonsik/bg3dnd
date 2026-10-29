@@ -7396,6 +7396,95 @@
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1d05ce6-0f10-4acc-89c5-82ddb4e982c4" />
+        <field name="Name" type="NameTableFieldDefinition" value="DARK_SACRAMENT_CHOICE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5bfd48b7g1b23g4adbgbd9dgcf85312e0bdd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb52df406g5fcag4191gb9e1g5f82d7e0cf55" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_DarkSacrament" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DARK_SACRAMENT_CHOICE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_DarkBlessing)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fe211acd-813b-40e8-8eb3-27cb66fdea1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="DARK_BLESSING_UNASSAILABLE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4b933804gb33eg4f2cg9ee7gc288c1d2ebdf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6364227g9c47g4648gb4cfged3cbf993ce7" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_DarkSacrament" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DARK_BLESSING_UNASSAILABLE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(AllSavingThrows);IF(IsDamageTypeRadiant()):DamageTakenBonus(1d4,Radiant,False)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('DOWNED')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7bcb6ab1-3c40-4ab9-a6e2-9e723edeaf23" />
+        <field name="Name" type="NameTableFieldDefinition" value="DARK_BLESSING_UNBREAKABLE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfcef3a8aga735g4a13ga82eg99c5127c35b9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h58cda901g3c80g4e47gbd7fga61e48063d65" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_DarkSacrament" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DARK_BLESSING_UNBREAKABLE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ObjectSize(+1);ScaleMultiplier(1.33);CharacterWeaponDamage(1d4);CarryCapacityMultiplier(1.25);IF(IsDamageTypeRadiant()):DamageTakenBonus(1d4,Radiant,False)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="EnlargeWeightMedium;EnlargeWeightLarge" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DARK_BLESSING_UNBREAKABLE_TEMPHP,100,1)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DARK_BLESSING_UNBREAKABLE_TEMPHP,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ead75c6a-806e-4db7-8d51-f06beca00fe2" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('DOWNED')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1c3f59e-23c8-4686-8f0d-5d7f94480de1" />
+        <field name="Name" type="NameTableFieldDefinition" value="DARK_BLESSING_UNBREAKABLE_TEMPHP" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfcef3a8aga735g4a13ga82eg99c5127c35b9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h58cda901g3c80g4e47gbd7fga61e48063d65" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TEMPORARY_HP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(max(1,ConstitutionModifier))" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="deb9d3dc-a338-4ea8-bc5a-ed84bd0544ba" />
+        <field name="Name" type="NameTableFieldDefinition" value="DARK_BLESSING_UNERRING" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h699990a0g205ag4a95g922ag4f9107de7f83" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h53b99135g4353g4d09g9fc3g0b8017b5f49f" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_DarkSacrament" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DARK_BLESSING_UNERRING" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasProficiencyBonus(context.CheckedAbility,context.CheckedSkill,context.Source)):RollBonus(SkillCheck,2);IF(HasProficiencyBonus(context.CheckedAbility,context.CheckedSkill,context.Source)):RollBonus(RawAbility,2);IF(HasProficiencyBonus(context.CheckedAbility,context.CheckedSkill,context.Source)):RollBonus(SavingThrow,2);IF(IsSpellAttack() or IsUnarmedAttack() or (IsWeaponAttack() and IsProficientWith(context.Source,GetActiveWeapon(context.Source,true)))):RollBonus(Attack,2);SpellSaveDC(2);IF(IsDamageTypeRadiant()):DamageTakenBonus(1d4,Radiant,False)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('DOWNED')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b884c43-b21c-4b9b-87ef-ad2a7aea3716" />
+        <field name="Name" type="NameTableFieldDefinition" value="DARK_SACRAMENT_PASSIVE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4e6ded99g4271g461bg931ega0e6a557b668" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DARK_SACRAMENT_PASSIVE" />
+        <field name="Passives" type="StringTableFieldDefinition" value="DarkSacrament_Passive" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;FreezeDuration;ApplyToDead;DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="69ede3eb-5730-413d-b072-32395b13a5fc" />
@@ -8002,6 +8091,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Archfey_DisappearingStep" />
         <field name="StackId" type="StringTableFieldDefinition" value="INSPIRED_ECLIPSE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_InspiredEclipse'),ModifyIconGlow());" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(INVISIBILITY,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8017,6 +8108,17 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(Cause.LevelMapValue(BardicInspiration));" />
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="d787f666-8ee6-4185-9365-6aac9ebe76ae" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ffe6321-c6fe-43db-a9c2-b1b8dc37d9ae" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLESSINGS_OF_MOONLIGHT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3911c437g16cagdddcgede4gaa0c643aec8c" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Moonbeam" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLESSINGS_OF_MOONLIGHT" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_BlessingsOfMoonlight'),ModifyIconGlow());" />
       </fields>
     </stat_object>
     <stat_object color="#FFDA70D6" is_substat="false">
@@ -16520,95 +16622,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="e2feb80d-918d-4e8e-aabf-3aa1c36ef7d0" />
         <field name="StackId" type="StringTableFieldDefinition" value="LFO_SKILLED_END" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_SKILLED)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f1d05ce6-0f10-4acc-89c5-82ddb4e982c4" />
-        <field name="Name" type="NameTableFieldDefinition" value="DARK_SACRAMENT_CHOICE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5bfd48b7g1b23g4adbgbd9dgcf85312e0bdd" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb52df406g5fcag4191gb9e1g5f82d7e0cf55" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_DarkSacrament" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DARK_SACRAMENT_CHOICE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_DarkBlessing)" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fe211acd-813b-40e8-8eb3-27cb66fdea1a" />
-        <field name="Name" type="NameTableFieldDefinition" value="DARK_BLESSING_UNASSAILABLE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4b933804gb33eg4f2cg9ee7gc288c1d2ebdf" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6364227g9c47g4648gb4cfged3cbf993ce7" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d4" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_DarkSacrament" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DARK_BLESSING_UNASSAILABLE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(AllSavingThrows);IF(IsDamageTypeRadiant()):DamageTakenBonus(1d4,Radiant,False)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('DOWNED')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7bcb6ab1-3c40-4ab9-a6e2-9e723edeaf23" />
-        <field name="Name" type="NameTableFieldDefinition" value="DARK_BLESSING_UNBREAKABLE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfcef3a8aga735g4a13ga82eg99c5127c35b9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h58cda901g3c80g4e47gbd7fga61e48063d65" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d4" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_DarkSacrament" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DARK_BLESSING_UNBREAKABLE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ObjectSize(+1);ScaleMultiplier(1.33);CharacterWeaponDamage(1d4);CarryCapacityMultiplier(1.25);IF(IsDamageTypeRadiant()):DamageTakenBonus(1d4,Radiant,False)" />
-        <field name="Passives" type="StringTableFieldDefinition" value="EnlargeWeightMedium;EnlargeWeightLarge" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DARK_BLESSING_UNBREAKABLE_TEMPHP,100,1)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DARK_BLESSING_UNBREAKABLE_TEMPHP,100,1)" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ead75c6a-806e-4db7-8d51-f06beca00fe2" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('DOWNED')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e1c3f59e-23c8-4686-8f0d-5d7f94480de1" />
-        <field name="Name" type="NameTableFieldDefinition" value="DARK_BLESSING_UNBREAKABLE_TEMPHP" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfcef3a8aga735g4a13ga82eg99c5127c35b9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h58cda901g3c80g4e47gbd7fga61e48063d65" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d4" />
-        <field name="StackId" type="StringTableFieldDefinition" value="TEMPORARY_HP" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(max(1,ConstitutionModifier))" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="deb9d3dc-a338-4ea8-bc5a-ed84bd0544ba" />
-        <field name="Name" type="NameTableFieldDefinition" value="DARK_BLESSING_UNERRING" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h699990a0g205ag4a95g922ag4f9107de7f83" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h53b99135g4353g4d09g9fc3g0b8017b5f49f" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d4" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_DarkSacrament" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DARK_BLESSING_UNERRING" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasProficiencyBonus(context.CheckedAbility,context.CheckedSkill,context.Source)):RollBonus(SkillCheck,2);IF(HasProficiencyBonus(context.CheckedAbility,context.CheckedSkill,context.Source)):RollBonus(RawAbility,2);IF(HasProficiencyBonus(context.CheckedAbility,context.CheckedSkill,context.Source)):RollBonus(SavingThrow,2);IF(IsSpellAttack() or IsUnarmedAttack() or (IsWeaponAttack() and IsProficientWith(context.Source,GetActiveWeapon(context.Source,true)))):RollBonus(Attack,2);SpellSaveDC(2);IF(IsDamageTypeRadiant()):DamageTakenBonus(1d4,Radiant,False)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('DOWNED')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3b884c43-b21c-4b9b-87ef-ad2a7aea3716" />
-        <field name="Name" type="NameTableFieldDefinition" value="DARK_SACRAMENT_PASSIVE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4e6ded99g4271g461bg931ega0e6a557b668" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DARK_SACRAMENT_PASSIVE" />
-        <field name="Passives" type="StringTableFieldDefinition" value="DarkSacrament_Passive" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;FreezeDuration;ApplyToDead;DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
   </stat_objects>
