@@ -10754,6 +10754,12 @@ new entry "Shout___MAGIC ITEM__"
 type "SpellData"
 data "SpellType" "Shout"
 
+new entry "Shout_MAG_Monk_Restore_Ki_Lesser"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_MAG_Monk_Restore_Ki_Lesser"
+data "UseCosts" "ActionPoint:1"
+
 new entry "Shout_MAG_MirrorImage"
 type "SpellData"
 data "SpellType" "Shout"
