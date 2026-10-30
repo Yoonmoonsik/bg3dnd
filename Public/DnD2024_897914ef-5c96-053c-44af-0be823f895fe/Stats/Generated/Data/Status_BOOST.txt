@@ -215,6 +215,7 @@ data "StatusType" "BOOST"
 using "WET"
 data "TickType" "StartTurn"
 data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;TickingWithSource"
+data "OnRemoveFunctors" "RemoveStatus(ALCH_OIL_REMOVERESISTANCEFIRE_CONDITION)"
 
 new entry "HEALTHBOOST_HARDCORE"
 type "StatusData"
