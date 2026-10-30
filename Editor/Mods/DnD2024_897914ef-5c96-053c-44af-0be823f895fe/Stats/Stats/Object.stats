@@ -46,6 +46,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8fc6cd2b-f320-4303-8b70-1b449e958b3d" />
+        <field name="Name" type="NameTableFieldDefinition" value="OBJ_Door" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="75b6d8d6-406b-4349-8897-a30b726e5c6b" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="24" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" value="Vulnerable" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="15" />
+        <field name="SoundSize" type="EnumerationTableFieldDefinition" value="Medium" enumeration_type_name="ObjectSize" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5f4efbe0-1b12-422b-a1a5-a79f7ed30acc" />
         <field name="Name" type="NameTableFieldDefinition" value="OBJ_TransmuterStone_Poison" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f2d69258-aa47-4c61-8e03-964f6676f4cc" />
