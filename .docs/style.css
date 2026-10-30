@@ -286,13 +286,6 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 #site-results .alt { color: var(--muted); font-size: 13px; }
 #site-results .kind { color: var(--muted); font-size: 12px; margin-left: 6px; }
 
-/* version history */
-.release { border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; margin: 0 0 12px; }
-.release summary { cursor: pointer; font-size: 16px; }
-.release summary .sub { color: var(--muted); font-size: 13px; margin-left: 6px; }
-.release .k { color: var(--muted); font-size: 12px; margin-top: 8px; }
-.release ul { margin: 4px 0 4px; padding-left: 20px; }
-.release li { margin: 2px 0; overflow-wrap: anywhere; }
 
 /* phones: wide tables scroll inside their box instead of widening the page (after the overflow: visible rule) */
 @media (max-width: 640px) { .table-wrap { overflow-x: auto; } }

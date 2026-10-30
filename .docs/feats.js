@@ -3,7 +3,7 @@
 const T = {
   en: {
     title: "Feats", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod",
-    nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons", nav_rules: "Rules", nav_species: "Species", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_changes: "Version History", nav_classes: "Classes",
+    nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons", nav_rules: "Rules", nav_species: "Species", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_classes: "Classes",
     search: "Search feats by name or description", filters: "Filters", reset: "Reset",
     col_name: "Name", col_abilities: "Ability Score", col_requirement: "Prerequisite", col_grants: "Grants",
     empty: "No feats match these filters.", footer: "Generated from the mod's game data.",
@@ -27,7 +27,7 @@ const T = {
   },
   ko: {
     title: "재주", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드",
-    nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_weapons: "무기", nav_rules: "규칙", nav_species: "종족", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_changes: "변경 이력", nav_classes: "직업",
+    nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_weapons: "무기", nav_rules: "규칙", nav_species: "종족", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_classes: "직업",
     search: "재주 이름이나 설명으로 검색", filters: "필터", reset: "초기화",
     col_name: "이름", col_abilities: "능력치", col_requirement: "선행 조건", col_grants: "얻는 것",
     empty: "조건에 맞는 재주가 없습니다.", footer: "모드 게임 데이터에서 생성했습니다.",

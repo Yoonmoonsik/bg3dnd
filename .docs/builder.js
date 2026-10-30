@@ -3,7 +3,7 @@
 const T = {
   en: {
     title: "Build Simulator", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod",
-    nav_home: "Home", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_changes: "Version History", nav_classes: "Classes", nav_feats: "Feats",
+    nav_home: "Home", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_classes: "Classes", nav_feats: "Feats",
     nav_fighting: "Fighting Styles", nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     footer: "Generated from the mod's game data.",
     save: "Save JSON", load: "Load JSON", md: "Export Markdown", shot: "Save Screenshots", save_party: "Export Whole Party", share_party: "Copy Share Link", share_done: "Share link copied. Opening it loads this party.", share_failed: "Could not copy the link; it is in the address bar.", load_party: "Load Whole Party", prev_char: "◀ Previous Character", next_char: "Next Character ▶", party_file: "Party", add_char: "Add Character to Party", del_char: "Remove Character", char_name: "Character Name", summary_suffix: "Summary", shot_failed: "Could not make the screenshots.", reset: "Reset",
@@ -28,7 +28,7 @@ const T = {
   },
   ko: {
     title: "빌드 시뮬레이터", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드",
-    nav_home: "홈", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_changes: "변경 이력", nav_classes: "직업", nav_feats: "재주",
+    nav_home: "홈", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_classes: "직업", nav_feats: "재주",
     nav_fighting: "전투 방식", nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     footer: "모드 게임 데이터에서 생성했습니다.",
     save: "JSON 저장", load: "JSON 불러오기", md: "마크다운 내보내기", shot: "스크린샷 저장", save_party: "파티 전부 내보내기", share_party: "공유 링크 복사", share_done: "공유 링크를 복사했습니다. 링크를 열면 이 파티를 불러옵니다.", share_failed: "링크를 복사하지 못했습니다. 주소창의 주소를 쓰세요.", load_party: "파티 전부 불러오기", prev_char: "◀ 이전 캐릭터", next_char: "다음 캐릭터 ▶", party_file: "파티", add_char: "파티에 캐릭터 추가", del_char: "캐릭터 삭제", char_name: "캐릭터 이름", summary_suffix: "요약", shot_failed: "스크린샷을 만들지 못했습니다.", reset: "초기화",
