@@ -21,3 +21,32 @@ data "StatusType" "EFFECT"
 using "INTERRUPT_SMITE_DIVINE_VFX"
 data "StatusEffect" "38e81436-b403-4c8b-abe3-616e5600016e"
 
+new entry "__CONJURATION__"
+type "StatusData"
+data "StatusType" "EFFECT"
+
+new entry "CONJURE_MINOR_ELEMENTALS_ACID"
+type "StatusData"
+data "StatusType" "EFFECT"
+data "StackId" "CONJURE_MINOR_ELEMENTALS_EFFECT"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "StatusEffect" "77aabf2b-67fa-46c7-9886-14044e6b00e0"
+
+new entry "CONJURE_MINOR_ELEMENTALS_COLD"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "CONJURE_MINOR_ELEMENTALS_ACID"
+data "StatusEffect" "b63b2f21-2998-48b1-ade2-287adb08979b"
+
+new entry "CONJURE_MINOR_ELEMENTALS_FIRE"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "CONJURE_MINOR_ELEMENTALS_ACID"
+data "StatusEffect" "cfb42dcb-332b-4797-b0f5-1ff044fea14a"
+
+new entry "CONJURE_MINOR_ELEMENTALS_LIGHTNING"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "CONJURE_MINOR_ELEMENTALS_ACID"
+data "StatusEffect" "b85f9f0c-89cc-473e-a43d-509d29cf5b99"
+

@@ -2642,7 +2642,7 @@
         <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="ShouldCheckLOS" enumeration_type_name="AuraFlags" version="1" />
         <field name="Passives" type="StringTableFieldDefinition" value="ConjureMinorElementalAcid;ConjureMinorElementalCold;ConjureMinorElementalFire;ConjureMinorElementalLightning;" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="8b1aa53f-092c-4a87-bae8-0a0450766093" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(CONJURE_MINOR_ELEMENTALS_ACID);RemoveStatus(CONJURE_MINOR_ELEMENTALS_COLD);RemoveStatus(CONJURE_MINOR_ELEMENTALS_FIRE);RemoveStatus(CONJURE_MINOR_ELEMENTALS_LIGHTNING)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -1145,6 +1145,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('CONJURE_MINOR_ELEMENTALS',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(2d8,Acid,,,0,,true,true);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_5',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(3d8,Acid,,,0,,true,true);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_6',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(4d8,Acid,,,0,,true,true);" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="ConjureMinorElemental" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_MINOR_ELEMENTALS_ACID, 100, -1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1158,6 +1159,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('CONJURE_MINOR_ELEMENTALS',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(2d8,Cold,,,0,,true,true);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_5',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(3d8,Cold,,,0,,true,true);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_6',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(4d8,Cold,,,0,,true,true);" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_MINOR_ELEMENTALS_COLD, 100, -1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1170,6 +1172,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Fire)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('CONJURE_MINOR_ELEMENTALS',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(2d8,Fire,,,0,,true,true);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_5',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(3d8,Fire,,,0,,true,true);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_6',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(4d8,Fire,,,0,,true,true);" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_MINOR_ELEMENTALS_FIRE, 100, -1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1182,6 +1185,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Lightning)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('CONJURE_MINOR_ELEMENTALS',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(2d8,Lightning,,,0,,true,true);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_5',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(3d8,Lightning,,,0,,true,true);IF(HasStatus('CONJURE_MINOR_ELEMENTALS_6',context.Source) and HasStatus('CONJURE_MINOR_ELEMENTALS_TARGET',context.Target,context.Source)):DealDamage(4d8,Lightning,,,0,,true,true);" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_MINOR_ELEMENTALS_LIGHTNING, 100, -1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
