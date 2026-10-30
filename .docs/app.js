@@ -3,7 +3,7 @@
 const T = {
   en: {
     title: "Spells", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod",
-    nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons", nav_rules: "Rules", nav_species: "Species", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_classes: "Classes",
+    nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons", nav_rules: "Rules", nav_species: "Species", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_changes: "Version History", nav_classes: "Classes",
     search: "Search spells by name or description", filters: "Filters", reset: "Reset",
     col_name: "Name", col_level: "Level", col_cast: "Casting Time", col_range: "Range",
     col_effect: "Attack / Save", col_damage: "Damage", col_school: "School",
@@ -22,12 +22,13 @@ const T = {
     d_components: "Components", d_area: "Area", d_classes: "Classes", d_variants: "Options",
     d_damage: "Damage", d_status: "Statuses",
     d_id: "Spell ID", d_scroll: "Scroll", yes: "Yes", no: "No",
+    d_diff: n => `Changed from vanilla (${n} fields)`, d_field: "Field", d_vanilla: "Vanilla", d_mod: "This mod",
     turn_long: "until long rest", turns: n => n === 1 ? "1 turn" : n + " turns",
     shape_Cone: "Cone", shape_Square: "Square", radius: "radius", weapon_range: "Weapon range",
   },
   ko: {
     title: "주문", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드",
-    nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_weapons: "무기", nav_rules: "규칙", nav_species: "종족", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_classes: "직업",
+    nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_weapons: "무기", nav_rules: "규칙", nav_species: "종족", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_changes: "변경 이력", nav_classes: "직업",
     search: "주문 이름이나 설명으로 검색", filters: "필터", reset: "초기화",
     col_name: "이름", col_level: "레벨", col_cast: "시전 시간", col_range: "사거리",
     col_effect: "공격 / 내성", col_damage: "피해", col_school: "학파",
@@ -46,6 +47,7 @@ const T = {
     d_components: "구성 요소", d_area: "범위", d_classes: "직업", d_variants: "선택지",
     d_damage: "피해", d_status: "상태 효과",
     d_id: "주문 ID", d_scroll: "두루마리", yes: "있음", no: "없음",
+    d_diff: n => `바닐라 대비 변경 (필드 ${n}개)`, d_field: "필드", d_vanilla: "바닐라", d_mod: "이 모드",
     turn_long: "긴 휴식까지", turns: n => n + "턴",
     shape_Cone: "원뿔", shape_Square: "사각형", radius: "반경", weapon_range: "무기 사거리",
   },
@@ -282,7 +284,17 @@ function detail(s) {
     ${s.desc[L] ? `<p>${esc(s.desc[L])}</p>` : ""}
     ${s.upcast ? `<div class="k">${esc(t("d_upcast"))}</div><p>${esc(s.upcast[L])}</p>` : ""}
     ${s.variants.length ? `<div class="k">${esc(t("d_variants"))}</div><ul>${s.variants.map(v => `<li>${esc(v.name[L])}</li>`).join("")}</ul>` : ""}
+    ${diffBlock(s.diff)}
   </td></tr>`;
+}
+
+// Raw stat fields the mod changed, vanilla value beside the mod value.
+function diffBlock(rows) {
+  if (!rows || !rows.length) return "";
+  return `<details class="vdiff"><summary>${esc(t("d_diff")(rows.length))}</summary><table>
+    <tr><th>${esc(t("d_field"))}</th><th>${esc(t("d_vanilla"))}</th><th>${esc(t("d_mod"))}</th></tr>
+    ${rows.map(r => `<tr><td>${esc(r.field)}</td><td><code>${esc(r.vanilla || "—")}</code></td><td><code>${esc(r.mod || "—")}</code></td></tr>`).join("")}
+  </table></details>`;
 }
 
 function applyLang() {
@@ -312,6 +324,7 @@ function writeHash() {
   if (state.q) p.set("q", state.q);
   for (const [k, v] of Object.entries(state.sel)) if (v.size) p.set(k, [...v].join(","));
   if (state.sort !== "level" || state.dir !== 1) p.set("sort", (state.dir < 0 ? "-" : "") + state.sort);
+  if (state.open) p.set("open", state.open);
   history.replaceState(null, "", "#" + p.toString());
 }
 function readHash() {
@@ -330,6 +343,7 @@ function readHash() {
   }
   const s = p.get("sort");
   if (s) { state.dir = s.startsWith("-") ? -1 : 1; state.sort = s.replace(/^-/, ""); }
+  state.open = p.get("open") || state.open;
 }
 
 function render() { applyLang(); renderFilters(); renderTable(); writeHash(); }
@@ -380,5 +394,8 @@ fetch("data/spells.json")
     $("#q").value = state.q;
     bind();
     render();
+    // #open=<id> (shared links, site search) expands that row; scroll to it once.
+    const row = [...document.querySelectorAll("tr.row")].find(r => r.dataset.id === state.open);
+    if (row) row.scrollIntoView({ block: "center" });
     if (d.generated) $("#generated").textContent = "· " + d.generated;
   });

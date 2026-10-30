@@ -38,6 +38,7 @@
     </nav>
     <a class="link support-nav" href="https://github.com/Yoonmoonsik/bg3dnd/discussions" target="_blank" rel="noopener" data-support-lang="en">Contact</a>
     <a class="link support-nav" href="https://github.com/Yoonmoonsik/bg3dnd/discussions" target="_blank" rel="noopener" data-support-lang="ko">문의하기</a>
+    <a class="link support-nav" href="changes.html" data-i18n="nav_changes">Version History</a>
     <a class="link support-nav" data-support-lang="en" href="https://ko-fi.com/yoonmoonsik" target="_blank" rel="noopener">Support</a>
     <a class="link support-nav" data-support-lang="ko" href="https://toon.at/donate/yoonmoonsick" target="_blank" rel="noopener">후원</a>
     <div class="lang" role="group" aria-label="Language">
@@ -49,6 +50,10 @@
 
 <main>
   <p class="intro" data-i18n="intro">Search the mod's backgrounds, classes, feats, fighting styles, rules, species, spells, weapon masteries and weapons. Every page is generated from the mod's game data.</p>
+  <div class="site-search">
+    <input id="site-q" type="search" autocomplete="off" data-i18n-ph="search_ph">
+    <ul id="site-results" hidden></ul>
+  </div>
   <div class="cards">
     <a class="card" href="backgrounds.html" data-page="backgrounds">
       <span class="card-count" id="count-backgrounds">—</span>
@@ -106,6 +111,10 @@
         <a href="https://github.com/Yoonmoonsik/bg3dnd/discussions" target="_blank" rel="noopener">GitHub Discussions</a>
       </span>
     </div>
+    <a class="card changes" href="changes.html" data-page="changes">
+      <span class="card-title" data-i18n="changes">Version History</span>
+      <span class="card-text" data-i18n="changes_text">What each release added, changed and removed, with its commit messages.</span>
+    </a>
     <div class="card support">
       <span class="card-title" data-i18n="support">Support the Mod</span>
       <span class="card-text" data-i18n="support_text"></span>
@@ -125,8 +134,9 @@
 "use strict";
 const T = {
   en: {
-    subtitle: "Baldur's Gate 3 mod · data browser", nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons", nav_rules: "Rules", nav_species: "Species", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_classes: "Classes",
-    intro: "Search the mod's backgrounds, classes, feats, fighting styles, rules, species, spells, weapon masteries and weapons. Every page is generated from the mod's game data.",
+    subtitle: "Baldur's Gate 3 mod · data browser", nav_home: "Home", nav_spells: "Spells", nav_feats: "Feats", nav_fighting: "Fighting Styles", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons", nav_rules: "Rules", nav_species: "Species", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_changes: "Version History", nav_classes: "Classes",
+    intro: "Search the mod's backgrounds, classes, feats, fighting styles, rules, species, spells, weapon masteries and weapons, and see what each version changed. Every page is generated from the mod's game data.",
+    changes: "Version History", changes_text: "What each release added, changed and removed, with its commit messages.",
     spells: "Spells", feats: "Feats", backgrounds: "Backgrounds", species: "Species", classes: "Classes",
     classes_text: "Each class with its subclasses and features by level.",
     builder: "Build Simulator", builder_text: "Plan a character to level 12: species, background, point buy, multiclassing and every level-up pick. Save as JSON or export Markdown.",
@@ -143,10 +153,12 @@ const T = {
     support: "Support the Mod",
     support_text: "The mod is free and always will be. Support goes toward the official D&D rulebooks the mod is built from.",
     footer: "Generated from the mod's game data.",
+    search_ph: "Search every page: spells, feats, weapons, classes …", subclasses: "Subclass", no_hits: "No matches.",
   },
   ko: {
-    subtitle: "발더스 게이트 3 모드 · 데이터 검색", nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_weapons: "무기", nav_rules: "규칙", nav_species: "종족", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_classes: "직업",
-    intro: "모드의 배경, 직업, 재주, 전투 방식, 규칙, 종족, 주문, 무기 숙련술, 무기를 찾아볼 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
+    subtitle: "발더스 게이트 3 모드 · 데이터 검색", nav_home: "홈", nav_spells: "주문", nav_feats: "재주", nav_fighting: "전투 방식", nav_mastery: "무기 숙련술", nav_weapons: "무기", nav_rules: "규칙", nav_species: "종족", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_changes: "변경 이력", nav_classes: "직업",
+    intro: "모드의 배경, 직업, 재주, 전투 방식, 규칙, 종족, 주문, 무기 숙련술, 무기를 찾아보고 버전마다 바뀐 내용을 확인할 수 있습니다. 모든 페이지는 모드 게임 데이터에서 생성합니다.",
+    changes: "변경 이력", changes_text: "릴리스마다 추가·변경·삭제된 항목과 커밋 메시지를 보여 줍니다.",
     spells: "주문", feats: "재주", backgrounds: "배경", species: "종족", classes: "직업",
     classes_text: "직업마다 하위 직업과 레벨별 기능을 봅니다.",
     builder: "빌드 시뮬레이터", builder_text: "종족, 배경, 포인트 바이, 멀티클래스와 레벨업 선택을 12레벨까지 짜 봅니다. JSON으로 저장하거나 마크다운으로 내보냅니다.",
@@ -163,6 +175,7 @@ const T = {
     support: "후원하기",
     support_text: "모드는 앞으로도 무료입니다. 후원금은 모드의 바탕이 되는 D&D 공식 룰북 구입에 씁니다.",
     footer: "모드 게임 데이터에서 생성했습니다.",
+    search_ph: "모든 페이지 검색: 주문, 재주, 무기, 직업 …", subclasses: "하위 직업", no_hits: "찾는 항목이 없습니다.",
   },
 };
 let lang = new URLSearchParams(location.hash.slice(1)).get("lang");
@@ -174,6 +187,8 @@ if (!T[lang]) lang = (navigator.language || "").startsWith("ko") ? "ko" : "en";
 function apply() {
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = T[lang][el.dataset.i18n]; });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => { el.placeholder = T[lang][el.dataset.i18nPh]; });
+  searchSite();
   document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
   // Menu and cards follow the shown language: Home first, then the page names sorted (abc / 가나다).
   const byName = (x, y) => x.textContent.localeCompare(y.textContent, lang);
@@ -183,13 +198,14 @@ function apply() {
    ...links.filter(x => x.dataset.i18n !== "nav_home").sort(byName)].forEach(x => nav.appendChild(x));
   nav.appendChild(nav.querySelector("[data-i18n=nav_builder]")); // Build Simulator is a tool, not a lookup: last
   const cards = document.querySelector(".cards");
-  [...cards.querySelectorAll("a.card")]
+  [...cards.querySelectorAll("a.card:not(.changes)")]
     .sort((x, y) => byName(x.querySelector(".card-title"), y.querySelector(".card-title")))
     .forEach(x => cards.appendChild(x));
   cards.appendChild(cards.querySelector("[data-page=builder]"));
   cards.appendChild(cards.querySelector(".card.contact"));
+  cards.appendChild(cards.querySelector(".card.changes")); // Version History: not sorted, between Contact and Support
   cards.appendChild(cards.querySelector(".card.support:not(.contact)"));
-  document.querySelectorAll("nav.pages a, a.card").forEach(a => {
+  document.querySelectorAll("nav.pages a, a.card, a[href='changes.html']").forEach(a => {
     a.href = a.getAttribute("href").split("#")[0] + "#lang=" + lang;
   });
   history.replaceState(null, "", "#lang=" + lang);
@@ -199,6 +215,28 @@ document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click
   try { localStorage.setItem("bg3dnd-lang", lang); } catch (e) { /* storage blocked */ }
   apply();
 }));
+// Site-wide search over data/search.json (built by .tools/build_search_index.py), loaded on first use.
+let INDEX = null;
+const KIND = { spells: "nav_spells", feats: "nav_feats", backgrounds: "nav_backgrounds", species: "nav_species", classes: "nav_classes",
+  subclasses: "subclasses", fighting: "nav_fighting", mastery: "nav_mastery", rules: "nav_rules", weapons: "nav_weapons" };
+const escHtml = x => String(x).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+function searchSite() {
+  const box = document.getElementById("site-results"), q = document.getElementById("site-q").value.trim().toLowerCase();
+  if (!q) { box.hidden = true; return; }
+  if (!INDEX) {
+    fetch("data/search.json").then(r => r.json()).then(d => { INDEX = d.entries; searchSite(); });
+    return;
+  }
+  const other = lang === "ko" ? "en" : "ko";
+  const hits = INDEX.filter(e => [e.n.en, e.n.ko, e.t && e.t.en, e.t && e.t.ko].some(x => x && x.toLowerCase().includes(q)))
+    .sort((a, b) => (a.n[lang] || a.n.en).toLowerCase().indexOf(q) - (b.n[lang] || b.n.en).toLowerCase().indexOf(q));
+  box.innerHTML = hits.slice(0, 40).map(e => `<li><a href="${e.p}#${e.h}&lang=${lang}"><b>${escHtml(e.n[lang] || e.n.en)}</b>`
+    + (lang === "ko" && e.n[other] ? ` <span class="alt">${escHtml(e.n[other])}</span>` : "")
+    + ` <span class="kind">${escHtml(T[lang][KIND[e.k]])}${e.t ? " · " + escHtml(e.t[lang] || e.t.en) : ""}</span></a></li>`).join("")
+    || `<li class="none">${escHtml(T[lang].no_hits)}</li>`;
+  box.hidden = false;
+}
+document.getElementById("site-q").addEventListener("input", searchSite);
 apply();
 
 for (const [page, key, id = page] of [["classes", "classes"], ["spells", "spells"], ["feats", "feats"], ["backgrounds", "backgrounds"], ["species", "species"], ["fighting_styles", "styles", "fighting"], ["weapon_mastery", "masteries", "mastery"], ["rules", "rules"], ["weapons", "weapons"]]) {

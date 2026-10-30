@@ -3,10 +3,10 @@
 const T = {
   en: {
     title: "Build Simulator", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod",
-    nav_home: "Home", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_classes: "Classes", nav_feats: "Feats",
+    nav_home: "Home", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_changes: "Version History", nav_classes: "Classes", nav_feats: "Feats",
     nav_fighting: "Fighting Styles", nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     footer: "Generated from the mod's game data.",
-    save: "Save JSON", load: "Load JSON", md: "Export Markdown", shot: "Save Screenshots", save_party: "Export Whole Party", load_party: "Load Whole Party", prev_char: "◀ Previous Character", next_char: "Next Character ▶", party_file: "Party", add_char: "Add Character to Party", del_char: "Remove Character", char_name: "Character Name", summary_suffix: "Summary", shot_failed: "Could not make the screenshots.", reset: "Reset",
+    save: "Save JSON", load: "Load JSON", md: "Export Markdown", shot: "Save Screenshots", save_party: "Export Whole Party", share_party: "Copy Share Link", share_done: "Share link copied. Opening it loads this party.", share_failed: "Could not copy the link; it is in the address bar.", load_party: "Load Whole Party", prev_char: "◀ Previous Character", next_char: "Next Character ▶", party_file: "Party", add_char: "Add Character to Party", del_char: "Remove Character", char_name: "Character Name", summary_suffix: "Summary", shot_failed: "Could not make the screenshots.", reset: "Reset",
     loaded: "Build loaded.", bad_file: "This file is not a saved build.", missing: n => `Not in the current data, skipped: ${n}`,
     character: "Character", build_name: "Build Name", species: "Species", background: "Background", abilities: "Ability Scores",
     points: (u, all) => `Points ${u} / ${all}`, preset: "Class preset", over: "Over the 27-point budget",
@@ -28,10 +28,10 @@ const T = {
   },
   ko: {
     title: "빌드 시뮬레이터", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드",
-    nav_home: "홈", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_classes: "직업", nav_feats: "재주",
+    nav_home: "홈", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_changes: "변경 이력", nav_classes: "직업", nav_feats: "재주",
     nav_fighting: "전투 방식", nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     footer: "모드 게임 데이터에서 생성했습니다.",
-    save: "JSON 저장", load: "JSON 불러오기", md: "마크다운 내보내기", shot: "스크린샷 저장", save_party: "파티 전부 내보내기", load_party: "파티 전부 불러오기", prev_char: "◀ 이전 캐릭터", next_char: "다음 캐릭터 ▶", party_file: "파티", add_char: "파티에 캐릭터 추가", del_char: "캐릭터 삭제", char_name: "캐릭터 이름", summary_suffix: "요약", shot_failed: "스크린샷을 만들지 못했습니다.", reset: "초기화",
+    save: "JSON 저장", load: "JSON 불러오기", md: "마크다운 내보내기", shot: "스크린샷 저장", save_party: "파티 전부 내보내기", share_party: "공유 링크 복사", share_done: "공유 링크를 복사했습니다. 링크를 열면 이 파티를 불러옵니다.", share_failed: "링크를 복사하지 못했습니다. 주소창의 주소를 쓰세요.", load_party: "파티 전부 불러오기", prev_char: "◀ 이전 캐릭터", next_char: "다음 캐릭터 ▶", party_file: "파티", add_char: "파티에 캐릭터 추가", del_char: "캐릭터 삭제", char_name: "캐릭터 이름", summary_suffix: "요약", shot_failed: "스크린샷을 만들지 못했습니다.", reset: "초기화",
     loaded: "빌드를 불러왔습니다.", bad_file: "저장한 빌드 파일이 아닙니다.", missing: n => `현재 데이터에 없어 건너뛴 항목: ${n}`,
     character: "캐릭터", build_name: "빌드 이름", species: "종족", background: "배경", abilities: "능력치",
     points: (u, all) => `포인트 ${u} / ${all}`, preset: "직업 기본 분배", over: "27포인트를 넘었습니다",
@@ -293,6 +293,7 @@ function firstBonus(r) {
 function applyDefaultAbility(classId) {
   const d = cls(classId).ability_default;
   if (!d) return;
+  if (!LOADED.has(classId)) { ensure([classId]).then(() => { applyDefaultAbility(classId); render(); }); return; }
   const level1 = cls(classId).levels.find(n => n.level === 1);
   if (!level1) return;
   const j = level1.picks.findIndex(p => p.kind === "ability");
@@ -532,7 +533,22 @@ function column(c) {
   return `<div class="bld" data-c="${c}">${bar}<div class="bld-steps">${html}</div><aside class="bld-summary">${summaryBlock(r)}</aside></div>`;
 }
 
+// Class levels and subclasses live in data/builder/<class>.json and load when a build uses the class
+// (Wizard too once a build has two classes: its slot table gives the multiclass caster slots).
+const LOADED = new Set();
+async function ensure(ids) {
+  const need = [...new Set(ids)].filter(id => id && !LOADED.has(id) && cls(id));
+  await Promise.all(need.map(id => fetch(`data/builder/${id}.json`).then(r => r.json())
+    .then(x => { Object.assign(cls(id), x); LOADED.add(id); })));
+}
+const classesOf = builds => builds.flatMap(b => {
+  const ids = (b && Array.isArray(b.levels) ? b.levels : []).map(l => l.class);
+  return new Set(ids).size > 1 ? [...ids, "Wizard"] : ids;
+});
+
 function render() {
+  const ids = classesOf(party);
+  if (ids.some(id => cls(id) && !LOADED.has(id))) { ensure(ids).then(render); return; }
   const cur = build;
   const open = [...document.querySelectorAll("#party details")].map(d => d.open);
   document.getElementById("party").innerHTML = party.map((_, c) => column(c)).join("");
@@ -629,7 +645,9 @@ async function onChange(ev) {
     const file = s.files[0], msg = document.getElementById("msg");
     if (!file) return;
     try {
-      const missing = load(JSON.parse(await file.text()));
+      const obj = JSON.parse(await file.text());
+      await ensure(classesOf([obj]));
+      const missing = load(obj);
       party[c] = build;
       msg.textContent = t("loaded") + (missing.length ? " " + t("missing")(missing.join(", ")) : "");
     } catch (e) {
@@ -680,6 +698,22 @@ function dropRacePicks() {
 
 function save() {
   try { localStorage.setItem("bg3dnd-build", JSON.stringify(party)); } catch (e) { /* storage blocked */ }
+}
+
+// Share link: the party JSON, deflate-compressed when the browser can, in base64url after #build=.
+const b64 = bytes => btoa(String.fromCharCode(...bytes)).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+const unb64 = s => Uint8Array.from(atob(s.replace(/-/g, "+").replace(/_/g, "/")), c => c.charCodeAt(0));
+async function pipe(bytes, stream) {
+  return new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
+}
+async function encodeParty() {
+  const raw = new TextEncoder().encode(JSON.stringify({ version: SAVE_VERSION, party }));
+  return typeof CompressionStream === "function" ? "z" + b64(await pipe(raw, new CompressionStream("deflate-raw"))) : "j" + b64(raw);
+}
+async function decodeParty(code) {
+  const bytes = unb64(code.slice(1));
+  const raw = code[0] === "z" ? await pipe(bytes, new DecompressionStream("deflate-raw")) : bytes;
+  return JSON.parse(new TextDecoder().decode(raw));
 }
 
 function download(name, text, type) {
@@ -834,6 +868,12 @@ function bind() {
     const names = party.map(b => (b.charName || "").replace(/[^\p{L}\p{N}]+/gu, "")).filter(Boolean);
     download([t("party_file"), ...names].join("-") + ".json", JSON.stringify({ version: SAVE_VERSION, party }, null, 2), "application/json");
   });
+  document.getElementById("shareparty").addEventListener("click", async () => {
+    const msg = document.getElementById("msg");
+    const url = location.href.split("#")[0] + "#lang=" + state.lang + "&build=" + await encodeParty();
+    history.replaceState(null, "", url);
+    try { await navigator.clipboard.writeText(url); msg.textContent = t("share_done"); } catch (e) { msg.textContent = t("share_failed"); }
+  });
   document.getElementById("loadparty").addEventListener("change", async ev => {
     const file = ev.target.files[0], msg = document.getElementById("msg");
     ev.target.value = "";
@@ -842,6 +882,7 @@ function bind() {
       const obj = JSON.parse(await file.text());
       const list = Array.isArray(obj.party) ? obj.party : [obj];
       const missing = [];
+      await ensure(classesOf(list.slice(0, MAX_PARTY)));
       const loaded = list.slice(0, MAX_PARTY).map(x => { missing.push(...load(x)); return build; });
       if (!loaded.length) throw new Error("empty");
       party = loaded;
@@ -885,9 +926,13 @@ async function init() {
         skills: Object.fromEntries(sk.skills.map(s => [s.id, s.name])) };
   document.getElementById("generated").textContent = b.generated ? "· " + b.generated : "";
   try {
-    // Saved as the party array; an older save holds one build.
-    const saved = JSON.parse(localStorage.getItem("bg3dnd-build") || "null");
-    if (saved) party = (Array.isArray(saved) ? saved : [saved]).slice(0, MAX_PARTY).map(x => { load(x); return build; });
+    // A #build= share link wins over the browser save; saved as the party array (an older save holds one build).
+    const code = new URLSearchParams(location.hash.slice(1)).get("build");
+    const shared = code ? (await decodeParty(code)).party : null;
+    const saved = shared || JSON.parse(localStorage.getItem("bg3dnd-build") || "null");
+    const list = saved ? (Array.isArray(saved) ? saved : [saved]).slice(0, MAX_PARTY) : [];
+    await ensure(classesOf(list));
+    if (list.length) party = list.map(x => { load(x); return build; });
   } catch (e) { party = [blank()]; }
   if (!party.length) party = [blank()];
   build = party[0];

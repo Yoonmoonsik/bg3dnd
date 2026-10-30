@@ -4,10 +4,11 @@
   --text: #1f1d1a;
   --muted: #6b665e;
   --line: #e2ddd3;
-  --accent: #8a2b1f;
-  --accent-soft: #f3e3df;
+  /* accent colours come from the mod emblem (.assets/bg3dnd_logo.png): ember #AD501E, gold #DFA259 */
+  --accent: #AD501E;
+  --accent-soft: #f7e9d6;
   --chip: #efebe3;
-  --chip-on: #8a2b1f;
+  --chip-on: #AD501E;
   --chip-on-text: #ffffff;
   --row-hover: #faf7f1;
   --tag-new: #2f6b3a;
@@ -21,10 +22,10 @@
     --text: #ece7dc;
     --muted: #a39d90;
     --line: #34312a;
-    --accent: #e0856f;
-    --accent-soft: #3a231d;
+    --accent: #DFA259;
+    --accent-soft: #3a2a17;
     --chip: #2a2720;
-    --chip-on: #e0856f;
+    --chip-on: #DFA259;
     --chip-on-text: #1a1410;
     --row-hover: #24221c;
     --tag-new: #7fc48a;
@@ -48,10 +49,10 @@ button, input { font: inherit; color: inherit; }
 }
 .brand h1 { margin: 0; font-size: 22px; letter-spacing: .01em; }
 .brand .sub { color: var(--muted); font-size: 13px; }
-.top-actions { display: flex; align-items: center; gap: 14px; }
+.top-actions { display: flex; align-items: center; gap: 6px 14px; flex-wrap: wrap; }  /* wraps on narrow screens */
 .link { color: var(--accent); text-decoration: none; font-size: 14px; }
 .link:hover { text-decoration: underline; }
-.pages { display: flex; gap: 12px; }
+.pages { display: flex; gap: 4px 12px; flex-wrap: wrap; }
 .pages .current { color: var(--text); font-weight: 600; }
 .support-nav { font-weight: 600; }
 /* Support links: Ko-fi in English, Toonation in Korean */
@@ -267,3 +268,31 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
   pointer-events: none; z-index: 10;
 }
 .bld-toast[hidden] { display: none; }
+
+/* vanilla -> mod field comparison in spell and weapon details */
+.vdiff { margin-top: 10px; }
+.vdiff summary { cursor: pointer; color: var(--tag-rev); font-size: 13px; }
+.vdiff table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12px; table-layout: fixed; }
+.vdiff th, .vdiff td { border-bottom: 1px solid var(--line, #8884); padding: 4px 6px; text-align: left; vertical-align: top; }
+.vdiff th:first-child, .vdiff td:first-child { width: 22%; }
+.vdiff code { white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* home: site-wide search */
+.site-search { position: relative; margin: 0 0 18px; }
+#site-q { width: 100%; padding: 10px 12px; font: inherit; border: 1px solid var(--line); border-radius: 8px; background: var(--card, transparent); color: inherit; }
+#site-results { list-style: none; margin: 6px 0 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; max-height: 420px; overflow-y: auto; }
+#site-results li a, #site-results li.none { display: block; padding: 7px 12px; color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); }
+#site-results li a:hover { background: var(--row-hover); }
+#site-results .alt { color: var(--muted); font-size: 13px; }
+#site-results .kind { color: var(--muted); font-size: 12px; margin-left: 6px; }
+
+/* version history */
+.release { border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; margin: 0 0 12px; }
+.release summary { cursor: pointer; font-size: 16px; }
+.release summary .sub { color: var(--muted); font-size: 13px; margin-left: 6px; }
+.release .k { color: var(--muted); font-size: 12px; margin-top: 8px; }
+.release ul { margin: 4px 0 4px; padding-left: 20px; }
+.release li { margin: 2px 0; overflow-wrap: anywhere; }
+
+/* phones: wide tables scroll inside their box instead of widening the page (after the overflow: visible rule) */
+@media (max-width: 640px) { .table-wrap { overflow-x: auto; } }

@@ -3,14 +3,16 @@
 const T = {
   en: {
     title: "Weapons", subtitle: "D&D 5.5e All-in-One BEYOND · Baldur's Gate 3 mod",
-    nav_home: "Home", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_classes: "Classes", nav_feats: "Feats", nav_fighting: "Fighting Styles",
+    nav_home: "Home", nav_backgrounds: "Backgrounds", nav_builder: "Build Simulator", nav_changes: "Version History", nav_classes: "Classes", nav_feats: "Feats", nav_fighting: "Fighting Styles",
     nav_rules: "Rules", nav_species: "Species", nav_spells: "Spells", nav_mastery: "Weapon Mastery", nav_weapons: "Weapons",
     search: "Search weapons by name, type or location", filters: "Filters", reset: "Reset",
     col_name: "Name", col_kind: "Type", col_damage: "Damage", col_where: "Where to find",
     empty: "No weapons match these filters.", footer: "Generated from the mod's game data.",
     count: (n, all) => `${n} of ${all} weapons`,
     f_category: "Unique", general: "Not unique", unique: "Unique",
-    f_src: "Source", mod: "Added by the mod", vanilla: "Vanilla",
+    f_src: "Source", mod: "Added by the mod", revised: "Changed by the mod", vanilla: "Vanilla",
+    d_diff: n => `Changed from vanilla (${n} fields)`, d_field: "Field", d_vanilla: "Vanilla", d_mod: "This mod",
+    f_act: "Act", noSource: "Source not found", act_프롤로그: "Prologue", "act_1막": "Act 1", "act_2막": "Act 2", "act_3막": "Act 3", act_엔딩: "Ending", act_에필로그: "Epilogue", act_기타: "Other",
     f_kind: "Weapon type", f_prof: "Proficiency", f_rng: "Range", f_mastery: "Mastery", none: "None", f_plus: "Enchantment", f_rarity: "Rarity", f_prop: "Property",
     enchant: "Enchantment",
     prof: "Proficiency", rng: "Range", range: "Range", props: "Properties", rarity: "Rarity", mastery: "Mastery", effects: "Effects",
@@ -19,14 +21,16 @@ const T = {
   },
   ko: {
     title: "무기", subtitle: "D&D 5.5e All-in-One BEYOND · 발더스 게이트 3 모드",
-    nav_home: "홈", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_classes: "직업", nav_feats: "재주", nav_fighting: "전투 방식",
+    nav_home: "홈", nav_backgrounds: "배경", nav_builder: "빌드 시뮬레이터", nav_changes: "변경 이력", nav_classes: "직업", nav_feats: "재주", nav_fighting: "전투 방식",
     nav_rules: "규칙", nav_species: "종족", nav_spells: "주문", nav_mastery: "무기 숙련술", nav_weapons: "무기",
     search: "무기 이름, 종류, 얻는 곳으로 검색", filters: "필터", reset: "초기화",
     col_name: "이름", col_kind: "종류", col_damage: "피해", col_where: "얻는 곳",
     empty: "조건에 맞는 무기가 없습니다.", footer: "모드 게임 데이터에서 생성했습니다.",
     count: (n, all) => `무기 ${all}종 중 ${n}종`,
     f_category: "고유 여부", general: "고유 아님", unique: "고유",
-    f_src: "출처", mod: "모드 추가", vanilla: "바닐라",
+    f_src: "출처", mod: "모드 추가", revised: "모드 변경", vanilla: "바닐라",
+    d_diff: n => `바닐라 대비 변경 (필드 ${n}개)`, d_field: "필드", d_vanilla: "바닐라", d_mod: "이 모드",
+    f_act: "막", noSource: "획득처 확인 불가", act_프롤로그: "프롤로그", "act_1막": "1막", "act_2막": "2막", "act_3막": "3막", act_엔딩: "엔딩", act_에필로그: "에필로그", act_기타: "기타",
     f_kind: "무기 종류", f_prof: "숙련", f_rng: "범위", f_mastery: "숙련술", none: "없음", f_plus: "강화", f_rarity: "등급", f_prop: "속성", enchant: "강화",
     prof: "숙련", rng: "범위", range: "사거리", props: "속성", rarity: "등급", mastery: "숙련술", effects: "효과",
     simpleWeaponTip: "일반 무기는 모든 캐릭터가 숙련된 것으로 취급됩니다.",
@@ -34,7 +38,7 @@ const T = {
   },
 };
 
-const state = { lang: "en", q: "", src: new Set(), cat: new Set(), kind: new Set(), mas: new Set(), plus: new Set(), rar: new Set(), prof: new Set(), rng: new Set(), prop: new Set(), open: null };
+const state = { lang: "en", q: "", src: new Set(), cat: new Set(), kind: new Set(), mas: new Set(), plus: new Set(), rar: new Set(), prof: new Set(), rng: new Set(), prop: new Set(), act: new Set(), open: null };
 let WEAPONS = [];
 let PROFICIENCIES = [];
 const RANGES = [{ en: "Melee", ko: "근접" }, { en: "Ranged", ko: "원거리" }];
@@ -43,6 +47,7 @@ let MASTERIES = [];
 let PLUSES = [];
 let RARITIES = [];
 let PROPS = [];
+let ACTS = [];  // acts present in weapons.json, in story order
 let MASTERY = new Map();  // English name -> weapon_mastery.json entry
 
 const $ = s => document.querySelector(s);
@@ -50,7 +55,7 @@ const t = k => T[state.lang][k] ?? k;
 const L = o => (o ? o[state.lang] || o.en : "");
 const esc = x => String(x).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const cat = w => (w.unique ? "unique" : "general");
-const src = w => (w.new ? "mod" : "vanilla");
+const src = w => (w.new ? "mod" : w.revised ? "revised" : "vanilla");
 const plus = w => (w.plus ? `+${w.plus}` : "—");
 const mas = w => (w.mastery ? w.mastery.en : "none");
 // Simple weapons are a universal proficiency: every character has them, so flag them for the tooltip.
@@ -107,6 +112,8 @@ function matches(w) {
   if (state.prof.size && !state.prof.has(w.proficiency.en)) return false;
   if (state.rng.size && !state.rng.has(rng(w))) return false;
   if (state.prop.size && !w.props.some(p => state.prop.has(p.en))) return false;
+  // "none" = no source found in the game data (where-to-find left blank)
+  if (state.act.size && !(w.acts || []).some(a => state.act.has(a)) && !(state.act.has("none") && !w.where.en)) return false;
   return true;
 }
 
@@ -118,7 +125,9 @@ function renderFilters() {
   const byName = list => [...list].sort((a, b) => L(a).localeCompare(L(b), state.lang));
   $("#filters").innerHTML =
     `<div class="fgroup" data-f="src"><div class="label">${esc(t("f_src"))}</div><div class="chips">${
-      ["mod", "vanilla"].map(c => chip(c, t(c), state.src)).join("")}</div></div>` +
+      ["mod", "revised", "vanilla"].filter(c => WEAPONS.some(w => src(w) === c)).map(c => chip(c, t(c), state.src)).join("")}</div></div>` +
+    `<div class="fgroup" data-f="act"><div class="label">${esc(t("f_act"))}</div><div class="chips">${
+      ACTS.map(a => chip(a, t("act_" + a), state.act)).join("")}${chip("none", t("noSource"), state.act)}</div></div>` +
     `<div class="fgroup" data-f="cat"><div class="label">${esc(t("f_category"))}</div><div class="chips">${
       ["general", "unique"].map(c => chip(c, t(c), state.cat)).join("")}</div></div>` +
     `<div class="fgroup" data-f="kind"><div class="label">${esc(t("f_kind"))}</div><div class="chips">${
@@ -137,6 +146,15 @@ function renderFilters() {
       RARITIES.map(r => tint(r) ? chip(r.en, L(r), state.rar).replace('class="chip"', tint(r).replace('class="', 'class="chip ')) : chip(r.en, L(r), state.rar)).join("")}</div></div>`;
 }
 
+// Raw stat fields the mod changed, vanilla value beside the mod value.
+function diffBlock(rows) {
+  if (!rows || !rows.length) return "";
+  return `<details class="vdiff"><summary>${esc(t("d_diff")(rows.length))}</summary><table>
+    <tr><th>${esc(t("d_field"))}</th><th>${esc(t("d_vanilla"))}</th><th>${esc(t("d_mod"))}</th></tr>
+    ${rows.map(r => `<tr><td>${esc(r.field)}</td><td><code>${esc(r.vanilla || "—")}</code></td><td><code>${esc(r.mod || "—")}</code></td></tr>`).join("")}
+  </table></details>`;
+}
+
 function renderTable() {
   // Data order: mod weapon types (base, +1, +2), mod unique weapons by name, then vanilla weapon types.
   const rows = WEAPONS.filter(matches);
@@ -145,7 +163,7 @@ function renderTable() {
   $("#list tbody").innerHTML = rows.map(w => {
     const open = state.open === w.id;
     const row = `<tr class="row" data-id="${esc(w.id)}" aria-expanded="${open}">
-      <td><strong${tint(w.rarity)}>${esc(L(w.name))}</strong></td>
+      <td><strong${tint(w.rarity)}>${esc(L(w.name))}</strong>${src(w) !== "vanilla" ? ` <span class="tag ${src(w) === "mod" ? "new" : "revised"}">${esc(t(src(w)))}</span>` : ""}</td>
       <td>${esc(L(w.kind))}</td>
       <td>${damageCell(w)}</td>
       <td>${masteryLink(w)}</td>
@@ -169,6 +187,7 @@ function renderTable() {
     const detail = `<tr class="detail"><td colspan="5">
       <p><strong>${esc(L(w.name))}</strong> — ${esc(L(w.kind))}</p>
       <div class="grid">${facts.map(([k, v, html]) => `<div><div class="k">${esc(k)}</div><div>${html ?? esc(v)}</div></div>`).join("")}</div>
+      ${diffBlock(w.diff)}
     </td></tr>`;
     return open ? row + detail : row;
   }).join("");
@@ -205,6 +224,7 @@ function writeHash() {
   if (state.prof.size) p.set("prof", [...state.prof].join(","));
   if (state.rng.size) p.set("rng", [...state.rng].join(","));
   if (state.prop.size) p.set("prop", [...state.prop].join(","));
+  if (state.act.size) p.set("act", [...state.act].join(","));
   if (state.open) p.set("open", state.open);
   history.replaceState(null, "", "#" + p.toString());
   applyLang();
@@ -228,6 +248,7 @@ function readHash() {
   state.prof = new Set((p.get("prof") || "").split(",").filter(Boolean));
   state.rng = new Set((p.get("rng") || "").split(",").filter(Boolean));
   state.prop = new Set((p.get("prop") || "").split(",").filter(Boolean));
+  state.act = new Set((p.get("act") || "").split(",").filter(Boolean));
 }
 
 function render() { renderFilters(); renderTable(); writeHash(); }
@@ -238,7 +259,7 @@ function bind() {
   $("#filters").addEventListener("click", e => {
     const b = e.target.closest(".chip");
     if (!b) return;
-    const sel = { src: state.src, cat: state.cat, kind: state.kind, prof: state.prof, rng: state.rng, mas: state.mas, plus: state.plus, rar: state.rar, prop: state.prop }[b.closest(".fgroup").dataset.f];
+    const sel = { src: state.src, cat: state.cat, kind: state.kind, prof: state.prof, rng: state.rng, mas: state.mas, plus: state.plus, rar: state.rar, prop: state.prop, act: state.act }[b.closest(".fgroup").dataset.f];
     sel.has(b.dataset.v) ? sel.delete(b.dataset.v) : sel.add(b.dataset.v);
     b.setAttribute("aria-pressed", sel.has(b.dataset.v));
     renderTable(); writeHash();
@@ -256,7 +277,7 @@ function bind() {
     render();
   }));
   $("#reset").addEventListener("click", () => {
-    state.q = ""; state.src = new Set(); state.mas = new Set(); state.plus = new Set(); state.rar = new Set(); state.cat = new Set(); state.kind = new Set(); state.prof = new Set(); state.rng = new Set(); state.prop = new Set(); state.open = null; $("#q").value = ""; render();
+    state.q = ""; state.src = new Set(); state.mas = new Set(); state.plus = new Set(); state.rar = new Set(); state.cat = new Set(); state.kind = new Set(); state.prof = new Set(); state.rng = new Set(); state.prop = new Set(); state.act = new Set(); state.open = null; $("#q").value = ""; render();
   });
   $("#toggle-filters").addEventListener("click", e => {
     const box = $("#filters");
@@ -280,6 +301,8 @@ Promise.all([fetch("data/weapons.json").then(r => r.json()), fetch("data/weapon_
       .sort((a, b) => order.indexOf(a.en) - order.indexOf(b.en));
     KINDS = [...new Map(WEAPONS.map(w => [w.kind.en, w.kind])).values()];
     PROPS = [...new Map(WEAPONS.flatMap(w => w.props).map(p => [p.en, p])).values()];
+    const ORDER = ["프롤로그", "1막", "2막", "3막", "엔딩", "에필로그", "기타"];
+    ACTS = ORDER.filter(a => WEAPONS.some(w => (w.acts || []).includes(a)));
     readHash();
     $("#q").value = state.q;
     bind();
