@@ -2945,6 +2945,7 @@
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(4d8,Lightning,Magical)" />
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_ELEMENTAL_RESTRAINED_SAVED,100,1);RemoveStatus(CONJURE_ELEMENTAL_RESTRAINED_AIR_5)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Restrained;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="4037264c-9038-4fb0-bdb7-d4ff05e316b0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2970,6 +2971,7 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d8,Thunder,Magical);ApplyStatus(SELF,CONJURE_ELEMENTAL_RESTRAINING,100,-1)" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(4d8,Thunder,Magical)" />
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_ELEMENTAL_RESTRAINED_SAVED,100,1);RemoveStatus(CONJURE_ELEMENTAL_RESTRAINED_EARTH_5)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d8ad57b6-2dde-4c35-b98e-9044ca05901d" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2983,6 +2985,7 @@
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Dexterity,17)" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(5d8,Thunder,Magical)" />
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_ELEMENTAL_RESTRAINED_SAVED,100,1);RemoveStatus(CONJURE_ELEMENTAL_RESTRAINED_EARTH_6)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d8ad57b6-2dde-4c35-b98e-9044ca05901d" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2995,6 +2998,7 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d8,Fire,Magical);ApplyStatus(SELF,CONJURE_ELEMENTAL_RESTRAINING,100,-1)" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(4d8,Fire,Magical)" />
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_ELEMENTAL_RESTRAINED_SAVED,100,1);RemoveStatus(CONJURE_ELEMENTAL_RESTRAINED_FIRE_5)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ea0724e8-6b8c-42ba-bb8a-f2df5be1e488" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3008,6 +3012,7 @@
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Dexterity,17)" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(5d8,Fire,Magical)" />
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_ELEMENTAL_RESTRAINED_SAVED,100,1);RemoveStatus(CONJURE_ELEMENTAL_RESTRAINED_FIRE_6)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ea0724e8-6b8c-42ba-bb8a-f2df5be1e488" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3020,6 +3025,7 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d8,Cold,Magical);ApplyStatus(SELF,CONJURE_ELEMENTAL_RESTRAINING,100,-1)" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(4d8,Cold,Magical)" />
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_ELEMENTAL_RESTRAINED_SAVED,100,1);RemoveStatus(CONJURE_ELEMENTAL_RESTRAINED_WATER_5)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="7b879b89-29cc-421b-b540-059675eb6325" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3033,6 +3039,7 @@
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Dexterity,17)" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(5d8,Cold,Magical)" />
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONJURE_ELEMENTAL_RESTRAINED_SAVED,100,1);RemoveStatus(CONJURE_ELEMENTAL_RESTRAINED_WATER_6)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="7b879b89-29cc-421b-b540-059675eb6325" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
