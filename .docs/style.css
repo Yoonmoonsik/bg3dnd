@@ -1,36 +1,36 @@
 :root {
-  --bg: #f6f4ef;
-  --panel: #ffffff;
-  --text: #1f1d1a;
-  --muted: #6b665e;
-  --line: #e2ddd3;
-  /* accent colours come from the mod emblem (.assets/bg3dnd_logo.png): ember #AD501E, gold #DFA259 */
-  --accent: #AD501E;
-  --accent-soft: #f7e9d6;
-  --chip: #efebe3;
-  --chip-on: #AD501E;
-  --chip-on-text: #ffffff;
-  --row-hover: #faf7f1;
-  --tag-new: #2f6b3a;
-  --tag-rev: #8a5a14;
-  color-scheme: light;
+  /* same palette as the sister sites bg3book and bg3quest: dark by default, light on a light-mode system */
+  --bg: #15110d;
+  --panel: #1f1914;
+  --text: #e8dcc8;
+  --muted: #a8977f;
+  --line: #3a2f25;
+  --accent: #d4a24c;
+  --accent-soft: #3a2a17;
+  --chip: #2c241c;
+  --chip-on: #d4a24c;
+  --chip-on-text: #15110d;
+  --row-hover: #251e18;
+  --tag-new: #7fc48a;
+  --tag-rev: #e2b467;
+  color-scheme: dark;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #15140f;
-    --panel: #1e1c17;
-    --text: #ece7dc;
-    --muted: #a39d90;
-    --line: #34312a;
-    --accent: #DFA259;
-    --accent-soft: #3a2a17;
-    --chip: #2a2720;
-    --chip-on: #DFA259;
-    --chip-on-text: #1a1410;
-    --row-hover: #24221c;
-    --tag-new: #7fc48a;
-    --tag-rev: #e2b467;
-    color-scheme: dark;
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f4ede1;
+    --panel: #fffaf2;
+    --text: #2a2016;
+    --muted: #75664f;
+    --line: #dccdb4;
+    --accent: #9a6a12;
+    --accent-soft: #f3e4c4;
+    --chip: #efe4d1;
+    --chip-on: #9a6a12;
+    --chip-on-text: #fffaf2;
+    --row-hover: #f8f0e3;
+    --tag-new: #2f6b3a;
+    --tag-rev: #8a5a14;
+    color-scheme: light;
   }
 }
 
@@ -39,7 +39,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  font: 15px/1.6 "Noto Serif KR", "Malgun Gothic", serif;
 }
 button, input { font: inherit; color: inherit; }
 
