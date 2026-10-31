@@ -6942,7 +6942,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="87f4e98f-2814-4257-9e80-8f5d68e643bb" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand); DealDamage(2d6, Thunder,Magical,,0,,true,true);ApplyStatus(PRONE_THUNDEROUS_SMITE, 100, 1, , , ,not SavingThrow(Ability.Strength, SourceSpellDC()))" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d6,Thunder)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsMelee;HasVerbalComponent;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -6953,7 +6954,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="4c749414-0cea-4eee-b7b1-caf8b4df267d" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);DealDamage(3d6, Thunder,Magical,,0,,true,true);ApplyStatus(PRONE_THUNDEROUS_SMITE, 100, 2, , , ,not SavingThrow(Ability.Strength, SourceSpellDC()));" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(3d6,Thunder)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6963,7 +6965,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="a1fb2647-f8d2-495c-b13b-1c4fe715177b" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);DealDamage(4d6, Thunder,Magical,,0,,true,true);ApplyStatus(PRONE_THUNDEROUS_SMITE, 100, 2, , , ,not SavingThrow(Ability.Strength, SourceSpellDC()));" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(4d6,Thunder)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsMelee;HasVerbalComponent;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -6974,7 +6977,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3dc433e2-2b69-418b-b984-2782edd1994b" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);DealDamage(5d6, Thunder,Magical,,0,,true,true);ApplyStatus(PRONE_THUNDEROUS_SMITE, 100, 2, , , ,not SavingThrow(Ability.Strength, SourceSpellDC()));" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(5d6,Thunder)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsMelee;HasVerbalComponent;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -6985,7 +6989,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="22cd5c4b-6e0e-475d-85d9-a018555934dd" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);DealDamage(6d6, Thunder,Magical,,0,,true,true);ApplyStatus(PRONE_THUNDEROUS_SMITE, 100, 2, , , ,not SavingThrow(Ability.Strength, SourceSpellDC()));" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(6d6,Thunder)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6995,7 +7000,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5d0da401-4cf9-4447-87ba-fde71c082037" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);DealDamage(7d6, Thunder,Magical,,0,,true,true);ApplyStatus(PRONE_THUNDEROUS_SMITE, 100, 2, , , ,not SavingThrow(Ability.Strength, SourceSpellDC()));" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(7d6,Thunder)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
