@@ -163,7 +163,7 @@ function renderTable() {
   $("#list tbody").innerHTML = rows.map(w => {
     const open = state.open === w.id;
     const row = `<tr class="row" data-id="${esc(w.id)}" aria-expanded="${open}">
-      <td><strong${tint(w.rarity)}>${esc(L(w.name))}</strong>${src(w) !== "vanilla" ? ` <span class="tag ${src(w) === "mod" ? "new" : "revised"}">${esc(t(src(w)))}</span>` : ""}</td>
+      <td><strong${tint(w.rarity)}>${esc(L(w.name))}</strong></td>
       <td>${esc(L(w.kind))}</td>
       <td>${damageCell(w)}</td>
       <td>${masteryLink(w)}</td>
