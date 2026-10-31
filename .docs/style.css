@@ -172,7 +172,24 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 30px; color: var(--m
 .card {
   display: grid; gap: 6px; padding: 20px; background: var(--panel); border: 1px solid var(--line);
   border-radius: 12px; color: var(--text); text-decoration: none;
+  position: relative; isolation: isolate; overflow: hidden;
 }
+.card[data-page]::before {
+  content: ""; position: absolute; inset: 16px; z-index: -1; pointer-events: none;
+  background: var(--card-icon) center / contain no-repeat; opacity: .12;
+}
+.card[data-page="backgrounds"] { --card-icon: url("home/backgrounds.png"); }
+.card[data-page="builder"] { --card-icon: url("home/builder.png"); }
+.card[data-page="classes"] { --card-icon: url("home/classes.png"); }
+.card[data-page="contact"] { --card-icon: url("home/contact.png"); }
+.card[data-page="feats"] { --card-icon: url("home/feats.png"); }
+.card[data-page="fighting"] { --card-icon: url("home/fighting.png"); }
+.card[data-page="mastery"] { --card-icon: url("home/mastery.png"); }
+.card[data-page="rules"] { --card-icon: url("home/rules.png"); }
+.card[data-page="species"] { --card-icon: url("home/species.png"); }
+.card[data-page="spells"] { --card-icon: url("home/spells.png"); }
+.card[data-page="support"] { --card-icon: url("home/support.png"); }
+.card[data-page="weapons"] { --card-icon: url("home/weapons.png"); }
 .card:hover { border-color: var(--accent); }
 .card-count { font-size: 34px; font-weight: 700; color: var(--accent); line-height: 1; }
 .card-title { font-size: 18px; font-weight: 600; }
