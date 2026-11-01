@@ -11,7 +11,7 @@
 --    slot level than the multiclass sum (round down).
 -- 7. A subclass's always-prepared spells count as its class's spells from the class
 --    level listed in SUBCLASS_SCROLL_MAP, with no spell slot requirement. The check is
---    the subclass spell passive, or the terrain status for Circle of the Land.
+--    the subclass spell passive (Circle of the Land: every terrain's spells).
 
 local SPELL_CLASS_MAP = {
     Target_AnimalFriendship_spellscroll = '1 Bard Druid Ranger',
@@ -273,7 +273,7 @@ local SPELL_CLASS_MAP = {
 -- { subclass spell passive or 'status:<STATUS>', class, class level }
 local SUBCLASS_SCROLL_MAP = {
     Target_AnimalFriendship_spellscroll = { {'NatureDomain_3_NatureDomainSpells', 'Cleric', 3} },
-    Zone_BurningHands_spellscroll = { {'LightDomain_3_LightDomainSpells', 'Cleric', 3}, {'Fiend_3_FiendSpells', 'Warlock', 3}, {'status:LAND_ARID', 'Druid', 3} },
+    Zone_BurningHands_spellscroll = { {'LightDomain_3_LightDomainSpells', 'Cleric', 3}, {'Fiend_3_FiendSpells', 'Warlock', 3}, {'Land_3_CircleOfTheLandSpells', 'Druid', 3} },
     Target_CharmPerson_spellscroll = { {'TrickeryDomain_3_TrickeryDomainSpells', 'Cleric', 3}, {'FeyWanderer_3_FeyWandererSpells', 'Ranger', 3} },
     Projectile_ChromaticOrb_spellscroll = { {'DragonDomain_3_DragonDomainSpells', 'Cleric', 3}, {'NobleGenie_3_GenieSpells', 'Paladin', 3} },
     Shout_DisguiseSelf_spellscroll = { {'TrickeryDomain_3_TrickeryDomainSpells', 'Cleric', 3}, {'GloomStalker_3_GloomStalkerSpells', 'Ranger', 3} },
@@ -284,8 +284,8 @@ local SUBCLASS_SCROLL_MAP = {
     Target_Longstrider_spellscroll = { {'Astral_3_AstralDomainSpells', 'Cleric', 3} },
     Projectile_MagicMissile_spellscroll = { {'Armorer_3_Spells', 'Artificer', 3} },
     Target_ProtectionFromEvilAndGood_spellscroll = { {'Clockwork_3_ClockworkSpells', 'Sorcerer', 3} },
-    Projectile_RayOfSickness_spellscroll = { {'DeathDomain_3_DeathDomainSpells', 'Cleric', 3}, {'UndeadPatron_3_UndeadSpells', 'Warlock', 3}, {'Alchemist_3_Spells', 'Artificer', 3}, {'status:LAND_TROPICAL', 'Druid', 3} },
-    Target_Sleep_spellscroll = { {'KnowledgeDomain_3_KnowledgeDomainSpells', 'Cleric', 3}, {'TwilightDomain_3_TwilightDomainSpells', 'Cleric', 3}, {'Archfey_3_ArchfeySpells', 'Warlock', 3}, {'status:LAND_TEMPERATE', 'Druid', 3} },
+    Projectile_RayOfSickness_spellscroll = { {'DeathDomain_3_DeathDomainSpells', 'Cleric', 3}, {'UndeadPatron_3_UndeadSpells', 'Warlock', 3}, {'Alchemist_3_Spells', 'Artificer', 3}, {'Land_3_CircleOfTheLandSpells', 'Druid', 3} },
+    Target_Sleep_spellscroll = { {'KnowledgeDomain_3_KnowledgeDomainSpells', 'Cleric', 3}, {'TwilightDomain_3_TwilightDomainSpells', 'Cleric', 3}, {'Archfey_3_ArchfeySpells', 'Warlock', 3}, {'Land_3_CircleOfTheLandSpells', 'Druid', 3} },
     Zone_Thunderwave_spellscroll = { {'TempestDomain_3_TempestDomainSpells', 'Cleric', 3}, {'Apocalypse_3_ApocalypseDomainSpells', 'Cleric', 3}, {'Armorer_3_Spells', 'Artificer', 3}, {'Artillerist_3_Spells', 'Artificer', 3} },
     Target_Smite_Wrathful_spellscroll = { {'HollowWarden_3_HollowWardenSpells', 'Ranger', 3}, {'Hexblade_3_HexbladeSpells', 'Warlock', 3} },
     Shout_ArmorOfAgathys_spellscroll = { {'Conquest_3_OathSpells', 'Paladin', 3} },
@@ -307,7 +307,7 @@ local SUBCLASS_SCROLL_MAP = {
     Target_Aid_spellscroll = { {'Clockwork_3_ClockworkSpells', 'Sorcerer', 3}, {'Celestial_3_CelestialSpells', 'Warlock', 3} },
     Shout_AlterSelf_spellscroll = { {'HollowWarden_3_HollowWardenSpells', 'Ranger', 5} },
     Target_Blindness_spellscroll = { {'CircleOfTheSpores_3_CircleOfTheSporesSpells', 'Druid', 3}, {'UndeadPatron_3_UndeadSpells', 'Warlock', 3} },
-    Shout_Blur_spellscroll = { {'Astral_3_AstralDomainSpells', 'Cleric', 3}, {'status:LAND_ARID', 'Druid', 3} },
+    Shout_Blur_spellscroll = { {'Astral_3_AstralDomainSpells', 'Cleric', 3}, {'Land_3_CircleOfTheLandSpells', 'Druid', 3} },
     Target_Darkness_spellscroll = { {'Apocalypse_3_ApocalypseDomainSpells', 'Cleric', 3}, {'ShadowDomain_3_ShadowDomainSpells', 'Cleric', 3} },
     Target_Darkvision_spellscroll = { {'DragonDomain_3_DragonDomainSpells', 'Cleric', 3} },
     Target_DeathArmor_spellscroll = { {'HollowWarden_3_HollowWardenSpells', 'Ranger', 5} },
@@ -318,13 +318,13 @@ local SUBCLASS_SCROLL_MAP = {
     Target_MagicWeapon_spellscroll = { {'WarDomain_3_WarDomainSpells', 'Cleric', 3}, {'ForgeDomain_3_ForgeDomainSpells', 'Cleric', 3}, {'Hexblade_3_HexbladeSpells', 'Warlock', 3} },
     Target_MindSpike_spellscroll = { {'KnowledgeDomain_3_KnowledgeDomainSpells', 'Cleric', 3}, {'MindDomain_3_MindDomainSpells', 'Cleric', 3} },
     Shout_MirrorImage_spellscroll = { {'NobleGenie_3_GenieSpells', 'Paladin', 5}, {'Armorer_3_Spells', 'Artificer', 5} },
-    Target_MistyStep_spellscroll = { {'Ancients_3_AncientsSpells', 'Paladin', 5}, {'Vengeance_3_VengeanceSpells', 'Paladin', 5}, {'GloomStalker_3_GloomStalkerSpells', 'Ranger', 5}, {'FeyWanderer_3_FeyWandererSpells', 'Ranger', 5}, {'status:LAND_TEMPERATE', 'Druid', 3} },
+    Target_MistyStep_spellscroll = { {'Ancients_3_AncientsSpells', 'Paladin', 5}, {'Vengeance_3_VengeanceSpells', 'Paladin', 5}, {'GloomStalker_3_GloomStalkerSpells', 'Ranger', 5}, {'FeyWanderer_3_FeyWandererSpells', 'Ranger', 5}, {'Land_3_CircleOfTheLandSpells', 'Druid', 3} },
     Target_PhantasmalForce_spellscroll = { {'Apocalypse_3_ApocalypseDomainSpells', 'Cleric', 3}, {'NobleGenie_3_GenieSpells', 'Paladin', 5}, {'GreatOldOne_3_PsychicSpells', 'Warlock', 3}, {'GreatOldOne_3_PsychicSpells_Subtle', 'Warlock', 3}, {'Archfey_3_ArchfeySpells', 'Warlock', 3}, {'UndeadPatron_3_UndeadSpells', 'Warlock', 3} },
     Projectile_RayOfEnfeeblement_spellscroll = { {'DeathDomain_3_DeathDomainSpells', 'Cleric', 3}, {'GraveDomain_3_GraveDomainSpells', 'Cleric', 3} },
     Projectile_ScorchingRay_spellscroll = { {'LightDomain_3_LightDomainSpells', 'Cleric', 3}, {'Fiend_3_FiendSpells', 'Warlock', 3}, {'Artillerist_3_Spells', 'Artificer', 5} },
     Shout_SeeInvisibility_spellscroll = { {'LightDomain_3_LightDomainSpells', 'Cleric', 3}, {'TwilightDomain_3_TwilightDomainSpells', 'Cleric', 3}, {'Watchers_3_OathSpells', 'Paladin', 5} },
     Target_Shatter_spellscroll = { {'TempestDomain_3_TempestDomainSpells', 'Cleric', 3}, {'CircleOfTheSea_3_CircleOfTheSeaSpells', 'Druid', 3}, {'Armorer_3_Spells', 'Artificer', 5}, {'Artillerist_3_Spells', 'Artificer', 5} },
-    Target_Web_spellscroll = { {'status:LAND_TROPICAL', 'Druid', 3} },
+    Target_Web_spellscroll = { {'Land_3_CircleOfTheLandSpells', 'Druid', 3} },
     Target_DragonsBreath_spellscroll = { {'DragonDomain_3_DragonDomainSpells', 'Cleric', 3} },
     Target_Barkskin_spellscroll = { {'NatureDomain_3_NatureDomainSpells', 'Cleric', 3} },
     Target_BrandingSmite_spellscroll = { {'Unbroken_3_Spells', 'Druid', 3}, {'BattleSmith_3_Spells', 'Artificer', 5} },
@@ -342,18 +342,18 @@ local SUBCLASS_SCROLL_MAP = {
     Shout_Blink_spellscroll = { {'KnowledgeDomain_3_KnowledgeDomainSpells', 'Cleric', 5}, {'Astral_3_AstralDomainSpells', 'Cleric', 5}, {'ShadowDomain_3_ShadowDomainSpells', 'Cleric', 5}, {'Archfey_3_ArchfeySpells', 'Warlock', 5} },
     Target_Confusion_spellscroll = { {'TrickeryDomain_3_TrickeryDomainSpells', 'Cleric', 7}, {'KnowledgeDomain_3_KnowledgeDomainSpells', 'Cleric', 7}, {'MindDomain_3_MindDomainSpells', 'Cleric', 7}, {'GreatOldOne_3_PsychicSpells', 'Warlock', 7}, {'GreatOldOne_3_PsychicSpells_Subtle', 'Warlock', 7} },
     Zone_Fear_spellscroll = { {'TrickeryDomain_3_TrickeryDomainSpells', 'Cleric', 5}, {'Apocalypse_3_ApocalypseDomainSpells', 'Cleric', 5}, {'MindDomain_3_MindDomainSpells', 'Cleric', 5}, {'ShadowDomain_3_ShadowDomainSpells', 'Cleric', 5}, {'Conquest_3_OathSpells', 'Paladin', 9}, {'GloomStalker_3_GloomStalkerSpells', 'Ranger', 9} },
-    Projectile_Fireball_spellscroll = { {'LightDomain_3_LightDomainSpells', 'Cleric', 5}, {'Fiend_3_FiendSpells', 'Warlock', 5}, {'Artillerist_3_Spells', 'Artificer', 9}, {'status:LAND_ARID', 'Druid', 5} },
+    Projectile_Fireball_spellscroll = { {'LightDomain_3_LightDomainSpells', 'Cleric', 5}, {'Fiend_3_FiendSpells', 'Warlock', 5}, {'Artillerist_3_Spells', 'Artificer', 9}, {'Land_3_CircleOfTheLandSpells', 'Druid', 5} },
     Target_Fly_spellscroll = { {'DragonDomain_3_DragonDomainSpells', 'Cleric', 5}, {'NobleGenie_3_GenieSpells', 'Paladin', 9} },
     Target_GaseousForm_spellscroll = { {'CircleOfTheSpores_3_CircleOfTheSporesSpells', 'Druid', 5}, {'NobleGenie_3_GenieSpells', 'Paladin', 9}, {'Alchemist_3_Spells', 'Artificer', 9} },
     Target_Haste_spellscroll = { {'Unbroken_3_Spells', 'Druid', 5}, {'Vengeance_3_VengeanceSpells', 'Paladin', 9}, {'Glory_3_OathOfGlorySpells', 'Paladin', 9} },
     Target_HypnoticPattern_spellscroll = { {'TrickeryDomain_3_TrickeryDomainSpells', 'Cleric', 5}, {'Armorer_3_Spells', 'Artificer', 9} },
-    Zone_LightningBolt_spellscroll = { {'CircleOfTheSea_3_CircleOfTheSeaSpells', 'Druid', 5}, {'Armorer_3_Spells', 'Artificer', 9}, {'status:LAND_TEMPERATE', 'Druid', 5} },
+    Zone_LightningBolt_spellscroll = { {'CircleOfTheSea_3_CircleOfTheSeaSpells', 'Druid', 5}, {'Armorer_3_Spells', 'Artificer', 9}, {'Land_3_CircleOfTheLandSpells', 'Druid', 5} },
     Target_ProtectionFromEnergy_spellscroll = { {'Ancients_3_AncientsSpells', 'Paladin', 9}, {'Vengeance_3_VengeanceSpells', 'Paladin', 9}, {'Glory_3_OathOfGlorySpells', 'Paladin', 9} },
     Target_RemoveCurse_spellscroll = { {'WinterWalker_3_WinterWalkerSpells', 'Ranger', 9} },
     Target_SleetStorm_spellscroll = { {'NatureDomain_3_NatureDomainSpells', 'Cleric', 5}, {'TempestDomain_3_TempestDomainSpells', 'Cleric', 5} },
     Target_Slow_spellscroll = { {'Astral_3_AstralDomainSpells', 'Cleric', 5} },
     Target_SpeakWithDead_spellscroll = { {'UndeadPatron_3_UndeadSpells', 'Warlock', 5} },
-    Target_StinkingCloud_spellscroll = { {'Fiend_3_FiendSpells', 'Warlock', 5}, {'status:LAND_TROPICAL', 'Druid', 5} },
+    Target_StinkingCloud_spellscroll = { {'Fiend_3_FiendSpells', 'Warlock', 5}, {'Land_3_CircleOfTheLandSpells', 'Druid', 5} },
     Target_VampiricTouch_spellscroll = { {'DeathDomain_3_DeathDomainSpells', 'Cleric', 5}, {'GraveDomain_3_GraveDomainSpells', 'Cleric', 5} },
     Projectile_VoidStrike_spellscroll = { {'TwilightDomain_3_TwilightDomainSpells', 'Cleric', 5} },
     Shout_AuraOfVitality_spellscroll = { {'SpellfireSorcery_3_SpellfireSpells', 'Sorcerer', 5}, {'BattleSmith_3_Spells', 'Artificer', 9} },
