@@ -5614,6 +5614,19 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="630a2ff2-e18c-4f8d-be2c-c070fa77ab8b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Ancients_3_NaturesWrath" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h652e7b2cgc6d2g49a8g9294g2df5c89df548" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h60d83873g6cc0g4df3gbb52g0e4fe624f1cf" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_NaturesWrath" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7303" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_NaturesWrath);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6068dc94-eebb-4ec1-920b-73ddd112da0b" />
