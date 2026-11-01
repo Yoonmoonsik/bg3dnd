@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-01 f6e36c88",
+  "generated": "2026-11-01 6f4c9b84",
   "spells": [
     {
       "id": "Projectile_AcidSplash",
@@ -4539,7 +4539,7 @@
       "sangromancy": false,
       "classes": ["Paladin", "Ranger", "Sorcerer", "Wizard", "Artificer"],
       "source": "revised",
-      "diff": [{"field": "UseCosts", "vanilla": "ActionPoint:1;SpellSlotsGroup:1:1:2", "mod": "BonusActionPoint:1;SpellSlotsGroup:1:1:2"}, {"field": "SpellFlags", "vanilla": "IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration;IsMelee", "mod": "IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee"}],
+      "diff": [{"field": "UseCosts", "vanilla": "ActionPoint:1;SpellSlotsGroup:1:1:2", "mod": "BonusActionPoint:1;SpellSlotsGroup:1:1:2"}, {"field": "SpellProperties", "vanilla": "IF(Item()):ApplyStatus(MAGIC_WEAPON,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,-1)", "mod": "IF(Item()):ApplyStatus(MAGIC_WEAPON_BOND,100,-1);IF(Item()):ApplyStatus(MAGIC_WEAPON,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_BOND,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,-1)"}, {"field": "SpellFlags", "vanilla": "IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration;IsMelee", "mod": "IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee"}],
       "icon": "Spell_Transmutation_MagicWeapon",
       "scroll": true,
       "name": {"en": "Magic Weapon", "ko": "마법 무기"},
