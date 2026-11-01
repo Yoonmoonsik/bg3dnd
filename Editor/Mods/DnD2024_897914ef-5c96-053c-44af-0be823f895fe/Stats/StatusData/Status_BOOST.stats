@@ -74,7 +74,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="41bb49b0-31ec-4aa0-aee9-34f6ece18964" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackCheck(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription());IF(not HasStatus('WAR_MAGIC_BLOCK', context.Source) and HasPassive('WarMagic', context.Source)):UnlockSpellVariant(IsCantrip() and HasUseCosts('ActionPoint'),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription())" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(ExtraAttackSpellCheck() and HasUseCosts('ActionPoint',false,context.Target) and not IsOffHandAttack()) or (IsCantrip() and HasUseCosts('ActionPoint',false,context.Target))" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(EXTRA_ATTACK_Q, 100, 1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(EXTRA_ATTACK_Q, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -83,7 +83,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EXTRA_ATTACK_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6f92fa2f-0c26-4841-88d8-e1812e607a54" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="60" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EXTRA_ATTACK_2, 100, 1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(EXTRA_ATTACK_2, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -105,7 +105,39 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f8ff1c2d-603e-42e8-9fb8-5a6c7fef87d0" />
         <field name="Name" type="NameTableFieldDefinition" value="EXTRA_ATTACK_THIRSTING_BLADE_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5aa790d7-718e-468b-84cd-adb68b8a399c" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(EXTRA_ATTACK_Q, 100, 1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(EXTRA_ATTACK_Q, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c19995a7-cb72-43fa-a24c-f2a337d55db9" />
+        <field name="Name" type="NameTableFieldDefinition" value="EXTRA_ATTACK_2_Q" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5794ba67-86aa-4046-ab01-330255244926" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(EXTRA_ATTACK_2, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ec2ac79-f7d8-4e67-9446-265a52ebf850" />
+        <field name="Name" type="NameTableFieldDefinition" value="EXTRA_ATTACK_THIRSTING_BLADE_Q" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="62095dce-50a7-4ff0-bac6-4c461aeed441" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(EXTRA_ATTACK_THIRSTING_BLADE, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5cff43ac-8c5c-4948-8952-fbe76249958d" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILDSTRIKE_EXTRA_ATTACK_Q" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f3dcc2cb-1a3d-4b8c-a858-9b1c492fe985" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(WILDSTRIKE_EXTRA_ATTACK, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="544da2d3-8daf-4828-a2fa-64c1c9e29779" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILDSTRIKE_2_EXTRA_ATTACK_Q" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="92bcc4a9-b84a-4b05-89e8-ba13ca276c07" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(WILDSTRIKE_2_EXTRA_ATTACK, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5471,8 +5503,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="505ed637-967c-4642-a566-d80d98494ba9" />
         <field name="Name" type="NameTableFieldDefinition" value="SLOW" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8d50f327-8202-40ad-bcae-7517e8ffb93d" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Wisdom, SourceSpellDC(),false,DisadvantageOnHeightenedSpell())" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(-2);RollBonus(SavingThrow,0-2,Dexterity);ActionResourceBlock(ReactionActionPoint);ActionResourceMultiplier(Movement,50,0);MovementSpeedLimit(Walk);AI_IGNORE:Tag(EXTRA_ATTACK_BLOCKED);StatusImmunity(EXTRA_ATTACK);StatusImmunity(EXTRA_ATTACK_Q);StatusImmunity(EXTRA_ATTACK_2);StatusImmunity(EXTRA_ATTACK_3);StatusImmunity(EXTRA_ATTACK_WAR_MAGIC);StatusImmunity(EXTRA_ATTACK_THIRSTING_BLADE_2);StatusImmunity(EXTRA_ATTACK_WARPRIEST);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(-2);RollBonus(SavingThrow,0-2,Dexterity);ActionResourceBlock(ReactionActionPoint);ActionResourceMultiplier(Movement,50,0);MovementSpeedLimit(Walk);AI_IGNORE:Tag(EXTRA_ATTACK_BLOCKED);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EXTRA_ATTACK);RemoveStatus(EXTRA_ATTACK_2);RemoveStatus(EXTRA_ATTACK_WAR_MAGIC);RemoveStatus(EXTRA_ATTACK_WAR_PRIEST);RemoveStatus(MAG_MARTIAL_EXERTION);RemoveStatus(WILDSTRIKE_EXTRA_ATTACK);RemoveStatus(WILDSTRIKE_2_EXTRA_ATTACK);RemoveStatus(STALKERS_FLURRY);RemoveStatus(EXTRA_ATTACK_THIRSTING_BLADE);RemoveStatus(COMMANDERS_STRIKE_D8);RemoveStatus(COMMANDERS_STRIKE_D10);RemoveStatus(EXTRA_ATTACK_3);RemoveStatus(EXTRA_ATTACK_THIRSTING_BLADE_2);RemoveStatus(EXTRA_ATTACK_Q);RemoveStatus(EXTRA_ATTACK_2_Q);RemoveStatus(EXTRA_ATTACK_THIRSTING_BLADE_Q);RemoveStatus(WILDSTRIKE_EXTRA_ATTACK_Q);RemoveStatus(WILDSTRIKE_2_EXTRA_ATTACK_Q)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
