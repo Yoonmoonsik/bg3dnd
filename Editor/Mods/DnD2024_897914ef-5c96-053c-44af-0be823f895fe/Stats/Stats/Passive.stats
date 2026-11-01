@@ -7279,6 +7279,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa6cd861-3d26-4773-910e-a0954557a07d" />
+        <field name="Name" type="NameTableFieldDefinition" value="DraconicBloodline_3_DraconicBloodlineSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc560b8bdg6498g45f5g99c8g32783a6b8ffd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3e3d1058g7b36g4546gb76fg1d144390c9f5" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ChromaticOrb" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="10303" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cc37fb7f-d817-4c39-ad97-ba07a409751e" />
         <field name="Name" type="NameTableFieldDefinition" value="DraconicResilience" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3e687354-b55c-40e4-bc8d-9e9975abaafb" />
