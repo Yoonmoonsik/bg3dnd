@@ -2560,6 +2560,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cf145bb0-7fb6-4415-bd3b-5091f4dd4dba" />
+        <field name="Name" type="NameTableFieldDefinition" value="Glamour_6_MantleOfMajesty" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h39b60441gf6fdg4bccgb7c9g6ef57fd2476e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcb03a252g15e3g43b5g9a81g6d8f6c4bad5f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MantleOfMajesty" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="2106" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MantleOfMajesty);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fe870750-d644-42f7-b22b-0e842bce0b45" />
         <field name="Name" type="NameTableFieldDefinition" value="CuttingWords" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e5ca5b3e-b222-402d-97ec-20429940c924" />
