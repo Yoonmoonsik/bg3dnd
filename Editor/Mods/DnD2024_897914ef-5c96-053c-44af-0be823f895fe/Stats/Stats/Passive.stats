@@ -8324,6 +8324,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98e5a0a2-a717-48c8-91df-89b95767bce2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Fiend_3_FiendSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1f02a139gab47g4cc8g8d14g633ce35364d1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha951a7b0g970fg40a8g83eag388f5b4c60c2" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BurningHands" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11303" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="85de31e2-0148-46ee-8d81-55bbec90c33d" />
         <field name="Name" type="NameTableFieldDefinition" value="DarkOnesBlessing" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ba7e6951-6525-48eb-bfe7-57fd5db8fb2e" />
