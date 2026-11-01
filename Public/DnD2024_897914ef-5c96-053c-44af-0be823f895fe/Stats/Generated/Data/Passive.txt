@@ -7584,7 +7584,7 @@ data "ExtraDescription" "h4f02276agb1b7g8939g8d33g4138f4f9a52f;1"
 data "Icon" "Action_LightningAura"
 data "PriorityOrder" "15109"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "UnlockInterrupt(Interrupt_ArcaneJolt);UnlockInterrupt(Interrupt_ArcaneJolt_SteelDefender);ActionResource(ArcaneJolt,1,0);ActionResource(ArcaneJoltTurn,1,0);IF(AbilityGreaterThan('Intelligence',13,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',15,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',17,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',19,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',21,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',23,context.Source)):ActionResource(ArcaneJolt,1,0);"
+data "Boosts" "UnlockInterrupt(Interrupt_ArcaneJolt);UnlockInterrupt(Interrupt_ArcaneJolt_SteelDefender);ActionResource(ArcaneJolt,1,0);ActionResource(ArcaneJoltTurn,1,0);IF(AbilityGreaterThan('Intelligence',13,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',15,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',17,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',19,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',21,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',23,context.Source)):ActionResource(ArcaneJolt,1,0);UnlockSpell(Target_ArcaneJolt);"
 
 new entry "__MONSTER HUNTER 16000__"
 type "PassiveData"
