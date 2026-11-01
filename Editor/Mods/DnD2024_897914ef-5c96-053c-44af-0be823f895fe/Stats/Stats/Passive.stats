@@ -5635,6 +5635,18 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7303" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="951c232a-ebee-47c1-9916-1ec79ec9d84b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Vengeance_3_VowOfEnmity" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h68d1d2adg8452g429bg8cbega3bcd3934882" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h60155508g6e19g492cgb0f0gc6a26456416a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_VowOfEnmity" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7403" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_VowOfEnmity);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="806bca67-674c-49a3-8b3d-0816865fb3ee" />
