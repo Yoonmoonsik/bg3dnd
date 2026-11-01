@@ -3017,6 +3017,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1656aa95-0d59-4601-b912-97ba439a4cf5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Light_3_RadianceOfTheDawn" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2b92ef3cg9478g3a54g70aeg0e5be0fa488f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he52d5810g82a7gd240gbde2g953b28debae4" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10+ClassLevel(Cleric),Radiant);Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_RadianceOfTheDawn" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3203" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_RadianceOfTheDawn);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="91edef7e-60ad-45e2-b79c-a6987dd8abe6" />
         <field name="Name" type="NameTableFieldDefinition" value="WardingFlare" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h39b48f39g9a41g2ba3g3567g7ab1cb265f82" version="2" />

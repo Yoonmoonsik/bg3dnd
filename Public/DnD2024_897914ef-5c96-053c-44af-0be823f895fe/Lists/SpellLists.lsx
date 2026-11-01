@@ -315,7 +315,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="5.5 Light Level 3 List"/>
-                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Target_FaerieFire;Shout_RadianceOfTheDawn;Projectile_ScorchingRay;Shout_SeeInvisibility"/>
+                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Target_FaerieFire;Projectile_ScorchingRay;Shout_SeeInvisibility"/>
                     <attribute id="UUID" type="guid" value="31037493-7a57-4dce-9412-4689c010199c"/>
                 </node>
                 <node id="SpellList">
@@ -1428,6 +1428,11 @@
                     <attribute id="UUID" type="guid" value="f5c4af9c-5d8d-4526-9057-94a4b243cd40"/>
                 </node>
                 <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Warlock Mysic Arcanum SLevel 6"/>
+                    <attribute id="Spells" type="LSString" value="Target_CircleOfDeath;Teleportation_ArcaneGate;Target_Eyebite;Target_CreateUndead;Target_MentalPrison"/>
+                    <attribute id="UUID" type="guid" value="e6ccab5e-3b3b-4b34-8fa2-1058dff2b3e6"/>
+                </node>
+                <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="5.5 Warlock SLevel 5"/>
                     <attribute id="Spells" type="LSString" value="Target_DanseMacabre;Target_Dream;Target_Enervation;Target_HoldMonster;Target_PlanarBinding;Target_SynapticStatic"/>
                     <attribute id="UUID" type="guid" value="648310a4-d9b7-4cf5-b6a0-51bd957a798f"/>
@@ -2099,11 +2104,6 @@
                     <attribute id="Name" type="FixedString" value="ShadarKai Level 1"/>
                     <attribute id="Spells" type="LSString" value="Target_BlessingOfTheRavenQueen"/>
                     <attribute id="UUID" type="guid" value="c4b857e4-a5d8-4d08-bfd1-b4068d7d0fd4"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Warlock Mysic Arcanum SLevel 6"/>
-                    <attribute id="Spells" type="LSString" value="Target_CircleOfDeath;Teleportation_ArcaneGate;Target_Eyebite;Target_CreateUndead;Target_MentalPrison"/>
-                    <attribute id="UUID" type="guid" value="e6ccab5e-3b3b-4b34-8fa2-1058dff2b3e6"/>
                 </node>
             </children>
         </node>
