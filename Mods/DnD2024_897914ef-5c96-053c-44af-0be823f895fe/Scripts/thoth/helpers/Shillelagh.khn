@@ -33,3 +33,19 @@ function CharismaIsBestAttackAbility(entity)
     local dexMod = GetModifier(entity.Dexterity)
     return ConditionResult(chaMod > intMod and chaMod > wisMod and chaMod >= strMod and chaMod >= dexMod)
 end
+
+-- Circle of the Unbroken (Shillelagh Mastery, War Druid) only works while the wielded
+-- weapon carries Shillelagh, the same way Thirsting Blade checks PACT_BLADE.
+function HasShillelaghWeapon(entity)
+    local entity = entity or context.Source
+    for _, mainHand in ipairs({true, false}) do
+        local weaponEntity = GetActiveWeapon(entity, mainHand)
+        if weaponEntity.IsValid then
+            result = Character(entity) & (HasStatus('SHILLELAGH', weaponEntity) | HasStatus('SHILLELAGH_5', weaponEntity) | HasStatus('SHILLELAGH_10', weaponEntity))
+            if result.Result then
+                return ConditionResult(true)
+            end
+        end
+    end
+    return ConditionResult(false)
+end

@@ -295,7 +295,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="765eaa1a-39b9-42bf-833b-b3ed41241cb8" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h66fbaf70g36bcg4313g969fgfabc9b4f1f69" version="4" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsCantrip()" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsCantrip() and HasUseCosts('ActionPoint')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(WAR_MAGIC_BLOCK,100,1)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -4228,6 +4228,9 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Transmutation_Shillelagh" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="4506" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnStatusRemoved;OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(context.HasContextFlag(StatsFunctorContext.OnCast) and (ExtraAttackSpellCheck() or (IsDruidCantrip() and HasUseCosts('ActionPoint') and HasPassive('Unbroken_10_WarMagic',context.Source))) and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source) and not HasStatus('SLAYER_PLAYER',context.Source) and not HasStatus('SLAYER_PLAYER_10',context.Source) and TurnBased(context.Source) and HasShillelaghWeapon(context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_TECHNICAL') and TurnBased() and HasShillelaghWeapon(context.Target)) or (context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('EXTRA_ATTACK_Q'));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(context.HasContextFlag(StatsFunctorContext.OnCast) and not IsCantrip() and HasStatus('ACTION_SURGE',context.Source)):RemoveStatus(SELF,WAR_MAGIC_BLOCK);IF(context.HasContextFlag(StatsFunctorContext.OnCast)):ApplyStatus(SELF,EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and not HasHigherPriorityExtraAttackQueued('EXTRA_ATTACK_Q') and not HasAnyExtraAttack()):ApplyStatus(EXTRA_ATTACK, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4239,6 +4242,9 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Transmutation_Shillelagh" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="4510" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsDruidCantrip() and HasUseCosts('ActionPoint')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(WAR_MAGIC_BLOCK,100,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF9ACD32" is_substat="false">
