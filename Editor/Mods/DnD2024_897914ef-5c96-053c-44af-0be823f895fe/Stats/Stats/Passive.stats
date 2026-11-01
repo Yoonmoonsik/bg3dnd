@@ -3117,6 +3117,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="04565454-8372-418a-8e15-c9a0ca7e5c29" />
+        <field name="Name" type="NameTableFieldDefinition" value="War_3_WarPriest" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d8f0214g4a08g4f36gb50cg82391f97de6a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he71b5f87ga059g4047g977egdf062dc2fdb0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarPriest" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3403" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WarPriest);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d55c6a72-7010-47c8-b4d6-bda2e9ba7bb6" />
         <field name="Name" type="NameTableFieldDefinition" value="WarPriest" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9e25c63eg08ebg12a0gfefega65d73c0d540" version="2" />
