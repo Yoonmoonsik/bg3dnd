@@ -10815,6 +10815,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_UncannyDodge" />
         <field name="StackId" type="StringTableFieldDefinition" value="UNCANNY_DODGE_REDUCE_DAMAGE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Half,);" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

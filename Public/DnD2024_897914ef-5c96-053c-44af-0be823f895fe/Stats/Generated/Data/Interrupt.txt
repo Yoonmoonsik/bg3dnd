@@ -1398,7 +1398,7 @@ data "InterruptContext" "OnPreDamage"
 data "InterruptContextScope" "Self"
 data "Container" "YesNoDecision"
 data "Conditions" "IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit);"
-data "Properties" "ApplyStatus(OBSERVER_OBSERVER,UNCANNY_DODGE_REDUCE_DAMAGE,100,0);"
+data "Properties" "ApplyStatus(OBSERVER_OBSERVER,UNCANNY_DODGE_REDUCE_DAMAGE,100,1);"
 data "Cost" "ReactionActionPoint:1;"
 data "InterruptDefaultValue" "Enabled"
 
