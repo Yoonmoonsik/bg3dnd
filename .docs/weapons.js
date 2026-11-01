@@ -62,7 +62,8 @@ const mas = w => (w.mastery ? w.mastery.en : "none");
 const isSimple = w => w.proficiency.en === "Simple";
 const rng = w => (w.melee ? "Melee" : "Ranged");
 // Item frame colors from the game's rarityFrame_*_front textures; Common has no frame color.
-const RARITY_COLOR = { Uncommon: "#01bd39", Rare: "#01bfff", "Very Rare": "#d1017b", Legendary: "#e7b64d" };
+// ItemRarityColour.* in GUI/Theme/DefaultTheme.Colours.xaml.
+const RARITY_COLOR = { Uncommon: "#00be3a", Rare: "#00c0ff", "Very Rare": "#d1007c", Legendary: "#d18f00" };
 const tint = r => (RARITY_COLOR[r.en] ? ` class="rarity" style="--rarity:${RARITY_COLOR[r.en]}"` : "");
 // Mastery name linking to its row on the Weapon Mastery page, with the description on hover.
 function masteryLink(w) {
@@ -72,11 +73,6 @@ function masteryLink(w) {
   const href = `weapon-mastery.html#lang=${state.lang}&open=${encodeURIComponent(m.id)}`;
   return `<a class="mastery tip-host" href="${href}">${esc(L(w.mastery))}<span class="tip">${esc(L(m.desc))}</span></a>`;
 }
-// Damage type colors from the game's GenericIcon_DamageType_* icons (glow average); physical types stay uncolored.
-const DAMAGE_COLOR = {
-  Acid: "#eff25c", Cold: "#33c4e7", Fire: "#e17528", Force: "#df7072", Lightning: "#5389e6", Necrotic: "#4fbf79",
-  Poison: "#bfdd4c", Psychic: "#c657ac", Radiant: "#dcc154", Thunder: "#ac73c7",
-};
 const damageCell = w => `${esc(w.damage)} ${DAMAGE_COLOR[w.damageType.en]
   ? `<span class="dmg" style="--dmg:${DAMAGE_COLOR[w.damageType.en]}">${esc(L(w.damageType))}</span>` : esc(L(w.damageType))}`;
 // Weapon property descriptions from the game's LSTooltips (Tooltips.xaml) and the mod's Passive descriptions.

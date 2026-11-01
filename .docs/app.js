@@ -102,15 +102,10 @@ let SPELLS = [];
 
 const $ = s => document.querySelector(s);
 const t = k => T[state.lang][k] ?? k;
-// Damage type colors from the game's GenericIcon_DamageType_* icons (glow average); physical types stay uncolored.
-const DAMAGE_COLOR = {
-  Acid: "#eff25c", Cold: "#33c4e7", Fire: "#e17528", Force: "#df7072", Heal: "#5ae4de",
-  Lightning: "#5389e6", Necrotic: "#4fbf79", Poison: "#bfdd4c", Psychic: "#c657ac",
-  Radiant: "#dcc154", Thunder: "#ac73c7",
-};
-// Casting-time colors from the game's ActionPoint / BonusActionPoint / ReactionActionPoint icons.
+// Casting-time colors: ActionPoint / BonusActionPoint in GUI/Theme/DefaultTheme.Colours.xaml;
+// reaction has no theme color and comes from the ReactionActionPoint icon.
 const CAST_COLOR = {
-  action: "#00a540", bonus: "#ff5200", reaction: "#fe88fa",
+  action: "#1ecc5b", bonus: "#fe711d", reaction: "#fe88fa",
 };
 const dmgSpan = d => (DAMAGE_COLOR[d] ? `<span class="dmg" style="--dmg:${DAMAGE_COLOR[d]}">${esc(nm("damage", d))}</span>` : esc(nm("damage", d)));
 const castSpan = c => (CAST_COLOR[c] ? `<span class="cast" style="--cast:${CAST_COLOR[c]}">${esc(t(c))}</span>` : esc(t(c)));
