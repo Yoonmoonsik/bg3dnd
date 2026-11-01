@@ -12,3 +12,8 @@ function DexterityGreaterThanStrength(entity)
     entity = entity or context.Source
     return ConditionResult(GetModifier(entity.Dexterity) > GetModifier(entity.Strength))
 end
+
+function IsThrownWeaponAttack()
+    local res = SpellTypeIs(SpellType.Throw) & HasWeaponProperty(WeaponProperties.Thrown, context.HitDescription.ThrownObject) & HasWeaponProperty(WeaponProperties.Light, context.HitDescription.ThrownObject)
+    return ConditionResult(res.Result)
+end
