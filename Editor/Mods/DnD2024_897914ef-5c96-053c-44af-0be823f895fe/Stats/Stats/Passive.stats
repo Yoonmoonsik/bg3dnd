@@ -5535,6 +5535,18 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):CharacterWeaponDamage(1d8,Radiant);IF(IsMeleeAttack()):CharacterUnarmedDamage(1d8,Radiant);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aabd930c-b9bb-454c-9325-293e9260119a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devotion_3_SacredWeapon" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf76a4068ge731g413agbe3dg11c6586c182f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h72e809fbgf1a5g438dgbd0ega8875ac3626f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_SacredWeapon" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7103" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SacredWeapon);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5cc8ee65-aa40-458f-a9d0-661b8e824263" />
