@@ -3079,6 +3079,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnAttack;OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_InvokeDuplicity');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,INVOKE_DUPLICITY_MOVE,100,10)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InvokeDuplicity);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

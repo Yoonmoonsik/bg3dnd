@@ -2195,6 +2195,7 @@ data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnCast;OnAttack;OnCastResolved"
 data "Conditions" "SpellId('Target_InvokeDuplicity');"
 data "StatsFunctors" "ApplyStatus(SELF,INVOKE_DUPLICITY_MOVE,100,10)"
+data "Boosts" "UnlockSpell(Target_InvokeDuplicity);"
 
 new entry "InvokeDuplicityConcentration_Passive"
 type "PassiveData"
