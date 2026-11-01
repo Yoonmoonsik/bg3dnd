@@ -2624,6 +2624,11 @@ using "WPN_Scimitar"
 data "RootTemplate" "134cca90-23ea-497d-8698-b7a66bab59d3"
 data "ValueScale" "0.1"
 
+new entry "MAG_HAV_Sylvan_Scimitar"
+type "Weapon"
+using "MAG_HAV_Sylvan_Scimitar"
+data "BoostsOnEquipMainHand" ""
+
 new entry "MAG_LC_BurnOnDamage_Scimitar"
 type "Weapon"
 using "WPN_Scimitar_1"
