@@ -5670,6 +5670,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a69ef2e3-4e95-4787-9ca1-c2947dbfcf33" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devotion_3_DevotionSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h63ff4073g4343g4700g928ega6f7baf9a376" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7e9a1501gbbbag4fe9g8addg41aebbdc8cd9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEvilAndGood" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7103" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="aabd930c-b9bb-454c-9325-293e9260119a" />
         <field name="Name" type="NameTableFieldDefinition" value="Devotion_3_SacredWeapon" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf76a4068ge731g413agbe3dg11c6586c182f" version="1" />
@@ -5750,6 +5761,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6bfc063c-980a-43cc-8bd6-3674833ffcfa" />
+        <field name="Name" type="NameTableFieldDefinition" value="Ancients_3_AncientsSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he2170d4ag8831g4c12g90aega8a6267deac3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcc03699agf6aag4602gaef2g611f57bea342" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_EnsnaringStrikeRanged" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7303" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="630a2ff2-e18c-4f8d-be2c-c070fa77ab8b" />
         <field name="Name" type="NameTableFieldDefinition" value="Ancients_3_NaturesWrath" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h652e7b2cgc6d2g49a8g9294g2df5c89df548" version="1" />
@@ -5767,6 +5789,17 @@
         <field name="Name" type="NameTableFieldDefinition" value="Oath_Ancients_Tenents" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2b86af05-f1ed-4a96-b690-7b4c8fb4eaba" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7303" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cf9888a1-00b3-4422-b4b7-f7b7d22b660a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Vengeance_3_VengeanceSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3c69152eg2d45g4cdbgbf7ag83599ccce45b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h079752cag33f2g4ad0g822cg1279e44ab8a3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Bane" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7403" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5798,6 +5831,17 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c05bd1dg9548g9d0ag66dbgd31ce3af6dab" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7407" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,RELENTLESS_AVENGER,100,1);ApplyStatus(RELENTLESS_AVENGER_SENTINEL,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="294c3d7b-902c-4f67-aa99-e2904ac192c6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Crown_3_CrownSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2dda2274g9981g4c33g8ad7gc6b4bb21327d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h47a22d5ag678bg4d97g9ba8gb4cb3dfdbdeb" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CommandHalt" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
