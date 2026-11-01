@@ -260,6 +260,10 @@ function renderTable() {
   }).join("");
 }
 
+// A class (or one of its subclasses, by English name) on the Classes page.
+const classLink = (cls, label, sub) =>
+  `<a href="classes.html#lang=${state.lang}&open=${cls}${sub ? `&sub=${encodeURIComponent(sub)}` : ""}">${esc(label)}</a>`;
+
 function detail(s) {
   const L = state.lang;
   const area = s.area ? `${s.area}m ${t("radius")}` : (s.shape ? t("shape_" + s.shape) : "");
@@ -275,8 +279,8 @@ function detail(s) {
     effectText(s) && [t("col_effect"), effectText(s)],
     (s.tdl.length ? [t("d_damage"), null, s.tdl.map(tdlSpan).join("<br>")] : (s.damage.length && [t("col_damage"), null, s.damage.map(dmgSpan).join(", ")])),
     s.tsa.length && [t("d_status"), null, `<div class="tsa-list">${s.tsa.map(tsaBlock).join("")}</div>`, "tsa-cell"],
-    [t("d_classes"), [...s.classes].sort().map(c => s.subclasses && s.subclasses[c]
-      ? s.subclasses[c].map(n => n[L]).join(", ") : nm("classes", c)).join(", ")],
+    [t("d_classes"), null, [...s.classes].sort().map(c => s.subclasses && s.subclasses[c]
+      ? s.subclasses[c].map(n => classLink(c, n[L], n.en)).join(", ") : classLink(c, nm("classes", c))).join(", ")],
     [t("d_scroll"), s.scroll ? t("yes") : t("no")],
     [t("d_id"), s.id],
   ].filter(Boolean);
