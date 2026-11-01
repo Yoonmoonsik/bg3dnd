@@ -275,7 +275,7 @@ function detail(s) {
     effectText(s) && [t("col_effect"), effectText(s)],
     (s.tdl.length ? [t("d_damage"), null, s.tdl.map(tdlSpan).join("<br>")] : (s.damage.length && [t("col_damage"), null, s.damage.map(dmgSpan).join(", ")])),
     s.tsa.length && [t("d_status"), null, `<div class="tsa-list">${s.tsa.map(tsaBlock).join("")}</div>`, "tsa-cell"],
-    [t("d_classes"), s.classes.map(c => s.subclasses && s.subclasses[c]
+    [t("d_classes"), [...s.classes].sort().map(c => s.subclasses && s.subclasses[c]
       ? s.subclasses[c].map(n => n[L]).join(", ") : nm("classes", c)).join(", ")],
     [t("d_scroll"), s.scroll ? t("yes") : t("no")],
     [t("d_id"), s.id],
