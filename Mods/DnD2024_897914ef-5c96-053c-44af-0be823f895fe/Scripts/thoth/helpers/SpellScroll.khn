@@ -12,6 +12,8 @@
 -- 7. A subclass's always-prepared spells count as its class's spells from the class
 --    level listed in SUBCLASS_SCROLL_MAP, with no spell slot requirement. The check is
 --    the subclass spell passive (Circle of the Land: every terrain's spells).
+-- 8. From class level 9, a listed half caster, or a proxy third caster, may use a scroll
+--    up to two levels above that class's own highest spell slot.
 
 local SPELL_CLASS_MAP = {
     Target_AnimalFriendship_spellscroll = '1 Bard Druid Ranger',
@@ -463,6 +465,10 @@ end
 
 local HALF_CASTER_CLASSES = { 'Artificer', 'Paladin', 'Ranger' }
 
+local WIDE_TOLERANCE_LEVEL = 9
+local WIZARD_PROXY_CLASSES = { 'Rogue', 'Fighter', 'Illrigger', 'Gunslinger', 'MonsterHunter' }
+local SORCERER_PROXY_CLASSES = { 'Monk' }
+
 local function GetOwnTableSlotLevel(classLevel)
     -- 하프 캐스터의 단일 클래스 진행표: 1레벨은 슬롯이 없고, 그 이후는 올림 처리된다.
     if classLevel < 2 then return 0 end
@@ -561,8 +567,35 @@ function CanUseSpellScroll(spell, entity)
 
     -- Rule 3: Check spell slot level requirement (Custom: 1 Level lower allowed)
     local highestSlot = GetHighestSpellSlotLevel(entity, cls, isWizardProxyTag, isSorcererProxyTag)
+    if highestSlot >= (spellLevel - 1) then
+        return ConditionResult(true)
+    end
 
-    return ConditionResult(highestSlot >= (spellLevel - 1))
+    -- Rule 8: Half and third casters from class level 9 (2 levels lower allowed)
+    for i = 1, #HALF_CASTER_CLASSES do
+        local className = HALF_CASTER_CLASSES[i]
+        local classLevel = entity.GetClassLevel(className)
+        if HasToken(cls, string.lower(className)) and classLevel >= WIDE_TOLERANCE_LEVEL
+            and GetOwnTableSlotLevel(classLevel) >= (spellLevel - 2) then
+            return ConditionResult(true)
+        end
+    end
+    local thirdCasters = {}
+    if HasToken(cls, 'wizard') and isWizardProxy then
+        for i = 1, #WIZARD_PROXY_CLASSES do thirdCasters[#thirdCasters + 1] = WIZARD_PROXY_CLASSES[i] end
+    end
+    if HasToken(cls, 'sorcerer') and isSorcererProxy then
+        for i = 1, #SORCERER_PROXY_CLASSES do thirdCasters[#thirdCasters + 1] = SORCERER_PROXY_CLASSES[i] end
+    end
+    for i = 1, #thirdCasters do
+        local classLevel = entity.GetClassLevel(thirdCasters[i])
+        if classLevel >= WIDE_TOLERANCE_LEVEL
+            and (MULTICLASS_SLOT_LEVEL[math.floor(classLevel / 3)] or 0) >= (spellLevel - 2) then
+            return ConditionResult(true)
+        end
+    end
+
+    return ConditionResult(false)
 end
 
 function IsScrollSpell()
