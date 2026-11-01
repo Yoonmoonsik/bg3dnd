@@ -2986,6 +2986,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b9ba691b-a34a-4403-a895-57e0af46de12" />
+        <field name="Name" type="NameTableFieldDefinition" value="Life_3_PreserveLife" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc12c757egc986g4f0ag88cag6545d3124feb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8bd75c12g7c54g4250gbee6g44956dac4a81" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_PreserveLife" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3103" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PreserveLife);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1f7abcd8-240f-4123-8778-d9060486056e" />
         <field name="Name" type="NameTableFieldDefinition" value="DiscipleOfLife" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fae0e4a0-e933-4e94-855e-b67467f10618" />
