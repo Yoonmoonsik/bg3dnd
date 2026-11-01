@@ -1534,7 +1534,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(bbaf0bab-b0b3-44c9-a567-304e35c063c9,ClericLifeDomainSpells,,,AlwaysPrepared);AddSpells(36795b9e-f712-44a4-9c0f-eda1e78df9ab,,,,AlwaysPrepared)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Life_3_PreserveLife;DiscipleOfLife" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="LifeDomain_3_LifeDomainSpells;Life_3_PreserveLife;DiscipleOfLife" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1630,7 +1630,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(31037493-7a57-4dce-9412-4689c010199c,ClericLightDomainSpells,,,AlwaysPrepared)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Light_3_RadianceOfTheDawn;WardingFlare" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="LightDomain_3_LightDomainSpells;Light_3_RadianceOfTheDawn;WardingFlare" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1726,7 +1726,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(9f603ac8-2e51-4ce9-b924-c8093148bdf5,ClericTrickeryDomainSpells,,,AlwaysPrepared)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Trickery_3_BlessingOfTheTrickster;Trickery_3_InvokeDuplicity;InvokeDuplicityConcentration_Passive" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="TrickeryDomain_3_TrickeryDomainSpells;Trickery_3_BlessingOfTheTrickster;Trickery_3_InvokeDuplicity;InvokeDuplicityConcentration_Passive" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1824,7 +1824,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(921a657e-e210-4657-9e65-1e9748626354,ClericWarDomainSpells,,,AlwaysPrepared)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="War_3_WarPriest;WarPriest;WarGodsBlessing" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="WarDomain_3_WarDomainSpells;War_3_WarPriest;WarPriest;WarGodsBlessing" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1930,7 +1930,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(2fbc1acc-ea80-4b61-9bed-e5e7dd50ad16,ClericKnowledgeDomainSpells,,,AlwaysPrepared);SelectSkillsExpertise(b0b9bc80-8468-4a53-b9ca-6d9146f23801,2,false)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Knowledge_3_BlessingsOfKnowledge;Knowledge_3_MindMagic" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="KnowledgeDomain_3_KnowledgeDomainSpells;Knowledge_3_BlessingsOfKnowledge;Knowledge_3_MindMagic" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2016,7 +2016,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(070e22ed-b6f9-44ee-befa-fe611c95cfee,ClericDeathDomainSpells,,,AlwaysPrepared);SelectSpells(86d4d2c3-56d9-4e78-ba6e-5fbbcde96438,1,0,Reaper,,,AlwaysPrepared);AddSpells(b4ef4e54-3f09-49b6-bbb4-5d1121bfb325,ClericDeathDomainSpells,,,AlwaysPrepared)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Reaper;TouchOfDeath" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DeathDomain_3_DeathDomainSpells;Reaper;TouchOfDeath" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2102,7 +2102,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(dd2b48a8-3e62-435e-8107-0d48f51dc555,ClericNatureDomainSpells,,,AlwaysPrepared);SelectSkills(889d3b97-5975-4c1c-bcc3-925521935a65,1);SelectSpells(b8faf12f-ca42-45c0-84f8-6951b526182a,1,0,,,,AlwaysPrepared);AddSpells(cba2f112-697f-4611-ae1d-758bf25ab3fd,ClericNatureDomainSpells,,,AlwaysPrepared);AddSpells(28a930af-d2a0-4411-8018-c1b95d5d2f23,,,,AlwaysPrepared)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="AcolyteOfNature" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="NatureDomain_3_NatureDomainSpells;AcolyteOfNature" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2188,7 +2188,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(a05bd5e7-c815-4db7-9a21-66dc08d03e44,ClericTempestDomainSpells,,,AlwaysPrepared);AddSpells(0888d55d-6382-4149-9b62-90a9579b0ec4,ClericTempestDomainSpells,,,AlwaysPrepared)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="WrathOfTheStorm;DestructiveWrath" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="TempestDomain_3_TempestDomainSpells;WrathOfTheStorm;DestructiveWrath" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

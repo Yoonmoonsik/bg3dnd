@@ -2998,6 +2998,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ac39f58-f8e3-4e81-90ac-0ef4b4ef8f19" />
+        <field name="Name" type="NameTableFieldDefinition" value="LifeDomain_3_LifeDomainSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h13cab459gc6fdg4132g98b4gac0e6c47c7d8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8b976b26g7784g4190ga5d2g4854b0d1b101" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Aid" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3103" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b9ba691b-a34a-4403-a895-57e0af46de12" />
         <field name="Name" type="NameTableFieldDefinition" value="Life_3_PreserveLife" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc12c757egc986g4f0ag88cag6545d3124feb" version="1" />
@@ -3032,12 +3043,34 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1e18b91-2871-4112-93f8-65e371a0a894" />
+        <field name="Name" type="NameTableFieldDefinition" value="DeathDomain_3_DeathDomainSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h39190ab1g368dg4f35gabe1g50d3a105d165" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hef64fed1g9a00g4758g8f80g5db9dce834a1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Blindness" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3103" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="57e5f417-c4c6-4f75-8ab9-1148501856db" />
         <field name="Name" type="NameTableFieldDefinition" value="Reaper" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d3ea4752-eb2a-4c8a-9e54-4238898e8b87" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h39139aafg7efag9037g4297g47b92c38caf8" version="2" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3103" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Projectile_BloodBolt'),ModifyNumberOfTargets(AdditiveBase,1,false));UnlockSpellVariant(SpellId('Target_BurstingSinew'),ModifyNumberOfTargets(AdditiveBase,1,false));UnlockSpellVariant(SpellId('Target_ChillTouch'),ModifyNumberOfTargets(AdditiveBase,1,false));UnlockSpellVariant(SpellId('Projectile_PoisonSpray'),ModifyNumberOfTargets(AdditiveBase,1,false));UnlockSpellVariant(SpellId('Target_TollTheDead'),ModifyNumberOfTargets(AdditiveBase,1,false));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f72be318-b17d-45fb-a410-bfd3156995ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="LightDomain_3_LightDomainSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7c93a6f6g4c4eg497ag8ce5gc7d8cceb661f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2a021c09g0d64g476bg83eag350c0e4f3b99" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BurningHands" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3203" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3076,6 +3109,17 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceReplenishTypeOverride(WardingFlare,ShortRest);" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3206" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="981169dd-7487-4bfd-a255-90efe45f1160" />
+        <field name="Name" type="NameTableFieldDefinition" value="TrickeryDomain_3_TrickeryDomainSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb666e3d0gbbcfg4604ga5e2gc9fb05d6e80e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hac4bc32ag8c05g4c6egbbb0gbbbbe16e5955" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CharmPerson" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3303" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3129,6 +3173,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="68ebc80e-c1e8-4f5f-9430-1afd242d99a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="WarDomain_3_WarDomainSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h144b7a7dg11d1g4c31g8a5ag268bc4927182" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8dd23f51g2f52g4ccdg9bfdgb54432f04650" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_GuidingBolt" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3403" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="04565454-8372-418a-8e15-c9a0ca7e5c29" />
         <field name="Name" type="NameTableFieldDefinition" value="War_3_WarPriest" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d8f0214g4a08g4f36gb50cg82391f97de6a" version="1" />
@@ -3175,6 +3230,39 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3406" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShieldOfFaith_War);UnlockSpell(Target_SpiritualWeapon_War);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a3f4a8ad-89a6-4296-a9e4-1eb7a89973d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="KnowledgeDomain_3_KnowledgeDomainSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc2c0e620g844dg49f4gb119g974bb2dfab61" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h75605329g7c1dg44d7g8f44g7e8dbcb378eb" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CalmEmotions" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="552993bb-1e7c-4df0-b115-d1682ceb9fae" />
+        <field name="Name" type="NameTableFieldDefinition" value="NatureDomain_3_NatureDomainSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f4d6f90gd60cg4b80gb3b6g17473324d962" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5d4a8298g7471g4994gb14agdb97f74e9fb2" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_SpikeGrowth" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f6fad82-e9a6-4aef-a473-453f19e98771" />
+        <field name="Name" type="NameTableFieldDefinition" value="TempestDomain_3_TempestDomainSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h81233228gec95g4f5fga8b9g626918e389eb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf920d92g8803g4cfag8affg2ac4cd660c5b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Shatter" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="3503" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
