@@ -4674,7 +4674,7 @@ data "PriorityOrder" "9403"
 data "EnabledConditions" "HasActionResource('Soulknife', 1, 0, false, false, context.Source);"
 data "EnabledContext" "OnAbilityCheck;OnInterruptUsed;OnShortRest;OnLongRest"
 data "Properties" "Highlighted;ForceShowInCC;IsToggled;ToggledDefaultAddToHotbar"
-data "Boosts" "RollBonus(SkillCheck,LevelMapValue(Soulknife));RollBonus(RawAbility,LevelMapValue(Soulknife));"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(5,'Rogue',context.Source)):RollBonus(SkillCheck,1d6);IF(not ClassLevelHigherOrEqualThan(5,'Rogue',context.Source)):RollBonus(RawAbility,1d6);IF(ClassLevelHigherOrEqualThan(5,'Rogue',context.Source) and not ClassLevelHigherOrEqualThan(11,'Rogue',context.Source)):RollBonus(SkillCheck,1d8);IF(ClassLevelHigherOrEqualThan(5,'Rogue',context.Source) and not ClassLevelHigherOrEqualThan(11,'Rogue',context.Source)):RollBonus(RawAbility,1d8);IF(ClassLevelHigherOrEqualThan(11,'Rogue',context.Source)):RollBonus(SkillCheck,1d10);IF(ClassLevelHigherOrEqualThan(11,'Rogue',context.Source)):RollBonus(RawAbility,1d10);"
 data "StatsFunctorContext" "OnAbilityCheck"
 data "StatsFunctors" "UseActionResource(SELF,Soulknife,1,0)"
 

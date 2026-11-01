@@ -6491,7 +6491,7 @@
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('Soulknife', 1, 0, false, false, context.Source);" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnAbilityCheck;OnInterruptUsed;OnShortRest;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(Soulknife));RollBonus(RawAbility,LevelMapValue(Soulknife));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(5,'Rogue',context.Source)):RollBonus(SkillCheck,1d6);IF(not ClassLevelHigherOrEqualThan(5,'Rogue',context.Source)):RollBonus(RawAbility,1d6);IF(ClassLevelHigherOrEqualThan(5,'Rogue',context.Source) and not ClassLevelHigherOrEqualThan(11,'Rogue',context.Source)):RollBonus(SkillCheck,1d8);IF(ClassLevelHigherOrEqualThan(5,'Rogue',context.Source) and not ClassLevelHigherOrEqualThan(11,'Rogue',context.Source)):RollBonus(RawAbility,1d8);IF(ClassLevelHigherOrEqualThan(11,'Rogue',context.Source)):RollBonus(SkillCheck,1d10);IF(ClassLevelHigherOrEqualThan(11,'Rogue',context.Source)):RollBonus(RawAbility,1d10);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAbilityCheck" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(SELF,Soulknife,1,0)" />
       </fields>
