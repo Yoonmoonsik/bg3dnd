@@ -11614,6 +11614,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c86c4a16-b225-43e1-aa24-38e0e132e4bb" />
         <field name="Name" type="NameTableFieldDefinition" value="MagicWeapon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9afe4468-ad49-416c-8890-121940499ba9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON_BOND,100,-1);IF(Item()):ApplyStatus(MAGIC_WEAPON,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_BOND,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,-1)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf3454d49ga887g5e0fg8d2agc0bbd2b7d8f1" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
@@ -11624,7 +11625,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6c783010-b337-4b65-8207-99f529d350a7" />
         <field name="Name" type="NameTableFieldDefinition" value="MagicWeapon_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ad7e0ec0-a7f6-41a0-861c-95e2e3d12f69" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON_4,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_4,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON_BOND,100,-1);IF(Item()):ApplyStatus(MAGIC_WEAPON_4,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_BOND,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_4,100,-1)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3de4daa5g270dgd865g3b17g917d23d9331c" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(MAGIC_WEAPON_4,100,-1)" />
@@ -11637,6 +11638,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1245227c-98d8-4614-8ce7-9dc762b9db8d" />
         <field name="Name" type="NameTableFieldDefinition" value="MagicWeapon_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fca26f45-ab20-410b-9586-0c417d0ebdf8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON_BOND,100,-1);IF(Item()):ApplyStatus(MAGIC_WEAPON_4,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_BOND,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_4,100,-1)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h50bff1e7g1854g3605g542bg6e07ef5207cb" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
@@ -11657,6 +11659,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3bb4a008-9398-4c84-8bd7-8fbc726d5e67" />
         <field name="Name" type="NameTableFieldDefinition" value="MagicWeapon_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cb6f4a0e-b57b-448a-961d-d97f0b0d256b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON_BOND,100,-1);IF(Item()):ApplyStatus(MAGIC_WEAPON_6,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_BOND,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_6,100,-1)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h85706f21g3bf8g589fgb2e1gb85b9c796d1c" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
@@ -17662,12 +17665,12 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7b0c45ac-620f-4237-bf78-b1a3ce444366" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BlessingOfTheForge" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(BLESSING_OF_THE_FORGE,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,BLESSING_OF_THE_FORGE,100,-1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Item() or (Ally() and HasWeaponInMainHand())" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_MagicWeapon" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha16f58efga1b2gc6a6g85fdg6414a27e6567" version="1" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(MAGIC_WEAPON,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLESSING_OF_THE_FORGE,100,-1)" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />

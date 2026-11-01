@@ -5581,6 +5581,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e9f8b188-0ad9-4c43-ab91-b8862c82441f" />
         <field name="Name" type="NameTableFieldDefinition" value="MAGIC_WEAPON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0dfaec7d-fb0e-4bd6-82cc-2d713e3169a2" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
@@ -5599,6 +5600,24 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="8f8b9876-1e8a-4eb6-be11-c7d980930c60" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8388fcf5-0cdf-42ef-8e02-55e907d140da" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGIC_WEAPON_BOND" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGIC_WEAPON_BOND" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MAGIC_WEAPON);RemoveStatus(MAGIC_WEAPON_4);RemoveStatus(MAGIC_WEAPON_6)" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b57b40d5-c622-498d-ac2a-c5015e6f7083" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLESSING_OF_THE_FORGE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0dfaec7d-fb0e-4bd6-82cc-2d713e3169a2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha16f58efga1b2gc6a6g85fdg6414a27e6567" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
