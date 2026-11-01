@@ -3111,7 +3111,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Dawn" />
         <field name="StackId" type="StringTableFieldDefinition" value="DAWN_AURA" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="9" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(not Dead() and not Item() and not (HasPassive('SculptSpells', context.Source) and Ally())):ApplyStatus(DAWN,100,-1);TARGET:IF(Character() and not Dead() and HasPassive('SunlightHypersensitivity')):ApplyStatus(SUNLIGHT_FROM_SPELL_TECHNICAL)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(not Dead() and not Item()):ApplyStatus(DAWN,100,-1);TARGET:IF(Character() and not Dead() and HasPassive('SunlightHypersensitivity')):ApplyStatus(SUNLIGHT_FROM_SPELL_TECHNICAL)" />
         <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems;ShouldCheckLOS" enumeration_type_name="AuraFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(9,false,0.1,true);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
@@ -3137,6 +3137,30 @@
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(4d10/2,Radiant,Magical)" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="62710804-ff29-4936-9d45-0e6a44372526" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="73f8b212-1a39-4214-8a32-b5e1427ec860" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f54a3a80-a61c-41ae-8960-7e02f26e4466" />
+        <field name="Name" type="NameTableFieldDefinition" value="WALLOFFIRE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b55edd34-dec2-4699-ac54-c1e9041b1fc7" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Dead()):ApplyStatus(WALLOFFIRE_AURA,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9a66921b-4b81-47fc-b1f0-d9b6fea8bed1" />
+        <field name="Name" type="NameTableFieldDefinition" value="WALLOFFIRE_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="893087ed-e78d-440e-938d-c3313770a994" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Dead()):ApplyStatus(WALLOFFIRE_AURA_5,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="83fa1df5-dc4f-4c13-ab20-b2add6aeb1a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="WALLOFFIRE_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a3d8e1a-ae53-4d22-b41d-30f163144407" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Dead()):ApplyStatus(WALLOFFIRE_AURA_6,100,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
