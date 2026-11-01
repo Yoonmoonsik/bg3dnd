@@ -47,7 +47,7 @@ new entry "EXTRA_ATTACK"
 type "StatusData"
 data "StatusType" "BOOST"
 using "EXTRA_ATTACK"
-data "Boosts" "UnlockSpellVariant(ExtraAttackCheck(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription());IF(not HasStatus('WAR_MAGIC_BLOCK', context.Source) and HasPassive('WarMagic', context.Source)):UnlockSpellVariant(IsCantrip() and HasUseCosts('ActionPoint'),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription());IF(not HasStatus('WAR_MAGIC_BLOCK', context.Source) and HasPassive('Unbroken_10_WarMagic', context.Source)):UnlockSpellVariant(IsDruidCantrip() and HasUseCosts('ActionPoint'),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription())"
+data "Boosts" "UnlockSpellVariant(ExtraAttackCheck(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription());IF(not HasStatus('WAR_MAGIC_BLOCK', context.Source) and HasPassive('WarMagic', context.Source)):UnlockSpellVariant(IsCantrip() and HasUseCosts('ActionPoint'),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription());IF(not HasStatus('WAR_MAGIC_BLOCK', context.Source) and HasPassive('Unbroken_10_WarMagic', context.Source)):UnlockSpellVariant((IsDruidCantrip() or TrueStrike()) and HasUseCosts('ActionPoint'),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription())"
 data "RemoveConditions" "(ExtraAttackSpellCheck() and HasUseCosts('ActionPoint',false,context.Target) and not IsOffHandAttack()) or (IsCantrip() and HasUseCosts('ActionPoint',false,context.Target))"
 
 new entry "EXTRA_ATTACK_2"
