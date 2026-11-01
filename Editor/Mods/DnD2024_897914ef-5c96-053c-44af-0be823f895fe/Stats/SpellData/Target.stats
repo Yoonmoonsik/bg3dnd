@@ -1092,6 +1092,17 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b730bde9-de9f-4134-9948-94daf4fb9245" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aed17692-cd18-4a6d-a2b2-ae0db9ab6108" />
+        <field name="Name" type="NameTableFieldDefinition" value="GlobeOfInvulnerability" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="82f6dfe0-8551-4a36-8f2f-e632024a4c6a" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(edca6656-dc8c-410b-9f16-fcc02d5ed803,10,Projectile_AiHelper_Silence,,,GLOBE_OF_INVULNERABILITY_AURA);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8f913200gda71g1268g82d3gdf0bf9b610f0" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(GLOBE_OF_INVULNERABILITY,100,10)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e3f7b69e-b25c-4f39-b19b-2974cc677bfe" />
@@ -22939,7 +22950,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="192bf699-e89a-4f84-ad24-e1fc20db0955" />
         <field name="Name" type="NameTableFieldDefinition" value="GlobeOfInvulnerability_spellscroll" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="82f6dfe0-8551-4a36-8f2f-e632024a4c6a" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aed17692-cd18-4a6d-a2b2-ae0db9ab6108" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
       </fields>
     </stat_object>
