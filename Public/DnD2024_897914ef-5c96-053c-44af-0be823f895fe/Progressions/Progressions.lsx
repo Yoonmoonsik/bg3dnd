@@ -2333,7 +2333,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="CircleOfTheMoon"/>
-                    <attribute id="PassivesAdded" type="LSString" value="WildShape_Combat"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CircleOfTheMoon_3_CircleOfTheMoonSpells;WildShape_Combat"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(716d591e-8cb4-49dc-928a-9b750b8c3acf,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="ede8583c-434b-4fb2-87a8-af8e0e239d62"/>
@@ -2411,6 +2411,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="CircleOfTheSpores"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CircleOfTheSpores_3_CircleOfTheSporesSpells"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(e568eca4-b5e1-4b67-83d6-d831adf05e23,,,,AlwaysPrepared);AddSpells(729670a8-da85-4fd2-9764-4dec636a275b,DruidCircleOfTheSporesSpells,,,AlwaysPrepared);AddSpells(4895c409-1850-42b1-a1d5-e9faf59296a9,DruidCircleOfTheSporesSpells,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="288c9d1e-ab18-46dd-8fa3-d4fcfa44147a"/>
@@ -2526,7 +2527,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="CircleOfTheSea"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Sea_3_WrathOfTheSea"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CircleOfTheSea_3_CircleOfTheSeaSpells;Sea_3_WrathOfTheSea"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(2799765b-6707-4835-9f4c-ce5a99c2bccc,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="f95cd60e-234f-4724-a5c2-bc2ac8e543f5"/>
