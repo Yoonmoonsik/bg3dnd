@@ -6246,7 +6246,7 @@
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Intelligence, SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(8d6,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(8d6,Necrotic);ApplyStatus(SYNAPTIC_STATIC,100,10);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(8d6/2,Psychic);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(8d6/2,Necrotic);" />
-        <field name="AoEConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Self()" />
+        <field name="AoEConditions" type="StringTableFieldDefinition" value="Character() and not Dead()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_SynapticStatic" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd666f94dg1a88g5b93g7dcbgfbc951360305" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haddaa3c4ga780gc6c0g5533g2da826d6931f" version="1" />
@@ -7928,7 +7928,6 @@
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Radiant,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d10/2,Radiant,Magical);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SpellfireStorm" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf91f3fe6gf176g015fg2e8bg8d7e113fb2e5" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc68e827eg501cgbab0ga48egb7055d764e5b" version="3" />
