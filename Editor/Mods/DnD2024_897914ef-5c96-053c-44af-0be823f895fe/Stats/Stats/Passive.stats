@@ -6175,6 +6175,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a9cf12ca-6c77-43ec-bbeb-3de85ba62b7e" />
+        <field name="Name" type="NameTableFieldDefinition" value="GloomStalker_3_GloomStalkerSpells" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0209f444g2b8bg44f8gbd85g44d7f25d1bbe" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hffabd299gfe84g474ag9d03g449b5d4dada3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="8203" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="58f3fcbf-861b-44ff-a868-bb2f135c43b8" />
         <field name="Name" type="NameTableFieldDefinition" value="DreadAmbusher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7192d1f0-9cee-4a20-95cb-327c58d3b4ee" />
