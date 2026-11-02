@@ -11069,6 +11069,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="UNCANNY_DODGE_REDUCE_DAMAGE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Half,);" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13015,6 +13016,58 @@
         <field name="StackId" type="StringTableFieldDefinition" value="ARCANE_WARD" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="76ec7b3b-dce0-4e0f-b3f9-16468c66e9e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_PROJECTED_WARD_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb2f999b5g584fg44d2g9751g5bb661be55d9" version="3" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="Spell_Passive_Cast_Wizard_ProjectedWard" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,2);" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="5f637e2d-e099-4c88-af66-a88d1492ac4a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="44350c51-c281-4691-9ebb-15976f161fa3" />
+        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_PROJECTED_WARD_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76ec7b3b-dce0-4e0f-b3f9-16468c66e9e0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,5);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5390fdfa-e9bf-4f74-839c-5bbbbee43cc6" />
+        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_PROJECTED_WARD_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76ec7b3b-dce0-4e0f-b3f9-16468c66e9e0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f4c4a4a4-eb17-408f-88fb-dd2274ed70bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_PROJECTED_WARD_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76ec7b3b-dce0-4e0f-b3f9-16468c66e9e0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,15);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f624edf-5295-4862-a963-9cbeded7a3df" />
+        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_PROJECTED_WARD_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76ec7b3b-dce0-4e0f-b3f9-16468c66e9e0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="26c755e1-1585-4b67-aeee-18ce5e0adcf6" />
+        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_PROJECTED_WARD_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76ec7b3b-dce0-4e0f-b3f9-16468c66e9e0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,25);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
