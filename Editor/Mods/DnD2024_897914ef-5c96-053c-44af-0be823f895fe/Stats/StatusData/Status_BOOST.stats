@@ -6044,6 +6044,157 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="db19fbcf-c2f2-4235-adc8-a7b0ba3182eb" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c818c26e-65e6-4601-ab82-d8674fd3e636" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_RECEIVED" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_RECEIVED" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f048625d-a1fa-43ee-a993-043c9a778a13" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07bf103cg6fe9g48deg90e6g51cda963e2bb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h015e6052gbb2eg4bc4g8148gac1a0bbffbf1" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_AshardalonsStride" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASHARDALONS_STRIDE_AURA" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(ASHARDALONS_STRIDE_BURN,100,-11)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="ShouldCheckLOS" enumeration_type_name="AuraFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,6,0);IgnoreLeaveAttackRange();" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(1d6,Fire)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);Distance(1.5);DealDamage(1d6,Fire)" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('SANCTUARY')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a25f92a9-7078-4a5f-8648-c0bb9f4fee39" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="720e5130-ff5e-4005-a061-f6ea767ab3cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_AURA_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f048625d-a1fa-43ee-a993-043c9a778a13" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(ASHARDALONS_STRIDE_BURN_4,100,-11)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,7.5,0);IgnoreLeaveAttackRange();" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(7.5);Distance(1.5);DealDamage(2d6,Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d49277a-e590-4230-81e2-857fba202648" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_AURA_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f048625d-a1fa-43ee-a993-043c9a778a13" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(ASHARDALONS_STRIDE_BURN_5,100,-11)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,9,0);IgnoreLeaveAttackRange();" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(3d6,Fire)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);Distance(1.5);DealDamage(3d6,Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06228477-303f-4ed0-b42f-1e7806aef869" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_AURA_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f048625d-a1fa-43ee-a993-043c9a778a13" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(ASHARDALONS_STRIDE_BURN_6,100,-11)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,10.5,0);IgnoreLeaveAttackRange();" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(10.5);Distance(1.5);DealDamage(4d6,Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="73a4e978-d9c0-4888-9e8b-e584c4b17ff5" />
+        <field name="Name" type="NameTableFieldDefinition" value="SERPENT_TONGUE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h22721711g54beg4cf3g93bbga6817edfe307" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h65a38a9dg7a9dg4a14ga426gfeb902404367" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(1d12,Piercing)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SerpentTongue" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SERPENT_TONGUE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SerpentTongue_Bite);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66a4cff0-f323-45df-9a12-e2549f864f5d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SERPENT_TONGUE_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="73a4e978-d9c0-4888-9e8b-e584c4b17ff5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(2d12,Piercing)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SerpentTongue_Bite_4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c851179-7b29-4469-ad4e-614b066e0a5f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SERPENT_TONGUE_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="73a4e978-d9c0-4888-9e8b-e584c4b17ff5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(3d12,Piercing)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SerpentTongue_Bite_5);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e6c3912-a6fc-48bb-84fc-fb20ed2b72f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SERPENT_TONGUE_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="73a4e978-d9c0-4888-9e8b-e584c4b17ff5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(4d12,Piercing)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SerpentTongue_Bite_6);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="56f04b63-f77b-42be-827b-e2e3b6c40df2" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_BURN" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASHARDALONS_STRIDE_BURN" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(1d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc28f4dcdgd614gc5b0g7be9g946be11c3809" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_AshardalonsStride" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(1d6,Fire)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(1d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="a4786ee9-eb7c-4d0d-aaa9-9a637d9eaeaf" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="2156dd48-f83b-4060-9a4e-cab994da8857" />
+        <field name="StatusEffectOnTurn" type="GuidObjectTableFieldDefinition" value="a4786ee9-eb7c-4d0d-aaa9-9a637d9eaeaf" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c211f66-4b92-402b-9844-6c0c2a639059" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_BURN_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="56f04b63-f77b-42be-827b-e2e3b6c40df2" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(2d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(2d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4dad4eb1-d1af-4013-9d68-6a161d4d94ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_BURN_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="56f04b63-f77b-42be-827b-e2e3b6c40df2" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(3d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(3d6,Fire)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(3d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="429cc899-86f3-4db2-a7e3-d96e0363738c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_BURN_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="56f04b63-f77b-42be-827b-e2e3b6c40df2" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(4d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(4d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8424b9f7-cddd-465a-b2ac-ddf50cbc6bef" />
@@ -10551,6 +10702,35 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="917653a2-c859-4db5-be89-0a6296870305" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f7b8236-98d4-4734-b5af-a7bfe40a51c0" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="56f7f34b-8b70-4665-812f-a12de3d606b1" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e1a3cbc8-f4e9-4d79-b40c-2b522a9c72c3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('BLESSEDWARRIOR_CANTRIP_END',context.Source)):UnlockSpell(Shout_BlessedWarrior_Cantrip);UnlockSpellVariant(SpellId('Shout_BlessedWarrior_Cantrip'),ModifyIconGlow());" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h01a07b7cgbebbg480dg9b98g39a32ffd5c53" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hee720882g4ca7g0c82g0f6dgda96a14a144e" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SacredFlame" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1adeded-e033-4163-889e-615823b5126e" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c72b2d16-b379-46a4-9014-2d7217d9ba52" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(BLESSEDWARRIOR_CANTRIP)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF006400" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f7ca82b5-bfe1-41a2-a6d5-03ed78930ecb" />
@@ -10826,6 +11006,35 @@
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(ReactionActionPoint);BlockRegainHP(Living;Undead);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="788929cc-9c48-46e4-ac6d-efa103b0ae5a" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f7b8236-98d4-4734-b5af-a7bfe40a51c0" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3687f07-5299-457e-b133-56e7c4e0b0d7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e1a3cbc8-f4e9-4d79-b40c-2b522a9c72c3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('DRUIDICWARRIOR_CANTRIP_END',context.Source)):UnlockSpell(Shout_DruidicWarrior_Cantrip);UnlockSpellVariant(SpellId('Shout_DruidicWarrior_Cantrip'),ModifyIconGlow());" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h493dae03gf9d8g4bc6gba84g01c7e8355ac3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb18213feg1443g46dfg66c8g43152a53cf75" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Transmutation_Shillelagh" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f02aaf7-b511-45af-a2a1-7321a7275bf3" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c72b2d16-b379-46a4-9014-2d7217d9ba52" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DRUIDICWARRIOR_CANTRIP)" />
       </fields>
     </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
@@ -12784,6 +12993,35 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="400ee080-07cc-43a3-9904-08f2ef64f3c4" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHETOME_CANTRIP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f7b8236-98d4-4734-b5af-a7bfe40a51c0" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PACTOFTHETOME_CANTRIP" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a86a420e-35b7-4870-b814-065ad6ef48d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e1a3cbc8-f4e9-4d79-b40c-2b522a9c72c3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('PACTOFTHETOME_CANTRIP_END',context.Source)):UnlockSpell(Shout_PactOfTheTome_Cantrip);UnlockSpellVariant(SpellId('Shout_PactOfTheTome_Cantrip'),ModifyIconGlow());" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdf8112dfgd5ddg43f2g923fg9c22837a9136" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h01763f65g1b60g44b2ga863gd3ee2a4410ba" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_PactOfTheTome" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c5207a57-534c-4887-b060-3b0272be4d78" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c72b2d16-b379-46a4-9014-2d7217d9ba52" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(PACTOFTHETOME_CANTRIP)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF0000FF" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d2e8836c-afbd-493f-94f0-c700250d0b90" />
@@ -14084,6 +14322,32 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="eca677df-3673-4cc1-852b-ec8252996f00" />
         <field name="Name" type="NameTableFieldDefinition" value="__ORIGIN FEAT__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e2d869bb-7e71-474f-85e1-05958ff8efc2" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_SKILLED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5534d729-6932-479f-8034-779f2c2c9412" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_SKILLED" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0de032f0-da7b-44f9-87e8-d17658ce2b94" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_SKILLED_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="776d3400-95b7-46fc-902a-aaaa4211b5e0" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_SKILLED_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_SKILLED_END',context.Source)):UnlockSpell(Shout_Skilled);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="527e1764-4adc-4001-87b0-34bb0917ecc9" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_SKILLED_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e2feb80d-918d-4e8e-aabf-3aa1c36ef7d0" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_SKILLED_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_SKILLED)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -15417,6 +15681,138 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c817705-b209-412a-ae72-973919eaafc5" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f7b8236-98d4-4734-b5af-a7bfe40a51c0" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a0b8de92-ea64-4f7f-b8e3-1b9ba357bb41" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e1a3cbc8-f4e9-4d79-b40c-2b522a9c72c3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_CLERIC_CANTRIP_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Cleric_Cantrip);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Cleric_Cantrip'),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ada84343-2e95-4c97-afeb-844eb45e60e3" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c72b2d16-b379-46a4-9014-2d7217d9ba52" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_CLERIC_CANTRIP)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="79a3137b-1046-41b4-bb76-0686447e7568" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_SPELL_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c6bc20a0-b5c8-415b-891c-cbdf83dddbd8" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_SPELL_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_CLERIC_SPELL_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Cleric_Spell);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Cleric_Spell'),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="80de7e1e-fe49-4eda-96d3-d2675b42c1b1" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_SPELL_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb41feef-b5e0-4200-978c-6c7b1c098645" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_SPELL_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_CLERIC_SPELL_START)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="21f90dc2-f0f5-4231-ab81-112efdc71551" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1882a5cd-3bf1-4494-857c-1e067e5fe027" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ed00f9f9-0da7-4fc1-912d-b74a6768a207" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e91353d5-5bba-4899-98e9-7d7ddf80d35f" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_DRUID_CANTRIP_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Druid_Cantrip);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Druid_Cantrip'),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2e22de6b-2669-4e80-93bc-95a685db7db4" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="657ab030-1d07-4927-8be9-632b8edd5858" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_DRUID_CANTRIP)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ed3c5d56-2951-4f18-8f00-e338e3db99f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_SPELL_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="083bf9f7-1a58-40d8-81fa-8e3c500db805" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_SPELL_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_DRUID_SPELL_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Druid_Spell);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Druid_Spell'),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e5ce831e-32be-4618-9ab0-ceee2adae1e5" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_SPELL_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a56eb578-a120-4a7b-bfc9-c6b1bdf19f15" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_SPELL_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_DRUID_SPELL_START)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0473bec-19b6-4f19-b64e-2bb4d3bd323b" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fa840bd-3688-40eb-9ad5-599a06726bbc" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="10a5d2c7-9a7e-4afd-b6cc-166e612a9946" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1cfd66ff-9446-45c0-a44d-b7a573a9cd98" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_WIZARD_CANTRIP_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Wizard_Cantrip);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Wizard_Cantrip'),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac2b801d-b712-494f-8a0f-e65e2af80ad8" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bda248d3-2e55-41d4-9898-2f20ee4824a8" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_WIZARD_CANTRIP)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d6ea454-6d99-411c-b6d1-1f2c28b65718" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_SPELL_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="677a907f-147c-4d10-a916-78818321c18e" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_SPELL_START" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_WIZARD_SPELL_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Wizard_Spell);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Wizard_Spell'),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8655077-98ee-4549-bd91-55cc050ae83a" />
+        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_SPELL_END" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="11aecdb2-54db-40a6-b8cd-f79cc913f340" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_SPELL_END" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_WIZARD_SPELL_START)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a342c119-a00f-4765-b8e3-64c128998320" />
@@ -16324,402 +16720,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="LOW_HOUSEOFHOPE_AEGIS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd97cf8a-117f-4386-9600-fce646a99867" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbaabf179g575bg3c69g6b39ge57aa643ebf4" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c818c26e-65e6-4601-ab82-d8674fd3e636" />
-        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_RECEIVED" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_RECEIVED" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f048625d-a1fa-43ee-a993-043c9a778a13" />
-        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_AURA" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07bf103cg6fe9g48deg90e6g51cda963e2bb" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h015e6052gbb2eg4bc4g8148gac1a0bbffbf1" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_AshardalonsStride" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ASHARDALONS_STRIDE_AURA" />
-        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(ASHARDALONS_STRIDE_BURN,100,-11)" />
-        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="ShouldCheckLOS" enumeration_type_name="AuraFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,6,0);IgnoreLeaveAttackRange();" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(1d6,Fire)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);Distance(1.5);DealDamage(1d6,Fire)" />
-        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('SANCTUARY')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a25f92a9-7078-4a5f-8648-c0bb9f4fee39" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="720e5130-ff5e-4005-a061-f6ea767ab3cf" />
-        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_AURA_4" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f048625d-a1fa-43ee-a993-043c9a778a13" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(ASHARDALONS_STRIDE_BURN_4,100,-11)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,7.5,0);IgnoreLeaveAttackRange();" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(7.5);Distance(1.5);DealDamage(2d6,Fire)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0d49277a-e590-4230-81e2-857fba202648" />
-        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_AURA_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f048625d-a1fa-43ee-a993-043c9a778a13" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(ASHARDALONS_STRIDE_BURN_5,100,-11)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,9,0);IgnoreLeaveAttackRange();" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(3d6,Fire)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);Distance(1.5);DealDamage(3d6,Fire)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="06228477-303f-4ed0-b42f-1e7806aef869" />
-        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_AURA_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f048625d-a1fa-43ee-a993-043c9a778a13" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(ASHARDALONS_STRIDE_BURN_6,100,-11)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,10.5,0);IgnoreLeaveAttackRange();" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(10.5);Distance(1.5);DealDamage(4d6,Fire)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="73a4e978-d9c0-4888-9e8b-e584c4b17ff5" />
-        <field name="Name" type="NameTableFieldDefinition" value="SERPENT_TONGUE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h22721711g54beg4cf3g93bbga6817edfe307" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h65a38a9dg7a9dg4a14ga426gfeb902404367" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(1d12,Piercing)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SerpentTongue" />
-        <field name="StackId" type="StringTableFieldDefinition" value="SERPENT_TONGUE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SerpentTongue_Bite);" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="66a4cff0-f323-45df-9a12-e2549f864f5d" />
-        <field name="Name" type="NameTableFieldDefinition" value="SERPENT_TONGUE_4" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="73a4e978-d9c0-4888-9e8b-e584c4b17ff5" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(2d12,Piercing)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SerpentTongue_Bite_4);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1c851179-7b29-4469-ad4e-614b066e0a5f" />
-        <field name="Name" type="NameTableFieldDefinition" value="SERPENT_TONGUE_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="73a4e978-d9c0-4888-9e8b-e584c4b17ff5" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(3d12,Piercing)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SerpentTongue_Bite_5);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5e6c3912-a6fc-48bb-84fc-fb20ed2b72f2" />
-        <field name="Name" type="NameTableFieldDefinition" value="SERPENT_TONGUE_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="73a4e978-d9c0-4888-9e8b-e584c4b17ff5" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(4d12,Piercing)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SerpentTongue_Bite_6);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="56f04b63-f77b-42be-827b-e2e3b6c40df2" />
-        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_BURN" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ASHARDALONS_STRIDE_BURN" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(1d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc28f4dcdgd614gc5b0g7be9g946be11c3809" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_AshardalonsStride" />
-        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(1d6,Fire)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(1d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
-        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="a4786ee9-eb7c-4d0d-aaa9-9a637d9eaeaf" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="2156dd48-f83b-4060-9a4e-cab994da8857" />
-        <field name="StatusEffectOnTurn" type="GuidObjectTableFieldDefinition" value="a4786ee9-eb7c-4d0d-aaa9-9a637d9eaeaf" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1c211f66-4b92-402b-9844-6c0c2a639059" />
-        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_BURN_4" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="56f04b63-f77b-42be-827b-e2e3b6c40df2" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(2d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(2d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4dad4eb1-d1af-4013-9d68-6a161d4d94ec" />
-        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_BURN_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="56f04b63-f77b-42be-827b-e2e3b6c40df2" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(3d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(3d6,Fire)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(3d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="429cc899-86f3-4db2-a7e3-d96e0363738c" />
-        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_BURN_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="56f04b63-f77b-42be-827b-e2e3b6c40df2" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(4d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(4d6,Fire,Magical);IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECEIVED,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5c817705-b209-412a-ae72-973919eaafc5" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9f7b8236-98d4-4734-b5af-a7bfe40a51c0" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a0b8de92-ea64-4f7f-b8e3-1b9ba357bb41" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP_START" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e1a3cbc8-f4e9-4d79-b40c-2b522a9c72c3" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP_START" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_CLERIC_CANTRIP_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Cleric_Cantrip);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Cleric_Cantrip'),ModifyIconGlow());" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ada84343-2e95-4c97-afeb-844eb45e60e3" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP_END" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c72b2d16-b379-46a4-9014-2d7217d9ba52" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_CANTRIP_END" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_CLERIC_CANTRIP)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="79a3137b-1046-41b4-bb76-0686447e7568" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_SPELL_START" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c6bc20a0-b5c8-415b-891c-cbdf83dddbd8" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_SPELL_START" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_CLERIC_SPELL_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Cleric_Spell);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Cleric_Spell'),ModifyIconGlow());" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="80de7e1e-fe49-4eda-96d3-d2675b42c1b1" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_SPELL_END" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="fb41feef-b5e0-4200-978c-6c7b1c098645" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_CLERIC_SPELL_END" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_CLERIC_SPELL_START)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="21f90dc2-f0f5-4231-ab81-112efdc71551" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1882a5cd-3bf1-4494-857c-1e067e5fe027" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ed00f9f9-0da7-4fc1-912d-b74a6768a207" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP_START" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e91353d5-5bba-4899-98e9-7d7ddf80d35f" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP_START" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_DRUID_CANTRIP_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Druid_Cantrip);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Druid_Cantrip'),ModifyIconGlow());" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2e22de6b-2669-4e80-93bc-95a685db7db4" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP_END" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="657ab030-1d07-4927-8be9-632b8edd5858" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_CANTRIP_END" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_DRUID_CANTRIP)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ed3c5d56-2951-4f18-8f00-e338e3db99f8" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_SPELL_START" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="083bf9f7-1a58-40d8-81fa-8e3c500db805" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_SPELL_START" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_DRUID_SPELL_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Druid_Spell);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Druid_Spell'),ModifyIconGlow());" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e5ce831e-32be-4618-9ab0-ceee2adae1e5" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_SPELL_END" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a56eb578-a120-4a7b-bfc9-c6b1bdf19f15" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_DRUID_SPELL_END" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_DRUID_SPELL_START)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f0473bec-19b6-4f19-b64e-2bb4d3bd323b" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4fa840bd-3688-40eb-9ad5-599a06726bbc" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="10a5d2c7-9a7e-4afd-b6cc-166e612a9946" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP_START" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1cfd66ff-9446-45c0-a44d-b7a573a9cd98" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP_START" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_WIZARD_CANTRIP_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Wizard_Cantrip);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Wizard_Cantrip'),ModifyIconGlow());" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ac2b801d-b712-494f-8a0f-e65e2af80ad8" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP_END" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="bda248d3-2e55-41d4-9898-2f20ee4824a8" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_CANTRIP_END" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_WIZARD_CANTRIP)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0d6ea454-6d99-411c-b6d1-1f2c28b65718" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_SPELL_START" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="677a907f-147c-4d10-a916-78818321c18e" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_SPELL_START" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_MAGICINITIATE_WIZARD_SPELL_END',context.Source)):UnlockSpell(Shout_MagicInitiate_Wizard_Spell);UnlockSpellVariant(SpellId('Shout_MagicInitiate_Wizard_Spell'),ModifyIconGlow());" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b8655077-98ee-4549-bd91-55cc050ae83a" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_SPELL_END" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="11aecdb2-54db-40a6-b8cd-f79cc913f340" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_MAGICINITIATE_WIZARD_SPELL_END" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_MAGICINITIATE_WIZARD_SPELL_START)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="400ee080-07cc-43a3-9904-08f2ef64f3c4" />
-        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHETOME_CANTRIP" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9f7b8236-98d4-4734-b5af-a7bfe40a51c0" />
-        <field name="StackId" type="StringTableFieldDefinition" value="PACTOFTHETOME_CANTRIP" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a86a420e-35b7-4870-b814-065ad6ef48d5" />
-        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_START" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e1a3cbc8-f4e9-4d79-b40c-2b522a9c72c3" />
-        <field name="StackId" type="StringTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_START" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('PACTOFTHETOME_CANTRIP_END',context.Source)):UnlockSpell(Shout_PactOfTheTome_Cantrip);UnlockSpellVariant(SpellId('Shout_PactOfTheTome_Cantrip'),ModifyIconGlow());" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdf8112dfgd5ddg43f2g923fg9c22837a9136" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h01763f65g1b60g44b2ga863gd3ee2a4410ba" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_PactOfTheTome" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c5207a57-534c-4887-b060-3b0272be4d78" />
-        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_END" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c72b2d16-b379-46a4-9014-2d7217d9ba52" />
-        <field name="StackId" type="StringTableFieldDefinition" value="PACTOFTHETOME_CANTRIP_END" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(PACTOFTHETOME_CANTRIP)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="788929cc-9c48-46e4-ac6d-efa103b0ae5a" />
-        <field name="Name" type="NameTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9f7b8236-98d4-4734-b5af-a7bfe40a51c0" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c3687f07-5299-457e-b133-56e7c4e0b0d7" />
-        <field name="Name" type="NameTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP_START" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e1a3cbc8-f4e9-4d79-b40c-2b522a9c72c3" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP_START" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('DRUIDICWARRIOR_CANTRIP_END',context.Source)):UnlockSpell(Shout_DruidicWarrior_Cantrip);UnlockSpellVariant(SpellId('Shout_DruidicWarrior_Cantrip'),ModifyIconGlow());" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h493dae03gf9d8g4bc6gba84g01c7e8355ac3" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb18213feg1443g46dfg66c8g43152a53cf75" version="3" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Transmutation_Shillelagh" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3f02aaf7-b511-45af-a2a1-7321a7275bf3" />
-        <field name="Name" type="NameTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP_END" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c72b2d16-b379-46a4-9014-2d7217d9ba52" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DRUIDICWARRIOR_CANTRIP_END" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DRUIDICWARRIOR_CANTRIP)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="917653a2-c859-4db5-be89-0a6296870305" />
-        <field name="Name" type="NameTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9f7b8236-98d4-4734-b5af-a7bfe40a51c0" />
-        <field name="StackId" type="StringTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="56f7f34b-8b70-4665-812f-a12de3d606b1" />
-        <field name="Name" type="NameTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP_START" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e1a3cbc8-f4e9-4d79-b40c-2b522a9c72c3" />
-        <field name="StackId" type="StringTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP_START" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('BLESSEDWARRIOR_CANTRIP_END',context.Source)):UnlockSpell(Shout_BlessedWarrior_Cantrip);UnlockSpellVariant(SpellId('Shout_BlessedWarrior_Cantrip'),ModifyIconGlow());" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h01a07b7cgbebbg480dg9b98g39a32ffd5c53" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hee720882g4ca7g0c82g0f6dgda96a14a144e" version="3" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SacredFlame" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b1adeded-e033-4163-889e-615823b5126e" />
-        <field name="Name" type="NameTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP_END" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c72b2d16-b379-46a4-9014-2d7217d9ba52" />
-        <field name="StackId" type="StringTableFieldDefinition" value="BLESSEDWARRIOR_CANTRIP_END" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(BLESSEDWARRIOR_CANTRIP)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e2d869bb-7e71-474f-85e1-05958ff8efc2" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_SKILLED" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5534d729-6932-479f-8034-779f2c2c9412" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_SKILLED" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0de032f0-da7b-44f9-87e8-d17658ce2b94" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_SKILLED_START" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="776d3400-95b7-46fc-902a-aaaa4211b5e0" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_SKILLED_START" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('LFO_SKILLED_END',context.Source)):UnlockSpell(Shout_Skilled);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="527e1764-4adc-4001-87b0-34bb0917ecc9" />
-        <field name="Name" type="NameTableFieldDefinition" value="LFO_SKILLED_END" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e2feb80d-918d-4e8e-aabf-3aa1c36ef7d0" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LFO_SKILLED_END" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(LFO_SKILLED)" />
       </fields>
     </stat_object>
   </stat_objects>

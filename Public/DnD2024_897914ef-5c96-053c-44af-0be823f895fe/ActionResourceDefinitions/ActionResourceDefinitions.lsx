@@ -63,6 +63,21 @@
                     <attribute id="UUID" type="guid" value="2034b8d1-ebf6-40c2-a521-fee466a63acd"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h6cfafd49g4db7g407ag83e5g60a9a685bef1" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="BloodWisp"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="a8f1bd6a-4852-4380-94df-c804c2c7296c"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="BloodWispTurn"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="dc5d7f06-92fd-454b-9ebe-116d1504b5de"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__BARBARIAN__"/>
                     <attribute id="UUID" type="guid" value="dec23621-7b1f-446c-96ce-36c8cae3210f"/>
                 </node>
@@ -453,6 +468,14 @@
                     <attribute id="UUID" type="guid" value="7f987cdb-844d-46af-b521-142b6e03f477"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb0187b94g38b7g4bf6g9320gde97c5b1b6c3" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="StealBlood"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="77fd4b90-31ed-4ada-95ff-2ba739aab878"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__SORCERER__"/>
                     <attribute id="UUID" type="guid" value="157308a0-6698-4cdc-a65b-7326f8e0cce6"/>
                 </node>
@@ -639,6 +662,13 @@
                     <attribute id="Name" type="FixedString" value="ShapeShifter"/>
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="UUID" type="guid" value="1d315795-9737-4ca9-afd9-60b2bb6e406b"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="BloodForBloodTurn"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="e75eb4e2-03bb-417a-b92f-258830888549"/>
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__GUNSLINGER__"/>
@@ -1065,36 +1095,6 @@
                     <attribute id="Name" type="FixedString" value="MoonSickle"/>
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h6cfafd49g4db7g407ag83e5g60a9a685bef1" version="1"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="BloodWisp"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="a8f1bd6a-4852-4380-94df-c804c2c7296c"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="IsHidden" type="bool" value="true"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="BloodWispTurn"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
-                    <attribute id="UUID" type="guid" value="dc5d7f06-92fd-454b-9ebe-116d1504b5de"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="IsHidden" type="bool" value="true"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="BloodForBloodTurn"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
-                    <attribute id="UUID" type="guid" value="e75eb4e2-03bb-417a-b92f-258830888549"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="hb0187b94g38b7g4bf6g9320gde97c5b1b6c3" version="1"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="StealBlood"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="77fd4b90-31ed-4ada-95ff-2ba739aab878"/>
                 </node>
             </children>
         </node>
