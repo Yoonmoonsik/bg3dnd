@@ -9650,7 +9650,7 @@ data "Description" "h94e22d9cg05ceg0802gc712g372cd3b8f030;1"
 data "Icon" "GenericIcon_DamageType_Radiant"
 data "PriorityOrder" "700"
 data "Properties" "Highlighted"
-data "Boosts" "IF(MainDamageTypeIs(DamageType.Radiant)):MinimumRollResult(Damage,2);IgnoreResistance(Radiant,Resistant);"
+data "Boosts" "IgnoreResistance(Radiant,Resistant);UnlockInterrupt(Interrupt_FueledSpellfire_1);UnlockInterrupt(Interrupt_FueledSpellfire_2);UnlockInterrupt(Interrupt_FueledSpellfire_3);UnlockInterrupt(Interrupt_FueledSpellfire_4);UnlockInterrupt(Interrupt_FueledSpellfire_5);UnlockInterrupt(Interrupt_FueledSpellfire_6);UnlockInterrupt(Interrupt_FueledSpellfire_7);UnlockInterrupt(Interrupt_FueledSpellfire_8);ActionResource(SpellfireAdeptTurn,1,0);"
 
 new entry "ZhentarimTactics"
 type "PassiveData"

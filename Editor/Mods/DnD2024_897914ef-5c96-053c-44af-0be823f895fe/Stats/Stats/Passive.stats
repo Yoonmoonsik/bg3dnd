@@ -13305,7 +13305,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h94e22d9cg05ceg0802gc712g372cd3b8f030" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(MainDamageTypeIs(DamageType.Radiant)):MinimumRollResult(Damage,2);IgnoreResistance(Radiant,Resistant);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Radiant,Resistant);UnlockInterrupt(Interrupt_FueledSpellfire_1);UnlockInterrupt(Interrupt_FueledSpellfire_2);UnlockInterrupt(Interrupt_FueledSpellfire_3);UnlockInterrupt(Interrupt_FueledSpellfire_4);UnlockInterrupt(Interrupt_FueledSpellfire_5);UnlockInterrupt(Interrupt_FueledSpellfire_6);UnlockInterrupt(Interrupt_FueledSpellfire_7);UnlockInterrupt(Interrupt_FueledSpellfire_8);ActionResource(SpellfireAdeptTurn,1,0);" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Radiant" />
       </fields>
     </stat_object>

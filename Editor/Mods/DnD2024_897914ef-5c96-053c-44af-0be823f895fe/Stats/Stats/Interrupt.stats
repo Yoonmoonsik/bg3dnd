@@ -3588,6 +3588,102 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3715b924-3f2f-49b8-984b-421c88cdc61d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledSpellfire_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h235f3325g3466g4974gae44gc76ef4d397ff" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd62b8bd1g845bg4f4eg8063g3c19839002ab" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Radiant)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Radiant" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsSpell() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and HasFunctor(StatsFunctorType.DealDamage) and SpellDamageTypeIs(DamageType.Radiant) and not Dead(context.Target) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Radiant,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice06:1;SpellfireAdeptTurn:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="FueledSpellfire" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d04c01d6-2cc5-4e31-b0b0-65537f978cab" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledSpellfire_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3715b924-3f2f-49b8-984b-421c88cdc61d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0be0754cgd3e9g4a9cgb5cagd324c61c7087" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice06:2;SpellfireAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="33f0f4ce-4baa-49ca-adcb-c765ad4bcc0c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledSpellfire_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3715b924-3f2f-49b8-984b-421c88cdc61d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd62b8bd1g845bg4f4eg8063g3c19839002ab" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Radiant)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d8,Radiant,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice08:1;SpellfireAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78bc72e6-5dac-4457-944e-fef84b08cf86" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledSpellfire_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3715b924-3f2f-49b8-984b-421c88cdc61d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0be0754cgd3e9g4a9cgb5cagd324c61c7087" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice08:2;SpellfireAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="74d52493-dc38-47b7-bb4f-069130543d54" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledSpellfire_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3715b924-3f2f-49b8-984b-421c88cdc61d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd62b8bd1g845bg4f4eg8063g3c19839002ab" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Radiant)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d10,Radiant,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice10:1;SpellfireAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="543f7dfb-6a48-4283-ae9e-c3c8a53612dc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledSpellfire_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3715b924-3f2f-49b8-984b-421c88cdc61d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0be0754cgd3e9g4a9cgb5cagd324c61c7087" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d10,Radiant,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice10:2;SpellfireAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22d494a9-a8ff-4019-9a0e-aba5057ad3ca" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledSpellfire_7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3715b924-3f2f-49b8-984b-421c88cdc61d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd62b8bd1g845bg4f4eg8063g3c19839002ab" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Radiant)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d12,Radiant,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice12:1;SpellfireAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="58168564-d457-4517-a2b6-7d995227c0dc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledSpellfire_8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3715b924-3f2f-49b8-984b-421c88cdc61d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0be0754cgd3e9g4a9cgb5cagd324c61c7087" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d12,Radiant)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d12,Radiant,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice12:2;SpellfireAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7f0825ba-2107-4c71-8ab6-ce17b8d09eac" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FairyTrickster" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6546b917g1c6dg4ca0g0808g9c4689c5032e" version="1" />

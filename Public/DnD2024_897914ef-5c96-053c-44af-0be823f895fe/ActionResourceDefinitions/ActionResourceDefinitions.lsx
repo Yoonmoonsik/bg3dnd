@@ -975,6 +975,13 @@
                     <attribute id="UUID" type="guid" value="b55e618d-78af-4920-b7ae-9a82f0a04327"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="SpellfireAdeptTurn"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="316e14a5-4d66-48fa-878e-16a79f21bad5"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__RACE__"/>
                     <attribute id="UUID" type="guid" value="d0a8fbe1-fb92-44ba-bdf3-f1356ca328d0"/>
                 </node>
