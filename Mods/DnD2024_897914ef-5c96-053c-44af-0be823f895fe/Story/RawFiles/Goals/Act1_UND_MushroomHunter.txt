@@ -62,7 +62,7 @@ PROC_CharacterDisableCrime(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "V
 PROC_CharacterDisableCrime(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "VandaliseNoOwner");
 PROC_CharacterDisableCrime(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "Assault_Zero_Damage");
 
-PROC_SetHitpoints_BlockSelfHealing(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, 8);
+PROC_SetHitpoints_BlockSelfHealing(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, 4);
 KBSECTION
 //REGION Init
 IF
@@ -347,7 +347,7 @@ FindValidPosition(_X, _Y, _Z, 5.0, S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da
 THEN
 PROC_UND_MushroomHunter_StopClearingsSpotting();
 DB_OnlyOnce("UND_MushroomHunter_EscapeViaSpell");
-UseSpellAtPosition(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "Target_UND_MushroomHunter_MistyStep", _NewX, _NewY, _NewZ);
+UseSpellAtPosition(S_GLO_Baelen_711bd763-780d-4132-9662-3a8a06da6b1b, "Target_UND_MushroomHunter_MistyStep", _NewX, _NewY, _NewZ, 1);
 
 //only remove the template if the spell worked
 IF

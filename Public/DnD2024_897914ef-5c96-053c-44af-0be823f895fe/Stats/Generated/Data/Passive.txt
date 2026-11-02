@@ -10459,10 +10459,6 @@ data "Boosts" "UnlockSpell(Shout_HellishRebuke,AddChildren,03b17647-161a-42e1-96
 new entry "__NPC__"
 type "PassiveData"
 
-new entry "Metamagic_Distant_GLO_Baelen"
-type "PassiveData"
-data "Boosts" "UnlockSpellVariant(DistantSpellCheck(),ModifyTargetRadius(Multiplicative,2.5));"
-
 new entry "DamageShield_NPC_Radiant"
 type "PassiveData"
 using "DamageShield_NPC_Radiant"
