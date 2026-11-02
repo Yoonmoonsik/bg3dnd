@@ -15409,7 +15409,7 @@ new entry "Target_CommanderStrike_Attack_D8"
 type "SpellData"
 data "SpellType" "Target"
 using "Target_CommanderStrike_Attack_D8"
-data "SpellProperties" "GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);RemoveStatus(SELF,COMMANDERS_STRIKE);RemoveStatus(COMMANDERS_STRIKE_TARGET);"
+data "SpellProperties" "GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);"
 
 new entry "Target_GroupRecovery"
 type "SpellData"

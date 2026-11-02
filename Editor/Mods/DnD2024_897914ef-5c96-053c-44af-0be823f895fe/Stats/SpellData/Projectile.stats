@@ -3985,7 +3985,13 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon+1d8), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);CastOffhand[DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h71081eb5g3790g2aa9g3de0g457518c610e4" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];RemoveStatus(SELF,COMMANDERS_STRIKE);RemoveStatus(COMMANDERS_STRIKE_TARGET);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="cd8dcbec-359a-4593-aca9-6164b3d4995d,20cb2b39-10eb-fe29-472d-cb81f9bb3922" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_HamstringShot" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;9583ecee-cf6c-4735-86db-7ebf1df15eae,,;de006e3f-70fb-4eb7-a98d-d845d15b20e8,,;50696db7-d931-4734-915d-32d038ba99a5,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="cb7f062b-0a9f-423a-945c-64de24a9301b" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="44076e08-5ecc-41d1-93f2-90d9663774cb" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

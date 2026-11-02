@@ -4,14 +4,57 @@ INITSECTION
 
 KBSECTION
 IF
-StatusApplied(_Character, "COMMANDERS_STRIKE_TARGET_2", _Causee, _)
+StatusApplied((CHARACTER)_Ally, "COMMANDERS_STRIKE", (CHARACTER)_Fighter, _)
 THEN
-RealtimeObjectTimerLaunch(_Character, "CommandersStrike", 500);
+DB_bg3dnd_CommandersStrike_Ally(_Fighter, _Ally);
 
 IF
-ObjectTimerFinished(_Character, "CommandersStrike")
+StatusApplied((CHARACTER)_Target, "COMMANDERS_STRIKE_TARGET_2", (CHARACTER)_Fighter, _)
 THEN
-ApplyStatus(_Character, "COMMANDERS_STRIKE_TARGET", 6.0, 1, _Character);
+DB_bg3dnd_CommandersStrike_Target(_Fighter, _Target);
+RealtimeObjectTimerLaunch(_Fighter, "bg3dnd_CommandersStrike", 500);
+
+IF
+ObjectTimerFinished((CHARACTER)_Fighter, "bg3dnd_CommandersStrike")
+AND
+DB_bg3dnd_CommandersStrike_Ally(_Fighter, _Ally)
+AND
+DB_bg3dnd_CommandersStrike_Target(_Fighter, _Target)
+AND
+GetDistanceTo(_Ally, _Target, _Dist)
+AND
+_Dist <= 3.0
+THEN
+UseSpell(_Ally, "Target_CommanderStrike_Attack_D8", _Target);
+ApplyStatus(_Ally, "COMMANDERS_STRIKE_REACTION", 6.0, 1, _Fighter);
+
+IF
+ObjectTimerFinished((CHARACTER)_Fighter, "bg3dnd_CommandersStrike")
+AND
+DB_bg3dnd_CommandersStrike_Ally(_Fighter, _Ally)
+AND
+DB_bg3dnd_CommandersStrike_Target(_Fighter, _Target)
+AND
+GetDistanceTo(_Ally, _Target, _Dist)
+AND
+_Dist > 3.0
+THEN
+UseSpell(_Ally, "Projectile_CommanderStrike_Attack_D8", _Target);
+ApplyStatus(_Ally, "COMMANDERS_STRIKE_REACTION", 6.0, 1, _Fighter);
+
+IF
+ObjectTimerFinished((CHARACTER)_Fighter, "bg3dnd_CommandersStrike")
+AND
+DB_bg3dnd_CommandersStrike_Ally(_Fighter, _Ally)
+THEN
+NOT DB_bg3dnd_CommandersStrike_Ally(_Fighter, _Ally);
+
+IF
+ObjectTimerFinished((CHARACTER)_Fighter, "bg3dnd_CommandersStrike")
+AND
+DB_bg3dnd_CommandersStrike_Target(_Fighter, _Target)
+THEN
+NOT DB_bg3dnd_CommandersStrike_Target(_Fighter, _Target);
 EXITSECTION
 
 ENDEXITSECTION

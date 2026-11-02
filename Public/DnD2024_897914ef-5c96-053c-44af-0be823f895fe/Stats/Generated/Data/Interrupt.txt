@@ -775,25 +775,6 @@ data "Properties" "SetDisadvantage();RemoveStatus(OBSERVER_OBSERVER,ELDRITCH_STR
 new entry "__BATTLE MASTER__"
 type "InterruptData"
 
-new entry "Interrupt_CommandersStrike_Melee"
-type "InterruptData"
-data "DisplayName" "ha40ed69ag0551g5097g5d76g272963c576f1;1"
-data "Icon" "Action_CommandersStrike"
-data "InterruptContext" "OnStatusApplied"
-data "InterruptContextScope" "Nearby"
-data "Container" "YesNoDecision"
-data "Conditions" "HasStatus('COMMANDERS_STRIKE_TARGET_2',context.Target) and HasStatus('COMMANDERS_STRIKE_TARGET',context.Target) and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Target);"
-data "Properties" "UseSpell(OBSERVER_TARGET,Target_CommanderStrike_Attack_D8,true,true,true);"
-data "Cost" "ReactionActionPoint:1;"
-data "InterruptDefaultValue" "Enabled"
-
-new entry "Interrupt_CommandersStrike_Ranged"
-type "InterruptData"
-using "Interrupt_CommandersStrike_Melee"
-data "DisplayName" "h679b8ed8g5188g6efege018gb74b3c65aafc;1"
-data "Conditions" "HasStatus('COMMANDERS_STRIKE_TARGET_2',context.Target) and HasStatus('COMMANDERS_STRIKE_TARGET',context.Target) and DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Target);"
-data "Properties" "UseSpell(OBSERVER_TARGET,Projectile_CommanderStrike_Attack_D8,true,true,true);"
-
 new entry "__PSI WARRIOR__"
 type "InterruptData"
 

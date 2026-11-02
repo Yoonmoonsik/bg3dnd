@@ -10141,18 +10141,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="796b62f6-b23a-4ba4-8c90-12e6f369d111" />
         <field name="Name" type="NameTableFieldDefinition" value="COMMANDERS_STRIKE" />
         <field name="StackId" type="StringTableFieldDefinition" value="COMMANDERS_STRIKE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_CommandersStrike_Melee);UnlockInterrupt(Interrupt_CommandersStrike_Ranged);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="07de6040-62d5-48f9-804f-f5978f493806" />
-        <field name="Name" type="NameTableFieldDefinition" value="COMMANDERS_STRIKE_TARGET" />
-        <field name="StackId" type="StringTableFieldDefinition" value="COMMANDERS_STRIKE_TARGET" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hadc67dd4g058ag4a1ag9cd6g821ef4d45bd6" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10160,6 +10150,16 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b3374dc2-b78d-4c91-8613-8e7182bff88a" />
         <field name="Name" type="NameTableFieldDefinition" value="COMMANDERS_STRIKE_TARGET_2" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dfdb561f-976b-4bb7-b26e-4c6f7d6b579f" />
+        <field name="Name" type="NameTableFieldDefinition" value="COMMANDERS_STRIKE_REACTION" />
+        <field name="StackId" type="StringTableFieldDefinition" value="COMMANDERS_STRIKE_REACTION" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(ReactionActionPoint,1,0);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
