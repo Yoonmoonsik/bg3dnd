@@ -4,14 +4,17 @@ INITSECTION
 
 KBSECTION
 IF
-StatusApplied(_Character, "SPECTRAL_SLASH_TARGET_2", _Causee, _)
+StatusApplied((CHARACTER)_Target, "SPECTRAL_SLASH_TARGET_2", (CHARACTER)_Caster, _)
 THEN
-RealtimeObjectTimerLaunch(_Character, "SpectralSlash", 500);
+DB_bg3dnd_SpectralSlash_Target(_Caster, _Target);
 
 IF
-ObjectTimerFinished(_Character, "SpectralSlash")
+CastedSpell((CHARACTER)_Caster, _, _, _, _)
+AND
+DB_bg3dnd_SpectralSlash_Target(_Caster, _Target)
 THEN
-ApplyStatus(_Character, "SPECTRAL_SLASH_TARGET", 6.0, 1, _Character);
+UseSpell(_Caster, "Target_SpectralSlash_Attack", _Target, NULL_00000000-0000-0000-0000-000000000000, 1);
+NOT DB_bg3dnd_SpectralSlash_Target(_Caster, _Target);
 EXITSECTION
 
 ENDEXITSECTION

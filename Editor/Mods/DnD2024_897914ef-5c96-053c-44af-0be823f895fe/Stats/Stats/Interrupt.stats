@@ -376,20 +376,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="__CONJURATION__" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9a015a08-6501-4320-ba1b-49dcb455bade" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SpectralSlash" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h95052719gb237gac57g92e1g14b60980710f" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SpectralSlash" />
-        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
-        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
-        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('SPECTRAL_SLASH_TARGET',context.Target) and HasStatus('SPECTRAL_SLASH_TARGET_2',context.Target);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_SpectralSlash_Attack,true,true,true);" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2f65564f-c0b3-4011-bb6d-9c43c70b96e5" />
