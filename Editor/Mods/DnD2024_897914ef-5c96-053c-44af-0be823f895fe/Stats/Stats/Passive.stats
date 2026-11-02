@@ -7873,13 +7873,13 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h35ea3bedgaf6dg4319gd657g95569aedae04" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="11002" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and TargetSizeEqualOrSmaller(Size.Large) and ((HasPassive('PactOfTheTome',context.Source) and IsCantrip()) or (not HasPassive('PactOfTheTome',context.Source) and IsWarlockCantrip()))" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h92b0f41cg7222g57a1gf293g5f9b67f6c76a" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source);" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnShortRest;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="Force(3)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

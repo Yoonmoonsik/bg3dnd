@@ -323,7 +323,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BLADE_WARD,100,10);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2d02ec84g3e0bgc04dg1756g3cb36683f435" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLADE_WARD,100,10);" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1437,6 +1437,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52b5b3ecgc218g46ffg95bagbe3ef3d81398" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);DealDamage(1d8,Fire)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;HasVerbalComponent;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1462,7 +1463,7 @@
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="e4abb54b-8d1a-4940-a6e0-71cd6a895831" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="1a3a7ca5-2072-43fe-b07e-cd52e1bbf3e6" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b51922cf-e412-4462-8274-144781bac7f3" />
@@ -1891,7 +1892,7 @@
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="209b5952-1675-4518-b592-fde33b287d2d,,;,,;b3993300-3efa-412f-926f-7cc67f63840d,,;ad1da0b4-02b3-44e1-b7f5-266f8c7da081,,;8076d48c-f392-4941-8f4b-355b74731430,,;,,;7a842eef-284c-4b25-bf5e-119e0725aafb,,;,,;,," />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f9785481-e126-4499-b00e-f36fa02cd196" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Force_MagicMissile_L1to3" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="655f8b6b-f392-4c5d-8d74-d2a9df5f8f9d" />
@@ -1921,7 +1922,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;09ae2f11-f5b4-42f5-ae16-687a5b57d500,,;10caea0e-c949-4d91-8ab7-3b50019dd054,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;IsHarmful;HasSomaticComponent;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;IsHarmful;HasSomaticComponent;HasVerbalComponent;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Psychic" enumeration_type_name="HitAnimationType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2af907e1-127c-4c83-a117-af18f211c59d" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ee3c85ae-0078-4223-9345-c2594535d1f2" />
@@ -1958,7 +1959,7 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Radiant,Magical);" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;IsHarmful;HasSomaticComponent;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;IsHarmful;HasSomaticComponent;HasVerbalComponent;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not IsCritical() and HasPassive('PotentCantripPlayer',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Radiant,Magical);" />
       </fields>
     </stat_object>
@@ -4870,6 +4871,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf61e69c2g84a1g28cdg2869gee89659329d6" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsMelee;IsSpell;HasSomaticComponent;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4890,7 +4892,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;94ad1609-9862-499a-8337-5e6a7d9487f9,c8f325f3-9d7d-4387-af85-b3b4257e26cc,f4b7eabd-2875-46fa-bae3-9f4d0a51c955;8373f3da-2368-4a51-98b1-146ec3586660,12971987-e66c-45dd-9843-b4784c30d9a2,279cd9eb-1d9c-4e4c-a44e-e751ae0eae66;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;499b7945-9eff-40a2-9911-73b8963108e4,,;1d3a29f0-9409-462e-81cd-3f24944f63ca,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreVisionBlock;IsSpell;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreVisionBlock;IsSpell;IsLinkedSpellContainer;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="33302a46-4a12-41dd-8845-6b7314d50022" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="1a4b0423-005b-4577-b376-815a08809675" />
       </fields>
@@ -4907,7 +4909,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Light" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9b77345dg3b14g2b92g2dcegb47d678b5d96" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha1bc5cf5g9a11g73a8g06b2g71e2ab12d1d2" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreVisionBlock;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreVisionBlock;IsSpell;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9293,6 +9295,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf54abe92g0c59g3206g795cg205f29ea03b8" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsMelee;IsSpell;HasSomaticComponent;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13047,6 +13050,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ab7936c7-c0aa-4359-a166-0426e733cc4c" />
         <field name="Name" type="NameTableFieldDefinition" value="Shillelagh_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dbe822bc-2b4b-42de-8a19-32b5b0f48ea4" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsMelee;IsSpell;HasSomaticComponent;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13132,6 +13136,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2c6e54a5-344b-4379-bdfd-0cc2e145ccf3" />
         <field name="Name" type="NameTableFieldDefinition" value="ProduceFlame_spellscroll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d2729e5e-dcac-4759-bc2d-3f3fcd9e8741" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;HasVerbalComponent;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
