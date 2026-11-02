@@ -163,7 +163,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="40a3797b-fa0e-44e1-9517-b4f2c4519f3c" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_DRUID_WILDSHAPE_TEMP_HP" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="34e52452-3253-4be4-baf4-d59ff84b5a7e" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h639fa2afg0b32g439bga502g8c5913c196c3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb7fbe85eg64a7g46e1gb787g54f7bf72bc5d" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAG_DRUID_WILDSHAPE_TEMP_HP" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,2)" />
@@ -790,7 +790,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5af3a4b0-0d7f-402e-a0b0-51ab09a8d244" />
         <field name="Name" type="NameTableFieldDefinition" value="ABSORB_ELEMENTS_ACTIVE_SPELL_1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0d100dc2gb2a7ge09fg624dga1554d1a009c" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h061f2c2ag7fe0g4eafg8b0dg3a108ace358b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hab392145gc890gaa18g04cag5b0b653d9632" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d6" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_AbsorbElements" />
@@ -1224,7 +1224,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="595b4841-4b8e-4744-9b83-37ee8db0a510" />
         <field name="Name" type="NameTableFieldDefinition" value="BLADE_WARD_AURA" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6bbeea0cgfb9cg7197g9d87gc41ed5911b46" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77b9ae20ge545g4842gbe2fg8096e232c118" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="BLADE_WARD_AURA" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(BladeWard()):RollBonus(Attack, -1d4);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
@@ -1268,7 +1268,7 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="RESISTANCE_0" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb17d4643gb09cgb61dgd738g55246f4a2fcf" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1afac00ag5f88g47d9gb095g54fd18427730" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1542,7 +1542,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="AC(1);RollBonus(SavingThrow,1);Resistance(All, Resistant);RedirectDamage(1);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="eab76c6a-a5a7-445b-8430-bfce0e7bb5ea" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7f5a2c22g1d31g7893g11c5gbb065055abeb" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0e5919fbg8bf8g48c7gb3ffga94e80161fc4" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1709,7 +1709,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4754097b-dcd2-4d50-8535-e0fde0fd44a9" />
         <field name="Name" type="NameTableFieldDefinition" value="MIND_SPIKE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc29da1ffgb5d5g29c2g97c3g2050946f5a23" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he1232b82g3097g40e0ga8b6gc0eb57fbfd71" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3aac9e83g2f2ag85ddgcf84ge7224ea85b8b" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_MindSpike" />
         <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_FaerieFire_MO" />
@@ -3356,7 +3356,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="097a9751-7969-4507-8b12-b1195a4c57e6" />
         <field name="Name" type="NameTableFieldDefinition" value="CANTRIP_FROSTBITE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d91582cgf795g8507gdfb6g12c4347c9ea6" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h42747aa1gfba1g4fcdg8b28g70217b5d180d" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h48ecfce6g6053gb38agfd4dg1a591402a8b0" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Frostbite" />
         <field name="SoundLoop" type="StringTableFieldDefinition" value="Misc_Status_Frost_MO" />
@@ -4439,7 +4439,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="d34bc336-56cb-4d6c-bdfb-5be961e87518" />
         <field name="Name" type="NameTableFieldDefinition" value="VITRIOLIC_SPHERE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbdd2851fgaad9g9c74g84a7g3b02ca7cb05a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h50b099e6g73f6g882bg67ffge23cefdbcb29" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a9ec01bg79ebg4364g9e56g8364bd2ef92a" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d4,Acid)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_VitriolicSphere" />
         <field name="StackId" type="StringTableFieldDefinition" value="VITRIOLIC_SPHERE" />
@@ -4994,7 +4994,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="699c665b-68bb-4a80-a0b3-a217e549b3fe" />
         <field name="Name" type="NameTableFieldDefinition" value="BLOOD_BOLT_TEMPHP" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6bb237c1g9e6egfe4fgce5cga69299c7e6cc" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcae96586g10c8gb130gd9d3g93307ba9ec71" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11e6d1a2g1707g4b6bg9475gf99508e9e0b7" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ProficiencyBonus)" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
         <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_BOLT_TEMPHP" />
@@ -5025,7 +5025,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="eca38458-2b9a-4407-9d20-02527ef214f3" />
         <field name="Name" type="NameTableFieldDefinition" value="HUNGERING_BLADE_TEMPHP" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb6e6fab4gd077g545dge824g9e58b1ec530c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0903fdd3gbfadg55a1gd56cga67f82c909ac" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h36371386ge684g456cga6ceg11ceef19390f" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(SpellCastingAbilityModifier)" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
         <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_Buff_MO" />
@@ -5042,7 +5042,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b2e93fcb-6b73-4d36-99db-95877cd658d5" />
         <field name="Name" type="NameTableFieldDefinition" value="FALSE_LIFE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7706db7cg7c7dgf09bg4d14gc9faed17fc8b" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41067cc2g069fg4399g9eabg237a7799da34" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h64a85505gb9ccg347eg37efg4472a54e2380" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_FalseLife" />
         <field name="StackId" type="StringTableFieldDefinition" value="FALSE_LIFE" />
@@ -5674,7 +5674,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8c6d7c03-9920-4c67-8fd4-0b70aa0452d9" />
         <field name="Name" type="NameTableFieldDefinition" value="BLINK_VANISH" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h83b85c59gb22dg5169g66f4ge07c7b7871db" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0b7e10d3g9c58g4e4dg902cgfa22329f0ce7" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1508cdd1g54acg7e72gc647gec06dce25778" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Blink" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
@@ -5963,7 +5963,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dce45412-632a-49ff-a7fa-030a6503ae72" />
         <field name="Name" type="NameTableFieldDefinition" value="AWAKEN" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h98169436gc6eagd39ag00f1g64c904ff7649" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17566e31g76ddg41d8gafe5gb617ae1c8677" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h947e61d6g7b1fg7654gbc73g3ec51f29fd5a" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Awaken" />
         <field name="StackId" type="StringTableFieldDefinition" value="AWAKEN" />
@@ -6002,7 +6002,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="46ce46b6-b007-4bd3-b133-d5fa5a240f3b" />
         <field name="Name" type="NameTableFieldDefinition" value="ALTER_SELF" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he2f01678g6528g4656g9346g1ab03132b75d" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hce73f32eg58dbg4cc2g8e03g8b4c4726a73b" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8089a3a9ga6d2g4913g8e5fg89d941c87d28" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_AlterSelf" />
         <field name="StackId" type="StringTableFieldDefinition" value="ALTER_SELF" />
@@ -8326,7 +8326,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e6ed2154-797b-43c7-b27b-1c2dfe962ff7" />
         <field name="Name" type="NameTableFieldDefinition" value="LUNAR_VITALITY" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9f1b45feg3a13g4bccg4842g98f511ae2e02" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h988e346agac66g4744gb06eg213b479dee08" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h88fd7cb1g4a94g8ad2g4bf8ga268d1168276" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Longstrider" />
@@ -8586,7 +8586,7 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(IsDowned()):RegainHitPoints(1)" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb220d543g0de9ga76cg8f82gc0f939ce0a89" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5ba48f48g3196g4a79ga8b9gf61a4e4b5a77" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he222d284gfebfg2d88g1574g14e9d5ea7c35" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ImprovedFlare" />
       </fields>
@@ -10293,7 +10293,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0b9a10a8-ce2e-4665-886d-daa211a52714" />
         <field name="Name" type="NameTableFieldDefinition" value="STEP_OF_THE_WIND" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="062235a8-3c4b-442a-95b2-b6277d03489f" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h554e1c9cgf636g08a4gf6ebg1d3611ee623a" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1d553970g7ee0g4268g9dbeg81ea881399fb" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha6d44a5ag5a9ag0c67gfbb0ge9a5772193c3" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="JumpMaxDistanceMultiplier(2);UnlockSpell(Projectile_StepOfTheWind_Jump);" />
       </fields>
@@ -10477,7 +10477,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="VOW_OF_ENMITY_RECAST" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_VowOfEnmity'),ModifyUseCosts(Replace,ChannelOath,0,0,ChannelOath),ModifyIconGlow());" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34159b25g04efg5336ga815g3000f32dc549" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7b73e4a1g6cd8g429dgad3ag2e92d10c3730" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_VowOfEnmity" />
       </fields>
     </stat_object>
@@ -10619,7 +10619,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2abe4075-e80a-44fe-9d9f-d573e6bb2fbe" />
         <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_CONQUEST" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h866d88e1g1047ge1d0gd19agda4ac87262ec" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h873d83fbge423g4eaagaa8egab8b1a7d5acf" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb19479e8gdf8bgc260g8a24g5668daa9bfeb" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Paladin)/2,Psychic);Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfHate" />
@@ -10636,7 +10636,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4c67cc35-c4c5-46ee-8b3f-1339748a35f3" />
         <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_CONQUEST_DEBUFF" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h317ce04ag4c31g046cgc0e5gc22245456709" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h873d83fbge423g4eaagaa8egab8b1a7d5acf" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfHate" />
         <field name="StackId" type="StringTableFieldDefinition" value="AURA_OF_CONQUEST_DEBUFF" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
@@ -10738,7 +10738,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9001dd56-d885-41fa-b1a4-f4730ccfe2bf" />
         <field name="Name" type="NameTableFieldDefinition" value="HUNTERSPREY_COLOSSUSSLAYER" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5d9a446dg2ff8g3030g019ag9d39f2044e8a" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d476cb8gfa45g4f4cga9d1gd0b109e9f9a2" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he100fd97g8c61g7accgc8ecg6628146a240d" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,MainWeaponDamageType)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ColossusSlayer" />
@@ -10752,7 +10752,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="491290df-efbc-4b8f-b270-c29e471cfe9b" />
         <field name="Name" type="NameTableFieldDefinition" value="HUNTERSPREY_HORDEBREAKER" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd0cfde10gdf36gc51age9f2gd9dc73cd5ad3" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h053c56f6g4d3bg4255g9ab8g393f0c7f1909" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haf4865d4g944ag9cf5gf8b0g84b701adf954" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_HordeBreaker_Ranged" />
@@ -10766,7 +10766,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f501dde6-0448-4c3d-8ed1-774d84cfff8c" />
         <field name="Name" type="NameTableFieldDefinition" value="DEFENSIVETACTICS_ESCAPETHEHORDE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb4273983g8859g9cddgb28cge0e4b5463a5f" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h85a3367agcc0dg4d2ag92f9g914262c6dbd5" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha62718a8g865eg755cge556g86d7b1793646" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_EscapeTheHorde" />
         <field name="Passives" type="StringTableFieldDefinition" value="EscapeTheHorde;" />
@@ -10818,7 +10818,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="97483965-d55f-4c5e-a20b-b80a77f1c376" />
         <field name="Name" type="NameTableFieldDefinition" value="DREAD_AMBUSHER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="506a5f1e-aa12-4c63-8f0f-6ea7b35f3846" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3b984b2eg48d2ga0a4g5cf8g78f1337ffab6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h38ec5b73g541fg4c1egb175gb0fa6d3fd7c9" version="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0);" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
@@ -11063,7 +11063,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="73116a0a-ae70-4e1a-a45c-f727087ef597" />
         <field name="Name" type="NameTableFieldDefinition" value="UNCANNY_DODGE_REDUCE_DAMAGE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcfb8ff1dg320dg3f82gfd7fg17aae04e4a3f" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h339e3418geda1g471cg9590g3eda60d68a11" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he29ef8dbg9175g368fg7a30gd515573c863c" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_UncannyDodge" />
         <field name="StackId" type="StringTableFieldDefinition" value="UNCANNY_DODGE_REDUCE_DAMAGE" />
@@ -11471,7 +11471,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5ae961aa-aa50-43c3-b46c-89985293d8fb" />
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_OSIRIS" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc91dc46cg504cg46c4g8871ga592835d0949" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0613c9b1g8210g4fecg9f79gcdd4563bd2e5" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
@@ -12136,7 +12136,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_61" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa1634c7-9560-4f20-96ca-41999ea3f444" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h088d47bfg6808g4533gaec0g5f56a095eab4" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hafefa2e1g90b1g4c2bga373g2d641dd61b87" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa24bb66g3e4dg43a0gb09dg2e7be143d20b" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);DealDamage(1d6,Fire)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(WILDMAGIC_YMS_61)" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="6" />
@@ -12149,7 +12149,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_62" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3dbd7d5d-601e-46bc-91dc-7e283385ae01" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2dfdc35fg3778g4a55g8ba8g0f758f18172a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd1b48940g58d3g4e8ega4dcg7ed2dee94101" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa24bb66g3e4dg43a0gb09dg2e7be143d20b" version="2" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(WILDMAGIC_YMS_62)" />
       </fields>
     </stat_object>
@@ -12159,7 +12159,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_63" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="88193609-69bc-479f-8ca7-4e2f9dcac84a" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3fb43e6age8adg44f4gb372g446fa2f664b6" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hce4f5a31g0d0ag4b63g942egbffb8f14a92c" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa24bb66g3e4dg43a0gb09dg2e7be143d20b" version="2" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(WILDMAGIC_YMS_63)" />
       </fields>
     </stat_object>
@@ -12169,7 +12169,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_64" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6fa97471-c028-444e-af89-b57aaa4bdeef" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1a0cf79ge96eg46c5gb1e4g4fa9d9a9a4c8" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hed397eecg9b3bg4678gba35gcf91f0402409" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa24bb66g3e4dg43a0gb09dg2e7be143d20b" version="2" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(WILDMAGIC_YMS_64)" />
       </fields>
     </stat_object>
@@ -12301,7 +12301,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_77" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4bb2b5d5-3bae-42bd-b2b5-8a96e582028e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7986d55ag4b99g4f18g8a49g23926f7099d8" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5c5ef942gcbf3g49cbg9accgc942edae5e84" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha9e9bf08gd796g4ca7gb57fge655895373c8" version="4" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_Fog,true,true,true)" />
       </fields>
     </stat_object>
@@ -12311,7 +12311,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_78" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="86ac05b0-90e3-44a2-a2ec-3afe1d2e8e7e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9ced7473g352fg4a27g8da6g9e6fc2ad30f3" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc960f4b7g78deg40bbg965fgc1565ecade8e" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha9e9bf08gd796g4ca7gb57fge655895373c8" version="4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12320,7 +12320,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_79" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f599ec22-e071-4486-a0c8-de312eb2e0ca" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1431c900g7a9ag4dcbg829fg9beb05facf3c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb3b236fdg6f36g43e7gbd94gb9dab02f1422" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha9e9bf08gd796g4ca7gb57fge655895373c8" version="4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12329,7 +12329,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_80" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="556f0a07-cb43-4980-8ee9-7e4d7b43cb7c" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6612f5d3g8924g4373g8b56g3d9c0cb4fde9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h98b8ca8bge009g418dgb454gf9c2863445c0" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha9e9bf08gd796g4ca7gb57fge655895373c8" version="4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12338,7 +12338,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_81" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="74d674d7-5aba-45f4-9997-977fb029fb71" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8b90d907gae26g4ed0gacd8g69cdee3b3374" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hde366e14gd5b5g44c4g827bga2b49392cbca" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc66ee5bcg1fafg4a40g9f3cg9b8dfe809aac" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(WILD_MAGIC_SORCERY_POINTS,100,2)" />
       </fields>
     </stat_object>
@@ -12348,7 +12348,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_82" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ed68bc3-9324-43d6-b7eb-7c842ce747bf" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb2629a69ge692g4c6dg85b4gdc37f77b4751" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6ce73a81g4678g4a91ga52cg81e6fa1c24b3" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc66ee5bcg1fafg4a40g9f3cg9b8dfe809aac" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12357,7 +12357,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_83" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0f4e3b9d-27cf-4367-b23c-f68da4e1daa1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17cda355g1776g4ba1g8e43g05b27e350d5e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hba496d7agd6f7g4bf8g8066g3041c4a139d5" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc66ee5bcg1fafg4a40g9f3cg9b8dfe809aac" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12366,7 +12366,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_84" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d07ef172-3afb-4b8c-b64c-d188c80eb171" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc4507d45gc0bag4bccgb9d8g1a953014319e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h25c99944g196eg48c0ga7cbgd07dc433af9c" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc66ee5bcg1fafg4a40g9f3cg9b8dfe809aac" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12375,7 +12375,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_85" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2125fc36-6e11-4eab-a563-83db51d8df48" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h408e7605g1f99g4029g8d7fgec9e3816065b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h79878215g2bfbg412eg851bgaded3f9b8188" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc9950bb8gb545g4402ga406g2d5e05047cef" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d4,Piercing);Distance(1.5)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_SpikeGrowth,true,true,true)" />
       </fields>
@@ -12386,7 +12386,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_86" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c74a8d25-e3c5-431d-91de-7a1c9e0132ce" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc498aa93g38fcg4e64gb4e0ge93e9c0d17ae" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9cfd2cf9g3c6bg44d3gbc44g1db3354de7f0" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc9950bb8gb545g4402ga406g2d5e05047cef" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12395,7 +12395,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_87" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2bd5a535-833a-4a77-abd4-e24ac6a73675" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he813f8cfg0064g46c4gab4fg7e21ee6f3817" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6ef2ef69g5a70g4e79gbec8g4d789ec34d39" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc9950bb8gb545g4402ga406g2d5e05047cef" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12404,7 +12404,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_88" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="435580cc-d805-47c5-9391-60c9a6ebbc7d" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2f2a7f2g321fg4fbeg8738gef1fefaba29d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h833c0955gffccg49b7g9c91gc755ac906512" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc9950bb8gb545g4402ga406g2d5e05047cef" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12413,7 +12413,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_89" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="563e573a-9229-4ec2-bc71-c1e95ef2d33e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h12c9762dg5f8cg40f6gb17cg935c848f6abd" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb5a352bfg05b6g438fga2c8g930246489691" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c151717gb8a8g422bg98cbg0795c3b9e3fa" version="6" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_Swap,true,true,true)" />
       </fields>
     </stat_object>
@@ -12423,7 +12423,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_90" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4fb0e162-7a86-4d02-8e0b-b0654b72b2e1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1820df21g521eg4257gb040g0cf6524fa4ea" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbe741660gb4b4g4a86g84a5g1091b8be5a8c" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c151717gb8a8g422bg98cbg0795c3b9e3fa" version="6" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12432,7 +12432,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_91" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="17ecfecc-57de-4292-869c-49ac927840cb" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7cabb53egaec5g4bb6gadbag8ca15a4190c3" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h59bc3445g9221g4057gaaa7g57e95c105dda" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c151717gb8a8g422bg98cbg0795c3b9e3fa" version="6" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12441,7 +12441,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_92" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="eb3e3a98-9206-47f7-aad9-92127689112d" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heef0635bg9befg4c3eg81dag89f471f87834" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfef17422ga705g4694g861dg3f8ac4ae97df" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h816404b4g8d23g4737g8d76g05b09b5d0cfb" version="6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);DealDamage(1d4,Force)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_Enchant,true,true,true)" />
       </fields>
@@ -12452,7 +12452,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_93" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="54b83df6-bea1-46cd-81a7-ae53616b5449" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7e7cd1efg5673g41f8gbd84g7d0637e90a92" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfebb0c2eg259cg4a52g9a3cg4edf6de87e4e" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha655cb4eg81f4g4397g9062g5936a9cd0d9d" version="2" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_Telekinesis,true,true,true)" />
       </fields>
     </stat_object>
@@ -12462,7 +12462,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_94" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8cb7acf2-6afa-4592-b016-879185fc41f4" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2bee80bg0a49g4a08ga752ga03dd23892bb" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb93e81d2g30f2g4d68gb901g6d3fc1641adf" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha655cb4eg81f4g4397g9062g5936a9cd0d9d" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12471,7 +12471,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_95" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ac8ce137-c07f-4400-858e-cd83672c84ac" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h95705cfdg90fcg413agae54g5181ab30dab7" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0c900d97g6042g4a00g8692g209562838bd4" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha655cb4eg81f4g4397g9062g5936a9cd0d9d" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12480,7 +12480,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_96" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="10e6a257-95c8-4da6-b901-d2d3990e8af0" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a41146ege4b4g43edg9de7g69ad06aa5690" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h404bb326g3a7ag4766gbc53gb4c0cec521d8" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc9d706d1gd869g4e4ag84bagd5a8106c0636" version="2" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_Fly,true,true,true)" />
       </fields>
     </stat_object>
@@ -12490,7 +12490,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_97" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3e1ad509-b212-4b8d-9911-94ef490061c1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4597e3beg2c8dg4906g9974g408ed6beab9d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hef777ecbg83d4g4377g8d15g52a28ba8e05b" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h636d9abdg1b54g40d4gac37gda7eb9b95a9b" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);RegainHitPoints(1d4)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_Heal,true,true,true)" />
       </fields>
@@ -12501,7 +12501,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_98" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e468a34c-72fb-49ef-a63b-2aed12ab7691" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbdd5fa3fg04c0g410aga5e9gd246de72ee3b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he838dc28gdd7ag4377g9eb3g08e15f2d29e1" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6ad5543eg2064g4402g9be3g792775845356" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_CatsAndDogs,true,true,true)" />
       </fields>
@@ -12512,7 +12512,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_99" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f3a36f77-4093-4cee-bfde-ca9837b115ce" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdcd6f25ag324dg4fd4g976bg746bd5db6f6c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdde680a7g73b5g43f5g8a74g38ce84de8780" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a8bb8e8g2390g4176gbefdg3ecb50ec57b4" version="2" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_ResilientSphere,true,true,true)" />
       </fields>
     </stat_object>
@@ -12522,7 +12522,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_YMS_100" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27d84857-bfc1-4e7e-a1e6-2bb856cd58ff" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hee3ba1bcg491bg4ccfga01dga481388560d0" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6e154639gd102g48cdg9302g9fc6aba3af7a" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9552958cgd4e0g43b2gb017gf04c18d6705c" version="2" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(Shout_WildMagic_Cambion,true,true,true)" />
       </fields>
     </stat_object>
@@ -12762,7 +12762,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2ddfb836-e1ca-4585-a037-71d74a2131af" />
         <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE_WEAPON" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf3b2ff84g1b07ga3eag2125ge551077a6e4d" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ac40bcag9679g46f0gb54fg093c562a9b66" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Warlock_BindPactWeapon" />
         <field name="StackId" type="StringTableFieldDefinition" value="PACT_BLADE_WEAPON" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
@@ -12949,7 +12949,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6bd126f4-9e17-4bcc-9429-be8b08afdc0b" />
         <field name="Name" type="NameTableFieldDefinition" value="FORM_OF_DREAD" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d37ad4ag3569ge301gd8d6g7963c9e83ba2" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0451ea4dg8653g4068g9484gd06df6ef2e54" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha34e254dg39c8gc52bg7259gaa9e2bf59233" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="UndeadPatron_3_FormOfDread" />
         <field name="StackId" type="StringTableFieldDefinition" value="FORM_OF_DREAD" />
@@ -13180,7 +13180,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b6844936-69ba-45e8-a232-b21e789d9aa4" />
         <field name="Name" type="NameTableFieldDefinition" value="UNDEAD_FORTITUDE_NECROMANCER" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbbb9b3a4gf691g8a63gf504g010c3e895fc8" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h43b75af6g155dg4434gb3c7g5d9cb6d6021e" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h170846b3gb4d4g669fg57f7g62ab5c0a6f61" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Durable" />
         <field name="StackId" type="StringTableFieldDefinition" value="UNDEAD_FORTITUDE_NECROMANCER" />
@@ -13638,7 +13638,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="SOUL_EATER_TEMPHP" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d2c9167c-240c-48ae-a25f-67901533a587" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h84a9d67fge555g185dg5c83g4c97364a1cef" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8cd365c4g7106g7c48g3af0gaa9b0e85108b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11e6d1a2g1707g4b6bg9475gf99508e9e0b7" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Illrigger))" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
         <field name="StackId" type="StringTableFieldDefinition" value="SOUL_EATER_TEMPHP" />
@@ -13651,7 +13651,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="STYXS_APATHY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e4b9ba47-45f5-48d6-a9a0-0f6cd0680fce" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h83e42a83g88c6gd1e9g8c16gbff3333ac045" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe1fd654g95d3g0e72g524ag183786863374" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd4588502g88a1g476ega1dbg36c19ca1db02" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="STYXS_APATHY" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatusPropertyFlags" version="1" />
@@ -13754,7 +13754,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d14f98fd-95c8-45ed-a273-80895f67444f" />
         <field name="Name" type="NameTableFieldDefinition" value="DEVASTATOR" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56bd8cdag4e64g6c53ga757gdf3238045217" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0bf90f1bg92abg4ed2g8087g334b4771e5e3" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h33401633g747fg999fg84bcgb4b2b4d7449f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_CommandersStrike" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Devastator_Melee);UnlockSpell(Target_Devastator_Unarmed);UnlockSpell(Projectile_Devastator_Ranged);" />
@@ -13898,7 +13898,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6bbb4714-2e26-4c61-bee4-ee16d5bf62f0" />
         <field name="Name" type="NameTableFieldDefinition" value="RMI_MAGICWEAPON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d279125d-9a26-4f92-bdca-07a9afdbdc89" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7a35556fge570gab38gf0edg0b4326380cb9" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f33823dg982ag489egac0fg9db694225a1a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4e5739d3g4311ge20bge8e5g7bfab27aefb7" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_MagicWeapon" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(MeleeWeaponAttack, 1);RollBonus(RangedWeaponAttack, 1);RollBonus(MeleeOffHandWeaponAttack, 1);RollBonus(RangedOffHandWeaponAttack, 1);CharacterWeaponDamage(1);" />
@@ -13940,7 +13940,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="RMI_MAGICARMOR" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d279125d-9a26-4f92-bdca-07a9afdbdc89" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hadc2948cg9997gd815g5d5eg80b24c6d60ef" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h686cad6bgf8b8g62abgef37g7d8a7da096cd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h43f1380bg9d7bg40bdgbfdcgf385d442fa2a" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MediumArmorMaster" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(WearingArmor(context.Source)):AC(1);" />
         <field name="StackId" type="StringTableFieldDefinition" value="RMI_MAGICARMOR" />
@@ -13952,7 +13952,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="RMI_ALERT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d279125d-9a26-4f92-bdca-07a9afdbdc89" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h866bec2eg3c08g1950g56d1gc59be810c970" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9e262863g0dcbgca43gd944g35603fe7420c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h00cc62cegda83g4cf3gb18eg202e5bf8a0f7" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Threat" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);StatusImmunity(SURPRISED);" />
         <field name="StackId" type="StringTableFieldDefinition" value="RMI_ALERT" />
@@ -13997,7 +13997,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="04f86fea-2934-4b99-9dd7-8bcdbf316dfa" />
         <field name="Name" type="NameTableFieldDefinition" value="RMI_FREEACTION" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="852e776d-fedb-492b-bf51-3ad5764f0c40" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hab73d382g1a8eg63dege86fg9874a3c11c9c" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5a1930d9g5a63g4d43g9c85g088fba672ba9" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_FreedomOfMovement" />
         <field name="StackId" type="StringTableFieldDefinition" value="RMI_FREEACTION" />
       </fields>
@@ -14007,7 +14007,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8905cbf4-f5dd-4df5-afbb-bbf72b05afda" />
         <field name="Name" type="NameTableFieldDefinition" value="RMI_PROTECTION" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d279125d-9a26-4f92-bdca-07a9afdbdc89" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd3c53187gc5acg834fg9a70g53edd5e45e58" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h38b12c11gac58g49cbga90cg72fef9f5d966" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h30805376g5c6cg34ddgb16bgd3135f7180cf" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEnergy" />
         <field name="Boosts" type="StringTableFieldDefinition" value="AC(1);RollBonus(SavingThrow,1);" />
@@ -14219,7 +14219,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dd8ed4c7-6bae-43e7-993f-d419ce09b2d4" />
         <field name="Name" type="NameTableFieldDefinition" value="FLIGHT_EQUAL" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h803ef2b4g9d5fg6bf7gcdfbge5aa148caa9d" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfee27d13g11b0g4181ga58dgca1e0d289f28" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf0deee58g3421g39e9ge698g864491958c4a" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_GiantEagle_Fly" />
         <field name="StackId" type="StringTableFieldDefinition" value="FLIGHT_EQUAL" />
@@ -15909,7 +15909,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8d5759d1-cca2-4a4d-b315-0eb1336123c9" />
         <field name="Name" type="NameTableFieldDefinition" value="INSPIRING_LEADER" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h67402ac7g0551gf435g6451g8cdb39545b19" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9124bb02g5aeag4145g847fgc24027b98519" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd28c4d74gd3aag5aa9g12b2g628e33edb9c9" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_InspiringLeader" />
         <field name="StackId" type="StringTableFieldDefinition" value="INSPIRING_LEADER" />
@@ -16345,7 +16345,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="82313e8c-bf66-420a-99ce-1961843279a5" />
         <field name="Name" type="NameTableFieldDefinition" value="SAVING_THROWS_PENALTY_COLD_CASTER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a9a4b3f9-4127-44a9-b107-9e9b205f56c1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d91582cgf795g8507gdfb6g12c4347c9ea6" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h42747aa1gfba1g4fcdg8b28g70217b5d180d" version="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,-1d4);UnlockInterrupt(Interrupt_SavingThrowPenalty_ColdCaster);" />
         <field name="StackId" type="StringTableFieldDefinition" value="SAVING_THROWS_PENALTY_COLD_CASTER" />
       </fields>
@@ -16490,7 +16490,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5e5c5f47-a44e-472d-b3ee-327295537dec" />
         <field name="Name" type="NameTableFieldDefinition" value="HOLY_AVENGER_AURA" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56b28652gd66cgff72gb7eaga9c8332947e0" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha0ef5bd2gf3e7g689cgef0egd528c73742ba" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbffabd18gf3d3g40b5gbfd1gc6d5bcb7c11e" version="5" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfWarding" />
         <field name="StackId" type="StringTableFieldDefinition" value="HOLY_AVENGER_AURA" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
@@ -16553,7 +16553,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d055b5ea-f5e7-4ead-bd28-31cb5cd91374" />
         <field name="Name" type="NameTableFieldDefinition" value="ADRENALINE_RUSH" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hff787feeg6644g2b33g0be6g8fd958b702b8" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50236966g3c25g443fgbf7dg4fec2e748697" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha554c47egeb81g75ccgd39cg1311b5e29042" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ProficiencyBonus)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Mobile_DashAcrossDifficultTerrain" />

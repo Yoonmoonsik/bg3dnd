@@ -2,7 +2,6 @@
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <content contentuid="h6b384962g5a7bg33e2g8993g0708cacc7834" version="3">ルール：武器の装備</content>
   <content contentuid="h7e686044g6737gd055gea94g27a7a4c34341" version="3">攻撃アクションの一部として攻撃を行う際、武器を装備できる。武器の装備には、鞘から武器を抜くことや、拾い上げることが含まれる。</content>
-  <content contentuid="haf418bd4gaf68g349dge3fbg4db2a9970409" version="1">回避</content>
   <content contentuid="h40481577g00cege926g9b8cg4479348271b0" version="1">次の自分のターンの開始時まで、自分に対するすべての攻撃ロールは不利になり、自分が行う敏捷力セーヴィング・スローは有利になる。</content>
   <content contentuid="h77f164a8g908ag78fdg969cg13b085d02634" version="2">ヒット・ポイントが0になると気絶状態になり、死亡セーヴィング・スローを行わなければならない。3回成功すると出血が止まり、安定状態になる。3回失敗すると死亡する。d20で20の目を出した場合、ヒット・ポイントを1回復する。
 
@@ -20,13 +19,11 @@
   <content contentuid="h0fbee9aag6abeg6294g3fd8gbeb26ffd19f6" version="1">この武器を用いた攻撃ロールがクリーチャーにミスした場合、その攻撃ロールに使用した能力修正値に等しいダメージをそのクリーチャーに与えることができる。このダメージは武器と同じダメージ種別であり、能力修正値を上げることによってのみダメージを増加させることができる。</content>
   <content contentuid="hdbe460a9gf800gdb75g15bbg2b81a80fe8ab" version="2">刻み</content>
   <content contentuid="h84f8977cg06ecg1e31gebd6g21e4b7346121" version="2">軽武器特性による追加攻撃を行う際、ボーナス・アクションの代わりに攻撃アクションの一部として行うことができる。この追加攻撃は各ターンに一度だけ行える。</content>
-  <content contentuid="h64e7021cg8b69g3f60gde38gd59f3cdc5846" version="2">押し出し</content>
   <content contentuid="h694f6a66g0531g98f0ga23eg525e146eb4d7" version="1">この武器でクリーチャーに命中させた時、そのクリーチャーが大型以下であれば、自分から直線的に最大[1]まで押し遠ざけることができる。</content>
   <content contentuid="haf74199bg92cbg93dega0fbgebb535603f83" version="2">無力化</content>
   <content contentuid="h6846e460g6aecg1e76g52c0g8c751abe8744" version="1">この武器でクリーチャーに命中させた時、そのクリーチャーは次の自分のターンの開始前に行う次の攻撃ロールに不利を受ける。</content>
   <content contentuid="hb839de91gb995ge42eg62b9g1dd41fe4da4b" version="2">減速</content>
   <content contentuid="h7773a857g54d9g0e61gc338g5671eef1378d" version="1">この武器でクリーチャーに命中させてダメージを与えた場合、次の自分のターンの開始時まで、そのクリーチャーの移動速度を[1]減少させることができる。この特性を持つ武器でクリーチャーに複数回命中させても、移動速度の減少量は[1]を超えない。</content>
-  <content contentuid="ha395ebeag3995g70fage1d7g718229b74f9b" version="2">よろめき</content>
   <content contentuid="h5af643b9gd1b7g259cg51cegf17292ec2f43" version="1">この武器をクリーチャーに命中させた場合、そのクリーチャーに耐久力セーヴィング・スロー（難易度は8＋攻撃ロールに使用した能力修正値＋習熟ボーナス）を行わせることができる。セーヴに失敗すると、そのクリーチャーは伏せ状態になる。</content>
   <content contentuid="hdfca5f76g305cgff0cg0532gbc6b23ff9367" version="2">隙突き</content>
   <content contentuid="hf0019ff2g27f5g13abg7a86g646b2f8a1f55" version="1">この武器でクリーチャーに命中させてダメージを与えた時、次の自分のターンの終了前に行う、そのクリーチャーに対する次の攻撃ロールに有利を得る。</content>
@@ -42,18 +39,13 @@
   <content contentuid="h8c28362ag369agee34gc8d4g6ccec5460b53" version="1">武器の訓練を積んだことで、武技習得特性を使用できるようになった。
 
 クラスレベルが特定の段階に達するごとに、追加の武器種別の達人特性を使用する能力を得る。</content>
-  <content contentuid="he54ffab7g9288g792age85bg3fc0a39a63db" version="2">激怒</content>
   <content contentuid="ha33a602cg9bb2gec42g889dg5983a5346c84" version="1">激怒と呼ばれる原始的な力を自分に吹き込むことができる。これは並外れた筋力と耐久力を与える力である。重装防具を着用していなければ、ボーナス・アクションとして激怒状態に入れる。
 
 バーバリアン特徴表の「激怒回数」の列に示された、自身のバーバリアンレベルに応じた回数だけ激怒できる。小休憩を終えると消費した使用回数を1回復し、大休憩を終えるとすべての使用回数を回復する。</content>
-  <content contentuid="h8abec533g47afgabaag5370ga724a70ed863" version="2">鎧わぬ守り</content>
-  <content contentuid="hfc1b8fd5g336eg3648g3224g9cae0aaac491" version="2">危険感知</content>
   <content contentuid="hb6dea583g9359gddf3g2360g74669f67b1a6" version="2">原始の知識</content>
   <content contentuid="h860b399bg558cg749fgb64bg707d53758400" version="2">レベル1でバーバリアンが選択可能な技能リストから、さらに別の技能1つの習熟を得る。
 
 さらに、激怒が有効な間、特定の試みを行う際に原始の力を導くことができる。以下の技能のいずれかを用いて能力値判定を行う際、通常は異なる能力値を使用する場合でも、筋力判定として行うことができる：軽業、威圧、知覚、隠密、生存。この能力を使用する際、筋力はあなたの中に流れる原始の力を表し、敏捷性、立ち振る舞い、感覚を研ぎ澄ませる。</content>
-  <content contentuid="h3fa58ccfg135bg7a66g14degc3c8b5bb8261" version="2">高速移動</content>
-  <content contentuid="h7c047839g4177g2aaega022g36a5cb07886a" version="2">野生の直感</content>
   <content contentuid="h28d4b453gc36cg810egf9e2g1dbff5d018d8" version="2">本能的跳躍</content>
   <content contentuid="hdb025275gf26dg03dfg7370g4dddf3f0ffb9" version="1">激怒状態に入るためのボーナス・アクションの一部として、移動速度の半分まで移動できる。</content>
   <content contentuid="hb6144726g336aga60cg63d6gf6c4bc669e6a" version="2">荒々しき打撃</content>
@@ -67,25 +59,13 @@
   <content contentuid="hcd10eb1fgc367ga39egd371g5e071e079549" version="2">このターン、強打：追撃を使用できる。</content>
   <content contentuid="hd5311cf0g6f4fg9a03g45f9gf5ba41e2994c" version="1">もも打ち</content>
   <content contentuid="hcba666bcgdd43g5b9agef09gdcfd2c3d20ff" version="1">攻撃者の次のターンの開始時まで、移動速度が[1]減少する。</content>
-  <content contentuid="hebad3866ga362g915cge97fg661e8b92ea36" version="2">倒れずの激怒</content>
   <content contentuid="hfd45d1c1g9dd3g206agfb7eg456c6af02ac0" version="1">&lt;LSTag Type="Status" Tooltip="RAGE"&gt;激怒&lt;/LSTag&gt;中に&lt;LSTag Tooltip="HitPoints"&gt;ヒット・ポイント&lt;/LSTag&gt;が[1]になる状況において、&lt;LSTag Tooltip="ShortRest"&gt;小休憩&lt;/LSTag&gt;ごとに一度、代わりにバーバリアンレベルの2倍に等しいヒット・ポイントを回復し、&lt;LSTag Type="Status" Tooltip="DOWNED"&gt;瀕死状態&lt;/LSTag&gt;になるのを免れる。</content>
-  <content contentuid="h784061e1gf2a8g748bg99cfg9e391dd4569c" version="2">狂乱</content>
   <content contentuid="hd21b5d53gc033g82abgfcdag21730bb83c68" version="1">激怒が有効な間に捨て身の攻撃を使用した場合、自分のターンに筋力ベースの攻撃で最初に命中させた目標に追加ダメージを与える。追加ダメージを決定するには、激怒ダメージ・ボーナスに等しい数のd6をロールし、それらを合計する。ダメージ種別は攻撃に使用した武器または素手攻撃と同じになる。</content>
-  <content contentuid="h7f8570c9g2cd6g2327g3c99g18d5c393bf5e" version="2">考えなしの激怒</content>
-  <content contentuid="h42189866g05d1g89b4g6e9dg1f97d248b2a9" version="2">反撃の一発</content>
   <content contentuid="hde644cc1g1dc6g103bg095ege867e6fa22ad" version="1">自分から[1]以内にいるクリーチャーからダメージを受けた際、リアクションとしてそのクリーチャーに対し、武器または素手攻撃を用いて1回近接攻撃を行える。</content>
-  <content contentuid="hc8de1446g6777ge942g7572g5cd9d6cc8f14" version="1">巨人の側面</content>
-  <content contentuid="hf411e734g4162g32ddg2c68g075dce673ed3" version="1">目標を蹴って押しのけようとする。成功率は運動に左右され、隠れているか不可視状態であればより成功率は高くなる</content>
-  <content contentuid="h5acf268bg7a2dgd7c7g4d2dg20caffe2e8a4" version="1">&lt;LSTag Type="Spell" Tooltip="Target_Shove"&gt;突き飛ばし&lt;/LSTag&gt;で、可能な重量の最大2倍まで目標をキックできる</content>
   <content contentuid="h0e7ef600g82aegeba0g077eg2ddad69731f8" version="1">バーバリアンの魔法暴走に包まれている。&lt;LSTag Type="Status" Tooltip="RAGE"&gt;激怒&lt;/LSTag&gt;が終了するまで、&lt;LSTag Tooltip="ArmourClass"&gt;アーマー・クラス&lt;/LSTag&gt;が激怒ダメージ・ボーナスに等しい値だけ上昇する。</content>
-  <content contentuid="hd75d1783g8062gae55g78a6g651f55455f7f" version="2">なんでも屋</content>
-  <content contentuid="h6002075bg4feegb25ag03b5g8e88a4351c0f" version="2">声援高速回復</content>
   <content contentuid="h5d1b01ffgd776g8ca4gd2edgb4e5e0068ad7" version="1">さらに、呪文スロットを1つ消費することで（アクション不要）、消費したバードの声援の使用回数を1回復できる。</content>
-  <content contentuid="h3c4853cag177dg4ea8g0c15gde7e940ee735" version="1">声援高速回復</content>
   <content contentuid="h7c14769cg0f8ag7968g4156g1272fd5b7850" version="3">呪文スロットを消費して、バードの声援の使用回数を1回復する。</content>
-  <content contentuid="he36b3403gbab9gf77fg17fbg32e95953478c" version="2">心を守る歌</content>
   <content contentuid="h1dedae79g3922gbd27g0925g98aec4318fa7" version="1">音楽の調べや力の言葉を用いて、精神に影響を与える効果を妨害できる。自分または9メートル以内にいるクリーチャーが、魅了状態または恐怖状態を与える効果に対するセーヴィング・スローに失敗した場合、リアクションを用いてそのセーヴを再ロールさせることができる。この新しいロールは有利になる。</content>
-  <content contentuid="hf8844bacg4eb3geecdg5fbagf17d5ba9d6b0" version="1">心を守る歌</content>
   <content contentuid="h0f358bf7g4a10gc77fg43cfg0c187137ef7a" version="1">音楽の調べや力の言葉を用いて、精神に影響を与える効果を妨害できる。自分または9メートル以内にいるクリーチャーが、魅了状態または恐怖状態を与える効果に対するセーヴィング・スローに失敗した場合、リアクションを用いてそのセーヴを再ロールさせることができる。この新しいロールは有利になる。</content>
   <content contentuid="h3169b2acg5134gbc8dge8fagb01eabf3a278" version="2">魅了の魔法</content>
   <content contentuid="h035b29c1g51d0ge9f8gb63fgc75cd5045b0c" version="2">常に呪文「人物魅了」と「鏡像」が準備された状態になる。
@@ -93,7 +73,6 @@
 さらに、呪文スロットを使用して心術または幻術の呪文を唱えた直後、自分から[1]以内に見えるクリーチャー1体に、自身の呪文セーヴ難易度に対する判断力セーヴィング・スローを行わせることができる。セーヴに失敗した場合、目標は1分（10ターン）間、魅了状態または恐怖状態（どちらかを選択）になる。</content>
   <content contentuid="he30a14f7gb323g888eg2ff5g04b0a7374497" version="1">魅了の魔法：魅了</content>
   <content contentuid="haac5a803g73dfg5282g175eg12c90e9a77cd" version="1">魅了の魔法：恐怖</content>
-  <content contentuid="h1e9e444agc6b5g3056g6b60g447875f0ec07" version="2">声援の装い</content>
   <content contentuid="hd68a192ag408cg0b94ge1bcgb6efd87c7b6a" version="2">フェイの魔法を歌や踊りに織り込み、他者に活力を吹き込むことができる。ボーナス・アクションとして、バードの声援の使用回数を1回消費し、バードの声援ダイスをロールできる。そうした際、自分から[1]以内にいる他のクリーチャーを、自身の魅力修正値に等しい数まで（最低1体）選択する。
 
 選択された各クリーチャーは、バードの声援ダイスでロールされた値の2倍に等しい一時的ヒット・ポイントを得て、それぞれの次のターンの終了時まで、機会攻撃を誘発することなく移動できる。</content>
@@ -102,27 +81,16 @@
   <content contentuid="hf3f5c8f9g2b3bg1058g7715gee2645709a64" version="1">選択された各クリーチャーは、バードの声援ダイスでロールされた値の2倍に等しい一時的ヒット・ポイントを得て、それぞれの次のターンの終了時まで、機会攻撃を誘発することなく移動できる。</content>
   <content contentuid="h52a153aag53d8g2658g72aegc55c7baffc11" version="1">選択された各クリーチャーは、バードの声援ダイスでロールされた値の2倍に等しい一時的ヒット・ポイントを得て、それぞれの次のターンの終了時まで、機会攻撃を誘発することなく移動できる。</content>
   <content contentuid="h530230d7ge34cg06b9g06a3ge16228b8a608" version="1">クリーチャーはバードの声援ダイスでロールされた値の2倍に等しい一時的ヒット・ポイントを得て、それぞれの次のターンの終了時まで、機会攻撃を誘発することなく移動できる。</content>
-  <content contentuid="hcc01542ag2ea8ge230g53b5g6bae54a352d2" version="2">言葉の刃</content>
   <content contentuid="hfac955c9g640eg8dc8gfdefgfa559fa195f8" version="3">追加攻撃（初級呪文）</content>
   <content contentuid="he6112d47g8846ge668gbd97g45ddd36eeb46" version="1">自分のターンに攻撃アクションを行う際、1回ではなく2回攻撃できる。
 
 さらに、それらの攻撃のうち1回の代わりに、発動時間が1アクションである初級呪文を1つ唱えることができる。</content>
-  <content contentuid="h1a1b446eg2636gca22g7bafg910726511c02" version="1">助力</content>
   <content contentuid="h5380e85fg27eagff54gaa61g803d6710929e" version="1">射程内にいるクリーチャーを3体まで選択する。持続時間中、各目標の最大ヒット・ポイントと現在のヒット・ポイントが[1]上昇する。</content>
-  <content contentuid="he6319c8dga9bagd985gfc80gc057d99c3f06" version="1">助力</content>
   <content contentuid="h8c0c79e8geefage313gb534gd315de67d298" version="1">味方の最大ヒット・ポイントを[1]上昇させる。</content>
   <content contentuid="hbdf4d91ege560gf373gb78fgc694716131ec" version="1">光輝の言葉</content>
   <content contentuid="h0dd0eba8g9b93g7909g9d9cg2a09e01a4c46" version="3">聖なる秩序：守護者</content>
   <content contentuid="h82c38cb3g39e6g13c8g7a26g5c63f737aa79" version="1">守護者：戦闘訓練を積み、軍用武器の習熟と重装防具の習熟を得る。</content>
   <content contentuid="hd91012edgb1a6g4aabg14d4g0d685464de55" version="1">小奇跡使い：クレリックの呪文リストから追加で1つ初級呪文を習得する。さらに、神性との神秘的な繋がりにより、知力（魔法学または宗教）判定にボーナスを得る。このボーナスは自身の判断力修正値（最低+1）に等しい。</content>
-  <content contentuid="h5eae110bgf170g8febg7b95gaf9957eab275" version="1">導き</content>
-  <content contentuid="hf42e4215gdaa7g8b2cg6d6cg34b3a7233576" version="1">光</content>
-  <content contentuid="h08e84982gdf0fgadf1g29d5g02cc8281827c" version="2">爆裂する腱</content>
-  <content contentuid="hf2980afegb1f3g08e3g5b30g296c1e8141b7" version="1">抵抗力</content>
-  <content contentuid="h3dc64960ga68egb106gddd9g8a83f2e5394a" version="1">聖なる炎</content>
-  <content contentuid="h37124d24g1b0dg1b86g632dg14623f5d21b6" version="1">救命措置</content>
-  <content contentuid="h31c6269fga1bfge0a9gb4bfg7f845b81b38a" version="1">小奇跡</content>
-  <content contentuid="h4d2d81f9g6a4cg493ege377gd246536aefa0" version="1">とむらいの鐘</content>
   <content contentuid="h5d663b96gee20gd7abg28bdgde325d686903" version="1">聖なる秩序</content>
   <content contentuid="hf078c843g4ca9gd89bgde69g7b94c3d7e9b4" version="1">以下の聖なる役割の中から、自身が選択した1つに身を捧げている。</content>
   <content contentuid="hc0f7da49g83b0g2364gd22fg0e72e6d0f671" version="2">聖なる秩序：光輝の言葉</content>
@@ -134,7 +102,6 @@
   <content contentuid="hf2f5e5c4g141ag2b8egb90cg9ff6727b6910" version="2">聖なる秩序：救命措置</content>
   <content contentuid="h50136471gff21g505fg888cgf856fc01281a" version="2">聖なる秩序：小奇跡</content>
   <content contentuid="h9b0eeaeeg6a13gc99dg6669gc97c57ec0db5" version="2">聖なる秩序：とむらいの鐘</content>
-  <content contentuid="h84a7d362gf65ag0f66g6103g7d1f4fc707d2" version="2">神性伝導</content>
   <content contentuid="h619804afg28a4g6f48g9db2gb39ec7c1d073" version="1">神聖なエネルギーを導き、「神聖なる火花」や「アンデッド退散」などの特殊な効果を作り出すことができる。神性伝導を使用するたびに、効果を1つ選択する。レベルが上がるにつれて、追加の効果や使用回数を得る。小休憩で1回分、大休憩ですべての回数を回復する。セーヴィング・スローの難易度には自身の呪文詠唱難易度を使用する。</content>
   <content contentuid="h0fdb1f5ag867fg21d4g6beeg681eae4df812" version="1">神聖なる火花</content>
   <content contentuid="he5c89bffgb42ege4daga349g64ec3fecb28f" version="1">魔法アクションとして、自分から[1]以内に見える別のクリーチャーに聖印を向け、神聖なエネルギーを集中させる。そのクリーチャーのヒット・ポイントを回復させるか、耐久力セーヴィング・スローを行わせる。セーヴに失敗した場合、そのクリーチャーは[2]または[3]（どちらかを選択）を受ける。セーヴに成功した場合、そのクリーチャーは半分のダメージを受ける（端数切り捨て）。</content>
@@ -152,39 +119,28 @@
   <content contentuid="h4bebd04fg3a81gc270gd50bga237aecd8ef8" version="1">祝福された打撃</content>
   <content contentuid="h0c4d3581gf44cg6a9ag27f8ge9f2dd54d6ed" version="1">戦闘において神聖な力が自身に宿る。以下の選択肢の中から1つを選択して得る。</content>
   <content contentuid="hb6ac0f1cg84d4g5137g1a23g92f5941f06dc" version="2">アンデッド焼却</content>
-  <content contentuid="hd9e8561fg5920g7f26g9d66g15b2d44e24f3" version="1">救命措置</content>
   <content contentuid="hb742b3aagabfcg536cg10e0g99bbe354e49a" version="1">射程内にいる、ヒット・ポイントが0でまだ死亡していないクリーチャーを回復させる。</content>
   <content contentuid="hd085b0deg3cc9g0858gdf14geef98a4164c3" version="1">光輝の言葉</content>
   <content contentuid="hbb7ccd06g2737gdcf2gc167g21f32c9615fb" version="1">自身から[1]の放射状に燃え盛る輝きが噴出する。その中にいて、あなたが見ることのできる任意の各クリーチャーは、耐久力セーヴィング・スローに成功するか、さもなくば[2]を受けなければならない。</content>
-  <content contentuid="hf652a768gef39g78fdg661dg8ddbb887d3f3" version="2">生命の使徒</content>
   <content contentuid="h748a060egc16cg7d82gf97eg22830dd0c9f1" version="1">呪文スロットを使用して唱えた呪文がクリーチャーのヒット・ポイントを回復させる際、その呪文を唱えたターンに、そのクリーチャーは追加のヒット・ポイントを回復する。追加のヒット・ポイントは、2＋呪文スロットのレベルに等しい。</content>
-  <content contentuid="h45db170cgfec9gad8eg1591gd99ec7aa2b2c" version="2">幸いなる癒し手</content>
   <content contentuid="h6f58f448gfe00g1b2agab56g46c8bf14ca5f" version="1">他者に施す回復呪文は、自分自身も回復させる。自分以外の1体以上のクリーチャーのヒット・ポイントを回復させる呪文を呪文スロットで唱えた直後、自身は2＋呪文スロットのレベルに等しいヒット・ポイントを回復する。</content>
-  <content contentuid="hae1dce65g444ag6a6egf7d3g354c47c64531" version="1">生命保護</content>
   <content contentuid="hf73a03f1g9a62g7708g6ac9ge3ea9b45c4a8" version="1">魔法アクションとして、聖印を掲げ、神性伝導の使用回数を1回分消費することで、クレリック・レベルの5倍に等しいヒット・ポイントを回復できる癒しのエネルギーを呼び起こす。自分から[1]以内にいる「血まみれ」のクリーチャー（自分自身を含む）を選択し、それらのクリーチャー間でそのヒット・ポイントを分配する。</content>
   <content contentuid="haed19d90g7118gfa81g42d5gba4d717eba4c" version="1">血まみれ</content>
   <content contentuid="h28bdf1edg1a62gc8a2gc601gdedb4f01f3b6" version="1">このクリーチャーのヒット・ポイントが50%を下回っている。</content>
-  <content contentuid="h12e63398gc863ged08g09d8g9e2fffc91af3" version="1">神性伝導</content>
-  <content contentuid="h62870381g3b8dgbb2cgfc78gf6ba26bd778f" version="1">神の力を引き出せる回数</content>
-  <content contentuid="h39b48f39g9a41g2ba3g3567g7ab1cb265f82" version="2">身を守る閃光</content>
   <content contentuid="ha7d55e66g6f97ga4b7g45b4g5829f0c36910" version="2">自分から[1]以内に見えるクリーチャーが攻撃ロールを行う際、リアクションを用いて命中またはミスの直前に光を放つことでその攻撃ロールに不利を課すことができる。
 
 この特徴は、自身の判断力修正値（最低1回）に等しい回数だけ使用できる。大休憩を終えると、消費したすべての使用回数を回復する。</content>
-  <content contentuid="h67f1e6b2g8adcge989g555ag3cbae9d62375" version="2">強化した身を守る閃光</content>
   <content contentuid="hcac62cb2g678dgbdc4g4a80g875b53ed7a48" version="1">小休憩または大休憩を終えると、身を守る閃光の消費したすべての使用回数を回復する。
 
 さらに、身を守る閃光を使用するたびに、その攻撃の対象となった者に2d6＋判断力修正値に等しい一時的ヒット・ポイントを与えることができる。</content>
-  <content contentuid="h772e3772g49fdg8cf4g0f02g893153584b30" version="1">身を守る閃光</content>
   <content contentuid="h6c1ab5a0g8a40g1755g2eacg01f53db2903f" version="1">自分から9メートル以内に見えるクリーチャーが攻撃ロールを行う際、リアクションを用いて命中またはミスの直前に光を放つことでその攻撃ロールに不利を課すことができる。</content>
   <content contentuid="h03dc1992g1d8agc3e0ga6bbg22607e81d966" version="1">身を守る閃光（味方）</content>
   <content contentuid="hcb0f1d4dg6ea8gf1eag5e72g32b56f306af2" version="1">身を守る閃光（自分）</content>
-  <content contentuid="hdc4e30afg0702g20ddgf4a5g1751c8b46770" version="2">二重存在</content>
   <content contentuid="h31748432g34ebg740cgf353g2071d6cae486" version="1">ボーナス・アクションとして、神性伝導の使用回数を1回消費することで、[1]以内の見える何もない場所に自分自身の完璧な幻影を作り出すことができる。この幻影は1分（10ターン）間持続する。また、ボーナス・アクションとして、幻影を[1]以内の見える別の何もない場所へ移動させることができる。</content>
   <content contentuid="h002b7ed0g2d07g9ecbg0301g13b767a04c7e" version="2">欺きの位置交換</content>
   <content contentuid="h9d5766b9g0e51g3888g5633gd570f3096a0f" version="1">二重存在による幻影を作成または移動させるためにボーナス・アクションを行う際、自身を瞬間移動させ、幻影と場所を入れ替えることができる。</content>
   <content contentuid="ha73b8276g56b2g1bdegc73bgf16610d268ab" version="1">欺きの位置交換</content>
   <content contentuid="h82f58797g491fg0f3ag42b4g05c22ee9679d" version="1">二重存在による幻影を作成または移動させるためにボーナス・アクションを行う際、自身を瞬間移動させ、幻影と場所を入れ替えることができる。</content>
-  <content contentuid="h63129871gfb37gc314g1fdfg9b10303bcc26" version="2">バードの声援</content>
   <content contentuid="h2810e8cag53f2gddb2gb1bbg7d5f6848ec0b" version="1">言葉、音楽、あるいは踊りを通じて、超自然的な方法で他者に活力を与えることができる。この声援は、d6であるバードの声援ダイスによって表される。
 
 バードの声援の使用：ボーナス・アクションとして、自分から18メートル以内にいて、あなたを見ることができるか、あるいはあなたの声を聞くことができる他のクリーチャー1体に活力を与える。そのクリーチャーは自身のバードの声援ダイスを1つ得る。1体のクリーチャーが一度に持てるバードの声援ダイスは1つだけである。
@@ -194,28 +150,20 @@
 使用回数：自身の魅力修正値に等しい回数（最低1回）だけバードの声援ダイスを付与することができ、大休憩を終えると消費したすべての使用回数を回復する。
 
 高いレベルでは：バード特徴表の「バードの声援ダイス」の列に示されている通り、特定のバード・レベルに達するとバードの声援ダイスが変化する。ダイスはレベル5でd8、レベル10でd10、レベル15でd12になる。</content>
-  <content contentuid="h9e25c63eg08ebg12a0gfefega65d73c0d540" version="2">戦闘司祭</content>
   <content contentuid="h04fd168age75cg9dadgeb9bgce0ceddefc4c" version="1">ボーナス・アクションとして、武器または素手攻撃で1回攻撃を行うことができる。このボーナス・アクションは、自身の判断力修正値（最低1回）に等しい回数だけ使用できる。小休憩または大休憩を終えると、消費したすべての使用回数を回復する。</content>
-  <content contentuid="h3c0eb0ffga3ccgcf65g862bg01f7c36b74b8" version="1">戦闘司祭</content>
   <content contentuid="h8686f980g14cdg48cdg0923g21540c804c00" version="1">ボーナス・アクションとして、武器または素手攻撃で1回攻撃を行うことができる。</content>
-  <content contentuid="h7ea2f219gec23g1a96ga5efgce5d1bc88951" version="1">戦闘司祭: 追加攻撃チャージ</content>
-  <content contentuid="ha96c97feg6fd1gc562g799fgde13a4800459" version="1">ボーナス・アクションとして追加攻撃を得るために使われるポイント</content>
-  <content contentuid="h4dc018cagbaa3ga624g7da2g0a6dab9353ce" version="2">必中打撃</content>
   <content contentuid="ha052e514g0261g1570g0745g00d44f89cc3d" version="1">自分または9メートル以内にいるクリーチャーが攻撃ロールをミスした際、神性伝導の使用回数を1回消費して、その攻撃ロールに+10のボーナスを与え、命中させる可能性がある。この特徴を他のクリーチャーの攻撃ロールに役立てるために使用する場合、リアクションを使用しなければならない。</content>
   <content contentuid="h81ab1ec4g5097gf34cg7f12g4d040607771b" version="2">必中打撃（自分）</content>
-  <content contentuid="h900f0f0bgcd61g0708g6d02gf89738f718de" version="2">戦神の祝福</content>
   <content contentuid="h0c6d3ec2g7683g7e9fg7d62g08a6874b3c5f" version="1">呪文スロットを消費する代わりに、神性伝導の使用回数を消費して「信仰の盾」または「心霊武器」を唱えることができる。この方法でどちらかの呪文を唱えた場合、その呪文に精神集中は必要ない。代わりに呪文は1分（10ターン）間持続するが、その呪文を再び唱えるか、無力状態になるか、あるいは死亡した場合には早期に終了する。</content>
   <content contentuid="h3bb1c07ag3913g5b74g9454gdcebc7737556" version="1">信仰の盾：戦神の祝福</content>
   <content contentuid="hcaeae1ebgf2c5gb598g6716gb1b7c699916c" version="1">心霊武器：戦神の祝福</content>
   <content contentuid="h002f5e57g1181g2dbbg226fgf29f606b801c" version="2">鋼と風の連撃</content>
   <content contentuid="h0da58492g230cg424fg00cdg006fb672dd4d" version="2">発動に使用した武器を構えた後に姿を消し、風のように突撃する。射程内に見えるクリーチャーの隣に再出現し、そのクリーチャーに対して近接呪文攻撃を行う。その後も近くの敵の間を移動して攻撃を続け、合計で最大5体の異なるクリーチャーを攻撃する。命中すると、目標は[1]を受ける。</content>
-  <content contentuid="h84a10acdg5e1fgb4f6g3b55g7f5134f52d10" version="1">精神の棘</content>
   <content contentuid="h05f1c3ebg02fcg677cga473g464cac2d584f" version="1">射程内に見えるクリーチャー1体の精神に、サイオニック・エネルギーの棘を突き刺す。目標は判断力セーヴィング・スローを行い、失敗すると[1]を受け、成功するとその半分のダメージを受ける。セーヴに失敗した場合、呪文が終了するまで常に目標の位置を把握できるようになる。この知識がある間、目標はあなたから隠れることができず、もし目標に不可視状態が付与されていても、あなたに対してはその状態による恩恵を得られない。</content>
   <content contentuid="hd666f94dg1a88g5b93g7dcbgfbc951360305" version="1">神経系撹乱</content>
   <content contentuid="haddaa3c4ga780gc6c0g5533g2da826d6931f" version="1">射程内の地点でサイキック・エネルギーを爆発させる。その地点を中心とした半径[1]の球状範囲内にいる各クリーチャーは知力セーヴィング・スローを行い、失敗すると[2]を受け、成功するとその半分のダメージを受ける。
 
 セーヴに失敗した目標は、1分（10ターン）間思考が混乱する。その間、目標はすべての攻撃ロールと能力値判定、および精神集中を維持するための耐久力セーヴィング・スローから1d6を差し引く。目標は自身の各ターンの終了時に知力セーヴィング・スローを行い、成功すれば自身への効果を終了させる。</content>
-  <content contentuid="hc29da1ffgb5d5g29c2g97c3g2050946f5a23" version="1">精神の棘</content>
   <content contentuid="h3aac9e83g2f2ag85ddgcf84ge7224ea85b8b" version="1">呪文が終了するまで、術者は常にそのクリーチャーの居場所を把握する。クリーチャーは術者から隠れることができず、もし不可視状態であっても、術者に対してはその状態による恩恵を得られない。</content>
   <content contentuid="h0eb6a1ccg061cg7757g2ce7gb1ae17ae8a0f" version="1">神経系撹乱</content>
   <content contentuid="h9e56e88cg0481g2c87g52e7g140df577385c" version="1">クリーチャーは、すべての攻撃ロール、能力値判定、および精神集中を維持するための耐久力セーヴィング・スローから1d6を差し引く。自身の各ターンの終了時に、目標は知力セーヴィング・スローを行い、成功すれば効果を終了させる。</content>
@@ -229,78 +177,27 @@
   <content contentuid="h9cbc738dgd21bg77f4g2687gd1ac412ca2b4" version="1">射程内のクリーチャーまたは物体1体に向けて光の粒を放つ。目標に対して遠隔呪文攻撃を行う。命中した場合、目標は[2]を受け、次の自身のターンの終了時まで、目標は半径[1]の範囲に薄暗い光を放ち、不可視状態の恩恵を受けられなくなる。</content>
   <content contentuid="h6d4e8665g6567g3bc4gd9f1g206db8efad20" version="1">星屑のウィスプ</content>
   <content contentuid="he44a89e4gd251g9a1dg6abagca1e9807a226" version="1">クリーチャーは半径[1]の範囲に薄暗い光を放ち、不可視状態の恩恵を受けられなくなる。</content>
-  <content contentuid="h8d4a4bb1g65b7g5025g4514gdfa80f1282ba" version="1">大雷鳴</content>
   <content contentuid="h853f3b07gf693g964eg9f97g97a2cfda50ef" version="1">自身から発生する[1]の放射状の範囲内にいる各クリーチャーは、耐久力セーヴィング・スローに成功するか、さもなくば[2]を受けなければならない。</content>
   <content contentuid="h59f8cb26gc1aag4dc3g0939ge1b311504647" version="1">ドルイドの秘密の言語であるドルイド語を習得する。この古代の言語を学ぶ過程で、動物と意思疎通を図る魔法も解禁される。常に呪文「動物との会話」が準備された状態になる。</content>
   <content contentuid="h1193aa13ge0d7ge702g2f85ga0c0527d229d" version="3">原始の秩序：ウォーデン</content>
   <content contentuid="h236eb2e6g63d1g6008gac03gd13912a2af7b" version="1">ウォーデン：戦闘訓練を積み、軍用武器の習熟と中装防具の習熟を得る。</content>
   <content contentuid="hdc66e2feg6dc9g8e0dg69c3g1ac135e77240" version="2">原始の秩序：導き</content>
   <content contentuid="h261201bdgf3e1gc0a9g001bg9f21c4b6eb0b" version="1">魔法使い：ドルイドの呪文リストから追加で1つ初級呪文を習得する。さらに、自然との神秘的な繋がりにより、知力（魔法学または自然）判定にボーナスを得る。このボーナスは自身の判断力修正値（最低+1）に等しい。</content>
-  <content contentuid="hf498864agc7beg3cdbgca11g269c576f1a01" version="1">導き</content>
   <content contentuid="h4e0c0b74gabceg8644g0a67g8c877d23dd83" version="2">原始の秩序：毒噴射</content>
-  <content contentuid="h3635dadfgfe4eg55c4g39dfgaf968256d2d8" version="1">毒噴射</content>
   <content contentuid="h5307ff13g4736g2ce2ga66fg11f20a990de2" version="3">原始の秩序：火炎作成</content>
-  <content contentuid="h5169409cg04adgc907gd30eg09ebe8d3738c" version="1">火炎作成</content>
   <content contentuid="h55c47b09ga380g8cf2g15b8g2bedd46fe8e9" version="3">原始の秩序：抵抗力</content>
-  <content contentuid="h69ae862bga7a4g2605g04a4gd9317e169763" version="1">抵抗力</content>
   <content contentuid="hd0c364a3g050eg598bgd2fdg4c1b525be149" version="3">原始の秩序：棍棒</content>
-  <content contentuid="h599263a1g8987g0f3dgf199g149b6068247f" version="1">棍棒</content>
   <content contentuid="hab8ea7d9g7419g79d4ge012g86380a295a02" version="4">原始の秩序：救命措置</content>
-  <content contentuid="hf5a7c07dg5d75g8b41g3ce4g8e350dae85b9" version="1">救命措置</content>
   <content contentuid="hd5bb58c8g9203g4533gc615ga31bea2a2187" version="3">原始の秩序：星屑のウィスプ</content>
   <content contentuid="h8891553bg7ca5g791ag4b95g5a72f6e71ed4" version="1">星屑のウィスプ</content>
   <content contentuid="hc7a0905fg5836g8050gb036gd435c6a53ffd" version="3">原始の秩序：イバラの鞭</content>
-  <content contentuid="h1793f9fbgf70agf3acge48bg70b646b51326" version="1">イバラの鞭</content>
   <content contentuid="h566f5dd1g1db3g0d0age62cg0ff1909892ef" version="3">原始の秩序：大雷鳴</content>
-  <content contentuid="hf81ea6f0gb2bcg2e34g72c5gfeb99fd56826" version="1">大雷鳴</content>
   <content contentuid="ha16fbd5eg7072g66aeg7f0eg739d38d2a607" version="1">原始の秩序</content>
   <content contentuid="h22f70fd0g4354g1c46g6712gdc288b7803e5" version="1">以下の聖なる役割の中から、自身が選択した1つに身を捧げている。</content>
-  <content contentuid="hb670c3bdg0b18g5834g24e2gce9406adf925" version="1">自然の化身チャージ</content>
-  <content contentuid="h0e2c2a49gb8a7g78d8gf687gb0cdc6987be7" version="1">自然の化身を使用できる回数</content>
-  <content contentuid="h8f1b692bg604cgb34cg9e64g7c5d22aebe85" version="2">自然の化身</content>
   <content contentuid="hc6dea6aag9290gf3cegeb8ag0351bd8d0fc5" version="2">ボーナス・アクションを使用して、自然の化身を用いて既知の野獣の姿に変身できる。ボーナス・アクションとして、変身を早期に終了させることもできる。自然の化身は2回使用できる。小休憩を終えると消費した使用回数を1回復し、大休憩を終えるとすべての使用回数を回復する。自然の化身で変身する際、[1]を得る。変身中は呪文を唱えることはできないが、変身によって精神集中が途切れたり、すでに唱えた呪文が妨げられたりすることはない。</content>
   <content contentuid="h8e8ebc40g6f5cg5d29gc885g2f7fb0f2899b" version="2">自然の化身の活力</content>
   <content contentuid="h2e1bf345gb5fcg3bbag17c4g7ac514e8455e" version="1">自然の化身で変身する際、[1]を得る。</content>
-  <content contentuid="h8a519044g61f3g7166g3e0cg6c97799602e4" version="1">自然の化身: アナグマ</content>
-  <content contentuid="h9c56ac47g3984g90a8g0115g3a3000abd94a" version="1">自然の化身: ポーラー・ベア</content>
-  <content contentuid="h55c8bb9fgab04g0e14gce66g6d7734c64973" version="1">自然の化身: 猫</content>
-  <content contentuid="h4bd8abf4gf0adgc66cgc5bag97c641b5e998" version="1">自然の化身: ディープ・ロセ</content>
-  <content contentuid="hb0d5b816gde08g18fag0b3dg87d87c0c5144" version="1">自然の化身: ダイア・レイヴン</content>
-  <content contentuid="h5290eb7agca74g04fdg1c90gf56091132a96" version="1">自然の化身: ジャイアント・スパイダー</content>
-  <content contentuid="h78df260fgc265gf45fg5e7eg3a5e3f320112" version="1">自然の化身: ダイア・ウルフ</content>
   <content contentuid="h3d5751c2gc7e1ge1c7g2187gc1dfba8f54e2" version="1">%% EMPTY</content>
-  <content contentuid="hfad853e7g6d71gc847gc4e1g6c0f425eab30" version="1">自然の化身: アナグマ</content>
-  <content contentuid="h94425109g11ccg2387g6f3ag6e092535cfc7" version="1">自然の化身: 熊</content>
-  <content contentuid="h125b5a75g4894g085age46age0c6df5c916e" version="1">自然の化身: ブラック・ベア</content>
-  <content contentuid="hc5ea7296g02acg34fdgfa7ag6fdba9447454" version="1">自然の化身: グレイ・ベア</content>
-  <content contentuid="h57fcc347g64cfgce00g9684gdc1711bf0132" version="1">自然の化身: ポーラー・ベア</content>
-  <content contentuid="hb16c19a4gbaaege05bg81b8g91dc2a6ce3ba" version="1">自然の化身: 猪</content>
-  <content contentuid="h5ea20feag7ba3g2debga31dg2a7068efca9a" version="1">自然の化身: ディープ・ロセ</content>
-  <content contentuid="h2a2047d4g2ebbg73b4gae60g085e395a05a1" version="1">自然の化身: 蜘蛛</content>
-  <content contentuid="h43604180gb8bag2721g1fb6g15bf4761d06f" version="1">自然の化身: 鼠</content>
-  <content contentuid="h2478c66ag72fbg9200g36ecga9a3f81bd052" version="1">自然の化身: ダイア・レイヴン</content>
-  <content contentuid="head73bd1g04bfg7aedgaa38g5e91178238da" version="1">自然の化身: 狼</content>
-  <content contentuid="h356d9ca7gde59g20cdg3b43g5d69b5e91166" version="1">自然の化身: ダイア・ウルフ</content>
-  <content contentuid="hc9efa391g3349g9633gd775ge547b21394a6" version="1">自然の化身: サーベルタイガー</content>
-  <content contentuid="hf4e0bdf5g2bedgdb25gd9c5ge125ee988248" version="1">自然の化身: パンサー</content>
-  <content contentuid="h4a06421fg399bge851g94a3gc50cf5ac4685" version="1">自然の化身: ディロフォサウルス</content>
-  <content contentuid="h98a60dc7g4df3g01fbg8fd5g832b47cc24aa" version="1">自然の化身: アウルベア</content>
-  <content contentuid="h4171bc8fg8509g75b1g344ag4875cb305165" version="1">自然の化身: エア・ミュルミドン</content>
-  <content contentuid="hd2efd2eag8f2ag8c20g6458g2d2ee404e737" version="1">自然の化身: アース・ミュルミドン</content>
-  <content contentuid="ha20f8cafgc437g2e56ga015ge90f46a9fa2e" version="1">自然の化身: ファイアー・ミュルミドン</content>
-  <content contentuid="hd1247016g50d4g5313gc5d9g817268c918e1" version="1">自然の化身: ウォーター・ミュルミドン</content>
-  <content contentuid="hdcc80e1bg50d8g4d7egf3c5gd88613415b9a" version="1">自然の化身: ダイア・ウルフ</content>
-  <content contentuid="h0fbca55age4a4g5797ga82fge26fc359b66c" version="1">自然の化身: 狼</content>
-  <content contentuid="h4838ee09g3746g4dc0g2baeg7a9ddd9bf1d4" version="1">自然の化身: ダイア・レイヴン</content>
-  <content contentuid="h2a5396efg111ag7d25gf58fgce2d27775b14" version="1">自然の化身: 鼠</content>
-  <content contentuid="h82d61545g3d50gbd71gb81cg49ba5440aca5" version="1">自然の化身: 蜘蛛</content>
-  <content contentuid="he834ae45gcae8gf3bag6df2ga3f6b92b7407" version="1">自然の化身: ディープ・ロセ</content>
-  <content contentuid="h434d69begc8f3gbd6cg78e1gc7b1896221ee" version="1">自然の化身: 猪</content>
-  <content contentuid="h5cdd815bge132g3d37gdabfg758fee1fd2ff" version="1">自然の化身: ポーラー・ベア</content>
-  <content contentuid="h267295feg37f1gf983g6cedg02a6401df1fd" version="1">自然の化身: グレイ・ベア</content>
-  <content contentuid="hd15c9166gcb1dg4177g3646gbdb76e9200cc" version="1">自然の化身: ブラック・ベア</content>
-  <content contentuid="h8d42344bg665dge300g935bg0d9887bee468" version="1">自然の化身: 熊</content>
-  <content contentuid="h59a5a380g59f1gfdb0g9a4fgef72e80eb679" version="1">自然の化身: アナグマ</content>
   <content contentuid="h556b4fb3g5a97gb81cg3f21gd57ac1f02a0d" version="1">%% EMPTY</content>
   <content contentuid="h978ef6fag7931g203cg08ccge7b0c344b3e8" version="2">円環の姿</content>
   <content contentuid="h69bf3828g083cg1e10g408egf0f2ee4c7fe8" version="1">自然の化身で変身する際、月の魔法を導くことができ、以下の恩恵を得る。
@@ -341,7 +238,6 @@
   <content contentuid="h34197e5dgf2d4g066fgdb45gb041adb38595" version="1">ボーナス・アクションで底力を発動させる際、機会攻撃を誘発することなく移動速度の半分まで移動できる。</content>
   <content contentuid="h32fafe3dg30eeg2c3agc543g698e6d46c741" version="1">戦術的転換</content>
   <content contentuid="hfd6115a2g072eg747bg10e1gc93f7616eafe" version="1">ボーナス・アクションで底力を発動させる際、機会攻撃を誘発することなく移動速度の半分まで移動できる。</content>
-  <content contentuid="h62511cd9g27d2g5cbcga820gbb50c459d998" version="2">不屈</content>
   <content contentuid="hb015b8bcg9783ge81ag0118gaa1388097f11" version="2">セーヴィング・スローに失敗した際、代わりにそれを成功として扱うことができる。この特徴を一度使用すると、大休憩を終えるまで再び使用することはできない。</content>
   <content contentuid="h852a89d3g128fga1e5g2fedg98ddac129936" version="1">セーヴィング・スローに失敗した際、代わりにそれを成功として扱うことができる。</content>
   <content contentuid="h858b33e5g3b62g9b7fg692fg50cb883ac903" version="1">タクティカル・マスター：押し出し</content>
@@ -370,7 +266,6 @@
   <content contentuid="h81c64052g4f2bg8257g3f1ag716712683b25" version="1">英雄的戦士：有利で再ロール</content>
   <content contentuid="h4dfef820g9b72g3d0egde23ga602945eec3c" version="1">自身の&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;または&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;に&lt;LSTag Tooltip="Advantage"&gt;有利&lt;/LSTag&gt;を得る。</content>
   <content contentuid="h40d89fa7ga96bgd2a5g9917g93f8ac20286b" version="1">英雄的インスピレーション</content>
-  <content contentuid="h82e9547dg2a57g3068g6744g22536b77a26f" version="2">魔法戦士の武技</content>
   <content contentuid="h4f0291dage2acga1e7g22a4ga4748a927a0d" version="1">追加攻撃2（初級呪文）</content>
   <content contentuid="h9a6cdeb9g51d2g4ed0gb4e4gb453d3f8c2e7" version="1">自分のターンに攻撃アクションを行う際、1回ではなく3回攻撃できる。
 
@@ -379,26 +274,17 @@
   <content contentuid="hd383ab64gcd01g6437g4439gcce1bcafb30c" version="1">自分のターンに攻撃アクションを行う際、1回ではなく3回攻撃できる。
 
 さらに、それらの攻撃のうち1回の代わりに、発動時間が1アクションである初級呪文を1つ唱えることができる。</content>
-  <content contentuid="h66ceeddfg85e7gf6e6g45fdgf681167aa694" version="2">戦技ダイス強化</content>
   <content contentuid="h1a9ea1d9gcca2gd533gd087g0e05473a8b97" version="2">鎧わぬ守り</content>
   <content contentuid="hb6df1fdbgd732gf839g1534g7c3a49d1d89d" version="1">鎧を着用せず盾も装備していない間、自身の基本アーマー・クラスは10に敏捷力修正値と判断力修正値を加えた値になる。</content>
-  <content contentuid="h9693b20eg4b48g52f3g8ec0gd315398b9984" version="2">武術：抜け目ない攻撃</content>
   <content contentuid="h24c5605eg0a01ge915g6899g61b6123a76ea" version="1">素手であるかモンク武器のみを装備しており、かつ鎧を着用せず盾も装備していない間、以下の恩恵を得る。</content>
   <content contentuid="h0bdd8181g1932g81d9g02c5g5f889a86df8f" version="2">武術：武術ダイス</content>
   <content contentuid="h8e235ae9geb66g5d58g1353gd372c6850cab" version="1">素手であるかモンク武器のみを装備しており、かつ鎧を着用せず盾も装備していない間、以下の恩恵を得る。</content>
-  <content contentuid="hb6bd2af0gd6f7g18c7g118fgea0d3d7cc5c5" version="2">武術：ボーナス素手攻撃</content>
   <content contentuid="he192df4agfe10gd5ceg7151gebb776ff39e4" version="1">ボーナス・アクションとして素手攻撃を行える。</content>
   <content contentuid="h98c8bddbge30fgeb55gb667gd793986d0ded" version="1">素手であるかモンク武器のみを装備しており、かつ鎧を着用せず盾も装備していない間、以下の恩恵を得る。</content>
   <content contentuid="hd1fc430dg69bagc256g2318g1055bfa2fc27" version="1">護身</content>
   <content contentuid="h4c44c0abg262cg8e6egf06cg92cf676855e3" version="1">集中ポイントを1消費することで、ボーナス・アクションとして離脱と回避の両方のアクションを行うことができる。</content>
-  <content contentuid="hdd4e66dbg0ac9g5c5dg463eg6076392563ce" version="1">疾風足</content>
   <content contentuid="h83374bedgf40agd759g1784gd9c5f24545a3" version="1">集中ポイントを1消費することで、ボーナス・アクションとして離脱と早足の両方のアクションを行うことができ、そのターンのジャンプ距離が2倍になる。</content>
-  <content contentuid="h554e1c9cgf636g08a4gf6ebg1d3611ee623a" version="1">疾風足</content>
   <content contentuid="ha6d44a5ag5a9ag0c67gfbb0ge9a5772193c3" version="1">そのターンのジャンプ距離が2倍になる。</content>
-  <content contentuid="h8e2c71efgf381g9eb7gaf5cg2760015a45e2" version="1">早足</content>
-  <content contentuid="hdfc28510gf4cdgb66eg531fg3918cc8b3df9" version="1">このターンの移動距離を延ばす。&lt;LSTag Tooltip="MovementSpeed"&gt;移動速度&lt;/LSTag&gt;を倍にする</content>
-  <content contentuid="h78c4f622gbb2cg3636gb74cg733fbf8d0b37" version="1">離脱</content>
-  <content contentuid="h5248daffg03b1g4eeeg4498gaafc4796eece" version="1">安全に退却する。移動しても&lt;LSTag Tooltip="OpportunityAttack"&gt;機会攻撃&lt;/LSTag&gt;を誘発しない</content>
   <content contentuid="h62169240g157dg0599gc2d2g3c5611236273" version="2">運足法</content>
   <content contentuid="hdd7cc0dcg93b5g2722g9ad5g75eb1fd5edf9" version="2">運足法 2</content>
   <content contentuid="hbb2da776g993fg5373g95abg3f33446175c5" version="2">運足法 3</content>
@@ -420,11 +306,9 @@
   <content contentuid="h0f7f1f15gc38bgcaeeg96aegf18e8377c301" version="1">ダメージを軽減し、攻撃者へと跳ね返す。</content>
   <content contentuid="hd8199896gbae1g11ceg6ba1g523b41f8b9ef" version="1">攻撃そらし：転嫁</content>
   <content contentuid="h4487767egdb77g3708g93a8gd0279452056a" version="1">ダメージを軽減し、攻撃者へと跳ね返す。</content>
-  <content contentuid="ha8c51db9g127cg0f8dgf557g402626436b8c" version="2">浮身</content>
   <content contentuid="h726e4c54g614fg70ccg5ebag4c572b51fbe4" version="2">気打撃</content>
   <content contentuid="h3eabcb35gf264g4f8ag9c30g123cbc8fd2b8" version="2">自身の素手攻撃は、非魔法および魔法ダメージの両方に対する&lt;LSTag Tooltip="Resistant"&gt;抵抗&lt;/LSTag&gt;を克服する。</content>
   <content contentuid="hc6a55712gd62cgd5e7g68d8g0007496a3e1e" version="3">軽業移動</content>
-  <content contentuid="hcb9a361cg3dadgecb2gdae1g23fc5f5c3919" version="2">身かわし</content>
   <content contentuid="h33c22a3cg9bbaga9c8g65e2g0701352832a0" version="2">集中高揚</content>
   <content contentuid="h3bb523e2gc26eg22c2g87e9g4e1e0da5e1af" version="2">自身の連打、護身、および疾風足は以下の恩恵を得る：
 
@@ -434,7 +318,6 @@
   <content contentuid="hddf40c2dge503g0c52g70e0g81df540da740" version="1">集中高揚</content>
   <content contentuid="h96955479gc03cg5656g398ega8e7e632c8a3" version="1">自身の武術ダイス2ロール分に等しい一時的ヒット・ポイントを得る。</content>
   <content contentuid="hb0d0ae76g515agec5dg8b3fgfef5c6b386f3" version="2">自己修復</content>
-  <content contentuid="hb6524b85g7c46g835fg5ec8g505bf3a2d396" version="2">無病身</content>
   <content contentuid="hc41f1b91gbedcg876fg1542g2c46f2f4be27" version="2">影の術</content>
   <content contentuid="h62e16743gcb72g9068gb2d0gb1a62ea9d321" version="1">シャドウフェルの力を引き出す術を学び、以下の恩恵を得る。
 
@@ -472,12 +355,9 @@
   <content contentuid="ha9461978g325bg8b56g0b7fga747967bcf5b" version="1">元素爆発：雷鳴</content>
   <content contentuid="hd0321dfag2f41g5984g2a27g4ba878286102" version="2">元素歩法</content>
   <content contentuid="h90c565bfgdc8eg1fc2gde60ga457cc60135b" version="1">自身の元素調和が有効な間、自身の移動速度に等しい飛行速度と水泳速度も得る。</content>
-  <content contentuid="hbe92a07bg1800gd2e8g079fg1e0f39ce73ce" version="1">肉体の完成</content>
-  <content contentuid="h4feabb8egaa22g3d36gc857g512930772995" version="2">肉体の完成</content>
   <content contentuid="hd5f70284g45c5g71b8g7505g337ea5751295" version="1">自身を癒やす能力を得る。ボーナス・アクションとして、武術ダイスをロールできる。ロールされた出目に自身の判断力修正値を加えた値（最低1ヒット・ポイント回復）に等しいヒット・ポイントを回復する。
 
 この特徴は自身の判断力修正値（最低1回）に等しい回数だけ使用でき、大休憩を終えると消費したすべての使用回数を回復する。</content>
-  <content contentuid="h25c230c0g01dbg6406g2c50gfc3e4aa92e7f" version="1">肉体の完成</content>
   <content contentuid="h202adf83g5a60g677dg2f14g1cbdfc06aeab" version="1">ボーナス・アクションとして、武術ダイスをロールできる。ロールされた出目に自身の判断力修正値を加えた値（最低1ヒット・ポイント回復）に等しいヒット・ポイントを回復する。</content>
   <content contentuid="hbbdecd13gacf6ga6bcge4dfga9e9fdd39678" version="2">迅速な歩み</content>
   <content contentuid="h9f4fd43dgb96cg804dg3440g15b0a150a3ec" version="1">ボーナス・アクションを消費することなく疾風足を使用できる。</content>
@@ -485,7 +365,6 @@
   <content contentuid="hd97fac61ge406g7715gc8b7g188472b4140a" version="1">この重武器を装備しているクリーチャーの筋力値が[1]より低い場合、その武器による攻撃ロールに不利を受ける。</content>
   <content contentuid="h73497683g65cdged9eg85abge93a8ba9aede" version="1">ルール：必要敏捷力（遠隔重武器）</content>
   <content contentuid="h07e8d8cdgee47gf8bdge26eg6ddb468803f3" version="1">この重武器を装備しているクリーチャーの敏捷力値が[1]より低い場合、その武器による攻撃ロールに不利を受ける。</content>
-  <content contentuid="hc453b2f8ga64fg8d50g0cb0g4a53f20b32d9" version="3">誓いの伝導</content>
   <content contentuid="ha840fbb3g435eg87ebgd676g3fc781ce7b67" version="1">外次元界から直接誓いのエネルギーを導き、魔法効果の糧とすることができる。最初は「聖邪感知」という効果から始まる（詳細は後述）。他のパラディンの特徴により、追加の誓いの伝導の選択肢が得られる。このクラスの誓いの伝導を使用するたびに、どの効果を発生させるか選択する。
 
 このクラスの誓いの伝導は2回使用できる。小休憩を終えると消費した使用回数を1回復し、大休憩を終えるとすべての使用回数を回復する。パラディン・レベル11に達すると、追加の使用回数を1回得る。
@@ -518,8 +397,6 @@
 乗騎に騎乗している間、4以上のダメージを受けた際、難易度8の敏捷力セーヴィング・スローを行わなければならない。セーヴに失敗した場合、乗騎から落馬し、1ターンの間伏せ状態になる。</content>
   <content contentuid="h1a6f7528gc5efg5c9bge4f9gf7eb55315d54" version="1">乗騎のアクション・ポイント</content>
   <content contentuid="hdbb54662gd707gd172gbdfdgd57e57e3b819" version="1">乗騎は各ターンの開始時に、以下の任意のアクションを1つ行うことができる：早足、離脱、回避、あるいは攻撃。</content>
-  <content contentuid="he8975525g4266g8430g813bg4d65176a35f5" version="1">叩きつけ</content>
-  <content contentuid="he8006ed5gf2f6gd6ceg798dg91c566666c82" version="1">回避</content>
   <content contentuid="h5c0401b6g3fc4gaadagf4bbg097715066c52" version="1">攻撃を回避することに集中している
 
 敵の&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;に&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;を課し、自身は敏捷力&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;に&lt;LSTag Tooltip="Advantage"&gt;有利&lt;/LSTag&gt;を得る</content>
@@ -531,7 +408,6 @@
   <content contentuid="h1b6d335fg71e3g921bg96efgd3563a3e9d4b" version="1">パラディンおよび付近の味方は、死霊、精神、および光輝ダメージに対する抵抗を得る。</content>
   <content contentuid="he4565ab2g2625gaeb8g694eg929ab02e448c" version="1">パラディンおよび付近の味方は、死霊、精神、および光輝ダメージに対する抵抗を得る。</content>
   <content contentuid="hae6c4966g7a68ga1edg4bc6gae39ac7aeb6b" version="1">自身および付近の味方は、死霊、精神、および光輝ダメージに対する抵抗を得る。自身が気絶状態になると、このオーラは消失する。</content>
-  <content contentuid="h36197b70g60e1g9d30g020ag5ebf5202eade" version="2">執拗なる復讐者</content>
   <content contentuid="h2c05bd1dg9548g9d0ag66dbgd31ce3af6dab" version="1">&lt;LSTag Tooltip="OpportunityAttack"&gt;機会攻撃&lt;/LSTag&gt;を敵に命中させた場合、現在のターンの終了時までそのクリーチャーの移動速度を0にできる。そして、自身の次のターンの&lt;LSTag Tooltip="MovementSpeed"&gt;移動速度&lt;/LSTag&gt;が[1]上昇する。</content>
   <content contentuid="hd54cf49fg52f9gc82fg23ddg240455666d75" version="1">執拗なる復讐者の敵</content>
   <content contentuid="h4580d441g9dc0gbc53g7a59g25cce7bd8ba2" version="1">移動不能。「執拗なる復讐者」による&lt;LSTag Tooltip="OpportunityAttack"&gt;機会攻撃&lt;/LSTag&gt;で拘束されている。</content>
@@ -553,12 +429,6 @@
   <content contentuid="hc95f4dcfg8caeg69e9gc8b5ge035fe1dc1a3" version="1">魔法アクションとして、自身に1d8＋判断力修正値（最低1）に等しい数の一時的ヒット・ポイントを与えることができる。</content>
   <content contentuid="h2f7f0018g2af3g31ccg0cdbgcc4bb940f132" version="1">執念</content>
   <content contentuid="h3c5b5f7eg291agf227g9011gc0565f5cdd4d" version="1">魔法アクションとして、自身に1d8＋判断力修正値（最低1）に等しい数の一時的ヒット・ポイントを与えることができる。</content>
-  <content contentuid="hcff76038gf183g3e0cg380cgd7a4d9b485d4" version="1">レンジャー</content>
-  <content contentuid="hbd354410g485cg7eb3gce6cg2beae2ab9c6b" version="1">レンジャーは並ぶ者のない斥候にして追跡者で、獲物を狩るため自然と深くつながっている</content>
-  <content contentuid="h051d1aa3gfcbeg10d5g5326g1eec2d4e3962" version="2">高度訓練</content>
-  <content contentuid="he1cd6837ge579g13b4g4394g33ea8c725e00" version="2">野獣の怒り</content>
-  <content contentuid="h1fe98af2g42d0g348cga592g953cb60ce5e7" version="3">仲間の絆</content>
-  <content contentuid="hb6c39153g0c9dg0ddeg1910g4688906cf811" version="2">恐るべき奇襲</content>
   <content contentuid="h761a2d1bgfaa4g6c2fgbda3g198675b6a886" version="1">恐るべき伏撃の術を極め、以下の恩恵を得る。
 
 待ち伏せの跳躍：各戦闘の最初のターンの開始時に、そのターンの終了時まで移動速度が[1]上昇する。
@@ -566,14 +436,11 @@
 恐るべき打撃：武器攻撃をクリーチャーに命中させた際、追加で[2]を与えることができる。この恩恵は1ターンに1回のみ使用でき、自身の判断力修正値（最低1回）に等しい回数だけ使用可能で、大休憩を終えると消費したすべての使用回数を回復する。
 
 イニシアチブ・ボーナス：イニシアチブをロールする際、そのロールに自身の判断力修正値を加算できる。</content>
-  <content contentuid="h3b984b2eg48d2ga0a4g5cf8g78f1337ffab6" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;移動速度&lt;/LSTag&gt;が[1]上昇する</content>
   <content contentuid="hbfb12c80g2d3cg0fc7ga570g61985f1e0903" version="1">恐るべき打撃</content>
   <content contentuid="hf0903b4fgdab0g610fgf651g1cf01ed26e14" version="1">武器攻撃をクリーチャーに命中させた際、追加で2d6の精神ダメージを与えることができる。この恩恵は1ターンに1回のみ使用でき、自身の判断力修正値（最低1回）に等しい回数だけ使用可能で、大休憩を終えると消費したすべての使用回数を回復する。</content>
   <content contentuid="h5f7c0abdg7063gcfe9g177egb32caeb5c2c3" version="1">恐るべき打撃（近接）</content>
   <content contentuid="hf3f8bd9cg3004g6dbbg08e2g587dc0432a14" version="1">恐るべき打撃（遠隔）</content>
-  <content contentuid="h44cf5afdg1bddgc6d5g9577gcc6cc00bfd12" version="2">鋼の心</content>
   <content contentuid="h834d7e4cg19fdgd3acg2b88g50ab0030af80" version="1">精神を揺さぶる力に抗う能力を研ぎ澄ました。判断力セーヴィング・スローに習熟を得る。</content>
-  <content contentuid="hd3f07304gfb55ge28ega3f7g0cf1292516a3" version="2">追跡者の連撃</content>
   <content contentuid="h374216bbgf985gc96cg64b3g959b101fd376" version="1">自身の恐るべき打撃のダメージが[1]になる。目標は自身の呪文セーヴ難易度に対する判断力セーヴィング・スローを行わなければならない。失敗した場合、そのクリーチャーは自身の次のターンの開始時まで恐怖状態になる。
 
 あなたはミスを新たな一撃に変えられるほど素早い。武器攻撃をミスした際、無料で再び武器攻撃を行える。</content>
@@ -586,18 +453,12 @@
   <content contentuid="haf3b75e3g8f42g8af5ge959ga8ee656088f7" version="1">ボーナス・アクションとして、現在のターンの次の攻撃ロールに有利を得る。この特徴は、このターン中に移動していない場合にのみ使用でき、使用後は現在のターンの終了時まで移動速度が0になる。</content>
   <content contentuid="h4c5295e0g7006g010bg62b8gfa3c901f3027" version="2">安定的な狙い</content>
   <content contentuid="h49585eb0g7c75g3df5g4aacg38e6e664edb2" version="1">ボーナス・アクションとして、現在のターンの次の攻撃ロールに有利を得る。この特徴は、このターン中に移動していない場合にのみ使用でき、使用後は現在のターンの終了時まで移動速度が0になる。</content>
-  <content contentuid="hdd434d50g0d94g6819ge916g55203c553e86" version="2">確かな技術</content>
-  <content contentuid="h21f511b2g92a9g1aafg61d4g9e8e4ad1e872" version="2">直感回避</content>
-  <content contentuid="he94ba142g4f1bg9badge483g5c206c0854b1" version="2">身かわし</content>
   <content contentuid="h97dd1bbcg1ca7g6953g67d7g155182b6526b" version="1">特定の危険を巧みにかわすことができる。敏捷力セーヴィング・スローに成功すれば半分のダメージで済むような効果を受ける際、セーヴに成功すればダメージを全く受けず、失敗しても半分のダメージしか受けない。無力状態の場合、この特徴を使用することはできない。</content>
   <content contentuid="h95ef44fegf44dg26b7g490bg4d2254baeba6" version="1">敏捷力セーヴィング・スローに成功すれば半分のダメージで済むような効果を受ける際、セーヴに成功すればダメージを全く受けず、失敗しても半分のダメージしか受けない。
 
 無力状態の場合、この特徴の恩恵を受けることはできない。</content>
   <content contentuid="h0523c40bg9f42g36bcg9e1cg6081c59ba79a" version="2">急所攻撃強化</content>
   <content contentuid="hd984038eg2324g666bg83degd9c1722e9df2" version="3">急所攻撃のダメージ・ダイスが追加で[1]増加する。</content>
-  <content contentuid="h29957e67gbc02g6407ga341g2f35096e19da" version="2">奇襲魔法</content>
-  <content contentuid="hfa85e2b2g9e54g0b5ag0128gfecef70e4d09" version="2">欺きの魔道士の手</content>
-  <content contentuid="hd3262b0cgdce0gf4d4g8fc6g529f4ebed5df" version="2">暗殺術: イニシアチブ</content>
   <content contentuid="hf4183fbcg8e1dg3584gff57g9ebed1bead51" version="2">イニシアチブ・ロールに有利を得る。</content>
   <content contentuid="he1d36468gaf5dg2d18ge59agffc2c79d636d" version="2">暗殺術：不意打ち</content>
   <content contentuid="hf357f8d7g161dg5711g5d18gf26bc2d2273f" version="1">各戦闘の第1ラウンド中、まだターンを終えていないクリーチャーに対する攻撃ロールに有利を得る。そのラウンド中に急所攻撃が目標に命中した場合、目標は自身のローグ・レベルに等しい武器種別の追加ダメージを受ける。</content>
@@ -617,12 +478,8 @@
   <content contentuid="hae41811bg62eeg0a5bge75bgde45ea1213a3" version="1">ボーナス・アクションとして、現在のターンの次の攻撃ロールに有利を得る。</content>
   <content contentuid="h6e517fa0g6790g8599ga038gec0254c7fae0" version="2">遊撃の狙い</content>
   <content contentuid="h4ad37d2fg7e63g64e1g0db3g45844045ca7d" version="1">安定的な狙いを使用しても移動速度が0にならない。</content>
-  <content contentuid="he1072514g2359gf4c9g9ab0gf2fd8d2183ce" version="2">器用な指先</content>
   <content contentuid="h127592e2g23a4gc43cg2c3fgbbf222b3b2d1" version="1">ボーナス・アクションとして「投擲」を使用できる。また、ボーナス・アクションとして「呪文の巻物」を使用できる。呪文の巻物を使用するための要件に変更はない。</content>
-  <content contentuid="h3cad8c7eg48eeg5692g23c0g79706df73d92" version="2">屋根渡り</content>
   <content contentuid="h2fc3807bg34e4gbdbeg88f4gb50fa0facd7e" version="1">投擲：器用な指先</content>
-  <content contentuid="h60ea26b2gbcebg085dg4445g8f07a9d3ff4c" version="1">パラディン</content>
-  <content contentuid="h3bda8161g54fbg0765gf90ag164a1cc634ba" version="1">正義と大義を掲げ、立てた誓いに燃えるあなたは、難局における希望の光である</content>
   <content contentuid="h7cb6863bgbcc6g197agc84bg25e1ade48c39" version="1">生得の魔法</content>
   <content contentuid="he28b1437g3278g7202g8a7dg0bb7c36a5d7a" version="1">過去の出来事があなたに消えない印を残し、内に秘めた魔法を吹き込んだ。ボーナス・アクションとして、その魔法を1分（10ターン）間解放することができ、その間は以下の恩恵を得る：
 
@@ -639,9 +496,6 @@
 自身が唱えるソーサラー呪文の攻撃ロールに有利を得る。
 
 この特徴は2回使用でき、大休憩を終えると消費したすべての使用回数を回復する。</content>
-  <content contentuid="hf7441cebg5087gb813g35d8g6732e3fae8e6" version="1">魔力点</content>
-  <content contentuid="h8b175862g0d58g482ag2d06g7b4654769d66" version="1">魔力点はソーサラーの重要な力だ。消費することで呪文を強化し、より高いレベルの&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を使用できるようになる</content>
-  <content contentuid="hc9e4f723g5054g3b21ga6bage65df9a6ae78" version="1">呪文修正</content>
   <content contentuid="h98cf324dg4c24g1b78gdb54g670e46f0f8fb" version="1">自身の必要に合わせて呪文を歪める能力を得る。以下の呪文修正の選択肢から選択する。
 
 ソーサラー・レベル10でさらに2つの選択肢を得る。</content>
@@ -661,24 +515,12 @@
   <content contentuid="h0475c80dgb3d2g65a0g32e3g51e0604b9fae" version="1">1分（10ターン）間、秘儀の儀式を行うことができる。終了時に、消費した契約魔法の呪文スロットを、最大値の半分（端数切り上げ）を超えない範囲で回復する。この特徴を一度使用すると、大休憩を終えるまで再び使用することはできない。</content>
   <content contentuid="hbe38acefg243eg2454ge187g5d1c50d4bb2b" version="3">妖術の精神</content>
   <content contentuid="h9958bcb7g9126g6467g3b95g0f07e49ea19d" version="1">精神集中を維持するための耐久力セーヴィング・スローに有利を得る。</content>
-  <content contentuid="ha12d8231ga51ag15b0gaa53g6e00282dc4a2" version="2">剣の契約</content>
-  <content contentuid="he1bd3e3eg338fg58d5g3de3g9be05e9302e7" version="2">鎖の契約</content>
-  <content contentuid="h9e2924dag8101gd3b2g68a2g6add03aed4dd" version="2">書の契約</content>
-  <content contentuid="h25396b5dgdf7bg8d51g09d5g87f669d3be25" version="2">影の鎧</content>
-  <content contentuid="h25cfc459ge325g3d22g7037g9a95573234b1" version="2">苦悶の怪光線</content>
-  <content contentuid="h56007d5dgf3f2gc9c2g10eegc2fef230c9e6" version="2">悪魔の目</content>
-  <content contentuid="hf94f288fge015g4a15g6c34g367d15c45d89" version="2">長距離怪光線</content>
-  <content contentuid="hc803f28bg3024g3fd8gc979gbeb1263f4991" version="2">百面相</content>
-  <content contentuid="ha97e7097gda9cgc3eegbb86g9bf88d36ee68" version="2">怪跳躍</content>
-  <content contentuid="hd47c4e1cg1e7ag651cg8c57g7deb405ec80c" version="2">拒絶の怪光線</content>
   <content contentuid="h425487e0g16b7ga256gb63ag56872a5ea672" version="2">妖術の一撃</content>
   <content contentuid="h4d483577g0d77g722dg50ddga9f231b29ec2" version="1">各ターンに一度、契約武器をクリーチャーに命中させた際、契約魔法の呪文スロットを消費して、目標に追加で[1]を与え、さらに呪文スロットのレベルごとに1d8を加算できる。また、目標が「巨大」サイズ以下であれば、目標を伏せ状態にすることができる。</content>
-  <content contentuid="hc0ad688dged59g744fgf3e6g1e706f4ee29c" version="2">影なる者</content>
   <content contentuid="hb2501172gdfd6gb7ebg0621ga38a34e3f573" version="2">渇望の刃</content>
   <content contentuid="ha794dab4gf433ga08bg7d82gda68964c691c" version="1">自身の契約武器に対してのみ、追加攻撃の特徴を得る。この特徴により、自身のターンに攻撃アクションを行う際、その武器で1回ではなく2回攻撃できる。</content>
   <content contentuid="h0c1dba3ag239egef50g0d52g47241e4e6016" version="2">鎖の支配者の投資</content>
   <content contentuid="he5f3196agc9ccg5177gedd9ged594f4d1f5a" version="2">深淵の贈り物</content>
-  <content contentuid="h307a5339gff1ag9485g5387gfb0813a818b3" version="2">墓のささやき</content>
   <content contentuid="hd7310e4agc213gc092gf6fag5e8c8130b34d" version="2">守護者の贈り物</content>
   <content contentuid="h87d4e985gc3a3g6b66g2385g07e2b48896df" version="1">&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を消費することなく&lt;LSTag Type="Spell" Tooltip="Target_DeathWard"&gt;死からの守り&lt;/LSTag&gt;を唱えることができる。</content>
   <content contentuid="hd84b885bge9e8g3573gd4ffg49076a30df65" version="1">前提条件：ウォーロック・レベル2以上</content>
@@ -694,37 +536,23 @@
   <content contentuid="ha94435d8g091cgce68gaca4gc20e3eea7844" version="1">前提条件：ウォーロック・レベル5以上、「鎖の契約」の妖術</content>
   <content contentuid="h5c3434c5ge1cfg2712gf301g25080935ac60" version="1">前提条件：ウォーロック・レベル5以上、「書の契約」の妖術</content>
   <content contentuid="h79064293gdc22g33fcgf577g81a7411a9720" version="1">前提条件：ウォーロック・レベル9以上</content>
-  <content contentuid="hb8aec518g6d45g1454g58cbgbac23fec6617" version="2">命取りの剣</content>
   <content contentuid="h35551526g84e1g78f3g1277g241f3a6077bb" version="3">各ターンに一度、契約武器をクリーチャーに命中させた際、そのクリーチャーに追加で[1]を与えることができる。さらに、自身のヒット・ダイスを1個消費してロールし、その出目に自身の耐久力修正値を加えた値に等しいヒット・ポイントを回復できる（最低1ヒット・ポイント）。</content>
   <content contentuid="hb7444fe8g6554g6a31ged37g03cc050ef8d3" version="1">前提条件：ウォーロック・レベル9以上、「剣の契約」の妖術</content>
   <content contentuid="hd69af339g9d2bg91b6gba38g8dbeb8503f7b" version="2">貪り食う刃</content>
   <content contentuid="haf78a66bg2f9bg5fb7g8c9ag5da07aa459f4" version="1">渇望の刃の妖術による追加攻撃が、1回ではなく2回の追加攻撃を付与するようになる。</content>
   <content contentuid="hc579ca24g72d1g35dfg46c5g5274d47b30cc" version="1">前提条件：ウォーロック・レベル12以上、「渇望の刃」の妖術</content>
-  <content contentuid="h007cf464gd375gf74bg38ccgdc14ddbc38cf" version="2">野獣の言葉</content>
-  <content contentuid="h0f9d1ae5g4592g2f49gb8c7g87c552837f15" version="2">巧言令色</content>
-  <content contentuid="h6657b78egb581g0244g06feg115830c4d5fe" version="2">運盗む五ツ星</content>
   <content contentuid="h96b23ed5g9f6eg5ed9gc731gf83643845844" version="1">前提条件：ウォーロック・レベル2以上</content>
-  <content contentuid="hda228a0eg1468g0defg7675gfa912f042658" version="2">精神の沼地</content>
   <content contentuid="h8dd81e23g9a97gc012g10f6g34aea3e1b3be" version="1">前提条件：ウォーロック・レベル5以上</content>
-  <content contentuid="hdb88100cgafa2g940ag4433gb000edb33a07" version="2">凶兆の印</content>
   <content contentuid="h1b7fb0eag8d29g4cf4g04fag91b2e056cf0c" version="1">前提条件：ウォーロック・レベル5以上</content>
-  <content contentuid="hda504259gf2e4g3266g40fdge92c642b1182" version="2">古き秘密の書</content>
   <content contentuid="hdc954407ge07fg170agc027gb3ac7e6afda9" version="1">前提条件：ウォーロック・レベル5以上</content>
-  <content contentuid="h0738ad5cg28e2g4092gfc87gc94c75bc8f5b" version="2">恐ろしき言葉</content>
   <content contentuid="h1e82dd96g79f2g67a9g365dgc089cab1b728" version="1">前提条件：ウォーロック・レベル7以上</content>
-  <content contentuid="h1fb30dc3ge20dgcb22g34d0gcdd0e387793b" version="2">肉体変容</content>
   <content contentuid="hd6f07d39ge321g7e13gcdabgbcbf12aaa406" version="1">前提条件：ウォーロック・レベル7以上</content>
-  <content contentuid="h5ebc0953g6724g72fageab4g7f5682f9fb32" version="2">混沌のしもべ</content>
   <content contentuid="hf1a63187g9766gc5aeg0b86g693324a45025" version="1">前提条件：ウォーロック・レベル9以上</content>
   <content contentuid="h3098d03bg9b76gd04eg7ef8g689022ec62ad" version="1">妖術：守護者の贈り物</content>
   <content contentuid="had9ee1e5g5369g47b5g65c4g37b956523a59" version="1">精神裂片</content>
   <content contentuid="h3f49f302g9b29g72f7g25f0g2f3ff3297c48" version="1">射程内に見えるクリーチャー1体の精神を一時的に削ろうとする。目標は知力セーヴィング・スローに成功するか、さもなくば[1]を受け、次の自身のターンの終了前に行う次のセーヴィング・スローから1d4を差し引かなければならない。</content>
   <content contentuid="h1be8ef4cg573bg9247g8bf7gbe003418678b" version="1">ダメージを与え、かつ射程を持つウォーロックの初級呪文を唱える際、その射程が1.5倍に延長される。</content>
   <content contentuid="h92b0f41cg7222g57a1gf293g5f9b67f6c76a" version="1">攻撃ロールを要求するウォーロックの初級呪文：そのような初級呪文を「大型」サイズ以下のクリーチャーに命中させた際、そのクリーチャーを自分から直接遠ざける方向へ[1]まで押しやることができる。</content>
-  <content contentuid="h63854322g2981gf688g3b17g3be3eb3cbaea" version="1">怪光線</content>
-  <content contentuid="h5821657eg6a48gdd10gb380ga906788793a5" version="1">バチバチとしたエネルギーの[1]本のビームを呼び出す</content>
-  <content contentuid="ha82b5e6dgb4b1gb2a1g8b53g475515ffec20" version="1">唸る剣</content>
-  <content contentuid="h0e37672dgdb7bg5838g12bcg8e96a88d3d98" version="1">武器で攻撃し、[1]の間敵が動くと痛めつける共鳴で苦しめる</content>
   <content contentuid="hde7eade7g981dg355bg6e30g0089c6fe0377" version="1">百発百中（近接）</content>
   <content contentuid="hfc5b991fgffcdgbc3bgbe4eg4bbb47637ce8" version="2">魔法的な洞察の閃きに導かれ、呪文の発動に使用した武器で1回攻撃を行う。この攻撃の攻撃ロールとダメージ・ロールには、筋力や敏捷力の代わりに自身の呪文発動能力を使用する。攻撃が命中してダメージを与える場合、光輝ダメージか武器の通常のダメージ種別のいずれか（任意で選択）にできる。</content>
   <content contentuid="hc48575fbg3411gc50ag88aeg18f05fb53a0f" version="1">百発百中（遠隔）</content>
@@ -752,16 +580,11 @@
   <content contentuid="hd23c4cc6g5a99gc62eg7220ge0f7cee47aba" version="1">各ターンに一度、契約武器をクリーチャーに命中させた際、契約魔法の呪文スロットを消費して、目標に追加で1d8の力場ダメージを与え、さらに呪文スロットのレベルごとに1d8を加算できる。また、目標が「巨大」サイズ以下であれば、目標を伏せ状態にすることができる。</content>
   <content contentuid="h24650f10g65f0gdad5g30cdg3e4777297c7c" version="2">学者</content>
   <content contentuid="h32ed567egee36g91e1g2accgb992c0f4d730" version="1">魔法を学ぶ傍ら、別の研究分野も専門とした。習熟している以下の技能から1つ選択する：魔法学、歴史、捜査、医術、自然、あるいは宗教。選択した技能に習熟強化を得る。</content>
-  <content contentuid="h2f5671feg10a3g6221g9db1gcd1af3a88f5b" version="2">習熟強化</content>
   <content contentuid="h9e315a90g0705gb2c6g1a8eg13de362924de" version="1">習熟している技能の中から、任意で2つに習熟強化（ルール用語集を参照）を得る。もし習熟しているなら芸能と説得が推奨される。
 
 バード・レベル9において、さらに任意で2つの技能習熟に習熟強化を得る。</content>
-  <content contentuid="h1d573d0cg0ef8gc58cg5d87gf7b0ce7fc23d" version="2">魔法の秘密</content>
   <content contentuid="hd5715a4dge184g890agee7ag4f904fb90c6b" version="1">さまざまな魔法の伝統から秘術を学んだ。バード・レベル（このレベルを含む）に達し、バード特徴表の準備呪文数が増加するたびに、バード、クレリック、ドルイド、およびウィザードの呪文リストから新しい準備呪文を選択でき、選択された呪文は自身にとってバード呪文としてカウントされる（呪文リストについては各クラスのセクションを参照）。また、このクラスのために準備した呪文を入れ替える際は、常にそれらのリストの呪文と入れ替えることができる。</content>
-  <content contentuid="hd4f3b039g6204g1bbagd21fgb72f806b54d8" version="2">戦の声援</content>
-  <content contentuid="hd0e61f8bg955fgda33g3e08gc99c259c8a16" version="2">知識の祝福</content>
   <content contentuid="hc9341211ge6c1g1fd9gddbeg13315817fedb" version="1">以下の技能から任意で2つの習熟を得る：魔法学、歴史、自然、あるいは宗教。これら2つの技能に習熟強化を得る。</content>
-  <content contentuid="ha8b64524g7467g0f1eg9214gbd3da8ce6302" version="2">習熟強化</content>
   <content contentuid="h75d54fe5g6285g141fgd2b8gca722e196ecc" version="1">習熟している技能の中から、任意で2つに習熟強化を得る。もし習熟しているなら手先の早業と隠密が推奨される。
 
 ローグ・レベル6において、さらに任意で2つの技能習熟に習熟強化を得る。</content>
@@ -784,7 +607,6 @@
   <content contentuid="h29e638a5g9fe4gca09gb884g608413f8e11f" version="1">前提条件：ウォーロック・レベル1以上</content>
   <content contentuid="h74e5b82bg3e1eg42d0g108ag8296ce9e9f59" version="1">前提条件：ウォーロック・レベル1以上</content>
   <content contentuid="h89cc571cg9734g0e75g9d8fg69ec4116823f" version="1">前提条件：ウォーロック・レベル1以上</content>
-  <content contentuid="hda66831fg300fg893ega428gd807bb12f766" version="1">侍祭</content>
   <content contentuid="h18021532g7cf1g263eg148bg852a52db6cf5" version="3">魔法のたしなみ（クレリック）
 
 寺院に仕え、神聖な儀式を学び、崇拝する神々に生贄を捧げて人生を過ごしてきた。神々に仕え、その聖なる業を見出すことは、自身を偉大さへと導く。</content>
@@ -910,47 +732,36 @@
   <content contentuid="h5aa03de7gf337g42a1gb453ge89a6f671278" version="1">魔法のたしなみ：雷鳴波</content>
   <content contentuid="h4a25b113gd59eg4b37gb1fag1d64b4e65972" version="1">魔法のたしなみ：制圧の波動</content>
   <content contentuid="h4a465394gc707g4e0bga071g165709a73a35" version="1">魔法のたしなみ：魔女の矢</content>
-  <content contentuid="hb75003cbgf00cga299gd802g14c70c5d2869" version="1">イカサマ師</content>
   <content contentuid="hcc3c36c6gd341g9ef3g75a6gd57375a199cd" version="3">技能習熟
 
 人を操る達人であり、誇張しがちで、そこから利益を得ることを何よりの喜びとする。真実をねじ曲げ、味方同士を対立させることは、将来のより大きな成功へとつながる。</content>
-  <content contentuid="h4b835e70g04c6g5a06g0c6dg1a3127667686" version="1">犯罪者</content>
   <content contentuid="hbcaf83c9gb788g62e0g6965g3fa62228f254" version="3">警戒
 
 法を犯してきた過去があり、合法とは言い難いコネを利用して生き延びてきた。犯罪組織から利益を得ることは、将来のより大きな機会へとつながる。</content>
-  <content contentuid="h71130c00gf7fegc295g7a78g226b23bab525" version="1">芸人</content>
   <content contentuid="h2716640cg5333g5237g4376g52bc2bce3db6" version="3">音楽家
 
 聴衆を揺さぶり、心酔させることに生きており、大衆も上流社会も同様に魅了する。芸術を守り、不幸で打ちひしがれた人々に喜びをもたらすことは、魅力のオーラを高める。</content>
-  <content contentuid="h08144bfegc7fbg3b4cg2a08gf4711304db2f" version="1">民衆英雄</content>
   <content contentuid="h16aa023egdc3cg5bc2g7476g71950aebff42" version="3">追加HP
 
 民衆の味方であり、無力な人々を守るために暴君や怪物に立ち向かう。差し迫った危険から無実の人々を救うことで、伝説は語り継がれるようになる。</content>
-  <content contentuid="h8872efb5g9022g184cg8400gc8622021c434" version="1">ギルドの職人</content>
   <content contentuid="hecaca218g03ebge2e3g1541g30dab1f4df21" version="3">技能習熟
 
 特定の工芸における技術により商売人ギルドへの入会を認められ、創作活動に従事する間、特権と保護を得ている。希少な工芸品を修理し、発見することは、新たなインスピレーションをもたらす。</content>
-  <content contentuid="h68877c75g37c1gbf22gf33fg60fb10459cda" version="1">貴族</content>
   <content contentuid="h11a3cb02g94efge2aagfd7eg2559e2181833" version="3">技能習熟
 
 社会のエリート層である家庭で育ち、権力と特権に慣れ親しんできた。名声、権力、そして忠誠を積み上げることは、自身の地位を高める。</content>
-  <content contentuid="hdffa4c4fgb9e6g20ebg7a88g407a2ca29c32" version="1">辺境育ち</content>
   <content contentuid="h5039598cg6db2g2d04g6e52gb5d4956c7773" version="3">追加HP
 
 荒野で育ち、文明の利便性から遠く離れた場所で生き延びる術を学んだ。荒野の異常な危険を乗り越えることは、自身の武勇と理解を深める。</content>
-  <content contentuid="h95a25eaegdeafgb7b8g4801g7a8367fc65a7" version="1">賢者</content>
   <content contentuid="hca28ebc2ga938g8c68g1dbag7edf639c41fc" version="3">魔法のたしなみ（ウィザード）
 
 好奇心が強く読書家で、知識に対して終わることのない渇望を持つ。世界の希少な伝承について学ぶことは、その知識をより大きな目的のために役立てる意欲をかき立てる。</content>
-  <content contentuid="h8109bc16gabcag925cgdd47gb46dba14be0c" version="1">兵士</content>
   <content contentuid="hc868035bgcc3dg4f6ag8137g0a3e325b8ba7" version="3">凶暴な戦士
 
 民兵、傭兵団、あるいは将校団に所属し、戦場の戦術と戦闘の訓練を受けてきた。戦場での巧みな戦術と勇気を示し、自身の武勇を高める。</content>
-  <content contentuid="hc87a3f0fgaf2eg6057g69fbg9ba7b0e2f7bb" version="1">浮浪児</content>
   <content contentuid="h9f4e80c6g4dd1gb652gbb63g04b844b503ae" version="3">凶暴な戦士
 
 貧しく暗い子供時代を生き抜いた経験から、わずかな物から最大限の成果を引き出す方法を知っている。街で培った知恵を働かせることは、これからの旅に向けて精神を奮い立たせる。</content>
-  <content contentuid="h15a25456g93c5g2128g2199gd75ca7acd724" version="1">技能習熟</content>
   <content contentuid="h9c4f90acg7e1cg80f9g49b9g223423a07c77" version="1">自身の選択した3つの技能または道具の任意の組み合わせに習熟を得る。</content>
   <content contentuid="h0b1ce19fg660ag4802g476bg8c05a68222d8" version="1">技能習熟：軽業</content>
   <content contentuid="h0c81c67cgb4c6g4561g00beg5a12ada00691" version="1">技能習熟：動物使い</content>
@@ -970,149 +781,92 @@
   <content contentuid="hc931f53agbc8egb132g41cdg19cd166d6f7b" version="1">技能習熟：手先の早業</content>
   <content contentuid="h9eb6dc6dg1471g2dbcg9f1bgee4b610efd55" version="1">技能習熟：隠密</content>
   <content contentuid="hb990e3c4g5425g1524gfedcg5f20ce20597d" version="1">技能習熟：生存</content>
-  <content contentuid="h8f8e4f76g9279geaf4g3be8g75fcc8975180" version="1">技能習熟</content>
   <content contentuid="ha89bce32gf8a8g61a1gda37gae4076b0817a" version="1">自身の選択した3つの技能または道具の任意の組み合わせに習熟を得る。</content>
-  <content contentuid="haccfb564g42d5gbcf1g17e3g6bd3bb113a44" version="1">軽業</content>
-  <content contentuid="hc355df2ag0123g443bg998cg11187bf11a5a" version="2">動物使い</content>
-  <content contentuid="h722b6a69g3477g36dbg1e4fg04643c68b1f7" version="1">魔法学</content>
-  <content contentuid="h5329602dgbdb7gdf54g164cg7babc0547f88" version="1">運動</content>
-  <content contentuid="h4a18bdbcg2f07g8fc3ga383g3bf38d934d97" version="1">ペテン</content>
-  <content contentuid="h15608410g73bagc53bg53f2ga41d7d3b2f96" version="1">歴史</content>
-  <content contentuid="h41367f77g2252gf46bg7c6bge19d48c4f278" version="1">自然</content>
-  <content contentuid="h459ce53fg7791g1cd0g378eg2c1353e49c4f" version="1">知覚</content>
-  <content contentuid="h5b423612ge7e5g8736gd607g7c134dc79c3a" version="1">芸能</content>
-  <content contentuid="hdc9b288fg9711g7a53gfe81g9448c4523a2c" version="1">説得</content>
-  <content contentuid="h57eaf745g2783g5cc4gc9f6gd12380a0934f" version="1">宗教</content>
-  <content contentuid="h87e650ddg0175gc7f8g135eg826bd05429d2" version="2">手先の早業</content>
-  <content contentuid="h237ebf10g65d4g5de2ga9f8g4aeae8f52710" version="1">隠密</content>
-  <content contentuid="hcaedae0bg8d89g5535gef15ge3bead7cac7b" version="1">生存</content>
-  <content contentuid="h96a2be22g2936g6b20g8c6fga91b0ccaa06d" version="1">看破</content>
-  <content contentuid="h4107cf58gb2cdgcf41g08c5gcb3b1ab720a4" version="1">威圧</content>
-  <content contentuid="h4ba0cf67g55f2ge128g4fefg499a17387298" version="1">捜査</content>
-  <content contentuid="h58264943ge8a3g47cdg09c2gd71af9051c26" version="1">医術</content>
   <content contentuid="h5ec953edgae89gbe4fgbc37g46d66f973083" version="1">その技能の習熟を得た。</content>
-  <content contentuid="h641b1b35g1b60g780egb004g145a37f818b3" version="1">警戒</content>
   <content contentuid="h45825d61g1009g094fgd261g57f7112238f9" version="1">音楽家</content>
   <content contentuid="h658ed514ge9dcg9a0fg207fg2dacf4e5e1ad" version="2">楽器訓練：3種類の楽器の習熟を得る。
 
 励ましの歌：小休憩または大休憩を終える際、習熟している楽器で演奏を行い、その曲を聴いた味方に英雄的インスピレーションを与えることができる。この方法で効果を与えられる味方の数は、自身の習熟ボーナスに等しい。</content>
   <content contentuid="h65160f8dg63e2g4feeg3550g6feca8c4a710" version="1">励ましの歌</content>
-  <content contentuid="he19df11dgdf2cg862cgbb31g4b99b16b69d4" version="1">追加HP</content>
-  <content contentuid="h7cf9e06ag9d1dga32egceb0gbe819d69f976" version="1">凶暴な戦士</content>
   <content contentuid="hdea0235fg740bg417fgb072ga3c6f349d4c3" version="1">武器攻撃を行う際、ダメージ・ダイスを2回ロールして高い方の結果を使用する。</content>
-  <content contentuid="h4c3975fag2626gb08fg2d75g1948720b803b" version="1">憑依されたもの</content>
   <content contentuid="h7177de01ge0f7g8a37g6b7cgdf616c3162ac" version="3">警戒
 
 剣や呪文では殺せない邪悪な瞬間、人物、あるいは何かが、心を苛み、視界の端で揺らめいている。冒険の行く先々へそれを連れていくのか、あるいはそれが自身を運んでいる。</content>
-  <content contentuid="h474bba76g8c7bgfd74gc3c7g3360b0f62570" version="1">幸運</content>
-  <content contentuid="h9adf9274g7e39g2ca0g6e19gf06b6f52aea1" version="1">幸運</content>
-  <content contentuid="h6406ffe0g3bf9g37c9g6ad7g2ba1f01b1075" version="1">酒場流喧嘩殺法</content>
   <content contentuid="h1f7fcfe8g6d82ga644g381cg16c2d77b873e" version="1">素手攻撃を行う際、ダメージ・ダイスを2回ロールして高い方の結果を使用する。</content>
-  <content contentuid="h2d1c35beg6336gdd1eg258dg69afd0b6b19f" version="1">運動選手</content>
   <content contentuid="he017d973g0291gbe65g86dbgfc62954d6af5" version="3">素早い起き上がり：伏せ状態の間、わずか1.5メートルの移動力を消費するだけで立ち上がることができる。
 
 跳躍：1ターンに一度、わずか3メートルの移動力を消費するだけでジャンプができる。</content>
-  <content contentuid="h4fa37f8dgea0ag8e9eg9222g12cdf8ef50af" version="1">運動選手</content>
   <content contentuid="hac8cf59bgb29dg6896g2a11g689bf333570e" version="3">素早い起き上がり：伏せ状態の間、わずか1.5メートルの移動力を消費するだけで立ち上がることができる。
 
 跳躍：1ターンに一度、わずか3メートルの移動力を消費するだけでジャンプができる。</content>
-  <content contentuid="hf57c9070gd267g0022g18deg38ad134018ab" version="1">突撃者</content>
   <content contentuid="h9ed109c6ga680g6d73gce1ag6e136e676cb2" version="2">早足強化：早足アクションを行った際、そのアクションによる移動速度が3メートル上昇する。
 
 突進攻撃：攻撃アクションの一部として近接攻撃ロールを命中させる直前に、目標に向かって直線的に少なくとも3メートル移動した場合、以下の効果のうち1つを選択する：その攻撃のダメージ・ロールに1d8のボーナスを得る。または、目標が自分より1サイズ大きいまでの場合、目標を最大3メートル遠ざける。この恩恵は各ターンに一度だけ使用できる。</content>
-  <content contentuid="hbc6e4744g6835g4d25g3453g224b9eed2a70" version="1">突撃者</content>
   <content contentuid="h4e972de5g72bbgc7d9gfda3g1c89f2af41d0" version="2">早足強化：早足アクションを行った際、そのアクションによる移動速度が3メートル上昇する。
 
 突進攻撃：攻撃アクションの一部として近接攻撃ロールを命中させる直前に、目標に向かって直線的に少なくとも3メートル移動した場合、以下の効果のうち1つを選択する：その攻撃のダメージ・ロールに1d8のボーナスを得る。または、目標が自分より1サイズ大きいまでの場合、目標を最大3メートル遠ざける。この恩恵は各ターンに一度だけ使用できる。</content>
-  <content contentuid="hafd66c3cg4becg70e3gdeb1g96e635182645" version="1">クロスボウの達人</content>
   <content contentuid="hc7b891e9gd9c0g1617g0233ga492c5e47dc7" version="2">近接射撃：敵から1.5メートル以内にいても、クロスボウによる攻撃ロールに不利を受けない。
 
 致傷ボルト：遠隔攻撃をクリーチャーに命中させた際、目標が&lt;LSTag Type="Status" Tooltip="GAPING_WOUND"&gt;深い傷&lt;/LSTag&gt;状態になる可能性がある。</content>
   <content contentuid="h2b11e796g7a1fga346gb3e4g85e96274b6ef" version="1">クロスボウの達人（致傷）</content>
   <content contentuid="h48bb1d7fga4e5g9f8fga414g0fe42c7616ac" version="1">遠隔攻撃をクリーチャーに命中させた際、目標が&lt;LSTag Type="Status" Tooltip="GAPING_WOUND"&gt;深い傷&lt;/LSTag&gt;状態になる可能性がある。</content>
   <content contentuid="h9dde7fdcgac74g74cag98d7g044c58ef3023" version="1">クロスボウの達人（至近距離）</content>
-  <content contentuid="h32eff9e8g416dgc4dagd8e6g74260b215e68" version="1">守りの決闘術</content>
   <content contentuid="hd032f660g8a39g73eagc4bdgd4038c7dc8de" version="2">受け流し：妙技武器を持っており、他のクリーチャーが近接攻撃を命中させた際、リアクションを用いて自身のアーマー・クラスに習熟ボーナスを加算し、攻撃をミスさせることができる可能性がある。このアーマー・クラスへのボーナスは、次の自身のターンの開始時まで、近接攻撃に対して有効である。</content>
-  <content contentuid="h208b7de3g5f3cge001gfe82gdd2940dee59c" version="1">守りの決闘術</content>
   <content contentuid="hfd0b3091g52f6g2cd7ga7cbg9c61332d3252" version="1">妙技武器を持っており、他のクリーチャーが近接攻撃を命中させた際、リアクションを用いて自身のアーマー・クラスに習熟ボーナスを加算し、攻撃をミスさせることができる可能性がある。このアーマー・クラスへのボーナスは、次の自身のターンの開始時まで、近接攻撃に対して有効である。</content>
-  <content contentuid="hfa2c5254ge5fag62b7gffb6g392787c61974" version="1">二刀の使い手</content>
   <content contentuid="h2d809685g28ffge26ag3e6ag5fa20f63c9e3" version="7">武器が&lt;LSTag Tooltip="Light"&gt;軽武器&lt;/LSTag&gt;特性を持っていなくても二刀流を行える。ただし、&lt;LSTag Tooltip="TwoHanded"&gt;両手&lt;/LSTag&gt;の武器を二刀流にすることはできない。&lt;br&gt;&lt;br&gt;自身のターンに攻撃アクションを行い、近接武器で攻撃した際、同じターンの後半にボーナス・アクションとして非利き手攻撃を1回行える。刻みの特性を極め、非利き手に刻み武器を装備している場合は、各ターンに最大2回まで非利き手攻撃を行える。</content>
   <content contentuid="h720a62a8g5de9g9909gb1cagf61131cf2df9" version="1">二刀の使い手（ボーナス攻撃）</content>
   <content contentuid="h5cc813aagcb96gf7f3g42e4g17b7234b86eb" version="1">アクションやボーナス・アクションを消費することなく、非利き手攻撃を1回行える。この恩恵は1ターンに一度使用できる。</content>
-  <content contentuid="h7ed3574cg898aga3cage4bcg72bfa5e60a5c" version="1">二刀の使い手</content>
   <content contentuid="hb2bf6fc5g6c41geefag4186g751dda5c0a20" version="1">非利き手攻撃（二刀の使い手）</content>
-  <content contentuid="hfba39959g9b2dg1bffgffd6g069588fe122e" version="1">ダンジョン探険家</content>
   <content contentuid="h9dd8a551g9f01g98dbg64f1ga485e59f0e9d" version="2">隠された物体を見つけるための知覚&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と、罠を回避または抵抗するための&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;に&lt;LSTag Tooltip="Advantage"&gt;有利&lt;/LSTag&gt;を得る。
 
 罠によるダメージに対して&lt;LSTag Tooltip="Resistant"&gt;抵抗&lt;/LSTag&gt;を得る。
 
 暗闇で見通すことができる。</content>
-  <content contentuid="h3e8e3421g4852g1a98g9d7cgf3947ee60a89" version="1">壮健</content>
   <content contentuid="h6299a92eg8049g117bga5b7g17d26b0619d6" version="2">死への抵抗：死亡セーヴィング・スローに有利を得る。
 
 迅速な回復：回復を受けた際、可能な限りの最大&lt;LSTag Tooltip="HitPoints"&gt;ヒット・ポイント&lt;/LSTag&gt;を回復する。</content>
-  <content contentuid="h3f1eb96eg51f4gaf8cg5396g435ffda2161a" version="1">大業物の使い手</content>
   <content contentuid="h00f044d5gf4edgc900g397bgca53d410bdad" version="2">重業物の使い手：自身のターンの攻撃アクションの一部として、重用特性を持つ武器でクリーチャーに命中させた際、目標に追加ダメージを与えることができる。追加ダメージは自身の習熟ボーナスに等しい。
 
 ボーナスアタック：近接武器でクリティカル・ヒットを出した直後、またはクリーチャーのヒット・ポイントを0にした直後、ボーナス・アクションとして同じ武器で1回攻撃を行える。</content>
-  <content contentuid="h349877e7geb40gb92agf0ebg6d7a8824b88d" version="1">大業物の使い手</content>
   <content contentuid="hf5c74f9cg9d34g5f2dgb774g506b6adf6782" version="1">重業物の使い手：自身のターンの攻撃アクションの一部として、重用特性を持つ武器でクリーチャーに命中させた際、目標に追加ダメージを与えることができる。追加ダメージは自身の習熟ボーナスに等しい。
 
 ボーナスアタック：近接武器でクリティカル・ヒットを出した直後、またはクリーチャーのヒット・ポイントを0にした直後、ボーナス・アクションとして同じ武器で1回攻撃を行える。</content>
-  <content contentuid="h3b239dc5gf9c8g1abcgc84eg956c665ab218" version="1">重装防具習熟</content>
   <content contentuid="h8f67f4a8ga475g09e8gd009gab416f216b09" version="1">重装防具の&lt;LSTag Tooltip="ArmourProficiency"&gt;防具習熟&lt;/LSTag&gt;を持っている。</content>
-  <content contentuid="h9d48061fg5f17gd0d7gcc47g4d36f5a2b812" version="1">重装防具習熟</content>
   <content contentuid="h514d8491g4149gd42dgac44g49eb428cfab7" version="1">重装防具の&lt;LSTag Tooltip="ArmourProficiency"&gt;防具習熟&lt;/LSTag&gt;を得る。</content>
-  <content contentuid="h839231bbgeb1bg509bgdb9cge3286fb2cd64" version="1">重装防具の達人</content>
   <content contentuid="h0266d9b6g2d5egdfa6g1bfag6db68cf5e3ff" version="1">ダメージ軽減：重装防具を着用している間に攻撃を受けた際、その攻撃によって受ける殴打、刺突、および斬撃ダメージは、自身の習熟ボーナスに等しい値だけ軽減される。</content>
-  <content contentuid="h05dbc595g938dgf8c5geb8ag232d7f8f255a" version="1">重装防具の達人</content>
   <content contentuid="h321dea39gd6d7g8505g1460ga4f1c96684b4" version="1">ダメージ軽減：重装防具を着用している間に攻撃を受けた際、その攻撃によって受ける殴打、刺突、および斬撃ダメージは、自身の習熟ボーナスに等しい値だけ軽減される。</content>
-  <content contentuid="h494aa429g631cgf105g1994g4c64836d3f3d" version="1">軽装防具習熟</content>
   <content contentuid="h1bf3ecc0g938dg39f4g8e16gfe946978878f" version="1">防具訓練：軽装防具と盾の習熟を得る。</content>
-  <content contentuid="h97c3576bg651bg7e79g4da8g9dde54eb141f" version="1">軽装防具習熟</content>
   <content contentuid="hd9e3a2b4g854eg51fcg7859gb22843f1ee76" version="1">防具訓練：軽装防具と盾の習熟を得る。</content>
-  <content contentuid="heb622813gde8ag8560g8db8ga20dd3f55a1c" version="1">魔道士退治</content>
   <content contentuid="h97c2a4b1gf596g1516g285eg988549b0ed6f" version="1">精神集中破壊：精神集中しているクリーチャーにダメージを与えた際、そのクリーチャーが行う精神集中維持のためのセーヴィング・スローに不利を課す。
 
 保護された精神：知力、判断力、あるいは魅力セーヴィング・スローに失敗した際、代わりにそれを成功として扱うことができる。この恩恵を一度使用すると、小休憩または大休憩を終えるまで再び使用することはできない。</content>
-  <content contentuid="h686b506cg3f99g1c96gdcfcgfd54e5d46f19" version="1">魔道士退治</content>
   <content contentuid="hfc9071adg34ddg859egdda4g444a72c4713f" version="1">精神集中破壊：精神集中しているクリーチャーにダメージを与えた際、そのクリーチャーが行う精神集中維持のためのセーヴィング・スローに不利を課す。
 
 保護された精神：知力、判断力、あるいは魅力セーヴィング・スローに失敗した際、代わりにそれを成功として扱うことができる。この恩恵を一度使用すると、小休憩または大休憩を終えるまで再び使用することはできない。</content>
   <content contentuid="h64d74f86g3068g8d76g0cd1g2ed854b87962" version="1">保護された精神</content>
   <content contentuid="hd944c877g9f95g1749ge647gfe18b6b31562" version="1">知力、判断力、あるいは魅力セーヴィング・スローに失敗した際、代わりにそれを成功として扱うことができる。この恩恵を一度使用すると、小休憩または大休憩を終えるまで再び使用することはできない。</content>
-  <content contentuid="hf3cb4188g698ag0e09ge5b7g7087f12e55e8" version="1">戦技のたしなみ</content>
-  <content contentuid="h8c96ebffgfa30ge6e9g2670ge4e2af8fb180" version="1">中装防具の達人</content>
   <content contentuid="h9f345cf4g20e3g3adbg0568g4c6d7a467ed6" version="2">迅速</content>
   <content contentuid="h9aba9e0ag4af1g9f8fg922ag7e65e5b8a86b" version="2">移動速度上昇：移動速度が3メートル上昇する。
 
 困難な地形での早足：自身のターンに早足アクションを行った際、そのターンの間は困難な地形による追加の移動コストが発生しない。
 
 機敏な移動：あなたに対する機会攻撃は不利になる。</content>
-  <content contentuid="h8eacabe1gf4e0g46a9g32adg16f61a4b3530" version="1">中装防具習熟</content>
-  <content contentuid="h9683622cg2b30ga13egcae5g1c9525ef5014" version="1">中装防具と盾への&lt;LSTag Tooltip="ArmourProficiency"&gt;防具習熟&lt;/LSTag&gt;を得て、&lt;LSTag Tooltip="Strength"&gt;筋力&lt;/LSTag&gt;か&lt;LSTag Tooltip="Dexterity"&gt;敏捷力&lt;/LSTag&gt;が1上昇する(最大20)</content>
   <content contentuid="h064d8f79g7d9eg262fg76e0g2d04ce1515a6" version="2">迅速</content>
   <content contentuid="h1ea9a52fg1499gbdd8g9ab4g8e8ff63c7f3f" version="1">移動速度上昇：移動速度が3メートル上昇する。
 
 困難な地形での早足：自身のターンに早足アクションを行った際、そのターンの間は困難な地形による追加の移動コストが発生しない。
 
 機敏な移動：あなたに対する機会攻撃は不利になる。</content>
-  <content contentuid="hcece8c3cgbda0g0cf1g3872g9d5fba9e3f61" version="1">中装防具習熟</content>
-  <content contentuid="hae25381bgef2fgb3e0ga319g98ed9f6981b8" version="1">幸運</content>
   <content contentuid="h8708a627g8357g1f81g5bfdgc87a5b00b9fe" version="1">自身の習熟ボーナスに等しい数の&lt;LSTag Type="ActionResource" Tooltip="LuckPoint"&gt;幸運ポイント&lt;/LSTag&gt;を得る。これらのポイントを消費して、&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;、&lt;LSTag Tooltip="AbilityCheck"&gt;能力値判定&lt;/LSTag&gt;、または&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;に&lt;LSTag Tooltip="Advantage"&gt;有利&lt;/LSTag&gt;を得るか、あるいは敵に&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;を再ロールさせることができる。</content>
   <content contentuid="h03f42ae5g766bg7991gbcd3gacac23773d6c" version="1">音楽家</content>
   <content contentuid="hbc4803a8gd847gc698gdcb8g8e6853f62ff5" version="1">楽器訓練：3種類の楽器の習熟を得る。
 
 励ましの歌：小休憩または大休憩を終える際、習熟している楽器で演奏を行い、その曲を聴いた味方に英雄的インスピレーションを与えることができる。この方法で効果を与えられる味方の数は、自身の習熟ボーナスに等しい。</content>
-  <content contentuid="hd0637db0gbaaag6a4eg8e04g319e2086edb5" version="1">凶暴な戦士</content>
   <content contentuid="he25db363g9a78g7f74gf0acgfff6880e8210" version="1">武器攻撃を行う際、ダメージ・ダイスを2回ロールして高い方の結果を使用する。</content>
-  <content contentuid="hb4c3b9b7g429bg1543gc57cg6b3b5b25dd7e" version="1">酒場流喧嘩殺法</content>
   <content contentuid="h77c6e22dg906bge2b2g1f89ged91e34c41a3" version="1">素手攻撃を行う際、ダメージ・ダイスを2回ロールして高い方の結果を使用する。</content>
-  <content contentuid="h3cebc5b8g1e08g6174g4093gbb24e545e462" version="1">長柄の使い手</content>
   <content contentuid="h215cfcadg8e38gf1d3g5cbfgf68a823d6955" version="1">柄打ち：攻撃アクションを行い、クオータースタッフ、スピア、あるいは重用かつ間合い特性を持つ武器で攻撃した直後、ボーナス・アクションを用いて武器の反対側で近接攻撃を行える。ダメージ種別は殴打であり、この攻撃のダメージ・ダイスはd4となる。
 
 反応攻撃：クオータースタッフ、スピア、あるいは重用かつ間合い特性を持つ武器を持っている間、その武器の間合いに入ったクリーチャーに対し、リアクションを用いて1回近接攻撃を行える。</content>
-  <content contentuid="h0e159707gedcdgecceg7084geda7d6596f4b" version="1">長柄の使い手</content>
   <content contentuid="h3dd5e7b4g4865gbd7bged74gd82f6e53d20d" version="1">柄打ち：攻撃アクションを行い、クオータースタッフ、スピア、あるいは重用かつ間合い特性を持つ武器で攻撃した直後、ボーナス・アクションを用いて武器の反対側で近接攻撃を行える。ダメージ種別は殴打であり、この攻撃のダメージ・ダイスはd4となる。
 
 反応攻撃：クオータースタッフ、スピア、あるいは重用かつ間合い特性を持つ武器を持っている間、その武器の間合いに入ったクリーチャーに対し、リアクションを用いて1回近接攻撃を行える。</content>
@@ -1123,38 +877,31 @@
   <content contentuid="h28f453f2gecbagbf36g9580ga18155f4ed7c" version="1">セーヴ習熟（知力）</content>
   <content contentuid="ha5d92735g8afdga8f3ge1c5g5b06d62a50e6" version="1">セーヴ習熟（筋力）</content>
   <content contentuid="he4365c80ga72cgc5ebg1ae0g6a84db454a82" version="1">セーヴ習熟（判断力）</content>
-  <content contentuid="h1015def7gafdbg59d8g86d2g26b83e1c4b9e" version="1">守護戦士</content>
   <content contentuid="h531047f9gd6d4g5415g3f87gada7b4be2fa4" version="2">護衛：1.5メートル以内にいるクリーチャーが離脱アクションを行った直後、または自身以外の目標に攻撃を命中させた直後、そのクリーチャーに機会攻撃を行える。
 
 足止め：機会攻撃がクリーチャーに命中すると、そのクリーチャーの移動速度は現在のターン終了時まで0になる。</content>
   <content contentuid="h7e48c498g5f4dgcd45g58fdgd35b898ea7df" version="2">守護戦士（護衛）</content>
   <content contentuid="h23b78c62ge069ge2ccg2684g43996096895b" version="1">守護戦士（機会攻撃有利）</content>
   <content contentuid="h5fb8bed9g9cd0g8557g68degf654e2c0ae58" version="2">守護戦士（足止め）</content>
-  <content contentuid="h90887d29g0a12g4a4eg7f87ga23f7765f7dc" version="1">射撃の名手</content>
   <content contentuid="h5b4e785ag06afgf727gca99g7e0aa28facda" version="3">高低差無視：自身の&lt;LSTag Tooltip="RangedWeaponAttack"&gt;遠隔武器攻撃&lt;/LSTag&gt;は&lt;LSTag Tooltip="HighGroundRules"&gt;高低差の原則&lt;/LSTag&gt;によるペナルティを受けない。
 
 近接射撃：敵から1.5メートル以内にいても、遠隔武器による攻撃ロールに不利を受けない。
 
 遠射：遠隔武器攻撃の射程が1.5倍に延長される。</content>
-  <content contentuid="ha55fe95cgd504gfcc1gb585g1162cb7cffcc" version="1">射撃の名手</content>
   <content contentuid="hb219036fg4365gffedg71d5g938331069179" version="3">高低差無視：自身の&lt;LSTag Tooltip="RangedWeaponAttack"&gt;遠隔武器攻撃&lt;/LSTag&gt;は&lt;LSTag Tooltip="HighGroundRules"&gt;高低差の原則&lt;/LSTag&gt;によるペナルティを受けない。
 
 近接射撃：敵から1.5メートル以内にいても、遠隔武器による攻撃ロールに不利を受けない。
 
 遠射：遠隔武器攻撃の射程が1.5倍に延長される。</content>
-  <content contentuid="hcf7e607eg1421g2fc9g4205gd10b92961b19" version="1">盾の使い手</content>
   <content contentuid="he75553c3gd15ag322eg1dcega59ac6593319" version="4">盾攻撃：自身のターンの攻撃アクションの一部として1.5メートル以内にいるクリーチャーを攻撃し、近接武器が命中した際、盾を装備しているなら即座に目標をその盾で強打し、筋力セーヴィング・スロー（難易度は8＋自身の筋力修正値＋習熟ボーナス）を行わせることができる。セーヴに失敗すると、目標を自分から1.5メートル押しやるか、あるいは伏せ状態にすることができる（任意で選択）。この恩恵は自身の各ターンに一度だけ使用できる。
 
 盾遮断：成功すれば半分のダメージしか受けないような効果に対して敏捷力セーヴィング・スローを行う際、盾を手に持っているなら、リアクションを用いてそのセーヴィング・スローに成功することでダメージを完全に無効化できる。</content>
-  <content contentuid="h99a1f866g5649g1e74gc90fgd29c50fa0426" version="1">盾の使い手</content>
   <content contentuid="h5752835cge17egb9e8g58cdgb5e2500ab72d" version="3">盾攻撃：自身のターンの攻撃アクションの一部として1.5メートル以内にいるクリーチャーを攻撃し、近接武器が命中した際、盾を装備しているなら即座に目標をその盾で強打し、筋力セーヴィング・スロー（難易度は8＋自身の筋力修正値＋習熟ボーナス）を行わせることができる。セーヴに失敗すると、目標を自分から1.5メートル押しやるか、あるいは伏せ状態にすることができる（任意で選択）。この恩恵は自身の各ターンに一度だけ使用できる。
 
 盾遮断：成功すれば半分のダメージしか受けないような効果に対して敏捷力セーヴィング・スローを行う際、盾を手に持っているなら、リアクションを用いてそのセーヴィング・スローに成功することでダメージを完全に無効化できる。</content>
   <content contentuid="h7703cd86g07afg9672g1765g96366fbc1138" version="1">盾攻撃：突き飛ばし</content>
-  <content contentuid="hfd45482dg5fa4g36cdg880egb6a399856ada" version="1">目標を盾で押し返す</content>
   <content contentuid="hf85d24eegb746gb3e4g54ddg00cde5bd922f" version="1">盾攻撃：伏せ</content>
   <content contentuid="h28541eafg02e0g2a1ag2ebcgdcdb10c35901" version="1">盾で目標を足払いし、伏せ状態にさせる。</content>
-  <content contentuid="hc89bef70gb4acgcaf4g1bd4gc4db62830233" version="1">呪文狙撃手</content>
   <content contentuid="hd2aeaec7g64f4g180fg4fc9g91918a557c3c" version="2">高低差無視：自身の遠隔呪文攻撃は&lt;LSTag Tooltip="HighGroundRules"&gt;高低差の原則&lt;/LSTag&gt;によるペナルティを受けない。
 
 近接詠唱：敵から1.5メートル以内にいても、呪文による攻撃ロールに不利を受けない。
@@ -1164,21 +911,17 @@
   <content contentuid="h14ab49cfg831ag83b9g1ddcgbadda155b2c0" version="2">高低差無視：自身の遠隔呪文攻撃は&lt;LSTag Tooltip="HighGroundRules"&gt;高低差の原則&lt;/LSTag&gt;によるペナルティを受けない。
 
 射程延長：呪文の射程が50%延長される。</content>
-  <content contentuid="hdfe62e0fgf3abgc70ag0019g4af2fcfb5109" version="1">戦場の術者</content>
   <content contentuid="haea51e98gfb73g894eg965bg2978e243f5e4" version="1">&lt;LSTag Tooltip="Concentration"&gt;精神集中&lt;/LSTag&gt;を維持する&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Advantage"&gt;有利&lt;/LSTag&gt;になる
 
 範囲外へ移動中のクリーチャーに対して&lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;リアクション&lt;/LSTag&gt;を利用して&lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;電撃の手&lt;/LSTag&gt;を発動できる</content>
-  <content contentuid="h1e8be1d2gda52g488egf12aga4dbd08a8b2c" version="1">武器の使い手</content>
   <content contentuid="h71ada843g58a3g712bgd82agc840de1595e5" version="2">軍用武器への&lt;LSTag Tooltip="Proficiency"&gt;習熟&lt;/LSTag&gt;を得る。
 
 任意の武技習得特性を2つ選択して得る。</content>
   <content contentuid="h70813330g91cdg841fgd506g43cca562e934" version="1">呪文狙撃手（近接）</content>
   <content contentuid="hd8edfd84g6945ged2dg5a75gac1ea9cf87c7" version="1">近接詠唱：敵から1.5メートル以内にいても、呪文による攻撃ロールに不利を受けない。</content>
-  <content contentuid="he811ea2cg5f7ega90cgc208g301ddc5eb96c" version="1">戦場の術者</content>
   <content contentuid="h2d86c838g5e8cg8763gdf9bgaeb1290ded87" version="1">呪文の&lt;LSTag Tooltip="Concentration"&gt;精神集中&lt;/LSTag&gt;を維持するための&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;に&lt;LSTag Tooltip="Advantage"&gt;有利&lt;/LSTag&gt;を得る。
 
 範囲外へ移動中の目標に対して&lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;リアクション&lt;/LSTag&gt;を利用して&lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;電撃の手&lt;/LSTag&gt;を発動できる。</content>
-  <content contentuid="h6f27cfe3g88f5geb3eg8790gd6ce157dfac9" version="1">武器の使い手</content>
   <content contentuid="hba5a50e4g4e44gccaag18b0ga7d653029db5" version="3">軍用武器への&lt;LSTag Tooltip="Proficiency"&gt;習熟&lt;/LSTag&gt;を得る。
 
 任意の武技習得特性を2つ選択して得る。</content>
@@ -1293,32 +1036,18 @@
   <content contentuid="hbb6b628eg2a57g6250g3b13g87d1d2155d94" version="1">呪文が終了する前にクリーチャーがあなたに対して攻撃ロールを行うたび、攻撃者は攻撃ロールから1d4を差し引く。</content>
   <content contentuid="h9272c5c1g1dc9g193fg385dg4ccea106a7ad" version="1">呪文が終了する前にクリーチャーがあなたに対して攻撃ロールを行うたび、攻撃者は攻撃ロールから1d4を差し引く。</content>
   <content contentuid="h4405cd9eg35f5g6fa4g01c6g020ed526c1e0" version="1">呪文が終了する前にクリーチャーがあなたに対して攻撃ロールを行うたび、攻撃者は攻撃ロールから1d4を差し引く。</content>
-  <content contentuid="h6bbeea0cgfb9cg7197g9d87gc41ed5911b46" version="1">防刃</content>
-  <content contentuid="h6ad2bdeag8e58g6b4fg3462g9aff44485001" version="1">リーパーによる目録</content>
   <content contentuid="h8ccd7ec2g9ed6g29bdgcacfg269b2a087595" version="1">%% EMPTY</content>
-  <content contentuid="h2bed4266gaf46g07f6g40a0gfb3ed759c291" version="1">固い意志</content>
-  <content contentuid="h4cb8944dg8c41g9ac6g6980gc440a0c3f06a" version="1">敵の呪文やアクションによって強制的に移動させられることがなく、&lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;困難な地形&lt;/LSTag&gt;の効果を無視する</content>
-  <content contentuid="h83b85c59gb22dg5169g66f4ge07c7b7871db" version="1">エーテル界行き</content>
   <content contentuid="h1508cdd1g54acg7e72gc647gec06dce25778" version="1">この状態にある者はエーテル界にいて、危害を加えられず、見られず、影響を受けない状態になる
 
 エーテル界にいる間は移動できず、ワールド内のインタラクトもできない。[1]まで瞬間移動を選択することはできる
 
 各ターンの終了時、再び物質界に現れる可能性がある</content>
-  <content contentuid="hd678ff27gf310g1345ge315g9600ee9eb47f" version="1">万色弾</content>
-  <content contentuid="hbd6b6881gf721ga00agc992g1e79019f1fdb" version="1">[1]を与えて、命中した場所に該当する表面を生み出す。ダメージの属性を変更することもできる</content>
-  <content contentuid="h4872fd6fg03e8g3270gef5eg17b2579e7b54" version="1">万色弾: 酸</content>
   <content contentuid="hdd8707e6g7734gc5a4g4badg0b87de4d6de0" version="2">目標に腐食の力を放って[1]を与える。</content>
-  <content contentuid="hfa1c18cdgeabfg85efg3a71gd46ceebc5ade" version="1">万色弾: 冷気</content>
   <content contentuid="h3224c2d7g1d7bg300ag20ccg649b4317f47e" version="2">目標に凍える力を放って[1]を与える。</content>
-  <content contentuid="h474abec9g9b82g3768gcbe8g52802bbfa5bb" version="1">万色弾: 火</content>
   <content contentuid="heb3b54cbgcbacg3653g2b64g976c385573e5" version="2">目標に炎の力を放って[1]を与える。</content>
-  <content contentuid="h33d569dfgf7b9g9c83gb501g45f35a97b5ad" version="1">万色弾: 電撃</content>
   <content contentuid="hd3714ebcg5f5egbf76gb132g99aafa0beda9" version="2">目標に稲妻の力を放って[1]を与える。</content>
-  <content contentuid="h4bf024c1gf01fg22f3g2229gbb7c9750d10b" version="1">万色弾: 毒</content>
   <content contentuid="h2d4a746egd28bge080g65a0g204697492d95" version="2">目標に毒の力を放って[1]を与える。</content>
-  <content contentuid="hb2960ca9g49d7g3639g1356g1d818e28a64a" version="1">万色弾: 雷鳴</content>
   <content contentuid="h98e647d7g3e90gc1ebg704eg55fb50319328" version="1">目標に雷鳴の力を放ってダメージを与える。</content>
-  <content contentuid="h3f315172g0ecag6f6ag14c9g3d5db880a811" version="1">短剣の群れ</content>
   <content contentuid="h8a7a7954g6da6g0f9cgced3g9dfea486d831" version="2">射程内の地点を中心とした半径1.5メートル、高さ12メートルの円柱状の範囲に、回転する短剣を呼び出す。その範囲内にいる各クリーチャーは[1]を受ける。クリーチャーがその場所でターンを終了するか、円柱がその空間に移動した場合にも、このダメージを受ける。クリーチャーがこのダメージを受けるのは1ターンに一度だけである。
 
 その後の自身のターンに、魔法アクションとして円柱を最大9メートル移動させることができる。</content>
@@ -1332,76 +1061,7 @@
   <content contentuid="ha97083f1g4db3gf664gd422g662591619c09" version="1">魔法アクションを使用して、短剣を9メートルまで瞬間移動させる。</content>
   <content contentuid="haaf05dcegc1c7g957cg76bagbacf907adfb7" version="1">短剣の群れの移動</content>
   <content contentuid="h80951a8egaf3eg2e55g487ag32eaf1d2ca05" version="1">魔法アクションを使用して、短剣を9メートルまで瞬間移動させる。</content>
-  <content contentuid="h37831829g4ea6g1feeg1915gea8f0fa699b7" version="1">色しぶき</content>
-  <content contentuid="h3e1a2984ge2d3ge837gff22gc2ac69bcf687" version="1">合計[1]分までのクリーチャーを&lt;LSTag Type="Status" Tooltip="COLOR_SPRAY"&gt;盲目&lt;/LSTag&gt;状態にする</content>
-  <content contentuid="h36775801gf2edg8e9egebabg494ae7137454" version="1">色しぶき</content>
-  <content contentuid="h42379051g6231g2155g0496gf8997d265fb7" version="1">色しぶき</content>
-  <content contentuid="h26b3432cgad7cgf53ag486dg94a645b313b6" version="1">色しぶき</content>
-  <content contentuid="h8071e9a3ge1f2gc3ceg9e5cgfe38c1049dda" version="1">色しぶき</content>
-  <content contentuid="hddcc10f2gfedfg2db7g09f0g30494e6b25b9" version="1">色しぶき</content>
   <content contentuid="hb0efd2ceg0833g9420g8355ge424da379f9e" version="2">目もくらむような色とりどりの閃光を放つ。自身から発生する4.5メートルの円錐状の範囲内にいる各クリーチャーは、耐久力セーヴィング・スローに成功するか、さもなくば次の自身のターンの終了時まで盲目状態にならなければならない。</content>
-  <content contentuid="h5b521bc0g991ag1509g1532g7a7432c14232" version="1">冷気噴射</content>
-  <content contentuid="h59b9e3afg4467g5a79gf262g265bd2bcb18d" version="1">手から、突き刺すような冷気を放つ</content>
-  <content contentuid="hdc0383dag5a23gd42dg0b27g00f90507d3e4" version="1">感染: 失明病</content>
-  <content contentuid="hf347385ag4b90g0bccg6810g6a4336d13205" version="1">目標は&lt;LSTag Tooltip="Wisdom"&gt;判断力&lt;/LSTag&gt;&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になり、&lt;LSTag Type="Status" Tooltip="BLINDED"&gt;盲目&lt;/LSTag&gt;状態になる</content>
-  <content contentuid="h1f54b341g6e6eg9e51gbbb2g3ae56c83c6b0" version="1">激しい痛みをもたらす指がクリーチャーの目を押しつぶし、&lt;LSTag Tooltip="Wisdom"&gt;判断力&lt;/LSTag&gt;を低下させる</content>
-  <content contentuid="h8eb0c380gc532g2b56ge76ag79d1d658cdbf" version="1">感染</content>
-  <content contentuid="hb4966935g797fgd4eeg3b81gfdb9e22897c3" version="1">目標を&lt;LSTag Type="Status" Tooltip="POISONED"&gt;毒&lt;/LSTag&gt;状態にし、任意の病気に感染させることがある</content>
-  <content contentuid="h526796c0g7033g01b1g9d4eg2dad2e203b62" version="1">感染: 汚穢熱</content>
-  <content contentuid="hdf0b87a9gd828gc1e6g2550gefd2e87d2187" version="1">目標は&lt;LSTag Tooltip="Strength"&gt;筋力&lt;/LSTag&gt;&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;、&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;、&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h90e25986gc508g3040g78f2g37b619d56eff" version="1">熱がクリーチャーの毛穴から濃い脂汗を大量に搾り出し、&lt;LSTag Tooltip="Strength"&gt;筋力&lt;/LSTag&gt;を低下させる</content>
-  <content contentuid="hfc1438b7g6f56g436cg9eccga92207802562" version="1">感染: 肉腐症</content>
-  <content contentuid="h6f598134gfdd5g5fcag12e7gc1a187e6f4df" version="1">目標は&lt;LSTag Tooltip="Charisma"&gt;魅力&lt;/LSTag&gt;&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になり、すべてのダメージに対して&lt;LSTag Tooltip="Vulnerable"&gt;脆弱&lt;/LSTag&gt;になる</content>
-  <content contentuid="ha7172be5g9a1dg6b7eg869eg3e1be7a02761" version="1">クリーチャーが壊死し始め、骨に支えられた腐った肉の袋となり、&lt;LSTag Tooltip="Charisma"&gt;魅力&lt;/LSTag&gt;が低下する</content>
-  <content contentuid="hc7ef25e5g5059gb4b2gb313g2514a5bee4a9" version="1">感染: 焼脳病</content>
-  <content contentuid="h583c93b5gb72dg99a7g150fgbea09cdefdb0" version="1">目標は&lt;LSTag Tooltip="Intelligence"&gt;知力&lt;/LSTag&gt;&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になり、&lt;LSTag Type="Status" Tooltip="TIMMASK_SPORES"&gt;惑乱&lt;/LSTag&gt;状態になる</content>
-  <content contentuid="h7180ffffg94e0g62ecgc9d2geb17dda556b4" version="1">クリーチャーの脳が焼かれ、煮えたぎる血の腐ったシチューとなり、&lt;LSTag Tooltip="Intelligence"&gt;知力&lt;/LSTag&gt;が低下する</content>
-  <content contentuid="h0ce6273dg8fb2g5e40gb370g2250273aca87" version="1">感染: 発作</content>
-  <content contentuid="h8183d3a3gf76eg41c0g6a3dgc647116e8fb4" version="1">目標は&lt;LSTag Tooltip="Dexterity"&gt;敏捷力&lt;/LSTag&gt;&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;、&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;、&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h01c25572gbd5aga134gedfdg8370f246017a" version="1">クリーチャーは痙攣で苦しみ、&lt;LSTag Tooltip="Dexterity"&gt;敏捷力&lt;/LSTag&gt;が低下する</content>
-  <content contentuid="h823faaa9gdffegae75g4029g9f85e40f34e7" version="1">感染: 溶死病</content>
-  <content contentuid="h7713650dge307gc350g9718gee92e99c79f7" version="1">目標は&lt;LSTag Tooltip="Constitution"&gt;耐久力&lt;/LSTag&gt;&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。さらに命中されるたびに、&lt;LSTag Type="Status" Tooltip="STUNNED"&gt;朦朧&lt;/LSTag&gt;状態になる</content>
-  <content contentuid="h4fbb8bf1g63cfg6668ge8b1gd539b92f4cf7" version="1">熱がクリーチャーの毛穴から濃い脂汗を大量に搾り出し、&lt;LSTag Tooltip="Constitution"&gt;耐久力&lt;/LSTag&gt;を低下させる</content>
-  <content contentuid="hbbf1f04agbf84gc26dg88e5gcf9c77ec4031" version="1">呪詛</content>
-  <content contentuid="h86b1bb49g6dbbg2cc6g68dega542e8893eb2" version="1">クリーチャーに触れて呪う。呪いは&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;か&lt;LSTag Tooltip="AttackRoll"&gt;攻撃&lt;/LSTag&gt;を&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;にする。目標に追加ダメージを与えるか、アクションを奪う  </content>
-  <content contentuid="h1868d945g0cffgb3bdgfc02g47ef00410e4a" version="1">呪詛: 筋力不利</content>
-  <content contentuid="h298282ecgdcceg3f36g9e62g51935866728c" version="1">クリーチャーに触れて呪う。標的のクリーチャーは筋力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="hd520eb50g1135g76ecg17c0g2ede9c90321e" version="1">呪詛: 敏捷力不利</content>
-  <content contentuid="h1a4c39begecc3g2a3aga0f4g878b9fc63e54" version="1">クリーチャーに触れて呪う。標的のクリーチャーは敏捷力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h699855b2gc301gbd0dgad64g427100acec91" version="1">呪詛: 耐久力不利</content>
-  <content contentuid="he2c99f93ga5e5g7a07g245fg0f60f1fa30b0" version="1">クリーチャーに触れて呪う。標的のクリーチャーは耐久力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="hfcc0a78fgbd96g2086ga6bfg2cfec04edd2d" version="1">呪詛: 知力不利</content>
-  <content contentuid="h4c2c7cc7g3da7g3e9age71cg394d7f82623e" version="1">クリーチャーに触れて呪う。標的のクリーチャーは知力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h59135973g61e6g7083g01cag90826d98bab7" version="1">呪詛: 判断力不利</content>
-  <content contentuid="h1934119dgbdccgc443gb17bg5e8ebb08a907" version="1">クリーチャーに触れて呪う。標的のクリーチャーは判断力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h8732bd5dg5f3cgfb87gb512gfda761f8c710" version="1">呪詛: 魅力不利</content>
-  <content contentuid="h848bdb6bgb349gd182ga57fg8c2e333de3c6" version="1">クリーチャーに触れて呪う。標的のクリーチャーは魅力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h1d14466cgc566g3697g7afcg23f2cda6b626" version="1">呪詛: 攻撃不利</content>
-  <content contentuid="h03f4e692g56c6g5001g17adg72f182951516" version="1">クリーチャーに触れて呪う。標的のクリーチャーが自分に対する&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;で&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h60de7a54g35b6gffcag2182gf832019fac15" version="1">呪詛: 追加ダメージ</content>
-  <content contentuid="hbf980649gb1b1gd67cg8cd9g1369291fa4d0" version="1">クリーチャーに触れて呪う。攻撃や呪文で目標へ[1]を追加で与える</content>
-  <content contentuid="h9961c64ag4195gb937g4da3g2313af9bbb31" version="1">呪詛: 畏怖</content>
-  <content contentuid="hfa77b47cg9ff2ge5c8g8fe8g88d38261ccb6" version="1">クリーチャーに触れて呪う。標的は恐怖に包まれ、ターンをスキップすることがある</content>
-  <content contentuid="h7857474dg4e6bgab4cgc9c8g1f39398bde4c" version="1">呪詛: 畏怖</content>
-  <content contentuid="ha3b0041age779g58c9g2677g7edfe5553164" version="1">クリーチャーに触れて呪う。標的は恐怖に包まれ、ターンをスキップすることがある</content>
-  <content contentuid="h11d7d8f1g23a0gf9a4gf2a3ge05280ee0ccb" version="1">呪詛: 追加ダメージ</content>
-  <content contentuid="h939eeb3ag4c51g814fg5bf4g9fa6032ff773" version="1">クリーチャーに触れて呪う。攻撃や呪文で目標へ[1]を追加で与える</content>
-  <content contentuid="h18946b2fg2799g5d8cg1191ga2ad1070c791" version="1">呪詛: 攻撃不利</content>
-  <content contentuid="hc0faf0e3g6b1bgefbbge13cg61d3cdca920b" version="1">クリーチャーに触れて呪う。標的のクリーチャーが自分に対する&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;で&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h48d03ba3g804fg652dg12b7g4a3946dd70bb" version="1">呪詛: 魅力不利</content>
-  <content contentuid="h11528aaeg2fcfg0c2cge5e2g2687b402d219" version="1">クリーチャーに触れて呪う。標的のクリーチャーは魅力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="hb6067f83ga83eg2305g1b53geefaa2c43f57" version="1">呪詛: 判断力不利</content>
-  <content contentuid="h3d982533g8b9dg4f19geb4cgafe40d2d26a2" version="1">クリーチャーに触れて呪う。標的のクリーチャーは判断力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="hda9ed1dagfaa2ge452g0aa6g30341cf8bef5" version="1">呪詛: 知力不利</content>
-  <content contentuid="h51855810g14b0g7ed1ge485ged81cdef077a" version="1">クリーチャーに触れて呪う。標的のクリーチャーは知力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h2b722fa9ge1fcgdec8gaf5ag936948724f78" version="1">呪詛: 耐久力不利</content>
-  <content contentuid="h04219409g50b2gc6a1gd8efg9b21029bf88e" version="1">クリーチャーに触れて呪う。標的のクリーチャーは耐久力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h44e7ec16gb1b1g3723g68a5gbfb6ea5ffd15" version="1">呪詛: 敏捷力不利</content>
-  <content contentuid="h3c8544c2g5491g2702g54f1gaf24b22f35fd" version="1">クリーチャーに触れて呪う。標的のクリーチャーは敏捷力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="ha29f6dc9gfcf4g2493g23cbg8a60b97c11b0" version="1">呪詛: 筋力不利</content>
-  <content contentuid="h61fc3e75g1ec0gc89ag9436g4e8ddfbca849" version="1">クリーチャーに触れて呪う。標的のクリーチャーは筋力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="hd7230d6bg2475g7ee0gd19eg41d41b35912b" version="1">呪詛</content>
-  <content contentuid="h92b0717fg3876gf392gd6bege29b23736c7c" version="1">クリーチャーに触れて呪う。呪いは&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;か&lt;LSTag Tooltip="AttackRoll"&gt;攻撃&lt;/LSTag&gt;を&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;にする。目標に追加ダメージを与えるか、アクションを奪う  </content>
   <content contentuid="ha3fdc893gcf78gc804gf587gdbeacfc06c65" version="1">暗闇の再発動</content>
   <content contentuid="h165ff057g66b4g488dg8815gdc5f1e533378" version="1">呪文スロットの消費やアクションの使用なしで呪文を再発動できる。</content>
   <content contentuid="hc846b26dgef48g7d56g1bb9g632994732104" version="1">強風の再発動</content>
@@ -1414,78 +1074,30 @@
   <content contentuid="hc704bd0ag2056geb75gf781g2a3b1ef159c5" version="1">呪文スロットの消費やアクションの使用なしで呪文を再発動できる。</content>
   <content contentuid="h272e8b3fg32bcg9272g86a0g32a43e6b7889" version="1">暗闇の再発動</content>
   <content contentuid="h191d3b3cg589agc29bg69e9g143e19f63834" version="1">呪文スロットの消費やアクションの使用なしで呪文を再発動できる。</content>
-  <content contentuid="hb302549egc54bg5a4dgbcedg1c098cc541f2" version="1">呪い</content>
-  <content contentuid="h15d4347egf4adg1955g7c5agb0611504409c" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに任意の&lt;LSTag Tooltip="Abilities"&gt;能力&lt;/LSTag&gt;の能力値判定が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h1468dc42g4e8bg6f7fg3c71g087f5298ce17" version="1">呪文終了前に目標が死亡した場合、&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を消費せずに新たなクリーチャーを呪える</content>
-  <content contentuid="h94cfdb63g5f9bgb908ga1b4g49a999286692" version="1">呪い(筋力)</content>
   <content contentuid="h7a57f594g5b53g2b67g6e93g91c13a46a6ae" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに筋力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h987bc8d8gdf36gc7bcg7594gb66a908bf0c3" version="1">呪い(敏捷力)</content>
   <content contentuid="h41db93b6g0ef1ge843g94a8ga0ab1175d337" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに敏捷力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h8ce4327cg50e9g7d5cgb46eg76e0ef7894c5" version="1">呪い(耐久力)</content>
   <content contentuid="h357ee2f8gc6c0g20c2gb379gb5e5956b36c8" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに耐久力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h4aac8b8dg3ce0g0e28g52dag466801c17de1" version="1">呪い(知力)</content>
   <content contentuid="hc349e53bg4534gfd44g5013g08f1ce806f4a" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに知力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h08459485g468fg19f8gdfa0gde729a573bdd" version="1">呪い(判断力)</content>
   <content contentuid="h99671ac5g1722g6772gd253gca4101371e65" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに判断力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="hd84f5047g0e76gc836g35b5gbe6d305fb2a7" version="1">呪い(魅力)</content>
   <content contentuid="hdacc0f70g174fg1d6bgacb2ga2903b808996" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに魅力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h996f221agacbcg6efeg993agc53fc989fb21" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに任意の&lt;LSTag Tooltip="Abilities"&gt;能力&lt;/LSTag&gt;の能力値判定が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="hfea5f311gcf97g56f0g0870g033aad6ff8c4" version="1">呪文終了前に目標が死亡した場合、&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を消費せずに新たなクリーチャーを呪える</content>
-  <content contentuid="hc1eccf67g50eag9cf5ga136gc2f32f4d87ca" version="1">呪い</content>
-  <content contentuid="h986ef392g7cedg2e71g03a9gf9c1687d9521" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに任意の&lt;LSTag Tooltip="Abilities"&gt;能力&lt;/LSTag&gt;の能力値判定が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="hf92ba4c0g7544g31a6gfd25g199230d6f70e" version="1">呪文終了前に目標が死亡した場合、&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を消費せずに新たなクリーチャーを呪える</content>
-  <content contentuid="hd19154f9g67bbga673gb1a8g0f17ebdb7005" version="1">呪い</content>
-  <content contentuid="h25a3dfe9g20e9gf9e2ge187g319f2447e505" version="1">呪い再適用</content>
-  <content contentuid="h31ca6f3dgf10dg95f5g40e3g89de00c36156" version="1">&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を消費せずに新たなクリーチャーを呪える</content>
-  <content contentuid="ha5a58153g6cc6g4715g75c2ge276ca741c83" version="1">呪われたクリーチャーを攻撃すると追加ダメージを与えられ、そのクリーチャーは任意の&lt;LSTag Tooltip="Ability"&gt;能力&lt;/LSTag&gt;の&lt;LSTag Tooltip="AbilityCheck"&gt;能力値判定&lt;/LSTag&gt;で&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h0ac3faf5gc801gba36g36e2ge50c0d3cbe3d" version="1">呪い再適用(筋力)</content>
   <content contentuid="h93b664f7ge625g3785ge62age99ab6de787e" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに筋力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="hfe462b8cgfce2gf331g69a8gfd66b9d06b2c" version="1">呪い再適用(敏捷力)</content>
   <content contentuid="h65fc6538g9b83gcdc4g67cfgc411ccba18fd" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに敏捷力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h4428d231g6bedg24dcg58d3g1a2c9a1125e7" version="1">呪い再適用(耐久力)</content>
   <content contentuid="h703b6d99g4f19g3cfeg86abgacc9632e7471" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに耐久力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h339ecf93g2f0ag416fge58ag903ed30bf51f" version="1">呪い再適用(知力)</content>
   <content contentuid="ha4995955g8c54g2f20g60dfg3cbbd515279f" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに知力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h430a3b34g7f89g31cdg2b02ga2a3fbaf7812" version="1">呪い再適用(判断力)</content>
   <content contentuid="hac9ec7f6g445ag9437ga0c4g1c9b0eeeaf71" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに判断力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h5aaf0080ge420g749fga2c5g922dd7ab9bc1" version="1">呪い再適用(魅力)</content>
   <content contentuid="h89057920g5fe6gc589g4d87ge015cd8a0c2b" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに魅力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h6f62ceafgc618g1146g5257g5408af5dab65" version="1">呪い再適用(魅力)</content>
   <content contentuid="hc1282babgcb3dge035g6100g9c90f22e8322" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに魅力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="hfa7f6205ge320g224eg9c60g341254b00f5d" version="1">呪い再適用(判断力)</content>
   <content contentuid="h43d4b358gb8f2ga4c7g6624g8428e6a2d7e0" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに判断力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h86c9143ega058g12f9g6c50ga755dfac9985" version="1">呪い再適用(知力)</content>
   <content contentuid="h58e709b8gc090g659agd6b3g9e417bbbda73" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに知力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="hc51bf50bg7affgbbefgf975ga57d608a8b19" version="1">呪い再適用(耐久力)</content>
   <content contentuid="hd9a8ca0ag30cagfb8agbc55g0402f2d4ba55" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに耐久力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h08115bbbgf0d0gd268g5ce9g6d73edc1f0dc" version="1">呪い再適用(敏捷力)</content>
   <content contentuid="h4d10531bg4d81g6ccegbf1bgda8710332c45" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに敏捷力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h365cad4egf41dg3be3g2556g60c4f94dca47" version="1">呪い再適用(筋力)</content>
   <content contentuid="ha11a0af0gf1fdg6d14gc928g6c0b30819c32" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに筋力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="hb33f8a62gdd36gf6d9gacb0ge5a98eab7ecd" version="1">呪い再適用</content>
-  <content contentuid="h23e856a5g4d0ag528cgd0fag36230f54235f" version="1">&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を消費せずに新たなクリーチャーを呪える</content>
-  <content contentuid="hfda85d46g3626g88f8gecffg03e1abc1eb12" version="1">呪われたクリーチャーを攻撃すると追加ダメージを与えられ、そのクリーチャーは任意の&lt;LSTag Tooltip="Ability"&gt;能力&lt;/LSTag&gt;の&lt;LSTag Tooltip="AbilityCheck"&gt;能力値判定&lt;/LSTag&gt;で&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="hfd42c4cdg4002g1993ge98ag453cbbdf7684" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに任意の&lt;LSTag Tooltip="Abilities"&gt;能力&lt;/LSTag&gt;の能力値判定が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="hd4782a03g4747ga790g93f8gb5ba22e3ba1a" version="1">呪文終了前に目標が死亡した場合、&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を消費せずに新たなクリーチャーを呪える</content>
-  <content contentuid="h7416be09g20a9ga121g5136g174293a1df26" version="1">呪い</content>
-  <content contentuid="h4eb29c67ga49agd6e4g8d5ag46d694f80e9e" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに任意の&lt;LSTag Tooltip="Abilities"&gt;能力&lt;/LSTag&gt;の能力値判定が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="h5fb3e9b6gc371g5c19g6943gfa3f460b2856" version="1">呪文終了前に目標が死亡した場合、&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を消費せずに新たなクリーチャーを呪える</content>
-  <content contentuid="h315de182g2122gf2a7g83aagb2576755b5ee" version="1">呪い</content>
-  <content contentuid="hc904ec1agac4cgacb6g35dfg81038f9c3e4f" version="1">呪い(魅力)</content>
   <content contentuid="h7362e90bg474ag92ddg105fg55c4d3f42ec4" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに魅力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h830830a0g7b58gd836gd2ceg2928e77472c1" version="1">呪い(判断力)</content>
   <content contentuid="hd0159c36g4f28g7ca7g887dga2bf48ba4acd" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに判断力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="hbea57063g0a4cg9437g0425g09d1d0f11ebd" version="1">呪い(知力)</content>
   <content contentuid="hba170a9fg16c5g2958gb01bg45ea03cb9d9d" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに知力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h5237054dgbd17gc3dagc39cg00fae637b62d" version="1">呪い(耐久力)</content>
   <content contentuid="h4cdd970cg98a9g8973ga41eg3a0152f76dc6" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに耐久力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h4237c162g3b21g9ad5gbb24gfcac91a66def" version="1">呪い(敏捷力)</content>
   <content contentuid="h9de3bf52g05b5ge6b3g5e7fgcfe595cd5d02" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに敏捷力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h380fb49dg3e47g7b02gf89dge802681c350e" version="1">呪い(筋力)</content>
   <content contentuid="h2237238fg8d1fgafb3g32e9ge243c83acb05" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに筋力の&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h5d17bbf7gb793g42b6gacefg8a899ba5c4ab" version="1">呪い</content>
-  <content contentuid="h65f3ea14g5c79g6cdag91a8g8747542a090c" version="1">目標を攻撃すると追加で[1]を与えられるようになる。さらに任意の&lt;LSTag Tooltip="Abilities"&gt;能力&lt;/LSTag&gt;の能力値判定が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる</content>
-  <content contentuid="hce562dddgafdeg09c2gfcbfgfbdf120f983f" version="1">呪文終了前に目標が死亡した場合、&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を消費せずに新たなクリーチャーを呪える</content>
   <content contentuid="hc421c06eg7266g8444g3e70g03d5b5fcf166" version="2">攻撃が目標に命中またはミスした際、使用している武器または弾薬が稲妻に変化する。攻撃によるダメージやその他の効果を受ける代わりに、目標は命中時に[1]、ミス時にはその半分のダメージを受ける。目標から3メートル以内にいる各クリーチャーは[2]を受ける。</content>
   <content contentuid="hbc4b3cdeg1f95g6b65gad88g180de678c0b5" version="1">攻撃が目標に命中またはミスした際、使用している武器または弾薬が稲妻に変化する。攻撃によるダメージやその他の効果を受ける代わりに、目標は命中時に[1]、ミス時にはその半分のダメージを受ける。目標から3メートル以内にいる各クリーチャーは[2]を受ける。</content>
   <content contentuid="h13cf2c9bg80e6g0163g3e81g9d59cc051df8" version="1">攻撃が目標に命中またはミスした際、使用している武器または弾薬が稲妻に変化する。攻撃によるダメージやその他の効果を受ける代わりに、目標は命中時に[1]、ミス時にはその半分のダメージを受ける。目標から3メートル以内にいる各クリーチャーは[2]を受ける。</content>
@@ -1495,28 +1107,6 @@
   <content contentuid="h50bff1e7g1854g3605g542bg6e07ef5207cb" version="1">非魔法の武器に触れる。呪文が終了するまで、その武器は攻撃ロールとダメージ・ロールに+[1]のボーナスを持つ魔法の武器になる。この呪文を再び唱えると、呪文は早期に終了する。</content>
   <content contentuid="hfa97514cg1b62ge708ge36dg6b7323d4da3e" version="1">非魔法の武器に触れる。呪文が終了するまで、その武器は攻撃ロールとダメージ・ロールに+[1]のボーナスを持つ魔法の武器になる。この呪文を再び唱えると、呪文は早期に終了する。</content>
   <content contentuid="h85706f21g3bf8g589fgb2e1gb85b9c796d1c" version="1">非魔法の武器に触れる。呪文が終了するまで、その武器は攻撃ロールとダメージ・ロールに+[1]のボーナスを持つ魔法の武器になる。この呪文を再び唱えると、呪文は早期に終了する。</content>
-  <content contentuid="hd1b1e771ga064g2c5ag80c8g726d183e2ca2" version="1">霧渡り</content>
-  <content contentuid="hca961975g13b2g5febg08c2g9d3660d98d2c" version="1">銀の霧に包まれ、目に見える範囲内の空いている場所に瞬間移動する</content>
-  <content contentuid="h09849cf3g915cg6336g4661g24f50ca9686e" version="1">ヘルクロウラー</content>
-  <content contentuid="hdc362569gd85ag24b4g0d8bg54d4710f50e8" version="1">エリア内に瞬間移動し、着地した場所に[1]を与える。衝撃の爆風は[2]の範囲に広がる</content>
-  <content contentuid="h700842fbg53dbga933g834eg687da2c5ce10" version="1">陰影転移</content>
-  <content contentuid="h57588ff8g673cg4666g096age3b07eae06e0" version="1">隠蔽されており、無人の場所に瞬間移動する</content>
-  <content contentuid="h8b4da624g88c6g4d24gc2b9g01b029e8ac84" version="1">影の瞬間移動</content>
-  <content contentuid="hea560c7bg2867g186ega7a5g68e209c62d64" version="1">影の場所に瞬間移動する</content>
-  <content contentuid="h8665cfd2gcdeeg2327g103cg20dfb27f2288" version="1">影の瞬間移動</content>
-  <content contentuid="h368ae20bg55efg0b36gcd78g6397f4a5e421" version="1">影の場所に瞬間移動する。クリーチャーに&lt;LSTag Type="Status" Tooltip="GARROTE_TARGET"&gt;絞首刑&lt;/LSTag&gt;を行っている場合は、そのクリーチャーも一緒に移動する</content>
-  <content contentuid="h6be1083eg310ag11e6g4f3bg3586f4ae7246" version="1">エーテル移動</content>
-  <content contentuid="h1785347fg2b9egdb19g2afdg3bc79075ff41" version="1">エーテル移動</content>
-  <content contentuid="hcb0d96ffg7517gb4c2g0af2g93cb73a687f4" version="1">影の瞬間移動</content>
-  <content contentuid="hbe999f21g0f08ge96cg6594g8835d9d3fdc5" version="1">影の場所に瞬間移動する。クリーチャーに&lt;LSTag Type="Status" Tooltip="GARROTE_TARGET"&gt;絞首刑&lt;/LSTag&gt;を行っている場合は、そのクリーチャーも一緒に移動する</content>
-  <content contentuid="h3a655c13g144fg3a01g4382gc6ee6a07b664" version="1">影の瞬間移動</content>
-  <content contentuid="hc70ed331g6b46g77d9g4d4cg645da0871699" version="1">影の場所に瞬間移動する</content>
-  <content contentuid="h390480b0g8f9fg5e94g1ba4g8e67566c3cce" version="1">陰影転移</content>
-  <content contentuid="h8a6538f6g5014g1d67gff85g2b5551228583" version="1">隠蔽されており、無人の場所に瞬間移動する</content>
-  <content contentuid="h31098a1egf55bg9a74gf0f4ga0bac9f7d37a" version="1">ヘルクロウラー</content>
-  <content contentuid="h8d64c0afgae6cg9327g2eb2g99fc3bf2c7c7" version="1">エリア内に瞬間移動し、着地した場所に[1]を与える。衝撃の爆風は[2]の範囲に広がる</content>
-  <content contentuid="h6e1403d1gbd2egd8fbge956ga08f199a8661" version="1">霧渡り</content>
-  <content contentuid="hf4388f0fgae70g972fg864eg47c7de2d60c5" version="1">銀の霧に包まれ、目に見える範囲内の空いている場所に瞬間移動する</content>
   <content contentuid="h1fc6d592gcc27gfae8g9211ge723a0f1c0e7" version="1">最悪の悪夢でクリーチャーを苦しめる。毎ターン[1]を与え、目標は&lt;LSTag Tooltip="AbilityCheck"&gt;能力値判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
   <content contentuid="h28a36b4cg27b2gab96g42b0gbade6f8162f6" version="1">最悪の悪夢でクリーチャーを苦しめる。毎ターン[1]を与え、目標は&lt;LSTag Tooltip="AbilityCheck"&gt;能力値判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
   <content contentuid="h32d2aff6ga0b0g13a1g550dgd7e4309b96fb" version="1">最悪の悪夢でクリーチャーを苦しめる。毎ターン[1]を与え、目標は&lt;LSTag Tooltip="AbilityCheck"&gt;能力値判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
@@ -1575,7 +1165,6 @@
   <content contentuid="h2bbc0ae7ged33gb46fg82a1ge5f25d92f4a0" version="1">硫酸球体</content>
   <content contentuid="hea231ad3g2d3cg3aedge6d0ge22e99d5107a" version="1">射程内の場所を指さすと、直径0.3メートルの酸の光球がそこへ飛び込み、半径6メートルの球状の範囲で爆発する。その範囲内の各クリーチャーは敏捷力セーヴィング・スローを行う。失敗したクリーチャーは[1]を受け、さらに次の自身のターンの終了時に[2]を受ける。成功したクリーチャーは最初のダメージの半分のみを受ける。</content>
   <content contentuid="hbdd2851fgaad9g9c74g84a7g3b02ca7cb05a" version="1">硫酸球体</content>
-  <content contentuid="h50b099e6g73f6g882bg67ffge23cefdbcb29" version="1">ターン終了時に[1]を受ける</content>
   <content contentuid="h520061aagfd3bg1e64g6e2dg7bfb16deeec1" version="1">ターシャの精神の鞭</content>
   <content contentuid="hac6a3cd4g227dg6382g6388g92a7edb553be" version="2">射程内に見えるクリーチャー1体に対し、精神的な攻撃を加える。目標は知力セーヴィング・スローを行わなければならない。失敗した目標は[1]を受け、次の自身のターンの終了時までリアクションを行えなくなる。さらに、次の自身のターンには、アクションを行うかボーナス・アクションを行うかを選択しなければならず、どちらか一方しか行えない。成功した目標は半分のダメージを受け、呪文の他の効果は一切受けない。</content>
   <content contentuid="h045ce8b1g3aa7gda4dgce76ge7dd467da035" version="1">ターシャの精神の鞭</content>
@@ -1584,31 +1173,19 @@
   <content contentuid="h61a4b68fgff5eg7169g07bfg95aab5c70a68" version="1">呪文の詠唱に使用した武器を振りかざし、1.5メートル以内にいるクリーチャー1体に対して近接攻撃を行う。命中した場合、目標は通常の武器攻撃の効果を受け、さらに目標から1.5メートル以内に見える別のクリーチャーへと緑の炎を跳ねさせることができる。2体目のクリーチャーは[1]を受ける。</content>
   <content contentuid="h959cb550g10b0g1785ga0e3gd4203b55f7b8" version="1">刃の嵐</content>
   <content contentuid="h650ea344gc449g2751g4692g5f60cf3d64d3" version="1">自身の周囲を薙ぎ払う幽玄な刃の円を瞬間的に作り出す。1.5メートル以内にいる他のすべてのクリーチャーは、敏捷力セーヴィング・スローに成功するか、さもなくば[1]を受けなければならない。</content>
-  <content contentuid="h8155116dgb434g017cg6396g666179cd6bbd" version="1">儀式発動者</content>
   <content contentuid="h81682b22g3da3g86c5g11f5gbebe41d25951" version="1">任意の&lt;LSTag Tooltip="RitualSpell"&gt;儀式呪文&lt;/LSTag&gt;を3つ習得した。</content>
-  <content contentuid="hca029b39g4097g0379g6a74gd52bb5fd4a04" version="1">ダンジョン探険家</content>
   <content contentuid="h5cc8709eg0974gcec1g323cg0a299d48a147" version="2">隠された物体を見つけるための知覚&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;に&lt;LSTag Tooltip="Advantage"&gt;有利&lt;/LSTag&gt;を得る。
 
 罠を回避するための&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;に&lt;LSTag Tooltip="Advantage"&gt;有利&lt;/LSTag&gt;を得て、罠のダメージに対する&lt;LSTag Tooltip="Resistant"&gt;抵抗&lt;/LSTag&gt;を得る。
 
 [1]まで暗闇で見通すことができる。</content>
-  <content contentuid="h1e93417ag9497g58f3ge9aag2e54d8ba4076" version="1">壮健</content>
   <content contentuid="hf12dc8a9g3079g890agb1ffgdf7b91f3c03d" version="2">死への抵抗：死亡セーヴィング・スローに有利を得る。
 
 迅速な回復：回復を受けた際、可能な限りの最大&lt;LSTag Tooltip="HitPoints"&gt;ヒット・ポイント&lt;/LSTag&gt;を回復する。</content>
   <content contentuid="h566e69efg081cg4f88g70abg51276f90b3b7" version="2">儀式の達人</content>
   <content contentuid="h1edea2d1ga8eeg0549g7c32g5718c99dd110" version="1">ウィザード・レベル2、4、および7において、任意の儀式呪文を1つずつ呪文書きに加える。これらは常に準備された状態となる。</content>
-  <content contentuid="h7e928dcfg9f9cg0dd6g966egff06f62b9e21" version="3">初級呪文強化</content>
-  <content contentuid="h480dcb8bge39dg992bgfa3bg9f0cf957ce9c" version="2">呪文効果範囲操作</content>
-  <content contentuid="h4df2acb8g6e7eg6b07ga5afg05bc5f965277" version="2">力術強化</content>
   <content contentuid="haf5be1bagceecg0615g9988g0af66eb534ad" version="1">力術士</content>
   <content contentuid="h135ef26bgf199g1ad5g7571gfe75a8983f9c" version="2">あなたの研究は、極寒、烈火、鳴動する雷鳴、炸裂する電撃、そして燃え盛る酸など、強力な元素効果を生み出す魔法に焦点を当てている。力術士の中には軍隊に雇われ、遠方から敵軍を吹き飛ばす砲兵として仕える者もいる。他人のためにその力を使う者もいれば、私利私欲のために使う者もいる。</content>
-  <content contentuid="ha6d01a56gfaf0g86a4g2382g2a35c4b61006" version="1">弓術</content>
-  <content contentuid="h8ce9b68cg7cf7gd7e9gf97cg858986c85631" version="1">防御</content>
-  <content contentuid="hc04efb72g5cb0g6a76g382bg0ec7961b5cbd" version="1">片手武器戦闘</content>
-  <content contentuid="ha6c87343g6e71g7201g8527g497e52c85300" version="1">両手武器戦闘</content>
-  <content contentuid="he0410f21gce36gc8d3g92efgc5ac77312265" version="1">守り</content>
-  <content contentuid="h83c327a7g73d2g3cd4g5cd3g80e43c101d1d" version="1">二刀流</content>
   <content contentuid="h69e7fd0agdd1bg3905gad72g557418af9202" version="1">心眼戦闘</content>
   <content contentuid="h55c4eaaag12b5gf38cg05acg5df6c318f96c" version="1">&lt;LSTag Type="Status" Tooltip="BLINDED"&gt;盲目状態&lt;/LSTag&gt;にならない。</content>
   <content contentuid="hd08c1324g269cg7152g313bg4e06de33fc52" version="1">割り込み</content>
@@ -1618,14 +1195,12 @@
   <content contentuid="hc14aec27g6210g39e2g3e06g4354d61fda0f" version="1">投擲特性を持つ武器を用いて遠隔攻撃ロールを命中させた際、ダメージ・ロールに+2のボーナスを得る。</content>
   <content contentuid="h50d829e8g75c2gf73cgee0fgb100f1e4a832" version="1">素手戦闘</content>
   <content contentuid="hb9ea2886ge218gb461g7d99gf5eea1cf55f9" version="2">素手攻撃を命中させてダメージを与えた際、通常の素手攻撃のダメージの代わりに、1d6＋筋力修正値に等しい殴打ダメージを与えることができる。</content>
-  <content contentuid="h55628146g051fgf97agdef9g4359a2f1d8f0" version="1">役者</content>
   <content contentuid="h662f011dg6d26gcaa0g9ddbg1bec71384d88" version="1">治癒師</content>
   <content contentuid="hb5fed628gc7a2g2040gd0adgb152d0d9aa4a" version="2">野戦衛生兵：クリーチャーのヒット・ポイントを1d8回復させる能力を得る。この能力は自身の習熟ボーナスに等しい回数だけ使用でき、大休憩を終えると消費したすべての使用回数を回復する。
 
 治癒：クリーチャーのヒット・ポイントを回復させるたびに、そのクリーチャーは自身の習熟ボーナスに等しい追加のヒット・ポイントを回復する。</content>
   <content contentuid="h7a075b74g69cagbeefg56f7gb257dbe077ac" version="1">野戦衛生兵</content>
   <content contentuid="h7ca7faf7g389dge7bag91abg08e0440c9ca6" version="1">医術道具</content>
-  <content contentuid="h7617ab21g9a01g5fbcg9493ga7c3ac3dc194" version="1">調毒道具</content>
   <content contentuid="ha2477884g01b8g19b8g2ca3g0ae325883ca5" version="1">治癒師</content>
   <content contentuid="hf4670cedg622ag16adgd7fbgf472400d198b" version="1">野戦衛生兵：クリーチャーのヒット・ポイントを1d8回復させる能力を得る。この能力は自身の習熟ボーナスに等しい回数だけ使用でき、大休憩を終えると消費したすべての使用回数を回復する。
 
@@ -1722,7 +1297,6 @@
   <content contentuid="h7d366d57g2abcg334egec99gd574e5abbc31" version="1">魔法アクションとして、自然の化身の使用回数を1回消費し、自分から18メートル以内の地点を選択できる。その地点を中心とした半径3メートルの球状範囲に、活力を与える花と生命を吸い取る棘が短時間出現する。範囲内の敵クリーチャーは[1]を受ける。範囲内にいる敵ではないクリーチャーは2d6のヒット・ポイントを回復する。
 
 ダメージと回復量は、ドルイド・レベル5（3d6）およびレベル10（4d6）に達した際にそれぞれ1d6ずつ増加する。</content>
-  <content contentuid="h971b2780g3870g87c7g5557ge1126bfcc79b" version="2">大自然の加護</content>
   <content contentuid="h08f86230g6e53ga6e6g6abfg870e7ec18f88" version="1">毒状態に対して完全耐性を得て、さらに「円環呪文」特徴で現在選択している土地に関連するダメージ種別への抵抗を得る：火（乾燥地）、冷気（極地）、電撃（温帯地）、あるいは毒（熱帯地）。</content>
   <content contentuid="h993714a3gef7eg3fa3g8208g34aa994bdb90" version="1">海の円環</content>
   <content contentuid="h620c69f6g5443g20cdg6ba6g742691ee6c08" version="1">海の円環のドルイドは、海洋と嵐の激しい力を引き出す。ある者は自身を自然の怒りの具現化と見なし、自然を荒らす者への復讐を求める。またある者は、潮の満ち引きに同調し、潮流や波の奔流に従い、風の不可解な囁きや咆哮に耳を傾けることで、自然との神秘的な一体化を求める。</content>
@@ -1766,7 +1340,6 @@
 サイオニック・ストライク：サイオニックの力で武器を加速させることができる。各ターンに一度、自分から9メートル以内の目標に攻撃を命中させ武器でダメージを与えた直後、サイオニック・エネルギー・ダイスを1個消費してロールし、目標に[1]を与えることができる。
 
 念力移動：精神で物体またはクリーチャーを移動させることができる。魔法アクションとして、自分から9メートル以内に見える目標を1つ選択する。目標は固定されていない「大型」サイズ以下の物体、または自分以外の任意のクリーチャー1体でなければならない。目標を、見える何もない場所へ最大9メートルまで転送する。あるいは、目標が「極小」サイズの物体であれば、自身の手元へ、または手元から転送できる。</content>
-  <content contentuid="hb9f5892dg60a5g8c87g7282g224efd74a6fb" version="2">底力</content>
   <content contentuid="he3bdd368gcf28g40aag8743gc422e859a060" version="1">自身には引き出すことのできる限られた心身のスタミナがある。ボーナス・アクションとして、それを使用して1d10にファイター・レベルを加えた値に等しいヒット・ポイントを回復できる。
 
 この特徴は2回使用できる。小休憩を終えると消費した使用回数を1回復し、大休憩を終えるとすべての使用回数を回復する。
@@ -1844,7 +1417,6 @@
   <content contentuid="h7eb96189g76dfg2301gb96dg3136060e0f85" version="2">フェイワイルドの魔法が自身の精神を守る。魅了状態および恐怖状態に対して完全耐性を得る。</content>
   <content contentuid="h9dab7504gf784g5021g0203g9af9fa141199" version="2">霧の放浪者</content>
   <content contentuid="hf409717bg5c28g26d8gd2b4g68055dc739d0" version="1">呪文スロットを消費することなく「霧渡り」を唱えることができる。これは自身の判断力修正値に等しい回数（最低1回）まで行うことができ、大休憩を終えると消費したすべての使用回数を回復する。</content>
-  <content contentuid="hca8dab54g1bbegcd4bg350agf4c1e9eb7523" version="2">霧渡り</content>
   <content contentuid="h632d7b10g746bg45b9gef79gab9b0940bbe2" version="2">サイキック・ブレード</content>
   <content contentuid="h2c45092ag40cag1de6gb0cag6f5b529f8501" version="2">サイオニック・エネルギーの輝く刃を具現化できる。
 
@@ -1920,18 +1492,11 @@
   <content contentuid="h2ee98c20g6713gb372g573dgca45f15d691f" version="1">この護りは、作成に費やされた魔力点の数に等しいd8の数で表される。守護されたクリーチャーがダメージを受けた際、それらのダイスを任意の数だけ消費してロールし、その合計値だけ受けるダメージを軽減できる。</content>
   <content contentuid="hbbfab3begf9cdg6052g4ac5g7eaf747c1f9a" version="1">この護りは、作成に費やされた魔力点の数に等しいd8の数で表される。守護されたクリーチャーがダメージを受けた際、それらのダイスを任意の数だけ消費してロールし、その合計値だけ受けるダメージを軽減できる。</content>
   <content contentuid="h063372f4g1033g08f6g55abgb32a96fe2615" version="1">この護りは、作成に費やされた魔力点の数に等しいd8の数で表される。守護されたクリーチャーがダメージを受けた際、それらのダイスを任意の数だけ消費してロールし、その合計値だけ受けるダメージを軽減できる。</content>
-  <content contentuid="hfc97be68g0890g2eb4g60ceg4fcde289a6f3" version="2">竜の防御力</content>
   <content contentuid="h1f6491c1gcf0ag5432gd45cg4c396aeb83ed" version="1">身体の一部がドラゴンのような鱗で覆われている。鎧を着用していない間、自身の基本アーマー・クラスは10に敏捷力修正値と魅力修正値を加えた値になる。</content>
-  <content contentuid="h7a832abfgfed6g1f5fgab2ag1ba65771f70f" version="2">混沌潮流</content>
   <content contentuid="h5d220f70g754fg8fc3g0596ge5dd3a6a27a9" version="1">混沌そのものを操り、d20をロールする前に1回のD20判定に有利を得ることができる。一度これを行うと、呪文スロットを消費してソーサラー呪文を唱えるか、あるいは大休憩を終えるまで、再びこの特徴を使用することはできない。
 
 大休憩を終える前に呪文スロットを消費してソーサラー呪文を唱えた場合、自動的に魔法暴走表をロールする。</content>
-  <content contentuid="hdc8c75ffg7a02g2926g526bgd090debe8ddf" version="2">魔法暴走</content>
   <content contentuid="h4f44c253geed3g7c67g3a13g4d233307de70" version="1">自身の呪文詠唱は、制御不能な魔法の奔流を解き放つことがある。1ターンに一度、呪文スロットを消費してソーサラー呪文を唱えた直後に1d20をロールできる。20が出た場合、魔法暴走表をロールして魔法効果を発生させる。</content>
-  <content contentuid="h244e3990gdb04g5925g28c5g71c83b2f29f9" version="1">混沌潮流チャージ</content>
-  <content contentuid="h552c9325gee4bg961cg2d50g7acb0983f1ce" version="1">混沌潮流を使用できるかどうかを決める</content>
-  <content contentuid="h3cab5040g2f51gf20bg9f65ge152e797670f" version="2">運命改変</content>
-  <content contentuid="h3fa61546gfe2agba6cga260g8953a67a0644" version="2">混沌制御</content>
   <content contentuid="h7e8a436fg7af5g1f7eg57f2g2e9aeaf85bd9" version="2">対応元素（ダメージ）</content>
   <content contentuid="hd62b7853g8592g9285gb42bgac6b36b210fb" version="2">対応元素（抵抗）</content>
   <content contentuid="h2adc185egdb92gc42cgef83gd94b5364f467" version="1">パラディンの一撃</content>
@@ -1947,7 +1512,6 @@
 爽快な渡り：瞬間移動した直後、自身および3メートル以内に見えるクリーチャー1体は1d10の一時的ヒット・ポイントを得る。
 
 挑発の渡り：自身が去った場所から3メートル以内のクリーチャーは、自身の呪文セーヴ難易度に対する判断力セーヴィング・スローに成功するか、さもなくば次の自身のターンの開始時まで、自分以外のクリーチャーに対する攻撃ロールに不利を受けなければならない。</content>
-  <content contentuid="h6115b3f2g010ag8559g7318gc2394c1971ed" version="2">霧隠れ</content>
   <content contentuid="h6dbe3baeg32b7g2be3gc059gc25854510170" version="3">ダメージを受けたことに対するリアクションとして「霧渡り」を唱えることができる。
 
 さらに、以下の効果が「フェイの渡り」の選択肢に加わる。
@@ -2011,25 +1575,14 @@
   <content contentuid="hac21fc5bg9d5cg705egede3g663945541420" version="2">自身の&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;に&lt;LSTag Tooltip="Advantage"&gt;有利&lt;/LSTag&gt;を得る。</content>
   <content contentuid="hd3b6f9bdga558g9498gb53egf8707edcbf80" version="1">英雄的インスピレーション</content>
   <content contentuid="h43bcb1b9g7661gd847g5c69g16cf92019e88" version="1">英雄的インスピレーションを持っている場合、ダイスをロールした直後にそれを消費して、そのダイスを再ロールすることができる。</content>
-  <content contentuid="h046f2142g4017g500fg9e5cg829c2bf7808e" version="1">アドレナリン・ラッシュ</content>
   <content contentuid="h8306332bg4a42gfdaag8e32g05d5b2d0a005" version="1">ボーナス・アクションとして早足アクションを行うことができる。その際、[1]を得る。
 
 この特徴は自身の習熟ボーナスに等しい回数だけ使用でき、小休憩または大休憩を終えると消費したすべての使用回数を回復する。</content>
-  <content contentuid="hff787feeg6644g2b33g0be6g8fd958b702b8" version="1">アドレナリン・ラッシュ</content>
   <content contentuid="ha554c47egeb81g75ccgd39cg1311b5e29042" version="1">[1]を得る。</content>
-  <content contentuid="hf861876fg4ca8gf9c0g6492g1bb8a0a92ebb" version="1">アドレナリン・ラッシュ</content>
   <content contentuid="he98b170fg0b2bg4502g8a0fg3f8f765d62aa" version="1">ボーナス・アクションとして早足アクションを行うことができる。その際、[1]を得る。</content>
-  <content contentuid="hebe3b6e0g1e21g24c8g8ce2gd9aaa9e5dde4" version="1">ハイ・エルフ初級呪文</content>
   <content contentuid="h9adf7805gb424g309ag6e71g53eca41cd8d5" version="1">以下のウィザード呪文リストから別のものを選択して、初級呪文を変更することができる。この初級呪文は&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;を消費せず、自在に唱えることができる。</content>
-  <content contentuid="h9b697d45g3dd3gf371g2860g7b65899c8fc7" version="1">抵抗力</content>
-  <content contentuid="h10997edbg285bg8db6g0718gb2e6c09ff676" version="2">暗黒の祝福</content>
   <content contentuid="h03df3855gb482gdaf5g11f0gbf6d6d9fbb62" version="1">敵のヒット・ポイントを0にした際、自身の魅力修正値にウォーロック・レベルを加えた値（最低1）に等しい一時的ヒット・ポイントを得る。また、自分から3メートル以内にいる敵を他の誰かがヒット・ポイント0にした際にも、この恩恵を得る。</content>
-  <content contentuid="hde74c01eg8bb3gbf23g8416g7da16527c0d5" version="1">暗黒の祝福</content>
   <content contentuid="he0b3dcccga1b5gd89bgf47ag768a98964bc3" version="1">自分から3メートル以内にいるクリーチャーが自分以外の誰かによってヒット・ポイント0にされた際、自身の魅力修正値にウォーロック・レベルを加えた値（最低1）に等しい一時的ヒット・ポイントを得る。</content>
-  <content contentuid="hbbedb4f1g60d4g6ed0gb97bg90c73d16c026" version="2">暗黒の恩寵</content>
-  <content contentuid="h975e39acg9a17g2ad0g477cgf30fdb0bf07d" version="2">魔物の抵抗力</content>
-  <content contentuid="hbfafa7a4g3ea7g96f1gcfebg2da208843ab2" version="2">定命の喚起</content>
-  <content contentuid="h2af9e353ga54bg35f7gcc87g05adfcd9b61a" version="2">エントロピーの守り</content>
   <content contentuid="he825a41dg5c3bgb501g5e02gc52e109b7efa" version="2">思考遮蔽</content>
   <content contentuid="hbb495285gca5fg5ea5g19a8g7daed758d05f" version="1">許可しない限り、テレパシーやその他の手段で思考を読み取られることはない。また、精神ダメージに対する抵抗を得て、クリーチャーが自分に精神ダメージを与えるたびに、そのクリーチャーは自身が受けたのと同量のダメージを受ける。</content>
   <content contentuid="h0eb341bcgb4f9g7430gafc5g64f46cf69004" version="1">リアクションとして、自身に対する&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;に&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;を課すことができる。
@@ -2051,7 +1604,6 @@
   <content contentuid="h3c6667d4gfa1bgc9b9g5be0gb270c5c555d5" version="1">クリーチャーは術者から追加で[1]を受ける。また、判断力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
   <content contentuid="hb09d35e6g4dd1g0784g8c7fgc7f20e0d9670" version="1">妖術の呪い：魅力</content>
   <content contentuid="h99239365g1e0eg35cfgc2edg0a2bbfb668ae" version="1">クリーチャーは術者から追加で[1]を受ける。また、魅力&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;と&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;が&lt;LSTag Tooltip="Disadvantage"&gt;不利&lt;/LSTag&gt;になる。</content>
-  <content contentuid="h2fccb783g0014g25e8g73fbg7879e3ab30ce" version="2">幻影変り身</content>
   <content contentuid="hd251b05fg755bge84dgf97egf45679814510" version="1">クリーチャーが攻撃ロールを命中させた際、リアクションを用いて攻撃者と自身の間に自身の幻影の複製を割り込ませることができる。攻撃は自動的にミスとなり、その後幻影は消滅する。
 
 この特徴を一度使用すると、小休憩または大休憩を終えるまで再び使用することはできない。また、2レベル以上の呪文スロットを消費することでも使用回数を回復できる。</content>
@@ -2075,10 +1627,6 @@
   <content contentuid="h3f7b8985g6d22gafeag4f95gff41b038514a" version="1">割り込み</content>
   <content contentuid="h2f17ec6fgaccfg9489ga33dg5178d82df62d" version="1">見えるクリーチャーが、自分から1.5メートル以内にいる別のクリーチャーに攻撃ロールを命中させた際、リアクションを用いて目標に対するダメージを1d10＋習熟ボーナスだけ軽減できる。このリアクションを使用するには、盾、あるいは単純または軍用武器を手に持っていなければならない。</content>
   <content contentuid="haa6b6306gc9beg2335g7d38gc8a89fd7d942" version="1">他のクリーチャーを回復させた際、そのクリーチャーは以下の効果を得る：呪文が終了するまでの間、クリーチャーがその対象に対して攻撃ロールを行うたびに、攻撃者はロールの結果から1d4を減算する。</content>
-  <content contentuid="h07ec80cfg5173g412ag13f9g0b0939797d6c" version="1">竜の防御力: ヒット・ポイント</content>
-  <content contentuid="hd645cdfeg2751g6421g0bb5gbb5188468ed1" version="1">ソーサラーのレベルごとに最大&lt;LSTag Tooltip="HitPoints"&gt;ヒット・ポイント&lt;/LSTag&gt;が1上昇する</content>
-  <content contentuid="h70590391g8a16g000bg3b85gb758c7f01fc9" version="1">竜の防御力: ヒット・ポイント</content>
-  <content contentuid="hd08ff7b2gae53g91e3g1c43g984682ce4af8" version="1">ソーサラーのレベルごとに最大&lt;LSTag Tooltip="HitPoints"&gt;ヒット・ポイント&lt;/LSTag&gt;が1上昇する</content>
   <content contentuid="h425e3ae9ge949g55bbg3aecg26401432f816" version="1">&lt;LSTag Type="Spell" Tooltip="Target_BardicInspiration"&gt;バードの声援&lt;/LSTag&gt;を用いて味方に活力を与えた際、自身のバード・レベルに等しい[1]を得る。</content>
   <content contentuid="h4b3bbd82gcfdegf0b2g8843g1b27f8c2a5b8" version="1">&lt;LSTag Type="Spell" Tooltip="Target_BardicInspiration"&gt;バードの声援&lt;/LSTag&gt;を用いて味方に活力を与えた際、その味方は自身のバードの声援ダイスの出目に等しい[1]も回復する。</content>
   <content contentuid="h67022386g828fg30bag1c0cg215dae9c4f39" version="3">装備者を攻撃したアンデッド・クリーチャーは[1]を受ける。装備者を攻撃した野獣は&lt;LSTag Type="Status" Tooltip="CHARMED"&gt;魅了状態&lt;/LSTag&gt;になる。</content>
@@ -2098,13 +1646,9 @@
   <content contentuid="h9dd19073g7262gabe8g561dga56e7269712b" version="2">占術または心術系統からレベル1呪文を1つ選択する。常にその呪文と「霧渡り」が準備された状態になる。これらの呪文はそれぞれ呪文スロットを消費することなく唱えることができるが、その呪文をこの方法で再び唱えるには大休憩を終えなければならない。また、所持している呪文スロットを使用してこれらの呪文を唱えることもできる。</content>
   <content contentuid="h45c39024gdfe0g1fbeg74d2g67115110174b" version="1">影に触れられし者</content>
   <content contentuid="hbd7f0193ge427g3d75gc0adgfdba8212fb8b" version="2">幻術または死霊術系統からレベル1呪文を1つ選択する。常にその呪文と「不可視化」が準備された状態になる。これらの呪文はそれぞれ呪文スロットを消費することなく唱えることができるが、その呪文をこの方法で再び唱えるには大休憩を終えなければならない。また、所持している呪文スロットを使用してこれらの呪文を唱えることもできる。</content>
-  <content contentuid="h217127dag7542g9cacg618cg5aa51ecced4b" version="1">激励する指揮官</content>
   <content contentuid="h008b1355g9855gf610g8c06gec5ceab5ab6f" version="1">小休憩または大休憩を終えた際、演説、歌、あるいは踊りによる鼓舞するような振る舞いを見せることができる。この特徴は小休憩ごとに1回使用できる。使用した際、自分から9メートル以内にいる各味方は、自身のキャラクター・レベルに習熟ボーナスを加えた値に等しい一時的ヒット・ポイントを得る。</content>
-  <content contentuid="h38de6e70g3483gb2a8gf232gce6933397614" version="1">激励する指揮官</content>
   <content contentuid="ha3aeca2ag84a7g9aa2gc23cg0d41a7036cc2" version="1">小休憩または大休憩を終えた際、演説、歌、あるいは踊りによる鼓舞するような振る舞いを見せることができる。この特徴は小休憩ごとに1回使用できる。使用した際、自分から9メートル以内にいる各味方は、自身のキャラクター・レベルに習熟ボーナスを加えた値に等しい一時的ヒット・ポイントを得る。</content>
-  <content contentuid="h67402ac7g0551gf435g6451g8cdb39545b19" version="1">激励する指揮官</content>
   <content contentuid="hd28c4d74gd3aag5aa9g12b2g628e33edb9c9" version="1">術者のレベルに習熟ボーナスを加えた値に等しい一時的ヒット・ポイントを得る。</content>
-  <content contentuid="hea65502fg6391g1f02gf466g3d9d8f544c0b" version="1">激励する指揮官</content>
   <content contentuid="hfe85ad95g8cb3g8eecg7ca9g7f8ee3255f42" version="1">小休憩または大休憩を終えた際、演説、歌、あるいは踊りによる鼓舞するような振る舞いを見せることができる。この特徴は小休憩ごとに1回使用できる。使用した際、自分から9メートル以内にいる各味方は、自身のキャラクター・レベルに習熟ボーナスを加えた値に等しい一時的ヒット・ポイントを得る。</content>
   <content contentuid="h722f5cc4g1b03ga262gffdfg044c2f2f2f85" version="1">技能の達人</content>
   <content contentuid="h07dde1d7g4173g2970g8a5fgd318f17b9b5f" version="1">技能習熟：任意の技能1つの習熟を得る。
@@ -2122,8 +1666,6 @@
   <content contentuid="h0df1df8cg4144g5ee4g0641gab98d991d8dc" version="1">擬似視覚：3メートルの範囲の擬似視覚を得る。
 
 戦場の霧：隠れ身アクションを行った際に不可視状態になるための難易度が、20ではなく15になる。</content>
-  <content contentuid="h7c85fa7fgebf4g2fbcg397bg07dedebf1d32" version="2">炎の刃</content>
-  <content contentuid="h184daf4dg8b82g8b87ge6d3gd88ec7c48bc1" version="2">生きた炎から作られたエーテルのシミター</content>
   <content contentuid="h5a116b29gfa53g8de0g6237g5a2e4982dfe5" version="1">小休憩の恩恵を得る。</content>
   <content contentuid="h568cd018gb348gb0a5g559fgc0dd5e263efc" version="1">小休憩の恩恵を得る。</content>
   <content contentuid="hb81653bdgbf89g4d3eg8b44g1d6392df53a6" version="1">小休憩の恩恵を得る。</content>
@@ -2212,7 +1754,6 @@
 冷気ダメージと毒ダメージに対する抵抗を得る。
 毒状態に対するセーヴィング・スローに有利を得る。</content>
   <content contentuid="he3cdc39cg8e39gb2e3gc628g38d8698d6dfb" version="1">オークの怒り</content>
-  <content contentuid="h4b0f1e63g20c9gcc05ga203g340139e843f1" version="1">近接武器攻撃で&lt;LSTag Tooltip="CriticalHit"&gt;クリティカル・ヒット&lt;/LSTag&gt;を決めると、武器ダメージへさらにダイスを加える </content>
   <content contentuid="h09b6e651g8c58gb250g73d8gf855f2d9b768" version="1">オークの怒り</content>
   <content contentuid="h505c9691gb92dg0066g1bd8gee8dbadfa730" version="1">前提条件：ハーフオーク
 
@@ -2320,7 +1861,6 @@
   <content contentuid="h45c64306g0c10g4b75g2a61ga03cdc9f028f" version="1">身内優先</content>
   <content contentuid="h0d3b5485g5c57gea41ga802gd8b3685f8840" version="1">身内優先</content>
   <content contentuid="h376cf1deg3cbcgd0e3gd8b3g7017359c484e" version="1">大休憩ごとに一度、自身と9メートル以内にいる味方のイニシアチブ・ロールに有利を与える。</content>
-  <content contentuid="hdc0c151fgfe8egbcabge68cg685831c227f1" version="1">近接攻撃、即席武器、物体を投げることで[1]の追加ダメージを与えられる</content>
   <content contentuid="hbba7650bg2c8bga26fga741g9eb4b22d5870" version="1">ダメージを与える初級呪文は、まともに効果を受けなかったクリーチャーにさえ影響を与える。クリーチャーに初級呪文を唱え、攻撃ロールがミスした、あるいは目標が初級呪文に対するセーヴィング・スローに成功した場合でも、目標はその初級呪文のダメージの半分（あれば）を受けるが、追加の効果は受けない。</content>
   <content contentuid="h97952f3cg6278g1f14ge37fg872fa1c84f63" version="1">農夫</content>
   <content contentuid="h15dc29ceg8c9cg6290g5aa9gcfb5242e5617" version="2">追加HP
@@ -2334,7 +1874,6 @@
   <content contentuid="h49166a1eg4322g9138gf1d7g4a5a791dc1d6" version="2">魔法のたしなみ（ドルイド）
 
 人里離れた屋外で成人した。寝袋を広げた場所がどこでも自身の家であった。荒野には、奇妙な怪物、原生林や小川、かつて巨人が歩いた大広間の遺跡など、不思議なものが溢れている。それらを探索しながら、自力で生き抜く術を学んだ。時折、友好的な自然の司祭たちを案内し、彼らから荒野の魔法を導く基礎を教わった。</content>
-  <content contentuid="h0fa8ec83g19fag6182gb455g1d2c24eddba3" version="1">隠者</content>
   <content contentuid="ha5ec425bg430dg6de7ge56ag7b5f719afc8e" version="2">治癒師
 
 幼少期を、最寄りの集落から遠く離れた場所にある小屋や修道院に隠棲して過ごした。当時、唯一の仲間は森の生き物たちと、時折外の世界のニュースや物資を届けてくれる訪問者だけであった。孤独の中で、創造の謎について熟考する多くの時間を過ごした。</content>
@@ -2342,7 +1881,6 @@
   <content contentuid="h1de6d67bgeb49gcb85gfb65g06babeedf8df" version="2">幸運
 
 商人、隊商の長、あるいは店主に弟子入りし、商業の基礎を学んだ。広く旅をし、職人が必要とする原材料や完成品を売買して生計を立ててきた。船や荷馬車で商品を運んだり、旅の商人から買い取って自身の店で販売したりしたこともある。</content>
-  <content contentuid="h75361877g462ag56f8g1373ge76df7dda28e" version="1">船乗り</content>
   <content contentuid="h7187b090g05a9g4c6fgefa0g22b1e8de0294" version="2">酒場流喧嘩殺法
 
 船乗りとして、風を背に受け、揺れるデッキの上で生活してきた。数え切れないほどの寄港地で酒場の椅子に座り、強大な嵐に立ち向かい、波の下で暮らす民と物語を交わしてきた。</content>
@@ -2378,7 +1916,6 @@
 動物との会話：常に「動物との会話」の呪文を準備しており、持っている任意の呪文スロットで唱えることができる。
 
 タッグチーム：援護アクションを行う際、そのアクションの一部として、自分から1.5メートル以内にいる友好的な味方と位置を入れ替えることができる。この移動は機会攻撃を誘発しない。</content>
-  <content contentuid="hdca03596gcde4g4b29g8a36g81f8496c69a4" version="1">燃える拳の傭兵</content>
   <content contentuid="he09a0c77g31aeg7362g892bg7bdd827aa73e" version="2">追加HP
 
 バルダーズ・ゲートの主要な法執行機関である「燃える拳」に仕え、威圧的な眼差しでトラブルを未然に防ぎ、必要に応じて致命的な打撃を耐え抜く方法を学んだ。「燃える拳」の傭兵はソード・コースト沿いで最もタフで粘り強い戦士として知られており、その評判を維持しようとしている。</content>
@@ -2642,9 +2179,7 @@
   <content contentuid="h354b3d9ag3986g5438g5c7fg5f7f7196c4c4" version="1">ボーナス・アクションとしてクリーチャーにバードの声援ダイスを与える際、そのボーナス・アクションの一部として不可視状態になり、18メートル以内の見える空いている空間に瞬間移動できる。この不可視状態は次の自身のターンの開始時まで持続するが、攻撃ロールを行うか、ダメージを与えるか、あるいは呪文を唱えた直後に早期終了する。</content>
   <content contentuid="ha0ddac76g013eg8574g0831g4fde2e2fef92" version="1">鼓舞する月食</content>
   <content contentuid="h976048b3gf9c6gba32g7185g9373737f96b8" version="1">ボーナス・アクションとしてクリーチャーにバードの声援ダイスを与える際、そのボーナス・アクションの一部として不可視状態になり、18メートル以内の見える空いている空間に瞬間移動できる。この不可視状態は次の自身のターンの開始時まで持続するが、攻撃ロールを行うか、ダメージを与えるか、あるいは呪文を唱えた直後に早期終了する。</content>
-  <content contentuid="h9f1b45feg3a13g4bccg4842g98f511ae2e02" version="1">月の活力</content>
   <content contentuid="h88fd7cb1g4a94g8ad2g4bf8ga268d1168276" version="1">クリーチャーの移動速度も3メートル増加する。</content>
-  <content contentuid="h6088fb76ga8b7g5ae5gfb3eg1af90e35d769" version="1">月の活力</content>
   <content contentuid="h81c2cbd1ge2a2g4781g89a2gf1b79723f601" version="1">各ターンに一度、呪文でクリーチャーのヒット・ポイントを回復させる際、バードの声援ダイスを1つ消費して、回復量をバードの声援ダイスの1ロールに等しい値だけ増加させることができる。また、そのクリーチャーの移動速度は次のそのターンの終了時まで3メートル増加する。</content>
   <content contentuid="h97618a1dg57f7g2acfg001dg5ba785249fde" version="1">月光の祝福</content>
   <content contentuid="h13f755b1gb20cg69d9g98a6g40d319bcab11" version="2">[1]以内に見える任意のクリーチャー1体を選択し、[2]を回復させる。</content>
@@ -2741,7 +2276,6 @@
   <content contentuid="h2882b8f2g2c4dg9432gc6b0gd97aa3d6ec17" version="1">自分から9メートル以内に見える何もない場所へ瞬間移動し、半実体化した姿になる。この姿は次の自身のターンの終了時まで持続する。この形態の間、殴打、刺突、および斬撃ダメージに対する抵抗を得て、伏せ状態および拘束状態に対する完全耐性を得る。</content>
   <content contentuid="hab8ce398geb65gdcbbgc14ega6cd5dd5da1c" version="1">元素防護のオーラ</content>
   <content contentuid="h9b2090d2g2df9ga6b6g06e6g8c2dc62f5763" version="1">酸、冷気、火、電撃、および雷鳴ダメージに対する抵抗を持つ。</content>
-  <content contentuid="hd699c237g9c18g83b1g6f1dg6cc399770254" version="2">刃の歌</content>
   <content contentuid="h3b87eea0g36e0gf638g04c0gc6f56f797e73" version="2">ボーナス・アクションとして、鎧を着用せず盾も装備していない場合に限り、「刃の歌」と呼ばれるエルフの魔法を発動できる。
 
 「刃の歌」は1分（10ターン）間持続するが、無力状態になるか、鎧や盾を装備するか、武器攻撃に両手を使用すると早期に終了する。いつでも「刃の歌」を解除できる（アクション不要）。
@@ -2763,7 +2297,6 @@
 集中：精神集中を維持するための耐久力セーヴィング・スローを行う際、合計値に自身の知力修正値を加算できる。</content>
   <content contentuid="h55238b55g2b39g51dcg5270gfe86eeeec5e8" version="1">剣捌き</content>
   <content contentuid="hede9123cg6b75g7af2ge6a9g09aa7751575f" version="1">習熟している武器で攻撃する際、攻撃ロールとダメージ・ロールに筋力や敏捷力の代わりに自身の知力修正値を使用できる。</content>
-  <content contentuid="h2bf11353gf199g41edg8f9eg584aaad22078" version="2">戦と歌の修行</content>
   <content contentuid="h352f38e9g6190gf239gf947g79ecb474c84f" version="1">「両手」や「重用」特性を持たないすべての軍用近接武器の習熟を得る。習熟している近接武器を、自身のウィザード呪文の呪文詠唱焦点具として使用できる。
 
 また、以下の技能から任意で1つの習熟を得る：軽業、運動、芸能、あるいは説得。</content>
@@ -2775,7 +2308,6 @@
   <content contentuid="ha031b042gd64ag0b74g62b9g7aa92b2a2119" version="3">「三者の末裔」は、バルダーズ・ゲートで「死せる三者」として知られる悪意ある神々―圧政の神ベイン、暴力と殺戮の神ベハル、そして死の神マークールから力を引き出す。このサブクラスのローグの中には、これら三柱の陰惨な神々に熱烈に身を捧げる者もいれば、呪いによってこの道に突き落とされる者もいる。いずれにせよ、末裔の力は様々なオカルトの才能や、敵を打ち据え恐怖させる不気味な才能として現れる。
 
 三者の末裔は、死せる三者が神に昇格する前に凡人として暮らしていたバルダーズ・ゲートで最も一般的である。ベイン、ベハル、マークールの地下教団は、しばしば三者の末裔を最も有用な工作員として数える。バルダーズ・ゲートの外では、オームーのシャドウ・シーヴスやウォーターディープのザナサー・ギルドのような世俗的な盗賊ギルドが、特に暴力的な契約を遂行するために三者の末裔を召集することがある。</content>
-  <content contentuid="hfffd3126gea34g1eb6g8f8dge04162d1ab9b" version="2">血への飢え</content>
   <content contentuid="hc8d05a2bgbefbg9d12gb34fg7f2025113439" version="1">9メートル以内に見える敵がダメージを受け、そのダメージ後に血まみれ（HPが半分以下）になり、かつ即死しなかった場合、リアクションを用いてその敵の1.5メートル以内に見える何もない場所へ瞬間移動できる。その後、1回の近接攻撃を行える。この特徴は自身の知力修正値（最低1回）に等しい回数だけ使用でき、大休憩を終えると消費したすべての使用回数を回復する。</content>
   <content contentuid="h7fa7c6fagab40g7237g2bd1g55927793880a" version="2">畏怖の忠誠</content>
   <content contentuid="h717c2effgcfefg6531g04eeg3d6a10c88329" version="2">死せる三者であるベイン、ベハル、マークールの中から一柱を選ぶことで「畏怖の忠誠」を形成する。選択により、特定のダメージ種別への抵抗と、知力を呪文発動能力として使用する初級呪文を唱える能力を得る。
@@ -2793,7 +2325,6 @@
   <content contentuid="hbe719ba9g332bgafefgf142g2c86ce3fd743" version="1">目標は判断力セーヴィング・スローに成功するか、さもなくば1分（10ターン）間、恐怖状態になる。
 
 恐怖状態の目標は自身の各ターンの終了時にセーヴを繰り返し、成功すればその効果を終了させる。</content>
-  <content contentuid="ha452dc39g9152gfd66g823bg912ea1d1d763" version="1">血への飢え</content>
   <content contentuid="h055feb92gbffeg6927gaafbg9aa2a91bc4cb" version="1">血への飢え（1/2）</content>
   <content contentuid="hf46c88e2g570bgc9f5g75e9g56ae359baec0" version="1">9メートル以内に見えるクリーチャーがダメージを受け、血まみれ（HPが[1]%以下）になったがヒット・ポイントが0にならなかった場合、リアクションを用いてそのクリーチャーの1.5メートル以内に見える何もない場所へ瞬間移動できる。その後、そのクリーチャーに1回の近接攻撃を行える。</content>
   <content contentuid="h0f8f6fcfga64egf53bg718egd42ff95fd724" version="1">血への飢え（1/4）</content>
@@ -2815,7 +2346,6 @@
   <content contentuid="h58ee4755g4d7eg3830g0e23g9eeb9de00bf1" version="1">毒ダメージへの抵抗を得て「防刃」を唱えられるようになる。</content>
   <content contentuid="hb44a03abgc118ge0f2g55eegf877db7779de" version="1">畏怖の忠誠：マークール</content>
   <content contentuid="h6e38ab81gffdegf60dgddc7gdd71c617d269" version="1">死霊ダメージへの抵抗を得て「骨凍え」を唱えられるようになる。</content>
-  <content contentuid="h4d43ff27g7af4g7c74gd48dg5f5bf9706659" version="1">1</content>
   <content contentuid="h5d10607dg8858g0d58gde8bgfe26a1630521" version="2">スペルファイアーの爆発</content>
   <content contentuid="h8c1cf02dg530eg20c8ge29dgf4ccedf5993c" version="1">自身のターンの魔法アクションまたはボーナス・アクションの一部として魔力点を少なくとも1消費した際、以下の魔法効果のうち1つを任意で解放できる。これは1ターンに一度だけ行える。
 
@@ -3056,14 +2586,12 @@
   <content contentuid="h1c85d7b8gf5dcge550gda8dgd5776880afb3" version="1">ストームの預言：有利</content>
   <content contentuid="h8eb71fdcge67eg9086g4432gf36ff5890bba" version="1">ストームの預言：不利</content>
   <content contentuid="h87466615g2070gcbacg5d8ag5f7ab7b958fe" version="1">巨人の力</content>
-  <content contentuid="ha0cc673dgbc99ga346g948dg56823a07cb44" version="1">巨大化して強くなる</content>
   <content contentuid="h37b450b1g8badgbc5bg97c2g324b484cc3e8" version="1">ルーンの盾</content>
   <content contentuid="hc87e44d6gbe9cg19ceg0681g7bf7a87f2bd0" version="1">ルーン魔法を呼び出して味方を守ることを学ぶ。18メートル以内に見える別のクリーチャーに攻撃が命中した際、リアクションを用いて攻撃者にd20を再ロールさせ、新しい出目を使用させることができる。</content>
   <content contentuid="ha4dc5a17g4a69gb755g889cg187ead2dfb7f" version="1">巨人の力</content>
   <content contentuid="h4a3c73bbg633cg224dg4073g6346f0550299" version="1">偉大なる体躯</content>
   <content contentuid="h59e2bd3dg4c8fgb3e9g4be1g17c0354f71d2" version="1">ルーン</content>
   <content contentuid="hffe0a439g2edag0f4bg85dbg933db0b1a8b0" version="1">ルーンの盾</content>
-  <content contentuid="hf3b2ff84g1b07ga3eag2125ge551077a6e4d" version="1">契約武器</content>
   <content contentuid="h6c75a711gccb2g34c5g5489gfbaf6012200e" version="2">契約武器：死霊ダメージ</content>
   <content contentuid="hcd88f337g7b53g35deg791bgf37bf6314ed5" version="2">契約武器：精神ダメージ</content>
   <content contentuid="ha2a934dbg1420gf4c4g7431gcf508603657a" version="2">契約武器：光輝ダメージ</content>
@@ -3084,7 +2612,6 @@
   <content contentuid="h23312037g140dg2713g1d14gd9b396f2c1e0" version="1">動物の姿の時は会話することも、呪文を使うこともできない。動物の姿の特徴を身につけるが、&lt;LSTag Tooltip="Intelligence"&gt;知力&lt;/LSTag&gt;、&lt;LSTag Tooltip="Wisdom"&gt;判断力&lt;/LSTag&gt;、&lt;LSTag Tooltip="Charisma"&gt;魅力&lt;/LSTag&gt;値は除外する</content>
   <content contentuid="h30b03151g5293g0f58g25ecg192e954a1d18" version="1">動物の姿の時は会話することも、呪文を使うこともできない。動物の姿の特徴を身につけるが、&lt;LSTag Tooltip="Intelligence"&gt;知力&lt;/LSTag&gt;、&lt;LSTag Tooltip="Wisdom"&gt;判断力&lt;/LSTag&gt;、&lt;LSTag Tooltip="Charisma"&gt;魅力&lt;/LSTag&gt;値は除外する</content>
   <content contentuid="hec2215cegc8c3g171bg67cdg7de02f56bba6" version="1">動物の姿の時は会話することも、呪文を使うこともできない。動物の姿の特徴を身につけるが、&lt;LSTag Tooltip="Intelligence"&gt;知力&lt;/LSTag&gt;、&lt;LSTag Tooltip="Wisdom"&gt;判断力&lt;/LSTag&gt;、&lt;LSTag Tooltip="Charisma"&gt;魅力&lt;/LSTag&gt;値は除外する</content>
-  <content contentuid="hcdf4a03bg59c5gb1b2g3204g37cf5a2339c0" version="1">秘術射撃</content>
   <content contentuid="hcb4e031eg6175g6174g6466gcc87b839601d" version="1">指鉄砲攻撃で目標に命中させた際、リスク・ダイスを1個消費してダメージ・ロールに加算できる。</content>
   <content contentuid="h4afbde24g3b4ag6245gdfc5gf40fbb6dd7b9" version="2">バーン、お前は死んだ！</content>
   <content contentuid="hf051b82fgb193ga37bg540ege6200dcbd93e" version="1">銃の代わりに魔法を使用できる。
@@ -3189,9 +2716,7 @@
   <content contentuid="he0219d6eg9988g1637g2557g9b2d2d0fa8aa" version="1">悪意</content>
   <content contentuid="hc323cc9cg84e2g474bg5925g8922b79a3ba5" version="1">目標は次の自身のターンの終了前までに行うセーヴィング・スローの結果から、イルリガーの習熟ボーナスに等しい数値を差し引かなければならない。</content>
   <content contentuid="h84a9d67fge555g185dg5c83g4c97364a1cef" version="1">魂喰らい</content>
-  <content contentuid="h8cd365c4g7106g7c48g3af0gaa9b0e85108b" version="1">[1]を得る。</content>
   <content contentuid="h83e42a83g88c6gd1e9g8c16gbff3333ac045" version="1">ステュクスの冷淡</content>
-  <content contentuid="hfe1fd654g95d3g0e72g524ag183786863374" version="1">ボーナス・アクションやリアクションを行えない</content>
   <content contentuid="h7e6eebc1g195fg638eg046cg1602e8341a8b" version="1">アケロンの鎖</content>
   <content contentuid="h8b1d72d3gf86ag8352gbc15ga4b6db6acf02" version="1">業火の伝導</content>
   <content contentuid="h844db55cg4f62gabe3gbb9cg8faa13c91a88" version="1">ボーナス・アクションとして刻印を1つ消費し、見える何もない場所へ瞬間移動できる。</content>
@@ -3208,11 +2733,8 @@
 一部の恩恵には一定以上のイルリガー・レベルが必要である。レベル7に達すると、追加の恩恵を1つ得る。</content>
   <content contentuid="h79d9540bg9852g5efdg3c46g65c5ac3dee8d" version="2">地獄の伝導</content>
   <content contentuid="hbc394c87g819ag60dcgd3e4g840e740aede3" version="1">自身を犠牲にして味方を強化するか、あるいは自身の利益のために敵の生命力を吸収することができる。</content>
-  <content contentuid="h467e4d93g2c88g87degd375gc54b5a65a88d" version="1">貪り</content>
   <content contentuid="h8fd47ec3gac34g4144g6243g234bbbbbb9ae" version="2">目標は耐久力セーヴィング・スローを行わなければならない。失敗すると[1]を受け、自身は与えたダメージに等しいヒット・ポイントを回復する。成功すると、目標は半分のダメージを受け、自身は与えたダメージに等しいヒット・ポイントを回復する。</content>
   <content contentuid="h6b7c5b42gc865g9a66g25bcgcf6498b47b95" version="1">活力付与</content>
-  <content contentuid="ha334fba5ge039gfb31g1b15g55b8f07d80f4" version="1">自身の残り&lt;LSTag Tooltip="HitPoints"&gt;ヒット・ポイント&lt;/LSTag&gt;の半分を犠牲にし、目標を同じ量だけ回復する</content>
-  <content contentuid="h29248f55g9799g09d8ge529g06704f76d155" version="2">血の対価</content>
   <content contentuid="h6bdae4c0g3fcdg259fgefa5g636614568bc0" version="1">自身の活力を代償に防御を強化できる。セーヴィング・スローに失敗した際、常に自身のヒット・ダイスを1つ消費してロールし、その出目をセーヴの結果に加算できる。</content>
   <content contentuid="h8a78754bge4a1gbe50g8f26g0bd670acd7cc" version="1">血の対価：d8</content>
   <content contentuid="h357af6fegcc60g52adgea2agd98b8ed57793" version="1">血の対価：d6</content>
@@ -3311,7 +2833,6 @@
 「兵士は死ぬもの」：私は兵士の命など気にかけない。彼らは勝利を手にするために費やすリソースに過ぎないからだ。</content>
   <content contentuid="h87611e23g6851gdd85gb4aagc5494b4af22b" version="3">ディスパテルの祝福</content>
   <content contentuid="hdc9bc8a1g4363gafc5g0aa8g3cf81d9f7f39" version="1">ディスパテルにイルリガーとして認められた際、重装防具の習熟を得る。</content>
-  <content contentuid="h764b69fagcd7ag05fdgf7dag5bd26082ad00" version="3">破壊者</content>
   <content contentuid="hed5241fcg4e7bg125eg7f8fg43f7f8fbd64a" version="3">大戦略家</content>
   <content contentuid="hcac28d23geb38gd19fge1c7gd81fdc6dc09b" version="2">味方に自身の陣形に従うよう命じることができる（アクション不要）。自分から18メートル以内にいて、あなたの声を聞くことができるクリーチャーを、自身の習熟ボーナスに等しい数まで選択する。各目標は直ちに、機会攻撃を誘発することなく自身の移動速度まで移動できる。</content>
   <content contentuid="h8dc48af4gcdf0gdb45g88c4g86ba48d298cb" version="1">アクションとして、ディスパテルの権威を行使する。武器攻撃を1回行い、9メートル以内に見える任意のクリーチャーを、自身の習熟ボーナスに等しい数まで選択する。選択された各クリーチャーはリアクションを用いて、1回の武器攻撃を行うか、発動時間が1アクションのダメージを与える初級呪文を唱えることができる。
@@ -3321,11 +2842,9 @@
   <content contentuid="hb48d28a7g8fd1g0221gb778gd0ba3bcb5fb5" version="1">禁制状態のクリーチャーに対する攻撃は、19から20の出目でクリティカル・ヒットになる。</content>
   <content contentuid="h1e5932b4g971fg88dcg9f73g49b5740e78e1" version="3">我が許しなく死ぬな！</content>
   <content contentuid="h98e2c15eg1bb0g6b5fg7c81ge9b4199a5810" version="1">9メートル以内にいてあなたの声を聞くことができる味方が、即死することなくヒット・ポイント0になった際、リアクションを用いて命令を下し、代わりにヒット・ポイントを1にすることができる。このリアクションを一度使用すると、小休憩または大休憩を終えるまで再び使用することはできない。</content>
-  <content contentuid="hac72ef57geda5gbcb7gefd0gd8f3ef7ecd35" version="1">破壊者</content>
   <content contentuid="h81b4dc8dg3da9gf440gb6ccgfc1f97fafdf6" version="1">アクションとして、ディスパテルの権威を行使する。武器攻撃を1回行い、9メートル以内に見える任意のクリーチャーを、自身の習熟ボーナスに等しい数まで選択する。選択された各クリーチャーはリアクションを用いて、1回の武器攻撃を行うか、発動時間が1アクションのダメージを与える初級呪文を唱えることができる。</content>
   <content contentuid="ha7727e9ag0c15g6933gae63g6fa84b4bf2d4" version="1">大戦略家</content>
   <content contentuid="h820d0d49g5c04gb627g8857g7f344163dd3d" version="1">味方に自身の陣形に従うよう命じることができる（アクション不要）。自分から18メートル以内にいて、あなたの声を聞くことができるクリーチャーを、自身の習熟ボーナスに等しい数まで選択する。各目標は直ちに、機会攻撃を誘発することなく自身の移動速度まで移動できる。</content>
-  <content contentuid="h56bd8cdag4e64g6c53ga757gdf3238045217" version="1">破壊者</content>
   <content contentuid="h33401633g747fg999fg84bcgb4b2b4d7449f" version="1">リアクションを用いて武器攻撃を行うか、発動時間が1アクションのダメージを与える初級呪文を唱えることができる。</content>
   <content contentuid="h3ead5e5egb4bfg7aa8g3997g651f56f21c32" version="1">大戦略家</content>
   <content contentuid="h228f43e7g05d6g74e4g3a8agd9f46890dde0" version="1">直ちに機会攻撃を誘発することなく、自身の移動速度まで移動できる。</content>
@@ -3384,7 +2903,6 @@
 ベリアルは「暗闇の都市」ゲヘノムを支配している。彼は毒、拷問、暗殺を通じて地獄を支配しようと努めている。彼のイルリガーたちは影から打撃を与え、あるいは欺瞞を用いて強力な統治者の側近という高い地位を手に入れる。多くのシャドウマスターは、自身の指導者の地獄的な出自を全く知らないスパイや暗殺者のネットワークを運営している。
 
 シャドウマスターは真の忠誠を明かさないことを誓っており、必要であればこの誓いを果たすために自ら命を絶たなければならない。多くのシャドウマスターは、露見の危機に瀕した場合に備え、自身の暗殺が真実を覆い隠すよう、精巧な自作自演の暗殺計画を準備している。もちろん、これらの殺し屋たちが、亡き標的に雇われていたことを知ることはない。</content>
-  <content contentuid="h913a1845g6aeeg56e5g1083g84f2c46ab26a" version="1">地獄の業火</content>
   <content contentuid="h6ee711f7gf822ge79eg39abg3424b665f17d" version="1">射程内に見えるクリーチャーの周囲に、くすぶる地獄の業火を噴火させる。</content>
   <content contentuid="h65da4e4ag4859ga026g9095g2e8a3e5e278f" version="1">復讐の剣</content>
   <content contentuid="hee7efdd5g7678gd390g9d02gfa6d6bde145c" version="1">呪文の発動に使用した武器を振りかざし、1.5メートル以内にいるクリーチャー1体に対して近接攻撃を行う。命中すると、目標は武器攻撃の通常通りの効果を受け、その後、次の自身のターンの開始時まで暗いエネルギーのオーラを放つ。それまでに目標が攻撃を行ったり呪文を唱えたりした場合、目標は[1]を受け、呪文は終了する。</content>
@@ -3438,15 +2956,12 @@
   <content contentuid="h3e91d02cg9178geb72g919bgd2f45a5bb6ea" version="1">自明の刻印：死霊</content>
   <content contentuid="h4272602ag3fa1g398bgb969g13be228622d0" version="1">非推奨</content>
   <content contentuid="h1fb22109gb584g03f6g66f8g5a967386d305" version="1">非推奨</content>
-  <content contentuid="hd9a3ce8dg39a9gb357gf766g5a7a8e8a2b47" version="1">魔法のたしなみ: クレリック</content>
   <content contentuid="h0df39a9dg1cfag178cg75f0g6adabe0323af" version="2">クレリックの呪文リストから、2つの&lt;LSTag Tooltip="Cantrip"&gt;初級呪文&lt;/LSTag&gt;と1つの1レベル呪文を習得する。この呪文は常に準備された状態になる。さらに、呪文スロットを消費することなく唱えることができるが、この方法で再び唱えるには大休憩を終えなければならない。</content>
-  <content contentuid="hafe8b652g4e6agf0fdg68cdgfa9f15790432" version="1">魔法のたしなみ: ドルイド</content>
   <content contentuid="h65af80fagec9bg5351g2f9agc30e65db33e7" version="2">ドルイドの呪文リストから、2つの&lt;LSTag Tooltip="Cantrip"&gt;初級呪文&lt;/LSTag&gt;と1つの1レベル呪文を習得する。この呪文は常に準備された状態になる。さらに、呪文スロットを消費することなく唱えることができるが、この方法で再び唱えるには大休憩を終えなければならない。</content>
   <content contentuid="hc0b48f30g3f17g3a7fg830dgd6bcb23043d6" version="1">非推奨</content>
   <content contentuid="h3199ad9dg3293g80a6g74adg1bf55e642821" version="1">非推奨</content>
   <content contentuid="h14abb3cdgc934g76a7g47aeg2111983c2f7a" version="1">非推奨</content>
   <content contentuid="hd8bfa253g9a70g0b3dga7f3g8b52b646dc9a" version="1">非推奨</content>
-  <content contentuid="h01e4f65cg7f45g4509g7911g655523dbfc23" version="1">魔法のたしなみ: ウィザード</content>
   <content contentuid="hf53d0a43g624eg7762g6910g0264f0ae7c73" version="2">ウィザードの呪文リストから、2つの&lt;LSTag Tooltip="Cantrip"&gt;初級呪文&lt;/LSTag&gt;と1つの1レベル呪文を習得する。この呪文は常に準備された状態になる。さらに、呪文スロットを消費することなく唱えることができるが、この方法で再び唱えるには大休憩を終えなければならない。</content>
   <content contentuid="hb45ab210g4dfeg44aage273g11ab2c83f7b8" version="1">守護の刻印</content>
   <content contentuid="hd8757627g198cg4659gbdcbgf8c916e4b023" version="1">ボーナス・アクションを使用してクリーチャーにイルリガーの刻印を付与した際、あるいはクリーチャーに付与された刻印を燃やした際、2ターンの間、防刃の効果を得る。</content>
@@ -3466,8 +2981,6 @@
   <content contentuid="h1ae5a709g9e4ag5e7agbf4ag35be3da03653" version="1">刻印を燃焼させた際、追加で[1]または[2]を与える。</content>
   <content contentuid="h7bd07a28g0708gce97gcd12g1214c3b46634" version="1">刻印強化：火</content>
   <content contentuid="h3818e721gc46cgdf03g0154g3b1f329fee61" version="1">刻印強化：死霊</content>
-  <content contentuid="h9c8bbd0bg3615g8088gcb16g45f0854801b0" version="1">抵抗力</content>
-  <content contentuid="hb17d4643gb09cgb61dgd738g55246f4a2fcf" version="1">抵抗力</content>
   <content contentuid="h9b77345dg3b14g2b92g2dcegb47d678b5d96" version="3">奇術：点火</content>
   <content contentuid="h304c8356g8ee7gee35g4f51gd593700b631e" version="1">奇術</content>
   <content contentuid="h7dcf36cegab2dgf436g83fag871c5d97b6a7" version="1">奇術：消火</content>
@@ -3589,9 +3102,7 @@
   <content contentuid="h33d907d8gd0a0gaee7g061fg578448183f33" version="1">棍棒強化</content>
   <content contentuid="h698d6323ge92fg1fd9g8d8bg36d7db994d94" version="1">自然の回復</content>
   <content contentuid="hc24409fagede8g0aaag1ad3g32c2949bb667" version="2">ボーナス・アクションとして、「自然の化身」の使用回数を1回消費し、2d6に自身のドルイド・レベルを加えた値に等しいヒット・ポイントを回復できる。この回復量は、ドルイド・レベル5（3d6＋ドルイド・レベル）およびレベル10（4d6＋ドルイド・レベル）に達した際にそれぞれ1d6ずつ増加する。</content>
-  <content contentuid="hc064fa21ge684g65c0g9633g796b118177b3" version="1">腐食の一撃</content>
   <content contentuid="h33a83d2bg7e97g9bebg4b1ag640c88459c92" version="1">追加で[2]を与える。命中すると目標の周囲に酸溜まりを作り、&lt;LSTag Tooltip="ArmourClass"&gt;アーマー・クラス&lt;/LSTag&gt;を[1]低下させる</content>
-  <content contentuid="h93ef7658ga110g9063ga99fg02ab90d1135d" version="1">毒霧</content>
   <content contentuid="hbbc19e32g5427g3585gaaabg3a72c966a807" version="1">追加で[1]を与える。命中すると目標を毒の雲で包み込み、範囲内にいる者を&lt;LSTag Type="Status" Tooltip="POISONED"&gt;毒状態&lt;/LSTag&gt;にする可能性がある。</content>
   <content contentuid="hed352d94g7b9dg3b87g2d2bgb0b679111113" version="1">命中時、燃焼状態にする可能性がある。燃焼状態の目標に[1]を追加で与える。</content>
   <content contentuid="hfc73e10fg17e9g9f07gc85fg541d0d54d67b" version="1">各ターンに一度、攻撃を外した場合、目標を[1]ターンの間&lt;LSTag Type="Status" Tooltip="FAERIE_FIRE"&gt;妖精の火&lt;/LSTag&gt;で包み込むことができる。</content>
@@ -3659,15 +3170,12 @@
   <content contentuid="head80c96g32cbgb24dgb1fbg9151caa482af" version="1">暗視のゴーグル</content>
   <content contentuid="h2fbddf04g1f59gb914gedbagb9bff2bbeb7e" version="1">魔法の盾</content>
   <content contentuid="h4384deb8gd4a7ga350gf2e2g8caf15034794" version="1">戦場の魔道士のワンド</content>
-  <content contentuid="h7a35556fge570gab38gf0edg0b4326380cb9" version="1">魔法の武器</content>
   <content contentuid="hb3ef7ea3g8eb9g0dd5gcb2dg55d37c23c558" version="1">素手の力の手包み</content>
   <content contentuid="hadc2948cg9997gd815g5d5eg80b24c6d60ef" version="1">魔法の鎧</content>
   <content contentuid="h866bec2eg3c08g1950g56d1gc59be810c970" version="1">感知の兜</content>
   <content contentuid="h8e87a858gabb8gb553ga5e9gd588c594e0f8" version="1">暴露のランタン</content>
   <content contentuid="h9748c223gcbccga7c5g7a8dgfd5991c7bf21" version="1">精神研ぎ器</content>
   <content contentuid="h1d1129bbg26a2g8dffgb2fdgf8f7a76ceeb7" version="1">抵抗の鎧</content>
-  <content contentuid="hab73d382g1a8eg63dege86fg9874a3c11c9c" version="1">自由移動の指輪</content>
-  <content contentuid="hd3c53187gc5acg834fg9a70g53edd5e45e58" version="1">守りの指輪</content>
   <content contentuid="h3af4f15fgffa3gf824ga850g5f3edec1f758" version="1">抽出物を合成する際、&lt;LSTag Tooltip="DifficultyClass"&gt;難易度&lt;/LSTag&gt;15の医術&lt;LSTag Tooltip="AbilityCheck"&gt;判定&lt;/LSTag&gt;に成功すれば、1つではなく2つの錬金術溶液を調合できる。</content>
   <content contentuid="h9d752733g6be8g780age17cg3ef589ca12bc" version="1">運搬能力が増加する。</content>
   <content contentuid="hfb02885eg51e1gd167gf1a1ged6463b56463" version="1">魔法的および非魔法的な暗闇の中を、24メートル先まで通常通り見通すことができる。</content>
@@ -3675,8 +3183,6 @@
   <content contentuid="h0d82190dg72f2gae71g7ce4g614bca53783f" version="1">&lt;LSTag Tooltip="SpellDifficultyClass"&gt;呪文セーヴ難易度&lt;/LSTag&gt;と呪文&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;にボーナスを得る。</content>
   <content contentuid="h4e5739d3g4311ge20bge8e5g7bfab27aefb7" version="1">武器が魔法の武器になり、&lt;LSTag Tooltip="AttackRoll"&gt;攻撃&lt;/LSTag&gt;およびダメージ・ロールにボーナスを得る。</content>
   <content contentuid="h2e7b3769ge52cgfb5egdbebg36be70787259" version="1">素手攻撃が魔法の攻撃になり、&lt;LSTag Tooltip="AttackRoll"&gt;攻撃&lt;/LSTag&gt;およびダメージ・ロールにボーナスを得る。</content>
-  <content contentuid="h686cad6bgf8b8g62abgef37g7d8a7da096cd" version="1">鎧の装備中、&lt;LSTag Tooltip="ArmourClass"&gt;アーマー・クラス&lt;/LSTag&gt;に+1ボーナスを得る</content>
-  <content contentuid="h9e262863g0dcbgca43gd944g35603fe7420c" version="1">イニシアチブに+5ボーナスが加算され、&lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;驚き&lt;/LSTag&gt;状態にならない</content>
   <content contentuid="h702473e0g560fg4915gdb8cgbf0d46580368" version="1">呪文の&lt;LSTag Tooltip="Concentration"&gt;精神集中&lt;/LSTag&gt;を維持するための&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;を行う際、ロール結果が9以下であれば10とみなされる。</content>
   <content contentuid="hb35a01acgce21gf8a8gc7b6g225fbd67b408" version="1">殴打、刺突、および斬撃ダメージに対する&lt;LSTag Tooltip="Resistant"&gt;抵抗&lt;/LSTag&gt;を持つ。</content>
   <content contentuid="h30805376g5c6cg34ddgb16bgd3135f7180cf" version="1">アーマー・クラスとセーヴィング・スローに+1のボーナスを得る。</content>
@@ -3698,29 +3204,18 @@
   <content contentuid="h041d4fd9g0eccga18eg6fc4g03df5d14df8a" version="1">回復の試薬</content>
   <content contentuid="h8311da6cg85dcge0b9g13bage6ae62239bea" version="1">実験的な妙薬</content>
   <content contentuid="h2dbf8669g66f0g8d75g6399gfe2cd30f6268" version="1">選択した任意の水薬を瞬時に作成する。</content>
-  <content contentuid="h643d818cge9a6gc17ag91a1gcc2d7d4de897" version="1">癒しの水薬</content>
   <content contentuid="h6b46b470gc898g44d3g2c4ag944728a674a0" version="1">癒しの水薬を作成する。回復量は、このクラスのレベル5および9に達した際に増加する。</content>
-  <content contentuid="ha0bb8097ge097g7ba8g86begfb76e22d1f5b" version="1">加速の水薬</content>
   <content contentuid="hd633f212g2235g47deg3d05g150d9ccd9343" version="1">加速の水薬を作成する。</content>
-  <content contentuid="h7840502dgd965gff1bg1959g4cc5788a1633" version="1">いさおしの妙薬</content>
   <content contentuid="hbc062155g3399g772agef2fg7f7c1abdabaa" version="1">いさおしの妙薬を作成する。</content>
-  <content contentuid="he9dd21e8g770ag148agb861g13f25606315d" version="1">飛行の水薬</content>
   <content contentuid="h35439974g4728g6495gf11bg3f907bef924b" version="1">飛行の水薬を作成する。</content>
-  <content contentuid="hbc5f43fegbdb9gd6d1gc3bagd929971fe088" version="1">不可視の水薬</content>
   <content contentuid="hffa16306g6658g076dgaf29gcf1993850b8a" version="1">不可視の水薬を作成する。</content>
-  <content contentuid="hc4519899g1152g99c2g7e55gd65bec475876" version="1">精神統一の妙薬</content>
   <content contentuid="ha8208bdcg9b2eg1425ga466g0dba574c8534" version="1">精神統一の妙薬を作成する。</content>
-  <content contentuid="h1b8d2207g2561g9a35gf63cgb0bf9fbef90e" version="1">警戒の妙薬</content>
   <content contentuid="hc5a2d49ag992fg9508g06dfg79a99890c9a2" version="1">警戒の妙薬を作成する。</content>
-  <content contentuid="h6e0a384dgd225ge86egd69cg112d2ac7bc0f" version="1">流血の報奨の妙薬</content>
   <content contentuid="he93103a8g6b85ga205g6b87g82239aefa626" version="1">流血の報奨の妙薬を作成する。</content>
-  <content contentuid="h2469192dg9405g885bg517dgc323e96a0644" version="1">ヒル・ジャイアントの力の妙薬</content>
   <content contentuid="hba664867g48deg9b29g6afbga910844aaef4" version="1">ヒル・ジャイアントの力の妙薬を作成する。</content>
   <content contentuid="hc6b55ef9g548egd7b8gd8a3g4b6d580a9b9e" version="1">巨像の妙薬</content>
   <content contentuid="h9c2f831dg8d33ge3bbg9df6g9dc1c698870e" version="1">巨像の妙薬を作成する。</content>
-  <content contentuid="h7e88c185gbd54g08f0g41c1ga5e3a0ee30bd" version="1">軟着陸の水薬</content>
   <content contentuid="h21a202e5g9d14g8bf4g9293gc10564f22b8d" version="1">軟着陸の水薬を作成する。</content>
-  <content contentuid="hed809b80g558dgc5ccg48e7g16bd505b61da" version="1">大跳躍の水薬</content>
   <content contentuid="h609d90aegbe93gff2fgc3feg13a6af56027c" version="1">大跳躍の水薬を作成する。</content>
   <content contentuid="hf5433434g6271ge302gedbbg79fd7c7dccbb" version="1">秘術の錬金術</content>
   <content contentuid="ha1067a6cgae19gc777g9b10ga4a25d7058be" version="1">「実験的な妙薬」の消費した使用回数を回復する。</content>
@@ -3763,7 +3258,6 @@
 
 ある高名なパラディンは、ホーリー・アヴェンジャーこそが「いかなる状況においても最良かつ最後の友である」と語った。</content>
   <content contentuid="h56b28652gd66cgff72gb7eaga9c8332947e0" version="1">ホーリー・アヴェンジャー</content>
-  <content contentuid="ha0ef5bd2gf3e7g689cgef0egd528c73742ba" version="1">パラディンと近くの味方は呪文によるダメージに&lt;LSTag Tooltip="Resistant"&gt;抵抗&lt;/LSTag&gt;を持つ</content>
   <content contentuid="hae58b170g1a86g562dg9c15gc5a91fb03fe1" version="1">パラディンの[1]以内において、呪文によるダメージに&lt;LSTag Tooltip="Resistant"&gt;抵抗&lt;/LSTag&gt;を持つ。</content>
   <content contentuid="hda8b38bag9499g847bgcf99g9febaba0926a" version="2">武具師の呪文</content>
   <content contentuid="hee79b7c5g14dagd8ecg3444ge2c7d3d25745" version="1">特定のアーティフィサー・レベルに達すると、「武具師の呪文」表に示されている通り、特定の呪文を常に準備している状態になる。3レベルで「魔法の矢」と「雷鳴波」、5レベルで「鏡像」と「破砕」、9レベルで「催眠文様」と「電撃」を習得する。</content>
@@ -3831,7 +3325,6 @@
   <content contentuid="ha243be2aged30g4c6dg9dedge3df9a10db81" version="1">血まみれ（HPが半分以下）の間、ボーナス・アクションとして[1]を得る。鎧を脱ぐと、これらの一時的ヒット・ポイントは失われる。</content>
   <content contentuid="h1986e89ag8ebfg5144gcfc6g4888865326e5" version="1">防護フィールド</content>
   <content contentuid="h7564a2a6g104bg423egf734g715e17a86450" version="1">[1]を付与。</content>
-  <content contentuid="h90cf192bga720g4832g6e4dg0c99af7066d2" version="1">アドレナリン・ラッシュ</content>
   <content contentuid="heb8b42dfgf791g5695g2d5bg94d944d01b24" version="1">砲術士</content>
   <content contentuid="he4ee4e0eg19a4gb02cgb58agdfdbd170d103" version="1">砲術士は、戦場において魔法を用いてエネルギーや飛び道具、爆発を放つことを専門としている。</content>
   <content contentuid="hb2e1a5b6gf536gee48g07d0g84251df2a247" version="2">砲術士の呪文</content>
@@ -3853,9 +3346,7 @@
   <content contentuid="h702ee012gf2cegac5agc807g4f790f5c4902" version="1">防護装置</content>
   <content contentuid="ha08d7455g92d8ge864g1342g92dbae05a2cd" version="1">防護装置</content>
   <content contentuid="hc3d7957egbf1cga0f8gde92g70f35f4c410f" version="1">魔力砲が正のエネルギーを放出し、魔力砲自体と、魔力砲から3メートル以内にいる任意の各クリーチャーに、1d8に自身の知力修正値を加えた値（最低+1）に等しい一時特ヒット・ポイントを与える。</content>
-  <content contentuid="h65882d15gbcc1g0a95g4036g27f23ffa539c" version="1">爆破</content>
   <content contentuid="hd790e5deg5793ge1d8gfbc7gad8509c9beea" version="1">爆発砲</content>
-  <content contentuid="h01831d81g2d20g8c48g5e5eg10559d708494" version="1">爆破</content>
   <content contentuid="hab1f563cgd118gb03bg41b5g1316f04ab315" version="1">自身がダメージを受けた際、リアクションを用いて魔力砲に自爆を命じることができる。自身から6メートル以内にいる各敵クリーチャーは、自身の呪文セーヴ難易度に対する敏捷力セーヴィング・スローを行わなければならない。セーヴに失敗したクリーチャーは[1]を受け、成功したクリーチャーはその半分のダメージを受ける。この能力は小休憩ごとに1回使用できる。</content>
   <content contentuid="h57be1335ga707gde5ag1346g356ac10f28b0" version="2">月の鎌</content>
   <content contentuid="h2d267dedgfd4eg89d7g9e6eg23e63c2ef056" version="2">銀の刃を持つこの鎌は、月光を受けて淡く輝いている。</content>
@@ -3915,12 +3406,10 @@
   <content contentuid="h0f6ded08gcd3bgf273gc080g6c03b3f1633b" version="1">任意の出自特技を一つ得るか、あるいはヒューマン以外の種族の特徴を一つ選択できる。</content>
   <content contentuid="h325e735fg2b3bg04e3g4111g0c40750b7fbe" version="1">器用の才</content>
   <content contentuid="h621fd279gebdag777dg35cdge79dc6dc09a3" version="1">任意の技能一つの習熟を得る。</content>
-  <content contentuid="hffb15f0dg8d46g8ce2g4665g6ab0e628d277" version="1">鋭敏感覚</content>
   <content contentuid="hff4e6b44g07dbg7d46g1dfbg11ee89aaef5b" version="1">看破、知覚、あるいは生存のいずれかの技能に習熟している。</content>
   <content contentuid="h66fbaf70g36bcg4313g969fgfabc9b4f1f69" version="4">あなたはこれらの攻撃のうち1回の代わりに、発動時間が1アクションである初級呪文を1つ発動できる。</content>
   <content contentuid="h131208e0g1b65g0338gbc3dg9af0e2d478df" version="1">エルフの精度</content>
   <content contentuid="h5807bc17g3e71g7234g30c2gf7b6a4fe91da" version="1">敏捷力、知力、判断力、あるいは魅力を使用した攻撃ロールで有利を得ている際、常にダイスの1つを1回だけ再ロールできる。</content>
-  <content contentuid="h34159b25g04efg5336ga815g3000f32dc549" version="1">滅殺の誓言</content>
   <content contentuid="h96b414b5gdd91g3ee2g39ccg5cc08f37e532" version="1">剣聖門</content>
   <content contentuid="hc099c3bdga141ga29ag0b89g93d39a6878cd" version="1">剣聖門のモンクは、武器が自身の身体の延長となるまで絶え間なく訓練を積む。剣術の極意を基盤とするこの伝統は、多種多様な武器を扱うまでに発展してきた。
 
@@ -4036,11 +3525,7 @@
   <content contentuid="h2ff7efe3g2f98g2386g3e31g16cac67905a4" version="1">ボーナス・アクションとして早足アクションを行うことができる。この早足アクションによって得られる移動は、機会攻撃を誘発しない。</content>
   <content contentuid="h8e6c5eccg23b9gc208g91f9gd9f773d69192" version="2">北方領土の呼び声</content>
   <content contentuid="h318d1b8eg0580g3d5cgacf3g81c76726bcd3" version="1">北方領土の過酷な環境や凶暴な怪物に慣れている。冷気ダメージに対する抵抗を得る。さらに、ドラゴン、巨人、および「大型」以上のクリーチャーに対する攻撃ロールに有利を得る。</content>
-  <content contentuid="haa63297agabf6g8665gd863gccf514e607f5" version="1">驚き</content>
-  <content contentuid="h5a9a1666gd0c6gb6d5g9f5dga7c149830daa" version="1">驚き</content>
   <content contentuid="hd31e4d13g939ag101eg9e56g93956331fc9c" version="1">射程内の地点を中心とした半径1.5メートルの球状範囲内にいる、自分が選択した各クリーチャーは、判断力セーヴィング・スローに成功するか、さもなくば次の自身のターンの終了時まで無力状態にならなければならず、その時点でセーヴを繰り返さなければならない。目標が2回目のセーヴに失敗した場合、その目標は持続時間の間、気絶状態になる。目標がダメージを受けるか、あるいはその目標から1.5メートル以内にいる誰かがアクションを費やして呪文の効果から揺り動かして起こした場合、その目標に対する呪文は終了する。</content>
-  <content contentuid="h1311946eg0f6eg3884gb766ga518b4884a4d" version="1">驚き</content>
-  <content contentuid="hdaea4751gf57bg4b28g0266g1e1630af444e" version="1">&lt;LSTag Tooltip="Action"&gt;アクション&lt;/LSTag&gt;やリアクションを取れない</content>
   <content contentuid="hebdf4ecbgcaabg1a81g42d5g735a9adcf945" version="5">アイス・エルフ</content>
   <content contentuid="hde5c36edg5a0dgf6c3g4376g7f935d4d12ac" version="4">アイス・エルフ</content>
   <content contentuid="h1bcfb060g8de9ga777gb7c0gf7094b81c5f0" version="1">アイス・エルフ</content>
@@ -4061,7 +3546,6 @@
   <content contentuid="hcae93600g722fg2de2g2f0fg60184d7ba2f0" version="1">1分（10ターン）の間、自身の血が酸性になる。自身から1.5メートル（5フィート）以内にいるクリーチャーが、自身に攻撃を命中させるたびに、そのクリーチャーは[1]を受ける。</content>
   <content contentuid="hfb4b4347g41f8gc00fg03eagf4da78649103" version="1">洞察力</content>
   <content contentuid="h55f2832cg60b4gcd10g11f2g30f9e75aa0b9" version="1">1時間（600ターン）の間、看破、威圧、および説得判定に有利を得る。</content>
-  <content contentuid="h0332a04eg8429g6f00gada3gf49674ee7d97" version="1">飛行</content>
   <content contentuid="hd356b0cdg39beg042eg81feg07e80f4dede3" version="1">10分（100ターン）の間、自身の背中から革のよう、羽毛のよう、あるいは幽体のような翼が生える。自身の移動速度に等しい飛行速度を得る。重装防具を着用している間は、この変異の恩恵を得ることはできない。</content>
   <content contentuid="h2eddaae5gd399g869eg1cdag9e9a178e24d8" version="1">注入</content>
   <content contentuid="h2c602649g9292g91d9g709bg07327682e721" version="1">以下のダメージ種別から1つ選択する：酸、冷気、火、電撃、毒、あるいは雷鳴。10分（100ターン）の間、武器攻撃を命中させるたびに、通常のダメージ種別ではなく、選択した種別のダメージを与えることができる。</content>
@@ -4071,19 +3555,15 @@
   <content contentuid="h7953e4c5g1403g5956g4511gc857d6b9ce40" version="1">注入：電撃</content>
   <content contentuid="h9937e5c1g20b9gf010g9a9ag5025bbaebac2" version="1">注入：毒</content>
   <content contentuid="h6537ee84g1c9egec99gef96g0dc4308fed8c" version="1">注入：雷鳴</content>
-  <content contentuid="h5eb0c1fbg30ddg233fgb6c8gefbdb310cc80" version="1">不可視化</content>
   <content contentuid="h9dbb965ag2bcegf72bg5bb2gc4f359dca388" version="1">10分（100ターン）の間、不可視状態になる。この効果は、自身が解除するか（アクション不要）、攻撃を行うか、あるいは呪文を唱えると早期に終了する。</content>
   <content contentuid="hd01b6b25g66b1g66d5gcfaag271f0d12728a" version="1">豪腕</content>
   <content contentuid="h95627a66gf92eg2d99g31e2ge9a622a94222" version="1">1分（10ターン）の間、筋力判定と筋力セーヴィング・スローに有利を得る。また、筋力を使用した攻撃ロールにも有利を得て、筋力ベースの攻撃を命中させた目標に追加で[1]を与える。このダメージ種別は、その攻撃によって与えられる種別と同じになる。</content>
-  <content contentuid="hf72e3943ga838g8a6eg437fgf3e3b4cf0bde" version="1">再生</content>
   <content contentuid="h8a5acea8g48afg5d80g2670g4f92b9e54c1e" version="1">2d8に自身の怪物の狩人のレベルを加えた値に等しいヒット・ポイントを回復する。</content>
-  <content contentuid="h14ef410eg91c7g8763gfe5bge988b17c4434" version="1">抵抗力</content>
   <content contentuid="ha9065fa0gda11g9fbag0a9fgd56f197c42ac" version="1">1分（10ターン）の間、殴打、刺突、および斬撃ダメージに対する抵抗を得る。</content>
   <content contentuid="h18dea430g0a51g9ce2g9dc4g23ab4802a3ec" version="1">酸の血</content>
   <content contentuid="h5b8f7438g5b18gdde5gc4dfga7996a555481" version="1">1分（10ターン）の間、自身の血が酸性になる。自身から1.5メートル（5フィート）以内にいるクリーチャーが、自身に攻撃を命中させるたびに、そのクリーチャーは[1]を受ける。</content>
   <content contentuid="h65822f22g5c0agbed4ga2dfg8ecf26db28f0" version="1">洞察力</content>
   <content contentuid="h1865c71ag5eb9gf397gb7e8g3c4fd9f68123" version="1">1時間（600ターン）の間、看破、威圧、および説得判定に有利を得る。</content>
-  <content contentuid="h803ef2b4g9d5fg6bf7gcdfbge5aa148caa9d" version="1">飛行</content>
   <content contentuid="hf0deee58g3421g39e9ge698g864491958c4a" version="1">10分（100ターン）の間、自身の背中から革のよう、羽毛のよう、あるいは幽体のような翼が生える。自身の移動速度に等しい飛行速度を得る。重装防具を着用している間は、この変異の恩恵を得ることはできない。</content>
   <content contentuid="hf927d573g7918gf498g9bedg56f31a1a2e84" version="1">注入：酸</content>
   <content contentuid="hcd3296f0g5c52gf913g920agbba88bdced8b" version="1">注入：火</content>
@@ -4166,7 +3646,6 @@
   <content contentuid="h5fe7400ag82f7g6073g3bcbgd343cec9bd16" version="1">この武器は攻撃ロール、ダメージロール、&lt;LSTag Tooltip="SpellDifficultyClass"&gt;呪文セーヴ難易度&lt;/LSTag&gt;、そして呪文&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;に+[1]のボーナスを与える。</content>
   <content contentuid="h99e76e2eg9ad8ge1c9g7478g77f49aa7113e" version="1">この武器は攻撃ロール、ダメージロール、&lt;LSTag Tooltip="SpellDifficultyClass"&gt;呪文セーヴ難易度&lt;/LSTag&gt;、そして呪文&lt;LSTag Tooltip="AttackRoll"&gt;攻撃ロール&lt;/LSTag&gt;に+[1]のボーナスを与える。</content>
   <content contentuid="h0d9ac304ge050g65c4gadd7gb2db9a3a6388" version="1">墓の領域</content>
-  <content contentuid="h526ff611g11bfg567cg8e51gf38acce5196d" version="1">墓</content>
   <content contentuid="hb6b0d9beg878egbb1fg173cgc579422a5d85" version="1">墓の領域は生と死の境界を司る。この領域の力を引き出す者にとって、死は多元宇宙の自然かつ不可避な一部である。そうしたクレリックはアンデッドを破壊し、魂を導くことを目指す。
 
 また、この領域の魔法はクレリックに死を一時的に遠ざける力を与える。しかし、これは死の拒絶ではなく単なる延期に過ぎない。墓は常に相応の報いを要求するからである。</content>
@@ -4251,7 +3730,6 @@
   <content contentuid="hf16702a8g0c7fgdd18g3ea0g64f4822587ba" version="1">ウォーロックの初級呪文を使うと、&lt;LSTag Tooltip="Charisma"&gt;魅力&lt;/LSTag&gt;&lt;LSTag Tooltip="AbilityModifier"&gt;修正値&lt;/LSTag&gt;がダメージに加算される。マイナスの場合は無効になる。</content>
   <content contentuid="h82eeb0d5g97f8gb543g1fccgc1ddce66a5b2" version="2">アンデッド・パトロン</content>
   <content contentuid="h8fe28200g46b7g051cga5b0ga6bd5b6a5b73" version="1">あなたは生と死の循環に抗う存在、すなわち強力なリッチやヴァンパイア、あるいはその他の不死の存在と契約を結んだ。かつて凡人であったこれらの古代の契約相手は、野心の道や死の扉を通り抜けるルートを身をもって知っている。彼らは生者の間で自身の意志を遂行する者たちへ、この不浄な知識やその他の秘密を熱心に分け与える。</content>
-  <content contentuid="hf3e7b3e5gd803gdb85g050dg99a565121fbd" version="2">恐怖の形態</content>
   <content contentuid="h60b8e3b3ge993g7677ge82egd9590a175841" version="2">恐れ知らず形態：あなたは恐怖状態に対する完全耐性を得る。
 
 畏怖すべき化身：各ターンに一度、攻撃ロールをクリーチャーに命中させた際、目標に自身の呪文セーヴ難易度に対する判断力セーヴィング・スローを行わせることができる。セーヴに失敗した場合、目標は次の自身のターンの終了時まで恐怖状態になる。</content>
@@ -4324,7 +3802,6 @@
   <content contentuid="h41b0a1dbg7c44g6848gbf1ag34105de9296b" version="2">アーチフェイ・パトロン</content>
   <content contentuid="h5e78186dgabebg2b99g11acg070fef938db4" version="2">あなたの契約はフェイワイルドの力から引き出されている。このサブクラスを選択する際、あなたは「氷の王子」、グローミング・コートの支配者である「空気と暗闇の女王」のほか、「サマー・コート」のティターニア、あるいは古代のハグといったアーチフェイと取引を交わすかもしれない。あるいは、さまざまなフェイを呼び出し、恩義と貸し借りの網を織り上げることもある。彼らが誰であれ、あなたの契約相手はしばしば不可解で気まぐれである。</content>
   <content contentuid="hd55742dag24b8g9010g614cg8ff311ddd61a" version="1">フィーンド・パトロン</content>
-  <content contentuid="h52d5cbc0g4e75gc1bfgaf8egc799b8481188" version="1">フィーンドに仕えるウォーロックは、意図的かどうかはともかく堕落した破壊的な終わりへ進む。その見返りに、地獄の恩恵を受ける</content>
   <content contentuid="ha989ddfeg14aege15egc09fgf298fc8f086e" version="1">グレート・オールド・ワン・パトロン</content>
   <content contentuid="h3504f51eg1ac0gd563g881eg515b53b1f37b" version="1">このサブクラスを選択する際、あなたは「縛られし神」サリズダン、「帰還者」ザーゴン、「暗き飢え」ハダル、あるいは偉大なるクトゥルフといった、彼方の領域の筆舌に尽くしがたい存在や古の神と結びつくかもしれない。あるいは、一柱に縛られることなく複数の存在を呼び出すこともある。これらの存在の動機は理解不能であり、グレート・オールド・ワンはあなたの存在に無関心であるかもしれない。しかし、あなたが学んだ秘密によって、そこから奇妙な魔法を引き出すことができる。</content>
   <content contentuid="h68dcfb27g52ddg20aag7977g147e317f34ce" version="2">ヘクスブレードの呪文</content>
@@ -4406,27 +3883,17 @@
   <content contentuid="h10a80e89g464fgbd0cgd70dg610b32e6acc3" version="1">ほとんどの民よりも一際高くそびえ立つゴライアスは、巨人の遠い子孫である。各ゴライアスは最初の巨人たちの恵みを授かっており、その恵みは、急速に成長して一時的にゴライアスの巨大な同族の身長に近づく能力を含む、様々な超自然的な恩恵として現れる。
 
 ゴライアスは、家系内の巨人を彷彿とさせる身体的特徴を持っている。例えば、一部のゴライアスはストーン・ジャイアントのように見え、他の者はファイアー・ジャイアントに似ている。どの巨人を同族とみなすにせよ、ゴライアスは多元宇宙において独自の道を切り開いてきた。巨人の種族を長年荒廃させてきた骨肉の争いに囚われることなく、彼らは祖先が到達した高みを超える場所を追い求めている。</content>
-  <content contentuid="hdfda798egce43g07bbgc366gf55a071720ff" version="1">ヒューマン</content>
   <content contentuid="hc3405af3g4811g97c2gc534g546e8726cc0d" version="1">多元宇宙のいたるところに見られるヒューマンは、その数と同じくらい多様であり、与えられた歳月の中でできる限りのことを成し遂げようと尽力する。彼らの野心と機知は、多くの世界で称賛され、尊重され、そして恐れられている。
 
 ヒューマンは地球の人々と同じくらい外見が多様であり、多くの神々を信仰している。学者たちは人類の起源について議論しているが、最初期に知られている人間の集まりの1つは、多元宇宙の中心にあるトーラス型の都市であり共通語が誕生した場所でもあるシギルで発生したと言われている。そこからヒューマンは多元宇宙のあらゆる場所に広がり、「扉の都市」のコスモポリタニズムを共にもたらした可能性がある。</content>
-  <content contentuid="he9f4aef0gbf9dgc383g7636g28f7af45dc34" version="1">ヒューマン</content>
   <content contentuid="hf3d6ddebg352bg36d4g9fbbg9ac02f78c004" version="1">多元宇宙のいたるところに見られるヒューマンは、その数と同じくらい多様であり、与えられた歳月の中でできる限りのことを成し遂げようと尽力する。彼らの野心と機知は、多くの世界で称賛され、尊重され、そして恐れられている。
 
 ヒューマンは地球の人々と同じくらい外見が多様であり、多くの神々を信仰している。学者たちは人類の起源について議論しているが、最初期に知られている人間の集まりの1つは、多元宇宙の中心にあるトーラス型の都市であり共通語が誕生した場所でもあるシギルで発生したと言われている。そこからヒューマンは多元宇宙のあらゆる場所に広がり、「扉の都市」のコスモポリタニズムを共にもたらした可能性がある。</content>
   <content contentuid="ha7f411bcg3f6cg64b1gca4eg2a06ea3eb63b" version="1">ヒューマンとその他</content>
-  <content contentuid="h9c1c2999g7b54g854bgfdafg85a366d81a61" version="2">ヒューマン</content>
   <content contentuid="h0ab77ea5gdc5bg9766g3e31gd30e3393b12e" version="1">ゴライアス</content>
   <content contentuid="h1201eb50gacb7ge804g6428g5470579075dc" version="1">ほとんどの民よりも一際高くそびえ立つゴライアスは、巨人の遠い子孫である。各ゴライアスは最初の巨人たちの恵みを授かっており、その恵みは、急速に成長して一時的にゴライアスの巨大な同族の身長に近づく能力を含む、様々な超自然的な恩恵として現れる。
 
 ゴライアスは、家系内の巨人を彷彿とさせる身体的特徴を持っている。例えば、一部のゴライアスはストーン・ジャイアントのように見え、他の者はファイアー・ジャイアントに似ている。どの巨人を同族とみなすにせよ、ゴライアスは多元宇宙において独自の道を切り開いてきた。巨人の種族を長年荒廃させてきた骨肉の争いに囚われることなく、彼らは祖先が到達した高みを超える場所を追い求めている。</content>
-  <content contentuid="h43c8d778g4ffbg6a32ge27eg13e331031c39" version="1">マダラ・デッドアイ</content>
-  <content contentuid="h32bb18a8g2611g9ff6g64eag1c6efae586a9" version="1">マダラは盲目だったが、村を通りかかった別のトゥルーソウルによって治された。そして、村が焼け野原になっていく様を目撃した。アブソリュートを拒否した代償として </content>
-  <content contentuid="h9722e87eg449bg0e97g3b8bge9b1e675afe6" version="1">ゲイル</content>
-  <content contentuid="h2f981857gd0a5g989dgec41g9c92ba28712c" version="1">ゲイルは優れたウィザードとして、かつては魔法の女神ミストラの愛を得た。彼の野心が、大惨事を引き起こしかけるまでは...</content>
-  <content contentuid="hbbb38650gbbe2g4f9dg6f66gf5578f1e9053" version="1">ウィル</content>
-  <content contentuid="h1034780age61eg388fg49d2g23bd1ca7ca75" version="1">辺境の刃として知られるウィルは、魔法を駆使してソード・コーストを脅かすモンスターやデヴィルと戦う。ある時必死になって、より大きな力を与えるという申し出を受け入れた。その結果、地獄のゲームと関わることになっている</content>
-  <content contentuid="hc344cfc5ga758gba8cgf224gb3864fa0208d" version="1">ミンスク</content>
   <content contentuid="hcf571c87ge866geaedge93eg4b1d41f25793" version="1">ゴライアス</content>
   <content contentuid="h53df4a2egf34cge0cegdbaeg961cb646fadd" version="1">ゴライアスは巨人の遠い子孫であり、祖先が到達した高みを超える場所を追い求める。</content>
   <content contentuid="hce152759gc1e1g418cgcf1agfab6759d882e" version="1">巨人の血筋：クラウド・ジャイアント</content>
@@ -4456,11 +3923,9 @@
 内なる輝き：灼熱の光が目と口から一時的に放たれる。持続時間中、半径3メートルに明るい光を、さらに3メートルに薄暗い光を放つ。また、各ターンの終了時、自身の3メートル以内にいる各クリーチャーは、自身の習熟ボーナスに等しい光輝ダメージを受ける。
 
 死霊の帳：目が一時的に暗闇のプールのようになり、飛べない翼が背中から一時的に生える。自身の3メートル以内にいる味方以外のクリーチャーは、魅力セーヴィング・スロー（難易度は8＋自身の魅力修正値＋習熟ボーナス）に成功するか、さもなくば次の自身のターンの終了時まで恐怖状態にならなければならない。</content>
-  <content contentuid="h1441708fgd061g4a56g61b7gb8e8733cc36d" version="1">アアシマール</content>
   <content contentuid="h17794a45gbffdg8b0dg0332g414e8cee0aa7" version="1">アアシマールは、その魂の中に上方次元界の火花を宿す凡人である。天使のような存在の子孫であれ、天界の力を吹き込まれた者であれ、彼らはその火花を煽って光、治癒、そして天上の怒りをもたらすことができる。
 
 アアシマールは、あらゆる凡人の人口の中から現れる可能性がある。彼らは親に似ているが、最大160年生き、金属的なそばかす、輝く目、後光、あるいは天使の肌の色（銀色、乳白色の緑、または銅がかった赤）など、天界の遺産を暗示する特徴を持っている。これらの特徴は最初は微かであるが、アアシマールが自身の完全な天界の性質を現すことを学ぶと顕著になる。</content>
-  <content contentuid="h4a85606fg83fegb919g2561gba3dd6f0fdf8" version="1">アアシマール</content>
   <content contentuid="hce976d1agab7cg7729g705eged5dfe8fa201" version="1">アアシマールは、その魂の中に上方次元界の火花を宿す凡人である。天使のような存在の子孫であれ、天界の力を吹き込まれた者であれ、彼らはその火花を煽って光、治癒、そして天上の怒りをもたらすことができる。
 
 アアシマールは、あらゆる凡人の人口の中から現れる可能性がある。彼らは親に似ているが、最大160年生き、金属的なそばかす、輝く目、後光、あるいは天使の肌の色（銀色、乳白色の緑、または銅がかった赤）など、天界の遺産を暗示する特徴を持っている。これらの特徴は最初は微かであるが、アアシマールが自身の完全な天界の性質を現すことを学ぶと顕著になる。</content>
@@ -4554,8 +4019,6 @@
   <content contentuid="h7f4aa580ga87dg16dcgfbe8g89f017ded271" version="2">影の呪文</content>
   <content contentuid="h822a72b8g17f5g73a6gd5f7g245ac996eb94" version="1">「影の呪文」表に指定されたソーサラー・レベルに達すると、以降、リストされた呪文を常に準備した状態にする。「影の魔法」のソーサーラーは特定のレベルで追加の呪文を得る。レベル3で「破滅の予感」、「暗闇」、「傷付与」、「跡を残さぬ移動」、レベル5で「ハダルの飢え」と「恐怖」、レベル7で「上級不可視化」と「幻の殺し屋」、レベル9で「感染」と「殺戮の雲」を得る。</content>
   <content contentuid="hce90f19eg2ee2g0ff4g4c21g7ebf85d46c9d" version="1">「影の魔法」のソーサーラーは特定のレベルで追加の呪文を得る。レベル3で「破滅の予感」、「暗闇」、「傷付与」、「跡を残さぬ移動」、レベル5で「ハダルの飢え」と「恐怖」、レベル7で「上級不可視化」と「幻の殺し屋」、レベル9で「感染」と「殺戮の雲」を得る。</content>
-  <content contentuid="h312226b3g88ffg25afg2137g749c468fee54" version="2">夜の目</content>
-  <content contentuid="ha1f41cf1g38dagde18ga234gcff8d509b5e3" version="2">墓場の力</content>
   <content contentuid="h8169cd0cg492cg6dbeg7bafg507ce72f8ac4" version="1">影の魔法</content>
   <content contentuid="hae8c9a5cgf06dg6b71gb093ge2e25716f7d2" version="1">自身の内に宿る魔法は、シャドウフェルに存在する最も曖昧で不可解な力、あるいは超自然的な闇の別領域に由来している。そのような場所に生息する存在に自身の血統を遡ることができるのかもしれないし、あるいはシャドウ・ドラゴンの邪悪なエネルギーに晒されて変貌を遂げたのかもしれない。その影の魔法により、あなたは暗闇、アンデッド、そして災いをもたらす力を操ることができる。</content>
   <content contentuid="h442cd917g6095gef57g713bg55e902c18ad3" version="1">荒ぶる魔法</content>
@@ -4595,7 +4058,6 @@
 
 「緊急復活」の巻物は常にこの制限から除外され、あらゆるキャラクターが使用できる。</content>
   <content contentuid="h2a38021bge7c4g0eedgdbf5g331c3221892d" version="1">例えば、「火の壁」（レベル4呪文）の巻物を使用するには、レベル3の呪文スロットが必要である。キャラクターはこの要件を、ウィザード5レベル、あるいはウィザード4レベルとアーケイン・トリックスター3レベルの組み合わせなどで満たすことができる。しかし、クレリック4レベルとアーケイン・トリックスター3レベルを持つキャラクターは要件を満たせない。なぜなら、「火の壁」はクレリックの呪文リストに含まれていないからである。</content>
-  <content contentuid="h94c617f1g467ag18f3gf740gb5a9fc763e88" version="1">守りの決闘術</content>
   <content contentuid="hb74c3fd9ga6a8g8c4bg0373g427c3edf70f7" version="4">飛び降り</content>
   <content contentuid="hd44fd6ddg1098gdbf5g10d4g8ca7b30d62bc" version="4">飛び上がり</content>
   <content contentuid="hcc124e06g703dga91ag38b5g45f683e89b78" version="1">必中打撃（味方）</content>
@@ -4608,10 +4070,7 @@
   <content contentuid="he77dca6bga253g90bcg6925g1a3c785cb127" version="1">あなたを見ることができるか声を聞くことができる任意の味方1人と、その味方が攻撃する敵1体を選択し、戦技ダイスを1個消費する。味方は直ちにリアクションを用いて、選択した敵に対して武器で1回攻撃を行うことができる。命中した場合、攻撃のダメージ・ロールに戦技ダイスが加算される。</content>
   <content contentuid="h06f01e3agcbd9g2520gaaf4g5e982034ef42" version="1">あなたを見ることができるか声を聞くことができる任意の味方1人と、その味方が攻撃する敵1体を選択し、戦技ダイスを1個消費する。味方は直ちにリアクションを用いて、選択した敵に対して武器で1回攻撃を行うことができる。命中した場合、攻撃のダメージ・ロールに戦技ダイスが加算される。</content>
   <content contentuid="h1af1fe5bg50e6g268fgff66g9f945c926502" version="1">攻撃指令の目標</content>
-  <content contentuid="h71081eb5g3790g2aa9g3de0g457518c610e4" version="1">攻撃指令</content>
-  <content contentuid="h9570e7b5gd9ceg5a34g04aagac5235955484" version="2">占術の達人</content>
   <content contentuid="h15504b2agf3a9gc7f3g51e1g6775163e7006" version="1">2レベル以上の呪文スロットを消費して占術呪文を唱えた際、その呪文を唱えるために使用したスロットよりも1レベル低い、消費済みの呪文スロットを1つ回復する。この特徴によって5レベルより高い呪文スロットを回復することはできない。</content>
-  <content contentuid="hae8e8ce3g458fg9150gdb09g00c46fe3fe62" version="2">予見</content>
   <content contentuid="hd419a5dcg621bg5ccagb91bgf4b3862d5fde" version="1">占術士</content>
   <content contentuid="h082d1855ga658g2a35g05a7g0252200ad020" version="1">占術士の助言は、過去、現在、そして未来をより明確に理解したいと願う者たちから求められる。占術士として、あなたは空間、時間、そして意識の帳を払うことに努める。識別、遠隔視、超自然的な知識、そして予感の呪文を極めるために励む。</content>
   <content contentuid="hff219b81gb634gcfe0g4f39gf3e454dd21c9" version="1">防御術士</content>
@@ -4624,7 +4083,6 @@
   <content contentuid="h52ee702cg59c6gf498g1afeg1be3716e9325" version="1">秘術の防壁再チャージ</content>
   <content contentuid="h21e9c371g94d2g99bbgc117g1f69a24cfd8a" version="1">秘術の防壁再チャージ</content>
   <content contentuid="h441c9c45ge8e7g3d2cg79e6g8a57eab6e20d" version="1">呪文スロットを1つ消費することで、防壁は消費した呪文スロットのレベルの2倍に等しい数のヒット・ポイントを回復する。</content>
-  <content contentuid="h19c5b950gb887g4a56g312cga3c9a0b8839a" version="2">防壁展開</content>
   <content contentuid="h173a0fccg668ag5a93gc996gfe83b0867a07" version="1">9メートル以内に見えるクリーチャーがダメージを受けた際、リアクションを用いて自身の秘術の防壁にそのダメージを吸収させることができる。</content>
   <content contentuid="hf1f2ce33g9f28ga79dg8ad9g713bd9d1afd1" version="1">9メートル以内に見えるクリーチャーがダメージを受けた際、リアクションを用いて自身の秘術の防壁にそのダメージを吸収させることができる。</content>
   <content contentuid="h9d3fbbaegc6b1gf48egd8c4gef06e95785f3" version="1">&lt;LSTag Tooltip="ShortRest"&gt;小休憩&lt;/LSTag&gt;を行うたびに、自身の&lt;LSTag Type="Passive" Tooltip="ArcaneWard"&gt;秘術の防壁&lt;/LSTag&gt;は完全に回復する。</content>
@@ -4642,12 +4100,10 @@
   <content contentuid="hfa470112gc789g976ag5dcdgab4fa45eb69b" version="1">移動力を3メートル消費して、最大9メートルまで飛び上がる。</content>
   <content contentuid="hd667caedgdc28gdefdg4285gcd7ef4a63a22" version="1">疾風足：跳躍</content>
   <content contentuid="he4305daaga010gf583gff81gcaf63ebe3f32" version="1">通常のジャンプ距離の最大2倍まで跳躍する。このジャンプは移動した距離の半分に等しい移動力を消費する。</content>
-  <content contentuid="h7f5a2c22g1d31g7893g11c5gbb065055abeb" version="1">守りの紐帯</content>
   <content contentuid="h9adc4c48gd787g4656g13acg233be42b05a3" version="1">エルミンスターの逃避</content>
   <content contentuid="hba127cc1ga142gbe30g42a0gefcf3b5c831e" version="2">効果時間中、秘術の防壁が呪文から自身を保護する。呪文および魔法効果に対するセーヴィング・スローに有利を得て、さらに呪文によるダメージに対する抵抗を得る。</content>
   <content contentuid="hb659d87bg7ae8g6489g2b3ege4e114b8699e" version="1">エルミンスターの逃避</content>
   <content contentuid="h9f0fa794gdfc2ge2f8gcf06g046d97ef0b1d" version="1">効果時間中、秘術の防壁が呪文から自身を保護する。呪文および魔法効果に対するセーヴィング・スローに有利を得て、さらに呪文によるダメージに対する抵抗を得る。</content>
-  <content contentuid="h39139aafg7efag9037g4297g47b92c38caf8" version="2">命を刈り取る者</content>
   <content contentuid="hef1552acg9a55g7c16ge056g056772bcc3ec" version="1">スペルファイアーの閃光</content>
   <content contentuid="hcfd88999g4267g263ag85aag89c1108ee65c" version="2">鮮烈な炎の爆発を放つ。射程内の目標に対して遠隔呪文攻撃を行う。命中した場合、目標は[1]を受ける。</content>
   <content contentuid="hf91f3fe6gf176g015fg2e8bg8d7e113fb2e5" version="1">スペルファイアーの嵐</content>
@@ -4697,7 +4153,6 @@
   <content contentuid="h7b73f5fagb632g4dd6gbb1bg52e10cb075ff" version="1">神聖なる領域との繋がりにより、常に特定の呪文の準備ができている。「影の領域呪文」表に指定されたクレリック・レベルに達すると、以降、リストされた呪文を常に準備した状態にする。影の領域から以下の呪文が与えられる。レベル3で「破滅の予感」、「偽りの生命」、「目潰し」、「暗闇」。レベル5で「明滅」と「恐怖」。レベル7で「エヴァードの黒い触手」と「上級不可視化」。レベル9で「冷気噴射」と「夢語り」。</content>
   <content contentuid="hb05d9f4bgc914g4d44g95b9ga646b28fd85b" version="1">クレリック・レベルが上がるにつれて、影の領域から以下の呪文が与えられる。レベル3で「破滅の予感」、「偽りの生命」、「目潰し」、「暗闇」。レベル5で「明滅」と「恐怖」。レベル7で「エヴァードの黒い触手」と「上級不可視化」。レベル9で「冷気噴射」と「夢」。</content>
   <content contentuid="h1064bb85gee8cg09fbge5ebg6e90aa761e30" version="1">影の領域</content>
-  <content contentuid="h904f48b3g5c0bg6e25g75bcg2b014d46c23f" version="1">影の領域</content>
   <content contentuid="h034102c0gf054g2c35ga023g5f4e2e8fbffd" version="1">影の領域は万物を取り巻く闇を受け入れ、光と闇を隔てる一時的な灰色の領域を操作する。影の領域のクレリックは捉えがたき道を歩み、頻繁に忠誠を切り替え、人目を避けて行動することを好む。</content>
   <content contentuid="h52d0bda6g4b49g2a89gf69bg489e840efe5a" version="2">夜の帳</content>
   <content contentuid="h5aa5a2a8gba10g31e1gabfeg038d2569ac84" version="1">「隠密」技能への習熟と暗視を得る。さらに、ボーナス・アクションとして「隠れ身」を行うことができる。</content>
@@ -4707,16 +4162,13 @@
   <content contentuid="hbcbd58e8g49cfg974bg8aabgdc71760d819a" version="1">神性伝導を使用して、クリーチャーの影をそのクリーチャー自身に反逆させることができる。アクションとして、自分から9メートル以内に見えるクリーチャーを1体選択する。対象は次の自身のターンの終了時まで、自身の影によって拘束状態になる。目標が影を投影しない場所にいる場合でも、この特徴を使用できる。</content>
   <content contentuid="hc2dd73deg615cg8bd1g4aeagcf05e9e5d0ff" version="2">暗転</content>
   <content contentuid="hc80832b3gccecg3c55ge08fgc2a067adc4af" version="1">ボーナス・アクションとして、魔法のように1分（10ターン）間の間、不可視状態になることができる。この特徴は自身の判断力修正値（最低1回）に等しい回数だけ使用できる。大休憩を終えると消費したすべての使用回数を回復する。</content>
-  <content contentuid="hda876b8bgf832g00b4g56d9g44e1bd90c465" version="1">隠れ身</content>
   <content contentuid="h2748c4afgb7c1g935dg46f9g95303ee42d02" version="1">影の掌握</content>
   <content contentuid="h40671bc4g4e10g2c2egd92cg6a9ae5dc8595" version="1">影の掌握</content>
   <content contentuid="h7630efebgc128g1a88g3056g3cd8dbd6ce14" version="1">神性伝導を使用して、クリーチャーの影をそのクリーチャー自身に反逆させることができる。アクションとして、自分から9メートル以内に見えるクリーチャーを1体選択する。そのクリーチャーは筋力セーヴィング・スローを行わなければならない。失敗した場合、対象は次の自身のターンの終了時まで、自身の影によって拘束状態になる。成功した場合、対象は次の自身のターンの終了時まで、自身の影によってつかまれた状態になる。目標が影を投影しない場所にいる場合でも、この特徴を使用できる。</content>
   <content contentuid="h1d580cb5gc915g8f13g3f12g57d46d07e991" version="2">暗転</content>
   <content contentuid="h0e8b7698gbb37g834bge366g5db24efbb56c" version="1">ボーナス・アクションとして、魔法のように1分（10ターン）間の間、不可視状態になることができる。</content>
   <content contentuid="h7eca827eg60a1g2e15ga615g5750ad9f5621" version="1">暗転</content>
-  <content contentuid="h075cad75ge0b8g8089g7a0bge757b2193df5" version="2">神性介入</content>
   <content contentuid="h8dfac8b3gdd9aga779ga229g8159a97e610e" version="2">聖なる介入を求めて自身の神性を呼び降ろした際、神は自身の聖なる力の一部を回復させることで応える。即座にレベル5の呪文スロットを1つ回復する。</content>
-  <content contentuid="hb220d543g0de9ga76cg8f82gc0f939ce0a89" version="1">強化した身を守る閃光</content>
   <content contentuid="he222d284gfebfg2d88g1574g14e9d5ea7c35" version="1">2d6＋クレリックの判断力修正値に等しい一時的ヒット・ポイントを得る。</content>
   <content contentuid="h717d6a55gf9a8g7d5eg5430gc31fbe95ad80" version="1">魂の楽派</content>
   <content contentuid="h6923d229ga101g2539g1a0fg9771146b44a4" version="1">魂の楽派のバードは、伝説の魂を呼び出して世界を変える。しかし、そのような存在は気まぐれであり、バードが召喚したものが常に完全に制御下にあるとは限らない。</content>
@@ -4837,13 +4289,11 @@
   <content contentuid="he42b6d25ga54ag95feg90bbge79fe3812ac0" version="1">神聖ポイント</content>
   <content contentuid="h36a07310gf671gd6d5g26c3ge6250fa1718d" version="2">審判の鎖</content>
   <content contentuid="h05726c6egfdc1g7e6fgb135gb031d3bba7f8" version="1">聖別された刃でクリーチャーに攻撃を命中させた際、神聖ポイントを1消費して相手を聖なる鎖で拘束できる。目標は筋力セーヴィング・スローに成功しなければならず、失敗すると[1]を受け、次の自身のターンの終了時まで拘束状態になる。</content>
-  <content contentuid="hda7d8a17g6668ga3a6g1781g963016c95096" version="2">神聖なる報復</content>
   <content contentuid="hb1f27e8cg3c25g45d2gfff0gf52a143b7438" version="1">クリーチャーが近接攻撃であなたにダメージを与えた際、リアクションとして神聖ポイントを1消費し、そのクリーチャーに対して近接攻撃を行うことができる。そのダメージ・ロールに自身の判断力修正値に等しいボーナスを得る。</content>
   <content contentuid="h4991ec40g26c7gc891g8995g3c46491be240" version="2">噴出する刃</content>
   <content contentuid="hda73ee14g5c7dg9f17g063dg92a87621426e" version="2">神聖ポイントを2消費することで、長さ13.5メートル、幅1.5メートルの直線状の範囲に光輝の刃を呼び降ろすことができる。この直線内の各クリーチャーは敏捷力セーヴィング・スローを行わなければならず、セーヴに失敗すると[1]を受け、成功すると半分のダメージを受ける。</content>
   <content contentuid="h53541f0cg04a1g112bge21dg808b86467f1d" version="1">審判の鎖</content>
   <content contentuid="hb5aeae53g0a47g6c52g8ed3gf1c8722ca565" version="1">聖別された刃でクリーチャーに攻撃を命中させた際、神聖ポイントを1消費して相手を聖なる鎖で拘束できる。目標は筋力セーヴィング・スローに成功しなければならず、失敗すると[1]を受け、次の自身のターンの終了時まで拘束状態になる。</content>
-  <content contentuid="haab525c5g6408g1302gb797gcc6ec923a940" version="1">神聖なる報復</content>
   <content contentuid="hdb2b4b09g8d02ge0d3g8eeagd0b7b294e1c2" version="1">クリーチャーが近接攻撃であなたにダメージを与えた際、リアクションとして神聖ポイントを1消費し、そのクリーチャーに対して近接攻撃を行うことができる。そのダメージ・ロールに自身の判断力修正値に等しいボーナスを得る。</content>
   <content contentuid="ha43fceeeg4ad3g069bgbbf5g78b41ca67687" version="1">噴出する刃</content>
   <content contentuid="h6a7e8dbfg5edcgcfebgef9bgb58dbe804543" version="1">神聖ポイントを2消費することで、長さ13.5メートル、幅1.5メートルの直線状の範囲に光輝の刃を呼び降ろすことができる。この直線内の各クリーチャーは敏捷力セーヴィング・スローを行わなければならず、セーヴに失敗すると[1]を受け、成功すると半分のダメージを受ける。</content>
@@ -4875,10 +4325,7 @@
   <content contentuid="haa843db4g20ebg9021gacedg3f8ada559a41" version="2">巨人の道を歩むバーバリアンは、巨人と同じ原始の力から強さを引き出す。激怒するにつれて、これらのバーバリアンは元素の力を漲らせてサイズが大きくなり、巨人の栄光を想起させる姿へと変わる。あるバーバリアンは自身の体がただ巨大化したような姿になり、その目や武器の周囲に元素のエネルギーを揺らめかせる。またある者はより劇的に変貌し、本物の巨人のような外見や、火、寒気、電撃をまとったエレメンタルに酷似した形態をとる。</content>
   <content contentuid="h64ffc9d5ga96fg168bg296eg9642cbd7f4b0" version="1">荒ぶる魔法の道</content>
   <content contentuid="h08c08b52g956bgcf55gaba1gfea165770305" version="2">多元宇宙の多くの場所には、美、強烈な感情、そして奔放な魔法が満ちあふれている。フェイワイルドや上層次元界、その他の超自然的な力が渦巻く領域は、そうした力を放射して人々に深い影響を与える。深く激しい感情を持つ民であるバーバリアンは、これらの未開なる影響を特に受けやすく、中にはその魔法によって変貌を遂げる者もいる。こうした魔法の染み込んだバーバリアンたちが、荒ぶる魔法の道を歩む。エルフ、ティーフリング、アアシマール、ゲナシのバーバリアンは、祖先の異界の魔法を発現させようと、好んでこの道を選ぶことが多い。</content>
-  <content contentuid="h9c95882dg83f6g1bbdg05f2geae221b89b7a" version="1">偽りの生命</content>
   <content contentuid="h22179fdag3286gcd27g7facg8e73f5c76e01" version="3">2d4 + [1]の&lt;LSTag Tooltip="TemporaryHitPoints"&gt;一時的ヒット・ポイント&lt;/LSTag&gt;を得る。</content>
-  <content contentuid="hd981160eg2361g96c5g14b2g6faa8b2cc888" version="1">妖術: 偽りの生命</content>
-  <content contentuid="h7706db7cg7c7dgf09bg4d14gc9faed17fc8b" version="1">偽りの生命</content>
   <content contentuid="h64a85505gb9ccg347eg37efg4472a54e2380" version="1">2d4 + [1]の&lt;LSTag Tooltip="TemporaryHitPoints"&gt;一時的ヒット・ポイント&lt;/LSTag&gt;を得た。</content>
   <content contentuid="h7db1a592ge710g4c16g2014gbe064274b274" version="1">大津波</content>
   <content contentuid="ha9c3ab13g3fb0g8a2eg5ee1gfbd234126c3d" version="1">射程内のエリアに激しく打ちつける水の波を呼び出す。このエリアは最大で長さ9メートル、幅3メートル、高さ3メートルまで指定できる。そのエリアにいる各クリーチャーは敏捷力セーヴィング・スローを行わなければならない。セーヴに失敗したクリーチャーは[1]を受け、伏せ状態になる。成功したクリーチャーは半分のダメージを受け、伏せ状態にはならない。</content>
@@ -4940,8 +4387,6 @@
   <content contentuid="h6b8c9b31g95bbg4d4cga9a0gf66e4d6187f5" version="1">使用可能なクラス：バード、ソーサラー、ウォーロック、ウィザード、Dragon Domain、Knowledge Domain、精神の領域</content>
   <content contentuid="h679a5d3cgea36g8caagcfd7gebbdee910cc1" version="1">突撃者：素手攻撃</content>
   <content contentuid="h39e3d3b1gb37fgc87bg75c2g7b659b7eb280" version="1">与えるダメージを増加：前方へ突撃し、進路上にいる最初の敵に激突する。</content>
-  <content contentuid="h72f074a8gc35ag1dacg638cgaa77b73e11be" version="1">捨て身の攻撃</content>
-  <content contentuid="hc91dc46cg504cg46c4g8871ga592835d0949" version="1">魔法暴走</content>
   <content contentuid="he691a90cga2c9gccd3g42a4gd122e5addb8d" version="1">魔法暴走：1</content>
   <content contentuid="he04135b5gb4bdg7ef6g903dg79f721e678d7" version="1">魔法暴走：2</content>
   <content contentuid="h10ce0f8dgb205g8791g48d8g83dd4502eef1" version="1">魔法暴走：3</content>
@@ -5102,10 +4547,6 @@
   <content contentuid="hdd099d89g2153g4634ga753g2be8e4f70ebd" version="1">自身に「鏡像」を唱える。</content>
   <content contentuid="h7f2f1a91g15beg482eg8145g5af0bd67471e" version="3">自身に「鏡像」を唱える。</content>
   <content contentuid="hf32c9140g4ab5g43d0gaecdg9d7c7ff89c1c" version="3">自身に「鏡像」を唱える。</content>
-  <content contentuid="hafefa2e1g90b1g4c2bga373g2d641dd61b87" version="3">[1]以内のクリーチャーとアイテムが燃え始め、ターンごとに[2]を受ける</content>
-  <content contentuid="hd1b48940g58d3g4e8ega4dcg7ed2dee94101" version="3">[1]以内のクリーチャーとアイテムが燃え始め、ターンごとに[2]を受ける</content>
-  <content contentuid="hce4f5a31g0d0ag4b63g942egbffb8f14a92c" version="3">[1]以内のクリーチャーとアイテムが燃え始め、ターンごとに[2]を受ける</content>
-  <content contentuid="hed397eecg9b3bg4678gba35gcf91f0402409" version="3">[1]以内のクリーチャーとアイテムが燃え始め、ターンごとに[2]を受ける</content>
   <content contentuid="h4ea41309gb768g42f0g8f88g2da72126a223" version="3">大休憩を終えるまで、呪文の「死からの守り」の効果を得る。</content>
   <content contentuid="h4a8aa733g3cefg4554g999bgc91e0bde4c64" version="3">大休憩を終えるまで、呪文の「死からの守り」の効果を得る。</content>
   <content contentuid="hbc9e47f3g27ffg491cg810dg8e81ad43467d" version="3">大休憩を終えるまで、呪文の「死からの守り」の効果を得る。</content>
@@ -5118,30 +4559,6 @@
   <content contentuid="hdaaedfadgbbd6g42e5g987ag8394b76136cf" version="3">自身に「かすみ」を唱える。</content>
   <content contentuid="h9ad8eb04g20c2g4e54gb276g2d76f4740060" version="3">自身に「かすみ」を唱える。</content>
   <content contentuid="hc02e7cdege460g4239g8baeg6da5d09821fc" version="3">自身に「かすみ」を唱える。</content>
-  <content contentuid="h5c5ef942gcbf3g49cbg9accgc942edae5e84" version="3">魔法の霧の雲を周囲に作り、中のクリーチャーを重度の隠蔽にして、&lt;LSTag Type="Status" Tooltip="BLINDED"&gt;盲目&lt;/LSTag&gt;状態にする</content>
-  <content contentuid="hc960f4b7g78deg40bbg965fgc1565ecade8e" version="3">魔法の霧の雲を周囲に作り、中のクリーチャーを重度の隠蔽にして、&lt;LSTag Type="Status" Tooltip="BLINDED"&gt;盲目&lt;/LSTag&gt;状態にする</content>
-  <content contentuid="hb3b236fdg6f36g43e7gbd94gb9dab02f1422" version="3">魔法の霧の雲を周囲に作り、中のクリーチャーを重度の隠蔽にして、&lt;LSTag Type="Status" Tooltip="BLINDED"&gt;盲目&lt;/LSTag&gt;状態にする</content>
-  <content contentuid="h98b8ca8bge009g418dgb454gf9c2863445c0" version="3">魔法の霧の雲を周囲に作り、中のクリーチャーを重度の隠蔽にして、&lt;LSTag Type="Status" Tooltip="BLINDED"&gt;盲目&lt;/LSTag&gt;状態にする</content>
-  <content contentuid="hde366e14gd5b5g44c4g827bga2b49392cbca" version="2">次の自ターンが終了するまで、呪文を使うごとに&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;のレベルと同等の魔力点を回復する</content>
-  <content contentuid="h6ce73a81g4678g4a91ga52cg81e6fa1c24b3" version="2">次の自ターンが終了するまで、呪文を使うごとに&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;のレベルと同等の魔力点を回復する</content>
-  <content contentuid="hba496d7agd6f7g4bf8g8066g3041c4a139d5" version="2">次の自ターンが終了するまで、呪文を使うごとに&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;のレベルと同等の魔力点を回復する</content>
-  <content contentuid="h25c99944g196eg48c0ga7cbgd07dc433af9c" version="2">次の自ターンが終了するまで、呪文を使うごとに&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;のレベルと同等の魔力点を回復する</content>
-  <content contentuid="h79878215g2bfbg412eg851bgaded3f9b8188" version="3">自身の周囲の地面の一部が硬いトゲになる。トゲの上を歩いたクリーチャーは[2]移動するたびに[1]を受ける</content>
-  <content contentuid="h9cfd2cf9g3c6bg44d3gbc44g1db3354de7f0" version="3">自身の周囲の地面の一部が硬いトゲになる。トゲの上を歩いたクリーチャーは[2]移動するたびに[1]を受ける</content>
-  <content contentuid="h6ef2ef69g5a70g4e79gbec8g4d789ec34d39" version="3">自身の周囲の地面の一部が硬いトゲになる。トゲの上を歩いたクリーチャーは[2]移動するたびに[1]を受ける</content>
-  <content contentuid="h833c0955gffccg49b7g9c91gc755ac906512" version="3">自身の周囲の地面の一部が硬いトゲになる。トゲの上を歩いたクリーチャーは[2]移動するたびに[1]を受ける</content>
-  <content contentuid="hb5a352bfg05b6g438fga2c8g930246489691" version="2">呪文か&lt;LSTag Tooltip="Cantrip"&gt;初級呪文&lt;/LSTag&gt;を使うたび、目標と位置が入れ替わる</content>
-  <content contentuid="hbe741660gb4b4g4a86g84a5g1091b8be5a8c" version="2">呪文か&lt;LSTag Tooltip="Cantrip"&gt;初級呪文&lt;/LSTag&gt;を使うたび、目標と位置が入れ替わる</content>
-  <content contentuid="h59bc3445g9221g4057gaaa7g57e95c105dda" version="2">呪文か&lt;LSTag Tooltip="Cantrip"&gt;初級呪文&lt;/LSTag&gt;を使うたび、目標と位置が入れ替わる</content>
-  <content contentuid="hfef17422ga705g4694g861dg3f8ac4ae97df" version="3">[1]以内のクリーチャーの武器が魔力を帯びる。次の攻撃が&lt;LSTag Tooltip="CriticalHit"&gt;クリティカル・ヒット&lt;/LSTag&gt;となり、追加で[2]を与える</content>
-  <content contentuid="hfebb0c2eg259cg4a52g9a3cg4edf6de87e4e" version="2">ターンの終わりまで、物体やクリーチャーを念力で持ち上げて投擲できる</content>
-  <content contentuid="hb93e81d2g30f2g4d68gb901g6d3fc1641adf" version="2">ターンの終わりまで、物体やクリーチャーを念力で持ち上げて投擲できる</content>
-  <content contentuid="h0c900d97g6042g4a00g8692g209562838bd4" version="2">ターンの終わりまで、物体やクリーチャーを念力で持ち上げて投擲できる</content>
-  <content contentuid="h404bb326g3a7ag4766gbc53gb4c0cec521d8" version="4">ターン終了時まで&lt;LSTag Type="Spell" Tooltip="Projectile_Fly"&gt;飛行&lt;/LSTag&gt;を与える</content>
-  <content contentuid="hef777ecbg83d4g4377g8d15g52a28ba8e05b" version="2">呪文が目標に命中すると、半径[1]以内にいる全クリーチャーを使用した&lt;LSTag Tooltip="SpellSlot"&gt;呪文スロット&lt;/LSTag&gt;のレベルにつき[2]回復する</content>
-  <content contentuid="he838dc28gdd7ag4377g9eb3g08e15f2d29e1" version="3">[1]以内のクリーチャーは、ランダムに猫か犬に変身する</content>
-  <content contentuid="hdde680a7g73b5g43f5g8a74g38ce84de8780" version="3">秘術の球体に包まれる。球体の外からの攻撃または効果によるダメージを受けなくなり、球体の外にダメージを与えられない。&lt;LSTag Tooltip="MovementSpeed"&gt;移動速度&lt;/LSTag&gt;は半分になる</content>
-  <content contentuid="h6e154639gd102g48cdg9302g9fc6aba3af7a" version="3">九層地獄の炎からカンビオンを召喚する。カンビオンは全員に敵対する</content>
   <content contentuid="hd7c4e9bcgfaa1g320fg0084g4c415302c9e7" version="1">魔法暴走：ターン</content>
   <content contentuid="hee561d22g37d0g6469gc0eag8357331f85c7" version="1">これから1分（10ターン）の間、自身の各ターンの開始時にこの魔法暴走効果が再び発動する。</content>
   <content contentuid="hbc7e05c5ge02cg94d7g5dc3g686e92bfd461" version="1">魔法暴走：回復</content>
@@ -5260,11 +4677,8 @@
   <content contentuid="h112fb3e9g734ag7e2dg4366g1a44c9038a26" version="1">このターン、すでに刻みによる無料の非利き手攻撃を行っているため、これ以上行うことはできない。</content>
   <content contentuid="h004828cbg6ae4g9d9fgef10g00102cb4f553" version="1">二刀の使い手：非利き手攻撃</content>
   <content contentuid="h3a446706g6505g19b1g3826gb313d8b63d3f" version="1">このターン、ボーナス・アクションとして追加の非利き手攻撃を行える。</content>
-  <content contentuid="hf7c771bbgba46g05a3g6c15g9c7c4ebba6b6" version="1">元素吸収</content>
   <content contentuid="h2127d371g53e2g616ag957cg184d49e115ef" version="1">この呪文は受けるエネルギーの一部を捕らえ、自身への効果を軽減するとともに、次の近接攻撃のためにそのエネルギーを蓄積する。次の自身のターンの開始時まで、トリガーとなったダメージ種別への抵抗を得る。また、次の自身のターンに近接攻撃を最初に命中させた際、目標はトリガーとなった種別の追加ダメージを[1]受け、呪文は終了する。</content>
-  <content contentuid="hccbdbb9eg99b6gf54fgce8dg5a4b024a38a8" version="1">元素吸収</content>
   <content contentuid="h23f50accgc0b8gb376gbc26g1fff227eb3f5" version="1">この呪文は受けるエネルギーの一部を捕らえ、自身への効果を軽減するとともに、次の近接攻撃のためにそのエネルギーを蓄積する。次の自身のターンの開始時まで、トリガーとなったダメージ種別への抵抗を得る。また、次の自身のターンに近接攻撃を最初に命中させた際、目標はトリガーとなった種別の追加ダメージを[1]受け、呪文は終了する。</content>
-  <content contentuid="h0d100dc2gb2a7ge09fg624dga1554d1a009c" version="1">元素吸収</content>
   <content contentuid="hab392145gc890gaa18g04cag5b0b653d9632" version="1">この呪文は受けるエネルギーの一部を捕らえ、自身への効果を軽減するとともに、次の近接攻撃のためにそのエネルギーを蓄積する。次の自身のターンの開始時まで、トリガーとなったダメージ種別への抵抗を得る。また、次の自身のターンに近接攻撃を最初に命中させた際、目標はトリガーとなった種別の追加ダメージを[1]受け、呪文は終了する。</content>
   <content contentuid="h93909048gc250g4ba0g8188g2450b9be939f" version="1">魔法のたしなみ：元素吸収</content>
   <content contentuid="hc53cf966gb23fg281eg72e3g7fee38b6dede" version="1">暗黒の潮流</content>
@@ -5329,7 +4743,6 @@
   <content contentuid="h700ed84bg957fg2a5dg1d50g4d69487d7001" version="1">貪る刃</content>
   <content contentuid="h353f6fe0g981eg9ab6gd5b9g0148d8001530" version="1">自身が保持している武器、または自身の素手攻撃に、貪欲な負のエネルギーを吹き込む。持続時間中、各ターンで最初に強化された武器または素手攻撃による攻撃をクリーチャーに命中させた際、目標は[1]を受け、あなたは与えた死霊ダメージに等しい数の一時的ヒット・ポイントを得る。</content>
   <content contentuid="hb6e6fab4gd077g545dge824g9e58b1ec530c" version="1">貪る刃：一時的ヒット・ポイント</content>
-  <content contentuid="h0903fdd3gbfadg55a1gd56cga67f82c909ac" version="1">[1]を獲得した</content>
   <content contentuid="h4a76861cg2a42g5900gbd08gc593fbb9811e" version="1">棘の鎧</content>
   <content contentuid="h5f480b91gf52bg2751g6254gdd8113ff8e2e" version="1">この呪文を唱える際、射程内の同意する目標の周囲に、トゲに覆われた柔軟な外骨格が出現する。目標は[1]を得る。呪文が終了する前にクリーチャーが近接攻撃ロールで目標に命中させた場合、そのクリーチャーは攻撃の結果として失われた一時的ヒット・ポイントの数に等しい刺突ダメージを受ける。この呪文によって与えられた一時的ヒット・ポイントが目標に残っていない場合、この呪文は早期に終了する。</content>
   <content contentuid="he725b302g9ad6g038fg90e3g3b6453195180" version="1">目標は1レベルを上回る呪文スロットレベルごとに、追加で2d6の一時的ヒット・ポイントを得る。</content>
@@ -5391,16 +4804,9 @@
   <content contentuid="haf633c9dg1492gf659gb336g2332cda3f768" version="1">持続時間中、あなたの周囲の3メートルの放射状の範囲を飛び回る自然の霊を召喚する。この放射状の範囲が、あなたが見えるクリーチャーの空間に入った際、およびあなたが見えるクリーチャーがこの範囲に入るかそこでターンを終了するたびに、そのクリーチャーに判断力セーヴィング・スローを行わせることができる。セーヴに失敗するとクリーチャーは[1]を受け、成功すると半分のダメージを受ける。クリーチャーはこのセーヴを1ターンに1回のみ行う。
 
 さらに、呪文の持続時間中、あなたはボーナス・アクションとして離足アクションを行うことができる。</content>
-  <content contentuid="hfefb5384gcdb9g70a3g4fd3g5796fed23526" version="1">覚醒</content>
   <content contentuid="h4016a9a2g8d51g2860gce0aga3dae07e0895" version="2">理解力の低いクリーチャーを従わせようと試みる。&lt;LSTag Tooltip="Intelligence"&gt;知力&lt;/LSTag&gt;が3以下のクリーチャーは、&lt;LSTag Tooltip="Intelligence"&gt;知力&lt;/LSTag&gt;&lt;LSTag Tooltip="SavingThrow"&gt;セーヴィング・スロー&lt;/LSTag&gt;に成功しなければ、あなたが&lt;LSTag Tooltip="LongRest"&gt;大休憩&lt;/LSTag&gt;を終えるまであなたに&lt;LSTag Type="Status" Tooltip="AWAKEN"&gt;支配&lt;/LSTag&gt;された状態になる。</content>
-  <content contentuid="h98169436gc6eagd39ag00f1g64c904ff7649" version="2">覚醒</content>
   <content contentuid="h947e61d6g7b1fg7654gbc73g3ec51f29fd5a" version="2">このクリーチャーの精神は術者の意志に屈服しており、術者の命令に無条件で従う。術者が&lt;LSTag Tooltip="LongRest"&gt;大休憩&lt;/LSTag&gt;を終えると、この効果は終了する。</content>
-  <content contentuid="h36f0d51cg768fg6fcegfd4cg9f24f3efb0a1" version="1">血への飢え</content>
-  <content contentuid="hc7b7932cg1da7g2183g00f2g206583dcf7ef" version="1">飛行</content>
   <content contentuid="h285600aag7ea5gc76dg7ee0gf02eee80c3a6" version="1">任意のクリーチャー1体に接触する。持続時間中、目標は18メートルの飛行速度を得て、空中浮遊できるようになる。呪文が終了した際、落下を止める手段がなければ、目標がまだ空中にいる場合は落下する。</content>
-  <content contentuid="h9de09bd7gc9d1g08d0gcd2fg85f226c678d3" version="1">飛行</content>
-  <content contentuid="h4e086e1dgb445g00e5g933agb84d51e37356" version="1">飛行</content>
-  <content contentuid="h4d6a7f0cg4b59gf232g16f9gaaf7e6aa8dfb" version="1">飛行</content>
   <content contentuid="hc3d38c0eg2fe4g7216g4d25g664b8ca1c301" version="1">任意のクリーチャー1体に接触する。持続時間中、目標は18メートルの飛行速度を得て、空中浮遊できるようになる。呪文が終了した際、落下を止める手段がなければ、目標がまだ空中にいる場合は落下する。</content>
   <content contentuid="h406d239cgf596g3642g0c30g97eb1a38e37a" version="1">任意のクリーチャー1体に接触する。持続時間中、目標は18メートルの飛行速度を得て、空中浮遊できるようになる。呪文が終了した際、落下を止める手段がなければ、目標がまだ空中にいる場合は落下する。</content>
   <content contentuid="h680a104dg18d0g6bfeg6161ga38f884a1c38" version="1">任意のクリーチャー1体に接触する。持続時間中、目標は18メートルの飛行速度を得て、空中浮遊できるようになる。呪文が終了した際、落下を止める手段がなければ、目標がまだ空中にいる場合は落下する。</content>
@@ -5482,7 +4888,6 @@
   <content contentuid="h88cdb54bgdc61g45cdg9a61gac6e68cd6562" version="1">&lt;LSTag Type="Status" Tooltip="DOWNED"&gt;瀕死状態&lt;/LSTag&gt;が終了すると、アクション・ポイントを回復し、&lt;LSTag Type="Status" Tooltip="PRONE"&gt;伏せ状態&lt;/LSTag&gt;になる。 d20で20の目を出した場合、ヒット・ポイントを1回復し、立ち上がる。</content>
   <content contentuid="h7795297dg6e14g4662g8147g9627deee9e61" version="1">装備の能力値要件</content>
   <content contentuid="h543e3525ge767g4c5fga30eg3b9a70a4e11a" version="1">重装鎧：【筋力】が13未満なら、移動速度が[1]減少する。&lt;br&gt;&lt;br&gt;重い武器：【筋力】が13未満なら、重い近接武器の攻撃ロールに不利を受ける。【敏捷力】が13未満なら、重い遠隔武器の攻撃ロールに不利を受ける。</content>
-  <content contentuid="h2f5ef7c7gb487g4524g8833g2b71c6e5ebc1" version="1">追加攻撃</content>
   <content contentuid="hbec71bb0g1d09g49f3gb7a2g92f7d1a61662" version="1">追加攻撃があれば、攻撃アクションで2回攻撃できる。&lt;LSTag Type="Spell" Tooltip="Target_BoomingBlade"&gt;ブーミング・ブレード&lt;/LSTag&gt;のように魔法アクションとして武器攻撃を行う初級呪文は、追加攻撃の恩恵を受けない。&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Passive" Tooltip="WarMagic"&gt;戦闘魔法&lt;/LSTag&gt;（エルドリッチ・ナイト、武勇の学派）：それらの攻撃の1回を、発動時間が1アクションの初級呪文に置き換えられる（ターンに1回）。</content>
   <content contentuid="hb41882b6ge887g4d1cg8a6dgfba68fabbcac" version="1">英雄的インスピレーション</content>
   <content contentuid="he5a9c4c4g9c7cg4f43g8625g3a8dd8b12dd7" version="1">大休憩を終えるたびに、50％の確率で背景から英雄的インスピレーションを1得る。このMODが追加した背景にのみ適用される。</content>
@@ -5496,9 +4901,7 @@
   <content contentuid="he52050dfg64a3g432bga6b6g496330ebc398" version="1">呪文スロットは1ターンに1つしか消費できない。たとえば同じターンに、魔法アクションで呪文スロットを使う呪文を発動し、ボーナス・アクションでもう1つ呪文スロットを使う呪文を発動することはできない。</content>
   <content contentuid="h8ec93243g6d7ag4502g9021gbca74bd901d4" version="1">伏せ［状態］</content>
   <content contentuid="h6627bbf0g8d4dg4e78ga47cgb7449be3f897" version="1">移動制限：移動するときは這う。這って[1]進むごとに移動力を[2]消費する。立ち上がるのは別のアクションで、移動力を[3]消費する。立ち上がらずに攻撃、呪文の発動、被弾への反応を行う。&lt;br&gt;&lt;br&gt;攻撃への影響：自分の攻撃ロールは不利を受ける。自分に対する攻撃ロールは、攻撃者が[4]以内にいれば有利、そうでなければ不利を受ける。&lt;br&gt;&lt;br&gt;集中：&lt;LSTag Type="Status" Tooltip="PRONE"&gt;伏せ状態&lt;/LSTag&gt;になっても集中は途切れない。</content>
-  <content contentuid="h8f5140d6g824eg4642ga881gb4fa2a996e21" version="1">呪文の巻物</content>
   <content contentuid="h49c4bd76gf9bfg40edg8921g386eab61435f" version="1">呪文の巻物は、その呪文が自分のクラスまたはサブクラスの呪文リストにあり、自分の最も高い呪文スロットが巻物の呪文レベルより最大1レベル低い場合にのみ使用できる。&lt;br&gt;&lt;br&gt;マルチクラス：その呪文がリストにあるクラスとサブクラスのレベルだけを数える。ハーフキャスター（アーティフィサー、パラディン、レンジャー）はレベルの半分（切り捨て）を加え、単独では自分のクラスの呪文スロット表を使う。&lt;br&gt;&lt;br&gt;サードキャスター：アーケイン・トリックスター、Architect of Ruin、エルドリッチ・ナイト、Occultist Guild、Spellslingerは、呪文発動の特徴を得た後はウィザードの呪文リストを、Warrior of the Mystic Artsはソーサラーの呪文リストを持つものとして扱う。&lt;br&gt;&lt;br&gt;レベル9以上：クラス・レベル9以降、ハーフキャスターとサードキャスターは、そのクラス自身の最も高い呪文スロットより最大2レベル高い巻物まで使用できる。&lt;br&gt;&lt;br&gt;サブクラスの呪文：サブクラスが常に準備している呪文は、その呪文を得るクラス・レベルからそのクラスの呪文として扱い、呪文スロットの条件なしにその巻物を使用できる。&lt;br&gt;&lt;br&gt;制限のない巻物：初級呪文の巻物と、リヴィヴィファイおよびディテクト・ソーツの巻物は誰でも使用できる。</content>
-  <content contentuid="h43e91c45g8042g48e1gb224g04f5b5a41d1f" version="1">素手攻撃</content>
   <content contentuid="h95cc756dg94deg4b03gae3dg25aa2722cdcb" version="1">押しやり：クリーチャーを押しやるにはアクションを消費する。目標は【筋力】と【敏捷力】のうち高いほうでセーヴィング・スローを行い、難易度は8＋自分の【筋力】修正値＋習熟ボーナスである。&lt;br&gt;&lt;br&gt;転倒：転倒はクリーチャーを&lt;LSTag Type="Status" Tooltip="PRONE"&gt;伏せ状態&lt;/LSTag&gt;にする。目標は【筋力】と【敏捷力】のうち高いほうで同じ難易度のセーヴィング・スローを行う。</content>
   <content contentuid="h179c7064g4eccg43c0gb380g396b345cb8a8" version="2">1日に2回、小休憩を取ることができる。休憩後、ヒット・ダイスを消費してヒット・ポイントを回復できる。ウォーロックは呪文スロットも回復する。</content>
   <content contentuid="h3bcbb7a6ge501g4dfdg88f1g23fa9f89c038" version="2">1日に2回、小休憩を取ることができる。休憩後、ヒット・ダイスを消費してヒット・ポイントを回復できる。ウォーロックは呪文スロットも回復する。</content>
