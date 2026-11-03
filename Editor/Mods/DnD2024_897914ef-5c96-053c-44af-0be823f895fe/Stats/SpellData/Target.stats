@@ -18240,7 +18240,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b8174cef-0349-4cc1-9e73-0aa190395e77" />
         <field name="Name" type="NameTableFieldDefinition" value="CommandersStrike" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a8e6fc7e-f4e1-4762-bb84-015dfdca4026" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Ally()):ApplyStatus(COMMANDERS_STRIKE,100,1);IF(Ally()):ApplyStatus(ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not Ally()):ApplyStatus(COMMANDERS_STRIKE_TARGET_2,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Ally()):ApplyStatus(COMMANDERS_STRIKE,100,1);IF(not Ally()):ApplyStatus(COMMANDERS_STRIKE_TARGET_2,100,1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and ((Ally() and HasActionResource('ReactionActionPoint',1,0,false)) or (not Ally()));" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1; SuperiorityDie:1" />
@@ -18254,7 +18254,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="329ea251-d90c-439a-9837-6d9ee74f43a7" />
         <field name="Name" type="NameTableFieldDefinition" value="CommanderStrike_Attack_D8" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8e4a2dce-458a-4c98-a48e-ec90a5cae533" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);RemoveStatus(SELF,COMMANDERS_STRIKE);RemoveStatus(COMMANDERS_STRIKE_TARGET);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

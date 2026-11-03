@@ -1088,6 +1088,31 @@
         <field name="Name" type="NameTableFieldDefinition" value="__BATTLE MASTER__" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="46ecb798-bdc9-4401-b660-be194e0feda8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CommandersStrike_Melee" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha40ed69ag0551g5097g5d76g272963c576f1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_CommandersStrike" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('COMMANDERS_STRIKE_TARGET_2',context.Target) and HasStatus('COMMANDERS_STRIKE_TARGET',context.Target) and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_TARGET,Target_CommanderStrike_Attack_D8,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1663f82-9d90-4c97-8e3e-aad4f9a6554a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CommandersStrike_Ranged" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="46ecb798-bdc9-4401-b660-be194e0feda8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h679b8ed8g5188g6efege018gb74b3c65aafc" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('COMMANDERS_STRIKE_TARGET_2',context.Target) and HasStatus('COMMANDERS_STRIKE_TARGET',context.Target) and DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_TARGET,Projectile_CommanderStrike_Attack_D8,true,true,true);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="726dc1d4-c902-4a81-b389-03389ba8fbfe" />
