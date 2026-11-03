@@ -30,6 +30,7 @@
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" clear_inherited_value="true" value=",,;,,;;,,;,,;,,;,,;,,;,," />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -38,6 +39,15 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedAttack_OpportunityAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="79cbdbe7-ec99-45d9-a901-96a9ca633abc" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('ElementalAttunement_Acid',context.Source) and not HasPassive('ElementalAttunement_Cold',context.Source) and not HasPassive('ElementalAttunement_Fire',context.Source) and not HasPassive('ElementalAttunement_Lightning',context.Source) and not HasPassive('ElementalAttunement_Thunder',context.Source) and not HasPassive('KiEmpoweredStrikes',context.Source) and not HasPassive('Fractured_3_FaceOfRage_Toggle_Force',context.Source)):DealDamage(UnarmedDamage, Bludgeoning);IF(HasPassive('ElementalAttunement_Acid',context.Source)):DealDamage(UnarmedDamage, Acid);IF(HasPassive('ElementalAttunement_Cold',context.Source)):DealDamage(UnarmedDamage, Cold);IF(HasPassive('ElementalAttunement_Fire',context.Source)):DealDamage(UnarmedDamage, Fire);IF(HasPassive('ElementalAttunement_Lightning',context.Source)):DealDamage(UnarmedDamage, Lightning);IF(HasPassive('ElementalAttunement_Thunder',context.Source)):DealDamage(UnarmedDamage, Thunder);IF(HasPassive('KiEmpoweredStrikes',context.Source) or HasPassive('Fractured_3_FaceOfRage_Toggle_Force',context.Source)):DealDamage(UnarmedDamage, Force);IF(HasPassive('Sentinel_ZeroSpeed',context.Source)):ApplyStatus(SENTINEL,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f4c2550-5aad-430d-a52d-bab22ecb8a5a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Sentinel_AttackOfOpportunity" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="21958064-7fa9-4ce0-a4bb-705de972d2f9" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -18256,6 +18266,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CommanderStrike_Attack_D8" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8e4a2dce-458a-4c98-a48e-ec90a5cae533" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);RemoveStatus(SELF,COMMANDERS_STRIKE);RemoveStatus(COMMANDERS_STRIKE_TARGET);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

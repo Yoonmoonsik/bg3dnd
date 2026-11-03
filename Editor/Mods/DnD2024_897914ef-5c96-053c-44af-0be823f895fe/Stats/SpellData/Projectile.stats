@@ -56,6 +56,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_OpportunityAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="73cc4333-e07a-4d73-8f53-91543fbc6d2d" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus(&apos;YSRSLIDFWWADNIWHWIHLY&apos;)):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -64,6 +65,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_OpportunityAttack_Firearm" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dfe50d36-7285-467d-87df-1274e238fd42" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus(&apos;YSRSLIDFWWADNIWHWIHLY&apos;)):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3983,6 +3985,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CommanderStrike_Attack_D8" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon+1d8), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);CastOffhand[DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus(&apos;YSRSLIDFWWADNIWHWIHLY&apos;)):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4344309ag115dg487bgbdcbg14b10d6f58d1" version="2" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];RemoveStatus(SELF,COMMANDERS_STRIKE);RemoveStatus(COMMANDERS_STRIKE_TARGET);" />
@@ -4644,6 +4647,7 @@
         <field name="SpellEffect" type="GuidObjectTableFieldDefinition" value="62fa9d2f-ec0b-4900-a455-ec9b5e6e3eb4" />
         <field name="SelectedCharacterEffect" type="GuidObjectTableFieldDefinition" value="62fa9d2f-ec0b-4900-a455-ec9b5e6e3eb4" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

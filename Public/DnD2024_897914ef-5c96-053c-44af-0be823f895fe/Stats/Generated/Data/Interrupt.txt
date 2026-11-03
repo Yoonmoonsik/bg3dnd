@@ -2354,7 +2354,7 @@ data "InterruptContext" "OnCastHit"
 data "InterruptContextScope" "Self"
 data "Container" "YesNoDecision"
 data "Conditions" "IsAbleToReact(context.Observer) and not Self() and not Item() and IsMeleeAttack() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsKillingBlow() and not AnyEntityIsItem();"
-data "Properties" "ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);DealDamage(LevelMapValue(CarverGuild),MainMeleeWeaponDamageType,,,0,,true,true);IF(HasPassive('CarverGuild_10_TerrorizeTheTerrors',context.Source)):ApplyStatus(OBSERVER_TARGET,FRIGHTENED,100,2,,,,not SavingThrow(Ability.Wisdom,SourceSpellDC()));"
+data "Properties" "DealDamage(LevelMapValue(CarverGuild),MainMeleeWeaponDamageType,,,0,,true,true);IF(HasPassive('CarverGuild_10_TerrorizeTheTerrors',context.Source)):ApplyStatus(OBSERVER_TARGET,FRIGHTENED,100,2,,,,not SavingThrow(Ability.Wisdom,SourceSpellDC()));"
 data "Cost" "ReactionActionPoint:1"
 data "InterruptDefaultValue" "Enabled"
 
