@@ -11205,7 +11205,7 @@
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_MageSlayer);ActionResource(MageSlayer,1,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_GuardedMind);ActionResource(MageSlayer,1,0);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeAttack() and IsConcentrating(context.Target)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration(context.Target)" />

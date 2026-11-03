@@ -3212,16 +3212,15 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9405f12f-7ebe-4e7f-848c-c587daca3b2c" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MageSlayer" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_GuardedMind" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="73660c65-8a0e-476a-8eb1-78a232eef4e1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h64d74f86g3068g8d76g0cd1g2ed854b87962" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd944c877g9f95g1749ge647gfe18b6b31562" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Target,context.Observer) and (HasSavingThrowWithAbility(Ability.Intelligence) or HasSavingThrowWithAbility(Ability.Wisdom) or HasSavingThrowWithAbility(Ability.Charisma)) and not AnyEntityIsItem() and IsSetInterruptInteresting(20);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsRerollInterruptInteresting() and (HasSavingThrowWithAbility(Ability.Intelligence) or HasSavingThrowWithAbility(Ability.Wisdom) or HasSavingThrowWithAbility(Ability.Charisma));" />
         <field name="Cost" type="StringTableFieldDefinition" value="MageSlayer:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(20)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
