@@ -129,6 +129,24 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22cb8d47-887a-4f52-b7b3-494b14ef4476" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dip" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3fa6c65f-4f64-4786-b846-5dc191f14056" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Custom_Dip" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b4c5aa8a-99ed-4f98-8f46-f7cf4d502045" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dip_BonusAction" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="22cb8d47-887a-4f52-b7b3-494b14ef4476" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Dip" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="727f187e-c4eb-4826-915b-eac896f662bc" />
         <field name="Name" type="NameTableFieldDefinition" value="Help_BonusAction" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2dc581b0-965b-4cd5-afdf-5ec4f778afe8" />
