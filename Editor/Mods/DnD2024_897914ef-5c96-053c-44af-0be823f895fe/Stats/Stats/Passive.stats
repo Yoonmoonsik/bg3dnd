@@ -4545,8 +4545,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="Fighter_9_TacticalMaster" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6c90bdcbg9d73g2f85g8df7g47fbedfb078f" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c920020g431dge64eg8e26g01537cb63450" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Multiattack_WhirlwindAttack" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5008" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WeaponMaster" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5009" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4561,7 +4561,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF(TargetSizeEqualOrSmaller(Size.Large)):Force(3);" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="Fighter_9_TacticalMaster" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5008" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5009" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
