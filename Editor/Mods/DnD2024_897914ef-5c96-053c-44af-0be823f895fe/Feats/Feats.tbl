@@ -137,6 +137,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_69" />
         <field name="UUID" type="IdTableFieldDefinition" value="d5f64547-82ed-4b24-8ae6-e69c3e7519c6" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="Dragonscarred" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasPassive('CultOfTheDragonInitiate',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Dragonscarred" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(1baa6c04-8cd1-4049-bdad-4bed4abbf461,1,1,CON_CHA);SelectPassives(0f3b7196-cad8-424f-a5c6-082879221f36,1)" />
       </fields>
@@ -220,6 +221,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_25" />
         <field name="UUID" type="IdTableFieldDefinition" value="31440e19-dba2-4e14-987a-155cb8586f72" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="EmberOfTheFireGiant" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasStatus('STRIKE_OF_THE_GIANTS_FIRE',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="EmberOfTheFireGiant" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(507a530f-041c-486d-9657-8d8dc44c65eb,1,1,STR_CON_WIS)" />
       </fields>
@@ -238,6 +240,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_70" />
         <field name="UUID" type="IdTableFieldDefinition" value="fd17c873-ed49-48a7-b757-a057e68efcd9" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="EnclaveMagic" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasPassive('EmeraldEnclaveFledgling',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="EnclaveMagic" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);" />
       </fields>
@@ -302,6 +305,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_44" />
         <field name="UUID" type="IdTableFieldDefinition" value="dcc55862-f225-4e27-be68-e2fcb3b213b9" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="FuryOfTheFrostGiant" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasStatus('STRIKE_OF_THE_GIANTS_FROST',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="FuryOfTheFrostGiant" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(507a530f-041c-486d-9657-8d8dc44c65eb,1,1,STR_CON_WIS)" />
       </fields>
@@ -348,6 +352,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_54" />
         <field name="UUID" type="IdTableFieldDefinition" value="51fb1e35-a057-4640-9089-6fde7ca7164f" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="GuileOfTheCloudGiant" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasStatus('STRIKE_OF_THE_GIANTS_CLOUD',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="GuileOfTheCloudGiant" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(6f722be8-f281-4eee-8948-a56f04d4943d,1,1,STR_CON_CHA)" />
       </fields>
@@ -366,6 +371,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_73" />
         <field name="UUID" type="IdTableFieldDefinition" value="6552e7c3-701f-41f0-ad04-dfe27a01a6ba" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="HarperTeamwork" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasPassive('HarperAgent',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="HarperTeamwork" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(ed9b9504-0b9e-491b-83c2-8eb12888b3a1,1,1,DEX_CHA)" />
       </fields>
@@ -423,6 +429,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_58" />
         <field name="UUID" type="IdTableFieldDefinition" value="338a536f-ca45-451c-8b64-a2198c91acd7" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="KeennessOfTheStoneGiant" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasStatus('STRIKE_OF_THE_GIANTS_STONE',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="KeennessOfTheStoneGiant" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(507a530f-041c-486d-9657-8d8dc44c65eb,1,1,STR_CON_WIS)" />
       </fields>
@@ -441,6 +448,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_74" />
         <field name="UUID" type="IdTableFieldDefinition" value="517d59f8-340e-4123-91f0-d67f7dd78097" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="LordlyResolve" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasPassive('LordsAllianceAgent',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="LordlyResolve" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(1013e678-c264-4563-850c-4d590a2fc071,1,1,STR_CHA)" />
       </fields>
@@ -736,6 +744,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_35" />
         <field name="UUID" type="IdTableFieldDefinition" value="3fe71254-d1b2-44c7-886c-927552fe5f2e" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="ShieldMaster" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="FeatRequirementProficiency('Shields')" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ShieldMaster" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(c8c86d75-2abc-40a2-8d40-2b1a341afa00,1,1,STR)" />
       </fields>
@@ -782,6 +791,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_67" />
         <field name="UUID" type="IdTableFieldDefinition" value="27b841d6-f006-46a6-bcee-3f1dca5f3fdc" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="SoulOfTheStormGiant" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasStatus('STRIKE_OF_THE_GIANTS_STORM',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="SoulOfTheStormGiant" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(625c82c2-9b61-4a92-870e-f399190f910e,1,1,STR_WIS_CHA);" />
       </fields>
@@ -871,6 +881,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_80" />
         <field name="UUID" type="IdTableFieldDefinition" value="8aa629b8-8b57-400d-ac51-be612be75a49" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="VigorOfTheHillGiant" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasStatus('STRIKE_OF_THE_GIANTS_HILL',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="VigorOfTheHillGiant" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(507a530f-041c-486d-9657-8d8dc44c65eb,1,1,STR_CON_WIS)" />
       </fields>
@@ -907,6 +918,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_79" />
         <field name="UUID" type="IdTableFieldDefinition" value="cbd956c2-755d-4de6-97de-664ce7c31650" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="ZhentarimTactics" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="HasPassive('ZhentarimRuffian',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ZhentarimTactics" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(ed9b9504-0b9e-491b-83c2-8eb12888b3a1,1,1,DEX_CHA);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1)" />
       </fields>
