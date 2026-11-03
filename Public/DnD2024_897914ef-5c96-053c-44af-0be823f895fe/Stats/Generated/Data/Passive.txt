@@ -8900,7 +8900,7 @@ using "ShadowTouched_CloakOfShadow"
 data "DisplayName" "h46162844g8514g42c9g8a0bg5ec0e854c4ee;1"
 data "Description" "h6d721699g12f1g47a5g9e59gb8faf326752a;1"
 data "Icon" "Spell_Evocation_WrathfulSmite_Custom"
-data "Boosts" "UnlockSpell(Target_Smite_Wrathful,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(HasActionResource('ShadowTouchedLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Smite_Wrathful'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,ShadowTouchedLevel1,1,0));"
+data "Boosts" "UnlockSpell(Target_Smite_Wrathful,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Smite_Wrathful_ShadowTouched);IF(HasActionResource('ShadowTouchedLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Smite_Wrathful_ShadowTouched'),ModifyIconGlow());"
 
 new entry "MagicInitiate_Cleric_Bane"
 type "PassiveData"
