@@ -11404,7 +11404,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h14ab49cfg831ag83b9g1ddcgbadda155b2c0" version="2" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Highlighted;ToggledDefaultOn;Temporary" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(DistantSpellCheck(),ModifyTargetRadius(Multiplicative,1.5));IgnoreLowGroundPenalty(RangedSpellAttack);StatusImmunity(FLANKED);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(RangedSpellAttackCheck(),ModifyTargetRadius(Multiplicative,1.5));IgnoreLowGroundPenalty(RangedSpellAttack);StatusImmunity(FLANKED);" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="SpellSniper" />
       </fields>
     </stat_object>

@@ -8267,7 +8267,7 @@ data "DisplayName" "h83a93112gc496g26f6g27f3ge5d63171ca0b;2"
 data "Description" "h14ab49cfg831ag83b9g1ddcgbadda155b2c0;2"
 data "PriorityOrder" "700"
 data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted;ToggledDefaultOn;Temporary"
-data "Boosts" "UnlockSpellVariant(DistantSpellCheck(),ModifyTargetRadius(Multiplicative,1.5));IgnoreLowGroundPenalty(RangedSpellAttack);StatusImmunity(FLANKED);"
+data "Boosts" "UnlockSpellVariant(RangedSpellAttackCheck(),ModifyTargetRadius(Multiplicative,1.5));IgnoreLowGroundPenalty(RangedSpellAttack);StatusImmunity(FLANKED);"
 data "ToggleGroup" "SpellSniper"
 
 new entry "SpellSniper_Melee"
