@@ -56,7 +56,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_OpportunityAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="73cc4333-e07a-4d73-8f53-91543fbc6d2d" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus(&apos;YSRSLIDFWWADNIWHWIHLY&apos;)):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -65,7 +65,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_OpportunityAttack_Firearm" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dfe50d36-7285-467d-87df-1274e238fd42" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus(&apos;YSRSLIDFWWADNIWHWIHLY&apos;)):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3985,7 +3985,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CommanderStrike_Attack_D8" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon+1d8), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);CastOffhand[DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus(&apos;YSRSLIDFWWADNIWHWIHLY&apos;)):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);RemoveStatus(SELF,ADDITIONAL_SNEAKATTACK_CHARGE);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4344309ag115dg487bgbdcbg14b10d6f58d1" version="2" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];RemoveStatus(SELF,COMMANDERS_STRIKE);RemoveStatus(COMMANDERS_STRIKE_TARGET);" />
@@ -4572,7 +4572,7 @@
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedUnarmedAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source)):DealDamage(1d4+DexterityModifier,Psychic);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source)):DealDamage(1d4+DexterityModifier+2,Psychic);ApplyStatus(WEAPONMASTERY_VEX,100,2);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
-        <field name="Trajectories" type="StringTableFieldDefinition" value="738f5715-9415-4f38-a7d8-5999d8a7e4fd,edb4e94d-2efa-4335-b18a-2125656a3eb7,91b3ac49-bd61-4302-bfdd-aa784f9816fd" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="1e707e4b-b590-43ee-9bc3-3065f62a0a1e,b3d20ee4-71ac-4c9b-84ab-fcb131c5bf9f,b7a3a554-6c8f-4f77-a864-665bc59cab04" />
         <field name="Icon" type="StringTableFieldDefinition" value="Throw_Soulknife" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h20d37566g7400g2868g5deag4485da129eed" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hff527d02g065ag6c5bgaafeg7ba35d5b2763" version="1" />
@@ -4590,11 +4590,12 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="62fa9d2f-ec0b-4900-a455-ec9b5e6e3eb4" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bf5fa9ef-7d14-4061-b393-10852789ff1b" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ede0c318-7f5d-43b4-bc73-a50e0a528d55" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Proj_Arr_Prepare_ArrowOf_X_Slaying" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Proj_Arr_Loop_ArrowOf_X_Slaying" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4618,12 +4619,14 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="62fa9d2f-ec0b-4900-a455-ec9b5e6e3eb4" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ede0c318-7f5d-43b4-bc73-a50e0a528d55" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="7a079407-0023-4594-a6db-527acac4db21" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd91b7847g79e2gdae7g83f9g933470184630" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Proj_Arr_Prepare_ArrowOfTeleportation" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Proj_Arr_Loop_ArrowOfTeleportation" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
