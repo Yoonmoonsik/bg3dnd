@@ -253,6 +253,17 @@ data "EnableCondition" "not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disgu
 new entry "__CONJURATION__"
 type "InterruptData"
 
+new entry "Interrupt_SpectralSlash"
+type "InterruptData"
+data "DisplayName" "h95052719gb237gac57g92e1g14b60980710f;1"
+data "Icon" "Spell_SpectralSlash"
+data "InterruptContext" "OnStatusApplied"
+data "InterruptContextScope" "Nearby"
+data "Container" "YesNoDecision"
+data "Conditions" "HasStatus('SPECTRAL_SLASH_TARGET',context.Target) and HasStatus('SPECTRAL_SLASH_TARGET_2',context.Target);"
+data "Properties" "UseSpell(OBSERVER_TARGET,Target_SpectralSlash_Attack,true,true,true);"
+data "InterruptDefaultValue" "Enabled"
+
 new entry "__ENCHANTMENT__"
 type "InterruptData"
 
