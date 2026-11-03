@@ -1489,6 +1489,18 @@ data "InterruptDefaultValue" "Ask;Enabled"
 data "EnableCondition" ""
 data "EnableContext" ""
 
+new entry "Interrupt_HomingStrikes_5"
+type "InterruptData"
+using "Interrupt_HomingStrikes"
+data "DescriptionParams" "1d8"
+data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8, context.Source);"
+
+new entry "Interrupt_HomingStrikes_11"
+type "InterruptData"
+using "Interrupt_HomingStrikes_5"
+data "DescriptionParams" "1d10"
+data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(10, context.Source);"
+
 new entry "__BLADE OF RADIANCE 9400__"
 type "InterruptData"
 

@@ -6199,6 +6199,8 @@
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Soulknife,2,0)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Soulknife_5_HomingStrikes" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Soulknife_3_HomingStrikes" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6211,6 +6213,18 @@
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Soulknife_9_PsychicTeleportation;Soulknife_9_PsychicVeil" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Soulknife,2,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1077" />
+        <field name="UUID" type="IdTableFieldDefinition" value="95142f59-5bc6-40b2-bb52-78cd98c3eb57" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="abc7b271-82a1-4139-9653-4c90a7984a38" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Soulknife" />
+        <field name="Level" type="ByteTableFieldDefinition" value="11" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Soulknife_11_HomingStrikes" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Soulknife_5_HomingStrikes" />
       </fields>
     </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">

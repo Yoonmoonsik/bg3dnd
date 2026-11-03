@@ -4894,6 +4894,18 @@ data "PriorityOrder" "9403"
 data "Properties" "Highlighted;ForceShowInCC"
 data "Boosts" "UnlockInterrupt(Interrupt_HomingStrikes);"
 
+new entry "Soulknife_5_HomingStrikes"
+type "PassiveData"
+using "Soulknife_3_HomingStrikes"
+data "PriorityOrder" "9405"
+data "Boosts" "UnlockInterrupt(Interrupt_HomingStrikes_5);"
+
+new entry "Soulknife_11_HomingStrikes"
+type "PassiveData"
+using "Soulknife_5_HomingStrikes"
+data "PriorityOrder" "9411"
+data "Boosts" "UnlockInterrupt(Interrupt_HomingStrikes_11);"
+
 new entry "Soulknife_3_PsychicBlades"
 type "PassiveData"
 data "DisplayName" "hae54a45dgb7adgc45dg59cag1d1146c839dc;1"

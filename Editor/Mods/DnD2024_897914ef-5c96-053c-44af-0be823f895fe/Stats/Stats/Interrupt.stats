@@ -2051,6 +2051,24 @@
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f6556142-29e4-42f5-9a94-974e4f6ffa15" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_HomingStrikes_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9bb4451f-1a7c-4de5-8204-ccde40823e86" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d8" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8, context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bdb20c39-bafa-49b3-9d17-0afd5bde7b3a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_HomingStrikes_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f6556142-29e4-42f5-9a94-974e4f6ffa15" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1d10" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(10, context.Source);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="79188894-8eec-4791-a4a8-8914da785356" />

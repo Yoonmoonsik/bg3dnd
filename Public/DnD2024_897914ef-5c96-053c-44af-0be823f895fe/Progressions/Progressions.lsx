@@ -4850,6 +4850,8 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(Soulknife,2,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Soulknife"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Soulknife_5_HomingStrikes"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="Soulknife_3_HomingStrikes"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="abc7b271-82a1-4139-9653-4c90a7984a38"/>
                     <attribute id="UUID" type="guid" value="334bfdc8-beab-47c2-8363-e07a31d3cf43"/>
@@ -9434,6 +9436,15 @@
                     <attribute id="Selectors" type="LSString" value="SelectSpells(6fa0def5-0a99-4c43-bea1-215d54a21558,0,1,SanguineThiefSpells)"/>
                     <attribute id="TableUUID" type="guid" value="0d7fc95e-bc63-4f54-b839-307f5266a5b9"/>
                     <attribute id="UUID" type="guid" value="852a9218-b8d3-49ed-8929-6d7ae1dfbccd"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Soulknife"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Soulknife_11_HomingStrikes"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="Soulknife_5_HomingStrikes"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="abc7b271-82a1-4139-9653-4c90a7984a38"/>
+                    <attribute id="UUID" type="guid" value="95142f59-5bc6-40b2-bb52-78cd98c3eb57"/>
                 </node>
             </children>
         </node>
