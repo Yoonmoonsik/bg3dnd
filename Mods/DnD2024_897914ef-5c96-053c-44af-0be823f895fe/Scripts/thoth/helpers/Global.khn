@@ -113,3 +113,19 @@ function IsInterruptedRollSuccess()
     end
     return ConditionResult(context.InterruptedRoll.RollCritical == RollCritical.Success)
 end
+
+function FeatRequirementAbilityGreaterEqualSD(value)
+    return ConditionResult(context.Source.Strength >= value) | ConditionResult(context.Source.Dexterity >= value)
+end
+
+function FeatRequirementAbilityGreaterEqualDC(value)
+    return ConditionResult(context.Source.Dexterity >= value) | ConditionResult(context.Source.Constitution >= value)
+end
+
+function FeatRequirementAbilityGreaterEqualWC(value)
+    return ConditionResult(context.Source.Wisdom >= value) | ConditionResult(context.Source.Charisma >= value)
+end
+
+function FeatRequirementAbilityGreaterEqualIWC(value)
+    return ConditionResult(context.Source.Intelligence >= value) | ConditionResult(context.Source.Wisdom >= value) | ConditionResult(context.Source.Charisma >= value)
+end
