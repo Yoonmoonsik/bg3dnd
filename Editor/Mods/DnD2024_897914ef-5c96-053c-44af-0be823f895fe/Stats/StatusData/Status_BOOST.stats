@@ -3406,6 +3406,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cf467a4a-931a-4832-9388-a1b8a6f3deec" />
+        <field name="Name" type="NameTableFieldDefinition" value="FRIGHTENED_CONQUERINGPRESENCE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60a09934-feba-4335-b387-f1581fc07702" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FRIGHTENED_CONQUERINGPRESENCE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(FRIGHTENED_CONQUERINGPRESENCE)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9625c0b9-ef69-480d-befa-d31eba293dcf" />
         <field name="Name" type="NameTableFieldDefinition" value="FRIGHTENED_EARTH" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c4adbdd5-a5ed-40f7-8a7c-4aaa560feff7" />
@@ -10648,9 +10658,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfHate" />
         <field name="StackId" type="StringTableFieldDefinition" value="AURA_OF_CONQUEST_DEBUFF" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(AllAbilities);Disadvantage(AttackRoll);" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.ClassLevel(Paladin)/2,Psychic)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.ClassLevel(Paladin)/2,Psychic)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
