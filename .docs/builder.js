@@ -441,7 +441,8 @@ function featBlock(i, r) {
   if (!fd) return html;
   if (fd.requirement) {
     const q = fd.requirement;
-    html += `<p class="mini">${esc(t("requirement"))}: ${esc(q.type === "species" ? q.species.map(L).join(", ") : q.proficiency)}</p>`;
+    html += `<p class="mini">${esc(t("requirement"))}: ${esc(q.type === "species" ? q.species.map(L).join(", ") : q.type === "ability"
+      ? `${(q.abilities || [q.ability]).map(ab).join(" / ")} ${q.value}` : q.type === "feat" ? L(q.feat) : q.proficiency)}</p>`;
   }
   if (fd.abilities.length) {
     const n = fd.id === ASI && f.mode === "split" ? 2 : 1;

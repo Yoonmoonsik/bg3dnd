@@ -10,7 +10,7 @@ const T = {
     count: (n, all) => `${n} of ${all} feats`,
     f_abilities: "Ability Score +1", f_requirement: "Prerequisite", f_grants: "Grants",
     f_proficiency: "Proficiency", f_defense: "Defense and Senses", f_uses: "Limited Uses", f_source: "Source",
-    req_none: "None", req_proficiency: "Armour proficiency", req_species: "Species",
+    req_none: "None", req_ability: "Ability score", req_proficiency: "Armour proficiency", req_species: "Species", req_feat: "Another feat",
     repeatable: "Repeatable", spells: "Spells", action: "Action", bonus: "Bonus Action", reaction: "Reaction",
     free: "Free", choices: "Choice of options",
     skills: "Skills", expertise: "Expertise", armor: "Armour", weapons: "Weapons", saves: "Saving Throws",
@@ -34,7 +34,7 @@ const T = {
     count: (n, all) => `재주 ${all}종 중 ${n}종`,
     f_abilities: "능력치 +1", f_requirement: "선행 조건", f_grants: "얻는 것",
     f_proficiency: "숙련", f_defense: "방어와 감각", f_uses: "횟수 제한", f_source: "구분",
-    req_none: "없음", req_proficiency: "갑옷 숙련", req_species: "종족",
+    req_none: "없음", req_ability: "능력치", req_proficiency: "갑옷 숙련", req_species: "종족", req_feat: "다른 재주",
     repeatable: "여러 번 선택 가능", spells: "주문", action: "행동", bonus: "보조 행동", reaction: "대응",
     free: "자유", choices: "선택지",
     skills: "기술", expertise: "통달", armor: "갑옷", weapons: "무기", saves: "내성 굴림",
@@ -60,7 +60,7 @@ const ABILITIES = {
 const FILTERS = [
   { key: "abilities", label: "f_abilities", values: Object.keys(ABILITIES),
     test: (f, v) => f.abilities.includes(v), text: v => ab(v) },
-  { key: "requirement", label: "f_requirement", values: ["req_none", "req_proficiency", "req_species"],
+  { key: "requirement", label: "f_requirement", values: ["req_none", "req_ability", "req_proficiency", "req_species", "req_feat"],
     test: (f, v) => (f.requirement ? "req_" + f.requirement.type : "req_none") === v },
   { key: "grants", label: "f_grants", values: ["spells", "action", "bonus", "reaction", "choices", "repeatable"],
     test: (f, v) => v === "spells" ? f.spells.length > 0 : v === "choices" ? f.choices.length > 0
@@ -89,7 +89,8 @@ function reqText(r) {
   if (!r) return "";
   if (r.type === "proficiency") return t(r.proficiency);
   if (r.type === "species") return r.species.map(L).join(", ");
-  if (r.type === "ability") return `${ab(r.ability)} ${r.value}`;
+  if (r.type === "ability") return `${(r.abilities || [r.ability]).map(ab).join(" / ")} ${r.value}`;
+  if (r.type === "feat") return L(r.feat);
   return r.text || "";
 }
 
