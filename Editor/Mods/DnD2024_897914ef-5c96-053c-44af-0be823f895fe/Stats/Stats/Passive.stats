@@ -13635,7 +13635,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="52ce025d-29e7-4d11-96ad-b142de15765b" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9e1946a3g463agb8b7g75e7gd94f9c36f9f7" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsSmiteSpells();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSmiteSpells() and HasDamageEffectFlag(DamageFlags.Hit) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, MAG_PALADIN_TEMP_HP, 100, -1)" />
       </fields>
     </stat_object>
