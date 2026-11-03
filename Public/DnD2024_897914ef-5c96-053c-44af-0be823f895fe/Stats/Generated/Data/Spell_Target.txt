@@ -116,6 +116,7 @@ new entry "Target_Help_BonusAction"
 type "SpellData"
 data "SpellType" "Target"
 using "Target_Help"
+data "Icon" "Action_Help_BonusAction"
 data "UseCosts" "BonusActionPoint:1"
 data "SpellFlags" "IsMelee;Temporary"
 
