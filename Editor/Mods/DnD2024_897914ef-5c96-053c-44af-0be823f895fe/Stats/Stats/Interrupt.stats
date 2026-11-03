@@ -1480,6 +1480,24 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e3ac9efa-c759-4729-9a6c-171ad9626156" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_PaladinsSmite" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="46a34711-5066-4e28-b3fe-2c21d3e83cbf" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical,,0,,true,true);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical,,0,,true,true);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,DIVINE_SMITE_CAST,100,1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;PaladinsSmite:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae39801d-6430-4559-bad8-a41fa6535ee9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_PaladinsSmite" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6d3bdae0-f9d8-4912-a942-09ad17a2df65" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical,,0,,true,true);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical,,0,,true,true);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,DIVINE_SMITE_CAST,100,1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;PaladinsSmite:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e963fa9e-e54e-45bf-9732-abb43e127bba" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DaosCrush" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />

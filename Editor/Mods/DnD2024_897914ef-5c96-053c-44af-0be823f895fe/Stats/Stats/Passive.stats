@@ -5626,7 +5626,8 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_DivineSmite" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7002" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Smite_Divine_Paladin);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest;OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(PaladinsSmite,1,0);UnlockSpell(Target_Smite_Divine_Paladin);IF(HasActionResource('PaladinsSmite',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Target_Smite_Divine_Paladin'),ModifyIconGlow());UnlockInterrupt(Interrupt_Smite_Divine_PaladinsSmite);UnlockInterrupt(Interrupt_Smite_Divine_Critical_PaladinsSmite);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

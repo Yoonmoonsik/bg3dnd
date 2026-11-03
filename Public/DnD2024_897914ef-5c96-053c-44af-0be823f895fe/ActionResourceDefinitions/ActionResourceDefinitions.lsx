@@ -371,6 +371,17 @@
                     <attribute id="UUID" type="guid" value="de9419a9-8064-48fc-bd0c-2cae48564cde"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="Name" type="FixedString" value="__PALADIN__"/>
+                    <attribute id="UUID" type="guid" value="d5fe4538-fb43-49d5-b706-497276388786"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="PaladinsSmite"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="UUID" type="guid" value="dfe9276d-3045-4028-8fd8-6607db896aed"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="__RANGER__"/>
                     <attribute id="UUID" type="guid" value="4c3ed561-7036-4a6b-aa01-1e1c2174f186"/>
                 </node>

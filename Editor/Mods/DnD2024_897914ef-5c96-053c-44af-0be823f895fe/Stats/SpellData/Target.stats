@@ -18848,15 +18848,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="977c1e63-bd93-4718-b228-fb62f47f530d" />
         <field name="Name" type="NameTableFieldDefinition" value="Smite_Divine_Paladin" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="430caf04-0af1-42df-9ee2-5147da224b13" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(not Tagged('FIEND') and not Tagged('UNDEAD')):DealDamage(LevelMapValue(Paladin),Radiant,Magical,,0,,true,true);IF(Tagged('FIEND')):DealDamage(LevelMapValue(Paladin)+1d8,Radiant,Magical,,0,,true,true);IF(Tagged('UNDEAD')):DealDamage(LevelMapValue(Paladin)+1d8,Radiant,Magical,,0,,true,true);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77c3bd23ge0bdg1ed9gc503g1a06cc920d08" version="2" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(Paladin),Radiant)" />
-        <field name="TooltipOnMiss" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="HitCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;HasVerbalComponent;IsMelee;NoCooldownOnMiss" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;PaladinsSmite:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

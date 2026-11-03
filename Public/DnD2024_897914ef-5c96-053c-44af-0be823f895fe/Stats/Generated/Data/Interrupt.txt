@@ -1069,6 +1069,18 @@ data "Properties" "IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,
 data "Cost" "BonusActionPoint:1;SpellSlotsGroup:1:1:6;"
 data "EnableCondition" "not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER','ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN'});"
 
+new entry "Interrupt_Smite_Divine_PaladinsSmite"
+type "InterruptData"
+using "Interrupt_Smite_Divine"
+data "Properties" "IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical,,0,,true,true);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical,,0,,true,true);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,DIVINE_SMITE_CAST,100,1);"
+data "Cost" "BonusActionPoint:1;PaladinsSmite:1;"
+
+new entry "Interrupt_Smite_Divine_Critical_PaladinsSmite"
+type "InterruptData"
+using "Interrupt_Smite_Divine_Critical"
+data "Properties" "IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical,,0,,true,true);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical,,0,,true,true);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);ApplyStatus(OBSERVER_OBSERVER,DIVINE_SMITE_CAST,100,1);"
+data "Cost" "BonusActionPoint:1;PaladinsSmite:1;"
+
 new entry "Interrupt_DaosCrush"
 type "InterruptData"
 data "DisplayName" "h7ce47465gdfeag71dcgb0bdgeadc0c987cab;1"
