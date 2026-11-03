@@ -1790,6 +1790,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SpectralSlash);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_SpectralSlash" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="34d203fc-d0ad-48dc-9ddd-ff813abdedd4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11066,6 +11067,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ADDITIONAL_SNEAKATTACK_CHARGE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SneakAttack_Charge,1,0);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="775effb7-aaf6-4324-9fbf-55f17ca98e60" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11107,6 +11109,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Half,);" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d37fab67-6932-44c4-995e-f051d7027fc5" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11124,6 +11127,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="4eae214a-aac7-430a-a256-2216a6ec7265" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('SNEAKING_CLEAR') and not HasStatus('SNEAKING_LIGHTLY_OBSCURED') and not HasStatus('SNEAKING_HEAVILY_OBSCURED') and not HasStatus('INVISIBILITY')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="775effb7-aaf6-4324-9fbf-55f17ca98e60" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
