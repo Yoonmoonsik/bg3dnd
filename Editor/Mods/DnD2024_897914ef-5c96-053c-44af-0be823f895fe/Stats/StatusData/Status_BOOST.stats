@@ -10558,6 +10558,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4138a615-ce23-4840-bbb3-f9a6d320b8ed" />
+        <field name="Name" type="NameTableFieldDefinition" value="DIVINE_SMITE_CAST" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DIVINE_SMITE_CAST" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ec24b75a-6cf2-433c-a869-a774e60403bc" />
         <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_ALACRITY" />
         <field name="StackId" type="StringTableFieldDefinition" value="AURA_OF_ALACRITY" />

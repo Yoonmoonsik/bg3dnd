@@ -5719,7 +5719,8 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_InspiringLeader" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="7203" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InspiringGlory);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InspiringGlory);IF(HasStatus('DIVINE_SMITE_CAST',context.Source)):UnlockSpellVariant(SpellId('Target_InspiringGlory'),ModifyIconGlow());" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

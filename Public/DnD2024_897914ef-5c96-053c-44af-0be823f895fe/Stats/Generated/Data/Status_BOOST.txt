@@ -8521,6 +8521,12 @@ data "StatusType" "BOOST"
 using "INSPIRING_GLORY_1"
 data "Boosts" "TemporaryHP((2d8+Cause.ClassLevel(Paladin))/6);"
 
+new entry "DIVINE_SMITE_CAST"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "DIVINE_SMITE_CAST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
 new entry "AURA_OF_ALACRITY"
 type "StatusData"
 data "StatusType" "BOOST"
