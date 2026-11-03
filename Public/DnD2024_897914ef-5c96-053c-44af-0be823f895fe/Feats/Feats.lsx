@@ -427,6 +427,7 @@
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="OrdersResilience"/>
                     <attribute id="PassivesAdded" type="LSString" value="OrdersResilience"/>
+                    <attribute id="Requirements" type="LSString" value="HasPassive(&apos;TyroOfTheGauntlet&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(625c82c2-9b61-4a92-870e-f399190f910e,1,1,STR_WIS_CHA);"/>
                     <attribute id="UUID" type="guid" value="cd4048c8-09b5-48b3-9c85-fe42790ac454"/>
                 </node>
