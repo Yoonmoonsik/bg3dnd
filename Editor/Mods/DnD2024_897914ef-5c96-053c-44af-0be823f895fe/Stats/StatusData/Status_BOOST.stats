@@ -715,6 +715,7 @@
         <field name="StackId" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StackType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusStackType" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h10007b53gb4bcgbac3g9089g6d911c3cc5d4" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
