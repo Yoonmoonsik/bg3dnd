@@ -6,7 +6,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b514fde4-524c-4e2b-b3fc-f2eb504bf688" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_AttackOfOpportunity" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6b435f5b-931f-4d26-aa61-656582325124" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(Player(context.Source)):UseSpell(Target_MainHandAttack_OpportunityAttack,true,true,true);IF(not Player(context.Source) and not HasPassive('Sentinel_ZeroSpeed',context.Source)):UseAttack();IF(not Player(context.Source) and HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_Sentinel_AttackOfOpportunity,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(Player(context.Source)):UseSpell(Target_MainHandAttack_OpportunityAttack,true,true,true);IF(not Player(context.Source) and not HasPassive('Sentinel_ZeroSpeed',context.Source)):UseAttack();IF(not Player(context.Source) and HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(Target_Sentinel_AttackOfOpportunity,true,true,true);" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded') and not HasStatus('SHOCKING_GRASP') and not HasStatus('MUSCLE_WIZARD_SHOCKING_GRASP');" />
       </fields>
     </stat_object>
@@ -16,7 +16,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_AttackOfOpportunityUnarmed" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b514fde4-524c-4e2b-b3fc-f2eb504bf688" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_UnarmedAttack" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(Target_UnarmedAttack_OpportunityAttack,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(Target_UnarmedAttack_OpportunityAttack,true,true,true);" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
@@ -1112,7 +1112,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('COMMANDERS_STRIKE_TARGET_2',context.Target) and HasStatus('COMMANDERS_STRIKE_TARGET',context.Target) and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_TARGET,Target_CommanderStrike_Attack_D8,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_TARGET,Target_CommanderStrike_Attack_D8,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
@@ -1124,7 +1124,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="46ecb798-bdc9-4401-b660-be194e0feda8" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h679b8ed8g5188g6efege018gb74b3c65aafc" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('COMMANDERS_STRIKE_TARGET_2',context.Target) and HasStatus('COMMANDERS_STRIKE_TARGET',context.Target) and DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_TARGET,Projectile_CommanderStrike_Attack_D8,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_TARGET,Projectile_CommanderStrike_Attack_D8,true,true,true);" />
       </fields>
     </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
@@ -1968,7 +1968,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Self(context.Source, context.Observer) and IsAbleToReact(context.Observer) and Enemy(context.Target,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and HasFunctor(StatsFunctorType.DealDamage) and not Dead(context.Target) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50, context.Target);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_TARGET,Projectile_Bloodthirst,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_TARGET,Projectile_Bloodthirst,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;Bloodthirst:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded') and not HasStatus('PRONE');" />
@@ -2894,7 +2894,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Target, context.Observer) and Ally(context.Target, context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Target) and not HasStatus('SG_Blinded') and not HasStatus('SG_Prone') and not HasStatus('SG_Incapacitated') and not HasStatus('SG_Restrained');" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);ApplyStatus(OBSERVER_TARGET,LAY_DOWN_THE_LAW,100,-1);ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack,true,true,true);IF(HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack_Firearm,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);ApplyStatus(OBSERVER_TARGET,LAY_DOWN_THE_LAW,100,-1);IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack,true,true,true);IF(HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack_Firearm,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;Risk:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
@@ -3171,7 +3171,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="CanSee(context.Observer, context.Source) and IsAbleToReact(context.Observer) and Ally(context.Target, context.Observer) and not Ally(context.Source, context.Observer) and HasStringInSpellRoll('Attack') and not IsSpell() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_SOURCE,Target_MainHandAttack_OpportunityAttack,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_SOURCE,Target_MainHandAttack_OpportunityAttack,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded') and not HasStatus('PRONE');" />
@@ -3186,7 +3186,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he03aadf1g28cbg5549g778fgff77ace6f7ba" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_SlashingFlourish_Ranged" />
         <field name="Conditions" type="StringTableFieldDefinition" value="CanSee(context.Observer, context.Source) and IsAbleToReact(context.Observer) and Ally(context.Target, context.Observer) and not Ally(context.Source, context.Observer) and HasStringInSpellRoll('Attack') and not IsSpell() and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Source) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack,true,true,true);IF(HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack_Firearm,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack,true,true,true);IF(HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack_Firearm,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
@@ -3226,7 +3226,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5c5be7c4-6129-40f1-8742-ac122bdefd36" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3b16b3ffg2270g1432g326dg3d651266daf9" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="CanSee(context.Observer, context.Source) and IsAbleToReact(context.Observer) and not Self(context.Source, context.Observer) and Enemy(context.Source, context.Observer) and IsSpell() and not Uninterruptible() and not HasStringInSpellRoll('WeaponAttack') and not AnyEntityIsItem() and not SpellId('Shout_END_Gale_ActivateNethereseOrb') and CounterspellCheck(context.Observer, context.Source) and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Source);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack,true,true,true);IF(HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack_Firearm,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);IF(not HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack,true,true,true);IF(HasPassive('Firearm_MainHand',context.Source)):UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack_OpportunityAttack_Firearm,true,true,true);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -3350,7 +3350,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Sentinel" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c98fe60c-62b6-4aa7-9d25-c49620bc56f0" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h66f57535g5983g0759gbf5cg97ae51f83d6f" version="1" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_SOURCE,Target_Sentinel_AttackOfOpportunity,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_SOURCE,Target_Sentinel_AttackOfOpportunity,true,true,true);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3363,7 +3363,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="InterruptContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source, context.Observer) and Enemy(context.Source, context.Observer) and IsDisengageAction() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_SOURCE,Target_Sentinel_AttackOfOpportunity,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(OBSERVER_SOURCE,Target_Sentinel_AttackOfOpportunity,true,true,true);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -3748,7 +3748,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and IsMeleeAttack() and not IsMiss() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and HasLastAttackTriggered();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(SWAP,Target_MainHandAttack_OpportunityAttack,true,true,true);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_RIPOSTE,100,0);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Rogue',context.Observer)):ApplyStatus(OBSERVER_OBSERVER,ADDITIONAL_SNEAKATTACK_CHARGE,100,1);UseSpell(SWAP,Target_MainHandAttack_OpportunityAttack,true,true,true);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_RIPOSTE,100,0);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
