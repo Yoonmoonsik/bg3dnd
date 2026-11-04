@@ -10244,7 +10244,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Contagion_BlindingSickness;Target_Contagion_FilthFever;Target_Contagion_FleshRot;Target_Contagion_Mindfire;Target_Contagion_Seizure;Target_Contagion_SlimyDoom" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeSpellAttack)" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(11d8,Necrotic,Magical);ApplyStatus(CONTAGION_SLIMY_DOOM,100,-1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3915e2d9gb72ag4e79g854cg717d820847c0" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc37d9363g8d1dg4f32g951bg9233eb1a40d1" version="6" />
@@ -10323,7 +10323,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Contagion_FilthFever" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hd77c2dd9g31c8g4922g91f2ga0f16801b1e9" version="2" />
-        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
