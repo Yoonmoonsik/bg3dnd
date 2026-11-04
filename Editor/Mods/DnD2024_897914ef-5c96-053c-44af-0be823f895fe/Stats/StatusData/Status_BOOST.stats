@@ -102,10 +102,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="25ac422b-6be0-4d37-992a-4cb8a3193741" />
+        <field name="Name" type="NameTableFieldDefinition" value="EXTRA_ATTACK_THIRSTING_BLADE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5aa790d7-718e-468b-84cd-adb68b8a399c" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="ExtraAttackSpellCheck() and HasUseCosts('ActionPoint',false,context.Target) and not IsOffHandAttack()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f8ff1c2d-603e-42e8-9fb8-5a6c7fef87d0" />
         <field name="Name" type="NameTableFieldDefinition" value="EXTRA_ATTACK_THIRSTING_BLADE_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5aa790d7-718e-468b-84cd-adb68b8a399c" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(EXTRA_ATTACK_Q, 100, 1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(EXTRA_ATTACK_THIRSTING_BLADE_Q, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

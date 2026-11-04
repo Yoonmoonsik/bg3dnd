@@ -75,11 +75,17 @@ type "StatusData"
 data "StatusType" "BOOST"
 using "EXTRA_ATTACK_WAR_MAGIC"
 
+new entry "EXTRA_ATTACK_THIRSTING_BLADE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "EXTRA_ATTACK_THIRSTING_BLADE"
+data "RemoveConditions" "ExtraAttackSpellCheck() and HasUseCosts('ActionPoint',false,context.Target) and not IsOffHandAttack()"
+
 new entry "EXTRA_ATTACK_THIRSTING_BLADE_2"
 type "StatusData"
 data "StatusType" "BOOST"
 using "EXTRA_ATTACK_THIRSTING_BLADE"
-data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(EXTRA_ATTACK_Q, 100, 1)"
+data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Target)):ApplyStatus(EXTRA_ATTACK_THIRSTING_BLADE_Q, 100, 1)"
 
 new entry "EXTRA_ATTACK_2_Q"
 type "StatusData"
