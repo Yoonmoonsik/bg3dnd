@@ -1,5 +1,6 @@
 function FreeCastChromaticOrb()
-    return SpellId('Projectile_ChromaticOrb_Acid')
+    return SpellId('Projectile_ChromaticOrb')
+    | SpellId('Projectile_ChromaticOrb_Acid')
     | SpellId('Projectile_ChromaticOrb_Cold')
     | SpellId('Projectile_ChromaticOrb_Fire')
     | SpellId('Projectile_ChromaticOrb_Lightning')

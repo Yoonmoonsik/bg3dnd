@@ -211,7 +211,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_48" />
         <field name="UUID" type="IdTableFieldDefinition" value="3d755d1a-82d9-42a8-8b6e-265aa9c3b0f9" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="ElvenAccuracy" />
-        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('ELF',context.Source) or Tagged('HALFELF',context.Source)" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Tagged('ELF',context.Source) or Tagged('HALFELF',context.Source) or Tagged('DROWELF',context.Source)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ElvenAccuracy" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(fe3d9cad-c1a0-41fe-8662-ba0e75691ff2,1,1,DEX_INT_WIS_CHA)" />
       </fields>

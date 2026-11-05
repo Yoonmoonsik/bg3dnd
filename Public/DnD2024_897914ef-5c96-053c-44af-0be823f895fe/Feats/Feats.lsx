@@ -146,7 +146,7 @@
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="ElvenAccuracy"/>
                     <attribute id="PassivesAdded" type="LSString" value="ElvenAccuracy"/>
-                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;ELF&apos;,context.Source) or Tagged(&apos;HALFELF&apos;,context.Source)"/>
+                    <attribute id="Requirements" type="LSString" value="Tagged(&apos;ELF&apos;,context.Source) or Tagged(&apos;HALFELF&apos;,context.Source) or Tagged(&apos;DROWELF&apos;,context.Source)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(fe3d9cad-c1a0-41fe-8662-ba0e75691ff2,1,1,DEX_INT_WIS_CHA)"/>
                     <attribute id="UUID" type="guid" value="3d755d1a-82d9-42a8-8b6e-265aa9c3b0f9"/>
                 </node>
