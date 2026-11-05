@@ -1371,9 +1371,129 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_144" />
-        <field name="UUID" type="IdTableFieldDefinition" value="0885a0be-8741-47d1-8476-dae22ee188b0" />
-        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_CLOUD" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c8eebb65-c52e-42a1-b44f-64c5224e4f51" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_CLOUD" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_DEATH" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c17ed132-0c41-4d61-9dbd-07ce02ff51aa" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_DEATH" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_DRAGON" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5d33f3f4-48bf-4184-996f-6a4c0e21cfe4" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_DRAGON" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_ENEMY" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d171eb00-0b4c-4b01-8072-02d0f94aaeed" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_ENEMY" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_FIRE" />
+        <field name="UUID" type="IdTableFieldDefinition" value="14c00da3-728f-4c11-a83e-c7579450ad0a" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_FIRE" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_FRIEND" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b5cf5c71-1790-4f8d-99ab-401bfc72d9f6" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_FRIEND" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_FROST" />
+        <field name="UUID" type="IdTableFieldDefinition" value="931ff489-4274-4c1a-aede-2090f36c4515" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_FROST" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_HILL" />
+        <field name="UUID" type="IdTableFieldDefinition" value="00027811-14c7-42e8-bd98-7bb8d1ef243a" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_HILL" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_JOURNEY" />
+        <field name="UUID" type="IdTableFieldDefinition" value="daad795a-b868-412c-b871-4222850205b4" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_JOURNEY" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_KING" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c7d8a4c0-0a02-4f5b-af16-1fb5a137e41a" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_KING" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_MOUNTAIN" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9e6bef0d-5d28-422e-82d1-160fbec9c187" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_MOUNTAIN" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_STONE" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ac13a86b-fc86-4a16-9f45-19af57f59436" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_STONE" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="RuneShaperSpell_STORM" />
+        <field name="UUID" type="IdTableFieldDefinition" value="077ad9e2-b128-4a82-a265-470e7bbd4fd7" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="RuneShaperSpell_STORM" />
         <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
         <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
         <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
