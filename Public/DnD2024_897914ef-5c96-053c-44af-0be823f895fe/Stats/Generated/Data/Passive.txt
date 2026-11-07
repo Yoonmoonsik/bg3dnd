@@ -3646,7 +3646,7 @@ using "MartialArts_DextrousUnarmedAttacks"
 data "DisplayName" "hd8a574dage906g4af9g92f1g1c532d7e9d70;2"
 data "ExtraDescription" "h98c8bddbge30fgeb55gb667gd793986d0ded;1"
 data "PriorityOrder" "6001"
-data "BoostConditions" "not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and IsDexterityGreaterThanStrength();"
+data "BoostConditions" "not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and IsDexterityGreaterThanStrength() and not HasShillelaghMainHand();"
 
 new entry "MartialArts_UnarmedDamage"
 type "PassiveData"

@@ -49,3 +49,14 @@ function HasShillelaghWeapon(entity)
     end
     return ConditionResult(false)
 end
+
+-- Martial Arts checks only the main hand: its Dexterity override would replace the
+-- ability Shillelagh picks on that weapon.
+function HasShillelaghMainHand(entity)
+    local entity = entity or context.Source
+    local weaponEntity = GetActiveWeapon(entity, true)
+    if weaponEntity.IsValid then
+        return HasStatus('SHILLELAGH', weaponEntity) | HasStatus('SHILLELAGH_5', weaponEntity) | HasStatus('SHILLELAGH_10', weaponEntity)
+    end
+    return ConditionResult(false)
+end

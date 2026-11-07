@@ -5076,7 +5076,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd8a574dage906g4af9g92f1g1c532d7e9d70" version="2" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h98c8bddbge30fgeb55gb667gd793986d0ded" version="1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="6001" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and IsDexterityGreaterThanStrength();" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and IsDexterityGreaterThanStrength() and not HasShillelaghMainHand();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
