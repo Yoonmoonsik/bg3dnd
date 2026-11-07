@@ -206,3 +206,7 @@ function TwinnedSpellCheck()
      | SpellId('Target_MindWhip_5')
      | SpellId('Target_MindWhip_6')
 end
+
+function ExtendedSpellCheck()
+	return ~(SpellId('Zone_BurningHands') | SpellId('Zone_BurningHands_2') | SpellId('Target_MagicWeapon') | SpellId('Target_MagicWeapon_3') | SpellId('Target_MagicWeapon_4') | SpellId('Target_MagicWeapon_5') | SpellId('Target_MagicWeapon_6')) & ((HasExtendableStatus() & HasDuration(StatsFunctorType.Status, 0)) | HasDuration(StatsFunctorType.Summon, 0) | HasDuration(StatsFunctorType.SummonInInventory, 0) | HasDuration(StatsFunctorType.CreateSurface, 0)) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
+end
