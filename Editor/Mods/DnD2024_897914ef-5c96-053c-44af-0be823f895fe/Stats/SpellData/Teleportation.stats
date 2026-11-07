@@ -260,6 +260,24 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0b8932c9-9b5f-4a2c-8574-82452a079d73" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reanimate0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c40d1abc-86bb-444a-8a6f-bf0300c4a6e3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Dummy" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="OriginSpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7a19508b-751e-4762-884e-bb6f051b78cb" />
         <field name="Name" type="NameTableFieldDefinition" value="Reanimate8" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ea988d3a-a45d-4912-9022-79e4809acbe9" />
