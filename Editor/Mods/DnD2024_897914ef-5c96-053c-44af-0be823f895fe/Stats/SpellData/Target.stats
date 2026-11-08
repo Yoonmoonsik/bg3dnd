@@ -16852,7 +16852,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="56f28e90-460f-4305-ba19-60ee355dfa7c" />
         <field name="Name" type="NameTableFieldDefinition" value="UnleashingASpirit" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_UnleashingASpirit_Beloved;Target_UnleashingASpirit_Sharpshooter;Target_UnleashingASpirit_Avenger;Target_UnleashingASpirit_Renegade;Target_UnleashingASpirit_Fortune Teller;Target_UnleashingASpirit_Wayfarer;Target_UnleashingASpirit_Trickster;Target_UnleashingASpirit_Shade;Target_UnleashingASpirit_Arsonist;Target_UnleashingASpirit_Coward;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead();" />
@@ -16871,7 +16870,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="56f28e90-460f-4305-ba19-60ee355dfa7c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_UnleashingASpirit" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(LevelMapValue(BardicInspiration)+CharismaModifier);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(LevelMapValue(BardicInspiration)+CharismaModifier);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SPIRITS_FROM_BEYOND_0')" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7f175533g6214gdd3dg85abgf900f49f70ea" version="1" />
@@ -16896,7 +16895,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e915a310-13bf-4292-a488-674e147e7ba2" />
         <field name="Name" type="NameTableFieldDefinition" value="UnleashingASpirit_Sharpshooter" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_UnleashingASpirit" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BardicInspiration)+CharismaModifier,Force,Magical);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BardicInspiration)+CharismaModifier,Force,Magical);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SPIRITS_FROM_BEYOND_1')" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
@@ -16926,7 +16925,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6fbe7002-94b3-4875-8307-9a67b3f417d4" />
         <field name="Name" type="NameTableFieldDefinition" value="UnleashingASpirit_Avenger" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_UnleashingASpirit" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPIRITS_AVENGER,100,2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPIRITS_AVENGER,100,2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SPIRITS_FROM_BEYOND_2')" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
@@ -16957,7 +16956,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="379d3499-a5fd-4a73-94c5-2a8432613c78" />
         <field name="Name" type="NameTableFieldDefinition" value="UnleashingASpirit_Renegade" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_UnleashingASpirit" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPIRITS_RENEGADE,100,1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPIRITS_RENEGADE,100,1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SPIRITS_FROM_BEYOND_3')" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
@@ -16985,7 +16984,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ba004ed9-c4b1-4065-8a9a-b6bcfddd67de" />
         <field name="Name" type="NameTableFieldDefinition" value="UnleashingASpirit_Fortune Teller" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_UnleashingASpirit" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPIRITS_FORTUNE_TELLER,100,1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPIRITS_FORTUNE_TELLER,100,1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SPIRITS_FROM_BEYOND_4')" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
@@ -17015,7 +17014,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e2e196cd-91bb-4619-9bc2-b9eaea18e2bb" />
         <field name="Name" type="NameTableFieldDefinition" value="UnleashingASpirit_Wayfarer" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_UnleashingASpirit" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPIRITS_WAYFARER,100,-1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPIRITS_WAYFARER,100,-1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SPIRITS_FROM_BEYOND_5')" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
@@ -17046,7 +17045,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8e8adcc8-9b6e-47b3-be6a-5e52900dfaa3" />
         <field name="Name" type="NameTableFieldDefinition" value="UnleashingASpirit_Trickster" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_UnleashingASpirit" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SPIRITS_FROM_BEYOND_6')" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
@@ -17084,7 +17083,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="054bd884-f58f-4767-ab91-4c200892054e" />
         <field name="Name" type="NameTableFieldDefinition" value="UnleashingASpirit_Shade" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_UnleashingASpirit" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPIRITS_SHADE,100,1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPIRITS_SHADE,100,1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SPIRITS_FROM_BEYOND_7')" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
@@ -17115,7 +17114,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8f8e03b7-3bbb-4e29-bdb2-89cd22325c18" />
         <field name="Name" type="NameTableFieldDefinition" value="UnleashingASpirit_Arsonist" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_UnleashingASpirit" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SPIRITS_FROM_BEYOND_8')" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
@@ -17148,7 +17147,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f00e3f73-695e-4a23-b2fb-c7eb47eb462e" />
         <field name="Name" type="NameTableFieldDefinition" value="UnleashingASpirit_Coward" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_UnleashingASpirit" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,SPIRITS_FROM_BEYOND_0);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_1);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_2);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_3);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_4);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_5);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_6);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_7);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_8);RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,SPIRITS_FROM_BEYOND_9);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SPIRITS_FROM_BEYOND_9')" />
