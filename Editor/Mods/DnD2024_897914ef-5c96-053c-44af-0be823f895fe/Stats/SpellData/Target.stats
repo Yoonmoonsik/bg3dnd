@@ -3458,6 +3458,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5af3beb7-fe92-454b-a261-a8d466c79e57" />
         <field name="Name" type="NameTableFieldDefinition" value="Cloudkill_Recast" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fdd0de96-3ed9-42c2-acb4-70a3a4856260" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('CLOUDKILL_CASTER') or HasStatus('CLOUDKILL_CASTER_RECAST')" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(5d8,Poison,Magical);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(5d8,Necrotic,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(5d8/2,Poison,Magical);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(5d8/2,Necrotic,Magical)" />
@@ -3469,6 +3470,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Cloudkill_Recast_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d9b75ad6-94d6-4d3d-84b2-346551e51e72" />
         <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('CLOUDKILL_CASTER_1') or HasStatus('CLOUDKILL_CASTER_RECAST')" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(6d8,Poison,Magical);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(6d8,Necrotic,Magical)" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(6d8/2,Poison,Magical);IF(HasPassive('UndeadPatron_6_ArcaneNecrosis',context.Source)):DealDamage(6d8/2,Necrotic,Magical)" />
@@ -3499,6 +3501,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="15a6dafc-d5e7-4fd1-b1e2-c6f990cb6c75" />
         <field name="Name" type="NameTableFieldDefinition" value="SHA_Necromancer_Cloudkill_Recast" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d4479498-fc0e-4b9f-87cc-53db924d69de" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Poison,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d8/2,Poison,Magical)" />
@@ -7441,6 +7444,7 @@
         <field name="ConcentrationSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER_RECAST,100,10);GROUND:IF(HasPassive('EyesOfTheDark',context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('DARKNESS_CASTER') or HasStatus('DARKNESS_CASTER_RECAST')" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsSpell;IsConcentration;Stealth;Invisible;Temporary" enumeration_type_name="SpellFlagList" version="1" />
