@@ -5802,5 +5802,138 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c6ee3d49-3f23-45e3-87ed-02aa8ebd7166" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1a43945-f8c2-4628-941c-64b1b1c99a16" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_Abandoned" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f815768-f2fa-4464-b588-449147772b16" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_SorrowKnight_Abandoned" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65a00bb0g5f90g4078gbc87g60c0ef93b7a8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h46fb1d4cg208eg475fga917g69affa5ab9bd" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SorrowKnight),Psychic)" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="SorrowKnight:1" />
+        <field name="TooltipOnMiss" type="StringTableFieldDefinition" value="3224b987-6e24-4ef8-b9e9-5e8bc5251366" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(SorrowKnight),Psychic,,,0,,true,true);ApplyStatus(MADNESS,100,2,,,,not SavingThrow(Ability.Intelligence,SourceSpellDC(10,context.Source,Ability.Wisdom)));ExecuteWeaponFunctors(MainHand)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(SorrowKnight),Psychic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Intelligence" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(MADNESS,100,2)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="5707b660-f623-4508-9153-f0ff8d1007e0" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea2c25a8-f11c-4a81-8609-b1c5c17bfbda" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Monk_ShadowStrike,MAINHAND" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Monk_ShadowStrike" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ece7e7af-94ad-4090-99f9-d0967ac2c631" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_Dread" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f815768-f2fa-4464-b588-449147772b16" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_SorrowKnight_Dread" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73e4f825gd784g4f26ga17agbdc3a34890e0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf3b06765gda97g4cc2g98d9g162b39636617" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SorrowKnight),Psychic)" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="SorrowKnight:1" />
+        <field name="TooltipOnMiss" type="StringTableFieldDefinition" value="3224b987-6e24-4ef8-b9e9-5e8bc5251366" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(SorrowKnight),Psychic,,,0,,true,true);ApplyStatus(SORROWKNIGHT_DREAD,100,1);ExecuteWeaponFunctors(MainHand)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(SorrowKnight),Psychic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SORROWKNIGHT_DREAD,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="5707b660-f623-4508-9153-f0ff8d1007e0" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea2c25a8-f11c-4a81-8609-b1c5c17bfbda" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Monk_ShadowStrike,MAINHAND" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Monk_ShadowStrike" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="70ad5d03-0f57-4c3d-adea-9ac639ace7b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_Apathetic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f815768-f2fa-4464-b588-449147772b16" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_SorrowKnight_Apathetic" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0d5da2cegdeefg4310g9292g9167e623c41b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7546346bge7e3g4e4bga39fg45571801b8fc" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SorrowKnight),Psychic)" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="SorrowKnight:1" />
+        <field name="TooltipOnMiss" type="StringTableFieldDefinition" value="3224b987-6e24-4ef8-b9e9-5e8bc5251366" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(SorrowKnight),Psychic,,,0,,true,true);ApplyStatus(INCAPACITATED_DND,100,1,,,,not SavingThrow(Ability.Wisdom,SourceSpellDC(10,context.Source,Ability.Wisdom)));ExecuteWeaponFunctors(MainHand)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(SorrowKnight),Psychic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Wisdom" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(INCAPACITATED_DND,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="5707b660-f623-4508-9153-f0ff8d1007e0" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea2c25a8-f11c-4a81-8609-b1c5c17bfbda" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Monk_ShadowStrike,MAINHAND" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Monk_ShadowStrike" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3db320ff-527f-4846-8bb9-4690b3a52ff1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_Lost" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f815768-f2fa-4464-b588-449147772b16" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_SorrowKnight_Lost" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc4fe248cgaf09g4f59g86ccg502603c3a542" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he27285bdg83e5g4334gbeaeg26ea88218090" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SorrowKnight),Psychic)" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="SorrowKnight:1" />
+        <field name="TooltipOnMiss" type="StringTableFieldDefinition" value="3224b987-6e24-4ef8-b9e9-5e8bc5251366" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(SorrowKnight),Psychic,,,0,,true,true);ApplyStatus(SORROWKNIGHT_LOST_SLOWED,100,1);ApplyStatus(SORROWKNIGHT_LOST,100,1,,,,not SavingThrow(Ability.Charisma,SourceSpellDC(10,context.Source,Ability.Wisdom)));ExecuteWeaponFunctors(MainHand)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(SorrowKnight),Psychic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Charisma" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SORROWKNIGHT_LOST,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="5707b660-f623-4508-9153-f0ff8d1007e0" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea2c25a8-f11c-4a81-8609-b1c5c17bfbda" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Monk_ShadowStrike,MAINHAND" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Monk_ShadowStrike" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c71b1a73-ff5b-441e-bea6-730255af2275" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_Weary" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f815768-f2fa-4464-b588-449147772b16" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Projectile_SorrowKnight_Weary" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf0d6db72g522ag479fg812fg1737ca0faa2e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd25f9538gf0f7g4224g9184gd57a049b0e9b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SorrowKnight),Psychic);Distance(1.5)" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="SorrowKnight:1" />
+        <field name="TooltipOnMiss" type="StringTableFieldDefinition" value="3224b987-6e24-4ef8-b9e9-5e8bc5251366" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(SorrowKnight),Psychic,,,0,,true,true);ApplyStatus(SORROWKNIGHT_WEARY,100,0,,,,not SavingThrow(Ability.Constitution,SourceSpellDC(10,context.Source,Ability.Wisdom)));ExecuteWeaponFunctors(MainHand)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(SorrowKnight),Psychic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack;Constitution" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SORROWKNIGHT_WEARY_1,100,2)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="5707b660-f623-4508-9153-f0ff8d1007e0" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea2c25a8-f11c-4a81-8609-b1c5c17bfbda" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Monk_ShadowStrike,MAINHAND" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Monk_ShadowStrike" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27604cb1-5eac-4b57-a6fd-9907a9b585d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_DreadedAppearance" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3f30e6f5-c57f-4803-b899-0ae53da0e9b3" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC(10,context.Source,Ability.Wisdom))" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SorrowKnight),Psychic);ApplyStatus(FRIGHTENED,100,2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((LevelMapValue(SorrowKnight))/2,Psychic);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SorrowKnight_7_DreadedAppearance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfe3879bag0399g4fc1g84eag24c272ee288e" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SorrowKnight),Psychic)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

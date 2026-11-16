@@ -1191,6 +1191,21 @@
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
                     <attribute id="UUID" type="guid" value="014d6340-84cf-4d14-b5a4-4b3f5886f8ba"/>
                 </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h6a7d9af1g8b17g80b3g8939g045e8abab508" version="1"/>
+                    <attribute id="Name" type="FixedString" value="SorrowKnight"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="e5cd29ca-d2e4-43de-9c4e-dc06bc05d3ce"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h21355af6g8e57g4f05gaaafg8360ff7b6cce" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="EmpatheticInquiry"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="2f3ed415-36a8-414d-8095-36c2fab01230"/>
+                </node>
             </children>
         </node>
     </region>

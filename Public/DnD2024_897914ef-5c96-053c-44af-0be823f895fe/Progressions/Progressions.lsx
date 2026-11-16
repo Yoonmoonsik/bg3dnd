@@ -2799,6 +2799,9 @@
                                     <attribute id="Object" type="guid" value="3d9e9113-46c7-4c81-bb20-93ad097588bc"/>
                                 </node>
                                 <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="8bd1da7b-9959-416d-b725-3837997285c0"/>
+                                </node>
+                                <node id="SubClass">
                                     <attribute id="Object" type="guid" value="b400e0f2-7824-4c8c-aebb-6124500e6988"/>
                                 </node>
                             </children>
@@ -4864,6 +4867,15 @@
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="abc7b271-82a1-4139-9653-4c90a7984a38"/>
                     <attribute id="UUID" type="guid" value="119bec63-7f72-485d-b363-ba9d6717cf16"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Soulknife"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Soulknife_11_HomingStrikes"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="Soulknife_5_HomingStrikes"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="abc7b271-82a1-4139-9653-4c90a7984a38"/>
+                    <attribute id="UUID" type="guid" value="95142f59-5bc6-40b2-bb52-78cd98c3eb57"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
@@ -9438,13 +9450,30 @@
                     <attribute id="UUID" type="guid" value="852a9218-b8d3-49ed-8929-6d7ae1dfbccd"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Level" type="uint8" value="11"/>
-                    <attribute id="Name" type="LSString" value="Soulknife"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Soulknife_11_HomingStrikes"/>
-                    <attribute id="PassivesRemoved" type="LSString" value="Soulknife_5_HomingStrikes"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SorrowKnight,3,0)"/>
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="SorrowKnight"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SorrowKnight_3_DespairingStrikes;SorrowKnight_3_SolemnGaze;SorrowKnight_3_SolemnGaze_Resource"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="abc7b271-82a1-4139-9653-4c90a7984a38"/>
-                    <attribute id="UUID" type="guid" value="95142f59-5bc6-40b2-bb52-78cd98c3eb57"/>
+                    <attribute id="TableUUID" type="guid" value="72d65cb1-8990-44be-b88c-af732b831bf6"/>
+                    <attribute id="UUID" type="guid" value="fbd458e9-0588-4a61-83d7-57e796bdb624"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="SorrowKnight"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SorrowKnight_7_DreadedAppearance"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="72d65cb1-8990-44be-b88c-af732b831bf6"/>
+                    <attribute id="UUID" type="guid" value="bfe6fb4a-be93-4d19-b1bb-94dfdc98f9a3"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SorrowKnight,1,0)"/>
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="SorrowKnight"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SorrowKnight_10_UnsettledStrikes"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="72d65cb1-8990-44be-b88c-af732b831bf6"/>
+                    <attribute id="UUID" type="guid" value="f1032623-8860-4485-8019-8b535566b70e"/>
                 </node>
             </children>
         </node>

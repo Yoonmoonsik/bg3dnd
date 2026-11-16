@@ -5052,6 +5052,69 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(SizeEqualOrGreater(Size.Large)):Advantage(AttackRoll);Resistance(Cold,Resistant);" />
       </fields>
     </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c4d9933-2ca3-4d53-bff0-f67f1e4c98d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="__SORROW KNIGHT__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9974df9f-40f1-4f10-b205-90f01f317d73" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_3_DespairingStrikes" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb24b9fb6g88a7ga62bg9451g87742721a5b6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8aa4a30cg236eg491egf995g0f431632c615" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(SorrowKnight)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SorrowKnight_3_DespairingStrikes" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5303" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SorrowKnight_Abandoned);UnlockSpell(Projectile_SorrowKnight_Abandoned);UnlockSpell(Target_SorrowKnight_Dread);UnlockSpell(Projectile_SorrowKnight_Dread)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="68dfdb54-06ac-4549-9b3f-52a5a43af964" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_3_SolemnGaze" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7019a778g0bf6gee33g7162g38fe89823769" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he70b9aacg8aacg0e5bgab51g94f74c5e4ef4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SorrowKnight_3_SolemnGaze" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5303" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DarkvisionRangeMin(18);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7);UnlockSpell(Target_SorrowKnight_EmpatheticInquiry)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="908e1700-c627-4fc2-87ae-5c260c7525e8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_3_SolemnGaze_Resource" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnProficiencyChange;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(EmpatheticInquiry,1,0);IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(EmpatheticInquiry,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(EmpatheticInquiry,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(EmpatheticInquiry,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(EmpatheticInquiry,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(EmpatheticInquiry,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(EmpatheticInquiry,1,0);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ffb8fca5-d5d2-4234-9ccc-1468e22101dd" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_7_DreadedAppearance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h92c1a369g3256gd1cbg04d1g00a9084de9b3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd98bcb44gc2d1gda18gc0ccg2666a140aa6a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SorrowKnight_7_DreadedAppearance" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5307" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SorrowKnight_DreadedStep);UnlockSpell(Target_SorrowKnight_DreadedAppearance)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;ToggledDefaultOn;IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SORROWKNIGHT_DREADED_APPEARANCE, 100, -1);" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SORROWKNIGHT_DREADED_APPEARANCE)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="627e2d05-a146-41db-9206-a92668900e0e" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorrowKnight_10_UnsettledStrikes" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h25284df0gcb4fgad62gfb6agf254c62e518c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2910b05cg10d1g6315g730cg9685c7e8b273" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SorrowKnight_10_UnsettledStrikes" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5310" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SorrowKnight_Apathetic);UnlockSpell(Projectile_SorrowKnight_Apathetic);UnlockSpell(Target_SorrowKnight_Lost);UnlockSpell(Projectile_SorrowKnight_Lost);UnlockSpell(Target_SorrowKnight_Weary);UnlockSpell(Projectile_SorrowKnight_Weary)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="608a56c7-9d33-485c-a11f-d75a940fd8bf" />

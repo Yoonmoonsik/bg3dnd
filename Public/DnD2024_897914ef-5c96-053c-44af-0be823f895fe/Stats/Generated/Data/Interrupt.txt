@@ -2936,3 +2936,10 @@ type "InterruptData"
 using "Interrupt_Smite_Divine_3_NPC"
 data "Properties" "IF(not UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical,,0,,true,true);IF(UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical,,0,,true,true);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0)"
 
+new entry "Interrupt_SavingThrowDisadvantage_SorrowKnightDread"
+type "InterruptData"
+using "Interrupt_SavingThrowDisadvantage"
+data "DisplayName" "h0907f756g7410g444fgba6eg448fc1363801;1"
+data "Icon" "Target_SorrowKnight_Dread"
+data "Properties" "SetDisadvantage();RemoveStatus(OBSERVER_OBSERVER,SORROWKNIGHT_DREAD);"
+

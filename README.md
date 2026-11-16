@@ -52,7 +52,7 @@ See the [Classes](https://yoonmoonsik.github.io/bg3dnd/classes.html) page for de
 | [Bard](https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Bard) | Choreography, Dance, Glamour, Lore, Moon, Spirits, Swords, Valor |
 | [Cleric](https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Cleric) | Apocalypse, Astral, Death, Dragon, Forge, Grave, Nature, Shadow, Tempest, Knowledge, Life, Light, Mind, Trickery, Twilight, War |
 | [Druid](https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Druid) | Circle of Dragons, Dreams, Stars, Land, Moon, Sea, Spores, Unbroken |
-| [Fighter](https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Fighter) | Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Viking |
+| [Fighter](https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Fighter) | Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Sorrow Knight, Viking |
 | [Gunslinger](https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Gunslinger) | High Roller, Spellslinger, White Hat |
 | [Illrigger](https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Illrigger) | Architect of Ruin, Hellspeaker, Painkiller, Sanguine Knight, Shadowmaster |
 | [Monk](https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Monk) | Drunken Master, Elements, Kensei, Mercy, Mystic Arts, Open Hand, Shadow, Sun Soul |

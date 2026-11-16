@@ -3586,7 +3586,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="False" />
-        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="1be5aa5a-e221-4f0e-a1bf-be25f5d23224;f507f7bc-3d1a-4034-9590-ddef5a05d5b3;e668c6f1-5149-4b10-ab7e-3637ed444066;58e63bc1-b176-412f-8b30-3cea9a647dbb;0a01dc6b-ab1a-4c0e-8a5e-4787fe1f2caf;b722614a-303f-411a-bb19-a1882ad1f4cc;1d23232f-cafb-4162-ac2a-a926fd6f734f;3d9e9113-46c7-4c81-bb20-93ad097588bc;b400e0f2-7824-4c8c-aebb-6124500e6988" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="1be5aa5a-e221-4f0e-a1bf-be25f5d23224;f507f7bc-3d1a-4034-9590-ddef5a05d5b3;e668c6f1-5149-4b10-ab7e-3637ed444066;58e63bc1-b176-412f-8b30-3cea9a647dbb;0a01dc6b-ab1a-4c0e-8a5e-4787fe1f2caf;b722614a-303f-411a-bb19-a1882ad1f4cc;1d23232f-cafb-4162-ac2a-a926fd6f734f;3d9e9113-46c7-4c81-bb20-93ad097588bc;8bd1da7b-9959-416d-b725-3837997285c0;b400e0f2-7824-4c8c-aebb-6124500e6988" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HitPointDice10,1,0);" />
       </fields>
     </stat_object>
@@ -4113,6 +4113,41 @@
         <field name="Level" type="ByteTableFieldDefinition" value="10" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Viking_10_CallOfTheNorthlands" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1078" />
+        <field name="UUID" type="IdTableFieldDefinition" value="fbd458e9-0588-4a61-83d7-57e796bdb624" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="72d65cb1-8990-44be-b88c-af732b831bf6" />
+        <field name="FSName" type="StringTableFieldDefinition" value="SorrowKnight" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SorrowKnight_3_DespairingStrikes;SorrowKnight_3_SolemnGaze;SorrowKnight_3_SolemnGaze_Resource" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SorrowKnight,3,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1079" />
+        <field name="UUID" type="IdTableFieldDefinition" value="bfe6fb4a-be93-4d19-b1bb-94dfdc98f9a3" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="72d65cb1-8990-44be-b88c-af732b831bf6" />
+        <field name="FSName" type="StringTableFieldDefinition" value="SorrowKnight" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SorrowKnight_7_DreadedAppearance" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1080" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f1032623-8860-4485-8019-8b535566b70e" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="72d65cb1-8990-44be-b88c-af732b831bf6" />
+        <field name="FSName" type="StringTableFieldDefinition" value="SorrowKnight" />
+        <field name="Level" type="ByteTableFieldDefinition" value="10" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SorrowKnight_10_UnsettledStrikes" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SorrowKnight,1,0)" />
       </fields>
     </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">

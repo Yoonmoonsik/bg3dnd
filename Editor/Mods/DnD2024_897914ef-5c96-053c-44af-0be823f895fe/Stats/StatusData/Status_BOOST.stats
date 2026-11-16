@@ -10155,8 +10155,8 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Fighter_EvasiveFootwork" />
         <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="DODGE" enumeration_type_name="SoundVocalType" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="TACTICAL_SHIFT" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,4.5,0);" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DISENGAGE,100,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('SORROWKNIGHT_DREADED_APPEARANCE')):ActionResource(Movement,4.5,0);UnlockSpellVariant(SpellId('Target_SorrowKnight_DreadedStep') or SpellId('Target_SorrowKnight_DreadedAppearance'),ModifyIconGlow());" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('SORROWKNIGHT_DREADED_APPEARANCE')):ApplyStatus(DISENGAGE,100,1)" />
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="d787f666-8ee6-4185-9365-6aac9ebe76ae" />
       </fields>
@@ -17657,6 +17657,100 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_INVISIBILITY_UNLOCK" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Invisibility,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="667c376a-c13c-4a77-b941-ced386723629" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORROWKNIGHT_LOST" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h25a27a4bg6f87g45fcga8e5g18d4a4eb481c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1197232dgc5e9g4c0ag8201ga928b244cb61" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Blinded" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SORROWKNIGHT_LOST" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BLINDED,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1f3aa049-760e-470d-a03a-eafeb3c96911" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORROWKNIGHT_LOST_SLOWED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h370fd6ccg1049g4069gb513ga483d413faac" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3022ab48g784bg4062g9183g182ac602093f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Slow" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SORROWKNIGHT_LOST_SLOWED" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceMultiplier(Movement,50,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8aa1cd63-38dd-46ef-91f3-930d469a00e3" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORROWKNIGHT_WEARY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SORROWKNIGHT_WEARY_APPLY" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('SORROWKNIGHT_WEARY_1') or HasStatus('SORROWKNIGHT_WEARY_2')):ApplyStatus(SORROWKNIGHT_WEARY_2,100,2);IF(not HasStatus('SORROWKNIGHT_WEARY_1') and not HasStatus('SORROWKNIGHT_WEARY_2')):ApplyStatus(SORROWKNIGHT_WEARY_1,100,2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1796fb26-1c43-4489-8e13-2b1dd31109c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORROWKNIGHT_WEARY_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6914cdceg1e8ag4303g9899g0098482a4d61" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdc7d3cc7g300cg49bdg89d0g4b1de371ecd6" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="EXHAUSTED" enumeration_type_name="SoundVocalType" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SORROWKNIGHT_WEARY" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack,-2);RollBonus(SavingThrow,-2);RollBonus(SkillCheck,-2);RollBonus(RawAbility,-2);ActionResource(Movement,-1.5,0)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Exhausted;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df4c3b8e-0c7f-4729-b30b-092751716bf5" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORROWKNIGHT_WEARY_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5bcc010fg18a9g49c0gbc8dg3de164d662a7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3e74402egeed6g48e1ga851g516409ac3a51" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="EXHAUSTED" enumeration_type_name="SoundVocalType" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SORROWKNIGHT_WEARY" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack,-4);RollBonus(SavingThrow,-4);RollBonus(SkillCheck,-4);RollBonus(RawAbility,-4);ActionResource(Movement,-3,0)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Exhausted;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16fa2280-50fb-416e-8de2-6dad479565d2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORROWKNIGHT_EMPATHETIC_INQUIRY" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h21355af6g8e57g4f05gaaafg8360ff7b6cce" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3ebd9551g0ecag4412gaf82g8be8ae1fbfe3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SorrowKnight_3_SolemnGaze" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SORROWKNIGHT_EMPATHETIC_INQUIRY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SourceAdvantageOnAttack()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e07ce094-f6e8-4db0-917f-45e444816962" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORROWKNIGHT_DREAD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0b3f1e0c-c437-48c9-ad7f-c801760a12c2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0907f756g7410g444fgba6eg448fc1363801" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1f3de16ag6fb2g44ecg94d5gf8528ffd09ce" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Target_SorrowKnight_Dread" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SORROWKNIGHT_DREAD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowDisadvantage_SorrowKnightDread);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43297118-323b-49e3-9e1e-fcd3f6b20079" />
+        <field name="Name" type="NameTableFieldDefinition" value="SORROWKNIGHT_DREADED_APPEARANCE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h92c1a369g3256gd1cbg04d1g00a9084de9b3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd98bcb44gc2d1gda18gc0ccg2666a140aa6a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SorrowKnight_7_DreadedAppearance" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SORROWKNIGHT_DREADED_APPEARANCE" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
   </stat_objects>
