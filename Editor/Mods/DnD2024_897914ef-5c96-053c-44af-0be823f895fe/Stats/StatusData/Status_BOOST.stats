@@ -17047,6 +17047,30 @@
         <field name="StackId" type="StringTableFieldDefinition" value="SAVING_THROWS_PENALTY_COLD_CASTER" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b48f00fd-0726-4cc7-89df-7d9164530cc0" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLEARCASTING" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9237fa3bg37b1g40b7gb085g60ce63e77019" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18d85611g1dd8g4b4agbe3bgc140d5841a2e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Force" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CLEARCASTING" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Clearcasting_Cantrip" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="19a36490-72d5-4b11-bedb-81eb2c8adfce" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOT_STREAK_BURNING_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b285885e-32d0-4b35-8d54-6c95a8ad2bbb" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d4,Fire)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('TORCH')):DealDamage(2d4,Fire)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('TORCH')):DealDamage(2d4,Fire)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d4,Fire)" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6901e24c-0ec4-4b6d-a682-d40afac02684" />

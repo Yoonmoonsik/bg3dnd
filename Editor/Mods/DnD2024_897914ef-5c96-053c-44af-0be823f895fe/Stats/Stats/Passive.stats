@@ -13358,6 +13358,60 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a264ef7-06a0-4428-84fc-9fee70574690" />
+        <field name="Name" type="NameTableFieldDefinition" value="Clearcasting" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19da8c3cg5737g448agafcbgbc83fb5ed69a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h50d1fbb5g21d9g47f4gb8deg4989173c321f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Force" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(MainDamageTypeIs(DamageType.Force)):MinimumRollResult(Damage,2)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsCritical() and IsSpellAttack()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CLEARCASTING,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca59369b-7f36-4df6-8ee1-10730d5b4bc3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Clearcasting_Cantrip" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged;OnAttack;OnCastResolved;OnCast;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('ReactionActionPoint', 1, 0, false, true, context.Source)):UnlockSpellVariant(IsCantrip() and HasUseCosts('ActionPoint'),ModifyUseCosts(Replace,ReactionActionPoint,1,0,ActionPoint),ModifyIconGlow());" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsCantrip() and HasUseCosts('ReactionActionPoint',true)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,CLEARCASTING)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b02117c-028d-4535-bf95-e096390a0602" />
+        <field name="Name" type="NameTableFieldDefinition" value="FingersOfFrost" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14222307g17a3g43f6ga745ged4a8a7f23cb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he2e750adgbcf1g4502ga7a4g38fc5c9f3637" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ElementalAdept_Cold" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Cold,Resistant);IF(IsDamageTypeCold() and HasStatus('SG_Restrained',context.Target)):DamageBonus(LevelMapValue(ProficiencyBonusD4),Cold)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d74b8162-90d1-442b-ae84-5ec6a82e3c59" />
+        <field name="Name" type="NameTableFieldDefinition" value="HotStreak" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heffc00d2g8860g4b24gafedg2f1b4ae0af8e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8db68695g69f7g4538g8df9ga76f8d68b35a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ElementalAdept_Fire" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Fire,Resistant)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(IsSpell() or IsAttack()) and HasDamageDoneForType(DamageType.Fire)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HOT_STREAK_BURNING_2',context.Target)):ApplyStatus(HOT_STREAK_BURNING_2,100,2);IF(HasStatus('BURNING',context.Target)):ApplyStatus(HOT_STREAK_BURNING_2,100,2);IF(IsSpell() and not HasStatus('BURNING',context.Target) and not HasStatus('HOT_STREAK_BURNING_2',context.Target)):ApplyStatus(BURNING,100,2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c1224025-2f88-4909-80c3-62863a3a1edc" />
         <field name="Name" type="NameTableFieldDefinition" value="Dragonscarred" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h046e98e9gd6d2gf0ecga207gad73de421d8c" version="1" />

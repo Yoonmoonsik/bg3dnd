@@ -36,6 +36,12 @@
                     <attribute id="UUID" type="guid" value="7a6fde1f-bd94-48ef-b94c-2384584688b3"/>
                 </node>
                 <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="Clearcasting"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Clearcasting"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(97979fce-ecc2-4a11-a94b-af5c5a5da3bd,1,1,INT)"/>
+                    <attribute id="UUID" type="guid" value="652c5f3a-c9a2-44e8-a65c-bc9105b4387d"/>
+                </node>
+                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="ColdCaster"/>
                     <attribute id="PassivesAdded" type="LSString" value="ColdCaster"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);"/>
@@ -201,6 +207,12 @@
                     <attribute id="UUID" type="guid" value="ef5a96c7-b21f-4a23-aa44-3997efe5b471"/>
                 </node>
                 <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="FingersOfFrost"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FingersOfFrost"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(97979fce-ecc2-4a11-a94b-af5c5a5da3bd,1,1,INT)"/>
+                    <attribute id="UUID" type="guid" value="077c9ec7-750a-4cc1-880e-8caa9ed7a573"/>
+                </node>
+                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="FlamesOfPhlegethos"/>
                     <attribute id="PassivesAdded" type="LSString" value="FlamesOfPhlegethos"/>
                     <attribute id="Requirements" type="LSString" value="Tagged(&apos;TIEFLING&apos;,context.Source)"/>
@@ -277,6 +289,12 @@
                     <attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HeavyArmor&apos;)"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(111c055b-ddcf-430e-a5b0-1a0a598e203a,1,1,STR_CON)"/>
                     <attribute id="UUID" type="guid" value="0de08fff-ab18-442f-a0b1-f53e7be04c03"/>
+                </node>
+                <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="HotStreak"/>
+                    <attribute id="PassivesAdded" type="LSString" value="HotStreak"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(97979fce-ecc2-4a11-a94b-af5c5a5da3bd,1,1,INT)"/>
+                    <attribute id="UUID" type="guid" value="a738236b-f7f2-40e5-9597-9b2e49b64a2f"/>
                 </node>
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="InfernalConstitution"/>
