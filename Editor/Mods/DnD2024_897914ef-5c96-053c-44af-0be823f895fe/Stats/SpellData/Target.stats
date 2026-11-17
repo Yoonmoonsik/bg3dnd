@@ -10016,6 +10016,63 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PARALYZED_ENDTURN,100,1)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98c79646-5519-4fd6-a13c-256bb5e9c93b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SerpentSting" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SerpentSting" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h98460618ga075g4833g9489gddb444f06783" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd706d11dgd65eg48e3g89d1g60c62592efd1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Poison);DealDamage(2d6,Poison)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Poison)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SERPENT_STING,100,10)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9122eb08-93f1-4010-a275-f5ae3ec7c76e,,;,,;2860e825-ec12-4008-8471-d797fc00abc4,,;b6540e92-9e06-4695-9d8e-552d5eac45c2,,;5301d674-b7da-47b6-b4cf-2802ba33a9e9,,;,,;86b3cf93-21fb-4a3d-bed9-97d0a567d084,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_SerpentSting" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1ad4c57-5e25-4fa1-8482-8ee7ec77df0d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SerpentSting_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="98c79646-5519-4fd6-a13c-256bb5e9c93b" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SerpentSting" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_SerpentSting_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1a72004-f643-48c6-818f-47e111555785" />
+        <field name="Name" type="NameTableFieldDefinition" value="SerpentSting_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="98c79646-5519-4fd6-a13c-256bb5e9c93b" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SerpentSting" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_SerpentSting_5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6865869-e15d-4b2f-9e82-023dccbc52aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="SerpentSting_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="98c79646-5519-4fd6-a13c-256bb5e9c93b" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SerpentSting" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="InterruptPrototype" type="StringTableFieldDefinition" value="Interrupt_SerpentSting_6" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d74f04fb-a215-43e1-a6bc-55df612ae048" />

@@ -5311,6 +5311,25 @@
         <field name="Passives" type="StringTableFieldDefinition" value="ShadowOfMoil_Psychic" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c2278cda-e688-4df4-88ba-b6287f40b61a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SERPENT_STING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c55d0a13-1ef8-48a2-9c94-fba4f93072d3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6372880fg2f88g4ed0gaf79g8984701acc3a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc9b1bd3cg4b93g4331gade8gca5f91cfed12" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Poison)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SerpentSting" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SERPENT_STING" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution,SourceSpellDC())" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d6,Poison)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Poison,Magical)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cb9821dc-2f33-4b0c-90b7-b52ee85d20cb" />

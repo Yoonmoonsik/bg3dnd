@@ -732,6 +732,52 @@
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;HitPointDice12:6;" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="000a6869-eddb-449d-8b2d-9f5c9e97b9f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SerpentSting" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsWeaponAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not IsSpellAttack() and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER','ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h98460618ga075g4833g9489gddb444f06783" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd706d11dgd65eg48e3g89d1g60c62592efd1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Poison);DealDamage(2d6,Poison)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SerpentSting" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Poison);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SERPENT_STING,100,10);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(4d6,Poison,Magical,,0,,true,true);ApplyStatus(SERPENT_STING,100,10);ApplyStatus(OBSERVER_OBSERVER,ONE_SPELL_WITH_A_SPELL_SLOT_PER_TURN,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3aafa037-16db-4dd4-b20c-cb05eb6d9629" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SerpentSting_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="000a6869-eddb-449d-8b2d-9f5c9e97b9f4" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="48b61b59-907d-4ed6-a3d6-616b2a7eb88e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SerpentSting_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="000a6869-eddb-449d-8b2d-9f5c9e97b9f4" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ea0465de-645c-4aae-8f91-7c82ea7b48d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SerpentSting_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="000a6869-eddb-449d-8b2d-9f5c9e97b9f4" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5fa81f45-86d6-4d85-a7ba-7e96c43ca697" />
