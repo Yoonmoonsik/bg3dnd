@@ -2099,7 +2099,6 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((2d6)/2,Cold,Magical)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Cold)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
-        <field name="TooltipOnSave" type="StringTableFieldDefinition" value="59f76098-8d48-46f4-aefe-1030341dd7d6" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FROST_NOVA,100,2)" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold)" />
@@ -2112,7 +2111,7 @@
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f4aab3ad-a4ad-48e1-9052-3808e2b65981" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="842f3fd6-e2a8-4cf9-86c3-03217df99c07" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="f6672806-9b2f-401b-aed9-fe1aa0e2b27a" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="f6672806-9b2f-401b-aed9-fe1aa0e2b27a" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_GlyphofWardingCold_L5" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Damage_GlyphofWardingCold_L5" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_GlyphofWardingCold_L5" />
