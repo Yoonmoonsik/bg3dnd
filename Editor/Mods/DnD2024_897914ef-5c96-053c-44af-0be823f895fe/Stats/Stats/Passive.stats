@@ -13000,6 +13000,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b59c49e6-1e0e-4197-9d99-6ed322b735c7" />
+        <field name="Name" type="NameTableFieldDefinition" value="MagicInitiate_Wizard_FrostNova" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0083a968-78aa-420e-9bc1-336e8de956b1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56c927d9gd8d0g45b5ga618g0446388e43fa" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('MagicInitiateLevel1',1,0,false,false,context.Source)):UnlockSpellVariant(SpellId('Shout_FrostNova'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,OneSpellWithASpellSlotPerTurn,0,-1,OneSpellWithASpellSlotPerTurn),ModifyUseCosts(Add,MagicInitiateLevel1,1,0));" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_FrostNova" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAGICINITIATE_FROSTNOVA_UNLOCK,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dbea1587-c85b-4a9b-ab2b-23839dd698e1" />
         <field name="Name" type="NameTableFieldDefinition" value="MagicInitiate_Wizard_Grease" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0083a968-78aa-420e-9bc1-336e8de956b1" />

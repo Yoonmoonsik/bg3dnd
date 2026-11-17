@@ -2081,6 +2081,114 @@
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="144287ae-028c-4101-ab14-4250dfba8c1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="FrostNova" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and not Ally()" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_FrostNova" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he97c2331g0125g4f7dgba2fgada1fd6015db" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h93229fa9g825cg424bgb020g2e56eecd764c" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5);DealDamage(2d6,Cold)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Cold,Magical);ApplyStatus(FROST_NOVA,100,2)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((2d6)/2,Cold,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Cold)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" value="59f76098-8d48-46f4-aefe-1030341dd7d6" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FROST_NOVA,100,2)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold)" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f4aab3ad-a4ad-48e1-9052-3808e2b65981" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="842f3fd6-e2a8-4cf9-86c3-03217df99c07" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="f6672806-9b2f-401b-aed9-fe1aa0e2b27a" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_GlyphofWardingCold_L5" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Damage_GlyphofWardingCold_L5" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_GlyphofWardingCold_L5" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_GlyphofWardingCold_L5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eceb6c57-0109-4d54-916f-a28254628759" />
+        <field name="Name" type="NameTableFieldDefinition" value="FrostNova_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="144287ae-028c-4101-ab14-4250dfba8c1a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5);DealDamage(2d6,Cold)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Cold,Magical);ApplyStatus(FROST_NOVA,100,2)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((2d6)/2,Cold,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Cold)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_FrostNova" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="471036f7-189a-4870-b2f1-06434b68207d" />
+        <field name="Name" type="NameTableFieldDefinition" value="FrostNova_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="144287ae-028c-4101-ab14-4250dfba8c1a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5);DealDamage(3d6,Cold)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6,Cold,Magical);ApplyStatus(FROST_NOVA,100,2)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((3d6)/2,Cold,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Cold)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_FrostNova" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7267100b-e776-4c4c-aa23-509b30e43580" />
+        <field name="Name" type="NameTableFieldDefinition" value="FrostNova_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="144287ae-028c-4101-ab14-4250dfba8c1a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5);DealDamage(4d6,Cold)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Cold,Magical);ApplyStatus(FROST_NOVA,100,2)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d6)/2,Cold,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Cold)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_FrostNova" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b91f9bbd-ea3e-478a-bdf7-65d0b278548e" />
+        <field name="Name" type="NameTableFieldDefinition" value="FrostNova_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="144287ae-028c-4101-ab14-4250dfba8c1a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5);DealDamage(5d6,Cold)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6,Cold,Magical);ApplyStatus(FROST_NOVA,100,2)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((5d6)/2,Cold,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Cold)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_FrostNova" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0cb57e0e-d6e9-4d32-9962-15243fed7b72" />
+        <field name="Name" type="NameTableFieldDefinition" value="FrostNova_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="144287ae-028c-4101-ab14-4250dfba8c1a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5);DealDamage(6d6,Cold)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Cold,Magical);ApplyStatus(FROST_NOVA,100,2)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((6d6)/2,Cold,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Cold)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_FrostNova" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8d51c00d-277e-4970-a3c4-db1acb3d791a" />
@@ -11972,7 +12080,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a31d6179-c93f-4153-9ac5-dcdba4879811" />
         <field name="Name" type="NameTableFieldDefinition" value="MagicInitiate_Wizard_Spell" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5fa7a877-3096-40a2-9d25-3f37c0fa4db6" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_AbsorbElements_Dummy;Target_BodyWarpingOfGorgoroth;Zone_BurningHands;Projectile_Catapult;Target_CharmPerson;Projectile_ChromaticOrb_Dummy;Shout_CloakOfShadow;Zone_ColorSpray;Target_Consumption_Dummy;Shout_CrimsonLash_Dummy;Shout_EarthTremor;Shout_ExpeditiousRetreat;Shout_FalseLife;Shout_FeatherFall;Target_FindFamiliar_Dummy;Target_FogCloud;Target_Grease;Target_HellsLash;Projectile_IceKnife;Target_Jump;Target_Longstrider;Target_MageArmor;Projectile_MagicMissile;Target_ProtectionFromEvilAndGood;Projectile_RayOfSickness;Shout_Shield_Dummy;Target_ShroudBlood_Dummy;Target_Sleep;Projectile_SpellfireFlare;Target_HideousLaughter;Zone_Thunderwave;Shout_TideOfDarkness;Target_UmbralTendril;Target_VibratingHumors_Dummy;Projectile_Wardaway;Projectile_WitchBolt;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_AbsorbElements_Dummy;Target_BodyWarpingOfGorgoroth;Zone_BurningHands;Projectile_Catapult;Target_CharmPerson;Projectile_ChromaticOrb_Dummy;Shout_CloakOfShadow;Zone_ColorSpray;Target_Consumption_Dummy;Shout_CrimsonLash_Dummy;Shout_EarthTremor;Shout_ExpeditiousRetreat;Shout_FalseLife;Shout_FeatherFall;Target_FindFamiliar_Dummy;Target_FogCloud;Shout_FrostNova;Target_Grease;Target_HellsLash;Projectile_IceKnife;Target_Jump;Target_Longstrider;Target_MageArmor;Projectile_MagicMissile;Target_ProtectionFromEvilAndGood;Projectile_RayOfSickness;Shout_Shield_Dummy;Target_ShroudBlood_Dummy;Target_Sleep;Projectile_SpellfireFlare;Target_HideousLaughter;Zone_Thunderwave;Shout_TideOfDarkness;Target_UmbralTendril;Target_VibratingHumors_Dummy;Projectile_Wardaway;Projectile_WitchBolt;" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc6335af1g4129g0308g8518g3cb980ec4a55" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hffa4fb6cg516eg4f17g0656geecaebcd5045" version="3" />
       </fields>

@@ -4145,6 +4145,16 @@
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Downed" enumeration_type_name="StillAnimPriority" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18d1344d-7755-41c6-89d5-4548d73299cb" />
+        <field name="Name" type="NameTableFieldDefinition" value="FROST_NOVA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8ebec1f1-ed98-40f8-a0b3-f5757f7c7f7f" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FROST_NOVA" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c49bbfa0-f7f1-44da-8861-e00f4dbfddf6" />
@@ -15670,6 +15680,26 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_FOGCLOUD_UNLOCK" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FogCloud,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6426db5a-42c6-4df9-8bed-58950f5cc622" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_FROSTNOVA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_FROSTNOVA" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56c927d9gd8d0g45b5ga618g0446388e43fa" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MagicInitiate_Wizard_FrostNova;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6b39817-cfe5-42fb-8c51-844b0e0b110c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_FROSTNOVA_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_FROSTNOVA_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_FrostNova,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
