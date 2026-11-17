@@ -4120,6 +4120,31 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="87e8b441-22a8-4064-8aa1-23568ba24331" />
+        <field name="Name" type="NameTableFieldDefinition" value="FREEZING_TRAP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8ebec1f1-ed98-40f8-a0b3-f5757f7c7f7f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h24757a8cg95a5g4fd2g987agbed1ebd47956" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h451046dbg5b29g42bcg92d7g1e3f961840ef" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_FreezingTrap" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FREEZING_TRAP" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="MaterialType" type="EnumerationTableFieldDefinition" value="FadingOverlay" enumeration_type_name="MaterialType" version="1" />
+        <field name="MaterialApplyBody" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialApplyArmor" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialApplyWeapon" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialApplyNormalMap" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialFadeAmount" type="IntegerTableFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringTableFieldDefinition" value="freezeDirection:SourceDirection" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="Status_Tex_Frozen_Start" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Misc_Status_Frozen_MO" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Misc_Status_Frozen_MO_Stop" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="62318bbf-d36a-497c-91a4-bda8f7fb7af7" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Petrified" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Downed" enumeration_type_name="StillAnimPriority" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c49bbfa0-f7f1-44da-8861-e00f4dbfddf6" />

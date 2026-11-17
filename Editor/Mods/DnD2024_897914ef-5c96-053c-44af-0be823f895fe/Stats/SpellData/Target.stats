@@ -7065,6 +7065,87 @@
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b83fe7d6-f6d9-4c53-90de-57d0e0f0e590" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreezingTrap" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(78753892-68a6-49a4-81f8-77e95c5e8f42,10,Projectile_AiHelper_Summon_Weak,,FreezingTrapStack,EXPLOSIVE_RUNES,,,,,true)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_FreezingTrap" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h86a816f7g5f1ag41a4g8e67g98e8a2450c9e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h14099969ge19bg457bga665g130b48525364" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FREEZING_TRAP,100,10)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsSpell;IsConcentration;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f4aab3ad-a4ad-48e1-9052-3808e2b65981" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="842f3fd6-e2a8-4cf9-86c3-03217df99c07" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_GlyphofWardingCold_L5" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Damage_GlyphofWardingCold_L5" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_GlyphofWardingCold_L5" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_GlyphofWardingCold_L5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e00c455-670c-4995-a670-1d583a817afc" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreezingTrap_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b83fe7d6-f6d9-4c53-90de-57d0e0f0e590" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_FreezingTrap" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1244958-f3f2-4e8f-bed8-40cdab736b83" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreezingTrap_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b83fe7d6-f6d9-4c53-90de-57d0e0f0e590" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_FreezingTrap" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="afd75ed3-9f18-42a2-b08a-015010b92a34" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreezingTrap_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b83fe7d6-f6d9-4c53-90de-57d0e0f0e590" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_FreezingTrap" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c7577ae-cb7d-4d06-8b64-2a78cbc82dbc" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreezingTrap_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b83fe7d6-f6d9-4c53-90de-57d0e0f0e590" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_FreezingTrap" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c81fa2d-911b-40e3-84d2-f8e3906381db" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreezingTrap_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b83fe7d6-f6d9-4c53-90de-57d0e0f0e590" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_FreezingTrap" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="81743548-e831-4151-885c-19bc80906ac0" />

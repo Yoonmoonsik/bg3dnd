@@ -2239,6 +2239,32 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Thunder)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="95bd5434-ead8-4724-b7c0-9988cafa5f37" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreezingTrap_Trap" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d1017df7-5773-4bb9-996f-d967167a9139" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, CalculateSpellDC(context.PreferredCastingAbility, GetSummoner(context.Source)))" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(FREEZING_TRAP,100,10)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_FreezingTrap" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h86a816f7g5f1ag41a4g8e67g98e8a2450c9e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h14099969ge19bg457bga665g130b48525364" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FREEZING_TRAP,100,10)" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsTrap;ImmediateCast;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9c81506c-3bfa-4e49-9437-8d767b45b48c" />
