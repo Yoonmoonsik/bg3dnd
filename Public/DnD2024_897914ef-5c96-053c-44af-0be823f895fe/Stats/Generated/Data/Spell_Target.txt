@@ -20344,6 +20344,12 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_StaggeringSmite"
 
+new entry "Target_FreezingTrap_spellscroll"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_FreezingTrap"
+data "UseCosts" "ActionPoint:1"
+
 new entry "Target_SorrowKnight_Abandoned"
 type "SpellData"
 data "SpellType" "Target"

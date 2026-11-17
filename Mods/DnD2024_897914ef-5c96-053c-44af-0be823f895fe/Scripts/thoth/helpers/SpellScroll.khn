@@ -29,6 +29,8 @@ local SPELL_CLASS_MAP = {
     Shout_FeatherFall_spellscroll = '1 Bard Sorcerer Wizard Artificer',
     Target_FindFamiliar_spellscroll = '1 Wizard',
     Target_FogCloud_spellscroll = '1 Druid Ranger Sorcerer Wizard',
+    Target_FreezingTrap_spellscroll = '1 Ranger',
+    Shout_FrostNova_spellscroll = '1 Wizard',
     Target_Goodberry_spellscroll = '1 Druid Ranger',
     Target_Grease_spellscroll = '1 Wizard Artificer',
     Target_HellsLash_spellscroll = '1 Sorcerer Warlock Wizard',
@@ -884,4 +886,6 @@ function IsScrollSpell()
     | SpellId('Shout_ShadowOfMoil_spellscroll')
     | SpellId('Target_FiendFlesh_spellscroll')
     | SpellId('Target_MentalPrison_spellscroll')
+    | SpellId('Shout_FrostNova_spellscroll')
+    | SpellId('Target_FreezingTrap_spellscroll')
 end

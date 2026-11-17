@@ -11277,3 +11277,9 @@ data "SpellType" "Shout"
 using "Shout_EarthTremor"
 data "UseCosts" "ActionPoint:1"
 
+new entry "Shout_FrostNova_spellscroll"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_FrostNova"
+data "UseCosts" "ActionPoint:1"
+
