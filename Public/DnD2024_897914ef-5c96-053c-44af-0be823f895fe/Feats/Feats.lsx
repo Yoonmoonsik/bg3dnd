@@ -195,6 +195,12 @@
                     <attribute id="UUID" type="guid" value="fd17c873-ed49-48a7-b757-a057e68efcd9"/>
                 </node>
                 <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="EvocationAdept"/>
+                    <attribute id="PassivesAdded" type="LSString" value="EvocationAdept;EvocationAdept_FueledEvocation"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);"/>
+                    <attribute id="UUID" type="guid" value="b9ad151e-d130-435e-b9bd-05eb2c614399"/>
+                </node>
+                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="FadeAway"/>
                     <attribute id="PassivesAdded" type="LSString" value="FadeAway"/>
                     <attribute id="Requirements" type="LSString" value="Tagged(&apos;GNOME&apos;,context.Source)"/>
@@ -448,16 +454,16 @@
                     <attribute id="UUID" type="guid" value="9f038fd8-6641-4803-9e09-8508db8e20b3"/>
                 </node>
                 <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="Nimbleness"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Nimbleness"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilities(b54e54c7-fc1d-4fbf-9fae-83c89a196da7,1,1,DEX)"/>
-                    <attribute id="UUID" type="guid" value="46557a4e-aa90-4ce8-b9e5-a7f5a1603cea"/>
-                </node>
-                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="NecromancyAdept"/>
                     <attribute id="PassivesAdded" type="LSString" value="NecromancyAdept;NecromancyAdept_LifeManipulation"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);"/>
                     <attribute id="UUID" type="guid" value="df49a86a-7028-4873-bf17-008da2c69708"/>
+                </node>
+                <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="Nimbleness"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Nimbleness"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(b54e54c7-fc1d-4fbf-9fae-83c89a196da7,1,1,DEX)"/>
+                    <attribute id="UUID" type="guid" value="46557a4e-aa90-4ce8-b9e5-a7f5a1603cea"/>
                 </node>
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="OrcishFury"/>
@@ -635,16 +641,16 @@
                     <attribute id="UUID" type="guid" value="e8d1e7f6-d841-48ff-a83c-f1aaa16597ff"/>
                 </node>
                 <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="TyroOfTheGauntlet"/>
-                    <attribute id="PassivesAdded" type="LSString" value="TyroOfTheGauntlet"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilities(625c82c2-9b61-4a92-870e-f399190f910e,1,1,STR_WIS_CHA);"/>
-                    <attribute id="UUID" type="guid" value="3428189b-9a9b-40f5-979b-bfc6833a085c"/>
-                </node>
-                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="TransmutationAdept"/>
                     <attribute id="PassivesAdded" type="LSString" value="TransmutationAdept;TransmutationAdept_MagicalAugmentation"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);"/>
                     <attribute id="UUID" type="guid" value="b1cfd977-e782-4cf5-a984-3fd259d6ba53"/>
+                </node>
+                <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="TyroOfTheGauntlet"/>
+                    <attribute id="PassivesAdded" type="LSString" value="TyroOfTheGauntlet"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(625c82c2-9b61-4a92-870e-f399190f910e,1,1,STR_WIS_CHA);"/>
+                    <attribute id="UUID" type="guid" value="3428189b-9a9b-40f5-979b-bfc6833a085c"/>
                 </node>
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="VigorOfTheHillGiant"/>

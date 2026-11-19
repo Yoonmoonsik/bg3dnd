@@ -3766,6 +3766,94 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d1aa3c8-23be-4169-9230-6940a6b52c71" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledEvocation_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5a5a265g5ee8g413cga213gc3457450ceda" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc4ab7c8ag9eeag4d8fgb3cfg8605374016b7" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Fireball" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsSpell() and Self(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsSpellOfSchool(SpellSchool.Evocation) and not Dead(context.Target) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(SpellDamageTypeIs(DamageType.Acid)):DealDamage(1d6,Acid,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Bludgeoning)):DealDamage(1d6,Bludgeoning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Cold)):DealDamage(1d6,Cold,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Fire)):DealDamage(1d6,Fire,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Force)):DealDamage(1d6,Force,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Lightning)):DealDamage(1d6,Lightning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Necrotic)):DealDamage(1d6,Necrotic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Piercing)):DealDamage(1d6,Piercing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Poison)):DealDamage(1d6,Poison,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Psychic)):DealDamage(1d6,Psychic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Radiant)):DealDamage(1d6,Radiant,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Slashing)):DealDamage(1d6,Slashing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Thunder)):DealDamage(1d6,Thunder,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice06:1;EvocationAdeptTurn:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="FueledEvocation" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55f71a02-d073-499c-aa1b-05c46375f1c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledEvocation_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9d1aa3c8-23be-4169-9230-6940a6b52c71" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h809504dfga9afg4b1dg9eddg879f813b1275" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(SpellDamageTypeIs(DamageType.Acid)):DealDamage(2d6,Acid,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Bludgeoning)):DealDamage(2d6,Bludgeoning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Cold)):DealDamage(2d6,Cold,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Fire)):DealDamage(2d6,Fire,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Force)):DealDamage(2d6,Force,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Lightning)):DealDamage(2d6,Lightning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Necrotic)):DealDamage(2d6,Necrotic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Piercing)):DealDamage(2d6,Piercing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Poison)):DealDamage(2d6,Poison,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Psychic)):DealDamage(2d6,Psychic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Radiant)):DealDamage(2d6,Radiant,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Slashing)):DealDamage(2d6,Slashing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Thunder)):DealDamage(2d6,Thunder,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice06:2;EvocationAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee70640f-2dc1-4f87-aeda-4e9e17368235" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledEvocation_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9d1aa3c8-23be-4169-9230-6940a6b52c71" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc4ab7c8ag9eeag4d8fgb3cfg8605374016b7" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(SpellDamageTypeIs(DamageType.Acid)):DealDamage(1d8,Acid,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Bludgeoning)):DealDamage(1d8,Bludgeoning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Cold)):DealDamage(1d8,Cold,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Fire)):DealDamage(1d8,Fire,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Force)):DealDamage(1d8,Force,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Lightning)):DealDamage(1d8,Lightning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Necrotic)):DealDamage(1d8,Necrotic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Piercing)):DealDamage(1d8,Piercing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Poison)):DealDamage(1d8,Poison,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Psychic)):DealDamage(1d8,Psychic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Radiant)):DealDamage(1d8,Radiant,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Slashing)):DealDamage(1d8,Slashing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Thunder)):DealDamage(1d8,Thunder,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice08:1;EvocationAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c47787ba-d914-4d75-9ab7-35107b28de6a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledEvocation_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9d1aa3c8-23be-4169-9230-6940a6b52c71" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h809504dfga9afg4b1dg9eddg879f813b1275" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(SpellDamageTypeIs(DamageType.Acid)):DealDamage(2d8,Acid,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Bludgeoning)):DealDamage(2d8,Bludgeoning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Cold)):DealDamage(2d8,Cold,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Fire)):DealDamage(2d8,Fire,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Force)):DealDamage(2d8,Force,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Lightning)):DealDamage(2d8,Lightning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Necrotic)):DealDamage(2d8,Necrotic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Piercing)):DealDamage(2d8,Piercing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Poison)):DealDamage(2d8,Poison,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Psychic)):DealDamage(2d8,Psychic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Radiant)):DealDamage(2d8,Radiant,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Slashing)):DealDamage(2d8,Slashing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Thunder)):DealDamage(2d8,Thunder,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice08:2;EvocationAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2fe120e3-e41c-4a93-a8c0-bd485cfbd700" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledEvocation_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9d1aa3c8-23be-4169-9230-6940a6b52c71" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc4ab7c8ag9eeag4d8fgb3cfg8605374016b7" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(SpellDamageTypeIs(DamageType.Acid)):DealDamage(1d10,Acid,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Bludgeoning)):DealDamage(1d10,Bludgeoning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Cold)):DealDamage(1d10,Cold,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Fire)):DealDamage(1d10,Fire,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Force)):DealDamage(1d10,Force,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Lightning)):DealDamage(1d10,Lightning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Necrotic)):DealDamage(1d10,Necrotic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Piercing)):DealDamage(1d10,Piercing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Poison)):DealDamage(1d10,Poison,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Psychic)):DealDamage(1d10,Psychic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Radiant)):DealDamage(1d10,Radiant,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Slashing)):DealDamage(1d10,Slashing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Thunder)):DealDamage(1d10,Thunder,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice10:1;EvocationAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f2d4f79a-b817-4a3d-9a8b-16e233cdf802" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledEvocation_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9d1aa3c8-23be-4169-9230-6940a6b52c71" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h809504dfga9afg4b1dg9eddg879f813b1275" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(SpellDamageTypeIs(DamageType.Acid)):DealDamage(2d10,Acid,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Bludgeoning)):DealDamage(2d10,Bludgeoning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Cold)):DealDamage(2d10,Cold,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Fire)):DealDamage(2d10,Fire,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Force)):DealDamage(2d10,Force,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Lightning)):DealDamage(2d10,Lightning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Necrotic)):DealDamage(2d10,Necrotic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Piercing)):DealDamage(2d10,Piercing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Poison)):DealDamage(2d10,Poison,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Psychic)):DealDamage(2d10,Psychic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Radiant)):DealDamage(2d10,Radiant,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Slashing)):DealDamage(2d10,Slashing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Thunder)):DealDamage(2d10,Thunder,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice10:2;EvocationAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d75561f-cf90-477f-b7a4-b9423c83a681" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledEvocation_7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9d1aa3c8-23be-4169-9230-6940a6b52c71" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc4ab7c8ag9eeag4d8fgb3cfg8605374016b7" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(SpellDamageTypeIs(DamageType.Acid)):DealDamage(1d12,Acid,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Bludgeoning)):DealDamage(1d12,Bludgeoning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Cold)):DealDamage(1d12,Cold,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Fire)):DealDamage(1d12,Fire,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Force)):DealDamage(1d12,Force,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Lightning)):DealDamage(1d12,Lightning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Necrotic)):DealDamage(1d12,Necrotic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Piercing)):DealDamage(1d12,Piercing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Poison)):DealDamage(1d12,Poison,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Psychic)):DealDamage(1d12,Psychic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Radiant)):DealDamage(1d12,Radiant,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Slashing)):DealDamage(1d12,Slashing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Thunder)):DealDamage(1d12,Thunder,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice12:1;EvocationAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="58f57bf1-7eb7-4365-8ec4-f6f542db6cd5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FueledEvocation_8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9d1aa3c8-23be-4169-9230-6940a6b52c71" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h809504dfga9afg4b1dg9eddg879f813b1275" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(SpellDamageTypeIs(DamageType.Acid)):DealDamage(2d12,Acid,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Bludgeoning)):DealDamage(2d12,Bludgeoning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Cold)):DealDamage(2d12,Cold,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Fire)):DealDamage(2d12,Fire,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Force)):DealDamage(2d12,Force,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Lightning)):DealDamage(2d12,Lightning,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Necrotic)):DealDamage(2d12,Necrotic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Piercing)):DealDamage(2d12,Piercing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Poison)):DealDamage(2d12,Poison,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Psychic)):DealDamage(2d12,Psychic,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Radiant)):DealDamage(2d12,Radiant,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Slashing)):DealDamage(2d12,Slashing,Magical,,0,,true,true);IF(SpellDamageTypeIs(DamageType.Thunder)):DealDamage(2d12,Thunder,Magical,,0,,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice12:2;EvocationAdeptTurn:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7f0825ba-2107-4c71-8ab6-ce17b8d09eac" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FairyTrickster" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6546b917g1c6dg4ca0g0808g9c4689c5032e" version="1" />
