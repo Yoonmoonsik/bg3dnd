@@ -11139,6 +11139,34 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e845b71e-8f8e-42b7-bb0c-6280a9e93375" />
+        <field name="Name" type="NameTableFieldDefinition" value="AbjurationAdept" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h35ab42ecg890bg4673g8b36g0db214e2d2cb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h810217c7g0f1cg4a06g91d0g72a388aeffb5" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ArcaneWard" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAGICINITIATE_SHIELD_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_LESSERRESTORATION_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_PROTECTIONFROMENERGY_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_BANISHMENT_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_CUREWOUNDS_MASS_UNLOCK,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="afa63695-df97-4273-ac97-3c2874cf6ae0" />
+        <field name="Name" type="NameTableFieldDefinition" value="AbjurationAdept_ProtectiveWard" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3cbe5c0g33fdg4a8cgb012gc5b65d1c1215" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h14527055g0d55g4611gbcd2g37bbc75e6ae8" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ArcaneWard" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpellOfSchool(SpellSchool.Abjuration) and not IsCantrip() and (HasUseCosts('SpellSlot',true) or HasUseCosts('WarlockSpellSlot',true) or HasUseCosts('ShadowSpellSlot',true));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,ABJURATIONADEPT_WARD_1);RemoveStatus(SELF,ABJURATIONADEPT_WARD_2);RemoveStatus(SELF,ABJURATIONADEPT_WARD_3);RemoveStatus(SELF,ABJURATIONADEPT_WARD_4);RemoveStatus(SELF,ABJURATIONADEPT_WARD_5);RemoveStatus(SELF,ABJURATIONADEPT_WARD_6);IF(SpellPowerLevelEqualTo(1)):ApplyStatus(SELF,ABJURATIONADEPT_WARD_1,100,-1);IF(SpellPowerLevelEqualTo(2)):ApplyStatus(SELF,ABJURATIONADEPT_WARD_2,100,-1);IF(SpellPowerLevelEqualTo(3)):ApplyStatus(SELF,ABJURATIONADEPT_WARD_3,100,-1);IF(SpellPowerLevelEqualTo(4)):ApplyStatus(SELF,ABJURATIONADEPT_WARD_4,100,-1);IF(SpellPowerLevelEqualTo(5)):ApplyStatus(SELF,ABJURATIONADEPT_WARD_5,100,-1);IF(SpellPowerLevelEqualTo(6)):ApplyStatus(SELF,ABJURATIONADEPT_WARD_6,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="add53424-dff2-4ea2-83a5-ab08d4e9ffb8" />
         <field name="Name" type="NameTableFieldDefinition" value="Actor" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="305d1edc-2a55-4a81-9b56-c76e91d96f36" />

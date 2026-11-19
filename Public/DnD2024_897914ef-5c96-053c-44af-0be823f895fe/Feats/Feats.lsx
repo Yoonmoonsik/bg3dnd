@@ -5,6 +5,12 @@
         <node id="root">
             <children>
                 <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="AbjurationAdept"/>
+                    <attribute id="PassivesAdded" type="LSString" value="AbjurationAdept;AbjurationAdept_ProtectiveWard"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);"/>
+                    <attribute id="UUID" type="guid" value="82035c7b-0ba6-4cda-bd5c-2bc8f019a5e0"/>
+                </node>
+                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="Alert"/>
                     <attribute id="Selectors" type="LSString" value="SelectPassives(e5a5b6fe-571c-4831-b752-0f7eea1a5659,1);SelectAbilities(5336dfdd-cc35-4909-a5d7-65f4e0e2f4f9,1,1,DEX_CON)"/>
                     <attribute id="UUID" type="guid" value="f57bd72c-be64-4855-9e3a-bb7d7665e656"/>

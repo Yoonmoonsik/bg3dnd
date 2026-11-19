@@ -16662,6 +16662,117 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="61160d8b-0d3f-4734-a3ca-2279cef31e0f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABJURATIONADEPT_WARD_1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;NonExtendable" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectiveWard_1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2e0f03dd-15b0-4232-98b4-5dfc1cdc1690" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABJURATIONADEPT_WARD_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="61160d8b-0d3f-4734-a3ca-2279cef31e0f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectiveWard_2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60821053-0fde-451f-b3c6-7c69c52a631f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABJURATIONADEPT_WARD_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="61160d8b-0d3f-4734-a3ca-2279cef31e0f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectiveWard_3);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1316acd6-8481-415d-868e-d7878c0467a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABJURATIONADEPT_WARD_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="61160d8b-0d3f-4734-a3ca-2279cef31e0f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectiveWard_4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="91d7b6a3-50b5-4623-89bd-259030614ec1" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABJURATIONADEPT_WARD_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="61160d8b-0d3f-4734-a3ca-2279cef31e0f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectiveWard_5);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f14c378b-ea6a-4b3d-b909-8eb2f8a4e3f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ABJURATIONADEPT_WARD_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="61160d8b-0d3f-4734-a3ca-2279cef31e0f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectiveWard_6);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ade2a0f-7f3a-438b-bd7d-9b5e5b5c4819" />
+        <field name="Name" type="NameTableFieldDefinition" value="PROTECTIVE_WARD_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3cbe5c0g33fdg4a8cgb012gc5b65d1c1215" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9de7f300g3b6cg4a3fgb840g9f16baea98c5" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(2)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ArcaneWard" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PROTECTIVE_WARD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(IsDowned()):RegainHitPoints(1)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b6d3ea6a-1fbb-4edf-9b97-52e65e189ea8" />
+        <field name="Name" type="NameTableFieldDefinition" value="PROTECTIVE_WARD_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ade2a0f-7f3a-438b-bd7d-9b5e5b5c4819" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(4)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3bbebb33-4a73-4d95-9777-fdf31f3dc08a" />
+        <field name="Name" type="NameTableFieldDefinition" value="PROTECTIVE_WARD_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ade2a0f-7f3a-438b-bd7d-9b5e5b5c4819" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(6)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(6);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ec67867-97e9-4561-bed4-df58fbbfca69" />
+        <field name="Name" type="NameTableFieldDefinition" value="PROTECTIVE_WARD_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ade2a0f-7f3a-438b-bd7d-9b5e5b5c4819" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(8)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(8);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ecc4673-7438-4d82-a3b0-ed1be8b879c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="PROTECTIVE_WARD_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ade2a0f-7f3a-438b-bd7d-9b5e5b5c4819" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(10)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="942f0f66-123b-47dd-828c-b1c2c04be952" />
+        <field name="Name" type="NameTableFieldDefinition" value="PROTECTIVE_WARD_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ade2a0f-7f3a-438b-bd7d-9b5e5b5c4819" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(12)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(12);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8d5759d1-cca2-4a4d-b315-0eb1336123c9" />
         <field name="Name" type="NameTableFieldDefinition" value="INSPIRING_LEADER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9124bb02g5aeag4145g847fgc24027b98519" version="2" />
@@ -17661,6 +17772,42 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SHIELD_UNLOCK" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Shield_Wizard,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13bd7c8b-d6ae-4d78-bb90-90ae24ce6743" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_LESSERRESTORATION_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_LESSERRESTORATION_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_LesserRestoration,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1f16d94-d27b-46df-a0f5-bc1c7c2909cd" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_PROTECTIONFROMENERGY_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_PROTECTIONFROMENERGY_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ProtectionFromEnergy,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c2b11828-fa33-4996-b827-7e3f85c2a7c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BANISHMENT_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BANISHMENT_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Banishment,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="36dd9522-9e59-4e1f-800e-b7d35b5e8cbd" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CUREWOUNDS_MASS_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CUREWOUNDS_MASS_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CureWounds_Mass,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

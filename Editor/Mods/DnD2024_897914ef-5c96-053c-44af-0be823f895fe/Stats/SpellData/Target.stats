@@ -22022,6 +22022,89 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c5f2be1d-1a41-4548-8424-643b1358103b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectiveWard" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead()" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and not Dead()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ArcaneWard" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3cbe5c0g33fdg4a8cgb012gc5b65d1c1215" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h33ab87a6g890cg48e0g8324g3e37f32aa2f3" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);GainTemporaryHitPoints(2)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_HealingWord_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Healing_HealingWord_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;2f893fad-98eb-47cf-a524-dd4efd42bc2a,,;ca3147a8-2cf6-45a8-ac9a-1ce0fc11305f,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;4156d364-d2c0-4a01-908c-3552f78f434d,,;6f0a29b6-0ae8-4ebf-a1e4-8069c4a6ad16,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="96a51ac8-2e7e-4718-bb62-dcfd18964a02" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="7a73fa11-81e8-44bc-8653-a0d0ebbecf4b" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="70319a43-6342-4996-811d-dd50df8b3fa1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9ddbe8bc-f4ab-4ef9-ac1a-6bad1a091524" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectiveWard_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5f2be1d-1a41-4548-8424-643b1358103b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_1,100,-1);RemoveStatus(SELF,ABJURATIONADEPT_WARD_1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);GainTemporaryHitPoints(2)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_1,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98cb32c0-afcc-4c83-a3b6-289f79a1193a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectiveWard_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5f2be1d-1a41-4548-8424-643b1358103b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_2,100,-1);RemoveStatus(SELF,ABJURATIONADEPT_WARD_2);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);GainTemporaryHitPoints(4)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_2,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="907cc36e-e0fa-4677-9edf-78e83de08544" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectiveWard_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5f2be1d-1a41-4548-8424-643b1358103b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_3,100,-1);RemoveStatus(SELF,ABJURATIONADEPT_WARD_3);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);GainTemporaryHitPoints(6)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_3,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a48f4034-9556-4e5d-a9d2-3c3947409dc2" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectiveWard_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5f2be1d-1a41-4548-8424-643b1358103b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_4,100,-1);RemoveStatus(SELF,ABJURATIONADEPT_WARD_4);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);GainTemporaryHitPoints(8)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_4,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ad4c9eee-668d-4be9-864e-366bb2bb551a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectiveWard_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5f2be1d-1a41-4548-8424-643b1358103b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_5,100,-1);RemoveStatus(SELF,ABJURATIONADEPT_WARD_5);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);GainTemporaryHitPoints(10)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_5,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22a1d8a7-4670-42ec-9763-6ba764a38c87" />
+        <field name="Name" type="NameTableFieldDefinition" value="ProtectiveWard_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5f2be1d-1a41-4548-8424-643b1358103b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_6,100,-1);RemoveStatus(SELF,ABJURATIONADEPT_WARD_6);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);GainTemporaryHitPoints(12)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PROTECTIVE_WARD_6,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d36e42ed-4618-4ffa-a962-f4d91f567927" />
         <field name="Name" type="NameTableFieldDefinition" value="DualWielder_OffhandAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="34c87ba1-754a-4700-9178-d939ad7003c6" />
