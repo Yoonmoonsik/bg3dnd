@@ -44,6 +44,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="608c666d-377e-432b-9850-3def0152e04a" />
+        <field name="Name" type="NameTableFieldDefinition" value="CATNAP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5c7b15bd-fae8-4612-b432-ca4e76d1cfe8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0d9f45c2gecd2g4068gb2b3g45d6e5ff7274" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h76105da2g1bdbg4924g9e29g48ecbf01a229" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(CATNAP_SHORT_REST,100,0);IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(CATNAP_RESTED,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="538f69b9-03ab-485b-8179-aa1f4f163ad8" />
         <field name="Name" type="NameTableFieldDefinition" value="HOLD_PERSON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7e487a04-156c-40d7-89d3-7f219ca98fc5" />

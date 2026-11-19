@@ -2695,6 +2695,17 @@ using "MENTAL_PRISON"
 data "DescriptionParams" "DealDamage(10d10,Necrotic)"
 data "Passives" "MentalPrison_Backlash_Necrotic"
 
+new entry "CATNAP_RESTED"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "CATNAP_SHORT_REST"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "OnApplyFunctors" "IF(HasPassive('FontOfInspiration')):RestoreResource(BardicInspiration,100%,0);ResetCooldowns(UntilShortRest);RestoreResource(SpellSlot,100%,1);RestoreResource(SpellSlot,100%,2);RestoreResource(SuperiorityDie,100%,0);RestoreResource(KiPoint,100%,0);RestoreResource(WarlockSpellSlot,100%,1);RestoreResource(WarlockSpellSlot,100%,2);RestoreResource(WarlockSpellSlot,100%,3);RestoreResource(WarlockSpellSlot,100%,4);RestoreResource(WarlockSpellSlot,100%,5);RestoreResource(WarlockSpellSlot,100%,6);RestoreResource(WeaponActionPoint,100%,0);RestoreResource(ChannelOath,100%,0);RestoreResource(ArcaneShot,100%,0);ApplyStatus(ALCH_POTION_REST_SLEEP_LESSER_RESTORATION_1,100,0);ApplyStatus(SHORT_RESTING,100,20)"
+
 new entry "__EVOCATION__"
 type "StatusData"
 data "StatusType" "BOOST"

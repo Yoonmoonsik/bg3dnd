@@ -3362,6 +3362,21 @@
         <field name="Passives" type="StringTableFieldDefinition" value="MentalPrison_Backlash_Necrotic" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cc210d0d-fdd1-4d0a-b64b-545ba63c2bca" />
+        <field name="Name" type="NameTableFieldDefinition" value="CATNAP_RESTED" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f3fb9d64-2a1a-4c7e-ba57-10d01fe165c3" />
+        <field name="Name" type="NameTableFieldDefinition" value="CATNAP_SHORT_REST" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasPassive('FontOfInspiration')):RestoreResource(BardicInspiration,100%,0);ResetCooldowns(UntilShortRest);RestoreResource(SpellSlot,100%,1);RestoreResource(SpellSlot,100%,2);RestoreResource(SuperiorityDie,100%,0);RestoreResource(KiPoint,100%,0);RestoreResource(WarlockSpellSlot,100%,1);RestoreResource(WarlockSpellSlot,100%,2);RestoreResource(WarlockSpellSlot,100%,3);RestoreResource(WarlockSpellSlot,100%,4);RestoreResource(WarlockSpellSlot,100%,5);RestoreResource(WarlockSpellSlot,100%,6);RestoreResource(WeaponActionPoint,100%,0);RestoreResource(ChannelOath,100%,0);RestoreResource(ArcaneShot,100%,0);ApplyStatus(ALCH_POTION_REST_SLEEP_LESSER_RESTORATION_1,100,0);ApplyStatus(SHORT_RESTING,100,20)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a664167f-49ee-460a-afc2-6cc0e44b0a12" />
