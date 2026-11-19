@@ -182,6 +182,12 @@
                     <attribute id="UUID" type="guid" value="f09e0734-4d05-4596-9e4b-e9ec758cd280"/>
                 </node>
                 <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="EnchantmentAdept"/>
+                    <attribute id="PassivesAdded" type="LSString" value="EnchantmentAdept;EnchantmentAdept_SubtleEnchantments"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);"/>
+                    <attribute id="UUID" type="guid" value="a4018e3c-5420-4433-890c-801b6e6902b0"/>
+                </node>
+                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="EnclaveMagic"/>
                     <attribute id="PassivesAdded" type="LSString" value="EnclaveMagic"/>
                     <attribute id="Requirements" type="LSString" value="HasPassive(&apos;EmeraldEnclaveFledgling&apos;,context.Source)"/>

@@ -11204,6 +11204,31 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b80fc0f9-7ec0-4d0d-a0af-64f934035ecc" />
+        <field name="Name" type="NameTableFieldDefinition" value="EnchantmentAdept" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hce85101fgc90fg439ag89f7g0e4b0d91600f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heb27c095g4e72g46fdg9663gba70bf9af030" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_DominatePerson" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAGICINITIATE_DISSONANTWHISPERS_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_ENTHRALL_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_HOLDPERSON_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_DOMINATEBEAST_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_DOMINATEPERSON_UNLOCK,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0386f087-ac30-43cc-b1cb-549640ac76d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="EnchantmentAdept_SubtleEnchantments" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb6df0f46g5db3g44a9gb137gd8c33d5b0bdf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h382503c6g2bc1g45e5g80edgd190a03f5c22" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_DominatePerson" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpellSchool(SpellSchool.Enchantment) and (HasUseCosts('SpellSlot') or HasUseCosts('WarlockSpellSlot') or HasUseCosts('ShadowSpellSlot')),ModifySpellFlags(Verbal,0),ModifySpellFlags(Stealth,1));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="add53424-dff2-4ea2-83a5-ab08d4e9ffb8" />
         <field name="Name" type="NameTableFieldDefinition" value="Actor" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="305d1edc-2a55-4a81-9b56-c76e91d96f36" />
