@@ -16825,6 +16825,64 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f044727f-1970-4cce-b5ce-91a2c03e6bbd" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICAL_AUGMENTATION_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha449cdccg4b23g4e55g838fg543ee21c3815" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hde1723d4g7941g46b8g994eg7cf9ba1e7646" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Polymorph" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICAL_AUGMENTATION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,1.5,0);" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f731b3f-def5-4358-8490-a8a7f714d343" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICAL_AUGMENTATION_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f044727f-1970-4cce-b5ce-91a2c03e6bbd" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d5f5c1d-4647-4ce5-bfa0-4d6dcd210710" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICAL_AUGMENTATION_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f044727f-1970-4cce-b5ce-91a2c03e6bbd" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,4.5,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ddff6b83-9784-4588-ba3a-c48f8cff64dd" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICAL_AUGMENTATION_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f044727f-1970-4cce-b5ce-91a2c03e6bbd" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,6,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="61abb669-9f02-44ad-bb87-6c9556dc2382" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICAL_AUGMENTATION_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f044727f-1970-4cce-b5ce-91a2c03e6bbd" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(7.5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,7.5,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="38f15b5e-be11-47cc-852c-a5012fb6328c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICAL_AUGMENTATION_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f044727f-1970-4cce-b5ce-91a2c03e6bbd" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,9,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8d5759d1-cca2-4a4d-b315-0eb1336123c9" />
         <field name="Name" type="NameTableFieldDefinition" value="INSPIRING_LEADER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9124bb02g5aeag4145g847fgc24027b98519" version="2" />
@@ -17914,6 +17972,42 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CONTAGION_UNLOCK" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Contagion,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="58721fdb-6b16-46a8-93bf-67f0c63c67a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_KNOCK_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_KNOCK_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Knock,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f69360a-bb57-441b-a35c-738197c57b20" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_SLOW_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SLOW_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Slow,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0fb64f33-580a-4daa-a55c-3ca013fc83a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_POLYMORPH_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_POLYMORPH_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Polymorph,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6b0b00c5-9548-41a4-a40c-95398190c48b" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_TELEKINESIS_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_TELEKINESIS_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Throw_Telekinesis,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

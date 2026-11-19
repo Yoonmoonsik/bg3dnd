@@ -641,6 +641,12 @@
                     <attribute id="UUID" type="guid" value="3428189b-9a9b-40f5-979b-bfc6833a085c"/>
                 </node>
                 <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="TransmutationAdept"/>
+                    <attribute id="PassivesAdded" type="LSString" value="TransmutationAdept;TransmutationAdept_MagicalAugmentation"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);"/>
+                    <attribute id="UUID" type="guid" value="b1cfd977-e782-4cf5-a984-3fd259d6ba53"/>
+                </node>
+                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="VigorOfTheHillGiant"/>
                     <attribute id="PassivesAdded" type="LSString" value="VigorOfTheHillGiant"/>
                     <attribute id="Requirements" type="LSString" value="HasStatus(&apos;STRIKE_OF_THE_GIANTS_HILL&apos;,context.Source)"/>
