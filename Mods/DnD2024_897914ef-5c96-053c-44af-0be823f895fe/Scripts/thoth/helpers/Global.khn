@@ -129,3 +129,23 @@ end
 function FeatRequirementAbilityGreaterEqualIWC(value)
     return ConditionResult(context.Source.Intelligence >= value) | ConditionResult(context.Source.Wisdom >= value) | ConditionResult(context.Source.Charisma >= value)
 end
+
+-- Conjuration Adept (Persistent Conjuration): the highest of Intelligence, Wisdom and Charisma.
+-- Intelligence wins ties, then Wisdom, then Charisma, so exactly one bonus applies.
+function IntelligenceIsBestMentalAbility(entity)
+    entity = entity or context.Source
+    local intMod = GetModifier(entity.Intelligence)
+    return ConditionResult(intMod >= GetModifier(entity.Wisdom) and intMod >= GetModifier(entity.Charisma))
+end
+
+function WisdomIsBestMentalAbility(entity)
+    entity = entity or context.Source
+    local wisMod = GetModifier(entity.Wisdom)
+    return ConditionResult(wisMod > GetModifier(entity.Intelligence) and wisMod >= GetModifier(entity.Charisma))
+end
+
+function CharismaIsBestMentalAbility(entity)
+    entity = entity or context.Source
+    local chaMod = GetModifier(entity.Charisma)
+    return ConditionResult(chaMod > GetModifier(entity.Intelligence) and chaMod > GetModifier(entity.Wisdom))
+end

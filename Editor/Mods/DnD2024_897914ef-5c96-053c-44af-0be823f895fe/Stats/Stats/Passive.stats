@@ -11167,6 +11167,43 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b37c4784-6025-4e44-9b61-acb87ff9239c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConjurationAdept" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb267af5agd9e0g4047ga31egbf090fa98c70" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2e20751fg3a05g4a37gb7cfg5b0e7f803a34" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ConjureElemental" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAGICINITIATE_ENTANGLE_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_MISTYSTEP_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_SUMMONBEAST_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_DIMENSIONDOOR_UNLOCK,100,-1);ApplyStatus(MAGICINITIATE_CONJUREELEMENTAL_UNLOCK,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="105ab4c0-88c2-4880-b5c2-fe326bdef407" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConjurationAdept_PersistentConjuration" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb918b251g0181g4dafg824dg084392e05771" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha2e5e8a6g475cg4e4egb2bag3f0870d0f83b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ConjureElemental" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasSpellFlag(SpellFlags.Concentration) and IsSpellOfSchool(SpellSchool.Conjuration)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,PERSISTENT_CONJURATION,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b23208a5-baa5-4b35-868d-b5fccab3d90d" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConjurationAdept_PersistentConjuration_Remove" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasSpellFlag(SpellFlags.Concentration) and not IsSpellOfSchool(SpellSchool.Conjuration)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,PERSISTENT_CONJURATION)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="add53424-dff2-4ea2-83a5-ab08d4e9ffb8" />
         <field name="Name" type="NameTableFieldDefinition" value="Actor" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="305d1edc-2a55-4a81-9b56-c76e91d96f36" />

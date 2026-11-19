@@ -54,6 +54,12 @@
                     <attribute id="UUID" type="guid" value="0ffdc323-8a42-4d1d-84b8-bf4997918bf9"/>
                 </node>
                 <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="ConjurationAdept"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ConjurationAdept;ConjurationAdept_PersistentConjuration;ConjurationAdept_PersistentConjuration_Remove"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);"/>
+                    <attribute id="UUID" type="guid" value="1c3724e4-ebdc-40eb-812c-788c03327a44"/>
+                </node>
+                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="CrossbowExpert"/>
                     <attribute id="PassivesAdded" type="LSString" value="CrossbowExpert_PointBlank;CrossbowExpert_Wounding"/>
                     <attribute id="Requirements" type="LSString" value="FeatRequirementAbilityGreaterEqual(&apos;Dexterity&apos;,13)"/>

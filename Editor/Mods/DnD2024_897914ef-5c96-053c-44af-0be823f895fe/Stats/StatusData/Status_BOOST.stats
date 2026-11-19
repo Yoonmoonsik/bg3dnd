@@ -16773,6 +16773,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f13ce17f-7a0b-41a3-a57e-654ff8aedd1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="PERSISTENT_CONJURATION" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PERSISTENT_CONJURATION" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsConcentrating() and not (HasSavingThrowWithAbility(Ability.Constitution) or HasSavingThrowWithAbility(Ability.Strength) or HasSavingThrowWithAbility(Ability.Dexterity) or HasSavingThrowWithAbility(Ability.Intelligence) or HasSavingThrowWithAbility(Ability.Wisdom) or HasSavingThrowWithAbility(Ability.Charisma)) and IntelligenceIsBestMentalAbility()):RollBonus(SavingThrow,IntelligenceModifier);IF(IsConcentrating() and not (HasSavingThrowWithAbility(Ability.Constitution) or HasSavingThrowWithAbility(Ability.Strength) or HasSavingThrowWithAbility(Ability.Dexterity) or HasSavingThrowWithAbility(Ability.Intelligence) or HasSavingThrowWithAbility(Ability.Wisdom) or HasSavingThrowWithAbility(Ability.Charisma)) and WisdomIsBestMentalAbility()):RollBonus(SavingThrow,WisdomModifier);IF(IsConcentrating() and not (HasSavingThrowWithAbility(Ability.Constitution) or HasSavingThrowWithAbility(Ability.Strength) or HasSavingThrowWithAbility(Ability.Dexterity) or HasSavingThrowWithAbility(Ability.Intelligence) or HasSavingThrowWithAbility(Ability.Wisdom) or HasSavingThrowWithAbility(Ability.Charisma)) and CharismaIsBestMentalAbility()):RollBonus(SavingThrow,CharismaModifier);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8d5759d1-cca2-4a4d-b315-0eb1336123c9" />
         <field name="Name" type="NameTableFieldDefinition" value="INSPIRING_LEADER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9124bb02g5aeag4145g847fgc24027b98519" version="2" />
@@ -17808,6 +17817,33 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CUREWOUNDS_MASS_UNLOCK" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CureWounds_Mass,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="65da4c01-26e3-4d12-8488-bfd65e583c12" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_SUMMONBEAST_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_SUMMONBEAST_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SummonBeast,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="88a1fe4d-93fe-4ef8-8a38-12674113ca2d" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_DIMENSIONDOOR_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_DIMENSIONDOOR_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Teleportation_DimensionDoor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e38eb4df-9667-4a73-b90c-856ee241cd75" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CONJUREELEMENTAL_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CONJUREELEMENTAL_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ConjureElemental_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
