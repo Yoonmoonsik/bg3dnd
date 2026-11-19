@@ -3854,6 +3854,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b63ae0f4-ac2d-46d4-ae1c-a527ea13ab7f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SpellResistant" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb5d65151g54dbg47c0gb3b9gd5ede7dcc725" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h26e450e4g3146g418bg93abg6cfb8e43bf14" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(6) and IsSpell();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,1d6);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellResistant:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7f0825ba-2107-4c71-8ab6-ce17b8d09eac" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FairyTrickster" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6546b917g1c6dg4ca0g0808g9c4689c5032e" version="1" />

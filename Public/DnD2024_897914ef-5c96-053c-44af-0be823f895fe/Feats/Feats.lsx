@@ -606,6 +606,12 @@
                     <attribute id="UUID" type="guid" value="41ad39b6-a333-4359-aed0-aed465318ac1"/>
                 </node>
                 <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="SpellResistant"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SpellResistant"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(5336dfdd-cc35-4909-a5d7-65f4e0e2f4f9,1,1,DEX_CON);SelectPassives(73167547-b5ef-49ee-9273-eecc73f130ae,1)"/>
+                    <attribute id="UUID" type="guid" value="080e401d-7720-4d72-b793-4e3a8d99fdfa"/>
+                </node>
+                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="SpellSniper"/>
                     <attribute id="PassivesAdded" type="LSString" value="SpellSniper;SpellSniper_Melee"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);"/>

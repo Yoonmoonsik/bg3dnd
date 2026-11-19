@@ -11259,6 +11259,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ab23c83-18c6-491e-9841-02f63fcc142b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpellResistant" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfa676888g9c48g4760g8e6egd6d2cdc24f2a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdfa117a4g319cg4637gb15cg98b36f310a5c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="700" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SpellResistant);ActionResource(SpellResistant,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(SpellResistant,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(SpellResistant,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b80fc0f9-7ec0-4d0d-a0af-64f934035ecc" />
         <field name="Name" type="NameTableFieldDefinition" value="EnchantmentAdept" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hce85101fgc90fg439ag89f7g0e4b0d91600f" version="1" />
@@ -14413,6 +14425,30 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Psychic,Resistant);" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6795184e-d839-4339-881e-997e86646146" />
+        <field name="Name" type="NameTableFieldDefinition" value="ResistancePassive_Radiant" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1acad36eg1d2ag46c5g9b98g906b8a17bb70_12" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd5681885g00deg439dg8261gd2e32af964df" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="500" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Radiant,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Radiant" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ffbc9dea-825e-46de-bcb2-419952f851c4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ResistancePassive_Thunder" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1acad36eg1d2ag46c5g9b98g906b8a17bb70_5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdc1ec119g2430g4491g8e4fg80891eb60760" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="500" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Thunder,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
