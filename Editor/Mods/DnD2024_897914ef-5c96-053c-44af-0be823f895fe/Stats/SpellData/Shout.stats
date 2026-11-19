@@ -12315,6 +12315,143 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ae197b5-fa6c-44d1-83d7-7c7457316329" />
+        <field name="Name" type="NameTableFieldDefinition" value="LifeManipulation" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_VampiricTouch" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19cc07f9g0509g4dadg94efg75842c487501" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb5bcf795g120cg4301gaaf6ge6db5735b86a" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;4156d364-d2c0-4a01-908c-3552f78f434d,,;6f0a29b6-0ae8-4ebf-a1e4-8069c4a6ad16,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Peaceful" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_LifeManipulation_06_1;Shout_LifeManipulation_06_2;Shout_LifeManipulation_08_1;Shout_LifeManipulation_08_2;Shout_LifeManipulation_10_1;Shout_LifeManipulation_10_2;Shout_LifeManipulation_12_1;Shout_LifeManipulation_12_2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="85bd4b28-ff78-4ad2-a9e5-8896ebb10dff" />
+        <field name="Name" type="NameTableFieldDefinition" value="LifeManipulation_06_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ae197b5-fa6c-44d1-83d7-7c7457316329" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_LifeManipulation" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('NECROMANCYADEPT_LIFE_1',context.Source)):RegainHitPoints(1d6+1);IF(HasStatus('NECROMANCYADEPT_LIFE_2',context.Source)):RegainHitPoints(1d6+2);IF(HasStatus('NECROMANCYADEPT_LIFE_3',context.Source)):RegainHitPoints(1d6+3);IF(HasStatus('NECROMANCYADEPT_LIFE_4',context.Source)):RegainHitPoints(1d6+4);IF(HasStatus('NECROMANCYADEPT_LIFE_5',context.Source)):RegainHitPoints(1d6+5);IF(HasStatus('NECROMANCYADEPT_LIFE_6',context.Source)):RegainHitPoints(1d6+6);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_1);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_2);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_3);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_4);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_5);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_6);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hecaa3219gb282g40a5g83aeg62ba385a0156" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d6)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d6)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDice06:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c991ea4-c9a2-4996-9927-464085bfc4d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="LifeManipulation_06_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ae197b5-fa6c-44d1-83d7-7c7457316329" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_LifeManipulation" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('NECROMANCYADEPT_LIFE_1',context.Source)):RegainHitPoints(2d6+1);IF(HasStatus('NECROMANCYADEPT_LIFE_2',context.Source)):RegainHitPoints(2d6+2);IF(HasStatus('NECROMANCYADEPT_LIFE_3',context.Source)):RegainHitPoints(2d6+3);IF(HasStatus('NECROMANCYADEPT_LIFE_4',context.Source)):RegainHitPoints(2d6+4);IF(HasStatus('NECROMANCYADEPT_LIFE_5',context.Source)):RegainHitPoints(2d6+5);IF(HasStatus('NECROMANCYADEPT_LIFE_6',context.Source)):RegainHitPoints(2d6+6);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_1);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_2);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_3);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_4);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_5);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_6);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb9d0aa6eg4144g4186g83f6g20ff6eec9197" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(2d6)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d6)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDice06:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="90852ce7-c39e-49b6-8623-c15cb688409f" />
+        <field name="Name" type="NameTableFieldDefinition" value="LifeManipulation_08_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ae197b5-fa6c-44d1-83d7-7c7457316329" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_LifeManipulation" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('NECROMANCYADEPT_LIFE_1',context.Source)):RegainHitPoints(1d8+1);IF(HasStatus('NECROMANCYADEPT_LIFE_2',context.Source)):RegainHitPoints(1d8+2);IF(HasStatus('NECROMANCYADEPT_LIFE_3',context.Source)):RegainHitPoints(1d8+3);IF(HasStatus('NECROMANCYADEPT_LIFE_4',context.Source)):RegainHitPoints(1d8+4);IF(HasStatus('NECROMANCYADEPT_LIFE_5',context.Source)):RegainHitPoints(1d8+5);IF(HasStatus('NECROMANCYADEPT_LIFE_6',context.Source)):RegainHitPoints(1d8+6);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_1);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_2);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_3);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_4);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_5);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_6);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h29a22493g556fg433aga0e5g336aa255500d" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d8)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d8)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDice08:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca0cd7f7-9044-4eea-b92d-4f0fec5a9e0d" />
+        <field name="Name" type="NameTableFieldDefinition" value="LifeManipulation_08_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ae197b5-fa6c-44d1-83d7-7c7457316329" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_LifeManipulation" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('NECROMANCYADEPT_LIFE_1',context.Source)):RegainHitPoints(2d8+1);IF(HasStatus('NECROMANCYADEPT_LIFE_2',context.Source)):RegainHitPoints(2d8+2);IF(HasStatus('NECROMANCYADEPT_LIFE_3',context.Source)):RegainHitPoints(2d8+3);IF(HasStatus('NECROMANCYADEPT_LIFE_4',context.Source)):RegainHitPoints(2d8+4);IF(HasStatus('NECROMANCYADEPT_LIFE_5',context.Source)):RegainHitPoints(2d8+5);IF(HasStatus('NECROMANCYADEPT_LIFE_6',context.Source)):RegainHitPoints(2d8+6);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_1);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_2);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_3);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_4);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_5);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_6);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hefe46e49g05dcg4c8aga646g07d49ba76b35" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(2d8)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d8)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDice08:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c68a511-42b1-4efe-9864-edd57ce7f8df" />
+        <field name="Name" type="NameTableFieldDefinition" value="LifeManipulation_10_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ae197b5-fa6c-44d1-83d7-7c7457316329" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_LifeManipulation" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('NECROMANCYADEPT_LIFE_1',context.Source)):RegainHitPoints(1d10+1);IF(HasStatus('NECROMANCYADEPT_LIFE_2',context.Source)):RegainHitPoints(1d10+2);IF(HasStatus('NECROMANCYADEPT_LIFE_3',context.Source)):RegainHitPoints(1d10+3);IF(HasStatus('NECROMANCYADEPT_LIFE_4',context.Source)):RegainHitPoints(1d10+4);IF(HasStatus('NECROMANCYADEPT_LIFE_5',context.Source)):RegainHitPoints(1d10+5);IF(HasStatus('NECROMANCYADEPT_LIFE_6',context.Source)):RegainHitPoints(1d10+6);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_1);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_2);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_3);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_4);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_5);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_6);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h689fd587gb176g424bg8741g35bf4b2622bb" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d10)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDice10:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="77fe88fc-7178-4465-b915-932c41e1bc49" />
+        <field name="Name" type="NameTableFieldDefinition" value="LifeManipulation_10_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ae197b5-fa6c-44d1-83d7-7c7457316329" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_LifeManipulation" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('NECROMANCYADEPT_LIFE_1',context.Source)):RegainHitPoints(2d10+1);IF(HasStatus('NECROMANCYADEPT_LIFE_2',context.Source)):RegainHitPoints(2d10+2);IF(HasStatus('NECROMANCYADEPT_LIFE_3',context.Source)):RegainHitPoints(2d10+3);IF(HasStatus('NECROMANCYADEPT_LIFE_4',context.Source)):RegainHitPoints(2d10+4);IF(HasStatus('NECROMANCYADEPT_LIFE_5',context.Source)):RegainHitPoints(2d10+5);IF(HasStatus('NECROMANCYADEPT_LIFE_6',context.Source)):RegainHitPoints(2d10+6);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_1);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_2);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_3);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_4);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_5);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_6);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h83af4074g4600g4c0bgba21g8f6e4b55f39d" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(2d10)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDice10:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4c798d69-e077-4ab7-be55-69fd1d5a05ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="LifeManipulation_12_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ae197b5-fa6c-44d1-83d7-7c7457316329" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_LifeManipulation" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('NECROMANCYADEPT_LIFE_1',context.Source)):RegainHitPoints(1d12+1);IF(HasStatus('NECROMANCYADEPT_LIFE_2',context.Source)):RegainHitPoints(1d12+2);IF(HasStatus('NECROMANCYADEPT_LIFE_3',context.Source)):RegainHitPoints(1d12+3);IF(HasStatus('NECROMANCYADEPT_LIFE_4',context.Source)):RegainHitPoints(1d12+4);IF(HasStatus('NECROMANCYADEPT_LIFE_5',context.Source)):RegainHitPoints(1d12+5);IF(HasStatus('NECROMANCYADEPT_LIFE_6',context.Source)):RegainHitPoints(1d12+6);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_1);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_2);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_3);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_4);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_5);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_6);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hadd6e53fg0f00g4f9fg8ae6gf8529f8b0173" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d12)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d12)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDice12:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="83196629-acd8-4b9c-8712-2e08a0559da5" />
+        <field name="Name" type="NameTableFieldDefinition" value="LifeManipulation_12_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ae197b5-fa6c-44d1-83d7-7c7457316329" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_LifeManipulation" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('NECROMANCYADEPT_LIFE_1',context.Source)):RegainHitPoints(2d12+1);IF(HasStatus('NECROMANCYADEPT_LIFE_2',context.Source)):RegainHitPoints(2d12+2);IF(HasStatus('NECROMANCYADEPT_LIFE_3',context.Source)):RegainHitPoints(2d12+3);IF(HasStatus('NECROMANCYADEPT_LIFE_4',context.Source)):RegainHitPoints(2d12+4);IF(HasStatus('NECROMANCYADEPT_LIFE_5',context.Source)):RegainHitPoints(2d12+5);IF(HasStatus('NECROMANCYADEPT_LIFE_6',context.Source)):RegainHitPoints(2d12+6);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_1);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_2);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_3);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_4);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_5);RemoveStatus(SELF,NECROMANCYADEPT_LIFE_6);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h94ab1219g5856g458fg8558g2d687fad1394" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(2d12)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d12)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDice12:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f716580a-c586-4825-9760-34a029cb8474" />
         <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_Ritual" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6693c822-f1c9-463a-9d9a-1c4d562b1e00" />

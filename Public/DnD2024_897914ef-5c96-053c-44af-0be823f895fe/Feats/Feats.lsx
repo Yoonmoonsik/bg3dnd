@@ -454,6 +454,12 @@
                     <attribute id="UUID" type="guid" value="46557a4e-aa90-4ce8-b9e5-a7f5a1603cea"/>
                 </node>
                 <node id="Feat">
+                    <attribute id="Name" type="FixedString" value="NecromancyAdept"/>
+                    <attribute id="PassivesAdded" type="LSString" value="NecromancyAdept;NecromancyAdept_LifeManipulation"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilities(e9912c21-bfdf-4c75-ab58-0750e257e76c,1,1,INT_WIS_CHA);"/>
+                    <attribute id="UUID" type="guid" value="df49a86a-7028-4873-bf17-008da2c69708"/>
+                </node>
+                <node id="Feat">
                     <attribute id="Name" type="FixedString" value="OrcishFury"/>
                     <attribute id="PassivesAdded" type="LSString" value="OrcishFury"/>
                     <attribute id="Requirements" type="LSString" value="Tagged(&apos;HALFORC&apos;,context.Source)"/>

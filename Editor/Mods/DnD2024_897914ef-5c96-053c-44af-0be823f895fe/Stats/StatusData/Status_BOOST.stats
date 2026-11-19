@@ -16782,6 +16782,49 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="274130c4-aef1-4834-b644-ba0cba0b849f" />
+        <field name="Name" type="NameTableFieldDefinition" value="NECROMANCYADEPT_LIFE_1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;NonExtendable" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_LifeManipulation);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0364647-c7b2-43c1-96f7-074c8f091446" />
+        <field name="Name" type="NameTableFieldDefinition" value="NECROMANCYADEPT_LIFE_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="274130c4-aef1-4834-b644-ba0cba0b849f" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1983ad87-1613-4de5-8ac8-5869035186bb" />
+        <field name="Name" type="NameTableFieldDefinition" value="NECROMANCYADEPT_LIFE_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="274130c4-aef1-4834-b644-ba0cba0b849f" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0dd8fb0c-a507-4126-ac87-044b5e401246" />
+        <field name="Name" type="NameTableFieldDefinition" value="NECROMANCYADEPT_LIFE_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="274130c4-aef1-4834-b644-ba0cba0b849f" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7feb42a4-8a02-4af3-9e19-be4c1a435748" />
+        <field name="Name" type="NameTableFieldDefinition" value="NECROMANCYADEPT_LIFE_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="274130c4-aef1-4834-b644-ba0cba0b849f" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ca6e6ce-f1cc-4223-8bba-52d5dd7a470e" />
+        <field name="Name" type="NameTableFieldDefinition" value="NECROMANCYADEPT_LIFE_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="274130c4-aef1-4834-b644-ba0cba0b849f" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8d5759d1-cca2-4a4d-b315-0eb1336123c9" />
         <field name="Name" type="NameTableFieldDefinition" value="INSPIRING_LEADER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9124bb02g5aeag4145g847fgc24027b98519" version="2" />
@@ -17844,6 +17887,33 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CONJUREELEMENTAL_UNLOCK" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ConjureElemental_Container,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66acdd5f-9c6f-4a54-910e-4cbe6cd19b8b" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_VAMPIRICTOUCH_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_VAMPIRICTOUCH_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_VampiricTouch,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5be23595-0e7c-4b9c-bc57-07ec308335d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_BLIGHT_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_BLIGHT_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Blight,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a4f57c79-9ab9-4fa6-9a9d-a7c28b49ab29" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGICINITIATE_CONTAGION_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="719ec765-2cb2-4c4c-b520-c35fa8fb5560" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAGICINITIATE_CONTAGION_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Contagion,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
