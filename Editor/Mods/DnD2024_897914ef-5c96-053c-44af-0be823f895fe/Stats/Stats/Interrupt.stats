@@ -3679,7 +3679,7 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsSpell() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and HasFunctor(StatsFunctorType.DealDamage) and SpellDamageTypeIs(DamageType.Radiant) and not Dead(context.Target) and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsSpell() and Self(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and SpellDamageTypeIs(DamageType.Radiant) and not Dead(context.Target) and not AnyEntityIsItem();" />
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Radiant,Magical,,0,,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="HitPointDice06:1;SpellfireAdeptTurn:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="FueledSpellfire" />
