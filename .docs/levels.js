@@ -3,14 +3,14 @@
 // The per-level table of a progression (class and subclass features on the class page).
 const LEVEL_T = {
   en: {
-    level: "Level", content: "Features", spells: "Spells", actions: "Class Actions", learn_cantrip: n => `Learn ${n} cantrip${n > 1 ? "s" : ""}`,
+    level: "Level", content: "Features", spells: "Spells", actions: "Class Actions", toggle: "Toggle", learn_cantrip: n => `Learn ${n} cantrip${n > 1 ? "s" : ""}`,
     learn_spell: n => `Learn ${n} spell${n > 1 ? "s" : ""}`, choose: n => `Choose ${n}`,
     skills: n => `${n} skill proficienc${n > 1 ? "ies" : "y"}`, expertise: n => `Expertise in ${n} skill${n > 1 ? "s" : ""}`,
     feat: "Feat", slot: n => `Level ${n} spell slot`, proficiency: "Proficiency", resources: "Resources",
     cantrip_one: "Cantrip", level_n: n => `Level ${n}`, concentration: "Concentration",
   },
   ko: {
-    level: "레벨", content: "내용", spells: "주문", actions: "직업 행동", learn_cantrip: n => `소마법 ${n}개 습득`,
+    level: "레벨", content: "내용", spells: "주문", actions: "직업 행동", toggle: "토글", learn_cantrip: n => `소마법 ${n}개 습득`,
     learn_spell: n => `주문 ${n}개 습득`, choose: n => `${n}개 선택`,
     skills: n => `기술 숙련 ${n}개`, expertise: n => `기술 통달 ${n}개`,
     feat: "재주", slot: n => `${n}레벨 주문 슬롯`, proficiency: "숙련", resources: "자원",
@@ -69,7 +69,7 @@ function levelItems(l, lang, esc, chip, own, scope) {
   };
   const res = r => r.slot ? `${t("slot")(r.slot)} +${r.count}` : `${L(r.name)} +${r.count}`;
   return [
-    ...l.traits.map(x => `<strong>${esc(L(x.name))}</strong>${L(x.desc) ? ` — ${esc(L(x.desc))}` : ""}`),
+    ...l.traits.map(x => `<strong>${esc(L(x.name))}</strong>${x.toggle ? ` <span class="tag from">${esc(t("toggle"))}</span>` : ""}${L(x.desc) ? ` — ${esc(L(x.desc))}` : ""}`),
     // Granted actions that the spell browser has are spells; the rest (Arcane Recovery) are class actions.
     l.spells.some(x => x.id) ? `${esc(t("spells"))}: ${l.spells.filter(x => x.id).map(spell).join(", ")}` : "",
     l.spells.some(x => !x.id) ? `${esc(t("actions"))}: ${l.spells.filter(x => !x.id).map(spell).join(", ")}` : "",
