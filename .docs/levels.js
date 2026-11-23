@@ -52,7 +52,9 @@ function levelItems(l, lang, esc, chip, own, scope) {
   const L = o => o[lang] || o.en;
   const tag = chip ? `<span class="tag ${own ? "own" : "from"}">${esc(chip)}</span> ` : "";
   const spell = x => {
-    if (!x.id) return esc(L(x.name));
+    if (!x.id) return x.desc && L(x.desc)
+      ? `<span class="feat-link" tabindex="0">${esc(L(x.name))}<span class="tip" role="tooltip">${esc(L(x.desc))}</span></span>`
+      : esc(L(x.name));
     // Hover preview, like the builder: [Level · School · Concentration] then the description.
     const s = SPELL_MAP[x.id];
     let tip = "";
