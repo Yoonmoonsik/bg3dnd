@@ -8358,6 +8358,13 @@ data "TooltipStatusApply" "ApplyStatus(DASH,100,1);ApplyStatus(DISENGAGE,100,1)"
 data "SpellFlags" "IgnoreSilence;Stealth;Invisible;NoCameraMove"
 data "RequirementConditions" "HasStatus('SAVAGE_CHARGE')"
 
+new entry "Shout_EvasiveFootwork"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_EvasiveFootwork"
+data "SpellProperties" "ApplyStatus(EVASIVE_FOOTWORK,100,1);IF(ClassLevelHigherOrEqualThan(10,'Fighter')):ApplyStatus(EVASIVE_FOOTWORK_OSIRIS_D10,100,1);IF(not ClassLevelHigherOrEqualThan(10,'Fighter')):ApplyStatus(EVASIVE_FOOTWORK_OSIRIS_D8,100,1);"
+data "Description" "h00ebbd25g92b2g415bg9637g5e67c419d226;1"
+
 new entry "Shout___MONK__"
 type "SpellData"
 data "SpellType" "Shout"

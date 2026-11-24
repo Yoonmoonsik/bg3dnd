@@ -1623,6 +1623,17 @@ data "CastEffect" "855a50f5-6ef5-4a32-a8e1-a83273176c9a"
 data "TargetEffect" "53412dd1-8066-4860-a2ae-b27e77bfdab5"
 data "DamageType" "Fire"
 
+new entry "Zone___FIGHTER__"
+type "SpellData"
+data "SpellType" "Zone"
+
+new entry "Zone_SweepingAttack"
+type "SpellData"
+data "SpellType" "Zone"
+using "Zone_SweepingAttack"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon + LevelMapValue(SuperiorityDie), MainWeaponDamageType);"
+data "TooltipDamageList" "DealDamage(MainMeleeWeapon + LevelMapValue(SuperiorityDie), MainWeaponDamageType);"
+
 new entry "Zone___MONK__"
 type "SpellData"
 data "SpellType" "Zone"

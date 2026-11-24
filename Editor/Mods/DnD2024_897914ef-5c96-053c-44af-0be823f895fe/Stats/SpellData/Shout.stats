@@ -9953,6 +9953,15 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h06128f4dg8b4fg7ee1gbb06gbcef6e2bdfac" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40ce4de8-fe34-47b8-a816-a79b6b6e0085" />
+        <field name="Name" type="NameTableFieldDefinition" value="EvasiveFootwork" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7de03ce-2804-43c8-b628-42c4caec260d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EVASIVE_FOOTWORK,100,1);IF(ClassLevelHigherOrEqualThan(10,'Fighter')):ApplyStatus(EVASIVE_FOOTWORK_OSIRIS_D10,100,1);IF(not ClassLevelHigherOrEqualThan(10,'Fighter')):ApplyStatus(EVASIVE_FOOTWORK_OSIRIS_D8,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h00ebbd25g92b2g415bg9637g5e67c419d226" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="eff5ec4d-51a0-4c4a-98de-619cdff90fd2" />

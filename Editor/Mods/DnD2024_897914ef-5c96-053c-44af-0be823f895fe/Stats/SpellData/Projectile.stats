@@ -4271,6 +4271,22 @@
         <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="Enemy();" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22261596-e8dc-49ff-8e8b-c328db3b980a" />
+        <field name="Name" type="NameTableFieldDefinition" value="TripAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="49a2840b-ee59-4620-934a-0fadc9b59dc9" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE,100,-1);DealDamage(MainRangedWeapon + LevelMapValue(SuperiorityDie), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1035f09f-f32d-4dc4-9aed-141a8427fa56" />
+        <field name="Name" type="NameTableFieldDefinition" value="PushingAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="832ecd81-bb20-4045-a598-29531ac1e2f4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):Force(5);DealDamage(MainRangedWeapon + LevelMapValue(SuperiorityDie), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="610f94c0-1fbc-4744-8402-48ba1454dd86" />

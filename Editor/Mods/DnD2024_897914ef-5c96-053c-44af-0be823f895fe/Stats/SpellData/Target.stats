@@ -18958,6 +18958,22 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94b04d21-ecc8-47c7-85c8-57d090973e4b" />
+        <field name="Name" type="NameTableFieldDefinition" value="TripAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2c69241a-8e02-42eb-a512-322beeaf3e85" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE,100,1);DealDamage(MainMeleeWeapon + LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d64fefa-8946-49e6-9b84-ef5adaedf54e" />
+        <field name="Name" type="NameTableFieldDefinition" value="PushingAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="15431f52-f307-4484-9345-ab67ca11b2ef" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):Force(5); DealDamage(MainMeleeWeapon + LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="818ac5d5-5006-47b1-b4b3-09c556f95507" />

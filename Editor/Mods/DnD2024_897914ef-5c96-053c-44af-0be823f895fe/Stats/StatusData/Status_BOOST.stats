@@ -10533,6 +10533,102 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowDisadvantage_EldritchStrike);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d5afc7a-6c70-4f28-ae91-18e7cb8aa06d" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_OSIRIS_D8" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d89fefda-8565-4cc0-9a96-0a019fdec75b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_OSIRIS_D10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d5afc7a-6c70-4f28-ae91-18e7cb8aa06d" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b50c4f98-da01-465c-bad1-ff5350d29b85" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_AC_0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hebcc8e3cg7770g490aga6c1g02f71054d68f" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EVASIVE_FOOTWORK_AC" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="51cf5b03-6a60-4067-bb0f-8cdf0255b8e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_AC_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b50c4f98-da01-465c-bad1-ff5350d29b85" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7f4d2417-f9cd-4cd3-a86f-c749b94d0648" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_AC_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b50c4f98-da01-465c-bad1-ff5350d29b85" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(3)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="407b2133-00ab-4cff-a70b-28e672d952af" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_AC_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b50c4f98-da01-465c-bad1-ff5350d29b85" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(4)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6ca917b1-a851-482a-a837-ff2699b927a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_AC_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b50c4f98-da01-465c-bad1-ff5350d29b85" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(5)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a37aff14-1614-4229-9e7e-31b38097979a" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_AC_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b50c4f98-da01-465c-bad1-ff5350d29b85" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(6)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8f64ec9-5102-4a97-b0ee-735f073c86b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_AC_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b50c4f98-da01-465c-bad1-ff5350d29b85" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(7)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2fb3008d-8347-4c56-b7f3-a2dd8c877b26" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_AC_7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b50c4f98-da01-465c-bad1-ff5350d29b85" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(8)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0615939a-c9e8-42ff-8213-d608f8db80fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_AC_8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b50c4f98-da01-465c-bad1-ff5350d29b85" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(9)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f157c215-0b52-4b47-87d5-6e454c134d74" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK_AC_9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b50c4f98-da01-465c-bad1-ff5350d29b85" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(10)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="39ed4673-c749-4248-963c-700038f953f0" />

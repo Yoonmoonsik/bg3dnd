@@ -16017,6 +16017,18 @@ using "Target_BendLuck_Interrupt_Negative"
 data "DisplayName" "h8eb71fdcge67eg9086g4432gf36ff5890bba;1"
 data "Description" ""
 
+new entry "Target_TripAttack"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_TripAttack"
+data "SpellSuccess" "IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE,100,1);DealDamage(MainMeleeWeapon + LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand)"
+
+new entry "Target_PushingAttack"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_PushingAttack"
+data "SpellSuccess" "IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):Force(5); DealDamage(MainMeleeWeapon + LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand)"
+
 new entry "Target___MONK__"
 type "SpellData"
 data "SpellType" "Target"

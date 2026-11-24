@@ -1142,6 +1142,25 @@
         <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();RemoveStatus(OBSERVER_OBSERVER,ELDRITCH_STRIKE);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a94d368c-b363-49e6-9ea3-6d754e8839c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_PrecisionAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c1c294e4-0896-4bf2-81cc-04c18ae14c53" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h435f7bacga36cg4e63gb926ga6f70f86a9b4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h847c428bg7223g469cg89c8g11794616ca2f" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PrecisionAttack" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8, context.Source);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,LevelMapValue(SuperiorityDie));" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SuperiorityDie:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="SuperiorityDie" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6a28750a-e930-4b79-8ca5-a5c3c31c9f77" />

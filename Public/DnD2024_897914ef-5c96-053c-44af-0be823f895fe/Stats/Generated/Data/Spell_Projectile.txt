@@ -3656,6 +3656,18 @@ data "SpellAnimationIntentType" "Aggressive"
 data "PrepareEffect" "cfca93ec-07d8-4c37-af5a-b35646cbac31"
 data "CastEffect" "70114f76-0a85-4b8d-a555-bda8a6cf2d68"
 
+new entry "Projectile_TripAttack"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_TripAttack"
+data "SpellSuccess" "IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE,100,-1);DealDamage(MainRangedWeapon + LevelMapValue(SuperiorityDie), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand)"
+
+new entry "Projectile_PushingAttack"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_PushingAttack"
+data "SpellSuccess" "IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):Force(5);DealDamage(MainRangedWeapon + LevelMapValue(SuperiorityDie), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand)"
+
 new entry "Projectile___MONK__"
 type "SpellData"
 data "SpellType" "Projectile"
