@@ -2664,7 +2664,7 @@ data "Icon" "Spell_Divination_TrueStrike"
 data "InterruptContext" "OnPostRoll"
 data "InterruptContextScope" "Self"
 data "Container" "YesNoDecision"
-data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma)) and not AnyEntityIsItem() and InterruptHasAdvantage();"
+data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma)) and not AnyEntityIsItem() and InterruptHasAdvantage() and not IsCritical() and not (HasStatus('SG_Sleeping',context.Target) or HasStatus('SG_Paralyzed',context.Target));"
 data "Properties" "SetReroll(19,false);"
 data "InterruptDefaultValue" "Enabled"
 

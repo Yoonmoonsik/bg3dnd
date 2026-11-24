@@ -3623,7 +3623,7 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma)) and not AnyEntityIsItem() and InterruptHasAdvantage();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma)) and not AnyEntityIsItem() and InterruptHasAdvantage() and not IsCritical() and not (HasStatus('SG_Sleeping',context.Target) or HasStatus('SG_Paralyzed',context.Target));" />
         <field name="Properties" type="StringTableFieldDefinition" value="SetReroll(19,false);" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
