@@ -2802,6 +2802,9 @@
                                     <attribute id="Object" type="guid" value="8bd1da7b-9959-416d-b725-3837997285c0"/>
                                 </node>
                                 <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="659446a1-0ee1-4ed9-9cdb-7f85a6048fca"/>
+                                </node>
+                                <node id="SubClass">
                                     <attribute id="Object" type="guid" value="b400e0f2-7824-4c8c-aebb-6124500e6988"/>
                                 </node>
                             </children>
@@ -9474,6 +9477,32 @@
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="72d65cb1-8990-44be-b88c-af732b831bf6"/>
                     <attribute id="UUID" type="guid" value="f1032623-8860-4485-8019-8b535566b70e"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(FightingSpirit,3,0)"/>
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Samurai"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Samurai_3_FightingSpirit"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ea1680f2-2030-40cb-9d3c-ce0d7a82ed76,1,Samurai_3_BonusProficiency)"/>
+                    <attribute id="TableUUID" type="guid" value="ba0802bc-4196-4ff6-99f5-c46147a9a712"/>
+                    <attribute id="UUID" type="guid" value="d3fc8711-b2fc-4a75-9487-0cf6cbcb2d90"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Samurai"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Samurai_7_ElegantCourtier"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ba0802bc-4196-4ff6-99f5-c46147a9a712"/>
+                    <attribute id="UUID" type="guid" value="8afc1c3a-f54c-47d7-8af1-13ebe757ae0a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Samurai"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Samurai_10_TirelessSpirit"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ba0802bc-4196-4ff6-99f5-c46147a9a712"/>
+                    <attribute id="UUID" type="guid" value="845069c9-5d65-4f6a-a432-86c6f095d3e5"/>
                 </node>
             </children>
         </node>

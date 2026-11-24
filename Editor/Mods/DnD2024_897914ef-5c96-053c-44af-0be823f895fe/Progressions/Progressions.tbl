@@ -3586,7 +3586,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="False" />
-        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="1be5aa5a-e221-4f0e-a1bf-be25f5d23224;f507f7bc-3d1a-4034-9590-ddef5a05d5b3;e668c6f1-5149-4b10-ab7e-3637ed444066;58e63bc1-b176-412f-8b30-3cea9a647dbb;0a01dc6b-ab1a-4c0e-8a5e-4787fe1f2caf;b722614a-303f-411a-bb19-a1882ad1f4cc;1d23232f-cafb-4162-ac2a-a926fd6f734f;3d9e9113-46c7-4c81-bb20-93ad097588bc;8bd1da7b-9959-416d-b725-3837997285c0;b400e0f2-7824-4c8c-aebb-6124500e6988" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="1be5aa5a-e221-4f0e-a1bf-be25f5d23224;f507f7bc-3d1a-4034-9590-ddef5a05d5b3;e668c6f1-5149-4b10-ab7e-3637ed444066;58e63bc1-b176-412f-8b30-3cea9a647dbb;0a01dc6b-ab1a-4c0e-8a5e-4787fe1f2caf;b722614a-303f-411a-bb19-a1882ad1f4cc;1d23232f-cafb-4162-ac2a-a926fd6f734f;3d9e9113-46c7-4c81-bb20-93ad097588bc;8bd1da7b-9959-416d-b725-3837997285c0;659446a1-0ee1-4ed9-9cdb-7f85a6048fca;b400e0f2-7824-4c8c-aebb-6124500e6988" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HitPointDice10,1,0);" />
       </fields>
     </stat_object>
@@ -4148,6 +4148,41 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="SorrowKnight_10_UnsettledStrikes" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SorrowKnight,1,0)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1081" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d3fc8711-b2fc-4a75-9487-0cf6cbcb2d90" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="ba0802bc-4196-4ff6-99f5-c46147a9a712" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Samurai" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Samurai_3_FightingSpirit" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(FightingSpirit,3,0)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(ea1680f2-2030-40cb-9d3c-ce0d7a82ed76,1,Samurai_3_BonusProficiency)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1082" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8afc1c3a-f54c-47d7-8af1-13ebe757ae0a" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="ba0802bc-4196-4ff6-99f5-c46147a9a712" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Samurai" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Samurai_7_ElegantCourtier" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1083" />
+        <field name="UUID" type="IdTableFieldDefinition" value="845069c9-5d65-4f6a-a432-86c6f095d3e5" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="ba0802bc-4196-4ff6-99f5-c46147a9a712" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Samurai" />
+        <field name="Level" type="ByteTableFieldDefinition" value="10" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Samurai_10_TirelessSpirit" />
       </fields>
     </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">

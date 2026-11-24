@@ -5159,6 +5159,57 @@
     </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="329f2d3f-bd29-473b-b194-d66c484a9e2a" />
+        <field name="Name" type="NameTableFieldDefinition" value="__SAMURAI__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6d613d10-b69e-446d-a2a1-1a55473bb1ef" />
+        <field name="Name" type="NameTableFieldDefinition" value="Samurai_3_FightingSpirit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0b793cd8g0f83g4f2dg9f33g691fbf68deef" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5d91c8ceg261ag480cga8c7g2e15408d5283" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(Samurai)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Samurai_3_FightingSpirit" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5603" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Samurai_FightingSpirit)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="845ad8c0-ff30-4158-91f7-436ea9560c0e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Samurai_3_BonusProficiency_NoSelection" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8067e2b2-758c-4558-90b5-44523baf3f2f" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="899419ae-e9ef-408e-978c-cc0c6fa86b4d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Samurai_7_ElegantCourtier" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdca10b4cgd903g46c1g9bfag0f794a7c2bdf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha37bca57g8a90g4400gacbfgfe270167cb32" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Samurai_3_FightingSpirit" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5607" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(SavingThrow,Wisdom)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c2cc49f-41c1-477a-ab1f-9ef05d1536e8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Samurai_10_TirelessSpirit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfe6d692eg1f57g4a0eg9078g3101108ad612" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha067eef6gd602g4ea6g9224gc4f95d23292f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Samurai_3_FightingSpirit" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5610" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(FightingSpirit,1,0)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF008B8B" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="608a56c7-9d33-485c-a11f-d75a940fd8bf" />
         <field name="Name" type="NameTableFieldDefinition" value="__MONK__" />
       </fields>

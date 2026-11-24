@@ -584,6 +584,22 @@
         <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_95" />
+        <field name="UUID" type="IdTableFieldDefinition" value="659446a1-0ee1-4ed9-9cdb-7f85a6048fca" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="721dfac3-92d4-41f5-b773-b7072a86232f" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Samurai" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h68e705f7g5971g438agb583gd6e7451fa7a7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he41d3e82g9b31g4516g900bg123a42f892ff" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="ba0802bc-4196-4ff6-99f5-c46147a9a712" />
+        <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Fighter" />
+        <field name="PrimaryAbility" type="EnumerationTableFieldDefinition" value="Strength" enumeration_type_name="Ability" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Wisdom" enumeration_type_name="Ability" version="1" />
+        <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
+        <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_27" />

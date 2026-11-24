@@ -13811,5 +13811,30 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7508fc59-2d17-4c5a-9753-131ee684c035" />
+        <field name="Name" type="NameTableFieldDefinition" value="Samurai_FightingSpirit" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SAMURAI_FIGHTING_SPIRIT,100,1);ApplyStatus(SAMURAI_FIGHTING_SPIRIT_TEMPHP,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Shout_Samurai_FightingSpirit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0b793cd8g0f83g4f2dg9f33g691fbf68deef" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9a63032cgac5bg43c7gbf8bg81b69bed5c93" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(Samurai)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SAMURAI_FIGHTING_SPIRIT,100,1);ApplyStatus(SAMURAI_FIGHTING_SPIRIT_TEMPHP,100,-1);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Surge" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Surge" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;FightingSpirit:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;925779e7-8bf6-4d56-8c4d-42c3bc01c60c,,;50398f4e-dd82-4d6a-ad43-aedd578543d9,,;1c343e00-7e6c-4f53-b588-074a3cdb9c7d,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;5fdb66be-7506-411a-a7ea-c4783288aac8,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="49dd385f-fd25-4372-8628-30b775af7c79" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="2550e2bb-c9f9-4440-9cd4-146a03f2e9bc" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
