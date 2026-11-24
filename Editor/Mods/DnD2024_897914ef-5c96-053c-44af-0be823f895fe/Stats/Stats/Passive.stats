@@ -1488,6 +1488,48 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,2d8,Psychic,Magical,,0,,true,true)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8900077e-25ba-4f72-8293-1e461dcd51d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpiritShroud_Radiant" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6afdb7a4gf901g4f68g9fe8g0715a6fbf9f9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h88a4ffd1g2880g414egb847g4d8f1a50ae18" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Radiant);Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SpiritShroud_Radiant" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('SPIRIT_SHROUD_RADIANT',context.Source) and HasStatus('SPIRIT_SHROUD_TARGET',context.Target,context.Source)):DealDamage(1d8,Radiant,Magical,,0,,true,true);IF(HasStatus('SPIRIT_SHROUD_RADIANT_5',context.Source) and HasStatus('SPIRIT_SHROUD_TARGET',context.Target,context.Source)):DealDamage(2d8,Radiant,Magical,,0,,true,true);IF((HasStatus('SPIRIT_SHROUD_TARGET',context.Target,context.Source)) and (HasStatus('SPIRIT_SHROUD_RADIANT',context.Source) or HasStatus('SPIRIT_SHROUD_RADIANT_5',context.Source))):ApplyStatus(SPIRIT_SHROUD_NO_HEAL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8807026e-fbb4-4ba4-9e55-ab1a0a9ad049" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpiritShroud_Necrotic" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4a6d2510gafdcg4a91ga363gb9583935d137" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h88a4ffd1g2880g414egb847g4d8f1a50ae18" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic);Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SpiritShroud_Necrotic" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('SPIRIT_SHROUD_NECROTIC',context.Source) and HasStatus('SPIRIT_SHROUD_TARGET',context.Target,context.Source)):DealDamage(1d8,Necrotic,Magical,,0,,true,true);IF(HasStatus('SPIRIT_SHROUD_NECROTIC_5',context.Source) and HasStatus('SPIRIT_SHROUD_TARGET',context.Target,context.Source)):DealDamage(2d8,Necrotic,Magical,,0,,true,true);IF((HasStatus('SPIRIT_SHROUD_TARGET',context.Target,context.Source)) and (HasStatus('SPIRIT_SHROUD_NECROTIC',context.Source) or HasStatus('SPIRIT_SHROUD_NECROTIC_5',context.Source))):ApplyStatus(SPIRIT_SHROUD_NO_HEAL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4297e684-8be2-469e-af57-c810c95a1bce" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpiritShroud_Cold" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02d479a1g26b5g4519g9b85g096b5553c911" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h88a4ffd1g2880g414egb847g4d8f1a50ae18" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Cold);Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SpiritShroud_Cold" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('SPIRIT_SHROUD_COLD',context.Source) and HasStatus('SPIRIT_SHROUD_TARGET',context.Target,context.Source)):DealDamage(1d8,Cold,Magical,,0,,true,true);IF(HasStatus('SPIRIT_SHROUD_COLD_5',context.Source) and HasStatus('SPIRIT_SHROUD_TARGET',context.Target,context.Source)):DealDamage(2d8,Cold,Magical,,0,,true,true);IF((HasStatus('SPIRIT_SHROUD_TARGET',context.Target,context.Source)) and (HasStatus('SPIRIT_SHROUD_COLD',context.Source) or HasStatus('SPIRIT_SHROUD_COLD_5',context.Source))):ApplyStatus(SPIRIT_SHROUD_NO_HEAL,100,1);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d072693e-a2a3-43e8-b261-a30e2da11694" />

@@ -5393,6 +5393,120 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b66947e6-1525-43a0-bb8e-d8ba8fd2e97c" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPIRIT_SHROUD_RADIANT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6afdb7a4gf901g4f68g9fe8g0715a6fbf9f9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e9a98ecg4128g4eaag9826g8c02521bf336" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Radiant);Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SpiritShroud_Radiant" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SPIRIT_SHROUD" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_SHROUD_TARGET,100,-1);" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="ShouldCheckLOS" enumeration_type_name="AuraFlags" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SpiritShroud_Radiant;" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="0ed23914-38bc-42fc-b8e4-61c177a6df22" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_SpiritGuardian_ST" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_SpiritGuardian_ST_Stop" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2434fac3-ab99-45f1-8b5a-639b299fab27" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPIRIT_SHROUD_RADIANT_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b66947e6-1525-43a0-bb8e-d8ba8fd2e97c" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant);Distance(3)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ee5c888-5c08-4394-8198-ec4ff67b7542" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPIRIT_SHROUD_NECROTIC" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4a6d2510gafdcg4a91ga363gb9583935d137" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e9a98ecg4128g4eaag9826g8c02521bf336" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic);Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SpiritShroud_Necrotic" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SPIRIT_SHROUD" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_SHROUD_TARGET,100,-1);" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="ShouldCheckLOS" enumeration_type_name="AuraFlags" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SpiritShroud_Necrotic;" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="33cfce8d-3ac1-4ddb-b66d-0ee6b5ec0131" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_SpiritGuardian_ST" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_SpiritGuardian_ST_Stop" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d6472694-8838-436e-894a-84546227136e" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPIRIT_SHROUD_NECROTIC_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ee5c888-5c08-4394-8198-ec4ff67b7542" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic);Distance(3)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="96d4964f-3683-4c9d-bc92-3403eab2bfda" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPIRIT_SHROUD_COLD" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02d479a1g26b5g4519g9b85g096b5553c911" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e9a98ecg4128g4eaag9826g8c02521bf336" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Cold);Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SpiritShroud_Cold" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SPIRIT_SHROUD" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_SHROUD_TARGET,100,-1);" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="ShouldCheckLOS" enumeration_type_name="AuraFlags" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SpiritShroud_Cold;" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="36df41b7-5dac-40f4-ae62-4faf3e89a96d" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_SpiritGuardian_ST" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_SpiritGuardian_ST_Stop" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35b65b26-5100-4d6f-971a-0fbb260bb9fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPIRIT_SHROUD_COLD_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="96d4964f-3683-4c9d-bc92-3403eab2bfda" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Cold);Distance(3)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7306c247-da9b-4843-9014-f394297c1e85" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPIRIT_SHROUD_TARGET" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd8c67246g1d42g4595gbd48g33d4467f044c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf9970dbag4615g4cd0g8dafg7d128df17d69" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SpiritShroud_Radiant" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SPIRIT_SHROUD_TARGET" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,-3,0);" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="d787f666-8ee6-4185-9365-6aac9ebe76ae" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2795b3f1-18f9-476b-ab7b-e0743ad5353d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPIRIT_SHROUD_NO_HEAL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3639c362gd733g4bb2gb6f3g9c25818d8186" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8aa44e27gc7f4g417cga53cgb40b466b77ea" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_SpiritShroud_Radiant" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SPIRIT_SHROUD_NO_HEAL" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="BlockRegainHP(Living;Undead);" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cb9821dc-2f33-4b0c-90b7-b52ee85d20cb" />
@@ -9455,6 +9569,16 @@
         <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SPIRITGUARDIANS" />
         <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SPIRITGUARDIANS" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SpiritGuardians,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5fc9b401-f5f6-4c8f-a679-cd4268e67d33" />
+        <field name="Name" type="NameTableFieldDefinition" value="DUPLICITY_SPELL_SPIRITSHROUD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DUPLICITY_SPELL_SPIRITSHROUD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SpiritShroud,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
