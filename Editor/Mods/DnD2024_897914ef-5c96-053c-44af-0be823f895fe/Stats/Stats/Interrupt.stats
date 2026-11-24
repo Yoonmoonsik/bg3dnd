@@ -1161,6 +1161,34 @@
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac48e25e-e39d-4dfe-a9a6-2fa424feb4f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Parry_BattleMaster" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="135717db-7ec7-4d08-b3bd-ddd410bf2f9b" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8b1da908g7714g47d7gb2dbg8f693a460a65" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Parry" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsMeleeAttack() and not AnyEntityIsItem()" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(LevelMapValue(SuperiorityDie)+max(DexterityModifier,StrengthModifier)))" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="802239fb-d1e9-4de9-9cf0-6059284d41a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_WardingManeuver_BattleMaster" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4422dc64-95de-448f-8a58-fca66a269ad0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h37cb0e82g8e2cg4cebgb3cegff5b7ab84638" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he2ea01b9gb456g45e3g918dga70c7646891d" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and (HasShieldEquipped(context.Observer) or WieldingWeapon('Melee', false, false, context.Observer)) and not Self(context.Source,context.Observer) and (Self(context.Target,context.Observer) or Ally(context.Target, context.Observer)) and HasInterruptedAttack() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and ((not ClassLevelHigherOrEqualThan(10,'Fighter',context.Observer) and IsFlatValueInterruptInteresting(8, context.Source)) or (ClassLevelHigherOrEqualThan(10,'Fighter',context.Observer) and IsFlatValueInterruptInteresting(10, context.Source)));" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SuperiorityDie:1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(SuperiorityDie));ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);ApplyStatus(OBSERVER_TARGET,WARDING_MANEUVER_RESISTANCE,100,1);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6a28750a-e930-4b79-8ca5-a5c3c31c9f77" />

@@ -18974,6 +18974,60 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):Force(5); DealDamage(MainMeleeWeapon + LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41a1f406-a8a7-4b56-8fd1-2e13f648b84f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BaitAndSwitch" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2dc581b0-965b-4cd5-afdf-5ec4f778afe8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ef725e1g661fg40dbg933dgbc8276a1b960" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h37c0e5c2g26c1g40c4ga7d4ge1553da80ca7" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BenignTransposition" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BaitAndSwitch_Self;Target_BaitAndSwitch_Ally" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellActionType" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and not Self() and not Dead() and not HasStatus('SG_Incapacitated')" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SuperiorityDie:1;Movement:1.5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="SwapPlaces();IF(ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):ApplyStatus(BAIT_AND_SWITCH_OSIRIS_D10,100,1);IF(not ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):ApplyStatus(BAIT_AND_SWITCH_OSIRIS_D8,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5a917201-8941-4863-bf42-b457311236e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BaitAndSwitch_Self" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41a1f406-a8a7-4b56-8fd1-2e13f648b84f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BaitAndSwitch" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7f47db22g27feg4615g8924g258efe591f09" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="SwapPlaces();IF(ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):ApplyStatus(SELF,BAIT_AND_SWITCH_OSIRIS_D10,100,1);IF(not ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):ApplyStatus(SELF,BAIT_AND_SWITCH_OSIRIS_D8,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="396dfa83-40f8-4944-8d2f-5edec784901b" />
+        <field name="Name" type="NameTableFieldDefinition" value="BaitAndSwitch_Ally" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="41a1f406-a8a7-4b56-8fd1-2e13f648b84f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BaitAndSwitch" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h76e36859g378bg4203gae3fg0466e171ee3f" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="SwapPlaces();IF(ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):ApplyStatus(BAIT_AND_SWITCH_OSIRIS_D10,100,1);IF(not ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):ApplyStatus(BAIT_AND_SWITCH_OSIRIS_D8,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3254e369-b45e-47ae-aad2-5596882956a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="MortalStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94b04d21-ecc8-47c7-85c8-57d090973e4b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7c466e9bg8859g4df0g8cd3gc50fcac18041" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb78022dge682g4630gaf2fgd497cb821d93" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(MORTAL_STRIKE,100,1);DealDamage(MainMeleeWeapon + LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(MORTAL_STRIKE,100,1)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Necrotic_Melee" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="818ac5d5-5006-47b1-b4b3-09c556f95507" />

@@ -62,6 +62,25 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('LunarRadiance',context.Source)):DealDamage(1d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Piercing,Magical);IF(HasPassive('LunarRadiance',context.Source)):DealDamage(1d6+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier,Radiant,Magical);TARGET:IF(not SavingThrow(Ability.Strength,SourceSpellDC())):ApplyStatus(PRONE,100,2);" />
       </fields>
     </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6392b7a5-3ae8-4b19-994c-1f9219c0f81c" />
+        <field name="Name" type="NameTableFieldDefinition" value="__FIGHTER__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a0d2c51-b823-4d9c-8fcc-a28744ea13f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="LungingAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88fd1b67-d134-4a22-b2fa-929f92538452" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h059d02feg2ea3g4b97g8109g19b65c0e85b4" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7bef947ag32c4g48f3g8bebg900858043463" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush_New" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage((max(1,MainMeleeWeapon+LevelMapValue(SuperiorityDie))), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;Movement:1.5;SuperiorityDie:1;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b821c56a-187e-4550-ba53-363f9b4eec6a" />

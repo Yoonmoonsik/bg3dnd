@@ -10629,6 +10629,228 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="AC(10)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9a2d52b-e694-44c2-b0c6-eb2fb215ef61" />
+        <field name="Name" type="NameTableFieldDefinition" value="AMBUSH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf8afeffag131dg46cdgafdagaf8db178442c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05378916gfa01g445egb0ffg317ab28c3210" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_SupremeSneak" />
+        <field name="StackId" type="StringTableFieldDefinition" value="AMBUSH" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):Initiative(6);IF(not ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):Initiative(5)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="Combat()" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ddc69a16-93c9-445b-a2e5-7f1826c7c8b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="COMMANDING_PRESENCE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7d59e4d4-3a92-46c5-bccb-581f20cfae78" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a322a3ag5a28g4e71g9a15g99bc371f65e2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f742130gb7f4g4174gada6gde9227c0f0d1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Intimidation" />
+        <field name="StackId" type="StringTableFieldDefinition" value="COMMANDING_PRESENCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(SuperiorityDie),Intimidation);RollBonus(SkillCheck,LevelMapValue(SuperiorityDie),Performance);RollBonus(SkillCheck,LevelMapValue(SuperiorityDie),Persuasion)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5bdcec8f-a7fa-4ec7-af83-7134feae86ac" />
+        <field name="Name" type="NameTableFieldDefinition" value="TACTICAL_ASSESSMENT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7d59e4d4-3a92-46c5-bccb-581f20cfae78" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56dbf25egb241g4784g9658gaac6841cfe01" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9fde95b2g12cag41f2g82ecgff60e4f37a90" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Investigation" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TACTICAL_ASSESSMENT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(SuperiorityDie),History);RollBonus(SkillCheck,LevelMapValue(SuperiorityDie),Investigation);RollBonus(SkillCheck,LevelMapValue(SuperiorityDie),Insight)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94e7ecb0-7641-4c56-bab8-48b8855ce715" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_OSIRIS_D8" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d3053c98-14af-4b95-b035-f24d0cc9b0bb" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_OSIRIS_D10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94e7ecb0-7641-4c56-bab8-48b8855ce715" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3978c8d6-6b16-4e3c-9cc5-41b940beaa3c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_AC_0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ef725e1g661fg40dbg933dgbc8276a1b960" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BAIT_AND_SWITCH_AC" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he7a1f936gcaf9g45d2ga708gce3f6308ac6a" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20874336-3071-450e-835b-ccf76126e375" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_AC_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3978c8d6-6b16-4e3c-9cc5-41b940beaa3c" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8c0a53f-8a44-4d54-bc64-62de2d70d077" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_AC_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3978c8d6-6b16-4e3c-9cc5-41b940beaa3c" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(3)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="002c60b8-89e5-48c0-a84d-8d64afa5528c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_AC_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3978c8d6-6b16-4e3c-9cc5-41b940beaa3c" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(4)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="959dfc0e-cf76-4db7-93b7-7271c065577f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_AC_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3978c8d6-6b16-4e3c-9cc5-41b940beaa3c" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(5)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e2d308b2-cf84-4f98-9ce0-ef34ea3edc36" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_AC_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3978c8d6-6b16-4e3c-9cc5-41b940beaa3c" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(6)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5de9a459-7d5a-4503-bf0f-adf50c0d4a9f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_AC_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3978c8d6-6b16-4e3c-9cc5-41b940beaa3c" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(7)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ca1a46b-d69d-439d-8113-4ea1e1ca4424" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_AC_7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3978c8d6-6b16-4e3c-9cc5-41b940beaa3c" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(8)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="452db010-5c21-4a19-994c-e8be1cf18e71" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_AC_8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3978c8d6-6b16-4e3c-9cc5-41b940beaa3c" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(9)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ac4d191-3433-4844-aabe-e8ad327ec6a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAIT_AND_SWITCH_AC_9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3978c8d6-6b16-4e3c-9cc5-41b940beaa3c" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(10)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d252698e-c0b4-48e8-955a-0bf1ef14a3d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="BATTLE_SHOUT_D8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h57d38b09g590dg4308gbeb9g07438b1d13a9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h93c70d4eg1e92g4d8egafa5ga8f57696fc4a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Fighter_Rally" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BATTLE_SHOUT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DamageBonus(1d8)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsMeleeAttack() and (not IsMiss() or IsCritical())" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="OverheadOnTurn;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f639cfb-f97c-4836-b86c-4a80cf4aa229" />
+        <field name="Name" type="NameTableFieldDefinition" value="BATTLE_SHOUT_D10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d252698e-c0b4-48e8-955a-0bf1ef14a3d1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DamageBonus(1d10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="639f9a73-b8be-4407-814a-5e25f8663453" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEMORALIZING_SHOUT_SOURCE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5c02dff-ca28-499d-be47-0c627b0cfcd4" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEMORALIZING_SHOUT_D8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h423ae918g519cg46bdga477g99e05740aec7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc7f077e1ged33g47e4g88e9g7bbf4d9489ea" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_IntimidatingPresence" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DEMORALIZING_SHOUT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('DEMORALIZING_SHOUT_SOURCE',context.Target)):DamageBonus(-1d8,,false)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsMeleeAttack() and (not IsMiss() or IsCritical()) and not HasStatus('DEMORALIZING_SHOUT_SOURCE',context.Target)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="OverheadOnTurn;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fba30882-93e3-439e-82ad-f7a946eb65f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEMORALIZING_SHOUT_D10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f5c02dff-ca28-499d-be47-0c627b0cfcd4" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('DEMORALIZING_SHOUT_SOURCE',context.Target)):DamageBonus(-1d10,,false)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1d48b33-e73c-418a-8ab6-7551b5cebe54" />
+        <field name="Name" type="NameTableFieldDefinition" value="MORTAL_STRIKE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7c466e9bg8859g4df0g8cd3gc50fcac18041" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h149af1b9g32dfg4711g8f38g6c913fd3f7d3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Necrotic_Melee" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MORTAL_STRIKE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="BlockRegainHP(Living;Undead)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="OverheadOnTurn;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d8183f6-5294-43f0-bb38-00d777410ca5" />
+        <field name="Name" type="NameTableFieldDefinition" value="WARDING_MANEUVER_RESISTANCE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h37cb0e82g8e2cg4cebgb3cegff5b7ab84638" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2e77e425g19b9g4352ga90bgfa33036883d6" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_FightingStyle_Protection" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WARDING_MANEUVER_RESISTANCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(All, Resistant)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="39ed4673-c749-4248-963c-700038f953f0" />

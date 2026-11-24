@@ -9962,6 +9962,110 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h00ebbd25g92b2g415bg9637g5e67c419d226" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bbb5c280-0223-47a9-8cb7-f730d41cdfe2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Ambush" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="091f9789-7024-4b56-b4e4-6aa957ac12ab" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf8afeffag131dg46cdgafdagaf8db178442c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05378916gfa01g445egb0ffg317ab28c3210" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SuperiorityDie:1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(AMBUSH,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(AMBUSH,100,-1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('AMBUSH')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b93454d-03e0-4832-81e3-d35f705d61bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="CommandingPresence" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e557c52b-a468-4a6e-87c3-cc981f5605e6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a322a3ag5a28g4e71g9a15g99bc371f65e2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f742130gb7f4g4174gada6gde9227c0f0d1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Intimidation" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SuperiorityDie:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(COMMANDING_PRESENCE,100,10)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(COMMANDING_PRESENCE,100,10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1bc9870d-07b0-4808-98b4-0503cb720579" />
+        <field name="Name" type="NameTableFieldDefinition" value="TacticalAssessment" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e557c52b-a468-4a6e-87c3-cc981f5605e6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56dbf25egb241g4784g9658gaac6841cfe01" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9fde95b2g12cag41f2g82ecgff60e4f37a90" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Investigation" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SuperiorityDie:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(TACTICAL_ASSESSMENT,100,10)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TACTICAL_ASSESSMENT,100,10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce38531f-b368-445c-b2b5-2f7ce4717880" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleShout" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0ff7ab1c-a7a7-4b47-9b3d-7ac44017df29" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h57d38b09g590dg4308gbeb9g07438b1d13a9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heb0f822fg1115g4ee8g817egdd80193c1aef" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_WrecklessWarCry" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and not Self() and not Dead()" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):ApplyStatus(BATTLE_SHOUT_D10,100,1);IF(not ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):ApplyStatus(BATTLE_SHOUT_D8,100,1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BATTLE_SHOUT_D8,100,1)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Rage" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Rage" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="50e7cd15-5b95-47e9-b6f8-ed7900d23d9d,,;,,;289b4f53-3ca5-4dff-a1d4-e84a84a283f0,,;772a34bf-06c1-43ee-ae7b-1a1ffd3fef9e,,;03239618-40c7-47ab-a7b4-d2e0b111e5f7,,;,,;bc09e561-370b-4307-88d7-6462b6fbabec,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f5269188-8099-49b1-8515-b549bd8b61b9" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="3b4c35ad-4d0a-4889-8408-46181439be42" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Big" enumeration_type_name="SpellSoundMagnitude" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df20141d-0f8c-42c4-a949-12bfa70f25bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="DemoralizingShout" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0ff7ab1c-a7a7-4b47-9b3d-7ac44017df29" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h423ae918g519cg46bdga477g99e05740aec7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h92ebee43gdd30g4670g8c44g1543f4e02efd" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_IntimidatingPresence" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Enemy() and not Dead()" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,DEMORALIZING_SHOUT_SOURCE,100,1);IF(ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):ApplyStatus(DEMORALIZING_SHOUT_D10,100,1);IF(not ClassLevelHigherOrEqualThan(10,'Fighter',context.Source)):ApplyStatus(DEMORALIZING_SHOUT_D8,100,1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEMORALIZING_SHOUT_D8,100,1)" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="50e7cd15-5b95-47e9-b6f8-ed7900d23d9d,,;,,;289b4f53-3ca5-4dff-a1d4-e84a84a283f0,,;772a34bf-06c1-43ee-ae7b-1a1ffd3fef9e,,;03239618-40c7-47ab-a7b4-d2e0b111e5f7,,;,,;bc09e561-370b-4307-88d7-6462b6fbabec,,;,,;,," />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f5269188-8099-49b1-8515-b549bd8b61b9" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="3b4c35ad-4d0a-4889-8408-46181439be42" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Rage" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Rage" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Big" enumeration_type_name="SpellSoundMagnitude" version="1" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="eff5ec4d-51a0-4c4a-98de-619cdff90fd2" />
