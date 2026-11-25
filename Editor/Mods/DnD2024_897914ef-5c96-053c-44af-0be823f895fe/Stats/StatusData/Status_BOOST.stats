@@ -10964,6 +10964,67 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SavingThrowDisadvantage_FocusedStrike);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="77c7e900-584d-448d-87d6-6f1b389a6fd9" />
+        <field name="Name" type="NameTableFieldDefinition" value="PRIDE_BRUISED_EGO" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dccf12fg3046g4e27gaa6cgcaaa38ae93cf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd2f5de35gf7e5g4079gbdd5gc6f842e8e236" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_Buff_MO" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PRIDE_BRUISED_EGO" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(max(1,WisdomModifier));" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d08737f-54d1-406d-900b-29eb3324a05b" />
+        <field name="Name" type="NameTableFieldDefinition" value="PRIDE_BRUISED_EGO_BLOODIED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dccf12fg3046g4e27gaa6cgcaaa38ae93cf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1148252ag3c80g4690g9bc0g87854bd203ac" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_Buff_MO" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PRIDE_BRUISED_EGO" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(max(1,WisdomModifier)*2);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6cd080cc-43b8-4f55-8f63-59aa35a68527" />
+        <field name="Name" type="NameTableFieldDefinition" value="PRIDE_IRRATIONAL_RETALIATION" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9894d921gf239g4aa6g9260g396cef81aca5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h881358c2g0a33g4f14g96a6g8944e7a4c0cf" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StunningStrike_Weapon" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PRIDE_IRRATIONAL_RETALIATION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SourceAdvantageOnAttack()" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5dca5a52-0ed2-4af5-8f5c-57369b610023" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVER_PRIDEFUL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h92501bbdg8863g4dadgabc0g8f77f1debab6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0c6ef7b8g7258g4d78gbcbbg6d511387ec9d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_RelentlessRage" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EVER_PRIDEFUL" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(KiPoint,1,0)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasHPMoreThan(10)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnHeal" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8e56cb38-46ce-4547-a7ad-240053437204" />

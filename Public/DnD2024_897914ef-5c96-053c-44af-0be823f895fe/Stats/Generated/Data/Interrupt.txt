@@ -1072,6 +1072,20 @@ data "Icon" "GenericIcon_Intent_Debuff"
 data "Conditions" "HasInterruptedSavingThrow() and HasStatus('FOCUSED_STRIKE', context.Target, context.Source) and HasPassive('MysticArts_11_FocusedStrike', context.Source) and not AnyEntityIsItem();"
 data "Properties" "SetDisadvantage();RemoveStatus(OBSERVER_OBSERVER,FOCUSED_STRIKE);"
 
+
+new entry "Interrupt_Pride_IrrationalRetaliation"
+type "InterruptData"
+data "DisplayName" "h9894d921gf239g4aa6g9260g396cef81aca5;1"
+data "Description" "h0ca3da30gc441g4a05gb59dg6c56c8e553d5;1"
+data "Icon" "Action_Monk_StunningStrike_Weapon"
+data "InterruptContext" "OnCastHit"
+data "InterruptContextScope" "Self"
+data "Container" "YesNoDecision"
+data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered()"
+data "Properties" "ApplyStatus(OBSERVER_SOURCE,PRIDE_IRRATIONAL_RETALIATION,100,2)"
+data "Cost" "ReactionActionPoint:1;KiPoint:1"
+data "InterruptDefaultValue" "Ask;Enabled"
+
 new entry "__PALADIN__"
 type "InterruptData"
 

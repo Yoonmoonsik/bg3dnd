@@ -1472,6 +1472,22 @@
         <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();RemoveStatus(OBSERVER_OBSERVER,FOCUSED_STRIKE);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a7c3878-6822-422a-845a-a21246fd8aa8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Pride_IrrationalRetaliation" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9894d921gf239g4aa6g9260g396cef81aca5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0ca3da30gc441g4a05gb59dg6c56c8e553d5" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StunningStrike_Weapon" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered()" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_SOURCE,PRIDE_IRRATIONAL_RETALIATION,100,2)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;KiPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="362ca22e-3033-471b-a08d-aed956ee49c0" />

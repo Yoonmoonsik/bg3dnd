@@ -24,6 +24,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="19f57739-a0e4-4b88-b1e1-a0c01509117c" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVER_PRIDEFUL_DOWNED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4e5048c8-90f6-4630-bffe-0f4c186dda69" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h92501bbdg8863g4dadgabc0g8f77f1debab6" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(KiPoint,1,0);RegainHitPoints(1,Guaranteed);ApplyStatus(EVER_PRIDEFUL,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="411e565c-1a9e-40b6-80c9-f5a9e9636f4f" />
         <field name="Name" type="NameTableFieldDefinition" value="DEATH_DEFIER_DOWNED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c7fe5977-85eb-4b21-a92e-296b9628c54a" />

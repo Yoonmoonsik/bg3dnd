@@ -4232,7 +4232,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Monk" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="d8d9e1e3-cbd6-4240-ab1e-bd3626cb5532;22894c32-54cf-49ea-b366-44bfcf01bb2a;71637280-b294-4c33-9328-b0b77c74d662;acb94255-2c1e-4472-a707-4b58d183428f;e4ff8e22-91fb-45bc-98a6-30eff8ca794d;2a5e3097-384c-4d29-8d6e-054fdfd26b80;bf46d73f-d406-4cb8-9a1d-e6e758ca02c7;d5cd71d8-c615-43e3-8716-d33e8c992ec1" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="d8d9e1e3-cbd6-4240-ab1e-bd3626cb5532;22894c32-54cf-49ea-b366-44bfcf01bb2a;71637280-b294-4c33-9328-b0b77c74d662;acb94255-2c1e-4472-a707-4b58d183428f;e4ff8e22-91fb-45bc-98a6-30eff8ca794d;2a5e3097-384c-4d29-8d6e-054fdfd26b80;bf46d73f-d406-4cb8-9a1d-e6e758ca02c7;d5cd71d8-c615-43e3-8716-d33e8c992ec1;104c3a5e-294d-4a0e-8c17-974403a0d4ae" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(HitPointDice08,1,0);ActionResource(KiPoint,1,0);ActionResource(DeflectMissiles_Charge,1,0)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="DeflectMissiles;MeleeUnarmedAttackBonus" />
       </fields>
@@ -4754,6 +4754,110 @@
         <field name="Level" type="ByteTableFieldDefinition" value="12" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(f80396e2-cb76-4694-b0db-5c34da61a478,0,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1084" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e0409c6c-0ff3-4386-b1f0-715ccdf44ee4" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4911b216-1c38-4537-bf32-13c41c14406b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Pride" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Pride_3_BruisedEgo;Pride_3_AssertiveAttacker" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(8729409e-c60b-4f81-a0a0-a359819e5258,1,Pride_3_TallTales)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1085" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d04e6415-2042-4d74-9a0f-4eaf868f59e7" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4911b216-1c38-4537-bf32-13c41c14406b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Pride" />
+        <field name="Level" type="ByteTableFieldDefinition" value="4" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1086" />
+        <field name="UUID" type="IdTableFieldDefinition" value="47b64369-1ed5-4fb8-9602-40e764155d87" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4911b216-1c38-4537-bf32-13c41c14406b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Pride" />
+        <field name="Level" type="ByteTableFieldDefinition" value="5" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1087" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a52ea4cc-8776-4506-812e-7b869a890c3a" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4911b216-1c38-4537-bf32-13c41c14406b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Pride" />
+        <field name="Level" type="ByteTableFieldDefinition" value="6" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Pride_6_IrrationalRetaliation;Pride_6_RedoubledEfforts" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1088" />
+        <field name="UUID" type="IdTableFieldDefinition" value="447cdfa8-66a3-48ff-988a-1e28c2fa2f1e" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4911b216-1c38-4537-bf32-13c41c14406b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Pride" />
+        <field name="Level" type="ByteTableFieldDefinition" value="7" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1089" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e791ef41-979c-4933-a271-0015d15111b6" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4911b216-1c38-4537-bf32-13c41c14406b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Pride" />
+        <field name="Level" type="ByteTableFieldDefinition" value="8" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1090" />
+        <field name="UUID" type="IdTableFieldDefinition" value="08f18f72-3aaf-4e0f-ac27-421dc9f89f55" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4911b216-1c38-4537-bf32-13c41c14406b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Pride" />
+        <field name="Level" type="ByteTableFieldDefinition" value="9" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1091" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5115273c-e969-4ffd-bf39-e89b778f5535" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4911b216-1c38-4537-bf32-13c41c14406b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Pride" />
+        <field name="Level" type="ByteTableFieldDefinition" value="10" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1092" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a139e926-bcb8-4c05-86fd-a8b0417e39dd" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4911b216-1c38-4537-bf32-13c41c14406b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Pride" />
+        <field name="Level" type="ByteTableFieldDefinition" value="11" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Pride_11_EverPrideful" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1093" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dd540c9b-081a-48fd-833e-eeadf1bb057d" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="4911b216-1c38-4537-bf32-13c41c14406b" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Pride" />
+        <field name="Level" type="ByteTableFieldDefinition" value="12" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
