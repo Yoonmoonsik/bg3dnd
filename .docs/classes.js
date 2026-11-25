@@ -68,7 +68,8 @@ function buildFilters() {
     { key: "caster", label: "f_caster", values: ["full", "half", "pact", "third", "none"], text: v => t(v),
       test: (c, v) => v === "third" ? (SUBS[c.id] || []).some(s => s.caster === "third") : (c.caster || "none") === v },
     { key: "primary", label: "f_primary", values: Object.keys(ABILITY), text: v => ab(v), test: (c, v) => c.primary === v },
-    { key: "source", label: "f_source", values: ["new", "revised", "vanilla"], text: v => t(v), test: (c, v) => c.source === v },
+    { key: "source", label: "f_source", values: ["new", "revised", "vanilla"], text: v => t(v),
+      test: (c, v) => c.source === v || (SUBS[c.id] || []).some(s => s.source === v) },
     // Extra Attack / War Magic are passives granted by the class (core or a subclass). War Magic always rides on Extra Attack,
     // so the two selections overlap; "none" is the clean complement.
     { key: "attack", label: "f_attack", values: ["extraattack", "warmagic", "none"], text: v => v === "none" ? t("none") : t(v),
