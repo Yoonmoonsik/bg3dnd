@@ -41,10 +41,10 @@ See the [url=https://yoonmoonsik.github.io/bg3dnd/classes.html]Classes[/url] pag
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Bard]Bard[/url][/b] — Choreography, Dance, Glamour, Lore, Moon, Spirits, Swords, Valor
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Cleric]Cleric[/url][/b] — Apocalypse, Astral, Death, Dragon, Forge, Grave, Nature, Shadow, Tempest, Knowledge, Life, Light, Mind, Trickery, Twilight, War
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Druid]Druid[/url][/b] — Circle of Dragons, Dreams, Stars, Land, Moon, Sea, Spores, Unbroken
-[*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Fighter]Fighter[/url][/b] — Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Sorrow Knight, Viking
+[*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Fighter]Fighter[/url][/b] — Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Samurai, Sorrow Knight, Viking
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Gunslinger]Gunslinger[/url][/b] — High Roller, Spellslinger, White Hat
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Illrigger]Illrigger[/url][/b] — Architect of Ruin, Hellspeaker, Painkiller, Sanguine Knight, Shadowmaster
-[*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Monk]Monk[/url][/b] — Drunken Master, Elements, Kensei, Mercy, Mystic Arts, Open Hand, Shadow, Sun Soul
+[*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Monk]Monk[/url][/b] — Drunken Master, Elements, Kensei, Mercy, Mystic Arts, Open Hand, Pride, Shadow, Sun Soul
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Monster%20Hunter]Monster Hunter[/url][/b] — Carver Guild, Devourer Guild, Occultist Guild
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Paladin]Paladin[/url][/b] — Ancients, Conquest, Crown, Devotion, Glory, Noble Genies, Vengeance, Watchers, Oathbreaker
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Ranger]Ranger[/url][/b] — Beast Master, Fey Wanderer, Gloom Stalker, Hollow Warden, Hunter, Swarm Keeper, Winter Walker
