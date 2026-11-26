@@ -309,6 +309,21 @@
                     <attribute id="Passives" type="LSString" value="RuneKnight_3_FireRune,RuneKnight_3_CloudRune,RuneKnight_3_FrostRune,RuneKnight_3_StoneRune,RuneKnight_7_HillRune,RuneKnight_7_StormRune"/>
                     <attribute id="UUID" type="guid" value="22922e4f-4e69-4287-a52e-1285d5c04434"/>
                 </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Samurai Skill List"/>
+                    <attribute id="Passives" type="LSString" value="History,Insight,Performance,Persuasion,Samurai_3_BonusProficiency_NoSelection"/>
+                    <attribute id="UUID" type="guid" value="ea1680f2-2030-40cb-9d3c-ce0d7a82ed76"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Pride Skill List"/>
+                    <attribute id="Passives" type="LSString" value="Deception,Intimidation,Performance,Persuasion,Pride_3_TallTales_NoSelection"/>
+                    <attribute id="UUID" type="guid" value="8729409e-c60b-4f81-a0a0-a359819e5258"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Battlemaster Maneuvers"/>
+                    <attribute id="Passives" type="LSString" value="BattleMaster_Ambush,BattleMaster_BaitAndSwitch,BattleMaster_BattleShout,CommanderStrike_Maneuver,BattleMaster_CommandingPresence,BattleMaster_DemoralizingShout,DisarmingAttack,DistractingStrike,EvasiveFootwork,FeintingAttack,GoadingAttack,BattleMaster_HeroicLeap,BattleMaster_LungingAttack,ManeuveringAttack,MenacingAttack,BattleMaster_MortalStrike,BattleMaster_Parry,PrecisionAttack,PushingAttack,Rally,Riposte,SweepingAttack,BattleMaster_TacticalAssessment,TripAttack,BattleMaster_WardingManeuver"/>
+                    <attribute id="UUID" type="guid" value="e51a2ef5-3663-43f9-8e74-5e28520323f1"/>
+                </node>
             </children>
         </node>
     </region>

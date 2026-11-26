@@ -1856,6 +1856,21 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
       </fields>
     </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dcdf8161-feec-4873-baf3-8d3e8064ad83" />
+        <field name="Name" type="NameTableFieldDefinition" value="__FIGHTER__" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9163aa2-1cf5-4230-8884-7ecdbe284ec1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SweepingAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="74156e82-941b-4918-a7f3-0a134379be07" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon + LevelMapValue(SuperiorityDie), MainWeaponDamageType);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon + LevelMapValue(SuperiorityDie), MainWeaponDamageType);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="812d70b2-eaba-44a5-a2f4-9faa4b873860" />

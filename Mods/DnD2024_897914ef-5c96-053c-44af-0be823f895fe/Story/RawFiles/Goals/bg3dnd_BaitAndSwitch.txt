@@ -1,0 +1,29 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+StatusApplied(_Character, "BAIT_AND_SWITCH_OSIRIS_D8", _, _)
+AND
+Random(8, _Random)
+AND
+IntegerToString(_Random,_NumberString)
+AND
+Concatenate("BAIT_AND_SWITCH_AC_",_NumberString,_Status)
+THEN
+ApplyStatus(_Character, _Status, 6.0);
+
+IF
+StatusApplied(_Character, "BAIT_AND_SWITCH_OSIRIS_D10", _, _)
+AND
+Random(10, _Random)
+AND
+IntegerToString(_Random,_NumberString)
+AND
+Concatenate("BAIT_AND_SWITCH_AC_",_NumberString,_Status)
+THEN
+ApplyStatus(_Character, _Status, 6.0);
+EXITSECTION
+
+ENDEXITSECTION

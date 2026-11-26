@@ -15,6 +15,14 @@ using "RELENTLESS_RAGE_DOWNED"
 data "Boosts" "AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,2.5);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);StatusImmunity(SG_Prone);StatusImmunity(PRONE);StatusImmunity(PRONE_FALLEN);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_ICE);StatusImmunity(PRONE_SEWER);StatusImmunity(PRONE_THUNDEROUS_SMITE);StatusImmunity(SG_Condition);StatusImmunity(SHOCKWAVE);"
 data "OnApplyFunctors" "RemoveStatus(RELENTLESS_RAGE);RegainHitPoints(ClassLevel(Barbarian)*2,Guaranteed)"
 
+
+new entry "EVER_PRIDEFUL_DOWNED"
+type "StatusData"
+data "StatusType" "DOWNED"
+using "RELENTLESS_RAGE_DOWNED"
+data "DisplayName" "h92501bbdg8863g4dadgabc0g8f77f1debab6;1"
+data "OnApplyFunctors" "UseActionResource(KiPoint,1,0);RegainHitPoints(1,Guaranteed);ApplyStatus(EVER_PRIDEFUL,100,-1)"
+
 new entry "DEATH_DEFIER_DOWNED"
 type "StatusData"
 data "StatusType" "DOWNED"

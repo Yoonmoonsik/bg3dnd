@@ -187,6 +187,7 @@ local SPELL_CLASS_MAP = {
     Shout_MassHealingWord_spellscroll = '3 Bard Cleric',
     Target_PlantGrowth_spellscroll = '3 Bard Druid Ranger',
     Shout_SpiritGuardians_spellscroll = '3 Cleric',
+    Shout_SpiritShroud_spellscroll = '3 Cleric Paladin Warlock Wizard',
     Shout_SerpentTongue_spellscroll = '3 Warlock Wizard',
 
     Target_ArcaneEye_spellscroll = '4 Artificer Wizard',
@@ -890,4 +891,5 @@ function IsScrollSpell()
     | SpellId('Shout_FrostNova_spellscroll')
     | SpellId('Target_FreezingTrap_spellscroll')
     | SpellId('Target_Catnap_spellscroll')
+    | SpellId('Shout_SpiritShroud_spellscroll')
 end

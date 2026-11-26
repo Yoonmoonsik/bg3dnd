@@ -4271,6 +4271,72 @@
         <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="Enemy();" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22261596-e8dc-49ff-8e8b-c328db3b980a" />
+        <field name="Name" type="NameTableFieldDefinition" value="TripAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="49a2840b-ee59-4620-934a-0fadc9b59dc9" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE,100,-1);DealDamage(MainRangedWeapon + LevelMapValue(SuperiorityDie), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1035f09f-f32d-4dc4-9aed-141a8427fa56" />
+        <field name="Name" type="NameTableFieldDefinition" value="PushingAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="832ecd81-bb20-4045-a598-29531ac1e2f4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Strength, ManeuverSaveDC())):Force(5);DealDamage(MainRangedWeapon + LevelMapValue(SuperiorityDie), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6288ba7d-e7c4-4ff2-a300-feb870705aa2" />
+        <field name="Name" type="NameTableFieldDefinition" value="HeroicLeap" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fdafc2f-e844-41a5-98ea-aa23c39f959b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5980479g319eg4b31g96b8g63a3eb1287f6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8a8eb3a4gba2dg4999g8c4eg8a6802c82632" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(2)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_DivingStrike" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateExplosion(Projectile_HeroicLeap_Explosion)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SuperiorityDie),Bludgeoning)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Strength" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellJumpType" type="EnumerationTableFieldDefinition" value="Pounce" enumeration_type_name="SpellJumpType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3bffe1d1-c1c8-4001-b48d-a25561db3da2" />
+        <field name="Name" type="NameTableFieldDefinition" value="HeroicLeap_Explosion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fd6525b-dd30-434c-820d-12a5b0cd39a9" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5980479g319eg4b31g96b8g63a3eb1287f6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8a8eb3a4gba2dg4999g8c4eg8a6802c82632" version="1" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SuperiorityDie),Bludgeoning)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SuperiorityDie)/2,Bludgeoning)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(SuperiorityDie),Bludgeoning)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="71bc0790-dacb-47ab-ac23-c5162036bb47" />
+        <field name="Name" type="NameTableFieldDefinition" value="MortalStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="22261596-e8dc-49ff-8e8b-c328db3b980a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7c466e9bg8859g4df0g8cd3gc50fcac18041" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb78022dge682g4630gaf2fgd497cb821d93" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(MORTAL_STRIKE,100,1);DealDamage(MainRangedWeapon + LevelMapValue(SuperiorityDie), MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(MORTAL_STRIKE,100,1)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedWeaponAttack" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Necrotic_Ranged" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF008B8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="610f94c0-1fbc-4744-8402-48ba1454dd86" />
@@ -5848,7 +5914,6 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea2c25a8-f11c-4a81-8609-b1c5c17bfbda" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Monk_ShadowStrike,MAINHAND" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Monk_ShadowStrike" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
       </fields>
     </stat_object>
@@ -5872,7 +5937,6 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea2c25a8-f11c-4a81-8609-b1c5c17bfbda" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Monk_ShadowStrike,MAINHAND" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Monk_ShadowStrike" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
       </fields>
     </stat_object>
@@ -5896,7 +5960,6 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea2c25a8-f11c-4a81-8609-b1c5c17bfbda" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Monk_ShadowStrike,MAINHAND" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Monk_ShadowStrike" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
       </fields>
     </stat_object>
@@ -5920,7 +5983,6 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea2c25a8-f11c-4a81-8609-b1c5c17bfbda" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Monk_ShadowStrike,MAINHAND" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Monk_ShadowStrike" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
       </fields>
     </stat_object>
@@ -5944,7 +6006,6 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea2c25a8-f11c-4a81-8609-b1c5c17bfbda" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Monk_ShadowStrike,MAINHAND" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Monk_ShadowStrike" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
       </fields>
     </stat_object>
