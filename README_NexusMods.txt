@@ -38,7 +38,7 @@ See the [url=https://yoonmoonsik.github.io/bg3dnd/classes.html]Classes[/url] pag
 [list]
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Artificer]Artificer[/url][/b] — Alchemist, Armorer, Artillerist, Battle Smith
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Barbarian]Barbarian[/url][/b] — Berserker, Fractured, Giant, Muscle Wizard, Shadow Gnawer, Wild Magic, Wildheart, World Tree, Zealot
-[*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Bard]Bard[/url][/b] — Choreography, Dance, Glamour, Lore, Moon, Spirits, Swords, Valor
+[*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Bard]Bard[/url][/b] — Choreography, Dance, Fools, Glamour, Lore, Moon, Spirits, Swords, Valor
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Cleric]Cleric[/url][/b] — Apocalypse, Astral, Death, Dragon, Forge, Grave, Nature, Shadow, Tempest, Knowledge, Life, Light, Mind, Trickery, Twilight, War
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Druid]Druid[/url][/b] — Circle of Dragons, Dreams, Stars, Land, Moon, Sea, Spores, Unbroken
 [*][b][url=https://yoonmoonsik.github.io/bg3dnd/classes.html#q=Fighter]Fighter[/url][/b] — Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, Psi Warrior, Rune Knight, Samurai, Sorrow Knight, Viking
