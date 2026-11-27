@@ -25,3 +25,22 @@ function FontOfInspiration()
     | SpellId('Shout_FontOfInspiration_5')
     | SpellId('Shout_FontOfInspiration_6')
 end
+
+function FoolsAntagonisticAntics()
+    return SpellId('Shout_Dash')
+    | SpellId('Shout_Dash_BonusAction')
+    | SpellId('Shout_Dash_CunningAction')
+    | SpellId('Shout_Disengage')
+    | SpellId('Shout_Disengage_BonusAction')
+    | SpellId('Shout_Disengage_CunningAction')
+end
+
+function FoolsCruelJestRollFailed()
+    local rollSuccess = false
+    if context.InterruptedRoll.RollCritical == RollCritical.None then
+        rollSuccess = context.InterruptedRoll.Total >= context.InterruptedRoll.Difficulty
+    else
+        rollSuccess = context.InterruptedRoll.RollCritical == RollCritical.Success
+    end
+    return ConditionResult(not rollSuccess)
+end

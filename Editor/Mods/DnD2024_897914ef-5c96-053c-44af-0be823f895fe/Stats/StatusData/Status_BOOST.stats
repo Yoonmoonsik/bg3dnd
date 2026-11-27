@@ -11012,6 +11012,49 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3cc4f669-06dd-4dd9-b532-aa438674b998" />
+        <field name="Name" type="NameTableFieldDefinition" value="FOOLS_ANTAGONISTIC_ANTICS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h54e06760gf86dg4564g9392g7b9ebd35cb0e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h75108f0cg4822g4425ga18cg5230b360fda4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_ViciousMockery" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FOOLS_ANTAGONISTIC_ANTICS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_ViciousMockery'),ModifyUseCosts(Replace,BonusActionPoint,1,0,ActionPoint),ModifyIconGlow());" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_ViciousMockery')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0780586e-ab75-4665-bbb1-39745b305c2e" />
+        <field name="Name" type="NameTableFieldDefinition" value="FOOLS_GALLOWS_HUMOR_UNLOCK" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf15b7fb8gfb81g473bg864cg8d3fa62acefc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc94d394ag69c5g4113g89b0g56dd9658a0b0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Tasha'sHideousLaughter" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FOOLS_GALLOWS_HUMOR_UNLOCK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Fools_GallowsHumor);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_Fools_GallowsHumor')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd3fbf78-2be4-414e-ac7e-851d58a3878b" />
+        <field name="Name" type="NameTableFieldDefinition" value="FOOLS_CRUEL_JEST" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha3051cf5ga434g4e09gaf97g752bafc6e009" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d2581ddg1cf7g4524gba7dgea675584022e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FOOLS_CRUEL_JEST" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(AttackRoll);Disadvantage(AllSavingThrows);UnlockInterrupt(Interrupt_SavingThrowPenalty_FoolsCruelJest);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsAttack();" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5dca5a52-0ed2-4af5-8f5c-57369b610023" />
         <field name="Name" type="NameTableFieldDefinition" value="EVER_PRIDEFUL" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h92501bbdg8863g4dadgabc0g8f77f1debab6" version="1" />
@@ -18048,7 +18091,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="afe98fd4-6191-4948-95a1-ddcc5bc64728" />
         <field name="Name" type="NameTableFieldDefinition" value="ALCH_POTION_REST_SLEEP_LESSER_RESTORATION_1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(WarPriestActionPoint,100%,0);RestoreResource(RuneKnight_Cloud,100%,0);RestoreResource(RuneKnight_Fire,100%,0);RestoreResource(RuneKnight_Frost,100%,0);RestoreResource(RuneKnight_Stone,100%,0);RestoreResource(RuneKnight_Hill,100%,0);RestoreResource(RuneKnight_Storm,100%,0);RestoreResource(DivinePoint,100%,0);RestoreResource(FavoredByTheGods,100%,0);RestoreResource(Risk,100%,0);RestoreResource(Seal,100%,0);RestoreResource(HoneySweetBlades,100%,0);RestoreResource(YouDieOnMyCommand,100%,0);RestoreResource(Spellblade,100%,0);RestoreResource(ExplosiveCannon,100%,0);RestoreResource(MageSlayer,100%,0);RestoreResource(FadeAway,100%,0);RestoreResource(SorrowKnight,100%,0)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(WarPriestActionPoint,100%,0);RestoreResource(RuneKnight_Cloud,100%,0);RestoreResource(RuneKnight_Fire,100%,0);RestoreResource(RuneKnight_Frost,100%,0);RestoreResource(RuneKnight_Stone,100%,0);RestoreResource(RuneKnight_Hill,100%,0);RestoreResource(RuneKnight_Storm,100%,0);RestoreResource(DivinePoint,100%,0);RestoreResource(FavoredByTheGods,100%,0);RestoreResource(Risk,100%,0);RestoreResource(Seal,100%,0);RestoreResource(HoneySweetBlades,100%,0);RestoreResource(YouDieOnMyCommand,100%,0);RestoreResource(Spellblade,100%,0);RestoreResource(ExplosiveCannon,100%,0);RestoreResource(MageSlayer,100%,0);RestoreResource(FadeAway,100%,0);RestoreResource(SorrowKnight,100%,0);RestoreResource(FoolsGallowsHumor,100%,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -18072,7 +18115,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="852638eb-c185-4723-84d7-81b340ad3920" />
         <field name="Name" type="NameTableFieldDefinition" value="ALCH_POTION_REST_SLEEP_GREATER_RESTORATION_2" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(FeyTouchedLevel2,100%,0);RestoreResource(ShadowTouchedLevel1,100%,0);RestoreResource(ShadowTouchedLevel2,100%,0);RestoreResource(CharmTwisterSpell,100%,0);RestoreResource(SpellResistant,100%,0);RestoreResource(StrikeOfTheGiants,100%,0);RestoreResource(SearingIgnition,100%,0);RestoreResource(FrigidRetaliation,100%,0);RestoreResource(CloudyEscape,100%,0);RestoreResource(StoneThrow,100%,0);RestoreResource(MaelstromAura,100%,0);RestoreResource(RuneShaperSpell_CLOUD,100%,0);RestoreResource(RuneShaperSpell_DEATH,100%,0);RestoreResource(RuneShaperSpell_DRAGON,100%,0);RestoreResource(RuneShaperSpell_ENEMY,100%,0);RestoreResource(RuneShaperSpell_FIRE,100%,0);RestoreResource(RuneShaperSpell_FRIEND,100%,0);RestoreResource(RuneShaperSpell_FROST,100%,0);RestoreResource(RuneShaperSpell_HILL,100%,0);RestoreResource(RuneShaperSpell_JOURNEY,100%,0);RestoreResource(RuneShaperSpell_KING,100%,0);RestoreResource(RuneShaperSpell_MOUNTAIN,100%,0);RestoreResource(RuneShaperSpell_STONE,100%,0);RestoreResource(RuneShaperSpell_STORM,100%,0);RestoreResource(FadeAway,100%,0);RestoreResource(SacredFlame,100%,0);RestoreResource(FairyTrickster,100%,0);RestoreResource(EncourageAlly,100%,0);RestoreResource(BreathWeapon,100%,0);RestoreResource(HeroicInspiration,100%,0);RestoreResource(Goliath,100%,0);RestoreResource(AdrenalineRush,100%,0);RestoreResource(Eladrin,100%,0);RestoreResource(ShadarKai,100%,0);RestoreResource(RaceSpellLevel1,100%,0);RestoreResource(RaceSpellLevel2,100%,0);RestoreResource(SorrowKnight,100%,0);RestoreResource(EmpatheticInquiry,100%,0);RestoreResource(FightingSpirit,100%,0)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(FeyTouchedLevel2,100%,0);RestoreResource(ShadowTouchedLevel1,100%,0);RestoreResource(ShadowTouchedLevel2,100%,0);RestoreResource(CharmTwisterSpell,100%,0);RestoreResource(SpellResistant,100%,0);RestoreResource(StrikeOfTheGiants,100%,0);RestoreResource(SearingIgnition,100%,0);RestoreResource(FrigidRetaliation,100%,0);RestoreResource(CloudyEscape,100%,0);RestoreResource(StoneThrow,100%,0);RestoreResource(MaelstromAura,100%,0);RestoreResource(RuneShaperSpell_CLOUD,100%,0);RestoreResource(RuneShaperSpell_DEATH,100%,0);RestoreResource(RuneShaperSpell_DRAGON,100%,0);RestoreResource(RuneShaperSpell_ENEMY,100%,0);RestoreResource(RuneShaperSpell_FIRE,100%,0);RestoreResource(RuneShaperSpell_FRIEND,100%,0);RestoreResource(RuneShaperSpell_FROST,100%,0);RestoreResource(RuneShaperSpell_HILL,100%,0);RestoreResource(RuneShaperSpell_JOURNEY,100%,0);RestoreResource(RuneShaperSpell_KING,100%,0);RestoreResource(RuneShaperSpell_MOUNTAIN,100%,0);RestoreResource(RuneShaperSpell_STONE,100%,0);RestoreResource(RuneShaperSpell_STORM,100%,0);RestoreResource(FadeAway,100%,0);RestoreResource(SacredFlame,100%,0);RestoreResource(FairyTrickster,100%,0);RestoreResource(EncourageAlly,100%,0);RestoreResource(BreathWeapon,100%,0);RestoreResource(HeroicInspiration,100%,0);RestoreResource(Goliath,100%,0);RestoreResource(AdrenalineRush,100%,0);RestoreResource(Eladrin,100%,0);RestoreResource(ShadarKai,100%,0);RestoreResource(RaceSpellLevel1,100%,0);RestoreResource(RaceSpellLevel2,100%,0);RestoreResource(SorrowKnight,100%,0);RestoreResource(EmpatheticInquiry,100%,0);RestoreResource(FightingSpirit,100%,0);RestoreResource(FoolsGallowsHumor,100%,0)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

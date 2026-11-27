@@ -12,6 +12,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="148cd27b-677c-42d2-8b16-783515ab44f1" />
+        <field name="Name" type="NameTableFieldDefinition" value="FOOLS_GALLOWS_HUMOR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6e43562e-4fcb-4239-9d5c-2814201d6fdc" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf15b7fb8gfb81g473bg864cg8d3fa62acefc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h07478bf1gf62cg402eg9bf4gbc796d3eea12" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="792314b1-e8b6-4a70-bc1e-02d2a649eb0b" />
         <field name="Name" type="NameTableFieldDefinition" value="KNOCKED_DOWN" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cbe12b32-5e46-4add-b47d-f44f13ab88b1" />

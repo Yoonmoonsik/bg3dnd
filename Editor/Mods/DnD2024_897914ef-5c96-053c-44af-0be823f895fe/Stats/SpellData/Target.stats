@@ -5923,6 +5923,39 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35c56bd9-78ee-4590-8edc-5e858fa240ac" />
+        <field name="Name" type="NameTableFieldDefinition" value="Fools_CruelJest" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="837b96da-0511-4a33-81d5-970b28c3fcd2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha3051cf5ga434g4e09gaf97g752bafc6e009" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d2581ddg1cf7g4524gba7dgea675584022e" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BardicInspiration)+CharismaModifier,Psychic,Magical);ApplyStatus(FOOLS_CRUEL_JEST,100,2)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BardicInspiration)+CharismaModifier,Psychic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FOOLS_CRUEL_JEST,100,2)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e02573d-a42d-4fe7-9ca4-7b03fb6644bf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Fools_GallowsHumor" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="444ea86e-941c-49e5-a373-09eb939cb470" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf15b7fb8gfb81g473bg864cg8d3fa62acefc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha396a73agdeb1g414fg93d7gdbd795b81a65" version="1" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(FOOLS_GALLOWS_HUMOR,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="RestoreResource(SELF,FoolsGallowsHumor,1,0)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FOOLS_GALLOWS_HUMOR,100,1)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead();" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="71bce6c5-9068-4a06-aa17-2c0e468eeb0d" />
         <field name="Name" type="NameTableFieldDefinition" value="WYR_SentientAmulet_HideousLaughter" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1047b46a-e850-4fb3-b06c-74d66c85eb59" />

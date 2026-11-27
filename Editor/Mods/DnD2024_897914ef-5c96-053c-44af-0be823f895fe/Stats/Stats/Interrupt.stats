@@ -1488,6 +1488,71 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01a91b68-447c-4f23-a8a1-d827ac50f6a4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Fools_CruelJest_Attack" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h28b412ceg6cd9g4164ga062gef6424ccaa28" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7f0693f7g3f5ag4b18gbec4gbfef463d6f86" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(LevelMapValue(BardicInspiration)+CharismaModifier,Psychic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedAttack() and Enemy(context.Source,context.Observer) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Source) and FoolsCruelJestRollFailed() and not AnyEntityIsItem()" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Target_Fools_CruelJest,true,true,true)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;BardicInspiration:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c9324cb-2bd7-4dbf-852f-9fe9396a18c5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Fools_CruelJest_SavingThrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8a89bad5g67e2g43d8g853fge986897bbf50" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hae329e29g5c4ag43a2gbfdag6c6477672abb" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(LevelMapValue(BardicInspiration)+CharismaModifier,Psychic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedSavingThrow() and not Self(context.Source,context.Observer) and Enemy(context.Target,context.Observer) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and FoolsCruelJestRollFailed() and not AnyEntityIsItem()" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_Fools_CruelJest,true,true,true)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;BardicInspiration:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7af2aed1-af33-433f-b4e0-b6839924010e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Fools_GallowsHumor" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf15b7fb8gfb81g473bg864cg8d3fa62acefc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h953b938eg46adg4a19g9334gd40504b46ecd" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18);Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Tasha'sHideousLaughter" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnDeath" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Target,context.Observer) and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Target)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="RestoreResource(SELF,BardicInspiration,1,0);ApplyStatus(OBSERVER_OBSERVER,FOOLS_GALLOWS_HUMOR_UNLOCK,100,1)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FoolsGallowsHumor:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da906ab2-49bc-4e76-9a3a-ea006cf05913" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SavingThrowPenalty_FoolsCruelJest" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="738254d4-c0d1-4cd6-bfaf-fc723c30ed81" />
+        <field name="Properties" type="StringTableFieldDefinition" value="RemoveStatus(OBSERVER_OBSERVER,FOOLS_CRUEL_JEST);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="362ca22e-3033-471b-a08d-aed956ee49c0" />

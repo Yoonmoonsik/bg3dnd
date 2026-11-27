@@ -2843,6 +2843,46 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement, 1.5, 0);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="49edfe5c-8c47-4c79-952a-c33acec18f37" />
+        <field name="Name" type="NameTableFieldDefinition" value="Fools_3_AntagonisticAntics" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h54e06760gf86dg4564g9392g7b9ebd35cb0e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf086f2c7gd982g400dgbe5fg0659785e3d1c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_ViciousMockery" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="2603" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="FoolsAntagonisticAntics()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,FOOLS_ANTAGONISTIC_ANTICS,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c7289b0-8c6b-4648-b4ae-14f944eae022" />
+        <field name="Name" type="NameTableFieldDefinition" value="Fools_3_CruelJest" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha3051cf5ga434g4e09gaf97g752bafc6e009" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9a73ab0egc783g4d60g8f40g47ed48422755" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(LevelMapValue(BardicInspiration)+CharismaModifier,Psychic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="2603" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Fools_CruelJest_Attack);UnlockInterrupt(Interrupt_Fools_CruelJest_SavingThrow);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="15e46e06-ab00-4afe-bc42-29d9801c4bca" />
+        <field name="Name" type="NameTableFieldDefinition" value="Fools_6_GallowsHumor" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf15b7fb8gfb81g473bg864cg8d3fa62acefc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h953b938eg46adg4a19g9334gd40504b46ecd" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18);Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Tasha'sHideousLaughter" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="2606" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Fools_GallowsHumor);ActionResource(FoolsGallowsHumor,1,0);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFD700" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="66fe610b-11db-4906-b6ba-d2ed0a595376" />

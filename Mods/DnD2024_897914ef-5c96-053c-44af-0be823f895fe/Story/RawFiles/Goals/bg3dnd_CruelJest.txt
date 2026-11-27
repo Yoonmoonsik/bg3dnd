@@ -1,0 +1,23 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+//Cruel Jest: same taunt voice line as Cutting Words (_PROC_AUDIO)
+IF
+ReactionInterruptUsed((CHARACTER)_Player,"Interrupt_Fools_CruelJest_Attack", _)
+AND
+DB_IsOrWasInParty(_Player)
+THEN
+PROC_TryStartSpellVocalAD((DIALOGRESOURCE)GLO_SpellVocalComponent_ViciousMockery_Cast_6dafdccd-091d-c0f4-4543-1199bdcb46d6,_Player);
+
+IF
+ReactionInterruptUsed((CHARACTER)_Player,"Interrupt_Fools_CruelJest_SavingThrow", _)
+AND
+DB_IsOrWasInParty(_Player)
+THEN
+PROC_TryStartSpellVocalAD((DIALOGRESOURCE)GLO_SpellVocalComponent_ViciousMockery_Cast_6dafdccd-091d-c0f4-4543-1199bdcb46d6,_Player);
+
+EXITSECTION
+
+ENDEXITSECTION
